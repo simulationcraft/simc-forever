@@ -9,94 +9,12 @@
 
 namespace {
 
-struct spell_rank_t
-{
-  unsigned spell_id;
-};
-struct flametongue_rank_t
-{
-  unsigned  spell_id;   // Flametongue Weapon
-  unsigned  driver_id;  // Flametongue Weapon Proc
-  unsigned  attack_id;  // Flametongue Attack
-};
-struct rockbiter_rank_t
-{
-  unsigned  spell_id;    // Rockbiter Weapon
-  unsigned  passive_id;  // Rockbiter Weapon (Passive)
-};
 struct totem_rank_t
 {
   unsigned  spell_id;  // the totem
   unsigned  aura_id;   // the effect the totem provides
 };
 
-
-template <typename RANKS>
-auto max_rank( const player_t* player, const RANKS& ranks )
-{
-  typename RANKS::value_type best {};
-  unsigned best_level = 0;
-
-  for ( const auto& rank : ranks )
-  {
-    const spell_data_t* spell = player->find_spell( rank.spell_id );
-
-    if ( spell->ok() && spell->level() >= best_level )
-    {
-      best = rank;
-      best_level = spell->level();
-    }
-  }
-
-  return best;
-}
-
-constexpr std::array flametongue_weapon_ranks {
-  //                  spell  driver   attack
-  flametongue_rank_t{  8024,   8026,  29469 },
-  flametongue_rank_t{  8027,   8028,  29470 },
-  flametongue_rank_t{  8030,   8029,  10444 },
-  flametongue_rank_t{ 16339,  10445,  10444 },
-  flametongue_rank_t{ 16341,  16343,  10444 },
-  flametongue_rank_t{ 16342,  16344,  10444 },
-};
-constexpr std::array earth_shock_ranks {
-  //            spell
-  spell_rank_t{  8042 },
-  spell_rank_t{  8044 },
-  spell_rank_t{  8045 },
-  spell_rank_t{  8046 },
-  spell_rank_t{ 10412 },
-  spell_rank_t{ 10413 },
-  spell_rank_t{ 10414 },
-};
-constexpr std::array flame_shock_ranks {
-  //            spell
-  spell_rank_t{  8050 },
-  spell_rank_t{  8052 },
-  spell_rank_t{  8053 },
-  spell_rank_t{ 10447 },
-  spell_rank_t{ 10448 },
-  spell_rank_t{ 29228 },
-};
-constexpr std::array rockbiter_weapon_ranks {
-  //                spell  passive
-  rockbiter_rank_t{  8017,  10400 },
-  rockbiter_rank_t{  8018,  15567 },
-  rockbiter_rank_t{  8019,  15568 },
-  rockbiter_rank_t{ 10399,  15569 },
-  rockbiter_rank_t{ 16314,  16311 },
-  rockbiter_rank_t{ 16315,  16312 },
-  rockbiter_rank_t{ 16316,  16313 },
-};
-constexpr std::array strength_of_earth_totem_ranks {
-  //            spell   aura
-  totem_rank_t{  8075,   8076 },
-  totem_rank_t{  8160,   8162 },
-  totem_rank_t{  8161,   8163 },
-  totem_rank_t{ 10442,  10441 },
-  totem_rank_t{ 25361,  25362 },
-};
 
 struct shaman_t final : public player_t
 {
@@ -250,10 +168,20 @@ void shaman_t::invalidate_cache( cache_e c )
 
 // Earth Shock
 
+constexpr std::array earth_shock_ranks {
+  //            spell
+  spell_rank_t{  8042 },
+  spell_rank_t{  8044 },
+  spell_rank_t{  8045 },
+  spell_rank_t{  8046 },
+  spell_rank_t{ 10412 },
+  spell_rank_t{ 10413 },
+  spell_rank_t{ 10414 },
+};
 struct earth_shock_t : public shaman_spell_t
 {
   earth_shock_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "earth_shock", player, player->find_spell( max_rank( player, earth_shock_ranks ).spell_id ) )
+    shaman_spell_t( "earth_shock", player, player->find_spell( player->find_rank( earth_shock_ranks ).spell_id ) )
   {
     parse_options( options_str );
 
@@ -264,10 +192,19 @@ struct earth_shock_t : public shaman_spell_t
 
 // Flame Shock
 
+constexpr std::array flame_shock_ranks {
+  //            spell
+  spell_rank_t{  8050 },
+  spell_rank_t{  8052 },
+  spell_rank_t{  8053 },
+  spell_rank_t{ 10447 },
+  spell_rank_t{ 10448 },
+  spell_rank_t{ 29228 },
+};
 struct flame_shock_t : public shaman_spell_t
 {
   flame_shock_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "flame_shock", player, player->find_spell( max_rank( player, flame_shock_ranks ).spell_id ) )
+    shaman_spell_t( "flame_shock", player, player->find_spell( player->find_rank( flame_shock_ranks ).spell_id ) )
   {
     parse_options( options_str );
 
@@ -280,14 +217,30 @@ struct flame_shock_t : public shaman_spell_t
 // Shaman Weapon Imbues
 // ==========================================================================
 
+struct flametongue_rank_t
+{
+  unsigned  spell_id;   // Flametongue Weapon
+  unsigned  driver_id;  // Flametongue Weapon Proc
+  unsigned  attack_id;  // Flametongue Attack
+};
+constexpr std::array flametongue_weapon_ranks {
+  //                  spell  driver   attack
+  flametongue_rank_t{  8024,   8026,  29469 },
+  flametongue_rank_t{  8027,   8028,  29470 },
+  flametongue_rank_t{  8030,   8029,  10444 },
+  flametongue_rank_t{ 16339,  10445,  10444 },
+  flametongue_rank_t{ 16341,  16343,  10444 },
+  flametongue_rank_t{ 16342,  16344,  10444 },
+};
+
 struct flametongue_attack_t : public shaman_spell_t
 {
   flametongue_attack_t( shaman_t* player ) :
-    shaman_spell_t( "flametongue_attack", player, player->find_spell( max_rank( player, flametongue_weapon_ranks ).attack_id ) )
+    shaman_spell_t( "flametongue_attack", player, player->find_spell( player->find_rank( flametongue_weapon_ranks ).attack_id ) )
   {
     background = true;
 
-    auto rank = max_rank( player, flametongue_weapon_ranks );
+    auto rank = player->find_rank( flametongue_weapon_ranks );
 
     double proc_value = player->find_spell( rank.driver_id )->effectN( 1 ).average( player, player->level() );
     double weapon_speed = player->equipped_weapons[ SLOT_MAIN_HAND ].swing_time.total_seconds();
@@ -299,7 +252,7 @@ struct flametongue_attack_t : public shaman_spell_t
 struct flametongue_weapon_t : public shaman_spell_t
 {
   flametongue_weapon_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "flametongue_weapon", player, player->find_spell( max_rank( player, flametongue_weapon_ranks ).spell_id ) )
+    shaman_spell_t( "flametongue_weapon", player, player->find_spell( player->find_rank( flametongue_weapon_ranks ).spell_id ) )
   {
     parse_options( options_str );
     harmful = false;
@@ -323,10 +276,27 @@ struct flametongue_weapon_t : public shaman_spell_t
   }
 };
 
+// rockbiter weapon
+
+struct rockbiter_rank_t
+{
+  unsigned  spell_id;    // Rockbiter Weapon
+  unsigned  passive_id;  // Rockbiter Weapon (Passive)
+};
+constexpr std::array rockbiter_weapon_ranks {
+  //                spell  passive
+  rockbiter_rank_t{  8017,  10400 },
+  rockbiter_rank_t{  8018,  15567 },
+  rockbiter_rank_t{  8019,  15568 },
+  rockbiter_rank_t{ 10399,  15569 },
+  rockbiter_rank_t{ 16314,  16311 },
+  rockbiter_rank_t{ 16315,  16312 },
+  rockbiter_rank_t{ 16316,  16313 },
+};
 struct rockbiter_weapon_t : public shaman_spell_t
 {
   rockbiter_weapon_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "rockbiter_weapon", player, player->find_spell( max_rank( player, rockbiter_weapon_ranks ).spell_id ) )
+    shaman_spell_t( "rockbiter_weapon", player, player->find_spell( player->find_rank( rockbiter_weapon_ranks ).spell_id ) )
   {
     parse_options( options_str );
     harmful = false;
@@ -358,10 +328,18 @@ struct rockbiter_weapon_t : public shaman_spell_t
 // TODO: Make totems a unit for use with range?
 // TODO: Party buff
 
+constexpr std::array strength_of_earth_totem_ranks {
+  //            spell   aura
+  totem_rank_t{  8075,   8076 },
+  totem_rank_t{  8160,   8162 },
+  totem_rank_t{  8161,   8163 },
+  totem_rank_t{ 10442,  10441 },
+  totem_rank_t{ 25361,  25362 },
+};
 struct strength_of_earth_totem_t : public shaman_spell_t
 {
   strength_of_earth_totem_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "strength_of_earth_totem", player, player->find_spell( max_rank( player, strength_of_earth_totem_ranks ).spell_id ) )
+    shaman_spell_t( "strength_of_earth_totem", player, player->find_spell( player->find_rank( strength_of_earth_totem_ranks ).spell_id ) )
   {
     parse_options( options_str );
     harmful = false;
@@ -468,13 +446,13 @@ void shaman_t::create_buffs()
 {
   player_t::create_buffs();
 
-  buff.flametongue_weapon = make_buff( this, "flametongue_weapon", find_spell( max_rank( this, flametongue_weapon_ranks ).spell_id ) );
+  buff.flametongue_weapon = make_buff( this, "flametongue_weapon", find_spell( find_rank( flametongue_weapon_ranks ).spell_id ) );
   buff.rockbiter_weapon = make_buff<stat_buff_t>(
-      this, "rockbiter_weapon", find_spell( max_rank( this, rockbiter_weapon_ranks ).passive_id ) );
+      this, "rockbiter_weapon", find_spell( find_rank( rockbiter_weapon_ranks ).passive_id ) );
 
   buff.strength_of_earth = make_buff<stat_buff_t>(
-      this, "strength_of_earth", find_spell( max_rank( this, strength_of_earth_totem_ranks ).aura_id ) )
-    ->set_duration( find_spell( max_rank( this, strength_of_earth_totem_ranks ).spell_id )->duration() );
+      this, "strength_of_earth", find_spell( find_rank( strength_of_earth_totem_ranks ).aura_id ) )
+    ->set_duration( find_spell( find_rank( strength_of_earth_totem_ranks ).spell_id )->duration() );
 }
 
 void shaman_t::create_actions()

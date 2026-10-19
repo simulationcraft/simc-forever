@@ -98,6 +98,23 @@ public:
   virtual void html_customsection(report::sc_html_stream&) = 0;
 };
 
+/* Spell rank tables
+ *
+ * Spell rank tables group related spells together by rank to make it easier to connect auras/drivers/etc related
+ * to a primary spell. The basic version just has a single spell_id but it's easy to make custom versions with
+ * related spells.
+ */
+struct spell_rank_t
+{
+  unsigned spell_id;
+};
+
+enum spell_rank_e : int
+{
+  RANK_MAX_USABLE = 0,  // highest rank usable at the player level
+  RANK_MAX        = -1, // highest rank in the table
+};
+
 struct player_t : public actor_t
 {
   static const int default_level = MAX_LEVEL;
@@ -735,6 +752,35 @@ public:
   const spell_data_t* find_spell( util::string_view name, specialization_e s = SPEC_NONE ) const;
   const spell_data_t* find_spell( unsigned int id, specialization_e s ) const;
   const spell_data_t* find_spell( unsigned int id ) const;
+
+  template <typename RANKS>
+  auto find_rank( const RANKS& ranks, int rank = RANK_MAX_USABLE ) const
+  {
+    typename RANKS::value_type best {};
+
+    if ( rank == RANK_MAX )
+      return ranks.back();
+
+    if ( rank > 0 )
+    {
+      if ( static_cast<size_t>( rank ) <= ranks.size() )
+        best = ranks[ rank - 1 ];
+      return best;
+    }
+
+    unsigned best_level = 0;
+    for ( const auto& entry : ranks )
+    {
+      auto spell = find_spell( entry.spell_id );
+      if ( spell->ok() && spell->level() >= best_level )
+      {
+        best       = entry;
+        best_level = spell->level();
+      }
+    }
+
+    return best;
+  }
 
   pet_t*      find_pet( util::string_view name ) const;
   item_t*     find_item_by_name( util::string_view name );
