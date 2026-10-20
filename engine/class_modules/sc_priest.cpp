@@ -10,6 +10,25 @@
 
 namespace priestspace
 {
+struct priest_t;
+
+struct priest_td_t final : public actor_target_data_t
+{
+  struct debuffs_t
+  {
+    buff_t* shadow_weaving = nullptr;
+  } debuffs;
+
+  priest_td_t( player_t* target, priest_t& p );
+};
+
+// utility to create target_effect_t compatible functions from priest_td_t member references
+template <typename T>
+static std::function<int( actor_target_data_t* )> d_fn( T d )
+{
+  return [ d ]( actor_target_data_t* t ) { return std::invoke( d, static_cast<priest_td_t*>( t )->debuffs )->check(); };
+}
+
 struct priest_t final : public parse_player_effects_t
 {
   priest_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) :
@@ -21,6 +40,10 @@ struct priest_t final : public parse_player_effects_t
   void init_spells() override;
   void create_buffs() override;
   void parse_action_effects( action_t* );
+
+  void init_special_effects() override;
+
+  priest_td_t* get_target_data( player_t* target ) const override;
 
   std::string default_potion() const override   { return priest_apl::potion( this ); }
   std::string default_flask() const override    { return priest_apl::flask( this ); }
@@ -37,9 +60,23 @@ struct priest_t final : public parse_player_effects_t
   struct talents_t
   {
     player_talent_t mind_flay;
+    player_talent_t shadow_weaving;
     player_talent_t shadowform;
   } talent;
+
+  struct spells_t
+  {
+    const spell_data_t* shadow_weaving = spell_data_t::nil();
+  } spell;
+
+private:
+  target_specific_t<priest_td_t> _target_data;
 };
+
+priest_td_t::priest_td_t( player_t* target, priest_t& p ) : actor_target_data_t( target, &p )
+{
+  debuffs.shadow_weaving = make_buff( *this, "shadow_weaving", p.spell.shadow_weaving );
+}
 
 struct priest_module_t final : public module_t
 {
@@ -104,8 +141,11 @@ void priest_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
-  talent.mind_flay  = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
-  talent.shadowform = find_talent_spell( talent_tree::CLASS, "Shadowform" );
+  talent.mind_flay      = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
+  talent.shadow_weaving = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
+  talent.shadowform     = find_talent_spell( talent_tree::CLASS, "Shadowform" );
+
+  spell.shadow_weaving = talent.shadow_weaving->effectN( 1 ).trigger();
 }
 
 void priest_t::create_buffs()
@@ -115,6 +155,44 @@ void priest_t::create_buffs()
   buff.shadowform = make_buff( this, "shadowform", talent.shadowform );
 
   parse_effects( buff.shadowform );
+  parse_target_effects( d_fn( &priest_td_t::debuffs_t::shadow_weaving ), spell.shadow_weaving );
+}
+
+priest_td_t* priest_t::get_target_data( player_t* target ) const
+{
+  priest_td_t*& td = _target_data[ target ];
+  if ( !td )
+  {
+    td = new priest_td_t( target, const_cast<priest_t&>( *this ) );
+  }
+  return td;
+}
+
+void priest_t::init_special_effects()
+{
+  using trigger_type = dbc_proc_callback_t::trigger_fn_type;
+
+  if ( talent.shadow_weaving.ok() )
+  {
+    const auto driver    = new special_effect_t( this );
+    driver->name_str     = talent.shadow_weaving->name_cstr();
+    driver->spell_id     = talent.shadow_weaving->id();
+    driver->proc_chance_ = talent.shadow_weaving->effectN( 1 ).percent();
+    special_effects.push_back( driver );
+
+    callbacks.register_callback_trigger_function(
+      driver->spell_id, trigger_type::CONDITION, []( auto, auto, auto, const action_state_t* s, auto ) {
+        return dbc::is_school( s->action->get_school(), SCHOOL_SHADOW );
+      } );
+
+    callbacks.register_callback_execute_function( driver->spell_id, [ this ]( auto, auto, player_t* t, auto ) {
+      get_target_data( t )->debuffs.shadow_weaving->trigger();
+    } );
+
+    new dbc_proc_callback_t( this, *driver );
+  }
+
+  parse_player_effects_t::init_special_effects();
 }
 
 void priest_t::parse_action_effects( action_t* action )
