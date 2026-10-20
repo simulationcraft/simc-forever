@@ -64,6 +64,7 @@ struct priest_t final : public parse_player_effects_t
     player_talent_t mind_flay;
     player_talent_t shadow_weaving;
     player_talent_t shadowform;
+    player_talent_t wand_specialization;
   } talent;
 
   struct spells_t
@@ -147,6 +148,11 @@ void priest_t::init_spells()
   talent.mind_flay      = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
   talent.shadow_weaving = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
   talent.shadowform     = find_talent_spell( talent_tree::CLASS, "Shadowform" );
+
+  // Wand only, all schools because wand damage can be any school
+  // TODO: Apply to the wand auto attack once implemented
+  talent.wand_specialization = find_talent_spell( talent_tree::CLASS, "Wand Specialization" );
+  deregister_passive_spell( talent.wand_specialization );
 
   spell.shadow_weaving = talent.shadow_weaving->effectN( 1 ).trigger();
 }
