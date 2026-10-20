@@ -22,6 +22,7 @@ struct gear_stats_t
   std::array<double, RESOURCE_MAX> resource;
   double spell_power;
   double attack_power;
+  double ranged_attack_power;
   double expertise_rating;
   double expertise_rating2;
   double hit_rating;
@@ -51,6 +52,7 @@ struct gear_stats_t
       resource(),
       spell_power( 0.0 ),
       attack_power( 0.0 ),
+      ranged_attack_power( 0.0 ),
       expertise_rating( 0.0 ),
       expertise_rating2( 0.0 ),
       hit_rating( 0.0 ),
@@ -84,6 +86,7 @@ struct gear_stats_t
 
     spell_power = initializer;
     attack_power = initializer;
+    ranged_attack_power = initializer;
     expertise_rating = initializer;
     expertise_rating2 = initializer;
     hit_rating = initializer;
@@ -119,6 +122,7 @@ struct gear_stats_t
   {
     spell_power += right.spell_power;
     attack_power += right.attack_power;
+    ranged_attack_power += right.ranged_attack_power;
     expertise_rating += right.expertise_rating;
     expertise_rating2 += right.expertise_rating2;
     hit_rating += right.hit_rating;

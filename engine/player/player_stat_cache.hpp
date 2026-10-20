@@ -49,6 +49,7 @@ private:
   mutable double _strength, _agility, _stamina, _intellect, _spirit;
   mutable std::array<double, SCHOOL_MAX + 1> _spell_power;
   mutable double  _attack_power;
+  mutable double  _ranged_attack_power;
   mutable std::array<double, static_cast<unsigned>( attack_power_type::NONE )> _weapon_attack_power;
   mutable double _attack_expertise;
   mutable double _attack_hit, _spell_hit;
@@ -77,6 +78,7 @@ public:
   double spirit() const;
   double spell_power( school_e ) const;
   double attack_power() const;
+  double ranged_attack_power() const;
   double weapon_attack_power( attack_power_type ) const;
   double attack_expertise() const;
   double attack_hit() const;
@@ -111,6 +113,7 @@ public:
   double spirit() const { return _player->spirit(); }
   double spell_power( school_e s ) const { return _player->composite_spell_power( s ); }
   double attack_power() const { return _player->composite_melee_attack_power(); }
+  double ranged_attack_power() const { return _player->composite_ranged_attack_power(); }
   double weapon_attack_power( attack_power_type t ) const { return _player->composite_weapon_attack_power_by_type( t ); }
   double attack_expertise() const { return _player->composite_melee_expertise(); }
   double attack_hit() const { return _player->composite_melee_hit(); }

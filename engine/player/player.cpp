@@ -1248,6 +1248,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   attack_power_per_strength( 0 ),
   attack_power_per_agility( 0 ),
   attack_power_per_spell_power( 0 ),
+  ranged_attack_power_per_agility( 0 ),
   dodge_per_agility( 0 ),
   parry_per_strength( 0 ),
   parry_rating_per_crit_rating( 0 ),
@@ -1286,6 +1287,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   rating_multiplier(),
   spell_power_multiplier( 1.0 ),
   attack_power_multiplier( 1.0 ),
+  ranged_attack_power_multiplier( 1.0 ),
   base_armor_multiplier( 1.0 ),
   armor_multiplier( 1.0 ),
   crit_damage_multiplier(),
@@ -1319,6 +1321,7 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
   fmt::format_to( out, " attack_power_per_strength={:.6g}", s.attack_power_per_strength );
   fmt::format_to( out, " attack_power_per_agility={:.6g}", s.attack_power_per_agility );
   fmt::format_to( out, " attack_power_per_spell_power={:.6g}", s.attack_power_per_spell_power );
+  fmt::format_to( out, " ranged_attack_power_per_agility={:.6g}", s.ranged_attack_power_per_agility );
   fmt::format_to( out, " dodge_per_agility={:.6g}", s.dodge_per_agility );
   fmt::format_to( out, " parry_per_strength={:.6g}", s.parry_per_strength );
   fmt::format_to( out, " parry_rating_per_crit_rating={:.6g}", s.parry_rating_per_crit_rating );
@@ -1356,6 +1359,7 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
 
   fmt::format_to( out, " spell_power_multiplier={:.6g}", s.spell_power_multiplier );
   fmt::format_to( out, " attack_power_multiplier={:.6g}", s.attack_power_multiplier );
+  fmt::format_to( out, " ranged_attack_power_multiplier={:.6g}", s.ranged_attack_power_multiplier );
   fmt::format_to( out, " base_armor_multiplier={:.6g}", s.base_armor_multiplier );
   fmt::format_to( out, " armor_multiplier={:.6g}", s.armor_multiplier );
   for ( auto school = SCHOOL_NONE; school < SCHOOL_MAX_PRIMARY; ++school )
@@ -1543,6 +1547,7 @@ void player_t::init_base_stats()
     base.attack_speed_multiplier /= get_passive_player_value( attack_speed_multiplier, "attack_speed" );
     base.attack_speed_multiplier *= get_passive_player_value( attack_speed_multiplier, "attack_speed_modifier" );
     base.attack_power_multiplier = get_passive_player_value( base.attack_power_multiplier, "attack_power_multiplier" );
+    base.ranged_attack_power_multiplier = get_passive_player_value( base.ranged_attack_power_multiplier, "ranged_attack_power_multiplier" );
 
     base.absorb_multiplier       = get_passive_player_value( base.absorb_multiplier, "absorb_multiplier" );
     base.healing_multiplier      = get_passive_player_value( base.healing_multiplier, "healing_multiplier" );
@@ -3426,6 +3431,8 @@ void player_t::init_scaling()
 
     scaling->set( STAT_SPELL_POWER, spell );
     scaling->set( STAT_ATTACK_POWER, attack );
+    // TODO Forever: Limit this to hunters
+    scaling->set( STAT_RANGED_ATTACK_POWER, attack );
     scaling->enable( STAT_CRIT_RATING );
     scaling->enable( STAT_HASTE_RATING );
 
@@ -3472,6 +3479,10 @@ void player_t::init_scaling()
 
         case STAT_ATTACK_POWER:
           add_stat( initial.stats.attack_power, v, 0 );
+          break;
+
+        case STAT_RANGED_ATTACK_POWER:
+          add_stat( initial.stats.ranged_attack_power, v, 0 );
           break;
 
         case STAT_CRIT_RATING:
@@ -4425,6 +4436,15 @@ double player_t::composite_melee_attack_power() const
   return ap;
 }
 
+double player_t::composite_ranged_attack_power() const
+{
+  double ap = current.stats.ranged_attack_power;
+
+  ap += current.ranged_attack_power_per_agility * cache.agility();
+
+  return ap;
+}
+
 double player_t::composite_weapon_attack_power_by_type( attack_power_type ap_type ) const
 {
   double wdps = 0;
@@ -4500,6 +4520,11 @@ double player_t::composite_total_attack_power_by_type( attack_power_type ap_type
     return std::round( current.attack_power_per_spell_power * sp );
   }
 
+  if ( ap_type == attack_power_type::RANGED )
+  {
+    return std::round( cache.ranged_attack_power() * composite_ranged_attack_power_multiplier() );
+  }
+
   auto mul = composite_attack_power_multiplier();
 
   // total attack power is rounded to integer
@@ -4516,6 +4541,22 @@ double player_t::composite_attack_power_multiplier() const
   double m = current.attack_power_multiplier;
 
   m *= 1.0 + sim->auras.battle_shout->check_value();
+
+  // multiplier is rounded to 3 digits
+  return std::round( m * 1000 ) * 0.001;
+}
+
+double player_t::composite_ranged_attack_power_multiplier() const
+{
+  if ( is_pet() || is_enemy() || type == HEALING_ENEMY || current.attack_power_per_spell_power > 0 )
+  {
+    return 1.0;
+  }
+
+  double m = current.ranged_attack_power_multiplier;
+
+  // TODO Forever: Trueshot aura?
+  // TODO Forever: Hunter's mark?
 
   // multiplier is rounded to 3 digits
   return std::round( m * 1000 ) * 0.001;
@@ -5205,6 +5246,8 @@ void player_t::invalidate_cache( cache_e c )
     case CACHE_AGILITY:
       if ( current.attack_power_per_agility > 0 )
         invalidate_cache( CACHE_ATTACK_POWER );
+      if ( current.ranged_attack_power_per_agility > 0 )
+        invalidate_cache( CACHE_RANGED_ATTACK_POWER );
       if ( current.dodge_per_agility > 0 )
         invalidate_cache( CACHE_DODGE );
       if ( current.attack_crit_per_agility > 0 )
@@ -5244,6 +5287,8 @@ void player_t::invalidate_cache( cache_e c )
       if( current.parry_rating_per_crit_rating > 0 )
         invalidate_cache( CACHE_PARRY );
       break;
+
+    // TODO Forever: Do we need cases for AP and RAP?
 
     default:
       break;
@@ -6654,6 +6699,8 @@ double player_t::get_stat_value(stat_e stat)
     return cache.spell_power( SCHOOL_NONE );
   case STAT_ATTACK_POWER:
     return cache.attack_power();
+  case STAT_RANGED_ATTACK_POWER:
+    return cache.ranged_attack_power();
   case STAT_CRIT_RATING:
     return composite_melee_crit_rating();
   case STAT_HASTE_RATING:
@@ -7005,6 +7052,7 @@ void player_t::stat_gain( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
     case STAT_ATTACK_POWER:
+    case STAT_RANGED_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
     case STAT_HIT_RATING:
     case STAT_CRIT_RATING:
@@ -7164,6 +7212,7 @@ void player_t::stat_loss( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
     case STAT_ATTACK_POWER:
+    case STAT_RANGED_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
     case STAT_HIT_RATING:
     case STAT_CRIT_RATING:
@@ -11202,6 +11251,13 @@ std::unique_ptr<expr_t> player_t::create_expression( util::string_view expressio
           } );
         }
 
+        case STAT_RANGED_ATTACK_POWER:
+        {
+          return make_fn_expr( expression_str, [ this ] {
+            return static_cast<int>( cache.ranged_attack_power() * composite_ranged_attack_power_multiplier() );
+          } );
+        }
+
         case STAT_EXPERTISE_RATING:
           return make_mem_fn_expr( expression_str, *this, &player_t::composite_expertise_rating );
         case STAT_HIT_RATING:
@@ -12093,6 +12149,9 @@ std::string player_t::create_profile( save_e stype )
     if ( enchant.attack_power != 0 )
       profile_str += "enchant_attack_power=" + util::to_string( enchant.attack_power ) + term;
 
+    if ( enchant.ranged_attack_power != 0 )
+      profile_str += "enchant_ranged_attack_power=" + util::to_string( enchant.ranged_attack_power ) + term;
+
     if ( enchant.expertise_rating != 0 )
       profile_str += "enchant_expertise_rating=" + util::to_string( enchant.expertise_rating ) + term;
 
@@ -12314,6 +12373,7 @@ void player_t::create_options()
   add_option( opt_float( "gear_spirit", gear.attribute[ ATTR_SPIRIT ] ) );
   add_option( opt_float( "gear_spell_power", gear.spell_power ) );
   add_option( opt_float( "gear_attack_power", gear.attack_power ) );
+  add_option( opt_float( "gear_ranged_attack_power", gear.ranged_attack_power ) );
   add_option( opt_float( "gear_expertise_rating", gear.expertise_rating ) );
   add_option( opt_float( "gear_haste_rating", gear.haste_rating ) );
   add_option( opt_float( "gear_hit_rating", gear.hit_rating ) );
@@ -12341,6 +12401,7 @@ void player_t::create_options()
   add_option( opt_float( "enchant_spirit", enchant.attribute[ ATTR_SPIRIT ] ) );
   add_option( opt_float( "enchant_spell_power", enchant.spell_power ) );
   add_option( opt_float( "enchant_attack_power", enchant.attack_power ) );
+  add_option( opt_float( "enchant_ranged_attack_power", enchant.ranged_attack_power ) );
   add_option( opt_float( "enchant_expertise_rating", enchant.expertise_rating ) );
   add_option( opt_float( "enchant_armor", enchant.armor ) );
   add_option( opt_float( "enchant_haste_rating", enchant.haste_rating ) );
@@ -13955,6 +14016,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_BASE_RESISTANCE_PCT,                "base_armor_multiplier"            },  // 142
   { A_MOD_CRIT_DAMAGE_MULTIPLIER,             "crit_damage_multiplier"           },  // 163
   { A_MOD_ATTACK_POWER_PCT,                   "attack_power_multiplier",         },  // 166
+  { A_MOD_RANGED_ATTACK_POWER_PCT,            "ranged_attack_power_multiplier",  },  // 167
   { A_MOD_RECHARGE_TIME_PCT_CATEGORY_MASK,    "charge_cooldown"                  },  // 173
   { A_MOD_MAX_MANA_PCT,                       "resource_multiplier"              },  // 178
   { A_MOD_ATTACKER_MELEE_CRIT_CHANCE,         "crit_avoidance"                   },  // 187
@@ -14310,6 +14372,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_HEALING_DONE_PERCENT:  // 136
       case A_MOD_CRIT_DAMAGE_MULTIPLIER:  // 163
       case A_MOD_ATTACK_POWER_PCT:  // 166
+      case A_MOD_RANGED_ATTACK_POWER_PCT:  // 167
       case A_HASTE_ALL:  // 193
       case A_MOD_MECHANIC_DAMAGE_DONE_PERCENT:  // 276
       case A_MOD_MELEE_AUTO_ATTACK_SPEED:  // 319

@@ -44,6 +44,9 @@ enum class attack_power_type : unsigned
   // Attack power is purely based on player power (main stat)
   NO_WEAPON,
 
+  // Attack power is a composite of RAP and ranged weapon DPS
+  RANGED,
+
   // Let SimC figure out BfA attack power mode based on information assigned to the action object.
   NONE,
 
@@ -841,6 +844,7 @@ enum stat_e
   STAT_MAX_RUNIC,
   STAT_SPELL_POWER,
   STAT_ATTACK_POWER,
+  STAT_RANGED_ATTACK_POWER,
   STAT_EXPERTISE_RATING,
   STAT_EXPERTISE_RATING2,
   STAT_HIT_RATING,
@@ -945,6 +949,7 @@ enum cache_e
   CACHE_STR_AGI_INT,
   CACHE_SPELL_POWER,
   CACHE_ATTACK_POWER,
+  CACHE_RANGED_ATTACK_POWER,
   CACHE_WEAPON_DPS,
   CACHE_EXP,
   CACHE_ATTACK_EXP,
@@ -1023,6 +1028,8 @@ inline cache_e cache_from_stat( stat_e st )
         return CACHE_SPELL_POWER;
       case STAT_ATTACK_POWER:
         return CACHE_ATTACK_POWER;
+      case STAT_RANGED_ATTACK_POWER:
+        return CACHE_RANGED_ATTACK_POWER;
       case STAT_WEAPON_DPS:
       case STAT_WEAPON_OFFHAND_DPS:
         return CACHE_WEAPON_DPS;

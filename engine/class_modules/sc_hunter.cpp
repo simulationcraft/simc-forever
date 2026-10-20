@@ -7,6 +7,10 @@
 #include "action/parse_effects.hpp"
 #include "class_modules/apl/hunter.hpp"
 
+// TODO: Default to max distance
+// TODO: ItemDamageRanged for ranged weapon damage multipliers
+// TODO: Does "plain" +Attack Power contribute to RAP?
+
 namespace
 {
 // =========================================================================
@@ -66,10 +70,7 @@ struct hunter_ranged_attack_t : public hunter_ranged_t
 
     background        = true;
     repeating         = true;
-    may_glance        = false;
     may_crit          = true;
-    may_dodge         = false;
-    may_parry         = false;
     special           = false;
   }
 };
@@ -77,7 +78,7 @@ struct hunter_ranged_attack_t : public hunter_ranged_t
 struct hunter_auto_shot_t : public hunter_ranged_t
 {
   hunter_auto_shot_t( hunter_t* p, util::string_view options_str )
-    : hunter_ranged_t( "auto_shot", p, spell_data_t::nil() )
+    : hunter_ranged_t( "auto_shot", p, p->find_spell( 75 ) )
   {
     parse_options( options_str );
 
@@ -88,6 +89,8 @@ struct hunter_auto_shot_t : public hunter_ranged_t
 
     p->ranged_attack = new hunter_ranged_attack_t( "auto_shot", p );
   }
+
+  // TODO: Copy midnight's immediate first shot
 
   void execute() override
   {
@@ -107,7 +110,17 @@ struct hunter_auto_shot_t : public hunter_ranged_t
 
 void hunter_t::init_base_stats()
 {
+  base.attack_power_per_strength = 1.0;
+  base.attack_power_per_agility  = 1.0;
+
+  base.ranged_attack_power_per_agility = 2.0;
+
   player_t::init_base_stats();
+
+  base.attack_crit_chance = 0;
+
+  base.stats.attack_power        = 2.0 * level() - 20.0;
+  base.stats.ranged_attack_power = 2.0 * level() - 20.0;
 }
 
 action_t* hunter_t::create_action( util::string_view name, util::string_view options_str )

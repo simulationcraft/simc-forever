@@ -3335,8 +3335,6 @@ stat_buff_t::stat_buff_t( actor_pair_t q, util::string_view name, const spell_da
     stat_gain( player->get_gain( fmt::format( "{}_buff", name ) ) ),  // append _buff for now to check usage
     manual_stats_added( false )
 {
-  bool has_ap = false;
-
   for ( size_t i = 1; i <= data().effect_count(); i++ )
   {
     stat_e s                         = STAT_NONE;
@@ -3380,10 +3378,13 @@ stat_buff_t::stat_buff_t( actor_pair_t q, util::string_view name, const spell_da
     {
       s = STAT_BONUS_ARMOR;
     }
-    else if ( !has_ap && ( effect.subtype() == A_MOD_ATTACK_POWER || effect.subtype() == A_MOD_RANGED_ATTACK_POWER ) )
+    else if ( effect.subtype() == A_MOD_ATTACK_POWER )
     {
       s      = STAT_ATTACK_POWER;
-      has_ap = true;
+    }
+    else if ( effect.subtype() == A_MOD_RANGED_ATTACK_POWER )
+    {
+      s      = STAT_RANGED_ATTACK_POWER;
     }
     else if ( effect.subtype() == A_MOD_INCREASE_HEALTH_2 || effect.subtype() == A_MOD_INCREASE_HEALTH )
     {

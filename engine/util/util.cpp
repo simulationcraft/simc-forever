@@ -260,6 +260,10 @@ double util::stat_value( const player_t* p, stat_e stat )
     {
       v -= p->sim->scaling->scale_value * p->composite_attack_power_multiplier();
     }
+    else if ( stat == STAT_RANGED_ATTACK_POWER )
+    {
+      v -= p->sim->scaling->scale_value * p->composite_ranged_attack_power_multiplier();
+    }
   }
 
   return v;
@@ -1254,6 +1258,7 @@ const char* util::cache_type_string( cache_e c )
     case CACHE_SPIRIT:                   return "spirit";
     case CACHE_SPELL_POWER:              return "spell_power";
     case CACHE_ATTACK_POWER:             return "attack_power";
+    case CACHE_RANGED_ATTACK_POWER:      return "ranged_attack_power";
     case CACHE_WEAPON_DPS:               return "weapon_dps";
     case CACHE_EXP:                      return "expertise";
     case CACHE_ATTACK_EXP:               return "attack_expertise";
@@ -1421,6 +1426,7 @@ const char* util::stat_type_string( stat_e stat )
     case STAT_SPELL_POWER:       return "spell_power";
 
     case STAT_ATTACK_POWER:             return "attack_power";
+    case STAT_RANGED_ATTACK_POWER:      return "ranged_attack_power";
     case STAT_EXPERTISE_RATING:         return "expertise_rating";
     case STAT_EXPERTISE_RATING2:        return "inverse_expertise_rating";
 
@@ -1507,6 +1513,7 @@ const char* util::stat_type_abbrev( stat_e stat )
     case STAT_SPELL_POWER:       return "SP";
 
     case STAT_ATTACK_POWER:             return "AP";
+    case STAT_RANGED_ATTACK_POWER:      return "RAP";
     case STAT_EXPERTISE_RATING:         return "Exp";
     case STAT_EXPERTISE_RATING2:        return "InvExp";
 
@@ -1569,6 +1576,8 @@ const char* util::stat_type_wowhead( stat_e stat )
     case STAT_SPELL_POWER:       return "spellPower";
 
     case STAT_ATTACK_POWER:             return "attackPower";
+    // TODO Forever: Not sure how to verify this
+    case STAT_RANGED_ATTACK_POWER:      return "rangedAttackPower";
     case STAT_EXPERTISE_RATING:         return "expertiseRating";
 
     case STAT_HIT_RATING:   return "hitRating";
@@ -2052,34 +2061,34 @@ stat_e util::translate_item_mod( int item_mod )
 {
   switch ( item_mod )
   {
-    case ITEM_MOD_AGILITY:             return STAT_AGILITY;
-    case ITEM_MOD_STRENGTH:            return STAT_STRENGTH;
-    case ITEM_MOD_INTELLECT:           return STAT_INTELLECT;
-    case ITEM_MOD_SPIRIT:              return STAT_SPIRIT;
-    case ITEM_MOD_STAMINA:             return STAT_STAMINA;
-    case ITEM_MOD_DODGE_RATING:        return STAT_DODGE_RATING;
-    case ITEM_MOD_PARRY_RATING:        return STAT_PARRY_RATING;
-    case ITEM_MOD_BLOCK_RATING:        return STAT_BLOCK_RATING;
-    case ITEM_MOD_HIT_RATING:          return STAT_HIT_RATING;
-    case ITEM_MOD_CRIT_RATING:         return STAT_CRIT_RATING;
-    case ITEM_MOD_HASTE_RATING:        return STAT_HASTE_RATING;
-    case ITEM_MOD_EXPERTISE_RATING:    return STAT_EXPERTISE_RATING;
-    case ITEM_MOD_ATTACK_POWER:        return STAT_ATTACK_POWER;
-    case ITEM_MOD_RANGED_ATTACK_POWER: return STAT_ATTACK_POWER;
-    case ITEM_MOD_SPELL_POWER:         return STAT_SPELL_POWER;
-    case ITEM_MOD_EXTRA_ARMOR:         return STAT_BONUS_ARMOR;
-    case ITEM_MOD_RESILIENCE_RATING:   return STAT_RESILIENCE_RATING;
-    case ITEM_MOD_PVP_POWER:           return STAT_PVP_POWER;
+    case ITEM_MOD_AGILITY:                    return STAT_AGILITY;
+    case ITEM_MOD_STRENGTH:                   return STAT_STRENGTH;
+    case ITEM_MOD_INTELLECT:                  return STAT_INTELLECT;
+    case ITEM_MOD_SPIRIT:                     return STAT_SPIRIT;
+    case ITEM_MOD_STAMINA:                    return STAT_STAMINA;
+    case ITEM_MOD_DODGE_RATING:               return STAT_DODGE_RATING;
+    case ITEM_MOD_PARRY_RATING:               return STAT_PARRY_RATING;
+    case ITEM_MOD_BLOCK_RATING:               return STAT_BLOCK_RATING;
+    case ITEM_MOD_HIT_RATING:                 return STAT_HIT_RATING;
+    case ITEM_MOD_CRIT_RATING:                return STAT_CRIT_RATING;
+    case ITEM_MOD_HASTE_RATING:               return STAT_HASTE_RATING;
+    case ITEM_MOD_EXPERTISE_RATING:           return STAT_EXPERTISE_RATING;
+    case ITEM_MOD_ATTACK_POWER:               return STAT_ATTACK_POWER;
+    case ITEM_MOD_RANGED_ATTACK_POWER:        return STAT_RANGED_ATTACK_POWER;
+    case ITEM_MOD_SPELL_POWER:                return STAT_SPELL_POWER;
+    case ITEM_MOD_EXTRA_ARMOR:                return STAT_BONUS_ARMOR;
+    case ITEM_MOD_RESILIENCE_RATING:          return STAT_RESILIENCE_RATING;
+    case ITEM_MOD_PVP_POWER:                  return STAT_PVP_POWER;
     case ITEM_MOD_STRENGTH_AGILITY_INTELLECT: return STAT_STR_AGI_INT;
-    case ITEM_MOD_AGILITY_INTELLECT:   return STAT_AGI_INT;
-    case ITEM_MOD_STRENGTH_AGILITY:    return STAT_STR_AGI;
-    case ITEM_MOD_STRENGTH_INTELLECT:  return STAT_STR_INT;
-    case ITEM_MOD_LEECH_RATING:        return STAT_LEECH_RATING;
-    case ITEM_MOD_SPEED_RATING:        return STAT_SPEED_RATING;
-    case ITEM_MOD_AVOIDANCE_RATING:    return STAT_AVOIDANCE_RATING;
-    case ITEM_MOD_CORRUPTION:          return STAT_CORRUPTION;
-    case ITEM_MOD_CORRUPTION_RESISTANCE: return STAT_CORRUPTION_RESISTANCE;
-    default:                           return STAT_NONE;
+    case ITEM_MOD_AGILITY_INTELLECT:          return STAT_AGI_INT;
+    case ITEM_MOD_STRENGTH_AGILITY:           return STAT_STR_AGI;
+    case ITEM_MOD_STRENGTH_INTELLECT:         return STAT_STR_INT;
+    case ITEM_MOD_LEECH_RATING:               return STAT_LEECH_RATING;
+    case ITEM_MOD_SPEED_RATING:               return STAT_SPEED_RATING;
+    case ITEM_MOD_AVOIDANCE_RATING:           return STAT_AVOIDANCE_RATING;
+    case ITEM_MOD_CORRUPTION:                 return STAT_CORRUPTION;
+    case ITEM_MOD_CORRUPTION_RESISTANCE:      return STAT_CORRUPTION_RESISTANCE;
+    default:                                  return STAT_NONE;
   }
 }
 
@@ -2087,32 +2096,33 @@ int util::translate_stat( stat_e stat )
 {
   switch ( stat )
   {
-    case STAT_AGILITY:            return ITEM_MOD_AGILITY;
-    case STAT_STRENGTH:           return ITEM_MOD_STRENGTH;
-    case STAT_INTELLECT:          return ITEM_MOD_INTELLECT;
-    case STAT_SPIRIT:             return ITEM_MOD_SPIRIT;
-    case STAT_STAMINA:            return ITEM_MOD_STAMINA;
-    case STAT_DODGE_RATING:       return ITEM_MOD_DODGE_RATING;
-    case STAT_PARRY_RATING:       return ITEM_MOD_PARRY_RATING;
-    case STAT_HIT_RATING:         return ITEM_MOD_HIT_RATING;
-    case STAT_CRIT_RATING:        return ITEM_MOD_CRIT_RATING;
-    case STAT_HASTE_RATING:       return ITEM_MOD_HASTE_RATING;
-    case STAT_EXPERTISE_RATING:   return ITEM_MOD_EXPERTISE_RATING;
-    case STAT_ATTACK_POWER:       return ITEM_MOD_ATTACK_POWER;
-    case STAT_SPELL_POWER:        return ITEM_MOD_SPELL_POWER;
-    case STAT_BONUS_ARMOR:        return ITEM_MOD_EXTRA_ARMOR;
-    case STAT_RESILIENCE_RATING:  return ITEM_MOD_RESILIENCE_RATING;
-    case STAT_PVP_POWER:          return ITEM_MOD_PVP_POWER;
-    case STAT_STR_AGI_INT:        return ITEM_MOD_STRENGTH_AGILITY_INTELLECT;
-    case STAT_AGI_INT:            return ITEM_MOD_AGILITY_INTELLECT;
-    case STAT_STR_AGI:            return ITEM_MOD_STRENGTH_AGILITY;
-    case STAT_STR_INT:            return ITEM_MOD_STRENGTH_INTELLECT;
-    case STAT_LEECH_RATING:       return ITEM_MOD_LEECH_RATING;
-    case STAT_SPEED_RATING:       return ITEM_MOD_SPEED_RATING;
-    case STAT_AVOIDANCE_RATING:   return ITEM_MOD_AVOIDANCE_RATING;
-    case STAT_CORRUPTION:         return ITEM_MOD_CORRUPTION;
+    case STAT_AGILITY:               return ITEM_MOD_AGILITY;
+    case STAT_STRENGTH:              return ITEM_MOD_STRENGTH;
+    case STAT_INTELLECT:             return ITEM_MOD_INTELLECT;
+    case STAT_SPIRIT:                return ITEM_MOD_SPIRIT;
+    case STAT_STAMINA:               return ITEM_MOD_STAMINA;
+    case STAT_DODGE_RATING:          return ITEM_MOD_DODGE_RATING;
+    case STAT_PARRY_RATING:          return ITEM_MOD_PARRY_RATING;
+    case STAT_HIT_RATING:            return ITEM_MOD_HIT_RATING;
+    case STAT_CRIT_RATING:           return ITEM_MOD_CRIT_RATING;
+    case STAT_HASTE_RATING:          return ITEM_MOD_HASTE_RATING;
+    case STAT_EXPERTISE_RATING:      return ITEM_MOD_EXPERTISE_RATING;
+    case STAT_ATTACK_POWER:          return ITEM_MOD_ATTACK_POWER;
+    case STAT_RANGED_ATTACK_POWER:   return ITEM_MOD_RANGED_ATTACK_POWER;
+    case STAT_SPELL_POWER:           return ITEM_MOD_SPELL_POWER;
+    case STAT_BONUS_ARMOR:           return ITEM_MOD_EXTRA_ARMOR;
+    case STAT_RESILIENCE_RATING:     return ITEM_MOD_RESILIENCE_RATING;
+    case STAT_PVP_POWER:             return ITEM_MOD_PVP_POWER;
+    case STAT_STR_AGI_INT:           return ITEM_MOD_STRENGTH_AGILITY_INTELLECT;
+    case STAT_AGI_INT:               return ITEM_MOD_AGILITY_INTELLECT;
+    case STAT_STR_AGI:               return ITEM_MOD_STRENGTH_AGILITY;
+    case STAT_STR_INT:               return ITEM_MOD_STRENGTH_INTELLECT;
+    case STAT_LEECH_RATING:          return ITEM_MOD_LEECH_RATING;
+    case STAT_SPEED_RATING:          return ITEM_MOD_SPEED_RATING;
+    case STAT_AVOIDANCE_RATING:      return ITEM_MOD_AVOIDANCE_RATING;
+    case STAT_CORRUPTION:            return ITEM_MOD_CORRUPTION;
     case STAT_CORRUPTION_RESISTANCE: return ITEM_MOD_CORRUPTION_RESISTANCE;
-    default:                      return ITEM_MOD_NONE;
+    default:                         return ITEM_MOD_NONE;
   }
 }
 
@@ -3202,8 +3212,11 @@ void util::fuzzy_stats( std::string&      encoding,
 
   stat_search( encoding, splits, STAT_SPELL_POWER, "spell power" );
 
-  stat_search( encoding, splits, STAT_ATTACK_POWER,     "attack power" );
-  stat_search( encoding, splits, STAT_EXPERTISE_RATING, "expertise rating" );
+  stat_search( encoding, splits, STAT_ATTACK_POWER,        "attack power" );
+  // TODO Forever: I think this is very old code that doesn't atually get used but need to be careful
+  // since "attack power" would string match "ranged attack power"
+  stat_search( encoding, splits, STAT_RANGED_ATTACK_POWER, "ranged attack power" );
+  stat_search( encoding, splits, STAT_EXPERTISE_RATING,    "expertise rating" );
 
   stat_search( encoding, splits, STAT_HASTE_RATING,     "haste" );
   stat_search( encoding, splits, STAT_HASTE_RATING,     "haste rating" );
