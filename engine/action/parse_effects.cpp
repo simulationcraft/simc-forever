@@ -1087,17 +1087,14 @@ double parse_player_effects_t::stacking_movement_modifier() const
   return m;
 }
 
-double parse_player_effects_t::resource_regen_per_second( resource_e r ) const
+double parse_player_effects_t::composite_mana_regen_while_casting() const
 {
-  auto reg = player_t::resource_regen_per_second( r );
+  auto m = player_t::composite_mana_regen_while_casting();
 
-  if ( r == RESOURCE_MANA && is_player() && recent_cast() )
-  {
-    for ( const auto& i : mana_regen_while_casting_effects )
-      reg += mana_regen_from_spirit() * get_effect_value( i );
-  }
+  for ( const auto& i : mana_regen_while_casting_effects )
+    m += get_effect_value( i );
 
-  return reg;
+  return m;
 }
 
 void parse_player_effects_t::invalidate_cache( cache_e c )

@@ -4356,10 +4356,12 @@ double player_t::resource_regen_per_second( resource_e r ) const
 
   if ( r == RESOURCE_MANA && is_player() )
   {
+    double spirit_regen = mana_regen_from_spirit();
+
     if ( recent_cast() )
-      reg += mana_regen_from_spirit() * current.mana_regen_while_casting;
-    else
-      reg += mana_regen_from_spirit();
+      spirit_regen *= std::min( 1.0, composite_mana_regen_while_casting() );
+
+    reg += spirit_regen;
   }
 
   if ( resources.hasted[ r ] )
@@ -4820,6 +4822,11 @@ double player_t::composite_bonus_armor() const
 double player_t::composite_leech() const
 {
   return current.leech + apply_combat_rating_dr( RATING_LEECH, composite_leech_rating() / current.rating.leech );
+}
+
+double player_t::composite_mana_regen_while_casting() const
+{
+  return current.mana_regen_while_casting;
 }
 
 double player_t::composite_run_speed() const

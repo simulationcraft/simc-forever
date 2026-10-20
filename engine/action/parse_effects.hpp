@@ -744,7 +744,7 @@ struct parse_player_effects_t : public player_t, public parse_effects_t
                                                       bool direct ) const override;
   double non_stacking_movement_modifier() const override;
   double stacking_movement_modifier() const override;
-  double resource_regen_per_second( resource_e ) const override;
+  double composite_mana_regen_while_casting() const override;
 
   void invalidate_cache( cache_e c ) override;
 

@@ -935,6 +935,7 @@ public:
   { return 1.0; }
   virtual double composite_spell_hit() const;
   virtual double composite_leech() const;
+  virtual double composite_mana_regen_while_casting() const;
   virtual double composite_run_speed() const;
   virtual double composite_avoidance() const;
   virtual double composite_corruption() const;
