@@ -61,6 +61,7 @@ struct priest_t final : public parse_player_effects_t
   struct talents_t
   {
     player_talent_t early_demise;
+    player_talent_t improved_mind_flay;
     player_talent_t inner_focus;
     player_talent_t mind_flay;
     player_talent_t shadow_weaving;
@@ -145,11 +146,12 @@ void priest_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
-  talent.early_demise   = find_talent_spell( talent_tree::CLASS, "Early Demise" );
-  talent.inner_focus    = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
-  talent.mind_flay      = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
-  talent.shadow_weaving = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
-  talent.shadowform     = find_talent_spell( talent_tree::CLASS, "Shadowform" );
+  talent.early_demise       = find_talent_spell( talent_tree::CLASS, "Early Demise" );
+  talent.improved_mind_flay = find_talent_spell( talent_tree::CLASS, "Improved Mind Flay" );
+  talent.inner_focus        = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
+  talent.mind_flay          = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
+  talent.shadow_weaving     = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
+  talent.shadowform         = find_talent_spell( talent_tree::CLASS, "Shadowform" );
 
   // Wand only, all schools because wand damage can be any school
   // TODO: Apply to the wand auto attack once implemented
@@ -331,6 +333,23 @@ struct mind_flay_t : public priest_spell_t
   {
     parse_options( options_str );
     channeled = true;
+
+    if ( player->talent.improved_mind_flay.ok() )
+      update_flags |= STATE_MUL_SPELL_TA;
+  }
+
+  double composite_ta_multiplier( const action_state_t* s ) const override
+  {
+    double m = priest_spell_t::composite_ta_multiplier( s );
+
+    if ( p()->talent.improved_mind_flay.ok() )
+    {
+      const dot_t* dot = find_dot( s->target );
+      int ticks        = dot ? std::max( dot->current_tick - 1, 0 ) : 0;
+      m *= std::pow( 1.0 + p()->talent.improved_mind_flay->effectN( 1 ).percent(), ticks );
+    }
+
+    return m;
   }
 };
 
