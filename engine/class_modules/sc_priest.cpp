@@ -54,11 +54,13 @@ struct priest_t final : public parse_player_effects_t
 
   struct buffs_t
   {
+    buff_t* inner_focus = nullptr;
     buff_t* shadowform = nullptr;
   } buff;
 
   struct talents_t
   {
+    player_talent_t inner_focus;
     player_talent_t mind_flay;
     player_talent_t shadow_weaving;
     player_talent_t shadowform;
@@ -141,6 +143,7 @@ void priest_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
+  talent.inner_focus    = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
   talent.mind_flay      = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
   talent.shadow_weaving = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
   talent.shadowform     = find_talent_spell( talent_tree::CLASS, "Shadowform" );
@@ -151,6 +154,14 @@ void priest_t::init_spells()
 void priest_t::create_buffs()
 {
   parse_player_effects_t::create_buffs();
+
+  // Cooldown starts when the buff is consumed
+  buff.inner_focus = make_buff( this, "inner_focus", talent.inner_focus )
+    ->set_cooldown( 0_ms )
+    ->set_stack_change_callback( [ this ]( buff_t*, int, int new_ ) {
+      if ( !new_ )
+        get_cooldown( "inner_focus" )->start( talent.inner_focus->cooldown() );
+    } );
 
   buff.shadowform = make_buff( this, "shadowform", talent.shadowform );
 
@@ -200,6 +211,7 @@ void priest_t::parse_action_effects( action_t* action )
   auto _a = dynamic_cast<parse_action_base_t*>( action );
   assert( _a );
 
+  _a->parse_effects( buff.inner_focus, CONSUME_BUFF );
   _a->parse_effects( buff.shadowform );
 }
 
@@ -355,6 +367,37 @@ struct holy_fire_t : public priest_spell_t
   }
 };
 
+// Inner Focus
+
+struct inner_focus_t : public priest_spell_t
+{
+  inner_focus_t( priest_t* player, util::string_view options_str ) :
+    priest_spell_t( "inner_focus", player, player->talent.inner_focus.ok()
+                                           ? player->talent.inner_focus.spell()
+                                           : spell_data_t::not_found() )
+  {
+    parse_options( options_str );
+    harmful = false;
+    target = player;
+    cooldown->duration = 0_ms;
+  }
+
+  void execute() override
+  {
+    priest_spell_t::execute();
+
+    p()->buff.inner_focus->trigger();
+  }
+
+  bool ready() override
+  {
+    if ( p()->buff.inner_focus->check() )
+      return false;
+
+    return priest_spell_t::ready();
+  }
+};
+
 // Shadowform
 
 struct shadowform_t : public priest_spell_t
@@ -401,6 +444,8 @@ action_t* priest_t::create_action( util::string_view name, util::string_view opt
     return new shadow_word_death_t( this, options_str );
   if ( name == "holy_fire" )
     return new holy_fire_t( this, options_str );
+  if ( name == "inner_focus" )
+    return new inner_focus_t( this, options_str );
   if ( name == "shadowform" )
     return new shadowform_t( this, options_str );
 
