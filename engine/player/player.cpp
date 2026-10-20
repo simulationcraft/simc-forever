@@ -13936,6 +13936,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { P_COOLDOWN,                               "cooldown"                         },  // 11
   { P_RESOURCE_COST_1,                        "cost"                             },  // 14
   { P_CRIT_BONUS,                             "crit_bonus"                       },  // 15
+  { P_PENETRATION,                            "hit"                              },  // 16
   { P_CHAIN_TARGETS,                          "chain_target"                     },  // 17
   { P_PROC_CHANCE,                            "proc_chance"                      },  // 18
   { P_TICK_TIME,                              "period"                           },  // 19
@@ -14716,6 +14717,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
         // action_t modifiers, these don't modify spell data
         case P_CRIT:  // 7
         case P_CRIT_BONUS:  // 15
+        case P_PENETRATION:  // 16, "resist miss chance" (spell hit) in classic data
           flat_val *= 0.01;
           SC_FALLTHROUGH;
         case P_GENERIC:  // 0
