@@ -60,6 +60,7 @@ struct priest_t final : public parse_player_effects_t
 
   struct talents_t
   {
+    player_talent_t early_demise;
     player_talent_t inner_focus;
     player_talent_t mind_flay;
     player_talent_t shadow_weaving;
@@ -144,6 +145,7 @@ void priest_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
+  talent.early_demise   = find_talent_spell( talent_tree::CLASS, "Early Demise" );
   talent.inner_focus    = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
   talent.mind_flay      = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
   talent.shadow_weaving = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
@@ -348,6 +350,17 @@ struct shadow_word_death_t : public priest_spell_t
     priest_spell_t( "shadow_word_death", player, player->find_spell( player->find_rank( shadow_word_death_ranks ).spell_id ) )
   {
     parse_options( options_str );
+
+    if ( player->talent.early_demise.ok() )
+    {
+      const auto& crit = player->talent.early_demise->effectN( 1 );
+      auto health_pct  = player->talent.early_demise->effectN( 2 ).base_value();
+
+      add_parse_entry( target_crit_chance_effects )
+        .set_func( [ health_pct ]( actor_target_data_t* td ) { return td->target->health_percentage() <= health_pct; } )
+        .set_value( crit.percent() )
+        .set_eff( &crit );
+    }
   }
 };
 
