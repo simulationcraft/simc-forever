@@ -2042,6 +2042,7 @@ Effects          :
 Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. When appied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
 
 Name             : Windfury Weapon (desc=Rank 2) (id=8236) [Spell Family (11)] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : None
@@ -2054,7 +2055,7 @@ Proc Chance      : 100%
 Proc Flags       : White Melee
 Affecting Spells : Elemental Weapons (16266 effect#3)
 Family Flags     : 23
-Attributes       : Proc Failure Burns Charge (0), No Aura Icon (60), Item Cast With Owner Skill (88), Unknown (493)
+Attributes       : Proc Failure Burns Charge (0), No Aura Icon (60), Item Cast With Owner Skill (88), Normal Melee Attack (345), Unknown (493)
 Effects          :
 #1 (id=686280)   : Apply Aura (6) | Modify Attack Power (99)
                    Base Value: 119 | Scaled Value: 221.4 | Points Per Level: 12.8 | Target: Self (1)
@@ -4065,21 +4066,23 @@ Effects          :
 Description      : Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by $s1%.
 
 Name             : Elemental Focus (id=16164) [Spell Family (11), Passive, Hidden] 
+Hotfixed         : Proc Chance (10 -> 100), Description
 Talent Entry     : Generic [tree=class, row=3, col=1, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Physical
 Spell Type       : None
 Spell Level      : 1
 Labels           : 24: Shaman Spells
-Proc Chance      : 10%
+Proc Chance      : 100%
 Proc Flags       : Yellow Melee, White Ranged, Yellow Ranged, Generic Helpful, Generic Hostile Spell, Magic Heal, Magic Hostile Spell
 Affecting Spells : S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#2)
 Family Flags     : 83
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Can Proc From Procs (122), Unknown (493)
 Effects          :
 #1 (id=694887)   : Apply Aura (6) | Proc Trigger Spell (42): Clearcasting
-                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 16246 | Target: Self (1)
-Description      : Gives you a $h% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by $16246s1%.
+                   Base Value: 10 | Scaled Value: 10 | Trigger Spell: 16246 | Target: Self (1)
+Hotfixed         : Base Value (0 -> 10)
+Description      : Gives you a $s1% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by $16246s1%.
 
 Name             : Elemental Mastery (id=16166) [Spell Family (11)] 
 Hotfixed         : Attributes

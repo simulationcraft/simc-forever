@@ -636,6 +636,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a small amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 2) (id=2070) [Spell Family (8)] 
+Hotfixed         : Mechanic (14 -> 30)
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -649,7 +650,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Stance Mask      : 0x20000000
-Mechanic         : Incapacitate
+Mechanic         : Sap
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1)
 Family Flags     : 7
 Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Limit N (165), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
@@ -1300,6 +1301,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a medium amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 1) (id=6770) [Spell Family (8)] 
+Hotfixed         : Mechanic (14 -> 30)
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1313,7 +1315,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Stance Mask      : 0x20000000
-Mechanic         : Incapacitate
+Mechanic         : Sap
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1)
 Family Flags     : 7
 Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Limit N (165), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
@@ -2537,6 +2539,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sap (desc=Rank 3) (id=11297) [Spell Family (8)] 
+Hotfixed         : Mechanic (14 -> 30)
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2550,7 +2553,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Stance Mask      : 0x20000000
-Mechanic         : Incapacitate
+Mechanic         : Sap
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1)
 Family Flags     : 7
 Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Limit N (165), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)

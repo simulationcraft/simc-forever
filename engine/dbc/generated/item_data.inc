@@ -14459,7 +14459,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[14456] = {
 
 // Items, ilevel 33-1300, wow build 1.60.1.70450
 
-static const std::array<dbc_item_data_t, 12510> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 12516> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -17913,6 +17913,7 @@ static const std::array<dbc_item_data_t, 12510> __item_data_chunk0 { {
   { "Revelosh's Spaulders",   9389, 0x00000000, 0x00000004, 0x00, 42, 37, 0, 0, 3, 3, 4, 2, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Revelosh's Gloves",   9390, 0x00000000, 0x00000004, 0x00, 42, 37, 0, 0, 3, 10, 4, 1, 1, 0, 0.200000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "The Shoveler",   9391, 0x00000000, 0x00000004, 0x00, 37, 32, 0, 0, 3, 17, 2, 5, 2, 3400, 0.400000f, 0.000000f, &__item_stats_data[1950], 3, 0x0001, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Annealed Blade",   9392, 0x00000000, 0x00000004, 0x00, 40, 35, 0, 0, 3, 13, 2, 7, 2, 1800, 0.600000f, 0.000000f, &__item_stats_data[128], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Beacon of Hope",   9393, 0x00000000, 0x00000004, 0x00, 38, 33, 0, 0, 3, 23, 4, 0, 2, 2000, 0.000000f, 0.000000f, &__item_stats_data[1953], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Horned Viking Helmet",   9394, 0x00000000, 0x00000004, 0x00, 42, 40, 0, 0, 3, 1, 4, 4, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[1956], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Gloves of Old",   9395, 0x00000000, 0x00004004, 0x00, 34, 29, 0, 0, 3, 10, 4, 1, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[1920], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -17939,6 +17940,7 @@ static const std::array<dbc_item_data_t, 12510> __item_data_chunk0 { {
   { "Archaedic Shard",   9417, 0x00000010, 0x00006004, 0x00, 47, 42, 0, 0, 3, 2, 4, 0, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Galgann's Firehammer",   9419, 0x00000000, 0x00000004, 0x00, 47, 42, 0, 0, 3, 21, 2, 4, 1, 2200, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Adventurer's Pith Helmet",   9420, 0x00000000, 0x00000004, 0x00, 37, 32, 0, 0, 3, 1, 4, 2, 2, 0, 0.200000f, 0.000000f, &__item_stats_data[1999], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Pendulum of Doom",   9425, 0x00000000, 0x00000004, 0x00, 44, 39, 0, 0, 3, 17, 2, 1, 1, 4000, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monolithic Bow",   9426, 0x00000000, 0x00000004, 0x00, 41, 36, 0, 0, 3, 15, 2, 2, 2, 2700, 0.600000f, 0.000000f, &__item_stats_data[463], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Unearthed Bands",   9428, 0x00000000, 0x00000004, 0x00, 35, 30, 0, 0, 3, 9, 4, 2, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[2002], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Papal Fez",   9431, 0x00000000, 0x00000004, 0x00, 43, 38, 0, 0, 3, 1, 4, 1, 2, 0, 0.200000f, 0.000000f, &__item_stats_data[2003], 4, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -21565,7 +21567,7 @@ static const std::array<dbc_item_data_t, 12510> __item_data_chunk0 { {
   { "Tome of Sacrifice",  18602, 0x00000000, 0x00006004, 0x00, 60, 0, 0, 0, 3, 23, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[4957], 3, 0x0100, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Benediction",  18608, 0x00000440, 0x00006004, 0x00, 75, 60, 0, 0, 4, 17, 2, 10, 1, 3000, 0.400000f, -14.000000f, &__item_stats_data[4960], 4, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Anathema",  18609, 0x00000440, 0x00006004, 0x00, 75, 60, 0, 0, 4, 17, 2, 10, 1, 3000, 0.400000f, -14.000000f, &__item_stats_data[4964], 5, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
-  { "Keen Machete",  18610, 0x00000000, 0x00004004, 0x00, 10, 5, 0, 0, 1, 21, 2, 7, 2, 1800, 0.600000f, 0.000000f, &__item_stats_data[3], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Keen Machete",  18610, 0x00000000, 0x00004004, 0x00, 10, 5, 0, 0, 2, 21, 2, 7, 2, 1800, 0.600000f, 0.000000f, &__item_stats_data[3], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Gnarlpine Leggings",  18611, 0x00000000, 0x00004004, 0x00, 9, 4, 0, 0, 2, 7, 4, 2, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[55], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bloody Chain Boots",  18612, 0x00000000, 0x00004004, 0x00, 10, 5, 0, 0, 2, 8, 4, 3, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[3], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Gyrofreeze Ice Reflector",  18634, 0x00080000, 0x00006004, 0x00, 52, 47, 202, 260, 3, 12, 4, 0, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[4969], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -21836,6 +21838,7 @@ static const std::array<dbc_item_data_t, 12510> __item_data_chunk0 { {
   { "Silverwing Battle Tabard",  19506, 0x00000000, 0x00006004, 0x00, 20, 0, 0, 0, 1, 19, 4, 0, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Inquisitor's Shawl",  19507, 0x00000000, 0x00000004, 0x00, 42, 37, 0, 0, 3, 3, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5275], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Branded Leather Bracers",  19508, 0x00000000, 0x00000004, 0x00, 42, 37, 0, 0, 3, 9, 4, 2, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5278], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Dusty Mail Boots",  19509, 0x00000000, 0x00000004, 0x00, 42, 37, 0, 0, 3, 8, 4, 3, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[1648], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Legionnaire's Band",  19510, 0x00008000, 0x00006004, 0x00, 63, 58, 0, 0, 3, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5280], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Legionnaire's Band",  19511, 0x00008000, 0x00006004, 0x00, 53, 48, 0, 0, 3, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5283], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Legionnaire's Band",  19512, 0x00008000, 0x00006004, 0x00, 43, 38, 0, 0, 3, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5286], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -26052,6 +26055,7 @@ static const std::array<dbc_item_data_t, 12510> __item_data_chunk0 { {
   { "Monster - Glaive, Night Elf Huntress", 274461, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 13, 2, 0, 0, 2000, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monster - Polearm, 2H NightElf", 274466, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 17, 2, 6, 0, 1700, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monster - Staff, Druid of the Talon", 274480, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 17, 2, 10, 0, 3400, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Axe of Inevitable Ruin", 274484, 0x000004c0, 0x00000004, 0x00, 42, 37, 0, 0, 3, 17, 2, 1, 1, 3000, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Axe of Lingering Dread", 274485, 0x00000400, 0x00000004, 0x00, 44, 39, 0, 0, 3, 17, 2, 1, 1, 3000, 0.400000f, 0.000000f, &__item_stats_data[13532], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Centaur Hoofwarmers", 274490, 0x00000000, 0x00002004, 0x00, 40, 35, 0, 0, 2, 8, 4, 2, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[13534], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monster - Sword, Golden Long", 274501, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 13, 2, 7, 0, 2000, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -26666,6 +26670,7 @@ static const std::array<dbc_item_data_t, 12510> __item_data_chunk0 { {
   { "Twilight Forgehammer", 281665, 0x00000000, 0x00000004, 0x00, 46, 41, 0, 0, 3, 13, 2, 4, 1, 2500, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Loop of Sacrifice", 281673, 0x00000000, 0x00002000, 0x00, 28, 0, 0, 0, 2, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[13857], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Lakeshire Firefighter's Headband", 281675, 0x00000000, 0x00002000, 0x00, 30, 0, 0, 0, 2, 1, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[12150], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Rog'mar Trainee Shoulderpads", 281676, 0x00000000, 0x00000000, 0x00, 41, 36, 0, 0, 2, 3, 4, 2, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[13887], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Restored Cloth Helm", 281685, 0x00008000, 0x00606000, 0x00, 1, 1, 0, 0, 2, 1, 4, 1, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Restored Cloth Shoulders", 281686, 0x00008000, 0x00606000, 0x00, 1, 1, 0, 0, 2, 3, 4, 1, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Restored Cloth Vest", 281687, 0x00008000, 0x00606000, 0x00, 1, 1, 0, 0, 2, 5, 4, 1, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -26741,6 +26746,7 @@ static const std::array<dbc_item_data_t, 12510> __item_data_chunk0 { {
   { "Malignant Root", 282283, 0x00000040, 0x00002000, 0x00, 32, 1, 0, 0, 3, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[14219], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Webwood Slicer", 282284, 0x00000000, 0x00002000, 0x00, 10, 1, 0, 0, 2, 13, 2, 15, 1, 1700, 0.600000f, 0.000000f, &__item_stats_data[6], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Guild Tabard", 282294, 0x00000000, 0x00006004, 0x00, 1, 0, 0, 0, 1, 19, 4, 0, 0, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Combat Tuning Wrench", 282550, 0x00000000, 0x00000004, 0x00, 43, 38, 0, 0, 2, 13, 2, 4, 2, 2300, 0.600000f, 0.000000f, &__item_stats_data[98], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Golem Fist", 282551, 0x00000000, 0x00000004, 0x00, 38, 33, 0, 0, 2, 13, 2, 13, 2, 2400, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Shadowforge Shield", 282555, 0x00000000, 0x00000004, 0x00, 42, 37, 0, 0, 2, 14, 4, 6, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[14222], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Broken Tooth's Flayed Hide", 282557, 0x00000000, 0x00004004, 0x00, 39, 34, 0, 0, 2, 5, 4, 2, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[12236], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },

@@ -5634,6 +5634,21 @@ Effects          :
 Description      : Instantly shields the target, absorbing $s1 damage.  Lasts $d.
 Tooltip          : Absorbs $w1 damage.
 
+Name             : Fatal Wound (id=10373) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 40
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=687779)   : School Damage (2): physical
+                   Base Value: 311 | Scaled Value: 311 (delta=0.333333) | Target: Targeted Enemy (6)
+#2 (id=1315592)  : Dummy (3)
+                   Base Value: 50 | Scaled Value: 50 | Target: Targeted Enemy (6)
+#3 (id=1315593)  : Dummy (3)
+                   Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
+Description      : Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health.
+
 Name             : Comfortable Leather Hat (id=10490) 
 School           : Physical
 Spell Type       : None
@@ -44686,6 +44701,49 @@ Effects          :
 Description      : Increases your chance to Dodge by $s1% for $d. This effect is doubled in Strongholds and Cities.
 Tooltip          : Chance to dodge increased by $w1%.
 
+Name             : Pendulum of Doom (id=1293881) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : White Melee
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1314927)  : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+#2 (id=1314993)  : Apply Aura (6) | Periodic Dummy (226): every 10 seconds
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : Each swing alternates your attack speed between $1293885s1% faster and $1293886s1% slower.
+
+Name             : Pendulum of Doom (id=1293885) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Triggered By     : Pendulum of Doom (1293886)
+Attributes       : Allow While Mounted (24), Allow While Sitting (27), No Aura Cancel (31), Allow While Stealthed (37), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Aura Interrupt   : Leave World (19), Enter World (22)
+Effects          :
+#1 (id=1314933)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+#2 (id=1314936)  : Remove Aura (203): Pendulum of Doom
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1293886 | Target: Self (1)
+Description      : Melee attack speed increased by $s1%.
+Tooltip          : Melee attack speed increased by $s1%.
+
+Name             : Pendulum of Doom (id=1293886) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Triggered By     : Pendulum of Doom (1293885)
+Attributes       : Allow While Mounted (24), Allow While Sitting (27), No Aura Cancel (31), Allow While Stealthed (37), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Aura Interrupt   : Leave World (19), Enter World (22)
+Effects          :
+#1 (id=1314934)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 50 | Scaled Value: 50 | Target: Self (1)
+#2 (id=1314935)  : Remove Aura (203): Pendulum of Doom
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1293885 | Target: Self (1)
+Description      : Melee attack speed slowed by $s1%.
+Tooltip          : Melee attack speed slowed by $s1%.
+
 Name             : Firebolt (id=1293980) [Passive, Hidden] 
 School           : Fire
 Spell Type       : Magic
@@ -44833,6 +44891,27 @@ Effects          :
                    Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases armor by $s1.
 Tooltip          : Armor increased by $s1.
+
+Name             : Wound (id=1294226) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 40
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1315473)  : School Damage (2): physical
+                   Base Value: 168 | Scaled Value: 168 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 damage.
+
+Name             : Aspects of Doom (id=1294234) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 10 seconds
+Attributes       : Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1315484)  : Create Item (24)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+Description      : Combines Axe of Lingering Dread and Axe of Inevitable Ruin to reconstruct the Pendulum of Doom.
 
 Name             : Centaur Hoofwarmers (id=1294289) 
 School           : Physical
