@@ -42,6 +42,8 @@ void priest( player_t* p )
   default_->add_action( "devouring_plague,if=!ticking" );
   default_->add_action( "mind_blast" );
   default_->add_action( "shadow_word_death" );
+  default_->add_action( "penance" );
+  default_->add_action( "starshards" );
   default_->add_action( "mind_flay" );
   default_->add_action( "smite" );
 }
