@@ -65,6 +65,7 @@ struct priest_t final : public parse_player_effects_t
   struct buffs_t
   {
     buff_t* dark_inspiration = nullptr;
+    buff_t* holy_purpose = nullptr;
     buff_t* inner_focus = nullptr;
     buff_t* shadowform = nullptr;
   } buff;
@@ -80,6 +81,7 @@ struct priest_t final : public parse_player_effects_t
     player_talent_t mind_flay;
     player_talent_t penance;
     player_talent_t power_in_light;
+    player_talent_t searing_light;
     player_talent_t shadow_weaving;
     player_talent_t shadowform;
     player_talent_t wand_specialization;
@@ -88,6 +90,7 @@ struct priest_t final : public parse_player_effects_t
   struct spells_t
   {
     const spell_data_t* dark_inspiration = spell_data_t::nil();
+    const spell_data_t* holy_purpose = spell_data_t::nil();
     const spell_data_t* shadow_weaving = spell_data_t::nil();
   } spell;
 
@@ -193,6 +196,7 @@ void priest_t::init_spells()
   talent.penance             = find_talent_spell( talent_tree::CLASS, "Penance" );
   talent.power_in_light      = find_talent_spell( talent_tree::CLASS, "Power in Light" );
   talent.shadow_weaving      = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
+  talent.searing_light       = find_talent_spell( talent_tree::CLASS, "Searing Light" );
   talent.shadowform          = find_talent_spell( talent_tree::CLASS, "Shadowform" );
 
   // Wand only, all schools because wand damage can be any school
@@ -201,6 +205,7 @@ void priest_t::init_spells()
   deregister_passive_spell( talent.wand_specialization );
 
   spell.dark_inspiration = find_spell( 1326168 );
+  spell.holy_purpose     = talent.searing_light->effectN( 2 ).trigger();
   spell.shadow_weaving   = talent.shadow_weaving->effectN( 1 ).trigger();
 }
 
@@ -211,6 +216,8 @@ void priest_t::create_buffs()
   buff.dark_inspiration = make_buff( this, "dark_inspiration", spell.dark_inspiration )
     ->set_default_value( talent.dark_inspiration->effectN( 1 ).percent() )
     ->add_invalidate( CACHE_SPIRIT );
+
+  buff.holy_purpose = make_buff( this, "holy_purpose", spell.holy_purpose );
 
   // Cooldown starts when the buff is consumed
   buff.inner_focus = make_buff( this, "inner_focus", talent.inner_focus )
@@ -255,6 +262,27 @@ void priest_t::init_special_effects()
 
     callbacks.register_callback_execute_function( driver->spell_id, [ this ]( auto, auto, player_t* t, auto ) {
       get_target_data( t )->debuffs.shadow_weaving->trigger();
+    } );
+
+    new dbc_proc_callback_t( this, *driver );
+  }
+
+  if ( talent.searing_light.ok() )
+  {
+    const auto driver    = new special_effect_t( this );
+    driver->name_str     = talent.searing_light->name_cstr();
+    driver->spell_id     = talent.searing_light->id();
+    driver->proc_chance_ = talent.searing_light->effectN( 2 ).percent();
+    special_effects.push_back( driver );
+
+    callbacks.register_callback_trigger_function(
+      driver->spell_id, trigger_type::CONDITION, [ this ]( auto, auto, auto, const action_state_t* s, auto ) {
+        return s->result_type == result_amount_type::DMG_OVER_TIME &&
+               s->action->get_dot( s->target ) == get_target_data( s->target )->dots.holy_fire;
+      } );
+
+    callbacks.register_callback_execute_function( driver->spell_id, [ this ]( auto, auto, auto, auto ) {
+      buff.holy_purpose->trigger();
     } );
 
     new dbc_proc_callback_t( this, *driver );
@@ -312,6 +340,7 @@ void priest_t::parse_action_effects( action_t* action )
   auto _a = dynamic_cast<parse_action_base_t*>( action );
   assert( _a );
 
+  _a->parse_effects( buff.holy_purpose, CONSUME_BUFF );
   _a->parse_effects( buff.inner_focus, CONSUME_BUFF );
   _a->parse_effects( buff.shadowform );
 }
