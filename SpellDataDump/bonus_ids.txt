@@ -21,7 +21,7 @@ bonus_id={ 12731 }, suffix={ of Stamina }, stats={ 100% Sta [1.0000] }
 bonus_id={ 12732 }, suffix={ of Strength }, stats={ 100% Str [1.0000] }
 bonus_id={ 12733 }, suffix={ of Power }, stats={ 100% AP [2.0000] }
 bonus_id={ 12734 }, suffix={ of Magic }, stats={ 100% SP [1.1700] }
-bonus_id={ 12735 }, suffix={ of Healing }, stats={ 75% unknown [2.2000], 25% unknown [0.7333] }
+bonus_id={ 12735 }, suffix={ of Healing }, stats={ 75% unknown [2.2000], 25% SP [0.7333] }
 bonus_id={ 12736 }, suffix={ of Defense }, stats={ 100% unknown [0.6667] }
 bonus_id={ 12737 }, suffix={ of Regeneration }, stats={ 100% unknown [0.8000] }
 bonus_id={ 12738 }, suffix={ of Concentration }, stats={ 100% unknown [0.4000] }
@@ -34,48 +34,48 @@ bonus_id={ 12744 }, suffix={ of Shadow Protection }, stats={ 50% unknown [0.6666
 bonus_id={ 12745 }, suffix={ of the Sorcerer }, stats={ 48% Int [0.7266], 27% Sta [0.4106], 25% SP [0.3725] }
 bonus_id={ 12746 }, suffix={ of the Elder }, stats={ 48% Int [0.7266], 27% Spi [0.4106], 25% SP [0.3725] }
 bonus_id={ 12747 }, suffix={ of the Channeler }, stats={ 27% Spi [0.4106], 48% Sta [0.7266], 25% SP [0.3725] }
-bonus_id={ 12748 }, suffix={ of the Physician }, stats={ 20% Int [0.4106], 35% Sta [0.7266], 34% unknown [0.7024], 11% unknown [0.2341] }
-bonus_id={ 12749 }, suffix={ of the Prophet }, stats={ 35% Int [0.7266], 20% Spi [0.4106], 34% unknown [0.7024], 11% unknown [0.2341] }
-bonus_id={ 12750 }, suffix={ of the Hierophant }, stats={ 20% Spi [0.4106], 35% Sta [0.7266], 34% unknown [0.7024], 11% unknown [0.2341] }
+bonus_id={ 12748 }, suffix={ of the Physician }, stats={ 20% Int [0.4106], 35% Sta [0.7266], 34% unknown [0.7024], 11% SP [0.2341] }
+bonus_id={ 12749 }, suffix={ of the Prophet }, stats={ 35% Int [0.7266], 20% Spi [0.4106], 34% unknown [0.7024], 11% SP [0.2341] }
+bonus_id={ 12750 }, suffix={ of the Hierophant }, stats={ 20% Spi [0.4106], 35% Sta [0.7266], 34% unknown [0.7024], 11% SP [0.2341] }
 bonus_id={ 12751 }, suffix={ of the Bandit }, stats={ 17% Agi [0.3193], 44% AP [0.8212], 39% Sta [0.7266] }
 bonus_id={ 12752 }, suffix={ of the Beast }, stats={ 28% Agi [0.4106], 50% Sta [0.7266], 22% Str [0.3193] }
 bonus_id={ 12753 }, suffix={ of the Champion }, stats={ 16% unknown [0.2128], 54% Sta [0.7266], 30% Str [0.4106] }
 bonus_id={ 12754 }, suffix={ of the Defender }, stats={ 20% unknown [0.2737], 27% SP [0.3725], 53% Sta [0.7266] }
 bonus_id={ 12755 }, suffix={ of the Knight }, stats={ 25% SP [0.3725], 48% Sta [0.7366], 27% Str [0.4106] }
-bonus_id={ 12756 }, suffix={ of Arcane Wrath }, stats={ 100% unknown [1.4300] }
-bonus_id={ 12757 }, suffix={ of Fiery Wrath }, stats={ 100% unknown [1.4300] }
-bonus_id={ 12758 }, suffix={ of Frozen Wrath }, stats={ 100% unknown [1.4300] }
-bonus_id={ 12759 }, suffix={ of Holy Wrath }, stats={ 100% unknown [1.4300] }
-bonus_id={ 12760 }, suffix={ of Nature's Wrath }, stats={ 100% unknown [1.4300] }
-bonus_id={ 12761 }, suffix={ of Shadow Wrath }, stats={ 100% unknown [1.4300] }
+bonus_id={ 12756 }, suffix={ of Arcane Wrath }, stats={ 100% ArcaneSP [1.4300] }
+bonus_id={ 12757 }, suffix={ of Fiery Wrath }, stats={ 100% FireSP [1.4300] }
+bonus_id={ 12758 }, suffix={ of Frozen Wrath }, stats={ 100% FrostSP [1.4300] }
+bonus_id={ 12759 }, suffix={ of Holy Wrath }, stats={ 100% HolySP [1.4300] }
+bonus_id={ 12760 }, suffix={ of Nature's Wrath }, stats={ 100% NatureSP [1.4300] }
+bonus_id={ 12761 }, suffix={ of Shadow Wrath }, stats={ 100% ShadowSP [1.4300] }
 bonus_id={ 12905 }, suffix={ of the Sorcerer }, stats={ 23% Int [0.7601], 16% Sta [0.5066], 61% SP [2.0000] }
 bonus_id={ 12906 }, suffix={ of the Sorcerer }, stats={ 13% Int [0.7601], 8% Sta [0.5066], 79% SP [4.7500] }
 bonus_id={ 12907 }, suffix={ of the Elder }, stats={ 23% Int [0.7601], 61% SP [2.0000], 16% Spi [0.5066] }
 bonus_id={ 12908 }, suffix={ of the Elder }, stats={ 13% Int [0.7601], 79% SP [4.7500], 8% Spi [0.5066] }
 bonus_id={ 12909 }, suffix={ of the Channeler }, stats={ 61% SP [2.0000], 16% Spi [0.5066], 23% Sta [0.7601] }
 bonus_id={ 12910 }, suffix={ of the Channeler }, stats={ 79% SP [4.7500], 8% Spi [0.5066], 13% Sta [0.7601] }
-bonus_id={ 12911 }, suffix={ of the Physician }, stats={ 20% unknown [1.2533], 60% unknown [3.7600], 8% Int [0.5066], 12% Sta [0.7601] }
-bonus_id={ 12912 }, suffix={ of the Physician }, stats={ 23% unknown [2.9767], 68% unknown [8.9300], 4% Int [0.5066], 6% Sta [0.7601] }
-bonus_id={ 12913 }, suffix={ of the Prophet }, stats={ 6% Int [0.7601], 23% unknown [2.9767], 68% unknown [8.9300], 4% Spi [0.5066] }
-bonus_id={ 12914 }, suffix={ of the Prophet }, stats={ 12% Int [0.7601], 20% unknown [1.2533], 60% unknown [3.7600], 8% Spi [0.5066] }
-bonus_id={ 12915 }, suffix={ of the Hierophant }, stats={ 20% unknown [1.2533], 60% unknown [3.7600], 8% Spi [0.5066], 12% Sta [0.7601] }
-bonus_id={ 12916 }, suffix={ of the Hierophant }, stats={ 23% unknown [2.9767], 68% unknown [8.9300], 4% Spi [0.5066], 6% Sta [0.7601] }
+bonus_id={ 12911 }, suffix={ of the Physician }, stats={ 20% SP [1.2533], 60% unknown [3.7600], 8% Int [0.5066], 12% Sta [0.7601] }
+bonus_id={ 12912 }, suffix={ of the Physician }, stats={ 23% SP [2.9767], 68% unknown [8.9300], 4% Int [0.5066], 6% Sta [0.7601] }
+bonus_id={ 12913 }, suffix={ of the Prophet }, stats={ 6% Int [0.7601], 23% SP [2.9767], 68% unknown [8.9300], 4% Spi [0.5066] }
+bonus_id={ 12914 }, suffix={ of the Prophet }, stats={ 12% Int [0.7601], 20% SP [1.2533], 60% unknown [3.7600], 8% Spi [0.5066] }
+bonus_id={ 12915 }, suffix={ of the Hierophant }, stats={ 20% SP [1.2533], 60% unknown [3.7600], 8% Spi [0.5066], 12% Sta [0.7601] }
+bonus_id={ 12916 }, suffix={ of the Hierophant }, stats={ 23% SP [2.9767], 68% unknown [8.9300], 4% Spi [0.5066], 6% Sta [0.7601] }
 bonus_id={ 12917 }, suffix={ of Magic }, stats={ 83% SP [4.7500], 17% Int [1.0000] }
 bonus_id={ 12918 }, suffix={ of Magic }, stats={ 67% SP [2.0000], 33% Int [1.0000] }
-bonus_id={ 12919 }, suffix={ of Healing }, stats={ 21% unknown [1.2533], 63% unknown [3.7600], 17% Int [1.0000] }
-bonus_id={ 12920 }, suffix={ of Healing }, stats={ 8% Int [1.0000], 23% unknown [2.9767], 69% unknown [8.9300] }
+bonus_id={ 12919 }, suffix={ of Healing }, stats={ 21% SP [1.2533], 63% unknown [3.7600], 17% Int [1.0000] }
+bonus_id={ 12920 }, suffix={ of Healing }, stats={ 8% Int [1.0000], 23% SP [2.9767], 69% unknown [8.9300] }
 bonus_id={ 12923 }, suffix={ of the Sorcerer }, stats={ 48% Int [0.6297], 27% Sta [0.3558], 25% SP [0.3228] }
 bonus_id={ 12924 }, suffix={ of the Elder }, stats={ 48% Int [0.6297], 25% SP [0.3228], 27% Spi [0.3558] }
-bonus_id={ 12925 }, suffix={ of the Physician }, stats={ 11% unknown [0.2029], 34% unknown [0.6088], 20% Int [0.3558], 35% Sta [0.6297] }
-bonus_id={ 12926 }, suffix={ of the Prophet }, stats={ 35% Int [0.6297], 11% unknown [0.2029], 34% unknown [0.6088], 20% Spi [0.3558] }
-bonus_id={ 12927 }, suffix={ of the Hierophant }, stats={ 11% unknown [0.2029], 34% unknown [0.6088], 20% Spi [0.3558], 35% Sta [0.6297] }
+bonus_id={ 12925 }, suffix={ of the Physician }, stats={ 11% SP [0.2029], 34% unknown [0.6088], 20% Int [0.3558], 35% Sta [0.6297] }
+bonus_id={ 12926 }, suffix={ of the Prophet }, stats={ 35% Int [0.6297], 11% SP [0.2029], 34% unknown [0.6088], 20% Spi [0.3558] }
+bonus_id={ 12927 }, suffix={ of the Hierophant }, stats={ 11% SP [0.2029], 34% unknown [0.6088], 20% Spi [0.3558], 35% Sta [0.6297] }
 bonus_id={ 12928 }, suffix={ of the Sorcerer }, stats={ 48% Int [0.5248], 27% Sta [0.2965], 25% SP [0.2690] }
 bonus_id={ 12929 }, suffix={ of the Channeler }, stats={ 25% SP [0.3228], 27% Spi [0.3558], 48% Sta [0.6297] }
 bonus_id={ 12930 }, suffix={ of the Elder }, stats={ 48% Int [0.5248], 25% SP [0.2690], 27% Spi [0.2965] }
 bonus_id={ 12931 }, suffix={ of the Channeler }, stats={ 25% SP [0.2690], 27% Spi [0.2965], 48% Sta [0.5248] }
-bonus_id={ 12932 }, suffix={ of the Physician }, stats={ 11% unknown [0.1691], 34% unknown [0.5074], 20% Int [0.2965], 35% Sta [0.5248] }
-bonus_id={ 12933 }, suffix={ of the Prophet }, stats={ 35% Int [0.5248], 11% unknown [0.1691], 34% unknown [0.5074], 20% Spi [0.2965] }
-bonus_id={ 12934 }, suffix={ of the Hierophant }, stats={ 11% unknown [0.1691], 34% unknown [0.5074], 20% Spi [0.2965], 35% Sta [0.5248] }
+bonus_id={ 12932 }, suffix={ of the Physician }, stats={ 11% SP [0.1691], 34% unknown [0.5074], 20% Int [0.2965], 35% Sta [0.5248] }
+bonus_id={ 12933 }, suffix={ of the Prophet }, stats={ 35% Int [0.5248], 11% SP [0.1691], 34% unknown [0.5074], 20% Spi [0.2965] }
+bonus_id={ 12934 }, suffix={ of the Hierophant }, stats={ 11% SP [0.1691], 34% unknown [0.5074], 20% Spi [0.2965], 35% Sta [0.5248] }
 bonus_id={ 12935 }, suffix={ of the Bandit }, stats={ 17% Agi [0.2767], 44% AP [0.7117], 39% Sta [0.6297] }
 bonus_id={ 12936 }, suffix={ of the Beast }, stats={ 28% Agi [0.3558], 50% Sta [0.6297], 22% Str [0.2767] }
 bonus_id={ 12937 }, suffix={ of the Champion }, stats={ 16% unknown [0.1844], 54% Sta [0.6297], 30% Str [0.3558] }
@@ -103,29 +103,29 @@ bonus_id={ 12958 }, suffix={ of Stamina }, stats={ 100% Sta [0.7200] }
 bonus_id={ 12959 }, suffix={ of Strength }, stats={ 100% Str [0.7200] }
 bonus_id={ 12960 }, suffix={ of Power }, stats={ 100% AP [1.4400] }
 bonus_id={ 12961 }, suffix={ of Magic }, stats={ 100% SP [0.8424] }
-bonus_id={ 12962 }, suffix={ of Healing }, stats={ 25% unknown [0.5280], 75% unknown [1.5840] }
+bonus_id={ 12962 }, suffix={ of Healing }, stats={ 25% SP [0.5280], 75% unknown [1.5840] }
 bonus_id={ 12963 }, suffix={ of Arcane Resistance }, stats={ 50% unknown [0.4800], 50% Sta [0.4800] }
 bonus_id={ 12964 }, suffix={ of Fire Protection }, stats={ 50% unknown [0.4800], 50% Sta [0.4800] }
 bonus_id={ 12965 }, suffix={ of Frost Protection }, stats={ 50% unknown [0.4800], 50% Sta [0.4800] }
 bonus_id={ 12966 }, suffix={ of Nature Protection }, stats={ 50% unknown [0.4800], 50% Sta [0.4800] }
 bonus_id={ 12967 }, suffix={ of Shadow Protection }, stats={ 50% unknown [0.4800], 50% Sta [0.4800] }
-bonus_id={ 12968 }, suffix={ of Holy Wrath }, stats={ 100% unknown [1.0296] }
-bonus_id={ 12969 }, suffix={ of the Physician }, stats={ 11% unknown [0.1461], 34% unknown [0.4383], 20% Int [0.2562], 35% Sta [0.4534] }
-bonus_id={ 12970 }, suffix={ of the Prophet }, stats={ 35% Int [0.4534], 11% unknown [0.1461], 34% unknown [0.4383], 20% Spi [0.2562] }
-bonus_id={ 12971 }, suffix={ of the Hierophant }, stats={ 11% unknown [0.1461], 34% unknown [0.4383], 20% Spi [0.2562], 35% Sta [0.4534] }
+bonus_id={ 12968 }, suffix={ of Holy Wrath }, stats={ 100% HolySP [1.0296] }
+bonus_id={ 12969 }, suffix={ of the Physician }, stats={ 11% SP [0.1461], 34% unknown [0.4383], 20% Int [0.2562], 35% Sta [0.4534] }
+bonus_id={ 12970 }, suffix={ of the Prophet }, stats={ 35% Int [0.4534], 11% SP [0.1461], 34% unknown [0.4383], 20% Spi [0.2562] }
+bonus_id={ 12971 }, suffix={ of the Hierophant }, stats={ 11% SP [0.1461], 34% unknown [0.4383], 20% Spi [0.2562], 35% Sta [0.4534] }
 bonus_id={ 12972 }, suffix={ of the Beast }, stats={ 28% Agi [0.2562], 50% Sta [0.4534], 22% Str [0.1992] }
 bonus_id={ 12973 }, suffix={ of the Knight }, stats={ 25% SP [0.2324], 48% Sta [0.4534], 27% Str [0.2562] }
 bonus_id={ 12974 }, suffix={ of Defense }, stats={ 100% unknown [0.4800] }
 bonus_id={ 12975 }, suffix={ of the Champion }, stats={ 16% unknown [0.1328], 54% Sta [0.4534], 30% Str [0.2562] }
 bonus_id={ 12976 }, suffix={ of the Defender }, stats={ 20% unknown [0.1708], 27% SP [0.2324], 53% Sta [0.4534] }
-bonus_id={ 12977 }, suffix={ of Arcane Wrath }, stats={ 100% unknown [1.0296] }
-bonus_id={ 12978 }, suffix={ of Fiery Wrath }, stats={ 100% unknown [1.0296] }
-bonus_id={ 12979 }, suffix={ of Frozen Wrath }, stats={ 100% unknown [1.0296] }
-bonus_id={ 12980 }, suffix={ of Shadow Wrath }, stats={ 100% unknown [1.0296] }
+bonus_id={ 12977 }, suffix={ of Arcane Wrath }, stats={ 100% ArcaneSP [1.0296] }
+bonus_id={ 12978 }, suffix={ of Fiery Wrath }, stats={ 100% FireSP [1.0296] }
+bonus_id={ 12979 }, suffix={ of Frozen Wrath }, stats={ 100% FrostSP [1.0296] }
+bonus_id={ 12980 }, suffix={ of Shadow Wrath }, stats={ 100% ShadowSP [1.0296] }
 bonus_id={ 12981 }, suffix={ of the Sorcerer }, stats={ 48% Int [0.4534], 27% Sta [0.2562], 25% SP [0.2324] }
 bonus_id={ 12982 }, suffix={ of the Elder }, stats={ 48% Int [0.4534], 25% SP [0.2324], 27% Spi [0.2562] }
 bonus_id={ 12983 }, suffix={ of the Channeler }, stats={ 25% SP [0.2324], 27% Spi [0.2562], 48% Sta [0.4534] }
-bonus_id={ 12984 }, suffix={ of Nature's Wrath }, stats={ 100% unknown [1.0296] }
+bonus_id={ 12984 }, suffix={ of Nature's Wrath }, stats={ 100% NatureSP [1.0296] }
 bonus_id={ 12985 }, suffix={ of the Bandit }, stats={ 17% Agi [0.1992], 44% AP [0.5124], 39% Sta [0.4534] }
 bonus_id={ 12986 }, suffix={ of Frost Resistance }, stats={ 100% unknown [0.4400] }
 bonus_id={ 12987 }, suffix={ of Nature Resistance }, stats={ 100% unknown [0.4400] }
@@ -164,7 +164,7 @@ bonus_id={ 13021 }, suffix={ of Strength }, stats={ 100% Str [0.8500] }
 bonus_id={ 13022 }, suffix={ of Power }, stats={ 100% AP [1.7000] }
 bonus_id={ 13023 }, suffix={ of the Beast }, stats={ 28% Agi [0.3024], 50% Sta [0.5352], 22% Str [0.2352] }
 bonus_id={ 13024 }, suffix={ of the Bandit }, stats={ 17% Agi [0.2352], 44% AP [0.6049], 39% Sta [0.5352] }
-bonus_id={ 13025 }, suffix={ of Holy Wrath }, stats={ 100% unknown [1.2155] }
+bonus_id={ 13025 }, suffix={ of Holy Wrath }, stats={ 100% HolySP [1.2155] }
 bonus_id={ 13026 }, suffix={ of the Champion }, stats={ 16% unknown [0.1568], 54% Sta [0.5352], 30% Str [0.3024] }
 bonus_id={ 13027 }, suffix={ of the Defender }, stats={ 20% unknown [0.2016], 27% SP [0.2744], 53% Sta [0.5352] }
 bonus_id={ 13028 }, suffix={ of the Eagle }, stats={ 50% Int [0.5000], 50% Sta [0.5000] }
@@ -180,28 +180,28 @@ bonus_id={ 13037 }, suffix={ of Strength }, stats={ 100% Str [0.7500] }
 bonus_id={ 13038 }, suffix={ of Power }, stats={ 100% AP [1.5000] }
 bonus_id={ 13039 }, suffix={ of the Beast }, stats={ 28% Agi [0.2669], 50% Sta [0.4723], 22% Str [0.2075] }
 bonus_id={ 13040 }, suffix={ of the Bandit }, stats={ 17% Agi [0.2075], 44% AP [0.5338], 39% Sta [0.4723] }
-bonus_id={ 13041 }, suffix={ of Holy Wrath }, stats={ 100% unknown [1.0725] }
+bonus_id={ 13041 }, suffix={ of Holy Wrath }, stats={ 100% HolySP [1.0725] }
 bonus_id={ 13042 }, suffix={ of the Champion }, stats={ 17% unknown [0.1383], 49% Sta [0.3944], 33% Str [0.2669] }
 bonus_id={ 13043 }, suffix={ of the Defender }, stats={ 20% unknown [0.1779], 27% SP [0.2421], 53% Sta [0.4723] }
 bonus_id={ 13044 }, suffix={ of the Owl }, stats={ 50% Int [0.5000], 50% Spi [0.5000] }
 bonus_id={ 13045 }, suffix={ of Intellect }, stats={ 100% Int [0.7500] }
 bonus_id={ 13046 }, suffix={ of Spirit }, stats={ 100% Spi [0.7500] }
-bonus_id={ 13047 }, suffix={ of the Physician }, stats={ 11% unknown [0.1522], 34% unknown [0.4566], 20% Int [0.2669], 35% Sta [0.4723] }
-bonus_id={ 13048 }, suffix={ of the Prophet }, stats={ 35% Int [0.4723], 11% unknown [0.1522], 34% unknown [0.4566], 20% Spi [0.2669] }
-bonus_id={ 13049 }, suffix={ of the Hierophant }, stats={ 11% unknown [0.1522], 34% unknown [0.4569], 20% Spi [0.2669], 35% Sta [0.4723] }
+bonus_id={ 13047 }, suffix={ of the Physician }, stats={ 11% SP [0.1522], 34% unknown [0.4566], 20% Int [0.2669], 35% Sta [0.4723] }
+bonus_id={ 13048 }, suffix={ of the Prophet }, stats={ 35% Int [0.4723], 11% SP [0.1522], 34% unknown [0.4566], 20% Spi [0.2669] }
+bonus_id={ 13049 }, suffix={ of the Hierophant }, stats={ 11% SP [0.1522], 34% unknown [0.4569], 20% Spi [0.2669], 35% Sta [0.4723] }
 bonus_id={ 13050 }, suffix={ of the Sorcerer }, stats={ 48% Int [0.4723], 27% Sta [0.2669], 25% SP [0.2421] }
 bonus_id={ 13051 }, suffix={ of the Elder }, stats={ 48% Int [0.4723], 25% SP [0.2421], 27% Spi [0.2669] }
 bonus_id={ 13052 }, suffix={ of the Channeler }, stats={ 25% SP [0.2421], 27% Spi [0.2669], 48% Sta [0.4723] }
 bonus_id={ 13053 }, suffix={ of Magic }, stats={ 100% SP [0.8775] }
-bonus_id={ 13054 }, suffix={ of Healing }, stats={ 25% unknown [0.5500], 75% unknown [1.6500] }
+bonus_id={ 13054 }, suffix={ of Healing }, stats={ 25% SP [0.5500], 75% unknown [1.6500] }
 bonus_id={ 13055 }, suffix={ of Magic }, stats={ 100% SP [0.9945] }
-bonus_id={ 13056 }, suffix={ of Healing }, stats={ 25% unknown [0.6233], 75% unknown [1.8700] }
-bonus_id={ 13057 }, suffix={ of Arcane Wrath }, stats={ 100% unknown [1.2155] }
-bonus_id={ 13058 }, suffix={ of Fiery Wrath }, stats={ 100% unknown [1.2155] }
-bonus_id={ 13059 }, suffix={ of Frozen Wrath }, stats={ 100% unknown [1.2155] }
-bonus_id={ 13060 }, suffix={ of Holy Wrath }, stats={ 100% unknown [1.2155] }
-bonus_id={ 13061 }, suffix={ of Nature's Wrath }, stats={ 100% unknown [1.2155] }
-bonus_id={ 13062 }, suffix={ of Shadow Wrath }, stats={ 100% unknown [1.2155] }
+bonus_id={ 13056 }, suffix={ of Healing }, stats={ 25% SP [0.6233], 75% unknown [1.8700] }
+bonus_id={ 13057 }, suffix={ of Arcane Wrath }, stats={ 100% ArcaneSP [1.2155] }
+bonus_id={ 13058 }, suffix={ of Fiery Wrath }, stats={ 100% FireSP [1.2155] }
+bonus_id={ 13059 }, suffix={ of Frozen Wrath }, stats={ 100% FrostSP [1.2155] }
+bonus_id={ 13060 }, suffix={ of Holy Wrath }, stats={ 100% HolySP [1.2155] }
+bonus_id={ 13061 }, suffix={ of Nature's Wrath }, stats={ 100% NatureSP [1.2155] }
+bonus_id={ 13062 }, suffix={ of Shadow Wrath }, stats={ 100% ShadowSP [1.2155] }
 bonus_id={ 13063 }, suffix={ of Regeneration }, stats={ 100% unknown [0.6800] }
 bonus_id={ 13064 }, suffix={ of Concentration }, stats={ 100% unknown [0.3400] }
 bonus_id={ 13065 }, suffix={ of the Eagle }, stats={ 50% Int [0.4444], 50% Sta [0.4444] }
@@ -209,46 +209,46 @@ bonus_id={ 13066 }, suffix={ of the Whale }, stats={ 50% Spi [0.4444], 50% Sta [
 bonus_id={ 13067 }, suffix={ of the Owl }, stats={ 50% Int [0.4444], 50% Spi [0.4444] }
 bonus_id={ 13068 }, suffix={ of Intellect }, stats={ 100% Int [0.5000] }
 bonus_id={ 13069 }, suffix={ of Spirit }, stats={ 100% Spi [0.5000] }
-bonus_id={ 13070 }, suffix={ of the Physician }, stats={ 11% unknown [0.1339], 34% unknown [0.4018], 20% Int [0.2348], 35% Sta [0.4156] }
-bonus_id={ 13071 }, suffix={ of the Prophet }, stats={ 35% Int [0.4156], 11% unknown [0.1339], 34% unknown [0.4018], 20% Spi [0.2348] }
-bonus_id={ 13072 }, suffix={ of the Hierophant }, stats={ 11% unknown [0.1339], 34% unknown [0.4018], 20% Spi [0.2348], 35% Sta [0.4156] }
+bonus_id={ 13070 }, suffix={ of the Physician }, stats={ 11% SP [0.1339], 34% unknown [0.4018], 20% Int [0.2348], 35% Sta [0.4156] }
+bonus_id={ 13071 }, suffix={ of the Prophet }, stats={ 35% Int [0.4156], 11% SP [0.1339], 34% unknown [0.4018], 20% Spi [0.2348] }
+bonus_id={ 13072 }, suffix={ of the Hierophant }, stats={ 11% SP [0.1339], 34% unknown [0.4018], 20% Spi [0.2348], 35% Sta [0.4156] }
 bonus_id={ 13073 }, suffix={ of the Sorcerer }, stats={ 48% Int [0.4156], 27% Sta [0.2348], 25% SP [0.2130] }
 bonus_id={ 13074 }, suffix={ of the Elder }, stats={ 48% Int [0.4156], 25% SP [0.2130], 27% Spi [0.2348] }
 bonus_id={ 13075 }, suffix={ of the Channeler }, stats={ 25% SP [0.2130], 27% Spi [0.2348], 48% Sta [0.4156] }
 bonus_id={ 13076 }, suffix={ of Magic }, stats={ 100% SP [0.7722] }
-bonus_id={ 13077 }, suffix={ of Healing }, stats={ 25% unknown [0.4840], 75% unknown [1.4520] }
-bonus_id={ 13078 }, suffix={ of Arcane Wrath }, stats={ 100% unknown [0.9438] }
-bonus_id={ 13079 }, suffix={ of Fiery Wrath }, stats={ 100% unknown [0.9438] }
-bonus_id={ 13080 }, suffix={ of Frozen Wrath }, stats={ 100% unknown [0.9438] }
-bonus_id={ 13081 }, suffix={ of Holy Wrath }, stats={ 100% unknown [0.9438] }
-bonus_id={ 13082 }, suffix={ of Nature's Wrath }, stats={ 100% unknown [0.9438] }
-bonus_id={ 13083 }, suffix={ of Shadow Wrath }, stats={ 100% unknown [0.9438] }
-bonus_id={ 13084 }, suffix={ of Arcane Wrath }, stats={ 100% unknown [1.0725] }
-bonus_id={ 13085 }, suffix={ of Fiery Wrath }, stats={ 100% unknown [1.0725] }
-bonus_id={ 13086 }, suffix={ of Frozen Wrath }, stats={ 100% unknown [1.0725] }
-bonus_id={ 13087 }, suffix={ of Nature's Wrath }, stats={ 100% unknown [1.0725] }
-bonus_id={ 13088 }, suffix={ of Shadow Wrath }, stats={ 100% unknown [1.0725] }
+bonus_id={ 13077 }, suffix={ of Healing }, stats={ 25% SP [0.4840], 75% unknown [1.4520] }
+bonus_id={ 13078 }, suffix={ of Arcane Wrath }, stats={ 100% ArcaneSP [0.9438] }
+bonus_id={ 13079 }, suffix={ of Fiery Wrath }, stats={ 100% FireSP [0.9438] }
+bonus_id={ 13080 }, suffix={ of Frozen Wrath }, stats={ 100% FrostSP [0.9438] }
+bonus_id={ 13081 }, suffix={ of Holy Wrath }, stats={ 100% HolySP [0.9438] }
+bonus_id={ 13082 }, suffix={ of Nature's Wrath }, stats={ 100% NatureSP [0.9438] }
+bonus_id={ 13083 }, suffix={ of Shadow Wrath }, stats={ 100% ShadowSP [0.9438] }
+bonus_id={ 13084 }, suffix={ of Arcane Wrath }, stats={ 100% ArcaneSP [1.0725] }
+bonus_id={ 13085 }, suffix={ of Fiery Wrath }, stats={ 100% FireSP [1.0725] }
+bonus_id={ 13086 }, suffix={ of Frozen Wrath }, stats={ 100% FrostSP [1.0725] }
+bonus_id={ 13087 }, suffix={ of Nature's Wrath }, stats={ 100% NatureSP [1.0725] }
+bonus_id={ 13088 }, suffix={ of Shadow Wrath }, stats={ 100% ShadowSP [1.0725] }
 bonus_id={ 13089 }, suffix={ of the Owl }, stats={ 50% Int [0.5666], 50% Spi [0.5666] }
 bonus_id={ 13090 }, suffix={ of Spirit }, stats={ 100% Spi [0.8500] }
 bonus_id={ 13091 }, suffix={ of Intellect }, stats={ 100% Int [0.8500] }
 bonus_id={ 13092 }, suffix={ of the Sorcerer }, stats={ 48% Int [0.5352], 27% Sta [0.3024], 25% SP [0.2744] }
 bonus_id={ 13093 }, suffix={ of the Elder }, stats={ 48% Int [0.5352], 25% SP [0.2744], 27% Spi [0.3024] }
 bonus_id={ 13094 }, suffix={ of the Channeler }, stats={ 25% SP [0.2744], 27% Spi [0.3024], 48% Sta [0.5352] }
-bonus_id={ 13095 }, suffix={ of the Prophet }, stats={ 35% Int [0.5352], 11% unknown [0.1725], 34% unknown [0.5175], 20% Spi [0.3024] }
-bonus_id={ 13096 }, suffix={ of the Physician }, stats={ 11% unknown [0.1725], 34% unknown [0.5175], 20% Int [0.3024], 35% Sta [0.5352] }
-bonus_id={ 13097 }, suffix={ of the Hierophant }, stats={ 11% unknown [0.1725], 34% unknown [0.5175], 20% Spi [0.3024], 35% Sta [0.5352] }
+bonus_id={ 13095 }, suffix={ of the Prophet }, stats={ 35% Int [0.5352], 11% SP [0.1725], 34% unknown [0.5175], 20% Spi [0.3024] }
+bonus_id={ 13096 }, suffix={ of the Physician }, stats={ 11% SP [0.1725], 34% unknown [0.5175], 20% Int [0.3024], 35% Sta [0.5352] }
+bonus_id={ 13097 }, suffix={ of the Hierophant }, stats={ 11% SP [0.1725], 34% unknown [0.5175], 20% Spi [0.3024], 35% Sta [0.5352] }
 bonus_id={ 13098 }, suffix={ of Arcane Resistance }, stats={ 100% unknown [0.4400] }
 bonus_id={ 13099 }, suffix={ of the Gorilla }, stats={ 50% Int [0.5666], 50% Str [0.5666] }
 bonus_id={ 13100 }, suffix={ of the Falcon }, stats={ 50% Agi [0.5666], 50% Int [0.5666] }
 bonus_id={ 13101 }, suffix={ of Magic }, stats={ 15% Int [0.8500], 85% SP [4.7500] }
-bonus_id={ 13102 }, suffix={ of Healing }, stats={ 7% Int [0.8500], 23% unknown [2.9767], 70% unknown [8.9300] }
+bonus_id={ 13102 }, suffix={ of Healing }, stats={ 7% Int [0.8500], 23% SP [2.9767], 70% unknown [8.9300] }
 bonus_id={ 13103 }, suffix={ of Defense }, stats={ 100% unknown [0.5667] }
 bonus_id={ 13104 }, suffix={ of the Sorcerer }, stats={ 11% Int [0.6460], 7% Sta [0.4306], 82% SP [4.7500] }
 bonus_id={ 13105 }, suffix={ of the Elder }, stats={ 11% Int [0.6460], 82% SP [4.7500], 7% Spi [0.4306] }
 bonus_id={ 13106 }, suffix={ of the Channeler }, stats={ 82% SP [4.7500], 7% Spi [0.4306], 11% Sta [0.6460] }
-bonus_id={ 13107 }, suffix={ of the Physician }, stats={ 23% unknown [2.9767], 69% unknown [8.9300], 3% Int [0.4306], 5% Sta [0.6460] }
-bonus_id={ 13108 }, suffix={ of the Prophet }, stats={ 5% Int [0.6460], 23% unknown [2.9767], 69% unknown [8.9300], 3% Spi [0.4306] }
-bonus_id={ 13109 }, suffix={ of the Hierophant }, stats={ 23% unknown [2.9767], 69% unknown [8.9300], 3% Spi [0.4306], 4% Sta [0.5666] }
+bonus_id={ 13107 }, suffix={ of the Physician }, stats={ 23% SP [2.9767], 69% unknown [8.9300], 3% Int [0.4306], 5% Sta [0.6460] }
+bonus_id={ 13108 }, suffix={ of the Prophet }, stats={ 5% Int [0.6460], 23% SP [2.9767], 69% unknown [8.9300], 3% Spi [0.4306] }
+bonus_id={ 13109 }, suffix={ of the Hierophant }, stats={ 23% SP [2.9767], 69% unknown [8.9300], 3% Spi [0.4306], 4% Sta [0.5666] }
 bonus_id={ 13110 }, suffix={ of the Champion }, stats={ 16% unknown [0.1641], 54% Sta [0.5604], 30% Str [0.3167] }
 bonus_id={ 13111 }, suffix={ of the Defender }, stats={ 20% unknown [0.2111], 27% SP [0.2873], 53% Sta [0.5604] }
 bonus_id={ 13112 }, suffix={ of Defense }, stats={ 100% unknown [0.5934] }
@@ -263,20 +263,20 @@ bonus_id={ 13120 }, suffix={ of Fire Protection }, stats={ 50% unknown [0.5933],
 bonus_id={ 13121 }, suffix={ of Frost Protection }, stats={ 50% unknown [0.5933], 50% Sta [0.5933] }
 bonus_id={ 13122 }, suffix={ of Nature Protection }, stats={ 50% unknown [0.5933], 50% Sta [0.5933] }
 bonus_id={ 13123 }, suffix={ of Shadow Protection }, stats={ 50% unknown [0.5933], 50% Sta [0.5933] }
-bonus_id={ 13124 }, suffix={ of the Physician }, stats={ 11% unknown [0.1806], 34% unknown [0.5418], 20% Int [0.3167], 35% Sta [0.5604] }
-bonus_id={ 13125 }, suffix={ of the Prophet }, stats={ 35% Int [0.5604], 11% unknown [0.1806], 34% unknown [0.5418], 20% Spi [0.3167] }
-bonus_id={ 13126 }, suffix={ of the Hierophant }, stats={ 11% unknown [0.1806], 34% unknown [0.5418], 20% Spi [0.3167], 35% Sta [0.5604] }
+bonus_id={ 13124 }, suffix={ of the Physician }, stats={ 11% SP [0.1806], 34% unknown [0.5418], 20% Int [0.3167], 35% Sta [0.5604] }
+bonus_id={ 13125 }, suffix={ of the Prophet }, stats={ 35% Int [0.5604], 11% SP [0.1806], 34% unknown [0.5418], 20% Spi [0.3167] }
+bonus_id={ 13126 }, suffix={ of the Hierophant }, stats={ 11% SP [0.1806], 34% unknown [0.5418], 20% Spi [0.3167], 35% Sta [0.5604] }
 bonus_id={ 13127 }, suffix={ of the Sorcerer }, stats={ 48% Int [0.5604], 27% Sta [0.3167], 25% SP [0.2873] }
 bonus_id={ 13128 }, suffix={ of the Elder }, stats={ 48% Int [0.5604], 25% SP [0.2873], 27% Spi [0.3167] }
 bonus_id={ 13129 }, suffix={ of the Channeler }, stats={ 25% SP [0.2873], 27% Spi [0.3167], 48% Sta [0.5604] }
 bonus_id={ 13130 }, suffix={ of Magic }, stats={ 100% SP [1.0413] }
-bonus_id={ 13131 }, suffix={ of Healing }, stats={ 25% unknown [0.6526], 75% unknown [1.9580] }
-bonus_id={ 13132 }, suffix={ of Arcane Wrath }, stats={ 100% unknown [1.2727] }
-bonus_id={ 13133 }, suffix={ of Fiery Wrath }, stats={ 100% unknown [1.2727] }
-bonus_id={ 13134 }, suffix={ of Frozen Wrath }, stats={ 100% unknown [1.2727] }
-bonus_id={ 13135 }, suffix={ of Holy Wrath }, stats={ 100% unknown [1.2727] }
-bonus_id={ 13136 }, suffix={ of Nature's Wrath }, stats={ 100% unknown [1.2727] }
-bonus_id={ 13137 }, suffix={ of Shadow Wrath }, stats={ 100% unknown [1.2727] }
+bonus_id={ 13131 }, suffix={ of Healing }, stats={ 25% SP [0.6526], 75% unknown [1.9580] }
+bonus_id={ 13132 }, suffix={ of Arcane Wrath }, stats={ 100% ArcaneSP [1.2727] }
+bonus_id={ 13133 }, suffix={ of Fiery Wrath }, stats={ 100% FireSP [1.2727] }
+bonus_id={ 13134 }, suffix={ of Frozen Wrath }, stats={ 100% FrostSP [1.2727] }
+bonus_id={ 13135 }, suffix={ of Holy Wrath }, stats={ 100% HolySP [1.2727] }
+bonus_id={ 13136 }, suffix={ of Nature's Wrath }, stats={ 100% NatureSP [1.2727] }
+bonus_id={ 13137 }, suffix={ of Shadow Wrath }, stats={ 100% ShadowSP [1.2727] }
 bonus_id={ 13138 }, suffix={ of the Eagle }, stats={ 50% Int [0.5200], 50% Sta [0.5200] }
 bonus_id={ 13139 }, suffix={ of the Whale }, stats={ 50% Spi [0.5200], 50% Sta [0.5200] }
 bonus_id={ 13140 }, suffix={ of the Owl }, stats={ 50% Int [0.5200], 50% Spi [0.5200] }
@@ -294,21 +294,21 @@ bonus_id={ 13151 }, suffix={ of Stamina }, stats={ 100% Sta [0.7800] }
 bonus_id={ 13152 }, suffix={ of Strength }, stats={ 100% Str [0.7800] }
 bonus_id={ 13153 }, suffix={ of Power }, stats={ 100% AP [1.5600] }
 bonus_id={ 13154 }, suffix={ of Magic }, stats={ 100% SP [0.9126] }
-bonus_id={ 13155 }, suffix={ of Healing }, stats={ 25% unknown [0.5720], 75% unknown [1.7160] }
+bonus_id={ 13155 }, suffix={ of Healing }, stats={ 25% SP [0.5720], 75% unknown [1.7160] }
 bonus_id={ 13156 }, suffix={ of Defense }, stats={ 100% unknown [0.5200] }
 bonus_id={ 13157 }, suffix={ of Arcane Resistance }, stats={ 50% unknown [0.5200], 50% Sta [0.5200] }
 bonus_id={ 13158 }, suffix={ of Fire Protection }, stats={ 50% unknown [0.5200], 50% Sta [0.5200] }
 bonus_id={ 13159 }, suffix={ of Frost Protection }, stats={ 50% unknown [0.5200], 50% Sta [0.5200] }
 bonus_id={ 13160 }, suffix={ of Nature Protection }, stats={ 50% unknown [0.5200], 50% Sta [0.5200] }
 bonus_id={ 13161 }, suffix={ of Shadow Protection }, stats={ 50% unknown [0.5200], 50% Sta [0.5200] }
-bonus_id={ 13162 }, suffix={ of Arcane Wrath }, stats={ 100% unknown [1.1154] }
-bonus_id={ 13163 }, suffix={ of Nature's Wrath }, stats={ 100% unknown [1.1154] }
+bonus_id={ 13162 }, suffix={ of Arcane Wrath }, stats={ 100% ArcaneSP [1.1154] }
+bonus_id={ 13163 }, suffix={ of Nature's Wrath }, stats={ 100% NatureSP [1.1154] }
 bonus_id={ 13164 }, suffix={ of the Sorcerer }, stats={ 48% Int [0.4912], 27% Sta [0.2775], 25% SP [0.2518] }
 bonus_id={ 13165 }, suffix={ of the Elder }, stats={ 48% Int [0.4912], 25% SP [0.2518], 27% Spi [0.2775] }
 bonus_id={ 13166 }, suffix={ of the Channeler }, stats={ 25% SP [0.2518], 27% Spi [0.2775], 48% Sta [0.4912] }
-bonus_id={ 13167 }, suffix={ of the Physician }, stats={ 11% unknown [0.1582], 34% unknown [0.4748], 20% Int [0.2775], 35% Sta [0.4912] }
-bonus_id={ 13168 }, suffix={ of the Prophet }, stats={ 35% Int [0.4912], 11% unknown [0.1582], 34% unknown [0.4748], 20% Spi [0.2775] }
-bonus_id={ 13169 }, suffix={ of the Hierophant }, stats={ 11% unknown [0.1582], 34% unknown [0.4748], 20% Spi [0.2775], 35% Sta [0.4912] }
+bonus_id={ 13167 }, suffix={ of the Physician }, stats={ 11% SP [0.1582], 34% unknown [0.4748], 20% Int [0.2775], 35% Sta [0.4912] }
+bonus_id={ 13168 }, suffix={ of the Prophet }, stats={ 35% Int [0.4912], 11% SP [0.1582], 34% unknown [0.4748], 20% Spi [0.2775] }
+bonus_id={ 13169 }, suffix={ of the Hierophant }, stats={ 11% SP [0.1582], 34% unknown [0.4748], 20% Spi [0.2775], 35% Sta [0.4912] }
 bonus_id={ 13170 }, suffix={ of the Bandit }, stats={ 17% Agi [0.2158], 44% AP [0.5551], 39% Sta [0.4912] }
 bonus_id={ 13171 }, suffix={ of the Beast }, stats={ 28% Agi [0.2775], 50% Sta [0.4912], 22% Str [0.2158] }
 bonus_id={ 13172 }, suffix={ of the Champion }, stats={ 16% unknown [0.1439], 54% Sta [0.4912], 30% Str [0.2775] }
@@ -354,7 +354,7 @@ bonus_id={ 13779 }, suffix={ of Fire Protection }, stats={ 50% unknown [0.5000],
 bonus_id={ 13780 }, suffix={ of Frost Protection }, stats={ 50% unknown [0.5000], 50% Sta [0.5000] }
 bonus_id={ 13781 }, suffix={ of Nature Protection }, stats={ 50% unknown [0.5000], 50% Sta [0.5000] }
 bonus_id={ 13782 }, suffix={ of Shadow Protection }, stats={ 50% unknown [0.5000], 50% Sta [0.5000] }
-bonus_id={ 13783 }, suffix={ of Nature's Wrath }, stats={ 100% unknown [1.0714] }
+bonus_id={ 13783 }, suffix={ of Nature's Wrath }, stats={ 100% NatureSP [1.0714] }
 bonus_id={ 13784 }, suffix={ of the Knight }, stats={ 25% SP [0.2421], 48% Sta [0.4723], 27% Str [0.2669] }
 bonus_id={ 13914 }, ilevel={ 0 @plvl 0 - 5 @plvl 60 }
 bonus_id={ 13915 }, ilevel={ 0 @plvl 0 - 100 @plvl 100 }

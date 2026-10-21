@@ -1012,6 +1012,17 @@ double dbc_t::resource_base( player_e t, unsigned level ) const
 #endif
 }
 
+double dbc_t::health_base( player_e t, unsigned level ) const
+{
+  uint32_t class_id = util::class_id( t );
+
+  const auto data = SC_DBC_GET_DATA( __gt_class_base_health_by_level, __ptr_gt_class_base_health_by_level, ptr );
+  if ( class_id >= data.size() || level == 0 )
+    return 0.0;
+
+  return data[ class_id ][ std::min( level, 60u ) - 1 ];
+}
+
 double dbc_t::health_per_stamina( unsigned level ) const
 {
   assert( level > 0 && level <= MAX_SCALING_LEVEL );

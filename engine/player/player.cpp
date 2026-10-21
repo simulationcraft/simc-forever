@@ -1578,6 +1578,7 @@ void player_t::init_base_stats()
       switch ( rt )
       {
         case RESOURCE_HEALTH:
+          rt_base = dbc->health_base( type, level() );
           break;
         case RESOURCE_MANA: // Forever - regen comes from spirit so base regen is 0
           rt_base = dbc->resource_base( type, level() );
@@ -2200,6 +2201,13 @@ double mana_from_intellect( const player_t* p )
   double intellect = std::floor( p->intellect() );
   return std::min( intellect, 20.0 ) + ( 15.0 * std::max( intellect - 20.0, 0.0 ) );
 }
+
+// TODO check if accurate in Forever, based from emulated servers
+double health_from_stamina( const player_t* p )
+{
+  double stamina = std::floor( p->stamina() );
+  return std::min( stamina, 18.0 ) + ( p->current.health_per_stamina * std::max( stamina - 18.0, 0.0 ) );
+}
 /**
  * Compute max resource r for an actor, based on their set base resources
  */
@@ -2211,7 +2219,7 @@ double compute_max_resource( player_t* p, resource_e r )
 
   // re-ordered 2016-06-19 by Theck - initial_multiplier should do something for RESOURCE_HEALTH
   if ( r == RESOURCE_HEALTH )
-    value += std::floor( p->stamina() ) * p->current.health_per_stamina;
+    value += health_from_stamina( p );
   if ( r == RESOURCE_MANA && p->is_player() )
     value += mana_from_intellect( p );
 
@@ -4741,11 +4749,20 @@ double player_t::composite_spell_cast_speed() const
   return cache.spell_haste();
 }
 
-double player_t::composite_spell_power( school_e /* school */ ) const
+double player_t::composite_spell_power( school_e school ) const
 {
   double sp = current.stats.spell_power;
 
   sp += current.spell_power_per_intellect * cache.intellect();
+
+  // Multi-school spells use the highest of their schools
+  double school_sp = 0.0;
+  for ( auto s = SCHOOL_ARCANE; s < SCHOOL_PHYSICAL; s++ )
+  {
+    if ( dbc::is_school( school, s ) )
+      school_sp = std::max( school_sp, current.stats.school_spell_power[ s ] );
+  }
+  sp += school_sp;
 
   return sp;
 }
@@ -6825,7 +6842,7 @@ void player_t::recalculate_resource_max( resource_e resource_type, gain_t* sourc
     case RESOURCE_HEALTH:
     {
       // Calculate & set maximum health
-      resources.max[ resource_type ] += floor( stamina() ) * current.health_per_stamina;
+      resources.max[ resource_type ] += health_from_stamina( this );
 
       // Make sure the player starts combat with full health
       if ( !in_combat )
@@ -7001,6 +7018,12 @@ void player_t::stat_gain( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_STR_AGI_INT:
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
+    case STAT_ARCANE_SPELL_POWER:
+    case STAT_FIRE_SPELL_POWER:
+    case STAT_FROST_SPELL_POWER:
+    case STAT_HOLY_SPELL_POWER:
+    case STAT_NATURE_SPELL_POWER:
+    case STAT_SHADOW_SPELL_POWER:
     case STAT_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
     case STAT_HIT_RATING:
@@ -7160,6 +7183,12 @@ void player_t::stat_loss( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_STR_AGI_INT:
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
+    case STAT_ARCANE_SPELL_POWER:
+    case STAT_FIRE_SPELL_POWER:
+    case STAT_FROST_SPELL_POWER:
+    case STAT_HOLY_SPELL_POWER:
+    case STAT_NATURE_SPELL_POWER:
+    case STAT_SHADOW_SPELL_POWER:
     case STAT_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
     case STAT_HIT_RATING:

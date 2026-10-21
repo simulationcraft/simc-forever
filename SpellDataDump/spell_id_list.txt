@@ -2163,6 +2163,7 @@ Mage
 1326081  Arcane Wrath
 1326082  Arcane Wrath
 1326083 *Missile Barrage
+1326891  Frigid Power
 
 Paladin
 465      Devotion Aura
