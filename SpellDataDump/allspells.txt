@@ -55438,6 +55438,19 @@ Effects          :
                    Family Flags: 10
 Description      : Increases the damage done by your Bane of Agony by $s1%.
 
+Name             : Bone Armor (id=18828) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 50
+Duration         : 20 seconds
+Triggered By     : Bone Armor (19409)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=697612)   : Apply Aura (6) | Unknown(674)
+                   Base Value: 150 | Scaled Value: 150 | Misc Value: 1 | Target: Self (1)
+Description      : When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $s1 for $d.
+Tooltip          : Increased armor.
+
 Name             : Lily Root (id=18832) [Spell Family (13)] 
 School           : Physical
 Spell Type       : Magic
@@ -57682,6 +57695,19 @@ Effects          :
 #1 (id=695471)   : Apply Aura (6) | Proc Trigger Spell (42): Improved Concussive Shot
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 19410 | Target: Self (1)
 Description      : Gives your Concussive Shot a $m1% chance to stun the target for $19410d.
+
+Name             : Bone Armor (id=19409) [Passive] 
+School           : Shadow
+Spell Type       : None
+Spell Level      : 50
+Duration         : Aura (infinite)
+Proc Chance      : 3%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=695784)   : Apply Aura (6) | Proc Trigger Spell (42): Bone Armor
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 18828 | Target: Self (1)
+Description      : When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $18828s1 for $18828d.
 
 Name             : Improved Concussive Shot (id=19410) 
 Class            : Hunter

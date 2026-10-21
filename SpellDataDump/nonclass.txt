@@ -19040,6 +19040,19 @@ Effects          :
                    Base Value: 128 | Scaled Value: 128 (delta=0.5) | Resource: mana | Target: Targeted Ally (21)
 Description      : Dispels Polymorph effects on a friendly target.  Also restores $s2 Health and $s3 Mana.
 
+Name             : Bone Armor (id=18828) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 50
+Duration         : 20 seconds
+Triggered By     : Bone Armor (19409)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=697612)   : Apply Aura (6) | Unknown(674)
+                   Base Value: 150 | Scaled Value: 150 | Misc Value: 1 | Target: Self (1)
+Description      : When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $s1 for $d.
+Tooltip          : Increased armor.
+
 Name             : Lily Root (id=18832) [Spell Family (13)] 
 School           : Physical
 Spell Type       : Magic
@@ -19636,6 +19649,19 @@ Effects          :
 #1 (id=697433)   : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 12257 | Misc Value 2: 5121 | Target: Summoner in Area (32)
 Description      : Summons a mechanical yeti that will protect you for $d.
+
+Name             : Bone Armor (id=19409) [Passive] 
+School           : Shadow
+Spell Type       : None
+Spell Level      : 50
+Duration         : Aura (infinite)
+Proc Chance      : 3%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=695784)   : Apply Aura (6) | Proc Trigger Spell (42): Bone Armor
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 18828 | Target: Self (1)
+Description      : When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $18828s1 for $18828d.
 
 Name             : Salt Shaker (id=19566) 
 School           : Physical
