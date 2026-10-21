@@ -2895,7 +2895,8 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Current Target (25)
                    Modified By: Improved Hunter's Mark (19421 effect#1)
 #2 (id=690991)   : Apply Aura (6) | Unknown(127)
-                   Base Value: 71 | Scaled Value: 71 | Target: Targeted Enemy (6)
+                   Base Value: 143 | Scaled Value: 143 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (71 -> 143)
                    Modified By: Improved Hunter's Mark (19421 effect#1)
 Description      : Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.

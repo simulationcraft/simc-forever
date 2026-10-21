@@ -1060,6 +1060,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $11202h% chance of poisoning the enemy, slowing their movement speed by $11201s1% for $11201d.
 
 Name             : Slice and Dice (desc=Rank 1) (id=5171) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1072,7 +1073,7 @@ Duration         : 6 seconds
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Slice and Dice (14165 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 18
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
 Effects          :
 #1 (id=683950)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -1327,6 +1328,7 @@ Description      : Incapacitates the target for up to $d. Only works on Humanoid
 Tooltip          : Incapacitated.
 
 Name             : Slice and Dice (desc=Rank 2) (id=6774) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1339,7 +1341,7 @@ Duration         : 6 seconds
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Slice and Dice (14165 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 18
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
 Effects          :
 #1 (id=684798)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -3884,13 +3886,14 @@ Effects          :
 Description      : Gives your finishing moves a $m1% chance to add a Combo Point to your target.
 
 Name             : Ruthlessness (id=14157) 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
 Range            : 50000 yards
 Labels           : 20: Rogue Spells
 Triggered By     : Ruthlessness (14156)
-Attributes       : Is Ability (4), No Threat (42), Unknown (493)
+Attributes       : Is Ability (4), No Threat (42), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Unknown (493)
 Effects          :
 #1 (id=691545)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -4046,6 +4049,7 @@ Effects          :
 Description      : $s1 Energy restored.
 
 Name             : Premeditation (id=14183) [Spell Family (8)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=10, max_rank=1, req_points=0]
 Class            : Rogue
 School           : Physical
@@ -4057,7 +4061,7 @@ Cooldown         : 120 seconds
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 30
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Allow While Stealthed (37), No Threat (42), No AutoCast (AI) (49), No Aura Icon (60), Suppress Target Procs (113), Not an Attack (194), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Allow While Stealthed (37), No Threat (42), No AutoCast (AI) (49), No Aura Icon (60), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Unknown (493)
 Effects          :
 #1 (id=691744)   : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
@@ -7328,6 +7332,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 
 Name             : Venom (id=1310703) [Spell Family (8)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=1]
 Class            : Rogue
 School           : Physical
@@ -7342,7 +7347,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Relentless Strikes (14179 effect#1), Carnage (432275 effect#1)
 Family Flags     : 90
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Aura Points On Client (268), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1340416)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)

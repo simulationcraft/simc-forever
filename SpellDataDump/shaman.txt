@@ -9162,7 +9162,8 @@ Effects          :
 #1 (id=1235457)  : School Damage (2): fire
                    Base Value: 196 | Scaled Value: 204.8 (delta=0.253259) | Points Per Level: 1.1 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 #2 (id=1340790)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 53.6 | Points Per Level: 4.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 20 | Scaled Value: 20 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+Hotfixed         : Points per Level (4.2 -> 0)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 Name             : Lava Burst (id=1238373) [Spell Family (11)] 

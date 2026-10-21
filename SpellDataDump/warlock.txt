@@ -9436,8 +9436,9 @@ Family Flags     : 21
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=1233765)  : Apply Aura (6) | Damage Done (13)
-                   Base Value: 14 | Scaled Value: 14 | Misc Value: 0x24 | Target: Self (1)
-                   Affected School(s): Fire, Shadow
+                   Base Value: 14 | Scaled Value: 14 | Misc Value: 0x20 | Target: Self (1)
+                   Affected School(s): Shadow
+Hotfixed         : Misc Value (36 -> 32)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 #2 (id=1233766)  : Apply Aura (6) | Modify Spell Speed% (65)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -9454,8 +9455,9 @@ Family Flags     : 21
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=1233768)  : Apply Aura (6) | Damage Done (13)
-                   Base Value: 17 | Scaled Value: 17 | Misc Value: 0x24 | Target: Self (1)
-                   Affected School(s): Fire, Shadow
+                   Base Value: 17 | Scaled Value: 17 | Misc Value: 0x20 | Target: Self (1)
+                   Affected School(s): Shadow
+Hotfixed         : Misc Value (36 -> 32)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 #2 (id=1233769)  : Apply Aura (6) | Modify Spell Speed% (65)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
@@ -9472,8 +9474,9 @@ Family Flags     : 21
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=1233770)  : Apply Aura (6) | Damage Done (13)
-                   Base Value: 21 | Scaled Value: 21 | Misc Value: 0x24 | Target: Self (1)
-                   Affected School(s): Fire, Shadow
+                   Base Value: 21 | Scaled Value: 21 | Misc Value: 0x20 | Target: Self (1)
+                   Affected School(s): Shadow
+Hotfixed         : Misc Value (36 -> 32)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 #2 (id=1233771)  : Apply Aura (6) | Modify Spell Speed% (65)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)

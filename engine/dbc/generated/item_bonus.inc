@@ -1,5 +1,7 @@
 // Item bonuses, wow build 1.60.1.70450
-static constexpr std::array<item_bonus_entry_t, 1124> __item_bonus_data { {
+static constexpr std::array<item_bonus_entry_t, 1126> __item_bonus_data { {
+  {  5022, 3407, 15,       0,       0,       0,       0,  0 },
+  {  5429, 3524,  0,       0,       0,       0,       0,  0 },
   { 23589, 11036, 47,       9,    -100,       0,       0,  0 },
   { 27013, 12672, 23,  212548,       0,       0,       0,  0 },
   { 27044, 12688,  2,       5,    6000,       0,       0,  0 },
