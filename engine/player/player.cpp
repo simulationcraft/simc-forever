@@ -4295,8 +4295,6 @@ void player_t::create_buffs()
     debuffs.invulnerable  = make_buff<invulnerable_debuff_t>( this );
     debuffs.vulnerable    = make_buff( this, "vulnerable" )->set_max_stack( 1 );
     debuffs.flying        = make_buff( this, "flying" )->set_max_stack( 1 );
-    debuffs.mortal_wounds = make_buff( this, "mortal_wounds", find_spell( 115804 ) )
-      ->set_default_value( std::fabs( find_spell( 115804 )->effectN( 1 ).percent() ) );
   }
 
   // set up always since this can be applied by enemy actions and raid events.
@@ -6297,8 +6295,6 @@ void player_t::arise()
 
     if ( sim->overrides.bleeding && debuffs.bleeding )
       debuffs.bleeding->override_buff( 1, 1.0 );
-    if ( sim->overrides.mortal_wounds && debuffs.mortal_wounds )
-      debuffs.mortal_wounds->override_buff();
   }
   else
   {

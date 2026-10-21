@@ -468,9 +468,6 @@ struct player_t : public actor_t
     buff_t* invulnerable;
     buff_t* vulnerable;
     buff_t* damage_taken;
-
-    // WoD debuffs
-    buff_t* mortal_wounds;
   } debuffs;
 
   struct external_buffs_t
