@@ -55,6 +55,14 @@ struct priest_t final : public parse_player_effects_t
 
   priest_td_t* get_target_data( player_t* target ) const override;
 
+  // Priest racials are not in the racial spell table, so check the spell's race mask instead
+  template <typename RANKS>
+  const spell_data_t* find_racial_rank( const RANKS& ranks ) const
+  {
+    auto spell = find_spell( find_rank( ranks ).spell_id );
+    return spell->race_mask() & util::race_mask( race ) ? spell : spell_data_t::not_found();
+  }
+
   std::string default_potion() const override   { return priest_apl::potion( this ); }
   std::string default_flask() const override    { return priest_apl::flask( this ); }
   std::string default_food() const override     { return priest_apl::food( this ); }
@@ -608,6 +616,28 @@ struct holy_nova_t : public priest_spell_t
   }
 };
 
+// Starshards
+
+constexpr std::array starshards_ranks {
+  //            spell
+  spell_rank_t{ 10797 },
+  spell_rank_t{ 19296 },
+  spell_rank_t{ 19299 },
+  spell_rank_t{ 19302 },
+  spell_rank_t{ 19303 },
+  spell_rank_t{ 19304 },
+  spell_rank_t{ 19305 },
+};
+struct starshards_t : public priest_spell_t
+{
+  starshards_t( priest_t* player, util::string_view options_str ) :
+    priest_spell_t( "starshards", player, player->find_racial_rank( starshards_ranks ) )
+  {
+    parse_options( options_str );
+    channeled = true;
+  }
+};
+
 // Inner Focus
 
 struct inner_focus_t : public priest_spell_t
@@ -689,6 +719,8 @@ action_t* priest_t::create_action( util::string_view name, util::string_view opt
     return new penance_t( this, options_str );
   if ( name == "holy_nova" )
     return new holy_nova_t( this, options_str );
+  if ( name == "starshards" )
+    return new starshards_t( this, options_str );
   if ( name == "inner_focus" )
     return new inner_focus_t( this, options_str );
   if ( name == "shadowform" )
