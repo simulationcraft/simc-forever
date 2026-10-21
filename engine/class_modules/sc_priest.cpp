@@ -17,6 +17,8 @@ struct priest_td_t final : public actor_target_data_t
   struct dots_t
   {
     dot_t* devouring_plague = nullptr;
+    dot_t* holy_fire = nullptr;
+    dot_t* shadow_word_pain = nullptr;
   } dots;
 
   struct debuffs_t
@@ -75,6 +77,7 @@ struct priest_t final : public parse_player_effects_t
     player_talent_t improved_mind_flay;
     player_talent_t inner_focus;
     player_talent_t mind_flay;
+    player_talent_t power_in_light;
     player_talent_t shadow_weaving;
     player_talent_t shadowform;
     player_talent_t wand_specialization;
@@ -93,6 +96,8 @@ private:
 priest_td_t::priest_td_t( player_t* target, priest_t& p ) : actor_target_data_t( target, &p )
 {
   dots.devouring_plague = target->get_dot( "devouring_plague", &p );
+  dots.holy_fire        = target->get_dot( "holy_fire", &p );
+  dots.shadow_word_pain = target->get_dot( "shadow_word_pain", &p );
 
   debuffs.shadow_weaving = make_buff( *this, "shadow_weaving", p.spell.shadow_weaving );
 }
@@ -166,6 +171,7 @@ void priest_t::init_spells()
   talent.improved_mind_flay  = find_talent_spell( talent_tree::CLASS, "Improved Mind Flay" );
   talent.inner_focus         = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
   talent.mind_flay           = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
+  talent.power_in_light      = find_talent_spell( talent_tree::CLASS, "Power in Light" );
   talent.shadow_weaving      = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
   talent.shadowform          = find_talent_spell( talent_tree::CLASS, "Shadowform" );
 
@@ -309,6 +315,20 @@ struct smite_t : public priest_spell_t
     priest_spell_t( "smite", player, player->find_spell( player->find_rank( smite_ranks ).spell_id ) )
   {
     parse_options( options_str );
+
+    // TODO: Also applies to Penance once implemented
+    if ( player->talent.power_in_light.ok() )
+    {
+      const auto& eff = player->talent.power_in_light->effectN( 1 );
+
+      add_parse_entry( target_multiplier_effects )
+        .set_func( []( actor_target_data_t* td ) {
+          const auto& dots = static_cast<priest_td_t*>( td )->dots;
+          return dots.holy_fire->is_ticking() || dots.shadow_word_pain->is_ticking();
+        } )
+        .set_value( eff.percent() )
+        .set_eff( &eff );
+    }
   }
 };
 
