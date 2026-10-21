@@ -638,6 +638,35 @@ struct starshards_t : public priest_spell_t
   }
 };
 
+// Dark Sacrifice
+
+// TODO: Health cost, effect 1
+constexpr std::array dark_sacrifice_ranks {
+  //              spell
+  spell_rank_t{ 1277324 },
+  spell_rank_t{ 1277325 },
+  spell_rank_t{ 1277326 },
+  spell_rank_t{ 1277327 },
+  spell_rank_t{ 1277328 },
+};
+struct dark_sacrifice_t : public priest_spell_t
+{
+  dark_sacrifice_t( priest_t* player, util::string_view options_str ) :
+    priest_spell_t( "dark_sacrifice", player, player->find_racial_rank( dark_sacrifice_ranks ) )
+  {
+    parse_options( options_str );
+    harmful = false;
+    target = player;
+  }
+
+  void execute() override
+  {
+    priest_spell_t::execute();
+
+    player->resource_gain( RESOURCE_MANA, player->cache.spirit(), gain, this );
+  }
+};
+
 // Inner Focus
 
 struct inner_focus_t : public priest_spell_t
@@ -721,6 +750,8 @@ action_t* priest_t::create_action( util::string_view name, util::string_view opt
     return new holy_nova_t( this, options_str );
   if ( name == "starshards" )
     return new starshards_t( this, options_str );
+  if ( name == "dark_sacrifice" )
+    return new dark_sacrifice_t( this, options_str );
   if ( name == "inner_focus" )
     return new inner_focus_t( this, options_str );
   if ( name == "shadowform" )
