@@ -14,6 +14,11 @@ struct priest_t;
 
 struct priest_td_t final : public actor_target_data_t
 {
+  struct dots_t
+  {
+    dot_t* devouring_plague = nullptr;
+  } dots;
+
   struct debuffs_t
   {
     buff_t* shadow_weaving = nullptr;
@@ -42,6 +47,7 @@ struct priest_t final : public parse_player_effects_t
   void parse_action_effects( action_t* );
 
   void init_special_effects() override;
+  void activate() override;
 
   double composite_attribute_multiplier( attribute_e ) const override;
 
@@ -64,6 +70,7 @@ struct priest_t final : public parse_player_effects_t
   struct talents_t
   {
     player_talent_t dark_inspiration;
+    player_talent_t devouring_contagion;
     player_talent_t early_demise;
     player_talent_t improved_mind_flay;
     player_talent_t inner_focus;
@@ -85,6 +92,8 @@ private:
 
 priest_td_t::priest_td_t( player_t* target, priest_t& p ) : actor_target_data_t( target, &p )
 {
+  dots.devouring_plague = target->get_dot( "devouring_plague", &p );
+
   debuffs.shadow_weaving = make_buff( *this, "shadow_weaving", p.spell.shadow_weaving );
 }
 
@@ -151,13 +160,14 @@ void priest_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
-  talent.dark_inspiration   = find_talent_spell( talent_tree::CLASS, "Dark Inspiration" );
-  talent.early_demise       = find_talent_spell( talent_tree::CLASS, "Early Demise" );
-  talent.improved_mind_flay = find_talent_spell( talent_tree::CLASS, "Improved Mind Flay" );
-  talent.inner_focus        = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
-  talent.mind_flay          = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
-  talent.shadow_weaving     = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
-  talent.shadowform         = find_talent_spell( talent_tree::CLASS, "Shadowform" );
+  talent.dark_inspiration    = find_talent_spell( talent_tree::CLASS, "Dark Inspiration" );
+  talent.devouring_contagion = find_talent_spell( talent_tree::CLASS, "Devouring Contagion" );
+  talent.early_demise        = find_talent_spell( talent_tree::CLASS, "Early Demise" );
+  talent.improved_mind_flay  = find_talent_spell( talent_tree::CLASS, "Improved Mind Flay" );
+  talent.inner_focus         = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
+  talent.mind_flay           = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
+  talent.shadow_weaving      = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
+  talent.shadowform          = find_talent_spell( talent_tree::CLASS, "Shadowform" );
 
   // Wand only, all schools because wand damage can be any school
   // TODO: Apply to the wand auto attack once implemented
@@ -225,6 +235,39 @@ void priest_t::init_special_effects()
   }
 
   parse_player_effects_t::init_special_effects();
+}
+
+void priest_t::activate()
+{
+  parse_player_effects_t::activate();
+
+  if ( talent.devouring_contagion.ok() )
+  {
+    auto range   = talent.devouring_contagion->effectN( 2 ).base_value();
+    auto targets = as<size_t>( talent.devouring_contagion->effectN( 3 ).base_value() );
+
+    register_on_kill_callback( [ this, range, targets ]( player_t* t ) {
+      if ( sim->event_mgr.canceled )
+        return;
+
+      auto source = get_target_data( t )->dots.devouring_plague;
+      if ( !source->is_ticking() )
+        return;
+
+      auto tl = sim->target_non_sleeping_list.data();
+      if ( sim->distance_targeting_enabled )
+        range::erase_remove( tl, [ t, range ]( player_t* e ) { return e->get_player_distance( *t ) > range; } );
+
+      // prioritize undotted over dotted
+      rng().shuffle( tl.begin(), tl.end() );
+      std::stable_partition( tl.begin(), tl.end(), [ this ]( player_t* e ) {
+        return !get_target_data( e )->dots.devouring_plague->is_ticking();
+      } );
+
+      for ( size_t i = 0; i < std::min( targets, tl.size() ); i++ )
+        source->copy( tl[ i ], DOT_COPY_START );
+    } );
+  }
 }
 
 // parse_effects does not parse party buffs with range TODO improve core to allow that?
