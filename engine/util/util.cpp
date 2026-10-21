@@ -1418,6 +1418,12 @@ const char* util::stat_type_string( stat_e stat )
     case STAT_MAX_RUNIC: return "maximum_runic";
 
     case STAT_SPELL_POWER:       return "spell_power";
+    case STAT_ARCANE_SPELL_POWER: return "arcane_spell_power";
+    case STAT_FIRE_SPELL_POWER:   return "fire_spell_power";
+    case STAT_FROST_SPELL_POWER:  return "frost_spell_power";
+    case STAT_HOLY_SPELL_POWER:   return "holy_spell_power";
+    case STAT_NATURE_SPELL_POWER: return "nature_spell_power";
+    case STAT_SHADOW_SPELL_POWER: return "shadow_spell_power";
 
     case STAT_ATTACK_POWER:             return "attack_power";
     case STAT_EXPERTISE_RATING:         return "expertise_rating";
@@ -1504,6 +1510,12 @@ const char* util::stat_type_abbrev( stat_e stat )
     case STAT_MAX_RUNIC: return "MaxRunic";
 
     case STAT_SPELL_POWER:       return "SP";
+    case STAT_ARCANE_SPELL_POWER: return "ArcaneSP";
+    case STAT_FIRE_SPELL_POWER:   return "FireSP";
+    case STAT_FROST_SPELL_POWER:  return "FrostSP";
+    case STAT_HOLY_SPELL_POWER:   return "HolySP";
+    case STAT_NATURE_SPELL_POWER: return "NatureSP";
+    case STAT_SHADOW_SPELL_POWER: return "ShadowSP";
 
     case STAT_ATTACK_POWER:             return "AP";
     case STAT_EXPERTISE_RATING:         return "Exp";
@@ -2067,6 +2079,12 @@ stat_e util::translate_item_mod( int item_mod )
     case ITEM_MOD_RANGED_ATTACK_POWER: return STAT_ATTACK_POWER;
     case ITEM_MOD_SPELL_POWER:         return STAT_SPELL_POWER;
     case ITEM_MOD_SPELL_DAMAGE_DONE:   return STAT_SPELL_POWER;
+    case ITEM_MOD_ARCANE_SPELL_POWER:  return STAT_ARCANE_SPELL_POWER;
+    case ITEM_MOD_FIRE_SPELL_POWER:    return STAT_FIRE_SPELL_POWER;
+    case ITEM_MOD_FROST_SPELL_POWER:   return STAT_FROST_SPELL_POWER;
+    case ITEM_MOD_HOLY_SPELL_POWER:    return STAT_HOLY_SPELL_POWER;
+    case ITEM_MOD_NATURE_SPELL_POWER:  return STAT_NATURE_SPELL_POWER;
+    case ITEM_MOD_SHADOW_SPELL_POWER:  return STAT_SHADOW_SPELL_POWER;
     case ITEM_MOD_EXTRA_ARMOR:         return STAT_BONUS_ARMOR;
     case ITEM_MOD_RESILIENCE_RATING:   return STAT_RESILIENCE_RATING;
     case ITEM_MOD_PVP_POWER:           return STAT_PVP_POWER;
@@ -2100,6 +2118,12 @@ int util::translate_stat( stat_e stat )
     case STAT_EXPERTISE_RATING:   return ITEM_MOD_EXPERTISE_RATING;
     case STAT_ATTACK_POWER:       return ITEM_MOD_ATTACK_POWER;
     case STAT_SPELL_POWER:        return ITEM_MOD_SPELL_POWER;
+    case STAT_ARCANE_SPELL_POWER: return ITEM_MOD_ARCANE_SPELL_POWER;
+    case STAT_FIRE_SPELL_POWER:   return ITEM_MOD_FIRE_SPELL_POWER;
+    case STAT_FROST_SPELL_POWER:  return ITEM_MOD_FROST_SPELL_POWER;
+    case STAT_HOLY_SPELL_POWER:   return ITEM_MOD_HOLY_SPELL_POWER;
+    case STAT_NATURE_SPELL_POWER: return ITEM_MOD_NATURE_SPELL_POWER;
+    case STAT_SHADOW_SPELL_POWER: return ITEM_MOD_SHADOW_SPELL_POWER;
     case STAT_BONUS_ARMOR:        return ITEM_MOD_EXTRA_ARMOR;
     case STAT_RESILIENCE_RATING:  return ITEM_MOD_RESILIENCE_RATING;
     case STAT_PVP_POWER:          return ITEM_MOD_PVP_POWER;

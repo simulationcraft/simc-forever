@@ -21,6 +21,7 @@ struct gear_stats_t
   std::array<double, ATTRIBUTE_MAX> attribute;
   std::array<double, RESOURCE_MAX> resource;
   double spell_power;
+  std::array<double, SCHOOL_MAX_PRIMARY> school_spell_power;
   double attack_power;
   double expertise_rating;
   double expertise_rating2;
@@ -50,6 +51,7 @@ struct gear_stats_t
       attribute(),
       resource(),
       spell_power( 0.0 ),
+      school_spell_power(),
       attack_power( 0.0 ),
       expertise_rating( 0.0 ),
       expertise_rating2( 0.0 ),
@@ -81,6 +83,7 @@ struct gear_stats_t
 
     range::fill( attribute, initializer );
     range::fill( resource, initializer );
+    range::fill( school_spell_power, initializer );
 
     spell_power = initializer;
     attack_power = initializer;
@@ -143,6 +146,7 @@ struct gear_stats_t
     corruption_resistance_rating += right.corruption_resistance_rating;
     range::transform ( attribute, right.attribute, attribute.begin(), std::plus<>() );
     range::transform ( resource, right.resource, resource.begin(), std::plus<>() );
+    range::transform ( school_spell_power, right.school_spell_power, school_spell_power.begin(), std::plus<>() );
     return *this;
   }
 

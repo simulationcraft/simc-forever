@@ -4749,11 +4749,20 @@ double player_t::composite_spell_cast_speed() const
   return cache.spell_haste();
 }
 
-double player_t::composite_spell_power( school_e /* school */ ) const
+double player_t::composite_spell_power( school_e school ) const
 {
   double sp = current.stats.spell_power;
 
   sp += current.spell_power_per_intellect * cache.intellect();
+
+  // Multi-school spells use the highest of their schools
+  double school_sp = 0.0;
+  for ( auto s = SCHOOL_ARCANE; s < SCHOOL_PHYSICAL; s++ )
+  {
+    if ( dbc::is_school( school, s ) )
+      school_sp = std::max( school_sp, current.stats.school_spell_power[ s ] );
+  }
+  sp += school_sp;
 
   return sp;
 }
@@ -7009,6 +7018,12 @@ void player_t::stat_gain( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_STR_AGI_INT:
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
+    case STAT_ARCANE_SPELL_POWER:
+    case STAT_FIRE_SPELL_POWER:
+    case STAT_FROST_SPELL_POWER:
+    case STAT_HOLY_SPELL_POWER:
+    case STAT_NATURE_SPELL_POWER:
+    case STAT_SHADOW_SPELL_POWER:
     case STAT_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
     case STAT_HIT_RATING:
@@ -7168,6 +7183,12 @@ void player_t::stat_loss( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_STR_AGI_INT:
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
+    case STAT_ARCANE_SPELL_POWER:
+    case STAT_FIRE_SPELL_POWER:
+    case STAT_FROST_SPELL_POWER:
+    case STAT_HOLY_SPELL_POWER:
+    case STAT_NATURE_SPELL_POWER:
+    case STAT_SHADOW_SPELL_POWER:
     case STAT_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
     case STAT_HIT_RATING:
