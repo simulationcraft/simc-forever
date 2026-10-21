@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70450
-static constexpr std::array<spelltext_data_t, 7147> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
   {      53, "Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.", 0, "Rank 1" },
@@ -3056,6 +3056,7 @@ static constexpr std::array<spelltext_data_t, 7147> __spelltext_data { {
   {   18825, "Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by $s1% and reduces the resist chance by $s3%.", 0, "Rank 5" },
   {   18826, "Increases armor by $s1 for $d.", "Increased armor.", 0 },
   {   18827, "Increases the damage done by your Bane of Agony by $s1%.", 0, 0 },
+  {   18828, "When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $s1 for $d.", "Increased armor.", 0 },
   {   18832, "Restores $s1 health and $s2 mana. Requires Lei of Lillies to be equipped to consume.", 0, 0 },
   {   18848, "Gives a chance to parry enemy melee attacks.", 0, "Passive" },
   {   18867, "Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.", "Death will grant the Warlock a Soul Shard.", "Rank 2" },
@@ -3146,6 +3147,7 @@ static constexpr std::array<spelltext_data_t, 7147> __spelltext_data { {
   {   19384, "Increases the damage you deal with melee weapons by $s1%.", 0, "Rank 4" },
   {   19385, "Increases the damage you deal with melee weapons by $s1%.", 0, "Rank 5" },
   {   19407, "Gives your Concussive Shot a $m1% chance to stun the target for $19410d.", 0, "Rank 1" },
+  {   19409, "When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $18828s1 for $18828d.", 0, 0 },
   {   19410, 0, "zzOldStunned.", 0 },
   {   19416, "Reduces the Mana cost of your Shots, Stings, and melee abilities by $s1%.", 0, 0 },
   {   19421, "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by $s1%.", 0, 0 },
