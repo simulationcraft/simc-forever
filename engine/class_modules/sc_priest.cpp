@@ -43,6 +43,8 @@ struct priest_t final : public parse_player_effects_t
 
   void init_special_effects() override;
 
+  double composite_attribute_multiplier( attribute_e ) const override;
+
   priest_td_t* get_target_data( player_t* target ) const override;
 
   std::string default_potion() const override   { return priest_apl::potion( this ); }
@@ -54,12 +56,14 @@ struct priest_t final : public parse_player_effects_t
 
   struct buffs_t
   {
+    buff_t* dark_inspiration = nullptr;
     buff_t* inner_focus = nullptr;
     buff_t* shadowform = nullptr;
   } buff;
 
   struct talents_t
   {
+    player_talent_t dark_inspiration;
     player_talent_t early_demise;
     player_talent_t improved_mind_flay;
     player_talent_t inner_focus;
@@ -71,6 +75,7 @@ struct priest_t final : public parse_player_effects_t
 
   struct spells_t
   {
+    const spell_data_t* dark_inspiration = spell_data_t::nil();
     const spell_data_t* shadow_weaving = spell_data_t::nil();
   } spell;
 
@@ -146,6 +151,7 @@ void priest_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
+  talent.dark_inspiration   = find_talent_spell( talent_tree::CLASS, "Dark Inspiration" );
   talent.early_demise       = find_talent_spell( talent_tree::CLASS, "Early Demise" );
   talent.improved_mind_flay = find_talent_spell( talent_tree::CLASS, "Improved Mind Flay" );
   talent.inner_focus        = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
@@ -158,12 +164,17 @@ void priest_t::init_spells()
   talent.wand_specialization = find_talent_spell( talent_tree::CLASS, "Wand Specialization" );
   deregister_passive_spell( talent.wand_specialization );
 
-  spell.shadow_weaving = talent.shadow_weaving->effectN( 1 ).trigger();
+  spell.dark_inspiration = find_spell( 1326168 );
+  spell.shadow_weaving   = talent.shadow_weaving->effectN( 1 ).trigger();
 }
 
 void priest_t::create_buffs()
 {
   parse_player_effects_t::create_buffs();
+
+  buff.dark_inspiration = make_buff( this, "dark_inspiration", spell.dark_inspiration )
+    ->set_default_value( talent.dark_inspiration->effectN( 1 ).percent() )
+    ->add_invalidate( CACHE_SPIRIT );
 
   // Cooldown starts when the buff is consumed
   buff.inner_focus = make_buff( this, "inner_focus", talent.inner_focus )
@@ -214,6 +225,17 @@ void priest_t::init_special_effects()
   }
 
   parse_player_effects_t::init_special_effects();
+}
+
+// parse_effects does not parse party buffs with range TODO improve core to allow that?
+double priest_t::composite_attribute_multiplier( attribute_e attr ) const
+{
+  double m = parse_player_effects_t::composite_attribute_multiplier( attr );
+
+  if ( attr == ATTR_SPIRIT )
+    m *= 1.0 + buff.dark_inspiration->check_value();
+
+  return m;
 }
 
 void priest_t::parse_action_effects( action_t* action )
@@ -290,6 +312,14 @@ struct mind_blast_t : public priest_spell_t
   {
     parse_options( options_str );
   }
+
+  void execute() override
+  {
+    priest_spell_t::execute();
+
+    if ( p()->talent.dark_inspiration.ok() )
+      p()->buff.dark_inspiration->trigger();
+  }
 };
 
 // Devouring Plague
@@ -350,6 +380,14 @@ struct mind_flay_t : public priest_spell_t
     }
 
     return m;
+  }
+
+  void last_tick( dot_t* d ) override
+  {
+    priest_spell_t::last_tick( d );
+
+    if ( p()->talent.dark_inspiration.ok() && d->current_tick == d->num_ticks() )
+      p()->buff.dark_inspiration->trigger();
   }
 };
 
