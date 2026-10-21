@@ -511,7 +511,7 @@ struct holy_fire_t : public priest_spell_t
   }
 };
 
-// Penance
+// Penance TODO: Check Penance vs Inner Focus - Right now only first bolt gets the crit bonus
 
 struct penance_rank_t
 {
