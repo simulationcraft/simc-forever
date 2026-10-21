@@ -38,6 +38,7 @@ void priest( player_t* p )
 
   precombat->add_action( "shadowform" );
 
+  default_->add_action( "dark_sacrifice,if=mana.pct<50" );
   default_->add_action( "shadow_word_pain,if=!ticking" );
   default_->add_action( "devouring_plague,if=!ticking" );
   default_->add_action( "mind_blast" );
