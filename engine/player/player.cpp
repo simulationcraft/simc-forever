@@ -1243,6 +1243,7 @@ player_t::~player_t() = default;
 player_t::base_initial_current_t::base_initial_current_t() :
   stats(),
   spell_power_per_intellect( 0 ),
+  spell_power_per_spirit( 0 ),
   spell_power_per_attack_power( 0 ),
   attack_power_per_strength( 0 ),
   attack_power_per_agility( 0 ),
@@ -1315,6 +1316,7 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
 {
   fmt::format_to( out, "{}", s.stats );
   fmt::format_to( out, " spell_power_per_intellect={:.6g}", s.spell_power_per_intellect );
+  fmt::format_to( out, " spell_power_per_spirit={:.6g}", s.spell_power_per_spirit );
   fmt::format_to( out, " spell_power_per_attack_power={:.6g}", s.spell_power_per_attack_power );
   fmt::format_to( out, " attack_power_per_strength={:.6g}", s.attack_power_per_strength );
   fmt::format_to( out, " attack_power_per_agility={:.6g}", s.attack_power_per_agility );
@@ -1525,6 +1527,9 @@ void player_t::init_base_stats()
     base.crit_avoidance = get_passive_player_value( base.crit_avoidance, "crit_avoidance" );
 
     base.mana_regen_while_casting = get_passive_player_value( base.mana_regen_while_casting, "mana_regen_while_casting" );
+
+    base.spell_power_per_spirit =
+      get_passive_player_value( base.spell_power_per_spirit, "spell_power_from_attribute", ATTR_SPIRIT );
 
     base.base_armor_multiplier = get_passive_player_value( base.base_armor_multiplier, "base_armor_multiplier" );
     base.armor_multiplier      = get_passive_player_value( base.armor_multiplier, "armor_multiplier" );
@@ -4759,6 +4764,7 @@ double player_t::composite_spell_power( school_e /* school */ ) const
   double sp = current.stats.spell_power;
 
   sp += current.spell_power_per_intellect * cache.intellect();
+  sp += current.spell_power_per_spirit * cache.spirit();
 
   return sp;
 }
@@ -5233,6 +5239,11 @@ void player_t::invalidate_cache( cache_e c )
         invalidate_cache( CACHE_SPELL_POWER );
       if ( current.spell_crit_per_intellect > 0 )
         invalidate_cache( CACHE_SPELL_CRIT_CHANCE );
+      break;
+
+    case CACHE_SPIRIT:
+      if ( current.spell_power_per_spirit > 0 )
+        invalidate_cache( CACHE_SPELL_POWER );
       break;
 
     case CACHE_SPELL_POWER:
@@ -13973,6 +13984,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_CRIT_DAMAGE_MULTIPLIER,             "crit_damage_multiplier"           },  // 163
   { A_MOD_ATTACK_POWER_PCT,                   "attack_power_multiplier",         },  // 166
   { A_MOD_RECHARGE_TIME_PCT_CATEGORY_MASK,    "charge_cooldown"                  },  // 173
+  { A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT,       "spell_power_from_attribute"       },  // 174
   { A_MOD_MAX_MANA_PCT,                       "resource_multiplier"              },  // 178
   { A_MOD_ATTACKER_MELEE_CRIT_CHANCE,         "crit_avoidance"                   },  // 187
   { A_HASTE_ALL,                              "all_haste"                        },  // 193
@@ -14052,8 +14064,9 @@ struct misc_expansion_t
   std::function<std::string( int )> formatter;
 };
 
-static const std::array<misc_expansion_t, 11> misc_expansion_map = { {
+static const std::array<misc_expansion_t, 12> misc_expansion_map = { {
   { "attribute_value",           MISC_LIST_ATTR,     &attr_formatter     },
+  { "spell_power_from_attribute", MISC_LIST_ATTR,    &attr_formatter     },
   { "base_attribute_multiplier", MISC_LIST_ATTR,     &attr_formatter     },
   { "attribute_multiplier",      MISC_BITMAP_ATTR,   &attr_formatter     },
   { "armor_type_multiplier",     MISC_BITMAP_ATTR,   &attr_formatter     },
@@ -14317,6 +14330,10 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
         flat_val = modifying_eff.average( this ) / 5.0;
         break;
       case A_MOD_MANA_REGEN_INTERRUPT:  // 134
+        flat_val = modifying_eff.average( this ) * 0.01;
+        break;
+      case A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT:  // 174
+        misc_type = modifying_eff.misc_value2();  // Stat type is in misc_value2
         flat_val = modifying_eff.average( this ) * 0.01;
         break;
       case A_MOD_TARGET_ARMOR_PCT:  // 280
