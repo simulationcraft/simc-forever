@@ -74,6 +74,7 @@ struct priest_t final : public parse_player_effects_t
     player_talent_t dark_inspiration;
     player_talent_t devouring_contagion;
     player_talent_t early_demise;
+    player_talent_t holy_nova;
     player_talent_t improved_mind_flay;
     player_talent_t inner_focus;
     player_talent_t mind_flay;
@@ -185,6 +186,7 @@ void priest_t::init_spells()
   talent.dark_inspiration    = find_talent_spell( talent_tree::CLASS, "Dark Inspiration" );
   talent.devouring_contagion = find_talent_spell( talent_tree::CLASS, "Devouring Contagion" );
   talent.early_demise        = find_talent_spell( talent_tree::CLASS, "Early Demise" );
+  talent.holy_nova           = find_talent_spell( talent_tree::CLASS, "Holy Nova" );
   talent.improved_mind_flay  = find_talent_spell( talent_tree::CLASS, "Improved Mind Flay" );
   talent.inner_focus         = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
   talent.mind_flay           = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
@@ -553,6 +555,30 @@ struct penance_t : public priest_spell_t
   }
 };
 
+// Holy Nova
+
+// TODO: Party heal
+constexpr std::array holy_nova_ranks {
+  //            spell
+  spell_rank_t{ 15237 },
+  spell_rank_t{ 15430 },
+  spell_rank_t{ 15431 },
+  spell_rank_t{ 27799 },
+  spell_rank_t{ 27800 },
+  spell_rank_t{ 27801 },
+};
+struct holy_nova_t : public priest_spell_t
+{
+  holy_nova_t( priest_t* player, util::string_view options_str ) :
+    priest_spell_t( "holy_nova", player, player->talent.holy_nova.ok()
+                                         ? player->find_spell( player->find_rank( holy_nova_ranks ).spell_id )
+                                         : spell_data_t::not_found() )
+  {
+    parse_options( options_str );
+    aoe = -1;
+  }
+};
+
 // Inner Focus
 
 struct inner_focus_t : public priest_spell_t
@@ -632,6 +658,8 @@ action_t* priest_t::create_action( util::string_view name, util::string_view opt
     return new holy_fire_t( this, options_str );
   if ( name == "penance" )
     return new penance_t( this, options_str );
+  if ( name == "holy_nova" )
+    return new holy_nova_t( this, options_str );
   if ( name == "inner_focus" )
     return new inner_focus_t( this, options_str );
   if ( name == "shadowform" )
