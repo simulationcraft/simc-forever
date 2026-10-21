@@ -77,6 +77,7 @@ struct priest_t final : public parse_player_effects_t
     player_talent_t improved_mind_flay;
     player_talent_t inner_focus;
     player_talent_t mind_flay;
+    player_talent_t penance;
     player_talent_t power_in_light;
     player_talent_t shadow_weaving;
     player_talent_t shadowform;
@@ -143,6 +144,22 @@ public:
 
   const priest_t* p() const
   { return debug_cast<const priest_t*>( this->player ); }
+
+  void parse_power_in_light()
+  {
+    if ( !p()->talent.power_in_light.ok() )
+      return;
+
+    const auto& eff = p()->talent.power_in_light->effectN( 1 );
+
+    add_parse_entry( this->target_multiplier_effects )
+      .set_func( []( actor_target_data_t* td ) {
+        const auto& dots = static_cast<priest_td_t*>( td )->dots;
+        return dots.holy_fire->is_ticking() || dots.shadow_word_pain->is_ticking();
+      } )
+      .set_value( eff.percent() )
+      .set_eff( &eff );
+  }
 };
 
 using priest_spell_t = priest_action_t<spell_t>;
@@ -171,6 +188,7 @@ void priest_t::init_spells()
   talent.improved_mind_flay  = find_talent_spell( talent_tree::CLASS, "Improved Mind Flay" );
   talent.inner_focus         = find_talent_spell( talent_tree::CLASS, "Inner Focus" );
   talent.mind_flay           = find_talent_spell( talent_tree::CLASS, "Mind Flay" );
+  talent.penance             = find_talent_spell( talent_tree::CLASS, "Penance" );
   talent.power_in_light      = find_talent_spell( talent_tree::CLASS, "Power in Light" );
   talent.shadow_weaving      = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
   talent.shadowform          = find_talent_spell( talent_tree::CLASS, "Shadowform" );
@@ -315,20 +333,7 @@ struct smite_t : public priest_spell_t
     priest_spell_t( "smite", player, player->find_spell( player->find_rank( smite_ranks ).spell_id ) )
   {
     parse_options( options_str );
-
-    // TODO: Also applies to Penance once implemented
-    if ( player->talent.power_in_light.ok() )
-    {
-      const auto& eff = player->talent.power_in_light->effectN( 1 );
-
-      add_parse_entry( target_multiplier_effects )
-        .set_func( []( actor_target_data_t* td ) {
-          const auto& dots = static_cast<priest_td_t*>( td )->dots;
-          return dots.holy_fire->is_ticking() || dots.shadow_word_pain->is_ticking();
-        } )
-        .set_value( eff.percent() )
-        .set_eff( &eff );
-    }
+    parse_power_in_light();
   }
 };
 
@@ -506,6 +511,48 @@ struct holy_fire_t : public priest_spell_t
   }
 };
 
+// Penance
+
+struct penance_rank_t
+{
+  unsigned spell_id;    // Penance
+  unsigned channel_id;  // Penance (channel)
+  unsigned damage_id;   // Penance (damage)
+};
+constexpr std::array penance_ranks {
+  //                spell  channel   damage
+  penance_rank_t{  402174,  402261,  402284 },
+  penance_rank_t{ 1240720, 1240734, 1240727 },
+  penance_rank_t{ 1240721, 1240736, 1240730 },
+  penance_rank_t{ 1316995, 1316994, 1316993 },
+};
+
+struct penance_damage_t : public priest_spell_t
+{
+  penance_damage_t( priest_t* player ) :
+    priest_spell_t( "penance_damage", player, player->find_spell( player->find_rank( penance_ranks ).damage_id ) )
+  {
+    background = true;
+    parse_power_in_light();
+  }
+};
+
+struct penance_t : public priest_spell_t
+{
+  penance_t( priest_t* player, util::string_view options_str ) :
+    priest_spell_t( "penance", player, player->talent.penance.ok()
+                                       ? player->find_spell( player->find_rank( penance_ranks ).spell_id )
+                                       : spell_data_t::not_found() )
+  {
+    parse_options( options_str );
+    channeled = true;
+    may_miss = may_crit = false;
+
+    parse_effect_data( player->find_spell( player->find_rank( penance_ranks ).channel_id )->effectN( 2 ) );
+    tick_action = new penance_damage_t( player );
+  }
+};
+
 // Inner Focus
 
 struct inner_focus_t : public priest_spell_t
@@ -583,6 +630,8 @@ action_t* priest_t::create_action( util::string_view name, util::string_view opt
     return new shadow_word_death_t( this, options_str );
   if ( name == "holy_fire" )
     return new holy_fire_t( this, options_str );
+  if ( name == "penance" )
+    return new penance_t( this, options_str );
   if ( name == "inner_focus" )
     return new inner_focus_t( this, options_str );
   if ( name == "shadowform" )
