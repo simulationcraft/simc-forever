@@ -566,6 +566,12 @@ enum item_mod_type {
   ITEM_MOD_STRENGTH_AGILITY         = 72,
   ITEM_MOD_AGILITY_INTELLECT        = 73,
   ITEM_MOD_STRENGTH_INTELLECT       = 74,
+  ITEM_MOD_HOLY_SPELL_POWER         = 84,
+  ITEM_MOD_FIRE_SPELL_POWER         = 85,
+  ITEM_MOD_NATURE_SPELL_POWER       = 86,
+  ITEM_MOD_FROST_SPELL_POWER        = 87,
+  ITEM_MOD_SHADOW_SPELL_POWER       = 88,
+  ITEM_MOD_ARCANE_SPELL_POWER       = 89,
 };
 
 enum item_cooldown_group {
