@@ -14464,7 +14464,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[14461] = {
 
 // Items, ilevel 33-1300, wow build 1.60.1.70450
 
-static const std::array<dbc_item_data_t, 12519> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 12526> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -26984,6 +26984,13 @@ static const std::array<dbc_item_data_t, 12519> __item_data_chunk0 { {
   { "Skypierce Javelin", 287070, 0x00010000, 0x00000000, 0x00, 45, 40, 0, 0, 3, 25, 2, 16, 2, 2900, 0.000000f, 0.000000f, &__item_stats_data[14457], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Goblin Switchblade", 287071, 0x00010000, 0x00000000, 0x00, 41, 1, 0, 0, 2, 25, 2, 16, 1, 1500, 0.000000f, 0.000000f, &__item_stats_data[14459], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Letter Opener", 287090, 0x00008000, 0x00007000, 0x00, 17, 2, 0, 0, 1, 23, 4, 0, 1, 1700, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Earthshaker", 288900, 0x00000000, 0x00006004, 0x00, 10, 1, 0, 0, 4, 17, 2, 5, 1, 3500, 0.400000f, 0.000000f, &__item_stats_data[4761], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Choker of the Fire Lord", 288926, 0x00000000, 0x00006004, 0x00, 10, 1, 0, 0, 4, 2, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5018], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Quick Strike Ring", 288927, 0x00000000, 0x00006004, 0x00, 10, 1, 0, 0, 4, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5021], 4, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Heavy Dark Iron Ring", 288928, 0x00000000, 0x00006004, 0x00, 10, 1, 0, 0, 4, 11, 4, 0, 1, 0, 0.000000f, 110.000000f, &__item_stats_data[5036], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Band of Sulfuras", 288929, 0x00000000, 0x00006004, 0x00, 10, 1, 0, 0, 4, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5157], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Cauterizing Band", 288930, 0x00000000, 0x00006004, 0x00, 10, 1, 0, 0, 4, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5160], 4, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Ring of Spell Power", 288931, 0x00000000, 0x00006004, 0x00, 10, 1, 0, 0, 4, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[5164], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
 } };
 
 static const std::array<util::span<const dbc_item_data_t>, 1> __item_data { {
