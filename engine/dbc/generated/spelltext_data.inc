@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70450
-static constexpr std::array<spelltext_data_t, 7158> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
   {      53, "Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.", 0, "Rank 1" },
@@ -3756,6 +3756,7 @@ static constexpr std::array<spelltext_data_t, 7158> __spelltext_data { {
   {   22843, "Increases damage and healing done by magical spells and effects by up to $s1.", 0, 0 },
   {   22844, "Permanently adds +8 to your Healing and Damage from spells to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.", 0, 0 },
   {   22846, "Permanently adds 1% dodge to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.", 0, 0 },
+  {   22850, "Grants the wielder $s1 Defense, $s2 Armor, $s3 Attack Power, and $s4 additional Attack Power against Dragonkin for $d.", "Armor increased by $s2, Defense increased by $s1, Attack Power increased by $s3, and Attack Power against Dragonkin increased by $s4.", 0 },
   {   22854, "Increases the damage done by your pets by 4%.", 0, 0 },
   {   22959, "Increases Fire damage taken from the Mage by $s1% per stack.", "Increases Fire damage taken from the Mage by $s1%.", 0 },
   {   22989, "Detaches the twin blades, forming two separate warglaives.", 0, 0 },

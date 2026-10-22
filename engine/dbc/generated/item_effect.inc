@@ -1,5 +1,5 @@
 // Item effects, wow build 1.60.1.70450
-static constexpr std::array<item_effect_t, 1307> __item_effect_data { {
+static constexpr std::array<item_effect_t, 1308> __item_effect_data { {
   { 212548, 1241821,      0,   0,   0,    0,      -1,      -1 }, // Stock Ore
   { 213334,  13669,      0,   0,   1,    0,      -1,      -1 }, // Increased Dodge 1
   {  97072, 1248687,    733,   0,   0,    0,      -1,      -1 }, // Nutritious Food
@@ -1307,9 +1307,10 @@ static constexpr std::array<item_effect_t, 1307> __item_effect_data { {
   { 239661, 1327991, 289296,   0,   0, 1160,       0,   60000 }, // Call Anathema
   { 239662,  23236, 289296,   1,   1,    0,      -1,      -1 }, // Benediction
   { 239663, 1327993, 289297,   0,   0, 1160,       0,   60000 }, // Call Benediction
+  { 239668,  22850, 289302,   0,   2,    0,      -1,      -1 }, // Sanctuary
 } };
 
-static const std::array<uint16_t, 1307> __item_effect_id_index { {
+static const std::array<uint16_t, 1308> __item_effect_id_index { {
      12,    24,     5,     2,   686,     9,    11,    23,
      13,    14,     7,    33,    34,    36,    40,    21,
      22,    15,    16,    29,    30,     3,    38,    39,
@@ -1473,6 +1474,6 @@ static const std::array<uint16_t, 1307> __item_effect_id_index { {
    1289,  1290,   219,   150,  1257,  1077,   104,   142,
    1291,    20,     6,    54,  1292,  1293,  1294,  1295,
    1296,  1297,  1298,  1299,  1300,  1301,  1302,  1303,
-   1304,  1305,  1306,
+   1304,  1305,  1306,  1307,
 } };
 
