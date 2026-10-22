@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Blizzard (desc=Rank 1) (id=10) [Spell Family (3)] 
 Class            : Mage
 School           : Frost
@@ -828,7 +828,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -849,7 +849,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 4 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -870,7 +870,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1110,7 +1110,7 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Frost Ward (desc=Rank 1) (id=6143) [Spell Family (3)] 
-Hotfixed         : Tooltip
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1553,7 +1553,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1574,7 +1574,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1928,7 +1928,7 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Frost Ward (desc=Rank 2) (id=8461) [Spell Family (3)] 
-Hotfixed         : Tooltip
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1956,7 +1956,7 @@ Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11
 Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Frost Ward (desc=Rank 3) (id=8462) [Spell Family (3)] 
-Hotfixed         : Tooltip
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2556,7 +2556,7 @@ Description      : Dampens magic used against the targeted party member, decreas
 Tooltip          : Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 Name             : Frost Ward (desc=Rank 4) (id=10177) [Spell Family (3)] 
-Hotfixed         : Tooltip
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2956,7 +2956,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -2977,7 +2977,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -4865,6 +4865,22 @@ Effects          :
                    Family Flags: 15
 Description      : Increases the damage absorbed by your Mana Shield by $s1.
 
+Name             : Firebolt (id=23267) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 80 Base Mana (0) (id=186714)
+Spell Level      : 30
+Range            : 30 yards
+GCD              : 1.5 seconds
+Cooldown         : 8 seconds
+Category Cooldown: 8 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=699919)   : School Damage (2): fire
+                   Base Value: 48 | Scaled Value: 48 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Improved Counterspell (id=24429) [Spell Family (3), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -4979,7 +4995,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -5052,7 +5068,7 @@ Effects          :
 Description      : Increases your Armor by an amount equal to $s1% of your Intellect.
 
 Name             : Frost Ward (desc=Rank 5) (id=28609) [Spell Family (3)] 
-Hotfixed         : Tooltip
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -5324,10 +5340,9 @@ Effects          :
                    Base Value: -50 | Scaled Value: -50 | Misc Value: 1 | Target: Self (1)
                    Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
                    Family Flags: 11
-#2 (id=1045767)  : Apply Aura (6) | Add Flat Modifier (107): Spell Tick Time (19)
-                   Base Value: -500 | Scaled Value: -500 | Misc Value: 19 | Target: Self (1)
-                   Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
-                   Family Flags: 11
+#2 (id=1045767)  : Apply Aura (6) | Dummy (4)
+                   Base Value: -500 | Scaled Value: -500 | Target: Self (1)
+Hotfixed         : Sub Type (107 -> 4), Misc Value (19 -> 0), Affects Spells
 #3 (id=1045768)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 14 | Misc Value 2: 111 | Target: Self (1)
                    Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
@@ -9648,16 +9663,19 @@ Description      : Deal $s2 Fire damage.
 Tooltip          : Deals $s2 Fire damage.
 
 Name             : Frozen (id=1306620) 
+Hotfixed         : Mechanic (0 -> 7)
 School           : Frost
 Spell Type       : Magic
 Range            : 5 yards
 Duration         : 3 seconds
 Labels           : 17: Mage Spells
+Mechanic         : Root
 Triggered By     : Iceknife (1308914)
 Attributes       : Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
 #1 (id=1334087)  : Apply Aura (6) | Root (26)
-                   Base Value: 0 | Scaled Value: 0 | Mechanic: Root | Target: Targeted Enemy (6)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : Mechanic (7 -> 0)
 Description      : Freezes target enemy in place for $d.
 Tooltip          : Frozen in place
 

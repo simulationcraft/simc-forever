@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Auto Shot (id=75) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -1774,7 +1774,8 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 18350 | Radius: 10 yards | Target: at Dynamic Enemy in Area (28)
 Tooltip          : Movement speed slowed by $s1%.
 
-Name             : Explosive Trap Effect (desc=Rank 1) (id=13812) [Spell Family (9)] 
+Name             : Explosive Trap (desc=Rank 1) (id=13812) [Spell Family (9)] 
+Hotfixed         : Name
 Class            : Hunter
 School           : Fire
 Spell Type       : Magic
@@ -2645,7 +2646,8 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164877 | Target: Front of Self (47)
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $14309d. Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
-Name             : Explosive Trap Effect (desc=Rank 2) (id=14314) [Spell Family (9)] 
+Name             : Explosive Trap (desc=Rank 2) (id=14314) [Spell Family (9)] 
+Hotfixed         : Name
 Class            : Hunter
 School           : Fire
 Spell Type       : Magic
@@ -2664,7 +2666,8 @@ Effects          :
                    Modified By: Clever Traps (19239 effect#2)
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
-Name             : Explosive Trap Effect (desc=Rank 3) (id=14315) [Spell Family (9)] 
+Name             : Explosive Trap (desc=Rank 3) (id=14315) [Spell Family (9)] 
+Hotfixed         : Name
 Class            : Hunter
 School           : Fire
 Spell Type       : Magic
@@ -3638,7 +3641,7 @@ Effects          :
                    Family Flags: 3, 4
 #2 (id=695954)   : Apply Aura (6) | Add Percent Modifier (108): Spell Effects (8)
                    Base Value: 30 | Scaled Value: 30 | SP Coefficient: 1 | Misc Value: 8 | Target: Self (1)
-                   Affected Spells: Immolation Trap (13797), Explosive Trap Effect (13812), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Explosive Trap Effect (14314), Explosive Trap Effect (14315)
+                   Affected Spells: Immolation Trap (13797), Explosive Trap (13812), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Explosive Trap (14314), Explosive Trap (14315)
                    Family Flags: 2
 Description      : Increases the duration of Freezing and Frost trap effects by $s1% and the damage of Immolation and Explosive trap effects by $s2%.
 
@@ -3786,7 +3789,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=695689)   : Apply Aura (6) | Add Flat Modifier (107): Spell Penetration (16)
                    Base Value: 17 | Scaled Value: 17 | SP Coefficient: 1 | Misc Value: 16 | Target: Self (1)
-                   Affected Spells: Freezing Trap (3355), Feign Death (5384), Immolation Trap (13797), Frost Trap (13810), Explosive Trap Effect (13812), OLDFrost Trap Effect (14207), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Freezing Trap (14308), Freezing Trap (14309), Explosive Trap Effect (14314), Explosive Trap Effect (14315)
+                   Affected Spells: Freezing Trap (3355), Feign Death (5384), Immolation Trap (13797), Frost Trap (13810), Explosive Trap (13812), OLDFrost Trap Effect (14207), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Freezing Trap (14308), Freezing Trap (14309), Explosive Trap (14314), Explosive Trap (14315)
                    Family Flags: 2, 3, 4, 8
 Description      : Increases your chance to hit with your Trap and Feign Death abilities by $s1%.
 
@@ -8150,11 +8153,11 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1109792)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
-                   Affected Spells: Immolation Trap (13797), Explosive Trap Effect (13812), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Explosive Trap Effect (14314), Explosive Trap Effect (14315)
+                   Affected Spells: Immolation Trap (13797), Explosive Trap (13812), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Explosive Trap (14314), Explosive Trap (14315)
                    Family Flags: 78, 81
 #2 (id=1109793)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Explosive Trap Effect (13812), Explosive Trap Effect (14314), Explosive Trap Effect (14315)
+                   Affected Spells: Explosive Trap (13812), Explosive Trap (14314), Explosive Trap (14315)
                    Family Flags: 63, 73, 78
 #3 (id=1164532)  : Apply Aura (6) | Dummy (4)
                    Base Value: 25 | Scaled Value: 25 | SP Coefficient: 1 | Target: Self (1)
@@ -11269,8 +11272,12 @@ Name             : Freezing Trap (id=1324500)
 Class            : Hunter
 School           : Frost
 Spell Type       : None
+Resource         : 50 Base Mana (0) (id=315116)[Hotfixed: NEW POWER]
 Range            : 10 yards
 Duration         : 10 seconds
+Cooldown         : 30 seconds
+Category         : 2183 (Type 0x0)
+Category Cooldown: 30 seconds
 Proc Chance      : 101%
 Attributes       : No Aura Icon (60), Aura Required by Client (262), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
@@ -11283,8 +11290,12 @@ Name             : Freezing Trap (id=1324501)
 Class            : Hunter
 School           : Frost
 Spell Type       : None
+Resource         : 75 Base Mana (0) (id=315115)[Hotfixed: NEW POWER]
 Range            : 10 yards
 Duration         : 15 seconds
+Cooldown         : 30 seconds
+Category         : 2183 (Type 0x0)
+Category Cooldown: 30 seconds
 Proc Chance      : 101%
 Attributes       : No Aura Icon (60), Aura Required by Client (262), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
@@ -11297,8 +11308,12 @@ Name             : Freezing Trap (id=1324502)
 Class            : Hunter
 School           : Frost
 Spell Type       : None
+Resource         : 100 Base Mana (0) (id=315114)[Hotfixed: NEW POWER]
 Range            : 10 yards
 Duration         : 20 seconds
+Cooldown         : 30 seconds
+Category         : 2183 (Type 0x0)
+Category Cooldown: 30 seconds
 Proc Chance      : 101%
 Attributes       : No Aura Icon (60), Aura Required by Client (262), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
