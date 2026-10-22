@@ -98,15 +98,37 @@ public:
   virtual void html_customsection(report::sc_html_stream&) = 0;
 };
 
-/* Spell rank tables
+/* Spell Container
  *
- * Spell rank tables group related spells together by rank to make it easier to connect auras/drivers/etc related
- * to a primary spell. The basic version just has a single spell_id but it's easy to make custom versions with
- * related spells.
+ * A Spell Container groups related spells together to make it easy to build rank tables.
+ * Easy to add more members if there are other use cases that are currently missing.
  */
-struct spell_rank_t
+struct spell_container_t
 {
-  unsigned spell_id;
+  unsigned spell_id   = 0;
+  unsigned driver_id  = 0;
+  unsigned attack_id  = 0;
+  unsigned passive_id = 0;
+  unsigned aura_id    = 0;
+  unsigned buff_id    = 0;
+
+  constexpr spell_container_t& set_spell( unsigned id )   { spell_id = id; return *this; }
+  constexpr spell_container_t& set_driver( unsigned id )  { driver_id = id; return *this; }
+  constexpr spell_container_t& set_attack( unsigned id )  { attack_id = id; return *this; }
+  constexpr spell_container_t& set_passive( unsigned id ) { passive_id = id; return *this; }
+  constexpr spell_container_t& set_aura( unsigned id )    { aura_id = id; return *this; }
+  constexpr spell_container_t& set_buff( unsigned id )    { buff_id = id; return *this; }
+};
+
+// returned by player_t::find_rank() so call sites don't have to resolve the spell IDs from spell_container_t
+struct container_spells_t
+{
+  const spell_data_t* spell   = nullptr;
+  const spell_data_t* driver  = nullptr;
+  const spell_data_t* attack  = nullptr;
+  const spell_data_t* passive = nullptr;
+  const spell_data_t* aura    = nullptr;
+  const spell_data_t* buff    = nullptr;
 };
 
 enum spell_rank_e : int
@@ -753,33 +775,44 @@ public:
   const spell_data_t* find_spell( unsigned int id, specialization_e s ) const;
   const spell_data_t* find_spell( unsigned int id ) const;
 
-  template <typename RANKS>
-  auto find_rank( const RANKS& ranks, int rank = RANK_MAX_USABLE ) const
+  container_spells_t find_rank( util::span<const spell_container_t> ranks, int rank = RANK_MAX_USABLE ) const
   {
-    typename RANKS::value_type best {};
+    spell_container_t best;
+    container_spells_t result;
 
+    if ( ranks.empty() )
+      return result;
     if ( rank == RANK_MAX )
-      return ranks.back();
-
-    if ( rank > 0 )
+      best = ranks.back();
+    else if ( rank > 0 )
     {
       if ( static_cast<size_t>( rank ) <= ranks.size() )
         best = ranks[ rank - 1 ];
-      return best;
     }
-
-    unsigned best_level = 0;
-    for ( const auto& entry : ranks )
+    else
     {
-      auto spell = find_spell( entry.spell_id );
-      if ( spell->ok() && spell->level() >= best_level )
+      unsigned best_level = 0;
+      for ( const auto& entry : ranks )
       {
-        best       = entry;
-        best_level = spell->level();
+        auto spell = find_spell( entry.spell_id );
+        if ( spell->ok() && spell->level() >= best_level )
+        {
+          best       = entry;
+          best_level = spell->level();
+        }
       }
     }
 
-    return best;
+    // resolve the actual spells since that's what we want to work with in the class module.
+    // these lookups should be cheap so there's a little overhead but keeps things simple.
+    result.spell   = find_spell( best.spell_id );
+    result.driver  = find_spell( best.driver_id );
+    result.attack  = find_spell( best.attack_id );
+    result.passive = find_spell( best.passive_id );
+    result.aura    = find_spell( best.aura_id );
+    result.buff    = find_spell( best.buff_id );
+
+    return result;
   }
 
   pet_t*      find_pet( util::string_view name ) const;
