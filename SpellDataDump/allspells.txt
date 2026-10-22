@@ -130172,3 +130172,48 @@ Hotfixed         : NEW EFFECT
 Description      : Increases the damage done by your Frost spells by $s1%.
 Tooltip          : Increases the damage done by your Frost spells by $w1%.
 
+Name             : Elixir of Endless Intellect (id=1327736) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 3600 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#1 (id=1366382)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 2 | Scaled Value: 2 | Stat: Int | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Increases Intellect by $s1% for $d. This effect stacks up to $u times.
+Tooltip          : Intellect increased by $s1%.
+
+Name             : Call Anathema (id=1327991) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366762)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Anathema.
+
+Name             : Call Benediction (id=1327993) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366764)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Benediction.
+
