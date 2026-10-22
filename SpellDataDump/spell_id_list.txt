@@ -743,7 +743,7 @@ Hunter
 13797    Immolation Trap
 13809    Frost Trap
 13810    Frost Trap
-13812    Explosive Trap Effect
+13812    Explosive Trap
 13813    Explosive Trap
 14207    OLDFrost Trap Effect
 14260    Raptor Strike
@@ -784,8 +784,8 @@ Hunter
 14309    Freezing Trap
 14310    Freezing Trap
 14311    Freezing Trap
-14314    Explosive Trap Effect
-14315    Explosive Trap Effect
+14314    Explosive Trap
+14315    Explosive Trap
 14316    Explosive Trap
 14317    Explosive Trap
 14318    Aspect of the Hawk

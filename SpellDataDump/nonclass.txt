@@ -47944,15 +47944,15 @@ Effects          :
 Description      : Smite your target with the power of the holy spring, inflicting $s1 Holy damage.
 
 Name             : Blackthorne's Ward (id=1326056) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 20
 Range            : 30 yards
-Duration         : 1800 seconds
-Cooldown         : 10 seconds
+Duration         : Aura (infinite)
 Stacks           : 1 initial, 1 maximum
 Triggered By     : Remove Protection (1279523)
-Attributes       : Not Shapeshifted (16), Aura Is Buff (140), Unknown (493)
+Attributes       : Not Shapeshifted (16), Cooldown On Event (25), Aura Is Buff (140), Unknown (493)
 Effects          :
 #1 (id=1363758)  : Apply Aura (6) | Damage Done (13)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 0x7f | Target: Self (1)

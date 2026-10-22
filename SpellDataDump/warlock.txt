@@ -550,8 +550,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366638)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Curse of Idiocy (desc=Rank 1) (id=1010) [Spell Family (5)] 
 Class            : Warlock
@@ -600,8 +603,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366639)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Demon Armor (desc=Rank 2) (id=1086) [Spell Family (5)] 
 Class            : Warlock
@@ -1423,8 +1429,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366640)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Rain of Fire (desc=Rank 2) (id=6219) [Spell Family (5)] 
 Class            : Warlock
@@ -2835,8 +2844,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366641)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Bane of Agony (desc=Rank 5) (id=11712) [Spell Family (5)] 
 Hotfixed         : Attributes, Tooltip
@@ -2860,8 +2872,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366642)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Bane of Agony (desc=Rank 6) (id=11713) [Spell Family (5)] 
 Hotfixed         : Attributes, Tooltip
@@ -2885,8 +2900,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366630)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Curse of Recklessness (desc=Rank 4) (id=11717) [Spell Family (5)] 
 Class            : Warlock

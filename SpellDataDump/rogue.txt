@@ -22,6 +22,7 @@ Effects          :
 Description      : Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Kidney Shot (desc=Rank 1) (id=408) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -39,7 +40,7 @@ Proc Chance      : 101%
 Mechanic         : Stun
 Affecting Spells : Improved Kidney Shot (14174 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 21
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=679152)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -584,6 +585,7 @@ Effects          :
 Description      : Reduces damage from falling.
 
 Name             : Rupture (desc=Rank 1) (id=1943) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -598,7 +600,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=681139)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 5 | Scaled Value: 5 | Points Per Combo Point: 1.18 | Target: Targeted Enemy (6)
@@ -685,6 +687,7 @@ Description      : Blinds the target, causing it to wander disoriented for up to
 Tooltip          : Disoriented.
 
 Name             : Eviscerate (desc=Rank 1) (id=2098) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -697,7 +700,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=679923)   : School Damage (2): physical
                    Base Value: 3 | Scaled Value: 3 (delta=1.333333) | SP Coefficient: 1 | Points Per Combo Point: 5 | Target: Targeted Enemy (6)
@@ -1194,6 +1197,7 @@ Effects          :
 Description      : Create the reagent for the Blind ability.
 
 Name             : Eviscerate (desc=Rank 2) (id=6760) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1206,7 +1210,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=684898)   : School Damage (2): physical
                    Base Value: 7 | Scaled Value: 7 (delta=1.142857) | SP Coefficient: 1 | Points Per Combo Point: 11 | Target: Targeted Enemy (6)
@@ -1223,6 +1227,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Eviscerate (desc=Rank 3) (id=6761) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1235,7 +1240,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=685144)   : School Damage (2): physical
                    Base Value: 13 | Scaled Value: 13 (delta=1.076923) | SP Coefficient: 1 | Points Per Combo Point: 19 | Target: Targeted Enemy (6)
@@ -1252,6 +1257,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Eviscerate (desc=Rank 4) (id=6762) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1264,7 +1270,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=685146)   : School Damage (2): physical
                    Base Value: 20 | Scaled Value: 20 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 31 | Target: Targeted Enemy (6)
@@ -1378,6 +1384,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Eviscerate (desc=Rank 5) (id=8623) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1390,7 +1397,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=686340)   : School Damage (2): physical
                    Base Value: 30 | Scaled Value: 30 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 45 | Target: Targeted Enemy (6)
@@ -1407,6 +1414,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Eviscerate (desc=Rank 6) (id=8624) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1419,7 +1427,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=687549)   : School Damage (2): physical
                    Base Value: 44 | Scaled Value: 44 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 71 | Target: Targeted Enemy (6)
@@ -1556,6 +1564,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
 Name             : Rupture (desc=Rank 2) (id=8639) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1570,7 +1579,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686338)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 7 | Scaled Value: 7 | Points Per Combo Point: 1.78 | Target: Targeted Enemy (6)
@@ -1587,6 +1596,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Rupture (desc=Rank 3) (id=8640) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1601,7 +1611,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686443)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 11 | Scaled Value: 11 | Points Per Combo Point: 2.37 | Target: Targeted Enemy (6)
@@ -1618,6 +1628,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Kidney Shot (desc=Rank 2) (id=8643) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1636,7 +1647,7 @@ Proc Chance      : 101%
 Mechanic         : Stun
 Affecting Spells : Improved Kidney Shot (14174 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 21
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686634)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -1655,6 +1666,7 @@ Description      : Finishing move that stuns the target.  Lasts longer per combo
 Tooltip          : Stunned$?s14174[ and taking $w3% increased damage from the Rogue][].
 
 Name             : Expose Armor (desc=Rank 1) (id=8647) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1669,7 +1681,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686639)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -90 | Target: Targeted Enemy (6)
@@ -1684,6 +1696,7 @@ Description      : Finishing move that exposes the target for $d, reducing Armor
 Tooltip          : Armor decreased by $w1.
 
 Name             : Expose Armor (desc=Rank 2) (id=8649) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1698,7 +1711,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687242)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -180 | Target: Targeted Enemy (6)
@@ -1713,6 +1726,7 @@ Description      : Finishing move that exposes the target for $d, reducing Armor
 Tooltip          : Armor decreased by $w1.
 
 Name             : Expose Armor (desc=Rank 3) (id=8650) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1727,7 +1741,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687526)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -270 | Target: Targeted Enemy (6)
@@ -2071,6 +2085,7 @@ Effects          :
 Description      : Ambush the target, causing $s2% weapon damage plus 125 to the target.  Must be stealthed and behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Expose Armor (desc=Rank 4) (id=11197) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2085,7 +2100,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=689964)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -360 | Target: Targeted Enemy (6)
@@ -2100,6 +2115,7 @@ Description      : Finishing move that exposes the target for $d, reducing Armor
 Tooltip          : Armor decreased by $w1.
 
 Name             : Expose Armor (desc=Rank 5) (id=11198) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2114,7 +2130,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=688758)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -450 | Target: Targeted Enemy (6)
@@ -2234,6 +2250,7 @@ Effects          :
 Description      : Ambush the target, causing $s2% weapon damage plus 290 to the target.  Must be stealthed and behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Rupture (desc=Rank 4) (id=11273) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2248,7 +2265,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687807)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 16 | Scaled Value: 16 | Points Per Combo Point: 2.96 | Target: Targeted Enemy (6)
@@ -2265,6 +2282,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Rupture (desc=Rank 5) (id=11274) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2279,7 +2297,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687903)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 22 | Scaled Value: 22 | Points Per Combo Point: 4.14 | Target: Targeted Enemy (6)
@@ -2296,6 +2314,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Rupture (desc=Rank 6) (id=11275) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2310,7 +2329,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687822)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 35 | Scaled Value: 35 | Points Per Combo Point: 4.73 | Target: Targeted Enemy (6)
@@ -2567,6 +2586,7 @@ Description      : Incapacitates the target for up to $d. Only works on Humanoid
 Tooltip          : Incapacitated.
 
 Name             : Eviscerate (desc=Rank 7) (id=11299) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2579,7 +2599,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=689292)   : School Damage (2): physical
                    Base Value: 68 | Scaled Value: 68 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 110 | Target: Targeted Enemy (6)
@@ -2596,6 +2616,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Eviscerate (desc=Rank 8) (id=11300) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2608,7 +2629,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=689090)   : School Damage (2): physical
                    Base Value: 96 | Scaled Value: 96 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 151 | Target: Targeted Enemy (6)
@@ -4576,6 +4597,7 @@ Effects          :
 Description      : Reduces the chance for your attacks to be Dodged or Parried by $m1%.
 
 Name             : Eviscerate (desc=Rank 9) (id=31016) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -4588,7 +4610,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=705836)   : School Damage (2): physical
                    Base Value: 108 | Scaled Value: 108 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 170 | Target: Targeted Enemy (6)
