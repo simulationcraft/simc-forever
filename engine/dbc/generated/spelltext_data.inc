@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70450
-static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 7152> __spelltext_data { {
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
   {      53, "Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.", 0, "Rank 1" },
@@ -7149,6 +7149,9 @@ static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   { 1326159, "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by $m1% for $1326168d.", 0, 0 },
   { 1326168, "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by $1326159s1% for $d.\r\n", "Spirit increased by $w1%.", 0 },
   { 1326891, "Increases the damage done by your Frost spells by $s1%.", "Increases the damage done by your Frost spells by $w1%.", 0 },
+  { 1327736, "Increases Intellect by $s1% for $d. This effect stacks up to $u times.", "Intellect increased by $s1%.", 0 },
+  { 1327991, "Calls forth Anathema.", 0, 0 },
+  { 1327993, "Calls forth Benediction.", 0, 0 },
 } };
 
 // spelltext hotfix entries, wow build 1.60.1.70450

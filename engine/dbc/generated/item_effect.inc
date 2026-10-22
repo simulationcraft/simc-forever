@@ -1,5 +1,5 @@
 // Item effects, wow build 1.60.1.70450
-static constexpr std::array<item_effect_t, 1291> __item_effect_data { {
+static constexpr std::array<item_effect_t, 1298> __item_effect_data { {
   { 212548, 1241821,      0,   0,   0,    0,      -1,      -1 }, // Stock Ore
   { 213334,  13669,      0,   0,   1,    0,      -1,      -1 }, // Increased Dodge 1
   {  97072, 1248687,    733,   0,   0,    0,      -1,      -1 }, // Nutritious Food
@@ -1291,9 +1291,16 @@ static constexpr std::array<item_effect_t, 1291> __item_effect_data { {
   { 238154, 1320579, 286556,   0,   0, 2554,  300000,   10000 }, // Desert Winds
   { 238814, 1324686, 286982,   0,   1,    0,      -1,      -1 }, // Unearthed Barrier
   { 239392,  21152, 288900,   0,   2,    0,      -1,      -1 }, // Earthshaker
+  { 239511, 1327736, 289082,   0,   0, 2593,       0,    3000 }, // Elixir of Endless Intellect
+  { 239658,  21992, 289294,   0,   2,    0,      -1,      -1 }, // Thunderfury
+  { 239659,  21162, 289295,   1,   2,    0,      -1,      -1 }, // Fireball
+  { 239660,  21142, 289295,   2,   1,    0,      -1,      -1 }, // Immolation
+  { 239661, 1327991, 289296,   0,   0, 1160,       0,   60000 }, // Call Anathema
+  { 239662,  23236, 289296,   1,   1,    0,      -1,      -1 }, // Benediction
+  { 239663, 1327993, 289297,   0,   0, 1160,       0,   60000 }, // Call Benediction
 } };
 
-static const std::array<uint16_t, 1291> __item_effect_id_index { {
+static const std::array<uint16_t, 1298> __item_effect_id_index { {
      12,    24,     5,     2,   684,     9,    11,    23,
      13,    14,     7,    33,    34,    36,    40,    21,
      22,    15,    16,    29,    30,     3,    38,    39,
@@ -1455,6 +1462,7 @@ static const std::array<uint16_t, 1291> __item_effect_id_index { {
    1087,  1076,  1077,  1283,  1284,  1285,  1214,   475,
    1067,   350,   610,  1064,  1173,  1286,  1287,  1288,
     219,   150,  1255,  1075,   104,   142,  1289,    20,
-      6,    54,  1290,
+      6,    54,  1290,  1291,  1292,  1293,  1294,  1295,
+   1296,  1297,
 } };
 
