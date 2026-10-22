@@ -1,4 +1,4 @@
-Class Spell ID List, wow build 1.60.1.70450
+Class Spell ID List, wow build 1.60.1.70532
 
 Druid
 99       Demoralizing Roar
@@ -743,7 +743,7 @@ Hunter
 13797    Immolation Trap
 13809    Frost Trap
 13810    Frost Trap
-13812    Explosive Trap Effect
+13812    Explosive Trap
 13813    Explosive Trap
 14207    OLDFrost Trap Effect
 14260    Raptor Strike
@@ -784,8 +784,8 @@ Hunter
 14309    Freezing Trap
 14310    Freezing Trap
 14311    Freezing Trap
-14314    Explosive Trap Effect
-14315    Explosive Trap Effect
+14314    Explosive Trap
+14315    Explosive Trap
 14316    Explosive Trap
 14317    Explosive Trap
 14318    Aspect of the Hawk
@@ -1762,7 +1762,7 @@ Mage
 23037    Mana Shield Absorb Increase
 23039   *Blast Wave
 23113   *Blast Wave
-23267   *Firebolt
+23267    Firebolt
 23331   *Blast Wave
 23549   *Increased Area
 23603   *Wild Polymorph

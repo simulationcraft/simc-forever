@@ -1,5 +1,5 @@
-// Spell text, wow build 1.60.1.70450
-static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
+// Spell text, wow build 1.60.1.70532
+static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
   {      53, "Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.", 0, "Rank 1" },
@@ -140,7 +140,7 @@ static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   {     959, "Heals a friendly target for $s1.", 0, "Rank 6" },
   {     970, "A word of darkness that causes $o1 Shadow damage over $d.", "$s1 Shadow damage every $t1 seconds.", "Rank 3" },
   {     976, "Increases the target's resistance to Shadow spells by $s1 for $d.", "Shadow resistance increased by $s1.", "Rank 1" },
-  {     980, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.", "Rank 1" },
+  {     980, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.", "Rank 1" },
   {     984, "Smite an enemy for $s1 Holy damage.", 0, "Rank 4" },
   {     988, "Dispels magic on the target, removing $s1 harmful $lspell:spells; from a friend or $s1 beneficial $lspell:spells; from an enemy.", 0, "Rank 2" },
   {     990, "Conjures $s1 $lloaf:loaves; of rye, providing the mage and $ghis:her; allies with something to eat.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.", 0, "Rank 3" },
@@ -151,7 +151,7 @@ static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   {    1006, "A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.", "Increases armor by $w1.", "Rank 4" },
   {    1008, "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.", "Increases magic damage taken by up to $s1 and healing by up to $s2.", "Rank 1" },
   {    1010, "Curse the target with idiocy, reducing Intellect and Spirit by $s1 every $t3 seconds until each is reduced by a total of $*15;s1.  Only one Curse per Warlock can be active on any one target.", "Intellect and Spirit reduced.", "Rank 1" },
-  {    1014, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.", "Rank 2" },
+  {    1014, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.", "Rank 2" },
   {    1020, "Protects the paladin from all damage and spells for $d, but reduces all damage you deal by $s3%.  Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.", "Immune to all attacks and spells, but reduces all damage you deal by $s3%.", "Rank 2" },
   {    1022, "A targeted party member is protected from all physical attacks for $d, but during that time they cannot attack or use physical abilities.  Players may only have one Blessing on them per Paladin at any one time.  Applies Forbearance for $25771d. Cannot be cast while Forbearance is active.", "Immune to physical attacks.  Cannot attack or use physical abilities.", "Rank 1" },
   {    1026, "Heals a friendly target for $s1.", 0, "Rank 4" },
@@ -523,7 +523,7 @@ static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   {    6205, "Physical damage caused by the target is reduced by $s1 for $d. Only one Curse per Warlock can be active on any one target.", "Physical damage done reduced by $w1.", "Rank 3" },
   {    6213, "Strikes fear in the enemy, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only 1 target can be feared at a time.", "Feared.", "Rank 2" },
   {    6215, "Strikes fear in the enemy, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only 1 target can be feared at a time.", "Feared.", "Rank 3" },
-  {    6217, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.", "Rank 3" },
+  {    6217, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.", "Rank 3" },
   {    6219, "Calls down a fiery rain to burn enemies in the area of effect for ${4*$1282383m1} Fire damage over $d.", "$1282383s1 Fire damage every $t3 seconds.", "Rank 2" },
   {    6222, "Corrupts the target, causing $o1 Shadow damage over $d.", "$s1 Shadow damage every $t1 seconds.", "Rank 2" },
   {    6223, "Corrupts the target, causing $o1 Shadow damage over $d.", "$s1 Shadow damage every $t1 seconds.", "Rank 3" },
@@ -1543,9 +1543,9 @@ static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   {   11704, "Transfers $s1 Mana every $t1 sec from the target to the caster. Lasts $d.", "Drains $s1 Mana each second to the caster.", "Rank 4" },
   {   11707, "Physical damage caused by the target is reduced by $s1 for $d. Only one Curse per Warlock can be active on any one target.", "Physical damage done reduced by $w1.", "Rank 5" },
   {   11708, "Physical damage caused by the target is reduced by $s1 for $d. Only one Curse per Warlock can be active on any one target.", "Physical damage done reduced by $w1.", "Rank 6" },
-  {   11711, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.", "Rank 4" },
-  {   11712, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.", "Rank 5" },
-  {   11713, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.", "Rank 6" },
+  {   11711, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.", "Rank 4" },
+  {   11712, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.", "Rank 5" },
+  {   11713, "Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.", "Rank 6" },
   {   11717, "Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.", "Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.", "Rank 4" },
   {   11719, "Forces the target to speak in Demonic, increasing the casting time of all spells by $s1%. Only one Curse per Warlock can be active on any one target. Lasts $d.", "Speaking Demonic increasing casting time by $s1%.", "Rank 2" },
   {   11725, "Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.  If you repeatedly subjugate the same demon, it will become more difficult to control with each attempt.", "Enslaved.", "Rank 2" },
@@ -3528,17 +3528,22 @@ static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   {   21109, "Restores $s1 health per 5 sec.", "Restores $s1 health per 5 sec.", "Rank 1" },
   {   21142, "Deals $s1 Fire damage to anyone who strikes you with a melee attack.", 0, 0 },
   {   21149, "Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19705s1 Stamina and Spirit for $19705d.  Also packs quite a kick...", "Restores $/5;s1 health per second.", 0 },
+  {   21151, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage and lowering all stats by $s2 for $d.", 0, 0 },
   {   21152, "Knocks down all nearby enemies for $d.", "Stunned.", 0 },
   {   21153, "Your attacks ignore $s1 of your enemies' armor for $d. This effect stacks up to 3 times.", "Ignore $s1 of enemies' armor.", 0 },
   {   21156, "Decreases threat generated by $s1%.", 0, 0 },
   {   21159, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   {   21160, "The Eye of Sulfuras can be combined with the Sulfuron Hammer to create Sulfuras, legendary hammer of Ragnaros.", 0, 0 },
   {   21162, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
+  {   21170, "Steals $s1 life from target enemy.", 0, 0 },
   {   21178, 0, 0, "Passive" },
   {   21179, "Blasts up to 3 targets for $s1 Nature damage. Each target after the first takes less damage.", 0, 0 },
+  {   21180, "Transforms Shadowstrike into Thunderstrike.", 0, 0 },
   {   21181, "Transforms Thunderstrike into Shadowstrike.", 0, 0 },
   {   21183, "Increases Holy damage taken by up to $s1.", "Increases Holy damage taken by up to $s1.", "Rank 1" },
   {   21184, "Decreases threat generated by $s1%.", 0, 0 },
+  {   21185, "Restores $21186s1 mana or 20 rage when you kill a target that gives experience; this effect cannot occur more than once every 10 seconds.", 0, 0 },
+  {   21186, 0, 0, "Rank 1" },
   {   21345, "Restores $s1 health per 5 sec.", "Restores $s1 health per 5 sec.", "Rank 1" },
   {   21346, "Restores $s1 health per 5 sec.", "Restores $s1 health per 5 sec.", "Rank 1" },
   {   21347, "Restores $s1 health per 5 sec.", "Restores $s1 health per 5 sec.", "Rank 1" },
@@ -3751,6 +3756,7 @@ static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   {   22843, "Increases damage and healing done by magical spells and effects by up to $s1.", 0, 0 },
   {   22844, "Permanently adds +8 to your Healing and Damage from spells to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.", 0, 0 },
   {   22846, "Permanently adds 1% dodge to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.", 0, 0 },
+  {   22850, "Grants the wielder $s1 Defense, $s2 Armor, $s3 Attack Power, and $s4 additional Attack Power against Dragonkin for $d.", "Armor increased by $s2, Defense increased by $s1, Attack Power increased by $s3, and Attack Power against Dragonkin increased by $s4.", 0 },
   {   22854, "Increases the damage done by your pets by 4%.", 0, 0 },
   {   22959, "Increases Fire damage taken from the Mage by $s1% per stack.", "Increases Fire damage taken from the Mage by $s1%.", 0 },
   {   22989, "Detaches the twin blades, forming two separate warglaives.", 0, 0 },
@@ -3790,6 +3796,7 @@ static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   {   23233, "Combines the Top and Bottom Half of Advanced Armorsmithing: Volume III.", 0, 0 },
   {   23236, "Increases the critical effect chance of your Holy spells by $s1%.", 0, 0 },
   {   23266, "When struck in combat inflicts $s1 Fire damage to the attacker.", 0, 0 },
+  {   23267, "Blasts a target for $s1 Fire damage.", 0, 0 },
   {   23271, "Increases damage and healing done by magical spells and effects by up to $s1 for $d.", "Magical damage and healing dealt is increased by $s1", 0 },
   {   23273, "Dispels all Charm, Fear and Polymorph effects.", 0, 0 },
   {   23274, "Dispels all Fear, Polymorph and Slowing effects.", 0, 0 },
@@ -7149,21 +7156,28 @@ static constexpr std::array<spelltext_data_t, 7149> __spelltext_data { {
   { 1326159, "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by $m1% for $1326168d.", 0, 0 },
   { 1326168, "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by $1326159s1% for $d.\r\n", "Spirit increased by $w1%.", 0 },
   { 1326891, "Increases the damage done by your Frost spells by $s1%.", "Increases the damage done by your Frost spells by $w1%.", 0 },
+  { 1327736, "Increases Intellect by $s1% for $d. This effect stacks up to $u times.", "Intellect increased by $s1%.", 0 },
+  { 1327991, "Calls forth Anathema.", 0, 0 },
+  { 1327993, "Calls forth Benediction.", 0, 0 },
 } };
 
-// spelltext hotfix entries, wow build 1.60.1.70450
-static constexpr std::array<hotfix::client_hotfix_entry_t, 46> __spelltext_hotfix_data { {
+// spelltext hotfix entries, wow build 1.60.1.70532
+static constexpr std::array<hotfix::client_hotfix_entry_t, 51> __spelltext_hotfix_data { {
   {     702,  1, "Physical damage done reduced by $s1.", "Physical damage done reduced by $w1." },
-  {     980,  1, "$o1 Shadow damage over $d.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d." },
-  {    1014,  1, "$o1 Shadow damage over $d.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d." },
+  {     980,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
+  {    1014,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
   {    1108,  1, "Physical damage done reduced by $s1.", "Physical damage done reduced by $w1." },
-  {    6143,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
+  {    6143,  0, "Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.", "Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d." },
+  {    6143,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
   {    6205,  1, "Physical damage done reduced by $s1.", "Physical damage done reduced by $w1." },
-  {    6217,  1, "$o1 Shadow damage over $d.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d." },
+  {    6217,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
   {    7646,  1, "Physical damage done reduced by $s1.", "Physical damage done reduced by $w1." },
-  {    8461,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
-  {    8462,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
-  {   10177,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
+  {    8461,  0, "Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.", "Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d." },
+  {    8461,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
+  {    8462,  0, "Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.", "Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d." },
+  {    8462,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
+  {   10177,  0, "Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.", "Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d." },
+  {   10177,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
   {   11180,  0, "Gives your Frost damage spells a $m2% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by $12579s1%, stacking up to $s1 times.", "Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times." },
   {   11189,  0, "Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by $s1%. In addition, gives your Frost Ward a $s2% chance to reflect Frost spells and effects while active.", "Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by $s1%, gives your Frost Ward a $s2% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by $s3%." },
   {   11237,  0, "Gives you a $m1% chance to avoid interruption caused by damage while channeling Arcane Missiles and a $m2% chance while casting Arcane Blast or Arcane Wrath.", "Gives your Arcane Missiles spell a $m1% chance and your Arcane Blast and Arcane Wrath spells a $m2% chance to not lose casting time when you take damage." },
@@ -7171,9 +7185,9 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 46> __spelltext_hotfi
   {   11426,  1, "Absorbs $w1 damage.", "Absorbs $w1 damage and increases Frost damage dealt by ${$w2}%." },
   {   11707,  1, "Physical damage done reduced by $s1.", "Physical damage done reduced by $w1." },
   {   11708,  1, "Physical damage done reduced by $s1.", "Physical damage done reduced by $w1." },
-  {   11711,  1, "$o1 Shadow damage over $d.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d." },
-  {   11712,  1, "$o1 Shadow damage over $d.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d." },
-  {   11713,  1, "$o1 Shadow damage over $d.", "$?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d." },
+  {   11711,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
+  {   11712,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
+  {   11713,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
   {   12579,  1, "Taking $s1% increased damage from the caster's Cone of Cold spell.", "Taking $s1% increased damage and $s2% increased spell power coefficient from the caster's next Cone of Cold spell." },
   {   13031,  0, "Instantly shields you, absorbing $s1 damage. Lasts $d. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.\r\n", "Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage." },
   {   13031,  1, "Absorbs $w1 damage.", "Absorbs $w1 damage and increases Frost damage dealt by $w2%." },
@@ -7190,7 +7204,8 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 46> __spelltext_hotfi
   {   18135,  0, "Gives you a $s1% chance to resist interruption caused by damage while casting or channeling any Destruction spell.", "Gives your Destruction spells a $s1% chance to not lose casting time when you take damage." },
   {   18223,  1, "Movement speed slowed by $s1%.", "Movement speed slowed by $w1%." },
   {   18425,  0, nullptr, "Gives your kick ability a $13754s1% chance to silence the target." },
-  {   28609,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
+  {   28609,  0, "Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.", "Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d." },
+  {   28609,  1, "Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]", "Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]" },
   {   29062,  0, "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by $m1%.", "Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a $m1% chance to not lose casting time when you take damage." },
   {  400588,  0, "Gives your Arcane Blast spell a $m1% chance, your Arcane Missile hits a ${$m1/4}% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.", "Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec." },
   {  400589,  0, "Gives your Arcane Blast, Fireball, and Frostbolt spells a chance to reduce the channeled duration of the next Arcane Missiles spell by $400589s1%, reduce the mana cost by $s3%, and missiles fire every ${$400588m2/10}.1 sec.", "Reduces the channeled duration of your next Arcane Missiles spell by $s1%, reduces the mana cost by $s3%, and missiles fire every ${$400588w2/10}.1 sec." },
@@ -7201,7 +7216,7 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 46> __spelltext_hotfi
   { 1259823,  0, "Your non-periodic damaging or healing abilities have their Mana cost reduced by $s1% and deal $s2% more damage or healing.", "Your non-periodic damaging or healing abilities have their Mana cost reduced by $s1% and deal $s2% more damage or healing for $d." },
 } };
 
-// Spell description variables, wow build 1.60.1.70450
+// Spell description variables, wow build 1.60.1.70532
 static constexpr std::array<spelldesc_vars_data_t, 125> __spelldesc_vars_data { {
   {      10, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
   {     116, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
@@ -7330,7 +7345,7 @@ static constexpr std::array<spelldesc_vars_data_t, 125> __spelldesc_vars_data { 
   { 1293696, "$shadowMult=$?a23761[${1.1}][${1}]\r\n$fireMult=$?a23759[${1.1}][${1}]\r\n$petMult=$?a18769[${1.1}][${1}]\r\n$mult=${$<fireMult>*$<petMult>*$<shadowMult>}\r\n$sps=${$SPS}\r\n$spfi=${$SPFI}\r\n$which=${$cond($gt($<spfi>,$<sps>), $<spfi>,$<sps>)}\r\n$minDam=${((($pl-26)*1.5)+14+(0.078*$<which>))}\r\n$maxDam=${((($pl-26)*1.5)+17+(0.078*$<which>))}" },
 } };
 
-// spelldesc_vars hotfix entries, wow build 1.60.1.70450
+// spelldesc_vars hotfix entries, wow build 1.60.1.70532
 static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __spelldesc_vars_hotfix_data { {
 } };
 

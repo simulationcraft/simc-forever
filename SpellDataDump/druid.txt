@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Demoralizing Roar (desc=Rank 1) (id=99) [Spell Family (7)] 
 Class            : Druid
 School           : Physical
@@ -397,6 +397,7 @@ Description      : Thorns sprout from the friendly target causing $w1 Nature dam
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Rip (desc=Rank 1) (id=1079) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -411,7 +412,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=685878)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 3 | Scaled Value: 3 | Points Per Combo Point: 4.4 | Target: Targeted Enemy (6)
@@ -2344,6 +2345,7 @@ Description      : The druid roars, decreasing nearby enemies' melee attack powe
 Tooltip          : Decreases melee attack power by $w1.
 
 Name             : Rip (desc=Rank 2) (id=9492) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2358,7 +2360,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=681752)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 4 | Scaled Value: 4 | Points Per Combo Point: 7.2 | Target: Targeted Enemy (6)
@@ -2373,6 +2375,7 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Rip (desc=Rank 3) (id=9493) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2387,7 +2390,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686148)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 6 | Scaled Value: 6 | Points Per Combo Point: 8.5 | Target: Targeted Enemy (6)
@@ -2555,6 +2558,7 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Rip (desc=Rank 4) (id=9752) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2569,7 +2573,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=684145)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 8 | Scaled Value: 8 | Points Per Combo Point: 12.7 | Target: Targeted Enemy (6)
@@ -3402,6 +3406,7 @@ Effects          :
 Description      : Cower, causing no damage but lowering your threat a large amount, making the enemy less likely to attack you.
 
 Name             : Rip (desc=Rank 5) (id=9894) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3416,7 +3421,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=688033)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 11 | Scaled Value: 11 | Points Per Combo Point: 18.200001 | Target: Targeted Enemy (6)
@@ -3431,6 +3436,7 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Rip (desc=Rank 6) (id=9896) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3445,7 +3451,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=688085)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 15 | Scaled Value: 15 | Points Per Combo Point: 25.5 | Target: Targeted Enemy (6)
@@ -5376,6 +5382,7 @@ Description      : Gives the Gift of the Wild to all party and raid members, inc
 Tooltip          : Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 Name             : Ferocious Bite (desc=Rank 1) (id=22568) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -5388,7 +5395,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=700435)   : School Damage (2): physical
                    Base Value: 22 | Scaled Value: 22 (delta=0.727273) | SP Coefficient: 1 | Points Per Combo Point: 36 | Target: Targeted Enemy (6)
@@ -5424,6 +5431,7 @@ Description      : Your skin becomes as tough as bark. Physical damage taken is 
 Tooltip          : Physical damage taken is reduced by $s2%. While protected, damaging attacks will not cause spellcasting delays.
 
 Name             : Ferocious Bite (desc=Rank 2) (id=22827) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -5436,7 +5444,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=699381)   : School Damage (2): physical
                    Base Value: 32 | Scaled Value: 32 (delta=0.75) | SP Coefficient: 1 | Points Per Combo Point: 59 | Target: Targeted Enemy (6)
@@ -5450,6 +5458,7 @@ Description      : Finishing move that causes damage per combo point and convert
    5 points: 315-339 damage
 
 Name             : Ferocious Bite (desc=Rank 3) (id=22828) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -5462,7 +5471,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=699876)   : School Damage (2): physical
                    Base Value: 50 | Scaled Value: 50 (delta=0.8) | SP Coefficient: 1 | Points Per Combo Point: 92 | Target: Targeted Enemy (6)
@@ -5476,6 +5485,7 @@ Description      : Finishing move that causes damage per combo point and convert
    5 points: 490-530 damage
 
 Name             : Ferocious Bite (desc=Rank 4) (id=22829) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -5488,7 +5498,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=699984)   : School Damage (2): physical
                    Base Value: 70 | Scaled Value: 70 (delta=0.714286) | SP Coefficient: 1 | Points Per Combo Point: 128 | Target: Targeted Enemy (6)
@@ -5969,6 +5979,7 @@ Effects          :
                    Family Flags: 0, 5, 6, 9, 24
 
 Name             : Ferocious Bite (desc=Rank 5) (id=31018) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -5981,7 +5992,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=705079)   : School Damage (2): physical
                    Base Value: 82 | Scaled Value: 82 (delta=0.731707) | SP Coefficient: 1 | Points Per Combo Point: 147 | Target: Targeted Enemy (6)
