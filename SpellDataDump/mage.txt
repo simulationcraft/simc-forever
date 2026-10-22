@@ -4865,6 +4865,22 @@ Effects          :
                    Family Flags: 15
 Description      : Increases the damage absorbed by your Mana Shield by $s1.
 
+Name             : Firebolt (id=23267) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 80 Base Mana (0) (id=186714)
+Spell Level      : 30
+Range            : 30 yards
+GCD              : 1.5 seconds
+Cooldown         : 8 seconds
+Category Cooldown: 8 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=699919)   : School Damage (2): fire
+                   Base Value: 48 | Scaled Value: 48 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Improved Counterspell (id=24429) [Spell Family (3), Passive, Hidden] 
 School           : Physical
 Spell Type       : None

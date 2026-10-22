@@ -1762,7 +1762,7 @@ Mage
 23037    Mana Shield Absorb Increase
 23039   *Blast Wave
 23113   *Blast Wave
-23267   *Firebolt
+23267    Firebolt
 23331   *Blast Wave
 23549   *Increased Area
 23603   *Wild Polymorph

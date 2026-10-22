@@ -20860,6 +20860,22 @@ Effects          :
 Description      : Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19705s1 Stamina and Spirit for $19705d.  Also packs quite a kick...
 Tooltip          : Restores $/5;s1 health per second.
 
+Name             : Gutgore Ripper (id=21151) 
+School           : Shadow
+Spell Type       : Magic
+Resource         : 40 Base Mana (0) (id=185489)
+Spell Level      : 60
+Range            : 30 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=698378)   : School Damage (2): shadow
+                   Base Value: 75 | Scaled Value: 75 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+#2 (id=698379)   : Apply Aura (6) | Attribute (29)
+                   Base Value: -25 | Scaled Value: -25 | Stat: All | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage and lowering all stats by $s2 for $d.
+
 Name             : Earthshaker (id=21152) 
 School           : Physical
 Spell Type       : Magic
@@ -20911,6 +20927,18 @@ Effects          :
 #1 (id=699590)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Drain Life (id=21170) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 40 yards
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=698655)   : Health Leech (9)
+                   Base Value: 140 | Scaled Value: 140 (delta=0.571429) | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Steals $s1 life from target enemy.
+
 Name             : Chain Lightning (id=21179) 
 School           : Nature
 Spell Type       : Magic
@@ -20925,6 +20953,17 @@ Effects          :
                    Base Value: 200 | Scaled Value: 200 (delta=0.5) | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
 Description      : Blasts up to 3 targets for $s1 Nature damage. Each target after the first takes less damage.
 
+Name             : Summon Thunderstrike (id=21180) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 10 seconds
+Proc Chance      : 101%
+Attributes       : Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=698986)   : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0
+Description      : Transforms Shadowstrike into Thunderstrike.
+
 Name             : Summon Shadowstrike (id=21181) 
 School           : Physical
 Spell Type       : None
@@ -20935,6 +20974,33 @@ Effects          :
 #1 (id=698987)   : Summon Item (34)
                    Base Value: 0 | Scaled Value: 0
 Description      : Transforms Thunderstrike into Shadowstrike.
+
+Name             : Spinal Reaper (id=21185) [Passive, Hidden] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : Aura (infinite)
+Internal Cooldown: 10 seconds
+Proc Chance      : 100%
+Proc Flags       : Killing Blow
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=697868)   : Apply Aura (6) | Proc Trigger Spell (42): Spinal Reaper
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 21186 | Target: Self (1)
+Description      : Restores $21186s1 mana or 20 rage when you kill a target that gives experience; this effect cannot occur more than once every 10 seconds.
+
+Name             : Spinal Reaper (desc=Rank 1) (id=21186) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 60
+Proc Chance      : 101%
+Triggered By     : Spinal Reaper (21185)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=699164)   : Energize Power (30)
+                   Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
+#2 (id=699165)   : Energize Power (30)
+                   Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Resource: rage | Target: Self (1)
 
 Name             : Vitality (desc=Rank 1) (id=21345) [Passive, Hidden] 
 School           : Nature
