@@ -5,73 +5,6 @@
 
 namespace warlock
 {
-struct spell_rank_t
-{
-  unsigned spell_id;
-};
-
-template <typename RANKS>
-auto max_rank( const player_t* player, const RANKS& ranks )
-{
-  typename RANKS::value_type best {};
-  unsigned best_level = 0;
-
-  for ( const auto& rank : ranks )
-  {
-    const spell_data_t* spell = player->find_spell( rank.spell_id );
-
-    if ( spell->ok() && spell->level() >= best_level )
-    {
-      best = rank;
-      best_level = spell->level();
-    }
-  }
-
-  return best;
-}
-
-constexpr std::array shadow_bolt_ranks {
-  spell_rank_t{ 686 },
-  spell_rank_t{ 695 },
-  spell_rank_t{ 705 },
-  spell_rank_t{ 1088 },
-  spell_rank_t{ 1106 },
-  spell_rank_t{ 7641 },
-  spell_rank_t{ 11659 },
-  spell_rank_t{ 11660 },
-  spell_rank_t{ 11661 },
-  spell_rank_t{ 25307 },
-};
-constexpr std::array immolate_ranks {
-  spell_rank_t{ 348 },
-  spell_rank_t{ 707 },
-  spell_rank_t{ 1094 },
-  spell_rank_t{ 2941 },
-  spell_rank_t{ 11665 },
-  spell_rank_t{ 11667 },
-  spell_rank_t{ 11668 },
-  spell_rank_t{ 25309 },
-};
-constexpr std::array corruption_ranks {
-  spell_rank_t{ 172 },
-  spell_rank_t{ 6222 },
-  spell_rank_t{ 6223 },
-  spell_rank_t{ 7648 },
-  spell_rank_t{ 11671 },
-  spell_rank_t{ 11672 },
-  spell_rank_t{ 25311 },
-};
-
-constexpr std::array firebolt_ranks {
-  spell_rank_t{ 3110 },   // 1
-  spell_rank_t{ 7799 },   // 8
-  spell_rank_t{ 7800 },   // 18
-  spell_rank_t{ 7801 },   // 28
-  spell_rank_t{ 7802 },   // 38
-  spell_rank_t{ 11762 },  // 48
-  spell_rank_t{ 11763 },  // 58
-};
-
 struct warlock_t final : public player_t
 {
   warlock_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) :
@@ -138,10 +71,22 @@ using warlock_spell_t  = warlock_action_t<spell_t>;
 
 // Shadow Bolt
 
+constexpr std::array shadow_bolt_ranks {
+  spell_container_t().set_spell(   686 ),
+  spell_container_t().set_spell(   695 ),
+  spell_container_t().set_spell(   705 ),
+  spell_container_t().set_spell(  1088 ),
+  spell_container_t().set_spell(  1106 ),
+  spell_container_t().set_spell(  7641 ),
+  spell_container_t().set_spell( 11659 ),
+  spell_container_t().set_spell( 11660 ),
+  spell_container_t().set_spell( 11661 ),
+  spell_container_t().set_spell( 25307 ),
+};
 struct shadow_bolt_t : public warlock_spell_t
 {
   shadow_bolt_t( warlock_t* player, util::string_view options_str ) :
-    warlock_spell_t( "shadow_bolt", player, player->find_spell( max_rank( player, shadow_bolt_ranks ).spell_id ) )
+    warlock_spell_t( "shadow_bolt", player, player->find_rank( shadow_bolt_ranks ).spell )
   {
     parse_options( options_str );
   }
@@ -149,10 +94,20 @@ struct shadow_bolt_t : public warlock_spell_t
 
 // Immolate
 
+constexpr std::array immolate_ranks {
+  spell_container_t().set_spell(   348 ),
+  spell_container_t().set_spell(   707 ),
+  spell_container_t().set_spell(  1094 ),
+  spell_container_t().set_spell(  2941 ),
+  spell_container_t().set_spell( 11665 ),
+  spell_container_t().set_spell( 11667 ),
+  spell_container_t().set_spell( 11668 ),
+  spell_container_t().set_spell( 25309 ),
+};
 struct immolate_t : public warlock_spell_t
 {
   immolate_t( warlock_t* player, util::string_view options_str ) :
-    warlock_spell_t( "immolate", player, player->find_spell( max_rank( player, immolate_ranks ).spell_id ) )
+    warlock_spell_t( "immolate", player, player->find_rank( immolate_ranks ).spell )
   {
     parse_options( options_str );
   }
@@ -160,10 +115,19 @@ struct immolate_t : public warlock_spell_t
 
 // Corruption
 
+constexpr std::array corruption_ranks {
+  spell_container_t().set_spell(   172 ),
+  spell_container_t().set_spell(  6222 ),
+  spell_container_t().set_spell(  6223 ),
+  spell_container_t().set_spell(  7648 ),
+  spell_container_t().set_spell( 11671 ),
+  spell_container_t().set_spell( 11672 ),
+  spell_container_t().set_spell( 25311 ),
+};
 struct corruption_t : public warlock_spell_t
 {
   corruption_t( warlock_t* player, util::string_view options_str ) :
-    warlock_spell_t( "corruption", player, player->find_spell( max_rank( player, corruption_ranks ).spell_id ) )
+    warlock_spell_t( "corruption", player, player->find_rank( corruption_ranks ).spell )
   {
     parse_options( options_str );
   }
@@ -287,12 +251,21 @@ namespace pets {
       action_t* create_action( std::string_view, std::string_view ) override;
     };
 
+    constexpr std::array firebolt_ranks {
+      spell_container_t().set_spell(  3110 ),  // 1
+      spell_container_t().set_spell(  7799 ),  // 8
+      spell_container_t().set_spell(  7800 ),  // 18
+      spell_container_t().set_spell(  7801 ),  // 28
+      spell_container_t().set_spell(  7802 ),  // 38
+      spell_container_t().set_spell( 11762 ),  // 48
+      spell_container_t().set_spell( 11763 ),  // 58
+    };
     // TODO: There's some funky delay on beta. Some casts are back-to-back, some have a 0.5-1.0s gap even when
     // the imp has mana
     struct firebolt_t : warlock_pet_spell_t
     {
       firebolt_t( std::string_view n, imp_pet_t* p, std::string_view options_str  ) :
-        warlock_pet_spell_t( n, p, p->find_spell( max_rank( p, firebolt_ranks ).spell_id ) )
+        warlock_pet_spell_t( n, p, p->find_rank( firebolt_ranks ).spell )
       {
         parse_options( options_str );
 
