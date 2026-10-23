@@ -42292,6 +42292,7 @@ Effects          :
 Description      : Creates a Surgical Tourniquet.
 
 Name             : Walk on Air (desc=Racial) (id=1259416) 
+Hotfixed         : Attributes
 Race             :  (0x300000000)
 School           : Nature
 Spell Type       : Magic
@@ -42300,7 +42301,7 @@ GCD              : 1.5 seconds
 Duration         : 10 seconds
 Cooldown         : 90 seconds
 Labels           : 5710
-Attributes       : Not In Arena or Rated Battleground (144), Unknown (493)
+Attributes       : Allow While Stealthed (37), Not In Arena or Rated Battleground (144), Unknown (493)
 Aura Interrupt   : Under Water (7), Mount (17), Leave World (19), Ground (35)
 Effects          :
 #2 (id=1268507)  : Trigger Spell (64): Walking on Air
@@ -42427,7 +42428,6 @@ Name             : Earth Fury (desc=Racial Passive) (id=1259719) [Passive]
 Race             : Dwarf (0x4)
 School           : Physical
 Spell Type       : None
-Requires weapon  : One-handed Mace, Two-handed Mace
 Labels           : 5710
 Attributes       : Is Ability (4), Passive (6), Unknown (493)
 Effects          :
@@ -46754,12 +46754,13 @@ Effects          :
 Description      : Restores $s1% mana.
 
 Name             : BB Shot (id=1312745) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Range            : 25 yards
 Cast Time        : 2 seconds
 Duration         : 1 seconds
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Exclude Caster (51), Only On Player (104), Uses Ranged Slot (Cosmetic Only) (322), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Exclude Caster (51), Only On Player (104), No Pushback (207), Uses Ranged Slot (Cosmetic Only) (322), Unknown (493)
 Effects          :
 #1 (id=1343719)  : Create Area Trigger (179)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 44514 | Target: Front of Self (47)

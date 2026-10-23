@@ -10105,6 +10105,7 @@ Description      : The targeted undead enemy will be compelled to flee for up to
 Tooltip          : Compelled to flee.
 
 Name             : Healing Stream (desc=Rank 1) (id=5672) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -10112,7 +10113,7 @@ Spell Level      : 20
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=683519)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -11705,6 +11706,7 @@ Description      : Creates a Lesser Firestone which can be used to enchant your 
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Healing Stream (desc=Rank 2) (id=6371) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -11712,13 +11714,14 @@ Spell Level      : 30
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=684681)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream (desc=Rank 3) (id=6372) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -11726,7 +11729,7 @@ Spell Level      : 40
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=684770)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 7 | Scaled Value: 7 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -25363,6 +25366,7 @@ Effects          :
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Healing Stream (desc=Rank 4) (id=10460) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -25370,13 +25374,14 @@ Spell Level      : 50
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=689163)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 9 | Scaled Value: 9 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream (desc=Rank 5) (id=10461) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -25384,7 +25389,7 @@ Spell Level      : 60
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=688444)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 11 | Scaled Value: 11 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -74275,11 +74280,12 @@ Effects          :
 Tooltip          : Cannot be made invulnerable by Divine Shield, Divine Protection, Blessing of Protection, or shielded by Templar's Bulwark.
 
 Name             : Righteous Fury (id=25780) [Spell Family (10)] 
+Hotfixed         : Learn Level (16 -> 10), Required Level (16 -> 10)
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
 Resource         : 30% Base Mana (0) (id=189813)
-Spell Level      : 16
+Spell Level      : 10
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Labels           : 26: Paladin Spells
@@ -81050,6 +81056,7 @@ Effects          :
 Description      : Slam is now instant but has a ${$m2/1000} sec cooldown.
 
 Name             : Victory Rush (id=402927) [Spell Family (4)] 
+Hotfixed         : Description
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -81069,7 +81076,7 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | Target: Self (1)
 #3 (id=1049640)  : Dummy (3)
                    Base Value: 15 | Scaled Value: 15 | Target: Targeted Enemy (6)
-Description      : Instantly attack the target causing ${1+$AP*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.
+Description      : Instantly attack the target causing ${1+$apm*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.
 
 Name             : Victorious State (DND) (id=402974) [Passive, Hidden] 
 Class            : Warrior
@@ -118052,6 +118059,7 @@ Effects          :
 Description      : Creates a Surgical Tourniquet.
 
 Name             : Walk on Air (desc=Racial) (id=1259416) 
+Hotfixed         : Attributes
 Race             :  (0x300000000)
 School           : Nature
 Spell Type       : Magic
@@ -118060,7 +118068,7 @@ GCD              : 1.5 seconds
 Duration         : 10 seconds
 Cooldown         : 90 seconds
 Labels           : 5710
-Attributes       : Not In Arena or Rated Battleground (144), Unknown (493)
+Attributes       : Allow While Stealthed (37), Not In Arena or Rated Battleground (144), Unknown (493)
 Aura Interrupt   : Under Water (7), Mount (17), Leave World (19), Ground (35)
 Effects          :
 #2 (id=1268507)  : Trigger Spell (64): Walking on Air
@@ -118187,7 +118195,6 @@ Name             : Earth Fury (desc=Racial Passive) (id=1259719) [Passive]
 Race             : Dwarf (0x4)
 School           : Physical
 Spell Type       : None
-Requires weapon  : One-handed Mace, Two-handed Mace
 Labels           : 5710
 Attributes       : Is Ability (4), Passive (6), Unknown (493)
 Effects          :
@@ -123592,6 +123599,23 @@ Tooltip          : Stamina increased by $w1.
 
 While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Haste.
 
+Name             : Frostbolt (id=1293790) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1314775)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1314776)  : School Damage (2): frost
+                   Base Value: 42 | Scaled Value: 42 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+Tooltip          : Movement slowed by $s1%.
+
 Name             : Barkskin Purification Tonic (id=1293800) [Hidden] 
 School           : Physical
 Spell Type       : None
@@ -127563,12 +127587,13 @@ Effects          :
 Description      : Restores $s1% mana.
 
 Name             : BB Shot (id=1312745) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Range            : 25 yards
 Cast Time        : 2 seconds
 Duration         : 1 seconds
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Exclude Caster (51), Only On Player (104), Uses Ranged Slot (Cosmetic Only) (322), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Exclude Caster (51), Only On Player (104), No Pushback (207), Uses Ranged Slot (Cosmetic Only) (322), Unknown (493)
 Effects          :
 #1 (id=1343719)  : Create Area Trigger (179)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 44514 | Target: Front of Self (47)

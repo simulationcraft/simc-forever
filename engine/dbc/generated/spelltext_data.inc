@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70532
-static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 7160> __spelltext_data { {
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
   {      53, "Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.", 0, "Rank 1" },
@@ -4486,7 +4486,7 @@ static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
   {  402911, "A ferocious strike that deals $s1% weapon damage, but can only be used while Enrage, Berserker Rage, or Bloodrage is active. Each other melee ability used while Enrage, Berserker Rage, or Bloodrage is active reduces Raging Blow's remaining cooldown by $s3 sec.", 0, 0 },
   {  402913, "Heals you for $o1% of your maximum health over $d, but can only be used while Enrage, Berserker Rage, or Bloodrage is active. Useable while Stunned.\r\n", "Healing $s1% of maximum health every $t sec.", 0 },
   {  402922, "Slam is now instant but has a ${$m2/1000} sec cooldown.", 0, 0 },
-  {  402927, "Instantly attack the target causing ${1+$AP*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.", 0, 0 },
+  {  402927, "Instantly attack the target causing ${1+$apm*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.", 0, 0 },
   {  402975, "Follows killing an enemy, allowing the use of Victory Rush.", "Victory Rush recently activated.", 0 },
   {  403195, "While you are in Defensive Stance and have a shield equipped, Sunder Armor also deals damage equal to $403196s1% of your equipped weapon's damage per second, increased by $403196s2% per application of Sunder Armor already on the target. Devastate damage deals a high amount of threat while you are in Defensive Stance.", 0, 0 },
   {  403196, "Sunder Armor also deals $s1% weapon damage, increased by $s2% per application of Sunder Armor already on the target.", 0, 0 },
@@ -6743,6 +6743,7 @@ static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
   { 1293741, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Critical Strike Chance.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Critical Strike Chance.", 0 },
   { 1293742, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% reduced chance to be dodged or parried.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% reduced chance to be dodged or parried.", 0 },
   { 1293743, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Haste.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Haste.", 0 },
+  { 1293790, "Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.", "Movement slowed by $s1%.", 0 },
   { 1293800, "Empty the contents of the leather-bound flask into the shallows of the pool of water inside Deadwood Den.", 0, 0 },
   { 1293812, "Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.", 0, "Rank 2" },
   { 1293813, "Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.", 0, "Rank 3" },
@@ -7162,7 +7163,7 @@ static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
 } };
 
 // spelltext hotfix entries, wow build 1.60.1.70532
-static constexpr std::array<hotfix::client_hotfix_entry_t, 51> __spelltext_hotfix_data { {
+static constexpr std::array<hotfix::client_hotfix_entry_t, 52> __spelltext_hotfix_data { {
   {     702,  1, "Physical damage done reduced by $s1.", "Physical damage done reduced by $w1." },
   {     980,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
   {    1014,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
@@ -7209,6 +7210,7 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 51> __spelltext_hotfi
   {   29062,  0, "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by $m1%.", "Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a $m1% chance to not lose casting time when you take damage." },
   {  400588,  0, "Gives your Arcane Blast spell a $m1% chance, your Arcane Missile hits a ${$m1/4}% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.", "Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec." },
   {  400589,  0, "Gives your Arcane Blast, Fireball, and Frostbolt spells a chance to reduce the channeled duration of the next Arcane Missiles spell by $400589s1%, reduce the mana cost by $s3%, and missiles fire every ${$400588m2/10}.1 sec.", "Reduces the channeled duration of your next Arcane Missiles spell by $s1%, reduces the mana cost by $s3%, and missiles fire every ${$400588w2/10}.1 sec." },
+  {  402927,  0, "Instantly attack the target causing ${1+$AP*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.", "Instantly attack the target causing ${1+$apm*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy." },
   { 1259812,  0, "Your non-periodic damaging abilities have their Energy cost reduced by $s1% and deal $s2% more damage.", "Your non-periodic damaging abilities have their Energy cost reduced by $s1% and deal $s2% more damage for $d." },
   { 1259813,  0, "Your non-periodic damaging abilities have their Rage cost reduced by $s1% and deal $s2% more damage.", "Your non-periodic damaging abilities have their Rage cost reduced by $s1% and deal $s2% more damage for $d." },
   { 1259817,  0, "Your damaging abilities have their Mana cost reduced by $s1% and deal $s2% more damage.", "Your damaging abilities have their Mana cost reduced by $s1% and deal $s2% more damage for $d." },
