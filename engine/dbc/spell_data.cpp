@@ -858,16 +858,17 @@ util::span<const hotfix::client_hotfix_entry_t> spellpower_data_t::hotfixes( con
   return find_hotfixes( data, pd.id() );
 }
 
-const spell_data_t* spell_container_t::get_field( const player_t* p, auto id_field, auto spell_field ) const
+const spell_data_t* spell_container_t::get_field( const player_t* player, auto id_field, auto spell_field ) const
 {
   auto spell = std::invoke( spell_field, this );
-  auto id = std::invoke( id_field, this );
+  auto id    = std::invoke( id_field, this );
   assert( id != 0 );
 
   if ( !spell )
-    spell = p->find_spell( id );
+    spell = player->find_spell( id );
 
-  assert( spell && spell->id() == id );
+  // cannot check spell->id() == id as the spell yields not_found if not available to player
+  assert( spell );
 
   return spell;
 }
@@ -878,3 +879,5 @@ const spell_data_t* spell_container_t::attack( const player_t* p ) const  { retu
 const spell_data_t* spell_container_t::passive( const player_t* p ) const { return get_field( p, &spell_container_t::passive_id, &spell_container_t::_passive ); }
 const spell_data_t* spell_container_t::aura( const player_t* p ) const    { return get_field( p, &spell_container_t::aura_id,    &spell_container_t::_aura ); }
 const spell_data_t* spell_container_t::buff( const player_t* p ) const    { return get_field( p, &spell_container_t::buff_id,    &spell_container_t::_buff ); }
+const spell_data_t* spell_container_t::talent( const player_t* p ) const  { return get_field( p, &spell_container_t::talent_id,  &spell_container_t::_talent ); }
+const spell_data_t* spell_container_t::debuff( const player_t* p ) const  { return get_field( p, &spell_container_t::debuff_id,  &spell_container_t::_debuff ); }

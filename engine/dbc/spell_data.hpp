@@ -921,6 +921,8 @@ private:
   unsigned passive_id = 0;
   unsigned aura_id    = 0;
   unsigned buff_id    = 0;
+  unsigned talent_id  = 0;
+  unsigned debuff_id  = 0;
 
   const spell_data_t* _spell   = nullptr;
   const spell_data_t* _driver  = nullptr;
@@ -928,22 +930,20 @@ private:
   const spell_data_t* _passive = nullptr;
   const spell_data_t* _aura    = nullptr;
   const spell_data_t* _buff    = nullptr;
+  const spell_data_t* _talent  = nullptr;
+  const spell_data_t* _debuff  = nullptr;
 
-  const spell_data_t* get_field( const player_t* p, auto spell_field, auto id_field ) const;
-  constexpr spell_container_t& set_field( unsigned id, auto field )
-  {
-    auto _field = std::invoke( field, this );
-    _field      = id;
-    return *this;
-  }
+  const spell_data_t* get_field( const player_t* player, auto spell_field, auto id_field ) const;
 
 public:
-  constexpr spell_container_t& set_spell( unsigned id )   { return set_field( id, &spell_container_t::spell_id ); }
-  constexpr spell_container_t& set_driver( unsigned id )  { return set_field( id, &spell_container_t::driver_id ); }
-  constexpr spell_container_t& set_attack( unsigned id )  { return set_field( id, &spell_container_t::attack_id ); }
-  constexpr spell_container_t& set_passive( unsigned id ) { return set_field( id, &spell_container_t::passive_id ); }
-  constexpr spell_container_t& set_aura( unsigned id )    { return set_field( id, &spell_container_t::aura_id ); }
-  constexpr spell_container_t& set_buff( unsigned id )    { return set_field( id, &spell_container_t::buff_id ); }
+  constexpr spell_container_t& set_spell( unsigned id )   { spell_id = id;   return *this; }
+  constexpr spell_container_t& set_driver( unsigned id )  { driver_id = id;  return *this; }
+  constexpr spell_container_t& set_attack( unsigned id )  { attack_id = id;  return *this; }
+  constexpr spell_container_t& set_passive( unsigned id ) { passive_id = id; return *this; }
+  constexpr spell_container_t& set_aura( unsigned id )    { aura_id = id;    return *this; }
+  constexpr spell_container_t& set_buff( unsigned id )    { buff_id = id;    return *this; }
+  constexpr spell_container_t& set_talent( unsigned id )  { talent_id = id;  return *this; }
+  constexpr spell_container_t& set_debuff( unsigned id )  { debuff_id = id;  return *this; }
 
   const spell_data_t* spell( const player_t* p ) const;
   const spell_data_t* driver( const player_t* p ) const;
@@ -951,6 +951,8 @@ public:
   const spell_data_t* passive( const player_t* p ) const;
   const spell_data_t* aura( const player_t* p ) const;
   const spell_data_t* buff( const player_t* p ) const;
+  const spell_data_t* talent( const player_t* p ) const;
+  const spell_data_t* debuff( const player_t* p ) const;
 };
 
 enum spell_rank_e : int

@@ -265,7 +265,7 @@ namespace pets {
     struct firebolt_t : warlock_pet_spell_t
     {
       firebolt_t( std::string_view n, imp_pet_t* p, std::string_view options_str  ) :
-        warlock_pet_spell_t( n, p, p->find_rank( firebolt_ranks )->spell( player ) )
+        warlock_pet_spell_t( n, p, p->find_rank( firebolt_ranks )->spell( p ) )
       {
         parse_options( options_str );
 
