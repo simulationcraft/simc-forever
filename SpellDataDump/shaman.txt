@@ -569,6 +569,7 @@ Effects          :
 Description      : Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $5672a1 yards for $5672s1 every $5672t1 seconds.
 
 Name             : Healing Stream (desc=Rank 1) (id=5672) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -576,7 +577,7 @@ Spell Level      : 20
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=683519)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -784,6 +785,7 @@ Effects          :
 Description      : Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $6352r yards for $6352s1 Fire damage.
 
 Name             : Healing Stream (desc=Rank 2) (id=6371) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -791,13 +793,14 @@ Spell Level      : 30
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=684681)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream (desc=Rank 3) (id=6372) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -805,7 +808,7 @@ Spell Level      : 40
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=684770)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 7 | Scaled Value: 7 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -2812,6 +2815,7 @@ Effects          :
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Healing Stream (desc=Rank 4) (id=10460) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2819,13 +2823,14 @@ Spell Level      : 50
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=689163)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 9 | Scaled Value: 9 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream (desc=Rank 5) (id=10461) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2833,7 +2838,7 @@ Spell Level      : 60
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=688444)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 11 | Scaled Value: 11 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
