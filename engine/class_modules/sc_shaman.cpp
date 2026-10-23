@@ -173,7 +173,7 @@ constexpr std::array earth_shock_ranks {
 struct earth_shock_t : public shaman_spell_t
 {
   earth_shock_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "earth_shock", player, player->find_rank( earth_shock_ranks ).spell )
+    shaman_spell_t( "earth_shock", player, player->find_rank( earth_shock_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -195,7 +195,7 @@ constexpr std::array flame_shock_ranks {
 struct flame_shock_t : public shaman_spell_t
 {
   flame_shock_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "flame_shock", player, player->find_rank( flame_shock_ranks ).spell )
+    shaman_spell_t( "flame_shock", player, player->find_rank( flame_shock_ranks )->spell( player) )
   {
     parse_options( options_str );
 
@@ -220,13 +220,13 @@ constexpr std::array flametongue_weapon_ranks {
 struct flametongue_attack_t : public shaman_spell_t
 {
   flametongue_attack_t( shaman_t* player ) :
-    shaman_spell_t( "flametongue_attack", player, player->find_rank( flametongue_weapon_ranks ).attack )
+    shaman_spell_t( "flametongue_attack", player, player->find_rank( flametongue_weapon_ranks )->attack( player ) )
   {
     background = true;
 
-    auto rank = player->find_rank( flametongue_weapon_ranks );
+    auto driver = player->find_rank( flametongue_weapon_ranks )->driver( player );
 
-    double proc_value = rank.driver->effectN( 1 ).average( player, player->level() );
+    double proc_value = driver->effectN( 1 ).average( player, player->level() );
     double weapon_speed = player->equipped_weapons[ SLOT_MAIN_HAND ].swing_time.total_seconds();
 
     base_dd_min = base_dd_max = proc_value * weapon_speed / 100.0;
@@ -236,7 +236,7 @@ struct flametongue_attack_t : public shaman_spell_t
 struct flametongue_weapon_t : public shaman_spell_t
 {
   flametongue_weapon_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "flametongue_weapon", player, player->find_rank( flametongue_weapon_ranks ).spell )
+    shaman_spell_t( "flametongue_weapon", player, player->find_rank( flametongue_weapon_ranks )->spell( player ) )
   {
     parse_options( options_str );
     harmful = false;
@@ -274,7 +274,7 @@ constexpr std::array rockbiter_weapon_ranks {
 struct rockbiter_weapon_t : public shaman_spell_t
 {
   rockbiter_weapon_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "rockbiter_weapon", player, player->find_rank( rockbiter_weapon_ranks ).spell )
+    shaman_spell_t( "rockbiter_weapon", player, player->find_rank( rockbiter_weapon_ranks )->spell( player ) )
   {
     parse_options( options_str );
     harmful = false;
@@ -316,7 +316,7 @@ constexpr std::array strength_of_earth_totem_ranks {
 struct strength_of_earth_totem_t : public shaman_spell_t
 {
   strength_of_earth_totem_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "strength_of_earth_totem", player, player->find_rank( strength_of_earth_totem_ranks ).spell )
+    shaman_spell_t( "strength_of_earth_totem", player, player->find_rank( strength_of_earth_totem_ranks )->spell( player ) )
   {
     parse_options( options_str );
     harmful = false;
@@ -423,13 +423,11 @@ void shaman_t::create_buffs()
 {
   player_t::create_buffs();
 
-  buff.flametongue_weapon = make_buff( this, "flametongue_weapon", find_rank( flametongue_weapon_ranks ).spell );
-  buff.rockbiter_weapon = make_buff<stat_buff_t>(
-      this, "rockbiter_weapon", find_rank( rockbiter_weapon_ranks ).passive );
+  buff.flametongue_weapon = make_buff( this, "flametongue_weapon", find_rank( flametongue_weapon_ranks )->spell( this ) );
+  buff.rockbiter_weapon = make_buff<stat_buff_t>( this, "rockbiter_weapon", find_rank( rockbiter_weapon_ranks )->passive( this ) );
 
-  buff.strength_of_earth = make_buff<stat_buff_t>(
-      this, "strength_of_earth", find_rank( strength_of_earth_totem_ranks ).aura )
-    ->set_duration( find_rank( strength_of_earth_totem_ranks ).spell->duration() );
+  buff.strength_of_earth = make_buff<stat_buff_t>( this, "strength_of_earth", find_rank( strength_of_earth_totem_ranks )->aura( this ) )
+    ->set_duration( find_rank( strength_of_earth_totem_ranks )->spell( this )->duration() );
 }
 
 void shaman_t::create_actions()

@@ -10841,6 +10841,28 @@ const spell_data_t* player_t::find_spell( unsigned int id, specialization_e s ) 
   return spell_data_t::not_found();
 }
 
+const spell_container_t* player_t::find_rank( util::span<const spell_container_t> ranks, int rank, // ) const
+                                              player_t::rank_ptype_t field ) const
+{
+  assert( !ranks.empty() );
+
+  if ( rank == RANK_MAX )
+    return &ranks.back();
+  else if ( rank > 0 )
+  {
+    if ( static_cast<size_t>( rank ) <= ranks.size() )
+      return &ranks[ rank - 1 ];
+  }
+  else
+  {
+    for ( const auto& it : ranks | std::ranges::views::reverse )
+      if ( auto reference_spell = std::invoke( field, it, this ); reference_spell && reference_spell->ok() )
+        return &it;
+  }
+
+  assert( false && "unreachable" );
+}
+
 namespace
 {
 std::unique_ptr<expr_t> deprecate_expression( player_t& p, util::string_view old_name, util::string_view new_name, action_t* a = nullptr  )

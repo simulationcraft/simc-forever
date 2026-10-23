@@ -86,7 +86,7 @@ constexpr std::array shadow_bolt_ranks {
 struct shadow_bolt_t : public warlock_spell_t
 {
   shadow_bolt_t( warlock_t* player, util::string_view options_str ) :
-    warlock_spell_t( "shadow_bolt", player, player->find_rank( shadow_bolt_ranks ).spell )
+    warlock_spell_t( "shadow_bolt", player, player->find_rank( shadow_bolt_ranks )->spell( player ) )
   {
     parse_options( options_str );
   }
@@ -107,7 +107,7 @@ constexpr std::array immolate_ranks {
 struct immolate_t : public warlock_spell_t
 {
   immolate_t( warlock_t* player, util::string_view options_str ) :
-    warlock_spell_t( "immolate", player, player->find_rank( immolate_ranks ).spell )
+    warlock_spell_t( "immolate", player, player->find_rank( immolate_ranks )->spell( player ) )
   {
     parse_options( options_str );
   }
@@ -127,7 +127,7 @@ constexpr std::array corruption_ranks {
 struct corruption_t : public warlock_spell_t
 {
   corruption_t( warlock_t* player, util::string_view options_str ) :
-    warlock_spell_t( "corruption", player, player->find_rank( corruption_ranks ).spell )
+    warlock_spell_t( "corruption", player, player->find_rank( corruption_ranks )->spell( player ) )
   {
     parse_options( options_str );
   }
@@ -265,7 +265,7 @@ namespace pets {
     struct firebolt_t : warlock_pet_spell_t
     {
       firebolt_t( std::string_view n, imp_pet_t* p, std::string_view options_str  ) :
-        warlock_pet_spell_t( n, p, p->find_rank( firebolt_ranks ).spell )
+        warlock_pet_spell_t( n, p, p->find_rank( firebolt_ranks )->spell( player ) )
       {
         parse_options( options_str );
 

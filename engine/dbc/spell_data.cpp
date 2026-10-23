@@ -857,3 +857,24 @@ util::span<const hotfix::client_hotfix_entry_t> spellpower_data_t::hotfixes( con
   auto data = SC_DBC_GET_DATA( __power_hotfix_data, __ptr_power_hotfix_data, ptr );
   return find_hotfixes( data, pd.id() );
 }
+
+const spell_data_t* spell_container_t::get_field( const player_t* p, auto id_field, auto spell_field ) const
+{
+  auto spell = std::invoke( spell_field, this );
+  auto id = std::invoke( id_field, this );
+  assert( id != 0 );
+
+  if ( !spell )
+    spell = p->find_spell( id );
+
+  assert( spell && spell->id() == id );
+
+  return spell;
+}
+
+const spell_data_t* spell_container_t::spell( const player_t* p ) const   { return get_field( p, &spell_container_t::spell_id,   &spell_container_t::_spell ); }
+const spell_data_t* spell_container_t::driver( const player_t* p ) const  { return get_field( p, &spell_container_t::driver_id,  &spell_container_t::_driver ); }
+const spell_data_t* spell_container_t::attack( const player_t* p ) const  { return get_field( p, &spell_container_t::attack_id,  &spell_container_t::_attack ); }
+const spell_data_t* spell_container_t::passive( const player_t* p ) const { return get_field( p, &spell_container_t::passive_id, &spell_container_t::_passive ); }
+const spell_data_t* spell_container_t::aura( const player_t* p ) const    { return get_field( p, &spell_container_t::aura_id,    &spell_container_t::_aura ); }
+const spell_data_t* spell_container_t::buff( const player_t* p ) const    { return get_field( p, &spell_container_t::buff_id,    &spell_container_t::_buff ); }

@@ -121,7 +121,7 @@ constexpr std::array battle_shout_ranks {
 struct battle_shout_t : public warrior_spell_t
 {
   battle_shout_t( warrior_t* player, util::string_view options_str ) :
-    warrior_spell_t( "battle_shout", player, player->find_rank( battle_shout_ranks ).spell )
+    warrior_spell_t( "battle_shout", player, player->find_rank( battle_shout_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -147,7 +147,7 @@ constexpr std::array bloodrage_ranks {
 struct bloodrage_t : public warrior_spell_t
 {
   bloodrage_t( warrior_t* player, util::string_view options_str ) :
-    warrior_spell_t( "bloodrage", player, player->find_rank( bloodrage_ranks ).spell )
+    warrior_spell_t( "bloodrage", player, player->find_rank( bloodrage_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -276,7 +276,7 @@ constexpr std::array rend_ranks {
 struct rend_t : public warrior_attack_t
 {
   rend_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "rend", player, player->find_rank( rend_ranks ).spell )
+    warrior_attack_t( "rend", player, player->find_rank( rend_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -341,7 +341,7 @@ constexpr std::array heroic_strike_ranks {
 struct heroic_strike_t : public warrior_attack_t
 {
   heroic_strike_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "heroic_strike", player, player->find_rank( heroic_strike_ranks ).spell )
+    warrior_attack_t( "heroic_strike", player, player->find_rank( heroic_strike_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -364,7 +364,7 @@ constexpr std::array charge_ranks {
 struct charge_t : public warrior_attack_t
 {
   charge_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "charge", player, player->find_rank( charge_ranks ).spell )
+    warrior_attack_t( "charge", player, player->find_rank( charge_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -389,7 +389,7 @@ constexpr std::array thunder_clap_ranks {
 struct thunder_clap_t : public warrior_attack_t
 {
   thunder_clap_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "thunder_clap", player, player->find_rank( thunder_clap_ranks ).spell )
+    warrior_attack_t( "thunder_clap", player, player->find_rank( thunder_clap_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -452,11 +452,10 @@ void warrior_t::create_buffs()
 {
   buff.heroic_strike_queued = make_buff( this, "heroic_strike_queued" );
 
-  buff.battle_shout = make_buff<stat_buff_t>( this, "battle_shout",
-                        find_rank( battle_shout_ranks ).spell );
+  buff.battle_shout = make_buff<stat_buff_t>( this, "battle_shout", find_rank( battle_shout_ranks )->spell( this ) );
 
   buff.bloodrage = make_buff( this, "bloodrage",
-                        find_rank( bloodrage_ranks ).buff )
+                        find_rank( bloodrage_ranks )->buff( this ) )
                         ->set_tick_callback( [ this ]( buff_t*, int, timespan_t ) {
                             resource_gain( RESOURCE_RAGE, 1.0, get_gain( "bloodrage" ) ); } );
 

@@ -908,4 +908,56 @@ struct spelleffect_data_nil_t : public spelleffect_data_t {
 inline constexpr spelleffect_data_nil_t spelleffect_data_nil_v {};
 inline const spelleffect_data_t& spelleffect_data_t::nil() { return spelleffect_data_nil_v; }
 
+/* Spell Container
+ *
+ * Cached collection of spell_data_t pointers. Intended for talents, rank spells etc.
+ */
+struct spell_container_t
+{
+private:
+  unsigned spell_id   = 0;
+  unsigned driver_id  = 0;
+  unsigned attack_id  = 0;
+  unsigned passive_id = 0;
+  unsigned aura_id    = 0;
+  unsigned buff_id    = 0;
+
+  const spell_data_t* _spell   = nullptr;
+  const spell_data_t* _driver  = nullptr;
+  const spell_data_t* _attack  = nullptr;
+  const spell_data_t* _passive = nullptr;
+  const spell_data_t* _aura    = nullptr;
+  const spell_data_t* _buff    = nullptr;
+
+  const spell_data_t* get_field( const player_t* p, auto spell_field, auto id_field ) const;
+  constexpr spell_container_t& set_field( unsigned id, auto field )
+  {
+    auto _field = std::invoke( field, this );
+    _field      = id;
+    return *this;
+  }
+
+public:
+  constexpr spell_container_t& set_spell( unsigned id )   { return set_field( id, &spell_container_t::spell_id ); }
+  constexpr spell_container_t& set_driver( unsigned id )  { return set_field( id, &spell_container_t::driver_id ); }
+  constexpr spell_container_t& set_attack( unsigned id )  { return set_field( id, &spell_container_t::attack_id ); }
+  constexpr spell_container_t& set_passive( unsigned id ) { return set_field( id, &spell_container_t::passive_id ); }
+  constexpr spell_container_t& set_aura( unsigned id )    { return set_field( id, &spell_container_t::aura_id ); }
+  constexpr spell_container_t& set_buff( unsigned id )    { return set_field( id, &spell_container_t::buff_id ); }
+
+  const spell_data_t* spell( const player_t* p ) const;
+  const spell_data_t* driver( const player_t* p ) const;
+  const spell_data_t* attack( const player_t* p ) const;
+  const spell_data_t* passive( const player_t* p ) const;
+  const spell_data_t* aura( const player_t* p ) const;
+  const spell_data_t* buff( const player_t* p ) const;
+};
+
+enum spell_rank_e : int
+{
+  RANK_MAX_USABLE = 0,  // highest rank usable at the player level
+  RANK_MAX        = -1, // highest rank in the table
+};
+
+
 #endif // SC_DBC_SPELL_DATA_HPP
