@@ -10842,7 +10842,7 @@ const spell_data_t* player_t::find_spell( unsigned int id, specialization_e s ) 
   return spell_data_t::not_found();
 }
 
-const spell_container_t* player_t::find_rank( util::span<const spell_container_t> ranks, int rank, // ) const
+const spell_container_t* player_t::find_rank( util::span<const spell_container_t> ranks, int rank,
                                               player_t::rank_ptype_t field ) const
 {
   assert( !ranks.empty() );
@@ -10856,6 +10856,10 @@ const spell_container_t* player_t::find_rank( util::span<const spell_container_t
   }
   else
   {
+    // rank spells are expected to be ordered lowest -> highest, otherwise condition 1 fails
+    // as a result, first ok spell while reverse iterating yields the highest rank spell that is available
+
+    // if the member being referenced for existence is not &spell_container_t::spell, provide a non-default field
     for ( const auto& it : ranks | std::ranges::views::reverse )
       if ( auto reference_spell = std::invoke( field, it, this ); reference_spell && reference_spell->ok() )
         return &it;
