@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70532
-static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 7160> __spelltext_data { {
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
   {      53, "Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.", 0, "Rank 1" },
@@ -6743,6 +6743,7 @@ static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
   { 1293741, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Critical Strike Chance.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Critical Strike Chance.", 0 },
   { 1293742, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% reduced chance to be dodged or parried.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% reduced chance to be dodged or parried.", 0 },
   { 1293743, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Haste.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Haste.", 0 },
+  { 1293790, "Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.", "Movement slowed by $s1%.", 0 },
   { 1293800, "Empty the contents of the leather-bound flask into the shallows of the pool of water inside Deadwood Den.", 0, 0 },
   { 1293812, "Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.", 0, "Rank 2" },
   { 1293813, "Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.", 0, "Rank 3" },
