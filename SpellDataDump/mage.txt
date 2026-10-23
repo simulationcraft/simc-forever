@@ -9631,6 +9631,23 @@ Effects          :
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
 Tooltip          : Movement slowed by $s1%.
 
+Name             : Frostbolt (id=1293790) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1314775)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1314776)  : School Damage (2): frost
+                   Base Value: 42 | Scaled Value: 42 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+Tooltip          : Movement slowed by $s1%.
+
 Name             : Fireball (id=1299850) [Spell Family (3)] 
 School           : Fire
 Spell Type       : Magic
