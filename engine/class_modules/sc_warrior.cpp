@@ -13,88 +13,6 @@ namespace
 // Warrior
 // ==========================================================================
 
-struct spell_rank_t
-{
-  unsigned spell_id;
-};
-struct bloodrage_rank_t
-{
-  unsigned spell_id;
-  unsigned buff_id;
-};
-
-template <typename RANKS>
-auto max_rank( const player_t* player, const RANKS& ranks )
-{
-  typename RANKS::value_type best {};
-  unsigned best_level = 0;
-
-  for ( const auto& rank : ranks )
-  {
-    const spell_data_t* spell = player->find_spell( rank.spell_id );
-
-    if ( spell->ok() && spell->level() >= best_level )
-    {
-      best = rank;
-      best_level = spell->level();
-    }
-  }
-
-  return best;
-}
-
-constexpr std::array heroic_strike_ranks {
-  spell_rank_t{ 78 },
-  spell_rank_t{ 284 },
-  spell_rank_t{ 285 },
-  spell_rank_t{ 1608 },
-  spell_rank_t{ 11564 },
-  spell_rank_t{ 11565 },
-  spell_rank_t{ 11566 },
-  spell_rank_t{ 11567 },
-  spell_rank_t{ 25286 },
-};
-
-constexpr std::array rend_ranks {
-  spell_rank_t{ 772 },
-  spell_rank_t{ 6546 },
-  spell_rank_t{ 6547 },
-  spell_rank_t{ 6548 },
-  spell_rank_t{ 11572 },
-  spell_rank_t{ 11573 },
-  spell_rank_t{ 11574 },
-};
-
-constexpr std::array battle_shout_ranks {
-  spell_rank_t{ 5242 },
-  spell_rank_t{ 6192 },
-  spell_rank_t{ 6673 },
-  spell_rank_t{ 11549 },
-  spell_rank_t{ 11550 },
-  spell_rank_t{ 11551 },
-  spell_rank_t{ 25289 },
-};
-
-constexpr std::array bloodrage_ranks {
-  bloodrage_rank_t{ 2687, 29131 },
-};
-
-constexpr std::array charge_ranks {
-  spell_rank_t{ 100 },
-  spell_rank_t{ 6178 },
-  spell_rank_t{ 11578 },
-};
-
-constexpr std::array thunder_clap_ranks {
-  spell_rank_t{ 6343 },
-  spell_rank_t{ 8198 },
-  spell_rank_t{ 8204 },
-  spell_rank_t{ 8205 },
-  spell_rank_t{ 11580 },
-  spell_rank_t{ 11581 },
-};
-
-
 struct warrior_t : public player_t
 {
   warrior_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) :
@@ -190,11 +108,20 @@ public:
 using warrior_attack_t = warrior_action_t<melee_attack_t>;
 using warrior_spell_t  = warrior_action_t<spell_t>;
 
+constexpr std::array battle_shout_ranks {
+  spell_container_t().set_spell(  5242 ),
+  spell_container_t().set_spell(  6192 ),
+  spell_container_t().set_spell(  6673 ),
+  spell_container_t().set_spell( 11549 ),
+  spell_container_t().set_spell( 11550 ),
+  spell_container_t().set_spell( 11551 ),
+  spell_container_t().set_spell( 25289 ),
+};
 // TODO: Party buff version
 struct battle_shout_t : public warrior_spell_t
 {
   battle_shout_t( warrior_t* player, util::string_view options_str ) :
-    warrior_spell_t( "battle_shout", player, player->find_spell( max_rank( player, battle_shout_ranks ).spell_id ) )
+    warrior_spell_t( "battle_shout", player, player->find_rank( battle_shout_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -214,10 +141,13 @@ struct battle_shout_t : public warrior_spell_t
   }
 };
 
+constexpr std::array bloodrage_ranks {
+  spell_container_t().set_spell(  2687 ).set_buff( 29131 ),
+};
 struct bloodrage_t : public warrior_spell_t
 {
   bloodrage_t( warrior_t* player, util::string_view options_str ) :
-    warrior_spell_t( "bloodrage", player, player->find_spell( max_rank( player, bloodrage_ranks ).spell_id ) )
+    warrior_spell_t( "bloodrage", player, player->find_rank( bloodrage_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -334,10 +264,19 @@ double warrior_t::rage_per_swing( const weapon_t& w ) const
 //
 /////////////////////////////////////////////////////////////////////////////////////
 
+constexpr std::array rend_ranks {
+  spell_container_t().set_spell(   772 ),
+  spell_container_t().set_spell(  6546 ),
+  spell_container_t().set_spell(  6547 ),
+  spell_container_t().set_spell(  6548 ),
+  spell_container_t().set_spell( 11572 ),
+  spell_container_t().set_spell( 11573 ),
+  spell_container_t().set_spell( 11574 ),
+};
 struct rend_t : public warrior_attack_t
 {
   rend_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "rend", player, player->find_spell( max_rank( player, rend_ranks ).spell_id ) )
+    warrior_attack_t( "rend", player, player->find_rank( rend_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -388,10 +327,21 @@ struct heroic_strike_queue_t : public action_t
   }
 };
 
+constexpr std::array heroic_strike_ranks {
+  spell_container_t().set_spell(    78 ),
+  spell_container_t().set_spell(   284 ),
+  spell_container_t().set_spell(   285 ),
+  spell_container_t().set_spell(  1608 ),
+  spell_container_t().set_spell( 11564 ),
+  spell_container_t().set_spell( 11565 ),
+  spell_container_t().set_spell( 11566 ),
+  spell_container_t().set_spell( 11567 ),
+  spell_container_t().set_spell( 25286 ),
+};
 struct heroic_strike_t : public warrior_attack_t
 {
   heroic_strike_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "heroic_strike", player, player->find_spell( max_rank( player, heroic_strike_ranks ).spell_id ) )
+    warrior_attack_t( "heroic_strike", player, player->find_rank( heroic_strike_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -406,10 +356,15 @@ struct heroic_strike_t : public warrior_attack_t
   }
 };
 
+constexpr std::array charge_ranks {
+  spell_container_t().set_spell(   100 ),
+  spell_container_t().set_spell(  6178 ),
+  spell_container_t().set_spell( 11578 ),
+};
 struct charge_t : public warrior_attack_t
 {
   charge_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "charge", player, player->find_spell( max_rank( player, charge_ranks ).spell_id ) )
+    warrior_attack_t( "charge", player, player->find_rank( charge_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -423,10 +378,18 @@ struct charge_t : public warrior_attack_t
   }
 };
 
+constexpr std::array thunder_clap_ranks {
+  spell_container_t().set_spell(  6343 ),
+  spell_container_t().set_spell(  8198 ),
+  spell_container_t().set_spell(  8204 ),
+  spell_container_t().set_spell(  8205 ),
+  spell_container_t().set_spell( 11580 ),
+  spell_container_t().set_spell( 11581 ),
+};
 struct thunder_clap_t : public warrior_attack_t
 {
   thunder_clap_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "thunder_clap", player, player->find_spell( max_rank( player, thunder_clap_ranks ).spell_id ) )
+    warrior_attack_t( "thunder_clap", player, player->find_rank( thunder_clap_ranks )->spell( player ) )
   {
     parse_options( options_str );
 
@@ -489,11 +452,10 @@ void warrior_t::create_buffs()
 {
   buff.heroic_strike_queued = make_buff( this, "heroic_strike_queued" );
 
-  buff.battle_shout = make_buff<stat_buff_t>( this, "battle_shout",
-                        find_spell( max_rank( this, battle_shout_ranks ).spell_id ) );
+  buff.battle_shout = make_buff<stat_buff_t>( this, "battle_shout", find_rank( battle_shout_ranks )->spell( this ) );
 
   buff.bloodrage = make_buff( this, "bloodrage",
-                        find_spell( max_rank( this, bloodrage_ranks ).buff_id ) )
+                        find_rank( bloodrage_ranks )->buff( this ) )
                         ->set_tick_callback( [ this ]( buff_t*, int, timespan_t ) {
                             resource_gain( RESOURCE_RAGE, 1.0, get_gain( "bloodrage" ) ); } );
 
