@@ -4486,7 +4486,7 @@ static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
   {  402911, "A ferocious strike that deals $s1% weapon damage, but can only be used while Enrage, Berserker Rage, or Bloodrage is active. Each other melee ability used while Enrage, Berserker Rage, or Bloodrage is active reduces Raging Blow's remaining cooldown by $s3 sec.", 0, 0 },
   {  402913, "Heals you for $o1% of your maximum health over $d, but can only be used while Enrage, Berserker Rage, or Bloodrage is active. Useable while Stunned.\r\n", "Healing $s1% of maximum health every $t sec.", 0 },
   {  402922, "Slam is now instant but has a ${$m2/1000} sec cooldown.", 0, 0 },
-  {  402927, "Instantly attack the target causing ${1+$AP*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.", 0, 0 },
+  {  402927, "Instantly attack the target causing ${1+$apm*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.", 0, 0 },
   {  402975, "Follows killing an enemy, allowing the use of Victory Rush.", "Victory Rush recently activated.", 0 },
   {  403195, "While you are in Defensive Stance and have a shield equipped, Sunder Armor also deals damage equal to $403196s1% of your equipped weapon's damage per second, increased by $403196s2% per application of Sunder Armor already on the target. Devastate damage deals a high amount of threat while you are in Defensive Stance.", 0, 0 },
   {  403196, "Sunder Armor also deals $s1% weapon damage, increased by $s2% per application of Sunder Armor already on the target.", 0, 0 },
@@ -7162,7 +7162,7 @@ static constexpr std::array<spelltext_data_t, 7159> __spelltext_data { {
 } };
 
 // spelltext hotfix entries, wow build 1.60.1.70532
-static constexpr std::array<hotfix::client_hotfix_entry_t, 51> __spelltext_hotfix_data { {
+static constexpr std::array<hotfix::client_hotfix_entry_t, 52> __spelltext_hotfix_data { {
   {     702,  1, "Physical damage done reduced by $s1.", "Physical damage done reduced by $w1." },
   {     980,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
   {    1014,  1, "$o1 Shadow damage over $d.", "$?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d." },
@@ -7209,6 +7209,7 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 51> __spelltext_hotfi
   {   29062,  0, "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by $m1%.", "Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a $m1% chance to not lose casting time when you take damage." },
   {  400588,  0, "Gives your Arcane Blast spell a $m1% chance, your Arcane Missile hits a ${$m1/4}% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.", "Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec." },
   {  400589,  0, "Gives your Arcane Blast, Fireball, and Frostbolt spells a chance to reduce the channeled duration of the next Arcane Missiles spell by $400589s1%, reduce the mana cost by $s3%, and missiles fire every ${$400588m2/10}.1 sec.", "Reduces the channeled duration of your next Arcane Missiles spell by $s1%, reduces the mana cost by $s3%, and missiles fire every ${$400588w2/10}.1 sec." },
+  {  402927,  0, "Instantly attack the target causing ${1+$AP*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.", "Instantly attack the target causing ${1+$apm*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy." },
   { 1259812,  0, "Your non-periodic damaging abilities have their Energy cost reduced by $s1% and deal $s2% more damage.", "Your non-periodic damaging abilities have their Energy cost reduced by $s1% and deal $s2% more damage for $d." },
   { 1259813,  0, "Your non-periodic damaging abilities have their Rage cost reduced by $s1% and deal $s2% more damage.", "Your non-periodic damaging abilities have their Rage cost reduced by $s1% and deal $s2% more damage for $d." },
   { 1259817,  0, "Your damaging abilities have their Mana cost reduced by $s1% and deal $s2% more damage.", "Your damaging abilities have their Mana cost reduced by $s1% and deal $s2% more damage for $d." },
