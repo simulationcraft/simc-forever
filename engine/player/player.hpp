@@ -31,7 +31,6 @@
 #include <map>
 #include <set>
 #include <unordered_map>
-#include <ranges>
 
 struct absorb_buff_t;
 struct action_t;
@@ -740,7 +739,6 @@ public:
 
   using rank_ptype_t = const spell_data_t*(spell_container_t::*)(const player_t*) const;
   const spell_container_t* find_rank( util::span<const spell_container_t> ranks, int rank = RANK_MAX_USABLE, // ) const;
-                                      // auto field = &spell_container_t::spell ) const;
                                       rank_ptype_t field = &spell_container_t::spell ) const;
 
   pet_t*      find_pet( util::string_view name ) const;
