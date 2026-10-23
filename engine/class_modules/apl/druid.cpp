@@ -37,6 +37,7 @@ void druid( player_t* p )
 
   default_->add_action( "auto_attack" );
   default_->add_action( "moonfire,if=!ticking" );
+  default_->add_action( "starfire" );
   default_->add_action( "wrath" );
 }
 //druid_apl_end
