@@ -112,6 +112,24 @@ struct moonfire_t : public druid_spell_t
   }
 };
 
+constexpr std::array starfire_ranks{
+    spell_rank_t{ 2912 },   
+    spell_rank_t{ 8949 },   
+    spell_rank_t{ 8950 },   
+    spell_rank_t{ 8951 },   
+    spell_rank_t{ 9875 },   
+    spell_rank_t{ 9876 },   
+    spell_rank_t{ 25298 },  
+};
+struct starfire_t : public druid_spell_t
+{
+  starfire_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "starfire", player, player->find_spell( player->find_rank( starfire_ranks ).spell_id ) )
+  {
+    parse_options( options_str );
+  }
+};
+
 // ==========================================================================
 // Druid Attacks
 // ==========================================================================
@@ -183,6 +201,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new wrath_t( this, options_str );
   if ( name == "moonfire" )
     return new moonfire_t( this, options_str );
+  if ( name == "starfire" )
+    return new starfire_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
 }
