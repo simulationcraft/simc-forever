@@ -42292,6 +42292,7 @@ Effects          :
 Description      : Creates a Surgical Tourniquet.
 
 Name             : Walk on Air (desc=Racial) (id=1259416) 
+Hotfixed         : Attributes
 Race             :  (0x300000000)
 School           : Nature
 Spell Type       : Magic
@@ -42300,7 +42301,7 @@ GCD              : 1.5 seconds
 Duration         : 10 seconds
 Cooldown         : 90 seconds
 Labels           : 5710
-Attributes       : Not In Arena or Rated Battleground (144), Unknown (493)
+Attributes       : Allow While Stealthed (37), Not In Arena or Rated Battleground (144), Unknown (493)
 Aura Interrupt   : Under Water (7), Mount (17), Leave World (19), Ground (35)
 Effects          :
 #2 (id=1268507)  : Trigger Spell (64): Walking on Air
