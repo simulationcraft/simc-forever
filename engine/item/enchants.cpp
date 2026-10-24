@@ -300,6 +300,13 @@ bool enchant::passive_enchant( item_t& item, unsigned spell_id )
         item.parsed.enchant_notes.push_back( fmt::format( "+{}% Mana", (int)value ) );
         ret = true;
         break;
+      case A_RESTORE_POWER:
+        if ( effect.misc_value1() != POWER_MANA )
+          break;
+        item.player->parse_passive_item_effect( spell, effect_mask_t( false ).enable( as<uint32_t>( i ) ) );
+        item.parsed.enchant_notes.push_back( fmt::format( "+{} Mana per 5 sec", (int)value ) );
+        ret = true;
+        break;
       default:
         break;
     }
