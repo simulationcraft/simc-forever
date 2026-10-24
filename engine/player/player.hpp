@@ -10,6 +10,7 @@
 #include "actor.hpp"
 #include "assessor.hpp"
 #include "dbc/specialization.hpp"
+#include "dbc/spell_data.hpp"
 #include "effect_callbacks.hpp"
 #include "gear_stats.hpp"
 #include "player_collected_data.hpp"
@@ -735,6 +736,10 @@ public:
   const spell_data_t* find_spell( util::string_view name, specialization_e s = SPEC_NONE ) const;
   const spell_data_t* find_spell( unsigned int id, specialization_e s ) const;
   const spell_data_t* find_spell( unsigned int id ) const;
+
+  using rank_ptype_t = const spell_data_t*(spell_container_t::*)(const player_t*) const;
+  const spell_container_t* find_rank( util::span<const spell_container_t> ranks, int rank = RANK_MAX_USABLE, // ) const;
+                                      rank_ptype_t field = &spell_container_t::spell ) const;
 
   pet_t*      find_pet( util::string_view name ) const;
   item_t*     find_item_by_name( util::string_view name );

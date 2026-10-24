@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Vindication (desc=Rank 1) (id=67) 
 Class            : Paladin
 School           : Holy
@@ -5212,11 +5212,12 @@ Effects          :
 Tooltip          : Cannot be made invulnerable by Divine Shield, Divine Protection, Blessing of Protection, or shielded by Templar's Bulwark.
 
 Name             : Righteous Fury (id=25780) [Spell Family (10)] 
+Hotfixed         : Learn Level (16 -> 10), Required Level (16 -> 10)
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
 Resource         : 30% Base Mana (0) (id=189813)
-Spell Level      : 16
+Spell Level      : 10
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Labels           : 26: Paladin Spells

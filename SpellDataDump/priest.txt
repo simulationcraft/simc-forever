@@ -1,5 +1,6 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -16,7 +17,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687563)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 44 | Scaled Value: 48 | Points Per Level: 0.8 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -204,6 +205,7 @@ Effects          :
 Description      : Smite an enemy for $s1 Holy damage.
 
 Name             : Power Word: Shield (desc=Rank 2) (id=592) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -220,7 +222,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=691263)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 86 | Scaled Value: 92 | Points Per Level: 1.2 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -288,6 +290,7 @@ Effects          :
 Description      : Smite an enemy for $s1 Holy damage.
 
 Name             : Power Word: Shield (desc=Rank 3) (id=600) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -304,7 +307,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=686327)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 154 | Scaled Value: 162 | Points Per Level: 1.6 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -841,6 +844,7 @@ Description      : Power infuses the target, increasing their Stamina by $s1 for
 Tooltip          : Increases Stamina by $w1.
 
 Name             : Power Word: Shield (desc=Rank 4) (id=3747) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -857,7 +861,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=680737)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 226 | Scaled Value: 236 | Points Per Level: 2 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -939,6 +943,7 @@ Effects          :
 Description      : Heal your target for $s1.
 
 Name             : Power Word: Shield (desc=Rank 5) (id=6065) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -955,7 +960,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=684533)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 291 | Scaled Value: 302.5 | Points Per Level: 2.3 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -965,6 +970,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 6) (id=6066) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -981,7 +987,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=685847)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 368 | Scaled Value: 381 | Points Per Level: 2.6 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -1787,6 +1793,7 @@ Description      : A word of darkness that causes $o1 Shadow damage over $d.
 Tooltip          : $s1 Shadow damage every $t1 seconds.
 
 Name             : Power Word: Shield (desc=Rank 7) (id=10898) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1803,7 +1810,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687788)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 470 | Scaled Value: 485 | Points Per Level: 3 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -1813,6 +1820,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 8) (id=10899) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1829,7 +1837,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688062)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 591 | Scaled Value: 608 | Points Per Level: 3.4 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -1839,6 +1847,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 9) (id=10900) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1855,7 +1864,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687799)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 749 | Scaled Value: 768.5 | Points Per Level: 3.9 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -1865,6 +1874,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 10) (id=10901) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1881,7 +1891,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688352)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 928 | Scaled Value: 949.5 | Points Per Level: 4.3 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)

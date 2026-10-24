@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Blizzard (desc=Rank 1) (id=10) [Spell Family (3)] 
 Class            : Mage
 School           : Frost
@@ -31,6 +31,7 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -47,7 +48,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687563)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 44 | Scaled Value: 48 | Points Per Level: 0.8 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -849,6 +850,7 @@ Effects          :
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Kidney Shot (desc=Rank 1) (id=408) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -866,7 +868,7 @@ Proc Chance      : 101%
 Mechanic         : Stun
 Affecting Spells : Improved Kidney Shot (14174 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 21
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=679152)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -1314,6 +1316,7 @@ Effects          :
 Description      : Smite an enemy for $s1 Holy damage.
 
 Name             : Power Word: Shield (desc=Rank 2) (id=592) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1330,7 +1333,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=691263)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 86 | Scaled Value: 92 | Points Per Level: 1.2 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -1417,6 +1420,7 @@ Effects          :
 Description      : Smite an enemy for $s1 Holy damage.
 
 Name             : Power Word: Shield (desc=Rank 3) (id=600) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1433,7 +1437,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=686327)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 154 | Scaled Value: 162 | Points Per Level: 1.6 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -3011,8 +3015,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366638)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Smite (desc=Rank 4) (id=984) [Spell Family (6)] 
 Class            : Priest
@@ -3245,8 +3252,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366639)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Divine Shield (desc=Rank 2) (id=1020) [Spell Family (10)] 
 Class            : Paladin
@@ -3514,6 +3524,7 @@ Description      : Thorns sprout from the friendly target causing $w1 Nature dam
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Rip (desc=Rank 1) (id=1079) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3528,7 +3539,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=685878)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 3 | Scaled Value: 3 | Points Per Combo Point: 4.4 | Target: Targeted Enemy (6)
@@ -5372,6 +5383,7 @@ Effects          :
 Description      : An instant strike that causes $m2% weapon damage plus an additional $s1 as Holy damage.
 
 Name             : Rupture (desc=Rank 1) (id=1943) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -5386,7 +5398,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=681139)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 5 | Scaled Value: 5 | Points Per Combo Point: 1.18 | Target: Targeted Enemy (6)
@@ -5799,6 +5811,7 @@ Description      : Allows the caster to see through the target's eyes for $d.
 Tooltip          : Sight granted through target's eyes.
 
 Name             : Eviscerate (desc=Rank 1) (id=2098) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -5811,7 +5824,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=679923)   : School Damage (2): physical
                    Base Value: 3 | Scaled Value: 3 (delta=1.333333) | SP Coefficient: 1 | Points Per Combo Point: 5 | Target: Targeted Enemy (6)
@@ -8052,6 +8065,7 @@ Effects          :
 Description      : Deal $s1 Nature damage, increased by $1294477s1% per stack of Static Electricity. Deals $s2 times as much damage to Aquatic enemies.
 
 Name             : Power Word: Shield (desc=Rank 4) (id=3747) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -8068,7 +8082,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=680737)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 226 | Scaled Value: 236 | Points Per Level: 2 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -8963,7 +8977,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -8984,7 +8998,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 4 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -9005,7 +9019,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -9017,6 +9031,7 @@ Effects          :
 Description      : Launches Arcane Missiles at the enemy, causing $7270s1 Arcane damage each second for $d.
 
 Name             : Slice and Dice (desc=Rank 1) (id=5171) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -9029,7 +9044,7 @@ Duration         : 6 seconds
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Slice and Dice (14165 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 18
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
 Effects          :
 #1 (id=683950)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -10090,6 +10105,7 @@ Description      : The targeted undead enemy will be compelled to flee for up to
 Tooltip          : Compelled to flee.
 
 Name             : Healing Stream (desc=Rank 1) (id=5672) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -10097,7 +10113,7 @@ Spell Level      : 20
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=683519)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -10477,6 +10493,7 @@ Effects          :
 Description      : Heal your target for $s1.
 
 Name             : Power Word: Shield (desc=Rank 5) (id=6065) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -10493,7 +10510,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=684533)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 291 | Scaled Value: 302.5 | Points Per Level: 2.3 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -10503,6 +10520,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 6) (id=6066) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -10519,7 +10537,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=685847)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 368 | Scaled Value: 381 | Points Per Level: 2.6 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -10796,7 +10814,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Slow (desc=Rank 2) (id=6146) 
 School           : Nature
@@ -11066,8 +11084,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366640)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Rain of Fire (desc=Rank 2) (id=6219) [Spell Family (5)] 
 Class            : Warlock
@@ -11685,6 +11706,7 @@ Description      : Creates a Lesser Firestone which can be used to enchant your 
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Healing Stream (desc=Rank 2) (id=6371) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -11692,13 +11714,14 @@ Spell Level      : 30
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=684681)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream (desc=Rank 3) (id=6372) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -11706,7 +11729,7 @@ Spell Level      : 40
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=684770)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 7 | Scaled Value: 7 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -12232,6 +12255,7 @@ Description      : Increases the friendly target's armor by $s1 and all attribut
 Tooltip          : Increases armor by $s1 and all attributes by $s2.
 
 Name             : Eviscerate (desc=Rank 2) (id=6760) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -12244,7 +12268,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=684898)   : School Damage (2): physical
                    Base Value: 7 | Scaled Value: 7 (delta=1.142857) | SP Coefficient: 1 | Points Per Combo Point: 11 | Target: Targeted Enemy (6)
@@ -12261,6 +12285,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Eviscerate (desc=Rank 3) (id=6761) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -12273,7 +12298,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=685144)   : School Damage (2): physical
                    Base Value: 13 | Scaled Value: 13 (delta=1.076923) | SP Coefficient: 1 | Points Per Combo Point: 19 | Target: Targeted Enemy (6)
@@ -12290,6 +12315,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Eviscerate (desc=Rank 4) (id=6762) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -12302,7 +12328,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=685146)   : School Damage (2): physical
                    Base Value: 20 | Scaled Value: 20 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 31 | Target: Targeted Enemy (6)
@@ -12366,6 +12392,7 @@ Description      : Incapacitates the target for up to $d. Only works on Humanoid
 Tooltip          : Incapacitated.
 
 Name             : Slice and Dice (desc=Rank 2) (id=6774) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -12378,7 +12405,7 @@ Duration         : 6 seconds
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Slice and Dice (14165 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 18
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
 Effects          :
 #1 (id=684798)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -17610,7 +17637,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -17631,7 +17658,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -18010,7 +18037,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Frost Ward (desc=Rank 3) (id=8462) [Spell Family (3)] 
 Hotfixed         : Description, Tooltip
@@ -18038,7 +18065,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Cone of Cold (desc=Rank 2) (id=8492) [Spell Family (3)] 
 Class            : Mage
@@ -18202,6 +18229,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Eviscerate (desc=Rank 5) (id=8623) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -18214,7 +18242,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=686340)   : School Damage (2): physical
                    Base Value: 30 | Scaled Value: 30 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 45 | Target: Targeted Enemy (6)
@@ -18231,6 +18259,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Eviscerate (desc=Rank 6) (id=8624) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -18243,7 +18272,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=687549)   : School Damage (2): physical
                    Base Value: 44 | Scaled Value: 44 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 71 | Target: Targeted Enemy (6)
@@ -18380,6 +18409,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
 Name             : Rupture (desc=Rank 2) (id=8639) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -18394,7 +18424,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686338)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 7 | Scaled Value: 7 | Points Per Combo Point: 1.78 | Target: Targeted Enemy (6)
@@ -18411,6 +18441,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Rupture (desc=Rank 3) (id=8640) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -18425,7 +18456,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686443)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 11 | Scaled Value: 11 | Points Per Combo Point: 2.37 | Target: Targeted Enemy (6)
@@ -18442,6 +18473,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Kidney Shot (desc=Rank 2) (id=8643) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -18460,7 +18492,7 @@ Proc Chance      : 101%
 Mechanic         : Stun
 Affecting Spells : Improved Kidney Shot (14174 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 21
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686634)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -18479,6 +18511,7 @@ Description      : Finishing move that stuns the target.  Lasts longer per combo
 Tooltip          : Stunned$?s14174[ and taking $w3% increased damage from the Rogue][].
 
 Name             : Expose Armor (desc=Rank 1) (id=8647) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -18493,7 +18526,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686639)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -90 | Target: Targeted Enemy (6)
@@ -18508,6 +18541,7 @@ Description      : Finishing move that exposes the target for $d, reducing Armor
 Tooltip          : Armor decreased by $w1.
 
 Name             : Expose Armor (desc=Rank 2) (id=8649) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -18522,7 +18556,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687242)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -180 | Target: Targeted Enemy (6)
@@ -18537,6 +18571,7 @@ Description      : Finishing move that exposes the target for $d, reducing Armor
 Tooltip          : Armor decreased by $w1.
 
 Name             : Expose Armor (desc=Rank 3) (id=8650) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -18551,7 +18586,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687526)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -270 | Target: Targeted Enemy (6)
@@ -21311,6 +21346,7 @@ Description      : The druid roars, decreasing nearby enemies' melee attack powe
 Tooltip          : Decreases melee attack power by $w1.
 
 Name             : Rip (desc=Rank 2) (id=9492) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -21325,7 +21361,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=681752)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 4 | Scaled Value: 4 | Points Per Combo Point: 7.2 | Target: Targeted Enemy (6)
@@ -21340,6 +21376,7 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Rip (desc=Rank 3) (id=9493) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -21354,7 +21391,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=686148)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 6 | Scaled Value: 6 | Points Per Combo Point: 8.5 | Target: Targeted Enemy (6)
@@ -21626,6 +21663,7 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Rip (desc=Rank 4) (id=9752) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -21640,7 +21678,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=684145)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 8 | Scaled Value: 8 | Points Per Combo Point: 12.7 | Target: Targeted Enemy (6)
@@ -22646,6 +22684,7 @@ Effects          :
 Description      : Cower, causing no damage but lowering your threat a large amount, making the enemy less likely to attack you.
 
 Name             : Rip (desc=Rank 5) (id=9894) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -22660,7 +22699,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=688033)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 11 | Scaled Value: 11 | Points Per Combo Point: 18.200001 | Target: Targeted Enemy (6)
@@ -22675,6 +22714,7 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Rip (desc=Rank 6) (id=9896) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -22689,7 +22729,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Bleed
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 85
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=688085)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 15 | Scaled Value: 15 | Points Per Combo Point: 25.5 | Target: Targeted Enemy (6)
@@ -23573,7 +23613,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Frostbolt (desc=Rank 8) (id=10179) [Spell Family (3)] 
 Class            : Mage
@@ -23948,7 +23988,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -23969,7 +24009,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -25326,6 +25366,7 @@ Effects          :
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Healing Stream (desc=Rank 4) (id=10460) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -25333,13 +25374,14 @@ Spell Level      : 50
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=689163)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 9 | Scaled Value: 9 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream (desc=Rank 5) (id=10461) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -25347,7 +25389,7 @@ Spell Level      : 60
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=688444)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 11 | Scaled Value: 11 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -26773,6 +26815,7 @@ Description      : A word of darkness that causes $o1 Shadow damage over $d.
 Tooltip          : $s1 Shadow damage every $t1 seconds.
 
 Name             : Power Word: Shield (desc=Rank 7) (id=10898) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -26789,7 +26832,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687788)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 470 | Scaled Value: 485 | Points Per Level: 3 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -26799,6 +26842,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 8) (id=10899) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -26815,7 +26859,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688062)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 591 | Scaled Value: 608 | Points Per Level: 3.4 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -26825,6 +26869,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 9) (id=10900) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -26841,7 +26886,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687799)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 749 | Scaled Value: 768.5 | Points Per Level: 3.9 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -26851,6 +26896,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 10) (id=10901) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -26867,7 +26913,7 @@ Stance Mask      : 0x08000000
 Mechanic         : Shield
 Affecting Spells : Mental Agility (14520 effect#1), Improved Power Word: Shield (14748 effect#1), Inner Focus (14751 effect#1), Improved Power Word: Shield (24191 effect#1), Soul Warding (402000 effects: #1, #2)
 Family Flags     : 0
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688352)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 928 | Scaled Value: 949.5 | Points Per Level: 4.3 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
@@ -27913,6 +27959,7 @@ Effects          :
 Description      : Increases the damage dealt by your Cone of Cold spell by $s1%.
 
 Name             : Expose Armor (desc=Rank 4) (id=11197) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -27927,7 +27974,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=689964)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -360 | Target: Targeted Enemy (6)
@@ -27942,6 +27989,7 @@ Description      : Finishing move that exposes the target for $d, reducing Armor
 Tooltip          : Armor decreased by $w1.
 
 Name             : Expose Armor (desc=Rank 5) (id=11198) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -27956,7 +28004,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=688758)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -450 | Target: Targeted Enemy (6)
@@ -28266,6 +28314,7 @@ Effects          :
 Description      : Ambush the target, causing $s2% weapon damage plus 290 to the target.  Must be stealthed and behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Rupture (desc=Rank 4) (id=11273) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -28280,7 +28329,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687807)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 16 | Scaled Value: 16 | Points Per Combo Point: 2.96 | Target: Targeted Enemy (6)
@@ -28297,6 +28346,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Rupture (desc=Rank 5) (id=11274) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -28311,7 +28361,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687903)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 22 | Scaled Value: 22 | Points Per Combo Point: 4.14 | Target: Targeted Enemy (6)
@@ -28328,6 +28378,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Rupture (desc=Rank 6) (id=11275) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -28342,7 +28393,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687822)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 35 | Scaled Value: 35 | Points Per Combo Point: 4.73 | Target: Targeted Enemy (6)
@@ -28599,6 +28650,7 @@ Description      : Incapacitates the target for up to $d. Only works on Humanoid
 Tooltip          : Incapacitated.
 
 Name             : Eviscerate (desc=Rank 7) (id=11299) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -28611,7 +28663,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=689292)   : School Damage (2): physical
                    Base Value: 68 | Scaled Value: 68 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 110 | Target: Targeted Enemy (6)
@@ -28628,6 +28680,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Eviscerate (desc=Rank 8) (id=11300) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -28640,7 +28693,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=689090)   : School Damage (2): physical
                    Base Value: 96 | Scaled Value: 96 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 151 | Target: Targeted Enemy (6)
@@ -30765,8 +30818,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366641)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Bane of Agony (desc=Rank 5) (id=11712) [Spell Family (5)] 
 Hotfixed         : Attributes, Tooltip
@@ -30790,8 +30846,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366642)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Bane of Agony (desc=Rank 6) (id=11713) [Spell Family (5)] 
 Hotfixed         : Attributes, Tooltip
@@ -30815,8 +30874,11 @@ Effects          :
                    Affected Spells: Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Invocation (426246)
                    Family Flags: 10
 Hotfixed         : NEW EFFECT
+#3 (id=1366630)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Afflicts the target with agony, causing $o1 Shadow damage over $d. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target.
-Tooltip          : $?$w2>0[${$o1*($w2/100+1)}][$o1] Shadow damage over $d.
+Tooltip          : $?$w3>0[${$o1*($w3/100+1)}][$o1] Shadow damage over $d.
 
 Name             : Curse of Recklessness (desc=Rank 4) (id=11717) [Spell Family (5)] 
 Class            : Warlock
@@ -36021,7 +36083,8 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 18350 | Radius: 10 yards | Target: at Dynamic Enemy in Area (28)
 Tooltip          : Movement speed slowed by $s1%.
 
-Name             : Explosive Trap Effect (desc=Rank 1) (id=13812) [Spell Family (9)] 
+Name             : Explosive Trap (desc=Rank 1) (id=13812) [Spell Family (9)] 
+Hotfixed         : Name
 Class            : Hunter
 School           : Fire
 Spell Type       : Magic
@@ -37082,13 +37145,14 @@ Effects          :
 Description      : Gives your finishing moves a $m1% chance to add a Combo Point to your target.
 
 Name             : Ruthlessness (id=14157) 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
 Range            : 50000 yards
 Labels           : 20: Rogue Spells
 Triggered By     : Ruthlessness (14156)
-Attributes       : Is Ability (4), No Threat (42), Unknown (493)
+Attributes       : Is Ability (4), No Threat (42), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Unknown (493)
 Effects          :
 #1 (id=691545)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -37244,6 +37308,7 @@ Effects          :
 Description      : $s1 Energy restored.
 
 Name             : Premeditation (id=14183) [Spell Family (8)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=10, max_rank=1, req_points=0]
 Class            : Rogue
 School           : Physical
@@ -37255,7 +37320,7 @@ Cooldown         : 120 seconds
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 30
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Allow While Stealthed (37), No Threat (42), No AutoCast (AI) (49), No Aura Icon (60), Suppress Target Procs (113), Not an Attack (194), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Allow While Stealthed (37), No Threat (42), No AutoCast (AI) (49), No Aura Icon (60), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Unknown (493)
 Effects          :
 #1 (id=691744)   : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
@@ -38193,7 +38258,8 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164877 | Target: Front of Self (47)
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $14309d. Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
-Name             : Explosive Trap Effect (desc=Rank 2) (id=14314) [Spell Family (9)] 
+Name             : Explosive Trap (desc=Rank 2) (id=14314) [Spell Family (9)] 
+Hotfixed         : Name
 Class            : Hunter
 School           : Fire
 Spell Type       : Magic
@@ -38212,7 +38278,8 @@ Effects          :
                    Modified By: Clever Traps (19239 effect#2)
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
-Name             : Explosive Trap Effect (desc=Rank 3) (id=14315) [Spell Family (9)] 
+Name             : Explosive Trap (desc=Rank 3) (id=14315) [Spell Family (9)] 
+Hotfixed         : Name
 Class            : Hunter
 School           : Fire
 Spell Type       : Magic
@@ -38443,7 +38510,8 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Current Target (25)
                    Modified By: Improved Hunter's Mark (19421 effect#1)
 #2 (id=690991)   : Apply Aura (6) | Unknown(127)
-                   Base Value: 71 | Scaled Value: 71 | Target: Targeted Enemy (6)
+                   Base Value: 143 | Scaled Value: 143 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (71 -> 143)
                    Modified By: Improved Hunter's Mark (19421 effect#1)
 Description      : Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
@@ -55423,6 +55491,19 @@ Effects          :
                    Family Flags: 10
 Description      : Increases the damage done by your Bane of Agony by $s1%.
 
+Name             : Bone Armor (id=18828) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 50
+Duration         : 20 seconds
+Triggered By     : Bone Armor (19409)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=697612)   : Apply Aura (6) | Unknown(674)
+                   Base Value: 150 | Scaled Value: 150 | Misc Value: 1 | Target: Self (1)
+Description      : When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $s1 for $d.
+Tooltip          : Increased armor.
+
 Name             : Lily Root (id=18832) [Spell Family (13)] 
 School           : Physical
 Spell Type       : Magic
@@ -56441,7 +56522,7 @@ Effects          :
                    Family Flags: 3, 4
 #2 (id=695954)   : Apply Aura (6) | Add Percent Modifier (108): Spell Effects (8)
                    Base Value: 30 | Scaled Value: 30 | SP Coefficient: 1 | Misc Value: 8 | Target: Self (1)
-                   Affected Spells: Immolation Trap (13797), Explosive Trap Effect (13812), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Explosive Trap Effect (14314), Explosive Trap Effect (14315)
+                   Affected Spells: Immolation Trap (13797), Explosive Trap (13812), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Explosive Trap (14314), Explosive Trap (14315)
                    Family Flags: 2
 Description      : Increases the duration of Freezing and Frost trap effects by $s1% and the damage of Immolation and Explosive trap effects by $s2%.
 
@@ -57580,7 +57661,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=695689)   : Apply Aura (6) | Add Flat Modifier (107): Spell Penetration (16)
                    Base Value: 17 | Scaled Value: 17 | SP Coefficient: 1 | Misc Value: 16 | Target: Self (1)
-                   Affected Spells: Freezing Trap (3355), Feign Death (5384), Immolation Trap (13797), Frost Trap (13810), Explosive Trap Effect (13812), OLDFrost Trap Effect (14207), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Freezing Trap (14308), Freezing Trap (14309), Explosive Trap Effect (14314), Explosive Trap Effect (14315)
+                   Affected Spells: Freezing Trap (3355), Feign Death (5384), Immolation Trap (13797), Frost Trap (13810), Explosive Trap (13812), OLDFrost Trap Effect (14207), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Freezing Trap (14308), Freezing Trap (14309), Explosive Trap (14314), Explosive Trap (14315)
                    Family Flags: 2, 3, 4, 8
 Description      : Increases your chance to hit with your Trap and Feign Death abilities by $s1%.
 
@@ -57667,6 +57748,19 @@ Effects          :
 #1 (id=695471)   : Apply Aura (6) | Proc Trigger Spell (42): Improved Concussive Shot
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 19410 | Target: Self (1)
 Description      : Gives your Concussive Shot a $m1% chance to stun the target for $19410d.
+
+Name             : Bone Armor (id=19409) [Passive] 
+School           : Shadow
+Spell Type       : None
+Spell Level      : 50
+Duration         : Aura (infinite)
+Proc Chance      : 3%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=695784)   : Apply Aura (6) | Proc Trigger Spell (42): Bone Armor
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 18828 | Target: Self (1)
+Description      : When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $18828s1 for $18828d.
 
 Name             : Improved Concussive Shot (id=19410) 
 Class            : Hunter
@@ -64826,6 +64920,22 @@ Effects          :
 Description      : Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19705s1 Stamina and Spirit for $19705d.  Also packs quite a kick...
 Tooltip          : Restores $/5;s1 health per second.
 
+Name             : Gutgore Ripper (id=21151) 
+School           : Shadow
+Spell Type       : Magic
+Resource         : 40 Base Mana (0) (id=185489)
+Spell Level      : 60
+Range            : 30 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=698378)   : School Damage (2): shadow
+                   Base Value: 75 | Scaled Value: 75 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+#2 (id=698379)   : Apply Aura (6) | Attribute (29)
+                   Base Value: -25 | Scaled Value: -25 | Stat: All | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage and lowering all stats by $s2 for $d.
+
 Name             : Earthshaker (id=21152) 
 School           : Physical
 Spell Type       : Magic
@@ -64925,6 +65035,18 @@ Effects          :
 Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
 Tooltip          : $s2 Fire damage every $t2 sec.
 
+Name             : Drain Life (id=21170) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 40 yards
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=698655)   : Health Leech (9)
+                   Base Value: 140 | Scaled Value: 140 (delta=0.571429) | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Steals $s1 life from target enemy.
+
 Name             : Bear Form (Passive2) (desc=Passive) (id=21178) [Spell Family (7), Passive, Hidden] 
 Class            : Druid
 School           : Nature
@@ -64952,6 +65074,17 @@ Effects          :
 #1 (id=698922)   : School Damage (2): nature
                    Base Value: 200 | Scaled Value: 200 (delta=0.5) | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
 Description      : Blasts up to 3 targets for $s1 Nature damage. Each target after the first takes less damage.
+
+Name             : Summon Thunderstrike (id=21180) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 10 seconds
+Proc Chance      : 101%
+Attributes       : Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=698986)   : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0
+Description      : Transforms Shadowstrike into Thunderstrike.
 
 Name             : Summon Shadowstrike (id=21181) 
 School           : Physical
@@ -64995,6 +65128,33 @@ Effects          :
 #1 (id=698526)   : Apply Aura (6) | Threat (10)
                    Base Value: -29 | Scaled Value: -29 | Misc Value: 127 | Target: Self (1)
 Description      : Decreases threat generated by $s1%.
+
+Name             : Spinal Reaper (id=21185) [Passive, Hidden] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : Aura (infinite)
+Internal Cooldown: 10 seconds
+Proc Chance      : 100%
+Proc Flags       : Killing Blow
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=697868)   : Apply Aura (6) | Proc Trigger Spell (42): Spinal Reaper
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 21186 | Target: Self (1)
+Description      : Restores $21186s1 mana or 20 rage when you kill a target that gives experience; this effect cannot occur more than once every 10 seconds.
+
+Name             : Spinal Reaper (desc=Rank 1) (id=21186) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 60
+Proc Chance      : 101%
+Triggered By     : Spinal Reaper (21185)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=699164)   : Energize Power (30)
+                   Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
+#2 (id=699165)   : Energize Power (30)
+                   Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Resource: rage | Target: Self (1)
 
 Name             : Vitality (desc=Rank 1) (id=21345) [Passive, Hidden] 
 School           : Nature
@@ -67128,6 +67288,7 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Ferocious Bite (desc=Rank 1) (id=22568) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -67140,7 +67301,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=700435)   : School Damage (2): physical
                    Base Value: 22 | Scaled Value: 22 (delta=0.727273) | SP Coefficient: 1 | Points Per Combo Point: 36 | Target: Targeted Enemy (6)
@@ -67757,6 +67918,7 @@ Description      : Chance for a critical hit with all spells and attacks increas
 Tooltip          : Chance for a critical hit with all spells and attacks increased by $s1%. No effect while in a raid instance.
 
 Name             : Ferocious Bite (desc=Rank 2) (id=22827) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -67769,7 +67931,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=699381)   : School Damage (2): physical
                    Base Value: 32 | Scaled Value: 32 (delta=0.75) | SP Coefficient: 1 | Points Per Combo Point: 59 | Target: Targeted Enemy (6)
@@ -67783,6 +67945,7 @@ Description      : Finishing move that causes damage per combo point and convert
    5 points: 315-339 damage
 
 Name             : Ferocious Bite (desc=Rank 3) (id=22828) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -67795,7 +67958,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=699876)   : School Damage (2): physical
                    Base Value: 50 | Scaled Value: 50 (delta=0.8) | SP Coefficient: 1 | Points Per Combo Point: 92 | Target: Targeted Enemy (6)
@@ -67809,6 +67972,7 @@ Description      : Finishing move that causes damage per combo point and convert
    5 points: 490-530 damage
 
 Name             : Ferocious Bite (desc=Rank 4) (id=22829) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -67821,7 +67985,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=699984)   : School Damage (2): physical
                    Base Value: 70 | Scaled Value: 70 (delta=0.714286) | SP Coefficient: 1 | Points Per Combo Point: 128 | Target: Targeted Enemy (6)
@@ -67943,6 +68107,22 @@ Attributes       : Is Ability (4), Do Not Display (Spellbook, Aura Icon, Combat 
 Effects          :
 #1 (id=698467)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Self (1)
+
+Name             : Sanctuary (id=22850) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 10 seconds
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#2 (id=700383)   : Apply Aura (6) | Unknown(674)
+                   Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Self (1)
+#3 (id=1337029)  : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: 30 | Scaled Value: 30 | Target: Self (1)
+#4 (id=1337030)  : Apply Aura (6) | Modify Melee Attack Power vs Race (102)
+                   Base Value: 36 | Scaled Value: 36 | Misc Value: 2 | Target: Self (1)
+Description      : Grants the wielder $s1 Defense, $s2 Armor, $s3 Attack Power, and $s4 additional Attack Power against Dragonkin for $d.
+Tooltip          : Armor increased by $s2, Defense increased by $s1, Attack Power increased by $s3, and Attack Power against Dragonkin increased by $s4.
 
 Name             : Increased Hunter Pet Damage (id=22854) [Spell Family (9), Passive, Hidden] 
 School           : Physical
@@ -68685,6 +68865,22 @@ Effects          :
 #1 (id=701073)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 13 | Scaled Value: 13 | Target: Self (1)
 Description      : When struck in combat inflicts $s1 Fire damage to the attacker.
+
+Name             : Firebolt (id=23267) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 80 Base Mana (0) (id=186714)
+Spell Level      : 30
+Range            : 30 yards
+GCD              : 1.5 seconds
+Cooldown         : 8 seconds
+Category Cooldown: 8 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=699919)   : School Damage (2): fire
+                   Base Value: 48 | Scaled Value: 48 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
 
 Name             : Ephemeral Power (id=23271) 
 School           : Arcane
@@ -73768,7 +73964,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -74084,11 +74280,12 @@ Effects          :
 Tooltip          : Cannot be made invulnerable by Divine Shield, Divine Protection, Blessing of Protection, or shielded by Templar's Bulwark.
 
 Name             : Righteous Fury (id=25780) [Spell Family (10)] 
+Hotfixed         : Learn Level (16 -> 10), Required Level (16 -> 10)
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
 Resource         : 30% Base Mana (0) (id=189813)
-Spell Level      : 16
+Spell Level      : 10
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Labels           : 26: Paladin Spells
@@ -76571,7 +76768,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Shadow Ward (desc=Rank 4) (id=28610) 
 Class            : Warlock
@@ -78022,6 +78219,7 @@ Effects          :
 Description      : Reduces the chance for your attacks to be Dodged or Parried by $m1%.
 
 Name             : Eviscerate (desc=Rank 9) (id=31016) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -78034,7 +78232,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=705836)   : School Damage (2): physical
                    Base Value: 108 | Scaled Value: 108 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 170 | Target: Targeted Enemy (6)
@@ -78051,6 +78249,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Ferocious Bite (desc=Rank 5) (id=31018) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -78063,7 +78262,7 @@ Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 23, 108
-Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=705079)   : School Damage (2): physical
                    Base Value: 82 | Scaled Value: 82 (delta=0.731707) | SP Coefficient: 1 | Points Per Combo Point: 147 | Target: Targeted Enemy (6)
@@ -79093,10 +79292,9 @@ Effects          :
                    Base Value: -50 | Scaled Value: -50 | Misc Value: 1 | Target: Self (1)
                    Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
                    Family Flags: 11
-#2 (id=1045767)  : Apply Aura (6) | Add Flat Modifier (107): Spell Tick Time (19)
-                   Base Value: -500 | Scaled Value: -500 | Misc Value: 19 | Target: Self (1)
-                   Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
-                   Family Flags: 11
+#2 (id=1045767)  : Apply Aura (6) | Dummy (4)
+                   Base Value: -500 | Scaled Value: -500 | Target: Self (1)
+Hotfixed         : Sub Type (107 -> 4), Misc Value (19 -> 0), Affects Spells
 #3 (id=1045768)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 14 | Misc Value 2: 111 | Target: Self (1)
                    Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
@@ -80858,6 +81056,7 @@ Effects          :
 Description      : Slam is now instant but has a ${$m2/1000} sec cooldown.
 
 Name             : Victory Rush (id=402927) [Spell Family (4)] 
+Hotfixed         : Description
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -80877,7 +81076,7 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | Target: Self (1)
 #3 (id=1049640)  : Dummy (3)
                    Base Value: 15 | Scaled Value: 15 | Target: Targeted Enemy (6)
-Description      : Instantly attack the target causing ${1+$AP*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.
+Description      : Instantly attack the target causing ${1+$apm*$m3/100} damage and healing you for $s2% of your maximum health.  Only useable within $402975d after you kill a non-trivial enemy.
 
 Name             : Victorious State (DND) (id=402974) [Passive, Hidden] 
 Class            : Warrior
@@ -93338,11 +93537,11 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1109792)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
-                   Affected Spells: Immolation Trap (13797), Explosive Trap Effect (13812), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Explosive Trap Effect (14314), Explosive Trap Effect (14315)
+                   Affected Spells: Immolation Trap (13797), Explosive Trap (13812), Immolation Trap (14298), Immolation Trap (14299), Immolation Trap (14300), Immolation Trap (14301), Explosive Trap (14314), Explosive Trap (14315)
                    Family Flags: 78, 81
 #2 (id=1109793)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Explosive Trap Effect (13812), Explosive Trap Effect (14314), Explosive Trap Effect (14315)
+                   Affected Spells: Explosive Trap (13812), Explosive Trap (14314), Explosive Trap (14315)
                    Family Flags: 63, 73, 78
 #3 (id=1164532)  : Apply Aura (6) | Dummy (4)
                    Base Value: 25 | Scaled Value: 25 | SP Coefficient: 1 | Target: Self (1)
@@ -111429,8 +111628,9 @@ Family Flags     : 21
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=1233765)  : Apply Aura (6) | Damage Done (13)
-                   Base Value: 14 | Scaled Value: 14 | Misc Value: 0x24 | Target: Self (1)
-                   Affected School(s): Fire, Shadow
+                   Base Value: 14 | Scaled Value: 14 | Misc Value: 0x20 | Target: Self (1)
+                   Affected School(s): Shadow
+Hotfixed         : Misc Value (36 -> 32)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 #2 (id=1233766)  : Apply Aura (6) | Modify Spell Speed% (65)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -111447,8 +111647,9 @@ Family Flags     : 21
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=1233768)  : Apply Aura (6) | Damage Done (13)
-                   Base Value: 17 | Scaled Value: 17 | Misc Value: 0x24 | Target: Self (1)
-                   Affected School(s): Fire, Shadow
+                   Base Value: 17 | Scaled Value: 17 | Misc Value: 0x20 | Target: Self (1)
+                   Affected School(s): Shadow
+Hotfixed         : Misc Value (36 -> 32)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 #2 (id=1233769)  : Apply Aura (6) | Modify Spell Speed% (65)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
@@ -111465,8 +111666,9 @@ Family Flags     : 21
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=1233770)  : Apply Aura (6) | Damage Done (13)
-                   Base Value: 21 | Scaled Value: 21 | Misc Value: 0x24 | Target: Self (1)
-                   Affected School(s): Fire, Shadow
+                   Base Value: 21 | Scaled Value: 21 | Misc Value: 0x20 | Target: Self (1)
+                   Affected School(s): Shadow
+Hotfixed         : Misc Value (36 -> 32)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 #2 (id=1233771)  : Apply Aura (6) | Modify Spell Speed% (65)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
@@ -111825,7 +112027,8 @@ Effects          :
 #1 (id=1235457)  : School Damage (2): fire
                    Base Value: 196 | Scaled Value: 204.8 (delta=0.253259) | Points Per Level: 1.1 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 #2 (id=1340790)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 53.6 | Points Per Level: 4.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 20 | Scaled Value: 20 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+Hotfixed         : Points per Level (4.2 -> 0)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 Name             : Lava Burst (id=1238373) [Spell Family (11)] 
@@ -117856,6 +118059,7 @@ Effects          :
 Description      : Creates a Surgical Tourniquet.
 
 Name             : Walk on Air (desc=Racial) (id=1259416) 
+Hotfixed         : Attributes
 Race             :  (0x300000000)
 School           : Nature
 Spell Type       : Magic
@@ -117864,7 +118068,7 @@ GCD              : 1.5 seconds
 Duration         : 10 seconds
 Cooldown         : 90 seconds
 Labels           : 5710
-Attributes       : Not In Arena or Rated Battleground (144), Unknown (493)
+Attributes       : Allow While Stealthed (37), Not In Arena or Rated Battleground (144), Unknown (493)
 Aura Interrupt   : Under Water (7), Mount (17), Leave World (19), Ground (35)
 Effects          :
 #2 (id=1268507)  : Trigger Spell (64): Walking on Air
@@ -117991,7 +118195,6 @@ Name             : Earth Fury (desc=Racial Passive) (id=1259719) [Passive]
 Race             : Dwarf (0x4)
 School           : Physical
 Spell Type       : None
-Requires weapon  : One-handed Mace, Two-handed Mace
 Labels           : 5710
 Attributes       : Is Ability (4), Passive (6), Unknown (493)
 Effects          :
@@ -121349,6 +121552,7 @@ Effects          :
                    Base Value: 114 | Scaled Value: 115.5 | Points Per Level: 0.3 | SP Coefficient: 0.042 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Flamestrike (desc=Rank 1) (id=1279983) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -121358,13 +121562,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292643)  : School Damage (2): fire
                    Base Value: 11 | Scaled Value: 11 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 2) (id=1279985) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -121374,13 +121579,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292646)  : School Damage (2): fire
                    Base Value: 21 | Scaled Value: 21 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 3) (id=1279987) [Spell Family (3), Hidden] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -121390,13 +121596,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292648)  : School Damage (2): fire
                    Base Value: 33 | Scaled Value: 33 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 4) (id=1279988) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -121406,13 +121613,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292649)  : School Damage (2): fire
                    Base Value: 47 | Scaled Value: 47 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 5) (id=1279989) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -121422,13 +121630,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292650)  : School Damage (2): fire
                    Base Value: 64 | Scaled Value: 64 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 6) (id=1279990) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -121438,7 +121647,7 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292651)  : School Damage (2): fire
                    Base Value: 83 | Scaled Value: 83 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
@@ -123390,6 +123599,23 @@ Tooltip          : Stamina increased by $w1.
 
 While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Haste.
 
+Name             : Frostbolt (id=1293790) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1314775)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1314776)  : School Damage (2): frost
+                   Base Value: 42 | Scaled Value: 42 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+Tooltip          : Movement slowed by $s1%.
+
 Name             : Barkskin Purification Tonic (id=1293800) [Hidden] 
 School           : Physical
 Spell Type       : None
@@ -125123,16 +125349,19 @@ Effects          :
 Description      : Restores $s1 Mana.
 
 Name             : Frozen (id=1306620) 
+Hotfixed         : Mechanic (0 -> 7)
 School           : Frost
 Spell Type       : Magic
 Range            : 5 yards
 Duration         : 3 seconds
 Labels           : 17: Mage Spells
+Mechanic         : Root
 Triggered By     : Iceknife (1308914)
 Attributes       : Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
 #1 (id=1334087)  : Apply Aura (6) | Root (26)
-                   Base Value: 0 | Scaled Value: 0 | Mechanic: Root | Target: Targeted Enemy (6)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : Mechanic (7 -> 0)
 Description      : Freezes target enemy in place for $d.
 Tooltip          : Frozen in place
 
@@ -126236,6 +126465,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 
 Name             : Venom (id=1310703) [Spell Family (8)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=1]
 Class            : Rogue
 School           : Physical
@@ -126250,7 +126480,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Relentless Strikes (14179 effect#1), Carnage (432275 effect#1)
 Family Flags     : 90
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Aura Points On Client (268), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1340416)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -127357,12 +127587,13 @@ Effects          :
 Description      : Restores $s1% mana.
 
 Name             : BB Shot (id=1312745) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Range            : 25 yards
 Cast Time        : 2 seconds
 Duration         : 1 seconds
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Exclude Caster (51), Only On Player (104), Uses Ranged Slot (Cosmetic Only) (322), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Exclude Caster (51), Only On Player (104), No Pushback (207), Uses Ranged Slot (Cosmetic Only) (322), Unknown (493)
 Effects          :
 #1 (id=1343719)  : Create Area Trigger (179)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 44514 | Target: Front of Self (47)
@@ -129354,8 +129585,12 @@ Name             : Freezing Trap (id=1324500)
 Class            : Hunter
 School           : Frost
 Spell Type       : None
+Resource         : 50 Base Mana (0) (id=315116)[Hotfixed: NEW POWER]
 Range            : 10 yards
 Duration         : 10 seconds
+Cooldown         : 30 seconds
+Category         : 2183 (Type 0x0)
+Category Cooldown: 30 seconds
 Proc Chance      : 101%
 Attributes       : No Aura Icon (60), Aura Required by Client (262), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
@@ -129368,8 +129603,12 @@ Name             : Freezing Trap (id=1324501)
 Class            : Hunter
 School           : Frost
 Spell Type       : None
+Resource         : 75 Base Mana (0) (id=315115)[Hotfixed: NEW POWER]
 Range            : 10 yards
 Duration         : 15 seconds
+Cooldown         : 30 seconds
+Category         : 2183 (Type 0x0)
+Category Cooldown: 30 seconds
 Proc Chance      : 101%
 Attributes       : No Aura Icon (60), Aura Required by Client (262), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
@@ -129382,8 +129621,12 @@ Name             : Freezing Trap (id=1324502)
 Class            : Hunter
 School           : Frost
 Spell Type       : None
+Resource         : 100 Base Mana (0) (id=315114)[Hotfixed: NEW POWER]
 Range            : 10 yards
 Duration         : 20 seconds
+Cooldown         : 30 seconds
+Category         : 2183 (Type 0x0)
+Category Cooldown: 30 seconds
 Proc Chance      : 101%
 Attributes       : No Aura Icon (60), Aura Required by Client (262), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
@@ -129872,15 +130115,15 @@ Description      : Quickly launch a weak blast of frost at the enemy, causing $s
 Tooltip          : Movement slowed by $w1%.
 
 Name             : Blackthorne's Ward (id=1326056) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 20
 Range            : 30 yards
-Duration         : 1800 seconds
-Cooldown         : 10 seconds
+Duration         : Aura (infinite)
 Stacks           : 1 initial, 1 maximum
 Triggered By     : Remove Protection (1279523)
-Attributes       : Not Shapeshifted (16), Aura Is Buff (140), Unknown (493)
+Attributes       : Not Shapeshifted (16), Cooldown On Event (25), Aura Is Buff (140), Unknown (493)
 Effects          :
 #1 (id=1363758)  : Apply Aura (6) | Damage Done (13)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 0x7f | Target: Self (1)
@@ -130051,4 +130294,49 @@ Hotfixed         : NEW EFFECT
 Hotfixed         : NEW EFFECT
 Description      : Increases the damage done by your Frost spells by $s1%.
 Tooltip          : Increases the damage done by your Frost spells by $w1%.
+
+Name             : Elixir of Endless Intellect (id=1327736) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 3600 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#1 (id=1366382)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 2 | Scaled Value: 2 | Stat: Int | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Increases Intellect by $s1% for $d. This effect stacks up to $u times.
+Tooltip          : Intellect increased by $s1%.
+
+Name             : Call Anathema (id=1327991) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366762)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Anathema.
+
+Name             : Call Benediction (id=1327993) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366764)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Benediction.
 
