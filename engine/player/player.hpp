@@ -99,23 +99,6 @@ public:
   virtual void html_customsection(report::sc_html_stream&) = 0;
 };
 
-/* Spell rank tables
- *
- * Spell rank tables group related spells together by rank to make it easier to connect auras/drivers/etc related
- * to a primary spell. The basic version just has a single spell_id but it's easy to make custom versions with
- * related spells.
- */
-struct spell_rank_t
-{
-  unsigned spell_id;
-};
-
-enum spell_rank_e : int
-{
-  RANK_MAX_USABLE = 0,  // highest rank usable at the player level
-  RANK_MAX        = -1, // highest rank in the table
-};
-
 struct player_t : public actor_t
 {
   static const int default_level = MAX_LEVEL;
