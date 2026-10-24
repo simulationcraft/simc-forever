@@ -2207,7 +2207,7 @@ double mana_from_intellect( const player_t* p )
 double health_from_stamina( const player_t* p )
 {
   double stamina = std::floor( p->stamina() );
-  return std::min( stamina, 18.0 ) + ( p->current.health_per_stamina * std::max( stamina - 18.0, 0.0 ) );
+  return std::min( stamina, 20.0 ) + ( p->current.health_per_stamina * std::max( stamina - 20.0, 0.0 ) );
 }
 /**
  * Compute max resource r for an actor, based on their set base resources
