@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Blizzard (desc=Rank 1) (id=10) [Spell Family (3)] 
 Class            : Mage
 School           : Frost
@@ -828,7 +828,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -849,7 +849,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 4 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -870,7 +870,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1135,7 +1135,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Arcane Missile (desc=Rank 1) (id=7268) [Spell Family (3)] 
 Class            : Mage
@@ -1553,7 +1553,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1574,7 +1574,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1953,7 +1953,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Frost Ward (desc=Rank 3) (id=8462) [Spell Family (3)] 
 Hotfixed         : Description, Tooltip
@@ -1981,7 +1981,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Cone of Cold (desc=Rank 2) (id=8492) [Spell Family (3)] 
 Class            : Mage
@@ -2581,7 +2581,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Frostbolt (desc=Rank 8) (id=10179) [Spell Family (3)] 
 Class            : Mage
@@ -2956,7 +2956,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -2977,7 +2977,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -4865,6 +4865,22 @@ Effects          :
                    Family Flags: 15
 Description      : Increases the damage absorbed by your Mana Shield by $s1.
 
+Name             : Firebolt (id=23267) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 80 Base Mana (0) (id=186714)
+Spell Level      : 30
+Range            : 30 yards
+GCD              : 1.5 seconds
+Cooldown         : 8 seconds
+Category Cooldown: 8 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=699919)   : School Damage (2): fire
+                   Base Value: 48 | Scaled Value: 48 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Improved Counterspell (id=24429) [Spell Family (3), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -4979,7 +4995,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -5077,7 +5093,7 @@ Effects          :
 Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
 Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to negate Frost damage.][]
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Conjure Food (desc=Rank 7) (id=28612) [Spell Family (3)] 
 Class            : Mage
@@ -5324,10 +5340,9 @@ Effects          :
                    Base Value: -50 | Scaled Value: -50 | Misc Value: 1 | Target: Self (1)
                    Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
                    Family Flags: 11
-#2 (id=1045767)  : Apply Aura (6) | Add Flat Modifier (107): Spell Tick Time (19)
-                   Base Value: -500 | Scaled Value: -500 | Misc Value: 19 | Target: Self (1)
-                   Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
-                   Family Flags: 11
+#2 (id=1045767)  : Apply Aura (6) | Dummy (4)
+                   Base Value: -500 | Scaled Value: -500 | Target: Self (1)
+Hotfixed         : Sub Type (107 -> 4), Misc Value (19 -> 0), Affects Spells
 #3 (id=1045768)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 14 | Misc Value 2: 111 | Target: Self (1)
                    Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
@@ -9500,6 +9515,7 @@ Effects          :
                    Base Value: 114 | Scaled Value: 115.5 | Points Per Level: 0.3 | SP Coefficient: 0.042 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Flamestrike (desc=Rank 1) (id=1279983) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9509,13 +9525,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292643)  : School Damage (2): fire
                    Base Value: 11 | Scaled Value: 11 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 2) (id=1279985) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9525,13 +9542,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292646)  : School Damage (2): fire
                    Base Value: 21 | Scaled Value: 21 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 3) (id=1279987) [Spell Family (3), Hidden] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9541,13 +9559,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292648)  : School Damage (2): fire
                    Base Value: 33 | Scaled Value: 33 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 4) (id=1279988) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9557,13 +9576,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292649)  : School Damage (2): fire
                    Base Value: 47 | Scaled Value: 47 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 5) (id=1279989) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9573,13 +9593,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292650)  : School Damage (2): fire
                    Base Value: 64 | Scaled Value: 64 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 6) (id=1279990) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9589,7 +9610,7 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292651)  : School Damage (2): fire
                    Base Value: 83 | Scaled Value: 83 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
@@ -9608,6 +9629,23 @@ Effects          :
                    Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
 #2 (id=1313008)  : School Damage (2): frost
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+Tooltip          : Movement slowed by $s1%.
+
+Name             : Frostbolt (id=1293790) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1314775)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1314776)  : School Damage (2): frost
+                   Base Value: 42 | Scaled Value: 42 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Fireball (id=1299850) [Spell Family (3)] 
@@ -9642,16 +9680,19 @@ Description      : Deal $s2 Fire damage.
 Tooltip          : Deals $s2 Fire damage.
 
 Name             : Frozen (id=1306620) 
+Hotfixed         : Mechanic (0 -> 7)
 School           : Frost
 Spell Type       : Magic
 Range            : 5 yards
 Duration         : 3 seconds
 Labels           : 17: Mage Spells
+Mechanic         : Root
 Triggered By     : Iceknife (1308914)
 Attributes       : Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
 #1 (id=1334087)  : Apply Aura (6) | Root (26)
-                   Base Value: 0 | Scaled Value: 0 | Mechanic: Root | Target: Targeted Enemy (6)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : Mechanic (7 -> 0)
 Description      : Freezes target enemy in place for $d.
 Tooltip          : Frozen in place
 

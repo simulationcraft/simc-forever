@@ -68,6 +68,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <utility>
+#include <ranges>
 
 namespace
 {
@@ -2214,7 +2215,7 @@ double mana_from_intellect( const player_t* p )
 double health_from_stamina( const player_t* p )
 {
   double stamina = std::floor( p->stamina() );
-  return std::min( stamina, 18.0 ) + ( p->current.health_per_stamina * std::max( stamina - 18.0, 0.0 ) );
+  return std::min( stamina, 20.0 ) + ( p->current.health_per_stamina * std::max( stamina - 20.0, 0.0 ) );
 }
 /**
  * Compute max resource r for an actor, based on their set base resources
@@ -4759,12 +4760,21 @@ double player_t::composite_spell_cast_speed() const
   return cache.spell_haste();
 }
 
-double player_t::composite_spell_power( school_e /* school */ ) const
+double player_t::composite_spell_power( school_e school ) const
 {
   double sp = current.stats.spell_power;
 
   sp += current.spell_power_per_intellect * cache.intellect();
   sp += current.spell_power_per_spirit * cache.spirit();
+
+  // Multi-school spells use the highest of their schools
+  double school_sp = 0.0;
+  for ( auto s = SCHOOL_ARCANE; s < SCHOOL_PHYSICAL; s++ )
+  {
+    if ( dbc::is_school( school, s ) )
+      school_sp = std::max( school_sp, current.stats.school_spell_power[ s ] );
+  }
+  sp += school_sp;
 
   return sp;
 }
@@ -7030,6 +7040,12 @@ void player_t::stat_gain( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_STR_AGI_INT:
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
+    case STAT_ARCANE_SPELL_POWER:
+    case STAT_FIRE_SPELL_POWER:
+    case STAT_FROST_SPELL_POWER:
+    case STAT_HOLY_SPELL_POWER:
+    case STAT_NATURE_SPELL_POWER:
+    case STAT_SHADOW_SPELL_POWER:
     case STAT_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
     case STAT_HIT_RATING:
@@ -7189,6 +7205,12 @@ void player_t::stat_loss( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_STR_AGI_INT:
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
+    case STAT_ARCANE_SPELL_POWER:
+    case STAT_FIRE_SPELL_POWER:
+    case STAT_FROST_SPELL_POWER:
+    case STAT_HOLY_SPELL_POWER:
+    case STAT_NATURE_SPELL_POWER:
+    case STAT_SHADOW_SPELL_POWER:
     case STAT_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
     case STAT_HIT_RATING:
@@ -10839,6 +10861,32 @@ const spell_data_t* player_t::find_spell( unsigned int id, specialization_e s ) 
   }
 
   return spell_data_t::not_found();
+}
+
+const spell_container_t* player_t::find_rank( util::span<const spell_container_t> ranks, int rank,
+                                              player_t::rank_ptype_t field ) const
+{
+  assert( !ranks.empty() );
+
+  if ( rank == RANK_MAX )
+    return &ranks.back();
+  else if ( rank > 0 )
+  {
+    if ( static_cast<size_t>( rank ) <= ranks.size() )
+      return &ranks[ rank - 1 ];
+  }
+  else
+  {
+    // rank spells are expected to be ordered lowest -> highest, otherwise condition 1 fails
+    // as a result, first ok spell while reverse iterating yields the highest rank spell that is available
+
+    // if the member being referenced for existence is not &spell_container_t::spell, provide a non-default field
+    for ( const auto& it : ranks | std::ranges::views::reverse )
+      if ( auto reference_spell = std::invoke( field, it, this ); reference_spell && reference_spell->ok() )
+        return &it;
+  }
+
+  assert( false && "unreachable" );
 }
 
 namespace

@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Sprint (TEST) (id=47) 
 School           : Physical
 Spell Type       : None
@@ -18987,6 +18987,20 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 126 | Target: Self (1)
 Description      : +$s1 All Resistances.
 
+Name             : Heaven's Blessing (id=18787) 
+School           : Holy
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 30 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693477)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: 100 | Scaled Value: 100 | Value Multiplier: 1 | Target: Self (1)
+#2 (id=871975)   : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+Description      : Increases Attack Power by $s1 for $d.
+Tooltip          : Increased attack power.
+
 Name             : Flurry Axe (id=18797) 
 School           : Physical
 Spell Type       : None
@@ -19025,6 +19039,19 @@ Effects          :
 #3 (id=693270)   : Energize Power (30)
                    Base Value: 128 | Scaled Value: 128 (delta=0.5) | Resource: mana | Target: Targeted Ally (21)
 Description      : Dispels Polymorph effects on a friendly target.  Also restores $s2 Health and $s3 Mana.
+
+Name             : Bone Armor (id=18828) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 50
+Duration         : 20 seconds
+Triggered By     : Bone Armor (19409)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=697612)   : Apply Aura (6) | Unknown(674)
+                   Base Value: 150 | Scaled Value: 150 | Misc Value: 1 | Target: Self (1)
+Description      : When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $s1 for $d.
+Tooltip          : Increased armor.
 
 Name             : Lily Root (id=18832) [Spell Family (13)] 
 School           : Physical
@@ -19622,6 +19649,19 @@ Effects          :
 #1 (id=697433)   : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 12257 | Misc Value 2: 5121 | Target: Summoner in Area (32)
 Description      : Summons a mechanical yeti that will protect you for $d.
+
+Name             : Bone Armor (id=19409) [Passive] 
+School           : Shadow
+Spell Type       : None
+Spell Level      : 50
+Duration         : Aura (infinite)
+Proc Chance      : 3%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=695784)   : Apply Aura (6) | Proc Trigger Spell (42): Bone Armor
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 18828 | Target: Self (1)
+Description      : When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $18828s1 for $18828d.
 
 Name             : Salt Shaker (id=19566) 
 School           : Physical
@@ -20820,6 +20860,22 @@ Effects          :
 Description      : Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19705s1 Stamina and Spirit for $19705d.  Also packs quite a kick...
 Tooltip          : Restores $/5;s1 health per second.
 
+Name             : Gutgore Ripper (id=21151) 
+School           : Shadow
+Spell Type       : Magic
+Resource         : 40 Base Mana (0) (id=185489)
+Spell Level      : 60
+Range            : 30 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=698378)   : School Damage (2): shadow
+                   Base Value: 75 | Scaled Value: 75 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+#2 (id=698379)   : Apply Aura (6) | Attribute (29)
+                   Base Value: -25 | Scaled Value: -25 | Stat: All | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage and lowering all stats by $s2 for $d.
+
 Name             : Earthshaker (id=21152) 
 School           : Physical
 Spell Type       : Magic
@@ -20871,6 +20927,18 @@ Effects          :
 #1 (id=699590)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Drain Life (id=21170) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 40 yards
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=698655)   : Health Leech (9)
+                   Base Value: 140 | Scaled Value: 140 (delta=0.571429) | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Steals $s1 life from target enemy.
+
 Name             : Chain Lightning (id=21179) 
 School           : Nature
 Spell Type       : Magic
@@ -20885,6 +20953,17 @@ Effects          :
                    Base Value: 200 | Scaled Value: 200 (delta=0.5) | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
 Description      : Blasts up to 3 targets for $s1 Nature damage. Each target after the first takes less damage.
 
+Name             : Summon Thunderstrike (id=21180) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 10 seconds
+Proc Chance      : 101%
+Attributes       : Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=698986)   : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0
+Description      : Transforms Shadowstrike into Thunderstrike.
+
 Name             : Summon Shadowstrike (id=21181) 
 School           : Physical
 Spell Type       : None
@@ -20895,6 +20974,33 @@ Effects          :
 #1 (id=698987)   : Summon Item (34)
                    Base Value: 0 | Scaled Value: 0
 Description      : Transforms Thunderstrike into Shadowstrike.
+
+Name             : Spinal Reaper (id=21185) [Passive, Hidden] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : Aura (infinite)
+Internal Cooldown: 10 seconds
+Proc Chance      : 100%
+Proc Flags       : Killing Blow
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=697868)   : Apply Aura (6) | Proc Trigger Spell (42): Spinal Reaper
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 21186 | Target: Self (1)
+Description      : Restores $21186s1 mana or 20 rage when you kill a target that gives experience; this effect cannot occur more than once every 10 seconds.
+
+Name             : Spinal Reaper (desc=Rank 1) (id=21186) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 60
+Proc Chance      : 101%
+Triggered By     : Spinal Reaper (21185)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=699164)   : Energize Power (30)
+                   Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
+#2 (id=699165)   : Energize Power (30)
+                   Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Resource: rage | Target: Self (1)
 
 Name             : Vitality (desc=Rank 1) (id=21345) [Passive, Hidden] 
 School           : Nature
@@ -23401,6 +23507,22 @@ Attributes       : Is Ability (4), Do Not Display (Spellbook, Aura Icon, Combat 
 Effects          :
 #1 (id=698467)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Self (1)
+
+Name             : Sanctuary (id=22850) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 10 seconds
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#2 (id=700383)   : Apply Aura (6) | Unknown(674)
+                   Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Self (1)
+#3 (id=1337029)  : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: 30 | Scaled Value: 30 | Target: Self (1)
+#4 (id=1337030)  : Apply Aura (6) | Modify Melee Attack Power vs Race (102)
+                   Base Value: 36 | Scaled Value: 36 | Misc Value: 2 | Target: Self (1)
+Description      : Grants the wielder $s1 Defense, $s2 Armor, $s3 Attack Power, and $s4 additional Attack Power against Dragonkin for $d.
+Tooltip          : Armor increased by $s2, Defense increased by $s1, Attack Power increased by $s3, and Attack Power against Dragonkin increased by $s4.
 
 Name             : Belt of the Archmage (id=22866) 
 School           : Physical
@@ -42170,6 +42292,7 @@ Effects          :
 Description      : Creates a Surgical Tourniquet.
 
 Name             : Walk on Air (desc=Racial) (id=1259416) 
+Hotfixed         : Attributes
 Race             :  (0x300000000)
 School           : Nature
 Spell Type       : Magic
@@ -42178,7 +42301,7 @@ GCD              : 1.5 seconds
 Duration         : 10 seconds
 Cooldown         : 90 seconds
 Labels           : 5710
-Attributes       : Not In Arena or Rated Battleground (144), Unknown (493)
+Attributes       : Allow While Stealthed (37), Not In Arena or Rated Battleground (144), Unknown (493)
 Aura Interrupt   : Under Water (7), Mount (17), Leave World (19), Ground (35)
 Effects          :
 #2 (id=1268507)  : Trigger Spell (64): Walking on Air
@@ -42305,7 +42428,6 @@ Name             : Earth Fury (desc=Racial Passive) (id=1259719) [Passive]
 Race             : Dwarf (0x4)
 School           : Physical
 Spell Type       : None
-Requires weapon  : One-handed Mace, Two-handed Mace
 Labels           : 5710
 Attributes       : Is Ability (4), Passive (6), Unknown (493)
 Effects          :
@@ -46632,12 +46754,13 @@ Effects          :
 Description      : Restores $s1% mana.
 
 Name             : BB Shot (id=1312745) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Range            : 25 yards
 Cast Time        : 2 seconds
 Duration         : 1 seconds
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Exclude Caster (51), Only On Player (104), Uses Ranged Slot (Cosmetic Only) (322), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Exclude Caster (51), Only On Player (104), No Pushback (207), Uses Ranged Slot (Cosmetic Only) (322), Unknown (493)
 Effects          :
 #1 (id=1343719)  : Create Area Trigger (179)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 44514 | Target: Front of Self (47)
@@ -47904,18 +48027,63 @@ Effects          :
 Description      : Smite your target with the power of the holy spring, inflicting $s1 Holy damage.
 
 Name             : Blackthorne's Ward (id=1326056) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 20
 Range            : 30 yards
-Duration         : 1800 seconds
-Cooldown         : 10 seconds
+Duration         : Aura (infinite)
 Stacks           : 1 initial, 1 maximum
 Triggered By     : Remove Protection (1279523)
-Attributes       : Not Shapeshifted (16), Aura Is Buff (140), Unknown (493)
+Attributes       : Not Shapeshifted (16), Cooldown On Event (25), Aura Is Buff (140), Unknown (493)
 Effects          :
 #1 (id=1363758)  : Apply Aura (6) | Damage Done (13)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
 Tooltip          : Reduces damage taken.
+
+Name             : Elixir of Endless Intellect (id=1327736) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 3600 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#1 (id=1366382)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 2 | Scaled Value: 2 | Stat: Int | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Increases Intellect by $s1% for $d. This effect stacks up to $u times.
+Tooltip          : Intellect increased by $s1%.
+
+Name             : Call Anathema (id=1327991) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366762)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Anathema.
+
+Name             : Call Benediction (id=1327993) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366764)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Benediction.
 

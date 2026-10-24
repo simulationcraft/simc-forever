@@ -10,6 +10,7 @@
 #include "actor.hpp"
 #include "assessor.hpp"
 #include "dbc/specialization.hpp"
+#include "dbc/spell_data.hpp"
 #include "effect_callbacks.hpp"
 #include "gear_stats.hpp"
 #include "player_collected_data.hpp"
@@ -754,34 +755,9 @@ public:
   const spell_data_t* find_spell( unsigned int id, specialization_e s ) const;
   const spell_data_t* find_spell( unsigned int id ) const;
 
-  template <typename RANKS>
-  auto find_rank( const RANKS& ranks, int rank = RANK_MAX_USABLE ) const
-  {
-    typename RANKS::value_type best {};
-
-    if ( rank == RANK_MAX )
-      return ranks.back();
-
-    if ( rank > 0 )
-    {
-      if ( static_cast<size_t>( rank ) <= ranks.size() )
-        best = ranks[ rank - 1 ];
-      return best;
-    }
-
-    unsigned best_level = 0;
-    for ( const auto& entry : ranks )
-    {
-      auto spell = find_spell( entry.spell_id );
-      if ( spell->ok() && spell->level() >= best_level )
-      {
-        best       = entry;
-        best_level = spell->level();
-      }
-    }
-
-    return best;
-  }
+  using rank_ptype_t = const spell_data_t*(spell_container_t::*)(const player_t*) const;
+  const spell_container_t* find_rank( util::span<const spell_container_t> ranks, int rank = RANK_MAX_USABLE, // ) const;
+                                      rank_ptype_t field = &spell_container_t::spell ) const;
 
   pet_t*      find_pet( util::string_view name ) const;
   item_t*     find_item_by_name( util::string_view name );
