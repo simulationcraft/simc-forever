@@ -23,7 +23,10 @@ struct priest_td_t final : public actor_target_data_t
 
   struct debuffs_t
   {
+    buff_t* hex_of_weakness = nullptr;
     buff_t* shadow_weaving = nullptr;
+    buff_t* touch_of_weakness = nullptr;
+    buff_t* vampiric_embrace = nullptr;
   } debuffs;
 
   priest_td_t( player_t* target, priest_t& p );
@@ -49,6 +52,7 @@ struct priest_t final : public parse_player_effects_t
   void parse_action_effects( action_t* );
 
   void init_special_effects() override;
+  void create_actions() override;
   void activate() override;
 
   double composite_attribute_multiplier( attribute_e ) const override;
@@ -56,10 +60,14 @@ struct priest_t final : public parse_player_effects_t
   priest_td_t* get_target_data( player_t* target ) const override;
 
   // Priest racials are not in the racial spell table, so check the spell's race mask instead
-  const spell_data_t* find_racial_rank( util::span<const spell_container_t> ranks ) const
+  // Rank 1 is checked first so other races and levels below rank 1 never reach find_rank
+  const spell_data_t* find_racial_rank( util::span<const spell_container_t> ranks,
+                                        rank_ptype_t field = &spell_container_t::spell ) const
   {
-    auto spell = find_rank( ranks )->spell( this );
-    return spell->race_mask() & util::race_mask( race ) ? spell : spell_data_t::not_found();
+    if ( !( ranks.front().spell( this )->race_mask() & util::race_mask( race ) ) )
+      return spell_data_t::not_found();
+
+    return std::invoke( field, find_rank( ranks ), this );
   }
 
   std::string default_potion() const override   { return priest_apl::potion( this ); }
@@ -75,6 +83,7 @@ struct priest_t final : public parse_player_effects_t
     buff_t* holy_purpose = nullptr;
     buff_t* inner_focus = nullptr;
     buff_t* shadowform = nullptr;
+    buff_t* touch_of_weakness = nullptr;
   } buff;
 
   struct talents_t
@@ -91,15 +100,24 @@ struct priest_t final : public parse_player_effects_t
     player_talent_t searing_light;
     player_talent_t shadow_weaving;
     player_talent_t shadowform;
+    player_talent_t vampiric_embrace;
     player_talent_t wand_specialization;
   } talent;
 
   struct spells_t
   {
     const spell_data_t* dark_inspiration = spell_data_t::nil();
+    const spell_data_t* hex_of_weakness = spell_data_t::nil();
     const spell_data_t* holy_purpose = spell_data_t::nil();
     const spell_data_t* shadow_weaving = spell_data_t::nil();
+    const spell_data_t* touch_of_weakness = spell_data_t::nil();
+    const spell_data_t* touch_of_weakness_debuff = spell_data_t::nil();
   } spell;
+
+  struct actives_t
+  {
+    action_t* touch_of_weakness = nullptr;
+  } active;
 
 private:
   target_specific_t<priest_td_t> _target_data;
@@ -111,7 +129,10 @@ priest_td_t::priest_td_t( player_t* target, priest_t& p ) : actor_target_data_t(
   dots.holy_fire        = target->get_dot( "holy_fire", &p );
   dots.shadow_word_pain = target->get_dot( "shadow_word_pain", &p );
 
-  debuffs.shadow_weaving = make_buff( *this, "shadow_weaving", p.spell.shadow_weaving );
+  debuffs.hex_of_weakness   = make_buff( *this, "hex_of_weakness", p.spell.hex_of_weakness );
+  debuffs.shadow_weaving    = make_buff( *this, "shadow_weaving", p.spell.shadow_weaving );
+  debuffs.touch_of_weakness = make_buff( *this, "touch_of_weakness", p.spell.touch_of_weakness_debuff );
+  debuffs.vampiric_embrace  = make_buff( *this, "vampiric_embrace", p.talent.vampiric_embrace );
 }
 
 struct priest_module_t final : public module_t
@@ -175,6 +196,29 @@ public:
 
 using priest_spell_t = priest_action_t<spell_t>;
 
+// Hex of Weakness
+
+constexpr std::array hex_of_weakness_ranks {
+  spell_container_t().set_spell(  9035 ),
+  spell_container_t().set_spell( 19281 ),
+  spell_container_t().set_spell( 19282 ),
+  spell_container_t().set_spell( 19283 ),
+  spell_container_t().set_spell( 19284 ),
+  spell_container_t().set_spell( 19285 ),
+};
+
+// Touch of Weakness
+
+// spell: self buff, debuff: damage and attack power debuff on the attacker
+constexpr std::array touch_of_weakness_ranks {
+  spell_container_t().set_spell(  2652 ).set_debuff(  2943 ),
+  spell_container_t().set_spell( 19261 ).set_debuff( 19249 ),
+  spell_container_t().set_spell( 19262 ).set_debuff( 19251 ),
+  spell_container_t().set_spell( 19264 ).set_debuff( 19252 ),
+  spell_container_t().set_spell( 19265 ).set_debuff( 19253 ),
+  spell_container_t().set_spell( 19266 ).set_debuff( 19254 ),
+};
+
 void priest_t::init_base_stats()
 {
   parse_player_effects_t::init_base_stats();
@@ -205,15 +249,19 @@ void priest_t::init_spells()
   talent.shadow_weaving      = find_talent_spell( talent_tree::CLASS, "Shadow Weaving" );
   talent.searing_light       = find_talent_spell( talent_tree::CLASS, "Searing Light" );
   talent.shadowform          = find_talent_spell( talent_tree::CLASS, "Shadowform" );
+  talent.vampiric_embrace    = find_talent_spell( talent_tree::CLASS, "Vampiric Embrace" );
 
   // Wand only, all schools because wand damage can be any school
   // TODO: Apply to the wand auto attack once implemented
   talent.wand_specialization = find_talent_spell( talent_tree::CLASS, "Wand Specialization" );
   deregister_passive_spell( talent.wand_specialization );
 
-  spell.dark_inspiration = find_spell( 1326168 );
-  spell.holy_purpose     = talent.searing_light->effectN( 2 ).trigger();
-  spell.shadow_weaving   = talent.shadow_weaving->effectN( 1 ).trigger();
+  spell.dark_inspiration         = find_spell( 1326168 );
+  spell.hex_of_weakness          = find_racial_rank( hex_of_weakness_ranks );
+  spell.holy_purpose             = talent.searing_light->effectN( 2 ).trigger();
+  spell.shadow_weaving           = talent.shadow_weaving->effectN( 1 ).trigger();
+  spell.touch_of_weakness        = find_racial_rank( touch_of_weakness_ranks );
+  spell.touch_of_weakness_debuff = find_racial_rank( touch_of_weakness_ranks, &spell_container_t::debuff );
 }
 
 void priest_t::create_buffs()
@@ -235,6 +283,8 @@ void priest_t::create_buffs()
     } );
 
   buff.shadowform = make_buff( this, "shadowform", talent.shadowform );
+
+  buff.touch_of_weakness = make_buff( this, "touch_of_weakness", spell.touch_of_weakness );
 
   parse_effects( buff.shadowform );
   parse_target_effects( d_fn( &priest_td_t::debuffs_t::shadow_weaving ), spell.shadow_weaving );
@@ -293,6 +343,26 @@ void priest_t::init_special_effects()
     } );
 
     new dbc_proc_callback_t( this, *driver );
+  }
+
+  if ( spell.touch_of_weakness->ok() )
+  {
+    const auto driver = new special_effect_t( this );
+    driver->name_str  = spell.touch_of_weakness->name_cstr();
+    driver->spell_id  = spell.touch_of_weakness->id();
+    special_effects.push_back( driver );
+
+    // Proc events are delayed, so simultaneous melee hits can queue more than one before the buff expires
+    callbacks.register_callback_execute_function( driver->spell_id, [ this ]( auto, auto, auto, action_state_t* s ) {
+      if ( !buff.touch_of_weakness->check() )
+        return;
+
+      active.touch_of_weakness->execute_on_target( s->action->player );
+      buff.touch_of_weakness->expire();
+    } );
+
+    auto cb = new dbc_proc_callback_t( this, *driver );
+    cb->activate_with_buff( buff.touch_of_weakness );
   }
 
   parse_player_effects_t::init_special_effects();
@@ -650,6 +720,92 @@ struct dark_sacrifice_t : public priest_spell_t
   }
 };
 
+// Vampiric Embrace
+
+// TODO: Party heal
+struct vampiric_embrace_t : public priest_spell_t
+{
+  vampiric_embrace_t( priest_t* player, util::string_view options_str ) :
+    priest_spell_t( "vampiric_embrace", player, player->talent.vampiric_embrace.ok()
+                                                ? player->talent.vampiric_embrace.spell()
+                                                : spell_data_t::not_found() )
+  {
+    parse_options( options_str );
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    priest_spell_t::impact( s );
+
+    if ( result_is_hit( s->result ) )
+      p()->get_target_data( s->target )->debuffs.vampiric_embrace->trigger();
+  }
+};
+
+// Hex of Weakness
+
+struct hex_of_weakness_t : public priest_spell_t
+{
+  hex_of_weakness_t( priest_t* player, util::string_view options_str ) :
+    priest_spell_t( "hex_of_weakness", player, player->spell.hex_of_weakness )
+  {
+    parse_options( options_str );
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    priest_spell_t::impact( s );
+
+    if ( result_is_hit( s->result ) )
+      p()->get_target_data( s->target )->debuffs.hex_of_weakness->trigger();
+  }
+};
+
+// Touch of Weakness
+
+struct touch_of_weakness_damage_t : public priest_spell_t
+{
+  touch_of_weakness_damage_t( priest_t* player ) :
+    priest_spell_t( "touch_of_weakness_damage", player, player->spell.touch_of_weakness_debuff )
+  {
+    background = true;
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    priest_spell_t::impact( s );
+
+    if ( result_is_hit( s->result ) )
+      p()->get_target_data( s->target )->debuffs.touch_of_weakness->trigger();
+  }
+};
+
+struct touch_of_weakness_t : public priest_spell_t
+{
+  touch_of_weakness_t( priest_t* player, util::string_view options_str ) :
+    priest_spell_t( "touch_of_weakness", player, player->spell.touch_of_weakness )
+  {
+    parse_options( options_str );
+    harmful = false;
+    target = player;
+  }
+
+  void execute() override
+  {
+    priest_spell_t::execute();
+
+    p()->buff.touch_of_weakness->trigger();
+  }
+
+  bool ready() override
+  {
+    if ( p()->buff.touch_of_weakness->check() )
+      return false;
+
+    return priest_spell_t::ready();
+  }
+};
+
 // Inner Focus
 
 struct inner_focus_t : public priest_spell_t
@@ -735,12 +891,26 @@ action_t* priest_t::create_action( util::string_view name, util::string_view opt
     return new starshards_t( this, options_str );
   if ( name == "dark_sacrifice" )
     return new dark_sacrifice_t( this, options_str );
+  if ( name == "vampiric_embrace" )
+    return new vampiric_embrace_t( this, options_str );
+  if ( name == "hex_of_weakness" )
+    return new hex_of_weakness_t( this, options_str );
+  if ( name == "touch_of_weakness" )
+    return new touch_of_weakness_t( this, options_str );
   if ( name == "inner_focus" )
     return new inner_focus_t( this, options_str );
   if ( name == "shadowform" )
     return new shadowform_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
+}
+
+void priest_t::create_actions()
+{
+  if ( spell.touch_of_weakness->ok() )
+    active.touch_of_weakness = new touch_of_weakness_damage_t( this );
+
+  parse_player_effects_t::create_actions();
 }
 
 void priest_t::init_action_list()
