@@ -704,6 +704,9 @@ constexpr std::array dark_sacrifice_ranks {
 };
 struct dark_sacrifice_t : public priest_spell_t
 {
+  // TODO: Check if spirit is snapshot on cast or updates dynamically
+  double spirit_per_tick = 0.0;
+
   dark_sacrifice_t( priest_t* player, util::string_view options_str ) :
     priest_spell_t( "dark_sacrifice", player, player->find_racial_rank( dark_sacrifice_ranks ) )
   {
@@ -714,9 +717,14 @@ struct dark_sacrifice_t : public priest_spell_t
 
   void execute() override
   {
-    priest_spell_t::execute();
+    spirit_per_tick = player->cache.spirit() / ( dot_duration / base_tick_time );
 
-    player->resource_gain( RESOURCE_MANA, player->cache.spirit(), gain, this );
+    priest_spell_t::execute();
+  }
+
+  double composite_energize_amount( const action_state_t* s ) const override
+  {
+    return priest_spell_t::composite_energize_amount( s ) + spirit_per_tick;
   }
 };
 
