@@ -85,46 +85,60 @@ void druid_t::init_spells()
 // ==========================================================================
 // Druid Spells
 // ==========================================================================
-constexpr std::array wrath_ranks{
-    spell_rank_t{ 5176 }, spell_rank_t{ 5177 }, spell_rank_t{ 5178 }, spell_rank_t{ 5179 },
-    spell_rank_t{ 5180 }, spell_rank_t{ 6780 }, spell_rank_t{ 8905 }, spell_rank_t{ 9912 },
+constexpr std::array wrath_ranks {
+  spell_container_t().set_spell( 5176 ),
+  spell_container_t().set_spell( 5177 ),
+  spell_container_t().set_spell( 5178 ),
+  spell_container_t().set_spell( 5179 ),
+  spell_container_t().set_spell( 5180 ),
+  spell_container_t().set_spell( 6780 ),
+  spell_container_t().set_spell( 8905 ),
+  spell_container_t().set_spell( 9912 ),
 };
 
 struct wrath_t : public druid_spell_t
 {
   wrath_t( druid_t* player, std::string_view options_str ) :
-    druid_spell_t( "wrath", player, player->find_spell( player->find_rank( wrath_ranks ).spell_id ) )
+    druid_spell_t( "wrath", player, player->find_rank( wrath_ranks )->spell( player ) )
   {
     parse_options( options_str );
   }
 };
 
-constexpr std::array moonfire_ranks{
-    spell_rank_t{ 8921 }, spell_rank_t{ 8924 }, spell_rank_t{ 8925 }, spell_rank_t{ 8926 }, spell_rank_t{ 8927 },
-    spell_rank_t{ 8928 }, spell_rank_t{ 8929 }, spell_rank_t{ 9833 }, spell_rank_t{ 9834 }, spell_rank_t{ 9835 },
+constexpr std::array moonfire_ranks {
+  spell_container_t().set_spell( 8921 ),
+  spell_container_t().set_spell( 8924 ),
+  spell_container_t().set_spell( 8925 ),
+  spell_container_t().set_spell( 8926 ),
+  spell_container_t().set_spell( 8927 ),
+  spell_container_t().set_spell( 8928 ),
+  spell_container_t().set_spell( 8929 ),
+  spell_container_t().set_spell( 9833 ),
+  spell_container_t().set_spell( 9834 ),
+  spell_container_t().set_spell( 9835 ),
 };
 struct moonfire_t : public druid_spell_t
 {
   moonfire_t( druid_t* player, std::string_view options_str ) :
-    druid_spell_t( "moonfire", player, player->find_spell( player->find_rank( moonfire_ranks ).spell_id ) )
+    druid_spell_t( "moonfire", player, player->find_rank( moonfire_ranks )->spell( player ) )
   {
     parse_options( options_str );
   }
 };
 
-constexpr std::array starfire_ranks{
-    spell_rank_t{ 2912 },   
-    spell_rank_t{ 8949 },   
-    spell_rank_t{ 8950 },   
-    spell_rank_t{ 8951 },   
-    spell_rank_t{ 9875 },   
-    spell_rank_t{ 9876 },   
-    spell_rank_t{ 25298 },  
+constexpr std::array starfire_ranks {
+  spell_container_t().set_spell(  2912 ),
+  spell_container_t().set_spell(  8949 ),
+  spell_container_t().set_spell(  8950 ),
+  spell_container_t().set_spell(  8951 ),
+  spell_container_t().set_spell(  9875 ),
+  spell_container_t().set_spell(  9876 ),
+  spell_container_t().set_spell( 25298 ),
 };
 struct starfire_t : public druid_spell_t
 {
   starfire_t( druid_t* player, std::string_view options_str )
-    : druid_spell_t( "starfire", player, player->find_spell( player->find_rank( starfire_ranks ).spell_id ) )
+    : druid_spell_t( "starfire", player, player->find_rank( starfire_ranks )->spell( player ) )
   {
     parse_options( options_str );
   }
