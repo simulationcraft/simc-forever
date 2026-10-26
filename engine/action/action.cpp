@@ -2761,7 +2761,7 @@ void action_t::init()
     snapshot_flags |= STATE_AP;
   }
 
-  if ( dot_duration > timespan_t::zero() && ( hasted_ticks || channeled ) )
+  if ( dot_duration > timespan_t::zero() && hasted_ticks )
     snapshot_flags |= STATE_HASTE;
 
   // WOD: Dot Snapshoting is gone
