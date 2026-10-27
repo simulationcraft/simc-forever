@@ -60,7 +60,7 @@ using hunter_spell_t  = hunter_action_t<spell_t>;
 struct hunter_ranged_attack_t : public hunter_ranged_t
 {
   hunter_ranged_attack_t( util::string_view name, player_t* player )
-    : hunter_ranged_t( name, player, spell_data_t::nil() )
+    : hunter_ranged_t( name, player, player->find_spell( 75 ) )
   {
     weapon            = &player->equipped_weapons[ SLOT_RANGED ];
     weapon_multiplier = 1.0;
@@ -121,9 +121,13 @@ void hunter_t::init_base_stats()
   player_t::init_base_stats();
 
   base.attack_crit_chance = 0;
+  // TODO Forever: Only checked on low level characters
+  base.spell_crit_chance = 0.036;
 
   base.stats.attack_power        = 2.0 * level() - 20.0;
   base.stats.ranged_attack_power = 2.0 * level() - 20.0;
+
+  // TODO Forever: Dodge, parry chance
 }
 
 action_t* hunter_t::create_action( util::string_view name, util::string_view options_str )

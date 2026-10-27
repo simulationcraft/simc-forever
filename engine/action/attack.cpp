@@ -475,8 +475,8 @@ ranged_attack_t::ranged_attack_t( util::string_view token, player_t* p, const sp
   : attack_t( token, p, s )
 {
   // ranged attacks cannot be blocked, dodged, or parried
-  // TODO Forever: can they be glanced?
-  may_block = may_parry = may_dodge = false;
+  // TODO Forever: Fairly certain ranged attacks can't be glancing but this needs a bit more verification
+  may_block = may_parry = may_dodge = may_glance = false;
 
   ap_type = attack_power_type::RANGED;
 }

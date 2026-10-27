@@ -3380,11 +3380,11 @@ stat_buff_t::stat_buff_t( actor_pair_t q, util::string_view name, const spell_da
     }
     else if ( effect.subtype() == A_MOD_ATTACK_POWER )
     {
-      s      = STAT_ATTACK_POWER;
+      s = STAT_ATTACK_POWER;
     }
     else if ( effect.subtype() == A_MOD_RANGED_ATTACK_POWER )
     {
-      s      = STAT_RANGED_ATTACK_POWER;
+      s = STAT_RANGED_ATTACK_POWER;
     }
     else if ( effect.subtype() == A_MOD_INCREASE_HEALTH_2 || effect.subtype() == A_MOD_INCREASE_HEALTH )
     {

@@ -1410,6 +1410,7 @@ double action_t::calculate_weapon_damage( double attack_power ) const
     return 0;
 
   // TODO Forever: Do we need special handling for ranged weapons here?
+  // Currently the weapon roll is multiplied by melee AP so probably need ranged handling
 
   // The weapon damage roll (and its bonus damage) is affected by attak power modifiers just like regular attack power
   double capm             = player -> composite_attack_power_multiplier();
