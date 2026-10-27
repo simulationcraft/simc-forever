@@ -55,7 +55,7 @@ void gear_stats_t::add_stat( stat_e stat,
     case STAT_SHADOW_SPELL_POWER: school_spell_power[ SCHOOL_SHADOW ] += value; break;
 
     case STAT_ATTACK_POWER:             attack_power             += value; break;
-    case STAT_RANGED_ATTACK_POWER:      ranged_attack_power             += value; break;
+    case STAT_RANGED_ATTACK_POWER:      ranged_attack_power      += value; break;
     case STAT_EXPERTISE_RATING:         expertise_rating         += value; break;
     case STAT_EXPERTISE_RATING2:        expertise_rating2        += value; break;
 
@@ -137,7 +137,7 @@ void gear_stats_t::set_stat( stat_e stat,
     case STAT_SHADOW_SPELL_POWER: school_spell_power[ SCHOOL_SHADOW ] = value; break;
 
     case STAT_ATTACK_POWER:             attack_power             = value; break;
-    case STAT_RANGED_ATTACK_POWER:      ranged_attack_power             = value; break;
+    case STAT_RANGED_ATTACK_POWER:      ranged_attack_power      = value; break;
     case STAT_EXPERTISE_RATING:         expertise_rating         = value; break;
     case STAT_EXPERTISE_RATING2:        expertise_rating2        = value; break;
 
