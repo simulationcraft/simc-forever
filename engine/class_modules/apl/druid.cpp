@@ -39,10 +39,11 @@ void druid( player_t* p )
   precombat->add_action( "snapshot_stats" );
   precombat->add_action( "entangling_roots" );
 
-  default_->add_action( "auto_attack" );
+  default_->add_action( "hurricane,if=time<10" );
   default_->add_action( "moonfire,if=!ticking" );
   default_->add_action( "starfire" );
   default_->add_action( "wrath" );
+  default_->add_action( "auto_attack" );
 }
 //druid_apl_end
 }  // namespace druid_apl
