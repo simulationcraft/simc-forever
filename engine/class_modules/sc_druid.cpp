@@ -180,6 +180,32 @@ struct entangling_roots_t : public druid_spell_t
   double break_chance = .2;
 };
 
+constexpr std::array hurricane_ranks{
+    spell_container_t().set_spell( 16914 ).set_debuff( 1278965 ),
+    spell_container_t().set_spell( 17401 ).set_debuff( 1278968 ),
+    spell_container_t().set_spell( 17402 ).set_debuff( 1278759 ),
+};
+struct hurricane_tick_t : public druid_spell_t
+{
+  hurricane_tick_t( druid_t* player )
+    : druid_spell_t( "hurricane_tick", player, player->find_rank( hurricane_ranks )->debuff( player ) )
+  {
+    background = dual = true;
+    aoe               = -1;
+  }
+};
+
+struct hurricane_t : public druid_spell_t
+{
+  hurricane_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "hurricane", player, player->find_rank( hurricane_ranks )->spell( player ) )
+  {
+    parse_options( options_str );
+    channeled   = true;
+    tick_action = new hurricane_tick_t( player );
+  }
+};
+
 // ==========================================================================
 // Druid Attacks
 // ==========================================================================
@@ -255,6 +281,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new starfire_t( this, options_str );
   if ( name == "entangling_roots" )
     return new entangling_roots_t( this, options_str );
+  if ( name == "hurricane" )
+    return new hurricane_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
 }
