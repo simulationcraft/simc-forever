@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70634 Live
 Name             : Auto Shot (id=75) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -469,7 +469,7 @@ Cooldown         : 6 seconds
 Category         : 2 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Multi-Shot Damage Increase (28539 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Multi-Shot Damage Increase (459593 effect#1), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
+Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Multi-Shot Damage Increase (28539 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 12
 Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
 Effects          :
@@ -528,7 +528,7 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -1841,7 +1841,7 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -1861,7 +1861,7 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -1881,7 +1881,7 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -1901,7 +1901,7 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -1921,7 +1921,7 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -1941,7 +1941,7 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -1961,7 +1961,7 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -2899,7 +2899,6 @@ Effects          :
                    Modified By: Improved Hunter's Mark (19421 effect#1)
 #2 (id=690991)   : Apply Aura (6) | Unknown(127)
                    Base Value: 143 | Scaled Value: 143 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (71 -> 143)
                    Modified By: Improved Hunter's Mark (19421 effect#1)
 Description      : Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
@@ -3709,6 +3708,7 @@ Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(-10, -20, -30)]
                  : Effect#2 [op=set, values=(-10, -20, -30)]
                  : Effect#3 [op=set, values=(1, 2, 3)]
+                 : Effect#4 [op=set, values=(1, 2, 3)]
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -3721,8 +3721,9 @@ Effects          :
                    Base Value: -30 | Scaled Value: -30 | SP Coefficient: 1 | Misc Value: 7 | Target: Self (1)
 #3 (id=697452)   : Apply Aura (6) | Modify Hit% (54)
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Target: Self (1)
-#4 (id=1349371)  : Apply Aura (6) | Modify Spell Hit% (55)
+#4 (id=1366114)  : Apply Aura (6) | Modify Spell Hit% (55)
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Target: Self (1)
+Hotfixed         : NEW EFFECT
 Description      : Increases your hit chance by $m3% and reduces the duration of movement impairing effects on you by $m2%.
 
 Name             : Deflection (id=19295) [Passive, Hidden] 
@@ -4018,7 +4019,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=696507)   : Apply Aura (6) | Add Percent Modifier (108): Spell Critical Bonus Multiplier (15)
                    Base Value: 30 | Scaled Value: 30 | SP Coefficient: 1 | Misc Value: 15 | Target: Self (1)
-                   Affected Spells: Auto Shot (75), Volley (1510), Serpent Sting (1978), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Serpent Sting (13549), Serpent Sting (13550), Serpent Sting (13551), Serpent Sting (13552), Serpent Sting (13553), Serpent Sting (13554), Serpent Sting (13555), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Volley (14294), Volley (14295), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904), Serpent Sting (25295), Chimera Shot - Serpent (409493), Serpent Sting (425728), Serpent Sting (425729), Serpent Sting (425730), Serpent Sting (425732), Serpent Sting (425733), Serpent Sting (425734), Serpent Sting (425735), Serpent Sting (425736), Serpent Sting (425737), Timeworn Shot (1213393), Volley (1279715), Volley (1279719), Volley (1279721), Sniper Shot (1310687), Sniper Shot (1310785), Sniper Shot (1310786)
+                   Affected Spells: Auto Shot (75), Volley (1510), Serpent Sting (1978), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Serpent Sting (13549), Serpent Sting (13550), Serpent Sting (13551), Serpent Sting (13552), Serpent Sting (13553), Serpent Sting (13554), Serpent Sting (13555), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Volley (14294), Volley (14295), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904), Serpent Sting (25295), Chimera Shot - Serpent (409493), Serpent Sting (425728), Serpent Sting (425729), Serpent Sting (425730), Serpent Sting (425732), Serpent Sting (425733), Serpent Sting (425734), Serpent Sting (425735), Serpent Sting (425736), Serpent Sting (425737), Volley (1279715), Volley (1279719), Volley (1279721), Sniper Shot (1310687), Sniper Shot (1310785), Sniper Shot (1310786)
                    Family Flags: 0, 9, 11, 12, 13, 14, 17, 18, 63, 73, 92, 119
 Description      : Increases the critical strike damage bonus on all ranged abilities by $m1%.
 
@@ -6685,7 +6686,7 @@ Spell Type       : Melee
 Spell Level      : 1
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6700,7 +6701,7 @@ Spell Type       : Melee
 Spell Level      : 8
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6715,7 +6716,7 @@ Spell Type       : Melee
 Spell Level      : 16
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6730,7 +6731,7 @@ Spell Type       : Melee
 Spell Level      : 24
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6745,7 +6746,7 @@ Spell Type       : Melee
 Spell Level      : 32
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6760,7 +6761,7 @@ Spell Type       : Melee
 Spell Level      : 40
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6775,7 +6776,7 @@ Spell Type       : Melee
 Spell Level      : 48
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6790,7 +6791,7 @@ Spell Type       : Melee
 Spell Level      : 56
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -7178,7 +7179,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7198,7 +7199,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7218,7 +7219,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7238,7 +7239,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7258,7 +7259,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7278,7 +7279,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7298,7 +7299,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7318,7 +7319,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -8923,28 +8924,6 @@ Effects          :
 Description      : A vicious strike that deals $s2% weapon damage and causes the target to Bleed for ${$m3/100*8*$AP} Physical damage over $d.
 Tooltip          : $w3 Bleed damage every $t3 seconds.
 
-Name             : Multi-Shot Damage Increase (id=459593) [Spell Family (9), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166526)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
-                   Base Value: 4 | Scaled Value: 4 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Multi-Shot (2643)
-                   Family Flags: 12
-Description      : Increases the damage done by your Multi-Shot by $s1%.
-
-Name             : Raptor Strike Damage Increase (id=459598) [Spell Family (9), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166531)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
-                   Base Value: 4 | Scaled Value: 4 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Raptor Strike (2973), Raptor Strike (14260), Raptor Strike (14261), Raptor Strike (14262), Raptor Strike (14263), Raptor Strike (14264), Raptor Strike (14265), Raptor Strike (14266), Raptor Strike (409691), Raptor Strike (409693), Raptor Strike (409748), Raptor Strike (409750), Raptor Strike (409751), Raptor Strike (409752), Raptor Strike (409754), Raptor Strike (409755), Raptor Strike (415335), Raptor Strike (415336), Raptor Strike (415337), Raptor Strike (415338), Raptor Strike (415340), Raptor Strike (415341), Raptor Strike (415342), Raptor Strike (415343)
-                   Family Flags: 80
-Description      : Increases the damage done by your Raptor Strike by $s1%.
-
 Name             : S03 - Item - T2- Hunter - Ranged 2P Bonus (id=467235) [Spell Family (9), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -9185,33 +9164,6 @@ Effects          :
                    Family Flags: 29
 Description      : Increases the Focus regeneration of your pets by $s1%.
 
-Name             : Timeworn Shot (id=1213393) [Spell Family (9)] 
-School           : Physical
-Spell Type       : Ranged
-Spell Level      : 60
-Range            : 100 yards
-Cast Time        : Ranged Shot
-Velocity         : 40 yards/sec
-Affecting Spells : Mortal Shots (19485 effect#1)
-Triggered By     : Timeworn Shot (1213395)
-Family Flags     : 92
-Attributes       : Uses Ranged Slot (1), Normal Ranged Attack (111), Unknown (493)
-Effects          :
-#1 (id=1195032)  : School Damage (2): physical
-                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-
-Name             : Timeworn Shot (id=1213395) [Spell Family (9), Passive] 
-School           : Physical
-Spell Type       : None
-Spell Level      : 60
-Internal Cooldown: 0.2 seconds
-Proc Chance      : 8%
-Proc Flags       : White Ranged, Yellow Ranged
-Attributes       : Passive (6), Unknown (493)
-Effects          :
-#1 (id=1195034)  : Apply Aura (6) | Proc Trigger Spell (42): Timeworn Shot
-                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1213393 | Target: Self (1)
-
 Name             : Kill Shot (id=1218240) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -9416,7 +9368,6 @@ Effects          :
 Tooltip          : Regenerating $s1% of your normal Mana regeneration while casting spells.
 
 Name             : Faster Attack I (id=1263099) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9431,7 +9382,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack II (id=1263100) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9446,7 +9396,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack III (id=1263102) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9461,7 +9410,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack IV (id=1263104) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9476,7 +9424,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack V (id=1263107) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9491,7 +9438,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack VI (id=1263109) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9506,7 +9452,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack VII (id=1263110) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -11323,11 +11268,10 @@ Description      : $@spelldesc14309
 Tooltip          : $@spellaura14309
 
 Name             : Scare Beast (id=1324506) 
-Hotfixed         : Attributes, Required Level (0 -> 14)
 Class            : Hunter
 School           : Nature
 Spell Type       : None
-Resource         : 35 Base Mana (0) (id=315092)[Hotfixed: NEW POWER]
+Resource         : 35 Base Mana (0) (id=315092)
 Spell Level      : 14
 Range            : 10 yards
 Cast Time        : 1.5 seconds
@@ -11345,11 +11289,10 @@ Description      : $@spelldesc1513
 Tooltip          : $@spellaura1513
 
 Name             : Scare Beast (id=1324507) 
-Hotfixed         : Attributes, Required Level (0 -> 30)
 Class            : Hunter
 School           : Nature
 Spell Type       : None
-Resource         : 50 Base Mana (0) (id=315093)[Hotfixed: NEW POWER]
+Resource         : 50 Base Mana (0) (id=315093)
 Spell Level      : 30
 Range            : 10 yards
 Cast Time        : 1.5 seconds
@@ -11367,11 +11310,10 @@ Description      : $@spelldesc14326
 Tooltip          : $@spellaura14326
 
 Name             : Scare Beast (id=1324510) 
-Hotfixed         : Attributes, Required Level (0 -> 46)
 Class            : Hunter
 School           : Nature
 Spell Type       : None
-Resource         : 75 Base Mana (0) (id=315094)[Hotfixed: NEW POWER]
+Resource         : 75 Base Mana (0) (id=315094)
 Spell Level      : 46
 Range            : 10 yards
 Cast Time        : 1.5 seconds

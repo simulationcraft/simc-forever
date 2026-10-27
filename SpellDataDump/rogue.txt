@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70634 Live
 Name             : Backstab (desc=Rank 1) (id=53) [Spell Family (8)] 
 Class            : Rogue
 School           : Physical
@@ -106,7 +106,7 @@ Category         : 22 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 30 seconds
 Mechanic         : Distract
-Affecting Spells : Improved Distract (14084 effects: #1, #2), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1)
+Affecting Spells : Improved Distract (14084 effects: #1, #2), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), No AutoCast (AI) (49), Not an Action (92), Suppress Target Procs (113), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1)
@@ -515,7 +515,7 @@ Spell Level      : 30
 Range            : 5 yards
 Cast Time        : 2 seconds
 Labels           : 20: Rogue Spells
-Affecting Spells : Carnage (432275 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1)
+Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 31
 Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
 Effects          :
@@ -638,7 +638,6 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a small amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 2) (id=2070) [Spell Family (8)] 
-Hotfixed         : Mechanic (14 -> 30)
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -970,7 +969,7 @@ Cooldown         : 300 seconds
 Category         : 44 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1), Sprint Duration Increase (459605 effect#1)
+Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1)
 Family Flags     : 6
 Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), Unknown (493)
 Effects          :
@@ -1063,7 +1062,6 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $11202h% chance of poisoning the enemy, slowing their movement speed by $11201s1% for $11201d.
 
 Name             : Slice and Dice (desc=Rank 1) (id=5171) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1308,7 +1306,6 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a medium amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 1) (id=6770) [Spell Family (8)] 
-Hotfixed         : Mechanic (14 -> 30)
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1334,7 +1331,6 @@ Description      : Incapacitates the target for up to $d. Only works on Humanoid
 Tooltip          : Incapacitated.
 
 Name             : Slice and Dice (desc=Rank 2) (id=6774) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2007,7 +2003,7 @@ Cooldown         : 300 seconds
 Category         : 44 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1), Sprint Duration Increase (459605 effect#1)
+Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1)
 Family Flags     : 6
 Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), Unknown (493)
 Effects          :
@@ -2560,7 +2556,6 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sap (desc=Rank 3) (id=11297) [Spell Family (8)] 
-Hotfixed         : Mechanic (14 -> 30)
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2677,7 +2672,7 @@ Cooldown         : 300 seconds
 Category         : 44 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1), Sprint Duration Increase (459605 effect#1)
+Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1)
 Family Flags     : 6
 Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), Unknown (493)
 Effects          :
@@ -3907,7 +3902,6 @@ Effects          :
 Description      : Gives your finishing moves a $m1% chance to add a Combo Point to your target.
 
 Name             : Ruthlessness (id=14157) 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -4070,7 +4064,6 @@ Effects          :
 Description      : $s1 Energy restored.
 
 Name             : Premeditation (id=14183) [Spell Family (8)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=10, max_rank=1, req_points=0]
 Class            : Rogue
 School           : Physical
@@ -4304,7 +4297,6 @@ Effects          :
 Description      : Increases the damage dealt by your poisons by $m1% and gives your poisons an additional $m3% chance to resist dispel effects.
 
 Name             : Silenced - Kick (id=18425) [Spell Family (8)] 
-Hotfixed         : Attributes, Stance Mask (134217728 -> 0), Description
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -6821,17 +6813,6 @@ Description      : Engrave your ring with the Defense Specialization rune:
 $@spellicon459312
 $@spelldesc459312
 
-Name             : Sprint Duration Increase (id=459605) [Spell Family (8), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166538)  : Apply Aura (6) | Add Flat Modifier (107): Spell Duration (1)
-                   Base Value: 3000 | Scaled Value: 3000 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
-                   Affected Spells: Sprint (2983), Sprint (8696), Sprint (11305)
-                   Family Flags: 6
-Description      : Increases the duration of your Sprint ability by $/1000;s1 sec.
-
 Name             : Cutthroat (id=462707) [Spell Family (8)] 
 Class            : Rogue
 School           : Physical
@@ -7328,17 +7309,6 @@ Effects          :
 #1 (id=1264777)  : Extra Attacks (19)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
 
-Name             : Improved Pick Pocket and Distract 01 (id=1291987) [Spell Family (8), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
-Effects          :
-#1 (id=1311716)  : Apply Aura (6) | Add Percent Modifier (108): Spell Penetration (16)
-                   Base Value: 1 | Scaled Value: 1 | Misc Value: 16 | Target: Self (1)
-                   Affected Spells: Distract (1725), Disarm Trap (1842)
-                   Family Flags: 12, 31
-Description      : Increases the chance your Pick Pocket and Distract abilities are successful by $s1%
-
 Name             : Improved Expose Armor (id=1310697) 
 Class            : Rogue
 School           : Physical
@@ -7354,7 +7324,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 
 Name             : Venom (id=1310703) [Spell Family (8)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=1]
 Class            : Rogue
 School           : Physical

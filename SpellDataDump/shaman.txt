@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70634 Live
 Name             : Block (desc=Passive) (id=107) [Passive] 
 Class            : Warrior, Paladin, Shaman
 School           : Physical
@@ -452,7 +452,7 @@ GCD              : 1.5 seconds
 Duration         : Aura (infinite)
 Labels           : 24: Shaman Spells
                  : 6511
-Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1)
 Family Flags     : 11
 Attributes       : Only Outdoors (15), Not Shapeshifted (16), No AutoCast (AI) (49), No shapeshift UI (65), Unknown (493)
 Aura Interrupt   : Spline or Free Flight (52)
@@ -461,7 +461,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 16 | Misc Value 2: 6 | Target: Self (1)
 #2 (id=681059)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 40 | Scaled Value: 40 | Value Multiplier: 1 | Target: Self (1)
-                   Modified By: Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+                   Modified By: Ghost Wolf Speed (22801 effect#1)
 Description      : Turns the Shaman into a Ghost Wolf, increasing speed by $s2%.  Only useable outdoors.
 Tooltip          : Increases movement speed by $s2%.
 
@@ -2045,7 +2045,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. When appied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
 
 Name             : Windfury Weapon (desc=Rank 2) (id=8236) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : None
@@ -4071,7 +4070,6 @@ Effects          :
 Description      : Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by $s1%.
 
 Name             : Elemental Focus (id=16164) [Spell Family (11), Passive, Hidden] 
-Hotfixed         : Proc Chance (10 -> 100), Description
 Talent Entry     : Generic [tree=class, row=3, col=1, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Physical
@@ -4086,11 +4084,9 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=694887)   : Apply Aura (6) | Proc Trigger Spell (42): Clearcasting
                    Base Value: 10 | Scaled Value: 10 | Trigger Spell: 16246 | Target: Self (1)
-Hotfixed         : Base Value (0 -> 10)
 Description      : Gives you a $s1% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by $16246s1%.
 
 Name             : Elemental Mastery (id=16166) [Spell Family (11)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=30]
 Class            : Shaman
 School           : Nature
@@ -4214,7 +4210,6 @@ Effects          :
 Description      : Improves your chance to hit by $s1%.
 
 Name             : Healing Focus (id=16181) [Spell Family (11), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(23, 47, 70)]
 Class            : Shaman
@@ -4344,7 +4339,6 @@ Effects          :
 Description      : Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $16191s1 mana every $16191t1 seconds to group members within $16191a1 yards.
 
 Name             : Mana Tide (desc=Rank 1) (id=16191) [Spell Family (11), Passive] 
-Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5605,7 +5599,6 @@ Effects          :
 Description      : Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by $m1 yards and reduces the cooldown of Totemic Projection by ${$m3/-1000} sec.
 
 Name             : Eye of the Storm (id=29062) [Spell Family (11), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=2, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(23, 47, 70)]
 Class            : Shaman
@@ -6002,7 +5995,6 @@ Effects          :
 Description      : Instantly inflicts $408428s1 fire damage to enemies within $408428a1 yd of your active Fire totem.
 
 Name             : Fire Nova (desc=Rank 1) (id=408423) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6017,7 +6009,6 @@ Effects          :
                    Base Value: 33 | Scaled Value: 35 (delta=0.153846) | Points Per Level: 0.4 | SP Coefficient: 0.143 | Radius: 0 - 10 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Fire Nova (desc=Rank 2) (id=408424) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6032,7 +6023,6 @@ Effects          :
                    Base Value: 55 | Scaled Value: 58 (delta=0.12844) | Points Per Level: 0.6 | SP Coefficient: 0.143 | Radius: 0 - 10 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Fire Nova (desc=Rank 3) (id=408426) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6047,7 +6037,6 @@ Effects          :
                    Base Value: 130 | Scaled Value: 134.5 (delta=0.122449) | Points Per Level: 0.9 | SP Coefficient: 0.143 | Radius: 0 - 10 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Fire Nova (desc=Rank 4) (id=408427) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6062,7 +6051,6 @@ Effects          :
                    Base Value: 179 | Scaled Value: 184.5 (delta=0.120401) | Points Per Level: 1.1 | SP Coefficient: 0.143 | Radius: 0 - 10 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Fire Nova (desc=Rank 5) (id=408428) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -7418,7 +7406,7 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Duration         : Aura (infinite)
 Labels           : 6511
-Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1)
 Family Flags     : 11
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), No shapeshift UI (65), Unknown (493)
 Effects          :
@@ -7426,7 +7414,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 16 | Target: Self (1)
 #2 (id=1085044)  : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 40 | Scaled Value: 40 | Value Multiplier: 1 | Target: Self (1)
-                   Modified By: Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+                   Modified By: Ghost Wolf Speed (22801 effect#1)
 #3 (id=1085045)  : Apply Aura (6) | Modify Damage Taken% (87)
                    Base Value: -10 | Scaled Value: -10 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
@@ -8585,17 +8573,6 @@ Description      : Engrave your ring with the Defense Specialization rune:
 $@spellicon459312
 $@spelldesc459312
 
-Name             : Ghost Wolf Speed (id=459606) [Spell Family (11), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166539)  : Apply Aura (6) | Add Flat Modifier (107): Spell Effect 2 (12)
-                   Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Misc Value: 12 | Target: Self (1)
-                   Affected Spells: Ghost Wolf (2645), Ghost Wolf (415233), Ghost Wolf (1238640)
-                   Family Flags: 11
-Description      : Increases the speed of your Ghost Wolf ability by $s1%.
-
 Name             : Defender's Resolve (id=460171) 
 Class            : Paladin, Shaman, Warlock
 School           : Physical
@@ -9168,7 +9145,6 @@ Effects          :
                    Base Value: 196 | Scaled Value: 204.8 (delta=0.253259) | Points Per Level: 1.1 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 #2 (id=1340790)  : Dummy (3)
                    Base Value: 20 | Scaled Value: 20 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-Hotfixed         : Points per Level (4.2 -> 0)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 Name             : Lava Burst (id=1238373) [Spell Family (11)] 
@@ -9214,7 +9190,7 @@ GCD              : 1.5 seconds
 Duration         : Aura (infinite)
 Labels           : 24: Shaman Spells
                  : 6511
-Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1)
 Family Flags     : 11
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), No shapeshift UI (65), Unknown (493)
 Aura Interrupt   : Spline or Free Flight (52)
@@ -9223,7 +9199,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 16 | Target: Self (1)
 #2 (id=1235850)  : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 40 | Scaled Value: 40 | Value Multiplier: 1 | Target: Self (1)
-                   Modified By: Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+                   Modified By: Ghost Wolf Speed (22801 effect#1)
 Description      : Turns the Shaman into a Ghost Wolf, increasing speed by $s2%.
 Tooltip          : Increases movement speed by $s2%.
 

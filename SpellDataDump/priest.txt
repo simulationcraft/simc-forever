@@ -1,6 +1,5 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70634 Live
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -177,7 +176,7 @@ Duration         : 18 seconds
 Labels           : 18: Priest Spells
 Proc Chance      : 100%
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2)
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Twin Disciplines (1225132 effect#2)
 Family Flags     : 15
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -205,7 +204,6 @@ Effects          :
 Description      : Smite an enemy for $s1 Holy damage.
 
 Name             : Power Word: Shield (desc=Rank 2) (id=592) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -243,7 +241,7 @@ Duration         : 18 seconds
 Labels           : 18: Priest Spells
 Proc Chance      : 100%
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2)
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Twin Disciplines (1225132 effect#2)
 Family Flags     : 15
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -290,7 +288,6 @@ Effects          :
 Description      : Smite an enemy for $s1 Holy damage.
 
 Name             : Power Word: Shield (desc=Rank 3) (id=600) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -377,7 +374,7 @@ Duration         : 18 seconds
 Labels           : 18: Priest Spells
 Proc Chance      : 100%
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2)
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Twin Disciplines (1225132 effect#2)
 Family Flags     : 15
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -454,7 +451,7 @@ Duration         : 18 seconds
 Labels           : 18: Priest Spells
 Proc Chance      : 100%
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2)
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Twin Disciplines (1225132 effect#2)
 Family Flags     : 15
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -813,7 +810,7 @@ Duration         : 18 seconds
 Labels           : 18: Priest Spells
 Proc Chance      : 100%
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2)
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Twin Disciplines (1225132 effect#2)
 Family Flags     : 15
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -844,7 +841,6 @@ Description      : Power infuses the target, increasing their Stamina by $s1 for
 Tooltip          : Increases Stamina by $w1.
 
 Name             : Power Word: Shield (desc=Rank 4) (id=3747) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -943,7 +939,6 @@ Effects          :
 Description      : Heal your target for $s1.
 
 Name             : Power Word: Shield (desc=Rank 5) (id=6065) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -970,7 +965,6 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 6) (id=6066) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1104,7 +1098,6 @@ Range            : 50000 yards
 Duration         : 15 seconds
 Labels           : 18: Priest Spells
 Mechanic         : Shield
-Affecting Spells : Weakened Soul Duration Decrease (459603 effect#1)
 Family Flags     : 29
 Attributes       : Aura Is Debuff (26), No Redirection (35), No Reflection (39), Immunity to Hostile & Friendly Effects (48), No AutoCast (AI) (49), Ignore Line of Sight (66), Unknown (493)
 Effects          :
@@ -1164,7 +1157,7 @@ Category         : 19 (Type 0x0)
 Labels           : 18: Priest Spells
 Category Cooldown: 8 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Mind Blast Cast Pushback Reduction (459604 effect#1), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
@@ -1186,7 +1179,7 @@ Category         : 19 (Type 0x0)
 Labels           : 18: Priest Spells
 Category Cooldown: 8 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Mind Blast Cast Pushback Reduction (459604 effect#1), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
@@ -1208,7 +1201,7 @@ Category         : 19 (Type 0x0)
 Labels           : 18: Priest Spells
 Category Cooldown: 8 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Mind Blast Cast Pushback Reduction (459604 effect#1), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
@@ -1230,7 +1223,7 @@ Category         : 19 (Type 0x0)
 Labels           : 18: Priest Spells
 Category Cooldown: 8 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Mind Blast Cast Pushback Reduction (459604 effect#1), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
@@ -1252,7 +1245,7 @@ Category         : 19 (Type 0x0)
 Labels           : 18: Priest Spells
 Category Cooldown: 8 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Mind Blast Cast Pushback Reduction (459604 effect#1), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
@@ -1274,7 +1267,7 @@ Category         : 19 (Type 0x0)
 Labels           : 18: Priest Spells
 Category Cooldown: 8 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Mind Blast Cast Pushback Reduction (459604 effect#1), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
@@ -1741,7 +1734,7 @@ Duration         : 18 seconds
 Labels           : 18: Priest Spells
 Proc Chance      : 100%
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2)
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Twin Disciplines (1225132 effect#2)
 Family Flags     : 15
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1762,7 +1755,7 @@ Duration         : 18 seconds
 Labels           : 18: Priest Spells
 Proc Chance      : 100%
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2)
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Twin Disciplines (1225132 effect#2)
 Family Flags     : 15
 Attributes       : Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1783,7 +1776,7 @@ Duration         : 18 seconds
 Labels           : 18: Priest Spells
 Proc Chance      : 100%
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2)
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Improved Shadow Word: Pain (15275 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Shared Pain (401969 effects: #1, #2), Despair (431670 effects: #1, #2), Twin Disciplines (1225132 effect#2)
 Family Flags     : 15
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1793,7 +1786,6 @@ Description      : A word of darkness that causes $o1 Shadow damage over $d.
 Tooltip          : $s1 Shadow damage every $t1 seconds.
 
 Name             : Power Word: Shield (desc=Rank 7) (id=10898) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1820,7 +1812,6 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 8) (id=10899) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1847,7 +1838,6 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 9) (id=10900) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -1874,7 +1864,6 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Power Word: Shield (desc=Rank 10) (id=10901) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -2230,7 +2219,7 @@ Category         : 19 (Type 0x0)
 Labels           : 18: Priest Spells
 Category Cooldown: 8 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Mind Blast Cast Pushback Reduction (459604 effect#1), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
@@ -2252,7 +2241,7 @@ Category         : 19 (Type 0x0)
 Labels           : 18: Priest Spells
 Category Cooldown: 8 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Mind Blast Cast Pushback Reduction (459604 effect#1), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
@@ -2274,7 +2263,7 @@ Category         : 19 (Type 0x0)
 Labels           : 18: Priest Spells
 Category Cooldown: 8 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Mind Blast Cast Pushback Reduction (459604 effect#1), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Improved Mind Blast (15273 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Mind Blast Cast Pushback Reduction (23043 effect#1), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Mind Spike (431655 effect#2), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
@@ -2878,7 +2867,6 @@ Effects          :
 Description      : Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by $s1%.
 
 Name             : Twilight Focus (id=14913) [Spell Family (6), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=1, col=5, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(23, 47, 70)]
 Class            : Priest
@@ -2891,7 +2879,6 @@ Effects          :
                    Base Value: 70 | Scaled Value: 70 | Misc Value: 9 | Target: Self (1)
                    Affected Spells: Smite (585), Smite (591), Prayer of Healing (596), Smite (598), Mind Control (605), Smite (984), Prayer of Healing (996), Smite (1004), Resurrection (2006), Resurrection (2010), Lesser Heal (2050), Lesser Heal (2052), Lesser Heal (2053), Heal (2054), Heal (2055), Greater Heal (2060), Flash Heal (2061), Smite (6060), Heal (6063), Heal (6064), Mind Blast (8092), Mind Blast (8102), Mind Blast (8103), Mind Blast (8104), Mind Blast (8105), Mind Blast (8106), Mana Burn (8129), Mana Burn (8131), Flash Heal (9472), Flash Heal (9473), Flash Heal (9474), Starshards (10797), Mana Burn (10874), Mana Burn (10875), Mana Burn (10876), Resurrection (10880), Resurrection (10881), Mind Control (10911), Mind Control (10912), Flash Heal (10915), Flash Heal (10916), Flash Heal (10917), Smite (10933), Smite (10934), Mind Blast (10945), Mind Blast (10946), Mind Blast (10947), Prayer of Healing (10960), Prayer of Healing (10961), Greater Heal (10963), Greater Heal (10964), Greater Heal (10965), Holy Fire (14914), Holy Fire (15261), Holy Fire (15262), Holy Fire (15263), Holy Fire (15264), Holy Fire (15265), Holy Fire (15266), Holy Fire (15267), Mind Flay (15407), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Mind Flay (18807), Starshards (19296), Starshards (19299), Starshards (19302), Starshards (19303), Starshards (19304), Starshards (19305), Resurrection (20770), Greater Heal (25314), Prayer of Healing (25316), Binding Heal (401937), Penance (402174), Penance (402261), Penance (402277), Penance (402284), Penance (402289), Penance (1240720), Penance (1240721), Penance (1240723), Penance (1240724), Penance (1240727), Penance (1240730), Penance (1240732), Penance (1240733), Penance (1240734), Penance (1240736), Binding Heal (1240770), Binding Heal (1240771), Binding Heal (1240772), Binding Heal (1240773), Binding Heal (1240774), Penance (1316991), Penance (1316992), Penance (1316993), Penance (1316994), Penance (1316995)
                    Family Flags: 4, 7, 9, 10, 11, 12, 13, 17, 18, 20, 21, 23, 34, 47, 48, 55, 71, 116, 126
-Hotfixed         : Affects Spells
 Description      : Gives your spells a $s1% chance to not lose casting time when you take damage.
 
 Name             : Holy Fire (desc=Rank 1) (id=14914) [Spell Family (6)] 
@@ -2912,7 +2899,6 @@ Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Nameplate Per
 Effects          :
 #1 (id=687113)   : School Damage (2): holy
                    Base Value: 54 | Scaled Value: 59.2 (delta=0.227273) | Points Per Level: 1.3 | SP Coefficient: 0.75 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (58 -> 54)
 #2 (id=687114)   : Apply Aura (6) | Periodic Damage (3): holy every 2 seconds
                    Base Value: 4 | Scaled Value: 4 | SP Coefficient: 0.05 | Target: Targeted Enemy (6)
 Description      : Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
@@ -3391,7 +3377,7 @@ GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
 Family Flags     : 23
 Attributes       : Not Shapeshifted (16), Is Channelled (34), Track Target in Channel (46), Allow While Not Shapeshifted (caster form) (83), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -3531,7 +3517,7 @@ GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
 Family Flags     : 23
 Attributes       : Not Shapeshifted (16), Is Channelled (34), Track Target in Channel (46), Allow While Not Shapeshifted (caster form) (83), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -3554,7 +3540,7 @@ GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
 Family Flags     : 23
 Attributes       : Not Shapeshifted (16), Is Channelled (34), Track Target in Channel (46), Allow While Not Shapeshifted (caster form) (83), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -3577,7 +3563,7 @@ GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
 Family Flags     : 23
 Attributes       : Not Shapeshifted (16), Is Channelled (34), Track Target in Channel (46), Allow While Not Shapeshifted (caster form) (83), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -3600,7 +3586,7 @@ GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
 Family Flags     : 23
 Attributes       : Not Shapeshifted (16), Is Channelled (34), Track Target in Channel (46), Allow While Not Shapeshifted (caster form) (83), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -3814,7 +3800,7 @@ GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadowform (15473 effect#5), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Pain and Suffering (413251 effect#1), Despair (431670 effects: #1, #2), Melting Faces (456549 effects: #1, #2, #3), S03 - Item - TAQ - Priest - Shadow 2P Bonus (1213675 effect#1), Twin Disciplines (1225132 effect#2), Eureka! (1259823 effects: #1, #2, #3)
 Family Flags     : 23
 Attributes       : Not Shapeshifted (16), Is Channelled (34), Track Target in Channel (46), Allow While Not Shapeshifted (caster form) (83), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -4733,7 +4719,7 @@ GCD              : 1.5 seconds
 Duration         : 15 seconds
 Proc Chance      : 100%
 Proc Flags       : Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#1), Force of Will (18548 effect#1), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Despair (431670 effects: #1, #2), Deliverance (467543 effect#1), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#1), Force of Will (18548 effect#1), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Focused Casting (27828 effect#1), Despair (431670 effects: #1, #2), Deliverance (467543 effect#1)
 Family Flags     : 42
 Attributes       : Include In Advanced Combat Log (72), Can Proc From Procs (122), Aura Points On Client (268), Unknown (493)
 Effects          :
@@ -5097,7 +5083,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 6 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadow Reach (17322 effect#1), Focused Casting (27828 effect#1), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadow Reach (17322 effect#1), Focused Casting (27828 effect#1)
 Family Flags     : 52
 Attributes       : Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Is Channelled (34), No Reflection (39), Track Target in Channel (46), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Turning (5), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -5230,7 +5216,7 @@ GCD              : 1.5 seconds
 Duration         : 18 seconds
 Cooldown         : 6 seconds
 Stance Mask      : 0x08000000
-Affecting Spells : Inner Focus (14751 effects: #1, #2), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Despair (431670 effects: #1, #2), Damage Over Time Increase (1222994 effects: #1, #2), Damage Over Time Increase (1222997 effects: #1, #2)
+Affecting Spells : Inner Focus (14751 effects: #1, #2), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Shadow Reach (17322 effect#1), Force of Will (18544 effect#3), Force of Will (18547 effect#3), Force of Will (18548 effect#3), Force of Will (18549 effect#3), Force of Will (18550 effect#3), Despair (431670 effects: #1, #2)
 Family Flags     : 124
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (493)
 Effects          :
@@ -6294,28 +6280,6 @@ Effects          :
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Trigger Spell: 456549 | Target: Self (1)
 Description      : Mind Blast critical strikes reduce the duration of your next Mind Flay by $456549s1% while increasing its total damage by $456549s3%.
 
-Name             : Weakened Soul Duration Decrease (id=459603) [Spell Family (6), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166536)  : Apply Aura (6) | Add Flat Modifier (107): Spell Duration (1)
-                   Base Value: -2000 | Scaled Value: -2000 | Misc Value: 1 | Target: Self (1)
-                   Affected Spells: Weakened Soul (6788)
-                   Family Flags: 29
-Description      : Reduces the duration of your Weakened Soul by ${$m1/-1000} sec.
-
-Name             : Mind Blast Cast Pushback Reduction (id=459604) [Spell Family (6), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166537)  : Apply Aura (6) | Add Percent Modifier (108): Spell Pushback (9)
-                   Base Value: 50 | Scaled Value: 50 | Misc Value: 9 | Target: Self (1)
-                   Affected Spells: Mind Blast (8092), Mind Blast (8102), Mind Blast (8103), Mind Blast (8104), Mind Blast (8105), Mind Blast (8106), Mind Blast (10945), Mind Blast (10946), Mind Blast (10947)
-                   Family Flags: 13
-Description      : Gives you a $s1% chance to avoid interruption caused by damage while casting Mind Blast.
-
 Name             : Priest Racial Ability (id=459695) [Hidden] 
 Class            : Priest
 School           : Physical
@@ -6562,38 +6526,6 @@ Effects          :
 #1 (id=1205875)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : The Soul of a fallen warrior can be engraved into this slot.
-
-Name             : Damage Over Time Increase (id=1222994) [Spell Family (6), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Spell Level      : 60
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No Threat (42), Allow While Invisible (78), Suppress Caster Procs (112), Suppress Target Procs (113), Aura Never Bounces (148), Suppress Weapon Procs (151), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
-Effects          :
-#1 (id=1210645)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
-                   Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
-                   Affected Spells: Shadow Word: Pain (589), Shadow Word: Pain (594), Shadow Word: Pain (970), Shadow Word: Pain (992), Shadow Word: Pain (2767), Devouring Plague (2944), Starshards (10797), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Mind Flay (15407), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Mind Flay (18807), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Starshards (19296), Starshards (19299), Starshards (19302), Starshards (19303), Starshards (19304), Starshards (19305), Vampiric Touch (402668), Mind Sear (413259), Void Plague (425204)
-                   Family Flags: 15, 21, 23, 42, 52, 100, 124
-#2 (id=1210646)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
-                   Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Shadow Word: Pain (589), Shadow Word: Pain (594), Shadow Word: Pain (970), Shadow Word: Pain (992), Shadow Word: Pain (2767), Devouring Plague (2944), Starshards (10797), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Mind Flay (15407), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Mind Flay (18807), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Starshards (19296), Starshards (19299), Starshards (19302), Starshards (19303), Starshards (19304), Starshards (19305), Vampiric Touch (402668), Mind Sear (413259), Void Plague (425204)
-                   Family Flags: 15, 21, 23, 42, 52, 100, 124
-Description      : Increases the damage dealt by your damage over time spells by $s1%.
-
-Name             : Damage Over Time Increase (id=1222997) [Spell Family (6), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Spell Level      : 60
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No Threat (42), Allow While Invisible (78), Suppress Caster Procs (112), Suppress Target Procs (113), Aura Never Bounces (148), Suppress Weapon Procs (151), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
-Effects          :
-#1 (id=1210651)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
-                   Base Value: 4 | Scaled Value: 4 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
-                   Affected Spells: Shadow Word: Pain (589), Shadow Word: Pain (594), Shadow Word: Pain (970), Shadow Word: Pain (992), Shadow Word: Pain (2767), Devouring Plague (2944), Starshards (10797), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Mind Flay (15407), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Mind Flay (18807), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Starshards (19296), Starshards (19299), Starshards (19302), Starshards (19303), Starshards (19304), Starshards (19305), Vampiric Touch (402668), Mind Sear (413259), Void Plague (425204)
-                   Family Flags: 15, 21, 23, 42, 52, 100, 124
-#2 (id=1210652)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
-                   Base Value: 4 | Scaled Value: 4 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Shadow Word: Pain (589), Shadow Word: Pain (594), Shadow Word: Pain (970), Shadow Word: Pain (992), Shadow Word: Pain (2767), Devouring Plague (2944), Starshards (10797), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Mind Flay (15407), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Mind Flay (18807), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Starshards (19296), Starshards (19299), Starshards (19302), Starshards (19303), Starshards (19304), Starshards (19305), Vampiric Touch (402668), Mind Sear (413259), Void Plague (425204)
-                   Family Flags: 15, 21, 23, 42, 52, 100, 124
-Description      : Increases the damage dealt by your damage over time spells by $s1%.
 
 Name             : Twin Disciplines (id=1225132) [Spell Family (6), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=3, max_rank=5, req_points=0]
@@ -7394,7 +7326,6 @@ Attributes       : Do Not Log (8), Include In Advanced Combat Log (72), Not an A
 Effects          :
 #1 (id=1363937)  : Apply Aura (6) | Modify Total Stat% (137)
                    Base Value: 15 | Scaled Value: 15 | Stat: Spi | Radius: 100 yards | Target: Party in Area (20) -> Self (1)
-Hotfixed         : Sub Type (80 -> 137), Misc Value (4 -> 0), Misc Value 2 (0 -> 16)
 Description      : Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by $1326159s1% for $d.
 
 Tooltip          : Spirit increased by $w1%.
