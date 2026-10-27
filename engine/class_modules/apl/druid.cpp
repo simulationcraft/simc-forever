@@ -39,6 +39,7 @@ void druid( player_t* p )
   precombat->add_action( "snapshot_stats" );
   precombat->add_action( "entangling_roots" );
 
+  default_->add_action( "faerie_fire,if=time<1" );
   default_->add_action( "hurricane,if=time<10" );
   default_->add_action( "moonfire,if=!ticking" );
   default_->add_action( "starfire" );
