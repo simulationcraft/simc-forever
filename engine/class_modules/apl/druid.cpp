@@ -34,6 +34,10 @@ std::string temporary_enchant( const player_t* )
 void druid( player_t* p )
 {
   action_priority_list_t* default_ = p->get_action_priority_list( "default" );
+  action_priority_list_t* precombat = p->get_action_priority_list( "precombat" );
+
+  precombat->add_action( "snapshot_stats" );
+  precombat->add_action( "entangling_roots" );
 
   default_->add_action( "auto_attack" );
   default_->add_action( "moonfire,if=!ticking" );

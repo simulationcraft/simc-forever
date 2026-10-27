@@ -28,6 +28,11 @@ struct druid_t final : public parse_player_effects_t
   std::string default_food() const override   { return druid_apl::food( this ); }
 
   action_t* create_action( std::string_view name, std::string_view options_str ) override;
+
+  struct talents_t
+  {
+    player_talent_t improved_entangling_roots;
+  } talent;
 };
 
 // DRUID MODULE INTERFACE ===================================================
@@ -80,6 +85,8 @@ void druid_t::init_spells()
 
   parse_all_class_passives();
   parse_all_passive_talents();
+
+  talent.improved_entangling_roots = find_talent_spell( talent_tree::CLASS, "Improved Entangling Roots" );
 }
 
 // ==========================================================================
@@ -142,6 +149,35 @@ struct starfire_t : public druid_spell_t
   {
     parse_options( options_str );
   }
+};
+
+constexpr std::array entangling_roots_ranks{
+    spell_container_t().set_spell( 339 ), // 19975 is also a rank 1 spell id, it is used by nature's grasp
+    spell_container_t().set_spell( 1062 ),
+    spell_container_t().set_spell( 5195 ),
+    spell_container_t().set_spell( 5196 ),
+    spell_container_t().set_spell( 9852 ),
+    spell_container_t().set_spell( 9853 ),
+};
+struct entangling_roots_t : public druid_spell_t
+{
+  entangling_roots_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "entangling_roots", player, player->find_rank( entangling_roots_ranks )->spell( player ) )
+  {
+    parse_options( options_str );
+    // TODO: verify periodic can crit
+    break_chance = break_chance / ( 1.0 + p()->talent.improved_entangling_roots->effectN( 1 ).percent() );
+  }
+
+  void tick( dot_t* d ) override
+  {
+    druid_spell_t::tick( d );
+  }
+
+  // TODO: Didn't get nearly enough data from beta to determine if this is the right value
+  // 20% generates a geometric distribution with a mean of 5 hits
+  // It is unlikely that roots is used in a real apl, but some model for the dot and break is needed for testing
+  double break_chance = .2;
 };
 
 // ==========================================================================
@@ -217,6 +253,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new moonfire_t( this, options_str );
   if ( name == "starfire" )
     return new starfire_t( this, options_str );
+  if ( name == "entangling_roots" )
+    return new entangling_roots_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
 }
