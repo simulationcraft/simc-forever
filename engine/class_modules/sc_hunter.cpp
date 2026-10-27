@@ -99,6 +99,9 @@ struct hunter_auto_shot_t : public hunter_ranged_t
 
   bool ready() override
   {
+    // TODO: Copied from auto attacks and not correct for hunter.
+    // Figure out the auto shot timers around movement. Roughly seemed like you could move until about 0.5s before
+    // the next shot to avoid interruption
     if ( player->is_moving() )
     {
       return false;
