@@ -47,6 +47,13 @@ void gear_stats_t::add_stat( stat_e stat,
 
     case STAT_SPELL_POWER:       spell_power       += value; break;
 
+    case STAT_ARCANE_SPELL_POWER: school_spell_power[ SCHOOL_ARCANE ] += value; break;
+    case STAT_FIRE_SPELL_POWER:   school_spell_power[ SCHOOL_FIRE   ] += value; break;
+    case STAT_FROST_SPELL_POWER:  school_spell_power[ SCHOOL_FROST  ] += value; break;
+    case STAT_HOLY_SPELL_POWER:   school_spell_power[ SCHOOL_HOLY   ] += value; break;
+    case STAT_NATURE_SPELL_POWER: school_spell_power[ SCHOOL_NATURE ] += value; break;
+    case STAT_SHADOW_SPELL_POWER: school_spell_power[ SCHOOL_SHADOW ] += value; break;
+
     case STAT_ATTACK_POWER:             attack_power             += value; break;
     case STAT_RANGED_ATTACK_POWER:      ranged_attack_power             += value; break;
     case STAT_EXPERTISE_RATING:         expertise_rating         += value; break;
@@ -122,6 +129,13 @@ void gear_stats_t::set_stat( stat_e stat,
 
     case STAT_SPELL_POWER:       spell_power       = value; break;
 
+    case STAT_ARCANE_SPELL_POWER: school_spell_power[ SCHOOL_ARCANE ] = value; break;
+    case STAT_FIRE_SPELL_POWER:   school_spell_power[ SCHOOL_FIRE   ] = value; break;
+    case STAT_FROST_SPELL_POWER:  school_spell_power[ SCHOOL_FROST  ] = value; break;
+    case STAT_HOLY_SPELL_POWER:   school_spell_power[ SCHOOL_HOLY   ] = value; break;
+    case STAT_NATURE_SPELL_POWER: school_spell_power[ SCHOOL_NATURE ] = value; break;
+    case STAT_SHADOW_SPELL_POWER: school_spell_power[ SCHOOL_SHADOW ] = value; break;
+
     case STAT_ATTACK_POWER:             attack_power             = value; break;
     case STAT_RANGED_ATTACK_POWER:      ranged_attack_power             = value; break;
     case STAT_EXPERTISE_RATING:         expertise_rating         = value; break;
@@ -195,6 +209,13 @@ double gear_stats_t::get_stat( stat_e stat ) const
     case STAT_MAX_RUNIC:  return default_value;
 
     case STAT_SPELL_POWER:       return spell_power;
+
+    case STAT_ARCANE_SPELL_POWER: return school_spell_power[ SCHOOL_ARCANE ];
+    case STAT_FIRE_SPELL_POWER:   return school_spell_power[ SCHOOL_FIRE   ];
+    case STAT_FROST_SPELL_POWER:  return school_spell_power[ SCHOOL_FROST  ];
+    case STAT_HOLY_SPELL_POWER:   return school_spell_power[ SCHOOL_HOLY   ];
+    case STAT_NATURE_SPELL_POWER: return school_spell_power[ SCHOOL_NATURE ];
+    case STAT_SHADOW_SPELL_POWER: return school_spell_power[ SCHOOL_SHADOW ];
 
     case STAT_ATTACK_POWER:             return attack_power;
     case STAT_RANGED_ATTACK_POWER:      return ranged_attack_power;

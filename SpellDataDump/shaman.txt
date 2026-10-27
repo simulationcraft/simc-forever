@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Block (desc=Passive) (id=107) [Passive] 
 Class            : Warrior, Paladin, Shaman
 School           : Physical
@@ -569,6 +569,7 @@ Effects          :
 Description      : Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $5672a1 yards for $5672s1 every $5672t1 seconds.
 
 Name             : Healing Stream (desc=Rank 1) (id=5672) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -576,7 +577,7 @@ Spell Level      : 20
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=683519)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -784,6 +785,7 @@ Effects          :
 Description      : Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $6352r yards for $6352s1 Fire damage.
 
 Name             : Healing Stream (desc=Rank 2) (id=6371) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -791,13 +793,14 @@ Spell Level      : 30
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=684681)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream (desc=Rank 3) (id=6372) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -805,7 +808,7 @@ Spell Level      : 40
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=684770)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 7 | Scaled Value: 7 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -2812,6 +2815,7 @@ Effects          :
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Healing Stream (desc=Rank 4) (id=10460) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2819,13 +2823,14 @@ Spell Level      : 50
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=689163)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 9 | Scaled Value: 9 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream (desc=Rank 5) (id=10461) [Spell Family (11), Passive] 
+Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2833,7 +2838,7 @@ Spell Level      : 60
 Labels           : 24: Shaman Spells
 Affecting Spells : Restorative Totems (16187 effect#2), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
 Family Flags     : 13
-Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Unknown (493)
+Attributes       : Passive (6), Periodic Can Crit (265), Aura Points On Client (268), Heal Prediction (280), Do Not Log Full Overheal (323), Unknown (493)
 Effects          :
 #1 (id=688444)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
                    Base Value: 11 | Scaled Value: 11 | SP Coefficient: 0.022 | Radius: 30 yards | Target: Self (1)
@@ -4066,21 +4071,23 @@ Effects          :
 Description      : Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by $s1%.
 
 Name             : Elemental Focus (id=16164) [Spell Family (11), Passive, Hidden] 
+Hotfixed         : Proc Chance (10 -> 100), Description
 Talent Entry     : Generic [tree=class, row=3, col=1, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Physical
 Spell Type       : None
 Spell Level      : 1
 Labels           : 24: Shaman Spells
-Proc Chance      : 10%
+Proc Chance      : 100%
 Proc Flags       : Yellow Melee, White Ranged, Yellow Ranged, Generic Helpful, Generic Hostile Spell, Magic Heal, Magic Hostile Spell
 Affecting Spells : S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#2)
 Family Flags     : 83
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Can Proc From Procs (122), Unknown (493)
 Effects          :
 #1 (id=694887)   : Apply Aura (6) | Proc Trigger Spell (42): Clearcasting
-                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 16246 | Target: Self (1)
-Description      : Gives you a $h% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by $16246s1%.
+                   Base Value: 10 | Scaled Value: 10 | Trigger Spell: 16246 | Target: Self (1)
+Hotfixed         : Base Value (0 -> 10)
+Description      : Gives you a $s1% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by $16246s1%.
 
 Name             : Elemental Mastery (id=16166) [Spell Family (11)] 
 Hotfixed         : Attributes
@@ -9160,7 +9167,8 @@ Effects          :
 #1 (id=1235457)  : School Damage (2): fire
                    Base Value: 196 | Scaled Value: 204.8 (delta=0.253259) | Points Per Level: 1.1 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 #2 (id=1340790)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 53.6 | Points Per Level: 4.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 20 | Scaled Value: 20 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+Hotfixed         : Points per Level (4.2 -> 0)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 Name             : Lava Burst (id=1238373) [Spell Family (11)] 

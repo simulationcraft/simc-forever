@@ -68,6 +68,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <utility>
+#include <ranges>
 
 namespace
 {
@@ -1244,6 +1245,7 @@ player_t::~player_t() = default;
 player_t::base_initial_current_t::base_initial_current_t() :
   stats(),
   spell_power_per_intellect( 0 ),
+  spell_power_per_spirit( 0 ),
   spell_power_per_attack_power( 0 ),
   attack_power_per_strength( 0 ),
   attack_power_per_agility( 0 ),
@@ -1270,6 +1272,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   block_value(),
   all_crit( 0 ),
   all_haste( 1.0 ),
+  mana_regen_while_casting( 0 ),
   melee_haste( 1.0 ),
   spell_haste( 1.0 ),
   ranged_haste( 1.0 ),
@@ -1317,6 +1320,7 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
 {
   fmt::format_to( out, "{}", s.stats );
   fmt::format_to( out, " spell_power_per_intellect={:.6g}", s.spell_power_per_intellect );
+  fmt::format_to( out, " spell_power_per_spirit={:.6g}", s.spell_power_per_spirit );
   fmt::format_to( out, " spell_power_per_attack_power={:.6g}", s.spell_power_per_attack_power );
   fmt::format_to( out, " attack_power_per_strength={:.6g}", s.attack_power_per_strength );
   fmt::format_to( out, " attack_power_per_agility={:.6g}", s.attack_power_per_agility );
@@ -1528,6 +1532,11 @@ void player_t::init_base_stats()
     base.avoidance      = 0.0;
     base.crit_avoidance = get_passive_player_value( base.crit_avoidance, "crit_avoidance" );
 
+    base.mana_regen_while_casting = get_passive_player_value( base.mana_regen_while_casting, "mana_regen_while_casting" );
+
+    base.spell_power_per_spirit =
+      get_passive_player_value( base.spell_power_per_spirit, "spell_power_from_attribute", ATTR_SPIRIT );
+
     base.base_armor_multiplier = get_passive_player_value( base.base_armor_multiplier, "base_armor_multiplier" );
     base.armor_multiplier      = get_passive_player_value( base.armor_multiplier, "armor_multiplier" );
 
@@ -1584,6 +1593,7 @@ void player_t::init_base_stats()
       switch ( rt )
       {
         case RESOURCE_HEALTH:
+          rt_base = dbc->health_base( type, level() );
           break;
         case RESOURCE_MANA: // Forever - regen comes from spirit so base regen is 0
           rt_base = dbc->resource_base( type, level() );
@@ -2206,6 +2216,13 @@ double mana_from_intellect( const player_t* p )
   double intellect = std::floor( p->intellect() );
   return std::min( intellect, 20.0 ) + ( 15.0 * std::max( intellect - 20.0, 0.0 ) );
 }
+
+// TODO check if accurate in Forever, based from emulated servers
+double health_from_stamina( const player_t* p )
+{
+  double stamina = std::floor( p->stamina() );
+  return std::min( stamina, 20.0 ) + ( p->current.health_per_stamina * std::max( stamina - 20.0, 0.0 ) );
+}
 /**
  * Compute max resource r for an actor, based on their set base resources
  */
@@ -2217,7 +2234,7 @@ double compute_max_resource( player_t* p, resource_e r )
 
   // re-ordered 2016-06-19 by Theck - initial_multiplier should do something for RESOURCE_HEALTH
   if ( r == RESOURCE_HEALTH )
-    value += std::floor( p->stamina() ) * p->current.health_per_stamina;
+    value += health_from_stamina( p );
   if ( r == RESOURCE_MANA && p->is_player() )
     value += mana_from_intellect( p );
 
@@ -4186,7 +4203,7 @@ void player_t::min_threshold_trigger()
     if ( pres == RESOURCE_MANA && is_player() && recent_cast() )
     {
       regen_delay = last_cast + 5_s - sim->current_time();
-      rps         = mana_regen_from_spirit();
+      rps         = resources.base_regen_per_second[ pres ] + mana_regen_from_spirit();
     }
 
     if ( rps > 0 )
@@ -4365,10 +4382,12 @@ double player_t::resource_regen_per_second( resource_e r ) const
 
   if ( r == RESOURCE_MANA && is_player() )
   {
-    if ( recent_cast() )
-      return 0;
+    double spirit_regen = mana_regen_from_spirit();
 
-    reg += mana_regen_from_spirit();
+    if ( recent_cast() )
+      spirit_regen *= std::min( 1.0, composite_mana_regen_while_casting() );
+
+    reg += spirit_regen;
   }
 
   if ( resources.hasted[ r ] )
@@ -4783,11 +4802,21 @@ double player_t::composite_spell_cast_speed() const
   return cache.spell_haste();
 }
 
-double player_t::composite_spell_power( school_e /* school */ ) const
+double player_t::composite_spell_power( school_e school ) const
 {
   double sp = current.stats.spell_power;
 
   sp += current.spell_power_per_intellect * cache.intellect();
+  sp += current.spell_power_per_spirit * cache.spirit();
+
+  // Multi-school spells use the highest of their schools
+  double school_sp = 0.0;
+  for ( auto s = SCHOOL_ARCANE; s < SCHOOL_PHYSICAL; s++ )
+  {
+    if ( dbc::is_school( school, s ) )
+      school_sp = std::max( school_sp, current.stats.school_spell_power[ s ] );
+  }
+  sp += school_sp;
 
   return sp;
 }
@@ -4859,6 +4888,11 @@ double player_t::composite_bonus_armor() const
 double player_t::composite_leech() const
 {
   return current.leech + apply_combat_rating_dr( RATING_LEECH, composite_leech_rating() / current.rating.leech );
+}
+
+double player_t::composite_mana_regen_while_casting() const
+{
+  return current.mana_regen_while_casting;
 }
 
 double player_t::composite_run_speed() const
@@ -5259,6 +5293,11 @@ void player_t::invalidate_cache( cache_e c )
         invalidate_cache( CACHE_SPELL_POWER );
       if ( current.spell_crit_per_intellect > 0 )
         invalidate_cache( CACHE_SPELL_CRIT_CHANCE );
+      break;
+
+    case CACHE_SPIRIT:
+      if ( current.spell_power_per_spirit > 0 )
+        invalidate_cache( CACHE_SPELL_POWER );
       break;
 
     case CACHE_SPELL_POWER:
@@ -6875,7 +6914,7 @@ void player_t::recalculate_resource_max( resource_e resource_type, gain_t* sourc
     case RESOURCE_HEALTH:
     {
       // Calculate & set maximum health
-      resources.max[ resource_type ] += floor( stamina() ) * current.health_per_stamina;
+      resources.max[ resource_type ] += health_from_stamina( this );
 
       // Make sure the player starts combat with full health
       if ( !in_combat )
@@ -7051,6 +7090,12 @@ void player_t::stat_gain( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_STR_AGI_INT:
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
+    case STAT_ARCANE_SPELL_POWER:
+    case STAT_FIRE_SPELL_POWER:
+    case STAT_FROST_SPELL_POWER:
+    case STAT_HOLY_SPELL_POWER:
+    case STAT_NATURE_SPELL_POWER:
+    case STAT_SHADOW_SPELL_POWER:
     case STAT_ATTACK_POWER:
     case STAT_RANGED_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
@@ -7211,6 +7256,12 @@ void player_t::stat_loss( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_STR_AGI_INT:
     case STAT_SPIRIT:
     case STAT_SPELL_POWER:
+    case STAT_ARCANE_SPELL_POWER:
+    case STAT_FIRE_SPELL_POWER:
+    case STAT_FROST_SPELL_POWER:
+    case STAT_HOLY_SPELL_POWER:
+    case STAT_NATURE_SPELL_POWER:
+    case STAT_SHADOW_SPELL_POWER:
     case STAT_ATTACK_POWER:
     case STAT_RANGED_ATTACK_POWER:
     case STAT_EXPERTISE_RATING:
@@ -10864,6 +10915,32 @@ const spell_data_t* player_t::find_spell( unsigned int id, specialization_e s ) 
   return spell_data_t::not_found();
 }
 
+const spell_container_t* player_t::find_rank( util::span<const spell_container_t> ranks, int rank,
+                                              player_t::rank_ptype_t field ) const
+{
+  assert( !ranks.empty() );
+
+  if ( rank == RANK_MAX )
+    return &ranks.back();
+  else if ( rank > 0 )
+  {
+    if ( static_cast<size_t>( rank ) <= ranks.size() )
+      return &ranks[ rank - 1 ];
+  }
+  else
+  {
+    // rank spells are expected to be ordered lowest -> highest, otherwise condition 1 fails
+    // as a result, first ok spell while reverse iterating yields the highest rank spell that is available
+
+    // if the member being referenced for existence is not &spell_container_t::spell, provide a non-default field
+    for ( const auto& it : ranks | std::ranges::views::reverse )
+      if ( auto reference_spell = std::invoke( field, it, this ); reference_spell && reference_spell->ok() )
+        return &it;
+  }
+
+  assert( false && "unreachable" );
+}
+
 namespace
 {
 std::unique_ptr<expr_t> deprecate_expression( player_t& p, util::string_view old_name, util::string_view new_name, action_t* a = nullptr  )
@@ -13983,6 +14060,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { P_COOLDOWN,                               "cooldown"                         },  // 11
   { P_RESOURCE_COST_1,                        "cost"                             },  // 14
   { P_CRIT_BONUS,                             "crit_bonus"                       },  // 15
+  { P_PENETRATION,                            "hit"                              },  // 16
   { P_CHAIN_TARGETS,                          "chain_target"                     },  // 17
   { P_PROC_CHANCE,                            "proc_chance"                      },  // 18
   { P_TICK_TIME,                              "period"                           },  // 19
@@ -14004,12 +14082,14 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_SPELL_CRIT_CHANCE,                  "spell_crit"                       },  // 57
   { A_MOD_DAMAGE_PERCENT_DONE,                "damage_multiplier"                },  // 79
   { A_MOD_PERCENT_STAT,                       "base_attribute_multiplier"        },  // 80
+  { A_RESTORE_POWER,                          "resource_regen"                   },  // 85
   { A_MOD_RESISTANCE_PCT,                     "armor_multiplier"                 },  // 101
   { A_MOD_POWER_REGEN_PERCENT,                "resource_regen"                   },  // 110
   { A_MOD_HEALING_RECEIVED_PCT,               "healing_received_multiplier"      },  // 118
   { A_INCREASE_RESOURCE_PCT,                  "resource_multiplier"              },  // 119
   { A_MOD_SPEED_ALWAYS,                       "move_speed_modifier_-_stacking"   },  // 129
   { A_INCREASE_RESOURCE_PCT,                  "resource_multiplier"              },  // 132
+  { A_MOD_MANA_REGEN_INTERRUPT,               "mana_regen_while_casting"         },  // 134
   { A_MOD_HEALING_DONE_PERCENT,               "healing_multiplier"               },  // 136
   { A_MOD_TOTAL_STAT_PERCENTAGE,              "attribute_multiplier"             },  // 137
   { -(int)A_MOD_TOTAL_STAT_PERCENTAGE,        "armor_type_multiplier"            },  // -137
@@ -14018,6 +14098,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_ATTACK_POWER_PCT,                   "attack_power_multiplier",         },  // 166
   { A_MOD_RANGED_ATTACK_POWER_PCT,            "ranged_attack_power_multiplier",  },  // 167
   { A_MOD_RECHARGE_TIME_PCT_CATEGORY_MASK,    "charge_cooldown"                  },  // 173
+  { A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT,       "spell_power_from_attribute"       },  // 174
   { A_MOD_MAX_MANA_PCT,                       "resource_multiplier"              },  // 178
   { A_MOD_ATTACKER_MELEE_CRIT_CHANCE,         "crit_avoidance"                   },  // 187
   { A_HASTE_ALL,                              "all_haste"                        },  // 193
@@ -14097,8 +14178,9 @@ struct misc_expansion_t
   std::function<std::string( int )> formatter;
 };
 
-static const std::array<misc_expansion_t, 11> misc_expansion_map = { {
+static const std::array<misc_expansion_t, 12> misc_expansion_map = { {
   { "attribute_value",           MISC_LIST_ATTR,     &attr_formatter     },
+  { "spell_power_from_attribute", MISC_LIST_ATTR,    &attr_formatter     },
   { "base_attribute_multiplier", MISC_LIST_ATTR,     &attr_formatter     },
   { "attribute_multiplier",      MISC_BITMAP_ATTR,   &attr_formatter     },
   { "armor_type_multiplier",     MISC_BITMAP_ATTR,   &attr_formatter     },
@@ -14354,6 +14436,19 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_MANA_REGEN_PCT:  // 379
         misc_type = RESOURCE_MANA;  // hardcode to mana
         pct_val = modifying_eff.average( this );
+        break;
+      case A_RESTORE_POWER:  // 85
+        if ( modifying_eff.misc_value1() != POWER_MANA )  // only mana per 5
+          return false;
+        misc_type = util::power_type_to_resource( static_cast<power_e>( modifying_eff.misc_value1() ) );
+        flat_val = modifying_eff.average( this ) / 5.0;
+        break;
+      case A_MOD_MANA_REGEN_INTERRUPT:  // 134
+        flat_val = modifying_eff.average( this ) * 0.01;
+        break;
+      case A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT:  // 174
+        misc_type = modifying_eff.misc_value2();  // Stat type is in misc_value2
+        flat_val = modifying_eff.average( this ) * 0.01;
         break;
       case A_MOD_TARGET_ARMOR_PCT:  // 280
       case A_MOD_RANGED_AND_MELEE_AUTO_ATTACK_SPEED:  // 342
@@ -14754,6 +14849,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
         // action_t modifiers, these don't modify spell data
         case P_CRIT:  // 7
         case P_CRIT_BONUS:  // 15
+        case P_PENETRATION:  // 16, "resist miss chance" (spell hit) in classic data
           flat_val *= 0.01;
           SC_FALLTHROUGH;
         case P_GENERIC:  // 0
@@ -15505,8 +15601,9 @@ void player_t::print_parsed_effects( report::sc_html_stream& os ) const
   os << "</div></div>\n";
 }
 
-void player_t::parse_passive_item_effect( const spell_data_t* spell )
+void player_t::parse_passive_item_effect( const spell_data_t* spell, uint32_t mask )
 {
+  register_passive_effect_mask( spell, mask );
   parse_passive_effects( spell, true, PARSE_SOURCE_ITEM );
 }
 

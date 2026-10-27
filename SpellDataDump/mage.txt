@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70450 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
 Name             : Blizzard (desc=Rank 1) (id=10) [Spell Family (3)] 
 Class            : Mage
 School           : Frost
@@ -11,7 +11,7 @@ Duration         : 8 seconds
 Category         : 2518 (Type 0x0)
 Labels           : 17: Mage Spells
 Proc Chance      : 100%
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -43,7 +43,7 @@ Velocity         : 28 yards/sec
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -73,7 +73,7 @@ Cooldown         : 10 seconds
 Category         : 50 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 9, 19, 20
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -105,7 +105,7 @@ Labels           : 17: Mage Spells
 Category Cooldown: 25 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 6, 19
 Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Can Proc From Procs (122), Show Mechanic as Combat Text (213), Can Proc From Suppressed Target Procs (254), Can Proc from Suppressed Caster Procs (385), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -230,7 +230,7 @@ Velocity         : 28 yards/sec
 Duration         : 6 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -385,7 +385,7 @@ Velocity         : 28 yards/sec
 Duration         : 6 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -416,7 +416,7 @@ Labels           : 17: Mage Spells
 Category Cooldown: 25 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 6, 19
 Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -828,7 +828,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 3 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -849,7 +849,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 4 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -870,7 +870,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1041,7 +1041,7 @@ Labels           : 17: Mage Spells
 Category Cooldown: 25 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 6, 19
 Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1090,7 +1090,7 @@ GCD              : 1.5 seconds
 Duration         : 8 seconds
 Category         : 2518 (Type 0x0)
 Labels           : 17: Mage Spells
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1110,6 +1110,7 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Frost Ward (desc=Rank 1) (id=6143) [Spell Family (3)] 
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1121,20 +1122,20 @@ Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=685051)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 162 | Scaled Value: 162 | Misc Value: 0x10 | Target: Self (1)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
-#2 (id=685052)   : Apply Aura (6) | Reflect Spells (74)
-                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Self (1)
-                   Affected School(s): Frost
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+#2 (id=685052)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Self (1)
+Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
-Description      : Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]
+Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Arcane Missile (desc=Rank 1) (id=7268) [Spell Family (3)] 
 Class            : Mage
@@ -1323,7 +1324,7 @@ Velocity         : 28 yards/sec
 Duration         : 7 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1425,7 +1426,7 @@ Velocity         : 28 yards/sec
 Duration         : 7 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1455,7 +1456,7 @@ Velocity         : 28 yards/sec
 Duration         : 8 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1485,7 +1486,7 @@ Velocity         : 28 yards/sec
 Duration         : 8 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1552,7 +1553,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1573,7 +1574,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1679,7 +1680,7 @@ GCD              : 1.5 seconds
 Duration         : 8 seconds
 Category         : 2518 (Type 0x0)
 Labels           : 17: Mage Spells
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -1927,6 +1928,7 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Frost Ward (desc=Rank 2) (id=8461) [Spell Family (3)] 
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1938,22 +1940,23 @@ Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=686139)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 284 | Scaled Value: 284 | Misc Value: 0x10 | Target: Self (1)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
-#2 (id=686140)   : Apply Aura (6) | Reflect Spells (74)
-                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Self (1)
-                   Affected School(s): Frost
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+#2 (id=686140)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Self (1)
+Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
-Description      : Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]
+Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Frost Ward (desc=Rank 3) (id=8462) [Spell Family (3)] 
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1965,20 +1968,20 @@ Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=686192)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 463 | Scaled Value: 463 | Misc Value: 0x10 | Target: Self (1)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
-#2 (id=686193)   : Apply Aura (6) | Reflect Spells (74)
-                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Self (1)
-                   Affected School(s): Frost
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+#2 (id=686193)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Self (1)
+Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
-Description      : Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]
+Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Cone of Cold (desc=Rank 2) (id=8492) [Spell Family (3)] 
 Class            : Mage
@@ -1993,7 +1996,7 @@ Cooldown         : 10 seconds
 Category         : 50 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 9, 19, 20
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2371,7 +2374,7 @@ Cooldown         : 10 seconds
 Category         : 50 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 9, 19, 20
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2402,7 +2405,7 @@ Cooldown         : 10 seconds
 Category         : 50 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 9, 19, 20
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2433,7 +2436,7 @@ Cooldown         : 10 seconds
 Category         : 50 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Improved Cone of Cold (11190 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Winter's Chill (12579 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 9, 19, 20
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2553,6 +2556,7 @@ Description      : Dampens magic used against the targeted party member, decreas
 Tooltip          : Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 Name             : Frost Ward (desc=Rank 4) (id=10177) [Spell Family (3)] 
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2564,20 +2568,20 @@ Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=687290)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 668 | Scaled Value: 668 | Misc Value: 0x10 | Target: Self (1)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
-#2 (id=687291)   : Apply Aura (6) | Reflect Spells (74)
-                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Self (1)
-                   Affected School(s): Frost
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+#2 (id=687291)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Self (1)
+Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
-Description      : Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]
+Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Frostbolt (desc=Rank 8) (id=10179) [Spell Family (3)] 
 Class            : Mage
@@ -2592,7 +2596,7 @@ Velocity         : 28 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2622,7 +2626,7 @@ Velocity         : 28 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2652,7 +2656,7 @@ Velocity         : 28 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2680,7 +2684,7 @@ GCD              : 1.5 seconds
 Duration         : 8 seconds
 Category         : 2518 (Type 0x0)
 Labels           : 17: Mage Spells
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -2710,7 +2714,7 @@ GCD              : 1.5 seconds
 Duration         : 8 seconds
 Category         : 2518 (Type 0x0)
 Labels           : 17: Mage Spells
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -2740,7 +2744,7 @@ GCD              : 1.5 seconds
 Duration         : 8 seconds
 Category         : 2518 (Type 0x0)
 Labels           : 17: Mage Spells
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -2952,7 +2956,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -2973,7 +2977,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Arcane Potency (24544 effects: #1, #2), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11, 18
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -3156,7 +3160,7 @@ Labels           : 17: Mage Spells
 Category Cooldown: 25 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 6, 19
 Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -3469,8 +3473,6 @@ Effects          :
 Description      : When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by $28682s1%.  This effect lasts until you have caused $n non-periodic critical strikes with Fire spells.
 
 Name             : Piercing Ice (id=11151) [Spell Family (3), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=3, col=9, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(2, 4, 6)]
 Class            : Mage
 School           : Frost
 Spell Type       : None
@@ -3489,7 +3491,7 @@ Effects          :
 Description      : Increases the damage done by your Frost spells by $s1%.
 
 Name             : Frost Channeling (id=11160) [Spell Family (3), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
+Talent Entry     : Generic [tree=class, row=3, col=9, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(-5, -10, -15)]
                  : Effect#2 [op=set, values=(-10, -20, -30)]
 Class            : Mage
@@ -3583,7 +3585,7 @@ Hotfixed         : NEW EFFECT
 Description      : Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
 
 Name             : Improved Blizzard (id=11185) [Spell Family (3), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=3, col=12, max_rank=3, req_points=0]
+Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(-15, -25, -40)]
 Class            : Mage
 School           : Physical
@@ -3597,9 +3599,11 @@ Effects          :
 Description      : Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by $m1% for $12484d.
 
 Name             : Frost Warding (id=11189) [Spell Family (3), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=1, col=9, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(15, 30)]
                  : Effect#2 [op=set, values=(10, 20)]
+                 : Effect#3 [op=set, values=(10, 20)]
 Class            : Mage
 School           : Physical
 Spell Type       : None
@@ -3612,10 +3616,16 @@ Effects          :
                    Affected Spells: Frost Armor (168), Frost Armor (7300), Frost Armor (7301), Ice Armor (7302), Ice Armor (7320), Ice Armor (10219), Ice Armor (10220)
                    Family Flags: 25
 #2 (id=689702)   : Apply Aura (6) | Add Flat Modifier (107): Spell Effect 2 (12)
-                   Base Value: 10 | Scaled Value: 10 | Misc Value: 12 | Target: Self (1)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 12 | Target: Self (1)
                    Affected Spells: Frost Ward (6143), Frost Ward (8461), Frost Ward (8462), Frost Ward (10177), Frost Ward (28609), Frost Ward (412202), Frost Ward (412205), Frost Ward (412207), Frost Ward (412209), Frost Ward (412210)
                    Family Flags: 8
-Description      : Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by $s1%. In addition, gives your Frost Ward a $s2% chance to reflect Frost spells and effects while active.
+Hotfixed         : Base Value (10 -> 0)
+#3 (id=1365208)  : Apply Aura (6) | Add Percent Modifier (108): Spell Effect 1 (3)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 3 | Target: Self (1)
+                   Affected Spells: Frost Ward (6143), Frost Ward (8461), Frost Ward (8462), Frost Ward (10177), Ice Barrier (11426), Ice Barrier (13031), Ice Barrier (13032), Ice Barrier (13033), Frost Ward (28609), Frost Ward (412202), Frost Ward (412205), Frost Ward (412207), Frost Ward (412209), Frost Ward (412210)
+                   Family Flags: 8, 32
+Hotfixed         : NEW EFFECT
+Description      : Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by $s1%, gives your Frost Ward a $s2% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by $s3%.
 
 Name             : Improved Cone of Cold (id=11190) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=5, col=9, max_rank=3, req_points=0]
@@ -3839,6 +3849,7 @@ Description      : Hurls an immense fiery boulder that causes $s1 Fire damage an
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Ice Barrier (desc=Rank 1) (id=11426) [Spell Family (3)] 
+Hotfixed         : Affecting Spells, Description, Tooltip
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]
 Class            : Mage
 School           : Frost
@@ -3851,16 +3862,26 @@ Cooldown         : 30 seconds
 Category         : 471 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1)
-Family Flags     : 19
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#3)
+Family Flags     : 19, 32
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=688591)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 431 | Scaled Value: 447.8 | Points Per Level: 2.8 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
-Description      : Instantly shields you, absorbing $s1 damage. Lasts $d. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.
-
-Tooltip          : Absorbs $w1 damage.
+                   Modified By: Frost Warding (11189 effect#3)
+#2 (id=1364979)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002), Frost Blast (1326053), Frost Blast (1326054), Frost Blast (1326055)
+                   Family Flags: 5, 6, 7, 9, 17, 44
+Hotfixed         : NEW EFFECT
+#3 (id=1364980)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
+                   Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
+                   Family Flags: 7, 44
+Hotfixed         : NEW EFFECT
+Description      : Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+Tooltip          : Absorbs $w1 damage and increases Frost damage dealt by ${$w2}%.
 
 Name             : Ice Block (id=11958) [Spell Family (3)] 
 Talent Entry     : Generic [tree=class, row=4, col=10, max_rank=1, req_points=0]
@@ -4333,6 +4354,7 @@ Description      : A wave of flame radiates outward from the caster, damaging al
 Tooltip          : Dazed. Movement speed reduced by 50%.
 
 Name             : Ice Barrier (desc=Rank 2) (id=13031) [Spell Family (3)] 
+Hotfixed         : Affecting Spells, Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -4344,18 +4366,29 @@ Cooldown         : 30 seconds
 Category         : 471 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1)
-Family Flags     : 19
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#3)
+Family Flags     : 19, 32
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=690830)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 542 | Scaled Value: 561.2 | Points Per Level: 3.2 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
-Description      : Instantly shields you, absorbing $s1 damage. Lasts $d. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.
-
-Tooltip          : Absorbs $w1 damage.
+                   Modified By: Frost Warding (11189 effect#3)
+#2 (id=1365014)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002), Frost Blast (1326053), Frost Blast (1326054), Frost Blast (1326055)
+                   Family Flags: 5, 6, 7, 9, 17, 44
+Hotfixed         : NEW EFFECT
+#3 (id=1365015)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
+                   Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
+                   Family Flags: 7, 44
+Hotfixed         : NEW EFFECT
+Description      : Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+Tooltip          : Absorbs $w1 damage and increases Frost damage dealt by $w2%.
 
 Name             : Ice Barrier (desc=Rank 3) (id=13032) [Spell Family (3)] 
+Hotfixed         : Affecting Spells, Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -4367,19 +4400,29 @@ Cooldown         : 30 seconds
 Category         : 471 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1)
-Family Flags     : 19
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#3)
+Family Flags     : 19, 32
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=690153)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 671 | Scaled Value: 692.6 | Points Per Level: 3.6 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
-Description      : Instantly shields you, absorbing $s1 damage. Lasts $d. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.
-
-
-Tooltip          : Absorbs $w1 damage.
+                   Modified By: Frost Warding (11189 effect#3)
+#2 (id=1365012)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002), Frost Blast (1326053), Frost Blast (1326054), Frost Blast (1326055)
+                   Family Flags: 5, 6, 7, 9, 17, 44
+Hotfixed         : NEW EFFECT
+#3 (id=1365013)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
+                   Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
+                   Family Flags: 7, 44
+Hotfixed         : NEW EFFECT
+Description      : Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+Tooltip          : Absorbs $w1 damage and increases Frost damage dealt by $w2%.
 
 Name             : Ice Barrier (desc=Rank 4) (id=13033) [Spell Family (3)] 
+Hotfixed         : Affecting Spells, Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -4391,17 +4434,26 @@ Cooldown         : 30 seconds
 Category         : 471 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1)
-Family Flags     : 19
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#3)
+Family Flags     : 19, 32
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=690154)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 811 | Scaled Value: 835 | Points Per Level: 4 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
-Description      : Instantly shields you, absorbing $s1 damage. Lasts $d. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.
-
-
-Tooltip          : Absorbs $w1 damage.
+                   Modified By: Frost Warding (11189 effect#3)
+#2 (id=1365009)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002), Frost Blast (1326053), Frost Blast (1326054), Frost Blast (1326055)
+                   Family Flags: 5, 6, 7, 9, 17, 44
+Hotfixed         : NEW EFFECT
+#3 (id=1365010)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
+                   Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
+                   Family Flags: 7, 44
+Hotfixed         : NEW EFFECT
+Description      : Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
+Tooltip          : Absorbs $w1 damage and increases Frost damage dealt by $w2%.
 
 Name             : Frostbolt (id=13439) [Spell Family (3)] 
 School           : Frost
@@ -4813,6 +4865,22 @@ Effects          :
                    Family Flags: 15
 Description      : Increases the damage absorbed by your Mana Shield by $s1.
 
+Name             : Firebolt (id=23267) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 80 Base Mana (0) (id=186714)
+Spell Level      : 30
+Range            : 30 yards
+GCD              : 1.5 seconds
+Cooldown         : 8 seconds
+Category Cooldown: 8 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=699919)   : School Damage (2): fire
+                   Base Value: 48 | Scaled Value: 48 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Improved Counterspell (id=24429) [Spell Family (3), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -4836,7 +4904,7 @@ Range            : 100 yards
 GCD              : 1.5 seconds
 Category         : 19 (Type 0x0)
 Proc Chance      : 101%
-Affecting Spells : Improved Fire Blast (11078 effects: #1, #2), Flame Throwing (11100 effect#1), Critical Mass (11115 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Overheat (400615 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Fire Blast (11078 effects: #1, #2), Flame Throwing (11100 effect#1), Critical Mass (11115 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Overheat (400615 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 1, 17
 Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
@@ -4876,7 +4944,7 @@ Velocity         : 28 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -4927,7 +4995,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 5 seconds
 Labels           : 17: Mage Spells
-Affecting Spells : Arcane Subtlety (11210 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Missile Barrage (400589 effects: #1, #2, #3), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Arcane Subtlety (11210 effect#1), Improved Channeling (11237 effect#1), Arcane Geometry (11247 effect#1), Arcane Power (12042 effect#2), Clearcasting (12536 effect#1), Missile Barrage (400589 effects: #1, #3), Eureka! (1259817 effects: #1, #2)
 Family Flags     : 11
 Attributes       : Do Not Log (8), Not Shapeshifted (16), No Immunities (29), Is Channelled (34), No Redirection (35), No Reflection (39), No Threat (42), Track Target in Channel (46), No Aura Icon (60), Force Display Castbar (155), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -5000,6 +5068,7 @@ Effects          :
 Description      : Increases your Armor by an amount equal to $s1% of your Intellect.
 
 Name             : Frost Ward (desc=Rank 5) (id=28609) [Spell Family (3)] 
+Hotfixed         : Description, Tooltip
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -5011,20 +5080,20 @@ Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Labels           : 17: Mage Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=690848)   : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 913 | Scaled Value: 913 | Misc Value: 0x10 | Target: Self (1)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
-#2 (id=690849)   : Apply Aura (6) | Reflect Spells (74)
-                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Self (1)
-                   Affected School(s): Frost
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+#2 (id=690849)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Self (1)
+Hotfixed         : Sub Type (74 -> 4), Misc Value (16 -> 0)
                    Modified By: Frost Warding (11189 effect#2)
-Description      : Absorbs $s1 Frost damage$?s11189[ and grants a $s2% chance to reflect Frost spells and effects][].  Lasts $d.
-Tooltip          : Absorbs $w1 Frost damage.$?s11189[ $w2% chance to reflect Frost spells and effects.][]
+Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11189[ and grants a $s2% chance to negate Frost damage][].  Lasts $d.
+Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Conjure Food (desc=Rank 7) (id=28612) [Spell Family (3)] 
 Class            : Mage
@@ -5095,8 +5164,8 @@ Effects          :
 Description      : Restores $s1 mana.
 
 Name             : Elemental Precision (id=29438) [Spell Family (3), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=1, col=11, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(1, 2, 3, 4, 5)]
+Talent Entry     : Generic [tree=class, row=1, col=11, max_rank=3, req_points=0]
+                 : Effect#1 [op=set, values=(2, 4, 6)]
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -5182,7 +5251,7 @@ Cast Time        : 1.8 seconds
 Velocity         : 28 yards/sec
 Duration         : 6 seconds
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -5271,10 +5340,9 @@ Effects          :
                    Base Value: -50 | Scaled Value: -50 | Misc Value: 1 | Target: Self (1)
                    Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
                    Family Flags: 11
-#2 (id=1045767)  : Apply Aura (6) | Add Flat Modifier (107): Spell Tick Time (19)
-                   Base Value: -500 | Scaled Value: -500 | Misc Value: 19 | Target: Self (1)
-                   Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
-                   Family Flags: 11
+#2 (id=1045767)  : Apply Aura (6) | Dummy (4)
+                   Base Value: -500 | Scaled Value: -500 | Target: Self (1)
+Hotfixed         : Sub Type (107 -> 4), Misc Value (19 -> 0), Affects Spells
 #3 (id=1045768)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 14 | Misc Value 2: 111 | Target: Self (1)
                    Affected Spells: Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (25345)
@@ -5555,7 +5623,7 @@ GCD              : 1.5 seconds
 Velocity         : 38 yards/sec
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 17, 19
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
@@ -5724,7 +5792,7 @@ Velocity         : 24 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Fireball (11069 effect#1), Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Critical Mass (11115 effect#1), Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Fireball! (400730 effects: #1, #2), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Fireball (11069 effect#1), Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Critical Mass (11115 effect#1), Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effect#1), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Fireball! (400730 effects: #1, #2), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 20, 30, 44, 67
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -6743,14 +6811,14 @@ Duration         : 30 seconds
 Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1079380)  : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 330 | Scaled Value: 330 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 #2 (id=1079381)  : Apply Aura (6) | Reflect Spells (74)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
@@ -6770,14 +6838,14 @@ Duration         : 30 seconds
 Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1079384)  : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 580 | Scaled Value: 580 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 #2 (id=1079385)  : Apply Aura (6) | Reflect Spells (74)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
@@ -6797,14 +6865,14 @@ Duration         : 30 seconds
 Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1079388)  : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 940 | Scaled Value: 940 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 #2 (id=1079389)  : Apply Aura (6) | Reflect Spells (74)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
@@ -6824,14 +6892,14 @@ Duration         : 30 seconds
 Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1079392)  : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 1350 | Scaled Value: 1350 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 #2 (id=1079393)  : Apply Aura (6) | Reflect Spells (74)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
@@ -6851,14 +6919,14 @@ Duration         : 30 seconds
 Cooldown         : 30 seconds
 Category         : 56 (Type 0x0)
 Category Cooldown: 30 seconds
-Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effect#2), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effects: #2, #3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 Family Flags     : 8, 19
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1079394)  : Apply Aura (6) | Absorb Damage (69)
                    Base Value: 1840 | Scaled Value: 1840 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
-                   Modified By: S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
+                   Modified By: Frost Warding (11189 effect#3), S03 - Item - TAQ - Mage - Arcane 4P Bonus (1213314 effect#1)
 #2 (id=1079395)  : Apply Aura (6) | Reflect Spells (74)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 0x10 | Target: Targeted Ally (21)
                    Affected School(s): Frost
@@ -9143,7 +9211,7 @@ Velocity         : 24 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Fireball (11069 effect#1), Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Critical Mass (11115 effect#1), Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Fireball! (400730 effects: #1, #2), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Fireball (11069 effect#1), Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Critical Mass (11115 effect#1), Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effect#1), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Fireball! (400730 effects: #1, #2), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 20, 30, 44, 67
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -9170,7 +9238,7 @@ Velocity         : 24 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Fireball (11069 effect#1), Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Critical Mass (11115 effect#1), Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Fireball! (400730 effects: #1, #2), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Fireball (11069 effect#1), Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Critical Mass (11115 effect#1), Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effect#1), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Fireball! (400730 effects: #1, #2), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 20, 30, 44, 67
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -9267,7 +9335,7 @@ GCD              : 1.5 seconds
 Velocity         : 38 yards/sec
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 17, 19
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
@@ -9292,7 +9360,7 @@ GCD              : 1.5 seconds
 Velocity         : 38 yards/sec
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 17, 19
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
@@ -9317,7 +9385,7 @@ GCD              : 1.5 seconds
 Velocity         : 38 yards/sec
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 17, 19
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
@@ -9342,7 +9410,7 @@ GCD              : 1.5 seconds
 Velocity         : 38 yards/sec
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 17, 19
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
@@ -9364,7 +9432,7 @@ Spell Level      : 60 (max 65)
 Range            : 50000 yards
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
@@ -9379,7 +9447,7 @@ Spell Level      : 20 (max 25)
 Range            : 50000 yards
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
@@ -9394,7 +9462,7 @@ Spell Level      : 28 (max 33)
 Range            : 50000 yards
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
@@ -9409,7 +9477,7 @@ Spell Level      : 36 (max 41)
 Range            : 50000 yards
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
@@ -9424,7 +9492,7 @@ Spell Level      : 44 (max 49)
 Range            : 50000 yards
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
@@ -9439,7 +9507,7 @@ Spell Level      : 52 (max 57)
 Range            : 50000 yards
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effects: #1, #2), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effects: #2, #3), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Ice Barrier (13031 effects: #2, #3), Ice Barrier (13032 effects: #2, #3), Ice Barrier (13033 effects: #2, #3), Arcane Instability (15058 effects: #1, #2), Arctic Reach (16757 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effects: #1, #2)
 Family Flags     : 7, 19
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
@@ -9447,6 +9515,7 @@ Effects          :
                    Base Value: 114 | Scaled Value: 115.5 | Points Per Level: 0.3 | SP Coefficient: 0.042 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Flamestrike (desc=Rank 1) (id=1279983) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9456,13 +9525,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292643)  : School Damage (2): fire
                    Base Value: 11 | Scaled Value: 11 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 2) (id=1279985) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9472,13 +9542,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292646)  : School Damage (2): fire
                    Base Value: 21 | Scaled Value: 21 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 3) (id=1279987) [Spell Family (3), Hidden] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9488,13 +9559,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292648)  : School Damage (2): fire
                    Base Value: 33 | Scaled Value: 33 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 4) (id=1279988) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9504,13 +9576,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292649)  : School Damage (2): fire
                    Base Value: 47 | Scaled Value: 47 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 5) (id=1279989) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9520,13 +9593,14 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292650)  : School Damage (2): fire
                    Base Value: 64 | Scaled Value: 64 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
 Name             : Flamestrike (desc=Rank 6) (id=1279990) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -9536,7 +9610,7 @@ Labels           : 17: Mage Spells
 Proc Chance      : 101%
 Affecting Spells : Burning Soul (11083 effect#1), Flame Throwing (11100 effect#1), Improved Flamestrike (11108 effect#1), Critical Mass (11115 effect#1), Arcane Power (12042 effects: #1, #2, #3), Clearcasting (12536 effect#1), Arcane Instability (15058 effects: #1, #2), Combustion (28682 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Fire Blast (1213317 effect#1), Eureka! (1259817 effect#1)
 Family Flags     : 2
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
 #1 (id=1292651)  : School Damage (2): fire
                    Base Value: 83 | Scaled Value: 83 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
@@ -9555,6 +9629,23 @@ Effects          :
                    Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
 #2 (id=1313008)  : School Damage (2): frost
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+Tooltip          : Movement slowed by $s1%.
+
+Name             : Frostbolt (id=1293790) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1314775)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1314776)  : School Damage (2): frost
+                   Base Value: 42 | Scaled Value: 42 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Fireball (id=1299850) [Spell Family (3)] 
@@ -9589,16 +9680,19 @@ Description      : Deal $s2 Fire damage.
 Tooltip          : Deals $s2 Fire damage.
 
 Name             : Frozen (id=1306620) 
+Hotfixed         : Mechanic (0 -> 7)
 School           : Frost
 Spell Type       : Magic
 Range            : 5 yards
 Duration         : 3 seconds
 Labels           : 17: Mage Spells
+Mechanic         : Root
 Triggered By     : Iceknife (1308914)
 Attributes       : Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
 #1 (id=1334087)  : Apply Aura (6) | Root (26)
-                   Base Value: 0 | Scaled Value: 0 | Mechanic: Root | Target: Targeted Enemy (6)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : Mechanic (7 -> 0)
 Description      : Freezes target enemy in place for $d.
 Tooltip          : Frozen in place
 
@@ -9630,7 +9724,7 @@ GCD              : 1.5 seconds
 Velocity         : 38 yards/sec
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Incineration (18459 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), Glaciate (1218345 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 17, 19
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
@@ -9657,7 +9751,7 @@ Velocity         : 28 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -9683,7 +9777,7 @@ Velocity         : 28 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -9709,7 +9803,7 @@ Velocity         : 28 yards/sec
 Duration         : 9 seconds
 Labels           : 17: Mage Spells
 Proc Chance      : 101%
-Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2)
+Affecting Spells : Improved Frostbolt (11070 effect#1), Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Permafrost (11175 effects: #1, #2), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Presence of Mind (12043 effect#1), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#1), Improved Counterspell (24429 effect#1), Elemental Precision (29438 effect#1), Spell Power (412322 effect#1), S03 - Item - ZG - Mage - Frost 5P Bonus (468427 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 5, 19, 20, 30
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -9818,4 +9912,27 @@ Effects          :
 #2 (id=1363796)  : Dummy (3)
                    Base Value: 5 | Scaled Value: 5 | Target: Targeted Enemy (6)
 Description      : Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.
+
+Name             : Frigid Power (id=1326891) [Spell Family (3)] 
+Hotfixed         : NEW SPELL
+Class            : Mage
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 40
+Duration         : 60 seconds
+Labels           : 17: Mage Spells
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1365007)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002), Frost Blast (1326053), Frost Blast (1326054), Frost Blast (1326055)
+                   Family Flags: 5, 6, 7, 9, 17, 44
+Hotfixed         : NEW EFFECT
+#2 (id=1365008)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
+                   Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
+                   Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
+                   Family Flags: 7, 44
+Hotfixed         : NEW EFFECT
+Description      : Increases the damage done by your Frost spells by $s1%.
+Tooltip          : Increases the damage done by your Frost spells by $w1%.
 

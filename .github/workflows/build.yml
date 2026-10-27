@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         compiler: [gcc-12, gcc-14]
-        cppVersion: [17, 20]
+        cppVersion: [20] # TODO (FOREVER) make c++23 happy
         include:
           - compiler: gcc-12
             cxx: g++-12
@@ -69,7 +69,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        cppVersion: [17, 20]
+        cppVersion: [20] # TODO (FOREVER) make c++23 happy
         compiler: [clang++-16, clang++-18]
         include:
           - compiler: clang++-16

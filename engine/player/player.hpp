@@ -10,6 +10,7 @@
 #include "actor.hpp"
 #include "assessor.hpp"
 #include "dbc/specialization.hpp"
+#include "dbc/spell_data.hpp"
 #include "effect_callbacks.hpp"
 #include "gear_stats.hpp"
 #include "player_collected_data.hpp"
@@ -200,7 +201,7 @@ struct player_t : public actor_t
 
     gear_stats_t stats;
 
-    double spell_power_per_intellect, spell_power_per_attack_power;
+    double spell_power_per_intellect, spell_power_per_spirit, spell_power_per_attack_power;
     double attack_power_per_strength, attack_power_per_agility, attack_power_per_spell_power;
     double ranged_attack_power_per_agility;
     double dodge_per_agility, parry_per_strength, parry_rating_per_crit_rating;
@@ -211,6 +212,7 @@ struct player_t : public actor_t
     double hit, expertise, leech, avoidance, crit_avoidance;
     double spell_crit_chance, attack_crit_chance, block_value;
     double all_crit, all_haste;
+    double mana_regen_while_casting;
     double melee_haste, spell_haste, ranged_haste;
     double skill, skill_debuff, distance;
     double distance_to_move;
@@ -639,7 +641,7 @@ public:
 
   void print_parsed_effects( report::sc_html_stream& ) const;
   virtual void print_custom_parsed_effects( report::sc_html_stream& ) const {}
-  void parse_passive_item_effect( const spell_data_t* );
+  void parse_passive_item_effect( const spell_data_t*, uint32_t mask = 0 );
   void register_passive_item_effect_override( const spelleffect_data_t&, double );
 
   player_t( sim_t* sim, player_e type, util::string_view name, race_e race_e );
@@ -737,6 +739,10 @@ public:
   const spell_data_t* find_spell( util::string_view name, specialization_e s = SPEC_NONE ) const;
   const spell_data_t* find_spell( unsigned int id, specialization_e s ) const;
   const spell_data_t* find_spell( unsigned int id ) const;
+
+  using rank_ptype_t = const spell_data_t*(spell_container_t::*)(const player_t*) const;
+  const spell_container_t* find_rank( util::span<const spell_container_t> ranks, int rank = RANK_MAX_USABLE, // ) const;
+                                      rank_ptype_t field = &spell_container_t::spell ) const;
 
   pet_t*      find_pet( util::string_view name ) const;
   item_t*     find_item_by_name( util::string_view name );
@@ -892,6 +898,7 @@ public:
   { return 1.0; }
   virtual double composite_spell_hit() const;
   virtual double composite_leech() const;
+  virtual double composite_mana_regen_while_casting() const;
   virtual double composite_run_speed() const;
   virtual double composite_avoidance() const;
   virtual double composite_corruption() const;

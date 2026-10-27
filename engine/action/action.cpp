@@ -794,6 +794,9 @@ void action_t::parse_spell_data( const spell_data_t& spell_data )
   base_crit_bonus += crit_bonus_mod[ 1 ];
   crit_bonus_multiplier *= crit_bonus_mod[ 2 ];
 
+  auto hit_mod = player->get_passive_value( spell_data, "hit" );
+  base_hit += hit_mod[ 1 ];
+
   // handle mechanic modifiers (currently only bleed is found in relevant spell data)
   // as the effect (subtype 276) is player scoped, we call get_passive_player_value()
   // only the spell's mechanic field is checked, the effect's mechanic field is not sufficient for this effect subtype
@@ -2763,7 +2766,7 @@ void action_t::init()
     snapshot_flags |= STATE_AP;
   }
 
-  if ( dot_duration > timespan_t::zero() && ( hasted_ticks || channeled ) )
+  if ( dot_duration > timespan_t::zero() && hasted_ticks )
     snapshot_flags |= STATE_HASTE;
 
   // WOD: Dot Snapshoting is gone
