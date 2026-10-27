@@ -237,6 +237,9 @@ stat_e special_effect_t::stat_buff_type( const spelleffect_data_t& effect ) cons
     case A_MOD_BONUS_ARMOR:
       stat_ = STAT_BONUS_ARMOR;
       break;
+    case A_MOD_ARMOR:
+      stat_ = STAT_ARMOR;
+      break;
     default:
       break;
   }

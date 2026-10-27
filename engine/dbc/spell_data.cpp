@@ -548,6 +548,9 @@ double spelleffect_data_t::default_multiplier() const
         case A_RESTORE_POWER:
           return 0.2;  // Resource per 5s
 
+        case A_MOD_ARMOR:
+          return 1.0;
+
         default:
           return 0.01;  // percent
       }

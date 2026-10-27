@@ -3393,6 +3393,10 @@ stat_buff_t::stat_buff_t( actor_pair_t q, util::string_view name, const spell_da
     {
       s = STAT_BONUS_ARMOR;
     }
+    else if ( effect.subtype() == A_MOD_ARMOR )
+    {
+      s = STAT_ARMOR;
+    }
 
     if ( s != STAT_NONE )
     {
@@ -3494,6 +3498,10 @@ stat_buff_t* stat_buff_t::add_stat_from_effect( size_t i, double a, const stat_c
   else if ( eff.subtype() == A_MOD_INCREASE_HEALTH || eff.subtype() == A_MOD_INCREASE_HEALTH_2 )
   {
     return add_stat( STAT_MAX_HEALTH, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_ARMOR )
+  {
+    return add_stat( STAT_ARMOR, a, c );
   }
 
   return do_error( "STAT_NONE" );
