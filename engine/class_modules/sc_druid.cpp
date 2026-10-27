@@ -12,6 +12,21 @@ namespace
 // ==========================================================================
 // Druid
 // ==========================================================================
+struct druid_t;
+struct druid_td_t final : public actor_target_data_t
+{
+  struct debuffs_t
+  {
+    buff_t* hurricane;
+    buff_t* faerie_fire;
+  } debuff;
+
+  druid_td_t( player_t& target, druid_t& p );
+
+  template <typename Buff = buff_t, typename... Args>
+  inline buff_t* make_debuff( bool b, Args&&... args );
+};
+
 struct druid_t final : public parse_player_effects_t
 {
   druid_t( sim_t* sim, std::string_view name, race_e r = RACE_NIGHT_ELF )
@@ -27,7 +42,19 @@ struct druid_t final : public parse_player_effects_t
   std::string default_flask() const override  { return druid_apl::flask( this ); }
   std::string default_food() const override   { return druid_apl::food( this ); }
 
+  target_specific_t<druid_td_t> target_data;
+
   action_t* create_action( std::string_view name, std::string_view options_str ) override;
+
+    druid_td_t* get_target_data( player_t* target ) const override
+  {
+    assert( target );
+    druid_td_t*& td = target_data[ target ];
+    if ( !td )
+      td = new druid_td_t( *target, const_cast<druid_t&>( *this ) );
+
+    return td;
+  }
 
   struct talents_t
   {
@@ -130,6 +157,7 @@ struct moonfire_t : public druid_spell_t
     druid_spell_t( "moonfire", player, player->find_rank( moonfire_ranks )->spell( player ) )
   {
     parse_options( options_str );
+    // TODO moonfire dot reporting
   }
 };
 
@@ -193,6 +221,14 @@ struct hurricane_tick_t : public druid_spell_t
     background = dual = true;
     aoe               = -1;
   }
+
+  void impact( action_state_t* s ) override
+  {
+    druid_spell_t::impact( s );
+
+    // TODO: the damage spell has no duration; confirm how long the slow lasts after the last tick
+    p()->get_target_data( s->target )->debuff.hurricane->trigger( 1_s );
+  }
 };
 
 struct hurricane_t : public druid_spell_t
@@ -203,6 +239,29 @@ struct hurricane_t : public druid_spell_t
     parse_options( options_str );
     channeled   = true;
     tick_action = new hurricane_tick_t( player );
+    // debuff applies instantly, but the first tick is delayed by 1 second
+  }
+};
+
+constexpr std::array faerie_fire_ranks{
+    spell_container_t().set_spell( 770 ),
+    spell_container_t().set_spell( 778 ),
+    spell_container_t().set_spell( 9749 ),
+    spell_container_t().set_spell( 9907 ),
+};
+struct faerie_fire_t : public druid_spell_t
+{
+  faerie_fire_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "faerie_fire", player, player->find_rank( faerie_fire_ranks )->spell( player ) )
+  {
+    parse_options( options_str );
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    druid_spell_t::impact( s );
+
+    p()->get_target_data( s->target )->debuff.faerie_fire->trigger();
   }
 };
 
@@ -283,6 +342,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new entangling_roots_t( this, options_str );
   if ( name == "hurricane" )
     return new hurricane_t( this, options_str );
+  if ( name == "faerie_fire" )
+    return new faerie_fire_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
 }
@@ -299,6 +360,24 @@ void druid_t::init_action_list()
   druid_apl::druid( this );
   use_default_action_list = true;
   parse_player_effects_t::init_action_list();
+}
+
+template <typename Buff, typename... Args>
+buff_t* druid_td_t::make_debuff( bool b, Args&&... args )
+{
+  return buff_t::make_buff_fallback<Buff>( target->is_enemy() && b, std::forward<Args>( args )... );
+}
+inline druid_td_t::druid_td_t( player_t& target, druid_t& p ) : actor_target_data_t( &target, &p )
+{
+  auto const hurricane_debuff = p.find_rank( hurricane_ranks );
+  debuff.hurricane = make_debuff( hurricane_debuff->spell( &p )->ok(), *this, "hurricane",
+                                  hurricane_debuff->debuff( &p ) )
+    ->set_default_value (hurricane_debuff->debuff( &p )->effectN(2).percent() );
+
+  auto const faerie_fire_debuff = p.find_rank( faerie_fire_ranks );
+  debuff.faerie_fire =
+      make_debuff<stat_buff_t>( faerie_fire_debuff->spell( &p )->ok(), *this, "faerie_fire", faerie_fire_debuff->spell( &p ))
+    ->set_default_value_from_effect( 1 );
 }
 }  // UNNAMED NAMESPACE
 
