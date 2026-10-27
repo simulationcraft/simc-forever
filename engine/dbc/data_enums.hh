@@ -1671,6 +1671,7 @@ enum effect_subtype_t : unsigned {
   A_MOD_PCT_PVP_MULTIPLIER = 647,
   A_MOD_FLAT_LABEL_PVP_MULTIPLIER = 648,
   A_MOD_PCT_LABEL_PVP_MULTIPLIER = 649,
+  A_MOD_ARMOR = 674,
   A_MAX
 };
 
