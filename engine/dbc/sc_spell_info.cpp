@@ -1727,6 +1727,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_MOD_PCT_PVP_MULTIPLIER,                "Modify Percent PVP Multiplier"                     },  // 647
   { A_MOD_FLAT_LABEL_PVP_MULTIPLIER,         "Modify Flat PVP Multiplier by Label"               },  // 648
   { A_MOD_PCT_LABEL_PVP_MULTIPLIER,          "Modify Percent PVP Multiplier by Label"            },  // 649
+  { A_MOD_ARMOR,                             "Modify Armor"                                      },  // 674
 } );
 
 static constexpr auto _effect_attribute_strings = util::make_static_map<unsigned, std::string_view>( {
