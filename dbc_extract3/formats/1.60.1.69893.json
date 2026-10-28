@@ -847,6 +847,12 @@
       { "data_type": "B", "field": "item_context" }
     ]
   },
+  "ItemDamageAmmo": {
+    "fields": [
+      { "data_type": "H", "field": "ilevel", "formats": { "cpp": "%4u"   } },
+      { "data_type": "f", "field": "v", "elements": 7, "formats": { "cpp": "%13.5ff" } }
+    ]
+  },
   "ItemDamageOneHand": {
     "fields": [
       { "data_type": "H", "field": "ilevel", "formats": { "cpp": "%4u"   } },
@@ -859,6 +865,18 @@
       { "data_type": "f", "field": "v", "elements": 7, "formats": { "cpp": "%13.5ff" } }
     ]
   },
+  "ItemDamageRanged": {
+    "fields": [
+      { "data_type": "I", "field": "ilevel", "formats": { "cpp": "%4u"   } },
+      { "data_type": "f", "field": "v", "elements": 7, "formats": { "cpp": "%13.5ff" } }
+    ]
+  },
+  "ItemDamageThrown": {
+    "fields": [
+      { "data_type": "I", "field": "ilevel", "formats": { "cpp": "%4u"   } },
+      { "data_type": "f", "field": "v", "elements": 7, "formats": { "cpp": "%13.5ff" } }
+    ]
+  },
   "ItemDamageTwoHand": {
     "fields": [
       { "data_type": "H", "field": "ilevel", "formats": { "cpp": "%4u"   } },
@@ -868,6 +886,12 @@
   "ItemDamageTwoHandCaster": {
     "fields": [
       { "data_type": "H", "field": "ilevel", "formats": { "cpp": "%4u"   } },
+      { "data_type": "f", "field": "v", "elements": 7, "formats": { "cpp": "%13.5ff" } }
+    ]
+  },
+  "ItemDamageWand": {
+    "fields": [
+      { "data_type": "I", "field": "ilevel", "formats": { "cpp": "%4u"   } },
       { "data_type": "f", "field": "v", "elements": 7, "formats": { "cpp": "%13.5ff" } }
     ]
   },

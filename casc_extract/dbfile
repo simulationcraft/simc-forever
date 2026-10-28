@@ -1197,6 +1197,9 @@
 6031287, DBFilesClient\SpellTgtGatherTemplate.db2
 6033745, DBFilesClient\UiMapGroup.db2
 6155772, DBFilesClient\UICinematicIntroInfo.db2
+6156256, DBFilesClient\ItemDamageRanged.db2
+6156257, DBFilesClient\ItemDamageThrown.db2
+6156258, DBFilesClient\ItemDamageWand.db2
 6197817, DBFilesClient\AccountStoreItem.db2
 6220124, DBFilesClient\AccountStoreCategory.db2
 6237720, DBFilesClient\NeighborhoodNameGen.db2

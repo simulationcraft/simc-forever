@@ -3214,7 +3214,9 @@ class RandomPropertyPointsGenerator(DataGenerator):
 class WeaponDamageDataGenerator(DataGenerator):
     def generate(self, data = None):
         for dbname in ['ItemDamageOneHand', 'ItemDamageOneHandCaster',
-                       'ItemDamageTwoHand', 'ItemDamageTwoHandCaster']:
+                       'ItemDamageTwoHand', 'ItemDamageTwoHandCaster',
+                       'ItemDamageAmmo',    'ItemDamageRanged',
+                       'ItemDamageThrown',  'ItemDamageWand' ]:
 
             tokenized_name = '_'.join(re.findall('[A-Z][^A-Z]*', dbname)).lower()
             struct_name = '{}_data_t'.format(tokenized_name)
