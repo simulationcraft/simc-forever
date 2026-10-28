@@ -1,4 +1,4 @@
-// Item damage data from ItemDamageOneHand.db2, wow build 1.60.1.70532
+// Item damage data from ItemDamageOneHand.db2, wow build 1.60.1.70685
 static constexpr std::array<item_damage_one_hand_data_t, 100> __item_damage_one_hand_data { {
   {    1, {       0.76146f,       0.78016f,       1.26909f,       3.89907f,       6.95737f,       6.95737f,       6.95737f } },
   {    2, {       0.99199f,       1.01635f,       1.65331f,       4.44320f,       7.40156f,       7.40156f,       7.40156f } },
@@ -102,7 +102,7 @@ static constexpr std::array<item_damage_one_hand_data_t, 100> __item_damage_one_
   {  100, {      43.16714f,      69.22628f,      71.94524f,      80.63381f,      90.37167f,      90.37167f,      90.37167f } },
 } };
 
-// Item damage data from ItemDamageOneHandCaster.db2, wow build 1.60.1.70532
+// Item damage data from ItemDamageOneHandCaster.db2, wow build 1.60.1.70685
 static constexpr std::array<item_damage_one_hand_caster_data_t, 100> __item_damage_one_hand_caster_data { {
   {    1, {       0.76146f,       0.78016f,       1.26909f,       3.89907f,       6.95737f,       6.95737f,       6.95737f } },
   {    2, {       0.99199f,       1.01635f,       1.65331f,       4.44320f,       7.40156f,       7.40156f,       7.40156f } },
@@ -206,7 +206,7 @@ static constexpr std::array<item_damage_one_hand_caster_data_t, 100> __item_dama
   {  100, {      43.16714f,      69.22628f,      71.94524f,      80.63381f,      90.37167f,      90.37167f,      90.37167f } },
 } };
 
-// Item damage data from ItemDamageTwoHand.db2, wow build 1.60.1.70532
+// Item damage data from ItemDamageTwoHand.db2, wow build 1.60.1.70685
 static constexpr std::array<item_damage_two_hand_data_t, 100> __item_damage_two_hand_data { {
   {    1, {       0.98989f,       1.01421f,       1.64982f,       5.06880f,       9.04458f,       9.04458f,       9.04458f } },
   {    2, {       1.28958f,       1.32126f,       2.14930f,       5.77616f,       9.62203f,       9.62203f,       9.62203f } },
@@ -310,7 +310,7 @@ static constexpr std::array<item_damage_two_hand_data_t, 100> __item_damage_two_
   {  100, {      56.11729f,      89.99416f,      93.52881f,     104.82395f,     117.48317f,     117.48317f,     117.48317f } },
 } };
 
-// Item damage data from ItemDamageTwoHandCaster.db2, wow build 1.60.1.70532
+// Item damage data from ItemDamageTwoHandCaster.db2, wow build 1.60.1.70685
 static constexpr std::array<item_damage_two_hand_caster_data_t, 100> __item_damage_two_hand_caster_data { {
   {    1, {       0.98989f,       1.01421f,       1.64982f,       5.06880f,       9.04458f,       9.04458f,       9.04458f } },
   {    2, {       1.28958f,       1.32126f,       2.14930f,       5.77616f,       9.62203f,       9.62203f,       9.62203f } },
@@ -414,7 +414,7 @@ static constexpr std::array<item_damage_two_hand_caster_data_t, 100> __item_dama
   {  100, {      56.11729f,      89.99416f,      93.52881f,     104.82395f,     117.48317f,     117.48317f,     117.48317f } },
 } };
 
-// Item damage data from ItemDamageAmmo.db2, wow build 1.60.1.70532
+// Item damage data from ItemDamageAmmo.db2, wow build 1.60.1.70685
 static constexpr std::array<item_damage_ammo_data_t, 1000> __item_damage_ammo_data { {
   {    1, {       0.45447f,       0.95455f,       1.31986f,       2.23027f,       3.61783f,       3.61783f,       3.61783f } },
   {    2, {       0.54766f,       1.15027f,       1.59048f,       2.31046f,       3.84881f,       3.84881f,       3.84881f } },
@@ -1418,7 +1418,7 @@ static constexpr std::array<item_damage_ammo_data_t, 1000> __item_damage_ammo_da
   { 1000, {   56246.10156f,   81881.60156f,   83960.15625f,   94352.92969f,  106304.61719f,  106304.61719f,  106304.61719f } },
 } };
 
-// Item damage data from ItemDamageRanged.db2, wow build 1.60.1.70532
+// Item damage data from ItemDamageRanged.db2, wow build 1.60.1.70685
 static constexpr std::array<item_damage_ranged_data_t, 100> __item_damage_ranged_data { {
   {    1, {       0.84531f,       1.43182f,       1.97978f,       3.34541f,       5.42675f,       5.42675f,       5.42675f } },
   {    2, {       1.01864f,       1.72540f,       2.38573f,       3.46569f,       5.77321f,       5.77321f,       5.77321f } },
@@ -1522,7 +1522,7 @@ static constexpr std::array<item_damage_ranged_data_t, 100> __item_damage_ranged
   {  100, {      33.67037f,      53.99650f,      56.11729f,      62.89437f,      70.48990f,      70.48990f,      70.48990f } },
 } };
 
-// Item damage data from ItemDamageThrown.db2, wow build 1.60.1.70532
+// Item damage data from ItemDamageThrown.db2, wow build 1.60.1.70685
 static constexpr std::array<item_damage_thrown_data_t, 100> __item_damage_thrown_data { {
   {    1, {       0.68531f,       0.70214f,       1.14218f,       3.50917f,       6.26163f,       6.26163f,       6.26163f } },
   {    2, {       0.89279f,       0.91472f,       1.48798f,       3.99888f,       6.66140f,       6.66140f,       6.66140f } },
@@ -1626,7 +1626,7 @@ static constexpr std::array<item_damage_thrown_data_t, 100> __item_damage_thrown
   {  100, {      38.85043f,      62.30365f,      64.75072f,      72.57043f,      81.33450f,      81.33450f,      81.33450f } },
 } };
 
-// Item damage data from ItemDamageWand.db2, wow build 1.60.1.70532
+// Item damage data from ItemDamageWand.db2, wow build 1.60.1.70685
 static constexpr std::array<item_damage_wand_data_t, 100> __item_damage_wand_data { {
   {    1, {       1.17716f,       2.25654f,       2.91135f,       5.35472f,       9.67867f,       9.67867f,       9.67867f } },
   {    2, {       1.32775f,       2.54520f,       3.28377f,       5.77298f,      10.56000f,      10.56000f,      10.56000f } },
