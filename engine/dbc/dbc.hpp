@@ -412,6 +412,9 @@ public:
   unsigned                       random_property_max_level() const
   { return random_prop_data_t::data( ptr ).back().ilevel; }
 
+  const item_damage_ammo_data_t& item_damage_ammo( unsigned ilevel ) const
+  { return item_damage_ammo_data_t::find( ilevel, ptr ); }
+
   const item_damage_one_hand_data_t& item_damage_1h( unsigned ilevel ) const
   { return item_damage_one_hand_data_t::find( ilevel, ptr ); }
 
@@ -423,6 +426,15 @@ public:
 
   const item_damage_two_hand_caster_data_t& item_damage_caster_2h( unsigned ilevel ) const
   { return item_damage_two_hand_caster_data_t::find( ilevel, ptr ); }
+
+  const item_damage_thrown_data_t& item_damage_thrown( unsigned ilevel ) const
+  { return item_damage_thrown_data_t::find( ilevel, ptr ); }
+
+  const item_damage_ranged_data_t& item_damage_ranged( unsigned ilevel ) const
+  { return item_damage_ranged_data_t::find( ilevel, ptr ); }
+
+  const item_damage_wand_data_t& item_damage_wand( unsigned ilevel ) const
+  { return item_damage_wand_data_t::find( ilevel, ptr ); }
 
   const item_armor_quality_data_t& item_armor_quality( unsigned ilevel ) const
   { return item_armor_quality_data_t::find( ilevel, ptr ); }
