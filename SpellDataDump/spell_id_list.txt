@@ -230,7 +230,7 @@ Druid
 18657    Hibernate
 18658    Hibernate
 18960   *Teleport: Moonglade
-19634   *Mana Rejuvenation
+19634    Mana Rejuvenation
 19675    Feral Charge
 19970    Entangling Roots
 19971    Entangling Roots
@@ -386,7 +386,7 @@ Druid
 414719   Elune's Fires
 414799   Fury of Stormrage
 414800   Fury of Stormrage
-414826  *Idol of Ursine Rage
+414826   Idol of Ursine Rage
 414923  *Feral Charge
 414924   Feral Charge (Cat)
 414925  *Feral Charge
@@ -418,15 +418,15 @@ Druid
 417441  *Thrash (Bear)
 417448  *Thrash (Cat)
 417453  *Thrash (Cat)
-419288  *Lunar Idol
-420493  *Ferocious  Idol
-423186  *Unbalanced Idol Moon
-424336  *Unbalanced Idol Wild
-424339  *Unbalanced Idol Dream
+419288   Lunar Idol
+420493   Ferocious  Idol
+423186   Unbalanced Idol Moon
+424336   Unbalanced Idol Wild
+424339   Unbalanced Idol Dream
 424715   Starsurge
 424759   Berserk
 424762   King of the Jungle
-426072  *Idol of the Wild
+426072   Idol of the Wild
 428708   Frenzied Regeneration
 428713   Barkskin
 429820  *Starfall
@@ -547,7 +547,7 @@ Druid
 469152  *[DNT] Seedling of Growth
 469153  *[DNT] Seedling of Restoration
 469154  *[DNT] Seedling of Healing
-469271  *Astral Form
+469271   Astral Form
 470037  *Fire Cat Form
 470079  *Idol of Celestial Focus
 470080  *Idol of Feline Focus
@@ -644,7 +644,7 @@ Druid
 1253568 *Tranquility
 1262307 *The Quick and the Dead
 1262636 *Reagent Economy
-1270470 *Clever Shapeshifter
+1270470  Clever Shapeshifter
 1278759  Hurricane
 1278965  Hurricane
 1278968  Hurricane
@@ -796,8 +796,8 @@ Hunter
 14323    Hunter's Mark
 14324    Hunter's Mark
 14325    Hunter's Mark
-14824   *Haste
-14825   *Haste
+14824    Haste
+14825    Haste
 14826    Haste
 14827    Haste
 14828   *Haste
@@ -934,15 +934,15 @@ Hunter
 22910   *Immolation Trap
 22996   *Battle Standard
 23005   *Battle Standard
-23034   *Battle Standard
-23035   *Battle Standard
+23034    Battle Standard
+23035    Battle Standard
 23073   *Shoot
 23157    Arcane Shot Mana Reduction
 23158   *Concussive Shot Cooldown Reduction
 23337   *Shoot
 23499   *Revive Pet
-23538   *Battle Standard
-23539   *Battle Standard
+23538    Battle Standard
+23539    Battle Standard
 23559   *Improved Aspect of the Hawk
 23560   *Improved Mend Pet
 23566   *Improved Volley and Multishot
@@ -1008,8 +1008,8 @@ Hunter
 29414    Haste
 29415   *Haste
 29416    Haste
-29417   *Haste
-29418   *Haste
+29417    Haste
+29418    Haste
 34074   *Aspect of the Viper
 409365  *Tamed Pet Passive (DND)
 409368   Beast Mastery
@@ -1046,7 +1046,7 @@ Hunter
 409974   Kill Shot
 409976   Chimera Shot
 409979   Lone Wolf
-411622  *Prairie Dog Musk
+411622   Prairie Dog Musk
 413446  *Auto Shot
 415320   Flanking Strike
 415326  *Flanking Strike
@@ -1076,10 +1076,10 @@ Hunter
 415431  *Avoidance
 416116  *Water Elemental Scaling
 416189   Warlock Pet Scaling
-416861  *Adder Pheromone
-418236  *Rabbit Musk
+416861   Adder Pheromone
+418236   Rabbit Musk
 420543  *On the Move
-421311  *Deer Musk
+421311   Deer Musk
 423484  *Increased Hunter Pet Damage
 424553  *Call Your Shot
 425711   Carve
@@ -1423,7 +1423,7 @@ Hunter
 
 Mage
 10       Blizzard
-66      *Lesser Invisibility
+66       Lesser Invisibility
 116      Frostbolt
 118     *Polymorph
 120      Cone of Cold
@@ -1435,20 +1435,20 @@ Mage
 168      Frost Armor
 205      Frostbolt
 475      Remove Lesser Curse
-491     *Khadgar's Unlocking
+491      Khadgar's Unlocking
 543      Fire Ward
 587      Conjure Food
 597      Conjure Food
 604      Dampen Magic
-700     *Sleep
+700      Sleep
 759      Conjure Mana Agate
 837      Frostbolt
-857     *Khadgar's Unlocking
+857      Khadgar's Unlocking
 865      Frost Nova
 885      Invisibility
 990      Conjure Food
 1008     Amplify Magic
-1090    *Sleep
+1090     Sleep
 1449     Arcane Explosion
 1459     Arcane Intellect
 1460     Arcane Intellect
@@ -1739,7 +1739,7 @@ Mage
 20832   *Fire Blast
 20869    Frost Blast
 21088   *Improved Arcane Intellect
-21127   *Maraudon Portal
+21127    Maraudon Portal
 21159    Fireball
 21162    Fireball
 21228   *Arcane Missiles +1
@@ -1766,7 +1766,7 @@ Mage
 23331   *Blast Wave
 23549   *Increased Area
 23603   *Wild Polymorph
-24006   *Bounty of the Harvest
+24006    Bounty of the Harvest
 24389   *Chaos Fire
 24392   *Frosty Zap
 24405   *Icy Energy
@@ -2502,7 +2502,7 @@ Paladin
 409922   Hammer of the Righteous
 409924   Divine Storm
 409925   Divine Light
-409930  *Libram of Judgement
+409930   Libram of Judgement
 409932   Aura Mastery
 409933   Avenger's Shield
 409934   Avenging Wrath
@@ -2522,8 +2522,8 @@ Paladin
 415706   The Art of War
 415755   Guarded by the Light
 416863  *Aura Mastery
-421510  *Libram of Blessings
-421535  *Libram of Justice
+421510   Libram of Blessings
+421535   Libram of Justice
 425614   Hallowed Ground
 425615   Aegis
 425616   Rebuke
@@ -2551,14 +2551,14 @@ Paladin
 429250   Fanaticism
 429254   Purifying Power
 429259   Improved Hammer of Wrath
-429578  *Libram of Banishment
-435833  *[DNT] Tarnished Prayer Bead II
-435844  *[DNT] Tarnished Prayer Bead III
+429578   Libram of Banishment
+435833   [DNT] Tarnished Prayer Bead II
+435844   [DNT] Tarnished Prayer Bead III
 435962   Libram of Deliverance
 435977  *Energized Hyperconductor
 435982  *Energize
 435984   Enhanced Blessings
-435994  *Dormant Rune
+435994   Dormant Rune
 436284  *Improved Holy Shock
 436391   Decoy Totem
 437059  *Seal Cost Reduced
@@ -2954,7 +2954,7 @@ Priest
 15431    Holy Nova
 15473    Shadowform
 15487    Silence
-16053   *Dominion of Soul
+16053    Dominion of Soul
 16329    Juju Might
 16568   *Mind Flay
 16873   *Holy Word: Fortitude
@@ -3190,8 +3190,8 @@ Priest
 413260   Mind Sear
 415739   Strength of Soul
 416153  *Shadowfiend Scaling
-420877  *Helping Hand
-420878  *Helping Hand
+420877   Helping Hand
+420878   Helping Hand
 421248  *Shadowguard
 425198   Twisted Faith
 425204   Void Plague
@@ -3371,7 +3371,7 @@ Priest
 1277640  Contingency Plan
 1284536  Holy Purpose
 1286257 *(DNT) Prayer of Spirit - TEST RAID SPELL
-1287768 *Unholy Might
+1287768  Unholy Might
 1289450 *Renew
 1293542  Flash Heal Cast Pushback Reduction
 1293631 *Improved Resurrection
@@ -3855,7 +3855,7 @@ Rogue
 1289849 *Main Gauche
 1290708 *Stealth
 1291987  Improved Pick Pocket and Distract 01
-1292150 *Safe Fall 05
+1292150  Safe Fall 05
 1295197 *Tyler Test Imbue
 1300663 *Safe Fall 08
 1300956 *1.60.0 - Item - Tier 1 - Rogue 2P Bonus - Hit
@@ -4336,12 +4336,12 @@ Shaman
 409954   Riptide
 409955   Way of Earth
 410156  *Stormstrike
-413338  *Bulwark Icon
-413429  *Dyadic Icon
-413432  *Lithic Icon
-413839  *Kajaric Icon
-415012  *Clastic Icon
-415015  *Galvanic Icon
+413338   Bulwark Icon
+413429   Dyadic Icon
+413432   Lithic Icon
+413839   Kajaric Icon
+415012   Clastic Icon
+415015   Galvanic Icon
 415096   Coherence
 415100   Power Surge
 415105   Power Surge
@@ -4354,7 +4354,7 @@ Shaman
 415292  *Earthliving
 415712   Power Surge
 416081   Coherence
-420799  *Tempest Icon
+420799   Tempest Icon
 425336   Rage of the Farseer
 425339   Molten Blast
 425340   Molten Blast
@@ -4366,7 +4366,7 @@ Shaman
 425876  *Decoy Totem
 425879   Ancestral Awakening
 425881   Decoy Totem
-426257  *Sulfurous Icon
+426257   Sulfurous Icon
 432041   Tidal Waves
 432042   Tidal Waves
 432056   Rolling Thunder
@@ -4419,7 +4419,7 @@ Shaman
 452154  *Rolling Thunder
 452466  *Terrestris
 454042  *Burn
-456223  *Voltaic  Icon
+456223   Voltaic  Icon
 457475   S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus
 457478   S03 - Item - T1 - Shaman - Restoration 4P Bonus
 457494   S03 - Item - T1 - Shaman - Restoration 6P Bonus
@@ -4549,8 +4549,8 @@ Shaman
 1249011  Totem of Ancestral Protection
 1262315 *The Quick and the Dead
 1262643 *Reagent Economy
-1270478 *Flame Charged
-1270492 *Totem Affinity
+1270478  Flame Charged
+1270492  Totem Affinity
 1281744 *Natural Guidance
 1291076  Reduced Healing Wave Cost
 1291077  Increased Flame Shock Duration
@@ -4583,7 +4583,7 @@ Shaman
 Warlock
 128     *Spellstone
 172      Corruption
-265     *Area Death (TEST)
+265      Area Death (TEST)
 348      Immolate
 603      Bane of Doom
 686      Shadow Bolt
@@ -4896,12 +4896,12 @@ Warlock
 19952   *Heal Ragnaros
 20018   *Create Healthstone (Major)
 20022   *Create Soulstone
-20707   *Soulstone Resurrection
+20707    Soulstone Resurrection
 20752    Create Soulstone
 20755    Create Soulstone
 20756    Create Soulstone
 20757    Create Soulstone
-20762   *Soulstone Resurrection
+20762    Soulstone Resurrection
 20763    Soulstone Resurrection
 20764    Soulstone Resurrection
 20765    Soulstone Resurrection
@@ -4912,10 +4912,10 @@ Warlock
 22855   *Pimgib's Collar
 23046    Searing Pain Cast Pushback Reduction
 23047   *Immolate Cast Time Reduction
-23468   *Minor Healthstone
-23469   *Minor Healthstone
-23470   *Lesser Healthstone
-23471   *Lesser Healthstone
+23468    Minor Healthstone
+23469    Minor Healthstone
+23470    Lesser Healthstone
+23471    Lesser Healthstone
 23472    Healthstone
 23473    Healthstone
 23474    Greater Healthstone
@@ -5068,8 +5068,8 @@ Warlock
 431754   Summon Felguard
 431757   Immolation Aura
 433672  *Loathing
-433813  *Neverending Soul Vessel
-435086  *Brimstone Carving
+433813   Neverending Soul Vessel
+435086   Brimstone Carving
 437032   Soul Harvest
 437169  *Portal of Summoning
 437311  *Portal of Summoning
@@ -5118,7 +5118,7 @@ Warlock
 468446   S03 - Item - ZG - Warlock - Demonology 3P Bonus
 468447   S03 - Item - ZG - Warlock - Demonology 5P Bonus
 468540  *Massive Destruction
-469085  *Shadow Carving
+469085   Shadow Carving
 469211  *Scythe of Chaos
 469220  *Scythe of Chaos
 469222  *Impish Delight
