@@ -1607,6 +1607,7 @@ void player_t::init_base_stats()
       resources.base[ rt ]                  = get_passive_player_value( rt_base, "resource_max", rt );
       resources.base_multiplier[ rt ]       = get_passive_player_value( rt_mul, "resource_multiplier", rt );
       resources.base_regen_per_second[ rt ] = get_passive_player_value( rt_regen, "resource_regen", rt );
+      resources.regen_multiplier[ rt ]      = get_passive_player_value( 1.0, "resource_regen_multiplier", rt );
       resources.hasted[ rt ]                = _data.is_hasted_regen();
       // Starting amount, the actual start-of-combat resource is min( computed_max, start_at )
       resources.start_at[ rt ] = rt_start == -1.0 ? std::numeric_limits<double>::max() : rt_start;
@@ -4190,10 +4191,10 @@ void player_t::min_threshold_trigger()
 
     // Special handling for the spirit 5-second rule. If the player is within the 5-seconds of 0 regen, we
     // need to schedule based on the end of that window
-    if ( pres == RESOURCE_MANA && is_player() && recent_cast() )
+    if ( pres == RESOURCE_MANA && is_player() && recent_cast() && rps == 0 )
     {
       regen_delay = last_cast + 5_s - sim->current_time();
-      rps         = resources.base_regen_per_second[ pres ] + mana_regen_from_spirit();
+      rps = resources.base_regen_per_second[ pres ] + ( mana_regen_from_spirit() * resources.regen_multiplier[ pres ] );
     }
 
     if ( rps > 0 )
@@ -4370,13 +4371,14 @@ double player_t::resource_regen_per_second( resource_e r ) const
 
   if ( r == RESOURCE_MANA && is_player() )
   {
-    double spirit_regen = mana_regen_from_spirit();
+    // TODO FOREVER Innervate only affects spirit-based mana regen, not base mana regen
+    double spirit_regen = mana_regen_from_spirit() * composite_mana_regen_multiplier();
 
     if ( recent_cast() )
       spirit_regen *= std::min( 1.0, composite_mana_regen_while_casting() );
 
     reg += spirit_regen;
-  }
+  }  
 
   if ( resources.hasted[ r ] )
     reg /= cache.attack_haste();
@@ -4851,6 +4853,11 @@ double player_t::composite_leech() const
 double player_t::composite_mana_regen_while_casting() const
 {
   return current.mana_regen_while_casting;
+}
+
+double player_t::composite_mana_regen_multiplier() const
+{
+  return resources.regen_multiplier[ RESOURCE_MANA ];
 }
 
 double player_t::composite_run_speed() const
@@ -14017,7 +14024,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_PERCENT_STAT,                       "base_attribute_multiplier"        },  // 80
   { A_RESTORE_POWER,                          "resource_regen"                   },  // 85
   { A_MOD_RESISTANCE_PCT,                     "armor_multiplier"                 },  // 101
-  { A_MOD_POWER_REGEN_PERCENT,                "resource_regen"                   },  // 110
+  { A_MOD_POWER_REGEN_PERCENT,                "resource_regen_multiplier"        },  // 110
   { A_MOD_HEALING_RECEIVED_PCT,               "healing_received_multiplier"      },  // 118
   { A_INCREASE_RESOURCE_PCT,                  "resource_multiplier"              },  // 119
   { A_MOD_SPEED_ALWAYS,                       "move_speed_modifier_-_stacking"   },  // 129

@@ -24,6 +24,7 @@ struct player_resources_t
   // Start-of-combat resource level
   std::array<double, RESOURCE_MAX> start_at;
   std::array<double, RESOURCE_MAX> base_regen_per_second;
+  std::array<double, RESOURCE_MAX> regen_multiplier;
 
   player_resources_t() :
     base(),
@@ -33,13 +34,15 @@ struct player_resources_t
     temporary(),
     infinite_resource(),
     start_at(),
-    base_regen_per_second()
+    base_regen_per_second(),
+    regen_multiplier()
   {
     base_multiplier.fill( 1.0 );
     initial_multiplier.fill( 1.0 );
     active_resource.fill( true );
     hasted.fill( false );
     initial_opt.fill( -1.0 );
+    regen_multiplier.fill( 1.0 );
   }
 
   double pct( resource_e rt ) const
