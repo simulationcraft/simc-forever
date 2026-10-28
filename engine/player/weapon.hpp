@@ -15,6 +15,7 @@ struct weapon_t
   school_e school;
   double damage, dps;
   double min_dmg, max_dmg;
+  double ammo_min_dmg, ammo_max_dmg;
   timespan_t swing_time;
   slot_e slot;
   int    buff_type;
@@ -31,6 +32,8 @@ struct weapon_t
     dps( d / st.total_seconds() ),
     min_dmg( d ),
     max_dmg( d ),
+    ammo_min_dmg( 0 ),
+    ammo_max_dmg( 0 ),
     swing_time( st ),
     slot( SLOT_INVALID ),
     buff_type( 0 ),

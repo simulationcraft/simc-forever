@@ -698,6 +698,8 @@ inventory_type item_t::dbc_inventory_type() const
     }
     case SLOT_RANGED:
       return INVTYPE_RANGED;
+    case SLOT_AMMO:
+      return INVTYPE_AMMO;
     case SLOT_TABARD: return INVTYPE_TABARD;
 
     default: return INVTYPE_NON_EQUIP;
@@ -736,6 +738,8 @@ item_class item_t::dbc_item_class() const
     case SLOT_OFF_HAND:
     case SLOT_RANGED:
       return ITEM_CLASS_WEAPON;
+    case SLOT_AMMO:
+      return ITEM_CLASS_PROJECTILE;
     // No good default value, so just use Miscellaneous
     default:
       return ITEM_CLASS_MISC;

@@ -2124,6 +2124,21 @@ void player_t::init_weapon( weapon_t& w )
     assert( w.type > WEAPON_NONE && w.type < WEAPON_RANGED );
   if ( w.slot == SLOT_OFF_HAND )
     assert( w.type > WEAPON_NONE && w.type < WEAPON_2H );
+  // Store ammo min/max damage on the ranged weapon
+  // TODO Forever: This all needs to be verified. I was only able to test Light Shot in-game at level 11
+  if ( w.slot == SLOT_RANGED && items[ SLOT_AMMO ].parsed.data.id )
+  {
+    const item_t& ammo = items[ SLOT_AMMO ];
+    double dps = dbc->item_damage_ammo( ammo.item_level() ).value( ammo.parsed.data.quality );
+    // TODO: Verify that ammo damage is speed normalized
+    double avg = dps * w.swing_time.total_seconds() / w.get_normalized_speed().total_seconds();
+    double r = items[ SLOT_RANGED ].parsed.data.dmg_range;
+    // 60% range fallback if no weapon data is present. This seems to be the default in game data for these items
+    if ( r <= 0 )
+      r = 0.6;
+    w.ammo_min_dmg = std::floor( avg * ( 1 - r / 2 ) );
+    w.ammo_max_dmg = std::floor( avg * ( 1 + r / 2 ) + 0.5 );
+  }
 }
 
 void player_t::create_special_effects()
@@ -10485,7 +10500,8 @@ double player_t::avg_item_level() const
   int num_ilvl_items = 0;
   for ( const auto& item : items )
   {
-    if ( item.slot != SLOT_SHIRT && item.slot != SLOT_TABARD && item.slot != SLOT_RANGED && item.active() )
+    // TODO Forever: Removed SLOT_RANGED and added SLOT_AMMO - verify how SLOT_RANGED affects avg item level in-game
+    if ( item.slot != SLOT_SHIRT && item.slot != SLOT_TABARD && item.slot != SLOT_AMMO && item.active() )
     {
       avg_ilvl += item.item_level();
       num_ilvl_items++;
@@ -12162,7 +12178,7 @@ std::string player_t::create_profile( save_e stype )
     const slot_e SLOT_OUT_ORDER[] = {
         SLOT_HEAD,      SLOT_NECK,      SLOT_SHOULDERS, SLOT_BACK,     SLOT_CHEST,  SLOT_SHIRT,    SLOT_TABARD,
         SLOT_WRISTS,    SLOT_HANDS,     SLOT_WAIST,     SLOT_LEGS,     SLOT_FEET,   SLOT_FINGER_1, SLOT_FINGER_2,
-        SLOT_TRINKET_1, SLOT_TRINKET_2, SLOT_MAIN_HAND, SLOT_OFF_HAND, SLOT_RANGED,
+        SLOT_TRINKET_1, SLOT_TRINKET_2, SLOT_MAIN_HAND, SLOT_OFF_HAND, SLOT_RANGED, SLOT_AMMO,
     };
 
     for ( auto& slot : SLOT_OUT_ORDER )
@@ -12436,6 +12452,7 @@ void player_t::create_options()
   add_option( opt_string( "main_hand", items[ SLOT_MAIN_HAND ].options_str ) );
   add_option( opt_string( "off_hand", items[ SLOT_OFF_HAND ].options_str ) );
   add_option( opt_string( "ranged", items[ SLOT_RANGED ].options_str ) );
+  add_option( opt_string( "ammo", items[ SLOT_AMMO ].options_str ) );
   add_option( opt_string( "tabard", items[ SLOT_TABARD ].options_str ) );
 
   // Set Bonus
