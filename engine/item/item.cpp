@@ -696,10 +696,13 @@ inventory_type item_t::dbc_inventory_type() const
         }
       }
     }
-    case SLOT_RANGED:
-      return INVTYPE_RANGED;
-    case SLOT_AMMO:
-      return INVTYPE_AMMO;
+    case SLOT_RANGED: return INVTYPE_RANGED;
+    case SLOT_AMMO:   return INVTYPE_AMMO;
+    case SLOT_BAG_1:  return INVTYPE_BAG;
+    case SLOT_BAG_2:  return INVTYPE_BAG;
+    case SLOT_BAG_3:  return INVTYPE_BAG;
+    case SLOT_BAG_4:  return INVTYPE_BAG;
+    case SLOT_BAG_5:  return INVTYPE_BAG;
     case SLOT_TABARD: return INVTYPE_TABARD;
 
     default: return INVTYPE_NON_EQUIP;
@@ -740,6 +743,12 @@ item_class item_t::dbc_item_class() const
       return ITEM_CLASS_WEAPON;
     case SLOT_AMMO:
       return ITEM_CLASS_PROJECTILE;
+    case SLOT_BAG_1:
+    case SLOT_BAG_2:
+    case SLOT_BAG_3:
+    case SLOT_BAG_4:
+    case SLOT_BAG_5:
+      return ITEM_CLASS_CONTAINER;
     // No good default value, so just use Miscellaneous
     default:
       return ITEM_CLASS_MISC;
@@ -1484,6 +1493,12 @@ bool item_t::verify_slot()
     case SLOT_TRINKET_1:
     case SLOT_TRINKET_2:
       return it == INVTYPE_TRINKET;
+    case SLOT_BAG_1:
+    case SLOT_BAG_2:
+    case SLOT_BAG_3:
+    case SLOT_BAG_4:
+    case SLOT_BAG_5:
+      return it == INVTYPE_BAG || it == INVTYPE_QUIVER;
     // Rest of the slots can be checked with translator
     default:
       return slot == util::translate_invtype( it );

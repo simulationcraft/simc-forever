@@ -491,6 +491,11 @@ double ranged_attack_t::composite_target_multiplier( player_t* t ) const
   return v;
 }
 
+double ranged_attack_t::execute_time_pct_multiplier() const
+{
+  return action_t::execute_time_pct_multiplier() * player->composite_ranged_auto_attack_speed();
+}
+
 void ranged_attack_t::schedule_execute( action_state_t* state )
 {
   if ( sim->debug )
