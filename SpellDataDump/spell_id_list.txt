@@ -1,4 +1,4 @@
-Class Spell ID List, wow build 1.60.1.70532
+Class Spell ID List, wow build 1.60.1.70685
 
 Druid
 99       Demoralizing Roar
@@ -218,7 +218,7 @@ Druid
 17118    Subtlety
 17123    Improved Tranquility
 17144   *Wrath
-17154    The Green Tower
+17154   *The Green Tower
 17245    Overgrowth
 17329    Nature's Grasp
 17401    Hurricane
@@ -509,9 +509,9 @@ Druid
 457323   S03 - Item - T1 - Paladin - Holy 4P Bonus
 457530   S03 - Item - T1 - Shaman - Enhancement 4P Bonus
 458112   Crusader
-459594   Shapeshift Cost Reduction
-459595   Wrath Cast Pushback Reduction
-459596   Barkskin Duration Increase
+459594  *Shapeshift Cost Reduction
+459595  *Wrath Cast Pushback Reduction
+459596  *Barkskin Duration Increase
 460673  *Demonskin
 461154  *Flame Wrath
 461254  *Fury of Stormrage
@@ -1147,8 +1147,8 @@ Hunter
 458481   Wyvern Strike
 458482   Wyvern Strike
 459584  *Wing Clip Duration
-459593   Multi-Shot Damage Increase
-459598   Raptor Strike Damage Increase
+459593  *Multi-Shot Damage Increase
+459598  *Raptor Strike Damage Increase
 460399  *Destructor's Devastation
 461139  *Flame Spear
 461142  *Flame Spear
@@ -1193,8 +1193,8 @@ Hunter
 1213307  S03 - Item - TAQ - Hunter - Melee 2P Bonus
 1213309  S03 - Item - TAQ - Hunter - Melee 4P Bonus
 1213310  S03 - Item - RAQ - Hunter - Beastmastery 3P Bonus
-1213393  Timeworn Shot
-1213395  Timeworn Shot
+1213393 *Timeworn Shot
+1213395 *Timeworn Shot
 1215753 *Wyvern Sting
 1216480 *Noxious Breath
 1218134 *Tranquilizing Shot
@@ -1575,7 +1575,7 @@ Mage
 10230    Frost Nova
 10273    Arcane Missiles
 10274    Arcane Missiles
-11069    Improved Fireball
+11069    Accelerant
 11070    Improved Frostbolt
 11071    Frostbite
 11078    Improved Fire Blast
@@ -1718,10 +1718,10 @@ Mage
 18105   *Fireball
 18108   *Fireball
 18146   *Chilling Touch
-18199    Fireball
+18199   *Fireball
 18398    Frost Blast
 18459    Incineration
-18796    Fireball
+18796   *Fireball
 18809    Pyroblast
 18833   *Firebolt
 18948   *Dark Energy
@@ -1762,7 +1762,7 @@ Mage
 23037    Mana Shield Absorb Increase
 23039   *Blast Wave
 23113   *Blast Wave
-23267    Firebolt
+23267   *Firebolt
 23331   *Blast Wave
 23549   *Increased Area
 23603   *Wild Polymorph
@@ -1832,7 +1832,7 @@ Mage
 29209   *Blink
 29210   *Blink
 29211   *Blink
-29438    Elemental Precision
+29438    Precision
 29441    Magic Absorption
 29443    Counterspell
 29515   *TEST Scorch
@@ -2044,8 +2044,8 @@ Mage
 456477   S03 - Item - T1 - Mage - Healer 4P Bonus
 456481   S03 - Item - T1 - Mage - Healer 6P Bonus
 456485   Regeneration
-459599   Mana Shield Absorb Increase
-459600   Arcane Blast Cast Pushback Reduction
+459599  *Mana Shield Absorb Increase
+459600  *Arcane Blast Cast Pushback Reduction
 460338  *Purged by Fire
 460651  *Frozen Orb
 460858  *Pyroblast
@@ -2132,12 +2132,12 @@ Mage
 1279988  Flamestrike
 1279989  Flamestrike
 1279990  Flamestrike
-1292739  Hydra Strike
-1293790  Frostbolt
+1292739 *Hydra Strike
+1293790 *Frostbolt
 1297659 *Teleport: Dalaran
 1298416 *Frostbolt
-1299850  Fireball
-1300130  Frostburn
+1299850 *Fireball
+1300130 *Frostburn
 1300140 *Wit's End
 1300176 *Arcane Blast
 1300177 *Arcane Blast
@@ -2155,9 +2155,9 @@ Mage
 1321337 *DNT
 1321339 *DNT
 1321343 *DNT
-1326053  Frost Blast
-1326054  Frost Blast
-1326055  Frost Blast
+1326053 *Frost Blast
+1326054 *Frost Blast
+1326055 *Frost Blast
 1326079  Arcane Wrath
 1326080  Arcane Wrath
 1326081  Arcane Wrath
@@ -2553,7 +2553,7 @@ Paladin
 429259   Improved Hammer of Wrath
 429578   Libram of Banishment
 435833   [DNT] Tarnished Prayer Bead II
-435844   [DNT] Tarnished Prayer Bead III
+435844  *[DNT] Tarnished Prayer Bead III
 435962   Libram of Deliverance
 435977  *Energized Hyperconductor
 435982  *Energize
@@ -2597,8 +2597,8 @@ Paladin
 458856   Divine Light
 458857   Divine Light
 458860   Divine Light
-459601   Judgement Damage Increase
-459602   Holy Shock Critical Chance Increase
+459601  *Judgement Damage Increase
+459602  *Holy Shock Critical Chance Increase
 461290  *Libram of the Consecrated
 461292  *Libram of the Devoted
 461294  *Libram of Holy Alacrity
@@ -3239,8 +3239,8 @@ Priest
 456548   S03 - Item - T1 - Priest - Shadow 2P Bonus
 456549   Melting Faces
 457325   S03 - Item - T1 - Priest - Shadow 6P Bonus
-459603   Weakened Soul Duration Decrease
-459604   Mind Blast Cast Pushback Reduction
+459603  *Weakened Soul Duration Decrease
+459604  *Mind Blast Cast Pushback Reduction
 459699  *Fear Ward
 459702  *Desperate Prayer
 459703  *Feedback
@@ -3285,10 +3285,10 @@ Priest
 1219275 *Devouring Plague
 1221421 *Mind Vision
 1221422 *Mind Vision
-1222994  Damage Over Time Increase
+1222994 *Damage Over Time Increase
 1222995 *Damage Over Time Increase
 1222996 *Damage Over Time Increase
-1222997  Damage Over Time Increase
+1222997 *Damage Over Time Increase
 1225132  Twin Disciplines
 1225139  Improved Mind Flay
 1226499 *S03 - Item - Scarlet Enclave - Priest - Healer 2P Bonus
@@ -3762,7 +3762,7 @@ Rogue
 457469   Resilient
 458820   Occult Poison I
 458821   Occult Poison I
-459605   Sprint Duration Increase
+459605  *Sprint Duration Increase
 461253  *Shadowflame Fury
 461327  *Serrated Blades
 461328  *Serrated Blades
@@ -3854,8 +3854,8 @@ Rogue
 1289695 *Main Gauche
 1289849 *Main Gauche
 1290708 *Stealth
-1291987  Improved Pick Pocket and Distract 01
-1292150  Safe Fall 05
+1291987 *Improved Pick Pocket and Distract 01
+1292150 *Safe Fall 05
 1295197 *Tyler Test Imbue
 1300663 *Safe Fall 08
 1300956 *1.60.0 - Item - Tier 1 - Rogue 2P Bonus - Hit
@@ -4427,7 +4427,7 @@ Shaman
 457524   S03 - Item - T1 - Shaman - Elemental 6P Bonus
 457532   S03 - Item - T1 - Shaman - Enhancement 6P Bonus
 457544   S03 - Item - T1 - Shaman - Tank 6P Bonus
-459606   Ghost Wolf Speed
+459606  *Ghost Wolf Speed
 461295   Totem of Thunder
 461297  *Totem of Raging Fire
 461298  *Totem of Raging Fire
@@ -4579,6 +4579,7 @@ Shaman
 1325256  Mana Tide Totem
 1325257  Mana Tide
 1326047  Lava Burst
+1326619 *Ancestral Spirit
 
 Warlock
 128     *Spellstone
@@ -5096,7 +5097,7 @@ Warlock
 457573  *Pain Tap
 457642   S03 - Item - T1 - Warlock - Tank 6P Bonus
 457643   Soul Fire!
-459607   Searing Pain Cast Pushback Reduction
+459607  *Searing Pain Cast Pushback Reduction
 460692   Rain of Fire
 460698   Rain of Fire
 460699   Rain of Fire
@@ -5364,7 +5365,7 @@ Warrior
 12945    Improved Shield Block
 12963    Improved Overpower
 12975    Last Stand
-13490    Howling Blade
+13490   *Howling Blade
 13730   *Demoralizing Shout
 13847   *Recklessness
 14895   *Overpower
@@ -5378,9 +5379,9 @@ Warrior
 16636   *Berserker Charge
 17198   *Overpower
 18328   *Incapacitating Shout
-18381    Cripple
+18381   *Cripple
 18499    Berserker Rage
-18826    Savior's Sacrifice
+18826   *Savior's Sacrifice
 19131   *Shield Charge
 19134   *Intimidating Shout
 19196   *Surge
@@ -5613,7 +5614,7 @@ Warrior
 457819  *Echoes of Gladiator Stance
 457820   S03 - Item - T1 - Warrior - Damage 6P Bonus
 458882  *Recycle
-459608   Hamstring Rage Reduction
+459608  *Hamstring Rage Reduction
 460084  *Spectral Shout
 460086  *Spectral Shout
 461313  *Oath of Protection
