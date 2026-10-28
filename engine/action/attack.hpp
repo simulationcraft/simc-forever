@@ -97,9 +97,8 @@ struct ranged_attack_t : public attack_t
 
   // Ranged Attack Overrides
   double composite_target_multiplier( player_t* ) const override;
+  double execute_time_pct_multiplier() const override;
   void schedule_execute( action_state_t* execute_state = nullptr ) override;
-  // TODO: Think this will be needed to separate melee/ranged haste
-  //double execute_time_pct_multiplier() const override;
 
   proc_types proc_type() const override;
 };

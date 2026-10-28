@@ -229,6 +229,7 @@ struct player_t : public actor_t
     std::array<double, SCHOOL_MAX_PRIMARY> crit_damage_multiplier;
     double crit_healing_multiplier;
     double attack_speed_multiplier;
+    double ranged_attack_speed_multiplier;
     double healing_multiplier;
     std::array<double, SCHOOL_MAX_PRIMARY> damage_multiplier;
     double pet_damage_multiplier, guardian_damage_multiplier;
@@ -879,6 +880,7 @@ public:
 
   virtual double composite_melee_haste() const;
   virtual double composite_melee_auto_attack_speed() const;
+  virtual double composite_ranged_auto_attack_speed() const;
   virtual double composite_melee_attack_power() const;
   virtual double composite_ranged_attack_power() const;
   virtual double composite_weapon_attack_power_by_type( attack_power_type ) const;
