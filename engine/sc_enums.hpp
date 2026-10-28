@@ -780,7 +780,9 @@ enum slot_e  // these enum values match armory settings
   SLOT_OFF_HAND  = 16,
   SLOT_RANGED    = 17,
   SLOT_TABARD    = 18,
-  SLOT_MAX       = 19,
+  // TODO Forever: No Armory for Forever yet so don't know if/how they will represent ammo slot
+  SLOT_AMMO      = 19,
+  SLOT_MAX       = 20,
   SLOT_MIN       = 0
 };
 

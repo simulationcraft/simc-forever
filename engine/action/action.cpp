@@ -1409,21 +1409,24 @@ double action_t::calculate_weapon_damage( double attack_power ) const
   if ( !weapon || weapon_multiplier <= 0 )
     return 0;
 
-  // TODO Forever: Do we need special handling for ranged weapons here?
-  // Currently the weapon roll is multiplied by melee AP so probably need ranged handling
+  // TODO Forever: Verify melee and ranged attack power are handled separately
+  // TODO Forever: Wands are probably a 3rd branch here that we'll need to deal with
+  // TODO Forever: Verify that ammo is not affected by RAP multipliers (Classic ammo was not affected)
+  // TODO Forever: Verify that ammo is/isn't affected by damage % talents (Focused Fire, Ranged Weapon Specialization)
 
   // The weapon damage roll (and its bonus damage) is affected by attak power modifiers just like regular attack power
-  double capm             = player -> composite_attack_power_multiplier();
+  double capm             = weapon->slot != SLOT_RANGED ? player -> composite_attack_power_multiplier() : player -> composite_ranged_attack_power_multiplier();
   double dmg              = capm * ( sim->averaged_range( weapon->min_dmg, weapon->max_dmg ) + weapon->bonus_dmg );
+  double ammo             = sim->averaged_range( weapon->ammo_min_dmg, weapon->ammo_max_dmg );
   timespan_t weapon_speed = normalize_weapon_speed ? weapon->get_normalized_speed() : weapon->swing_time;
   double power_damage     = weapon_speed.total_seconds() * weapon_power_mod * attack_power;
-  double total_dmg        = dmg + power_damage;
+  double total_dmg        = dmg + power_damage + ammo;
 
   sim->print_debug(
-    "{} weapon damage for {}: base=({:.7g} to {:.7g}) total={:.6f} weapon_damage={:.7g} bonus_damage={:.7g} "
+    "{} weapon damage for {}: base=({:.7g} to {:.7g}) ammo=({:.7g} to {:.7g}) total={:.6f} weapon_damage={:.7g} bonus_damage={:.7g} "
     "multiplier={:.7g} speed={} power_damage={:.7g} ap={:.7g}",
-    *player, *this, weapon->min_dmg, weapon->max_dmg, total_dmg, dmg, weapon->bonus_dmg, capm, weapon_speed,
-    power_damage, attack_power );
+    *player, *this, weapon->min_dmg, weapon->max_dmg, weapon->ammo_min_dmg, weapon->ammo_max_dmg, total_dmg,
+    dmg, weapon->bonus_dmg, capm, weapon_speed, power_damage, attack_power );
 
   return total_dmg;
 }

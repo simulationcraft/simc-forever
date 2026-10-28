@@ -1125,6 +1125,7 @@ const char* util::slot_type_string( slot_e slot )
     case SLOT_OFF_HAND:  return "off_hand";
     case SLOT_RANGED:    return "ranged";
     case SLOT_TABARD:    return "tabard";
+    case SLOT_AMMO:      return "ammo";
     default:             return "unknown";
   }
 }
@@ -2360,6 +2361,8 @@ slot_e util::translate_invtype( inventory_type inv_type )
       return SLOT_WRISTS;
     case INVTYPE_BODY:
       return SLOT_SHIRT;
+    case INVTYPE_AMMO:
+      return SLOT_AMMO;
     default:
       return SLOT_INVALID;
   }
