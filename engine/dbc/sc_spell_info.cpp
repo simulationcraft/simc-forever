@@ -1468,7 +1468,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_HOVER,                                 "Levitate"                                          },  // 106
   { A_ADD_FLAT_MODIFIER,                     "Add Flat Modifier"                                 },  // 107
   { A_ADD_PCT_MODIFIER,                      "Add Percent Modifier"                              },  // 108
-  { A_MOD_POWER_REGEN_PERCENT,               "Modify Power Regen"                                },  // 110
+  { A_MOD_POWER_REGEN_PERCENT,               "Modify Power Regen%"                               },  // 110
   { A_MOD_HEALING,                           "Modify Healing Received"                           },  // 115
   { A_MOD_REGEN_DURING_COMBAT,               "Combat Health Regen%"                              },  // 116
   { A_MOD_MECHANIC_RESISTANCE,               "Mechanic Resistance"                               },  // 117
@@ -1483,6 +1483,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_MOD_RANGED_ATTACK_POWER_VERSUS,        "Modify Ranged Attack Power vs Race"                },  // 131
   { A_INCREASE_RESOURCE_PCT,                 "Increase Resource%"                                },  // 132
   { A_INCREASE_HEALTH_PCT,                   "Increase Health%"                                  },  // 133
+  { A_MOD_MANA_REGEN_INTERRUPT,              "Allow Mana Regen While Casting"                    },  // 134
   { A_MOD_HEALING_DONE,                      "Modify Healing Power"                              },  // 135
   { A_MOD_HEALING_DONE_PERCENT,              "Modify Healing% Done"                              },  // 136
   { A_MOD_TOTAL_STAT_PERCENTAGE,             "Modify Total Stat%"                                },  // 137

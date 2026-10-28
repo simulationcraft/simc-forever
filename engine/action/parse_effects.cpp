@@ -1097,6 +1097,16 @@ double parse_player_effects_t::composite_mana_regen_while_casting() const
   return m;
 }
 
+double parse_player_effects_t::composite_mana_regen_multiplier() const
+{
+  auto m = player_t::composite_mana_regen_multiplier();
+
+  for ( const auto& i : mana_regen_multiplier_effects )
+    m *= 1.0 + get_effect_value( i );
+
+  return m;
+}
+
 void parse_player_effects_t::invalidate_cache( cache_e c )
 {
   player_t::invalidate_cache( c );
@@ -1282,6 +1292,14 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
       str = "mana regen while casting";
       return &mana_regen_while_casting_effects;
 
+    case A_MOD_POWER_REGEN_PERCENT:
+      if ( static_cast<power_e>( eff.misc_value1() ) == POWER_MANA )
+      {
+        str = "mana regen multiplier";
+        return &mana_regen_multiplier_effects;
+      }
+      return nullptr;
+
     case A_MOD_INCREASE_SPEED:
       str = "exclusive move speed";
       invalidate( CACHE_RUN_SPEED );
@@ -1430,6 +1448,7 @@ void parse_player_effects_t::print_custom_parsed_effects( report::sc_html_stream
     print_parsed_type( os, healing_received_effects, "Healing Received" );
     print_parsed_type( os, leech_effects, "Leech" );
     print_parsed_type( os, mana_regen_while_casting_effects, "Mana Regen While Casting" );
+    print_parsed_type( os, mana_regen_multiplier_effects, "Mana Regen Multiplier" );
     print_parsed_type( os, non_stacking_movement_effects, "Move Speed Modifier - Exclusive" );
     print_parsed_type( os, stacking_movement_effects, "Move Speed Modifier - Stacking" );
     print_parsed_type( os, parry_effects, "Parry" );
