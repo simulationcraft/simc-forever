@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70658 Live
 Name             : Vindication (desc=Rank 1) (id=67) 
 Class            : Paladin
 School           : Holy
@@ -2847,7 +2847,7 @@ Spell Type       : Melee
 Spell Level      : 1 (max 7)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
@@ -3206,7 +3206,7 @@ Spell Type       : Melee
 Spell Level      : 10 (max 16)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
@@ -3222,7 +3222,7 @@ Spell Type       : Melee
 Spell Level      : 18 (max 24)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
@@ -3238,7 +3238,7 @@ Spell Type       : Melee
 Spell Level      : 26 (max 32)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
@@ -3254,7 +3254,7 @@ Spell Type       : Melee
 Spell Level      : 34 (max 40)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
@@ -3270,7 +3270,7 @@ Spell Type       : Melee
 Spell Level      : 42 (max 48)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
@@ -3286,7 +3286,7 @@ Spell Type       : Melee
 Spell Level      : 50 (max 56)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
@@ -3302,7 +3302,7 @@ Spell Type       : Melee
 Spell Level      : 58 (max 64)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1), Twist of Light (1310735 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
@@ -4432,7 +4432,7 @@ Spell Type       : Melee
 Spell Level      : 20 (max 28)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -4466,7 +4466,7 @@ Cooldown         : 10 seconds
 Category         : 892 (Type 0x0)
 Labels           : 26: Paladin Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
 Effects          :
@@ -4824,7 +4824,7 @@ Cooldown         : 10 seconds
 Category         : 892 (Type 0x0)
 Labels           : 26: Paladin Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
 Effects          :
@@ -4844,7 +4844,7 @@ Cooldown         : 10 seconds
 Category         : 892 (Type 0x0)
 Labels           : 26: Paladin Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
 Effects          :
@@ -4885,7 +4885,7 @@ Spell Type       : Melee
 Spell Level      : 30 (max 38)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -4899,7 +4899,7 @@ Spell Type       : Melee
 Spell Level      : 40 (max 48)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -4913,7 +4913,7 @@ Spell Type       : Melee
 Spell Level      : 50 (max 58)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -4927,7 +4927,7 @@ Spell Type       : Melee
 Spell Level      : 60 (max 68)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Holy Power (5923 effect#1), Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -5348,7 +5348,7 @@ Spell Type       : Magic
 Spell Level      : 56
 Range            : 20 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21, 93
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not a Proc (105), Unknown (493)
 Effects          :
@@ -5363,7 +5363,7 @@ Spell Type       : Magic
 Spell Level      : 56 (max 60)
 Range            : 40 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Healing Light (20237 effect#1), Divine Sacrifice (407804 effects: #2, #3), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Healing Light (20237 effect#1), Divine Sacrifice (407804 effects: #2, #3), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21, 48
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not a Proc (105), Unknown (493), Unknown (516)
 Effects          :
@@ -5378,7 +5378,7 @@ Spell Type       : Magic
 Spell Level      : 48
 Range            : 20 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21, 93
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not a Proc (105), Unknown (493)
 Effects          :
@@ -5393,7 +5393,7 @@ Spell Type       : Magic
 Spell Level      : 40
 Range            : 20 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21, 93
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not a Proc (105), Unknown (493)
 Effects          :
@@ -5408,7 +5408,7 @@ Spell Type       : Magic
 Spell Level      : 48 (max 55)
 Range            : 40 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Healing Light (20237 effect#1), Divine Sacrifice (407804 effects: #2, #3), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Healing Light (20237 effect#1), Divine Sacrifice (407804 effects: #2, #3), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21, 48
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not a Proc (105), Unknown (493), Unknown (516)
 Effects          :
@@ -5423,7 +5423,7 @@ Spell Type       : Magic
 Spell Level      : 40 (max 47)
 Range            : 40 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Healing Light (20237 effect#1), Divine Sacrifice (407804 effects: #2, #3), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Healing Light (20237 effect#1), Divine Sacrifice (407804 effects: #2, #3), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21, 48
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not a Proc (105), Unknown (493), Unknown (516)
 Effects          :
@@ -5771,7 +5771,7 @@ School           : Holy
 Spell Type       : Melee
 Spell Level      : 1
 Range            : 50000 yards
-Affecting Spells : Judgement Damage Increase (459601 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
 Family Flags     : 68
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Do Not Display Range (126), Unknown (493)
 Effects          :
@@ -7726,28 +7726,6 @@ Description      : Engrave your ring with the Defense Specialization rune:
 $@spellicon459312
 $@spelldesc459312
 
-Name             : Judgement Damage Increase (id=459601) [Spell Family (10), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166534)  : Apply Aura (6) | Add Flat Modifier (107): Spell Direct Amount (0)
-                   Base Value: 20 | Scaled Value: 20 | Target: Self (1)
-                   Affected Spells: Judgement of Righteousness (20187), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Judgement of Command (20467), Judgement of Command (20963), Judgement of Command (20964), Judgement of Command (20965), Judgement of Command (20966), Judgement of Martyrdom (407803)
-                   Family Flags: 10, 35, 41, 68
-Description      : Your damaging Judgements deal $s1 additional damage.
-
-Name             : Holy Shock Critical Chance Increase (id=459602) [Spell Family (10), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166535)  : Apply Aura (6) | Add Flat Modifier (107): Spell Critical Chance (7)
-                   Base Value: 2 | Scaled Value: 2 | Misc Value: 7 | Target: Self (1)
-                   Affected Spells: Holy Shock (20473), Holy Shock (20929), Holy Shock (20930), Holy Shock (25902), Holy Shock (25903), Holy Shock (25911), Holy Shock (25912), Holy Shock (25913), Holy Shock (25914), Holy Shock (1311604), Holy Shock (1311605), Holy Shock (1311606)
-                   Family Flags: 21, 48
-Description      : Increases the critical strike chance of your Holy Shock by $s1%.
-
 Name             : Defender's Resolve (id=460171) 
 Class            : Paladin, Shaman, Warlock
 School           : Physical
@@ -8864,7 +8842,7 @@ Spell Type       : Magic
 Spell Level      : 30
 Range            : 20 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21, 93
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not a Proc (105), Unknown (493)
 Effects          :
@@ -8879,7 +8857,7 @@ Spell Type       : Magic
 Spell Level      : 30 (max 37)
 Range            : 40 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Healing Light (20237 effect#1), Divine Sacrifice (407804 effects: #2, #3), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Healing Light (20237 effect#1), Divine Sacrifice (407804 effects: #2, #3), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21, 48
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not a Proc (105), Unknown (493), Unknown (516)
 Effects          :
@@ -8900,7 +8878,7 @@ Cooldown         : 10 seconds
 Category         : 892 (Type 0x0)
 Labels           : 26: Paladin Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), Holy Shock Critical Chance Increase (459602 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
+Affecting Spells : Holy Power (5923 effect#2), Benediction (20101 effect#1), Divine Favor (20216 effect#1), S03 - Item - T2 - Paladin - Holy 2P Bonus (467506 effect#1), Holy Shock Critical Chance Increase (1306429 effect#1), Divine Precision (1310904 effect#1)
 Family Flags     : 21
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
 Effects          :
