@@ -55,6 +55,7 @@ void gear_stats_t::add_stat( stat_e stat,
     case STAT_SHADOW_SPELL_POWER: school_spell_power[ SCHOOL_SHADOW ] += value; break;
 
     case STAT_ATTACK_POWER:             attack_power             += value; break;
+    case STAT_RANGED_ATTACK_POWER:      ranged_attack_power      += value; break;
     case STAT_EXPERTISE_RATING:         expertise_rating         += value; break;
     case STAT_EXPERTISE_RATING2:        expertise_rating2        += value; break;
 
@@ -136,6 +137,7 @@ void gear_stats_t::set_stat( stat_e stat,
     case STAT_SHADOW_SPELL_POWER: school_spell_power[ SCHOOL_SHADOW ] = value; break;
 
     case STAT_ATTACK_POWER:             attack_power             = value; break;
+    case STAT_RANGED_ATTACK_POWER:      ranged_attack_power      = value; break;
     case STAT_EXPERTISE_RATING:         expertise_rating         = value; break;
     case STAT_EXPERTISE_RATING2:        expertise_rating2        = value; break;
 
@@ -216,6 +218,7 @@ double gear_stats_t::get_stat( stat_e stat ) const
     case STAT_SHADOW_SPELL_POWER: return school_spell_power[ SCHOOL_SHADOW ];
 
     case STAT_ATTACK_POWER:             return attack_power;
+    case STAT_RANGED_ATTACK_POWER:      return ranged_attack_power;
     case STAT_EXPERTISE_RATING:         return expertise_rating;
     case STAT_EXPERTISE_RATING2:        return expertise_rating2;
 
@@ -257,9 +260,10 @@ double gear_stats_t::stat_mod( stat_e stat )
 {
   switch ( stat )
   {
-    case STAT_ATTACK_POWER:      return 1.0;
-    case STAT_SPELL_POWER:       return 1.0;
-    default:                     return 1.0;
+    case STAT_ATTACK_POWER:        return 1.0;
+    case STAT_RANGED_ATTACK_POWER: return 1.0;
+    case STAT_SPELL_POWER:         return 1.0;
+    default:                       return 1.0;
   }
 }
 

@@ -98,6 +98,8 @@ struct ranged_attack_t : public attack_t
   // Ranged Attack Overrides
   double composite_target_multiplier( player_t* ) const override;
   void schedule_execute( action_state_t* execute_state = nullptr ) override;
+  // TODO: Think this will be needed to separate melee/ranged haste
+  //double execute_time_pct_multiplier() const override;
 
   proc_types proc_type() const override;
 };
@@ -136,7 +138,8 @@ struct auto_attack_t : public action_t
     parse_options( options_str );
 
     for ( auto& [ slot, weapon ] : p->equipped_weapons )
-      create_melee_attack( weapon );
+      if ( slot != SLOT_RANGED )
+        create_melee_attack( weapon );
   }
 
   // TODO (FOREVER): handle different weapon types range behaviours

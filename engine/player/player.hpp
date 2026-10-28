@@ -203,6 +203,7 @@ struct player_t : public actor_t
 
     double spell_power_per_intellect, spell_power_per_spirit, spell_power_per_attack_power;
     double attack_power_per_strength, attack_power_per_agility, attack_power_per_spell_power;
+    double ranged_attack_power_per_agility;
     double dodge_per_agility, parry_per_strength, parry_rating_per_crit_rating;
     double attack_crit_per_agility, spell_crit_per_intellect;
     double health_per_stamina;
@@ -224,7 +225,7 @@ struct player_t : public actor_t
     std::array<double, ATTRIBUTE_MAX> attribute_multiplier;
     std::array<double, ATTRIBUTE_MAX> matching_armor_multiplier;
     std::array<double, RATING_MAX> rating_multiplier;
-    double spell_power_multiplier, attack_power_multiplier, base_armor_multiplier, armor_multiplier;
+    double spell_power_multiplier, attack_power_multiplier, ranged_attack_power_multiplier, base_armor_multiplier, armor_multiplier;
     std::array<double, SCHOOL_MAX_PRIMARY> crit_damage_multiplier;
     double crit_healing_multiplier;
     double attack_speed_multiplier;
@@ -268,6 +269,7 @@ struct player_t : public actor_t
   std::map<slot_e, action_t*> melee_attacks;
   attack_t* main_hand_attack;
   attack_t*  off_hand_attack;
+  attack_t*    ranged_attack;
 
   // Current attack speed (needed for dynamic attack speed adjustments)
   double current_auto_attack_speed;
@@ -878,8 +880,10 @@ public:
   virtual double composite_melee_haste() const;
   virtual double composite_melee_auto_attack_speed() const;
   virtual double composite_melee_attack_power() const;
+  virtual double composite_ranged_attack_power() const;
   virtual double composite_weapon_attack_power_by_type( attack_power_type ) const;
   virtual double composite_total_attack_power_by_type( attack_power_type ) const;
+  // TODO Forever: Do I need weapon ranged attack power composites here?
   virtual double composite_melee_hit() const;
   virtual double composite_melee_crit_chance() const;
   virtual double composite_melee_crit_chance_multiplier() const
@@ -911,6 +915,7 @@ public:
   virtual double composite_block_value( const action_state_t* s ) const;
   virtual double composite_crit_avoidance() const;
   virtual double composite_attack_power_multiplier() const;
+  virtual double composite_ranged_attack_power_multiplier() const;
   virtual double composite_spell_power_multiplier() const;
   virtual double matching_gear_multiplier( attribute_e /* attr */ ) const;
   /// Player-wide school based multipliers

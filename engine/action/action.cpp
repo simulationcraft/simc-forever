@@ -1409,6 +1409,9 @@ double action_t::calculate_weapon_damage( double attack_power ) const
   if ( !weapon || weapon_multiplier <= 0 )
     return 0;
 
+  // TODO Forever: Do we need special handling for ranged weapons here?
+  // Currently the weapon roll is multiplied by melee AP so probably need ranged handling
+
   // The weapon damage roll (and its bonus damage) is affected by attak power modifiers just like regular attack power
   double capm             = player -> composite_attack_power_multiplier();
   double dmg              = capm * ( sim->averaged_range( weapon->min_dmg, weapon->max_dmg ) + weapon->bonus_dmg );
@@ -2798,6 +2801,7 @@ void action_t::init()
   // this only defines the ap type, the ability may not necessarily use attack power at all, however
   // that is not possible to know at init time with 100% accuracy.
   // Only overwrite this if the default attack_power_type::AP_NONE value is still set, since modules may set manually.
+  // TODO Forever - can a bunch of this go since we're mostly back in classic era weapons?
   if ( ap_type == attack_power_type::NONE )
   {
     // Weapon multiplier is set. The power calculation for the ability uses base ap only, as the

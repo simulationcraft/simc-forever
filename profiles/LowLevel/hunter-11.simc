@@ -1,0 +1,109 @@
+# Fallochli - 2026-10-19 16:10 - /Classic Beta PvE 2
+# SimC Addon 12.1.5-02
+# WoW 1.60.1.70450, TOC 16001
+# Requires SimulationCraft 1000-01 or newer
+
+hunter="Fallochli"
+level=11
+race=dwarf
+region=
+server=classic_beta_pve_2
+role=
+professions=skinning=56
+spec=unknown
+
+talents=C0cBZcHs6hiHBl7Csp3hvR+3RCAwDMAAAAAA
+
+# Primary Talents
+# talents=C0cBZcHs6hiHBl7Csp3hvR+3RCAwDMAAAAAA
+
+legacy_talents=136864:5/137371:5/136855:5/136866:1
+
+# Goat Fur Cloak (10)
+back=,id=2905
+# Ragged Leather Vest (5)
+chest=,id=1364
+# Rugged Trapper's Shirt (1)
+shirt=,id=148
+# Frayed Bracers (5)
+wrist=,id=3365
+# Driving Gloves (9)
+hands=,id=3152
+# Worn Leather Belt (7)
+waist=,id=1418
+# Dwarven Leather Pants (5)
+legs=,id=61
+# Worn Leather Boots (8)
+feet=,id=1419
+# Avala's Binding (8)
+finger1=,id=286737
+# Sharp Axe (8)
+main_hand=,id=1011
+# Light Shot
+ammo=,id=2516
+# ammo_count=956
+# Old Blunderbuss (2)
+ranged=,id=2508
+
+bag1=,id=2102
+bag2=,id=277977
+
+### Gear from Bags
+#
+# Patchwork Cloak (6)
+# back=,id=1429
+#
+# Patchwork Cloak (6)
+# back=,id=1429
+#
+# Bear Shawl (5)
+# back=,id=6185
+#
+# Patchwork Armor (7)
+# chest=,id=1433
+#
+# Patchwork Gloves (7)
+# hands=,id=1430
+#
+# Worn Leather Pants (7)
+# legs=,id=1423
+#
+# Priest's Mace of Stamina (12)
+# main_hand=,id=2075,bonus_id=12731
+#
+# Skinning Knife (4)
+# main_hand=,id=7005
+
+### Additional Character Info
+#
+# character_stats=health:246/power_type:0/mana:315/rage:0/focus:0/energy:0/strength:26/agility:33/stamina:31/intellect:24/spirit:30
+# character_stats_base=strength:26/agility:33/stamina:31/intellect:24/spirit:27
+# character_stats_bonus=strength:0/agility:0/stamina:0/intellect:0/spirit:3
+# character_stats_gear=damage_per_second:4.79/frost_resistance:1/armor:154/resistance4:1
+# attack_power=melee:61:0:0/ranged:68:20:0
+# spell_power=holy:0/fire:0/nature:0/frost:0/shadow:0/arcane:0
+# spell_stats=healing:0/penetration:0
+# regen=health:3.91:0/health_from_spirit:5.21:0/mana:7.50:0.00/mana_from_spirit:7.50:0/mana_power:7.50:0.00/rage_power:-12.50:0.00/focus_power:10.00:10.00/energy_power:10.00:10.00
+# crit=melee:4.10/ranged:4.42/spell:4.94
+# hit=melee_rating_bonus:0/melee_modifier:0/ranged_rating_bonus:0/ranged_modifier:0/spell_rating_bonus:0/spell_modifier:0
+# haste=melee:0/ranged:0/ranged_ammo:10.00/spell:0
+# combat_modifiers=expertise:0/expertise_offhand:0/expertise_ranged:0/armor_penetration:0/mastery:0
+# combat_ratings=
+# defense=armor_base:60/armor_effective:280/armor:280/armor_bonus:220/defense_skill:48/defense_modifier:0/dodge:8.64/parry:4.72/block:0/block_value:1
+# resistances=holy:0/fire:0/nature:0/frost:1/shadow:0/arcane:0
+# weapon_damage=mainhand:17.50:22.55:2.60/pos_buff:0/neg_buff:0/percent:1.01/ranged:17.62:21.65:2.09/ranged_pos_buff:0/ranged_neg_buff:0/ranged_percent:1.01
+# pet_info=npc_id:165189/level:9/name:bear/family:boar/type:beast/talent_tree:default/loyalty:submissive/happiness:3/damage_percent:125/loyalty_rate:20/training_points:18:5
+# pet_stats=health:289/power_type:2/mana:0/rage:0/focus:100/energy:0/strength:0/agility:0/stamina:0/intellect:0/spirit:0
+# pet_stats_base=strength:0/agility:0/stamina:0/intellect:0/spirit:0
+# pet_stats_bonus=strength:0/agility:0/stamina:0/intellect:0/spirit:0
+# pet_attack_power=melee:29:8:0/ranged:0:0:0
+# pet_modifiers=spell_power:0/haste_melee:0/hit_melee_modifier:0/hit_spell_modifier:0
+# pet_defense=armor_base:533/armor_effective:600/armor:600/armor_bonus:67/defense_skill:45/defense_modifier:0
+# pet_resistances=holy:0/fire:0/nature:0/frost:0/shadow:0/arcane:0
+# pet_weapon_damage=mainhand:14.92:19.32:2/pos_buff:0/neg_buff:0/percent:1
+#
+# skills=44:46:0:55/46:54:0:55/50:1:0:1/51:1:0:1/95:48:0:55/98:300:0:300/111:300:0:300/162:1:0:55/163:1:0:1/173:1:0:55/185:2:0:75/393:56:0:75/414:1:0:1/415:1:0:1/2939:2:0:75/2947:56:0:75
+#
+# buffs=8091:0/8112:0/13165:0
+
+# Checksum: d5c9b9ef

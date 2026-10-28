@@ -227,8 +227,10 @@ stat_e special_effect_t::stat_buff_type( const spelleffect_data_t& effect ) cons
       stat_ = STAT_BONUS_ARMOR;
       break;
     case A_MOD_ATTACK_POWER:
-    case A_MOD_RANGED_ATTACK_POWER:
       stat_ = STAT_ATTACK_POWER;
+      break;
+    case A_MOD_RANGED_ATTACK_POWER:
+      stat_ = STAT_RANGED_ATTACK_POWER;
       break;
     case A_MOD_DAMAGE_DONE:
       if ( effect.misc_value1() & 0x7E )

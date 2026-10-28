@@ -11,4 +11,5 @@ std::string flask( const player_t* );
 std::string food( const player_t* );
 std::string rune( const player_t* );
 std::string temporary_enchant( const player_t* );
+void hunter( player_t* );
 }  // namespace hunter_apl

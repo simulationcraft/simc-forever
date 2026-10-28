@@ -474,8 +474,11 @@ ranged_attack_t::ranged_attack_t( util::string_view token, player_t* p )
 ranged_attack_t::ranged_attack_t( util::string_view token, player_t* p, const spell_data_t* s )
   : attack_t( token, p, s )
 {
-  // ranged attacks cannot be blocked or parried
-  may_block = may_parry = false;
+  // ranged attacks cannot be blocked, dodged, or parried
+  // TODO Forever: Fairly certain ranged attacks can't be glancing but this needs a bit more verification
+  may_block = may_parry = may_dodge = may_glance = false;
+
+  ap_type = attack_power_type::RANGED;
 }
 
 // Ranged attacks are identical to melee attacks, but cannot be parried or dodged.

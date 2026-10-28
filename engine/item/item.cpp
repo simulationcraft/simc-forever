@@ -682,6 +682,7 @@ inventory_type item_t::dbc_inventory_type() const
         case WEAPON_STAFF:
         case WEAPON_POLEARM:
           return INVTYPE_2HWEAPON;
+        // TODO: Can we remove this branch in Forever since thrown go into the ranged slot?
         case WEAPON_THROWN:
           return INVTYPE_THROWN;
         default:
@@ -1441,8 +1442,6 @@ bool item_t::verify_slot()
         case INVTYPE_2HWEAPON:
         case INVTYPE_WEAPON:
         case INVTYPE_WEAPONMAINHAND:
-        case INVTYPE_RANGED:
-        case INVTYPE_RANGEDRIGHT:
           return true;
         default:
           return false;
@@ -1457,6 +1456,19 @@ bool item_t::verify_slot()
         case INVTYPE_SHIELD:
         case INVTYPE_HOLDABLE:
         case INVTYPE_WEAPON:
+          return true;
+        default:
+          return false;
+      }
+    }
+    case SLOT_RANGED:
+    {
+      switch ( it )
+      {
+        case INVTYPE_RANGED:
+        case INVTYPE_RANGEDRIGHT:
+        case INVTYPE_THROWN:
+        case INVTYPE_RELIC:
           return true;
         default:
           return false;

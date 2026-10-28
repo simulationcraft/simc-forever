@@ -169,6 +169,18 @@ double player_stat_cache_t::attack_power() const
   return _attack_power;
 }
 
+double player_stat_cache_t::ranged_attack_power() const
+{
+  if ( !active || !valid[ CACHE_RANGED_ATTACK_POWER ] )
+  {
+    valid[ CACHE_RANGED_ATTACK_POWER ] = true;
+    _ranged_attack_power               = player->composite_ranged_attack_power();
+  }
+  else
+    assert( _ranged_attack_power == player->composite_ranged_attack_power() );
+  return _ranged_attack_power;
+}
+
 double player_stat_cache_t::weapon_attack_power( attack_power_type t ) const
 {
   auto type = static_cast<unsigned>( t );
@@ -489,6 +501,7 @@ double player_stat_cache_t::intellect() const { return _player->intellect(); }
 double player_stat_cache_t::spirit() const { return _player->spirit(); }
 double player_stat_cache_t::spell_power( school_e s ) const { return _player->composite_spell_power( s ); }
 double player_stat_cache_t::attack_power() const { return _player->composite_melee_attack_power(); }
+double player_stat_cache_t::ranged_attack_power() const { return _player->composite_ranged_attack_power(); }
 double player_stat_cache_t::weapon_attack_power( attack_power_type t ) { const return _player->composite_weapon_attack_power_by_type( t ); }
 double player_stat_cache_t::attack_expertise() const { return _player->composite_melee_expertise(); }
 double player_stat_cache_t::attack_hit() const { return _player->composite_melee_hit(); }
