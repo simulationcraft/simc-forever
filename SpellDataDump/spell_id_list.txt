@@ -4579,6 +4579,7 @@ Shaman
 1325256  Mana Tide Totem
 1325257  Mana Tide
 1326047  Lava Burst
+1326619 *Ancestral Spirit
 
 Warlock
 128     *Spellstone
