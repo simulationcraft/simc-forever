@@ -32,11 +32,24 @@ struct druid_t final : public parse_player_effects_t
   druid_t( sim_t* sim, std::string_view name, race_e r = RACE_NIGHT_ELF )
     : parse_player_effects_t( sim, DRUID, name, r ) {}
 
+  struct talents_t
+  {
+    player_talent_t improved_entangling_roots;
+  } talent;
+
+  struct buffs_t
+  {
+    buff_t* innervate;
+  } buff;
+
   resource_e primary_resource() const override { return RESOURCE_MANA; }
 
   void init_base_stats() override;
   void init_spells() override;
   void init_action_list() override;
+  void create_buffs() override;
+  void init_finished() override;
+  void parse_player_effects();
 
   std::string default_potion() const override { return druid_apl::potion( this ); }
   std::string default_flask() const override  { return druid_apl::flask( this ); }
@@ -46,7 +59,7 @@ struct druid_t final : public parse_player_effects_t
 
   action_t* create_action( std::string_view name, std::string_view options_str ) override;
 
-    druid_td_t* get_target_data( player_t* target ) const override
+  druid_td_t* get_target_data( player_t* target ) const override
   {
     assert( target );
     druid_td_t*& td = target_data[ target ];
@@ -56,10 +69,6 @@ struct druid_t final : public parse_player_effects_t
     return td;
   }
 
-  struct talents_t
-  {
-    player_talent_t improved_entangling_roots;
-  } talent;
 };
 
 // DRUID MODULE INTERFACE ===================================================
@@ -265,6 +274,28 @@ struct faerie_fire_t : public druid_spell_t
   }
 };
 
+constexpr std::array innervate_ranks{
+    spell_container_t().set_spell( 29166 ),
+}; 
+ struct innervate_t : public druid_spell_t
+{
+  innervate_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "innervate", player, player->find_rank( innervate_ranks)->spell( player) )
+  {
+    parse_options( options_str );
+    harmful = false;
+    // TODO: verify against live data
+    // assumed that the regen buff applies only to spirit regen
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    druid_spell_t::impact( s );
+
+    p()->buff.innervate->trigger();
+  }
+};
+
 // ==========================================================================
 // Druid Attacks
 // ==========================================================================
@@ -344,6 +375,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new hurricane_t( this, options_str );
   if ( name == "faerie_fire" )
     return new faerie_fire_t( this, options_str );
+  if ( name == "innervate" )
+    return new innervate_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
 }
@@ -379,6 +412,33 @@ inline druid_td_t::druid_td_t( player_t& target, druid_t& p ) : actor_target_dat
       make_debuff<stat_buff_t>( faerie_fire_debuff->spell( &p )->ok(), *this, "faerie_fire", faerie_fire_debuff->spell( &p ))
     ->set_default_value_from_effect( 1 );
 }
+
+template <typename Buff, typename... Args>
+static inline buff_t* make_fallback( Args&&... args )
+{
+  return buff_t::make_buff_fallback<Buff>( true, std::forward<Args>( args )... );
+};
+
+void druid_t::create_buffs()
+{
+  player_t::create_buffs();
+
+  auto const innervate_buff = find_rank( innervate_ranks )->spell( this );
+  buff.innervate            = make_buff_fallback( innervate_buff->ok(), this, "innervate", innervate_buff );
+};
+
+void druid_t::init_finished()
+{
+  parse_player_effects();
+
+  player_t::init_finished();
+}
+
+void druid_t::parse_player_effects() 
+{
+  parse_effects( buff.innervate );
+};
+
 }  // UNNAMED NAMESPACE
 
 const module_t* module_t::druid()
