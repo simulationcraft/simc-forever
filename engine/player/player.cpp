@@ -1619,6 +1619,8 @@ void player_t::init_base_stats()
     // Armor Coefficient, based on level (1054 @ 50; 2500 @ 60-63)
     base.armor_coeff = dbc->armor_mitigation_constant( level() );
     sim->print_debug( "{} base armor coefficient set to {}.", *this, base.armor_coeff );
+
+    base.stats.armor = get_passive_player_value( base.stats.armor, "armor" );
   }
 
   base.attack_power_per_spell_power =
@@ -14038,6 +14040,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_PARRY_FROM_CRIT_RATING,             "parry_from_crit_rating"           },  // 463
   { A_MOD_AUTO_ATTACK_DAMAGE_PCT,             "auto_attack_multiplier"           },  // 530
   { A_MOD_GUARDIAN_DAMAGE_DONE,               "guardian_damage_multiplier"       },  // 531
+  { A_MOD_ARMOR,                              "armor"                            },  // 674
 };
 
 std::string attr_formatter( int type )
@@ -14303,6 +14306,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
     {
       // special handling
       case A_MOD_STAT:  // 29
+      case A_MOD_ARMOR: // 674
         // parse scaling value if necessary
         flat_val = modifying_eff.average( this );
         break;
