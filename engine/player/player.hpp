@@ -201,7 +201,7 @@ struct player_t : public actor_t
 
     gear_stats_t stats;
 
-    double spell_power_per_intellect, spell_power_per_attack_power;
+    double spell_power_per_intellect, spell_power_per_spirit, spell_power_per_attack_power;
     double attack_power_per_strength, attack_power_per_agility, attack_power_per_spell_power;
     double dodge_per_agility, parry_per_strength, parry_rating_per_crit_rating;
     double attack_crit_per_agility, spell_crit_per_intellect;
@@ -211,6 +211,7 @@ struct player_t : public actor_t
     double hit, expertise, leech, avoidance, crit_avoidance;
     double spell_crit_chance, attack_crit_chance, block_value;
     double all_crit, all_haste;
+    double mana_regen_while_casting;
     double melee_haste, spell_haste, ranged_haste;
     double skill, skill_debuff, distance;
     double distance_to_move;
@@ -635,7 +636,7 @@ public:
 
   void print_parsed_effects( report::sc_html_stream& ) const;
   virtual void print_custom_parsed_effects( report::sc_html_stream& ) const {}
-  void parse_passive_item_effect( const spell_data_t* );
+  void parse_passive_item_effect( const spell_data_t*, uint32_t mask = 0 );
   void register_passive_item_effect_override( const spelleffect_data_t&, double );
 
   player_t( sim_t* sim, player_e type, util::string_view name, race_e race_e );
@@ -890,6 +891,7 @@ public:
   { return 1.0; }
   virtual double composite_spell_hit() const;
   virtual double composite_leech() const;
+  virtual double composite_mana_regen_while_casting() const;
   virtual double composite_run_speed() const;
   virtual double composite_avoidance() const;
   virtual double composite_corruption() const;

@@ -1087,6 +1087,16 @@ double parse_player_effects_t::stacking_movement_modifier() const
   return m;
 }
 
+double parse_player_effects_t::composite_mana_regen_while_casting() const
+{
+  auto m = player_t::composite_mana_regen_while_casting();
+
+  for ( const auto& i : mana_regen_while_casting_effects )
+    m += get_effect_value( i );
+
+  return m;
+}
+
 void parse_player_effects_t::invalidate_cache( cache_e c )
 {
   player_t::invalidate_cache( c );
@@ -1268,6 +1278,10 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
       str = "absorb received";
       return &absorb_received_mult_effects;
 
+    case A_MOD_MANA_REGEN_INTERRUPT:
+      str = "mana regen while casting";
+      return &mana_regen_while_casting_effects;
+
     case A_MOD_INCREASE_SPEED:
       str = "exclusive move speed";
       invalidate( CACHE_RUN_SPEED );
@@ -1415,6 +1429,7 @@ void parse_player_effects_t::print_custom_parsed_effects( report::sc_html_stream
     print_parsed_type( os, spell_haste_effects, "Spell Haste" );
     print_parsed_type( os, healing_received_effects, "Healing Received" );
     print_parsed_type( os, leech_effects, "Leech" );
+    print_parsed_type( os, mana_regen_while_casting_effects, "Mana Regen While Casting" );
     print_parsed_type( os, non_stacking_movement_effects, "Move Speed Modifier - Exclusive" );
     print_parsed_type( os, stacking_movement_effects, "Move Speed Modifier - Stacking" );
     print_parsed_type( os, parry_effects, "Parry" );
@@ -1461,7 +1476,8 @@ size_t parse_player_effects_t::total_effects_count() const
          target_multiplier_effects.size() +
          target_pet_multiplier_effects.size() +
          non_stacking_movement_effects.size() +
-         stacking_movement_effects.size();
+         stacking_movement_effects.size() +
+         mana_regen_while_casting_effects.size();
 }
 
 void parse_action_base_t::parse_callback_function( pack_t<player_effect_t>& pack, parse_cb_t cb )
@@ -1554,6 +1570,15 @@ std::vector<player_effect_t>* parse_action_base_t::get_effect_vector( const spel
   {
     str = "auto attack";
     return &da_multiplier_effects;
+  }
+
+  if ( eff.subtype() == A_MOD_POWER_COST_SCHOOL_PCT )
+  {
+    if ( !( dbc::get_school_mask( _action->get_school() ) & eff.affected_schools() ) )
+      return nullptr;
+
+    str = "cost percent";
+    return &cost_effects;
   }
 
   if ( !force )
