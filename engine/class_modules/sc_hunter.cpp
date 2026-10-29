@@ -59,6 +59,8 @@ using hunter_spell_t  = hunter_action_t<spell_t>;
 
 struct hunter_ranged_attack_t : public hunter_ranged_t
 {
+  bool first = true;
+
   hunter_ranged_attack_t( util::string_view name, player_t* player )
     : hunter_ranged_t( name, player, player->find_spell( 75 ) )
   {
@@ -72,6 +74,27 @@ struct hunter_ranged_attack_t : public hunter_ranged_t
     repeating         = true;
     may_crit          = true;
     special           = false;
+  }
+
+  void reset() override
+  {
+    hunter_ranged_t::reset();
+    first = true;
+  }
+
+  timespan_t execute_time() const override
+  {
+    if ( !player->in_combat )
+      return 10_ms;
+    if ( first )
+      return 100_ms;
+    return hunter_ranged_t::execute_time();
+  }
+
+  void execute() override
+  {
+    first = false;
+    hunter_ranged_t::execute();
   }
 };
 
@@ -89,8 +112,6 @@ struct hunter_auto_shot_t : public hunter_ranged_t
 
     p->ranged_attack = new hunter_ranged_attack_t( "auto_shot", p );
   }
-
-  // TODO: Copy midnight's immediate first shot
 
   void execute() override
   {
@@ -113,6 +134,12 @@ struct hunter_auto_shot_t : public hunter_ranged_t
 
 void hunter_t::init_base_stats()
 {
+  if ( base.distance < 1 )
+  {
+    base.distance = find_spell( 75 )->max_range();
+
+    // TODO: Set melee distance for survival hunter
+  }
   base.attack_power_per_strength = 1.0;
   base.attack_power_per_agility  = 1.0;
 
