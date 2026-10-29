@@ -1720,7 +1720,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_MOD_DAMAGE_FROM_CASTER_SPELLS_LABEL,   "Modify Damage Taken% from Caster's Spells (Label)" },  // 537
   { A_MOD_SUPPORT_STAT,                      "Modify Stat With Support Triggers"                 },  // 540
   { A_TRIGGER_SPELL_ON_STACK_AMOUNT,         "Trigger Spell on Aura Stack Count"                 },  // 542
-  { A_MOD_RANGED_HASTE_QUIVER,               "Modify Ranged Attack Speed%"                       },  // 557
+  { A_MOD_RANGED_ATTACK_SPEED_QUIVER,        "Modify Ranged Attack Speed%"                       },  // 557
   { A_MOD_CRITICAL_BLOCK_AMOUNT,             "Modify Critical Block Amount"                      },  // 638
   { A_MOD_DAMAGE_DONE_TO_CASTER_FROM_SCHOOL, "Modify Damage done to Caster from School"          },  // 639
   { A_MOD_RANGED_ATTACK_SPEED_FLAT,          "Modify Ranged Attack Speed Flat"                   },  // 643

@@ -14200,7 +14200,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_PARRY_FROM_CRIT_RATING,             "parry_from_crit_rating"           },  // 463
   { A_MOD_AUTO_ATTACK_DAMAGE_PCT,             "auto_attack_multiplier"           },  // 530
   { A_MOD_GUARDIAN_DAMAGE_DONE,               "guardian_damage_multiplier"       },  // 531
-  { A_MOD_RANGED_HASTE_QUIVER,                "ranged_attack_speed_multiplier"   },  // 557
+  { A_MOD_RANGED_ATTACK_SPEED_QUIVER,         "ranged_attack_speed_multiplier"   },  // 557
 };
 
 std::string attr_formatter( int type )
@@ -14546,7 +14546,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_PET_DAMAGE_DONE:  // 429
       case A_MOD_AUTO_ATTACK_DAMAGE_PCT:  // 530
       case A_MOD_GUARDIAN_DAMAGE_DONE:  // 531
-      case A_MOD_RANGED_HASTE_QUIVER: // 557
+      case A_MOD_RANGED_ATTACK_SPEED_QUIVER: // 557
         pct_val = modifying_eff.average( this );
         break;
 
