@@ -1296,6 +1296,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   crit_damage_multiplier(),
   crit_healing_multiplier( 1.0 ),
   attack_speed_multiplier( 1.0 ),
+  ranged_attack_speed_multiplier( 1.0 ),
   healing_multiplier( 1.0 ),
   damage_multiplier(),
   pet_damage_multiplier( 1.0 ),
@@ -1376,6 +1377,7 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
   fmt::format_to( out, " healing_multiplier={:.6g}", s.healing_multiplier );
   fmt::format_to( out, " crit_healing_multiplier={:.6g}", s.crit_healing_multiplier );
   fmt::format_to( out, " attack_speed_multiplier={:.6g}", s.attack_speed_multiplier );
+  fmt::format_to( out, " ranged_attack_speed_multiplier={:.6g}", s.ranged_attack_speed_multiplier );
   fmt::format_to( out, " pet_damage_multiplier={:.6g}", s.pet_damage_multiplier );
   fmt::format_to( out, " guardian_damage_multiplier={:.6g}", s.guardian_damage_multiplier );
   fmt::format_to( out, " absorb_multiplier={:.6g}", s.absorb_multiplier );
@@ -1555,6 +1557,7 @@ void player_t::init_base_stats()
     double attack_speed_multiplier = base.attack_speed_multiplier;
     base.attack_speed_multiplier /= get_passive_player_value( attack_speed_multiplier, "attack_speed" );
     base.attack_speed_multiplier *= get_passive_player_value( attack_speed_multiplier, "attack_speed_modifier" );
+    base.ranged_attack_speed_multiplier /= get_passive_player_value( base.ranged_attack_speed_multiplier, "ranged_attack_speed_multiplier" );
     base.attack_power_multiplier = get_passive_player_value( base.attack_power_multiplier, "attack_power_multiplier" );
     base.ranged_attack_power_multiplier = get_passive_player_value( base.ranged_attack_power_multiplier, "ranged_attack_power_multiplier" );
 
@@ -2039,6 +2042,22 @@ void player_t::init_items()
       continue;
     assert( item.slot >= SLOT_MAIN_HAND && item.slot <= SLOT_RANGED && "Weapon found in unexpected slot!" );
     init_weapon( equipped_weapons[ item.slot ] );
+  }
+
+  // Bags - register on-equip spells from quivers
+  if ( !items.empty() )
+  {
+    for ( slot_e slot = SLOT_BAG_1; slot <= SLOT_BAG_5; slot++ )
+    {
+      if ( !items[ slot ].parsed.data.id )
+        continue;
+
+      for ( const auto& effect : item_effect_t::find_for_item( items[ slot ].parsed.data.id, dbc->ptr ) )
+      {
+        if ( effect.type == ITEM_SPELLTRIGGER_ON_EQUIP )
+          parse_passive_item_effect( find_spell( effect.spell_id ) );
+      }
+    }
   }
 }
 
@@ -4458,6 +4477,12 @@ double player_t::composite_melee_auto_attack_speed() const
   h *= current.attack_speed_multiplier;
 
   return h;
+}
+
+double player_t::composite_ranged_auto_attack_speed() const
+{
+  // TODO FOREVER: Ranged Haste from Rapid Fire, Aspect of the Hawk
+  return current.ranged_attack_speed_multiplier;
 }
 
 double player_t::composite_melee_attack_power() const
@@ -10491,6 +10516,24 @@ pet_t* player_t::create_pet( util::string_view, util::string_view )
   return nullptr;
 }
 
+static bool slot_counts_for_ilevel( slot_e slot )
+{
+  switch ( slot )
+  {
+    case SLOT_SHIRT:
+    case SLOT_TABARD:
+    case SLOT_AMMO:
+    case SLOT_BAG_1:
+    case SLOT_BAG_2:
+    case SLOT_BAG_3:
+    case SLOT_BAG_4:
+    case SLOT_BAG_5:
+      return false;
+    default:
+      return true;
+  }
+}
+
 /**
  * Get average item level the player is wearing
  */
@@ -10500,8 +10543,7 @@ double player_t::avg_item_level() const
   int num_ilvl_items = 0;
   for ( const auto& item : items )
   {
-    // TODO Forever: Removed SLOT_RANGED and added SLOT_AMMO - verify how SLOT_RANGED affects avg item level in-game
-    if ( item.slot != SLOT_SHIRT && item.slot != SLOT_TABARD && item.slot != SLOT_AMMO && item.active() )
+    if ( slot_counts_for_ilevel( item.slot ) && item.active() )
     {
       avg_ilvl += item.item_level();
       num_ilvl_items++;
@@ -12178,7 +12220,8 @@ std::string player_t::create_profile( save_e stype )
     const slot_e SLOT_OUT_ORDER[] = {
         SLOT_HEAD,      SLOT_NECK,      SLOT_SHOULDERS, SLOT_BACK,     SLOT_CHEST,  SLOT_SHIRT,    SLOT_TABARD,
         SLOT_WRISTS,    SLOT_HANDS,     SLOT_WAIST,     SLOT_LEGS,     SLOT_FEET,   SLOT_FINGER_1, SLOT_FINGER_2,
-        SLOT_TRINKET_1, SLOT_TRINKET_2, SLOT_MAIN_HAND, SLOT_OFF_HAND, SLOT_RANGED, SLOT_AMMO,
+        SLOT_TRINKET_1, SLOT_TRINKET_2, SLOT_MAIN_HAND, SLOT_OFF_HAND, SLOT_RANGED, SLOT_AMMO,     SLOT_BAG_1,
+        SLOT_BAG_2,     SLOT_BAG_3,     SLOT_BAG_4,     SLOT_BAG_5,
     };
 
     for ( auto& slot : SLOT_OUT_ORDER )
@@ -12454,6 +12497,13 @@ void player_t::create_options()
   add_option( opt_string( "ranged", items[ SLOT_RANGED ].options_str ) );
   add_option( opt_string( "ammo", items[ SLOT_AMMO ].options_str ) );
   add_option( opt_string( "tabard", items[ SLOT_TABARD ].options_str ) );
+
+  // Bags (mostly to pick up quiver ranged attack speed bonus)
+  add_option( opt_string( "bag1", items[ SLOT_BAG_1 ].options_str ) );
+  add_option( opt_string( "bag2", items[ SLOT_BAG_2 ].options_str ) );
+  add_option( opt_string( "bag3", items[ SLOT_BAG_3 ].options_str ) );
+  add_option( opt_string( "bag4", items[ SLOT_BAG_4 ].options_str ) );
+  add_option( opt_string( "bag5", items[ SLOT_BAG_5 ].options_str ) );
 
   // Set Bonus
   add_option( opt_func( "set_bonus", parse_set_bonus ) );
@@ -14150,6 +14200,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_PARRY_FROM_CRIT_RATING,             "parry_from_crit_rating"           },  // 463
   { A_MOD_AUTO_ATTACK_DAMAGE_PCT,             "auto_attack_multiplier"           },  // 530
   { A_MOD_GUARDIAN_DAMAGE_DONE,               "guardian_damage_multiplier"       },  // 531
+  { A_MOD_RANGED_ATTACK_SPEED_QUIVER,         "ranged_attack_speed_multiplier"   },  // 557
 };
 
 std::string attr_formatter( int type )
@@ -14495,6 +14546,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_PET_DAMAGE_DONE:  // 429
       case A_MOD_AUTO_ATTACK_DAMAGE_PCT:  // 530
       case A_MOD_GUARDIAN_DAMAGE_DONE:  // 531
+      case A_MOD_RANGED_ATTACK_SPEED_QUIVER: // 557
         pct_val = modifying_eff.average( this );
         break;
 
