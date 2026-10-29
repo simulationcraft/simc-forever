@@ -28,6 +28,12 @@ struct hunter_t final : public player_t
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
   void init_action_list() override;
+  void create_buffs() override;
+
+  struct buffs_t
+  {
+    buff_t* aspect_of_the_hawk = nullptr;
+  } buff;
 };
 
 template <class Base>
@@ -52,6 +58,41 @@ struct hunter_action_t : public parse_action_effects_t<Base>
 using hunter_melee_t  = hunter_action_t<melee_attack_t>;
 using hunter_ranged_t = hunter_action_t<ranged_attack_t>;
 using hunter_spell_t  = hunter_action_t<spell_t>;
+
+// ================================================================================
+// Hunter Buffs
+// ================================================================================
+
+constexpr std::array aspect_of_the_hawk_ranks {
+  spell_container_t().set_spell( 13165 ),
+  spell_container_t().set_spell( 14318 ),
+  spell_container_t().set_spell( 14319 ),
+  spell_container_t().set_spell( 14320 ),
+  spell_container_t().set_spell( 14321 ),
+  spell_container_t().set_spell( 14322 ),
+  spell_container_t().set_spell( 25296 ),
+};
+struct aspect_of_the_hawk_t : public hunter_spell_t
+{
+  aspect_of_the_hawk_t( hunter_t* p, util::string_view options_str ) :
+    hunter_spell_t( "aspect_of_the_hawk", p, p->find_rank( aspect_of_the_hawk_ranks )->spell( p ) )
+  {
+    parse_options( options_str );
+
+    harmful  = false;
+    may_miss = false;
+
+    target   = p;
+  }
+
+  void execute() override
+  {
+    hunter_spell_t::execute();
+
+    p()->buff.aspect_of_the_hawk->trigger();
+  }
+};
+
 
 // ================================================================================
 // Hunter Ranged
@@ -132,6 +173,52 @@ struct hunter_auto_shot_t : public hunter_ranged_t
   }
 };
 
+
+constexpr std::array arcane_shot_ranks {
+  spell_container_t().set_spell(  3044 ),
+  spell_container_t().set_spell( 14281 ),
+  spell_container_t().set_spell( 14282 ),
+  spell_container_t().set_spell( 14283 ),
+  spell_container_t().set_spell( 14284 ),
+  spell_container_t().set_spell( 14285 ),
+  spell_container_t().set_spell( 14286 ),
+  spell_container_t().set_spell( 14287 ),
+};
+struct arcane_shot_t : public hunter_ranged_t
+{
+  arcane_shot_t( hunter_t* p, util::string_view options_str )
+    : hunter_ranged_t( "arcane_shot", p, p->find_rank( arcane_shot_ranks )->spell( p ) )
+  {
+    parse_options( options_str );
+
+    // TODO Forever: Verify at ranks higher than 1. Only tested at low levels
+    attack_power_mod.direct = 0.10;
+  }
+};
+
+constexpr std::array serpent_sting_ranks {
+  spell_container_t().set_spell(  1978 ),
+  spell_container_t().set_spell( 13549 ),
+  spell_container_t().set_spell( 13550 ),
+  spell_container_t().set_spell( 13551 ),
+  spell_container_t().set_spell( 13552 ),
+  spell_container_t().set_spell( 13553 ),
+  spell_container_t().set_spell( 13554 ),
+  spell_container_t().set_spell( 13555 ),
+  spell_container_t().set_spell( 25295 ),
+};
+struct serpent_sting_t : public hunter_ranged_t
+{
+  serpent_sting_t( hunter_t* p, util::string_view options_str )
+    : hunter_ranged_t( "serpent_sting", p, p->find_rank( serpent_sting_ranks )->spell( p ) )
+  {
+    parse_options( options_str );
+
+    // TODO Forever: Verify with ranks higher than 1. Only tested at low levels
+    attack_power_mod.tick = 0.03;
+  }
+};
+
 void hunter_t::init_base_stats()
 {
   if ( base.distance < 1 )
@@ -159,9 +246,19 @@ void hunter_t::init_base_stats()
 
 action_t* hunter_t::create_action( util::string_view name, util::string_view options_str )
 {
-  if ( name == "auto_shot" ) return new hunter_auto_shot_t( this, options_str );
+  if ( name == "auto_shot" )          return new hunter_auto_shot_t( this, options_str );
+  if ( name == "arcane_shot" )        return new arcane_shot_t( this, options_str );
+  if ( name == "serpent_sting" )      return new serpent_sting_t( this, options_str );
+  if ( name == "aspect_of_the_hawk" ) return new aspect_of_the_hawk_t( this, options_str );
 
   return player_t::create_action( name, options_str );
+}
+
+void hunter_t::create_buffs()
+{
+  buff.aspect_of_the_hawk = make_buff<stat_buff_t>( this, "aspect_of_the_hawk", find_rank( aspect_of_the_hawk_ranks )->spell( this ) );
+
+  player_t::create_buffs();
 }
 
 void hunter_t::init_action_list()
