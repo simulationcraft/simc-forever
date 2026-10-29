@@ -40,6 +40,7 @@ struct druid_t final : public parse_player_effects_t
   struct buffs_t
   {
     buff_t* innervate;
+    buff_t* clearcasting;
   } buff;
 
   resource_e primary_resource() const override { return RESOURCE_MANA; }
@@ -48,8 +49,10 @@ struct druid_t final : public parse_player_effects_t
   void init_spells() override;
   void init_action_list() override;
   void create_buffs() override;
+  void init_special_effects() override;
   void init_finished() override;
   void parse_player_effects();
+  void apply_action_effects( action_t* a );
 
   std::string default_potion() const override { return druid_apl::potion( this ); }
   std::string default_flask() const override  { return druid_apl::flask( this ); }
@@ -96,17 +99,34 @@ struct druid_action_t : public parse_action_effects_t<Base>
   using base_t = druid_action_t<Base>;
 
   template <typename... Args>
-  druid_action_t( Args&&... args ) : action_base_t( std::forward<Args>( args )... ) {}
+  druid_action_t( std::string_view n, druid_t* p, const spell_data_t* s = spell_data_t::nil() )
+    : action_base_t( n, p, s ) 
+  {
+    if ( this->data().ok() )
+    {
+      p->apply_action_effects( this );
+    }
+  }
 
   druid_t* p()
   { return debug_cast<druid_t*>( this->player ); }
 
   const druid_t* p() const
   { return debug_cast<const druid_t*>( this->player ); }
+
+  void execute() override
+  {
+    action_base_t::execute();
+    
+    if ( this->data().affected_by( this->p()->buff.clearcasting->data() ) )
+    {
+      this->p()->buff.clearcasting->expire();
+    }
+  }
 };
 
 using druid_spell_t = druid_action_t<spell_t>;
-using druid_attack_t = druid_action_t<attack_t>;
+using druid_melee_attack_t = druid_action_t<melee_attack_t>;
 
 void druid_t::init_base_stats()
 {
@@ -296,32 +316,32 @@ constexpr std::array innervate_ranks{
   }
 };
 
+constexpr std::array omen_of_clarity_ranks{
+    spell_container_t().set_spell( 16864 ).set_buff( 16870 ),
+};
+
 // ==========================================================================
 // Druid Attacks
 // ==========================================================================
-struct druid_melee_t : public druid_attack_t
+struct druid_melee_t : public druid_melee_attack_t
 {
-  druid_melee_t( std::string_view name, player_t* player, weapon_t* w )
-    : druid_attack_t( name, player, spell_data_t::nil() )
+  druid_melee_t( std::string_view name, druid_t* player, weapon_t* w )
+    : druid_melee_attack_t( name, player, spell_data_t::nil() )
   {
     weapon_multiplier = 1.0;
     school            = SCHOOL_PHYSICAL;
     trigger_gcd       = 0_ms;
 
-    background = true;
-    repeating  = true;
-    may_glance = true;
-    may_crit   = true;
-    may_dodge  = true;
-    may_parry  = true;
+    background = repeating = allow_class_ability_procs = not_a_proc = true;
+    may_glance = may_crit = may_dodge = may_parry  = true;
     special    = false;
   }
 };
 
-struct auto_attack_t : public druid_attack_t
+struct auto_attack_t : public druid_melee_attack_t
 {
   auto_attack_t( druid_t* p, std::string_view options_str )
-    : druid_attack_t( "auto_attack", p, spell_data_t::nil() )
+    : druid_melee_attack_t( "auto_attack", p, spell_data_t::nil() )
   {
     parse_options( options_str );
     trigger_gcd           = 0_ms;
@@ -425,7 +445,31 @@ void druid_t::create_buffs()
 
   auto const innervate_buff = find_rank( innervate_ranks )->spell( this );
   buff.innervate            = make_buff_fallback( innervate_buff->ok(), this, "innervate", innervate_buff );
+
+  auto const omen_of_clarity_buff = find_rank( omen_of_clarity_ranks )->buff( this );
+  buff.clearcasting = make_buff_fallback( omen_of_clarity_buff->ok(), this, "clearcasting", omen_of_clarity_buff );
 };
+
+void druid_t::init_special_effects()
+{
+  auto const omen_of_clarity = find_rank( omen_of_clarity_ranks )->spell( this );
+  if ( omen_of_clarity->ok() )
+  {
+    const auto driver = new special_effect_t( this );
+    driver->name_str  = omen_of_clarity->name_cstr();
+    driver->spell_id  = omen_of_clarity->id();
+    driver->ppm_ = 2.0; // TODO 2 PPM is an educated guess based on old comments from classic. Must be reverified but beta logs were not big enough.
+    special_effects.push_back( driver );
+
+    callbacks.register_callback_execute_function( driver->spell_id, [ this ]( auto, auto, auto, auto ) {
+      buff.clearcasting->trigger();
+    } );
+
+    new dbc_proc_callback_t( this, *driver );
+  }
+
+  parse_player_effects_t::init_special_effects();
+}
 
 void druid_t::init_finished()
 {
@@ -438,6 +482,14 @@ void druid_t::parse_player_effects()
 {
   parse_effects( buff.innervate );
 };
+
+void druid_t::apply_action_effects( action_t* a )
+{
+  auto action = dynamic_cast<parse_action_base_t*>( a );
+  assert( action );
+
+  action->parse_effects( buff.clearcasting );
+}
 
 }  // UNNAMED NAMESPACE
 
