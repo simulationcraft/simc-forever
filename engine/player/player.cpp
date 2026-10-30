@@ -1261,6 +1261,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   parry( 0 ),
   block( 0 ),
   hit( 0 ),
+  spell_hit( 0 ),
   expertise( 0 ),
   leech( 0 ),
   avoidance( 0 ),
@@ -1341,6 +1342,8 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
   fmt::format_to( out, " spell_haste={:.6g}", s.spell_haste );
   fmt::format_to( out, " ranged_haste={:.6g}", s.ranged_haste );
   fmt::format_to( out, " leech={:.6g}", s.leech );
+  fmt::format_to( out, " hit={:.6g}", s.hit );
+  fmt::format_to( out, " spell_hit={:.6g}", s.spell_hit );
   fmt::format_to( out, " expertise={:.6g}", s.expertise );
   fmt::format_to( out, " skill={:.6g}", s.skill );
   fmt::format_to( out, " distance={:.6g}", s.distance );
@@ -1617,7 +1620,11 @@ void player_t::init_base_stats()
 
     // Forever: no base line hit or expertise
     base.hit       = 0.0;
+    base.spell_hit = 0.0;
     base.expertise = 0.0;
+
+    base.hit       = get_passive_player_value( base.hit, "hit" );
+    base.spell_hit = get_passive_player_value( base.spell_hit, "spell_hit" );
 
     base.expertise = get_passive_player_value( base.expertise, "expertise" );
     base.armor_penetration = get_passive_player_value( base.armor_penetration, "armor_penetration" );
@@ -4831,13 +4838,10 @@ double player_t::composite_spell_crit_chance() const
 
 double player_t::composite_spell_hit() const
 {
-  double sh = current.hit;
+  double sh = current.spell_hit;
 
   // sh += composite_spell_hit_rating() / current.rating.spell_hit;
-
-  sh += composite_melee_expertise();
-
-  return sh;
+    return sh;
 }
 
 double player_t::composite_bonus_armor() const
@@ -10891,7 +10895,7 @@ const spell_container_t* player_t::find_rank( util::span<const spell_container_t
         return &it;
   }
 
-  assert( false && "unreachable" );
+  return &ranks.front();
 }
 
 namespace
@@ -14021,6 +14025,8 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_CRIT_PERCENT,                       "attack_crit"                      },  // 52
   { A_MOD_SPELL_CRIT_CHANCE,                  "spell_crit"                       },  // 57
   { A_MOD_DAMAGE_PERCENT_DONE,                "damage_multiplier"                },  // 79
+  { A_MOD_HIT_CHANCE,                         "hit"                              },  // 54
+  { A_MOD_SPELL_HIT_CHANCE,                   "spell_hit"                        },  // 55
   { A_MOD_PERCENT_STAT,                       "base_attribute_multiplier"        },  // 80
   { A_RESTORE_POWER,                          "resource_regen"                   },  // 85
   { A_MOD_RESISTANCE_PCT,                     "armor_multiplier"                 },  // 101
@@ -14425,6 +14431,8 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_PARRY_PERCENT:  // 47
       case A_MOD_DODGE_PERCENT:  // 49
       case A_MOD_BLOCK_PERCENT:  // 51
+      case A_MOD_HIT_CHANCE:  // 54
+      case A_MOD_SPELL_HIT_CHANCE:  // 55
       case A_MOD_CRIT_PERCENT:   // 52
       case A_MOD_SPELL_CRIT_CHANCE:  // 57
       case A_MOD_SPEED_ALWAYS:  // 129

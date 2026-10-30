@@ -903,6 +903,26 @@ double parse_player_effects_t::composite_melee_expertise( const weapon_t* ) cons
   return me;
 }
 
+double parse_player_effects_t::composite_melee_hit() const
+{
+  auto mh = player_t::composite_melee_hit();
+
+  for ( const auto& i : hit_effects )
+    mh += get_effect_value( i );
+
+  return mh;
+}
+
+double parse_player_effects_t::composite_spell_hit() const
+{
+  auto sh = player_t::composite_spell_hit();
+
+  for ( const auto& i : spell_hit_effects )
+    sh += get_effect_value( i );
+
+  return sh;
+}
+
 double parse_player_effects_t::composite_crit_avoidance() const
 {
   auto ca = player_t::composite_crit_avoidance();
@@ -1232,6 +1252,16 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
       invalidate( CACHE_EXP );
       return &expertise_effects;
 
+    case A_MOD_HIT_CHANCE:
+      str = "hit";
+      invalidate( CACHE_ATTACK_HIT );
+      return &hit_effects;
+
+    case A_MOD_SPELL_HIT_CHANCE:
+      str = "spell hit";
+      invalidate( CACHE_SPELL_HIT );
+      return &spell_hit_effects;
+
     case A_MOD_ATTACKER_MELEE_CRIT_CHANCE:
       str = "crit avoidance";
       invalidate( CACHE_CRIT_AVOIDANCE );
@@ -1442,6 +1472,8 @@ void parse_player_effects_t::print_custom_parsed_effects( report::sc_html_stream
                        &opt_strings::school );
     print_parsed_type( os, dodge_effects, "Dodge" );
     print_parsed_type( os, expertise_effects, "Expertise" );
+    print_parsed_type( os, hit_effects, "Hit" );
+    print_parsed_type( os, spell_hit_effects, "Spell Hit" );
     print_parsed_type( os, haste_effects, "All Haste" );
     print_parsed_type( os, melee_haste_effects, "Melee Haste" );
     print_parsed_type( os, spell_haste_effects, "Spell Haste" );
@@ -1478,6 +1510,8 @@ size_t parse_player_effects_t::total_effects_count() const
          crit_bonus_effects.size() +
          leech_effects.size() +
          expertise_effects.size() +
+         hit_effects.size() +
+         spell_hit_effects.size() +
          crit_avoidance_effects.size() +
          parry_effects.size() +
          base_armor_multiplier_effects.size() +

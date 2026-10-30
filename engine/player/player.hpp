@@ -208,7 +208,7 @@ struct player_t : public actor_t
     double health_per_stamina;
     std::array<double, SCHOOL_MAX> resource_reduction;
     double miss, dodge, parry, block;
-    double hit, expertise, leech, avoidance, crit_avoidance;
+    double hit, spell_hit, expertise, leech, avoidance, crit_avoidance;
     double spell_crit_chance, attack_crit_chance, block_value;
     double all_crit, all_haste;
     double mana_regen_while_casting, mana_regen_multiplier;
