@@ -44,6 +44,7 @@ void druid( player_t* p )
   default_->add_action( "innervate" );
   default_->add_action( "moonfire,if=!ticking" );
   default_->add_action( "starfire,if=buff.clearcasting.react" );
+  default_->add_action( "insect_swarm,if=!ticking" );
   default_->add_action( "wrath" );
   default_->add_action( "auto_attack" );
 }
