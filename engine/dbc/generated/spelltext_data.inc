@@ -8233,7 +8233,7 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 15> __spelltext_hotfi
 } };
 
 // Spell description variables, wow build 1.60.1.70685
-static constexpr std::array<spelldesc_vars_data_t, 125> __spelldesc_vars_data { {
+static constexpr std::array<spelldesc_vars_data_t, 131> __spelldesc_vars_data { {
   {      10, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
   {     116, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
   {     120, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
@@ -8249,11 +8249,14 @@ static constexpr std::array<spelldesc_vars_data_t, 125> __spelldesc_vars_data { 
   {    5171, "$mult=$?s14165[${$14165m1/100+1}][${1}]" },
   {    6131, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
   {    6141, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
+  {    6572, "$APR=$?a71[${0.225}][${0.25}]\r\n\n$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]\r\n\n$APRatio=${$<APR>*$<ImpRevenge>}" },
+  {    6574, "$APR=$?a71[${0.225}][${0.25}]\r\n\n$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]\r\n\n$APRatio=${$<APR>*$<ImpRevenge>}" },
   {    6760, "$impE=$?s14162[${$14162m1/100+1}][${1}]\r\n$agg=$?s18427[${$18427m1/100+1}][${1}]\r\n$mult=${$<impE>*$<agg>}" },
   {    6761, "$impE=$?s14162[${$14162m1/100+1}][${1}]\r\n$agg=$?s18427[${$18427m1/100+1}][${1}]\r\n$mult=${$<impE>*$<agg>}" },
   {    6762, "$impE=$?s14162[${$14162m1/100+1}][${1}]\r\n$agg=$?s18427[${$18427m1/100+1}][${1}]\r\n$mult=${$<impE>*$<agg>}" },
   {    6774, "$mult=$?s14165[${$14165m1/100+1}][${1}]" },
   {    7322, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
+  {    7379, "$APR=$?a71[${0.225}][${0.25}]\r\n\n$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]\r\n\n$APRatio=${$<APR>*$<ImpRevenge>}" },
   {    8227, "$mult1=$?s29192[${1.06}][${1.0}]\r\n$mult=$?s29193[${1.12}][${$<mult1>}]\r\n" },
   {    8249, "$mult1=$?s29192[${1.06}][${1.0}]\r\n$mult=$?s29193[${1.12}][${$<mult1>}]\r\n" },
   {    8406, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
@@ -8279,6 +8282,8 @@ static constexpr std::array<spelldesc_vars_data_t, 125> __spelldesc_vars_data { 
   {   10614, "$mult1=$?s29192[${1.15}][${1.0}]\r\n$mult=$?s29193[${1.30}][${$<mult1>}]" },
   {   11299, "$impE=$?s14162[${$14162m1/100+1}][${1}]\r\n$agg=$?s18427[${$18427m1/100+1}][${1}]\r\n$mult=${$<impE>*$<agg>}" },
   {   11300, "$impE=$?s14162[${$14162m1/100+1}][${1}]\r\n$agg=$?s18427[${$18427m1/100+1}][${1}]\r\n$mult=${$<impE>*$<agg>}" },
+  {   11600, "$APR=$?a71[${0.225}][${0.25}]\r\n\n$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]\r\n\n$APRatio=${$<APR>*$<ImpRevenge>}" },
+  {   11601, "$APR=$?a71[${0.225}][${0.25}]\r\n\n$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]\r\n\n$APRatio=${$<APR>*$<ImpRevenge>}" },
   {   11665, "$mult1=$?s17815[${1.05}][${1.0}]\r\n$mult2=$?s17833[${1.10}][${$<mult1>}]\r\n$mult3=$?s17834[${1.15}][${$<mult2>}]\r\n$mult4=$?s17835[${1.20}][${$<mult3>}]\r\n$mult=$?s17836[${1.25}][${$<mult4>}]\r\n$power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}" },
   {   11667, "$mult1=$?s17815[${1.05}][${1.0}]\r\n$mult2=$?s17833[${1.10}][${$<mult1>}]\r\n$mult3=$?s17834[${1.15}][${$<mult2>}]\r\n$mult4=$?s17835[${1.20}][${$<mult3>}]\r\n$mult=$?s17836[${1.25}][${$<mult4>}]\r\n$power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}" },
   {   11668, "$mult1=$?s17815[${1.05}][${1.0}]\r\n$mult2=$?s17833[${1.10}][${$<mult1>}]\r\n$mult3=$?s17834[${1.15}][${$<mult2>}]\r\n$mult4=$?s17835[${1.20}][${$<mult3>}]\r\n$mult=$?s17836[${1.25}][${$<mult4>}]\r\n$power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}" },
@@ -8292,6 +8297,7 @@ static constexpr std::array<spelldesc_vars_data_t, 125> __spelldesc_vars_data { 
   {   20292, "$2h=${0.12*$SPH}\r\n$1h=${0.0765*$SPH}\r\n$mult=${$20224s1/100+1}" },
   {   20293, "$2h=${0.12*$SPH}\r\n$1h=${0.0765*$SPH}\r\n$mult=${$20224s1/100+1}" },
   {   21084, "$2h=${0.12*$SPH}\r\n$1h=${0.0765*$SPH}\r\n$mult=${$20224s1/100+1}" },
+  {   25288, "$APR=$?a71[${0.225}][${0.25}]\r\n\n$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]\r\n\n$APRatio=${$<APR>*$<ImpRevenge>}" },
   {   25304, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
   {   25309, "$mult1=$?s17815[${1.05}][${1.0}]\r\n$mult2=$?s17833[${1.10}][${$<mult1>}]\r\n$mult3=$?s17834[${1.15}][${$<mult2>}]\r\n$mult4=$?s17835[${1.20}][${$<mult3>}]\r\n$mult=$?s17836[${1.25}][${$<mult4>}]\r\n$power=${6.568597+0.672028*$PL+0.031721*$PL*$PL}" },
   {   31016, "$impE=$?s14162[${$14162m1/100+1}][${1}]\r\n$agg=$?s18427[${$18427m1/100+1}][${1}]\r\n$mult=${$<impE>*$<agg>}" },
