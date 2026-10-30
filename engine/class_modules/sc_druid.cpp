@@ -35,6 +35,7 @@ struct druid_t final : public parse_player_effects_t
   struct talents_t
   {
     player_talent_t improved_entangling_roots;
+    player_talent_t insect_swarm;
   } talent;
 
   struct buffs_t
@@ -143,6 +144,7 @@ void druid_t::init_spells()
   parse_all_passive_talents();
 
   talent.improved_entangling_roots = find_talent_spell( talent_tree::CLASS, "Improved Entangling Roots" );
+  talent.insect_swarm              = find_talent_spell( talent_tree::CLASS, "Insect Swarm" );
 }
 
 // ==========================================================================
@@ -187,6 +189,25 @@ struct moonfire_t : public druid_spell_t
   {
     parse_options( options_str );
     // TODO moonfire dot reporting
+  }
+};
+
+// The talent is a single point, but the spell itself still has ranks
+constexpr std::array insect_swarm_ranks{
+    spell_container_t().set_spell( 5570 ),
+    spell_container_t().set_spell( 24974 ),
+    spell_container_t().set_spell( 24975 ),
+    spell_container_t().set_spell( 24976 ),
+    spell_container_t().set_spell( 24977 ),
+};
+struct insect_swarm_t : public druid_spell_t
+{
+  insect_swarm_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "insect_swarm", player,
+                     player->talent.insect_swarm.ok() ? player->find_rank( insect_swarm_ranks )->spell( player )
+                                                      : spell_data_t::not_found() )
+  {
+    parse_options( options_str );
   }
 };
 
@@ -387,6 +408,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new wrath_t( this, options_str );
   if ( name == "moonfire" )
     return new moonfire_t( this, options_str );
+  if ( name == "insect_swarm" )
+    return new insect_swarm_t( this, options_str );
   if ( name == "starfire" )
     return new starfire_t( this, options_str );
   if ( name == "entangling_roots" )
