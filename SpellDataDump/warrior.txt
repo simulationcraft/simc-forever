@@ -951,6 +951,11 @@ Effects          :
                    Base Value: 22 | Scaled Value: 22 (delta=0.153846) | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 
+Variables        : $APR=$?a71[${0.225}][${0.25}]
+
+$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+
+$APRatio=${$<APR>*$<ImpRevenge>}
 
 Name             : Revenge (desc=Rank 2) (id=6574) [Spell Family (4)] 
 Hotfixed         : Description
@@ -975,6 +980,11 @@ Effects          :
                    Base Value: 34 | Scaled Value: 34 (delta=0.2) | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 
+Variables        : $APR=$?a71[${0.225}][${0.25}]
+
+$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+
+$APRatio=${$<APR>*$<ImpRevenge>}
 
 Name             : Battle Shout (desc=Rank 1) (id=6673) [Spell Family (4)] 
 Class            : Warrior
@@ -1103,6 +1113,11 @@ Effects          :
                    Base Value: 48 | Scaled Value: 48 (delta=0.214286) | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
 
+Variables        : $APR=$?a71[${0.225}][${0.25}]
+
+$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+
+$APRatio=${$<APR>*$<ImpRevenge>}
 
 Name             : Berserker Stance Passive (id=7381) [Spell Family (4), Passive, Hidden] 
 Class            : Warrior
@@ -1879,6 +1894,11 @@ Effects          :
 #1 (id=689634)   : School Damage (2): physical
                    Base Value: 82 | Scaled Value: 82 (delta=0.208333) | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
+Variables        : $APR=$?a71[${0.225}][${0.25}]
+
+$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+
+$APRatio=${$<APR>*$<ImpRevenge>}
 
 Name             : Revenge (desc=Rank 5) (id=11601) [Spell Family (4)] 
 Hotfixed         : Description
@@ -1902,6 +1922,11 @@ Effects          :
 #1 (id=689703)   : School Damage (2): physical
                    Base Value: 121 | Scaled Value: 121 (delta=0.197183) | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
+Variables        : $APR=$?a71[${0.225}][${0.25}]
+
+$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+
+$APRatio=${$<APR>*$<ImpRevenge>}
 
 Name             : Slam (desc=Rank 4) (id=11604) [Spell Family (4)] 
 Class            : Warrior
@@ -4026,6 +4051,11 @@ Effects          :
 #1 (id=701608)   : School Damage (2): physical
                    Base Value: 153 | Scaled Value: 153 (delta=0.2) | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Instantly counterattack an enemy for ${$m1+($<APRatio>*$apm)} to ${$M1+($<APRatio>*$apm)} damage and a high amount of threat.  Revenge must follow a block, dodge or parry.
+Variables        : $APR=$?a71[${0.225}][${0.25}]
+
+$ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
+
+$APRatio=${$<APR>*$<ImpRevenge>}
 
 Name             : Battle Shout (desc=Rank 7) (id=25289) [Spell Family (4)] 
 Class            : Warrior
