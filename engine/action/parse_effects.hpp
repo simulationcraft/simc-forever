@@ -688,6 +688,8 @@ struct parse_player_effects_t : public player_t, public parse_effects_t
   std::vector<player_effect_t> spell_crit_chance_effects;
   std::vector<player_effect_t> leech_effects;
   std::vector<player_effect_t> expertise_effects;
+  std::vector<player_effect_t> hit_effects;
+  std::vector<player_effect_t> spell_hit_effects;
   std::vector<player_effect_t> crit_avoidance_effects;
   std::vector<player_effect_t> parry_effects;
   std::vector<player_effect_t> base_armor_multiplier_effects;
@@ -727,6 +729,8 @@ struct parse_player_effects_t : public player_t, public parse_effects_t
   double composite_player_critical_damage_multiplier( const action_state_t*, school_e ) const override;
   double composite_leech() const override;
   double composite_melee_expertise( const weapon_t* ) const override;
+  double composite_melee_hit() const override;
+  double composite_spell_hit() const override;
   double composite_crit_avoidance() const override;
   double composite_parry() const override;
   double composite_base_armor_multiplier() const override;
