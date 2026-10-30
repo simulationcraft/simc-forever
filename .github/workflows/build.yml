@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        compiler: [gcc-12, gcc-14]
+        compiler: [gcc-13, gcc-15]
         cppVersion: [20] # TODO (FOREVER) make c++23 happy
         include:
-          - compiler: gcc-12
-            cxx: g++-12
-          - compiler: gcc-14
-            cxx: g++-14
+          - compiler: gcc-13
+            cxx: g++-13
+          - compiler: gcc-15
+            cxx: g++-15
 
     steps:
       - uses: actions/checkout@v6
@@ -70,11 +70,11 @@ jobs:
     strategy:
       matrix:
         cppVersion: [20] # TODO (FOREVER) make c++23 happy
-        compiler: [clang++-16, clang++-18]
+        compiler: [clang++-20, clang++-22]
         include:
-          - compiler: clang++-16
+          - compiler: clang++-20
             enable_file_prefix_map: true
-          - compiler: clang++-18
+          - compiler: clang++-22
             enable_file_prefix_map: true
 
     steps:
