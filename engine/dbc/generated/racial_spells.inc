@@ -1,15 +1,17 @@
-// Racial abilities, wow build 1.60.1.70532
-static constexpr std::array<racial_spell_entry_t, 45> __racial_spell_data { {
+// Racial abilities, wow build 1.60.1.70707
+static constexpr std::array<racial_spell_entry_t, 47> __racial_spell_data { {
   { 0x0000000000000001, 0x00000000,   20600, "Perception"                         },
   { 0x0000000000000001, 0x00000000,   20597, "Ruthless"                           },
   { 0x0000000000000001, 0x00000000,   20598, "The Human Spirit"                   },
   { 0x0000000000000001, 0x00000000, 1259718, "Will to Survive"                    },
   { 0x0000000000000002, 0x00000000,   20572, "Blood Fury"                         },
+  { 0x0000000000000002, 0x000004db,   21563, "Command"                            },
+  { 0x0000000000000002, 0x00000100,   20575, "Command"                            },
+  { 0x0000000000000002, 0x00000004,   20576, "Command"                            },
   { 0x0000000000000002, 0x00000000,   20573, "Hardiness"                          },
-  { 0x0000000000000002, 0x00000000,   20574, "Savage"                             },
   { 0x0000000000000002, 0x00000000, 1299026, "Shatter Curse"                      },
+  { 0x0000000000000004, 0x00000000, 1259719, "Artisan's Precision"                },
   { 0x0000000000000004, 0x00000000, 1259721, "Big Game Hunter"                    },
-  { 0x0000000000000004, 0x00000000, 1259719, "Earth Fury"                         },
   { 0x0000000000000004, 0x00000000,    2481, "Find Treasure"                      },
   { 0x0000000000000004, 0x00000000,   20594, "Stoneform"                          },
   { 0x0000000000000008, 0x00000000, 1259799, "Elune's Light"                      },
