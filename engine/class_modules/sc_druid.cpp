@@ -36,6 +36,7 @@ struct druid_t final : public parse_player_effects_t
   {
     player_talent_t improved_entangling_roots;
     player_talent_t insect_swarm;
+    player_talent_t overgrowth;
   } talent;
 
   struct buffs_t
@@ -145,6 +146,7 @@ void druid_t::init_spells()
 
   talent.improved_entangling_roots = find_talent_spell( talent_tree::CLASS, "Improved Entangling Roots" );
   talent.insect_swarm              = find_talent_spell( talent_tree::CLASS, "Insect Swarm" );
+  talent.overgrowth                = find_talent_spell( talent_tree::CLASS, "Overgrowth" );
 }
 
 // ==========================================================================
@@ -243,6 +245,10 @@ struct entangling_roots_t : public druid_spell_t
     : druid_spell_t( "entangling_roots", player, player->find_rank( entangling_roots_ranks )->spell( player ) )
   {
     parse_options( options_str );
+
+    if ( p()->talent.overgrowth->ok() )
+      aoe = 1 + as<int>( p()->talent.overgrowth->effectN( 1 ).base_value() );
+
     // TODO: verify periodic can crit
     break_chance = break_chance / ( 1.0 + p()->talent.improved_entangling_roots->effectN( 1 ).percent() );
   }
@@ -250,6 +256,11 @@ struct entangling_roots_t : public druid_spell_t
   void tick( dot_t* d ) override
   {
     druid_spell_t::tick( d );
+
+    if ( p()->sim->rng().roll( break_chance ) )
+    {
+      d->cancel();
+    }
   }
 
   // TODO: Didn't get nearly enough data from beta to determine if this is the right value
