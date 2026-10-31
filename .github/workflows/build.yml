@@ -12,6 +12,7 @@ jobs:
     name: ${{ matrix.os }}-${{ matrix.compiler }}-cpp${{ matrix.cppVersion }}-build
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         compiler: [gcc-12, gcc-13, gcc-15]
         cppVersion: [20, 23] # TODO (FOREVER) make c++23 happy
@@ -73,6 +74,7 @@ jobs:
     name: ${{ matrix.os }}-${{ matrix.compiler }}-C++${{ matrix.cppVersion }}-build
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         cppVersion: [20, 23] # TODO (FOREVER) make c++23 happy
         compiler: [clang++-16, clang++-20, clang++-22]
