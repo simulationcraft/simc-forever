@@ -9,8 +9,8 @@ env:
 
 jobs:
   ubuntu-test:
-    name: ubuntu-${{ matrix.compiler }}-cpp-${{ matrix.cppVersion }}-${{ matrix.type }}
-    runs-on: ubuntu-latest
+    name: ${{ matrix.os }}-${{ matrix.compiler }}-cpp-${{ matrix.cppVersion }}-${{ matrix.type }}
+    runs-on: ${{ matrix.os }}
     env:
       CACHE_KEY: ubuntu-${{ matrix.compiler }}-for_run-${{ github.sha }}-cpp-${{ matrix.cppVersion }}
       UBSAN_OPTIONS: print_stacktrace=1
@@ -19,7 +19,14 @@ jobs:
       fail-fast: false
       matrix:
         cppVersion: [20] # TODO (FOREVER) make c++23 happy
-        compiler: [clang++-20, clang++-22, gcc-13, gcc-15]
+        compiler: [clang++-16, clang++-20, clang++-22, gcc-12, gcc-13, gcc-15]
+        include:
+          - { compiler: clang++-16, os: ubuntu-24.04 }
+          - { compiler: gcc-12,     os: ubuntu-24.04 }
+          - { compiler: clang++-20, os: ubuntu-latest }
+          - { compiler: clang++-22, os: ubuntu-latest }
+          - { compiler: gcc-13,     os: ubuntu-latest }
+          - { compiler: gcc-15,     os: ubuntu-latest }
 
     steps:
       - uses: actions/cache@v5
