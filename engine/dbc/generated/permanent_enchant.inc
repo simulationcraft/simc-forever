@@ -1,5 +1,5 @@
-// Permanent item enchants, wow build 1.60.1.70532
-static constexpr std::array<permanent_enchant_entry_t, 210> __permanent_enchant_data { {
+// Permanent item enchants, wow build 1.60.1.70707
+static constexpr std::array<permanent_enchant_entry_t, 211> __permanent_enchant_data { {
   {   33,  0,  2, 0x00000000, 0x0004000c, "accurate_scope"                    },
   { 2523,  0,  2, 0x00000000, 0x0004000c, "biznicks_247x128_accurascope"      },
   { 2503,  0,  4, 0x001005a0, 0x0000001e, "core_armor_kit"                    },
@@ -32,6 +32,7 @@ static constexpr std::array<permanent_enchant_entry_t, 210> __permanent_enchant_
   {  247,  0,  4, 0x00000100, 0x0000001f, "enchant_boots__minor_agility"      },
   {  911,  0,  4, 0x00000100, 0x0000001e, "enchant_boots__minor_speed"        },
   {   66,  0,  4, 0x00000100, 0x0000001f, "enchant_boots__minor_stamina"      },
+  { 8737,  0,  4, 0x00000100, 0x0000001e, "enchant_boots__speed"              },
   {  851,  0,  4, 0x00000100, 0x0000001e, "enchant_boots__spirit"             },
   {  852,  0,  4, 0x00000100, 0x0000001e, "enchant_boots__stamina"            },
   { 7656,  0,  4, 0x00000200, 0x0000001e, "enchant_bracer__agility"           },
