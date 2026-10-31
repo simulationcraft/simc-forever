@@ -1,4 +1,4 @@
-// Item enchantment data, wow build 1.60.1.70532
+// Item enchantment data, wow build 1.60.1.70685
 static constexpr std::array<item_enchantment_data_t, 2217> __spell_item_ench_data { {
   {    1,      0,  0,   0,   0, 0, 0,   0,   0, {   3,   0,   0 }, {    0,    0,    0 }, {  15568,      0,      0 }, {  0.0000f,  0.0000f,  0.0000f },    2605, "Rockbiter 3"                       },
   {    2,      0,  0,   0,   0, 0, 0,   0,   0, {   1,   0,   0 }, {    0,    0,    0 }, {   8034,      0,      0 }, {  0.0000f,  0.0000f,  0.0000f },       0, "Frostbrand 1"                      },

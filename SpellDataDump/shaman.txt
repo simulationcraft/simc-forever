@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70685 Live
 Name             : Block (desc=Passive) (id=107) [Passive] 
 Class            : Warrior, Paladin, Shaman
 School           : Physical
@@ -118,7 +118,7 @@ Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -174,7 +174,7 @@ Cast Time        : 2 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -211,7 +211,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -281,7 +281,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -339,7 +339,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -433,7 +433,7 @@ GCD              : 1 seconds
 Duration         : 45 seconds
 Cooldown         : 15 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29, 69
 Attributes       : Not Shapeshifted (16), Active Threat (94), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -452,7 +452,7 @@ GCD              : 1.5 seconds
 Duration         : Aura (infinite)
 Labels           : 24: Shaman Spells
                  : 6511
-Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1)
 Family Flags     : 11
 Attributes       : Only Outdoors (15), Not Shapeshifted (16), No AutoCast (AI) (49), No shapeshift UI (65), Unknown (493)
 Aura Interrupt   : Spline or Free Flight (52)
@@ -461,7 +461,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 16 | Misc Value 2: 6 | Target: Self (1)
 #2 (id=681059)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 40 | Scaled Value: 40 | Value Multiplier: 1 | Target: Self (1)
-                   Modified By: Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+                   Modified By: Ghost Wolf Speed (22801 effect#1)
 Description      : Turns the Shaman into a Ghost Wolf, increasing speed by $s2%.  Only useable outdoors.
 Tooltip          : Increases movement speed by $s2%.
 
@@ -511,7 +511,7 @@ Spell Level      : 10
 GCD              : 1 seconds
 Duration         : 30 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -560,7 +560,7 @@ Spell Level      : 20
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -592,7 +592,7 @@ Spell Level      : 26
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -637,7 +637,7 @@ Cooldown         : 30 seconds
 Category         : 45 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1)
+Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -657,7 +657,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -742,7 +742,7 @@ Spell Level      : 20
 GCD              : 1 seconds
 Duration         : 35 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -759,7 +759,7 @@ Spell Level      : 30
 GCD              : 1 seconds
 Duration         : 40 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -776,7 +776,7 @@ Spell Level      : 40
 GCD              : 1 seconds
 Duration         : 45 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -823,7 +823,7 @@ Spell Level      : 30
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -840,7 +840,7 @@ Spell Level      : 40
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -860,7 +860,7 @@ Cooldown         : 30 seconds
 Category         : 45 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1)
+Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -881,7 +881,7 @@ Cooldown         : 30 seconds
 Category         : 45 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1)
+Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -902,7 +902,7 @@ Cooldown         : 30 seconds
 Category         : 45 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1)
+Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -951,7 +951,7 @@ Spell Level      : 34
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Toggle Far Sight (45), No AutoCast (AI) (49), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1344,7 +1344,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1370,7 +1370,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1396,7 +1396,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -1466,7 +1466,7 @@ Spell Level      : 4
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1501,7 +1501,7 @@ Spell Level      : 10
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1555,7 +1555,7 @@ Spell Level      : 18
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1589,7 +1589,7 @@ Spell Level      : 14
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1606,7 +1606,7 @@ Spell Level      : 24
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1659,7 +1659,7 @@ Spell Level      : 24
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1676,7 +1676,7 @@ Spell Level      : 38
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1723,7 +1723,7 @@ Spell Level      : 22
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1766,7 +1766,7 @@ Spell Level      : 38
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1812,7 +1812,7 @@ Cooldown         : 15 seconds
 Category         : 230 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 15 seconds
-Affecting Spells : Totemic Focus (16173 effect#1), Totemic Mastery (16189 effect#1), Guardian Totems (16258 effect#2), Totem of Ancestral Protection (1249011 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totemic Mastery (16189 effect#1), Guardian Totems (16258 effect#2), Totem of Ancestral Protection (1249011 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 18, 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1859,7 +1859,7 @@ Spell Level      : 24
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1891,7 +1891,7 @@ Spell Level      : 28
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1949,7 +1949,7 @@ Spell Level      : 26
 GCD              : 1 seconds
 Duration         : 20 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Trial by Fire (16086 effect#3), Totemic Focus (16173 effect#1)
+Affecting Spells : Trial by Fire (16086 effect#3), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -1966,7 +1966,7 @@ Spell Level      : 28
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2045,7 +2045,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. When appied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
 
 Name             : Windfury Weapon (desc=Rank 2) (id=8236) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : None
@@ -2089,7 +2088,7 @@ Spell Level      : 38
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2139,7 +2138,7 @@ Spell Level      : 32
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2194,7 +2193,7 @@ Spell Level      : 42
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2228,7 +2227,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -2247,7 +2246,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -2387,7 +2386,7 @@ Spell Level      : 34
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2404,7 +2403,7 @@ Spell Level      : 44
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2421,7 +2420,7 @@ Spell Level      : 54
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2530,7 +2529,7 @@ Cooldown         : 30 seconds
 Category         : 45 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1)
+Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2551,7 +2550,7 @@ Cooldown         : 30 seconds
 Category         : 45 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 30 seconds
-Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1)
+Affecting Spells : Earth's Grasp (16043 effect#1), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2645,7 +2644,7 @@ Spell Level      : 50
 GCD              : 1 seconds
 Duration         : 50 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2662,7 +2661,7 @@ Spell Level      : 60
 GCD              : 1 seconds
 Duration         : 55 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2694,7 +2693,7 @@ Spell Level      : 52
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2743,7 +2742,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2769,7 +2768,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2853,7 +2852,7 @@ Spell Level      : 50
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -2870,7 +2869,7 @@ Spell Level      : 60
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3019,7 +3018,7 @@ Spell Level      : 38
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3036,7 +3035,7 @@ Spell Level      : 54
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3134,7 +3133,7 @@ Spell Level      : 36
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3151,7 +3150,7 @@ Spell Level      : 46
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3168,7 +3167,7 @@ Spell Level      : 56
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3215,7 +3214,7 @@ Spell Level      : 48
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3265,7 +3264,7 @@ Spell Level      : 42
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29, 124
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3282,7 +3281,7 @@ Spell Level      : 58
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29, 124
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3377,7 +3376,7 @@ Spell Level      : 36
 GCD              : 1 seconds
 Duration         : 20 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Trial by Fire (16086 effect#3), Totemic Focus (16173 effect#1)
+Affecting Spells : Trial by Fire (16086 effect#3), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3394,7 +3393,7 @@ Spell Level      : 46
 GCD              : 1 seconds
 Duration         : 20 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Trial by Fire (16086 effect#3), Totemic Focus (16173 effect#1)
+Affecting Spells : Trial by Fire (16086 effect#3), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3411,7 +3410,7 @@ Spell Level      : 56
 GCD              : 1 seconds
 Duration         : 20 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Trial by Fire (16086 effect#3), Totemic Focus (16173 effect#1)
+Affecting Spells : Trial by Fire (16086 effect#3), Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3428,7 +3427,7 @@ Spell Level      : 30
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3487,7 +3486,7 @@ Spell Level      : 44
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3504,7 +3503,7 @@ Spell Level      : 60
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3614,7 +3613,7 @@ Spell Level      : 42
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3633,7 +3632,7 @@ Spell Level      : 52
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3703,7 +3702,7 @@ Spell Level      : 56
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3736,7 +3735,7 @@ Spell Level      : 36
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3807,7 +3806,7 @@ Spell Level      : 46
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3824,7 +3823,7 @@ Spell Level      : 56
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -3843,7 +3842,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -3862,7 +3861,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -4071,7 +4070,6 @@ Effects          :
 Description      : Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by $s1%.
 
 Name             : Elemental Focus (id=16164) [Spell Family (11), Passive, Hidden] 
-Hotfixed         : Proc Chance (10 -> 100), Description
 Talent Entry     : Generic [tree=class, row=3, col=1, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Physical
@@ -4086,11 +4084,9 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=694887)   : Apply Aura (6) | Proc Trigger Spell (42): Clearcasting
                    Base Value: 10 | Scaled Value: 10 | Trigger Spell: 16246 | Target: Self (1)
-Hotfixed         : Base Value (0 -> 10)
 Description      : Gives you a $s1% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by $16246s1%.
 
 Name             : Elemental Mastery (id=16166) [Spell Family (11)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=30]
 Class            : Shaman
 School           : Nature
@@ -4214,7 +4210,6 @@ Effects          :
 Description      : Improves your chance to hit by $s1%.
 
 Name             : Healing Focus (id=16181) [Spell Family (11), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(23, 47, 70)]
 Class            : Shaman
@@ -4335,7 +4330,7 @@ Cooldown         : 300 seconds
 Category         : 591 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -4344,7 +4339,6 @@ Effects          :
 Description      : Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $16191s1 mana every $16191t1 seconds to group members within $16191a1 yards.
 
 Name             : Mana Tide (desc=Rank 1) (id=16191) [Spell Family (11), Passive] 
-Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -4986,7 +4980,7 @@ Spell Level      : 58
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -5090,7 +5084,7 @@ Cooldown         : 300 seconds
 Category         : 591 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -5124,7 +5118,7 @@ Cooldown         : 300 seconds
 Category         : 591 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -5358,7 +5352,7 @@ Spell Level      : 60
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -5390,7 +5384,7 @@ Spell Level      : 60
 GCD              : 1 seconds
 Duration         : 300 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -5605,7 +5599,6 @@ Effects          :
 Description      : Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by $m1 yards and reduces the cooldown of Totemic Projection by ${$m3/-1000} sec.
 
 Name             : Eye of the Storm (id=29062) [Spell Family (11), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=2, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(23, 47, 70)]
 Class            : Shaman
@@ -5797,7 +5790,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -6002,7 +5995,6 @@ Effects          :
 Description      : Instantly inflicts $408428s1 fire damage to enemies within $408428a1 yd of your active Fire totem.
 
 Name             : Fire Nova (desc=Rank 1) (id=408423) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6017,7 +6009,6 @@ Effects          :
                    Base Value: 33 | Scaled Value: 35 (delta=0.153846) | Points Per Level: 0.4 | SP Coefficient: 0.143 | Radius: 0 - 10 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Fire Nova (desc=Rank 2) (id=408424) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6032,7 +6023,6 @@ Effects          :
                    Base Value: 55 | Scaled Value: 58 (delta=0.12844) | Points Per Level: 0.6 | SP Coefficient: 0.143 | Radius: 0 - 10 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Fire Nova (desc=Rank 3) (id=408426) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6047,7 +6037,6 @@ Effects          :
                    Base Value: 130 | Scaled Value: 134.5 (delta=0.122449) | Points Per Level: 0.9 | SP Coefficient: 0.143 | Radius: 0 - 10 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Fire Nova (desc=Rank 4) (id=408427) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6062,7 +6051,6 @@ Effects          :
                    Base Value: 179 | Scaled Value: 184.5 (delta=0.120401) | Points Per Level: 1.1 | SP Coefficient: 0.143 | Radius: 0 - 10 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Fire Nova (desc=Rank 5) (id=408428) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6102,7 +6090,7 @@ Spell Level      : 1 (max 6)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6118,7 +6106,7 @@ Spell Level      : 8 (max 13)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6134,7 +6122,7 @@ Spell Level      : 14 (max 19)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6150,7 +6138,7 @@ Spell Level      : 20 (max 25)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6166,7 +6154,7 @@ Spell Level      : 26 (max 31)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6182,7 +6170,7 @@ Spell Level      : 32 (max 37)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6198,7 +6186,7 @@ Spell Level      : 38 (max 43)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6215,7 +6203,7 @@ Range            : 30 yards
 Cast Time        : 3 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6231,7 +6219,7 @@ Spell Level      : 50 (max 55)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6247,7 +6235,7 @@ Spell Level      : 56 (max 61)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -7295,6 +7283,88 @@ Description      : Engrave your pants with the Way of Earth rune:
 $@spellicon408531
 $@spelldesc408531
 
+Name             : Bulwark Icon (id=413338) [Spell Family (11), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : White Melee, Yellow Melee
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1081514)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
+Name             : Dyadic Icon (id=413429) [Spell Family (11), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1081679)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
+Name             : Lithic Icon (id=413432) [Spell Family (11), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1081682)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
+Name             : Kajaric Icon (id=413839) [Spell Family (11), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1082388)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+#2 (id=1105690)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
+                   Base Value: 0 | Scaled Value: 0
+#3 (id=1105691)  : Apply Aura (6) | Modify Environmental Damage Taken (436)
+                   Base Value: 0 | Scaled Value: 0
+Tooltip          : Filled with inspiration.
+
+Name             : Clastic Icon (id=415012) [Spell Family (11), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Killing Blow
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1084593)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
+Name             : Galvanic Icon (id=415015) [Spell Family (11), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Generic Hostile Spell, Magic Hostile Spell
+Attributes       : Passive (6), Allow Aura While Dead (116), Unknown (493)
+Effects          :
+#1 (id=1084597)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
 Name             : Coherence (id=415096) [Spell Family (11), Passive] 
 Class            : Shaman
 School           : Nature
@@ -7418,7 +7488,7 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Duration         : Aura (infinite)
 Labels           : 6511
-Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1)
 Family Flags     : 11
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), No shapeshift UI (65), Unknown (493)
 Effects          :
@@ -7426,7 +7496,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 16 | Target: Self (1)
 #2 (id=1085044)  : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 40 | Scaled Value: 40 | Value Multiplier: 1 | Target: Self (1)
-                   Modified By: Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+                   Modified By: Ghost Wolf Speed (22801 effect#1)
 #3 (id=1085045)  : Apply Aura (6) | Modify Damage Taken% (87)
                    Base Value: -10 | Scaled Value: -10 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
@@ -7603,6 +7673,19 @@ Description      : Gain the Coherence ability:
 $@spellicon415096
 $@spelldesc415096
 
+Name             : Tempest Icon (id=420799) [Spell Family (11), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Hostile Spell, Magic Hostile Spell, Periodic
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1094667)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
 Name             : Rage of the Farseer (id=425336) [Spell Family (11)] 
 Talent Entry     : Generic [tree=class, row=7, col=6, max_rank=1, req_points=0]
 Class            : Shaman
@@ -7730,7 +7813,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 10 seconds
 Cooldown         : 20 seconds
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29, 111
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Can Be Multi Cast (229), Unknown (493)
 Effects          :
@@ -7801,6 +7884,19 @@ Description      : Engrave your boots with the Ancestral Awakening rune:
 
 $@spellicon425858
 $@spelldesc425858
+
+Name             : Sulfurous Icon (id=426257) [Spell Family (11), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Killing Blow
+Attributes       : Passive (6), Allow Aura While Dead (116), Unknown (493)
+Effects          :
+#1 (id=1104605)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
 
 Name             : Tidal Waves (id=432041) [Spell Family (11)] 
 Class            : Shaman
@@ -8474,6 +8570,19 @@ Description      : Engrave your ring with the Nature Specialization rune:
 $@spellicon442896
 $@spelldesc442896
 
+Name             : Voltaic  Icon (id=456223) [Spell Family (11), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Allow Aura While Dead (116), Unknown (493)
+Effects          :
+#1 (id=1160265)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
 Name             : S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (id=457475) [Spell Family (11), Passive] 
 School           : Physical
 Spell Type       : None
@@ -8584,17 +8693,6 @@ Description      : Engrave your ring with the Defense Specialization rune:
 
 $@spellicon459312
 $@spelldesc459312
-
-Name             : Ghost Wolf Speed (id=459606) [Spell Family (11), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166539)  : Apply Aura (6) | Add Flat Modifier (107): Spell Effect 2 (12)
-                   Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Misc Value: 12 | Target: Self (1)
-                   Affected Spells: Ghost Wolf (2645), Ghost Wolf (415233), Ghost Wolf (1238640)
-                   Family Flags: 11
-Description      : Increases the speed of your Ghost Wolf ability by $s1%.
 
 Name             : Defender's Resolve (id=460171) 
 Class            : Paladin, Shaman, Warlock
@@ -9168,7 +9266,6 @@ Effects          :
                    Base Value: 196 | Scaled Value: 204.8 (delta=0.253259) | Points Per Level: 1.1 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 #2 (id=1340790)  : Dummy (3)
                    Base Value: 20 | Scaled Value: 20 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-Hotfixed         : Points per Level (4.2 -> 0)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 Name             : Lava Burst (id=1238373) [Spell Family (11)] 
@@ -9214,7 +9311,7 @@ GCD              : 1.5 seconds
 Duration         : Aura (infinite)
 Labels           : 24: Shaman Spells
                  : 6511
-Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+Affecting Spells : Nature's Swiftness (16188 effect#1), Improved Ghost Wolf (16262 effect#1), Ghost Wolf Speed (22801 effect#1)
 Family Flags     : 11
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), No shapeshift UI (65), Unknown (493)
 Aura Interrupt   : Spline or Free Flight (52)
@@ -9223,7 +9320,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Misc Value: 16 | Target: Self (1)
 #2 (id=1235850)  : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 40 | Scaled Value: 40 | Value Multiplier: 1 | Target: Self (1)
-                   Modified By: Ghost Wolf Speed (22801 effect#1), Ghost Wolf Speed (459606 effect#1)
+                   Modified By: Ghost Wolf Speed (22801 effect#1)
 Description      : Turns the Shaman into a Ghost Wolf, increasing speed by $s2%.
 Tooltip          : Increases movement speed by $s2%.
 
@@ -9311,6 +9408,30 @@ Effects          :
                    Affected Spells: Grounding Totem (8177)
                    Family Flags: 18
 Description      : Reduces the cooldown of Grounding Totem by ${$s1/-1000} sec.
+
+Name             : Flame Charged (id=1270478) [Spell Family (11), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 21: Druid Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1282528)  : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
+                   Base Value: -5 | Scaled Value: -5 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Lightning Bolt (403), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Lightning Bolt (943), Lightning Bolt (6041), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Lightning Bolt (10391), Lightning Bolt (10392), Flame Shock (10447), Flame Shock (10448), Lightning Bolt (15207), Lightning Bolt (15208), Flame Shock (29228), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477)
+                   Family Flags: 0, 28
+Description      : Reduces the mana cost of Flame Shock and Lightning Bolt by $s1 Mana.
+
+Name             : Totem Affinity (id=1270492) [Spell Family (11), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 21: Druid Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1282549)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
+                   Base Value: -5 | Scaled Value: -5 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Mana Tide Totem (1325256)
+                   Family Flags: 3, 4, 12, 19, 29
+Description      : Reduces the mana cost of your totems by $s1%.
 
 Name             : Reduced Healing Wave Cost (id=1291076) [Spell Family (11), Passive, Hidden] 
 School           : Physical
@@ -9403,7 +9524,7 @@ Cooldown         : 300 seconds
 Category         : 591 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Totemic Focus (16173 effect#1)
+Affecting Spells : Totemic Focus (16173 effect#1), Totem Affinity (1270492 effect#1)
 Family Flags     : 29
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (493)
 Effects          :
