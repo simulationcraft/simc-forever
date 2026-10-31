@@ -1464,7 +1464,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_MOD_RESISTANCE_PCT,                    "Modify Armor%"                                     },  // 101
   { A_MOD_MELEE_ATTACK_POWER_VERSUS,         "Modify Melee Attack Power vs Race"                 },  // 102
   { A_MOD_TOTAL_THREAT,                      "Temporary Threat Reduction"                        },  // 103
-  { A_WATER_WALK,                            "Modify Attack Power"                               },  // 104
+  { A_WATER_WALK,                            "Water Walking"                                     },  // 104
   { A_HOVER,                                 "Levitate"                                          },  // 106
   { A_ADD_FLAT_MODIFIER,                     "Add Flat Modifier"                                 },  // 107
   { A_ADD_PCT_MODIFIER,                      "Add Percent Modifier"                              },  // 108
