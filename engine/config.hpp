@@ -59,7 +59,6 @@
 // Compiler Minimal Limits
 // ==========================================================================
 
-
 // Last updated 2026-10: Support gcc10 / clang 14 / MSVS 16.10 (MSVC 19.29) which have (~full) C++20 support
 #if defined( SC_CLANG ) && SC_CLANG < 140000
 #  error "clang++ below version 14 not supported"
@@ -70,7 +69,6 @@
 #if defined( SC_VS ) && SC_VS < 1929
 #  error "Visual Studio 2019 below version 16.10 not supported"
 #endif
-
 
 // ==========================================================================
 // General Macros/Defines
