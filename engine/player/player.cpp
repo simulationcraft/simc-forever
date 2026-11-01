@@ -4804,6 +4804,7 @@ double player_t::composite_spell_haste() const
 
 /**
  * This is the old spell_haste and incorporates everything that buffs cast speed
+ * TODO Forever this might need to be modified if they add an effect with subtype 355 (A_MOD_CAST_SPEED)
  */
 double player_t::composite_spell_cast_speed() const
 {
