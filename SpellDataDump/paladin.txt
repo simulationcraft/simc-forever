@@ -5936,6 +5936,19 @@ Description      : Gain the Divine Light ability:
 $@spellicon458856
 $@spelldesc458856
 
+Name             : Libram of Judgement (id=409930) [Spell Family (10), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Generic Hostile Spell, Magic Hostile Spell
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1075163)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
 Name             : Aura Mastery (id=409932) [Spell Family (10), Passive] 
 School           : Physical
 Spell Type       : None
@@ -6507,6 +6520,32 @@ Description      : Engrave your pants with the Aura Mastery rune:
 
 $@spellicon407624
 $@spelldesc407624
+
+Name             : Libram of Blessings (id=421510) [Spell Family (10), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Generic Helpful, Magic Heal
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1095837)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
+Name             : Libram of Justice (id=421535) [Spell Family (10), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Killing Blow
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1095880)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
 
 Name             : Aegis (id=425589) [Passive, Hidden] 
 Class            : Paladin
@@ -7141,6 +7180,41 @@ Description      : Engrave your bracers with the Hammer of Wrath rune:
 $@spellicon429152
 $@spelldesc429152
 
+Name             : Libram of Banishment (id=429578) [Spell Family (10), Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 2600
+Stacks           : 200 maximum
+Proc Chance      : 101%
+Proc Flags       : Generic Hostile Spell, Magic Hostile Spell
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1113913)  : Apply Aura (6) | Proc Trigger Spell (42): Building Inspiration
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 408953 | Target: Self (1)
+Tooltip          : Filled with inspiration.
+
+Name             : [DNT] Tarnished Prayer Bead II (id=435833) [Spell Family (10), Hidden] 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Proc Chance      : 101%
+Proc Flags       : Generic Helpful, Magic Heal
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1126785)  : Apply Aura (6) | Proc Trigger Spell (42): [DNT] Divine Prayer Bead II
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 435831 | Target: Self (1)
+
+Name             : [DNT] Tarnished Prayer Bead III (id=435844) [Spell Family (10), Hidden] 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Proc Chance      : 101%
+Proc Flags       : Generic Hostile Spell, Magic Hostile Spell
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1126797)  : Apply Aura (6) | Proc Trigger Spell (42): [DNT] Divine Prayer Bead III
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 435839 | Target: Self (1)
+
 Name             : Libram of Deliverance (id=435962) [Spell Family (10), Passive] 
 School           : Physical
 Spell Type       : None
@@ -7169,6 +7243,18 @@ Effects          :
                    Affected Spells: Salvation (1038), Blessing of Might (19740), Blessing of Wisdom (19742), Blessing of Might (19834), Blessing of Might (19835), Blessing of Might (19836), Blessing of Might (19837), Blessing of Might (19838), Blessing of Wisdom (19850), Blessing of Wisdom (19852), Blessing of Wisdom (19853), Blessing of Wisdom (19854), Blessing of Light (19977), Blessing of Light (19978), Blessing of Light (19979), Blessing of Kings (20217), Blessing of Wisdom (25290), Blessing of Might (25291)
                    Family Flags: 80
 Description      : Increases the duration of your Blessing of Might, Wisdom, Salvation, Sanctuary, Light, and Kings by $s1% and reduces their mana cost by $s2%.
+
+Name             : Dormant Rune (id=435994) [Spell Family (10), Hidden] 
+School           : Physical
+Spell Type       : None
+Range            : 50000 yards
+Duration         : Aura (infinite)
+Proc Chance      : 101%
+Proc Flags       : Magic Heal, Magic Heal Taken
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Allow Aura While Dead (116), Unknown (493)
+Effects          :
+#1 (id=1127038)  : Apply Aura (6) | Proc Trigger Spell (42): [DNT] Transform Dormant Rune
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 436011 | Target: Self (1)
 
 Name             : Decoy Totem (id=436391) [Spell Family (10)] 
 Class            : Shaman
