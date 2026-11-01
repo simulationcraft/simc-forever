@@ -78,6 +78,10 @@ jobs:
       matrix:
         cppVersion: [20, 23] # TODO (FOREVER) make c++23 happy
         compiler: [clang++-16, clang++-20, clang++-22]
+        exclude:
+          # Clang 16 is not happy with c++23
+          - compiler: clang++-16
+            cppVersion: 23
         include:
           - compiler: clang++-16
             enable_file_prefix_map: true
