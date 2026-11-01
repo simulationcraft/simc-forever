@@ -37,12 +37,14 @@ struct druid_t final : public parse_player_effects_t
     player_talent_t improved_entangling_roots;
     player_talent_t insect_swarm;
     player_talent_t overgrowth;
+    player_talent_t natures_grace;
   } talent;
 
   struct buffs_t
   {
     buff_t* innervate;
     buff_t* clearcasting;
+    buff_t* natures_grace;
   } buff;
 
   resource_e primary_resource() const override { return RESOURCE_MANA; }
@@ -125,6 +127,18 @@ struct druid_action_t : public parse_action_effects_t<Base>
       this->p()->buff.clearcasting->expire();
     }
   }
+
+  void impact( action_state_t* s ) override
+  {
+    action_base_t::impact( s );
+
+    // Nature's Grace: non-periodic spell criticals. impact() is only the direct component, ticks go through tick()
+    if constexpr ( std::is_base_of_v<spell_t, Base> )
+    {
+      if ( s->result == RESULT_CRIT && this->spell_power_mod.direct > 0 )
+        this->p()->buff.natures_grace->trigger();
+    }
+  }
 };
 
 using druid_spell_t = druid_action_t<spell_t>;
@@ -147,6 +161,7 @@ void druid_t::init_spells()
   talent.improved_entangling_roots = find_talent_spell( talent_tree::CLASS, "Improved Entangling Roots" );
   talent.insect_swarm              = find_talent_spell( talent_tree::CLASS, "Insect Swarm" );
   talent.overgrowth                = find_talent_spell( talent_tree::CLASS, "Overgrowth" );
+  talent.natures_grace             = find_talent_spell( talent_tree::CLASS, "Nature's Grace" );
 }
 
 // ==========================================================================
@@ -482,6 +497,11 @@ void druid_t::create_buffs()
 
   auto const omen_of_clarity_buff = find_rank( omen_of_clarity_ranks )->buff( this );
   buff.clearcasting = make_buff_fallback( omen_of_clarity_buff->ok(), this, "clearcasting", omen_of_clarity_buff );
+
+  auto const natures_grace_buff = talent.natures_grace->ok()
+                                      ? find_spell( talent.natures_grace->effectN( 1 ).trigger_spell_id() )
+                                      : spell_data_t::not_found();
+  buff.natures_grace = make_buff_fallback( natures_grace_buff->ok(), this, "natures_grace", natures_grace_buff );
 };
 
 void druid_t::init_special_effects()
@@ -515,6 +535,7 @@ void druid_t::init_finished()
 void druid_t::parse_player_effects() 
 {
   parse_effects( buff.innervate );
+  parse_effects( buff.natures_grace );  // buffs spell haste and gcd, confirm the double dip on gcd speed
 };
 
 void druid_t::apply_action_effects( action_t* a )
@@ -523,6 +544,7 @@ void druid_t::apply_action_effects( action_t* a )
   assert( action );
 
   action->parse_effects( buff.clearcasting );
+  action->parse_effects( buff.natures_grace );
 }
 
 }  // UNNAMED NAMESPACE
