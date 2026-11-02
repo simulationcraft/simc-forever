@@ -30,6 +30,25 @@ $frostdamage1=$?s11151[${1.02}][${1.0}]
 $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
+Name             : Lesser Invisibility (id=66) [Spell Family (3)] 
+School           : Arcane
+Spell Type       : Magic
+Resource         : 110 Base Mana (0) (id=169403)
+Spell Level      : 99
+Cast Time        : 3 seconds
+GCD              : 1.5 seconds
+Duration         : 120 seconds
+Labels           : 17: Mage Spells
+Affecting Spells : Arcane Geometry (11247 effect#1)
+Family Flags     : 31
+Attributes       : Not Shapeshifted (16), Cancels Auto Attack Combat (20), Not In Combat (Only Peaceful) (28), Only Peaceful Targets (40), No AutoCast (AI) (49), Unknown (493)
+Aura Interrupt   : Hostile Action Received (0), Damage (1), Interacting (10), Looting (11), Attacking (12), Use Item (13), Action (Delayed) (16)
+Effects          :
+#1 (id=679239)   : Apply Aura (6) | Invisibility (18)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+Description      : Turns the caster invisible for $d, though this spell is unstable and may end early.
+Tooltip          : Lesser Invisibility.
+
 Name             : Frostbolt (desc=Rank 1) (id=116) [Spell Family (3)] 
 Class            : Mage
 School           : Frost
@@ -264,6 +283,22 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 2 | Target: Targeted Ally (21)
 Description      : Removes $m1 Curse or Bane from a friendly target.
 
+Name             : Khadgar's Unlocking (desc=Rank 1) (id=491) [Spell Family (3)] 
+School           : Arcane
+Spell Type       : Magic
+Resource         : 100 Base Mana (0) (id=169237)
+Spell Level      : 18 (max 28)
+Range            : 5 yards
+Cast Time        : 10 seconds
+GCD              : 1.5 seconds
+Affecting Spells : Arcane Geometry (11247 effect#1)
+Family Flags     : 31
+Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (493)
+Effects          :
+#1 (id=679041)   : Open Lock (33)
+                   Base Value: 15 | Scaled Value: 65 | Points Per Level: 5 | Misc Value: 1 | Target: Targeted Item Gameobject (26)
+Description      : Magically unlocks treasure chests and other locked items.
+
 Name             : Fire Ward (desc=Rank 1) (id=543) [Spell Family (3)] 
 Class            : Mage
 School           : Fire
@@ -353,6 +388,27 @@ Effects          :
 Description      : Dampens magic used against the targeted party member, decreasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
 Tooltip          : Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
+Name             : Sleep (desc=Rank 1) (id=700) [Spell Family (3)] 
+School           : Shadow
+Spell Type       : Magic
+Resource         : 60 Base Mana (0) (id=169458)
+Spell Level      : 8
+Range            : 30 yards
+Max Targets      : 1
+Cast Time        : 1.5 seconds
+GCD              : 1.5 seconds
+Duration         : 20 seconds
+Mechanic         : Sleep
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Arcane Potency (24544 effects: #1, #2)
+Family Flags     : 18
+Attributes       : Not Shapeshifted (16), Cancels Auto Attack Combat (20), Heartbeat Resist (30), Prevents Anim (50), Limit N (165), Unknown (493)
+Aura Interrupt   : Damage (1)
+Effects          :
+#1 (id=679304)   : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Description      : Puts the enemy target to sleep for up to $d.  Any damage caused will awaken the target.  Only one target can be asleep at a time.
+Tooltip          : Asleep.
+
 Name             : Conjure Mana Agate (id=759) [Spell Family (3)] 
 Class            : Mage
 School           : Arcane
@@ -401,6 +457,22 @@ $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 $frostdamage1=$?s11151[${1.02}][${1.0}]
 $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
+
+Name             : Khadgar's Unlocking (desc=Rank 2) (id=857) [Spell Family (3)] 
+School           : Arcane
+Spell Type       : Magic
+Resource         : 220 Base Mana (0) (id=169571)
+Spell Level      : 30 (max 40)
+Range            : 5 yards
+Cast Time        : 10 seconds
+GCD              : 1.5 seconds
+Affecting Spells : Arcane Geometry (11247 effect#1)
+Family Flags     : 31
+Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (493)
+Effects          :
+#1 (id=679435)   : Open Lock (33)
+                   Base Value: 75 | Scaled Value: 125 | Points Per Level: 5 | Misc Value: 1 | Target: Targeted Item Gameobject (26)
+Description      : Magically unlocks treasure chests and other locked items.
 
 Name             : Frost Nova (desc=Rank 2) (id=865) [Spell Family (3)] 
 Class            : Mage
@@ -493,6 +565,27 @@ Effects          :
                    Modified By: Magic Attunement (12606 effect#1)
 Description      : Amplifies magic used against the targeted party member, increasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.
 Tooltip          : Increases magic damage taken by up to $s1 and healing by up to $s2.
+
+Name             : Sleep (desc=Rank 2) (id=1090) [Spell Family (3)] 
+School           : Shadow
+Spell Type       : Magic
+Resource         : 90 Base Mana (0) (id=169948)
+Spell Level      : 20
+Range            : 30 yards
+Max Targets      : 1
+Cast Time        : 1.5 seconds
+GCD              : 1.5 seconds
+Duration         : 30 seconds
+Mechanic         : Sleep
+Affecting Spells : Arcane Subtlety (11210 effect#1), Arcane Focus (11222 effect#1), Arcane Potency (24544 effects: #1, #2)
+Family Flags     : 18
+Attributes       : Not Shapeshifted (16), Cancels Auto Attack Combat (20), Heartbeat Resist (30), Prevents Anim (50), Limit N (165), Unknown (493)
+Aura Interrupt   : Damage (1)
+Effects          :
+#1 (id=679863)   : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Description      : Puts the enemy target to sleep for up to $d.  Any damage caused will awaken the target.  Only one target can be asleep at a time.
+Tooltip          : Asleep.
 
 Name             : Arcane Explosion (desc=Rank 1) (id=1449) [Spell Family (3)] 
 Class            : Mage
@@ -3672,7 +3765,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=688557)   : Apply Aura (6) | Add Percent Modifier (108): Spell Generated Threat (2)
                    Base Value: -30 | Scaled Value: -30 | Misc Value: 2 | Target: Self (1)
-                   Affected Spells: Arcane Explosion (1449), Counterspell (2139), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Arcane Explosion (8437), Arcane Explosion (8438), Arcane Explosion (8439), Arcane Explosion (10201), Arcane Explosion (10202), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Arcane Missiles (25345), Arcane Missiles (25346), Arcane Blast (400573), Arcane Blast (400574), Molten Armor (428741), Arcane Blast (1239696), Arcane Blast (1239697), Arcane Blast (1239699), Arcane Blast (1239700), Arcane Missile (1308937)
+                   Affected Spells: Sleep (700), Sleep (1090), Arcane Explosion (1449), Counterspell (2139), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Arcane Explosion (8437), Arcane Explosion (8438), Arcane Explosion (8439), Arcane Explosion (10201), Arcane Explosion (10202), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Arcane Missiles (25345), Arcane Missiles (25346), Arcane Blast (400573), Arcane Blast (400574), Molten Armor (428741), Arcane Blast (1239696), Arcane Blast (1239697), Arcane Blast (1239699), Arcane Blast (1239700), Arcane Missile (1308937)
                    Family Flags: 11, 12, 18, 21, 29, 66, 103
 #2 (id=688558)   : Apply Aura (6) | Modify Target Resistance (123)
                    Base Value: -15 | Scaled Value: -15 | Misc Value: 126 | Target: Self (1)
@@ -3709,7 +3802,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=688625)   : Apply Aura (6) | Add Flat Modifier (107): Spell Penetration (16)
                    Base Value: 2 | Scaled Value: 2 | Misc Value: 16 | Target: Self (1)
-                   Affected Spells: Arcane Explosion (1449), Counterspell (2139), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Arcane Explosion (8437), Arcane Explosion (8438), Arcane Explosion (8439), Arcane Explosion (10201), Arcane Explosion (10202), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Arcane Missiles (25346), Arcane Blast (400574), Arcane Barrage (400610), Molten Armor (428741), Arcane Blast (1239696), Arcane Blast (1239697), Arcane Blast (1239699), Arcane Blast (1239700), Arcane Missile (1308937), Arcane Wrath (1326079), Arcane Wrath (1326080), Arcane Wrath (1326081), Arcane Wrath (1326082)
+                   Affected Spells: Sleep (700), Sleep (1090), Arcane Explosion (1449), Counterspell (2139), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Arcane Explosion (8437), Arcane Explosion (8438), Arcane Explosion (8439), Arcane Explosion (10201), Arcane Explosion (10202), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Arcane Missiles (25346), Arcane Blast (400574), Arcane Barrage (400610), Molten Armor (428741), Arcane Blast (1239696), Arcane Blast (1239697), Arcane Blast (1239699), Arcane Blast (1239700), Arcane Missile (1308937), Arcane Wrath (1326079), Arcane Wrath (1326080), Arcane Wrath (1326081), Arcane Wrath (1326082)
                    Family Flags: 18, 21, 29, 47
 Description      : Improves your chance to hit with Arcane spells by $s1%.
 
@@ -3782,7 +3875,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=688647)   : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: 6 | Scaled Value: 6 | Misc Value: 5 | Target: Self (1)
-                   Affected Spells: Remove Lesser Curse (475), Conjure Food (587), Conjure Food (597), Dampen Magic (604), Conjure Mana Agate (759), Invisibility (885), Conjure Food (990), Amplify Magic (1008), Arcane Intellect (1459), Arcane Intellect (1460), Arcane Intellect (1461), Counterspell (2139), Conjure Mana Jade (3552), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Conjure Water (5504), Conjure Water (5505), Conjure Water (5506), Conjure Water (6127), Conjure Food (6129), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Dampen Magic (8450), Dampen Magic (8451), Amplify Magic (8455), Conjure Mana Citrine (10053), Conjure Mana Ruby (10054), Conjure Water (10138), Conjure Water (10139), Conjure Water (10140), Conjure Food (10144), Conjure Food (10145), Arcane Intellect (10156), Arcane Intellect (10157), Amplify Magic (10169), Amplify Magic (10170), Dampen Magic (10173), Dampen Magic (10174), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Juju Guile (16327), Fire Vulnerability (22959), Arcane Brilliance (23028), Arcane Missiles (25345), Arcane Missiles (25346), Lunar Invititation (26373), Conjure Food (28612), Arcane Blast (400574), Arcane Barrage (400610), Remove Greater Curse (412113), Arcane Surge (425124), Conjure Water (468766), Arcane Blast (1239696), Arcane Blast (1239697), Arcane Blast (1239699), Arcane Blast (1239700), Arcane Missile (1308937), Arcane Wrath (1326079), Arcane Wrath (1326080), Arcane Wrath (1326081), Arcane Wrath (1326082)
+                   Affected Spells: Lesser Invisibility (66), Remove Lesser Curse (475), Khadgar's Unlocking (491), Conjure Food (587), Conjure Food (597), Dampen Magic (604), Conjure Mana Agate (759), Khadgar's Unlocking (857), Invisibility (885), Conjure Food (990), Amplify Magic (1008), Arcane Intellect (1459), Arcane Intellect (1460), Arcane Intellect (1461), Counterspell (2139), Conjure Mana Jade (3552), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Conjure Water (5504), Conjure Water (5505), Conjure Water (5506), Conjure Water (6127), Conjure Food (6129), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Dampen Magic (8450), Dampen Magic (8451), Amplify Magic (8455), Conjure Mana Citrine (10053), Conjure Mana Ruby (10054), Conjure Water (10138), Conjure Water (10139), Conjure Water (10140), Conjure Food (10144), Conjure Food (10145), Arcane Intellect (10156), Arcane Intellect (10157), Amplify Magic (10169), Amplify Magic (10170), Dampen Magic (10173), Dampen Magic (10174), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Juju Guile (16327), Fire Vulnerability (22959), Arcane Brilliance (23028), Bounty of the Harvest (24006), Arcane Missiles (25345), Arcane Missiles (25346), Lunar Invititation (26373), Conjure Food (28612), Arcane Blast (400574), Arcane Barrage (400610), Remove Greater Curse (412113), Arcane Surge (425124), Conjure Water (468766), Arcane Blast (1239696), Arcane Blast (1239697), Arcane Blast (1239699), Arcane Blast (1239700), Arcane Missile (1308937), Arcane Wrath (1326079), Arcane Wrath (1326080), Arcane Wrath (1326081), Arcane Wrath (1326082)
                    Family Flags: 10, 11, 13, 14, 21, 29, 31, 47
 Description      : Increases the range of your Arcane spells by $m1 yards.
 
@@ -3959,7 +4052,7 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Cooldown On Event 
 Effects          :
 #1 (id=690049)   : Apply Aura (6) | Add Percent Modifier (108): Spell Cast Time (10)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Frostbolt (116), Fireball (133), Fireball (143), Fireball (145), Frostbolt (205), Conjure Food (587), Conjure Food (597), Conjure Mana Agate (759), Frostbolt (837), Conjure Food (990), Flamestrike (2120), Flamestrike (2121), Scorch (2948), Fireball (3140), Conjure Mana Jade (3552), Conjure Water (5504), Conjure Water (5505), Conjure Water (5506), Conjure Water (6127), Conjure Food (6129), Frostbolt (7322), Fireball (8400), Fireball (8401), Fireball (8402), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Flamestrike (8422), Flamestrike (8423), Scorch (8444), Scorch (8445), Scorch (8446), Conjure Mana Citrine (10053), Conjure Mana Ruby (10054), Conjure Water (10138), Conjure Water (10139), Conjure Water (10140), Conjure Food (10144), Conjure Food (10145), Fireball (10148), Fireball (10149), Fireball (10150), Fireball (10151), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Scorch (10205), Scorch (10206), Scorch (10207), Flamestrike (10215), Flamestrike (10216), Pyroblast (11366), Pyroblast (12505), Pyroblast (12522), Pyroblast (12523), Pyroblast (12524), Pyroblast (12525), Pyroblast (12526), Pyroblast (18809), Frostbolt (25304), Fireball (25306), Conjure Food (28612), Frostbolt (350025), Arcane Blast (400574), Frostfire Bolt (401502), Spellfrost Bolt (412532), Balefire Bolt (428878), Chronostatic Preservation (436516), Chronostatic Preservation (443369), Conjure Water (468766), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Arcane Blast (1239696), Arcane Blast (1239697), Arcane Blast (1239699), Arcane Blast (1239700), Frost Blast (1326053), Frost Blast (1326054), Frost Blast (1326055), Arcane Wrath (1326079), Arcane Wrath (1326080), Arcane Wrath (1326081), Arcane Wrath (1326082)
+                   Affected Spells: Frostbolt (116), Fireball (133), Fireball (143), Fireball (145), Frostbolt (205), Conjure Food (587), Conjure Food (597), Conjure Mana Agate (759), Frostbolt (837), Conjure Food (990), Flamestrike (2120), Flamestrike (2121), Scorch (2948), Fireball (3140), Conjure Mana Jade (3552), Conjure Water (5504), Conjure Water (5505), Conjure Water (5506), Conjure Water (6127), Conjure Food (6129), Frostbolt (7322), Fireball (8400), Fireball (8401), Fireball (8402), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Flamestrike (8422), Flamestrike (8423), Scorch (8444), Scorch (8445), Scorch (8446), Conjure Mana Citrine (10053), Conjure Mana Ruby (10054), Conjure Water (10138), Conjure Water (10139), Conjure Water (10140), Conjure Food (10144), Conjure Food (10145), Fireball (10148), Fireball (10149), Fireball (10150), Fireball (10151), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Scorch (10205), Scorch (10206), Scorch (10207), Flamestrike (10215), Flamestrike (10216), Pyroblast (11366), Pyroblast (12505), Pyroblast (12522), Pyroblast (12523), Pyroblast (12524), Pyroblast (12525), Pyroblast (12526), Pyroblast (18809), Bounty of the Harvest (24006), Frostbolt (25304), Fireball (25306), Conjure Food (28612), Frostbolt (350025), Arcane Blast (400574), Frostfire Bolt (401502), Spellfrost Bolt (412532), Balefire Bolt (428878), Chronostatic Preservation (436516), Chronostatic Preservation (443369), Conjure Water (468766), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Arcane Blast (1239696), Arcane Blast (1239697), Arcane Blast (1239699), Arcane Blast (1239700), Frost Blast (1326053), Frost Blast (1326054), Frost Blast (1326055), Arcane Wrath (1326079), Arcane Wrath (1326080), Arcane Wrath (1326081), Arcane Wrath (1326082)
                    Family Flags: 30
 Description      : When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.
 Tooltip          : Your next Mage spell with a casting time less than 10 sec will be an instant cast spell.
@@ -4733,6 +4826,20 @@ Effects          :
                    Base Value: 75 | Scaled Value: 75 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Frost damage.
 
+Name             : Maraudon Portal (id=21127) [Spell Family (3)] 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 40
+Range            : 100 yards
+GCD              : 1.5 seconds
+Duration         : 60 seconds
+Proc Chance      : 101%
+Attributes       : Do Not Log (8), Not In Combat (Only Peaceful) (28), No Aura Icon (60), Unknown (493)
+Effects          :
+#2 (id=698017)   : Activate Object (86)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 8 | Target: Nearby Gameobject (40)
+Description      : Creates a portal, teleporting group members that use it to Earth Song Falls in inner Maraudon.
+
 Name             : Fireball (id=21159) [Spell Family (3)] 
 School           : Fire
 Spell Type       : Magic
@@ -4881,6 +4988,24 @@ Effects          :
                    Base Value: 48 | Scaled Value: 48 (delta=0.333333) | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Fire damage.
 
+Name             : Bounty of the Harvest (id=24006) [Spell Family (3)] 
+School           : Arcane
+Spell Type       : Magic
+Resource         : 60 Base Mana (0) (id=186983)
+Spell Level      : 6 (max 15)
+Cast Time        : 3 seconds
+GCD              : 1.5 seconds
+Proc Chance      : 101%
+Affecting Spells : Arcane Geometry (11247 effect#1), Presence of Mind (12043 effect#1)
+Family Flags     : 30, 31
+Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (493)
+Effects          :
+#1 (id=700256)   : Create Item (24)
+                   Base Value: 4 | Scaled Value: 4 | Target: Self (1)
+Description      : Conjures $s1 food from the harvest.
+
+Conjured items disappear if logged out for more than 15 minutes.
+
 Name             : Improved Counterspell (id=24429) [Spell Family (3), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -4921,11 +5046,11 @@ Attributes       : Do Not Sheath (18), Unknown (493)
 Effects          :
 #1 (id=701917)   : Apply Aura (6) | Add Flat Modifier (107): Spell Critical Chance (7)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 7 | Target: Self (1)
-                   Affected Spells: Arcane Explosion (1449), Counterspell (2139), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Arcane Explosion (8437), Arcane Explosion (8438), Arcane Explosion (8439), Arcane Explosion (10201), Arcane Explosion (10202), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Arcane Missiles (25346), Molten Armor (428741), Arcane Missile (1308937)
+                   Affected Spells: Sleep (700), Sleep (1090), Arcane Explosion (1449), Counterspell (2139), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Arcane Explosion (8437), Arcane Explosion (8438), Arcane Explosion (8439), Arcane Explosion (10201), Arcane Explosion (10202), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Arcane Missiles (25346), Molten Armor (428741), Arcane Missile (1308937)
                    Family Flags: 18, 21
 #2 (id=701918)   : Apply Aura (6) | Add Percent Modifier (108): Spell Critical Bonus Multiplier (15)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Misc Value: 15 | Target: Self (1)
-                   Affected Spells: Arcane Explosion (1449), Counterspell (2139), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Arcane Explosion (8437), Arcane Explosion (8438), Arcane Explosion (8439), Arcane Explosion (10201), Arcane Explosion (10202), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Arcane Missiles (25346), Molten Armor (428741), Arcane Missile (1308937)
+                   Affected Spells: Sleep (700), Sleep (1090), Arcane Explosion (1449), Counterspell (2139), Arcane Missiles (5143), Arcane Missiles (5144), Arcane Missiles (5145), Arcane Missile (7268), Arcane Missiles (7269), Arcane Missiles (7270), Arcane Missiles (8416), Arcane Missiles (8417), Arcane Missiles (8418), Arcane Missiles (8419), Arcane Explosion (8437), Arcane Explosion (8438), Arcane Explosion (8439), Arcane Explosion (10201), Arcane Explosion (10202), Arcane Missiles (10211), Arcane Missiles (10212), Arcane Missiles (10273), Arcane Missiles (10274), Arcane Missiles (25346), Molten Armor (428741), Arcane Missile (1308937)
                    Family Flags: 18, 21
 Description      : Increases the critical hit chance of your Arcane spells by $s1%, and increases the critical hit damage of your Arcane spells by $s2% for $d.
 Tooltip          : Arcane spell critical hit chance increased by $s1%.

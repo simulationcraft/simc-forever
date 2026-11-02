@@ -117,6 +117,7 @@ KEY_FIELD_HOTFIX_RECORD = {
     'SkillLineXTraitTree'         : 'id_skill_line',
     'SpecializationSpells'        : 'spec_id',
     'TraitCond'                   : 'id_trait_tree',
+    'TraitCurrencySource'         : 'id_trait_currency',
     'TraitDefinitionEffectPoints' : 'id_trait_definition',
     'TraitEdge'                   : 'id_left_trait_node',
     'TraitNode'                   : 'id_trait_tree',
