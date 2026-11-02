@@ -38,6 +38,7 @@ struct druid_t final : public parse_player_effects_t
     player_talent_t insect_swarm;
     player_talent_t overgrowth;
     player_talent_t natures_grace;
+    player_talent_t eclipse;
   } talent;
 
   struct buffs_t
@@ -45,6 +46,7 @@ struct druid_t final : public parse_player_effects_t
     buff_t* innervate;
     buff_t* clearcasting;
     buff_t* natures_grace;
+    buff_t* eclipse;
   } buff;
 
   resource_e primary_resource() const override { return RESOURCE_MANA; }
@@ -162,6 +164,7 @@ void druid_t::init_spells()
   talent.insect_swarm              = find_talent_spell( talent_tree::CLASS, "Insect Swarm" );
   talent.overgrowth                = find_talent_spell( talent_tree::CLASS, "Overgrowth" );
   talent.natures_grace             = find_talent_spell( talent_tree::CLASS, "Nature's Grace" );
+  talent.eclipse                   = find_talent_spell( talent_tree::CLASS, "Eclipse" );
 }
 
 // ==========================================================================
@@ -180,11 +183,25 @@ constexpr std::array wrath_ranks {
 
 struct wrath_t : public druid_spell_t
 {
-  wrath_t( druid_t* player, std::string_view options_str ) :
-    druid_spell_t( "wrath", player, player->find_rank( wrath_ranks )->spell( player ) )
+  wrath_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "wrath", player, player->find_rank( wrath_ranks )->spell( player ) )
   {
     parse_options( options_str );
+
+    eclipse_stacks = as<int>( p()->talent.eclipse->effectN( 3 ).base_value() );
   }
+
+  void execute() override
+  {
+    druid_spell_t::execute();
+
+    // TODO: confirm that the charges are granted on cast, and that the proc can't miss
+    if ( p()->talent.eclipse->ok() )
+      p()->buff.eclipse->trigger( eclipse_stacks );
+  }
+
+private:
+  int eclipse_stacks;
 };
 
 constexpr std::array moonfire_ranks {
@@ -243,7 +260,31 @@ struct starfire_t : public druid_spell_t
     : druid_spell_t( "starfire", player, player->find_rank( starfire_ranks )->spell( player ) )
   {
     parse_options( options_str );
+
+    eclipse_reduction =
+        player->talent.eclipse->ok() ? timespan_t::from_millis( p()->talent.eclipse->effectN( 2 ).base_value() ) : 0_s;
   }
+
+  timespan_t execute_time_flat_modifier() const override
+  {
+    auto t = druid_spell_t::execute_time_flat_modifier();
+
+    if ( p()->buff.eclipse->up() )
+      t += eclipse_reduction;
+
+    return t;
+  }
+
+  void execute() override
+  {
+    druid_spell_t::execute();
+
+    if ( p()->buff.eclipse->up() )
+      p()->buff.eclipse->decrement();
+  }
+
+private:
+  timespan_t eclipse_reduction;
 };
 
 constexpr std::array entangling_roots_ranks{
@@ -502,6 +543,9 @@ void druid_t::create_buffs()
                                       ? find_spell( talent.natures_grace->effectN( 1 ).trigger_spell_id() )
                                       : spell_data_t::not_found();
   buff.natures_grace = make_buff_fallback( natures_grace_buff->ok(), this, "natures_grace", natures_grace_buff );
+
+  auto const eclipse_buff = find_spell( 408255 );
+  buff.eclipse            = make_buff_fallback( talent.eclipse->ok(), this, "eclipse", eclipse_buff );
 };
 
 void druid_t::init_special_effects()
