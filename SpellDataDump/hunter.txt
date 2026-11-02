@@ -2952,6 +2952,32 @@ Effects          :
 Description      : Scares a beast, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only one beast can be feared at a time.
 Tooltip          : Feared.
 
+Name             : Haste (id=14824) [Spell Family (9), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Velocity         : 40 yards/sec
+Duration         : Aura (infinite)
+Requires weapon  : Gun
+Proc Chance      : 101%
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=690506)   : Apply Aura (6) | Unknown(557)
+                   Base Value: 10 | Scaled Value: 10 | Target: Self (1)
+Description      : Increases ranged attack speed by $s1%.
+
+Name             : Haste (id=14825) [Spell Family (9), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Velocity         : 40 yards/sec
+Duration         : Aura (infinite)
+Requires weapon  : Gun
+Proc Chance      : 101%
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=691878)   : Apply Aura (6) | Unknown(557)
+                   Base Value: 11 | Scaled Value: 11 | Target: Self (1)
+Description      : Increases ranged attack speed by $s1%.
+
 Name             : Haste (id=14826) [Spell Family (9), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -4812,6 +4838,28 @@ Effects          :
                    Family Flags: 25
 Description      : Increases the damage done by your pets by 4%.
 
+Name             : Battle Standard (id=23034) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Duration         : 120 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Only Battlegrounds (107), Unknown (493)
+Effects          :
+#1 (id=700100)   : Summon Guardian (28)
+                   Base Value: 1500 | Scaled Value: 1500 | Misc Value: 14465 | Misc Value 2: 121 | Radius: 1 yards | Target: Front of Self (47)
+Description      : Place a Battle Standard with $s1 health that increases the maximum health of all party members that stay within $23033a1 yards of the Battle Standard by $23033s1%.  Lasts $d. The Battle Standard may only be used in PvP Battlegrounds.
+
+Name             : Battle Standard (id=23035) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Duration         : 120 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Only Battlegrounds (107), Unknown (493)
+Effects          :
+#1 (id=700135)   : Summon Guardian (28)
+                   Base Value: 1500 | Scaled Value: 1500 | Misc Value: 14466 | Misc Value 2: 121 | Radius: 1 yards | Target: Front of Self (47)
+Description      : Place a Battle Standard with $s1 health that increases the maximum health of all party members that stay within $23033a1 yards of the Battle Standard by $23033s1%.  Lasts $d. The Battle Standard may only be used in PvP Battlegrounds.
+
 Name             : Dash (desc=Rank 1) (id=23099) 
 Class            : Hunter
 School           : Physical
@@ -4938,6 +4986,28 @@ Effects          :
                    Affected Spells: Arcane Shot (3044), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287)
                    Family Flags: 11
 Description      : Reduces the mana cost of your Arcane Shot by $s1.
+
+Name             : Battle Standard (id=23538) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Duration         : 120 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=701408)   : Summon Guardian (28)
+                   Base Value: 1500 | Scaled Value: 1500 | Misc Value: 14751 | Misc Value 2: 121 | Radius: 1 yards | Target: Front of Self (47)
+Description      : Place a Battle Standard with $s1 health that increases the maximum damage of all party members that stay within $23576a1 yards of the Battle Standard by $23576s1%.  Lasts $d. May only be used in Alterac Valley.
+
+Name             : Battle Standard (id=23539) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Duration         : 120 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=701409)   : Summon Guardian (28)
+                   Base Value: 1500 | Scaled Value: 1500 | Misc Value: 14752 | Misc Value 2: 121 | Radius: 1 yards | Target: Front of Self (47)
+Description      : Place a Battle Standard with $s1 health that increases the damage of all party members that stay within $23574a1 yards of the Battle Standard by $23574s1%.  Lasts $d. May only be used in Alterac Valley.
 
 Name             : Arcane Infused (id=23721) [Spell Family (9)] 
 School           : Physical
@@ -6357,6 +6427,32 @@ Effects          :
                    Base Value: 12 | Scaled Value: 12 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
+Name             : Haste (id=29417) [Spell Family (9), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Velocity         : 40 yards/sec
+Duration         : Aura (infinite)
+Requires weapon  : Bow, Crossbow
+Proc Chance      : 101%
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=705648)   : Apply Aura (6) | Unknown(557)
+                   Base Value: 11 | Scaled Value: 11 | Target: Self (1)
+Description      : Increases ranged attack speed by $s1%.
+
+Name             : Haste (id=29418) [Spell Family (9), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Velocity         : 40 yards/sec
+Duration         : Aura (infinite)
+Requires weapon  : Bow, Crossbow
+Proc Chance      : 101%
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=705649)   : Apply Aura (6) | Unknown(557)
+                   Base Value: 10 | Scaled Value: 10 | Target: Self (1)
+Description      : Increases ranged attack speed by $s1%.
+
 Name             : Beast Mastery (id=409368) [Spell Family (9), Passive, Hidden] 
 Class            : Hunter
 School           : Physical
@@ -7123,6 +7219,19 @@ Description      : Engrave your gloves with the Explosive Shot rune:
 $@spellicon409552
 $@spelldesc409552
 
+Name             : Prairie Dog Musk (id=411622) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Duration         : 600 seconds
+Cooldown         : 600 seconds
+Attributes       : Aura Points On Client (268), Spellcast Override In Spellbook (310), Spellbook Hidden Until Overridden (335), Unknown (493)
+Effects          :
+#1 (id=1078323)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Tame Beast overrides Tame Beast
+                   Base Value: 411624 | Scaled Value: 411624 | Misc Value: 1515 | Target: Self (1)
+Description      : Your Tame Beast ability also works on prairie dogs (as companion pet)
+Tooltip          : Your Tame Beast ability also works on prairie dogs (as companion pet)
+
 Name             : Flanking Strike (id=415320) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -7804,6 +7913,45 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 2 | Target: Self (1)
 #20 (id=1341106) : Apply Aura (6) | Modify Healing Power (135)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 126 | Target: Self (1)
+
+Name             : Adder Pheromone (id=416861) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Duration         : 600 seconds
+Cooldown         : 600 seconds
+Attributes       : Aura Points On Client (268), Spellcast Override In Spellbook (310), Spellbook Hidden Until Overridden (335), Unknown (493)
+Effects          :
+#1 (id=1087983)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Tame Beast overrides Tame Beast
+                   Base Value: 411624 | Scaled Value: 411624 | Misc Value: 1515 | Target: Self (1)
+Description      : Your Tame Beast ability also works on adders (as companion pet)
+Tooltip          : Your Tame Beast ability also works on adders (as companion pet)
+
+Name             : Rabbit Musk (id=418236) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Duration         : 600 seconds
+Cooldown         : 600 seconds
+Attributes       : Aura Points On Client (268), Spellcast Override In Spellbook (310), Spellbook Hidden Until Overridden (335), Unknown (493)
+Effects          :
+#1 (id=1090389)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Tame Beast overrides Tame Beast
+                   Base Value: 411624 | Scaled Value: 411624 | Misc Value: 1515 | Target: Self (1)
+Description      : Your Tame Beast ability also works on rabbits (as companion pet)
+Tooltip          : Your Tame Beast ability also works on rabbits (as companion pet)
+
+Name             : Deer Musk (id=421311) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Duration         : 600 seconds
+Cooldown         : 600 seconds
+Attributes       : Aura Points On Client (268), Spellcast Override In Spellbook (310), Spellbook Hidden Until Overridden (335), Unknown (493)
+Effects          :
+#1 (id=1095543)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Tame Beast overrides Tame Beast
+                   Base Value: 411624 | Scaled Value: 411624 | Misc Value: 1515 | Target: Self (1)
+Description      : Your Tame Beast ability also works on deer (as companion pet)
+Tooltip          : Your Tame Beast ability also works on deer (as companion pet)
 
 Name             : Carve (id=425711) [Spell Family (9)] 
 Class            : Hunter

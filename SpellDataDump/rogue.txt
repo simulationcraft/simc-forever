@@ -7339,6 +7339,15 @@ Effects          :
                    Family Flags: 12, 31
 Description      : Increases the chance your Pick Pocket and Distract abilities are successful by $s1%
 
+Name             : Safe Fall 05 (id=1292150) [Spell Family (8), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1312005)  : Apply Aura (6) | Reduce Fall Damage (144)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Description      : Reduces damage from falling.
+
 Name             : Improved Expose Armor (id=1310697) 
 Class            : Rogue
 School           : Physical
