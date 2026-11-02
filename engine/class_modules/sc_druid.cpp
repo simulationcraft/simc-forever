@@ -39,6 +39,7 @@ struct druid_t final : public parse_player_effects_t
     player_talent_t overgrowth;
     player_talent_t natures_grace;
     player_talent_t eclipse;
+    player_talent_t moonkin_form;
   } talent;
 
   struct buffs_t
@@ -47,6 +48,7 @@ struct druid_t final : public parse_player_effects_t
     buff_t* clearcasting;
     buff_t* natures_grace;
     buff_t* eclipse;
+    buff_t* moonkin_aura;
   } buff;
 
   resource_e primary_resource() const override { return RESOURCE_MANA; }
@@ -165,6 +167,14 @@ void druid_t::init_spells()
   talent.overgrowth                = find_talent_spell( talent_tree::CLASS, "Overgrowth" );
   talent.natures_grace             = find_talent_spell( talent_tree::CLASS, "Nature's Grace" );
   talent.eclipse                   = find_talent_spell( talent_tree::CLASS, "Eclipse" );
+  talent.moonkin_form              = find_talent_spell( talent_tree::CLASS, "Moonkin Form" );
+
+  if ( talent.moonkin_form->ok() )
+  {
+    // The omen of clarity mods are on the talent, not the aura.
+    // TODO Confirm if omen is modified by the talent being picked alone
+    parse_passive_effects( talent.moonkin_form, true );
+  }
 }
 
 // ==========================================================================
@@ -408,6 +418,20 @@ constexpr std::array omen_of_clarity_ranks{
     spell_container_t().set_spell( 16864 ).set_buff( 16870 ),
 };
 
+struct moonkin_form_t : public druid_spell_t
+{
+  moonkin_form_t( druid_t* player, std::string_view options_str ) : druid_spell_t( "moonkin_form", player, player->talent.moonkin_form )
+  {
+    parse_options( options_str );
+    harmful = false;
+  }
+
+  void execute() override
+  {
+    p()->buff.moonkin_aura->trigger();
+  }
+};
+
 // ==========================================================================
 // Druid Attacks
 // ==========================================================================
@@ -487,6 +511,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new faerie_fire_t( this, options_str );
   if ( name == "innervate" )
     return new innervate_t( this, options_str );
+  if ( name == "moonkin_form" )
+    return new moonkin_form_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
 }
@@ -546,6 +572,8 @@ void druid_t::create_buffs()
 
   auto const eclipse_buff = find_spell( 408255 );
   buff.eclipse            = make_buff_fallback( talent.eclipse->ok(), this, "eclipse", eclipse_buff );
+
+  buff.moonkin_aura = make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() )->set_default_value_from_effect(1, .01 )->set_pct_buff_type_from_effect(1);
 };
 
 void druid_t::init_special_effects()
@@ -556,7 +584,9 @@ void druid_t::init_special_effects()
     const auto driver = new special_effect_t( this );
     driver->name_str  = omen_of_clarity->name_cstr();
     driver->spell_id  = omen_of_clarity->id();
-    driver->ppm_ = 2.0; // TODO 2 PPM is an educated guess based on old comments from classic. Must be reverified but beta logs were not big enough.
+    // TODO 2 PPM is an educated guess based on old comments from classic. Must be reverified but beta logs were not big enough.
+    // scale ppm by proc chance to pick up modifiers (Moonkin Form).
+    driver->ppm_ = 2.0 * omen_of_clarity->proc_chance();
     special_effects.push_back( driver );
 
     callbacks.register_callback_execute_function( driver->spell_id, [ this ]( auto, auto, auto, auto ) {
@@ -579,6 +609,7 @@ void druid_t::init_finished()
 void druid_t::parse_player_effects() 
 {
   parse_effects( buff.innervate );
+  parse_effects( buff.moonkin_aura );
   parse_effects( buff.natures_grace );  // buffs spell haste and gcd, confirm the double dip on gcd speed
 };
 
