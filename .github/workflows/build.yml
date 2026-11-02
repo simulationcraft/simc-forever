@@ -76,7 +76,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        cppVersion: [20, 23] make c++23 happy
+        cppVersion: [20, 23]
         compiler: [clang++-16, clang++-20, clang++-22]
         exclude:
           # Clang 16 is not happy with c++23
