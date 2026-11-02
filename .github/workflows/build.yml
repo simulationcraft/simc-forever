@@ -15,7 +15,7 @@ jobs:
       fail-fast: false
       matrix:
         compiler: [gcc-12, gcc-13, gcc-15]
-        cppVersion: [20, 23] # TODO (FOREVER) make c++23 happy
+        cppVersion: [20, 23]
         include:
           - compiler: gcc-12
             cxx: g++-12
@@ -76,7 +76,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        cppVersion: [20, 23] # TODO (FOREVER) make c++23 happy
+        cppVersion: [20, 23]
         compiler: [clang++-16, clang++-20, clang++-22]
         exclude:
           # Clang 16 is not happy with c++23
