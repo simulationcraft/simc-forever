@@ -24,6 +24,11 @@ struct rogue_t final : public player_t
   void init_action_list() override;
 
   void init_base_stats() override;
+
+  double current_cp() const
+  {
+    return resources.current[ RESOURCE_COMBO_POINT ];
+  }
 };
 
 template <class Base>
@@ -43,6 +48,64 @@ public:
 
   const rogue_t* p() const
   { return debug_cast<const rogue_t*>( this->player ); }
+
+  bool consumes_combo_points() const
+  {
+    return ab::base_costs[ RESOURCE_COMBO_POINT ] > 0;
+  }
+
+  void spend_combo_points()
+  {
+    if ( !consumes_combo_points() )
+      return;
+
+    double cp_loss = p()->current_cp();
+
+    ab::stats->consume_resource( RESOURCE_COMBO_POINT, cp_loss );
+
+    p()->resource_loss( RESOURCE_COMBO_POINT, cp_loss, nullptr, this );
+
+    p()->sim->print_log( "{} consumes {} {} for {} ({})", *p(), cp_loss, util::resource_type_string( RESOURCE_COMBO_POINT ),
+                         *this, p()->current_cp() );
+  }
+
+  bool ready() override
+  {
+    if ( consumes_combo_points() )
+      return ab::ready() && p()->current_cp() > 0;
+
+    return ab::ready();
+  }
+
+  void consume_resource() override
+  {
+    resource_e cr = this->current_resource();
+
+    auto discountOnMiss = this->data().flags( spell_attribute::SX_DISCOUNT_ON_MISS );
+
+    // TODO: Move this into core? I basically copied this from warrior
+    if (
+        cr == RESOURCE_ENERGY
+        && this->cost() > 0
+        && discountOnMiss
+        && !this->proc
+        && !this->result_is_hit( this->execute_state->result ) )
+    {
+      this->last_resource_cost = 0.2 * this->cost();
+
+      this->player->resource_loss( cr, this->last_resource_cost, nullptr, this );
+      this->stats->consume_resource( cr, this->last_resource_cost );
+
+      this->sim->print_log("{} consumes {} {} for {} ({})",
+          *this->player, this->last_resource_cost, cr, *this, this->player->resources.current[ cr ] );
+    }
+    else
+    {
+      ab::consume_resource();
+
+      spend_combo_points();
+    }
+  }
 };
 
 void rogue_t::init_base_stats()
@@ -107,6 +170,31 @@ struct sinister_strike_t : public rogue_attack_t
   }
 };
 
+constexpr std::array backstab_ranks {
+  spell_container_t().set_spell(    53 ),
+  spell_container_t().set_spell(  2589 ),
+  spell_container_t().set_spell(  2590 ),
+  spell_container_t().set_spell(  2591 ),
+  spell_container_t().set_spell(  8721 ),
+  spell_container_t().set_spell( 11279 ),
+  spell_container_t().set_spell( 11280 ),
+  spell_container_t().set_spell( 11281 ),
+  spell_container_t().set_spell( 25300 ),
+};
+struct backstab_t : public rogue_attack_t
+{
+  backstab_t( rogue_t* player, util::string_view options_str )
+    :  rogue_attack_t( "backstab", player, player->find_rank( backstab_ranks )->spell( player ) )
+  {
+    parse_options( options_str );
+  }
+
+  bool ready() override
+  {
+    return base_t::ready() && player->position() == POSITION_BACK;
+  }
+};
+
 constexpr std::array eviscerate_ranks {
   spell_container_t().set_spell(  2098 ),
   spell_container_t().set_spell(  6760 ),
@@ -124,6 +212,34 @@ struct eviscerate_t : public rogue_attack_t
     :  rogue_attack_t( "eviscerate", player, player->find_rank( eviscerate_ranks )->spell( player ) )
   {
     parse_options( options_str );
+
+    amount_delta           = 0.0; // combo point damage is flat so we handle spread in base_da_min/max
+    spell_power_mod.direct = 0.0; // nullify the 1 from spell data
+  }
+
+  double cp_bonus() const
+  {
+    return p()->current_cp() * data().effectN( 1 ).pp_combo_points();
+  }
+
+  // TODO Forever: Verify the 3% per combo point. Looks right from low level logs
+  double attack_direct_power_coefficient( const action_state_t* ) const override
+  {
+    return 0.03 * p()->current_cp();
+  }
+
+  // Eviscerate doesn't apply the base damage spread to the extra damage from combo points
+
+  double base_da_min( const action_state_t* ) const override
+  {
+    const auto& e = data().effectN( 1 );
+    return e.base_value() * ( 1 - e.m_delta() / 2 ) + cp_bonus();
+  }
+
+  double base_da_max( const action_state_t* ) const override
+  {
+    const auto& e = data().effectN( 1 );
+    return e.base_value() * ( 1 + e.m_delta() / 2 ) + cp_bonus();
   }
 };
 
@@ -133,6 +249,7 @@ action_t* rogue_t::create_action( util::string_view name, util::string_view opti
 
   // builders
   if ( name == "sinister_strike" ) return new sinister_strike_t( this, options_str );
+  if ( name == "backstab" ) return new backstab_t( this, options_str );
 
   // finishers
   if ( name == "eviscerate" ) return new eviscerate_t( this, options_str );

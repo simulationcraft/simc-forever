@@ -38,7 +38,8 @@ void rogue( player_t* p )
   default_->add_action( "auto_attack" );
 
   default_->add_action( "eviscerate,if=combo_points>=5" );
-  default_->add_action( "sinister_strike" );
+  default_->add_action( "backstab" );
+  default_->add_action( "sinister_strike,if=position_front" );
 }
 //rogue_apl_end
 }  // namespace rogue_apl
