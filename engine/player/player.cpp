@@ -15165,7 +15165,8 @@ void player_t::parse_passive_effects( const spell_data_t* spell, bool force, par
     }
 
     // filter out non-aura applications
-    if ( eff.type() != E_APPLY_AURA && eff.type() != E_APPLY_AREA_AURA_PARTY && eff.type() != E_APPLY_AURA_PLAYER_AND_PET )
+    if ( eff.type() != E_APPLY_AURA && eff.type() != E_APPLY_AREA_AURA_PARTY &&
+         eff.type() != E_APPLY_AURA_PLAYER_AND_PET && eff.type() != E_APPLY_AREA_AURA_RAID )
       continue;
 
     success = register_passive_effect( eff ) ? true : success;
@@ -15195,7 +15196,7 @@ void player_t::deregister_passive_spell( const spell_data_t* spell )
 
       // filter out non-effect-modifying effects
       if ( eff.type() != E_APPLY_AURA && eff.type() != E_APPLY_AREA_AURA_PARTY &&
-           eff.type() != E_APPLY_AURA_PLAYER_AND_PET )
+           eff.type() != E_APPLY_AURA_PLAYER_AND_PET && eff.type() != E_APPLY_AREA_AURA_RAID )
         continue;
 
       register_passive_effect( eff, true );
@@ -15535,6 +15536,7 @@ void player_t::print_parsed_effects( report::sc_html_stream& os ) const
         case E_APPLY_AURA:
         case E_APPLY_AURA_PET:
         case E_APPLY_AREA_AURA_PET:
+        case E_APPLY_AREA_AURA_RAID:
         case E_APPLY_AREA_AURA_PARTY:
           switch ( spell_eff.subtype() )
           {

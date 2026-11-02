@@ -423,6 +423,7 @@ void modified_spelleffect_t::print_parsed_effect( report::sc_html_stream& os, co
     case E_APPLY_AURA:
     case E_APPLY_AURA_PET:
     case E_APPLY_AREA_AURA_PARTY:
+    case E_APPLY_AREA_AURA_RAID:
     case E_APPLY_AREA_AURA_PET:
       switch ( _eff.subtype() )
       {
@@ -1150,6 +1151,7 @@ bool parse_player_effects_t::is_valid_aura( const spelleffect_data_t& eff ) cons
         return false;
       break;
     case E_APPLY_AREA_AURA_PARTY:
+    case E_APPLY_AREA_AURA_RAID:
     case E_APPLY_AREA_AURA_PET:
       break;
     default:
@@ -1605,6 +1607,7 @@ bool parse_action_base_t::is_valid_aura( const spelleffect_data_t& eff ) const
       break;
     case E_APPLY_AREA_AURA_PARTY:
     case E_APPLY_AREA_AURA_PET:
+    case E_APPLY_AREA_AURA_RAID:
       break;
     default:
       return false;

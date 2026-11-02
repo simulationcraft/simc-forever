@@ -4171,7 +4171,8 @@ damage_buff_t* damage_buff_t::set_buff_mod( damage_buff_modifier_t& mod, const s
     mod.multiplier = 1.0 + multiplier;
 
   if ( !s->ok() || !s->effectN( effect_idx ).ok() || ( s->effectN( effect_idx ).type() != E_APPLY_AURA &&
-                                                       s->effectN( effect_idx ).type() != E_APPLY_AREA_AURA_PARTY ) )
+                                                       s->effectN( effect_idx ).type() != E_APPLY_AREA_AURA_PARTY && 
+                                                       s->effectN( effect_idx ).type() != E_APPLY_AREA_AURA_RAID ) )
     return this;
 
   if ( multiplier == 0.0 )
