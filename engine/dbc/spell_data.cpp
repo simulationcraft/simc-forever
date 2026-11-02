@@ -888,21 +888,16 @@ const spell_data_t* spell_container_t::debuff() const  { assert( cached ); retur
 const spell_container_t* spell_ranks_t::find_rank( int rank, spell_ranks_t::rank_ptype_t field )
 {
   assert( !ranks.empty() );
+  spell_container_t* container = nullptr;
 
   if ( rank == RANK_MAX )
   {
-    auto& r = ranks.back();
-    r.cache_data( player );
-    return &ranks.back();
+    container = &ranks.back();
   }
   else if ( rank > 0 )
   {
     if ( static_cast<size_t>( rank ) <= ranks.size() )
-    {
-      auto& r = ranks[ rank - 1 ];
-      r.cache_data( player );
-      return &ranks[ rank - 1 ];
-    }
+      container = &ranks[ rank - 1 ];
   }
   else
   {
@@ -912,14 +907,18 @@ const spell_container_t* spell_ranks_t::find_rank( int rank, spell_ranks_t::rank
     // if the member being referenced for existence is not &spell_container_t::spell, provide a non-default field
     for ( auto& it : ranks | std::ranges::views::reverse )
     {
-      auto& r = it;
-      r.cache_data( player );
+      it.cache_data( player );
       if ( auto reference_spell = std::invoke( field, it ); reference_spell && reference_spell->ok() )
-        return &it;
+      {
+        container = &it;
+        break;
+      }
     }
   }
 
-  auto& r = ranks.front();
-  r.cache_data( player );
-  return &ranks.front();
+  if ( !container )
+    container = &ranks.front();
+
+  container->cache_data( player );
+  return container;
 }
