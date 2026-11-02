@@ -912,9 +912,13 @@ inline const spelleffect_data_t& spelleffect_data_t::nil() { return spelleffect_
  *
  * Cached collection of spell_data_t pointers. Intended for talents, rank spells etc.
  */
-struct spell_container_t
+struct spell_ranks_t;
+struct spell_container_t// : private noncopyable
 {
+  friend spell_ranks_t;
 private:
+  bool cached = false;
+  
   unsigned spell_id   = 0;
   unsigned driver_id  = 0;
   unsigned attack_id  = 0;
@@ -933,32 +937,53 @@ private:
   const spell_data_t* _talent  = nullptr;
   const spell_data_t* _debuff  = nullptr;
 
-  const spell_data_t* get_field( const player_t* player, auto spell_field, auto id_field ) const;
-
 public:
-  constexpr spell_container_t& set_spell( unsigned id )   { spell_id = id;   return *this; }
-  constexpr spell_container_t& set_driver( unsigned id )  { driver_id = id;  return *this; }
-  constexpr spell_container_t& set_attack( unsigned id )  { attack_id = id;  return *this; }
-  constexpr spell_container_t& set_passive( unsigned id ) { passive_id = id; return *this; }
-  constexpr spell_container_t& set_aura( unsigned id )    { aura_id = id;    return *this; }
-  constexpr spell_container_t& set_buff( unsigned id )    { buff_id = id;    return *this; }
-  constexpr spell_container_t& set_talent( unsigned id )  { talent_id = id;  return *this; }
-  constexpr spell_container_t& set_debuff( unsigned id )  { debuff_id = id;  return *this; }
+  spell_container_t& set_spell( unsigned id )   { spell_id = id;   return *this; }
+  spell_container_t& set_driver( unsigned id )  { driver_id = id;  return *this; }
+  spell_container_t& set_attack( unsigned id )  { attack_id = id;  return *this; }
+  spell_container_t& set_passive( unsigned id ) { passive_id = id; return *this; }
+  spell_container_t& set_aura( unsigned id )    { aura_id = id;    return *this; }
+  spell_container_t& set_buff( unsigned id )    { buff_id = id;    return *this; }
+  spell_container_t& set_talent( unsigned id )  { talent_id = id;  return *this; }
+  spell_container_t& set_debuff( unsigned id )  { debuff_id = id;  return *this; }
 
-  const spell_data_t* spell( const player_t* p ) const;
-  const spell_data_t* driver( const player_t* p ) const;
-  const spell_data_t* attack( const player_t* p ) const;
-  const spell_data_t* passive( const player_t* p ) const;
-  const spell_data_t* aura( const player_t* p ) const;
-  const spell_data_t* buff( const player_t* p ) const;
-  const spell_data_t* talent( const player_t* p ) const;
-  const spell_data_t* debuff( const player_t* p ) const;
+  virtual void cache_data( const player_t* player );
+
+  const spell_data_t* spell() const;
+  const spell_data_t* driver() const;
+  const spell_data_t* attack() const;
+  const spell_data_t* passive() const;
+  const spell_data_t* aura() const;
+  const spell_data_t* buff() const;
+  const spell_data_t* talent() const;
+  const spell_data_t* debuff() const;
+
+  virtual ~spell_container_t() = default;
 };
 
 enum spell_rank_e : int
 {
   RANK_MAX_USABLE = 0,  // highest rank usable at the player level
   RANK_MAX        = -1, // highest rank in the table
+};
+
+struct spell_ranks_t
+{
+  const player_t* player;
+  // std::array<spell_container_t, 16> ranks;
+  std::vector<spell_container_t> ranks;
+
+  spell_ranks_t() = default;
+  template <typename... Pack>
+  spell_ranks_t( player_t* player, Pack&&... pack )
+    : player( player ),
+      ranks{ std::forward<Pack>( pack )... }
+  {}
+
+  virtual ~spell_ranks_t() = default;
+
+  using rank_ptype_t = const spell_data_t*(spell_container_t::*)() const;
+  virtual const spell_container_t* find_rank( int rank = RANK_MAX_USABLE, rank_ptype_t field = &spell_container_t::spell );
 };
 
 

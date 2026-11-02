@@ -7,6 +7,7 @@
 #include "simulationcraft.hpp"
 #include "action/parse_effects.hpp"
 #include "class_modules/apl/priest.hpp"
+#include "dbc/spell_data.hpp"
 
 namespace priestspace
 {
@@ -30,6 +31,26 @@ struct priest_td_t final : public actor_target_data_t
   } debuffs;
 
   priest_td_t( player_t* target, priest_t& p );
+};
+
+// Priest racials are not in the racial spell table, so check the spell's race mask instead
+// Rank 1 is checked first so other races and levels below rank 1 never reach find_rank
+struct priest_racial_ranks_t final : spell_ranks_t
+{
+  template <typename... Pack>
+  priest_racial_ranks_t( Pack&&... pack )
+    : spell_ranks_t{ std::forward<Pack>( pack )... }
+  {}
+
+  const spell_data_t* find_racial_rank_spell( int rank = RANK_MAX_USABLE, spell_ranks_t::rank_ptype_t field = &spell_container_t::spell )
+  {
+    // make a nil `spell_container_t` and this can be find_rank(...) override
+    ranks.front().cache_data( player );
+    if ( !( ranks.front().spell()->race_mask() & util::race_mask( player->race ) ) )
+      return spell_data_t::not_found();
+
+    return std::invoke( field, spell_ranks_t::find_rank( rank, field ) );
+  }
 };
 
 // utility to create target_effect_t compatible functions from priest_td_t member references
@@ -58,17 +79,6 @@ struct priest_t final : public parse_player_effects_t
   double composite_attribute_multiplier( attribute_e ) const override;
 
   priest_td_t* get_target_data( player_t* target ) const override;
-
-  // Priest racials are not in the racial spell table, so check the spell's race mask instead
-  // Rank 1 is checked first so other races and levels below rank 1 never reach find_rank
-  const spell_data_t* find_racial_rank( util::span<const spell_container_t> ranks,
-                                        rank_ptype_t field = &spell_container_t::spell ) const
-  {
-    if ( !( ranks.front().spell( this )->race_mask() & util::race_mask( race ) ) )
-      return spell_data_t::not_found();
-
-    return std::invoke( field, find_rank( ranks ), this );
-  }
 
   std::string default_potion() const override   { return priest_apl::potion( this ); }
   std::string default_flask() const override    { return priest_apl::flask( this ); }
@@ -118,6 +128,23 @@ struct priest_t final : public parse_player_effects_t
   {
     action_t* touch_of_weakness = nullptr;
   } active;
+
+  struct
+  {
+    priest_racial_ranks_t dark_sacrifice;
+    spell_ranks_t devouring_plague;
+    priest_racial_ranks_t hex_of_weakness;
+    spell_ranks_t holy_fire;
+    spell_ranks_t holy_nova;
+    spell_ranks_t mind_blast;
+    spell_ranks_t mind_flay;
+    spell_ranks_t penance;
+    spell_ranks_t shadow_word_death;
+    spell_ranks_t shadow_word_pain;
+    spell_ranks_t smite;
+    priest_racial_ranks_t starshards;
+    priest_racial_ranks_t touch_of_weakness;
+  } rank;
 
 private:
   target_specific_t<priest_td_t> _target_data;
@@ -196,29 +223,6 @@ public:
 
 using priest_spell_t = priest_action_t<spell_t>;
 
-// Hex of Weakness
-
-constexpr std::array hex_of_weakness_ranks {
-  spell_container_t().set_spell(  9035 ),
-  spell_container_t().set_spell( 19281 ),
-  spell_container_t().set_spell( 19282 ),
-  spell_container_t().set_spell( 19283 ),
-  spell_container_t().set_spell( 19284 ),
-  spell_container_t().set_spell( 19285 ),
-};
-
-// Touch of Weakness
-
-// spell: self buff, debuff: damage and attack power debuff on the attacker
-constexpr std::array touch_of_weakness_ranks {
-  spell_container_t().set_spell(  2652 ).set_debuff(  2943 ),
-  spell_container_t().set_spell( 19261 ).set_debuff( 19249 ),
-  spell_container_t().set_spell( 19262 ).set_debuff( 19251 ),
-  spell_container_t().set_spell( 19264 ).set_debuff( 19252 ),
-  spell_container_t().set_spell( 19265 ).set_debuff( 19253 ),
-  spell_container_t().set_spell( 19266 ).set_debuff( 19254 ),
-};
-
 void priest_t::init_base_stats()
 {
   parse_player_effects_t::init_base_stats();
@@ -233,6 +237,116 @@ void priest_t::init_base_stats()
 void priest_t::init_spells()
 {
   parse_player_effects_t::init_spells();
+
+  rank.dark_sacrifice = { this,
+    spell_container_t().set_spell( 1277324 ),
+    spell_container_t().set_spell( 1277325 ),
+    spell_container_t().set_spell( 1277326 ),
+    spell_container_t().set_spell( 1277327 ),
+    spell_container_t().set_spell( 1277328 ),
+  };
+  rank.devouring_plague = { this,
+    spell_container_t().set_spell(  2944 ),
+    spell_container_t().set_spell( 19276 ),
+    spell_container_t().set_spell( 19277 ),
+    spell_container_t().set_spell( 19278 ),
+    spell_container_t().set_spell( 19279 ),
+    spell_container_t().set_spell( 19280 ),
+  };
+  rank.hex_of_weakness = { this,
+    spell_container_t().set_spell(  9035 ),
+    spell_container_t().set_spell( 19281 ),
+    spell_container_t().set_spell( 19282 ),
+    spell_container_t().set_spell( 19283 ),
+    spell_container_t().set_spell( 19284 ),
+    spell_container_t().set_spell( 19285 ),
+  };
+  rank.holy_fire = { this,
+    spell_container_t().set_spell( 14914 ),
+    spell_container_t().set_spell( 15262 ),
+    spell_container_t().set_spell( 15263 ),
+    spell_container_t().set_spell( 15264 ),
+    spell_container_t().set_spell( 15265 ),
+    spell_container_t().set_spell( 15266 ),
+    spell_container_t().set_spell( 15267 ),
+    spell_container_t().set_spell( 15261 ), // Rank 8 is 15261 for some reason
+  };
+  rank.holy_nova = { this,
+    spell_container_t().set_spell( 15237 ),
+    spell_container_t().set_spell( 15430 ),
+    spell_container_t().set_spell( 15431 ),
+    spell_container_t().set_spell( 27799 ),
+    spell_container_t().set_spell( 27800 ),
+    spell_container_t().set_spell( 27801 ),
+  };
+  rank.mind_blast = { this,
+    spell_container_t().set_spell(  8092 ),
+    spell_container_t().set_spell(  8102 ),
+    spell_container_t().set_spell(  8103 ),
+    spell_container_t().set_spell(  8104 ),
+    spell_container_t().set_spell(  8105 ),
+    spell_container_t().set_spell(  8106 ),
+    spell_container_t().set_spell( 10945 ),
+    spell_container_t().set_spell( 10946 ),
+    spell_container_t().set_spell( 10947 ),
+  };
+  rank.mind_flay = { this,
+    spell_container_t().set_spell( 15407 ),
+    spell_container_t().set_spell( 17311 ),
+    spell_container_t().set_spell( 17312 ),
+    spell_container_t().set_spell( 17313 ),
+    spell_container_t().set_spell( 17314 ),
+    spell_container_t().set_spell( 18807 ),
+  };
+  rank.penance = { this,
+    spell_container_t().set_spell(  402174 ).set_driver(  402261 ).set_attack(  402284 ),
+    spell_container_t().set_spell( 1240720 ).set_driver( 1240734 ).set_attack( 1240727 ),
+    spell_container_t().set_spell( 1240721 ).set_driver( 1240736 ).set_attack( 1240730 ),
+    spell_container_t().set_spell( 1316995 ).set_driver( 1316994 ).set_attack( 1316993 ),
+  };
+  rank.shadow_word_death = { this,
+    spell_container_t().set_spell( 1309595 ),
+    spell_container_t().set_spell( 1309633 ),
+    spell_container_t().set_spell( 1309635 ),
+    spell_container_t().set_spell( 1309636 ),
+  };
+  rank.shadow_word_pain = { this,
+    spell_container_t().set_spell(   589 ),
+    spell_container_t().set_spell(   594 ),
+    spell_container_t().set_spell(   970 ),
+    spell_container_t().set_spell(   992 ),
+    spell_container_t().set_spell(  2767 ),
+    spell_container_t().set_spell( 10892 ),
+    spell_container_t().set_spell( 10893 ),
+    spell_container_t().set_spell( 10894 ),
+  };
+  rank.smite = { this,
+    spell_container_t().set_spell(   585 ),
+    spell_container_t().set_spell(   591 ),
+    spell_container_t().set_spell(   598 ),
+    spell_container_t().set_spell(   984 ),
+    spell_container_t().set_spell(  1004 ),
+    spell_container_t().set_spell(  6060 ),
+    spell_container_t().set_spell( 10933 ),
+    spell_container_t().set_spell( 10934 ),
+  };
+  rank.starshards = { this,
+    spell_container_t().set_spell( 10797 ),
+    spell_container_t().set_spell( 19296 ),
+    spell_container_t().set_spell( 19299 ),
+    spell_container_t().set_spell( 19302 ),
+    spell_container_t().set_spell( 19303 ),
+    spell_container_t().set_spell( 19304 ),
+    spell_container_t().set_spell( 19305 ),
+  };
+  rank.touch_of_weakness = { this,
+    spell_container_t().set_spell(  2652 ).set_debuff(  2943 ),
+    spell_container_t().set_spell( 19261 ).set_debuff( 19249 ),
+    spell_container_t().set_spell( 19262 ).set_debuff( 19251 ),
+    spell_container_t().set_spell( 19264 ).set_debuff( 19252 ),
+    spell_container_t().set_spell( 19265 ).set_debuff( 19253 ),
+    spell_container_t().set_spell( 19266 ).set_debuff( 19254 ),
+  };
 
   parse_all_class_passives();
   parse_all_passive_talents();
@@ -257,11 +371,11 @@ void priest_t::init_spells()
   deregister_passive_spell( talent.wand_specialization );
 
   spell.dark_inspiration         = find_spell( 1326168 );
-  spell.hex_of_weakness          = find_racial_rank( hex_of_weakness_ranks );
+  spell.hex_of_weakness          = rank.hex_of_weakness.find_racial_rank_spell();
   spell.holy_purpose             = talent.searing_light->effectN( 2 ).trigger();
   spell.shadow_weaving           = talent.shadow_weaving->effectN( 1 ).trigger();
-  spell.touch_of_weakness        = find_racial_rank( touch_of_weakness_ranks );
-  spell.touch_of_weakness_debuff = find_racial_rank( touch_of_weakness_ranks, &spell_container_t::debuff );
+  spell.touch_of_weakness        = rank.touch_of_weakness.find_racial_rank_spell();
+  spell.touch_of_weakness_debuff = rank.touch_of_weakness.find_racial_rank_spell( RANK_MAX_USABLE, &spell_container_t::debuff );
 }
 
 void priest_t::create_buffs()
@@ -423,21 +537,10 @@ void priest_t::parse_action_effects( action_t* action )
 }
 
 // Smite
-
-constexpr std::array smite_ranks {
-  spell_container_t().set_spell(   585 ),
-  spell_container_t().set_spell(   591 ),
-  spell_container_t().set_spell(   598 ),
-  spell_container_t().set_spell(   984 ),
-  spell_container_t().set_spell(  1004 ),
-  spell_container_t().set_spell(  6060 ),
-  spell_container_t().set_spell( 10933 ),
-  spell_container_t().set_spell( 10934 ),
-};
 struct smite_t : public priest_spell_t
 {
   smite_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "smite", player, player->find_rank( smite_ranks )->spell( player ) )
+    priest_spell_t( "smite", player, player->rank.smite.find_rank()->spell() )
   {
     parse_options( options_str );
     parse_power_in_light();
@@ -445,43 +548,20 @@ struct smite_t : public priest_spell_t
 };
 
 // Shadow Word: Pain
-
-constexpr std::array shadow_word_pain_ranks {
-  spell_container_t().set_spell(   589 ),
-  spell_container_t().set_spell(   594 ),
-  spell_container_t().set_spell(   970 ),
-  spell_container_t().set_spell(   992 ),
-  spell_container_t().set_spell(  2767 ),
-  spell_container_t().set_spell( 10892 ),
-  spell_container_t().set_spell( 10893 ),
-  spell_container_t().set_spell( 10894 ),
-};
 struct shadow_word_pain_t : public priest_spell_t
 {
   shadow_word_pain_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "shadow_word_pain", player, player->find_rank( shadow_word_pain_ranks )->spell( player ) )
+    priest_spell_t( "shadow_word_pain", player, player->rank.shadow_word_pain.find_rank()->spell() )
   {
     parse_options( options_str );
   }
 };
 
 // Mind Blast
-
-constexpr std::array mind_blast_ranks {
-  spell_container_t().set_spell(  8092 ),
-  spell_container_t().set_spell(  8102 ),
-  spell_container_t().set_spell(  8103 ),
-  spell_container_t().set_spell(  8104 ),
-  spell_container_t().set_spell(  8105 ),
-  spell_container_t().set_spell(  8106 ),
-  spell_container_t().set_spell( 10945 ),
-  spell_container_t().set_spell( 10946 ),
-  spell_container_t().set_spell( 10947 ),
-};
 struct mind_blast_t : public priest_spell_t
 {
   mind_blast_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "mind_blast", player, player->find_rank( mind_blast_ranks )->spell( player ) )
+    priest_spell_t( "mind_blast", player, player->rank.mind_blast.find_rank()->spell() )
   {
     parse_options( options_str );
   }
@@ -496,40 +576,22 @@ struct mind_blast_t : public priest_spell_t
 };
 
 // Devouring Plague
-
 // TODO: Heal the caster for the damage dealt
-constexpr std::array devouring_plague_ranks {
-  spell_container_t().set_spell(  2944 ),
-  spell_container_t().set_spell( 19276 ),
-  spell_container_t().set_spell( 19277 ),
-  spell_container_t().set_spell( 19278 ),
-  spell_container_t().set_spell( 19279 ),
-  spell_container_t().set_spell( 19280 ),
-};
 struct devouring_plague_t : public priest_spell_t
 {
   devouring_plague_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "devouring_plague", player, player->find_rank( devouring_plague_ranks )->spell( player ) )
+    priest_spell_t( "devouring_plague", player, player->rank.devouring_plague.find_rank()->spell() )
   {
     parse_options( options_str );
   }
 };
 
 // Mind Flay
-
-constexpr std::array mind_flay_ranks {
-  spell_container_t().set_spell( 15407 ),
-  spell_container_t().set_spell( 17311 ),
-  spell_container_t().set_spell( 17312 ),
-  spell_container_t().set_spell( 17313 ),
-  spell_container_t().set_spell( 17314 ),
-  spell_container_t().set_spell( 18807 ),
-};
 struct mind_flay_t : public priest_spell_t
 {
   mind_flay_t( priest_t* player, util::string_view options_str ) :
     priest_spell_t( "mind_flay", player, player->talent.mind_flay.ok()
-                                         ? player->find_rank( mind_flay_ranks )->spell( player )
+                    ? player->rank.mind_flay.find_rank()->spell()
                                          : spell_data_t::not_found() )
   {
     parse_options( options_str );
@@ -563,18 +625,11 @@ struct mind_flay_t : public priest_spell_t
 };
 
 // Shadow Word: Death
-
 // TODO: Backlash damage, effect 2
-constexpr std::array shadow_word_death_ranks {
-  spell_container_t().set_spell( 1309595 ),
-  spell_container_t().set_spell( 1309633 ),
-  spell_container_t().set_spell( 1309635 ),
-  spell_container_t().set_spell( 1309636 ),
-};
 struct shadow_word_death_t : public priest_spell_t
 {
   shadow_word_death_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "shadow_word_death", player, player->find_rank( shadow_word_death_ranks )->spell( player ) )
+    priest_spell_t( "shadow_word_death", player, player->rank.shadow_word_death.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -592,40 +647,21 @@ struct shadow_word_death_t : public priest_spell_t
 };
 
 // Holy Fire
-
-constexpr std::array holy_fire_ranks {
-  spell_container_t().set_spell( 14914 ),
-  spell_container_t().set_spell( 15262 ),
-  spell_container_t().set_spell( 15263 ),
-  spell_container_t().set_spell( 15264 ),
-  spell_container_t().set_spell( 15265 ),
-  spell_container_t().set_spell( 15266 ),
-  spell_container_t().set_spell( 15267 ),
-  spell_container_t().set_spell( 15261 ), // Rank 8 is 15261 for some reason
-};
 struct holy_fire_t : public priest_spell_t
 {
   holy_fire_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "holy_fire", player, player->find_rank( holy_fire_ranks )->spell( player ) )
+    priest_spell_t( "holy_fire", player, player->rank.holy_fire.find_rank()->spell() )
   {
     parse_options( options_str );
   }
 };
 
 // Penance TODO: Check Penance vs Inner Focus - Right now only first bolt gets the crit bonus
-
 // driver: channel, attack: damage bolt
-constexpr std::array penance_ranks {
-  spell_container_t().set_spell(  402174 ).set_driver(  402261 ).set_attack(  402284 ),
-  spell_container_t().set_spell( 1240720 ).set_driver( 1240734 ).set_attack( 1240727 ),
-  spell_container_t().set_spell( 1240721 ).set_driver( 1240736 ).set_attack( 1240730 ),
-  spell_container_t().set_spell( 1316995 ).set_driver( 1316994 ).set_attack( 1316993 ),
-};
-
 struct penance_damage_t : public priest_spell_t
 {
   penance_damage_t( priest_t* player ) :
-    priest_spell_t( "penance_damage", player, player->find_rank( penance_ranks )->attack( player ) )
+    priest_spell_t( "penance_damage", player, player->rank.penance.find_rank()->attack() )
   {
     background = true;
     parse_power_in_light();
@@ -636,34 +672,25 @@ struct penance_t : public priest_spell_t
 {
   penance_t( priest_t* player, util::string_view options_str ) :
     priest_spell_t( "penance", player, player->talent.penance.ok()
-                                       ? player->find_rank( penance_ranks )->spell( player )
+                    ? player->rank.penance.find_rank()->spell()
                                        : spell_data_t::not_found() )
   {
     parse_options( options_str );
     channeled = true;
     may_miss = may_crit = false;
 
-    parse_effect_data( player->find_rank( penance_ranks )->driver( player )->effectN( 2 ) );
+    parse_effect_data( player->rank.penance.find_rank()->driver()->effectN( 2 ) );
     tick_action = new penance_damage_t( player );
   }
 };
 
 // Holy Nova
-
 // TODO: Party heal
-constexpr std::array holy_nova_ranks {
-  spell_container_t().set_spell( 15237 ),
-  spell_container_t().set_spell( 15430 ),
-  spell_container_t().set_spell( 15431 ),
-  spell_container_t().set_spell( 27799 ),
-  spell_container_t().set_spell( 27800 ),
-  spell_container_t().set_spell( 27801 ),
-};
 struct holy_nova_t : public priest_spell_t
 {
   holy_nova_t( priest_t* player, util::string_view options_str ) :
     priest_spell_t( "holy_nova", player, player->talent.holy_nova.ok()
-                                         ? player->find_rank( holy_nova_ranks )->spell( player )
+                    ? player->rank.holy_nova.find_rank()->spell()
                                          : spell_data_t::not_found() )
   {
     parse_options( options_str );
@@ -672,20 +699,10 @@ struct holy_nova_t : public priest_spell_t
 };
 
 // Starshards
-
-constexpr std::array starshards_ranks {
-  spell_container_t().set_spell( 10797 ),
-  spell_container_t().set_spell( 19296 ),
-  spell_container_t().set_spell( 19299 ),
-  spell_container_t().set_spell( 19302 ),
-  spell_container_t().set_spell( 19303 ),
-  spell_container_t().set_spell( 19304 ),
-  spell_container_t().set_spell( 19305 ),
-};
 struct starshards_t : public priest_spell_t
 {
-  starshards_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "starshards", player, player->find_racial_rank( starshards_ranks ) )
+  starshards_t( priest_t* player, util::string_view options_str ):
+    priest_spell_t( "starshards", player, player->rank.starshards.find_racial_rank_spell() )
   {
     parse_options( options_str );
     channeled = true;
@@ -693,22 +710,14 @@ struct starshards_t : public priest_spell_t
 };
 
 // Dark Sacrifice
-
 // TODO: Health cost, effect 1
-constexpr std::array dark_sacrifice_ranks {
-  spell_container_t().set_spell( 1277324 ),
-  spell_container_t().set_spell( 1277325 ),
-  spell_container_t().set_spell( 1277326 ),
-  spell_container_t().set_spell( 1277327 ),
-  spell_container_t().set_spell( 1277328 ),
-};
 struct dark_sacrifice_t : public priest_spell_t
 {
   // TODO: Check if spirit is snapshot on cast or updates dynamically
   double spirit_per_tick = 0.0;
 
-  dark_sacrifice_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "dark_sacrifice", player, player->find_racial_rank( dark_sacrifice_ranks ) )
+  dark_sacrifice_t( priest_t* player, util::string_view options_str ):
+    priest_spell_t( "dark_sacrifice", player, player->rank.dark_sacrifice.find_racial_rank_spell() )
   {
     parse_options( options_str );
     harmful = false;
@@ -770,7 +779,7 @@ struct hex_of_weakness_t : public priest_spell_t
 };
 
 // Touch of Weakness
-
+// spell: self buff, debuff: damage and attack power debuff on the attacker
 struct touch_of_weakness_damage_t : public priest_spell_t
 {
   touch_of_weakness_damage_t( priest_t* player ) :
