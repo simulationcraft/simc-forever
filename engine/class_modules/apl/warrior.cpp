@@ -45,6 +45,8 @@ void warrior( player_t* p )
   default_->add_action( "battle_shout,if=!buff.battle_shout.up" );
   default_->add_action( "bloodrage,if=rage<80" );
   default_->add_action( "rend,if=!ticking" );
+  if ( p->level() >= 12 )
+    default_->add_action( "overpower,if=buff.overpower.up" );
   default_->add_action( "thunder_clap,if=spell_targets>=2" );
   default_->add_action( "heroic_strike,if=rage>=30" );
 }

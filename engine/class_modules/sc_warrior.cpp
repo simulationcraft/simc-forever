@@ -29,6 +29,7 @@ struct warrior_td_t : public actor_target_data_t
 
   struct debuffs_t
   {
+    buff_t* hamstring = nullptr;
     buff_t* thunder_clap = nullptr;
   } debuffs;
 
@@ -164,6 +165,8 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* berserker_stance_passive = spell_data_t::nil();
     const spell_data_t* defensive_stance         = spell_data_t::nil();
     const spell_data_t* defensive_stance_passive = spell_data_t::nil();
+    const spell_data_t* hamstring                = spell_data_t::nil();
+    const spell_data_t* overpower_available      = spell_data_t::nil();
     const spell_data_t* thunder_clap             = spell_data_t::nil();
   } spell;
 
@@ -177,6 +180,7 @@ struct warrior_t final : public parse_player_effects_t
     buff_t* bloodrage    = nullptr;
 
     buff_t* heroic_strike_queued = nullptr;
+    buff_t* overpower_available  = nullptr;
   } buff;
 
   struct gains_t
@@ -197,6 +201,9 @@ warrior_td_t::warrior_td_t( player_t* target, warrior_t& p ) : actor_target_data
 {
   dots.deep_wounds = target->get_dot( "deep_wounds", &p );
   dots.rend        = target->get_dot( "rend", &p );
+
+  if ( p.spell.hamstring->ok() )
+    debuffs.hamstring = make_buff( *this, "hamstring", p.spell.hamstring );
 
   if ( p.spell.thunder_clap->ok() )
     debuffs.thunder_clap = make_buff( *this, "thunder_clap", p.spell.thunder_clap );
@@ -241,6 +248,14 @@ public:
 
   bool ready() override
   { return stance_ready() && ab::ready(); }
+
+  void impact( action_state_t* s ) override
+  {
+    ab::impact( s );
+
+    if ( s->result == RESULT_DODGE )
+      p()->buff.overpower_available->trigger();
+  }
 
   void consume_resource() override
   {
@@ -499,6 +514,63 @@ struct rend_t : public warrior_attack_t
   }
 };
 
+constexpr std::array hamstring_ranks {
+  spell_container_t().set_spell( 1715 ),
+  spell_container_t().set_spell( 7372 ),
+  spell_container_t().set_spell( 7373 ),
+};
+struct hamstring_t : public warrior_attack_t
+{
+  hamstring_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "hamstring", player, player->find_rank( hamstring_ranks )->spell( player ) )
+  {
+    parse_options( options_str );
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    warrior_attack_t::impact( s );
+
+    if ( result_is_hit( s->result ) )
+    {
+      // NOTE: Movement speed slow is tracked but not applied to the target.
+      td( s->target )->debuffs.hamstring->trigger();
+    }
+  }
+};
+
+constexpr std::array overpower_ranks {
+  spell_container_t().set_spell(  7384 ),
+  spell_container_t().set_spell(  7887 ),
+  spell_container_t().set_spell( 11584 ),
+  spell_container_t().set_spell( 11585 ),
+};
+struct overpower_t : public warrior_attack_t
+{
+  overpower_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "overpower", player, player->find_rank( overpower_ranks )->spell( player ) )
+  {
+    parse_options( options_str );
+
+    may_block = may_dodge = may_parry = false;
+  }
+
+  bool ready() override
+  {
+    if ( !p()->buff.overpower_available->check() )
+      return false;
+
+    return warrior_attack_t::ready();
+  }
+
+  void execute() override
+  {
+    p()->buff.overpower_available->expire();
+
+    warrior_attack_t::execute();
+  }
+};
+
 // APL action to queue up heroic strike
 // Checks to make sure warrior has enough rage to queue it up
 // The actual HS execute in the melee swing will check rage again to make sure that rage
@@ -673,6 +745,7 @@ void warrior_t::create_actions()
 void warrior_t::create_buffs()
 {
   buff.heroic_strike_queued = make_buff( this, "heroic_strike_queued" );
+  buff.overpower_available  = make_buff( this, "overpower", spell.overpower_available );
 
   buff.battle_stance    = make_buff( this, "battle_stance", spell.battle_stance );
   buff.defensive_stance = make_buff( this, "defensive_stance", spell.defensive_stance );
@@ -733,6 +806,8 @@ void warrior_t::init_spells()
   spell.berserker_stance_passive = find_spell( 7381 );
   spell.defensive_stance         = find_spell( 71 );
   spell.defensive_stance_passive = find_spell( 7376 );
+  spell.hamstring                = find_rank( hamstring_ranks )->spell( this );
+  spell.overpower_available      = find_spell( 1282733 );
   spell.thunder_clap             = find_rank( thunder_clap_ranks )->spell( this );
 
   // Arms
@@ -826,6 +901,8 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "charge" ) return new charge_t( this, options_str );
 
   if ( name == "rend" ) return new rend_t( this, options_str );
+  if ( name == "hamstring" ) return new hamstring_t( this, options_str );
+  if ( name == "overpower" ) return new overpower_t( this, options_str );
   if ( name == "heroic_strike" ) return new heroic_strike_queue_t( this, options_str );
 
 
