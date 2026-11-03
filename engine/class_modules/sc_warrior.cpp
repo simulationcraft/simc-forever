@@ -609,8 +609,18 @@ struct thunder_clap_t : public warrior_attack_t
 
     // TODO: Verify this at higher levels
     attack_power_mod.direct = 0.05;
+  }
 
-    // TODO: attack speed slow
+  void impact( action_state_t* s ) override
+  {
+    warrior_attack_t::impact( s );
+
+    if ( result_is_hit( s->result ) )
+    {
+      // NOTE: Currently tracked for uptime only. The attack speed slow is not applied because
+      // enemy targets do not parse player effects. This only affects target swing timing/DTPS.
+      td( s->target )->debuffs.thunder_clap->trigger();
+    }
   }
 };
 
