@@ -168,7 +168,10 @@ struct warrior_t final : public parse_player_effects_t
     gain_t* melee = nullptr;
   } gain;
 
-  action_t* heroic_strike = nullptr;
+  struct actives_t
+  {
+    action_t* heroic_strike = nullptr;
+  } active;
 
 private:
   target_specific_t<warrior_td_t> _target_data;
@@ -204,6 +207,9 @@ public:
 
   const warrior_t* p() const
   { return debug_cast<const warrior_t*>( this->player ); }
+
+  warrior_td_t* td( player_t* target ) const
+  { return p()->get_target_data( target ); }
 
   void consume_resource() override
   {
@@ -325,9 +331,9 @@ struct warrior_melee_t : public warrior_attack_t
     // try to trigger a queued heroic strike
     if ( p()->buff.heroic_strike_queued->check() )
     {
-      if ( p()->resource_available( RESOURCE_RAGE, p()->heroic_strike->cost() ) )
+      if ( p()->resource_available( RESOURCE_RAGE, p()->active.heroic_strike->cost() ) )
       {
-        p()->heroic_strike->execute_on_target( target );
+        p()->active.heroic_strike->execute_on_target( target );
         schedule_execute();
         return;
       }
@@ -443,7 +449,7 @@ struct heroic_strike_queue_t : public action_t
       return false;
 
     // not enough rage
-    if ( !p()->resource_available( RESOURCE_RAGE, p()->heroic_strike->cost() ) )
+    if ( !p()->resource_available( RESOURCE_RAGE, p()->active.heroic_strike->cost() ) )
       return false;
 
     return action_t::ready();
@@ -571,7 +577,7 @@ void warrior_t::init_gains()
 
 void warrior_t::create_actions()
 {
-  heroic_strike = new heroic_strike_t( this, "" );
+  active.heroic_strike = new heroic_strike_t( this, "" );
 
   parse_player_effects_t::create_actions();
 }
