@@ -266,7 +266,7 @@ Spell Level      : 20
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
 Labels           : 25: Warrior Spells
-Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2), Raging Blows (1310315 effect#2)
+Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 22
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
@@ -344,7 +344,7 @@ Description      : Forces all nearby enemies within $a yards to focus attacks on
 Tooltip          : Taunted.
 
 Name             : Slam (desc=Rank 2) (id=1464) [Spell Family (4)] 
-Hotfixed         : Attributes
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000), Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -354,10 +354,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Pushback (207), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
@@ -451,7 +451,7 @@ Category         : 891 (Type 0x0)
 Labels           : 25: Warrior Spells
 Category Cooldown: 10 seconds
 Stance Mask      : 0x00040000
-Affecting Spells : Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2), Raging Blows (1310315 effect#2)
+Affecting Spells : Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2), Improved Whirlwind (1310315 effect#1)
 Family Flags     : 31, 34
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -1054,7 +1054,7 @@ Spell Level      : 30
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
 Labels           : 25: Warrior Spells
-Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2), Raging Blows (1310315 effect#2)
+Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 22
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
@@ -1468,7 +1468,7 @@ Description      : Sunders the target's armor, reducing it by $s1 per Sunder Arm
 Tooltip          : Armor decreased by $s1.
 
 Name             : Slam (desc=Rank 3) (id=8820) [Spell Family (4)] 
-Hotfixed         : Attributes
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000), Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -1478,10 +1478,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Pushback (207), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
@@ -2002,7 +2002,7 @@ $ImpRevenge=$?a12797[${$12797s1/100+1}][${1}]
 $APRatio=${$<APR>*$<ImpRevenge>}
 
 Name             : Slam (desc=Rank 4) (id=11604) [Spell Family (4)] 
-Hotfixed         : Attributes
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000), Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -2012,10 +2012,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Pushback (207), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
@@ -2025,7 +2025,7 @@ Effects          :
 Description      : Slams the opponent, causing weapon damage plus $s1.
 
 Name             : Slam (desc=Rank 5) (id=11605) [Spell Family (4)] 
-Hotfixed         : Attributes
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000), Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -2035,10 +2035,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Pushback (207), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
@@ -2057,7 +2057,7 @@ Spell Level      : 40
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
 Labels           : 25: Warrior Spells
-Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2), Raging Blows (1310315 effect#2)
+Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 22
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
@@ -2075,7 +2075,7 @@ Spell Level      : 50
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
 Labels           : 25: Warrior Spells
-Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2), Raging Blows (1310315 effect#2)
+Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 22
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
@@ -2099,7 +2099,7 @@ Effects          :
 
 Name             : Two-Handed Weapon Specialization (id=12163) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=4, col=2, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(1, 2, 3)]
+                 : Effect#1 [op=set, values=(2, 4, 6)]
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -2259,6 +2259,7 @@ Effects          :
 Description      : Increases the critical strike chance of your Overpower ability by $s1%.
 
 Name             : Sweeping Strikes (id=12292) [Spell Family (4)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=5, col=2, max_rank=1, req_points=0]
 Class            : Warrior
 School           : Physical
@@ -2274,7 +2275,7 @@ Stance Mask      : 0x00010000
 Proc Flags       : White Melee, Yellow Melee
 Affecting Spells : Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3)
 Family Flags     : 52
-Attributes       : Is Ability (4), Do Not Sheath (18), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689601)   : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -2310,8 +2311,8 @@ Description      : A vicious strike that deals weapon damage plus $s2 and wounds
 Tooltip          : Healing effects reduced by $s1%.
 
 Name             : Improved Tactical Mastery (id=12295) [Spell Family (4), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=2, col=2, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(3, 6, 9, 12, 15)]
+Talent Entry     : Generic [tree=class, row=2, col=2, max_rank=3, req_points=0]
+                 : Effect#1 [op=set, values=(5, 10, 15)]
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -2502,7 +2503,7 @@ Effects          :
 Description      : Reduces the cooldown of your Disarm ability by $/1000;s1 secs.
 
 Name             : Enrage (id=12317) [Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=4, col=7, max_rank=5, req_points=0]
+Talent Entry     : Generic [tree=class, row=3, col=8, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
 Class            : Warrior
 School           : Physical
@@ -2531,8 +2532,8 @@ Effects          :
 Description      : Increases the melee attack power bonus of your Battle Shout by $s1%.
 
 Name             : Flurry (id=12319) [Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=6, col=6, max_rank=5, req_points=25]
-                 : Effect#1 [op=set, values=(5, 10, 15, 20, 25)]
+Talent Entry     : Generic [tree=class, row=6, col=7, max_rank=3, req_points=25]
+                 : Effect#1 [op=set, values=(10, 20, 30)]
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -2562,6 +2563,7 @@ Effects          :
 Description      : Improves your chance to get a critical strike with melee attacks by $s1%.
 
 Name             : Booming Voice (id=12321) [Spell Family (4), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=1, col=6, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(10, 20, 30, 40, 50)]
                  : Effect#2 [op=set, values=(-5, -10, -15, -20, -25)]
@@ -2580,9 +2582,10 @@ Effects          :
                    Family Flags: 16, 17, 18, 19
 #2 (id=1360666)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -25 | Scaled Value: -25 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Demoralizing Shout (1160), Challenging Shout (1161), Battle Shout (5242), Intimidating Shout (5246), Demoralizing Shout (6190), Battle Shout (6192), Battle Shout (6673), Battle Shout (11549), Battle Shout (11550), Battle Shout (11551), Demoralizing Shout (11554), Demoralizing Shout (11555), Demoralizing Shout (11556), Intimidating Shout (20511), Battle Shout (25289), Horn of Lordaeron (425600)
-                   Family Flags: 16, 17, 18, 19
-Description      : Increases the area of effect of your Shouts by $s1% and reduces their Rage cost by $s2%.
+                   Affected Spells: Demoralizing Shout (1160), Challenging Shout (1161), Battle Shout (5242), Intimidating Shout (5246), Demoralizing Shout (6190), Battle Shout (6192), Battle Shout (6673), Battle Shout (11549), Battle Shout (11550), Battle Shout (11551), Demoralizing Shout (11554), Demoralizing Shout (11555), Demoralizing Shout (11556), Piercing Howl (12323), Intimidating Shout (20511), Battle Shout (25289), Horn of Lordaeron (425600)
+                   Family Flags: 16, 17, 18, 19, 37
+Hotfixed         : Affects Spells
+Description      : Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%.
 
 Name             : Unbridled Wrath (id=12322) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=7, max_rank=5, req_points=0]
@@ -2612,7 +2615,7 @@ GCD              : 1.5 seconds
 Duration         : 6 seconds
 Labels           : 25: Warrior Spells
 Mechanic         : Snare
-Affecting Spells : Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3)
+Affecting Spells : Booming Voice (12321 effect#2), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3)
 Family Flags     : 37
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -2834,6 +2837,7 @@ Effects          :
 Description      : Increases damage dealt by your Revenge ability by $m1%.
 
 Name             : Concussion Blow (id=12809) [Spell Family (4)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=5, col=10, max_rank=1, req_points=0]
 Class            : Warrior
 School           : Physical
@@ -2849,7 +2853,7 @@ Proc Chance      : 101%
 Mechanic         : Stun
 Affecting Spells : Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3)
 Family Flags     : 26
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690209)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -2930,9 +2934,11 @@ Effects          :
 Description      : Increases the melee attack power bonus of your Battle Shout by $s1%.
 
 Name             : Improved Slam (id=12862) [Spell Family (4), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=6, col=1, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(-250, -500)]
                  : Effect#2 [op=set, values=(-250, -500)]
+                 : Effect#3 [op=set, values=(-2500, -5000)]
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -2949,9 +2955,10 @@ Effects          :
                    Affected Spells: Slam (1464), Slam (8820), Slam (11604), Slam (11605), Slam (1240193), Slam (1310196), Slam (1310197), Slam (1310198), Slam (1310199), Slam (1310200)
                    Family Flags: 21
 #3 (id=1339521)  : Apply Aura (6) | Add Flat Modifier (107): Spell Cooldown (11)
-                   Base Value: -3000 | Scaled Value: -3000 | Misc Value: 11 | Target: Self (1)
+                   Base Value: -5000 | Scaled Value: -5000 | Misc Value: 11 | Target: Self (1)
                    Affected Spells: Slam (1464), Slam (8820), Slam (11604), Slam (11605), Slam (1240193), Slam (1310196), Slam (1310197), Slam (1310198), Slam (1310199), Slam (1310200)
                    Family Flags: 21
+Hotfixed         : Base Value (-3000 -> -5000)
 #4 (id=1339522)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Slam overrides Slam
                    Base Value: 1310196 | Scaled Value: 1310196 | Misc Value: 1240193 | Target: Self (1)
 #5 (id=1339523)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Slam overrides Slam
@@ -2962,7 +2969,7 @@ Effects          :
                    Base Value: 1310199 | Scaled Value: 1310199 | Misc Value: 11604 | Target: Self (1)
 #8 (id=1356247)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Slam overrides Slam
                    Base Value: 1310200 | Scaled Value: 1310200 | Misc Value: 11605 | Target: Self (1)
-Description      : Reduces the global cooldown and cast time of your Slam ability by ${$m1/-1000}.2 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by ${$m3/-1000}.1 sec.
+Description      : Reduces the cooldown of your Slam ability by ${$m3/-1000}.1 sec, the cast time and global cooldown by ${$m1/-1000}.2 sec, and Slam no longer interrupts or delays your melee swing.
 
 Name             : Improved Demoralizing Shout (desc=Rank 2) (id=12876) [Spell Family (4), Passive, Hidden] 
 Class            : Warrior
@@ -3524,7 +3531,7 @@ Spell Level      : 60
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
 Labels           : 25: Warrior Spells
-Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2), Raging Blows (1310315 effect#2)
+Affecting Spells : Improved Cleave (12329 effect#1), Impale (16493 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 22
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
@@ -6247,7 +6254,7 @@ Effects          :
 Description      : The Soul of a fallen warrior can be engraved into this slot.
 
 Name             : Slam (desc=Rank 1) (id=1240193) [Spell Family (4)] 
-Hotfixed         : Attributes
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000), Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -6257,10 +6264,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Pushback (207), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
@@ -6362,8 +6369,8 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
 
 Name             : Bloodthrill (id=1289682) [Spell Family (4), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=5, col=1, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(4, 8, 12, 16, 20)]
+Talent Entry     : Generic [tree=class, row=5, col=1, max_rank=2, req_points=0]
+                 : Effect#1 [op=set, values=(10, 20)]
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -6422,6 +6429,7 @@ Effects          :
 Description      : You retain up to $?s12295[${$m1+$12295m1}][$m1] Rage when you change Stances.
 
 Name             : Slam (desc=Rank 1) (id=1310196) [Spell Family (4)] 
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000)
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -6431,10 +6439,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Do Not Reset Combat Timers (81), Requires Main-Hand Weapon (106), No Pushback (207), Unknown (493)
@@ -6444,6 +6452,7 @@ Effects          :
 Description      : Slams the opponent, causing weapon damage plus $s1.
 
 Name             : Slam (desc=Rank 2) (id=1310197) [Spell Family (4)] 
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000)
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -6453,10 +6462,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Do Not Reset Combat Timers (81), Requires Main-Hand Weapon (106), No Pushback (207), Unknown (493)
@@ -6466,6 +6475,7 @@ Effects          :
 Description      : Slams the opponent, causing weapon damage plus $s1.
 
 Name             : Slam (desc=Rank 3) (id=1310198) [Spell Family (4)] 
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000)
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -6475,10 +6485,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Do Not Reset Combat Timers (81), Requires Main-Hand Weapon (106), No Pushback (207), Unknown (493)
@@ -6488,6 +6498,7 @@ Effects          :
 Description      : Slams the opponent, causing weapon damage plus $s1.
 
 Name             : Slam (desc=Rank 4) (id=1310199) [Spell Family (4)] 
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000)
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -6497,10 +6508,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Do Not Reset Combat Timers (81), Requires Main-Hand Weapon (106), No Pushback (207), Unknown (493)
@@ -6510,6 +6521,7 @@ Effects          :
 Description      : Slams the opponent, causing weapon damage plus $s1.
 
 Name             : Slam (desc=Rank 5) (id=1310200) [Spell Family (4)] 
+Hotfixed         : Cooldown (18000 -> 15000), Category Cooldown (18000 -> 15000)
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -6519,10 +6531,10 @@ Range            : 5 yards
 Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Cooldown         : 18 seconds
+Cooldown         : 15 seconds
 Category         : 2412 (Type 0x0)
 Labels           : 25: Warrior Spells
-Category Cooldown: 18 seconds
+Category Cooldown: 15 seconds
 Affecting Spells : Improved Slam (12862 effects: #1, #2, #3), Impale (16493 effect#1), Focused Rage (29787 effect#1), Precise Timing (402922 effects: #1, #2), Blood Surge (413399 effects: #1, #2), Gladiator Stance Shield Passive (413479 effect#3), S03 - Item - T2 - Warrior - Damage 4P Bonus (468235 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 21
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Do Not Reset Combat Timers (81), Requires Main-Hand Weapon (106), No Pushback (207), Unknown (493)
@@ -6552,26 +6564,33 @@ Effects          :
 #1 (id=1339572)  : Normalized Weapon Damage (121)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=1339573)  : Weapon Damage% (31)
-                   Base Value: 40 | Scaled Value: 0.4 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 75 | Scaled Value: 0.75 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (40 -> 75)
 #3 (id=1339768)  : Dummy (3)
-                   Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (2 -> 1)
 Description      : A brutal attack that deals $s2% weapon damage. Deals an additional ${$s2*$s3}% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.
 
-Name             : Raging Blows (id=1310315) [Spell Family (4), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
+Name             : Improved Whirlwind (id=1310315) [Spell Family (4), Passive, Hidden] 
+Hotfixed         : Name, Description
+Talent Entry     : Generic [tree=class, row=6, col=5, max_rank=2, req_points=25]
+                 : Effect#1 [op=set, values=(-1000, -2000)]
+                 : Effect#2 [op=set, values=(15, 30)]
 Class            : Warrior
 School           : Physical
 Spell Type       : None
 Labels           : 25: Warrior Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=1339744)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
-#2 (id=1345686)  : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
-                   Base Value: -30 | Scaled Value: -30 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Cleave (845), Whirlwind (1680), Cleave (7369), Cleave (11608), Cleave (11609), Cleave (20569)
-                   Family Flags: 22, 34
-Description      : Reduces the Rage cost of your Cleave and Whirlwind abilities by ${$m2/-10}.
+#1 (id=1339744)  : Apply Aura (6) | Add Flat Modifier (107): Spell Cooldown (11)
+                   Base Value: -2000 | Scaled Value: -2000 | Misc Value: 11 | Target: Self (1)
+                   Affected Spells: Whirlwind (1680)
+                   Family Flags: 34
+Hotfixed         : Sub Type (4 -> 107), Base Value (100 -> -2000), Misc Value (0 -> 11), Affects Spells
+#2 (id=1345686)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 30 | Scaled Value: 30 | Target: Self (1)
+Hotfixed         : Sub Type (107 -> 4), Base Value (-30 -> 30), Misc Value (14 -> 0), Affects Spells
+Description      : Reduces the cooldown of your Whirlwind ability by ${$m1/-1000} sec and increases the damage it deals to the closest enemy by $s2%.
 
 Name             : Master of Defense (id=1310316) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=2, req_points=0]
@@ -6663,7 +6682,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Gore Drinker (id=1323967) [Spell Family (4), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=6, col=7, max_rank=2, req_points=25]
+Talent Entry     : Generic [tree=class, row=5, col=7, max_rank=2, req_points=0]
                  : Effect#2 [op=set, values=(0.5, 1)]
 Class            : Warrior
 School           : Physical
@@ -6719,4 +6738,46 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : $@spelldesc676
 Tooltip          : $@spellaura676
+
+Name             : Reckless Swings (id=1329554) [Spell Family (4)] 
+Hotfixed         : NEW SPELL
+Class            : Warrior
+School           : Physical
+Spell Type       : None
+Resource         : 0% Health (-2) (id=315179)[Hotfixed: NEW POWER]
+Labels           : 25: Warrior Spells
+Triggered By     : Reckless Swings (1329555)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1369166)  : Energize Power (30)
+                   Base Value: 50 | Scaled Value: 50 | Resource: rage | Target: Self (1)
+Hotfixed         : NEW EFFECT
+#2 (id=1369168)  : Dummy (3)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : ${$s1/10} Rage generated.
+
+Name             : Reckless Swings (id=1329555) [Spell Family (4)] 
+Hotfixed         : NEW SPELL
+Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
+                 : Effect#1 [op=set, values=(50, 50)]
+Class            : Warrior
+School           : Physical
+Spell Type       : None
+Resource         : 25% Health (-2) (id=315180)[Hotfixed: NEW POWER]
+GCD              : 1 seconds
+Duration         : 8 seconds
+Cooldown         : 15 seconds
+Labels           : 25: Warrior Spells
+Stacks           : 4 initial, 4 maximum
+Proc Chance      : 100%
+Proc Flags       : White Melee
+Family Flags     : 49
+Attributes       : Is Ability (4), Do Not Sheath (18), Aura Is Debuff (26), Allow While Sitting (27), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Unknown (454), Unknown (493)
+Effects          :
+#1 (id=1369167)  : Apply Aura (6) | Proc Trigger Spell (42): Reckless Swings
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1329554 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Your next $n melee attacks generate ${$1329554s1/10/$1329554s2} additional Rage. Lasts $d.
+Tooltip          : Melee attacks grant ${$1329554s1/10/$1329554s2} additional Rage.
 

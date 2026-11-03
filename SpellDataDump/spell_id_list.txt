@@ -5720,7 +5720,7 @@ Warrior
 1310199  Slam
 1310200  Slam
 1310222  Spearing Strike
-1310315  Raging Blows
+1310315  Improved Whirlwind
 1310317  Vanguard
 1322574  Rule of Rage (DND)
 1323965 *Lingering Rage
@@ -5728,3 +5728,5 @@ Warrior
 1323967  Gore Drinker
 1323968 *Gore Drinker
 1323969 *Gore Drinker
+1329554  Reckless Swings
+1329555  Reckless Swings
