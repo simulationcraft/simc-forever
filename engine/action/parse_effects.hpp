@@ -709,7 +709,7 @@ struct parse_player_effects_t : public player_t, public parse_effects_t
   std::vector<player_effect_t> non_stacking_movement_effects;
   std::vector<player_effect_t> stacking_movement_effects;
   std::vector<player_effect_t> mana_regen_while_casting_effects;
-  std::vector<player_effect_t> mana_regen_multiplier_effects;
+  std::vector<player_effect_t> resource_regen_multiplier_effects;
 
   // Cache Pairing, invalidate first of the pair when the second is invalidated
   std::vector<std::pair<cache_e, cache_e>> invalidate_with_parent;
@@ -750,7 +750,7 @@ struct parse_player_effects_t : public player_t, public parse_effects_t
   double non_stacking_movement_modifier() const override;
   double stacking_movement_modifier() const override;
   double composite_mana_regen_while_casting() const override;
-  double composite_mana_regen_multiplier() const override;
+  double composite_resource_regen_multiplier( resource_e r ) const override;
 
   void invalidate_cache( cache_e c ) override;
 

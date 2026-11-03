@@ -212,7 +212,8 @@ struct player_t : public actor_t
     double hit, spell_hit, expertise, leech, avoidance, crit_avoidance;
     double spell_crit_chance, attack_crit_chance, block_value;
     double all_crit, all_haste;
-    double mana_regen_while_casting, mana_regen_multiplier;
+    double mana_regen_while_casting; 
+    double resource_regen_multiplier;
     double melee_haste, spell_haste, ranged_haste;
     double skill, skill_debuff, distance;
     double distance_to_move;
@@ -892,7 +893,7 @@ public:
   virtual double composite_spell_hit() const;
   virtual double composite_leech() const;
   virtual double composite_mana_regen_while_casting() const;
-  virtual double composite_mana_regen_multiplier() const;
+  virtual double composite_resource_regen_multiplier( resource_e r ) const;
   virtual double composite_run_speed() const;
   virtual double composite_avoidance() const;
   virtual double composite_corruption() const;
