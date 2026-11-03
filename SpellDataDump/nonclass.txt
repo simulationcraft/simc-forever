@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70755 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -3704,7 +3704,6 @@ Description      : Coats a sword or dagger with poison that lasts for 30 minutes
 Each strike has a chance of poisoning the enemy which instantly inflicts 10-30 damage.
 
 Name             : Instant Toxin (desc=Rank 1) (id=6651) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 24
@@ -12712,7 +12711,6 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Stat: All | Target: Self (1)
 
 Name             : Enchant Chest - Minor Stats (id=13626) 
-Hotfixed         : Description
 School           : Physical
 Spell Type       : None
 Cast Time        : 5 seconds
@@ -13323,10 +13321,8 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=690199)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 4 | Scaled Value: 4 | Target: Self (1)
-Hotfixed         : Base Value (8 -> 4)
 
 Name             : Enchant Boots - Minor Speed (id=13890) 
-Hotfixed         : Description
 School           : Physical
 Spell Type       : None
 Cast Time        : 5 seconds
@@ -26160,7 +26156,6 @@ Description      : Stuns up to $i enemies within $a1 yds for $d.
 Tooltip          : Stunned.
 
 Name             : Endurance (desc=Racial Passive) (id=20550) [Passive] 
-Hotfixed         : Description
 Race             : Tauren (0x20)
 School           : Physical
 Spell Type       : None
@@ -26172,7 +26167,6 @@ Effects          :
 Description      : Total Health increased by $s1%.
 
 Name             : Cultivation (desc=Racial) (id=20552) 
-Hotfixed         : Cooldown (0 -> 900000)
 Race             : Tauren (0x20)
 School           : Physical
 Spell Type       : None
@@ -26348,7 +26342,6 @@ Attributes       : Is Ability (4), Passive (6), Unknown (493)
 Effects          :
 #1 (id=697219)   : Apply Aura (6) | Modify Critical Strike% (290)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Base Value (2 -> 1)
 Description      : Increases your critical strike chance with all spells and attacks by $s1%.
 
 Name             : The Human Spirit (desc=Racial Passive) (id=20598) [Passive] 
@@ -26360,7 +26353,6 @@ Attributes       : Is Ability (4), Passive (6), Unknown (493)
 Effects          :
 #1 (id=698126)   : Apply Aura (6) | Modify Total Stat% (137)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Misc Value: 4 | Stat: Spi | Target: Self (1)
-Hotfixed         : Base Value (5 -> 10)
 Description      : Spirit increased by $s1%.
 
 Name             : Undermine Clam Chowder (id=20626) 
@@ -50135,7 +50127,6 @@ Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Aura P
 Effects          :
 #1 (id=1220853)  : Apply Aura (6) | Modify Critical Strike% (290)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
-Hotfixed         : Sub Type (52 -> 290)
 
 Name             : Boosted Spirit (id=1229718) [Hidden] 
 School           : Physical
@@ -59496,7 +59487,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: -150 | Target: Self (1)
 
 Name             : Skysight (desc=Racial) (id=1259686) 
-Hotfixed         : Description
 Race             :  (0x200000000)
 School           : Nature
 Spell Type       : Magic
@@ -59512,7 +59502,6 @@ Effects          :
 Description      : Attempt to draw power from a convergence of elements and receive its blessing, increasing your movement and mounted movement speeds by $1259688s1% for $1259688d. If an elemental convergence is nearby, you will become Charged for the next $1270893d and the effect of this ability will be increased by $1270893s1%.
 
 Name             : Elemental Blessing (id=1259688) 
-Hotfixed         : Attributes, Tooltip
 Race             :  (0x200000000)
 School           : Nature
 Spell Type       : None
@@ -59522,16 +59511,13 @@ Attributes       : Ignore Line of Sight (66), Aura Never Bounces (148), Aura Poi
 Effects          :
 #1 (id=1268883)  : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Base Value (10 -> 15)
 #2 (id=1268884)  : Apply Aura (6) | Increase Mounted Speed% (172)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Base Value (10 -> 15)
 #3 (id=1280148)  : Update Player Phase (167)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Tooltip          : Movement speed and mounted movement speed increased by $w1%.
 
 Name             : Attuned (id=1259691) 
-Hotfixed         : Name, Attributes, Tooltip
 Race             :  (0x100000000)
 School           : Arcane
 Spell Type       : None
@@ -59541,11 +59527,9 @@ Attributes       : Ignore Line of Sight (66), Do Not Report Spell Failure (71), 
 Effects          :
 #1 (id=1268888)  : Apply Aura (6) | Dummy (4)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Sub Type (110 -> 4)
 Tooltip          : Attuned to nearby leylines, increasing the benefit of your Read Leyline ability by $s1%.
 
 Name             : Read Leyline (desc=Racial) (id=1259705) 
-Hotfixed         : Description
 Race             :  (0x100000000)
 School           : Arcane
 Spell Type       : Magic
@@ -59578,10 +59562,8 @@ Attributes       : Is Ability (4), Passive (6), Unknown (493)
 Effects          :
 #1 (id=1268898)  : Apply Aura (6) | Modify Ranged and Melee Auto Attack Speed% (342)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Base Value (3 -> 2)
 #2 (id=1354094)  : Apply Aura (6) | Modify Spell Speed% (65)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Base Value (3 -> 2)
 Description      : Increases your spellcasting, melee, and ranged Haste by $s1%.
 
 Name             : Will to Survive (desc=Racial) (id=1259718) 
@@ -59598,7 +59580,6 @@ Effects          :
 Description      : Instantly removes all Stun effects.
 
 Name             : Artisan's Precision (desc=Racial Passive) (id=1259719) [Passive] 
-Hotfixed         : Name, Description
 Race             : Dwarf (0x4)
 School           : Physical
 Spell Type       : None
@@ -59607,10 +59588,8 @@ Attributes       : Is Ability (4), Passive (6), Unknown (493)
 Effects          :
 #1 (id=1268914)  : Apply Aura (6) | Modify Hit% (54)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Sub Type (163 -> 54), Base Value (2 -> 1)
 #2 (id=1363668)  : Apply Aura (6) | Modify Spell Hit% (55)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Sub Type (50 -> 55), Base Value (2 -> 1)
 Description      : Increases your chance to hit with all spells and attacks by $s1%.
 
 
@@ -59650,7 +59629,6 @@ Effects          :
 Description      : Augment Uthek's Staff with a Draenethyst Crystal.
 
 Name             : Plainsrunning (desc=Racial Passive) (id=1259918) [Passive] 
-Hotfixed         : Description
 Race             : Tauren (0x20)
 School           : Physical
 Spell Type       : Magic
@@ -59660,12 +59638,10 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=1269249)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
-Hotfixed         : Base Value (1 -> 2)
 #2 (id=1322989)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 #3 (id=1322990)  : Apply Aura (6) | Dummy (4)
                    Base Value: 60 | Scaled Value: 60 | Target: Self (1)
-Hotfixed         : Base Value (30 -> 60)
 Description      : Gain $s1% increased movement speed every $s2 sec spent moving, up to a maximum of $s3% increase. Taking damage or standing still will reduce this effect.
 
 Name             : Dispel Curse (id=1260031) 
@@ -60870,7 +60846,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Energized (id=1270842) 
-Hotfixed         : Attributes, Tooltip
 Race             :  (0x100000000)
 School           : Arcane
 Spell Type       : None
@@ -60881,14 +60856,11 @@ Attributes       : Ignore Line of Sight (66), Aura Never Bounces (148), Aura Poi
 Effects          :
 #1 (id=1283214)  : Apply Aura (6) | Modify Power Regen (110)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
-Hotfixed         : Base Value (100 -> 50)
 #2 (id=1283215)  : Apply Aura (6) | Modify Health Regeneration% (88)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Base Value (100 -> 50)
 Tooltip          : Mana and health regeneration rate increased by $w1%.
 
 Name             : Charged (id=1270893) 
-Hotfixed         : Name, Attributes, Tooltip
 Race             :  (0x200000000)
 School           : Nature
 Spell Type       : None
@@ -60897,7 +60869,6 @@ Attributes       : Ignore Line of Sight (66), Do Not Report Spell Failure (71), 
 Effects          :
 #1 (id=1283299)  : Apply Aura (6) | Dummy (4)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : Sub Type (31 -> 4), Base Value (10 -> 100)
 Tooltip          : Charged by an elemental convergence, increasing the benefit of your Skysight ability by $s1%.
 
 Name             : Ultrasafe Rechargeable Battery (id=1270940) 
@@ -68901,18 +68872,40 @@ Effects          :
 Description      : Call down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional $s2 Fire damage every $t2 for $d.
 Tooltip          : Suffering $w2 Fire damage every $t2.
 
+Name             : Throw Violet Dust (id=1328348) 
+School           : Physical
+Spell Type       : None
+Range            : 10 yards
+Cast Time        : 1 seconds
+Velocity         : 4 yards/sec
+Attributes       : Allow While Sitting (27)
+Effects          :
+#1 (id=1367324)  : Trigger Missiles (32): Violet Flames
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1328362 | Radius: 10 yards | Target: at Nearby (46)
+Description      : Throw a handful into the campfire, transforming its flames.
+|cFFffffffRequires WoW: Forever Launch Celebration |r
+
+
+Name             : Violet Flames (id=1328362) [Hidden] 
+School           : Physical
+Spell Type       : None
+Range            : 200 yards
+Duration         : 900 seconds
+Triggered By     : Throw Violet Dust (1328348)
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Always Show Ground Texture (190), Unknown (493)
+Effects          :
+#1 (id=1367345)  : Summon Guardian (28)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 278978 | Misc Value 2: 6424 | Target: at Area (87)
+
 Name             : Speed (id=1328947) [Passive, Hidden] 
-Hotfixed         : NEW SPELL
 School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=1368222)  : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 8 | Scaled Value: 8 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 
 Name             : Enchant Boots - Speed (id=1328948) 
-Hotfixed         : NEW SPELL
 School           : Physical
 Spell Type       : None
 Cast Time        : 5 seconds
@@ -68921,6 +68914,5 @@ Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until
 Effects          :
 #1 (id=1368223)  : Enchant Item (53)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 8737
-Hotfixed         : NEW EFFECT
 Description      : Permanently enchant boots to increase movement speed by $1328947s1%.
 

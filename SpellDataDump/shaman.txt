@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70755 Live
 Name             : Block (desc=Passive) (id=107) [Passive] 
 Class            : Warrior, Paladin, Shaman
 School           : Physical
@@ -13,7 +13,6 @@ Effects          :
 Description      : Gives a chance to block enemy melee and ranged attacks.
 
 Name             : Lightning Shield (desc=Rank 1) (id=324) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -36,7 +35,6 @@ Description      : The caster is surrounded by $n balls of lightning.  When a sp
 Tooltip          : Causes ${$26364m1/$m1} Nature damage to attacker on hit.
 
 Name             : Lightning Shield (desc=Rank 2) (id=325) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -59,7 +57,6 @@ Description      : The caster is surrounded by $n balls of lightning.  When a sp
 Tooltip          : Causes ${$26365m1/$m1} Nature damage to attacker on hit.
 
 Name             : Healing Wave (desc=Rank 1) (id=331) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -78,7 +75,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Wave (desc=Rank 2) (id=332) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -97,7 +93,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Purge (desc=Rank 1) (id=370) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -113,7 +108,6 @@ Effects          :
 Description      : Purges the enemy target, removing $m1 magic $leffect:effects;.
 
 Name             : Lightning Bolt (desc=Rank 1) (id=403) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -124,7 +118,7 @@ Cast Time        : 1.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -133,29 +127,28 @@ Effects          :
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Chain Lightning (desc=Rank 1) (id=421) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
-Resource         : 145 Base Mana (0) (id=169329)
+Resource         : 245 Base Mana (0) (id=169329)[Hotfixed: Cost (145 -> 245)]
 Spell Level      : 32 (max 37)
 Range            : 30 yards
-Cast Time        : 2 seconds
+Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Cooldown         : 6 seconds
 Category         : 85 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679158)   : School Damage (2): nature
-                   Base Value: 88 | Scaled Value: 91 (delta=0.127451) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 161 | Scaled Value: 167 (delta=0.127451) | Points Per Level: 1.2 | SP Coefficient: 0.714 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.571 -> 0.714), Base Value (88 -> 161), Points per Level (0.6 -> 1.2)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Cure Poison (id=526) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -172,7 +165,6 @@ Effects          :
 Description      : Cures $s1 poison $leffect:effects; on the target.
 
 Name             : Lightning Bolt (desc=Rank 2) (id=529) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -183,7 +175,7 @@ Cast Time        : 2 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -192,7 +184,6 @@ Effects          :
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Healing Wave (desc=Rank 3) (id=547) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -211,7 +202,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Lightning Bolt (desc=Rank 3) (id=548) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -222,7 +212,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -242,7 +232,6 @@ Effects          :
 Description      : Allows one-hand and off-hand weapons to be equipped in the off-hand.
 
 Name             : Lightning Shield (desc=Rank 3) (id=905) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -265,7 +254,6 @@ Description      : The caster is surrounded by $n balls of lightning.  When a sp
 Tooltip          : Causes ${$26366m1/$m1} Nature damage to attacker on hit.
 
 Name             : Healing Wave (desc=Rank 4) (id=913) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -284,7 +272,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Lightning Bolt (desc=Rank 4) (id=915) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -295,7 +282,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -304,29 +291,28 @@ Effects          :
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Chain Lightning (desc=Rank 2) (id=930) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
-Resource         : 200 Base Mana (0) (id=169436)
+Resource         : 360 Base Mana (0) (id=169436)[Hotfixed: Cost (200 -> 360)]
 Spell Level      : 40 (max 45)
 Range            : 30 yards
-Cast Time        : 2 seconds
+Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Cooldown         : 6 seconds
 Category         : 85 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679273)   : School Damage (2): nature
-                   Base Value: 100 | Scaled Value: 103 (delta=0.115646) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 235 | Scaled Value: 242.5 (delta=0.115646) | Points Per Level: 1.5 | SP Coefficient: 0.714 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.571 -> 0.714), Base Value (100 -> 235), Points per Level (0.6 -> 1.5)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Healing Wave (desc=Rank 5) (id=939) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -345,7 +331,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Lightning Bolt (desc=Rank 5) (id=943) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -356,7 +341,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -365,7 +350,6 @@ Effects          :
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Shield (desc=Rank 4) (id=945) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -388,7 +372,6 @@ Description      : The caster is surrounded by $n balls of lightning.  When a sp
 Tooltip          : Causes ${$26367m1/$m1} Nature damage to attacker on hit.
 
 Name             : Healing Wave (desc=Rank 6) (id=959) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -425,7 +408,6 @@ Effects          :
 Description      : Heals the friendly target for $s1, then jumps to heal additional nearby targets.  If cast on a party member, the heal will only jump to other party members.  Each jump is $?a415096[65%][50%] as effective as the previous target.  Heals $x1 total targets.
 
 Name             : Ancestral Spirit (desc=Rank 1) (id=2008) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -444,7 +426,6 @@ Effects          :
 Description      : Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 Name             : Earthbind Totem (id=2484) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -463,7 +444,6 @@ Effects          :
 Description      : Summons an Earthbind Totem with $s1 health at the feet of the caster for $d that slows the movement speed of enemies within $3600a1 yards.
 
 Name             : Ghost Wolf (id=2645) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -488,29 +468,28 @@ Description      : Turns the Shaman into a Ghost Wolf, increasing speed by $s2%.
 Tooltip          : Increases movement speed by $s2%.
 
 Name             : Chain Lightning (desc=Rank 3) (id=2860) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
-Resource         : 250 Base Mana (0) (id=171263)
+Resource         : 425 Base Mana (0) (id=171263)[Hotfixed: Cost (250 -> 425)]
 Spell Level      : 48 (max 53)
 Range            : 30 yards
-Cast Time        : 2 seconds
+Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Cooldown         : 6 seconds
 Category         : 85 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681324)   : School Damage (2): nature
-                   Base Value: 112 | Scaled Value: 115.5 (delta=0.114713) | Points Per Level: 0.7 | SP Coefficient: 0.517 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 258 | Scaled Value: 265 (delta=0.114713) | Points Per Level: 1.4 | SP Coefficient: 0.714 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.517 -> 0.714), Base Value (112 -> 258), Points per Level (0.7 -> 1.4)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Cure Disease (id=2870) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -527,7 +506,6 @@ Effects          :
 Description      : Cures $s1 $ldisease:diseases; on the target.
 
 Name             : Searing Totem (desc=Rank 1) (id=3599) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : None
@@ -577,7 +555,6 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 (delta=0.2) | SP Coefficient: 0.017 | Target: Targeted Enemy (6)
 
 Name             : Healing Stream Totem (desc=Rank 1) (id=5394) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -609,7 +586,6 @@ Effects          :
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Mana Spring Totem (desc=Rank 1) (id=5675) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -652,7 +628,6 @@ Effects          :
                    Base Value: 22 | Scaled Value: 22 | Radius: 0 - 8 yards | Target: Source (22) -> Enemy in Area (15)
 
 Name             : Stoneclaw Totem (desc=Rank 1) (id=5730) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -674,7 +649,6 @@ Effects          :
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $5729a1 yards to attack it.
 
 Name             : Lightning Bolt (desc=Rank 6) (id=6041) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -685,7 +659,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -694,7 +668,6 @@ Effects          :
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Far Sight (id=6196) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -763,7 +736,6 @@ Effects          :
                    Base Value: 30 | Scaled Value: 30 (delta=0.266667) | SP Coefficient: 0.017 | Target: Targeted Enemy (6)
 
 Name             : Searing Totem (desc=Rank 2) (id=6363) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : None
@@ -781,7 +753,6 @@ Effects          :
 Description      : Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $6350r yards for $6350s1 Fire damage.
 
 Name             : Searing Totem (desc=Rank 3) (id=6364) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : None
@@ -799,7 +770,6 @@ Effects          :
 Description      : Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $6351r yards for $6351s1 Fire damage.
 
 Name             : Searing Totem (desc=Rank 4) (id=6365) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : None
@@ -845,7 +815,6 @@ Effects          :
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream Totem (desc=Rank 2) (id=6375) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -863,7 +832,6 @@ Effects          :
 Description      : Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $6371a1 yards for $6371s1 every $6371t1 seconds.
 
 Name             : Healing Stream Totem (desc=Rank 3) (id=6377) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -881,7 +849,6 @@ Effects          :
 Description      : Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $6372a1 yards for $6372s1 every $6372t1 seconds.
 
 Name             : Stoneclaw Totem (desc=Rank 2) (id=6390) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -903,7 +870,6 @@ Effects          :
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6393a1 yards to attack it.
 
 Name             : Stoneclaw Totem (desc=Rank 3) (id=6391) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -925,7 +891,6 @@ Effects          :
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6394a1 yards to attack it.
 
 Name             : Stoneclaw Totem (desc=Rank 4) (id=6392) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -978,7 +943,6 @@ Effects          :
                    Base Value: 75 | Scaled Value: 75 | Radius: 0 - 8 yards | Target: Source (22) -> Enemy in Area (15)
 
 Name             : Sentry Totem (id=6495) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : None
@@ -999,7 +963,6 @@ Description      : Summons an immobile Sentry Totem with $s1 health at your feet
 Tooltip          : Allows vision through Sentry Totem.  Right-Click on buff to switch back and forth between totem sight and Shaman sight.
 
 Name             : Lesser Healing Wave (desc=Rank 1) (id=8004) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1018,7 +981,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Wave (desc=Rank 7) (id=8005) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1037,7 +999,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Lesser Healing Wave (desc=Rank 2) (id=8008) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1056,7 +1017,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Lesser Healing Wave (desc=Rank 3) (id=8010) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1075,7 +1035,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Purge (desc=Rank 2) (id=8012) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1091,7 +1050,6 @@ Effects          :
 Description      : Purges the enemy target, removing $m1 beneficial magic $leffect:effects;.
 
 Name             : Rockbiter Weapon (desc=Rank 1) (id=8017) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1106,7 +1064,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $10400s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Rockbiter Weapon (desc=Rank 2) (id=8018) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1121,7 +1078,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $15567s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Rockbiter Weapon (desc=Rank 3) (id=8019) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1136,7 +1092,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $15568s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 1) (id=8024) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1165,7 +1120,6 @@ Effects          :
                    Base Value: 326 | Scaled Value: 440 | Points Per Level: 19 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Weapon (desc=Rank 2) (id=8027) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1208,7 +1162,6 @@ Effects          :
                    Base Value: 716 | Scaled Value: 1052 | Points Per Level: 42 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Weapon (desc=Rank 3) (id=8030) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1223,7 +1176,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8029m1/77-1+($10444m1)} to ${$8029m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
 
 Name             : Frostbrand Weapon (desc=Rank 1) (id=8033) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -1274,7 +1226,6 @@ Effects          :
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Frostbrand Weapon (desc=Rank 2) (id=8038) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -1289,7 +1240,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with frost.  Each hit has a chance of causing $8037s2 additional Frost damage and slowing the target's movement speed by $8037s1% for $8037d.  Lasts for 60 minutes.
 
 Name             : Earth Shock (desc=Rank 1) (id=8042) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1313,7 +1263,6 @@ Effects          :
 Description      : Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 Name             : Earth Shock (desc=Rank 2) (id=8044) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1337,7 +1286,6 @@ Effects          :
 Description      : Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 Name             : Earth Shock (desc=Rank 3) (id=8045) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1361,7 +1309,6 @@ Effects          :
 Description      : Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 Name             : Earth Shock (desc=Rank 4) (id=8046) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1385,7 +1332,6 @@ Effects          :
 Description      : Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 Name             : Flame Shock (desc=Rank 1) (id=8050) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1412,7 +1358,6 @@ Description      : Instantly sears the target with fire, causing $s1 Fire damage
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Flame Shock (desc=Rank 2) (id=8052) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1439,7 +1384,6 @@ Description      : Instantly sears the target with fire, causing $s1 Fire damage
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Flame Shock (desc=Rank 3) (id=8053) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1466,7 +1410,6 @@ Description      : Instantly sears the target with fire, causing $s1 Fire damage
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Frost Shock (desc=Rank 1) (id=8056) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -1491,7 +1434,6 @@ Description      : Instantly shocks the target with frost, causing $s2 Frost dam
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Frost Shock (desc=Rank 2) (id=8058) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -1516,7 +1458,6 @@ Description      : Instantly shocks the target with frost, causing $s2 Frost dam
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Stoneskin Totem (desc=Rank 1) (id=8071) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1552,7 +1493,6 @@ Effects          :
 Tooltip          : Reduces Physical damage taken by $w1.
 
 Name             : Strength of Earth Totem (desc=Rank 1) (id=8075) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1585,7 +1525,6 @@ Effects          :
 Tooltip          : Increases Strength by $s1.
 
 Name             : Lightning Shield (desc=Rank 5) (id=8134) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1608,7 +1547,6 @@ Description      : The caster is surrounded by $n balls of lightning.  When a sp
 Tooltip          : Causes ${$26369m1/$m1} Nature damage to attacker on hit.
 
 Name             : Tremor Totem (id=8143) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1643,7 +1581,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Misc Value: 10 | Radius: 30 yards | Target: Source (22) -> Party in Area (33)
 
 Name             : Stoneskin Totem (desc=Rank 2) (id=8154) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1661,7 +1598,6 @@ Effects          :
 Description      : Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $8156a1 yards, reducing Physical damage taken by $8156s1.  Lasts $d.
 
 Name             : Stoneskin Totem (desc=Rank 3) (id=8155) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1715,7 +1651,6 @@ Effects          :
 Tooltip          : Reduces Physical damage taken by $w1.
 
 Name             : Strength of Earth Totem (desc=Rank 2) (id=8160) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1733,7 +1668,6 @@ Effects          :
 Description      : Summons a Strength of Earth Totem with $s1 health at the feet of the caster.  The totem increases the strength of party or raid members within $8162a1 yards by $8162s1.  Lasts $d.
 
 Name             : Strength of Earth Totem (desc=Rank 3) (id=8161) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1781,7 +1715,6 @@ Effects          :
 Tooltip          : Increases Strength by $s1.
 
 Name             : Poison Cleansing Totem (id=8166) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1825,7 +1758,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 4 | Radius: 0 - 30 yards | Target: Source (22) -> Party in Area (33)
 
 Name             : Disease Cleansing Totem (id=8170) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1869,7 +1801,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 8171 | Target: Self (1)
 
 Name             : Grounding Totem (id=8177) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -1920,7 +1851,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 8178 | Target: Self (1)
 
 Name             : Frost Resistance Totem (desc=Rank 1) (id=8181) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1953,7 +1883,6 @@ Effects          :
 Tooltip          : Frost Resistance increased by $s1
 
 Name             : Fire Resistance Totem (desc=Rank 1) (id=8184) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -2012,7 +1941,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 8187 | Target: Self (1)
 
 Name             : Magma Totem (desc=Rank 1) (id=8190) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -2030,7 +1958,6 @@ Effects          :
 Description      : Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $8187s1 Fire damage to creatures within $8187a1 yards every $8188t1 seconds.
 
 Name             : Flametongue Totem (desc=Rank 1) (id=8227) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -2067,7 +1994,6 @@ Effects          :
 Tooltip          : Main hand attacks deal an additional ${$8253m1/77} to ${$8253M1/25} Fire damage.
 
 Name             : Windfury Weapon (desc=Rank 1) (id=8232) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2104,7 +2030,6 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 2) (id=8235) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2155,7 +2080,6 @@ Effects          :
                    Base Value: 781 | Scaled Value: 781 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Totem (desc=Rank 2) (id=8249) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -2206,7 +2130,6 @@ Effects          :
                    Base Value: 548 | Scaled Value: 548 | Target: Targeted Enemy (6)
 
 Name             : Windfury Totem (desc=Rank 1) (id=8512) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2262,7 +2185,6 @@ Description      : Attack Power increased by $s1. Granted $s2 Extra Attack.
 Tooltip          : Attack Power increased by $s1. Granted $s2 Extra Attack.
 
 Name             : Grace of Air Totem (desc=Rank 1) (id=8835) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2295,7 +2217,6 @@ Effects          :
 Tooltip          : Increases Agility by $s1.
 
 Name             : Lightning Bolt (desc=Rank 7) (id=10391) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2306,7 +2227,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -2315,7 +2236,6 @@ Effects          :
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 8) (id=10392) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2326,7 +2246,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -2335,7 +2255,6 @@ Effects          :
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Healing Wave (desc=Rank 8) (id=10395) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2354,7 +2273,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Wave (desc=Rank 9) (id=10396) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2373,7 +2291,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Rockbiter Weapon (desc=Rank 4) (id=10399) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2461,7 +2378,6 @@ Effects          :
 Tooltip          : Reduces Physical damage taken by $w1.
 
 Name             : Stoneskin Totem (desc=Rank 4) (id=10406) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2479,7 +2395,6 @@ Effects          :
 Description      : Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $10403a1 yards, reducing Physical damage taken by $10403s1.  Lasts $d.
 
 Name             : Stoneskin Totem (desc=Rank 5) (id=10407) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2497,7 +2412,6 @@ Effects          :
 Description      : Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $10404a1 yards, reducing Physical damage taken by $10404s1.  Lasts $d.
 
 Name             : Stoneskin Totem (desc=Rank 6) (id=10408) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2515,7 +2429,6 @@ Effects          :
 Description      : Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $10405a1 yards, reducing Physical damage taken by $10405s1.  Lasts $d.
 
 Name             : Earth Shock (desc=Rank 5) (id=10412) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2539,7 +2452,6 @@ Effects          :
 Description      : Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 Name             : Earth Shock (desc=Rank 6) (id=10413) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2563,7 +2475,6 @@ Effects          :
 Description      : Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
 
 Name             : Earth Shock (desc=Rank 7) (id=10414) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2607,7 +2518,6 @@ Effects          :
                    Base Value: 150 | Scaled Value: 150 | Radius: 0 - 8 yards | Target: Source (22) -> Enemy in Area (15)
 
 Name             : Stoneclaw Totem (desc=Rank 5) (id=10427) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2629,7 +2539,6 @@ Effects          :
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $10423a1 yards to attack it.
 
 Name             : Stoneclaw Totem (desc=Rank 6) (id=10428) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2651,7 +2560,6 @@ Effects          :
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $10424a1 yards to attack it.
 
 Name             : Lightning Shield (desc=Rank 6) (id=10431) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2674,7 +2582,6 @@ Description      : The caster is surrounded by $n balls of lightning.  When a sp
 Tooltip          : Causes ${$26370m1/$m1} Nature damage to attacker on hit.
 
 Name             : Lightning Shield (desc=Rank 7) (id=10432) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2729,7 +2636,6 @@ Effects          :
                    Base Value: 47 | Scaled Value: 47 (delta=0.297872) | SP Coefficient: 0.017 | Target: Targeted Enemy (6)
 
 Name             : Searing Totem (desc=Rank 5) (id=10437) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : None
@@ -2747,7 +2653,6 @@ Effects          :
 Description      : Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $10435r yards for $10435s1 Fire damage.
 
 Name             : Searing Totem (desc=Rank 6) (id=10438) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : None
@@ -2780,7 +2685,6 @@ Effects          :
 Tooltip          : Increases Strength by $s1.
 
 Name             : Strength of Earth Totem (desc=Rank 4) (id=10442) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2826,7 +2730,6 @@ Effects          :
                    Base Value: 1144 | Scaled Value: 1728 | Points Per Level: 73 | Target: Targeted Enemy (6)
 
 Name             : Flame Shock (desc=Rank 4) (id=10447) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -2853,7 +2756,6 @@ Description      : Instantly sears the target with fire, causing $s1 Fire damage
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Flame Shock (desc=Rank 5) (id=10448) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -2880,7 +2782,6 @@ Description      : Instantly sears the target with fire, causing $s1 Fire damage
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Frostbrand Weapon (desc=Rank 3) (id=10456) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -2941,7 +2842,6 @@ Effects          :
 Tooltip          : Heals $w1 every $t1 seconds.
 
 Name             : Healing Stream Totem (desc=Rank 4) (id=10462) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -2959,7 +2859,6 @@ Effects          :
 Description      : Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $10460a1 yards for $10460s1 every $10460t1 seconds.
 
 Name             : Healing Stream Totem (desc=Rank 5) (id=10463) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -2977,7 +2876,6 @@ Effects          :
 Description      : Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $10461a1 yards for $10461s1 every $10461t1 seconds.
 
 Name             : Lesser Healing Wave (desc=Rank 4) (id=10466) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2996,7 +2894,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Lesser Healing Wave (desc=Rank 5) (id=10467) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3015,7 +2912,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Lesser Healing Wave (desc=Rank 6) (id=10468) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3034,7 +2930,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Frost Shock (desc=Rank 3) (id=10472) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -3059,7 +2954,6 @@ Description      : Instantly shocks the target with frost, causing $s2 Frost dam
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Frost Shock (desc=Rank 4) (id=10473) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -3114,7 +3008,6 @@ Effects          :
 Tooltip          : Frost Resistance increased by $s1
 
 Name             : Frost Resistance Totem (desc=Rank 2) (id=10478) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -3132,7 +3025,6 @@ Effects          :
 Description      : Summons a Frost Resistance Totem with $s1 health at the feet of the caster for $d.  The totem increases party and raid members' frost resistance by $10476s1, if within $10476a1 yards.
 
 Name             : Frost Resistance Totem (desc=Rank 3) (id=10479) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -3171,7 +3063,6 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 3) (id=10486) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3232,7 +3123,6 @@ Effects          :
 Tooltip          : Gain $s1 mana every $t1 seconds.
 
 Name             : Mana Spring Totem (desc=Rank 2) (id=10495) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -3250,7 +3140,6 @@ Effects          :
 Description      : Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $10491s1 mana every $10491t1 seconds to group members within $10491a1 yards.
 
 Name             : Mana Spring Totem (desc=Rank 3) (id=10496) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -3268,7 +3157,6 @@ Effects          :
 Description      : Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $10493s1 mana every $10493t1 seconds to group members within $10493a1 yards.
 
 Name             : Mana Spring Totem (desc=Rank 4) (id=10497) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -3316,7 +3204,6 @@ Effects          :
                    Base Value: 1061 | Scaled Value: 1061 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Totem (desc=Rank 3) (id=10526) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -3367,7 +3254,6 @@ Effects          :
 Tooltip          : Fire Resistance increased by $s1.
 
 Name             : Fire Resistance Totem (desc=Rank 2) (id=10537) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -3385,7 +3271,6 @@ Effects          :
 Description      : Summons a Fire Resistance Totem with $s1 health at the feet of the caster for $d that increases the fire resistance of party or raid members within $10534a1 yards by $10534s1.
 
 Name             : Fire Resistance Totem (desc=Rank 3) (id=10538) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -3481,7 +3366,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 10581 | Target: Self (1)
 
 Name             : Magma Totem (desc=Rank 2) (id=10585) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -3499,7 +3383,6 @@ Effects          :
 Description      : Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $10579s1 Fire damage to creatures within $10579a1 yards every $10582t1 seconds.
 
 Name             : Magma Totem (desc=Rank 3) (id=10586) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -3517,7 +3400,6 @@ Effects          :
 Description      : Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $10580s1 Fire damage to creatures within $10580a1 yards every $10583t1 seconds.
 
 Name             : Magma Totem (desc=Rank 4) (id=10587) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -3535,7 +3417,6 @@ Effects          :
 Description      : Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $10581s1 Fire damage to creatures within $10581a1 yards every $10584t1 seconds.
 
 Name             : Nature Resistance Totem (desc=Rank 1) (id=10595) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3595,7 +3476,6 @@ Effects          :
 Tooltip          : Nature Resistance increased by $s1.
 
 Name             : Nature Resistance Totem (desc=Rank 2) (id=10600) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3613,7 +3493,6 @@ Effects          :
 Description      : Summons a Nature Resistance Totem with $s1 health at the feet of the caster for $d that increases the nature resistance of party and raid members within $10598a1 yards by $10598s1.
 
 Name             : Nature Resistance Totem (desc=Rank 3) (id=10601) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3631,25 +3510,25 @@ Effects          :
 Description      : Summons a Nature Resistance Totem with $s1 health at the feet of the caster for $d that increases the nature resistance of party and raid members within $10599a1 yards by $10599s1.
 
 Name             : Chain Lightning (desc=Rank 4) (id=10605) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
-Resource         : 315 Base Mana (0) (id=177727)
+Resource         : 495 Base Mana (0) (id=177727)[Hotfixed: Cost (315 -> 495)]
 Spell Level      : 56 (max 61)
 Range            : 30 yards
-Cast Time        : 2 seconds
+Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Cooldown         : 6 seconds
 Category         : 85 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688920)   : School Damage (2): nature
-                   Base Value: 123 | Scaled Value: 126.2 (delta=0.111111) | Points Per Level: 0.8 | SP Coefficient: 0.571 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 284 | Scaled Value: 291.2 (delta=0.111111) | Points Per Level: 1.8 | SP Coefficient: 0.714 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.571 -> 0.714), Base Value (123 -> 284), Points per Level (0.8 -> 1.8)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10608) [Spell Family (11)] 
@@ -3725,7 +3604,6 @@ Effects          :
 Tooltip          : Main hand attacks have a $h% chance to grant $10610s2 extra attack with $10610m1 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10613) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3745,7 +3623,6 @@ Variables        : $mult1=$?s29192[${1.15}][${1.0}]
 $mult=$?s29193[${1.30}][${$<mult1>}]
 
 Name             : Windfury Totem (desc=Rank 3) (id=10614) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3816,7 +3693,6 @@ Effects          :
 Tooltip          : Increases Agility by $s1.
 
 Name             : Grace of Air Totem (desc=Rank 2) (id=10627) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3850,7 +3726,6 @@ Effects          :
 Tooltip          : Main hand attacks deal an additional ${$16389m1/77} to ${$16389M1/25} Fire damage.
 
 Name             : Windwall Totem (desc=Rank 1) (id=15107) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3922,7 +3797,6 @@ Effects          :
 Tooltip          : Reduces ranged damage taken by $w1.
 
 Name             : Windwall Totem (desc=Rank 2) (id=15111) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3940,7 +3814,6 @@ Effects          :
 Description      : Summons a Windwall Totem with $s1 health at the feet of the caster.  The totem protects party members within $15109a1 yards, reducing ranged damage taken by $15109s1.  Lasts $d.
 
 Name             : Windwall Totem (desc=Rank 3) (id=15112) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3958,7 +3831,6 @@ Effects          :
 Description      : Summons a Windwall Totem with $s1 health at the feet of the caster.  The totem protects party members within $15110a1 yards, reducing ranged damage taken by $15110s1.  Lasts $d.
 
 Name             : Lightning Bolt (desc=Rank 9) (id=15207) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3969,7 +3841,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -3978,7 +3850,6 @@ Effects          :
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 10) (id=15208) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3989,7 +3860,7 @@ Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
@@ -4070,6 +3941,7 @@ Effects          :
 Description      : Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by $m1%.
 
 Name             : Call of Flame (id=16038) [Spell Family (11), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=2, col=4, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(5, 10, 15)]
                  : Effect#2 [op=set, values=(5, 10, 15)]
@@ -4082,7 +3954,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=692507)   : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Attack (3606), Attack (6350), Attack (6351), Attack (6352), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Magma Totem (8187), Attack (10435), Attack (10436), Flame Shock (10447), Flame Shock (10448), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Flame Shock (29228), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Attack (3606), Attack (6350), Attack (6351), Attack (6352), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Magma Totem (8187), Attack (10435), Attack (10436), Flame Shock (10447), Flame Shock (10448), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Flame Shock (29228), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lava Burst (408490)
                    Family Flags: 28, 30, 44
 #2 (id=1229965)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
@@ -4092,9 +3964,10 @@ Effects          :
                    Base Value: 9000 | Scaled Value: 9000 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
                    Affected Spells: Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Flame Shock (10447), Flame Shock (10448), Flame Shock (29228)
                    Family Flags: 28
-Description      : Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by $m1%, as well as increases the duration of your Flame Shock spell by ${$m3/1000} sec.
+Description      : Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by $m1%, as well as increases the duration of your Flame Shock spell by ${$m3/1000} sec.
 
 Name             : Convection (id=16039) [Spell Family (11), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=1, col=2, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(-2, -4, -6, -8, -10)]
 Class            : Shaman
@@ -4105,9 +3978,9 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=692508)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -2 | Scaled Value: -2 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flame Shock (29228), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flame Shock (29228), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690)
                    Family Flags: 0, 1, 20, 28, 31, 44
-Description      : Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by $m1%.
+Description      : Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by $m1%.
 
 Name             : Reverberation (id=16040) [Spell Family (11), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=2, max_rank=5, req_points=0]
@@ -4180,11 +4053,12 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=693747)   : Apply Aura (6) | Add Percent Modifier (108): Spell Critical Bonus Multiplier (15)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 15 | Target: Self (1)
-                   Affected Spells: Lightning Shield (324), Lightning Shield (325), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Shield (905), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Lightning Shield (945), Chain Lightning (2860), Attack (3606), Lightning Bolt (6041), Attack (6350), Attack (6351), Attack (6352), Flametongue Weapon Proc (8026), Flametongue Weapon Proc (8028), Flametongue Weapon Proc (8029), Frostbrand Attack (8034), Frostbrand Attack (8037), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Shield (8134), Magma Totem (8187), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Lightning Shield (10431), Lightning Shield (10432), Attack (10435), Attack (10436), Flametongue Attack (10444), Flametongue Weapon Proc (10445), Flame Shock (10447), Flame Shock (10448), Frostbrand Attack (10458), Frost Shock (10472), Frost Shock (10473), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flametongue Weapon Proc (16343), Flametongue Weapon Proc (16344), Frostbrand Attack (16352), Frostbrand Attack (16353), Lightning Shield (26363), Lightning Shield (26364), Lightning Shield (26365), Lightning Shield (26366), Lightning Shield (26367), Lightning Shield (26369), Lightning Shield (26370), Flame Shock (29228), Flametongue Attack (29469), Flametongue Attack (29470), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Molten Blast (425339), Lightning Shield (432143), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Shield (324), Lightning Shield (325), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Shield (905), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Lightning Shield (945), Chain Lightning (2860), Attack (3606), Lightning Bolt (6041), Attack (6350), Attack (6351), Attack (6352), Flametongue Weapon Proc (8026), Flametongue Weapon Proc (8028), Flametongue Weapon Proc (8029), Frostbrand Attack (8034), Frostbrand Attack (8037), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Shield (8134), Magma Totem (8187), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Lightning Shield (10431), Lightning Shield (10432), Attack (10435), Attack (10436), Flametongue Attack (10444), Flametongue Weapon Proc (10445), Flame Shock (10447), Flame Shock (10448), Frostbrand Attack (10458), Frost Shock (10472), Frost Shock (10473), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flametongue Weapon Proc (16343), Flametongue Weapon Proc (16344), Frostbrand Attack (16352), Frostbrand Attack (16353), Lightning Shield (26363), Lightning Shield (26364), Lightning Shield (26365), Lightning Shield (26366), Lightning Shield (26367), Lightning Shield (26369), Lightning Shield (26370), Flame Shock (29228), Flametongue Attack (29469), Flametongue Attack (29470), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Molten Blast (425339), Lightning Shield (432143)
                    Family Flags: 0, 1, 10, 20, 21, 24, 28, 30, 31, 44, 126
 Description      : Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by $m1%.
 
 Name             : Call of Thunder (id=16120) [Spell Family (11), Passive, Hidden] 
+Talent Entry     : Generic [tree=class, row=5, col=2, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Physical
 Spell Type       : None
@@ -4192,9 +4066,10 @@ Labels           : 24: Shaman Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
 #1 (id=693374)   : Apply Aura (6) | Add Flat Modifier (107): Spell Critical Chance (7)
-                   Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Misc Value: 7 | Target: Self (1)
+                   Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 7 | Target: Self (1)
                    Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484)
                    Family Flags: 0, 1
+Hotfixed         : Base Value (3 -> 5)
 Description      : Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by $s1%.
 
 Name             : Elemental Focus (id=16164) [Spell Family (11), Passive, Hidden] 
@@ -4214,7 +4089,8 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | Trigger Spell: 16246 | Target: Self (1)
 Description      : Gives you a $s1% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by $16246s1%.
 
-Name             : Elemental Mastery (id=16166) [Spell Family (11)] 
+Name             : Lightning Mastery (id=16166) [Spell Family (11)] 
+Hotfixed         : Name, Description, Tooltip
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=30]
 Class            : Shaman
 School           : Nature
@@ -4229,14 +4105,14 @@ Attributes       : Do Not Sheath (18), Unknown (493)
 Effects          :
 #1 (id=694178)   : Apply Aura (6) | Add Flat Modifier (107): Spell Cast Time (10)
                    Base Value: -500 | Scaled Value: -500 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Lightning Bolt (943), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Lightning Bolt (943), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Lava Burst (408490)
                    Family Flags: 0, 44
 #2 (id=694179)   : Apply Aura (6) | Add Percent Modifier (108): Spell Cooldown (11)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 11 | Target: Self (1)
                    Affected Spells: Chain Lightning (421), Chain Lightning (930), Chain Lightning (2860), Chain Lightning (10605), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484)
                    Family Flags: 1
-Description      : Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by ${$m1/-1000}.1 sec, and removing the cooldown from Chain Lightning. Lasts $d.
-Tooltip          : Lightning Bolt and Lava Burst cast time reduced by ${$m1/-1000}.1 sec and Chain Lightning has no cooldown.
+Description      : Gain mastery over Lightning, reducing the cast time of your Lightning Bolt spell by ${$m1/-1000}.1 sec, and removing the cooldown from your Chain Lightning spell. Lasts $d.
+Tooltip          : Lightning Bolt cast time reduced by ${$m1/-1000}.1 sec and Chain Lightning has no cooldown.
 
 Name             : Totemic Focus (id=16173) [Spell Family (11), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=11, max_rank=5, req_points=0]
@@ -4249,7 +4125,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=692592)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -5 | Scaled Value: -5 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Totemic Projection (437009), Mana Tide Totem (1325256)
+                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Totemic Call (437009), Mana Tide Totem (1325256)
                    Family Flags: 3, 4, 12, 19, 29, 103, 107
 Description      : Reduces the Mana cost of your totems and any spells that summon or move them by $m1%.
 
@@ -4446,7 +4322,6 @@ Effects          :
 Description      : The radius of your totems that affect friendly targets is increased to 30 yd.
 
 Name             : Mana Tide Totem (desc=Rank 1) (id=16190) [Spell Family (11)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=11, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Frost
@@ -4540,7 +4415,7 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
 Effects          :
 #1 (id=692327)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flame Shock (29228), Fire Nova (408341), Fire Nova (408342), Fire Nova (408343), Fire Nova (408344), Fire Nova (408345), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flame Shock (29228), Fire Nova (408341), Fire Nova (408342), Fire Nova (408343), Fire Nova (408344), Fire Nova (408345), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690)
                    Family Flags: 0, 1, 20, 27, 28, 31, 44
 Description      : Your next elemental damage spell has its mana cost reduced by $s1%.
 Tooltip          : Your next elemental damage spell has its mana cost reduced by $s1%.
@@ -4677,7 +4552,7 @@ Effects          :
 Description      : Increases the effect of your Strength of Earth and Grace of Air Totems by $s1%.
 
 Name             : Improved Lightning Shield (id=16261) [Spell Family (11), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=2, col=8, max_rank=3, req_points=0]
+Talent Entry     : Generic [tree=class, row=2, col=7, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(5, 10, 15)]
 Class            : Shaman
 School           : Physical
@@ -4692,7 +4567,7 @@ Effects          :
 Description      : Increases the damage done by your Lightning Shield orbs by $m1%.
 
 Name             : Improved Ghost Wolf (id=16262) [Spell Family (11), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=2, col=7, max_rank=2, req_points=0]
+Talent Entry     : Generic [tree=class, row=4, col=8, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(-1000, -3000)]
 Class            : Shaman
 School           : Physical
@@ -4889,7 +4764,6 @@ Effects          :
                    Modified By: Spirit Weapons (16268 effect#2)
 
 Name             : Rockbiter Weapon (desc=Rank 5) (id=16314) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -4904,7 +4778,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $16311s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Rockbiter Weapon (desc=Rank 6) (id=16315) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -4919,7 +4792,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $16312s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Rockbiter Weapon (desc=Rank 7) (id=16316) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -4934,7 +4806,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $16313s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 4) (id=16339) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -4949,7 +4820,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$10445m1/77-1+($10444m1)} to ${$10445m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 5) (id=16341) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -4964,7 +4834,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$16343m1/77-1+($10444m1)} to ${$16343m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 6) (id=16342) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -5043,7 +4912,6 @@ Effects          :
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Frostbrand Weapon (desc=Rank 4) (id=16355) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -5058,7 +4926,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with frost.  Each hit has a chance of causing $16352s2 additional Frost damage and slowing the target's movement speed by $16352s1% for $16352d.  Lasts for 60 minutes.
 
 Name             : Frostbrand Weapon (desc=Rank 5) (id=16356) 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -5094,7 +4961,6 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 4) (id=16362) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5110,7 +4976,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
 
 Name             : Flametongue Totem (desc=Rank 4) (id=16387) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -5145,6 +5010,7 @@ Effects          :
                    Base Value: 1363 | Scaled Value: 1363 | Target: Targeted Enemy (6)
 
 Name             : Elemental Alacrity (id=16578) [Spell Family (11), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=2, col=3, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(-170, -330, -500)]
 Class            : Shaman
@@ -5155,9 +5021,9 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=694339)   : Apply Aura (6) | Add Flat Modifier (107): Spell Cast Time (10)
                    Base Value: -200 | Scaled Value: -200 | SP Coefficient: 1 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 44
-Description      : Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by ${$m1/-1000}.2 sec.
+Description      : Reduces the cast time of your Lightning Bolt and Chain Lightning spells by ${$m1/-1000}.2 sec.
 
 Name             : Lightning Mastery (desc=Rank 2) (id=16579) [Spell Family (11), Passive, Hidden] 
 Class            : Shaman
@@ -5212,7 +5078,6 @@ Effects          :
 Description      : Reduces the cast time of your Lightning Bolt and Chain Lightning spells by $/1000;S1 sec.
 
 Name             : Mana Tide Totem (desc=Rank 2) (id=17354) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -5247,7 +5112,6 @@ Effects          :
 Tooltip          : Gain $s1 mana every $t1 seconds.
 
 Name             : Mana Tide Totem (desc=Rank 3) (id=17359) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -5337,7 +5201,6 @@ Effects          :
 Description      : Gives a chance to parry enemy melee attacks.
 
 Name             : Reincarnation (desc=Passive) (id=20608) [Spell Family (11), Passive] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : None
@@ -5356,7 +5219,6 @@ Effects          :
 Description      : Allows you to resurrect yourself upon death with $21169s1% health and mana.
 
 Name             : Ancestral Spirit (desc=Rank 2) (id=20609) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5375,7 +5237,6 @@ Effects          :
 Description      : Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 Name             : Ancestral Spirit (desc=Rank 3) (id=20610) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5394,7 +5255,6 @@ Effects          :
 Description      : Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 Name             : Ancestral Spirit (desc=Rank 4) (id=20776) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5413,7 +5273,6 @@ Effects          :
 Description      : Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 Name             : Ancestral Spirit (desc=Rank 5) (id=20777) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5472,7 +5331,6 @@ Description      : Increases the damage dealt by your Lightning Shield spell by 
 Tooltip          : Lightning Shield damage increased by $s1%.
 
 Name             : Healing Wave (desc=Rank 10) (id=25357) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5491,7 +5349,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Grace of Air Totem (desc=Rank 3) (id=25359) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5524,7 +5381,6 @@ Effects          :
 Tooltip          : Increases Agility by $s1.
 
 Name             : Strength of Earth Totem (desc=Rank 5) (id=25361) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5725,6 +5581,7 @@ Effects          :
 Description      : Reduces damage taken from Fire, Frost, and Nature effects by $m1%.
 
 Name             : Elemental Reach (id=28999) [Spell Family (11), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=5, col=1, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(3, 6)]
                  : Effect#2 [op=set, values=(8, 15)]
@@ -5737,17 +5594,17 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=704898)   : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 1 | Misc Value: 5 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Fire Nova (408341), Fire Nova (408342), Fire Nova (408343), Fire Nova (408344), Fire Nova (408345), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Fire Nova (408341), Fire Nova (408342), Fire Nova (408343), Fire Nova (408344), Fire Nova (408345), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 44, 50
 #2 (id=1229966)  : Apply Aura (6) | Dummy (4)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Target: Self (1)
-#3 (id=1363729)  : Apply Aura (6) | Add Flat Modifier (107): Spell Cooldown (11)
-                   Base Value: -20000 | Scaled Value: -20000 | SP Coefficient: 1 | Misc Value: 11 | Target: Self (1)
-                   Affected Spells: Totemic Projection (437009)
-                   Family Flags: 103
-Description      : Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by $m1 yards and reduces the cooldown of Totemic Projection by ${$m3/-1000} sec.
+#3 (id=1363729)  : Apply Aura (6) | Dummy (4)
+                   Base Value: -20000 | Scaled Value: -20000 | SP Coefficient: 1 | Target: Self (1)
+Hotfixed         : Sub Type (107 -> 4), Misc Value (11 -> 0), Affects Spells
+Description      : Increases the range of your Lightning Bolt, Chain Lightning, and Fire Nova spells by $m1 yards.
 
 Name             : Eye of the Storm (id=29062) [Spell Family (11), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=2, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(23, 47, 70)]
 Class            : Shaman
@@ -5758,9 +5615,9 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=705689)   : Apply Aura (6) | Add Percent Modifier (108): Spell Pushback (9)
                    Base Value: 70 | Scaled Value: 70 | Misc Value: 9 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 44
-Description      : Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a $m1% chance to not lose casting time when you take damage.
+Description      : Gives your Lightning Bolt and Chain Lightning spells a $m1% chance to not lose casting time when you take damage.
 
 Name             : Weapon Mastery (desc=Rank 1) (id=29082) [Passive, Hidden] 
 Class            : Shaman
@@ -5927,7 +5784,6 @@ Effects          :
 Description      : Increases the amount healed by your Healing Wave spell by $m1%.
 
 Name             : Flame Shock (desc=Rank 6) (id=29228) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6045,7 +5901,6 @@ Effects          :
 Description      : Your Fire Nova Totem spell is replaced with Fire Nova, which causes your current Fire totem to emit damage at its location.
 
 Name             : Fire Nova (desc=Rank 1) (id=408341) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6066,7 +5921,6 @@ Effects          :
 Description      : Instantly inflicts $408423s1 fire damage to enemies within $408423a1 yd of your active Fire totem.
 
 Name             : Fire Nova (desc=Rank 2) (id=408342) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6087,7 +5941,6 @@ Effects          :
 Description      : Instantly inflicts $408424s1 fire damage to enemies within $408424a1 yd of your active Fire totem.
 
 Name             : Fire Nova (desc=Rank 3) (id=408343) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6108,7 +5961,6 @@ Effects          :
 Description      : Instantly inflicts $408426s1 fire damage to enemies within $408426a1 yd of your active Fire totem.
 
 Name             : Fire Nova (desc=Rank 4) (id=408344) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6129,7 +5981,6 @@ Effects          :
 Description      : Instantly inflicts $408427s1 fire damage to enemies within $408427a1 yd of your active Fire totem.
 
 Name             : Fire Nova (desc=Rank 5) (id=408345) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6245,7 +6096,7 @@ Spell Level      : 1 (max 6)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6261,7 +6112,7 @@ Spell Level      : 8 (max 13)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6277,7 +6128,7 @@ Spell Level      : 14 (max 19)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6293,7 +6144,7 @@ Spell Level      : 20 (max 25)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6309,7 +6160,7 @@ Spell Level      : 26 (max 31)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6325,7 +6176,7 @@ Spell Level      : 32 (max 37)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6341,7 +6192,7 @@ Spell Level      : 38 (max 43)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6358,7 +6209,7 @@ Range            : 30 yards
 Cast Time        : 3 seconds
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6374,7 +6225,7 @@ Spell Level      : 50 (max 55)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6390,7 +6241,7 @@ Spell Level      : 56 (max 61)
 Range            : 30 yards
 Velocity         : 20 yards/sec
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#1), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Maelstrom Weapon (408505 effects: #1, #2), Way of Earth (408680 effect#13), Totem of Thunder (461295 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Flame Charged (1270478 effect#1), Storm's Grasp (1309442 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6405,7 +6256,7 @@ Spell Type       : Magic
 Spell Level      : 32 (max 37)
 Range            : 30 yards
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6420,7 +6271,7 @@ Spell Type       : Magic
 Spell Level      : 40 (max 45)
 Range            : 30 yards
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6435,7 +6286,7 @@ Spell Type       : Magic
 Spell Level      : 48 (max 53)
 Range            : 30 yards
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6450,7 +6301,7 @@ Spell Type       : Magic
 Spell Level      : 56 (max 61)
 Range            : 30 yards
 Labels           : 24: Shaman Spells
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Elemental Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Call of Thunder (16120 effect#1), Lightning Mastery (16166 effect#2), Nature's Swiftness (16188 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Lightning Mastery (16579 effect#1), Lightning Mastery (16580 effect#1), Lightning Mastery (16581 effect#1), Lightning Mastery (16582 effect#1), Stormstrike (17364 effect#2), Increased Lightning Damage (28857 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Way of Earth (408680 effect#13), Coherence (415096 effects: #3, #5), Power Surge (415105 effect#1), Storm, Earth, and Fire (440569 effect#1), S03 - Item - T2 - Shaman - Restoration 6P Bonus (467814 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
@@ -6459,7 +6310,6 @@ Effects          :
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Lava Burst (desc=Rank 1) (id=408490) [Spell Family (11)] 
-Talent Entry     : Generic [tree=class, row=5, col=2, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -6473,7 +6323,7 @@ Cooldown         : 10 seconds
 Category         : 1224 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 10 seconds
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
+Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Lightning Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
 Family Flags     : 44
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
@@ -6482,22 +6332,6 @@ Effects          :
 #2 (id=1338987)  : Dummy (3)
                    Base Value: 20 | Scaled Value: 20 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
-
-Name             : Lava Burst (id=408491) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Spell Level      : 40
-Range            : 30 yards
-Velocity         : 20 yards/sec
-Labels           : 24: Shaman Spells
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
-Effects          :
-#1 (id=1072653)  : School Damage (2): fire
-                   Base Value: 57 | Scaled Value: 66 (delta=0.257463) | Points Per Level: 0.45 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 Name             : Dual Wield Specialization (id=408496) [Spell Family (11), Passive, Hidden] 
 Class            : Shaman
@@ -6662,32 +6496,33 @@ Effects          :
 Description      : Healed by Earth Shield.
 
 Name             : Riptide (desc=Rank 1) (id=408521) [Spell Family (11)] 
-Hotfixed         : Attributes
+Hotfixed         : Cooldown (6000 -> 12000), Category Cooldown (6000 -> 12000), Description
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=30]
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
-Resource         : 245 Base Mana (0) (id=304804)
+Resource         : 150 Base Mana (0) (id=304804)[Hotfixed: Cost (245 -> 150)]
 Spell Level      : 40 (max 48)
 Range            : 40 yards
 GCD              : 1.5 seconds
 Duration         : 15 seconds
-Cooldown         : 6 seconds
+Cooldown         : 12 seconds
 Category         : 1228 (Type 0x0)
 Labels           : 24: Shaman Spells
-Category Cooldown: 6 seconds
+Category Cooldown: 12 seconds
 Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
-#1 (id=1072707)  : Direct Heal (10)
-                   Base Value: 480 | Scaled Value: 509.6 (delta=0.1) | Points Per Level: 3.7 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
+#1 (id=1072707)  : Dummy (3)
+                   Base Value: 0 | Scaled Value: 29.6 (delta=0.1) | Points Per Level: 3.7 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
+Hotfixed         : Type (10 -> 3), Base Value (480 -> 0)
 #2 (id=1072708)  : Apply Aura (6) | Periodic Heal (8): every 3 seconds
                    Base Value: 89 | Scaled Value: 89 | SP Coefficient: 0.1 | Target: Targeted Ally (21)
 #3 (id=1072709)  : Apply Aura (6) | Dummy (4)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Ally (21)
                    Modified By: S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
-Description      : Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+Description      : Heals a friendly target for $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
 Tooltip          : Heals $w2 every $t2 sec.
 Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
 Variables        : $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
@@ -6729,7 +6564,7 @@ Effects          :
                    Base Value: 8 | Scaled Value: 8 | Resource: mana | Target: Self (1)
 #3 (id=1217411)  : Apply Aura (6) | Add Percent Modifier (108): Spell Cast Time (10)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lava Burst (408490)
                    Family Flags: 44
 Description      : Increases armor by $s1% of your shield's Armor value for $d, stacking up to $u times.
 Tooltip          : Armor increased by $w1.
@@ -6780,7 +6615,7 @@ Effects          :
                    Base Value: 408690 | Scaled Value: 408690 | Misc Value: 10414 | Target: Self (1)
 #13 (id=1173796) : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: -20 | Scaled Value: -20 | SP Coefficient: 1 | Misc Value: 5 | Target: Self (1)
-                   Affected Spells: Healing Wave (331), Healing Wave (332), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Healing Wave (547), Lightning Bolt (548), Healing Wave (913), Lightning Bolt (915), Chain Lightning (930), Healing Wave (939), Lightning Bolt (943), Healing Wave (959), Chain Heal (1064), Chain Lightning (2860), Lightning Bolt (6041), Healing Wave (8005), Lightning Bolt (10391), Lightning Bolt (10392), Healing Wave (10395), Healing Wave (10396), Chain Lightning (10605), Chain Heal (10622), Chain Heal (10623), Lightning Bolt (15207), Lightning Bolt (15208), Healing Wave (25357), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Healing Wave (331), Healing Wave (332), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Healing Wave (547), Lightning Bolt (548), Healing Wave (913), Lightning Bolt (915), Chain Lightning (930), Healing Wave (939), Lightning Bolt (943), Healing Wave (959), Chain Heal (1064), Chain Lightning (2860), Lightning Bolt (6041), Healing Wave (8005), Lightning Bolt (10391), Lightning Bolt (10392), Healing Wave (10395), Healing Wave (10396), Chain Lightning (10605), Chain Heal (10622), Chain Heal (10623), Lightning Bolt (15207), Lightning Bolt (15208), Healing Wave (25357), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 6, 8, 44
 Description      : While Rockbiter Weapon is active on your main hand weapon, you deal $s1% increased threat, gain $s2% increased health, take $s4% reduced damage, gain $s5% reduced chance to be critically hit by melee attacks, and Earth Shock taunts targets to attack you and has a separate cooldown from other Shock spells.
 
@@ -7581,7 +7416,7 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Cooldown On Event 
 Effects          :
 #1 (id=1084789)  : Apply Aura (6) | Add Percent Modifier (108): Spell Cast Time (10)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Chain Lightning (421), Chain Lightning (930), Chain Lightning (2860), Chain Lightning (10605), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Chain Lightning (421), Chain Lightning (930), Chain Lightning (2860), Chain Lightning (10605), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 1, 44
 Tooltip          : Your next Chain Lightning or Lava Burst spell will be an instant cast spell.
 
@@ -8381,8 +8216,8 @@ Effects          :
 #1 (id=1127853)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
-Name             : Totemic Projection (id=437009) [Spell Family (11)] 
-Hotfixed         : Attributes
+Name             : Totemic Call (id=437009) [Spell Family (11)] 
+Hotfixed         : Name, Cooldown (60000 -> 30000), Description
 Class            : Shaman
 School           : Nature
 Spell Type       : None
@@ -8391,15 +8226,16 @@ Spell Level      : 22
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1 seconds
-Cooldown         : 60 seconds
+Cooldown         : 30 seconds
 Labels           : 24: Shaman Spells
-Affecting Spells : Totemic Focus (16173 effect#1), Elemental Reach (28999 effect#3)
+Affecting Spells : Totemic Focus (16173 effect#1)
 Family Flags     : 103
 Attributes       : Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1128684)  : Summon Guardian (28)
-                   Base Value: 0 | Scaled Value: 0 | Misc Value: 15214 | Misc Value 2: 5878 | Target: at Area (87)
-Description      : Relocates your active totems to the specified location.
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 15214 | Misc Value 2: 5878 | Target: at Self (18)
+Hotfixed         : Target 1 (87 -> 18)
+Description      : Relocates your active totems to your location.
 
 Name             : Windfury Weapon (desc=Rank 1) (id=439431) [Spell Family (11), Passive, Hidden] 
 School           : Nature
@@ -9180,7 +9016,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Log (8), Aura Unique (43)
 Effects          :
 #1 (id=1195764)  : Apply Aura (6) | Add Percent Modifier (108): Spell Pushback (9)
                    Base Value: 70 | Scaled Value: 70 | Misc Value: 9 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 44
 #2 (id=1195765)  : Apply Aura (6) | Add Flat Modifier (107): Spell Proc Chance (18)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 18 | Target: Self (1)
@@ -9196,7 +9032,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Log (8), Aura Unique (43)
 Effects          :
 #1 (id=1195769)  : Apply Aura (6) | Add Percent Modifier (108): Spell Critical Bonus Multiplier (15)
                    Base Value: 60 | Scaled Value: 60 | SP Coefficient: 1 | Misc Value: 15 | Target: Self (1)
-                   Affected Spells: Lightning Shield (324), Lightning Shield (325), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Shield (905), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Lightning Shield (945), Chain Lightning (2860), Attack (3606), Lightning Bolt (6041), Attack (6350), Attack (6351), Attack (6352), Flametongue Weapon Proc (8026), Flametongue Weapon Proc (8028), Flametongue Weapon Proc (8029), Frostbrand Attack (8034), Frostbrand Attack (8037), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Shield (8134), Magma Totem (8187), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Lightning Shield (10431), Lightning Shield (10432), Attack (10435), Attack (10436), Flametongue Attack (10444), Flametongue Weapon Proc (10445), Flame Shock (10447), Flame Shock (10448), Frostbrand Attack (10458), Frost Shock (10472), Frost Shock (10473), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flametongue Weapon Proc (16343), Flametongue Weapon Proc (16344), Frostbrand Attack (16352), Frostbrand Attack (16353), Lightning Shield (26363), Lightning Shield (26364), Lightning Shield (26365), Lightning Shield (26366), Lightning Shield (26367), Lightning Shield (26369), Lightning Shield (26370), Flame Shock (29228), Flametongue Attack (29469), Flametongue Attack (29470), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Molten Blast (425339), Lightning Shield (432143), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Shield (324), Lightning Shield (325), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Shield (905), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Lightning Shield (945), Chain Lightning (2860), Attack (3606), Lightning Bolt (6041), Attack (6350), Attack (6351), Attack (6352), Flametongue Weapon Proc (8026), Flametongue Weapon Proc (8028), Flametongue Weapon Proc (8029), Frostbrand Attack (8034), Frostbrand Attack (8037), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Shield (8134), Magma Totem (8187), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Lightning Shield (10431), Lightning Shield (10432), Attack (10435), Attack (10436), Flametongue Attack (10444), Flametongue Weapon Proc (10445), Flame Shock (10447), Flame Shock (10448), Frostbrand Attack (10458), Frost Shock (10472), Frost Shock (10473), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flametongue Weapon Proc (16343), Flametongue Weapon Proc (16344), Frostbrand Attack (16352), Frostbrand Attack (16353), Lightning Shield (26363), Lightning Shield (26364), Lightning Shield (26365), Lightning Shield (26366), Lightning Shield (26367), Lightning Shield (26369), Lightning Shield (26370), Flame Shock (29228), Flametongue Attack (29469), Flametongue Attack (29470), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Molten Blast (425339), Lightning Shield (432143)
                    Family Flags: 0, 1, 10, 20, 21, 24, 28, 30, 31, 44, 126
 Description      : Increases the critical strike damage bonus of your Fire, Frost, and Nature spells by $s1%.
 
@@ -9377,86 +9213,6 @@ Effects          :
                    Base Value: 100 | Scaled Value: 100 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 Tooltip          : Immobilized.
 
-Name             : Lava Burst (desc=Rank 2) (id=1238299) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Resource         : 165 Base Mana (0) (id=310841)
-Spell Level      : 40 (max 48)
-Range            : 30 yards
-Cast Time        : 2.5 seconds
-GCD              : 1.5 seconds
-Velocity         : 20 yards/sec
-Cooldown         : 10 seconds
-Category         : 1224 (Type 0x0)
-Labels           : 24: Shaman Spells
-Category Cooldown: 10 seconds
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
-Effects          :
-#1 (id=1235456)  : School Damage (2): fire
-                   Base Value: 164 | Scaled Value: 171.2 (delta=0.253259) | Points Per Level: 0.9 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-#2 (id=1340789)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 20 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
-
-Name             : Lava Burst (desc=Rank 3) (id=1238300) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Resource         : 230 Base Mana (0) (id=310842)
-Spell Level      : 50 (max 58)
-Range            : 30 yards
-Cast Time        : 2.5 seconds
-GCD              : 1.5 seconds
-Velocity         : 20 yards/sec
-Cooldown         : 10 seconds
-Category         : 1224 (Type 0x0)
-Labels           : 24: Shaman Spells
-Category Cooldown: 10 seconds
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
-Effects          :
-#1 (id=1235457)  : School Damage (2): fire
-                   Base Value: 196 | Scaled Value: 204.8 (delta=0.253259) | Points Per Level: 1.1 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-#2 (id=1340790)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 20 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
-
-Name             : Lava Burst (id=1238373) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Spell Level      : 50
-Range            : 30 yards
-Velocity         : 20 yards/sec
-Labels           : 24: Shaman Spells
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
-Effects          :
-#1 (id=1235544)  : School Damage (2): fire
-                   Base Value: 89 | Scaled Value: 94.5 (delta=0.257463) | Points Per Level: 0.55 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
-
-Name             : Lava Burst (id=1238376) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Spell Level      : 60
-Range            : 30 yards
-Velocity         : 20 yards/sec
-Labels           : 24: Shaman Spells
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
-Effects          :
-#1 (id=1235547)  : School Damage (2): fire
-                   Base Value: 110 | Scaled Value: 110 (delta=0.257463) | Points Per Level: 0.65 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
-
 Name             : Ghost Wolf (id=1238640) [Spell Family (11)] 
 Class            : Shaman
 School           : Nature
@@ -9495,62 +9251,64 @@ Effects          :
 Tooltip          : Regenerating $s1% of your normal Mana regeneration while casting spells.
 
 Name             : Riptide (desc=Rank 2) (id=1239242) [Spell Family (11)] 
-Hotfixed         : Attributes
+Hotfixed         : Cooldown (6000 -> 12000), Category Cooldown (6000 -> 12000), Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
-Resource         : 300 Base Mana (0) (id=310863)
+Resource         : 180 Base Mana (0) (id=310863)[Hotfixed: Cost (300 -> 180)]
 Spell Level      : 50 (max 58)
 Range            : 40 yards
 GCD              : 1.5 seconds
 Duration         : 15 seconds
-Cooldown         : 6 seconds
+Cooldown         : 12 seconds
 Category         : 1228 (Type 0x0)
 Labels           : 24: Shaman Spells
-Category Cooldown: 6 seconds
+Category Cooldown: 12 seconds
 Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
-#1 (id=1236793)  : Direct Heal (10)
-                   Base Value: 612 | Scaled Value: 645.6 (delta=0.1) | Points Per Level: 4.2 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
+#1 (id=1236793)  : Dummy (3)
+                   Base Value: 0 | Scaled Value: 33.6 (delta=0.1) | Points Per Level: 4.2 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
+Hotfixed         : Type (10 -> 3), Base Value (612 -> 0)
 #2 (id=1236794)  : Apply Aura (6) | Periodic Heal (8): every 3 seconds
                    Base Value: 115 | Scaled Value: 115 | SP Coefficient: 0.1 | Target: Targeted Ally (21)
 #3 (id=1236795)  : Apply Aura (6) | Dummy (4)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Ally (21)
                    Modified By: S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
-Description      : Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+Description      : Heals a friendly target for $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
 Tooltip          : Heals $w2 every $t2 sec.
 Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
 Variables        : $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
 $healpower=${29.888200+0.690312*$PL+0.136267*$PL*$PL}
 
 Name             : Riptide (desc=Rank 3) (id=1239243) [Spell Family (11)] 
-Hotfixed         : Attributes
+Hotfixed         : Cooldown (6000 -> 12000), Category Cooldown (6000 -> 12000), Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
-Resource         : 385 Base Mana (0) (id=310864)
+Resource         : 230 Base Mana (0) (id=310864)[Hotfixed: Cost (385 -> 230)]
 Spell Level      : 60 (max 68)
 Range            : 40 yards
 GCD              : 1.5 seconds
 Duration         : 15 seconds
-Cooldown         : 6 seconds
+Cooldown         : 12 seconds
 Category         : 1228 (Type 0x0)
 Labels           : 24: Shaman Spells
-Category Cooldown: 6 seconds
+Category Cooldown: 12 seconds
 Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
-#1 (id=1236796)  : Direct Heal (10)
-                   Base Value: 841 | Scaled Value: 841 (delta=0.1) | Points Per Level: 4.9 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
+#1 (id=1236796)  : Dummy (3)
+                   Base Value: 0 | Scaled Value: 0 (delta=0.1) | Points Per Level: 4.9 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
+Hotfixed         : Type (10 -> 3), Base Value (841 -> 0)
 #2 (id=1236797)  : Apply Aura (6) | Periodic Heal (8): every 3 seconds
                    Base Value: 161 | Scaled Value: 161 | Points Per Level: 3.7 | SP Coefficient: 0.1 | Target: Targeted Ally (21)
 #3 (id=1236798)  : Apply Aura (6) | Dummy (4)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Ally (21)
                    Modified By: S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
-Description      : Heals a friendly target for $s1, an additional $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
+Description      : Heals a friendly target for $o2 over $d, and increases the effectiveness of your Chain Heal casts directly on that target by $s3%.
 Tooltip          : Heals $w2 every $t2 sec.
 Increases the effectiveness of the caster's Chain Heal spells cast directly on this target by $s3%.
 Variables        : $damagepower=${7.583798+0.471881*$PL+0.036599*$PL*$PL}
@@ -9672,7 +9430,6 @@ Effects          :
 Description      : Increases the critical strike chance of your Healing Wave and Lesser Healing Wave spells by $m1%.
 
 Name             : Mana Tide Totem (desc=Rank 4) (id=1325256) [Spell Family (11)] 
-Hotfixed         : Attributes
 Class            : Shaman
 School           : Frost
 Spell Type       : Magic
@@ -9706,28 +9463,4 @@ Effects          :
 #1 (id=1362475)  : Apply Party Aura (35) | Periodic Energize Power (24): every 3 seconds
                    Base Value: 290 | Scaled Value: 290 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Gain $s1 mana every $t1 seconds.
-
-Name             : Lava Burst (desc=Rank 4) (id=1326047) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Resource         : 265 Base Mana (0) (id=315062)
-Spell Level      : 60 (max 68)
-Range            : 30 yards
-Cast Time        : 2.5 seconds
-GCD              : 1.5 seconds
-Velocity         : 20 yards/sec
-Cooldown         : 10 seconds
-Category         : 1224 (Type 0x0)
-Labels           : 24: Shaman Spells
-Category Cooldown: 10 seconds
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
-Effects          :
-#1 (id=1363744)  : School Damage (2): fire
-                   Base Value: 220 | Scaled Value: 220 (delta=0.253259) | Points Per Level: 1.3 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-#2 (id=1363745)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 20 | Points Per Level: 4.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 

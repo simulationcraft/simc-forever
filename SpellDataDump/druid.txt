@@ -1,6 +1,5 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70755 Live
 Name             : Demoralizing Roar (desc=Rank 1) (id=99) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Magic
@@ -25,7 +24,6 @@ Description      : The druid roars, decreasing nearby enemies' melee attack powe
 Tooltip          : Decreases melee attack power by $w1.
 
 Name             : Entangling Roots (desc=Rank 1) (id=339) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -51,7 +49,6 @@ Description      : Roots the target in place and causes $o2 Nature damage over $
 Tooltip          : Rooted. Causes $w2 Nature damage every $t2 sec.
 
 Name             : Thorns (desc=Rank 1) (id=467) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -73,7 +70,6 @@ Description      : Thorns sprout from the friendly target causing $w1 Nature dam
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Tranquility (desc=Rank 1) (id=740) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -97,7 +93,6 @@ Description      : Regenerates all nearby party members within $a yards for $?$p
 Tooltip          : Heals nearby party members for $w1 every $t1 sec.
 
 Name             : Cat Form (desc=Shapeshift) (id=768) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -126,7 +121,6 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
 Tooltip          : Immunity to Polymorph effects.  Increases Attack Power by $3025s1 plus Agility.
 
 Name             : Swipe (desc=Rank 3) (id=769) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -146,7 +140,6 @@ Effects          :
 Description      : Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 Name             : Faerie Fire (desc=Rank 1) (id=770) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -175,7 +168,6 @@ Description      : Decrease the armor of the target by $s1 for $d.  While affect
 Tooltip          : Decreases armor by $s1.  Cannot stealth or turn invisible.
 
 Name             : Rejuvenation (desc=Rank 1) (id=774) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -198,7 +190,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Faerie Fire (desc=Rank 2) (id=778) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -227,7 +218,6 @@ Description      : Decrease the armor of the target by $s1 for $d.  While affect
 Tooltip          : Decreases armor by $s1.  Cannot stealth or turn invisible.
 
 Name             : Swipe (desc=Rank 1) (id=779) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -247,7 +237,6 @@ Effects          :
 Description      : Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 Name             : Swipe (desc=Rank 2) (id=780) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -267,7 +256,6 @@ Effects          :
 Description      : Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 Name             : Thorns (desc=Rank 2) (id=782) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -289,7 +277,6 @@ Description      : Thorns sprout from the friendly target causing $w1 Nature dam
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Travel Form (desc=Shapeshift) (id=783) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -316,7 +303,6 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
 Tooltip          : Immune to Polymorph effects.  Movement speed increased by $5419s1%.
 
 Name             : Rejuvenation (desc=Rank 2) (id=1058) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -339,7 +325,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Entangling Roots (desc=Rank 2) (id=1062) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -365,7 +350,6 @@ Description      : Roots the target in place and causes $o2 Nature damage over $
 Tooltip          : Rooted. Causes $w2 Nature damage every $t2 sec.
 
 Name             : Aquatic Form (desc=Shapeshift) (id=1066) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -392,7 +376,6 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
 Tooltip          : Immune to Polymorph effects.  Increases swim speed by $5421s1% and allows underwater breathing.
 
 Name             : Thorns (desc=Rank 3) (id=1075) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -414,7 +397,6 @@ Description      : Thorns sprout from the friendly target causing $w1 Nature dam
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Rip (desc=Rank 1) (id=1079) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -427,7 +409,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -444,7 +426,6 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Claw (desc=Rank 1) (id=1082) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -454,7 +435,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -467,7 +448,6 @@ Effects          :
 Description      : Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
 
 Name             : Mark of the Wild (desc=Rank 1) (id=1126) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -520,7 +500,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 3 | Target: Self (1)
 
 Name             : Rejuvenation (desc=Rank 3) (id=1430) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -543,7 +522,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Demoralizing Roar (desc=Rank 2) (id=1735) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Magic
@@ -568,7 +546,6 @@ Description      : The druid roars, decreasing nearby enemies' melee attack powe
 Tooltip          : Decreases melee attack power by $w1.
 
 Name             : Rake (desc=Rank 1) (id=1822) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -579,7 +556,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -595,7 +572,6 @@ Description      : Rake the target for $s1 damage and an additional $o2 damage o
 Tooltip          : Bleeding for $w2 damage every $t2 sec.
 
 Name             : Rake (desc=Rank 2) (id=1823) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -606,7 +582,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -622,7 +598,6 @@ Description      : Rake the target for $s1 damage and an additional $o2 damage o
 Tooltip          : Bleeding for $w2 damage every $t2 sec.
 
 Name             : Rake (desc=Rank 3) (id=1824) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -633,7 +608,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -649,7 +624,6 @@ Description      : Rake the target for $s1 damage and an additional $o2 damage o
 Tooltip          : Bleeding for $w2 damage every $t2 sec.
 
 Name             : Dash (desc=Rank 1) (id=1850) 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -669,7 +643,6 @@ Description      : Increases movement speed by $s1% for $d.  Does not break prow
 Tooltip          : Increases movement speed by $s1%.
 
 Name             : Rejuvenation (desc=Rank 4) (id=2090) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -692,7 +665,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Rejuvenation (desc=Rank 5) (id=2091) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -715,7 +687,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Hibernate (desc=Rank 1) (id=2637) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -741,7 +712,6 @@ Description      : Forces the enemy target to sleep for up to $d.  Any damage wi
 Tooltip          : Asleep.
 
 Name             : Remove Curse (id=2782) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -759,7 +729,6 @@ Effects          :
 Description      : Dispels $s1 Curse or Bane from a friendly target.
 
 Name             : Abolish Poison (id=2893) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -781,7 +750,6 @@ Description      : Attempts to cure $s2 poison effect on the target, and $3137s1
 Tooltip          : Attempts to cure $3137s1 poison every $t1 seconds.
 
 Name             : Starfire (desc=Rank 1) (id=2912) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -836,7 +804,6 @@ Effects          :
                    Family Flags: 10
 
 Name             : Claw (desc=Rank 2) (id=3029) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -848,7 +815,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -873,7 +840,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 4 | Target: Targeted Ally (21)
 
 Name             : Rejuvenation (desc=Rank 6) (id=3627) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -896,7 +862,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Wrath (desc=Rank 1) (id=5176) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -917,7 +882,6 @@ Effects          :
 Description      : Causes $s1 Nature damage to the target.
 
 Name             : Wrath (desc=Rank 2) (id=5177) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -938,7 +902,6 @@ Effects          :
 Description      : Causes $s1 Nature damage to the target.
 
 Name             : Wrath (desc=Rank 3) (id=5178) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -959,7 +922,6 @@ Effects          :
 Description      : Causes $s1 Nature damage to the target.
 
 Name             : Wrath (desc=Rank 4) (id=5179) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -980,7 +942,6 @@ Effects          :
 Description      : Causes $s1 Nature damage to the target.
 
 Name             : Wrath (desc=Rank 5) (id=5180) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1001,7 +962,6 @@ Effects          :
 Description      : Causes $s1 Nature damage to the target.
 
 Name             : Healing Touch (desc=Rank 1) (id=5185) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1021,7 +981,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Touch (desc=Rank 2) (id=5186) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1041,7 +1000,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Touch (desc=Rank 3) (id=5187) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1061,7 +1019,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Touch (desc=Rank 4) (id=5188) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1081,7 +1038,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Touch (desc=Rank 5) (id=5189) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1101,7 +1057,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Entangling Roots (desc=Rank 3) (id=5195) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1127,7 +1082,6 @@ Description      : Roots the target in place and causes $o2 Nature damage over $
 Tooltip          : Rooted. Causes $w2 Nature damage every $t2 sec.
 
 Name             : Entangling Roots (desc=Rank 4) (id=5196) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1153,7 +1107,6 @@ Description      : Roots the target in place and causes $o2 Nature damage over $
 Tooltip          : Rooted. Causes $w2 Nature damage every $t2 sec.
 
 Name             : Claw (desc=Rank 3) (id=5201) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1165,7 +1118,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -1178,7 +1131,6 @@ Effects          :
 Description      : Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
 
 Name             : Challenging Roar (id=5209) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Magic
@@ -1199,7 +1151,6 @@ Description      : Forces all nearby enemies to focus attacks on you for $d.
 Tooltip          : Taunted.
 
 Name             : Bash (desc=Rank 1) (id=5211) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1225,7 +1176,6 @@ Description      : Stuns the target for $d.
 Tooltip          : Stunned.
 
 Name             : Prowl (desc=Rank 1) (id=5215) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -1268,7 +1218,6 @@ Increases Physical damage done by $s1% for $d$?s417046[, and instantly grants $4
 Tooltip          : Increases Physical damage done by $s1%.
 
 Name             : Shred (desc=Rank 1) (id=5221) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1278,7 +1227,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -1293,7 +1242,6 @@ Effects          :
 Description      : Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Enrage (id=5229) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -1321,7 +1269,6 @@ Description      : Instantly generates ${$m2/10} Rage and another $m1 Rage over 
 Tooltip          : Gain ${$w1/10} rage per second. Base armor reduced.
 
 Name             : Mark of the Wild (desc=Rank 2) (id=5232) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1348,7 +1295,6 @@ Description      : Increases the friendly target's armor by $s1 and all attribut
 Tooltip          : Increases armor by $s1 and all attributes by $s2.
 
 Name             : Mark of the Wild (desc=Rank 4) (id=5234) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1415,7 +1361,6 @@ Effects          :
 Description      : Increases swimming speed by $s1% and allow's the druid to breathe underwater.
 
 Name             : Bear Form (desc=Shapeshift) (id=5487) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -1446,7 +1391,6 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
 Tooltip          : Immune to Polymorph effects.  Increases Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.
 
 Name             : Insect Swarm (desc=Rank 1) (id=5570) [Spell Family (7)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=1, max_rank=1, req_points=0]
 Class            : Druid
 School           : Nature
@@ -1471,7 +1415,6 @@ Description      : The enemy target is swarmed by insects, decreasing their chan
 Tooltip          : Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 Name             : Mark of the Wild (desc=Rank 3) (id=6756) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1498,7 +1441,6 @@ Description      : Increases the friendly target's armor by $s1 and all attribut
 Tooltip          : Increases armor by $s1 and all attributes by $s2.
 
 Name             : Healing Touch (desc=Rank 6) (id=6778) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1518,7 +1460,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Wrath (desc=Rank 6) (id=6780) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1539,7 +1480,6 @@ Effects          :
 Description      : Causes $s1 Nature damage to the target.
 
 Name             : Prowl (desc=Rank 2) (id=6783) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -1565,7 +1505,6 @@ Description      : Allows the Druid to prowl around, but reduces your movement s
 Tooltip          : Stealthed.  Movement speed slowed by $s2%.
 
 Name             : Ravage (desc=Rank 1) (id=6785) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1575,7 +1514,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 16
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -1588,7 +1527,6 @@ Effects          :
 Description      : Ravage the target, causing $s2% damage plus 147 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ravage (desc=Rank 2) (id=6787) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1598,7 +1536,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 16
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -1634,7 +1572,6 @@ Effects          :
 Description      : Taunts the target to attack you, but has no effect if the target is already attacking you.
 
 Name             : Bash (desc=Rank 2) (id=6798) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1660,7 +1597,6 @@ Description      : Stuns the target for $d.
 Tooltip          : Stunned.
 
 Name             : Shred (desc=Rank 2) (id=6800) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1670,7 +1606,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -1685,7 +1621,6 @@ Effects          :
 Description      : Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Maul (desc=Rank 1) (id=6807) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1703,7 +1638,6 @@ Effects          :
 Description      : Increases the druid's next attack by $s1 damage.
 
 Name             : Maul (desc=Rank 2) (id=6808) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1721,7 +1655,6 @@ Effects          :
 Description      : Increases the druid's next attack by $s1 damage.
 
 Name             : Maul (desc=Rank 3) (id=6809) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -1739,7 +1672,6 @@ Effects          :
 Description      : Increases the druid's next attack by $s1 damage.
 
 Name             : Healing Touch (desc=Rank 7) (id=8903) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1759,7 +1691,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Wrath (desc=Rank 7) (id=8905) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1780,7 +1711,6 @@ Effects          :
 Description      : Causes $s1 Nature damage to the target.
 
 Name             : Mark of the Wild (desc=Rank 5) (id=8907) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1822,7 +1752,6 @@ Description      : Increases the friendly target's armor by $s1, all attributes 
 Tooltip          : Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 Name             : Rejuvenation (desc=Rank 7) (id=8910) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1845,7 +1774,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Thorns (desc=Rank 4) (id=8914) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1867,7 +1795,6 @@ Description      : Thorns sprout from the friendly target causing $w1 Nature dam
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Tranquility (desc=Rank 2) (id=8918) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1891,7 +1818,6 @@ Description      : Regenerates all nearby party members within $a yards for $?$p
 Tooltip          : Heals nearby party members for $w1 every $t1 sec.
 
 Name             : Moonfire (desc=Rank 1) (id=8921) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -1914,7 +1840,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Moonfire (desc=Rank 2) (id=8924) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -1937,7 +1862,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Moonfire (desc=Rank 3) (id=8925) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -1960,7 +1884,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Moonfire (desc=Rank 4) (id=8926) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -1983,7 +1906,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Moonfire (desc=Rank 5) (id=8927) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -2006,7 +1928,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Moonfire (desc=Rank 6) (id=8928) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -2029,7 +1950,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Moonfire (desc=Rank 7) (id=8929) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -2052,7 +1972,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Regrowth (desc=Rank 1) (id=8936) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2078,7 +1997,6 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Regrowth (desc=Rank 2) (id=8938) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2104,7 +2022,6 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Regrowth (desc=Rank 3) (id=8939) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2130,7 +2047,6 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Regrowth (desc=Rank 4) (id=8940) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2156,7 +2072,6 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Regrowth (desc=Rank 5) (id=8941) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2199,7 +2114,6 @@ Effects          :
 Description      : Cures $s1 poison $leffect:effects; on the target.
 
 Name             : Starfire (desc=Rank 2) (id=8949) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -2219,7 +2133,6 @@ Effects          :
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Starfire (desc=Rank 3) (id=8950) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -2239,7 +2152,6 @@ Effects          :
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Starfire (desc=Rank 4) (id=8951) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -2259,7 +2171,6 @@ Effects          :
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Maul (desc=Rank 4) (id=8972) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2277,7 +2188,6 @@ Effects          :
 Description      : Increases the druid's next attack by $s1 damage.
 
 Name             : Bash (desc=Rank 3) (id=8983) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2303,7 +2213,6 @@ Description      : Stuns the target for $d.
 Tooltip          : Stunned.
 
 Name             : Shred (desc=Rank 3) (id=8992) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2313,7 +2222,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -2328,7 +2237,6 @@ Effects          :
 Description      : Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Cower (desc=Rank 1) (id=8998) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2341,7 +2249,7 @@ Category         : 84 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 10 seconds
 Stance Mask      : 0x00000001
-Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2)
+Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2), Poised (1328827 effect#1)
 Family Flags     : 61
 Attributes       : Is Ability (4), Do Not Sheath (18), Discount Power On Miss (59), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
@@ -2350,7 +2258,6 @@ Effects          :
 Description      : Cower, causing no damage but lowering your threat a small amount, making the enemy less likely to attack you.
 
 Name             : Cower (desc=Rank 2) (id=9000) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2363,7 +2270,7 @@ Category         : 84 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 10 seconds
 Stance Mask      : 0x00000001
-Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2)
+Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2), Poised (1328827 effect#1)
 Family Flags     : 61
 Attributes       : Is Ability (4), Do Not Sheath (18), Discount Power On Miss (59), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
@@ -2372,7 +2279,6 @@ Effects          :
 Description      : Cower, causing no damage but lowering your threat a medium amount, making the enemy less likely to attack you.
 
 Name             : Pounce (desc=Rank 1) (id=9005) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2385,7 +2291,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 101%
 Stance Mask      : 0x00000001
 Mechanic         : Stun
-Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 17
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), No Aura Icon (60), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -2415,7 +2321,6 @@ Effects          :
 Tooltip          : Bleeding for $w1 damage every $t1 sec.
 
 Name             : Demoralizing Roar (desc=Rank 3) (id=9490) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Magic
@@ -2440,7 +2345,6 @@ Description      : The druid roars, decreasing nearby enemies' melee attack powe
 Tooltip          : Decreases melee attack power by $w1.
 
 Name             : Rip (desc=Rank 2) (id=9492) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2453,7 +2357,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2470,7 +2374,6 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Rip (desc=Rank 3) (id=9493) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2483,7 +2386,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2500,7 +2403,6 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Dire Bear Form (desc=Shapeshift) (id=9634) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -2560,7 +2462,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 3 | Target: Self (1)
 
 Name             : Maul (desc=Rank 5) (id=9745) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2578,7 +2479,6 @@ Effects          :
 Description      : Increases the druid's next attack by $s1 damage.
 
 Name             : Demoralizing Roar (desc=Rank 4) (id=9747) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Magic
@@ -2603,7 +2503,6 @@ Description      : The druid roars, decreasing nearby enemies' melee attack powe
 Tooltip          : Decreases melee attack power by $w1.
 
 Name             : Faerie Fire (desc=Rank 3) (id=9749) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2632,7 +2531,6 @@ Description      : Decrease the armor of the target by $s1 for $d.  While affect
 Tooltip          : Decreases armor by $s1.  Cannot stealth or turn invisible.
 
 Name             : Regrowth (desc=Rank 6) (id=9750) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2658,7 +2556,6 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Rip (desc=Rank 4) (id=9752) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2671,7 +2568,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2688,7 +2585,6 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Swipe (desc=Rank 4) (id=9754) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2708,7 +2604,6 @@ Effects          :
 Description      : Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 Name             : Thorns (desc=Rank 5) (id=9756) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2730,7 +2625,6 @@ Description      : Thorns sprout from the friendly target causing $w1 Nature dam
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Healing Touch (desc=Rank 8) (id=9758) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2750,7 +2644,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Dash (desc=Rank 2) (id=9821) 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -2770,7 +2663,6 @@ Description      : Increases movement speed by $s1% for $d.  Does not break prow
 Tooltip          : Increases movement speed by $s1%.
 
 Name             : Pounce (desc=Rank 2) (id=9823) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2783,7 +2675,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 101%
 Stance Mask      : 0x00000001
 Mechanic         : Stun
-Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 17
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), No Aura Icon (60), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -2829,7 +2721,6 @@ Effects          :
 Tooltip          : Bleeding for $w1 damage every $t1 sec.
 
 Name             : Pounce (desc=Rank 3) (id=9827) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2842,7 +2733,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 101%
 Stance Mask      : 0x00000001
 Mechanic         : Stun
-Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 17
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), No Aura Icon (60), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -2856,7 +2747,6 @@ Description      : Pounce, stunning the target for $d and causing $9826o1 damage
 Tooltip          : Stunned.
 
 Name             : Shred (desc=Rank 4) (id=9829) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2866,7 +2756,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -2881,7 +2771,6 @@ Effects          :
 Description      : Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Shred (desc=Rank 5) (id=9830) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2891,7 +2780,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -2906,7 +2795,6 @@ Effects          :
 Description      : Shred the target, causing $s2% damage plus $s1 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Moonfire (desc=Rank 8) (id=9833) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -2929,7 +2817,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Moonfire (desc=Rank 9) (id=9834) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -2952,7 +2839,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Moonfire (desc=Rank 10) (id=9835) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -2975,7 +2861,6 @@ Description      : Burns the enemy for $s2 Arcane damage and then an additional 
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
 Name             : Rejuvenation (desc=Rank 8) (id=9839) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2998,7 +2883,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Rejuvenation (desc=Rank 9) (id=9840) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3021,7 +2905,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Rejuvenation (desc=Rank 10) (id=9841) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3044,7 +2927,6 @@ Description      : Heals the target for $o1 over $d.
 Tooltip          : Heals $s1 damage every $t1 seconds.
 
 Name             : Claw (desc=Rank 4) (id=9849) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3056,7 +2938,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -3069,7 +2951,6 @@ Effects          :
 Description      : Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
 
 Name             : Claw (desc=Rank 5) (id=9850) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3081,7 +2962,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -3094,7 +2975,6 @@ Effects          :
 Description      : Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
 
 Name             : Entangling Roots (desc=Rank 5) (id=9852) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3120,7 +3000,6 @@ Description      : Roots the target in place and causes $o2 Nature damage over $
 Tooltip          : Rooted. Causes $w2 Nature damage every $t2 sec.
 
 Name             : Entangling Roots (desc=Rank 6) (id=9853) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3146,7 +3025,6 @@ Description      : Roots the target in place and causes $o2 Nature damage over $
 Tooltip          : Rooted. Causes $w2 Nature damage every $t2 sec.
 
 Name             : Regrowth (desc=Rank 7) (id=9856) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3172,7 +3050,6 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Regrowth (desc=Rank 8) (id=9857) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3198,7 +3075,6 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Regrowth (desc=Rank 9) (id=9858) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3224,7 +3100,6 @@ Description      : Heals a friendly target for $s1 and another $o2 over $d.
 Tooltip          : Heals $s2 every $t2 seconds.
 
 Name             : Tranquility (desc=Rank 3) (id=9862) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3248,7 +3123,6 @@ Description      : Regenerates all nearby party members within $a yards for $?$p
 Tooltip          : Heals nearby party members for $w1 every $t1 sec.
 
 Name             : Tranquility (desc=Rank 4) (id=9863) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3272,7 +3146,6 @@ Description      : Regenerates all nearby party members within $a yards for $?$p
 Tooltip          : Heals nearby party members for $w1 every $t1 sec.
 
 Name             : Ravage (desc=Rank 3) (id=9866) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3282,7 +3155,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 16
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -3295,7 +3168,6 @@ Effects          :
 Description      : Ravage the target, causing $s2% damage plus 273 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ravage (desc=Rank 4) (id=9867) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3305,7 +3177,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 16
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -3318,7 +3190,6 @@ Effects          :
 Description      : Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Starfire (desc=Rank 5) (id=9875) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -3338,7 +3209,6 @@ Effects          :
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Starfire (desc=Rank 6) (id=9876) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -3358,7 +3228,6 @@ Effects          :
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Maul (desc=Rank 6) (id=9880) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3376,7 +3245,6 @@ Effects          :
 Description      : Increases the druid's next attack by $s1 damage.
 
 Name             : Maul (desc=Rank 7) (id=9881) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3394,7 +3262,6 @@ Effects          :
 Description      : Increases the druid's next attack by $s1 damage.
 
 Name             : Mark of the Wild (desc=Rank 6) (id=9884) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3436,7 +3303,6 @@ Description      : Increases the friendly target's armor by $s1, all attributes 
 Tooltip          : Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 Name             : Mark of the Wild (desc=Rank 7) (id=9885) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3478,7 +3344,6 @@ Description      : Increases the friendly target's armor by $s1, all attributes 
 Tooltip          : Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 Name             : Healing Touch (desc=Rank 9) (id=9888) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3498,7 +3363,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Touch (desc=Rank 10) (id=9889) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3518,7 +3382,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Cower (desc=Rank 3) (id=9892) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3531,7 +3394,7 @@ Category         : 84 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 10 seconds
 Stance Mask      : 0x00000001
-Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2)
+Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2), Poised (1328827 effect#1)
 Family Flags     : 61
 Attributes       : Is Ability (4), Do Not Sheath (18), Discount Power On Miss (59), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
@@ -3540,7 +3403,6 @@ Effects          :
 Description      : Cower, causing no damage but lowering your threat a large amount, making the enemy less likely to attack you.
 
 Name             : Rip (desc=Rank 5) (id=9894) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3553,7 +3415,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -3570,7 +3432,6 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Rip (desc=Rank 6) (id=9896) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3583,7 +3444,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -3601,7 +3462,6 @@ Description      : Finishing move that causes damage over time.  Damage increase
 Tooltip          : $w1 bleed damage every $t1 sec.
 
 Name             : Demoralizing Roar (desc=Rank 5) (id=9898) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Magic
@@ -3626,7 +3486,6 @@ Description      : The druid roars, decreasing nearby enemies' melee attack powe
 Tooltip          : Decreases melee attack power by $w1.
 
 Name             : Rake (desc=Rank 4) (id=9904) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3637,7 +3496,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -3653,7 +3512,6 @@ Description      : Rake the target for $s1 damage and an additional $o2 damage o
 Tooltip          : Bleeding for $w2 damage every $t2 sec.
 
 Name             : Faerie Fire (desc=Rank 4) (id=9907) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3682,7 +3540,6 @@ Description      : Decrease the armor of the target by $s1 for $d.  While affect
 Tooltip          : Decreases armor by $s1.  Cannot stealth or turn invisible.
 
 Name             : Swipe (desc=Rank 5) (id=9908) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -3702,7 +3559,6 @@ Effects          :
 Description      : Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 Name             : Thorns (desc=Rank 6) (id=9910) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3724,7 +3580,6 @@ Description      : Thorns sprout from the friendly target causing $w1 Nature dam
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Wrath (desc=Rank 8) (id=9912) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3745,7 +3600,6 @@ Effects          :
 Description      : Causes $s1 Nature damage to the target.
 
 Name             : Prowl (desc=Rank 3) (id=9913) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -3771,7 +3625,6 @@ Description      : Allows the Druid to prowl around, but reduces your movement s
 Tooltip          : Stealthed.  Movement speed slowed by $s2%.
 
 Name             : Nature's Grasp (desc=Rank 1) (id=16689) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3796,7 +3649,6 @@ Description      : The next $n melee $Lattack:attacks; that $Lstrikes:strike; th
 Tooltip          : Melee damage you take will entangle the enemy.
 
 Name             : Nature's Grasp (desc=Rank 2) (id=16810) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3821,7 +3673,6 @@ Description      : The next $n melee $Lattack:attacks; that $Lstrikes:strike; th
 Tooltip          : Melee damage you take will entangle the enemy.
 
 Name             : Nature's Grasp (desc=Rank 3) (id=16811) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3846,7 +3697,6 @@ Description      : The next $n melee $Lattack:attacks; that $Lstrikes:strike; th
 Tooltip          : Melee damage you take will entangle the enemy.
 
 Name             : Nature's Grasp (desc=Rank 4) (id=16812) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3871,7 +3721,6 @@ Description      : The next $n melee $Lattack:attacks; that $Lstrikes:strike; th
 Tooltip          : Melee damage you take will entangle the enemy.
 
 Name             : Nature's Grasp (desc=Rank 5) (id=16813) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -4137,7 +3986,6 @@ Effects          :
 Description      : Increases the Attack Power reduction of your Demoralizing Roar by $s1% and the damage caused by your Ferocious Bite by $s2%.
 
 Name             : Omen of Clarity (id=16864) [Spell Family (7), Passive] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -4327,7 +4175,6 @@ Effects          :
 Description      : Increases the critical strike damage bonus of your Arcane and Nature spells by $m1%.
 
 Name             : Hurricane (desc=Rank 1) (id=16914) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -4619,9 +4466,9 @@ Description      : Increases your movement speed while in Cat Form by $m2%, and 
 
 Name             : Heart of the Wild (id=17003) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=11, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(20, 40, 60, 80, 100)]
-                 : Effect#2 [op=set, values=(20, 40, 60, 80, 100)]
-                 : Effect#3 [op=set]
+                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
+                 : Effect#2 [op=set, values=(4, 8, 12, 16, 20)]
+                 : Effect#3 [op=set, values=(2, 4, 6, 8, 10)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -4637,7 +4484,6 @@ Effects          :
 Description      : Increases your Intellect by $s1%.  In addition, while in Bear Form or Dire Bear Form your Stamina is increased by $s2% and while in Cat Form your Strength is increased by $s3%.
 
 Name             : Leader of the Pack (id=17007) [Spell Family (7), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=5, col=6, max_rank=1, req_points=0]
 Class            : Druid
 School           : Physical
@@ -4716,8 +4562,8 @@ Description      : Increases the effects of your Mark of the Wild and Gift of th
 
 Name             : Furor (id=17056) [Spell Family (7), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=7, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
-                 : Effect#2 [op=set, values=(4, 8, 12, 16, 20)]
+                 : Effect#1 [op=set, values=(20, 40, 60, 80, 100)]
+                 : Effect#2 [op=set, values=(20, 40, 60, 80, 100)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -4746,10 +4592,9 @@ Effects          :
 Description      : Gives your Arcane and Nature spells a $m1% chance to not lose casting time when you take damage.
 
 Name             : Naturalist (id=17069) [Spell Family (7), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=2, col=9, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(-100, -200, -300, -400, -500)]
-                 : Effect#2 [op=set, values=(1, 2, 3, 4, 5)]
+                 : Effect#2 [op=set, values=(2, 4, 6, 8, 10)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -4760,7 +4605,6 @@ Effects          :
                    Base Value: -100 | Scaled Value: -100 | SP Coefficient: 1 | Misc Value: 10 | Target: Self (1)
                    Affected Spells: Healing Touch (5185), Healing Touch (5186), Healing Touch (5187), Healing Touch (5188), Healing Touch (5189), Healing Touch (6778), Healing Touch (8903), Healing Touch (9758), Healing Touch (9888), Healing Touch (9889), Healing Touch (25297), Wild Growth (408120), Wild Growth (1238214), Wild Growth (1238215)
                    Family Flags: 5, 58
-Hotfixed         : Affects Spells
 #2 (id=1230205)  : Apply Aura (6) | Modify Damage Done% (79)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
@@ -4851,7 +4695,7 @@ Description      : Increases the effect of all your healing spells by $s1%.
 
 Name             : Reflection (id=17106) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=10, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(-10, -20, -30)]
+                 : Effect#1 [op=set, values=(17, 33, 50)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -4901,7 +4745,7 @@ Tooltip          : Your next Nature spell will be an instant cast spell.
 
 Name             : Subtlety (id=17118) [Spell Family (7), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(17, 33, 50)]
+                 : Effect#1 [op=set, values=(-10, -20, -30)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -4946,7 +4790,6 @@ Effects          :
 Description      : Increases the maximum number of targets you may have affected by Entangling Roots by $s1.
 
 Name             : Nature's Grasp (desc=Rank 6) (id=17329) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -4971,7 +4814,6 @@ Description      : The next $n melee $Lattack:attacks; that $Lstrikes:strike; th
 Tooltip          : Melee damage you take will entangle the enemy.
 
 Name             : Hurricane (desc=Rank 2) (id=17401) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -4998,7 +4840,6 @@ Effects          :
 Description      : Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts $d. Druid must channel to maintain the spell.
 
 Name             : Hurricane (desc=Rank 3) (id=17402) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5053,7 +4894,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 11 | Target: Self (1)
 
 Name             : Swiftmend (id=18562) [Spell Family (7)] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=12, max_rank=1, req_points=0]
 Class            : Druid
 School           : Nature
@@ -5074,7 +4914,6 @@ Effects          :
 Description      : Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.
 
 Name             : Hibernate (desc=Rank 2) (id=18657) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5100,7 +4939,6 @@ Description      : Forces the enemy target to sleep for up to $d.  Any damage wi
 Tooltip          : Asleep.
 
 Name             : Hibernate (desc=Rank 3) (id=18658) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5308,7 +5146,6 @@ Description      : Roots the target in place and causes $o2 Nature damage over $
 Tooltip          : Rooted. Causes $w2 Nature damage every $t2 sec.
 
 Name             : Rebirth (desc=Rank 1) (id=20484) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5332,7 +5169,6 @@ Effects          :
 Description      : Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.
 
 Name             : Feline Grace (desc=Passive) (id=20719) [Passive] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -5346,7 +5182,6 @@ Effects          :
 Description      : Reduces damage from falling.
 
 Name             : Rebirth (desc=Rank 2) (id=20739) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5370,7 +5205,6 @@ Effects          :
 Description      : Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.
 
 Name             : Rebirth (desc=Rank 3) (id=20742) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5394,7 +5228,6 @@ Effects          :
 Description      : Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.
 
 Name             : Rebirth (desc=Rank 4) (id=20747) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5418,7 +5251,6 @@ Effects          :
 Description      : Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.
 
 Name             : Rebirth (desc=Rank 5) (id=20748) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5538,7 +5370,6 @@ Description      : Gives the Gift of the Wild to all party and raid members, inc
 Tooltip          : Increases armor by $s1, all attributes by $s2 and all resistances by $s3.
 
 Name             : Ferocious Bite (desc=Rank 2) (id=22568) [Spell Family (7)] 
-Hotfixed         : Attributes, Rank
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -5549,7 +5380,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -5566,7 +5397,6 @@ Description      : Finishing move that causes damage per combo point and convert
 
 
 Name             : Barkskin (id=22812) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5587,7 +5417,6 @@ Description      : Your skin becomes as tough as bark. Physical damage taken is 
 Tooltip          : Physical damage taken is reduced by $s2%. While protected, damaging attacks will not cause spellcasting delays.
 
 Name             : Ferocious Bite (desc=Rank 3) (id=22827) [Spell Family (7)] 
-Hotfixed         : Attributes, Rank
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -5598,7 +5427,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -5614,7 +5443,6 @@ Description      : Finishing move that causes damage per combo point and convert
    5 points: 315-339 damage
 
 Name             : Ferocious Bite (desc=Rank 4) (id=22828) [Spell Family (7)] 
-Hotfixed         : Attributes, Rank
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -5625,7 +5453,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -5641,7 +5469,6 @@ Description      : Finishing move that causes damage per combo point and convert
    5 points: 490-530 damage
 
 Name             : Ferocious Bite (desc=Rank 5) (id=22829) [Spell Family (7)] 
-Hotfixed         : Attributes, Rank
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -5652,7 +5479,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -5668,7 +5495,6 @@ Description      : Finishing move that causes damage per combo point and convert
    5 points: 685-735 damage
 
 Name             : Frenzied Regeneration (id=22842) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -5748,7 +5574,6 @@ Tooltip          : Healing Touch casting time decreased by $s1%.
 Healing spell mana cost reduced by $s2%.
 
 Name             : Moonkin Form (desc=Shapeshift) (id=24858) [Spell Family (7)] 
-Hotfixed         : Attributes, Description
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=30]
 Class            : Druid
 School           : Physical
@@ -5804,7 +5629,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 3 | Target: Self (1)
 
 Name             : Moonkin Aura (id=24907) [Spell Family (7)] 
-Hotfixed         : Description, Tooltip
 Class            : Druid
 School           : Nature
 Spell Type       : None
@@ -5818,12 +5642,10 @@ Attributes       : Is Ability (4), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=701335)   : Apply Aura Raid (65) | Modify Critical Strike% (290)
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Radius: 45 yards | Target: Self (1)
-Hotfixed         : Sub Type (57 -> 290)
 Description      : Increases Critical Strike chance by $s1%.
 Tooltip          : Increases Critical Strike chance by $s1%.
 
 Name             : Leader of the Pack (id=24932) [Spell Family (7)] 
-Hotfixed         : Tooltip
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -5835,7 +5657,6 @@ Attributes       : No Aura Cancel (31), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=702727)   : Apply Aura Raid (65) | Modify Critical Strike% (290)
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Radius: 45 yards | Target: Self (1)
-Hotfixed         : Sub Type (52 -> 290)
 Tooltip          : Increases Critical Strike chance by $s1%.
 
 Name             : Tranquil Spirit (id=24968) [Spell Family (7), Passive, Hidden] 
@@ -5854,7 +5675,6 @@ Effects          :
 Description      : Reduces the mana cost of your Healing Touch and Tranquility spells by $s1%.
 
 Name             : Insect Swarm (desc=Rank 2) (id=24974) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5878,7 +5698,6 @@ Description      : The enemy target is swarmed by insects, decreasing their chan
 Tooltip          : Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 Name             : Insect Swarm (desc=Rank 3) (id=24975) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5902,7 +5721,6 @@ Description      : The enemy target is swarmed by insects, decreasing their chan
 Tooltip          : Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 Name             : Insect Swarm (desc=Rank 4) (id=24976) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5926,7 +5744,6 @@ Description      : The enemy target is swarmed by insects, decreasing their chan
 Tooltip          : Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 Name             : Insect Swarm (desc=Rank 5) (id=24977) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5950,7 +5767,6 @@ Description      : The enemy target is swarmed by insects, decreasing their chan
 Tooltip          : Chance to hit with attacks decreased by $s2% and $s1 Nature damage every $t1 sec.
 
 Name             : Healing Touch (desc=Rank 11) (id=25297) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5970,7 +5786,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Starfire (desc=Rank 7) (id=25298) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Arcane
 Spell Type       : Magic
@@ -5990,7 +5805,6 @@ Effects          :
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Rejuvenation (desc=Rank 11) (id=25299) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -6085,7 +5899,6 @@ Effects          :
 Description      : Increases the damage of your Moonfire spell by up to $s1.
 
 Name             : Innervate (id=29166) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -6149,7 +5962,6 @@ Effects          :
                    Family Flags: 0, 5, 6, 9, 24
 
 Name             : Ferocious Bite (desc=Rank 6) (id=31018) [Spell Family (7)] 
-Hotfixed         : Attributes, Rank
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -6160,7 +5972,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -6232,7 +6044,6 @@ Tooltip          : Physical damage done in Cat Form increased by $s2%.
 Variables        : $points=$?a446212[${$446212m1/1000}][${0}]
 
 Name             : Primal Bite (desc=Rank 1) (id=407995) [Spell Family (7)] 
-Hotfixed         : Learn Level (25 -> 40), Attributes, Required Level (25 -> 40)
 Talent Entry     : Generic [tree=class, row=7, col=6, max_rank=1, req_points=0]
 Class            : Druid
 School           : Physical
@@ -6252,7 +6063,6 @@ Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables
 Effects          :
 #1 (id=1071863)  : Weapon Damage (58)
                    Base Value: 42 | Scaled Value: 42 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (26 -> 42)
 #2 (id=1071864)  : Weapon Damage% (31)
                    Base Value: 100 | Scaled Value: 1 | Target: Targeted Enemy (6)
 Description      : Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
@@ -6291,7 +6101,6 @@ Effects          :
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
 
 Name             : Wild Growth (desc=Rank 1) (id=408120) [Spell Family (7)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]
 Class            : Druid
 School           : Nature
@@ -6779,7 +6588,6 @@ Effects          :
 Description      : You bash the target's skull, interrupting spellcasting and preventing any spell in that school from being cast for $d.
 
 Name             : Lacerate (desc=Rank 3) (id=414644) [Spell Family (7)] 
-Hotfixed         : Attributes, Rank
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -8478,7 +8286,6 @@ Effects          :
 Description      : Decreases the mana cost of Mark of the Wild by $s1% and increases its duration by $s2%.
 
 Name             : Revive (desc=Rank 1) (id=437138) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -9647,8 +9454,8 @@ Description      : The Soul of a fallen warrior can be engraved into this slot.
 
 Name             : Genesis (id=1223081) [Spell Family (7), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=3, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(1, 2, 3, 4, 5)]
-                 : Effect#2 [op=set, values=(1, 2, 3, 4, 5)]
+                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
+                 : Effect#2 [op=set, values=(2, 4, 6, 8, 10)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -9759,7 +9566,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 1232169 | Target: Self (1)
 
 Name             : Lacerate (desc=Rank 4) (id=1235826) [Spell Family (7)] 
-Hotfixed         : Attributes, Rank
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -9785,7 +9591,6 @@ Description      : Lacerates the enemy target, making them bleed for $o1 damage 
 Tooltip          : $w1 damage every $t sec.
 
 Name             : Lacerate (desc=Rank 5) (id=1235827) [Spell Family (7)] 
-Hotfixed         : Attributes, Rank
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -9811,7 +9616,6 @@ Description      : Lacerates the enemy target, making them bleed for $o1 damage 
 Tooltip          : $w1 damage every $t sec.
 
 Name             : Revive (desc=Rank 2) (id=1237948) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -9831,7 +9635,6 @@ Effects          :
 Description      : Brings a dead player back to life with $s1 health and $q1 mana. Cannot be cast when in combat.
 
 Name             : Revive (desc=Rank 3) (id=1237949) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -9851,7 +9654,6 @@ Effects          :
 Description      : Brings a dead player back to life with $s1 health and $q1 mana. Cannot be cast when in combat.
 
 Name             : Revive (desc=Rank 4) (id=1237950) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -9871,7 +9673,6 @@ Effects          :
 Description      : Brings a dead player back to life with $s1 health and $q1 mana. Cannot be cast when in combat.
 
 Name             : Revive (desc=Rank 5) (id=1237951) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -9891,7 +9692,6 @@ Effects          :
 Description      : Brings a dead player back to life with $s1 health and $q1 mana. Cannot be cast when in combat.
 
 Name             : Primal Bite (desc=Rank 2) (id=1238069) [Spell Family (7)] 
-Hotfixed         : Learn Level (36 -> 50), Attributes, Required Level (36 -> 50)
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -9910,13 +9710,11 @@ Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables
 Effects          :
 #1 (id=1235070)  : Weapon Damage (58)
                    Base Value: 62 | Scaled Value: 62 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (38 -> 62)
 #2 (id=1235071)  : Weapon Damage% (31)
                    Base Value: 100 | Scaled Value: 1 | Target: Targeted Enemy (6)
 Description      : Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
 
 Name             : Primal Bite (desc=Rank 3) (id=1238070) [Spell Family (7)] 
-Hotfixed         : Learn Level (48 -> 60), Attributes, Required Level (48 -> 60)
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -9935,7 +9733,6 @@ Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables
 Effects          :
 #1 (id=1235073)  : Weapon Damage (58)
                    Base Value: 77 | Scaled Value: 77 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (59 -> 77)
 #2 (id=1235074)  : Weapon Damage% (31)
                    Base Value: 100 | Scaled Value: 1 | Target: Targeted Enemy (6)
 Description      : Bite the target, dealing $s2% normal damage plus $s1 and generating a high amount of threat.
@@ -9968,7 +9765,6 @@ $@spelltooltip414924
 Tooltip          : Immobilized.
 
 Name             : Wild Growth (desc=Rank 2) (id=1238214) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -9995,7 +9791,6 @@ Variables        : $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
 $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 Name             : Wild Growth (desc=Rank 3) (id=1238215) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -10227,7 +10022,6 @@ Effects          :
 Description      : Increases your Spirit by $m1%.
 
 Name             : Shifting Power (id=1322605) [Spell Family (7)] 
-Hotfixed         : Cooldown (16000 -> 8000)
 Talent Entry     : Generic [tree=class, row=7, col=7, max_rank=1, req_points=0]
 Class            : Druid
 School           : Physical
@@ -10289,7 +10083,6 @@ Description      : $@spelldesc8983
 Tooltip          : $@spellaura8983
 
 Name             : Predatory Discipline (id=1328613) [Spell Family (3), Passive, Hidden] 
-Hotfixed         : NEW SPELL
 Talent Entry     : Generic [tree=class, row=4, col=7, max_rank=1, req_points=0]
 Class            : Druid
 School           : Physical
@@ -10300,15 +10093,13 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1367715)  : Apply Aura (6) | Dummy (4)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy.
 
 Name             : Lacerate (desc=Rank 2) (id=1328616) [Spell Family (7)] 
-Hotfixed         : NEW SPELL
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
-Resource         : 15 Rage (1) (id=315135)[Hotfixed: NEW POWER]
+Resource         : 15 Rage (1) (id=315135)
 Spell Level      : 34
 Range            : 5 yards
 GCD              : 1.5 seconds
@@ -10324,20 +10115,17 @@ Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables
 Effects          :
 #1 (id=1367718)  : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 #2 (id=1367719)  : Dummy (3)
                    Base Value: 10 | Scaled Value: 10 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
 Tooltip          : $w1 damage every $t sec.
 
 Name             : Lacerate (desc=Rank 1) (id=1328617) [Spell Family (7)] 
-Hotfixed         : NEW SPELL
 Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
-Resource         : 15 Rage (1) (id=315136)[Hotfixed: NEW POWER]
+Resource         : 15 Rage (1) (id=315136)
 Spell Level      : 25
 Range            : 5 yards
 GCD              : 1.5 seconds
@@ -10353,35 +10141,30 @@ Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables
 Effects          :
 #1 (id=1367720)  : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 4 | Scaled Value: 4 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 #2 (id=1367721)  : Dummy (3)
                    Base Value: 10 | Scaled Value: 10 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : Lacerates the enemy target, making them bleed for $o1 damage over $d plus $s2% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to $u times on the same target.
 Tooltip          : $w1 damage every $t sec.
 
 Name             : Ferocious Bite (desc=Rank 1) (id=1328618) [Spell Family (7)] 
-Hotfixed         : NEW SPELL
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
-Resource         : 35 Energy (3) (id=315137)[Hotfixed: NEW POWER]
-Resource         : 1 - 5 Combo Points (4) (id=315138)[Hotfixed: NEW POWER]
+Resource         : 35 Energy (3) (id=315137)
+Resource         : 1 - 5 Combo Points (4) (id=315138)
 Spell Level      : 24
 Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1367722)  : School Damage (2): physical
                    Base Value: 14 | Scaled Value: 14 (delta=0.714286) | SP Coefficient: 1 | Points Per Combo Point: 24 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 #2 (id=1367723)  : Dummy (3)
                    Base Value: 60 | Scaled Value: 60 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
    1 point  : 33-43 damage
    2 points: 57-67 damage
@@ -10391,7 +10174,6 @@ Description      : Finishing move that causes damage per combo point and convert
 
 
 Name             : Bloom (id=1328621) [Spell Family (7), Passive, Hidden] 
-Hotfixed         : NEW SPELL
 Talent Entry     : Generic [tree=class, row=3, col=12, max_rank=1, req_points=0]
 Class            : Druid
 School           : Physical
@@ -10402,9 +10184,38 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1367726)  : Apply Aura (6) | Dummy (4)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 #2 (id=1367727)  : Apply Aura (6) | Dummy (4)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to $s1% of your Spirit. If either spell expires due to being dispelled, the target is healed for $s2% of your Spirit instead.
+
+Name             : Poised (id=1328827) [Spell Family (7)] 
+Class            : Druid
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Duration         : Aura (infinite)
+Labels           : 21: Druid Spells
+Stacks           : 1 initial, 1 maximum
+Proc Chance      : 100%
+Proc Flags       : Yellow Melee, White Ranged, Yellow Ranged, Generic Helpful, Generic Hostile Spell, Magic Heal, Magic Hostile Spell
+Attributes       : Is Ability (4), Do Not Sheath (18), Can Proc From Procs (122), Unknown (493)
+Effects          :
+#1 (id=1368040)  : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
+                   Base Value: -10 | Scaled Value: -10 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Rip (1079), Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Shred (5221), Ravage (6785), Ravage (6787), Shred (6800), Shred (8992), Cower (8998), Cower (9000), Pounce (9005), Rip (9492), Rip (9493), Rip (9752), Pounce (9823), Pounce (9827), Shred (9829), Shred (9830), Claw (9849), Claw (9850), Ravage (9866), Ravage (9867), Cower (9892), Rip (9894), Rip (9896), Rake (9904), Ferocious Bite (22568), Ferocious Bite (22827), Ferocious Bite (22828), Ferocious Bite (22829), Ferocious Bite (31018), Ferocious Bite (1328618)
+                   Family Flags: 12, 15, 16, 17, 23, 61
+Description      : Energy cost of the next ability performed is reduced by $s1.
+Tooltip          : Energy cost of the next ability performed is reduced by $s1.
+
+Name             : Poised (desc=Passive) (id=1328829) [Passive] 
+Class            : Druid
+School           : Physical
+Spell Type       : None
+Spell Level      : 32
+Labels           : 21: Druid Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Sheath (18), Unknown (454), Unknown (493)
+Effects          :
+#1 (id=1368043)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
+Description      : While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328827s1.
 
