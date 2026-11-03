@@ -914,7 +914,9 @@ inline const spelleffect_data_t& spelleffect_data_t::nil() { return spelleffect_
  */
 struct spell_container_t
 {
-private:
+protected:
+  bool cached = false;
+
   unsigned spell_id   = 0;
   unsigned driver_id  = 0;
   unsigned attack_id  = 0;
@@ -933,32 +935,102 @@ private:
   const spell_data_t* _talent  = nullptr;
   const spell_data_t* _debuff  = nullptr;
 
-  const spell_data_t* get_field( const player_t* player, auto spell_field, auto id_field ) const;
+  const spell_data_t* get_spell_data( auto id_field, auto data_field ) const
+  {
+    assert( cached );
+
+    if ( std::invoke( id_field, this ) == 0 )
+      return spell_data_t::nil();
+    if ( auto spell = std::invoke( data_field, this ); spell && spell->ok() )
+      return spell;
+
+    return spell_data_t::not_found();
+  }
 
 public:
-  constexpr spell_container_t& set_spell( unsigned id )   { spell_id = id;   return *this; }
-  constexpr spell_container_t& set_driver( unsigned id )  { driver_id = id;  return *this; }
-  constexpr spell_container_t& set_attack( unsigned id )  { attack_id = id;  return *this; }
-  constexpr spell_container_t& set_passive( unsigned id ) { passive_id = id; return *this; }
-  constexpr spell_container_t& set_aura( unsigned id )    { aura_id = id;    return *this; }
-  constexpr spell_container_t& set_buff( unsigned id )    { buff_id = id;    return *this; }
-  constexpr spell_container_t& set_talent( unsigned id )  { talent_id = id;  return *this; }
-  constexpr spell_container_t& set_debuff( unsigned id )  { debuff_id = id;  return *this; }
+  spell_container_t& set_spell( unsigned id )   { spell_id = id;   return *this; }
+  spell_container_t& set_driver( unsigned id )  { driver_id = id;  return *this; }
+  spell_container_t& set_attack( unsigned id )  { attack_id = id;  return *this; }
+  spell_container_t& set_passive( unsigned id ) { passive_id = id; return *this; }
+  spell_container_t& set_aura( unsigned id )    { aura_id = id;    return *this; }
+  spell_container_t& set_buff( unsigned id )    { buff_id = id;    return *this; }
+  spell_container_t& set_talent( unsigned id )  { talent_id = id;  return *this; }
+  spell_container_t& set_debuff( unsigned id )  { debuff_id = id;  return *this; }
 
-  const spell_data_t* spell( const player_t* p ) const;
-  const spell_data_t* driver( const player_t* p ) const;
-  const spell_data_t* attack( const player_t* p ) const;
-  const spell_data_t* passive( const player_t* p ) const;
-  const spell_data_t* aura( const player_t* p ) const;
-  const spell_data_t* buff( const player_t* p ) const;
-  const spell_data_t* talent( const player_t* p ) const;
-  const spell_data_t* debuff( const player_t* p ) const;
+  bool ok() { return !empty(); }
+  bool empty() { return !( spell_id || driver_id || attack_id || passive_id || aura_id || buff_id || talent_id || debuff_id ); }
+  void cache_data( const player_t* player );
+  static const spell_container_t* nil();
+
+  const spell_data_t* spell() const   { return get_spell_data( &spell_container_t::spell_id,   &spell_container_t::_spell );   }
+  const spell_data_t* driver() const  { return get_spell_data( &spell_container_t::driver_id,  &spell_container_t::_driver );  }
+  const spell_data_t* attack() const  { return get_spell_data( &spell_container_t::attack_id,  &spell_container_t::_attack );  }
+  const spell_data_t* passive() const { return get_spell_data( &spell_container_t::passive_id, &spell_container_t::_passive ); }
+  const spell_data_t* aura() const    { return get_spell_data( &spell_container_t::aura_id,    &spell_container_t::_aura );    }
+  const spell_data_t* buff() const    { return get_spell_data( &spell_container_t::buff_id,    &spell_container_t::_buff );    }
+  const spell_data_t* talent() const  { return get_spell_data( &spell_container_t::talent_id,  &spell_container_t::_talent );  }
+  const spell_data_t* debuff() const  { return get_spell_data( &spell_container_t::debuff_id,  &spell_container_t::_debuff );  }
 };
+
+struct spell_container_nil_t : public spell_container_t
+{
+  constexpr spell_container_nil_t()
+    : spell_container_t()
+  {
+    cached = true;
+  }
+};
+inline constexpr spell_container_nil_t spell_container_nil_v {};
+inline const spell_container_t* spell_container_t::nil() { return &spell_container_nil_v; }
 
 enum spell_rank_e : int
 {
   RANK_MAX_USABLE = 0,  // highest rank usable at the player level
   RANK_MAX        = -1, // highest rank in the table
+};
+
+
+template <typename T>
+concept HasOk = requires(T t)
+{
+  { t.ok() } -> std::convertible_to<bool>;
+} && !std::is_same_v<std::remove_cv_t<T>, spell_container_t>;
+
+struct spell_ranks_t
+{
+  const player_t* player;
+  // std::array<spell_container_t, 16> ranks;
+  std::vector<spell_container_t> ranks;
+
+  std::function<bool()> validate_fn;
+
+  spell_ranks_t() = default;
+
+  template <typename... Pack>
+  spell_ranks_t( player_t* player, Pack&&... pack )
+    : player( player ),
+      ranks{ std::forward<Pack>( pack )... },
+      validate_fn( [](){ return true; } )
+  {}
+
+  template <typename... Pack>
+  spell_ranks_t( player_t* player, std::function<bool()> validate, Pack&&... pack )
+    : player( player ),
+      ranks{ std::forward<Pack>( pack )... },
+      validate_fn( std::move( validate ) )
+  {}
+
+  template <HasOk T, typename... Pack>
+  spell_ranks_t( player_t* player, T& validate, Pack&&... pack )
+    : player( player ),
+      ranks{ std::forward<Pack>( pack )... },
+      validate_fn( [ validate ](){ return std::invoke( &T::ok, validate ); } )
+  {}
+
+  virtual ~spell_ranks_t() = default;
+
+  using rank_ptype_t = const spell_data_t*(spell_container_t::*)() const;
+  virtual const spell_container_t* find_rank( int rank = RANK_MAX_USABLE, rank_ptype_t field = &spell_container_t::spell );
 };
 
 
