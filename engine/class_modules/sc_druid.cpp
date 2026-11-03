@@ -554,7 +554,7 @@ inline druid_td_t::druid_td_t( player_t& target, druid_t& p ) : actor_target_dat
                                   hurricane_debuff->debuff() )
     ->set_default_value (hurricane_debuff->debuff()->effectN(2).percent() );
 
-  auto const faerie_fire_debuff = rank.faerie_fire.find_rank();
+  auto const faerie_fire_debuff = p.rank.faerie_fire.find_rank();
   debuff.faerie_fire =
       make_debuff<stat_buff_t>( faerie_fire_debuff->spell()->ok(), *this, "faerie_fire", faerie_fire_debuff->spell())
     ->set_default_value_from_effect( 1 );
