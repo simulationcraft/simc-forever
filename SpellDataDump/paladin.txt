@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Vindication (desc=Rank 1) (id=67) 
 Class            : Paladin
 School           : Holy
@@ -1304,7 +1304,7 @@ Family Flags     : 77
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688432)   : School Damage (2): holy
-                   Base Value: 502 | Scaled Value: 518 (delta=0.108614) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 502 | Scaled Value: 502 (delta=0.108614) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Causes $s1 Holy damage to an Undead or Demon target.
 
 Name             : Holy Wrath (desc=Rank 2) (id=10318) [Spell Family (10)] 
@@ -1326,7 +1326,7 @@ Family Flags     : 53
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687923)   : School Damage (2): holy
-                   Base Value: 533 | Scaled Value: 540.6 (delta=0.161351) | Points Per Level: 1.9 | SP Coefficient: 0.19 | Radius: 0 - 20 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 533 | Scaled Value: 533 (delta=0.161351) | Points Per Level: 1.9 | SP Coefficient: 0.19 | Radius: 0 - 20 yards | Target: Source (22) -> Enemy in Area (15)
 Description      : Sends bolts of holy power in all directions, causing $s1 Holy damage to all Undead and Demon targets within $a1 yds and stunning them for $429147d.
 
 Name             : Redemption (desc=Rank 2) (id=10322) [Spell Family (10)] 
@@ -1477,7 +1477,7 @@ Family Flags     : 111
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), No Aura Icon (60), Include In Advanced Combat Log (72), No Aura Log (202), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688696)   : Normalized Weapon Damage (121)
-                   Base Value: 93 | Scaled Value: 109 (delta=0.25) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 93 | Scaled Value: 93 (delta=0.25) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 #2 (id=1341159)  : Weapon Damage% (31)
                    Base Value: 50 | Scaled Value: 0.5 | Target: Targeted Enemy (6)
 #3 (id=1341160)  : Server Side Script (77)
@@ -2096,7 +2096,7 @@ Family Flags     : 13, 30
 Attributes       : Not Shapeshifted (16), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=696239)   : Direct Heal (10)
-                   Base Value: 303 | Scaled Value: 316 (delta=0.110193) | Points Per Level: 2.6 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
+                   Base Value: 303 | Scaled Value: 308.2 (delta=0.110193) | Points Per Level: 2.6 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
 
 Name             : Holy Light (id=19968) [Spell Family (10)] 
@@ -3319,9 +3319,9 @@ Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
 #1 (id=697832)   : School Damage (2): holy
-                   Base Value: 170 | Scaled Value: 194.6 (delta=0.094118) | Points Per Level: 4.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 170 | Scaled Value: 178.2 (delta=0.094118) | Points Per Level: 4.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 #3 (id=697833)   : Dummy (3)
-                   Base Value: 1786 | Scaled Value: 2068 | Points Per Level: 47 | SP Coefficient: 0.2
+                   Base Value: 1786 | Scaled Value: 1880 | Points Per Level: 47 | SP Coefficient: 0.2
 
 Name             : Seal of Righteousness (desc=Rank 2) (id=20287) [Spell Family (10)] 
 Hotfixed         : Attributes
@@ -3515,7 +3515,7 @@ Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698724)   : Apply Aura (6) | Dummy (4)
-                   Base Value: 1786 | Scaled Value: 2068 | Points Per Level: 47 | Target: Self (1)
+                   Base Value: 1786 | Scaled Value: 1880 | Points Per Level: 47 | Target: Self (1)
 #3 (id=698725)   : Apply Aura (6) | Dummy (4)
                    Base Value: 20286 | Scaled Value: 20286 | Target: Self (1)
 Description      : Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20286s3/87+$<1h>)*$<mult>} to ${($20286s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
@@ -4246,11 +4246,11 @@ Family Flags     : 70
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
 #1 (id=698155)   : School Damage (2): holy
-                   Base Value: 153 | Scaled Value: 175.14 (delta=0.087591) | Points Per Level: 3.69 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 153 | Scaled Value: 160.38 (delta=0.087591) | Points Per Level: 3.69 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 #2 (id=1340961)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 #3 (id=1340962)  : Dummy (3)
-                   Base Value: 1607 | Scaled Value: 1860.8 | Points Per Level: 42.299999 | SP Coefficient: 0.18
+                   Base Value: 1607 | Scaled Value: 1691.6 | Points Per Level: 42.299999 | SP Coefficient: 0.18
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Seal of Fury (desc=Rank 4) (id=20415) [Spell Family (10)] 
@@ -4419,7 +4419,7 @@ Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698428)   : Apply Aura (6) | Dummy (4)
-                   Base Value: 1607 | Scaled Value: 1859 | Points Per Level: 42 | Trigger Spell: 20418 | Target: Self (1)
+                   Base Value: 1607 | Scaled Value: 1691 | Points Per Level: 42 | Trigger Spell: 20418 | Target: Self (1)
 #2 (id=1340945)  : None (0)
                    Base Value: 50 | Scaled Value: 50
 #3 (id=698429)   : Apply Aura (6) | Dummy (4)
@@ -4983,7 +4983,7 @@ Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
 #1 (id=698431)   : School Damage (2): holy
-                   Base Value: 356 | Scaled Value: 404.8 (delta=0.095506) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 356 | Scaled Value: 356 (delta=0.095506) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20967) [Spell Family (10)] 
 Class            : Paladin
@@ -5131,7 +5131,7 @@ Family Flags     : 39
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Combat Feedback When Usable (137), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=700170)   : School Damage (2): holy
-                   Base Value: 498 | Scaled Value: 513.5 (delta=0.098113) | Points Per Level: 3.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 498 | Scaled Value: 498 (delta=0.098113) | Points Per Level: 3.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Hammer of Wrath (desc=Rank 2) (id=24274) [Spell Family (10)] 
@@ -5252,7 +5252,7 @@ Family Flags     : 14, 31, 74
 Attributes       : Not Shapeshifted (16), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=702679)   : Direct Heal (10)
-                   Base Value: 1580 | Scaled Value: 1609 (delta=0.107143) | Points Per Level: 5.8 | SP Coefficient: 0.714 | Target: Targeted Ally (21)
+                   Base Value: 1580 | Scaled Value: 1580 (delta=0.107143) | Points Per Level: 5.8 | SP Coefficient: 0.714 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
 
 Name             : Forbearance (id=25771) [Spell Family (10)] 
@@ -6414,7 +6414,7 @@ Family Flags     : 77
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1084709)  : School Damage (2): holy
-                   Base Value: 534 | Scaled Value: 550 (delta=0.108614) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 534 | Scaled Value: 534 (delta=0.108614) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 #2 (id=1084710)  : Dummy (3)
                    Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
 Description      : Causes $s1 Holy damage to an enemy target and has $s2% chance to crit against Demons and Undead.
@@ -8893,7 +8893,7 @@ Family Flags     : 122
 Attributes       : Allow While Not Shapeshifted (caster form) (83), Not a Proc (105), Do Not Display Range (126), Heal Prediction (280), Do Not Display Power Cost (303), Do Not Display Cast Time (441), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1341994)  : Direct Heal (10)
-                   Base Value: 704 | Scaled Value: 720.2 (delta=0.056213) | Points Per Level: 1.8 | SP Coefficient: 0.143 | Radius: 0 - 40 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 704 | Scaled Value: 704 (delta=0.056213) | Points Per Level: 1.8 | SP Coefficient: 0.143 | Radius: 0 - 40 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Activated by Holy Shock. Heals the target and their party for $s1. Party members must be within $a1 yds of target.
 
 Name             : Light's Vigil (desc=Rank 3) (id=1311597) [Spell Family (10)] 
@@ -9279,7 +9279,7 @@ Labels           : 26: Paladin Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
 #1 (id=1345819)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 0 | Scaled Value: 90 | Points Per Level: 1 | Target: Self (1)
+                   Base Value: 0 | Scaled Value: 60 | Points Per Level: 1 | Target: Self (1)
 #2 (id=1347352)  : Apply Aura (6) | Dummy (4)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
 #3 (id=1347353)  : Apply Aura (6) | Dummy (4)
@@ -9595,13 +9595,13 @@ Labels           : 26: Paladin Spells
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Limit N (165), Unknown (493)
 Effects          :
 #1 (id=1367618)  : Apply Aura (6) | Periodic Dummy (226): every 1.5 seconds
-                   Base Value: 0 | Scaled Value: 600.0003 | Points Per Level: 6.66667 | Target: Targeted Ally (21)
+                   Base Value: 0 | Scaled Value: 400.0002 | Points Per Level: 6.66667 | Target: Targeted Ally (21)
 Hotfixed         : NEW EFFECT
 #2 (id=1367619)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 0 | Scaled Value: 172.5003 | Points Per Level: 1.91667 | Target: Targeted Ally (21)
+                   Base Value: 0 | Scaled Value: 115.0002 | Points Per Level: 1.91667 | Target: Targeted Ally (21)
 Hotfixed         : NEW EFFECT
 #3 (id=1367620)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 0 | Scaled Value: 344.9997 | Points Per Level: 3.83333 | Target: Targeted Ally (21)
+                   Base Value: 0 | Scaled Value: 229.9998 | Points Per Level: 3.83333 | Target: Targeted Ally (21)
 Hotfixed         : NEW EFFECT
 Description      : Swear an Oath to protect target ally for $d, increasing the healing of your Holy Light on them by up to $s1, your Flash of Light by up to $s2, and your Holy Shock by up to $s3. Only one Oath of Light may be sworn by the Paladin at any one time.
 Tooltip          : Receives increased healing from the caster's Holy Light by up to $s1, Flash of Light by up to $s2, and Holy Shock by up to $s3.

@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -21007,7 +21007,7 @@ Proc Chance      : 101%
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Sitting (27), Unknown (493)
 Effects          :
 #1 (id=693960)   : Apply Party Aura (35) | Resistance (22)
-                   Base Value: 40 | Scaled Value: 3600 | Points Per Level: 40 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
+                   Base Value: 40 | Scaled Value: 2400 | Points Per Level: 40 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
 Description      : Gives $s1 additional armor to nearby party members for $d. Players may only have one aura on them per paladin at any one time.
 Tooltip          : Armor increased by $s1.
 
@@ -32987,7 +32987,7 @@ Labels           : 4530
 Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=701004)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 1 | Scaled Value: 10 | Points Per Level: 0.1 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
+                   Base Value: 1 | Scaled Value: 7 | Points Per Level: 0.1 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
 #2 (id=701005)   : Apply Aura (6) | Attribute (29)
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 1 | Stat: Spi | Target: Self (1)
 Tooltip          : Stamina and Spirit increased by $w1.
@@ -37404,7 +37404,7 @@ Proc Chance      : 101%
 Attributes       : Item Cast With Owner Skill (88), Unknown (493)
 Effects          :
 #1 (id=705700)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 1 | Scaled Value: 14.617 | Points Per Level: 0.153 | Stat: Sta | Target: Self (1)
+                   Base Value: 1 | Scaled Value: 10.027 | Points Per Level: 0.153 | Stat: Sta | Target: Self (1)
 Description      : Increases Stamina for 1 hour.
 Tooltip          : Increases Stamina by $s.
 
@@ -37416,7 +37416,7 @@ Proc Chance      : 101%
 Attributes       : Item Cast With Owner Skill (88), Unknown (493)
 Effects          :
 #1 (id=705769)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 2 | Scaled Value: 29.54 | Points Per Level: 0.306 | Stat: Sta | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 20.36 | Points Per Level: 0.306 | Stat: Sta | Target: Self (1)
 Description      : Increases Stamina for 1 hour.
 Tooltip          : Increases Stamina by $s1.
 
@@ -44320,7 +44320,7 @@ Category         : 40 (Type 0x0)
 Attributes       : Always Hit (114), Unknown (493)
 Effects          :
 #1 (id=1185811)  : Weapon Damage% (31)
-                   Base Value: 10 | Scaled Value: 0.7 | Points Per Level: 2 | Value Multiplier: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6) -> Self (1)
+                   Base Value: 10 | Scaled Value: 0.1 | Points Per Level: 2 | Value Multiplier: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6) -> Self (1)
 #2 (id=1185934)  : Trigger Spell (64): Exploit Weakness
                    Base Value: 0 | Scaled Value: 0 | Delay: 2500_ms | Trigger Spell: 470537 | Target: Self (1)
 Description      : Carve a scale from Nefarian's hide. Only usable when Nefarian has been significantly weakened in battle.

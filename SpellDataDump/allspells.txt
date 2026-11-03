@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -4895,7 +4895,7 @@ Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon 
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=680772)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 15 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 6 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1292241)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41245 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292242)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
@@ -5680,7 +5680,7 @@ Effects          :
 #1 (id=680105)   : Apply Aura (6) | Shapeshift (36)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 30 | Target: Self (1)
 #2 (id=680106)   : Apply Aura (6) | Stealth (16)
-                   Base Value: 300 | Scaled Value: 395 | Points Per Level: 5 | Target: Self (1)
+                   Base Value: 300 | Scaled Value: 300 | Points Per Level: 5 | Target: Self (1)
 #3 (id=680107)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -30 | Scaled Value: -30 | Target: Self (1)
                    Modified By: Camouflage (13975 effect#1)
@@ -5698,7 +5698,7 @@ Cast Time        : 5 seconds
 Attributes       : Is Ability (4), Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680465)   : Open Lock (33)
-                   Base Value: 5 | Scaled Value: 450 | Points Per Level: 5 | Misc Value: 1 | Target: Targeted Item Gameobject (26)
+                   Base Value: 5 | Scaled Value: 300 | Points Per Level: 5 | Misc Value: 1 | Target: Targeted Item Gameobject (26)
 Description      : Allows opening of locked chests and doors.
 
 Name             : Rake (desc=Rank 1) (id=1822) [Spell Family (7)] 
@@ -5836,7 +5836,7 @@ Family Flags     : 31
 Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679710)   : Open Lock (33)
-                   Base Value: 200 | Scaled Value: 500 | Points Per Level: 5 | Misc Value: 4 | Target: Targeted Gameobject (23)
+                   Base Value: 200 | Scaled Value: 350 | Points Per Level: 5 | Misc Value: 4 | Target: Targeted Gameobject (23)
 Description      : Sneak up on the trap in order to disarm it.  Don't get too close or the trap will go off.
 
 Name             : Dash (desc=Rank 1) (id=1850) 
@@ -8101,7 +8101,7 @@ Family Flags     : 27
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=680786)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 12 | Scaled Value: 180 | Points Per Level: 2 | Target: Self (1)
+                   Base Value: 12 | Scaled Value: 120 | Points Per Level: 2 | Target: Self (1)
 #2 (id=680787)   : Apply Aura (6) | Threat (10)
                    Base Value: -29 | Scaled Value: -29 | Misc Value: 127 | Target: Self (1)
 #3 (id=1231426)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
@@ -12374,7 +12374,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=683411)   : Summon Guardian (28)
-                   Base Value: 50 | Scaled Value: 296 | Points Per Level: 3 | Misc Value: 3579 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 50 | Scaled Value: 206 | Points Per Level: 3 | Misc Value: 3579 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $5729a1 yards to attack it.
 
@@ -14034,7 +14034,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684766)   : Summon Guardian (28)
-                   Base Value: 150 | Scaled Value: 366 | Points Per Level: 3 | Misc Value: 3911 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 150 | Scaled Value: 276 | Points Per Level: 3 | Misc Value: 3911 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6393a1 yards to attack it.
 
@@ -14056,7 +14056,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684783)   : Summon Guardian (28)
-                   Base Value: 220 | Scaled Value: 406 | Points Per Level: 3 | Misc Value: 3912 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 220 | Scaled Value: 316 | Points Per Level: 3 | Misc Value: 3912 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6394a1 yards to attack it.
 
@@ -14078,7 +14078,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684615)   : Summon Guardian (28)
-                   Base Value: 280 | Scaled Value: 436 | Points Per Level: 3 | Misc Value: 3913 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 280 | Scaled Value: 346 | Points Per Level: 3 | Misc Value: 3913 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6395a1 yards to attack it.
 
@@ -25742,9 +25742,9 @@ Effects          :
 #2 (id=687086)   : Apply Aura (6) | Modify Base Resistance (142)
                    Base Value: 360 | Scaled Value: 360 | Misc Value: 1 | Target: Self (1)
 #3 (id=687087)   : Apply Aura (6) | Modify Max Health (230)
-                   Base Value: 600 | Scaled Value: 1560 | Points Per Level: 32 | Target: Self (1)
+                   Base Value: 600 | Scaled Value: 1240 | Points Per Level: 32 | Target: Self (1)
 #4 (id=1231421)  : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 120 | Scaled Value: 210 | Points Per Level: 3 | Target: Self (1)
+                   Base Value: 120 | Scaled Value: 180 | Points Per Level: 3 | Target: Self (1)
 #5 (id=1231422)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 14 | Target: Self (1)
                    Affected Spells: Faerie Fire (770), Faerie Fire (778), Faerie Fire (9749), Faerie Fire (9907)
@@ -26372,7 +26372,7 @@ Effects          :
 #1 (id=687142)   : Apply Aura (6) | Periodic Damage (3): arcane every 3 seconds
                    Base Value: 60 | Scaled Value: 60 | SP Coefficient: 0.13 | Target: Targeted Enemy (6)
 #2 (id=687143)   : School Damage (2): arcane
-                   Base Value: 135 | Scaled Value: 146.5 (delta=0.156098) | Points Per Level: 2.3 | SP Coefficient: 0.15 | Target: Targeted Enemy (6)
+                   Base Value: 135 | Scaled Value: 139.6 (delta=0.156098) | Points Per Level: 2.3 | SP Coefficient: 0.15 | Target: Targeted Enemy (6)
 Description      : Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.
 Tooltip          : $w1 Arcane damage every $t1 sec.
 
@@ -26619,7 +26619,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688380)   : Direct Heal (10)
-                   Base Value: 1021 | Scaled Value: 1055 (delta=0.109331) | Points Per Level: 6.8 | SP Coefficient: 0.286 | Target: Targeted Ally (21)
+                   Base Value: 1021 | Scaled Value: 1021 (delta=0.109331) | Points Per Level: 6.8 | SP Coefficient: 0.286 | Target: Targeted Ally (21)
 #2 (id=688381)   : Apply Aura (6) | Periodic Heal (8): every 3 seconds
                    Base Value: 142 | Scaled Value: 142 | SP Coefficient: 0.071 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1 and another $o2 over $d.
@@ -26669,7 +26669,7 @@ Attributes       : Not Shapeshifted (16), Is Self Channelled (38), Allow While N
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=687989)   : Apply Party Aura (35) | Periodic Heal (8): every 2 seconds
-                   Base Value: 285 | Scaled Value: 291 | Points Per Level: 1 | SP Coefficient: 0.067 | Radius: 20 yards | Target: Self (1)
+                   Base Value: 285 | Scaled Value: 285 | Points Per Level: 1 | SP Coefficient: 0.067 | Radius: 20 yards | Target: Self (1)
 Description      : Regenerates all nearby party members within $a yards for $?$p456322[${$m1*2}][$s1] every $t1 sec for $d.  Druid must channel to maintain the spell.
 Tooltip          : Heals nearby party members for $w1 every $t1 sec.
 
@@ -26756,7 +26756,7 @@ Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688325)   : School Damage (2): arcane
-                   Base Value: 337 | Scaled Value: 350.8 (delta=0.164948) | Points Per Level: 2.3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 337 | Scaled Value: 341.6 (delta=0.164948) | Points Per Level: 2.3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Maul (desc=Rank 6) (id=9880) [Spell Family (7)] 
@@ -26916,7 +26916,7 @@ Family Flags     : 5
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=683467)   : Direct Heal (10)
-                   Base Value: 1920 | Scaled Value: 1953 (delta=0.165049) | Points Per Level: 6.6 | SP Coefficient: 1 | Target: Targeted Ally (21)
+                   Base Value: 1920 | Scaled Value: 1946.4 (delta=0.165049) | Points Per Level: 6.6 | SP Coefficient: 1 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
 
 Name             : Cower (desc=Rank 3) (id=9892) [Spell Family (7)] 
@@ -26938,7 +26938,7 @@ Family Flags     : 61
 Attributes       : Is Ability (4), Do Not Sheath (18), Discount Power On Miss (59), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688932)   : Threat (63)
-                   Base Value: -1200 | Scaled Value: -1210 | Points Per Level: -1 | Target: Targeted Enemy (6)
+                   Base Value: -1200 | Scaled Value: -1208 | Points Per Level: -1 | Target: Targeted Enemy (6)
 Description      : Cower, causing no damage but lowering your threat a large amount, making the enemy less likely to attack you.
 
 Name             : Rip (desc=Rank 5) (id=9894) [Spell Family (7)] 
@@ -27019,10 +27019,10 @@ Family Flags     : 3
 Attributes       : Is Ability (4), Do Not Sheath (18), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687760)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: -193 | Scaled Value: -207 | Points Per Level: -1.4 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: -193 | Scaled Value: -204.2 | Points Per Level: -1.4 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
                    Modified By: Feral Aggression (16858 effect#1), Feral Aggression (16859 effect#1), Feral Aggression (16860 effect#1), Feral Aggression (16861 effect#1), Feral Aggression (16862 effect#1)
 #2 (id=1361982)  : Threat (63)
-                   Base Value: 42 | Scaled Value: 50 | Points Per Level: 0.8 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 42 | Scaled Value: 48.4 | Points Per Level: 0.8 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
                    Modified By: Feral Aggression (16858 effect#1), Feral Aggression (16859 effect#1), Feral Aggression (16860 effect#1), Feral Aggression (16861 effect#1), Feral Aggression (16862 effect#1)
 Description      : The druid roars, decreasing nearby enemies' melee attack power by $s1.  Lasts $d.
 Tooltip          : Decreases melee attack power by $w1.
@@ -27191,7 +27191,7 @@ Attributes       : Is Ability (4), Do Not Sheath (18), Cancels Auto Attack Comba
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=686903)   : Apply Aura (6) | Stealth (16)
-                   Base Value: 300 | Scaled Value: 395 | Points Per Level: 5 | Target: Self (1)
+                   Base Value: 300 | Scaled Value: 300 | Points Per Level: 5 | Target: Self (1)
                    Modified By: Feral Instinct (16947 effect#1)
 #2 (id=686904)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -30 | Scaled Value: -30 | Target: Self (1)
@@ -27523,7 +27523,7 @@ Family Flags     : 30, 31
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688192)   : Create Item (24)
-                   Base Value: 10 | Scaled Value: 20 | Points Per Level: 2 | Target: Self (1)
+                   Base Value: 10 | Scaled Value: 10 | Points Per Level: 2 | Target: Self (1)
 Description      : Conjures $?s442543[${$max(20,$m1)}][$s1] $lbottle:bottles; of crystal water, providing the mage and $ghis:her; allies with something to drink.
 
 Conjured items disappear if logged out for more than 15 minutes.
@@ -27563,7 +27563,7 @@ Family Flags     : 30, 31
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687537)   : Create Item (24)
-                   Base Value: 2 | Scaled Value: 22.25 | Points Per Level: 2.25 | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 20 | Points Per Level: 2.25 | Target: Self (1)
 Description      : Conjures $s1 $lsweet roll:sweet rolls;, providing the mage and $ghis:her; allies with something to eat.
 
 Conjured items disappear if logged out for more than 15 minutes.
@@ -27662,7 +27662,7 @@ Family Flags     : 0, 30
 Attributes       : Not Shapeshifted (16), Aura Never Bounces (148), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687078)   : School Damage (2): fire
-                   Base Value: 451 | Scaled Value: 463 (delta=0.241379) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 451 | Scaled Value: 451 (delta=0.241379) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=687079)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
 Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
@@ -27794,7 +27794,7 @@ Effects          :
                    Base Value: -40 | Scaled Value: -40 | Radius: 10 yards | Mechanic: Snare | Target: Enemies in Cone (24)
                    Modified By: Permafrost (11175 effect#2)
 #2 (id=690410)   : School Damage (2): frost
-                   Base Value: 340 | Scaled Value: 347.5 (delta=0.085714) | Points Per Level: 1.5 | SP Coefficient: 0.129 | Radius: 10 yards | Target: Enemies in Cone (24)
+                   Base Value: 340 | Scaled Value: 343 (delta=0.085714) | Points Per Level: 1.5 | SP Coefficient: 0.129 | Radius: 10 yards | Target: Enemies in Cone (24)
 #3 (id=1363759)  : Dummy (3)
                    Base Value: 4 | Scaled Value: 4 | Radius: 10 yards | Target: Enemies in Cone (24)
 #4 (id=1363760)  : Dummy (3)
@@ -28109,7 +28109,7 @@ Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon 
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=687010)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 1.5 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 0 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1292621)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41260 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292622)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
@@ -28312,7 +28312,7 @@ Family Flags     : 4, 30
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688313)   : School Damage (2): fire
-                   Base Value: 178 | Scaled Value: 184.8 (delta=0.165354) | Points Per Level: 1.7 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 178 | Scaled Value: 181.4 (delta=0.165354) | Points Per Level: 1.7 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Scorch the enemy for $s1 Fire damage.
 
 Name             : Arcane Missiles (desc=Rank 6) (id=10211) [Spell Family (3)] 
@@ -28403,7 +28403,7 @@ Family Flags     : 2, 30, 99
 Attributes       : Not Shapeshifted (16), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687307)   : School Damage (2): fire
-                   Base Value: 417 | Scaled Value: 425.5 (delta=0.201439) | Points Per Level: 1.7 | SP Coefficient: 0.157 | Radius: 5 yards | Target: at Enemy in Area (16)
+                   Base Value: 417 | Scaled Value: 423.8 (delta=0.201439) | Points Per Level: 1.7 | SP Coefficient: 0.157 | Radius: 5 yards | Target: at Enemy in Area (16)
 #2 (id=687308)   : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41271 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292693)  : Apply Aura (6) | Periodic Dummy (226): every 2 seconds
@@ -28914,7 +28914,7 @@ Family Flags     : 77
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688432)   : School Damage (2): holy
-                   Base Value: 502 | Scaled Value: 518 (delta=0.108614) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 502 | Scaled Value: 502 (delta=0.108614) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Causes $s1 Holy damage to an Undead or Demon target.
 
 Name             : Holy Wrath (desc=Rank 2) (id=10318) [Spell Family (10)] 
@@ -28936,7 +28936,7 @@ Family Flags     : 53
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687923)   : School Damage (2): holy
-                   Base Value: 533 | Scaled Value: 540.6 (delta=0.161351) | Points Per Level: 1.9 | SP Coefficient: 0.19 | Radius: 0 - 20 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 533 | Scaled Value: 533 (delta=0.161351) | Points Per Level: 1.9 | SP Coefficient: 0.19 | Radius: 0 - 20 yards | Target: Source (22) -> Enemy in Area (15)
 Description      : Sends bolts of holy power in all directions, causing $s1 Holy damage to all Undead and Demon targets within $a1 yds and stunning them for $429147d.
 
 Name             : Redemption (desc=Rank 2) (id=10322) [Spell Family (10)] 
@@ -29087,7 +29087,7 @@ Family Flags     : 111
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), No Aura Icon (60), Include In Advanced Combat Log (72), No Aura Log (202), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688696)   : Normalized Weapon Damage (121)
-                   Base Value: 93 | Scaled Value: 109 (delta=0.25) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 93 | Scaled Value: 93 (delta=0.25) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 #2 (id=1341159)  : Weapon Damage% (31)
                    Base Value: 50 | Scaled Value: 0.5 | Target: Targeted Enemy (6)
 #3 (id=1341160)  : Server Side Script (77)
@@ -29190,7 +29190,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687722)   : Direct Heal (10)
-                   Base Value: 1344 | Scaled Value: 1371.5 (delta=0.132514) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 1344 | Scaled Value: 1366 (delta=0.132514) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Rockbiter Weapon (desc=Rank 4) (id=10399) 
@@ -29402,7 +29402,7 @@ Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688559)   : School Damage (2): nature
-                   Base Value: 301 | Scaled Value: 310.5 (delta=0.052731) | Points Per Level: 1.9 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
+                   Base Value: 301 | Scaled Value: 301 (delta=0.052731) | Points Per Level: 1.9 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
 #2 (id=688560)   : Interrupt Cast (68)
                    Base Value: 0 | Scaled Value: 0 | Mechanic: Interrupt | Target: Targeted Enemy (6)
 Description      : Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
@@ -29445,7 +29445,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687893)   : Summon Guardian (28)
-                   Base Value: 390 | Scaled Value: 516 | Points Per Level: 3 | Misc Value: 7398 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 390 | Scaled Value: 426 | Points Per Level: 3 | Misc Value: 7398 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $10423a1 yards to attack it.
 
@@ -29467,7 +29467,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689036)   : Summon Guardian (28)
-                   Base Value: 480 | Scaled Value: 576 | Points Per Level: 3 | Misc Value: 7399 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 480 | Scaled Value: 486 | Points Per Level: 3 | Misc Value: 7399 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $10424a1 yards to attack it.
 
@@ -29864,7 +29864,7 @@ Family Flags     : 7
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=689105)   : Direct Heal (10)
-                   Base Value: 820 | Scaled Value: 841 (delta=0.109091) | Points Per Level: 4.2 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
+                   Base Value: 820 | Scaled Value: 820 (delta=0.109091) | Points Per Level: 4.2 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
 
 Name             : Frost Shock (desc=Rank 3) (id=10472) [Spell Family (11)] 
@@ -29913,7 +29913,7 @@ Effects          :
 #1 (id=688021)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
 #2 (id=688022)   : School Damage (2): frost
-                   Base Value: 283 | Scaled Value: 292 (delta=0.056) | Points Per Level: 1.8 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
+                   Base Value: 283 | Scaled Value: 286.6 (delta=0.056) | Points Per Level: 1.8 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
 Description      : Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
 Tooltip          : Movement slowed by $s1%.
 
@@ -30715,7 +30715,7 @@ Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688920)   : School Damage (2): nature
-                   Base Value: 123 | Scaled Value: 127 (delta=0.111111) | Points Per Level: 0.8 | SP Coefficient: 0.571 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 123 | Scaled Value: 126.2 (delta=0.111111) | Points Per Level: 0.8 | SP Coefficient: 0.571 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10608) [Spell Family (11)] 
@@ -31565,7 +31565,7 @@ Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689256)   : Power Burn (62)
-                   Base Value: 759 | Scaled Value: 769.5 (delta=0.055336) | Points Per Level: 2.1 | Value Multiplier: 0.5 | Target: Targeted Enemy (6)
+                   Base Value: 759 | Scaled Value: 767.4 (delta=0.055336) | Points Per Level: 2.1 | Value Multiplier: 0.5 | Target: Targeted Enemy (6)
 Description      : Drains $s1 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.
 
 Name             : Resurrection (desc=Rank 3) (id=10880) [Spell Family (6)] 
@@ -31830,7 +31830,7 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Fail on all targets immune (85), Aura Never Bounces (148), Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688352)   : Apply Aura (6) | Absorb Damage (69)
-                   Base Value: 928 | Scaled Value: 949.5 | Points Per Level: 4.3 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
+                   Base Value: 928 | Scaled Value: 928 | Points Per Level: 4.3 | SP Coefficient: 0.1 | Misc Value: 0x7f | Target: Targeted Raid Member (57)
                    Affected School(s): All
                    Modified By: Improved Power Word: Shield (14748 effect#1), Improved Power Word: Shield (24191 effect#1)
 Description      : Draws on the soul of the party member to shield them, absorbing $s1 damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.
@@ -31972,7 +31972,7 @@ Family Flags     : 11
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=689213)   : Direct Heal (10)
-                   Base Value: 825 | Scaled Value: 846 (delta=0.164972) | Points Per Level: 4.2 | Value Multiplier: 1 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
+                   Base Value: 825 | Scaled Value: 841.8 (delta=0.164972) | Points Per Level: 4.2 | Value Multiplier: 1 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
 
 Name             : Renew (desc=Rank 7) (id=10927) [Spell Family (6)] 
@@ -32163,7 +32163,7 @@ Family Flags     : 14
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Threat (42), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688783)   : Apply Aura (6) | Temporary Threat Reduction (103)
-                   Base Value: -4100 | Scaled Value: -4130 | Points Per Level: -3 | Target: Self (1)
+                   Base Value: -4100 | Scaled Value: -4100 | Points Per Level: -3 | Target: Self (1)
 Description      : Fade out, discouraging enemies from attacking you for $d.  More effective than Fade (rank 5).
 Tooltip          : Reduced threat level.
 
@@ -32233,7 +32233,7 @@ Family Flags     : 13
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689115)   : School Damage (2): shadow
-                   Base Value: 485 | Scaled Value: 498 (delta=0.054159) | Points Per Level: 2.6 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 485 | Scaled Value: 490.2 (delta=0.054159) | Points Per Level: 2.6 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Blasts the target for $s1 Shadow damage, but causes a high amount of threat.
 
 Name             : Inner Fire (desc=Rank 5) (id=10951) [Spell Family (6)] 
@@ -32389,7 +32389,7 @@ Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688297)   : Direct Heal (10)
-                   Base Value: 583 | Scaled Value: 596.5 (delta=0.053886) | Points Per Level: 1.5 | SP Coefficient: 0.286 | Radius: 0 - 40 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 583 | Scaled Value: 583 (delta=0.053886) | Points Per Level: 1.5 | SP Coefficient: 0.286 | Radius: 0 - 40 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : A powerful prayer that heals the target and their party for $s1. Party members must be within $a1 yards of target.
 
 Name             : Greater Heal (desc=Rank 2) (id=10963) [Spell Family (6)] 
@@ -32449,7 +32449,7 @@ Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688200)   : Direct Heal (10)
-                   Base Value: 1782 | Scaled Value: 1819.5 (delta=0.109359) | Points Per Level: 7.5 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Ally (21)
+                   Base Value: 1782 | Scaled Value: 1797 (delta=0.109359) | Points Per Level: 7.5 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Ally (21)
 Description      : A slow casting spell that heals a single target for $s1.
 
 Name             : Weak Alcohol (id=11007) 
@@ -33703,7 +33703,7 @@ Family Flags     : 27
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688797)   : Threat (63)
-                   Base Value: -3000 | Scaled Value: -3050 | Points Per Level: -5 | Target: Targeted Enemy (6)
+                   Base Value: -3000 | Scaled Value: -3040 | Points Per Level: -5 | Target: Targeted Enemy (6)
                    Modified By: Sleight of Hand (30892 effect#2)
 Description      : Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
@@ -33777,7 +33777,7 @@ Attributes       : Is Ability (4), Do Not Log (8), Not Shapeshifted (16), Do Not
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #2 (id=690252)   : Apply Aura (6) | Stealth (16)
-                   Base Value: 270 | Scaled Value: 365 | Points Per Level: 5 | Target: Self (1)
+                   Base Value: 270 | Scaled Value: 360 | Points Per Level: 5 | Target: Self (1)
 #3 (id=690253)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Tooltip          : Improved stealth.
@@ -34763,7 +34763,7 @@ Family Flags     : 16
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Only On Player (104), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689517)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 111 | Scaled Value: 116.4 | Points Per Level: 0.6 | Radius: 20 yards | Target: Raid in Area (56)
+                   Base Value: 111 | Scaled Value: 115.8 | Points Per Level: 0.6 | Radius: 20 yards | Target: Raid in Area (56)
                    Modified By: Improved Battle Shout (12318 effect#1), Improved Battle Shout (12857 effect#1), Improved Battle Shout (12858 effect#1), Improved Battle Shout (12860 effect#1), Improved Battle Shout (12861 effect#1)
 Description      : The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
 Tooltip          : Increases your melee attack power by $w1.
@@ -34832,10 +34832,10 @@ Family Flags     : 17
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Taps immediately (215), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690063)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: -196 | Scaled Value: -210 | Points Per Level: -1.4 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: -196 | Scaled Value: -204.4 | Points Per Level: -1.4 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
                    Modified By: Improved Demoralizing Shout (12324 effect#1), Improved Demoralizing Shout (12876 effect#1), Improved Demoralizing Shout (12877 effect#1), Improved Demoralizing Shout (12878 effect#1), Improved Demoralizing Shout (12879 effect#1)
 #2 (id=1361987)  : Threat (63)
-                   Base Value: 43 | Scaled Value: 51 | Points Per Level: 0.8 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 43 | Scaled Value: 47.8 | Points Per Level: 0.8 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
                    Modified By: Improved Demoralizing Shout (12324 effect#1), Improved Demoralizing Shout (12876 effect#1), Improved Demoralizing Shout (12877 effect#1), Improved Demoralizing Shout (12878 effect#1), Improved Demoralizing Shout (12879 effect#1)
 Description      : Reduces the melee attack power of all enemies within $a1 yards by $s1 for $d.
 Tooltip          : Reduces melee attack power by $w1.
@@ -35444,7 +35444,7 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689818)   : School Damage (2): shadow
-                   Base Value: 251 | Scaled Value: 260 (delta=0.108108) | Points Per Level: 1.8 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Enemy (6)
+                   Base Value: 251 | Scaled Value: 251 (delta=0.108108) | Points Per Level: 1.8 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 Name             : Immolate (desc=Rank 5) (id=11665) [Spell Family (5)] 
@@ -35528,7 +35528,7 @@ Effects          :
 #1 (id=689824)   : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
                    Base Value: 52 | Scaled Value: 52 | SP Coefficient: 0.13 | Target: Targeted Enemy (6)
 #2 (id=689825)   : School Damage (2): fire
-                   Base Value: 146 | Scaled Value: 157.5 | Points Per Level: 2.3 | SP Coefficient: 0.2 | Target: Targeted Enemy (6)
+                   Base Value: 146 | Scaled Value: 146 | Points Per Level: 2.3 | SP Coefficient: 0.2 | Target: Targeted Enemy (6)
 #3 (id=1107410)  : Server Side Script (77)
                    Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
 Description      : Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
@@ -35653,7 +35653,7 @@ Aura Interrupt   : Action (2), Moving (3), Interacting (10), Looting (11), Attac
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=689562)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 1.5 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 0.6 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1144506)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41456 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1296178)  : Apply Aura (6) | Periodic Dummy (226): every 2 seconds
@@ -35688,7 +35688,7 @@ Family Flags     : 6, 40
 Attributes       : No Redirection (35), No Reflection (39), No Initial Threat (86), Periodic Can Crit (265), Unknown (493)
 Effects          :
 #1 (id=693052)   : School Damage (2): fire
-                   Base Value: 206 | Scaled Value: 213 | Points Per Level: 0.7 | SP Coefficient: 0.022 | Radius: 0 - 10 yards | Target: at Self (18) -> at Enemy in Area (16)
+                   Base Value: 206 | Scaled Value: 210.2 | Points Per Level: 0.7 | SP Coefficient: 0.022 | Radius: 0 - 10 yards | Target: at Self (18) -> at Enemy in Area (16)
 Description      : Deals $s1 Fire damage.
 
 Name             : Hellfire (desc=Rank 2) (id=11683) [Spell Family (5)] 
@@ -35733,7 +35733,7 @@ Effects          :
 #1 (id=688755)   : Apply Aura (6) | Periodic Trigger Spell (23): Hellfire Effect every 1 seconds
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 11682 | Target: Self (1)
 #2 (id=688756)   : Apply Aura (6) | Periodic Damage (3): fire every 1 seconds
-                   Base Value: 206 | Scaled Value: 213 | Points Per Level: 0.7 | SP Coefficient: 0.022 | Target: Self (1)
+                   Base Value: 206 | Scaled Value: 210.2 | Points Per Level: 0.7 | SP Coefficient: 0.022 | Target: Self (1)
 #3 (id=688757)   : Apply Aura (6) | Mechanic Immunity (77)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 16 | Target: Self (1)
 Description      : Ignites the area surrounding the caster, causing $s2 Fire damage to $ghimself:herself; and $11682s1 Fire damage to all nearby enemies every $t2 sec.  Lasts $d.
@@ -35790,7 +35790,7 @@ Family Flags     : 18
 Attributes       : Not Shapeshifted (16), No Threat (42), Don't Block Mana Regen (89), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689914)   : Dummy (3)
-                   Base Value: 420 | Scaled Value: 430 | Points Per Level: 1 | Radius: 50000 yards | Target: Self (1)
+                   Base Value: 420 | Scaled Value: 424 | Points Per Level: 1 | Radius: 50000 yards | Target: Self (1)
 Description      : Converts ${($m1+$SPI*1)*(1+$18182m1/100)} Health into ${($m1+$SPI*1)*(1+$18182m1/100)} Mana for you. Spirit increases the amount converted.
 
 Name             : Health Funnel (desc=Rank 5) (id=11693) [Spell Family (5)] 
@@ -36471,9 +36471,9 @@ Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=688637)   : School Damage (2): fire
-                   Base Value: 44 | Scaled Value: 47 (delta=0.113636) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
+                   Base Value: 44 | Scaled Value: 45.2 (delta=0.113636) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
 #2 (id=1343957)  : Dummy (3)
-                   Base Value: 44 | Scaled Value: 47 (delta=0.113636) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
+                   Base Value: 44 | Scaled Value: 45.2 (delta=0.113636) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Blood Pact (desc=Rank 4) (id=11766) [Spell Family (5)] 
@@ -36584,7 +36584,7 @@ Family Flags     : 25
 Attributes       : No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=689842)   : Threat (63)
-                   Base Value: 600 | Scaled Value: 615 | Points Per Level: 3 | Target: Targeted Enemy (6)
+                   Base Value: 600 | Scaled Value: 600 | Points Per Level: 3 | Target: Targeted Enemy (6)
                    Modified By: Improved Voidwalker (18705 effect#1)
 Description      : Taunts the creature, increasing the chance that it will attack the Voidwalker.  More effective than Torment (Rank 5).
 
@@ -36668,7 +36668,7 @@ Family Flags     : 30
 Attributes       : Do Not Sheath (18), No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=689917)   : Threat (63)
-                   Base Value: -127 | Scaled Value: -171 | Points Per Level: -1 | Target: Targeted Enemy (6)
+                   Base Value: -127 | Scaled Value: -141 | Points Per Level: -1 | Target: Targeted Enemy (6)
                    Modified By: Improved Sayaad (18754 effect#1)
 Description      : Soothes the target, increasing the chance that it will attack something else.  More effective than Soothing Kiss (Rank 2).
 
@@ -36689,7 +36689,7 @@ Family Flags     : 30
 Attributes       : Do Not Sheath (18), No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=689783)   : Threat (63)
-                   Base Value: -165 | Scaled Value: -175 | Points Per Level: -1 | Target: Targeted Enemy (6)
+                   Base Value: -165 | Scaled Value: -167 | Points Per Level: -1 | Target: Targeted Enemy (6)
                    Modified By: Improved Sayaad (18754 effect#1)
 Description      : Soothes the target, increasing the chance that it will attack something else.  More effective than Soothing Kiss (Rank 3).
 
@@ -39264,7 +39264,7 @@ Family Flags     : 23
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690758)   : School Damage (2): fire
-                   Base Value: 493 | Scaled Value: 504.4 (delta=0.163022) | Points Per Level: 1.9 | SP Coefficient: 0.129 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 493 | Scaled Value: 493 (delta=0.163022) | Points Per Level: 1.9 | SP Coefficient: 0.129 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 #2 (id=690759)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -50 | Scaled Value: -50 | Radius: 10 yards | Mechanic: Snare | Target: Source (22) -> Enemy in Area (15)
 Description      : A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $s2% reduced movement speed for $d.
@@ -39356,7 +39356,7 @@ Family Flags     : 19, 32
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690154)   : Apply Aura (6) | Absorb Damage (69)
-                   Base Value: 811 | Scaled Value: 835 | Points Per Level: 4 | Misc Value: 0x7f | Target: Self (1)
+                   Base Value: 811 | Scaled Value: 819 | Points Per Level: 4 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
                    Modified By: Frost Warding (11189 effect#3)
 #2 (id=1365009)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
@@ -40234,7 +40234,7 @@ Range            : 30 yards
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=690421)   : Tame Creature (55)
-                   Base Value: 10 | Scaled Value: 90 | Points Per Level: 1 | Target: Targeted Enemy (6)
+                   Base Value: 10 | Scaled Value: 60 | Points Per Level: 1 | Target: Targeted Enemy (6)
 
 Name             : Plant Gor'tesh Head (id=13484) 
 School           : Physical
@@ -43624,7 +43624,7 @@ Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon 
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=691336)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 12 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 3 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1292238)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41244 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292239)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
@@ -43650,7 +43650,7 @@ Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon 
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=692653)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 9.6 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 0.6 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1292223)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41242 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292224)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
@@ -48514,7 +48514,7 @@ Family Flags     : 101
 Attributes       : Not Shapeshifted (16), Initiates Combat (Enables Auto-Attack) (41), No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=691055)   : Threat (63)
-                   Base Value: 415 | Scaled Value: 465 | Points Per Level: 5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 415 | Scaled Value: 415 | Points Per Level: 5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Taunt the target, increasing the likelihood the creature will focus attacks on you.
 
 Name             : Fill Nagmara's Vial (id=14929) 
@@ -49484,7 +49484,7 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691780)   : School Damage (2): nature
-                   Base Value: 196 | Scaled Value: 202 (delta=0.108352) | Points Per Level: 1.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 196 | Scaled Value: 200.8 (delta=0.108352) | Points Per Level: 1.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Crystal Restore (id=15229) [Spell Family (6)] 
@@ -49668,7 +49668,7 @@ Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691020)   : School Damage (2): holy
-                   Base Value: 208 | Scaled Value: 220 (delta=0.233831) | Points Per Level: 2 | SP Coefficient: 0.75 | Target: Targeted Enemy (6)
+                   Base Value: 208 | Scaled Value: 208 (delta=0.233831) | Points Per Level: 2 | SP Coefficient: 0.75 | Target: Targeted Enemy (6)
 #2 (id=691021)   : Apply Aura (6) | Periodic Damage (3): holy every 2 seconds
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 0.05 | Target: Targeted Enemy (6)
 Description      : Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.
@@ -50925,7 +50925,7 @@ Family Flags     : 16, 49
 Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690698)   : Threat (63)
-                   Base Value: 600 | Scaled Value: 636 | Points Per Level: 4 | Target: Targeted Enemy (6)
+                   Base Value: 600 | Scaled Value: 600 | Points Per Level: 4 | Target: Targeted Enemy (6)
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 5).
 
 Name             : Lil' Smoky (id=15633) 
@@ -52620,7 +52620,7 @@ Family Flags     : 22
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Item Cast With Owner Skill (88), Unknown (493)
 Effects          :
 #1 (id=693503)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 554 | Scaled Value: 686 | Points Per Level: 16.5 | Target: Self (1)
+                   Base Value: 554 | Scaled Value: 653 | Points Per Level: 16.5 | Target: Self (1)
                    Modified By: Elemental Weapons (16266 effect#1)
 #2 (id=693504)   : Apply Aura (6) | Threat (10)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 127 | Target: Self (1)
@@ -52853,7 +52853,7 @@ Family Flags     : 21
 Attributes       : Do Not Log (8), Do Not Sheath (18), Unknown (493)
 Effects          :
 #1 (id=693401)   : Dummy (3)
-                   Base Value: 2498 | Scaled Value: 3122 | Points Per Level: 78 | Target: Targeted Enemy (6)
+                   Base Value: 2498 | Scaled Value: 2810 | Points Per Level: 78 | Target: Targeted Enemy (6)
 
 Name             : Frostbrand Attack (desc=Rank 4) (id=16352) [Spell Family (11)] 
 Class            : Shaman
@@ -52888,7 +52888,7 @@ Effects          :
 #1 (id=693661)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -25 | Scaled Value: -25 | Mechanic: Snare | Target: Targeted Enemy (6)
 #2 (id=693662)   : School Damage (2): frost
-                   Base Value: 158 | Scaled Value: 202.8 | Points Per Level: 5.6 | SP Coefficient: 0.1 | Target: Targeted Enemy (6)
+                   Base Value: 158 | Scaled Value: 169.2 | Points Per Level: 5.6 | SP Coefficient: 0.1 | Target: Targeted Enemy (6)
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Frostbrand Weapon (desc=Rank 4) (id=16355) 
@@ -52937,7 +52937,7 @@ Family Flags     : 23
 Attributes       : Proc Failure Burns Charge (0), No Aura Icon (60), Item Cast With Owner Skill (88), Unknown (493)
 Effects          :
 #1 (id=693797)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 333 | Scaled Value: 433 | Points Per Level: 12.5 | Target: Self (1)
+                   Base Value: 333 | Scaled Value: 333 | Points Per Level: 12.5 | Target: Self (1)
                    Modified By: Elemental Weapons (16266 effect#3)
 #2 (id=693798)   : Extra Attacks (19)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
@@ -53829,7 +53829,7 @@ Category Cooldown: 5 seconds
 Attributes       : Not Shapeshifted (16), No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=693342)   : Threat (63)
-                   Base Value: -225 | Scaled Value: -255 | Points Per Level: -3 | Target: Targeted Enemy (6)
+                   Base Value: -225 | Scaled Value: -240 | Points Per Level: -3 | Target: Targeted Enemy (6)
 Description      : Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.
 
 Name             : Whitesoul Helm (id=16724) 
@@ -55743,7 +55743,7 @@ Proc Chance      : 101%
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Sitting (27), Unknown (493)
 Effects          :
 #1 (id=693960)   : Apply Party Aura (35) | Resistance (22)
-                   Base Value: 40 | Scaled Value: 3600 | Points Per Level: 40 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
+                   Base Value: 40 | Scaled Value: 2400 | Points Per Level: 40 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
 Description      : Gives $s1 additional armor to nearby party members for $d. Players may only have one aura on them per paladin at any one time.
 Tooltip          : Armor increased by $s1.
 
@@ -56283,7 +56283,7 @@ Attributes       : Not Shapeshifted (16), No Redirection (35), Is Self Channelle
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=694778)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 1.8 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 0 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=694779)   : Create Area Trigger (179)
                    Base Value: -20 | Scaled Value: -20 | Misc Value: 41170 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1291065)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
@@ -57813,7 +57813,7 @@ Attributes       : Not In Combat (Only Peaceful) (28), Is Self Channelled (38), 
 Channel Interrupt: Damage (2), Action (3), Moving (4), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=694507)   : Apply Aura (6) | Periodic Heal (8): every 2 seconds
-                   Base Value: 386 | Scaled Value: 393.8 | Points Per Level: 1.3 | Target: Self (1)
+                   Base Value: 386 | Scaled Value: 388.6 | Points Per Level: 1.3 | Target: Self (1)
                    Modified By: Improved Voidwalker (18705 effect#1)
 Description      : The Voidwalker consumes nearby shadows to bolster its form, recovering $o1 health over $d.  Cannot be used while in combat.
 Tooltip          : Heals $s1 damage every $t1 seconds.
@@ -58456,7 +58456,7 @@ Family Flags     : 8
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=694812)   : School Damage (2): fire
-                   Base Value: 114 | Scaled Value: 121.2 (delta=0.162162) | Points Per Level: 1.2 | SP Coefficient: 0.429 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
+                   Base Value: 114 | Scaled Value: 116.4 (delta=0.162162) | Points Per Level: 1.2 | SP Coefficient: 0.429 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
 Description      : Inflict searing pain on the enemy target, causing $s1 Fire damage.  Causes a high amount of threat.
 
 Name             : Soul Fire (desc=Rank 2) (id=17924) [Spell Family (5)] 
@@ -58479,7 +58479,7 @@ Family Flags     : 6, 39
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696430)   : School Damage (2): fire
-                   Base Value: 431 | Scaled Value: 442.4 (delta=0.224747) | Points Per Level: 1.9 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 431 | Scaled Value: 438.6 (delta=0.224747) | Points Per Level: 1.9 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Burn the enemy's soul, causing $s1 Fire damage.
 
 Name             : Death Coil (desc=Rank 2) (id=17925) [Spell Family (5)] 
@@ -58528,7 +58528,7 @@ Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696431)   : Health Leech (9)
-                   Base Value: 454 | Scaled Value: 472 | Points Per Level: 3 | Value Multiplier: 1 | SP Coefficient: 0.214 | Target: Targeted Enemy (6)
+                   Base Value: 454 | Scaled Value: 460 | Points Per Level: 3 | Value Multiplier: 1 | SP Coefficient: 0.214 | Target: Targeted Enemy (6)
 Description      : Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
 Tooltip          : Horrified.
 
@@ -59533,7 +59533,7 @@ Proc Chance      : 101%
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=694853)   : School Damage (2): arcane
-                   Base Value: 85 | Scaled Value: 140 | Points Per Level: 1 | Target: Targeted Enemy (6)
+                   Base Value: 85 | Scaled Value: 110 | Points Per Level: 1 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Arcane damage.
 
 Name             : Pyroclasm (id=18093) 
@@ -61577,7 +61577,7 @@ Family Flags     : 22, 30
 Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691706)   : School Damage (2): fire
-                   Base Value: 583 | Scaled Value: 610.6 (delta=0.216687) | Points Per Level: 4.6 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 583 | Scaled Value: 583 (delta=0.216687) | Points Per Level: 4.6 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=691707)   : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
                    Base Value: 53 | Scaled Value: 53 | SP Coefficient: 0.15 | Target: Targeted Enemy (6)
 Description      : Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
@@ -61865,7 +61865,7 @@ Effects          :
 #1 (id=696325)   : Apply Aura (6) | Unknown(86)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=696326)   : School Damage (2): shadow
-                   Base Value: 266 | Scaled Value: 276.8 (delta=0.109244) | Points Per Level: 1.8 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 266 | Scaled Value: 273.2 (delta=0.109244) | Points Per Level: 1.8 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
 Tooltip          : Death will grant the Warlock a Soul Shard.
 
@@ -61997,7 +61997,7 @@ Family Flags     : 9, 55
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696822)   : School Damage (2): fire
-                   Base Value: 282 | Scaled Value: 289.8 (delta=0.219124) | Points Per Level: 1.3 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 282 | Scaled Value: 282 (delta=0.219124) | Points Per Level: 1.3 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
 
 Name             : Opening Termite Barrel (id=18952) 
@@ -62913,7 +62913,7 @@ Family Flags     : 24
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=695985)   : Direct Heal (10)
-                   Base Value: 1383 | Scaled Value: 1432.2 (delta=0.164934) | Points Per Level: 8.2 | SP Coefficient: 0.429 | Target: Self (1)
+                   Base Value: 1383 | Scaled Value: 1399.4 (delta=0.164934) | Points Per Level: 8.2 | SP Coefficient: 0.429 | Target: Self (1)
 Description      : Instantly heals the caster for $s1.
 
 Name             : Spell Lock (desc=Rank 1) (id=19244) [Spell Family (5)] 
@@ -64293,7 +64293,7 @@ Family Flags     : 25
 Attributes       : No AutoCast (AI) (49), Ignore Line of Sight (66), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=697089)   : Apply Aura (6) | Absorb Damage (69)
-                   Base Value: 1905 | Scaled Value: 1943.4 | Points Per Level: 6.4 | Misc Value: 0x7f | Target: Master (27)
+                   Base Value: 1905 | Scaled Value: 1930.6 | Points Per Level: 6.4 | Misc Value: 0x7f | Target: Master (27)
                    Affected School(s): All
                    Modified By: Improved Voidwalker (18705 effect#1)
 #2 (id=697090)   : Instant Kill (1)
@@ -66595,7 +66595,7 @@ Family Flags     : 13, 30
 Attributes       : Not Shapeshifted (16), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=696239)   : Direct Heal (10)
-                   Base Value: 303 | Scaled Value: 316 (delta=0.110193) | Points Per Level: 2.6 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
+                   Base Value: 303 | Scaled Value: 308.2 (delta=0.110193) | Points Per Level: 2.6 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
 
 Name             : Holy Light (id=19968) [Spell Family (10)] 
@@ -68512,9 +68512,9 @@ Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
 #1 (id=697832)   : School Damage (2): holy
-                   Base Value: 170 | Scaled Value: 194.6 (delta=0.094118) | Points Per Level: 4.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 170 | Scaled Value: 178.2 (delta=0.094118) | Points Per Level: 4.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 #3 (id=697833)   : Dummy (3)
-                   Base Value: 1786 | Scaled Value: 2068 | Points Per Level: 47 | SP Coefficient: 0.2
+                   Base Value: 1786 | Scaled Value: 1880 | Points Per Level: 47 | SP Coefficient: 0.2
 
 Name             : Seal of Righteousness (desc=Rank 2) (id=20287) [Spell Family (10)] 
 Hotfixed         : Attributes
@@ -68708,7 +68708,7 @@ Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698724)   : Apply Aura (6) | Dummy (4)
-                   Base Value: 1786 | Scaled Value: 2068 | Points Per Level: 47 | Target: Self (1)
+                   Base Value: 1786 | Scaled Value: 1880 | Points Per Level: 47 | Target: Self (1)
 #3 (id=698725)   : Apply Aura (6) | Dummy (4)
                    Base Value: 20286 | Scaled Value: 20286 | Target: Self (1)
 Description      : Fills the Paladin with holy spirit for $d, granting each melee attack an additional ${($20286s3/87+$<1h>)*$<mult>} to ${($20286s3/25+$<2h>)*$<mult>} Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.
@@ -69464,11 +69464,11 @@ Family Flags     : 70
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Not a Proc (105), Unknown (493)
 Effects          :
 #1 (id=698155)   : School Damage (2): holy
-                   Base Value: 153 | Scaled Value: 175.14 (delta=0.087591) | Points Per Level: 3.69 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 153 | Scaled Value: 160.38 (delta=0.087591) | Points Per Level: 3.69 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 #2 (id=1340961)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 #3 (id=1340962)  : Dummy (3)
-                   Base Value: 1607 | Scaled Value: 1860.8 | Points Per Level: 42.299999 | SP Coefficient: 0.18
+                   Base Value: 1607 | Scaled Value: 1691.6 | Points Per Level: 42.299999 | SP Coefficient: 0.18
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Seal of Fury (desc=Rank 4) (id=20415) [Spell Family (10)] 
@@ -69637,7 +69637,7 @@ Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698428)   : Apply Aura (6) | Dummy (4)
-                   Base Value: 1607 | Scaled Value: 1859 | Points Per Level: 42 | Trigger Spell: 20418 | Target: Self (1)
+                   Base Value: 1607 | Scaled Value: 1691 | Points Per Level: 42 | Trigger Spell: 20418 | Target: Self (1)
 #2 (id=1340945)  : None (0)
                    Base Value: 50 | Scaled Value: 50
 #3 (id=698429)   : Apply Aura (6) | Dummy (4)
@@ -70136,7 +70136,7 @@ Attributes       : Is Ability (4), Do Not Sheath (18), Cancels Auto Attack Comba
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Moving (3), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=697482)   : Apply Aura (6) | Stealth (16)
-                   Base Value: 0 | Scaled Value: 445 | Points Per Level: 5 | SP Coefficient: 1 | Target: Self (1)
+                   Base Value: 0 | Scaled Value: 295 | Points Per Level: 5 | SP Coefficient: 1 | Target: Self (1)
 #2 (id=1269018)  : Apply Aura (6) | Temporary Threat Reduction (103)
                    Base Value: -999999 | Scaled Value: -999999 | SP Coefficient: 1 | Target: Self (1)
 Description      : Activate to slip into the shadows, reducing the chance for enemies to detect your presence. Lasts until cancelled or upon moving. Using this ability in combat discourages enemies from attacking you, but increases the cooldown to 2 min.
@@ -71798,7 +71798,7 @@ Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
 #1 (id=698431)   : School Damage (2): holy
-                   Base Value: 356 | Scaled Value: 404.8 (delta=0.095506) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 356 | Scaled Value: 356 (delta=0.095506) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20967) [Spell Family (10)] 
 Class            : Paladin
@@ -78068,7 +78068,7 @@ Labels           : 19: Warlock Spells
 Attributes       : No Immunities (29), Ignore Caster & Target Restrictions (124), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=700524)   : Apply Aura Pet in Area (119) | Modify Damage Taken% (87)
-                   Base Value: 0 | Scaled Value: 18 | Points Per Level: 0.2 | Misc Value: 0x7e | Radius: 100 yards | Target: Self (1)
+                   Base Value: 0 | Scaled Value: 12 | Points Per Level: 0.2 | Misc Value: 0x7e | Radius: 100 yards | Target: Self (1)
 Tooltip          : Reduces Magic damage taken by $w1%.
 
 Name             : Sayge's Dark Fortune of Damage (id=23768) 
@@ -79108,7 +79108,7 @@ Family Flags     : 39
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Combat Feedback When Usable (137), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=700170)   : School Damage (2): holy
-                   Base Value: 498 | Scaled Value: 513.5 (delta=0.098113) | Points Per Level: 3.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 498 | Scaled Value: 498 (delta=0.098113) | Points Per Level: 3.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.
 
 Name             : String Together Heads (id=24245) [Hidden] 
@@ -79570,7 +79570,7 @@ Triggered By     : Intimidation (19577)
 Attributes       : Do Not Display Range (126), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=701109)   : Threat (63)
-                   Base Value: 580 | Scaled Value: 1630 | Points Per Level: 21 | Target: Targeted Enemy (6)
+                   Base Value: 580 | Scaled Value: 1000 | Points Per Level: 21 | Target: Targeted Enemy (6)
 #2 (id=701110)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Tooltip          : Stunned.
@@ -81135,7 +81135,7 @@ Labels           : 4530
 Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=701004)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 1 | Scaled Value: 10 | Points Per Level: 0.1 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
+                   Base Value: 1 | Scaled Value: 7 | Points Per Level: 0.1 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
 #2 (id=701005)   : Apply Aura (6) | Attribute (29)
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 1 | Stat: Spi | Target: Self (1)
 Tooltip          : Stamina and Spirit increased by $w1.
@@ -82249,7 +82249,7 @@ Family Flags     : 16
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Only On Player (104), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=702382)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 139 | Scaled Value: 139.6 | Points Per Level: 0.6 | Radius: 20 yards | Target: Raid in Area (56)
+                   Base Value: 139 | Scaled Value: 139 | Points Per Level: 0.6 | Radius: 20 yards | Target: Raid in Area (56)
                    Modified By: Improved Battle Shout (12318 effect#1), Improved Battle Shout (12857 effect#1), Improved Battle Shout (12858 effect#1), Improved Battle Shout (12860 effect#1), Improved Battle Shout (12861 effect#1)
 Description      : The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
 Tooltip          : Increases your melee attack power by $w1.
@@ -82312,7 +82312,7 @@ Family Flags     : 14, 31, 74
 Attributes       : Not Shapeshifted (16), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=702679)   : Direct Heal (10)
-                   Base Value: 1580 | Scaled Value: 1609 (delta=0.107143) | Points Per Level: 5.8 | SP Coefficient: 0.714 | Target: Targeted Ally (21)
+                   Base Value: 1580 | Scaled Value: 1580 (delta=0.107143) | Points Per Level: 5.8 | SP Coefficient: 0.714 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
 
 Name             : Serpent Sting (desc=Rank 9) (id=25295) [Spell Family (9)] 
@@ -82377,7 +82377,7 @@ Family Flags     : 5
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=701721)   : Direct Heal (10)
-                   Base Value: 2332 | Scaled Value: 2368.5 (delta=0.165858) | Points Per Level: 7.3 | SP Coefficient: 1 | Target: Targeted Ally (21)
+                   Base Value: 2332 | Scaled Value: 2332 (delta=0.165858) | Points Per Level: 7.3 | SP Coefficient: 1 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
 
 Name             : Starfire (desc=Rank 7) (id=25298) [Spell Family (7)] 
@@ -82397,7 +82397,7 @@ Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=702704)   : School Damage (2): arcane
-                   Base Value: 381 | Scaled Value: 395.4 (delta=0.162963) | Points Per Level: 2.4 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 381 | Scaled Value: 381 (delta=0.162963) | Points Per Level: 2.4 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Rejuvenation (desc=Rank 11) (id=25299) [Spell Family (7)] 
@@ -82464,7 +82464,7 @@ Family Flags     : 27
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=700792)   : Threat (63)
-                   Base Value: -4000 | Scaled Value: -4050 | Points Per Level: -5 | Target: Targeted Enemy (6)
+                   Base Value: -4000 | Scaled Value: -4000 | Points Per Level: -5 | Target: Targeted Enemy (6)
                    Modified By: Sleight of Hand (30892 effect#2)
 Description      : Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
@@ -82490,7 +82490,7 @@ Effects          :
                    Base Value: -40 | Scaled Value: -40 | Mechanic: Snare | Target: Targeted Enemy (6)
                    Modified By: Permafrost (11175 effect#2)
 #2 (id=702260)   : School Damage (2): frost
-                   Base Value: 475 | Scaled Value: 487.8 (delta=0.074766) | Points Per Level: 3.2 | SP Coefficient: 0.814 | Target: Targeted Enemy (6)
+                   Base Value: 475 | Scaled Value: 475 (delta=0.074766) | Points Per Level: 3.2 | SP Coefficient: 0.814 | Target: Targeted Enemy (6)
 Description      : Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
 Tooltip          : Movement slowed by $w1%.
 Variables        : $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
@@ -82518,7 +82518,7 @@ Family Flags     : 0, 30
 Attributes       : Not Shapeshifted (16), Aura Never Bounces (148), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=701692)   : School Damage (2): fire
-                   Base Value: 483 | Scaled Value: 495 (delta=0.241888) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 483 | Scaled Value: 483 (delta=0.241888) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=701693)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
                    Base Value: 15 | Scaled Value: 15 | Target: Targeted Enemy (6)
 Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
@@ -82541,7 +82541,7 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=701694)   : School Damage (2): shadow
-                   Base Value: 268 | Scaled Value: 277.5 (delta=0.109804) | Points Per Level: 1.9 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Enemy (6)
+                   Base Value: 268 | Scaled Value: 268 (delta=0.109804) | Points Per Level: 1.9 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 Name             : Immolate (desc=Rank 8) (id=25309) [Spell Family (5)] 
@@ -82563,7 +82563,7 @@ Effects          :
 #1 (id=701695)   : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
                    Base Value: 55 | Scaled Value: 55 | SP Coefficient: 0.13 | Target: Targeted Enemy (6)
 #2 (id=701696)   : School Damage (2): fire
-                   Base Value: 158 | Scaled Value: 169.5 | Points Per Level: 2.3 | SP Coefficient: 0.2 | Target: Targeted Enemy (6)
+                   Base Value: 158 | Scaled Value: 158 | Points Per Level: 2.3 | SP Coefficient: 0.2 | Target: Targeted Enemy (6)
 #3 (id=1107409)  : Server Side Script (77)
                    Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
 Description      : Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
@@ -82613,7 +82613,7 @@ Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=701697)   : Direct Heal (10)
-                   Base Value: 1960 | Scaled Value: 2000.5 (delta=0.109615) | Points Per Level: 8.1 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Ally (21)
+                   Base Value: 1960 | Scaled Value: 1960 (delta=0.109615) | Points Per Level: 8.1 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Ally (21)
 Description      : A slow casting spell that heals a single target for $s1.
 
 Name             : Renew (desc=Rank 10) (id=25315) [Spell Family (6)] 
@@ -82654,7 +82654,7 @@ Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=702104)   : Direct Heal (10)
-                   Base Value: 649 | Scaled Value: 663.4 (delta=0.054206) | Points Per Level: 1.6 | SP Coefficient: 0.286 | Radius: 0 - 40 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 649 | Scaled Value: 649 (delta=0.054206) | Points Per Level: 1.6 | SP Coefficient: 0.286 | Radius: 0 - 40 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : A powerful prayer that heals the target and their party for $s1. Party members must be within $a1 yards of target.
 
 Name             : Arcane Missiles (desc=Rank 8) (id=25345) [Spell Family (3)] 
@@ -82693,7 +82693,7 @@ Family Flags     : 21
 Attributes       : Not Shapeshifted (16), Ignore Line of Sight (66), No Initial Threat (86), Not a Proc (105), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=702760)   : School Damage (2): arcane
-                   Base Value: 209 | Scaled Value: 213 | Points Per Level: 1 | SP Coefficient: 0.286 | Target: Targeted Enemy (6)
+                   Base Value: 209 | Scaled Value: 209 | Points Per Level: 1 | SP Coefficient: 0.286 | Target: Targeted Enemy (6)
 Description      : Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 Name             : Deadly Poison V (desc=Rank 5) (id=25347) [Spell Family (8)] 
@@ -82773,7 +82773,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=701698)   : Direct Heal (10)
-                   Base Value: 1615 | Scaled Value: 1642.5 (delta=0.132565) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 1615 | Scaled Value: 1615 (delta=0.132565) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Grace of Air Totem (desc=Rank 3) (id=25359) [Spell Family (11)] 
@@ -85836,7 +85836,7 @@ Effects          :
 #1 (id=703817)   : Charge (96)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=703818)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 490 | Scaled Value: 520 | Points Per Level: 5 | SP Coefficient: 1 | Target: Self (1)
+                   Base Value: 490 | Scaled Value: 490 | Points Per Level: 5 | SP Coefficient: 1 | Target: Self (1)
 #3 (id=703819)   : Trigger Spell (64): Boar Charge
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 25999 | Target: Targeted Enemy (6)
 Description      : Charges an enemy, immobilizes it for $7922d, and adds $s2 melee attack power to the boar's next attack.
@@ -86177,7 +86177,7 @@ Family Flags     : 22
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=704706)   : School Damage (2): holy
-                   Base Value: 187 | Scaled Value: 194.2 (delta=0.14359) | Points Per Level: 1.2 | SP Coefficient: 0.107 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 187 | Scaled Value: 187 (delta=0.14359) | Points Per Level: 1.2 | SP Coefficient: 0.107 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 Description      : Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $27805a1 yards for $27805s1. These effects cause no threat.
 
 Each time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.
@@ -86220,7 +86220,7 @@ Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=704476)   : Direct Heal (10)
-                   Base Value: 311 | Scaled Value: 316.4 (delta=0.147239) | Points Per Level: 0.9 | SP Coefficient: 0.107 | Radius: 10 yards | Target: Party in Area (20)
+                   Base Value: 311 | Scaled Value: 311 (delta=0.147239) | Points Per Level: 0.9 | SP Coefficient: 0.107 | Radius: 10 yards | Target: Party in Area (20)
 
 Name             : Blessed Recovery (id=27811) [Spell Family (6), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=3, col=6, max_rank=3, req_points=0]
@@ -86993,7 +86993,7 @@ Family Flags     : 30, 31
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691816)   : Create Item (24)
-                   Base Value: 10 | Scaled Value: 20 | Points Per Level: 2 | Target: Self (1)
+                   Base Value: 10 | Scaled Value: 10 | Points Per Level: 2 | Target: Self (1)
 Description      : Conjures $s1 $lcinnamon roll:cinnamon rolls;, providing the mage and $ghis:her; allies with something to eat.
 
 Conjured items disappear if logged out for more than 15 minutes.
@@ -87870,7 +87870,7 @@ Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=704945)   : School Damage (2): fire
-                   Base Value: 166 | Scaled Value: 180.7 | Points Per Level: 2.1 | SP Coefficient: 0.214 | Target: Targeted Enemy (6)
+                   Base Value: 166 | Scaled Value: 166 | Points Per Level: 2.1 | SP Coefficient: 0.214 | Target: Targeted Enemy (6)
 #2 (id=704946)   : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
                    Base Value: 44 | Scaled Value: 44 | SP Coefficient: 0.1 | Target: Targeted Enemy (6)
 #3 (id=1202515)  : Apply Aura (6) | Dummy (4)
@@ -88413,7 +88413,7 @@ Proc Chance      : 101%
 Attributes       : Item Cast With Owner Skill (88), Unknown (493)
 Effects          :
 #1 (id=705700)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 1 | Scaled Value: 14.617 | Points Per Level: 0.153 | Stat: Sta | Target: Self (1)
+                   Base Value: 1 | Scaled Value: 10.027 | Points Per Level: 0.153 | Stat: Sta | Target: Self (1)
 Description      : Increases Stamina for 1 hour.
 Tooltip          : Increases Stamina by $s.
 
@@ -88425,7 +88425,7 @@ Proc Chance      : 101%
 Attributes       : Item Cast With Owner Skill (88), Unknown (493)
 Effects          :
 #1 (id=705769)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 2 | Scaled Value: 29.54 | Points Per Level: 0.306 | Stat: Sta | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 20.36 | Points Per Level: 0.306 | Stat: Sta | Target: Self (1)
 Description      : Increases Stamina for 1 hour.
 Tooltip          : Increases Stamina by $s1.
 
@@ -92063,7 +92063,7 @@ Family Flags     : 39
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1050034)  : Apply Aura (6) | Attribute (29)
-                   Base Value: 2 | Scaled Value: 62.52 | Points Per Level: 0.68 | Stat: Sta | Radius: 30 yards | Target: Party in Area (20)
+                   Base Value: 2 | Scaled Value: 42.12 | Points Per Level: 0.68 | Stat: Sta | Radius: 30 yards | Target: Party in Area (20)
 Description      : The warrior shouts, increasing the Stamina of all party members within $a1 yards by $s1.  Lasts $d.
 Tooltip          : Increases your Stamina by $s1.
 
@@ -92474,12 +92474,12 @@ Effects          :
 #2 (id=1050668)  : Apply Aura (6) | Periodic Heal% (20): every 5 seconds
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 #3 (id=1050669)  : Apply Aura (6) | Damage Done (13)
-                   Base Value: 1 | Scaled Value: 90 | Points Per Level: 1 | Misc Value: 0x7f | Target: Self (1)
+                   Base Value: 1 | Scaled Value: 60 | Points Per Level: 1 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
 #4 (id=1080346)  : Apply Aura (6) | Unknown(175)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 #5 (id=1173964)  : Apply Aura (6) | Modify Healing Power (135)
-                   Base Value: 1 | Scaled Value: 90 | Points Per Level: 1 | Misc Value: 127 | Target: Self (1)
+                   Base Value: 1 | Scaled Value: 60 | Points Per Level: 1 | Misc Value: 127 | Target: Self (1)
 Description      : Surrounds the caster with fel energy, increasing spell damage and healing by $s3 plus additional spell damage and healing equal to $s1% of your Spirit. In addition, you regain $s2% of your maximum health every 5 sec. Only one type of Armor spell can be active on the Warlock at any time.  Lasts $d.
 
 Tooltip          : Increases spell damage and healing by ${$w1*$SPI/100+$w3}. Also regenerate $s2% of maximum health every 5 sec.
@@ -93053,7 +93053,7 @@ Family Flags     : 81
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Include In Advanced Combat Log (72), Chain From Caster (76), Unknown (493)
 Effects          :
 #1 (id=1051062)  : School Damage (2): shadow
-                   Base Value: 160 | Scaled Value: 165 (delta=0.40625) | Points Per Level: 1 | SP Coefficient: 0.286 | Chain Multiplier: 1 | Chain Targets: 10 | Target: Targeted Enemy (6)
+                   Base Value: 160 | Scaled Value: 160 (delta=0.40625) | Points Per Level: 1 | SP Coefficient: 0.286 | Chain Multiplier: 1 | Chain Targets: 10 | Target: Targeted Enemy (6)
 Description      : Punish up to $x1 nearby enemies with a Shadow lash, dealing $s1 to each.
 
 Shadow Cleave benefits from and triggers most talents and effects that Shadow Bolt benefits from and triggers.$?s446847[
@@ -93078,7 +93078,7 @@ Family Flags     : 81
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Include In Advanced Combat Log (72), Chain From Caster (76), Unknown (493)
 Effects          :
 #1 (id=1051063)  : School Damage (2): shadow
-                   Base Value: 170 | Scaled Value: 175.15 (delta=0.4) | Points Per Level: 1.03 | SP Coefficient: 0.286 | Chain Multiplier: 1 | Chain Targets: 10 | Target: Targeted Enemy (6)
+                   Base Value: 170 | Scaled Value: 170 (delta=0.4) | Points Per Level: 1.03 | SP Coefficient: 0.286 | Chain Multiplier: 1 | Chain Targets: 10 | Target: Targeted Enemy (6)
 Description      : Punish up to $x1 nearby enemies with a Shadow lash, dealing $s1 to each.
 
 Shadow Cleave benefits from and triggers most talents and effects that Shadow Bolt benefits from and triggers.$?s446847[
@@ -94257,7 +94257,7 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072630)  : School Damage (2): nature
-                   Base Value: 98 | Scaled Value: 101 (delta=0.113122) | Points Per Level: 0.6 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 98 | Scaled Value: 100.4 (delta=0.113122) | Points Per Level: 0.6 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Chain Lightning (desc=Rank 1) (id=408479) [Spell Family (11)] 
@@ -94317,7 +94317,7 @@ Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072638)  : School Damage (2): nature
-                   Base Value: 62 | Scaled Value: 68 (delta=0.114943) | Points Per Level: 1.2 | SP Coefficient: 0.2855 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 62 | Scaled Value: 66.8 (delta=0.114943) | Points Per Level: 1.2 | SP Coefficient: 0.2855 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Lava Burst (desc=Rank 1) (id=408490) [Spell Family (11)] 
@@ -94358,7 +94358,7 @@ Family Flags     : 44
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072653)  : School Damage (2): fire
-                   Base Value: 57 | Scaled Value: 79.5 (delta=0.257463) | Points Per Level: 0.45 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 57 | Scaled Value: 66 (delta=0.257463) | Points Per Level: 0.45 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 Name             : Dual Wield Specialization (id=408496) [Spell Family (11), Passive, Hidden] 
@@ -94827,7 +94827,7 @@ Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
 #1 (id=1072960)  : School Damage (2): nature
-                   Base Value: 531 | Scaled Value: 546.5 (delta=0.052731) | Points Per Level: 3.1 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
+                   Base Value: 531 | Scaled Value: 531 (delta=0.052731) | Points Per Level: 3.1 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
 #2 (id=1072961)  : Interrupt Cast (68)
                    Base Value: 0 | Scaled Value: 0 | Mechanic: Interrupt | Target: Targeted Enemy (6)
 #3 (id=1087614)  : Taunt (114)
@@ -98722,7 +98722,7 @@ Family Flags     : 77
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1084709)  : School Damage (2): holy
-                   Base Value: 534 | Scaled Value: 550 (delta=0.108614) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 534 | Scaled Value: 534 (delta=0.108614) | Points Per Level: 3.2 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 #2 (id=1084710)  : Dummy (3)
                    Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
 Description      : Causes $s1 Holy damage to an enemy target and has $s2% chance to crit against Demons and Undead.
@@ -98823,7 +98823,7 @@ Effects          :
 #1 (id=1084846)  : Apply Aura (6) | Unknown(598)
                    Base Value: 100 | Scaled Value: 100 | Misc Value: 3 | Target: Self (1)
 #2 (id=1295131)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 20 | Scaled Value: 470 | Points Per Level: 5 | Target: Self (1)
+                   Base Value: 20 | Scaled Value: 320 | Points Per Level: 5 | Target: Self (1)
 Description      : Increases your Attack Power by an amount equal to $m1% of your Intellect.
 
 Name             : Burn (id=415231) [Spell Family (11), Passive, Hidden] 
@@ -109998,7 +109998,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Heal Prediction (280), Unknown (493)
 Effects          :
 #1 (id=1128580)  : Direct Heal (10)
-                   Base Value: 1061 | Scaled Value: 1095 (delta=0.109331) | Points Per Level: 6.8 | SP Coefficient: 0.286 | Target: Targeted Ally (21)
+                   Base Value: 1061 | Scaled Value: 1061 (delta=0.109331) | Points Per Level: 6.8 | SP Coefficient: 0.286 | Target: Targeted Ally (21)
 #2 (id=1128581)  : Apply Aura (6) | Periodic Heal (8): every 3 seconds
                    Base Value: 152 | Scaled Value: 152 | SP Coefficient: 0.071 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1 and another $o2 over $d.
@@ -115745,7 +115745,7 @@ Family Flags     : 5
 Attributes       : Not Shapeshifted (16), No Aura Cancel (31), No Redirection (35), No Reflection (39), No Aura Icon (60), No Initial Threat (86), No Aura Log (202), Unknown (493)
 Effects          :
 #1 (id=1168584)  : Apply Aura in Area (27) | Periodic Damage (3): fire every 2 seconds
-                   Base Value: 226 | Scaled Value: 229 | Points Per Level: 0.6 | SP Coefficient: 0.083 | Radius: 8 yards | Target: at Dynamic Enemy in Area (28)
+                   Base Value: 226 | Scaled Value: 227.2 | Points Per Level: 0.6 | SP Coefficient: 0.083 | Radius: 8 yards | Target: at Dynamic Enemy in Area (28)
 #2 (id=1168585)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Calls down a fiery rain to burn enemies in the area of effect for $o1 Fire damage over $d.
@@ -118371,7 +118371,7 @@ Family Flags     : 30, 31
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (493)
 Effects          :
 #1 (id=1182693)  : Create Item (24)
-                   Base Value: 20 | Scaled Value: 30 | Points Per Level: 2 | Target: Self (1)
+                   Base Value: 20 | Scaled Value: 20 | Points Per Level: 2 | Target: Self (1)
 Description      : Conjures $s1 $lbottle:bottles; of mountain spring water, providing the mage and $ghis:her; allies with something to drink.
 
 Conjured items disappear if logged out for more than 15 minutes.
@@ -118755,7 +118755,7 @@ Category         : 40 (Type 0x0)
 Attributes       : Always Hit (114), Unknown (493)
 Effects          :
 #1 (id=1185811)  : Weapon Damage% (31)
-                   Base Value: 10 | Scaled Value: 0.7 | Points Per Level: 2 | Value Multiplier: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6) -> Self (1)
+                   Base Value: 10 | Scaled Value: 0.1 | Points Per Level: 2 | Value Multiplier: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6) -> Self (1)
 #2 (id=1185934)  : Trigger Spell (64): Exploit Weakness
                    Base Value: 0 | Scaled Value: 0 | Delay: 2500_ms | Trigger Spell: 470537 | Target: Self (1)
 Description      : Carve a scale from Nefarian's hide. Only usable when Nefarian has been significantly weakened in battle.
@@ -126741,7 +126741,7 @@ Effects          :
                    Base Value: -40 | Scaled Value: -40 | Mechanic: Snare | Target: Targeted Enemy (6)
                    Modified By: Permafrost (11175 effect#2)
 #2 (id=1234033)  : School Damage (2): frostfire
-                   Base Value: 292 | Scaled Value: 308.8 (delta=0.153409) | Points Per Level: 2.1 | SP Coefficient: 0.814 | Target: Targeted Enemy (6)
+                   Base Value: 292 | Scaled Value: 292 (delta=0.153409) | Points Per Level: 2.1 | SP Coefficient: 0.814 | Target: Targeted Enemy (6)
 #3 (id=1234034)  : Apply Aura (6) | Periodic Damage (3): frostfire every 3 seconds
                    Base Value: 19 | Scaled Value: 19 | Target: Targeted Enemy (6)
 Description      : Launches a bolt of frostfire at the enemy, causing $s2 Frostfire damage, slowing movement speed by $s1% and causing an additional $o3 Frostfire damage over $d. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.
@@ -126950,7 +126950,7 @@ Family Flags     : 58
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Aura Never Bounces (148), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1235329)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
-                   Base Value: 97 | Scaled Value: 109.8 | Points Per Level: 1.6 | SP Coefficient: 0.033 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 97 | Scaled Value: 97 | Points Per Level: 1.6 | SP Coefficient: 0.033 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 #2 (id=1235330)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -127035,7 +127035,7 @@ Family Flags     : 44
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1235544)  : School Damage (2): fire
-                   Base Value: 89 | Scaled Value: 111 (delta=0.257463) | Points Per Level: 0.55 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 89 | Scaled Value: 94.5 (delta=0.257463) | Points Per Level: 0.55 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 Name             : Lava Burst (id=1238376) [Spell Family (11)] 
@@ -127051,7 +127051,7 @@ Family Flags     : 44
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1235547)  : School Damage (2): fire
-                   Base Value: 110 | Scaled Value: 129.5 (delta=0.257463) | Points Per Level: 0.65 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 110 | Scaled Value: 110 (delta=0.257463) | Points Per Level: 0.65 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 Name             : Ghost Wolf (id=1238640) [Spell Family (11)] 
@@ -127141,9 +127141,9 @@ Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1236796)  : Direct Heal (10)
-                   Base Value: 841 | Scaled Value: 880.2 (delta=0.1) | Points Per Level: 4.9 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
+                   Base Value: 841 | Scaled Value: 841 (delta=0.1) | Points Per Level: 4.9 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
 #2 (id=1236797)  : Apply Aura (6) | Periodic Heal (8): every 3 seconds
-                   Base Value: 161 | Scaled Value: 190.6 | Points Per Level: 3.7 | SP Coefficient: 0.1 | Target: Targeted Ally (21)
+                   Base Value: 161 | Scaled Value: 161 | Points Per Level: 3.7 | SP Coefficient: 0.1 | Target: Targeted Ally (21)
 #3 (id=1236798)  : Apply Aura (6) | Dummy (4)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Ally (21)
                    Modified By: S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
@@ -127271,7 +127271,7 @@ Family Flags     : 29, 30
 Attributes       : Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1237649)  : School Damage (2): arcane
-                   Base Value: 236 | Scaled Value: 248.8 (delta=0.15102) | Points Per Level: 1.6 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 236 | Scaled Value: 236 (delta=0.15102) | Points Per Level: 1.6 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 Name             : Ice Lance (desc=Rank 3) (id=1240044) [Spell Family (3)] 
@@ -127384,7 +127384,7 @@ Family Flags     : 17, 19
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1238151)  : School Damage (2): frost
-                   Base Value: 145 | Scaled Value: 152.2 (delta=0.166667) | Points Per Level: 0.9 | Target: Targeted Enemy (6)
+                   Base Value: 145 | Scaled Value: 148.6 (delta=0.166667) | Points Per Level: 0.9 | Target: Targeted Enemy (6)
 #2 (id=1238152)  : Dummy (3)
                    Base Value: 300 | Scaled Value: 300
 Hotfixed         : Base Value (200 -> 300)
@@ -127789,9 +127789,9 @@ Family Flags     : 34
 Attributes       : Not Shapeshifted (16), Exclude Caster (51), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), Heal Prediction (280), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1239341)  : Direct Heal (10)
-                   Base Value: 825 | Scaled Value: 846 (delta=0.164972) | Points Per Level: 4.2 | Value Multiplier: 1 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
+                   Base Value: 825 | Scaled Value: 841.8 (delta=0.164972) | Points Per Level: 4.2 | Value Multiplier: 1 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
 #2 (id=1239342)  : Direct Heal (10)
-                   Base Value: 825 | Scaled Value: 846 (delta=0.164972) | Points Per Level: 4.2 | Value Multiplier: 1 | SP Coefficient: 0.429 | Target: Self (1)
+                   Base Value: 825 | Scaled Value: 841.8 (delta=0.164972) | Points Per Level: 4.2 | Value Multiplier: 1 | SP Coefficient: 0.429 | Target: Self (1)
 Description      : Heal yourself and a friendly target for $s1. This causes low threat.
 
 
@@ -140208,9 +140208,9 @@ Category Cooldown: 600 seconds
 Attributes       : No Aura Cancel (31), No Threat (42), Can't Crit (93), Aura Is Buff (140), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1289636)  : Apply Aura (6) | Periodic Dummy (226): every 3 seconds
-                   Base Value: 320 | Scaled Value: 328 | Points Per Level: 1 | Target: Self (1)
+                   Base Value: 320 | Scaled Value: 320 | Points Per Level: 1 | Target: Self (1)
 #2 (id=1289637)  : Apply Aura (6) | Periodic Energize Power (24): every 3 seconds
-                   Base Value: 320 | Scaled Value: 328 | Points Per Level: 1 | Target: Self (1)
+                   Base Value: 320 | Scaled Value: 320 | Points Per Level: 1 | Target: Self (1)
 Description      : Cannibalize $o1 of your own Health over $d to gain ${$o2+$SPI} Mana.
 Tooltip          : Converting $s1 Health into $w2 Mana every $t1 sec.
 
@@ -140510,7 +140510,7 @@ Family Flags     : 24
 Attributes       : Not Shapeshifted (16), Exclude Caster (51), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1289725)  : Direct Heal (10)
-                   Base Value: 1383 | Scaled Value: 1432.2 (delta=0.164934) | Points Per Level: 8.2 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
+                   Base Value: 1383 | Scaled Value: 1399.4 (delta=0.164934) | Points Per Level: 8.2 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
 #2 (id=1289726)  : Server Side Script (77)
                    Base Value: 50 | Scaled Value: 50 | Target: Targeted Ally (21)
 Description      : Instantly heals a friendly target below $s2% Health for $s1 and removes Weakened Soul from that target. Cannot be cast on self.
@@ -140941,7 +140941,7 @@ Family Flags     : 22
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=1291063)  : School Damage (2): nature
-                   Base Value: 132 | Scaled Value: 133.8 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 132 | Scaled Value: 132 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1291064)  : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -20 | Scaled Value: -20 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 Tooltip          : $s1 damage every $17402t3 sec, and increasing the time between attacks by $s2%.
@@ -141094,7 +141094,7 @@ Family Flags     : 7, 19
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1292576)  : School Damage (2): frost
-                   Base Value: 146 | Scaled Value: 148 | Points Per Level: 0.4 | SP Coefficient: 0.042 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 146 | Scaled Value: 146 | Points Per Level: 0.4 | SP Coefficient: 0.042 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Blizzard (desc=Rank 1) (id=1279976) [Spell Family (3)] 
 Class            : Mage
@@ -141496,7 +141496,7 @@ Family Flags     : 5
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1296071)  : School Damage (2): fire
-                   Base Value: 220 | Scaled Value: 223 | Points Per Level: 0.6 | SP Coefficient: 0.083 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 220 | Scaled Value: 221.2 | Points Per Level: 0.6 | SP Coefficient: 0.083 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Plant Seeds (id=1282398) 
 School           : Physical
@@ -143807,7 +143807,7 @@ Family Flags     : 38
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1314814)  : School Damage (2): fire
-                   Base Value: 217 | Scaled Value: 229.6 (delta=0.15) | Points Per Level: 1.4 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 217 | Scaled Value: 217 (delta=0.15) | Points Per Level: 1.4 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 #2 (id=1314815)  : Dummy (3)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
 Description      : Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.
@@ -144932,7 +144932,7 @@ Family Flags     : 44
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Periodic Can Crit (265), Unknown (493)
 Effects          :
 #1 (id=1323514)  : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 58 | Scaled Value: 64.4 | Points Per Level: 0.8 | Target: Targeted Enemy (6)
+                   Base Value: 58 | Scaled Value: 58 | Points Per Level: 0.8 | Target: Targeted Enemy (6)
 Description      : Wounds the target causing them to bleed for $o1 damage over $d.
 Tooltip          : Bleeding for $s1 damage every $t1 sec.
 
@@ -148365,7 +148365,7 @@ Family Flags     : 33
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1338685)  : School Damage (2): shadow
-                   Base Value: 448 | Scaled Value: 460.5 (delta=0.0605) | Points Per Level: 2.5 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 448 | Scaled Value: 458 (delta=0.0605) | Points Per Level: 2.5 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 #2 (id=1338686)  : Server Side Script (77)
                    Base Value: 150 | Scaled Value: 150 | Target: Targeted Enemy (6)
 #3 (id=1338687)  : Dummy (3)
@@ -149784,7 +149784,7 @@ Family Flags     : 122
 Attributes       : Allow While Not Shapeshifted (caster form) (83), Not a Proc (105), Do Not Display Range (126), Heal Prediction (280), Do Not Display Power Cost (303), Do Not Display Cast Time (441), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1341994)  : Direct Heal (10)
-                   Base Value: 704 | Scaled Value: 720.2 (delta=0.056213) | Points Per Level: 1.8 | SP Coefficient: 0.143 | Radius: 0 - 40 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 704 | Scaled Value: 704 (delta=0.056213) | Points Per Level: 1.8 | SP Coefficient: 0.143 | Radius: 0 - 40 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Activated by Holy Shock. Heals the target and their party for $s1. Party members must be within $a1 yds of target.
 
 Name             : Light's Vigil (desc=Rank 3) (id=1311597) [Spell Family (10)] 
@@ -150388,7 +150388,7 @@ Labels           : 26: Paladin Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
 #1 (id=1345819)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 0 | Scaled Value: 90 | Points Per Level: 1 | Target: Self (1)
+                   Base Value: 0 | Scaled Value: 60 | Points Per Level: 1 | Target: Self (1)
 #2 (id=1347352)  : Apply Aura (6) | Dummy (4)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
 #3 (id=1347353)  : Apply Aura (6) | Dummy (4)
@@ -152542,9 +152542,9 @@ Family Flags     : 44
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
 #1 (id=1363744)  : School Damage (2): fire
-                   Base Value: 220 | Scaled Value: 230.4 (delta=0.253259) | Points Per Level: 1.3 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 220 | Scaled Value: 220 (delta=0.253259) | Points Per Level: 1.3 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 #2 (id=1363745)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 53.6 | Points Per Level: 4.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 20 | Scaled Value: 20 | Points Per Level: 4.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
 Name             : Blackthorne's Ward (id=1326056) 
@@ -152654,7 +152654,7 @@ Family Flags     : 30, 47
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1363795)  : School Damage (2): arcane
-                   Base Value: 451 | Scaled Value: 484 (delta=0.201005) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 451 | Scaled Value: 451 (delta=0.201005) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=1363796)  : Dummy (3)
                    Base Value: 5 | Scaled Value: 5 | Target: Targeted Enemy (6)
 Description      : Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.
@@ -152908,13 +152908,13 @@ Labels           : 26: Paladin Spells
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Limit N (165), Unknown (493)
 Effects          :
 #1 (id=1367618)  : Apply Aura (6) | Periodic Dummy (226): every 1.5 seconds
-                   Base Value: 0 | Scaled Value: 600.0003 | Points Per Level: 6.66667 | Target: Targeted Ally (21)
+                   Base Value: 0 | Scaled Value: 400.0002 | Points Per Level: 6.66667 | Target: Targeted Ally (21)
 Hotfixed         : NEW EFFECT
 #2 (id=1367619)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 0 | Scaled Value: 172.5003 | Points Per Level: 1.91667 | Target: Targeted Ally (21)
+                   Base Value: 0 | Scaled Value: 115.0002 | Points Per Level: 1.91667 | Target: Targeted Ally (21)
 Hotfixed         : NEW EFFECT
 #3 (id=1367620)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 0 | Scaled Value: 344.9997 | Points Per Level: 3.83333 | Target: Targeted Ally (21)
+                   Base Value: 0 | Scaled Value: 229.9998 | Points Per Level: 3.83333 | Target: Targeted Ally (21)
 Hotfixed         : NEW EFFECT
 Description      : Swear an Oath to protect target ally for $d, increasing the healing of your Holy Light on them by up to $s1, your Flash of Light by up to $s2, and your Holy Shock by up to $s3. Only one Oath of Light may be sworn by the Paladin at any one time.
 Tooltip          : Receives increased healing from the caster's Holy Light by up to $s1, Flash of Light by up to $s2, and Holy Shock by up to $s3.

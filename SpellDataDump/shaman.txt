@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Block (desc=Passive) (id=107) [Passive] 
 Class            : Warrior, Paladin, Shaman
 School           : Physical
@@ -669,7 +669,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=683411)   : Summon Guardian (28)
-                   Base Value: 50 | Scaled Value: 296 | Points Per Level: 3 | Misc Value: 3579 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 50 | Scaled Value: 206 | Points Per Level: 3 | Misc Value: 3579 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $5729a1 yards to attack it.
 
@@ -898,7 +898,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684766)   : Summon Guardian (28)
-                   Base Value: 150 | Scaled Value: 366 | Points Per Level: 3 | Misc Value: 3911 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 150 | Scaled Value: 276 | Points Per Level: 3 | Misc Value: 3911 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6393a1 yards to attack it.
 
@@ -920,7 +920,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684783)   : Summon Guardian (28)
-                   Base Value: 220 | Scaled Value: 406 | Points Per Level: 3 | Misc Value: 3912 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 220 | Scaled Value: 316 | Points Per Level: 3 | Misc Value: 3912 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6394a1 yards to attack it.
 
@@ -942,7 +942,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684615)   : Summon Guardian (28)
-                   Base Value: 280 | Scaled Value: 436 | Points Per Level: 3 | Misc Value: 3913 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 280 | Scaled Value: 346 | Points Per Level: 3 | Misc Value: 3913 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $6395a1 yards to attack it.
 
@@ -2369,7 +2369,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687722)   : Direct Heal (10)
-                   Base Value: 1344 | Scaled Value: 1371.5 (delta=0.132514) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 1344 | Scaled Value: 1366 (delta=0.132514) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Rockbiter Weapon (desc=Rank 4) (id=10399) 
@@ -2581,7 +2581,7 @@ Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688559)   : School Damage (2): nature
-                   Base Value: 301 | Scaled Value: 310.5 (delta=0.052731) | Points Per Level: 1.9 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
+                   Base Value: 301 | Scaled Value: 301 (delta=0.052731) | Points Per Level: 1.9 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
 #2 (id=688560)   : Interrupt Cast (68)
                    Base Value: 0 | Scaled Value: 0 | Mechanic: Interrupt | Target: Targeted Enemy (6)
 Description      : Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.
@@ -2624,7 +2624,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687893)   : Summon Guardian (28)
-                   Base Value: 390 | Scaled Value: 516 | Points Per Level: 3 | Misc Value: 7398 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 390 | Scaled Value: 426 | Points Per Level: 3 | Misc Value: 7398 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $10423a1 yards to attack it.
 
@@ -2646,7 +2646,7 @@ Family Flags     : 3
 Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689036)   : Summon Guardian (28)
-                   Base Value: 480 | Scaled Value: 576 | Points Per Level: 3 | Misc Value: 7399 | Misc Value 2: 81 | Target: Front Right of Self (41)
+                   Base Value: 480 | Scaled Value: 486 | Points Per Level: 3 | Misc Value: 7399 | Misc Value 2: 81 | Target: Front Right of Self (41)
                    Modified By: Earth's Grasp (16043 effect#1)
 Description      : Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $10424a1 yards to attack it.
 
@@ -3030,7 +3030,7 @@ Family Flags     : 7
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=689105)   : Direct Heal (10)
-                   Base Value: 820 | Scaled Value: 841 (delta=0.109091) | Points Per Level: 4.2 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
+                   Base Value: 820 | Scaled Value: 820 (delta=0.109091) | Points Per Level: 4.2 | SP Coefficient: 0.429 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
 
 Name             : Frost Shock (desc=Rank 3) (id=10472) [Spell Family (11)] 
@@ -3079,7 +3079,7 @@ Effects          :
 #1 (id=688021)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
 #2 (id=688022)   : School Damage (2): frost
-                   Base Value: 283 | Scaled Value: 292 (delta=0.056) | Points Per Level: 1.8 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
+                   Base Value: 283 | Scaled Value: 286.6 (delta=0.056) | Points Per Level: 1.8 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
 Description      : Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.
 Tooltip          : Movement slowed by $s1%.
 
@@ -3649,7 +3649,7 @@ Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688920)   : School Damage (2): nature
-                   Base Value: 123 | Scaled Value: 127 (delta=0.111111) | Points Per Level: 0.8 | SP Coefficient: 0.571 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 123 | Scaled Value: 126.2 (delta=0.111111) | Points Per Level: 0.8 | SP Coefficient: 0.571 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10608) [Spell Family (11)] 
@@ -3994,7 +3994,7 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691780)   : School Damage (2): nature
-                   Base Value: 196 | Scaled Value: 202 (delta=0.108352) | Points Per Level: 1.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 196 | Scaled Value: 200.8 (delta=0.108352) | Points Per Level: 1.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Rockbiter Weapon (Passive) (desc=Rank 2) (id=15567) [Spell Family (11), Passive, Hidden] 
@@ -4882,7 +4882,7 @@ Family Flags     : 22
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Item Cast With Owner Skill (88), Unknown (493)
 Effects          :
 #1 (id=693503)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 554 | Scaled Value: 686 | Points Per Level: 16.5 | Target: Self (1)
+                   Base Value: 554 | Scaled Value: 653 | Points Per Level: 16.5 | Target: Self (1)
                    Modified By: Elemental Weapons (16266 effect#1)
 #2 (id=693504)   : Apply Aura (6) | Threat (10)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 127 | Target: Self (1)
@@ -5004,7 +5004,7 @@ Family Flags     : 21
 Attributes       : Do Not Log (8), Do Not Sheath (18), Unknown (493)
 Effects          :
 #1 (id=693401)   : Dummy (3)
-                   Base Value: 2498 | Scaled Value: 3122 | Points Per Level: 78 | Target: Targeted Enemy (6)
+                   Base Value: 2498 | Scaled Value: 2810 | Points Per Level: 78 | Target: Targeted Enemy (6)
 
 Name             : Frostbrand Attack (desc=Rank 4) (id=16352) [Spell Family (11)] 
 Class            : Shaman
@@ -5039,7 +5039,7 @@ Effects          :
 #1 (id=693661)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -25 | Scaled Value: -25 | Mechanic: Snare | Target: Targeted Enemy (6)
 #2 (id=693662)   : School Damage (2): frost
-                   Base Value: 158 | Scaled Value: 202.8 | Points Per Level: 5.6 | SP Coefficient: 0.1 | Target: Targeted Enemy (6)
+                   Base Value: 158 | Scaled Value: 169.2 | Points Per Level: 5.6 | SP Coefficient: 0.1 | Target: Targeted Enemy (6)
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Frostbrand Weapon (desc=Rank 4) (id=16355) 
@@ -5088,7 +5088,7 @@ Family Flags     : 23
 Attributes       : Proc Failure Burns Charge (0), No Aura Icon (60), Item Cast With Owner Skill (88), Unknown (493)
 Effects          :
 #1 (id=693797)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 333 | Scaled Value: 433 | Points Per Level: 12.5 | Target: Self (1)
+                   Base Value: 333 | Scaled Value: 333 | Points Per Level: 12.5 | Target: Self (1)
                    Modified By: Elemental Weapons (16266 effect#3)
 #2 (id=693798)   : Extra Attacks (19)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
@@ -5487,7 +5487,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=701698)   : Direct Heal (10)
-                   Base Value: 1615 | Scaled Value: 1642.5 (delta=0.132565) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 1615 | Scaled Value: 1615 (delta=0.132565) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Grace of Air Totem (desc=Rank 3) (id=25359) [Spell Family (11)] 
@@ -5945,7 +5945,7 @@ Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=704945)   : School Damage (2): fire
-                   Base Value: 166 | Scaled Value: 180.7 | Points Per Level: 2.1 | SP Coefficient: 0.214 | Target: Targeted Enemy (6)
+                   Base Value: 166 | Scaled Value: 166 | Points Per Level: 2.1 | SP Coefficient: 0.214 | Target: Targeted Enemy (6)
 #2 (id=704946)   : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
                    Base Value: 44 | Scaled Value: 44 | SP Coefficient: 0.1 | Target: Targeted Enemy (6)
 #3 (id=1202515)  : Apply Aura (6) | Dummy (4)
@@ -6395,7 +6395,7 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072630)  : School Damage (2): nature
-                   Base Value: 98 | Scaled Value: 101 (delta=0.113122) | Points Per Level: 0.6 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 98 | Scaled Value: 100.4 (delta=0.113122) | Points Per Level: 0.6 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Chain Lightning (desc=Rank 1) (id=408479) [Spell Family (11)] 
@@ -6455,7 +6455,7 @@ Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072638)  : School Damage (2): nature
-                   Base Value: 62 | Scaled Value: 68 (delta=0.114943) | Points Per Level: 1.2 | SP Coefficient: 0.2855 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 62 | Scaled Value: 66.8 (delta=0.114943) | Points Per Level: 1.2 | SP Coefficient: 0.2855 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Lava Burst (desc=Rank 1) (id=408490) [Spell Family (11)] 
@@ -6496,7 +6496,7 @@ Family Flags     : 44
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072653)  : School Damage (2): fire
-                   Base Value: 57 | Scaled Value: 79.5 (delta=0.257463) | Points Per Level: 0.45 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 57 | Scaled Value: 66 (delta=0.257463) | Points Per Level: 0.45 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 Name             : Dual Wield Specialization (id=408496) [Spell Family (11), Passive, Hidden] 
@@ -6965,7 +6965,7 @@ Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
 #1 (id=1072960)  : School Damage (2): nature
-                   Base Value: 531 | Scaled Value: 546.5 (delta=0.052731) | Points Per Level: 3.1 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
+                   Base Value: 531 | Scaled Value: 531 (delta=0.052731) | Points Per Level: 3.1 | SP Coefficient: 0.386 | Target: Targeted Enemy (6)
 #2 (id=1072961)  : Interrupt Cast (68)
                    Base Value: 0 | Scaled Value: 0 | Mechanic: Interrupt | Target: Targeted Enemy (6)
 #3 (id=1087614)  : Taunt (114)
@@ -7597,7 +7597,7 @@ Effects          :
 #1 (id=1084846)  : Apply Aura (6) | Unknown(598)
                    Base Value: 100 | Scaled Value: 100 | Misc Value: 3 | Target: Self (1)
 #2 (id=1295131)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 20 | Scaled Value: 470 | Points Per Level: 5 | Target: Self (1)
+                   Base Value: 20 | Scaled Value: 320 | Points Per Level: 5 | Target: Self (1)
 Description      : Increases your Attack Power by an amount equal to $m1% of your Intellect.
 
 Name             : Burn (id=415231) [Spell Family (11), Passive, Hidden] 
@@ -9438,7 +9438,7 @@ Family Flags     : 44
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1235544)  : School Damage (2): fire
-                   Base Value: 89 | Scaled Value: 111 (delta=0.257463) | Points Per Level: 0.55 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 89 | Scaled Value: 94.5 (delta=0.257463) | Points Per Level: 0.55 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 Name             : Lava Burst (id=1238376) [Spell Family (11)] 
@@ -9454,7 +9454,7 @@ Family Flags     : 44
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1235547)  : School Damage (2): fire
-                   Base Value: 110 | Scaled Value: 129.5 (delta=0.257463) | Points Per Level: 0.65 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 110 | Scaled Value: 110 (delta=0.257463) | Points Per Level: 0.65 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 Name             : Ghost Wolf (id=1238640) [Spell Family (11)] 
@@ -9544,9 +9544,9 @@ Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1236796)  : Direct Heal (10)
-                   Base Value: 841 | Scaled Value: 880.2 (delta=0.1) | Points Per Level: 4.9 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
+                   Base Value: 841 | Scaled Value: 841 (delta=0.1) | Points Per Level: 4.9 | SP Coefficient: 0.214 | Target: Targeted Ally (21)
 #2 (id=1236797)  : Apply Aura (6) | Periodic Heal (8): every 3 seconds
-                   Base Value: 161 | Scaled Value: 190.6 | Points Per Level: 3.7 | SP Coefficient: 0.1 | Target: Targeted Ally (21)
+                   Base Value: 161 | Scaled Value: 161 | Points Per Level: 3.7 | SP Coefficient: 0.1 | Target: Targeted Ally (21)
 #3 (id=1236798)  : Apply Aura (6) | Dummy (4)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Ally (21)
                    Modified By: S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
@@ -9726,8 +9726,8 @@ Family Flags     : 44
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
 Effects          :
 #1 (id=1363744)  : School Damage (2): fire
-                   Base Value: 220 | Scaled Value: 230.4 (delta=0.253259) | Points Per Level: 1.3 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 220 | Scaled Value: 220 (delta=0.253259) | Points Per Level: 1.3 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 #2 (id=1363745)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 53.6 | Points Per Level: 4.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 20 | Scaled Value: 20 | Points Per Level: 4.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 

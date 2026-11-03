@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Auto Shot (id=75) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -232,7 +232,7 @@ Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon 
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=680772)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 15 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 6 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1292241)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41245 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292242)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
@@ -1502,7 +1502,7 @@ Range            : 30 yards
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=690421)   : Tame Creature (55)
-                   Base Value: 10 | Scaled Value: 90 | Points Per Level: 1 | Target: Targeted Enemy (6)
+                   Base Value: 10 | Scaled Value: 60 | Points Per Level: 1 | Target: Targeted Enemy (6)
 
 Name             : Tame Beast (id=13535) 
 Class            : Hunter
@@ -2444,7 +2444,7 @@ Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon 
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=691336)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 12 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 3 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1292238)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41244 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292239)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
@@ -2470,7 +2470,7 @@ Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon 
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=692653)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 9.6 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 0.6 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1292223)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41242 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292224)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
@@ -3226,7 +3226,7 @@ Family Flags     : 101
 Attributes       : Not Shapeshifted (16), Initiates Combat (Enables Auto-Attack) (41), No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=691055)   : Threat (63)
-                   Base Value: 415 | Scaled Value: 465 | Points Per Level: 5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 415 | Scaled Value: 415 | Points Per Level: 5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Taunt the target, increasing the likelihood the creature will focus attacks on you.
 
 Name             : Dazed (id=15571) 
@@ -3336,7 +3336,7 @@ Family Flags     : 16, 49
 Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690698)   : Threat (63)
-                   Base Value: 600 | Scaled Value: 636 | Points Per Level: 4 | Target: Targeted Enemy (6)
+                   Base Value: 600 | Scaled Value: 600 | Points Per Level: 4 | Target: Targeted Enemy (6)
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 5).
 
 Name             : Cower (desc=Rank 6) (id=16697) 
@@ -3353,7 +3353,7 @@ Category Cooldown: 5 seconds
 Attributes       : Not Shapeshifted (16), No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=693342)   : Threat (63)
-                   Base Value: -225 | Scaled Value: -255 | Points Per Level: -3 | Target: Targeted Enemy (6)
+                   Base Value: -225 | Scaled Value: -240 | Points Per Level: -3 | Target: Targeted Enemy (6)
 Description      : Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.
 
 Name             : Claw (desc=Rank 1) (id=16827) [Spell Family (9)] 
@@ -5309,7 +5309,7 @@ Triggered By     : Intimidation (19577)
 Attributes       : Do Not Display Range (126), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=701109)   : Threat (63)
-                   Base Value: 580 | Scaled Value: 1630 | Points Per Level: 21 | Target: Targeted Enemy (6)
+                   Base Value: 580 | Scaled Value: 1000 | Points Per Level: 21 | Target: Targeted Enemy (6)
 #2 (id=701110)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Tooltip          : Stunned.
@@ -6512,7 +6512,7 @@ Effects          :
 #1 (id=703817)   : Charge (96)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=703818)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 490 | Scaled Value: 520 | Points Per Level: 5 | SP Coefficient: 1 | Target: Self (1)
+                   Base Value: 490 | Scaled Value: 490 | Points Per Level: 5 | SP Coefficient: 1 | Target: Self (1)
 #3 (id=703819)   : Trigger Spell (64): Boar Charge
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 25999 | Target: Targeted Enemy (6)
 Description      : Charges an enemy, immobilizes it for $7922d, and adds $s2 melee attack power to the boar's next attack.
@@ -11095,7 +11095,7 @@ Family Flags     : 44
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Periodic Can Crit (265), Unknown (493)
 Effects          :
 #1 (id=1323514)  : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 58 | Scaled Value: 64.4 | Points Per Level: 0.8 | Target: Targeted Enemy (6)
+                   Base Value: 58 | Scaled Value: 58 | Points Per Level: 0.8 | Target: Targeted Enemy (6)
 Description      : Wounds the target causing them to bleed for $o1 damage over $d.
 Tooltip          : Bleeding for $s1 damage every $t1 sec.
 

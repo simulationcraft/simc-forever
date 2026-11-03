@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Eye of Kilrogg (desc=Summon) (id=126) 
 Hotfixed         : Attributes
 Class            : Warlock
@@ -2355,7 +2355,7 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689818)   : School Damage (2): shadow
-                   Base Value: 251 | Scaled Value: 260 (delta=0.108108) | Points Per Level: 1.8 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Enemy (6)
+                   Base Value: 251 | Scaled Value: 251 (delta=0.108108) | Points Per Level: 1.8 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 Name             : Immolate (desc=Rank 5) (id=11665) [Spell Family (5)] 
@@ -2439,7 +2439,7 @@ Effects          :
 #1 (id=689824)   : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
                    Base Value: 52 | Scaled Value: 52 | SP Coefficient: 0.13 | Target: Targeted Enemy (6)
 #2 (id=689825)   : School Damage (2): fire
-                   Base Value: 146 | Scaled Value: 157.5 | Points Per Level: 2.3 | SP Coefficient: 0.2 | Target: Targeted Enemy (6)
+                   Base Value: 146 | Scaled Value: 146 | Points Per Level: 2.3 | SP Coefficient: 0.2 | Target: Targeted Enemy (6)
 #3 (id=1107410)  : Server Side Script (77)
                    Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
 Description      : Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
@@ -2564,7 +2564,7 @@ Aura Interrupt   : Action (2), Moving (3), Interacting (10), Looting (11), Attac
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=689562)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 1.5 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 0.6 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1144506)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41456 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1296178)  : Apply Aura (6) | Periodic Dummy (226): every 2 seconds
@@ -2599,7 +2599,7 @@ Family Flags     : 6, 40
 Attributes       : No Redirection (35), No Reflection (39), No Initial Threat (86), Periodic Can Crit (265), Unknown (493)
 Effects          :
 #1 (id=693052)   : School Damage (2): fire
-                   Base Value: 206 | Scaled Value: 213 | Points Per Level: 0.7 | SP Coefficient: 0.022 | Radius: 0 - 10 yards | Target: at Self (18) -> at Enemy in Area (16)
+                   Base Value: 206 | Scaled Value: 210.2 | Points Per Level: 0.7 | SP Coefficient: 0.022 | Radius: 0 - 10 yards | Target: at Self (18) -> at Enemy in Area (16)
 Description      : Deals $s1 Fire damage.
 
 Name             : Hellfire (desc=Rank 2) (id=11683) [Spell Family (5)] 
@@ -2644,7 +2644,7 @@ Effects          :
 #1 (id=688755)   : Apply Aura (6) | Periodic Trigger Spell (23): Hellfire Effect every 1 seconds
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 11682 | Target: Self (1)
 #2 (id=688756)   : Apply Aura (6) | Periodic Damage (3): fire every 1 seconds
-                   Base Value: 206 | Scaled Value: 213 | Points Per Level: 0.7 | SP Coefficient: 0.022 | Target: Self (1)
+                   Base Value: 206 | Scaled Value: 210.2 | Points Per Level: 0.7 | SP Coefficient: 0.022 | Target: Self (1)
 #3 (id=688757)   : Apply Aura (6) | Mechanic Immunity (77)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 16 | Target: Self (1)
 Description      : Ignites the area surrounding the caster, causing $s2 Fire damage to $ghimself:herself; and $11682s1 Fire damage to all nearby enemies every $t2 sec.  Lasts $d.
@@ -2701,7 +2701,7 @@ Family Flags     : 18
 Attributes       : Not Shapeshifted (16), No Threat (42), Don't Block Mana Regen (89), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689914)   : Dummy (3)
-                   Base Value: 420 | Scaled Value: 430 | Points Per Level: 1 | Radius: 50000 yards | Target: Self (1)
+                   Base Value: 420 | Scaled Value: 424 | Points Per Level: 1 | Radius: 50000 yards | Target: Self (1)
 Description      : Converts ${($m1+$SPI*1)*(1+$18182m1/100)} Health into ${($m1+$SPI*1)*(1+$18182m1/100)} Mana for you. Spirit increases the amount converted.
 
 Name             : Health Funnel (desc=Rank 5) (id=11693) [Spell Family (5)] 
@@ -3322,9 +3322,9 @@ Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=688637)   : School Damage (2): fire
-                   Base Value: 44 | Scaled Value: 47 (delta=0.113636) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
+                   Base Value: 44 | Scaled Value: 45.2 (delta=0.113636) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
 #2 (id=1343957)  : Dummy (3)
-                   Base Value: 44 | Scaled Value: 47 (delta=0.113636) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
+                   Base Value: 44 | Scaled Value: 45.2 (delta=0.113636) | Points Per Level: 0.6 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Blood Pact (desc=Rank 4) (id=11766) [Spell Family (5)] 
@@ -3435,7 +3435,7 @@ Family Flags     : 25
 Attributes       : No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=689842)   : Threat (63)
-                   Base Value: 600 | Scaled Value: 615 | Points Per Level: 3 | Target: Targeted Enemy (6)
+                   Base Value: 600 | Scaled Value: 600 | Points Per Level: 3 | Target: Targeted Enemy (6)
                    Modified By: Improved Voidwalker (18705 effect#1)
 Description      : Taunts the creature, increasing the chance that it will attack the Voidwalker.  More effective than Torment (Rank 5).
 
@@ -3519,7 +3519,7 @@ Family Flags     : 30
 Attributes       : Do Not Sheath (18), No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=689917)   : Threat (63)
-                   Base Value: -127 | Scaled Value: -171 | Points Per Level: -1 | Target: Targeted Enemy (6)
+                   Base Value: -127 | Scaled Value: -141 | Points Per Level: -1 | Target: Targeted Enemy (6)
                    Modified By: Improved Sayaad (18754 effect#1)
 Description      : Soothes the target, increasing the chance that it will attack something else.  More effective than Soothing Kiss (Rank 2).
 
@@ -3540,7 +3540,7 @@ Family Flags     : 30
 Attributes       : Do Not Sheath (18), No School Immunities (90), Unknown (493)
 Effects          :
 #1 (id=689783)   : Threat (63)
-                   Base Value: -165 | Scaled Value: -175 | Points Per Level: -1 | Target: Targeted Enemy (6)
+                   Base Value: -165 | Scaled Value: -167 | Points Per Level: -1 | Target: Targeted Enemy (6)
                    Modified By: Improved Sayaad (18754 effect#1)
 Description      : Soothes the target, increasing the chance that it will attack something else.  More effective than Soothing Kiss (Rank 3).
 
@@ -3983,7 +3983,7 @@ Attributes       : Not In Combat (Only Peaceful) (28), Is Self Channelled (38), 
 Channel Interrupt: Damage (2), Action (3), Moving (4), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=694507)   : Apply Aura (6) | Periodic Heal (8): every 2 seconds
-                   Base Value: 386 | Scaled Value: 393.8 | Points Per Level: 1.3 | Target: Self (1)
+                   Base Value: 386 | Scaled Value: 388.6 | Points Per Level: 1.3 | Target: Self (1)
                    Modified By: Improved Voidwalker (18705 effect#1)
 Description      : The Voidwalker consumes nearby shadows to bolster its form, recovering $o1 health over $d.  Cannot be used while in combat.
 Tooltip          : Heals $s1 damage every $t1 seconds.
@@ -4122,7 +4122,7 @@ Family Flags     : 8
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=694812)   : School Damage (2): fire
-                   Base Value: 114 | Scaled Value: 121.2 (delta=0.162162) | Points Per Level: 1.2 | SP Coefficient: 0.429 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
+                   Base Value: 114 | Scaled Value: 116.4 (delta=0.162162) | Points Per Level: 1.2 | SP Coefficient: 0.429 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
 Description      : Inflict searing pain on the enemy target, causing $s1 Fire damage.  Causes a high amount of threat.
 
 Name             : Soul Fire (desc=Rank 2) (id=17924) [Spell Family (5)] 
@@ -4145,7 +4145,7 @@ Family Flags     : 6, 39
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696430)   : School Damage (2): fire
-                   Base Value: 431 | Scaled Value: 442.4 (delta=0.224747) | Points Per Level: 1.9 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 431 | Scaled Value: 438.6 (delta=0.224747) | Points Per Level: 1.9 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Burn the enemy's soul, causing $s1 Fire damage.
 
 Name             : Death Coil (desc=Rank 2) (id=17925) [Spell Family (5)] 
@@ -4194,7 +4194,7 @@ Family Flags     : 19
 Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696431)   : Health Leech (9)
-                   Base Value: 454 | Scaled Value: 472 | Points Per Level: 3 | Value Multiplier: 1 | SP Coefficient: 0.214 | Target: Targeted Enemy (6)
+                   Base Value: 454 | Scaled Value: 460 | Points Per Level: 3 | Value Multiplier: 1 | SP Coefficient: 0.214 | Target: Targeted Enemy (6)
 Description      : Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.
 Tooltip          : Horrified.
 
@@ -5441,7 +5441,7 @@ Effects          :
 #1 (id=696325)   : Apply Aura (6) | Unknown(86)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=696326)   : School Damage (2): shadow
-                   Base Value: 266 | Scaled Value: 276.8 (delta=0.109244) | Points Per Level: 1.8 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 266 | Scaled Value: 273.2 (delta=0.109244) | Points Per Level: 1.8 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
 Tooltip          : Death will grant the Warlock a Soul Shard.
 
@@ -5562,7 +5562,7 @@ Family Flags     : 9, 55
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696822)   : School Damage (2): fire
-                   Base Value: 282 | Scaled Value: 289.8 (delta=0.219124) | Points Per Level: 1.3 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 282 | Scaled Value: 282 (delta=0.219124) | Points Per Level: 1.3 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
 
 Name             : Soul Link (id=19028) 
@@ -5705,7 +5705,7 @@ Family Flags     : 25
 Attributes       : No AutoCast (AI) (49), Ignore Line of Sight (66), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=697089)   : Apply Aura (6) | Absorb Damage (69)
-                   Base Value: 1905 | Scaled Value: 1943.4 | Points Per Level: 6.4 | Misc Value: 0x7f | Target: Master (27)
+                   Base Value: 1905 | Scaled Value: 1930.6 | Points Per Level: 6.4 | Misc Value: 0x7f | Target: Master (27)
                    Affected School(s): All
                    Modified By: Improved Voidwalker (18705 effect#1)
 #2 (id=697090)   : Instant Kill (1)
@@ -6505,7 +6505,7 @@ Labels           : 19: Warlock Spells
 Attributes       : No Immunities (29), Ignore Caster & Target Restrictions (124), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=700524)   : Apply Aura Pet in Area (119) | Modify Damage Taken% (87)
-                   Base Value: 0 | Scaled Value: 18 | Points Per Level: 0.2 | Misc Value: 0x7e | Radius: 100 yards | Target: Self (1)
+                   Base Value: 0 | Scaled Value: 12 | Points Per Level: 0.2 | Misc Value: 0x7e | Radius: 100 yards | Target: Self (1)
 Tooltip          : Reduces Magic damage taken by $w1%.
 
 Name             : Master Demonologist (id=23785) [Passive, Hidden] 
@@ -6615,7 +6615,7 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=701694)   : School Damage (2): shadow
-                   Base Value: 268 | Scaled Value: 277.5 (delta=0.109804) | Points Per Level: 1.9 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Enemy (6)
+                   Base Value: 268 | Scaled Value: 268 (delta=0.109804) | Points Per Level: 1.9 | Value Multiplier: 1 | SP Coefficient: 0.857 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
 
 Name             : Immolate (desc=Rank 8) (id=25309) [Spell Family (5)] 
@@ -6637,7 +6637,7 @@ Effects          :
 #1 (id=701695)   : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
                    Base Value: 55 | Scaled Value: 55 | SP Coefficient: 0.13 | Target: Targeted Enemy (6)
 #2 (id=701696)   : School Damage (2): fire
-                   Base Value: 158 | Scaled Value: 169.5 | Points Per Level: 2.3 | SP Coefficient: 0.2 | Target: Targeted Enemy (6)
+                   Base Value: 158 | Scaled Value: 158 | Points Per Level: 2.3 | SP Coefficient: 0.2 | Target: Targeted Enemy (6)
 #3 (id=1107409)  : Server Side Script (77)
                    Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
 Description      : Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.
@@ -6773,12 +6773,12 @@ Effects          :
 #2 (id=1050668)  : Apply Aura (6) | Periodic Heal% (20): every 5 seconds
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 #3 (id=1050669)  : Apply Aura (6) | Damage Done (13)
-                   Base Value: 1 | Scaled Value: 90 | Points Per Level: 1 | Misc Value: 0x7f | Target: Self (1)
+                   Base Value: 1 | Scaled Value: 60 | Points Per Level: 1 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
 #4 (id=1080346)  : Apply Aura (6) | Unknown(175)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 #5 (id=1173964)  : Apply Aura (6) | Modify Healing Power (135)
-                   Base Value: 1 | Scaled Value: 90 | Points Per Level: 1 | Misc Value: 127 | Target: Self (1)
+                   Base Value: 1 | Scaled Value: 60 | Points Per Level: 1 | Misc Value: 127 | Target: Self (1)
 Description      : Surrounds the caster with fel energy, increasing spell damage and healing by $s3 plus additional spell damage and healing equal to $s1% of your Spirit. In addition, you regain $s2% of your maximum health every 5 sec. Only one type of Armor spell can be active on the Warlock at any time.  Lasts $d.
 
 Tooltip          : Increases spell damage and healing by ${$w1*$SPI/100+$w3}. Also regenerate $s2% of maximum health every 5 sec.
@@ -7352,7 +7352,7 @@ Family Flags     : 81
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Include In Advanced Combat Log (72), Chain From Caster (76), Unknown (493)
 Effects          :
 #1 (id=1051062)  : School Damage (2): shadow
-                   Base Value: 160 | Scaled Value: 165 (delta=0.40625) | Points Per Level: 1 | SP Coefficient: 0.286 | Chain Multiplier: 1 | Chain Targets: 10 | Target: Targeted Enemy (6)
+                   Base Value: 160 | Scaled Value: 160 (delta=0.40625) | Points Per Level: 1 | SP Coefficient: 0.286 | Chain Multiplier: 1 | Chain Targets: 10 | Target: Targeted Enemy (6)
 Description      : Punish up to $x1 nearby enemies with a Shadow lash, dealing $s1 to each.
 
 Shadow Cleave benefits from and triggers most talents and effects that Shadow Bolt benefits from and triggers.$?s446847[
@@ -7377,7 +7377,7 @@ Family Flags     : 81
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Include In Advanced Combat Log (72), Chain From Caster (76), Unknown (493)
 Effects          :
 #1 (id=1051063)  : School Damage (2): shadow
-                   Base Value: 170 | Scaled Value: 175.15 (delta=0.4) | Points Per Level: 1.03 | SP Coefficient: 0.286 | Chain Multiplier: 1 | Chain Targets: 10 | Target: Targeted Enemy (6)
+                   Base Value: 170 | Scaled Value: 170 (delta=0.4) | Points Per Level: 1.03 | SP Coefficient: 0.286 | Chain Multiplier: 1 | Chain Targets: 10 | Target: Targeted Enemy (6)
 Description      : Punish up to $x1 nearby enemies with a Shadow lash, dealing $s1 to each.
 
 Shadow Cleave benefits from and triggers most talents and effects that Shadow Bolt benefits from and triggers.$?s446847[
@@ -9338,7 +9338,7 @@ Family Flags     : 5
 Attributes       : Not Shapeshifted (16), No Aura Cancel (31), No Redirection (35), No Reflection (39), No Aura Icon (60), No Initial Threat (86), No Aura Log (202), Unknown (493)
 Effects          :
 #1 (id=1168584)  : Apply Aura in Area (27) | Periodic Damage (3): fire every 2 seconds
-                   Base Value: 226 | Scaled Value: 229 | Points Per Level: 0.6 | SP Coefficient: 0.083 | Radius: 8 yards | Target: at Dynamic Enemy in Area (28)
+                   Base Value: 226 | Scaled Value: 227.2 | Points Per Level: 0.6 | SP Coefficient: 0.083 | Radius: 8 yards | Target: at Dynamic Enemy in Area (28)
 #2 (id=1168585)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Calls down a fiery rain to burn enemies in the area of effect for $o1 Fire damage over $d.
@@ -9845,7 +9845,7 @@ Family Flags     : 5
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1296071)  : School Damage (2): fire
-                   Base Value: 220 | Scaled Value: 223 | Points Per Level: 0.6 | SP Coefficient: 0.083 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 220 | Scaled Value: 221.2 | Points Per Level: 0.6 | SP Coefficient: 0.083 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Demonic Brand (id=1293695) [Spell Family (5), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=4, col=8, max_rank=3, req_points=0]
@@ -9942,7 +9942,7 @@ Family Flags     : 38
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1314814)  : School Damage (2): fire
-                   Base Value: 217 | Scaled Value: 229.6 (delta=0.15) | Points Per Level: 1.4 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
+                   Base Value: 217 | Scaled Value: 217 (delta=0.15) | Points Per Level: 1.4 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
 #2 (id=1314815)  : Dummy (3)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
 Description      : Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.

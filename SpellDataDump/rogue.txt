@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Backstab (desc=Rank 1) (id=53) [Spell Family (8)] 
 Hotfixed         : Attributes
 Class            : Rogue
@@ -480,7 +480,7 @@ Effects          :
 #1 (id=680105)   : Apply Aura (6) | Shapeshift (36)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 30 | Target: Self (1)
 #2 (id=680106)   : Apply Aura (6) | Stealth (16)
-                   Base Value: 300 | Scaled Value: 395 | Points Per Level: 5 | Target: Self (1)
+                   Base Value: 300 | Scaled Value: 300 | Points Per Level: 5 | Target: Self (1)
 #3 (id=680107)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -30 | Scaled Value: -30 | Target: Self (1)
                    Modified By: Camouflage (13975 effect#1)
@@ -498,7 +498,7 @@ Cast Time        : 5 seconds
 Attributes       : Is Ability (4), Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680465)   : Open Lock (33)
-                   Base Value: 5 | Scaled Value: 450 | Points Per Level: 5 | Misc Value: 1 | Target: Targeted Item Gameobject (26)
+                   Base Value: 5 | Scaled Value: 300 | Points Per Level: 5 | Misc Value: 1 | Target: Targeted Item Gameobject (26)
 Description      : Allows opening of locked chests and doors.
 
 Name             : Cheap Shot (id=1833) [Spell Family (8)] 
@@ -541,7 +541,7 @@ Family Flags     : 31
 Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679710)   : Open Lock (33)
-                   Base Value: 200 | Scaled Value: 500 | Points Per Level: 5 | Misc Value: 4 | Target: Targeted Gameobject (23)
+                   Base Value: 200 | Scaled Value: 350 | Points Per Level: 5 | Misc Value: 4 | Target: Targeted Gameobject (23)
 Description      : Sneak up on the trap in order to disarm it.  Don't get too close or the trap will go off.
 
 Name             : Vanish (desc=Rank 1) (id=1856) [Spell Family (8)] 
@@ -2725,7 +2725,7 @@ Family Flags     : 27
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688797)   : Threat (63)
-                   Base Value: -3000 | Scaled Value: -3050 | Points Per Level: -5 | Target: Targeted Enemy (6)
+                   Base Value: -3000 | Scaled Value: -3040 | Points Per Level: -5 | Target: Targeted Enemy (6)
                    Modified By: Sleight of Hand (30892 effect#2)
 Description      : Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
@@ -2787,7 +2787,7 @@ Attributes       : Is Ability (4), Do Not Log (8), Not Shapeshifted (16), Do Not
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #2 (id=690252)   : Apply Aura (6) | Stealth (16)
-                   Base Value: 270 | Scaled Value: 365 | Points Per Level: 5 | Target: Self (1)
+                   Base Value: 270 | Scaled Value: 360 | Points Per Level: 5 | Target: Self (1)
 #3 (id=690253)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Tooltip          : Improved stealth.
@@ -4532,7 +4532,7 @@ Family Flags     : 27
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=700792)   : Threat (63)
-                   Base Value: -4000 | Scaled Value: -4050 | Points Per Level: -5 | Target: Targeted Enemy (6)
+                   Base Value: -4000 | Scaled Value: -4000 | Points Per Level: -5 | Target: Targeted Enemy (6)
                    Modified By: Sleight of Hand (30892 effect#2)
 Description      : Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 

@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Blizzard (desc=Rank 1) (id=10) [Spell Family (3)] 
 Hotfixed         : Attributes
 Class            : Mage
@@ -2356,7 +2356,7 @@ Family Flags     : 30, 31
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688192)   : Create Item (24)
-                   Base Value: 10 | Scaled Value: 20 | Points Per Level: 2 | Target: Self (1)
+                   Base Value: 10 | Scaled Value: 10 | Points Per Level: 2 | Target: Self (1)
 Description      : Conjures $?s442543[${$max(20,$m1)}][$s1] $lbottle:bottles; of crystal water, providing the mage and $ghis:her; allies with something to drink.
 
 Conjured items disappear if logged out for more than 15 minutes.
@@ -2396,7 +2396,7 @@ Family Flags     : 30, 31
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687537)   : Create Item (24)
-                   Base Value: 2 | Scaled Value: 22.25 | Points Per Level: 2.25 | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 20 | Points Per Level: 2.25 | Target: Self (1)
 Description      : Conjures $s1 $lsweet roll:sweet rolls;, providing the mage and $ghis:her; allies with something to eat.
 
 Conjured items disappear if logged out for more than 15 minutes.
@@ -2495,7 +2495,7 @@ Family Flags     : 0, 30
 Attributes       : Not Shapeshifted (16), Aura Never Bounces (148), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687078)   : School Damage (2): fire
-                   Base Value: 451 | Scaled Value: 463 (delta=0.241379) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 451 | Scaled Value: 451 (delta=0.241379) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=687079)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
 Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
@@ -2627,7 +2627,7 @@ Effects          :
                    Base Value: -40 | Scaled Value: -40 | Radius: 10 yards | Mechanic: Snare | Target: Enemies in Cone (24)
                    Modified By: Permafrost (11175 effect#2)
 #2 (id=690410)   : School Damage (2): frost
-                   Base Value: 340 | Scaled Value: 347.5 (delta=0.085714) | Points Per Level: 1.5 | SP Coefficient: 0.129 | Radius: 10 yards | Target: Enemies in Cone (24)
+                   Base Value: 340 | Scaled Value: 343 (delta=0.085714) | Points Per Level: 1.5 | SP Coefficient: 0.129 | Radius: 10 yards | Target: Enemies in Cone (24)
 #3 (id=1363759)  : Dummy (3)
                    Base Value: 4 | Scaled Value: 4 | Radius: 10 yards | Target: Enemies in Cone (24)
 #4 (id=1363760)  : Dummy (3)
@@ -2942,7 +2942,7 @@ Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon 
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=687010)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 1.5 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 0 | Points Per Level: 0.3 | SP Coefficient: 0.03 | Radius: 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #2 (id=1292621)  : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41260 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292622)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
@@ -3145,7 +3145,7 @@ Family Flags     : 4, 30
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688313)   : School Damage (2): fire
-                   Base Value: 178 | Scaled Value: 184.8 (delta=0.165354) | Points Per Level: 1.7 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 178 | Scaled Value: 181.4 (delta=0.165354) | Points Per Level: 1.7 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Scorch the enemy for $s1 Fire damage.
 
 Name             : Arcane Missiles (desc=Rank 6) (id=10211) [Spell Family (3)] 
@@ -3236,7 +3236,7 @@ Family Flags     : 2, 30, 99
 Attributes       : Not Shapeshifted (16), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687307)   : School Damage (2): fire
-                   Base Value: 417 | Scaled Value: 425.5 (delta=0.201439) | Points Per Level: 1.7 | SP Coefficient: 0.157 | Radius: 5 yards | Target: at Enemy in Area (16)
+                   Base Value: 417 | Scaled Value: 423.8 (delta=0.201439) | Points Per Level: 1.7 | SP Coefficient: 0.157 | Radius: 5 yards | Target: at Enemy in Area (16)
 #2 (id=687308)   : Create Area Trigger (179)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 41271 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1292693)  : Apply Aura (6) | Periodic Dummy (226): every 2 seconds
@@ -4561,7 +4561,7 @@ Family Flags     : 23
 Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690758)   : School Damage (2): fire
-                   Base Value: 493 | Scaled Value: 504.4 (delta=0.163022) | Points Per Level: 1.9 | SP Coefficient: 0.129 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 493 | Scaled Value: 493 (delta=0.163022) | Points Per Level: 1.9 | SP Coefficient: 0.129 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 #2 (id=690759)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -50 | Scaled Value: -50 | Radius: 10 yards | Mechanic: Snare | Target: Source (22) -> Enemy in Area (15)
 Description      : A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and Dazing them for $s2% reduced movement speed for $d.
@@ -4653,7 +4653,7 @@ Family Flags     : 19, 32
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690154)   : Apply Aura (6) | Absorb Damage (69)
-                   Base Value: 811 | Scaled Value: 835 | Points Per Level: 4 | Misc Value: 0x7f | Target: Self (1)
+                   Base Value: 811 | Scaled Value: 819 | Points Per Level: 4 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
                    Modified By: Frost Warding (11189 effect#3)
 #2 (id=1365009)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
@@ -4826,7 +4826,7 @@ Proc Chance      : 101%
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=694853)   : School Damage (2): arcane
-                   Base Value: 85 | Scaled Value: 140 | Points Per Level: 1 | Target: Targeted Enemy (6)
+                   Base Value: 85 | Scaled Value: 110 | Points Per Level: 1 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Arcane damage.
 
 Name             : Frost Blast (id=18398) [Spell Family (3)] 
@@ -4892,7 +4892,7 @@ Family Flags     : 22, 30
 Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691706)   : School Damage (2): fire
-                   Base Value: 583 | Scaled Value: 610.6 (delta=0.216687) | Points Per Level: 4.6 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 583 | Scaled Value: 583 (delta=0.216687) | Points Per Level: 4.6 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=691707)   : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
                    Base Value: 53 | Scaled Value: 53 | SP Coefficient: 0.15 | Target: Targeted Enemy (6)
 Description      : Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
@@ -5152,7 +5152,7 @@ Effects          :
                    Base Value: -40 | Scaled Value: -40 | Mechanic: Snare | Target: Targeted Enemy (6)
                    Modified By: Permafrost (11175 effect#2)
 #2 (id=702260)   : School Damage (2): frost
-                   Base Value: 475 | Scaled Value: 487.8 (delta=0.074766) | Points Per Level: 3.2 | SP Coefficient: 0.814 | Target: Targeted Enemy (6)
+                   Base Value: 475 | Scaled Value: 475 (delta=0.074766) | Points Per Level: 3.2 | SP Coefficient: 0.814 | Target: Targeted Enemy (6)
 Description      : Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.
 Tooltip          : Movement slowed by $w1%.
 Variables        : $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
@@ -5180,7 +5180,7 @@ Family Flags     : 0, 30
 Attributes       : Not Shapeshifted (16), Aura Never Bounces (148), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=701692)   : School Damage (2): fire
-                   Base Value: 483 | Scaled Value: 495 (delta=0.241888) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 483 | Scaled Value: 483 (delta=0.241888) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=701693)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
                    Base Value: 15 | Scaled Value: 15 | Target: Targeted Enemy (6)
 Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
@@ -5222,7 +5222,7 @@ Family Flags     : 21
 Attributes       : Not Shapeshifted (16), Ignore Line of Sight (66), No Initial Threat (86), Not a Proc (105), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=702760)   : School Damage (2): arcane
-                   Base Value: 209 | Scaled Value: 213 | Points Per Level: 1 | SP Coefficient: 0.286 | Target: Targeted Enemy (6)
+                   Base Value: 209 | Scaled Value: 209 | Points Per Level: 1 | SP Coefficient: 0.286 | Target: Targeted Enemy (6)
 Description      : Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 Name             : Lunar Invititation (id=26373) [Spell Family (3)] 
@@ -5311,7 +5311,7 @@ Family Flags     : 30, 31
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691816)   : Create Item (24)
-                   Base Value: 10 | Scaled Value: 20 | Points Per Level: 2 | Target: Self (1)
+                   Base Value: 10 | Scaled Value: 10 | Points Per Level: 2 | Target: Self (1)
 Description      : Conjures $s1 $lcinnamon roll:cinnamon rolls;, providing the mage and $ghis:her; allies with something to eat.
 
 Conjured items disappear if logged out for more than 15 minutes.
@@ -9234,7 +9234,7 @@ Family Flags     : 30, 31
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (493)
 Effects          :
 #1 (id=1182693)  : Create Item (24)
-                   Base Value: 20 | Scaled Value: 30 | Points Per Level: 2 | Target: Self (1)
+                   Base Value: 20 | Scaled Value: 20 | Points Per Level: 2 | Target: Self (1)
 Description      : Conjures $s1 $lbottle:bottles; of mountain spring water, providing the mage and $ghis:her; allies with something to drink.
 
 Conjured items disappear if logged out for more than 15 minutes.
@@ -9431,7 +9431,7 @@ Effects          :
                    Base Value: -40 | Scaled Value: -40 | Mechanic: Snare | Target: Targeted Enemy (6)
                    Modified By: Permafrost (11175 effect#2)
 #2 (id=1234033)  : School Damage (2): frostfire
-                   Base Value: 292 | Scaled Value: 308.8 (delta=0.153409) | Points Per Level: 2.1 | SP Coefficient: 0.814 | Target: Targeted Enemy (6)
+                   Base Value: 292 | Scaled Value: 292 (delta=0.153409) | Points Per Level: 2.1 | SP Coefficient: 0.814 | Target: Targeted Enemy (6)
 #3 (id=1234034)  : Apply Aura (6) | Periodic Damage (3): frostfire every 3 seconds
                    Base Value: 19 | Scaled Value: 19 | Target: Targeted Enemy (6)
 Description      : Launches a bolt of frostfire at the enemy, causing $s2 Frostfire damage, slowing movement speed by $s1% and causing an additional $o3 Frostfire damage over $d. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.
@@ -9510,7 +9510,7 @@ Family Flags     : 29, 30
 Attributes       : Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1237649)  : School Damage (2): arcane
-                   Base Value: 236 | Scaled Value: 248.8 (delta=0.15102) | Points Per Level: 1.6 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
+                   Base Value: 236 | Scaled Value: 236 (delta=0.15102) | Points Per Level: 1.6 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 Name             : Ice Lance (desc=Rank 3) (id=1240044) [Spell Family (3)] 
@@ -9623,7 +9623,7 @@ Family Flags     : 17, 19
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1238151)  : School Damage (2): frost
-                   Base Value: 145 | Scaled Value: 152.2 (delta=0.166667) | Points Per Level: 0.9 | Target: Targeted Enemy (6)
+                   Base Value: 145 | Scaled Value: 148.6 (delta=0.166667) | Points Per Level: 0.9 | Target: Targeted Enemy (6)
 #2 (id=1238152)  : Dummy (3)
                    Base Value: 300 | Scaled Value: 300
 Hotfixed         : Base Value (200 -> 300)
@@ -9646,7 +9646,7 @@ Family Flags     : 7, 19
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1292576)  : School Damage (2): frost
-                   Base Value: 146 | Scaled Value: 148 | Points Per Level: 0.4 | SP Coefficient: 0.042 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 146 | Scaled Value: 146 | Points Per Level: 0.4 | SP Coefficient: 0.042 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Blizzard (desc=Rank 1) (id=1279976) [Spell Family (3)] 
 Class            : Mage
@@ -9973,7 +9973,7 @@ Family Flags     : 30, 47
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1363795)  : School Damage (2): arcane
-                   Base Value: 451 | Scaled Value: 484 (delta=0.201005) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 451 | Scaled Value: 451 (delta=0.201005) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=1363796)  : Dummy (3)
                    Base Value: 5 | Scaled Value: 5 | Target: Targeted Enemy (6)
 Description      : Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.

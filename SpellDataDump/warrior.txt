@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Defensive Stance (id=71) [Spell Family (4)] 
 Hotfixed         : Attributes, Tooltip
 Class            : Warrior
@@ -1545,7 +1545,7 @@ Family Flags     : 16
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Only On Player (104), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689517)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 111 | Scaled Value: 116.4 | Points Per Level: 0.6 | Radius: 20 yards | Target: Raid in Area (56)
+                   Base Value: 111 | Scaled Value: 115.8 | Points Per Level: 0.6 | Radius: 20 yards | Target: Raid in Area (56)
                    Modified By: Improved Battle Shout (12318 effect#1), Improved Battle Shout (12857 effect#1), Improved Battle Shout (12858 effect#1), Improved Battle Shout (12860 effect#1), Improved Battle Shout (12861 effect#1)
 Description      : The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
 Tooltip          : Increases your melee attack power by $w1.
@@ -1614,10 +1614,10 @@ Family Flags     : 17
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Taps immediately (215), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690063)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: -196 | Scaled Value: -210 | Points Per Level: -1.4 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: -196 | Scaled Value: -204.4 | Points Per Level: -1.4 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
                    Modified By: Improved Demoralizing Shout (12324 effect#1), Improved Demoralizing Shout (12876 effect#1), Improved Demoralizing Shout (12877 effect#1), Improved Demoralizing Shout (12878 effect#1), Improved Demoralizing Shout (12879 effect#1)
 #2 (id=1361987)  : Threat (63)
-                   Base Value: 43 | Scaled Value: 51 | Points Per Level: 0.8 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 43 | Scaled Value: 47.8 | Points Per Level: 0.8 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
                    Modified By: Improved Demoralizing Shout (12324 effect#1), Improved Demoralizing Shout (12876 effect#1), Improved Demoralizing Shout (12877 effect#1), Improved Demoralizing Shout (12878 effect#1), Improved Demoralizing Shout (12879 effect#1)
 Description      : Reduces the melee attack power of all enemies within $a1 yards by $s1 for $d.
 Tooltip          : Reduces melee attack power by $w1.
@@ -4174,7 +4174,7 @@ Family Flags     : 16
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Only On Player (104), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=702382)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 139 | Scaled Value: 139.6 | Points Per Level: 0.6 | Radius: 20 yards | Target: Raid in Area (56)
+                   Base Value: 139 | Scaled Value: 139 | Points Per Level: 0.6 | Radius: 20 yards | Target: Raid in Area (56)
                    Modified By: Improved Battle Shout (12318 effect#1), Improved Battle Shout (12857 effect#1), Improved Battle Shout (12858 effect#1), Improved Battle Shout (12860 effect#1), Improved Battle Shout (12861 effect#1)
 Description      : The warrior shouts, increasing the melee attack power of all party or raid members within $a1 yards by $s1.  Lasts $d.
 Tooltip          : Increases your melee attack power by $w1.
@@ -4365,7 +4365,7 @@ Family Flags     : 39
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1050034)  : Apply Aura (6) | Attribute (29)
-                   Base Value: 2 | Scaled Value: 62.52 | Points Per Level: 0.68 | Stat: Sta | Radius: 30 yards | Target: Party in Area (20)
+                   Base Value: 2 | Scaled Value: 42.12 | Points Per Level: 0.68 | Stat: Sta | Radius: 30 yards | Target: Party in Area (20)
 Description      : The warrior shouts, increasing the Stamina of all party members within $a1 yards by $s1.  Lasts $d.
 Tooltip          : Increases your Stamina by $s1.
 
