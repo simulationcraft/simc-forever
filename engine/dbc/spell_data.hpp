@@ -983,6 +983,8 @@ struct spell_container_nil_t : public spell_container_t
     cached = true;
   }
 
+  ~spell_container_nil_t() = default;
+
   bool empty() override
   {
     return true;
