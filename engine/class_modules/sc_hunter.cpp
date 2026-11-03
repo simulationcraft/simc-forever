@@ -24,6 +24,7 @@ struct hunter_t final : public player_t
 
   resource_e primary_resource() const override { return RESOURCE_MANA; }
 
+  void init_spells() override;
   void init_base_stats() override;
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
@@ -34,6 +35,13 @@ struct hunter_t final : public player_t
   {
     buff_t* aspect_of_the_hawk = nullptr;
   } buff;
+
+  struct
+  {
+    spell_ranks_t aspect_of_the_hawk;
+    spell_ranks_t arcane_shot;
+    spell_ranks_t serpent_sting;
+  } rank;
 };
 
 template <class Base>
@@ -62,27 +70,17 @@ using hunter_spell_t  = hunter_action_t<spell_t>;
 // ================================================================================
 // Hunter Buffs
 // ================================================================================
-
-constexpr std::array aspect_of_the_hawk_ranks {
-  spell_container_t().set_spell( 13165 ),
-  spell_container_t().set_spell( 14318 ),
-  spell_container_t().set_spell( 14319 ),
-  spell_container_t().set_spell( 14320 ),
-  spell_container_t().set_spell( 14321 ),
-  spell_container_t().set_spell( 14322 ),
-  spell_container_t().set_spell( 25296 ),
-};
 struct aspect_of_the_hawk_t : public hunter_spell_t
 {
-  aspect_of_the_hawk_t( hunter_t* p, util::string_view options_str ) :
-    hunter_spell_t( "aspect_of_the_hawk", p, p->find_rank( aspect_of_the_hawk_ranks )->spell( p ) )
+  aspect_of_the_hawk_t( hunter_t* player, util::string_view options_str ) :
+    hunter_spell_t( "aspect_of_the_hawk", player, player->rank.aspect_of_the_hawk.find_rank()->spell() )
   {
     parse_options( options_str );
 
     harmful  = false;
     may_miss = false;
 
-    target   = p;
+    target   = player;
   }
 
   void execute() override
@@ -102,7 +100,7 @@ struct hunter_ranged_attack_t : public hunter_ranged_t
 {
   bool first = true;
 
-  hunter_ranged_attack_t( util::string_view name, player_t* player )
+  hunter_ranged_attack_t( player_t* player, util::string_view name )
     : hunter_ranged_t( name, player, player->find_spell( 75 ) )
   {
     weapon            = &player->equipped_weapons[ SLOT_RANGED ];
@@ -141,22 +139,22 @@ struct hunter_ranged_attack_t : public hunter_ranged_t
 
 struct hunter_auto_shot_t : public hunter_ranged_t
 {
-  hunter_auto_shot_t( hunter_t* p, util::string_view options_str )
-    : hunter_ranged_t( "auto_shot", p, p->find_spell( 75 ) )
+  hunter_auto_shot_t( hunter_t* player, util::string_view options_str )
+    : hunter_ranged_t( "auto_shot", player, player->find_spell( 75 ) )
   {
     parse_options( options_str );
 
     trigger_gcd           = 0_ms;
     ignore_false_positive = true;
 
-    assert( p->equipped_weapons[ SLOT_RANGED ].type != WEAPON_NONE );
+    assert( player->equipped_weapons[ SLOT_RANGED ].type != WEAPON_NONE );
 
-    p->ranged_attack = new hunter_ranged_attack_t( "auto_shot", p );
+    player->ranged_attack = new hunter_ranged_attack_t( player, "auto_shot" );
   }
 
   void execute() override
   {
-    player->ranged_attack->schedule_execute();
+    p()->ranged_attack->schedule_execute();
   }
 
   bool ready() override
@@ -164,30 +162,19 @@ struct hunter_auto_shot_t : public hunter_ranged_t
     // TODO: Copied from auto attacks and not correct for hunter.
     // Figure out the auto shot timers around movement. Roughly seemed like you could move until about 0.5s before
     // the next shot to avoid interruption
-    if ( player->is_moving() )
+    if ( p()->is_moving() )
     {
       return false;
     }
 
-    return player->ranged_attack->execute_event == nullptr;
+    return p()->ranged_attack->execute_event == nullptr;
   }
 };
 
-
-constexpr std::array arcane_shot_ranks {
-  spell_container_t().set_spell(  3044 ),
-  spell_container_t().set_spell( 14281 ),
-  spell_container_t().set_spell( 14282 ),
-  spell_container_t().set_spell( 14283 ),
-  spell_container_t().set_spell( 14284 ),
-  spell_container_t().set_spell( 14285 ),
-  spell_container_t().set_spell( 14286 ),
-  spell_container_t().set_spell( 14287 ),
-};
 struct arcane_shot_t : public hunter_ranged_t
 {
-  arcane_shot_t( hunter_t* p, util::string_view options_str )
-    : hunter_ranged_t( "arcane_shot", p, p->find_rank( arcane_shot_ranks )->spell( p ) )
+  arcane_shot_t( hunter_t* player, util::string_view options_str )
+    : hunter_ranged_t( "arcane_shot", player, player->rank.arcane_shot.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -196,21 +183,10 @@ struct arcane_shot_t : public hunter_ranged_t
   }
 };
 
-constexpr std::array serpent_sting_ranks {
-  spell_container_t().set_spell(  1978 ),
-  spell_container_t().set_spell( 13549 ),
-  spell_container_t().set_spell( 13550 ),
-  spell_container_t().set_spell( 13551 ),
-  spell_container_t().set_spell( 13552 ),
-  spell_container_t().set_spell( 13553 ),
-  spell_container_t().set_spell( 13554 ),
-  spell_container_t().set_spell( 13555 ),
-  spell_container_t().set_spell( 25295 ),
-};
 struct serpent_sting_t : public hunter_ranged_t
 {
-  serpent_sting_t( hunter_t* p, util::string_view options_str )
-    : hunter_ranged_t( "serpent_sting", p, p->find_rank( serpent_sting_ranks )->spell( p ) )
+  serpent_sting_t( hunter_t* player, util::string_view options_str )
+    : hunter_ranged_t( "serpent_sting", player, player->rank.serpent_sting.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -218,6 +194,42 @@ struct serpent_sting_t : public hunter_ranged_t
     attack_power_mod.tick = 0.03;
   }
 };
+
+void hunter_t::init_spells()
+{
+  player_t::init_spells();
+
+  rank.aspect_of_the_hawk = { this,
+    spell_container_t().set_spell( 13165 ),
+    spell_container_t().set_spell( 14318 ),
+    spell_container_t().set_spell( 14319 ),
+    spell_container_t().set_spell( 14320 ),
+    spell_container_t().set_spell( 14321 ),
+    spell_container_t().set_spell( 14322 ),
+    spell_container_t().set_spell( 25296 ),
+  };
+  rank.arcane_shot = { this,
+    spell_container_t().set_spell(  3044 ),
+    spell_container_t().set_spell( 14281 ),
+    spell_container_t().set_spell( 14282 ),
+    spell_container_t().set_spell( 14283 ),
+    spell_container_t().set_spell( 14284 ),
+    spell_container_t().set_spell( 14285 ),
+    spell_container_t().set_spell( 14286 ),
+    spell_container_t().set_spell( 14287 ),
+  };
+  rank.serpent_sting = { this,
+    spell_container_t().set_spell(  1978 ),
+    spell_container_t().set_spell( 13549 ),
+    spell_container_t().set_spell( 13550 ),
+    spell_container_t().set_spell( 13551 ),
+    spell_container_t().set_spell( 13552 ),
+    spell_container_t().set_spell( 13553 ),
+    spell_container_t().set_spell( 13554 ),
+    spell_container_t().set_spell( 13555 ),
+    spell_container_t().set_spell( 25295 ),
+  };
+}
 
 void hunter_t::init_base_stats()
 {
@@ -256,7 +268,7 @@ action_t* hunter_t::create_action( util::string_view name, util::string_view opt
 
 void hunter_t::create_buffs()
 {
-  buff.aspect_of_the_hawk = make_buff<stat_buff_t>( this, "aspect_of_the_hawk", find_rank( aspect_of_the_hawk_ranks )->spell( this ) );
+  buff.aspect_of_the_hawk = make_buff<stat_buff_t>( this, "aspect_of_the_hawk", rank.aspect_of_the_hawk.find_rank()->spell() );
 
   player_t::create_buffs();
 }
@@ -283,8 +295,8 @@ struct hunter_module_t: public module_t
 
   player_t* create_player( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) const override
   {
-    auto  p = new hunter_t( sim, name, r );
-    return p;
+    auto  player = new hunter_t( sim, name, r );
+    return player;
   }
 
   bool valid() const override { return true; }
