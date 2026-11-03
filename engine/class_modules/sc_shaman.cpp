@@ -138,51 +138,47 @@ void shaman_t::init_spells()
 {
   player_t::init_spells();
 
-  rank.earth_shock = { this,
+  rank.earth_shock = spell_ranks_t( this,
     spell_container_t().set_spell( 8042 ),
     spell_container_t().set_spell( 8044 ),
     spell_container_t().set_spell( 8045 ),
     spell_container_t().set_spell( 8046 ),
     spell_container_t().set_spell( 10412 ),
     spell_container_t().set_spell( 10413 ),
-    spell_container_t().set_spell( 10414 ),
-  };
-
-  rank.flame_shock = { this,
+    spell_container_t().set_spell( 10414 )
+  );
+  rank.flame_shock = spell_ranks_t( this,
     spell_container_t().set_spell( 8050 ),
     spell_container_t().set_spell( 8052 ),
     spell_container_t().set_spell( 8053 ),
     spell_container_t().set_spell( 10447 ),
     spell_container_t().set_spell( 10448 ),
-    spell_container_t().set_spell( 29228 ),
-  };
-
-  rank.flametongue_weapon = { this,
+    spell_container_t().set_spell( 29228 )
+  );
+  rank.flametongue_weapon = spell_ranks_t( this,
     spell_container_t().set_spell( 8024 ).set_driver( 8026 ).set_attack( 29469 ),
     spell_container_t().set_spell( 8027 ).set_driver( 8028 ).set_attack( 29470 ),
     spell_container_t().set_spell( 8030 ).set_driver( 8029 ).set_attack( 10444 ),
     spell_container_t().set_spell( 16339 ).set_driver( 10445 ).set_attack( 10444 ),
     spell_container_t().set_spell( 16341 ).set_driver( 16343 ).set_attack( 10444 ),
-    spell_container_t().set_spell( 16342 ).set_driver( 16344 ).set_attack( 10444 ),
-  };
-
-  rank.rockbiter_weapon = { this,
+    spell_container_t().set_spell( 16342 ).set_driver( 16344 ).set_attack( 10444 )
+  );
+  rank.rockbiter_weapon = spell_ranks_t( this,
     spell_container_t().set_spell( 8017 ).set_passive( 10400 ),
     spell_container_t().set_spell( 8018 ).set_passive( 15567 ),
     spell_container_t().set_spell( 8019 ).set_passive( 15568 ),
     spell_container_t().set_spell( 10399 ).set_passive( 15569 ),
     spell_container_t().set_spell( 16314 ).set_passive( 16311 ),
     spell_container_t().set_spell( 16315 ).set_passive( 16312 ),
-    spell_container_t().set_spell( 16316 ).set_passive( 16313 ),
-  };
-
-  rank.strength_of_earth_totem = { this,
+    spell_container_t().set_spell( 16316 ).set_passive( 16313 )
+  );
+  rank.strength_of_earth_totem = spell_ranks_t( this,
     spell_container_t().set_spell( 8075 ).set_aura( 8076 ),
     spell_container_t().set_spell( 8160 ).set_aura( 8162 ),
     spell_container_t().set_spell( 8161 ).set_aura( 8163 ),
     spell_container_t().set_spell( 10442 ).set_aura( 10441 ),
-    spell_container_t().set_spell( 25361 ).set_aura( 25362 ),
-  };
+    spell_container_t().set_spell( 25361 ).set_aura( 25362 )
+  );
 
   parse_all_class_passives();
   parse_all_passive_talents();

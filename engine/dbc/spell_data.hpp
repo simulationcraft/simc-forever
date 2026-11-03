@@ -912,13 +912,11 @@ inline const spelleffect_data_t& spelleffect_data_t::nil() { return spelleffect_
  *
  * Cached collection of spell_data_t pointers. Intended for talents, rank spells etc.
  */
-struct spell_ranks_t;
-struct spell_container_t// : private noncopyable
+struct spell_container_t
 {
-  friend spell_ranks_t;
-private:
+protected:
   bool cached = false;
-  
+
   unsigned spell_id   = 0;
   unsigned driver_id  = 0;
   unsigned attack_id  = 0;
@@ -937,6 +935,18 @@ private:
   const spell_data_t* _talent  = nullptr;
   const spell_data_t* _debuff  = nullptr;
 
+  const spell_data_t* get_spell_data( auto id_field, auto data_field ) const
+  {
+    assert( cached );
+
+    if ( std::invoke( id_field, this ) == 0 )
+      return spell_data_t::nil();
+    if ( auto spell = std::invoke( data_field, this ); spell && spell->ok() )
+      return spell;
+
+    return spell_data_t::not_found();
+  }
+
 public:
   spell_container_t& set_spell( unsigned id )   { spell_id = id;   return *this; }
   spell_container_t& set_driver( unsigned id )  { driver_id = id;  return *this; }
@@ -947,19 +957,39 @@ public:
   spell_container_t& set_talent( unsigned id )  { talent_id = id;  return *this; }
   spell_container_t& set_debuff( unsigned id )  { debuff_id = id;  return *this; }
 
+  // when adding members for derived `spell_container_t`, return !( ... ) && <base_t>::empty();
+  bool ok() { return !empty(); }
+  virtual bool empty() { return !( spell_id || driver_id || attack_id || passive_id || aura_id || buff_id || talent_id || debuff_id ); }
   virtual void cache_data( const player_t* player );
+  static const spell_container_t* nil();
 
-  const spell_data_t* spell() const;
-  const spell_data_t* driver() const;
-  const spell_data_t* attack() const;
-  const spell_data_t* passive() const;
-  const spell_data_t* aura() const;
-  const spell_data_t* buff() const;
-  const spell_data_t* talent() const;
-  const spell_data_t* debuff() const;
+  const spell_data_t* spell() const   { return get_spell_data( &spell_container_t::spell_id,   &spell_container_t::_spell );   }
+  const spell_data_t* driver() const  { return get_spell_data( &spell_container_t::driver_id,  &spell_container_t::_driver );  }
+  const spell_data_t* attack() const  { return get_spell_data( &spell_container_t::attack_id,  &spell_container_t::_attack );  }
+  const spell_data_t* passive() const { return get_spell_data( &spell_container_t::passive_id, &spell_container_t::_passive ); }
+  const spell_data_t* aura() const    { return get_spell_data( &spell_container_t::aura_id,    &spell_container_t::_aura );    }
+  const spell_data_t* buff() const    { return get_spell_data( &spell_container_t::buff_id,    &spell_container_t::_buff );    }
+  const spell_data_t* talent() const  { return get_spell_data( &spell_container_t::talent_id,  &spell_container_t::_talent );  }
+  const spell_data_t* debuff() const  { return get_spell_data( &spell_container_t::debuff_id,  &spell_container_t::_debuff );  }
 
   virtual ~spell_container_t() = default;
 };
+
+struct spell_container_nil_t : public spell_container_t
+{
+  constexpr spell_container_nil_t()
+    : spell_container_t()
+  {
+    cached = true;
+  }
+
+  bool empty() override
+  {
+    return true;
+  }
+};
+inline constexpr spell_container_nil_t spell_container_nil_v {};
+inline const spell_container_t* spell_container_t::nil() { return &spell_container_nil_v; }
 
 enum spell_rank_e : int
 {

@@ -876,15 +876,6 @@ void spell_container_t::cache_data( const player_t* player )
   _debuff  = player->find_spell( debuff_id );
 }
 
-const spell_data_t* spell_container_t::spell() const   { assert( cached ); return _spell; }
-const spell_data_t* spell_container_t::driver() const  { assert( cached ); return _driver; }
-const spell_data_t* spell_container_t::attack() const  { assert( cached ); return _attack; }
-const spell_data_t* spell_container_t::passive() const { assert( cached ); return _attack; }
-const spell_data_t* spell_container_t::aura() const    { assert( cached ); return _aura; }
-const spell_data_t* spell_container_t::buff() const    { assert( cached ); return _buff; }
-const spell_data_t* spell_container_t::talent() const  { assert( cached ); return _talent; }
-const spell_data_t* spell_container_t::debuff() const  { assert( cached ); return _debuff; }
-
 const spell_container_t* spell_ranks_t::find_rank( int rank, spell_ranks_t::rank_ptype_t field )
 {
   assert( !ranks.empty() );
@@ -907,6 +898,9 @@ const spell_container_t* spell_ranks_t::find_rank( int rank, spell_ranks_t::rank
     // if the member being referenced for existence is not &spell_container_t::spell, provide a non-default field
     for ( auto& it : ranks | std::ranges::views::reverse )
     {
+      if ( it.empty() )
+        continue;
+
       it.cache_data( player );
       if ( auto reference_spell = std::invoke( field, it ); reference_spell && reference_spell->ok() )
       {
@@ -919,6 +913,7 @@ const spell_container_t* spell_ranks_t::find_rank( int rank, spell_ranks_t::rank
   if ( !container )
     container = &ranks.front();
 
+  assert( !container->empty() );
   container->cache_data( player );
   return container;
 }

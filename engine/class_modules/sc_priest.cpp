@@ -42,14 +42,14 @@ struct priest_racial_ranks_t final : spell_ranks_t
     : spell_ranks_t{ std::forward<Pack>( pack )... }
   {}
 
-  const spell_data_t* find_racial_rank_spell( int rank = RANK_MAX_USABLE, spell_ranks_t::rank_ptype_t field = &spell_container_t::spell )
+  const spell_container_t* find_rank( int rank = RANK_MAX_USABLE, spell_ranks_t::rank_ptype_t field = &spell_container_t::spell ) override
   {
     // make a nil `spell_container_t` and this can be find_rank(...) override
     ranks.front().cache_data( player );
     if ( !( ranks.front().spell()->race_mask() & util::race_mask( player->race ) ) )
-      return spell_data_t::not_found();
+      return spell_container_t::nil();
 
-    return std::invoke( field, spell_ranks_t::find_rank( rank, field ) );
+    return spell_ranks_t::find_rank( rank, field );
   }
 };
 
@@ -371,11 +371,11 @@ void priest_t::init_spells()
   deregister_passive_spell( talent.wand_specialization );
 
   spell.dark_inspiration         = find_spell( 1326168 );
-  spell.hex_of_weakness          = rank.hex_of_weakness.find_racial_rank_spell();
+  spell.hex_of_weakness          = rank.hex_of_weakness.find_rank()->spell();
   spell.holy_purpose             = talent.searing_light->effectN( 2 ).trigger();
   spell.shadow_weaving           = talent.shadow_weaving->effectN( 1 ).trigger();
-  spell.touch_of_weakness        = rank.touch_of_weakness.find_racial_rank_spell();
-  spell.touch_of_weakness_debuff = rank.touch_of_weakness.find_racial_rank_spell( RANK_MAX_USABLE, &spell_container_t::debuff );
+  spell.touch_of_weakness        = rank.touch_of_weakness.find_rank()->spell();
+  spell.touch_of_weakness_debuff = rank.touch_of_weakness.find_rank( RANK_MAX_USABLE, &spell_container_t::debuff )->debuff();
 }
 
 void priest_t::create_buffs()
@@ -702,7 +702,7 @@ struct holy_nova_t : public priest_spell_t
 struct starshards_t : public priest_spell_t
 {
   starshards_t( priest_t* player, util::string_view options_str ):
-    priest_spell_t( "starshards", player, player->rank.starshards.find_racial_rank_spell() )
+    priest_spell_t( "starshards", player, player->rank.starshards.find_rank()->spell() )
   {
     parse_options( options_str );
     channeled = true;
@@ -717,7 +717,7 @@ struct dark_sacrifice_t : public priest_spell_t
   double spirit_per_tick = 0.0;
 
   dark_sacrifice_t( priest_t* player, util::string_view options_str ):
-    priest_spell_t( "dark_sacrifice", player, player->rank.dark_sacrifice.find_racial_rank_spell() )
+    priest_spell_t( "dark_sacrifice", player, player->rank.dark_sacrifice.find_rank()->spell() )
   {
     parse_options( options_str );
     harmful = false;
