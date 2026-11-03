@@ -44,7 +44,6 @@ struct priest_racial_ranks_t final : spell_ranks_t
 
   const spell_container_t* find_rank( int rank = RANK_MAX_USABLE, spell_ranks_t::rank_ptype_t field = &spell_container_t::spell ) override
   {
-    // make a nil `spell_container_t` and this can be find_rank(...) override
     ranks.front().cache_data( player );
     if ( !( ranks.front().spell()->race_mask() & util::race_mask( player->race ) ) )
       return spell_container_t::nil();
@@ -271,7 +270,7 @@ void priest_t::init_spells()
     spell_container_t().set_spell( 15267 ),
     spell_container_t().set_spell( 15261 ), // Rank 8 is 15261 for some reason
   };
-  rank.holy_nova = { this,
+  rank.holy_nova = { this, talent.holy_nova,
     spell_container_t().set_spell( 15237 ),
     spell_container_t().set_spell( 15430 ),
     spell_container_t().set_spell( 15431 ),
@@ -290,7 +289,7 @@ void priest_t::init_spells()
     spell_container_t().set_spell( 10946 ),
     spell_container_t().set_spell( 10947 ),
   };
-  rank.mind_flay = { this,
+  rank.mind_flay = { this, talent.mind_flay,
     spell_container_t().set_spell( 15407 ),
     spell_container_t().set_spell( 17311 ),
     spell_container_t().set_spell( 17312 ),
@@ -298,7 +297,7 @@ void priest_t::init_spells()
     spell_container_t().set_spell( 17314 ),
     spell_container_t().set_spell( 18807 ),
   };
-  rank.penance = { this,
+  rank.penance = { this, talent.penance,
     spell_container_t().set_spell(  402174 ).set_driver(  402261 ).set_attack(  402284 ),
     spell_container_t().set_spell( 1240720 ).set_driver( 1240734 ).set_attack( 1240727 ),
     spell_container_t().set_spell( 1240721 ).set_driver( 1240736 ).set_attack( 1240730 ),
@@ -590,9 +589,7 @@ struct devouring_plague_t : public priest_spell_t
 struct mind_flay_t : public priest_spell_t
 {
   mind_flay_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "mind_flay", player, player->talent.mind_flay.ok()
-                    ? player->rank.mind_flay.find_rank()->spell()
-                                         : spell_data_t::not_found() )
+    priest_spell_t( "mind_flay", player, player->rank.mind_flay.find_rank()->spell() )
   {
     parse_options( options_str );
     channeled = true;
@@ -671,9 +668,7 @@ struct penance_damage_t : public priest_spell_t
 struct penance_t : public priest_spell_t
 {
   penance_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "penance", player, player->talent.penance.ok()
-                    ? player->rank.penance.find_rank()->spell()
-                                       : spell_data_t::not_found() )
+    priest_spell_t( "penance", player, player->rank.penance.find_rank()->spell() )
   {
     parse_options( options_str );
     channeled = true;
@@ -689,9 +684,7 @@ struct penance_t : public priest_spell_t
 struct holy_nova_t : public priest_spell_t
 {
   holy_nova_t( priest_t* player, util::string_view options_str ) :
-    priest_spell_t( "holy_nova", player, player->talent.holy_nova.ok()
-                    ? player->rank.holy_nova.find_rank()->spell()
-                                         : spell_data_t::not_found() )
+    priest_spell_t( "holy_nova", player, player->rank.holy_nova.find_rank()->spell() )
   {
     parse_options( options_str );
     aoe = -1;

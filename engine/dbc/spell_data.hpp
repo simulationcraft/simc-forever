@@ -997,17 +997,42 @@ enum spell_rank_e : int
   RANK_MAX        = -1, // highest rank in the table
 };
 
+
+template <typename T>
+concept HasOk = requires(T t)
+{
+  { t.ok() } -> std::convertible_to<bool>;
+} && !std::is_same_v<std::remove_cv_t<T>, spell_container_t>;
+
 struct spell_ranks_t
 {
   const player_t* player;
   // std::array<spell_container_t, 16> ranks;
   std::vector<spell_container_t> ranks;
 
+  std::function<bool()> validate_fn;
+
   spell_ranks_t() = default;
+
   template <typename... Pack>
   spell_ranks_t( player_t* player, Pack&&... pack )
     : player( player ),
-      ranks{ std::forward<Pack>( pack )... }
+      ranks{ std::forward<Pack>( pack )... },
+      validate_fn( [](){ return true; } )
+  {}
+
+  template <typename... Pack>
+  spell_ranks_t( player_t* player, std::function<bool()> validate, Pack&&... pack )
+    : player( player ),
+      ranks{ std::forward<Pack>( pack )... },
+      validate_fn( std::move( validate ) )
+  {}
+
+  template <HasOk T, typename... Pack>
+  spell_ranks_t( player_t* player, T& validate, Pack&&... pack )
+    : player( player ),
+      ranks{ std::forward<Pack>( pack )... },
+      validate_fn( [ validate ](){ return std::invoke( &T::ok, validate ); } )
   {}
 
   virtual ~spell_ranks_t() = default;
