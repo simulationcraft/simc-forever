@@ -3860,7 +3860,8 @@ Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=685878)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
-                   Base Value: 3 | Scaled Value: 3 | Points Per Combo Point: 4.4 | Target: Targeted Enemy (6)
+                   Base Value: 4 | Scaled Value: 4 | Points Per Combo Point: 5.5 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (3 -> 4), Points per Combo Points (4.4 -> 5.5)
 #2 (id=1290990)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -3888,7 +3889,8 @@ Effects          :
 #1 (id=679797)   : Weapon Damage (58)
                    Base Value: 27 | Scaled Value: 27 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=679798)   : Weapon Damage% (31)
-                   Base Value: 110 | Scaled Value: 1.1 | Target: Targeted Enemy (6)
+                   Base Value: 140 | Scaled Value: 1.4 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (110 -> 140)
 #3 (id=1338554)  : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
 Description      : Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -5527,10 +5529,12 @@ Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681365)   : School Damage (2): physical
-                   Base Value: 23 | Scaled Value: 23 | Target: Targeted Enemy (6)
+                   Base Value: 27 | Scaled Value: 27 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (23 -> 27)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#7)
 #2 (id=681366)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 16 | Scaled Value: 16 | Mechanic: Bleed | Target: Targeted Enemy (6)
+                   Base Value: 20 | Scaled Value: 20 | Mechanic: Bleed | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (16 -> 20)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#8)
 #3 (id=681367)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -5553,10 +5557,12 @@ Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681217)   : School Damage (2): physical
-                   Base Value: 31 | Scaled Value: 31 | Target: Targeted Enemy (6)
+                   Base Value: 39 | Scaled Value: 39 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (31 -> 39)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#7)
 #2 (id=681218)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 21 | Scaled Value: 21 | Mechanic: Bleed | Target: Targeted Enemy (6)
+                   Base Value: 26 | Scaled Value: 26 | Mechanic: Bleed | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (21 -> 26)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#8)
 #3 (id=681219)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -5579,10 +5585,12 @@ Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680978)   : School Damage (2): physical
-                   Base Value: 45 | Scaled Value: 45 | Target: Targeted Enemy (6)
+                   Base Value: 56 | Scaled Value: 56 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (45 -> 56)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#7)
 #2 (id=680979)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 26 | Scaled Value: 26 | Mechanic: Bleed | Target: Targeted Enemy (6)
+                   Base Value: 32 | Scaled Value: 32 | Mechanic: Bleed | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (26 -> 32)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#8)
 #3 (id=680980)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -7603,7 +7611,8 @@ Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680527)   : School Damage (2): arcane
-                   Base Value: 81 | Scaled Value: 87.5 (delta=0.20202) | Points Per Level: 1.3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 113 | Scaled Value: 122 (delta=0.20202) | Points Per Level: 1.8 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (81 -> 113), Points per Level (1.3 -> 1.8)
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Immolate (desc=Rank 4) (id=2941) [Spell Family (5)] 
@@ -7884,7 +7893,8 @@ Effects          :
 #1 (id=680009)   : Weapon Damage (58)
                    Base Value: 39 | Scaled Value: 39 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=680010)   : Weapon Damage% (31)
-                   Base Value: 110 | Scaled Value: 1.1 | Target: Targeted Enemy (6)
+                   Base Value: 140 | Scaled Value: 1.4 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (110 -> 140)
 #3 (id=1338556)  : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
 Description      : Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -11055,7 +11065,8 @@ Effects          :
 #1 (id=683535)   : Weapon Damage (58)
                    Base Value: 57 | Scaled Value: 57 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=683536)   : Weapon Damage% (31)
-                   Base Value: 110 | Scaled Value: 1.1 | Target: Targeted Enemy (6)
+                   Base Value: 140 | Scaled Value: 1.4 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (110 -> 140)
 #3 (id=1338557)  : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
 Description      : Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -11176,7 +11187,8 @@ Effects          :
                    Base Value: 22 | Scaled Value: 22 | SP Coefficient: 1 | Target: Targeted Enemy (6)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#6)
 #2 (id=683155)   : Weapon Damage% (31)
-                   Base Value: 155 | Scaled Value: 1.55 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 200 | Scaled Value: 2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (155 -> 200)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#5)
 #3 (id=683156)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -14824,7 +14836,8 @@ Effects          :
 #1 (id=684649)   : Weapon Damage (58)
                    Base Value: 42 | Scaled Value: 42 | Value Multiplier: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=684650)   : Weapon Damage% (31)
-                   Base Value: 350 | Scaled Value: 3.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (350 -> 435)
 #3 (id=684651)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
 Description      : Ravage the target, causing $s2% damage plus 147 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
@@ -14846,7 +14859,8 @@ Effects          :
 #1 (id=686648)   : Weapon Damage (58)
                    Base Value: 62 | Scaled Value: 62 | Value Multiplier: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=686649)   : Weapon Damage% (31)
-                   Base Value: 350 | Scaled Value: 3.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (350 -> 435)
 #3 (id=686650)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
 Description      : Ravage the target, causing $s2% damage plus 217 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
@@ -14957,7 +14971,8 @@ Effects          :
                    Base Value: 32 | Scaled Value: 32 | SP Coefficient: 1 | Target: Targeted Enemy (6)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#6)
 #2 (id=685359)   : Weapon Damage% (31)
-                   Base Value: 155 | Scaled Value: 1.55 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 200 | Scaled Value: 2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (155 -> 200)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#5)
 #3 (id=685360)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -22891,7 +22906,8 @@ Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=685525)   : School Damage (2): arcane
-                   Base Value: 110 | Scaled Value: 119 (delta=0.197368) | Points Per Level: 1.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 154 | Scaled Value: 166.6 (delta=0.197368) | Points Per Level: 2.1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (110 -> 154), Points per Level (1.5 -> 2.1)
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Starfire (desc=Rank 3) (id=8950) [Spell Family (7)] 
@@ -22910,7 +22926,8 @@ Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687888)   : School Damage (2): arcane
-                   Base Value: 144 | Scaled Value: 153.6 (delta=0.180995) | Points Per Level: 1.6 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 201 | Scaled Value: 214.2 (delta=0.180995) | Points Per Level: 2.2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (144 -> 201), Points per Level (1.6 -> 2.2)
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Starfire (desc=Rank 4) (id=8951) [Spell Family (7)] 
@@ -22929,7 +22946,8 @@ Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=685632)   : School Damage (2): arcane
-                   Base Value: 198 | Scaled Value: 208.8 (delta=0.175896) | Points Per Level: 1.8 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 277 | Scaled Value: 292 (delta=0.175896) | Points Per Level: 2.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (198 -> 277), Points per Level (1.8 -> 2.5)
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Maul (desc=Rank 4) (id=8972) [Spell Family (7)] 
@@ -22992,7 +23010,8 @@ Effects          :
                    Base Value: 44 | Scaled Value: 44 | SP Coefficient: 1 | Target: Targeted Enemy (6)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#6)
 #2 (id=687553)   : Weapon Damage% (31)
-                   Base Value: 155 | Scaled Value: 1.55 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 200 | Scaled Value: 2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (155 -> 200)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#5)
 #3 (id=687554)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -23079,7 +23098,8 @@ Triggered By     : Pounce (9005)
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=688148)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 15 | Scaled Value: 15 | Mechanic: Bleed | Target: Targeted Enemy (6)
+                   Base Value: 19 | Scaled Value: 19 | Mechanic: Bleed | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (15 -> 19)
 Tooltip          : Bleeding for $w1 damage every $t1 sec.
 
 Name             : Hex of Weakness (desc=Rank 1) (id=9035) [Spell Family (6)] 
@@ -24931,7 +24951,8 @@ Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681752)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
-                   Base Value: 4 | Scaled Value: 4 | Points Per Combo Point: 7.2 | Target: Targeted Enemy (6)
+                   Base Value: 5 | Scaled Value: 5 | Points Per Combo Point: 9 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (4 -> 5), Points per Combo Points (7.2 -> 9)
 #2 (id=1290991)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -24960,7 +24981,8 @@ Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686148)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
-                   Base Value: 6 | Scaled Value: 6 | Points Per Combo Point: 8.5 | Target: Targeted Enemy (6)
+                   Base Value: 8 | Scaled Value: 8 | Points Per Combo Point: 10.5 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (6 -> 8), Points per Combo Points (8.5 -> 10.5)
 #2 (id=1290992)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -25315,7 +25337,8 @@ Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684145)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
-                   Base Value: 8 | Scaled Value: 8 | Points Per Combo Point: 12.7 | Target: Targeted Enemy (6)
+                   Base Value: 10 | Scaled Value: 10 | Points Per Combo Point: 15.8 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (8 -> 10), Points per Combo Points (12.7 -> 15.8)
 #2 (id=1290993)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -25634,7 +25657,8 @@ Triggered By     : Pounce (9823)
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687677)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 20 | Scaled Value: 20 | Mechanic: Bleed | Target: Targeted Enemy (6)
+                   Base Value: 25 | Scaled Value: 25 | Mechanic: Bleed | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (20 -> 25)
 Tooltip          : Bleeding for $w1 damage every $t1 sec.
 
 Name             : Pounce Bleed (desc=Rank 3) (id=9826) 
@@ -25650,7 +25674,8 @@ Triggered By     : Pounce (9827)
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687678)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 25 | Scaled Value: 25 | Mechanic: Bleed | Target: Targeted Enemy (6)
+                   Base Value: 31 | Scaled Value: 31 | Mechanic: Bleed | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (25 -> 31)
 Tooltip          : Bleeding for $w1 damage every $t1 sec.
 
 Name             : Pounce (desc=Rank 3) (id=9827) [Spell Family (7)] 
@@ -25697,7 +25722,8 @@ Effects          :
                    Base Value: 64 | Scaled Value: 64 | SP Coefficient: 1 | Target: Targeted Enemy (6)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#6)
 #2 (id=688291)   : Weapon Damage% (31)
-                   Base Value: 155 | Scaled Value: 1.55 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 200 | Scaled Value: 2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (155 -> 200)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#5)
 #3 (id=688292)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -25721,7 +25747,8 @@ Effects          :
                    Base Value: 80 | Scaled Value: 80 | SP Coefficient: 1 | Target: Targeted Enemy (6)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#6)
 #2 (id=688179)   : Weapon Damage% (31)
-                   Base Value: 155 | Scaled Value: 1.55 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 200 | Scaled Value: 2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (155 -> 200)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#5)
 #3 (id=688180)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -25878,7 +25905,8 @@ Effects          :
 #1 (id=687620)   : Weapon Damage (58)
                    Base Value: 88 | Scaled Value: 88 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=687621)   : Weapon Damage% (31)
-                   Base Value: 110 | Scaled Value: 1.1 | Target: Targeted Enemy (6)
+                   Base Value: 140 | Scaled Value: 1.4 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (110 -> 140)
 #3 (id=1338558)  : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
 Description      : Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -25902,7 +25930,8 @@ Effects          :
 #1 (id=687218)   : Weapon Damage (58)
                    Base Value: 115 | Scaled Value: 115 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=687219)   : Weapon Damage% (31)
-                   Base Value: 110 | Scaled Value: 1.1 | Target: Targeted Enemy (6)
+                   Base Value: 140 | Scaled Value: 1.4 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (110 -> 140)
 #3 (id=1338559)  : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
 Description      : Claw the enemy for $s2% normal damage plus $s1. Awards $s3 combo $lpoint:points;.
@@ -26095,7 +26124,8 @@ Effects          :
 #1 (id=687745)   : Weapon Damage (58)
                    Base Value: 78 | Scaled Value: 78 | Value Multiplier: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=687746)   : Weapon Damage% (31)
-                   Base Value: 350 | Scaled Value: 3.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (350 -> 435)
 #3 (id=687747)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
 Description      : Ravage the target, causing $s2% damage plus 273 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
@@ -26117,7 +26147,8 @@ Effects          :
 #1 (id=687811)   : Weapon Damage (58)
                    Base Value: 98 | Scaled Value: 98 | Value Multiplier: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=687812)   : Weapon Damage% (31)
-                   Base Value: 350 | Scaled Value: 3.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (350 -> 435)
 #3 (id=687813)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
 Description      : Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
@@ -26138,7 +26169,8 @@ Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687806)   : School Damage (2): arcane
-                   Base Value: 266 | Scaled Value: 279.2 (delta=0.167089) | Points Per Level: 2.2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 372 | Scaled Value: 390 (delta=0.167089) | Points Per Level: 3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (266 -> 372), Points per Level (2.2 -> 3)
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Starfire (desc=Rank 6) (id=9876) [Spell Family (7)] 
@@ -26157,7 +26189,8 @@ Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688325)   : School Damage (2): arcane
-                   Base Value: 337 | Scaled Value: 341.6 (delta=0.164948) | Points Per Level: 2.3 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 471 | Scaled Value: 477.4 (delta=0.164948) | Points Per Level: 3.2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (337 -> 471), Points per Level (2.3 -> 3.2)
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Maul (desc=Rank 6) (id=9880) [Spell Family (7)] 
@@ -26353,7 +26386,8 @@ Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688033)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
-                   Base Value: 11 | Scaled Value: 11 | Points Per Combo Point: 18.200001 | Target: Targeted Enemy (6)
+                   Base Value: 14 | Scaled Value: 14 | Points Per Combo Point: 22.5 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (11 -> 14), Points per Combo Points (18.200001 -> 22.5)
 #2 (id=1290994)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -26382,7 +26416,8 @@ Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688085)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
-                   Base Value: 15 | Scaled Value: 15 | Points Per Combo Point: 25.5 | Target: Targeted Enemy (6)
+                   Base Value: 19 | Scaled Value: 19 | Points Per Combo Point: 31.9 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (15 -> 19), Points per Combo Points (25.5 -> 31.9)
 #2 (id=1290989)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:
@@ -26460,10 +26495,12 @@ Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687442)   : School Damage (2): physical
-                   Base Value: 61 | Scaled Value: 61 | Target: Targeted Enemy (6)
+                   Base Value: 76 | Scaled Value: 76 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (61 -> 76)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#7)
 #2 (id=687443)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 34 | Scaled Value: 34 | Mechanic: Bleed | Target: Targeted Enemy (6)
+                   Base Value: 42 | Scaled Value: 42 | Mechanic: Bleed | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (34 -> 42)
                    Modified By: S03 - Tuning and Overrides Passive - Druid (436895 effect#8)
 #3 (id=687444)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
@@ -73517,6 +73554,7 @@ Effects          :
 Description      : Summons Ar'lia of the Moro'gai.
 
 Name             : Ferocious Bite (desc=Rank 2) (id=22568) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -73532,15 +73570,17 @@ Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=700435)   : School Damage (2): physical
-                   Base Value: 22 | Scaled Value: 22 (delta=0.727273) | SP Coefficient: 1 | Points Per Combo Point: 36 | Target: Targeted Enemy (6)
+                   Base Value: 27 | Scaled Value: 27 (delta=0.727273) | SP Coefficient: 1 | Points Per Combo Point: 45 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (22 -> 27), Points per Combo Points (36 -> 45)
 #2 (id=1277237)  : Dummy (3)
-                   Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 120 | Scaled Value: 120 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (100 -> 120)
 Description      : Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-   1 point  : 50-66 damage
-   2 points: 86-102 damage
-   3 points: 122-138 damage
-   4 points: 158-174 damage
-   5 points: 194-210 damage
+   1 point  : 62-82 damage
+   2 points: 107-127 damage
+   3 points: 152-177 damage
+   4 points: 197-217 damage
+   5 points: 242-262 damage
 
 
 Name             : 5% speed bonus (id=22586) [Hidden] 
@@ -74228,6 +74268,7 @@ Description      : Chance for a critical hit with all spells and attacks increas
 Tooltip          : Chance for a critical hit with all spells and attacks increased by $s1%. No effect while in a raid instance.
 
 Name             : Ferocious Bite (desc=Rank 3) (id=22827) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -74243,17 +74284,20 @@ Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=699381)   : School Damage (2): physical
-                   Base Value: 32 | Scaled Value: 32 (delta=0.75) | SP Coefficient: 1 | Points Per Combo Point: 59 | Target: Targeted Enemy (6)
+                   Base Value: 40 | Scaled Value: 40 (delta=0.75) | SP Coefficient: 1 | Points Per Combo Point: 74 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (32 -> 40), Points per Combo Points (59 -> 74)
 #2 (id=1277234)  : Dummy (3)
-                   Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 180 | Scaled Value: 180 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (150 -> 180)
 Description      : Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-   1 point  : 79-103 damage
-   2 points: 138-162 damage
-   3 points: 197-221 damage
-   4 points: 256-280 damage
-   5 points: 315-339 damage
+   1 point  : 99-129 damage
+   2 points: 173-203 damage
+   3 points: 247-277 damage
+   4 points: 321-351 damage
+   5 points: 395-425 damage
 
 Name             : Ferocious Bite (desc=Rank 4) (id=22828) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -74269,17 +74313,20 @@ Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=699876)   : School Damage (2): physical
-                   Base Value: 50 | Scaled Value: 50 (delta=0.8) | SP Coefficient: 1 | Points Per Combo Point: 92 | Target: Targeted Enemy (6)
+                   Base Value: 62 | Scaled Value: 62 (delta=0.8) | SP Coefficient: 1 | Points Per Combo Point: 115 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (50 -> 62), Points per Combo Points (92 -> 115)
 #2 (id=1277238)  : Dummy (3)
-                   Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 250 | Scaled Value: 250 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (200 -> 250)
 Description      : Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-   1 point  : 122-162 damage
-   2 points: 214-254 damage
-   3 points: 306-346 damage
-   4 points: 398-438 damage
-   5 points: 490-530 damage
+   1 point  : 152-202 damage
+   2 points: 267-317 damage
+   3 points: 382-432 damage
+   4 points: 497-547 damage
+   5 points: 612-662 damage
 
 Name             : Ferocious Bite (desc=Rank 5) (id=22829) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -74295,15 +74342,17 @@ Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=699984)   : School Damage (2): physical
-                   Base Value: 70 | Scaled Value: 70 (delta=0.714286) | SP Coefficient: 1 | Points Per Combo Point: 128 | Target: Targeted Enemy (6)
+                   Base Value: 87 | Scaled Value: 87 (delta=0.714286) | SP Coefficient: 1 | Points Per Combo Point: 160 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (70 -> 87), Points per Combo Points (128 -> 160)
 #2 (id=1277239)  : Dummy (3)
-                   Base Value: 250 | Scaled Value: 250 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 310 | Scaled Value: 310 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (250 -> 310)
 Description      : Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-   1 point  : 173-223 damage
-   2 points: 301-351 damage
-   3 points: 429-479 damage
-   4 points: 557-607 damage
-   5 points: 685-735 damage
+   1 point  : 215-279 damage
+   2 points: 375-439 damage
+   3 points: 535-599 damage
+   4 points: 695-759 damage
+   5 points: 855-919 damage
 
 Name             : Arcanum of Rapidity (id=22840) 
 School           : Physical
@@ -81179,7 +81228,8 @@ Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=702704)   : School Damage (2): arcane
-                   Base Value: 381 | Scaled Value: 381 (delta=0.162963) | Points Per Level: 2.4 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 533 | Scaled Value: 533 (delta=0.162963) | Points Per Level: 3.4 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (381 -> 533), Points per Level (2.4 -> 3.4)
 Description      : Causes $s1 Arcane damage to the target.
 
 Name             : Rejuvenation (desc=Rank 11) (id=25299) [Spell Family (7)] 
@@ -87504,6 +87554,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Ferocious Bite (desc=Rank 6) (id=31018) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -87519,15 +87570,17 @@ Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=705079)   : School Damage (2): physical
-                   Base Value: 82 | Scaled Value: 82 (delta=0.731707) | SP Coefficient: 1 | Points Per Combo Point: 147 | Target: Targeted Enemy (6)
+                   Base Value: 102 | Scaled Value: 102 (delta=0.731707) | SP Coefficient: 1 | Points Per Combo Point: 181 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (82 -> 102), Points per Combo Points (147 -> 181)
 #2 (id=1277241)  : Dummy (3)
-                   Base Value: 270 | Scaled Value: 270 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 330 | Scaled Value: 330 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (270 -> 330)
 Description      : Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-   1 point  : 199-259 damage
-   2 points: 346-406 damage
-   3 points: 493-553 damage
-   4 points: 640-700 damage
-   5 points: 787-847 damage
+   1 point  : 245-321 damage
+   2 points: 426-502 damage
+   3 points: 607-683 damage
+   4 points: 788-864 damage
+   5 points: 969-1045 damage
 
 Name             : Sinister Squashling (id=42609) 
 School           : Physical
@@ -123264,7 +123317,7 @@ Description      : Increases the critical strike damage bonus of your melee abil
 
 Name             : Rend and Tear (id=1223246) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=6, col=5, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
+                 : Effect#1 [op=set, values=(3, 6, 9, 12, 15)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -151448,6 +151501,7 @@ Description      : Lacerates the enemy target, making them bleed for $o1 damage 
 Tooltip          : $w1 damage every $t sec.
 
 Name             : Ferocious Bite (desc=Rank 1) (id=1328618) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -151463,15 +151517,17 @@ Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1367722)  : School Damage (2): physical
-                   Base Value: 14 | Scaled Value: 14 (delta=0.714286) | SP Coefficient: 1 | Points Per Combo Point: 24 | Target: Targeted Enemy (6)
+                   Base Value: 17 | Scaled Value: 17 (delta=0.714286) | SP Coefficient: 1 | Points Per Combo Point: 30 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (14 -> 17), Points per Combo Points (24 -> 30)
 #2 (id=1367723)  : Dummy (3)
-                   Base Value: 60 | Scaled Value: 60 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 70 | Scaled Value: 70 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (60 -> 70)
 Description      : Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.
-   1 point  : 33-43 damage
-   2 points: 57-67 damage
-   3 points: 81-91 damage
-   4 points: 105-115 damage
-   5 points: 129-139 damage
+   1 point  : 40-54 damage
+   2 points: 70-84 damage
+   3 points: 100-114 damage
+   4 points: 130-144 damage
+   5 points: 160-174 damage
 
 
 Name             : Bloom (id=1328621) [Spell Family (7), Passive, Hidden] 
@@ -151502,6 +151558,7 @@ Effects          :
 Description      : While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328826s1.
 
 Name             : Poised (id=1328826) [Spell Family (8)] 
+Hotfixed         : Tooltip
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -151522,9 +151579,10 @@ Effects          :
                    Modified By: Composure (1329265 effect#1)
 Description      : Energy cost of the next ability performed is reduced by $s1.
 
-Tooltip          : Energy cost of the next ability performed is reduced by $s1.
+Tooltip          : Your next Energy ability has its Energy cost reduced by $s1.
 
 Name             : Poised (id=1328827) [Spell Family (7)] 
+Hotfixed         : Tooltip
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -151541,7 +151599,7 @@ Effects          :
                    Affected Spells: Rip (1079), Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Shred (5221), Ravage (6785), Ravage (6787), Shred (6800), Shred (8992), Cower (8998), Cower (9000), Pounce (9005), Rip (9492), Rip (9493), Rip (9752), Pounce (9823), Pounce (9827), Shred (9829), Shred (9830), Claw (9849), Claw (9850), Ravage (9866), Ravage (9867), Cower (9892), Rip (9894), Rip (9896), Rake (9904), Ferocious Bite (22568), Ferocious Bite (22827), Ferocious Bite (22828), Ferocious Bite (22829), Ferocious Bite (31018), Ferocious Bite (1328618)
                    Family Flags: 12, 15, 16, 17, 23, 61
 Description      : Energy cost of the next ability performed is reduced by $s1.
-Tooltip          : Energy cost of the next ability performed is reduced by $s1.
+Tooltip          : Your next Energy ability has its Energy cost reduced by $s1.
 
 Name             : Poised (desc=Passive) (id=1328829) [Passive] 
 Class            : Druid

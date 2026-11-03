@@ -9205,7 +9205,7 @@ Description      : Your Earthbind Totem Immobilizes nearby targets for $1238289d
 
 Name             : Rend and Tear (id=1223246) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=6, col=5, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
+                 : Effect#1 [op=set, values=(3, 6, 9, 12, 15)]
 Class            : Druid
 School           : Physical
 Spell Type       : None

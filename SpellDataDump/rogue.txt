@@ -7687,6 +7687,7 @@ Effects          :
 Description      : While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328826s1.
 
 Name             : Poised (id=1328826) [Spell Family (8)] 
+Hotfixed         : Tooltip
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -7707,7 +7708,7 @@ Effects          :
                    Modified By: Composure (1329265 effect#1)
 Description      : Energy cost of the next ability performed is reduced by $s1.
 
-Tooltip          : Energy cost of the next ability performed is reduced by $s1.
+Tooltip          : Your next Energy ability has its Energy cost reduced by $s1.
 
 Name             : Blood Splatter (id=1329256) [Spell Family (8), Passive, Hidden] 
 Hotfixed         : NEW SPELL
