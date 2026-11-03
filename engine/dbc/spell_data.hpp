@@ -957,13 +957,10 @@ public:
   spell_container_t& set_talent( unsigned id )  { talent_id = id;  return *this; }
   spell_container_t& set_debuff( unsigned id )  { debuff_id = id;  return *this; }
 
-  // when adding members for derived `spell_container_t`, return !( ... ) && <base_t>::empty();
   bool ok() { return !empty(); }
-  virtual bool empty() { return !( spell_id || driver_id || attack_id || passive_id || aura_id || buff_id || talent_id || debuff_id ); }
-  virtual void cache_data( const player_t* player );
+  bool empty() { return !( spell_id || driver_id || attack_id || passive_id || aura_id || buff_id || talent_id || debuff_id ); }
+  void cache_data( const player_t* player );
   static const spell_container_t* nil();
-
-  virtual ~spell_container_t() = default;
 
   const spell_data_t* spell() const   { return get_spell_data( &spell_container_t::spell_id,   &spell_container_t::_spell );   }
   const spell_data_t* driver() const  { return get_spell_data( &spell_container_t::driver_id,  &spell_container_t::_driver );  }
@@ -977,17 +974,10 @@ public:
 
 struct spell_container_nil_t : public spell_container_t
 {
-  ~spell_container_nil_t() = default;
-
   constexpr spell_container_nil_t()
     : spell_container_t()
   {
     cached = true;
-  }
-
-  bool empty() override
-  {
-    return true;
   }
 };
 inline constexpr spell_container_nil_t spell_container_nil_v {};
