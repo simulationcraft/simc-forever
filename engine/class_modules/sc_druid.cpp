@@ -6,6 +6,7 @@
 #include "simulationcraft.hpp"
 #include "action/parse_effects.hpp"
 #include "class_modules/apl/druid.hpp"
+#include "dbc/spell_data.hpp"
 
 namespace
 {  // UNNAMED NAMESPACE
@@ -50,6 +51,19 @@ struct druid_t final : public parse_player_effects_t
     buff_t* eclipse;
     buff_t* moonkin_aura;
   } buff;
+
+  struct
+  {
+    spell_ranks_t entangling_roots;
+    spell_ranks_t faerie_fire;
+    spell_ranks_t hurricane;
+    spell_ranks_t innervate;
+    spell_ranks_t insect_swarm;
+    spell_ranks_t moonfire;
+    spell_ranks_t omen_of_clarity;
+    spell_ranks_t starfire;
+    spell_ranks_t wrath;
+  } rank;
 
   resource_e primary_resource() const override { return RESOURCE_MANA; }
 
@@ -108,7 +122,7 @@ struct druid_action_t : public parse_action_effects_t<Base>
 
   template <typename... Args>
   druid_action_t( std::string_view n, druid_t* p, const spell_data_t* s = spell_data_t::nil() )
-    : action_base_t( n, p, s ) 
+    : action_base_t( n, p, s )
   {
     if ( this->data().ok() )
     {
@@ -125,7 +139,7 @@ struct druid_action_t : public parse_action_effects_t<Base>
   void execute() override
   {
     action_base_t::execute();
-    
+
     if ( this->data().affected_by( this->p()->buff.clearcasting->data() ) )
     {
       this->p()->buff.clearcasting->expire();
@@ -162,6 +176,70 @@ void druid_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
+  rank.entangling_roots = { this,
+    spell_container_t().set_spell( 339 ), // 19975 is also a rank 1 spell id, it is used by nature's grasp
+    spell_container_t().set_spell( 1062 ),
+    spell_container_t().set_spell( 5195 ),
+    spell_container_t().set_spell( 5196 ),
+    spell_container_t().set_spell( 9852 ),
+    spell_container_t().set_spell( 9853 ),
+  };
+  rank.faerie_fire = { this,
+    spell_container_t().set_spell( 770 ),
+    spell_container_t().set_spell( 778 ),
+    spell_container_t().set_spell( 9749 ),
+    spell_container_t().set_spell( 9907 ),
+  };
+  rank.hurricane = { this,
+    spell_container_t().set_spell( 16914 ).set_debuff( 1278965 ),
+    spell_container_t().set_spell( 17401 ).set_debuff( 1278968 ),
+    spell_container_t().set_spell( 17402 ).set_debuff( 1278759 ),
+  };
+  rank.innervate = { this,
+    spell_container_t().set_spell( 29166 ),
+  };
+  rank.insect_swarm = { this, talent.insect_swarm,
+    spell_container_t().set_spell( 5570 ),
+    spell_container_t().set_spell( 24974 ),
+    spell_container_t().set_spell( 24975 ),
+    spell_container_t().set_spell( 24976 ),
+    spell_container_t().set_spell( 24977 ),
+  };
+  rank.moonfire = { this,
+    spell_container_t().set_spell( 8921 ),
+    spell_container_t().set_spell( 8924 ),
+    spell_container_t().set_spell( 8925 ),
+    spell_container_t().set_spell( 8926 ),
+    spell_container_t().set_spell( 8927 ),
+    spell_container_t().set_spell( 8928 ),
+    spell_container_t().set_spell( 8929 ),
+    spell_container_t().set_spell( 9833 ),
+    spell_container_t().set_spell( 9834 ),
+    spell_container_t().set_spell( 9835 ),
+  };
+  rank.omen_of_clarity = { this,
+    spell_container_t().set_spell( 16864 ).set_buff( 16870 ),
+  };
+  rank.starfire = { this,
+    spell_container_t().set_spell(  2912 ),
+    spell_container_t().set_spell(  8949 ),
+    spell_container_t().set_spell(  8950 ),
+    spell_container_t().set_spell(  8951 ),
+    spell_container_t().set_spell(  9875 ),
+    spell_container_t().set_spell(  9876 ),
+    spell_container_t().set_spell( 25298 ),
+  };
+  rank.wrath = { this,
+    spell_container_t().set_spell( 5176 ),
+    spell_container_t().set_spell( 5177 ),
+    spell_container_t().set_spell( 5178 ),
+    spell_container_t().set_spell( 5179 ),
+    spell_container_t().set_spell( 5180 ),
+    spell_container_t().set_spell( 6780 ),
+    spell_container_t().set_spell( 8905 ),
+    spell_container_t().set_spell( 9912 ),
+  };
+
   talent.improved_entangling_roots = find_talent_spell( talent_tree::CLASS, "Improved Entangling Roots" );
   talent.insect_swarm              = find_talent_spell( talent_tree::CLASS, "Insect Swarm" );
   talent.overgrowth                = find_talent_spell( talent_tree::CLASS, "Overgrowth" );
@@ -180,21 +258,10 @@ void druid_t::init_spells()
 // ==========================================================================
 // Druid Spells
 // ==========================================================================
-constexpr std::array wrath_ranks {
-  spell_container_t().set_spell( 5176 ),
-  spell_container_t().set_spell( 5177 ),
-  spell_container_t().set_spell( 5178 ),
-  spell_container_t().set_spell( 5179 ),
-  spell_container_t().set_spell( 5180 ),
-  spell_container_t().set_spell( 6780 ),
-  spell_container_t().set_spell( 8905 ),
-  spell_container_t().set_spell( 9912 ),
-};
-
 struct wrath_t : public druid_spell_t
 {
   wrath_t( druid_t* player, std::string_view options_str )
-    : druid_spell_t( "wrath", player, player->find_rank( wrath_ranks )->spell( player ) )
+    : druid_spell_t( "wrath", player, player->rank.wrath.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -214,22 +281,10 @@ private:
   int eclipse_stacks;
 };
 
-constexpr std::array moonfire_ranks {
-  spell_container_t().set_spell( 8921 ),
-  spell_container_t().set_spell( 8924 ),
-  spell_container_t().set_spell( 8925 ),
-  spell_container_t().set_spell( 8926 ),
-  spell_container_t().set_spell( 8927 ),
-  spell_container_t().set_spell( 8928 ),
-  spell_container_t().set_spell( 8929 ),
-  spell_container_t().set_spell( 9833 ),
-  spell_container_t().set_spell( 9834 ),
-  spell_container_t().set_spell( 9835 ),
-};
 struct moonfire_t : public druid_spell_t
 {
   moonfire_t( druid_t* player, std::string_view options_str ) :
-    druid_spell_t( "moonfire", player, player->find_rank( moonfire_ranks )->spell( player ) )
+    druid_spell_t( "moonfire", player, player->rank.moonfire.find_rank()->spell() )
   {
     parse_options( options_str );
     // TODO moonfire dot reporting
@@ -237,37 +292,19 @@ struct moonfire_t : public druid_spell_t
 };
 
 // The talent is a single point, but the spell itself still has ranks
-constexpr std::array insect_swarm_ranks{
-    spell_container_t().set_spell( 5570 ),
-    spell_container_t().set_spell( 24974 ),
-    spell_container_t().set_spell( 24975 ),
-    spell_container_t().set_spell( 24976 ),
-    spell_container_t().set_spell( 24977 ),
-};
 struct insect_swarm_t : public druid_spell_t
 {
   insect_swarm_t( druid_t* player, std::string_view options_str )
-    : druid_spell_t( "insect_swarm", player,
-                     player->talent.insect_swarm.ok() ? player->find_rank( insect_swarm_ranks )->spell( player )
-                                                      : spell_data_t::not_found() )
+    : druid_spell_t( "insect_swarm", player, player->rank.insect_swarm.find_rank()->spell() )
   {
     parse_options( options_str );
   }
 };
 
-constexpr std::array starfire_ranks {
-  spell_container_t().set_spell(  2912 ),
-  spell_container_t().set_spell(  8949 ),
-  spell_container_t().set_spell(  8950 ),
-  spell_container_t().set_spell(  8951 ),
-  spell_container_t().set_spell(  9875 ),
-  spell_container_t().set_spell(  9876 ),
-  spell_container_t().set_spell( 25298 ),
-};
 struct starfire_t : public druid_spell_t
 {
   starfire_t( druid_t* player, std::string_view options_str )
-    : druid_spell_t( "starfire", player, player->find_rank( starfire_ranks )->spell( player ) )
+    : druid_spell_t( "starfire", player, player->rank.starfire.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -297,18 +334,10 @@ private:
   timespan_t eclipse_reduction;
 };
 
-constexpr std::array entangling_roots_ranks{
-    spell_container_t().set_spell( 339 ), // 19975 is also a rank 1 spell id, it is used by nature's grasp
-    spell_container_t().set_spell( 1062 ),
-    spell_container_t().set_spell( 5195 ),
-    spell_container_t().set_spell( 5196 ),
-    spell_container_t().set_spell( 9852 ),
-    spell_container_t().set_spell( 9853 ),
-};
 struct entangling_roots_t : public druid_spell_t
 {
   entangling_roots_t( druid_t* player, std::string_view options_str )
-    : druid_spell_t( "entangling_roots", player, player->find_rank( entangling_roots_ranks )->spell( player ) )
+    : druid_spell_t( "entangling_roots", player, player->rank.entangling_roots.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -335,15 +364,10 @@ struct entangling_roots_t : public druid_spell_t
   double break_chance = .2;
 };
 
-constexpr std::array hurricane_ranks{
-    spell_container_t().set_spell( 16914 ).set_debuff( 1278965 ),
-    spell_container_t().set_spell( 17401 ).set_debuff( 1278968 ),
-    spell_container_t().set_spell( 17402 ).set_debuff( 1278759 ),
-};
 struct hurricane_tick_t : public druid_spell_t
 {
   hurricane_tick_t( druid_t* player )
-    : druid_spell_t( "hurricane_tick", player, player->find_rank( hurricane_ranks )->debuff( player ) )
+    : druid_spell_t( "hurricane_tick", player, player->rank.hurricane.find_rank()->debuff() )
   {
     background = dual = true;
     aoe               = -1;
@@ -361,7 +385,7 @@ struct hurricane_tick_t : public druid_spell_t
 struct hurricane_t : public druid_spell_t
 {
   hurricane_t( druid_t* player, std::string_view options_str )
-    : druid_spell_t( "hurricane", player, player->find_rank( hurricane_ranks )->spell( player ) )
+    : druid_spell_t( "hurricane", player, player->rank.hurricane.find_rank()->spell() )
   {
     parse_options( options_str );
     channeled   = true;
@@ -370,16 +394,10 @@ struct hurricane_t : public druid_spell_t
   }
 };
 
-constexpr std::array faerie_fire_ranks{
-    spell_container_t().set_spell( 770 ),
-    spell_container_t().set_spell( 778 ),
-    spell_container_t().set_spell( 9749 ),
-    spell_container_t().set_spell( 9907 ),
-};
 struct faerie_fire_t : public druid_spell_t
 {
   faerie_fire_t( druid_t* player, std::string_view options_str )
-    : druid_spell_t( "faerie_fire", player, player->find_rank( faerie_fire_ranks )->spell( player ) )
+    : druid_spell_t( "faerie_fire", player, player->rank.faerie_fire.find_rank()->spell() )
   {
     parse_options( options_str );
   }
@@ -392,13 +410,10 @@ struct faerie_fire_t : public druid_spell_t
   }
 };
 
-constexpr std::array innervate_ranks{
-    spell_container_t().set_spell( 29166 ),
-}; 
  struct innervate_t : public druid_spell_t
 {
   innervate_t( druid_t* player, std::string_view options_str )
-    : druid_spell_t( "innervate", player, player->find_rank( innervate_ranks)->spell( player) )
+    : druid_spell_t( "innervate", player, player->rank.innervate.find_rank()->spell() )
   {
     parse_options( options_str );
     harmful = false;
@@ -412,10 +427,6 @@ constexpr std::array innervate_ranks{
 
     p()->buff.innervate->trigger();
   }
-};
-
-constexpr std::array omen_of_clarity_ranks{
-    spell_container_t().set_spell( 16864 ).set_buff( 16870 ),
 };
 
 struct moonkin_form_t : public druid_spell_t
@@ -538,14 +549,14 @@ buff_t* druid_td_t::make_debuff( bool b, Args&&... args )
 }
 inline druid_td_t::druid_td_t( player_t& target, druid_t& p ) : actor_target_data_t( &target, &p )
 {
-  auto const hurricane_debuff = p.find_rank( hurricane_ranks );
-  debuff.hurricane = make_debuff( hurricane_debuff->spell( &p )->ok(), *this, "hurricane",
-                                  hurricane_debuff->debuff( &p ) )
-    ->set_default_value (hurricane_debuff->debuff( &p )->effectN(2).percent() );
+  auto const hurricane_debuff = p.rank.hurricane.find_rank();
+  debuff.hurricane = make_debuff( hurricane_debuff->spell()->ok(), *this, "hurricane",
+                                  hurricane_debuff->debuff() )
+    ->set_default_value (hurricane_debuff->debuff()->effectN(2).percent() );
 
-  auto const faerie_fire_debuff = p.find_rank( faerie_fire_ranks );
+  auto const faerie_fire_debuff = rank.faerie_fire.find_rank();
   debuff.faerie_fire =
-      make_debuff<stat_buff_t>( faerie_fire_debuff->spell( &p )->ok(), *this, "faerie_fire", faerie_fire_debuff->spell( &p ))
+      make_debuff<stat_buff_t>( faerie_fire_debuff->spell()->ok(), *this, "faerie_fire", faerie_fire_debuff->spell())
     ->set_default_value_from_effect( 1 );
 }
 
@@ -559,10 +570,10 @@ void druid_t::create_buffs()
 {
   player_t::create_buffs();
 
-  auto const innervate_buff = find_rank( innervate_ranks )->spell( this );
+  auto const innervate_buff = rank.innervate.find_rank()->spell();
   buff.innervate            = make_buff_fallback( innervate_buff->ok(), this, "innervate", innervate_buff );
 
-  auto const omen_of_clarity_buff = find_rank( omen_of_clarity_ranks )->buff( this );
+  auto const omen_of_clarity_buff = rank.omen_of_clarity.find_rank()->buff();
   buff.clearcasting = make_buff_fallback( omen_of_clarity_buff->ok(), this, "clearcasting", omen_of_clarity_buff );
 
   auto const natures_grace_buff = talent.natures_grace->ok()
@@ -578,7 +589,7 @@ void druid_t::create_buffs()
 
 void druid_t::init_special_effects()
 {
-  auto const omen_of_clarity = find_rank( omen_of_clarity_ranks )->spell( this );
+  auto const omen_of_clarity = rank.omen_of_clarity.find_rank()->spell();
   if ( omen_of_clarity->ok() )
   {
     const auto driver = new special_effect_t( this );
@@ -606,7 +617,7 @@ void druid_t::init_finished()
   player_t::init_finished();
 }
 
-void druid_t::parse_player_effects() 
+void druid_t::parse_player_effects()
 {
   parse_effects( buff.innervate );
   parse_effects( buff.moonkin_aura );
