@@ -193,17 +193,20 @@ struct warrior_t final : public parse_player_effects_t
     action_t* heroic_strike = nullptr;
   } active;
 
-private:
-  target_specific_t<warrior_td_t> _target_data;
   struct
   {
     spell_ranks_t battle_shout;
     spell_ranks_t bloodrage;
     spell_ranks_t charge;
+    spell_ranks_t hamstring;
     spell_ranks_t heroic_strike;
+    spell_ranks_t overpower;
     spell_ranks_t rend;
     spell_ranks_t thunder_clap;
   } rank;
+
+private:
+  target_specific_t<warrior_td_t> _target_data;
 };
 
 warrior_td_t::warrior_td_t( player_t* target, warrior_t& p ) : actor_target_data_t( target, &p )
@@ -502,15 +505,10 @@ struct rend_t : public warrior_attack_t
   }
 };
 
-constexpr std::array hamstring_ranks {
-  spell_container_t().set_spell( 1715 ),
-  spell_container_t().set_spell( 7372 ),
-  spell_container_t().set_spell( 7373 ),
-};
 struct hamstring_t : public warrior_attack_t
 {
   hamstring_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "hamstring", player, player->find_rank( hamstring_ranks )->spell( player ) )
+    warrior_attack_t( "hamstring", player, player->rank.hamstring.find_rank()->spell() )
   {
     parse_options( options_str );
   }
@@ -527,16 +525,10 @@ struct hamstring_t : public warrior_attack_t
   }
 };
 
-constexpr std::array overpower_ranks {
-  spell_container_t().set_spell(  7384 ),
-  spell_container_t().set_spell(  7887 ),
-  spell_container_t().set_spell( 11584 ),
-  spell_container_t().set_spell( 11585 ),
-};
 struct overpower_t : public warrior_attack_t
 {
   overpower_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "overpower", player, player->find_rank( overpower_ranks )->spell( player ) )
+    warrior_attack_t( "overpower", player, player->rank.overpower.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -545,6 +537,9 @@ struct overpower_t : public warrior_attack_t
 
   bool ready() override
   {
+    if ( !data().ok() )
+      return false;
+
     if ( !p()->buff.overpower_available->check() )
       return false;
 
@@ -803,6 +798,19 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 11578 ),
   };
 
+  rank.hamstring = { this,
+    spell_container_t().set_spell( 1715 ),
+    spell_container_t().set_spell( 7372 ),
+    spell_container_t().set_spell( 7373 ),
+  };
+
+  rank.overpower = { this,
+    spell_container_t().set_spell(  7384 ),
+    spell_container_t().set_spell(  7887 ),
+    spell_container_t().set_spell( 11584 ),
+    spell_container_t().set_spell( 11585 ),
+  };
+
   rank.thunder_clap = { this,
     spell_container_t().set_spell(  6343 ),
     spell_container_t().set_spell(  8198 ),
@@ -821,9 +829,9 @@ void warrior_t::init_spells()
   spell.berserker_stance_passive = find_spell( 7381 );
   spell.defensive_stance         = find_spell( 71 );
   spell.defensive_stance_passive = find_spell( 7376 );
-  spell.hamstring                = find_rank( hamstring_ranks )->spell( this );
+  spell.hamstring                = rank.hamstring.find_rank()->spell();
   spell.overpower_available      = find_spell( 1282733 );
-  spell.thunder_clap             = find_rank( thunder_clap_ranks )->spell( this );
+  spell.thunder_clap             = rank.thunder_clap.find_rank()->spell();
 
   // Arms
   talent.improved_heroic_strike           = find_talent_spell( talent_tree::CLASS, "Improved Heroic Strike" );
