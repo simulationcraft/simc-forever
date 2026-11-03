@@ -4082,7 +4082,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=692507)   : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Attack (3606), Attack (6350), Attack (6351), Attack (6352), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Magma Totem (8187), Attack (10435), Attack (10436), Flame Shock (10447), Flame Shock (10448), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Flame Shock (29228), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Attack (3606), Attack (6350), Attack (6351), Attack (6352), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Magma Totem (8187), Attack (10435), Attack (10436), Flame Shock (10447), Flame Shock (10448), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Flame Shock (29228), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lava Burst (408490)
                    Family Flags: 28, 30, 44
 #2 (id=1229965)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
@@ -4105,7 +4105,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=692508)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -2 | Scaled Value: -2 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flame Shock (29228), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flame Shock (29228), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690)
                    Family Flags: 0, 1, 20, 28, 31, 44
 Description      : Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by $m1%.
 
@@ -4180,7 +4180,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=693747)   : Apply Aura (6) | Add Percent Modifier (108): Spell Critical Bonus Multiplier (15)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 15 | Target: Self (1)
-                   Affected Spells: Lightning Shield (324), Lightning Shield (325), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Shield (905), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Lightning Shield (945), Chain Lightning (2860), Attack (3606), Lightning Bolt (6041), Attack (6350), Attack (6351), Attack (6352), Flametongue Weapon Proc (8026), Flametongue Weapon Proc (8028), Flametongue Weapon Proc (8029), Frostbrand Attack (8034), Frostbrand Attack (8037), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Shield (8134), Magma Totem (8187), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Lightning Shield (10431), Lightning Shield (10432), Attack (10435), Attack (10436), Flametongue Attack (10444), Flametongue Weapon Proc (10445), Flame Shock (10447), Flame Shock (10448), Frostbrand Attack (10458), Frost Shock (10472), Frost Shock (10473), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flametongue Weapon Proc (16343), Flametongue Weapon Proc (16344), Frostbrand Attack (16352), Frostbrand Attack (16353), Lightning Shield (26363), Lightning Shield (26364), Lightning Shield (26365), Lightning Shield (26366), Lightning Shield (26367), Lightning Shield (26369), Lightning Shield (26370), Flame Shock (29228), Flametongue Attack (29469), Flametongue Attack (29470), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Molten Blast (425339), Lightning Shield (432143), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Shield (324), Lightning Shield (325), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Shield (905), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Lightning Shield (945), Chain Lightning (2860), Attack (3606), Lightning Bolt (6041), Attack (6350), Attack (6351), Attack (6352), Flametongue Weapon Proc (8026), Flametongue Weapon Proc (8028), Flametongue Weapon Proc (8029), Frostbrand Attack (8034), Frostbrand Attack (8037), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Shield (8134), Magma Totem (8187), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Lightning Shield (10431), Lightning Shield (10432), Attack (10435), Attack (10436), Flametongue Attack (10444), Flametongue Weapon Proc (10445), Flame Shock (10447), Flame Shock (10448), Frostbrand Attack (10458), Frost Shock (10472), Frost Shock (10473), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flametongue Weapon Proc (16343), Flametongue Weapon Proc (16344), Frostbrand Attack (16352), Frostbrand Attack (16353), Lightning Shield (26363), Lightning Shield (26364), Lightning Shield (26365), Lightning Shield (26366), Lightning Shield (26367), Lightning Shield (26369), Lightning Shield (26370), Flame Shock (29228), Flametongue Attack (29469), Flametongue Attack (29470), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Molten Blast (425339), Lightning Shield (432143)
                    Family Flags: 0, 1, 10, 20, 21, 24, 28, 30, 31, 44, 126
 Description      : Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by $m1%.
 
@@ -4229,7 +4229,7 @@ Attributes       : Do Not Sheath (18), Unknown (493)
 Effects          :
 #1 (id=694178)   : Apply Aura (6) | Add Flat Modifier (107): Spell Cast Time (10)
                    Base Value: -500 | Scaled Value: -500 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Lightning Bolt (943), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Lightning Bolt (943), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Lava Burst (408490)
                    Family Flags: 0, 44
 #2 (id=694179)   : Apply Aura (6) | Add Percent Modifier (108): Spell Cooldown (11)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 11 | Target: Self (1)
@@ -4540,7 +4540,7 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
 Effects          :
 #1 (id=692327)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flame Shock (29228), Fire Nova (408341), Fire Nova (408342), Fire Nova (408343), Fire Nova (408344), Fire Nova (408345), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flame Shock (29228), Fire Nova (408341), Fire Nova (408342), Fire Nova (408343), Fire Nova (408344), Fire Nova (408345), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690)
                    Family Flags: 0, 1, 20, 27, 28, 31, 44
 Description      : Your next elemental damage spell has its mana cost reduced by $s1%.
 Tooltip          : Your next elemental damage spell has its mana cost reduced by $s1%.
@@ -5155,7 +5155,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=694339)   : Apply Aura (6) | Add Flat Modifier (107): Spell Cast Time (10)
                    Base Value: -200 | Scaled Value: -200 | SP Coefficient: 1 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 44
 Description      : Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by ${$m1/-1000}.2 sec.
 
@@ -5737,7 +5737,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=704898)   : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 1 | Misc Value: 5 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Fire Nova (408341), Fire Nova (408342), Fire Nova (408343), Fire Nova (408344), Fire Nova (408345), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Fire Nova (408341), Fire Nova (408342), Fire Nova (408343), Fire Nova (408344), Fire Nova (408345), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 44, 50
 #2 (id=1229966)  : Apply Aura (6) | Dummy (4)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Target: Self (1)
@@ -5758,7 +5758,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=705689)   : Apply Aura (6) | Add Percent Modifier (108): Spell Pushback (9)
                    Base Value: 70 | Scaled Value: 70 | Misc Value: 9 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 44
 Description      : Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a $m1% chance to not lose casting time when you take damage.
 
@@ -6483,22 +6483,6 @@ Effects          :
                    Base Value: 20 | Scaled Value: 20 | Target: Targeted Enemy (6)
 Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 
-Name             : Lava Burst (id=408491) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Spell Level      : 40
-Range            : 30 yards
-Velocity         : 20 yards/sec
-Labels           : 24: Shaman Spells
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
-Effects          :
-#1 (id=1072653)  : School Damage (2): fire
-                   Base Value: 57 | Scaled Value: 79.5 (delta=0.257463) | Points Per Level: 0.45 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
-
 Name             : Dual Wield Specialization (id=408496) [Spell Family (11), Passive, Hidden] 
 Class            : Shaman
 School           : Physical
@@ -6729,7 +6713,7 @@ Effects          :
                    Base Value: 8 | Scaled Value: 8 | Resource: mana | Target: Self (1)
 #3 (id=1217411)  : Apply Aura (6) | Add Percent Modifier (108): Spell Cast Time (10)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lava Burst (408490)
                    Family Flags: 44
 Description      : Increases armor by $s1% of your shield's Armor value for $d, stacking up to $u times.
 Tooltip          : Armor increased by $w1.
@@ -6780,7 +6764,7 @@ Effects          :
                    Base Value: 408690 | Scaled Value: 408690 | Misc Value: 10414 | Target: Self (1)
 #13 (id=1173796) : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: -20 | Scaled Value: -20 | SP Coefficient: 1 | Misc Value: 5 | Target: Self (1)
-                   Affected Spells: Healing Wave (331), Healing Wave (332), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Healing Wave (547), Lightning Bolt (548), Healing Wave (913), Lightning Bolt (915), Chain Lightning (930), Healing Wave (939), Lightning Bolt (943), Healing Wave (959), Chain Heal (1064), Chain Lightning (2860), Lightning Bolt (6041), Healing Wave (8005), Lightning Bolt (10391), Lightning Bolt (10392), Healing Wave (10395), Healing Wave (10396), Chain Lightning (10605), Chain Heal (10622), Chain Heal (10623), Lightning Bolt (15207), Lightning Bolt (15208), Healing Wave (25357), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Healing Wave (331), Healing Wave (332), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Healing Wave (547), Lightning Bolt (548), Healing Wave (913), Lightning Bolt (915), Chain Lightning (930), Healing Wave (939), Lightning Bolt (943), Healing Wave (959), Chain Heal (1064), Chain Lightning (2860), Lightning Bolt (6041), Healing Wave (8005), Lightning Bolt (10391), Lightning Bolt (10392), Healing Wave (10395), Healing Wave (10396), Chain Lightning (10605), Chain Heal (10622), Chain Heal (10623), Lightning Bolt (15207), Lightning Bolt (15208), Healing Wave (25357), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 6, 8, 44
 Description      : While Rockbiter Weapon is active on your main hand weapon, you deal $s1% increased threat, gain $s2% increased health, take $s4% reduced damage, gain $s5% reduced chance to be critically hit by melee attacks, and Earth Shock taunts targets to attack you and has a separate cooldown from other Shock spells.
 
@@ -7581,7 +7565,7 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Cooldown On Event 
 Effects          :
 #1 (id=1084789)  : Apply Aura (6) | Add Percent Modifier (108): Spell Cast Time (10)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Chain Lightning (421), Chain Lightning (930), Chain Lightning (2860), Chain Lightning (10605), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Chain Lightning (421), Chain Lightning (930), Chain Lightning (2860), Chain Lightning (10605), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 1, 44
 Tooltip          : Your next Chain Lightning or Lava Burst spell will be an instant cast spell.
 
@@ -9180,7 +9164,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Log (8), Aura Unique (43)
 Effects          :
 #1 (id=1195764)  : Apply Aura (6) | Add Percent Modifier (108): Spell Pushback (9)
                    Base Value: 70 | Scaled Value: 70 | Misc Value: 9 | Target: Self (1)
-                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Lightning Bolt (10391), Lightning Bolt (10392), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490)
                    Family Flags: 0, 1, 44
 #2 (id=1195765)  : Apply Aura (6) | Add Flat Modifier (107): Spell Proc Chance (18)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 18 | Target: Self (1)
@@ -9196,7 +9180,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Log (8), Aura Unique (43)
 Effects          :
 #1 (id=1195769)  : Apply Aura (6) | Add Percent Modifier (108): Spell Critical Bonus Multiplier (15)
                    Base Value: 60 | Scaled Value: 60 | SP Coefficient: 1 | Misc Value: 15 | Target: Self (1)
-                   Affected Spells: Lightning Shield (324), Lightning Shield (325), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Shield (905), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Lightning Shield (945), Chain Lightning (2860), Attack (3606), Lightning Bolt (6041), Attack (6350), Attack (6351), Attack (6352), Flametongue Weapon Proc (8026), Flametongue Weapon Proc (8028), Flametongue Weapon Proc (8029), Frostbrand Attack (8034), Frostbrand Attack (8037), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Shield (8134), Magma Totem (8187), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Lightning Shield (10431), Lightning Shield (10432), Attack (10435), Attack (10436), Flametongue Attack (10444), Flametongue Weapon Proc (10445), Flame Shock (10447), Flame Shock (10448), Frostbrand Attack (10458), Frost Shock (10472), Frost Shock (10473), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flametongue Weapon Proc (16343), Flametongue Weapon Proc (16344), Frostbrand Attack (16352), Frostbrand Attack (16353), Lightning Shield (26363), Lightning Shield (26364), Lightning Shield (26365), Lightning Shield (26366), Lightning Shield (26367), Lightning Shield (26369), Lightning Shield (26370), Flame Shock (29228), Flametongue Attack (29469), Flametongue Attack (29470), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Lava Burst (408491), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Molten Blast (425339), Lightning Shield (432143), Lava Burst (1238299), Lava Burst (1238300), Lava Burst (1238373), Lava Burst (1238376), Lava Burst (1326047)
+                   Affected Spells: Lightning Shield (324), Lightning Shield (325), Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Shield (905), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Lightning Shield (945), Chain Lightning (2860), Attack (3606), Lightning Bolt (6041), Attack (6350), Attack (6351), Attack (6352), Flametongue Weapon Proc (8026), Flametongue Weapon Proc (8028), Flametongue Weapon Proc (8029), Frostbrand Attack (8034), Frostbrand Attack (8037), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Lightning Shield (8134), Magma Totem (8187), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Lightning Shield (10431), Lightning Shield (10432), Attack (10435), Attack (10436), Flametongue Attack (10444), Flametongue Weapon Proc (10445), Flame Shock (10447), Flame Shock (10448), Frostbrand Attack (10458), Frost Shock (10472), Frost Shock (10473), Magma Totem (10579), Magma Totem (10580), Magma Totem (10581), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Flametongue Weapon Proc (16343), Flametongue Weapon Proc (16344), Frostbrand Attack (16352), Frostbrand Attack (16353), Lightning Shield (26363), Lightning Shield (26364), Lightning Shield (26365), Lightning Shield (26366), Lightning Shield (26367), Lightning Shield (26369), Lightning Shield (26370), Flame Shock (29228), Flametongue Attack (29469), Flametongue Attack (29470), Fire Nova (408423), Fire Nova (408424), Fire Nova (408426), Fire Nova (408427), Fire Nova (408428), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Lava Burst (408490), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690), Molten Blast (425339), Lightning Shield (432143)
                    Family Flags: 0, 1, 10, 20, 21, 24, 28, 30, 31, 44, 126
 Description      : Increases the critical strike damage bonus of your Fire, Frost, and Nature spells by $s1%.
 
@@ -9376,86 +9360,6 @@ Effects          :
 #1 (id=1235443)  : Apply Aura (6) | Root (26)
                    Base Value: 100 | Scaled Value: 100 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 Tooltip          : Immobilized.
-
-Name             : Lava Burst (desc=Rank 2) (id=1238299) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Resource         : 165 Base Mana (0) (id=310841)
-Spell Level      : 40 (max 48)
-Range            : 30 yards
-Cast Time        : 2.5 seconds
-GCD              : 1.5 seconds
-Velocity         : 20 yards/sec
-Cooldown         : 10 seconds
-Category         : 1224 (Type 0x0)
-Labels           : 24: Shaman Spells
-Category Cooldown: 10 seconds
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
-Effects          :
-#1 (id=1235456)  : School Damage (2): fire
-                   Base Value: 164 | Scaled Value: 171.2 (delta=0.253259) | Points Per Level: 0.9 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-#2 (id=1340789)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 20 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
-
-Name             : Lava Burst (desc=Rank 3) (id=1238300) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Resource         : 230 Base Mana (0) (id=310842)
-Spell Level      : 50 (max 58)
-Range            : 30 yards
-Cast Time        : 2.5 seconds
-GCD              : 1.5 seconds
-Velocity         : 20 yards/sec
-Cooldown         : 10 seconds
-Category         : 1224 (Type 0x0)
-Labels           : 24: Shaman Spells
-Category Cooldown: 10 seconds
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
-Effects          :
-#1 (id=1235457)  : School Damage (2): fire
-                   Base Value: 196 | Scaled Value: 204.8 (delta=0.253259) | Points Per Level: 1.1 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-#2 (id=1340790)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 20 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
-
-Name             : Lava Burst (id=1238373) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Spell Level      : 50
-Range            : 30 yards
-Velocity         : 20 yards/sec
-Labels           : 24: Shaman Spells
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
-Effects          :
-#1 (id=1235544)  : School Damage (2): fire
-                   Base Value: 89 | Scaled Value: 111 (delta=0.257463) | Points Per Level: 0.55 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
-
-Name             : Lava Burst (id=1238376) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Spell Level      : 60
-Range            : 30 yards
-Velocity         : 20 yards/sec
-Labels           : 24: Shaman Spells
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
-Effects          :
-#1 (id=1235547)  : School Damage (2): fire
-                   Base Value: 110 | Scaled Value: 129.5 (delta=0.257463) | Points Per Level: 0.65 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $408490s2% increased damage.
 
 Name             : Ghost Wolf (id=1238640) [Spell Family (11)] 
 Class            : Shaman
@@ -9706,28 +9610,4 @@ Effects          :
 #1 (id=1362475)  : Apply Party Aura (35) | Periodic Energize Power (24): every 3 seconds
                    Base Value: 290 | Scaled Value: 290 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Gain $s1 mana every $t1 seconds.
-
-Name             : Lava Burst (desc=Rank 4) (id=1326047) [Spell Family (11)] 
-Class            : Shaman
-School           : Fire
-Spell Type       : Magic
-Resource         : 265 Base Mana (0) (id=315062)
-Spell Level      : 60 (max 68)
-Range            : 30 yards
-Cast Time        : 2.5 seconds
-GCD              : 1.5 seconds
-Velocity         : 20 yards/sec
-Cooldown         : 10 seconds
-Category         : 1224 (Type 0x0)
-Labels           : 24: Shaman Spells
-Category Cooldown: 10 seconds
-Affecting Spells : Call of Flame (16038 effect#1), Convection (16039 effect#1), Elemental Fury (16089 effect#1), Elemental Mastery (16166 effect#1), Clearcasting (16246 effect#1), Elemental Alacrity (16578 effect#1), Elemental Reach (28999 effect#1), Eye of the Storm (29062 effect#1), Shield Mastery (408525 effect#3), Way of Earth (408680 effect#13), Power Surge (415105 effect#1), S03 - Item - TAQ - Shaman - Elemental 2P Bonus (1213900 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1)
-Family Flags     : 44
-Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Doesn't Reset Swing Timer if Instant (217), Unknown (493)
-Effects          :
-#1 (id=1363744)  : School Damage (2): fire
-                   Base Value: 220 | Scaled Value: 230.4 (delta=0.253259) | Points Per Level: 1.3 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-#2 (id=1363745)  : Dummy (3)
-                   Base Value: 20 | Scaled Value: 53.6 | Points Per Level: 4.2 | SP Coefficient: 0.714 | Target: Targeted Enemy (6)
-Description      : You hurl molten lava at the target, dealing $s1 Fire damage. If your Flame Shock is on the target, Lava Burst deals $s2% increased damage.
 

@@ -427,7 +427,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -454,7 +454,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -579,7 +579,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -606,7 +606,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -633,7 +633,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -848,7 +848,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -1165,7 +1165,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -1278,7 +1278,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -1575,7 +1575,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 16
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -1598,7 +1598,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 16
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -1670,7 +1670,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -2313,7 +2313,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -2341,7 +2341,7 @@ Category         : 84 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 10 seconds
 Stance Mask      : 0x00000001
-Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2)
+Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2), Poised (1328827 effect#1)
 Family Flags     : 61
 Attributes       : Is Ability (4), Do Not Sheath (18), Discount Power On Miss (59), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
@@ -2363,7 +2363,7 @@ Category         : 84 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 10 seconds
 Stance Mask      : 0x00000001
-Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2)
+Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2), Poised (1328827 effect#1)
 Family Flags     : 61
 Attributes       : Is Ability (4), Do Not Sheath (18), Discount Power On Miss (59), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
@@ -2385,7 +2385,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 101%
 Stance Mask      : 0x00000001
 Mechanic         : Stun
-Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 17
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), No Aura Icon (60), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -2453,7 +2453,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2483,7 +2483,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2671,7 +2671,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2783,7 +2783,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 101%
 Stance Mask      : 0x00000001
 Mechanic         : Stun
-Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 17
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), No Aura Icon (60), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -2842,7 +2842,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 101%
 Stance Mask      : 0x00000001
 Mechanic         : Stun
-Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 17
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), No Aura Icon (60), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -2866,7 +2866,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -2891,7 +2891,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Shredding Attacks (16966 effect#1), Improved Shred (16968 effect#1), Savage Fury (16998 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #5, #6), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 15
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -3056,7 +3056,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -3081,7 +3081,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -3282,7 +3282,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 16
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -3305,7 +3305,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Berserk (417141 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 16
 Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Unknown (454), Unknown (493)
 Effects          :
@@ -3531,7 +3531,7 @@ Category         : 84 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 10 seconds
 Stance Mask      : 0x00000001
-Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2)
+Affecting Spells : S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#2), Poised (1328827 effect#1)
 Family Flags     : 61
 Attributes       : Is Ability (4), Do Not Sheath (18), Discount Power On Miss (59), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
@@ -3553,7 +3553,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -3583,7 +3583,7 @@ Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
 Mechanic         : Bleed
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), Improved Rip (446212 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 85
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), DoT Stacking Rule (103), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -3637,7 +3637,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -5549,7 +5549,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -5598,7 +5598,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -5625,7 +5625,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -5652,7 +5652,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -6160,7 +6160,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -10372,7 +10372,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Feral Aggression (16858 effect#2), Feral Aggression (16859 effect#2), Feral Aggression (16860 effect#2), Feral Aggression (16861 effect#2), Feral Aggression (16862 effect#2), Clearcasting (16870 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #10, #12), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T1 - Druid - Feral 6P Bonus (455873 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 23, 108
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
@@ -10407,4 +10407,39 @@ Hotfixed         : NEW EFFECT
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Hotfixed         : NEW EFFECT
 Description      : When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to $s1% of your Spirit. If either spell expires due to being dispelled, the target is healed for $s2% of your Spirit instead.
+
+Name             : Poised (id=1328827) [Spell Family (7)] 
+Hotfixed         : NEW SPELL
+Class            : Druid
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Duration         : Aura (infinite)
+Labels           : 21: Druid Spells
+Stacks           : 1 initial, 1 maximum
+Proc Chance      : 100%
+Proc Flags       : Yellow Melee, White Ranged, Yellow Ranged, Generic Helpful, Generic Hostile Spell, Magic Heal, Magic Hostile Spell
+Attributes       : Is Ability (4), Do Not Sheath (18), Can Proc From Procs (122), Unknown (493)
+Effects          :
+#1 (id=1368040)  : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
+                   Base Value: -10 | Scaled Value: -10 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Rip (1079), Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Shred (5221), Ravage (6785), Ravage (6787), Shred (6800), Shred (8992), Cower (8998), Cower (9000), Pounce (9005), Rip (9492), Rip (9493), Rip (9752), Pounce (9823), Pounce (9827), Shred (9829), Shred (9830), Claw (9849), Claw (9850), Ravage (9866), Ravage (9867), Cower (9892), Rip (9894), Rip (9896), Rake (9904), Ferocious Bite (22568), Ferocious Bite (22827), Ferocious Bite (22828), Ferocious Bite (22829), Ferocious Bite (31018), Ferocious Bite (1328618)
+                   Family Flags: 12, 15, 16, 17, 23, 61
+Hotfixed         : NEW EFFECT
+Description      : Energy cost of the next ability performed is reduced by $s1.
+Tooltip          : Energy cost of the next ability performed is reduced by $s1.
+
+Name             : Poised (desc=Passive) (id=1328829) [Passive] 
+Hotfixed         : NEW SPELL
+Class            : Druid
+School           : Physical
+Spell Type       : None
+Spell Level      : 32
+Labels           : 21: Druid Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Sheath (18), Unknown (454), Unknown (493)
+Effects          :
+#1 (id=1368043)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328827s1.
 

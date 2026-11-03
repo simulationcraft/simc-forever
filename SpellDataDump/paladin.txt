@@ -6631,7 +6631,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Duration         : 3 seconds
 Cooldown         : 15 seconds
-Affecting Spells : Improved Kick (24434 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
+Affecting Spells : Improved Kick (24434 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2), Poised (1328826 effect#1)
 Family Flags     : 4
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :

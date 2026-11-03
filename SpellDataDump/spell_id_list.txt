@@ -693,6 +693,7 @@ Druid
 1328618  Ferocious Bite
 1328621  Bloom
 1328622 *Bloom
+1328827  Poised
 
 Hunter
 75       Auto Shot
@@ -3329,11 +3330,11 @@ Priest
 1240734  Penance
 1240736  Penance
 1240755 *Blessed Recovery
-1240770  Binding Heal
-1240771  Binding Heal
-1240772  Binding Heal
-1240773  Binding Heal
-1240774  Binding Heal
+1240770 *Binding Heal
+1240771 *Binding Heal
+1240772 *Binding Heal
+1240773 *Binding Heal
+1240774 *Binding Heal
 1240826  Prayer of Mending
 1240827  Prayer of Mending
 1240848 *Prayer of Mending
@@ -3562,7 +3563,7 @@ Rogue
 13229    Wound Poison III
 13230    Wound Poison IV
 13715    Dual Wield Specialization
-13732    Improved Sinister Strike
+13732    Efficient Strikes
 13741    Improved Gouge
 13742    Endurance
 13743    Improved Sprint
@@ -3576,7 +3577,7 @@ Rogue
 14076    Improved Sap
 14079    Improved Ambush
 14082    Dirty Deeds
-14084    Improved Distract
+14084   *Improved Distract
 14094    Improved Sap
 14095    Improved Sap
 14113    Improved Poisons
@@ -3584,7 +3585,7 @@ Rogue
 14143    Remorseless
 14156    Ruthlessness
 14158    Murder
-14162    Improved Eviscerate
+14162    Coup de Grace
 14165    Improved Slice and Dice
 14168    Improved Expose Armor
 14171    Serrated Blades
@@ -3877,20 +3878,27 @@ Rogue
 1307944 *Improved Pick Pocket and Distract 04
 1307945 *Improved Pick Pocket and Distract 05
 1310703  Venom
-1310705  Mutilate
-1310706  Mutilate
-1310707  Mutilate
-1310709  Coup de Grace
 1310711  Flawless Execution
-1310721  Thousand Cuts
-1310723  Thousand Cuts
-1310728  Quietus
-1316709 *Death Mark
+1310721 *Thousand Cuts
+1310723 *Thousand Cuts
+1310728  Quick Getaway
+1316709  Death Mark
 1318151 *Stealth
-1325756 *Death Mark
-1325757 *Death Mark
-1325758 *Death Mark
+1325756  Death Mark
+1325757  Death Mark
+1325758  Death Mark
 1326175 *Stealth
+1328825  Poised
+1328826  Poised
+1329256  Blood Splatter
+1329265  Composure
+1329282  Quick Getaway
+1329283  Shank
+1329284  Flash of Steel
+1329286  Boot Knife
+1329326  Ghostly Strike
+1329328  Venom
+1329549  Shank
 1329552 *Counterspell - Silenced
 
 Shaman
@@ -4307,7 +4315,7 @@ Shaman
 408482   Chain Lightning
 408484   Chain Lightning
 408490   Lava Burst
-408491   Lava Burst
+408491  *Lava Burst
 408496   Dual Wield Specialization
 408498   Maelstrom Weapon
 408501  *Maelstrom Ready!
@@ -4550,10 +4558,10 @@ Shaman
 1235353 *Mercy by Fire
 1238149 *S03 - Item - Naxxramas - Shaman - Enhancement 2P Bonus
 1238289  Earthbound
-1238299  Lava Burst
-1238300  Lava Burst
-1238373  Lava Burst
-1238376  Lava Burst
+1238299 *Lava Burst
+1238300 *Lava Burst
+1238373 *Lava Burst
+1238376 *Lava Burst
 1238640  Ghost Wolf
 1239242  Riptide
 1239243  Riptide
@@ -4589,7 +4597,7 @@ Shaman
 1323420 *Totemic Recall
 1325256  Mana Tide Totem
 1325257  Mana Tide
-1326047  Lava Burst
+1326047 *Lava Burst
 1326619 *Ancestral Spirit
 
 Warlock
