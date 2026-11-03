@@ -13,6 +13,10 @@ namespace warrior
 // Warrior
 // ==========================================================================
 
+constexpr unsigned STANCE_MASK_BATTLE    = 0x00010000;
+constexpr unsigned STANCE_MASK_DEFENSIVE = 0x00020000;
+constexpr unsigned STANCE_MASK_BERSERKER = 0x00040000;
+
 struct warrior_t;
 
 struct warrior_td_t : public actor_target_data_t
@@ -57,6 +61,8 @@ struct warrior_t final : public parse_player_effects_t
   void parse_action_effects( action_t* );
 
   warrior_td_t* get_target_data( player_t* target ) const override;
+
+  unsigned current_stance_mask() const;
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
   void init_action_list() override;
@@ -152,11 +158,21 @@ struct warrior_t final : public parse_player_effects_t
 
   struct spells_t
   {
-    const spell_data_t* thunder_clap = spell_data_t::nil();
+    const spell_data_t* battle_stance            = spell_data_t::nil();
+    const spell_data_t* battle_stance_passive    = spell_data_t::nil();
+    const spell_data_t* berserker_stance         = spell_data_t::nil();
+    const spell_data_t* berserker_stance_passive = spell_data_t::nil();
+    const spell_data_t* defensive_stance         = spell_data_t::nil();
+    const spell_data_t* defensive_stance_passive = spell_data_t::nil();
+    const spell_data_t* thunder_clap             = spell_data_t::nil();
   } spell;
 
   struct buffs_t
   {
+    buff_t* battle_stance    = nullptr;
+    buff_t* berserker_stance = nullptr;
+    buff_t* defensive_stance = nullptr;
+
     buff_t* battle_shout = nullptr;
     buff_t* bloodrage    = nullptr;
 
@@ -210,6 +226,21 @@ public:
 
   warrior_td_t* td( player_t* target ) const
   { return p()->get_target_data( target ); }
+
+  bool stance_ready() const
+  {
+    if ( this->background )
+      return true;
+
+    const unsigned mask = this->data().stance_mask();
+    if ( !mask )
+      return true;
+
+    return ( mask & p()->current_stance_mask() ) != 0;
+  }
+
+  bool ready() override
+  { return stance_ready() && ab::ready(); }
 
   void consume_resource() override
   {
@@ -297,6 +328,53 @@ struct bloodrage_t : public warrior_spell_t
 
     p()->buff.bloodrage->trigger();
     p()->resource_loss( RESOURCE_HEALTH, 100 * data().cost( POWER_HEALTH ), nullptr, this );
+  }
+};
+
+/////////////////////////////////////////////////////////////////////////////////////
+//
+// Stances
+//
+/////////////////////////////////////////////////////////////////////////////////////
+
+struct warrior_stance_t : public warrior_spell_t
+{
+  buff_t* stance;
+  std::array<buff_t*, 3> stances;
+
+  warrior_stance_t( warrior_t* player, util::string_view name, const spell_data_t* spell, buff_t* stance,
+                    std::array<buff_t*, 3> stances, util::string_view options_str ) :
+    warrior_spell_t( name, player, spell ), stance( stance ), stances( stances )
+  {
+    parse_options( options_str );
+
+    harmful     = false;
+    may_miss    = false;
+    target      = player;
+    trigger_gcd = 0_ms;
+
+    cooldown           = player->get_cooldown( "stance_swap_cooldown", this );
+    cooldown->category = true;
+    cooldown->duration = std::max( spell->cooldown(), spell->category_cooldown() );
+  }
+
+  bool ready() override
+  {
+    if ( stance->check() )
+      return false;
+
+    return warrior_spell_t::ready();
+  }
+
+  void execute() override
+  {
+    warrior_spell_t::execute();
+
+    for ( auto* b : stances )
+      if ( b != stance )
+        b->expire();
+
+    stance->trigger();
   }
 };
 
@@ -586,6 +664,10 @@ void warrior_t::create_buffs()
 {
   buff.heroic_strike_queued = make_buff( this, "heroic_strike_queued" );
 
+  buff.battle_stance    = make_buff( this, "battle_stance", spell.battle_stance );
+  buff.defensive_stance = make_buff( this, "defensive_stance", spell.defensive_stance );
+  buff.berserker_stance = make_buff( this, "berserker_stance", spell.berserker_stance );
+
   buff.battle_shout = make_buff<stat_buff_t>( this, "battle_shout", find_rank( battle_shout_ranks )->spell( this ) );
 
   buff.bloodrage = make_buff( this, "bloodrage",
@@ -593,7 +675,30 @@ void warrior_t::create_buffs()
                         ->set_tick_callback( [ this ]( buff_t*, int, timespan_t ) {
                             resource_gain( RESOURCE_RAGE, 1.0, get_gain( "bloodrage" ) ); } );
 
+  parse_effects( spell.battle_stance_passive, PARSE_PASSIVE,
+                 [ this ] { return buff.battle_stance->check() > 0; } );
+  parse_effects( spell.defensive_stance_passive, PARSE_PASSIVE,
+                 [ this ] { return buff.defensive_stance->check() > 0; } );
+  parse_effects( spell.berserker_stance_passive, PARSE_PASSIVE,
+                 [ this ] { return buff.berserker_stance->check() > 0; } );
+
+  register_precombat_begin( buff.battle_stance );
+
   parse_player_effects_t::create_buffs();
+}
+
+unsigned warrior_t::current_stance_mask() const
+{
+  unsigned mask = 0;
+
+  if ( buff.battle_stance->check() )
+    mask |= STANCE_MASK_BATTLE;
+  if ( buff.defensive_stance->check() )
+    mask |= STANCE_MASK_DEFENSIVE;
+  if ( buff.berserker_stance->check() )
+    mask |= STANCE_MASK_BERSERKER;
+
+  return mask;
 }
 
 warrior_td_t* warrior_t::get_target_data( player_t* target ) const
@@ -612,7 +717,13 @@ void warrior_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
-  spell.thunder_clap = find_rank( thunder_clap_ranks )->spell( this );
+  spell.battle_stance            = find_spell( 2457 );
+  spell.battle_stance_passive    = find_spell( 21156 );
+  spell.berserker_stance         = find_spell( 2458 );
+  spell.berserker_stance_passive = find_spell( 7381 );
+  spell.defensive_stance         = find_spell( 71 );
+  spell.defensive_stance_passive = find_spell( 7376 );
+  spell.thunder_clap             = find_rank( thunder_clap_ranks )->spell( this );
 
   // Arms
   talent.improved_heroic_strike           = find_talent_spell( talent_tree::CLASS, "Improved Heroic Strike" );
@@ -689,6 +800,16 @@ void warrior_t::parse_action_effects( action_t* action )
 action_t* warrior_t::create_action( util::string_view name, util::string_view options_str )
 {
   if ( name == "auto_attack" ) return new warrior_auto_attack_t( this, options_str );
+
+  if ( name == "battle_stance" )
+    return new warrior_stance_t( this, "battle_stance", spell.battle_stance, buff.battle_stance,
+                                 { buff.battle_stance, buff.defensive_stance, buff.berserker_stance }, options_str );
+  if ( name == "defensive_stance" )
+    return new warrior_stance_t( this, "defensive_stance", spell.defensive_stance, buff.defensive_stance,
+                                 { buff.battle_stance, buff.defensive_stance, buff.berserker_stance }, options_str );
+  if ( name == "berserker_stance" )
+    return new warrior_stance_t( this, "berserker_stance", spell.berserker_stance, buff.berserker_stance,
+                                 { buff.battle_stance, buff.defensive_stance, buff.berserker_stance }, options_str );
 
   if ( name == "battle_shout" ) return new battle_shout_t( this, options_str );
   if ( name == "bloodrage" ) return new bloodrage_t( this, options_str );
