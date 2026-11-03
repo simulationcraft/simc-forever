@@ -168,7 +168,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679452)   : Apply Aura (6) | Unknown(674)
+#1 (id=679452)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 315 | Scaled Value: 315 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -348,7 +348,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679193)   : Apply Aura (6) | Unknown(674)
+#1 (id=679193)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 720 | Scaled Value: 720 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -541,7 +541,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685376)   : Apply Aura (6) | Unknown(674)
+#1 (id=685376)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 945 | Scaled Value: 945 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -1192,7 +1192,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684875)   : Apply Aura (6) | Unknown(674)
+#1 (id=684875)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 495 | Scaled Value: 495 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -2394,7 +2394,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687259)   : Apply Aura (6) | Unknown(674)
+#1 (id=687259)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 1170 | Scaled Value: 1170 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -2418,7 +2418,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688399)   : Apply Aura (6) | Unknown(674)
+#1 (id=688399)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 1395 | Scaled Value: 1395 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -2616,7 +2616,7 @@ Spell Type       : None
 Labels           : 18: Priest Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=690269)   : Apply Aura (6) | Unknown(134)
+#1 (id=690269)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -3339,7 +3339,7 @@ Attributes       : Unknown (493)
 Effects          :
 #1 (id=692749)   : Apply Aura (6) | Modify Total Stat% (137)
                    Base Value: 100 | Scaled Value: 100 | Misc Value: 4 | Stat: Spi | Target: Self (1)
-#2 (id=692750)   : Apply Aura (6) | Unknown(134)
+#2 (id=692750)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Tooltip          : Spirit increased by $s1% and allows $s2% of Mana regeneration while casting.
 

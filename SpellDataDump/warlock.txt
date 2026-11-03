@@ -157,7 +157,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679301)   : Apply Aura (6) | Unknown(674)
+#1 (id=679301)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 40 | Scaled Value: 40 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=679302)   : Apply Aura (6) | Modify Health Regeneration Rate in Combat (161)
@@ -277,7 +277,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679228)   : Apply Aura (6) | Unknown(674)
+#1 (id=679228)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 120 | Scaled Value: 120 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=679229)   : Apply Aura (6) | Modify Health Regeneration Rate in Combat (161)
@@ -365,7 +365,7 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Nameplate Perso
 Effects          :
 #1 (id=686801)   : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-#2 (id=686802)   : Apply Aura (6) | Unknown(674)
+#2 (id=686802)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -175 | Scaled Value: -175 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
 Tooltip          : Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
@@ -404,7 +404,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686133)   : Apply Aura (6) | Unknown(674)
+#1 (id=686133)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 210 | Scaled Value: 210 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=686134)   : Apply Aura (6) | Resistance (22)
@@ -651,7 +651,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=680288)   : Apply Aura (6) | Unknown(674)
+#1 (id=680288)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=680289)   : Apply Aura (6) | Resistance (22)
@@ -735,7 +735,7 @@ Effects          :
 #2 (id=680460)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -40 | Scaled Value: -40 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#1), Improved Subjugate Demon (18822 effect#1), Improved Subjugate Demon (18823 effect#1), Improved Subjugate Demon (18824 effect#1), Improved Subjugate Demon (18825 effect#1)
-#3 (id=680461)   : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=680461)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#2), Improved Subjugate Demon (18822 effect#2), Improved Subjugate Demon (18823 effect#2), Improved Subjugate Demon (18824 effect#2), Improved Subjugate Demon (18825 effect#2)
 Description      : Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.  If you repeatedly subjugate the same demon, it will become more difficult to control with each attempt.
@@ -896,7 +896,7 @@ Affecting Spells : Grim Reach (18218 effect#1)
 Family Flags     : 31, 73
 Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679427)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=679427)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -50 | Scaled Value: -50 | Target: Targeted Enemy (6)
 Description      : Forces the target to speak in Demonic, increasing the casting time of all spells by $s1%. Only one Curse per Warlock can be active on any one target. Lasts $d.
 Tooltip          : Speaking Demonic increasing casting time by $s1%.
@@ -1863,7 +1863,7 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Nameplate Perso
 Effects          :
 #1 (id=686372)   : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-#2 (id=686373)   : Apply Aura (6) | Unknown(674)
+#2 (id=686373)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -285 | Scaled Value: -285 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
 Tooltip          : Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
@@ -1886,7 +1886,7 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Nameplate Perso
 Effects          :
 #1 (id=686502)   : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-#2 (id=686503)   : Apply Aura (6) | Unknown(674)
+#2 (id=686503)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -395 | Scaled Value: -395 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
 Tooltip          : Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
@@ -3018,7 +3018,7 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Nameplate Perso
 Effects          :
 #1 (id=690025)   : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-#2 (id=690026)   : Apply Aura (6) | Unknown(674)
+#2 (id=690026)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -505 | Scaled Value: -505 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
 Tooltip          : Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
@@ -3039,7 +3039,7 @@ Affecting Spells : Grim Reach (18218 effect#1)
 Family Flags     : 31, 73
 Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=690249)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=690249)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -60 | Scaled Value: -60 | Target: Targeted Enemy (6)
 Description      : Forces the target to speak in Demonic, increasing the casting time of all spells by $s1%. Only one Curse per Warlock can be active on any one target. Lasts $d.
 Tooltip          : Speaking Demonic increasing casting time by $s1%.
@@ -3065,7 +3065,7 @@ Effects          :
 #2 (id=689479)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -40 | Scaled Value: -40 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#1), Improved Subjugate Demon (18822 effect#1), Improved Subjugate Demon (18823 effect#1), Improved Subjugate Demon (18824 effect#1), Improved Subjugate Demon (18825 effect#1)
-#3 (id=689480)   : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=689480)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#2), Improved Subjugate Demon (18822 effect#2), Improved Subjugate Demon (18823 effect#2), Improved Subjugate Demon (18824 effect#2), Improved Subjugate Demon (18825 effect#2)
 Description      : Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.  If you repeatedly subjugate the same demon, it will become more difficult to control with each attempt.
@@ -3092,7 +3092,7 @@ Effects          :
 #2 (id=689869)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -40 | Scaled Value: -40 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#1), Improved Subjugate Demon (18822 effect#1), Improved Subjugate Demon (18823 effect#1), Improved Subjugate Demon (18824 effect#1), Improved Subjugate Demon (18825 effect#1)
-#3 (id=689870)   : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=689870)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#2), Improved Subjugate Demon (18822 effect#2), Improved Subjugate Demon (18823 effect#2), Improved Subjugate Demon (18824 effect#2), Improved Subjugate Demon (18825 effect#2)
 Description      : Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.  If you repeatedly subjugate the same demon, it will become more difficult to control with each attempt.
@@ -3166,7 +3166,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689078)   : Apply Aura (6) | Unknown(674)
+#1 (id=689078)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 390 | Scaled Value: 390 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=689079)   : Apply Aura (6) | Resistance (22)
@@ -3192,7 +3192,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689710)   : Apply Aura (6) | Unknown(674)
+#1 (id=689710)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 480 | Scaled Value: 480 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=689711)   : Apply Aura (6) | Resistance (22)
@@ -3218,7 +3218,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689713)   : Apply Aura (6) | Unknown(674)
+#1 (id=689713)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 570 | Scaled Value: 570 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=689714)   : Apply Aura (6) | Resistance (22)
@@ -6226,7 +6226,7 @@ Effects          :
 #2 (id=700193)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -43 | Scaled Value: -43 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#1), Improved Subjugate Demon (18822 effect#1), Improved Subjugate Demon (18823 effect#1), Improved Subjugate Demon (18824 effect#1), Improved Subjugate Demon (18825 effect#1)
-#3 (id=700194)   : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=700194)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#2), Improved Subjugate Demon (18822 effect#2), Improved Subjugate Demon (18823 effect#2), Improved Subjugate Demon (18824 effect#2), Improved Subjugate Demon (18825 effect#2)
 Description      : Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.
@@ -7931,7 +7931,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 32 | Target: Self (1)
 #8 (id=1086447)  : Apply Aura (6) | Resistance (22)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 64 | Target: Self (1)
-#9 (id=1086448)  : Apply Aura (6) | Unknown(674)
+#9 (id=1086448)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Target: Self (1)
 #10 (id=1086449) : Apply Aura (6) | Modify Hit% (54)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -7939,7 +7939,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #12 (id=1086451) : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#13 (id=1086452) : Apply Aura (6) | Modify Spell Speed% (65)
+#13 (id=1086452) : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #14 (id=1086453) : Apply Aura (6) | Modify Crit% (52)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -8443,7 +8443,7 @@ Labels           : 3096
 Triggered By     : Backdraft (427713)
 Attributes       : No Immunities (29), Ignore Line of Sight (66), No School Immunities (90), Always Hit (114), No Attack Miss (249), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1107399)  : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=1107399)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
 Tooltip          : Spellcasting haste increased by $w1%.
 
@@ -9731,7 +9731,7 @@ Effects          :
                    Base Value: 14 | Scaled Value: 14 | Misc Value: 0x20 | Target: Self (1)
                    Affected School(s): Shadow
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
-#2 (id=1233766)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1233766)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 Description      : Increases your spell haste by $m2% and increases damage done by your Shadow spells by up to $s1.
@@ -9749,7 +9749,7 @@ Effects          :
                    Base Value: 17 | Scaled Value: 17 | Misc Value: 0x20 | Target: Self (1)
                    Affected School(s): Shadow
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
-#2 (id=1233769)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1233769)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 Description      : Increases your spell haste by $m2% and increases damage done by your Shadow spells by up to $s1.
@@ -9767,7 +9767,7 @@ Effects          :
                    Base Value: 21 | Scaled Value: 21 | Misc Value: 0x20 | Target: Self (1)
                    Affected School(s): Shadow
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
-#2 (id=1233771)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1233771)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 Description      : Increases your spell haste by $m2% and increases damage done by your Shadow spells by up to $s1.
@@ -9780,9 +9780,9 @@ Duration         : 10 seconds
 Labels           : 19: Warlock Spells
 Attributes       : Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1242609)  : Apply Aura (6) | Modify Power Regen (110)
+#1 (id=1242609)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 100 | Scaled Value: 100 | Resource: mana | Target: Self (1)
-#2 (id=1242610)  : Apply Aura (6) | Unknown(134)
+#2 (id=1242610)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
 Description      : Mana regeneration increased by $s1% and allows $s2% of Mana regeneration to continue while casting.
 Tooltip          : Increases Mana regeneration by $w1% and allows $w2% of Mana regeneration to continue while casting.

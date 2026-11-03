@@ -1173,7 +1173,7 @@ Affecting Spells : Improved Poisons (14113 effect#1), Vile Poisons (16513 effect
 Family Flags     : 15
 Attributes       : No Redirection (35), No Reflection (39), Do Not Display Range (126), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=683936)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=683936)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -40 | Scaled Value: -40 | Target: Targeted Enemy (6)
 Tooltip          : Casting speed slowed by $s1%.
 
@@ -1724,7 +1724,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686639)   : Apply Aura (6) | Unknown(674)
+#1 (id=686639)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -90 | Target: Targeted Enemy (6)
 #2 (id=686640)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -1754,7 +1754,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687242)   : Apply Aura (6) | Unknown(674)
+#1 (id=687242)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -180 | Target: Targeted Enemy (6)
 #2 (id=687243)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -1784,7 +1784,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687526)   : Apply Aura (6) | Unknown(674)
+#1 (id=687526)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -270 | Target: Targeted Enemy (6)
 #2 (id=687527)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -1998,7 +1998,7 @@ Affecting Spells : Improved Poisons (14113 effect#1), Vile Poisons (16513 effect
 Family Flags     : 15
 Attributes       : No Redirection (35), No Reflection (39), Do Not Display Range (126), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=686346)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=686346)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -50 | Scaled Value: -50 | Target: Targeted Enemy (6)
 Tooltip          : Casting speed slowed by $s1%.
 
@@ -2152,7 +2152,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689964)   : Apply Aura (6) | Unknown(674)
+#1 (id=689964)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -360 | Target: Targeted Enemy (6)
 #2 (id=689965)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -2182,7 +2182,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688758)   : Apply Aura (6) | Unknown(674)
+#1 (id=688758)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -450 | Target: Targeted Enemy (6)
 #2 (id=688759)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -3094,7 +3094,7 @@ Affecting Spells : Improved Poisons (14113 effect#1), Vile Poisons (16513 effect
 Family Flags     : 15
 Attributes       : No Redirection (35), No Reflection (39), Do Not Display Range (126), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=689754)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=689754)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -60 | Scaled Value: -60 | Target: Targeted Enemy (6)
 Tooltip          : Casting speed slowed by $s1%.
 
@@ -3543,7 +3543,7 @@ Affecting Spells : Carnage (432275 effect#1), S03 - Item - TAQ - Rogue - Damage 
 Family Flags     : 39
 Attributes       : Is Ability (4), Not Shapeshifted (16), Unknown (493)
 Effects          :
-#1 (id=691038)   : Apply Aura (6) | Modify Power Regen (110)
+#1 (id=691038)   : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Resource: energy | Target: Self (1)
 Description      : Increases your Energy regeneration rate by $s1% for $d.
 Tooltip          : Energy regeneration increased by $s1%.
@@ -6468,7 +6468,7 @@ Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 64, 120
 Attributes       : No Redirection (35), No Reflection (39), Do Not Display Range (126), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1132782)  : Apply Aura (6) | Unknown(674)
+#1 (id=1132782)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -1700 | Scaled Value: -1700 | Misc Value: 1 | Target: Targeted Enemy (6)
 Tooltip          : Armor reduced by $w1.
 
