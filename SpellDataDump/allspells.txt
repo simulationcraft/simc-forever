@@ -104578,8 +104578,8 @@ Name             : Shadow and Flame (id=426316) [Spell Family (5), Passive, Hidd
 Talent Entry     : Generic [tree=class, row=6, col=11, max_rank=5, req_points=25]
                  : Effect#1 [op=set, values=(4, 8, 12, 16, 20)]
                  : Effect#2 [op=set, values=(20, 40, 60, 80, 100)]
-                 : Effect#3 [op=set, values=(2, 4, 6, 8, 10)]
-                 : Effect#4 [op=set, values=(2, 4, 6, 8, 10)]
+                 : Effect#3 [op=set, values=(4, 8, 12, 16, 20)]
+                 : Effect#4 [op=set, values=(4, 8, 12, 16, 20)]
 Class            : Warlock
 School           : Physical
 Spell Type       : None
@@ -150370,7 +150370,8 @@ Attributes       : Not Shapeshifted (16), Is Channelled (34), Track Target in Ch
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=1349556)  : Apply Aura (6) | Periodic Damage (3): shadow every 1 seconds
-                   Base Value: 36 | Scaled Value: 36 | Value Multiplier: 1 | SP Coefficient: 0.143 | Target: Targeted Enemy (6)
+                   Base Value: 36 | Scaled Value: 86 | Points Per Level: 2.5 | Value Multiplier: 1 | SP Coefficient: 0.286 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.143 -> 0.286), Points per Level (0 -> 2.5)
 #2 (id=1349557)  : Apply Aura (6) | Modify Damage Taken% from Caster's Spells (271)
                    Base Value: 10 | Scaled Value: 10 | Target: Targeted Enemy (6)
                    Affected Spells: Corruption (172), Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Corruption (6222), Corruption (6223), Corruption (7648), Corruption (11671), Corruption (11672), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Corruption (25311), Invocation (426241), Invocation (426246)
