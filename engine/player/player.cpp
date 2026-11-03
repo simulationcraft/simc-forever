@@ -1262,6 +1262,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   parry( 0 ),
   block( 0 ),
   hit( 0 ),
+  spell_hit( 0 ),
   expertise( 0 ),
   leech( 0 ),
   avoidance( 0 ),
@@ -1345,6 +1346,8 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
   fmt::format_to( out, " spell_haste={:.6g}", s.spell_haste );
   fmt::format_to( out, " ranged_haste={:.6g}", s.ranged_haste );
   fmt::format_to( out, " leech={:.6g}", s.leech );
+  fmt::format_to( out, " hit={:.6g}", s.hit );
+  fmt::format_to( out, " spell_hit={:.6g}", s.spell_hit );
   fmt::format_to( out, " expertise={:.6g}", s.expertise );
   fmt::format_to( out, " skill={:.6g}", s.skill );
   fmt::format_to( out, " distance={:.6g}", s.distance );
@@ -1615,6 +1618,7 @@ void player_t::init_base_stats()
       resources.base[ rt ]                  = get_passive_player_value( rt_base, "resource_max", rt );
       resources.base_multiplier[ rt ]       = get_passive_player_value( rt_mul, "resource_multiplier", rt );
       resources.base_regen_per_second[ rt ] = get_passive_player_value( rt_regen, "resource_regen", rt );
+      resources.regen_multiplier[ rt ]      = get_passive_player_value( 1.0, "resource_regen_multiplier", rt );
       resources.hasted[ rt ]                = _data.is_hasted_regen();
       // Starting amount, the actual start-of-combat resource is min( computed_max, start_at )
       resources.start_at[ rt ] = rt_start == -1.0 ? std::numeric_limits<double>::max() : rt_start;
@@ -1624,7 +1628,11 @@ void player_t::init_base_stats()
 
     // Forever: no base line hit or expertise
     base.hit       = 0.0;
+    base.spell_hit = 0.0;
     base.expertise = 0.0;
+
+    base.hit       = get_passive_player_value( base.hit, "hit" );
+    base.spell_hit = get_passive_player_value( base.spell_hit, "spell_hit" );
 
     base.expertise = get_passive_player_value( base.expertise, "expertise" );
     base.armor_penetration = get_passive_player_value( base.armor_penetration, "armor_penetration" );
@@ -1635,6 +1643,8 @@ void player_t::init_base_stats()
     // Armor Coefficient, based on level (1054 @ 50; 2500 @ 60-63)
     base.armor_coeff = dbc->armor_mitigation_constant( level() );
     sim->print_debug( "{} base armor coefficient set to {}.", *this, base.armor_coeff );
+
+    base.stats.armor = get_passive_player_value( base.stats.armor, "armor" );
   }
 
   base.attack_power_per_spell_power =
@@ -4233,10 +4243,10 @@ void player_t::min_threshold_trigger()
 
     // Special handling for the spirit 5-second rule. If the player is within the 5-seconds of 0 regen, we
     // need to schedule based on the end of that window
-    if ( pres == RESOURCE_MANA && is_player() && recent_cast() )
+    if ( pres == RESOURCE_MANA && is_player() && recent_cast() && rps == 0 )
     {
       regen_delay = last_cast + 5_s - sim->current_time();
-      rps         = resources.base_regen_per_second[ pres ] + mana_regen_from_spirit();
+      rps = resources.base_regen_per_second[ pres ] + ( mana_regen_from_spirit() * resources.regen_multiplier[ pres ] );
     }
 
     if ( rps > 0 )
@@ -4348,8 +4358,6 @@ void player_t::create_buffs()
     debuffs.invulnerable  = make_buff<invulnerable_debuff_t>( this );
     debuffs.vulnerable    = make_buff( this, "vulnerable" )->set_max_stack( 1 );
     debuffs.flying        = make_buff( this, "flying" )->set_max_stack( 1 );
-    debuffs.mortal_wounds = make_buff( this, "mortal_wounds", find_spell( 115804 ) )
-      ->set_default_value( std::fabs( find_spell( 115804 )->effectN( 1 ).percent() ) );
   }
 
   // set up always since this can be applied by enemy actions and raid events.
@@ -4415,13 +4423,16 @@ double player_t::resource_regen_per_second( resource_e r ) const
 
   if ( r == RESOURCE_MANA && is_player() )
   {
-    double spirit_regen = mana_regen_from_spirit();
+    // TODO FOREVER Innervate only affects spirit-based mana regen, not base mana regen (i.e. cant affect mp5)
+    double spirit_regen = mana_regen_from_spirit() * composite_resource_regen_multiplier( r );
 
     if ( recent_cast() )
       spirit_regen *= std::min( 1.0, composite_mana_regen_while_casting() );
 
     reg += spirit_regen;
   }
+  else
+    reg *= composite_resource_regen_multiplier( r );
 
   if ( resources.hasted[ r ] )
     reg /= cache.attack_haste();
@@ -4835,6 +4846,7 @@ double player_t::composite_spell_haste() const
 
 /**
  * This is the old spell_haste and incorporates everything that buffs cast speed
+ * TODO Forever this might need to be modified if they add an effect with subtype 355 (A_MOD_CAST_SPEED)
  */
 double player_t::composite_spell_cast_speed() const
 {
@@ -4910,13 +4922,10 @@ double player_t::composite_spell_crit_chance() const
 
 double player_t::composite_spell_hit() const
 {
-  double sh = current.hit;
+  double sh = current.spell_hit;
 
   // sh += composite_spell_hit_rating() / current.rating.spell_hit;
-
-  sh += composite_melee_expertise();
-
-  return sh;
+    return sh;
 }
 
 double player_t::composite_bonus_armor() const
@@ -4932,6 +4941,11 @@ double player_t::composite_leech() const
 double player_t::composite_mana_regen_while_casting() const
 {
   return current.mana_regen_while_casting;
+}
+
+double player_t::composite_resource_regen_multiplier( resource_e r ) const
+{
+  return resources.regen_multiplier[ r ];
 }
 
 double player_t::composite_run_speed() const
@@ -6403,8 +6417,6 @@ void player_t::arise()
 
     if ( sim->overrides.bleeding && debuffs.bleeding )
       debuffs.bleeding->override_buff( 1, 1.0 );
-    if ( sim->overrides.mortal_wounds && debuffs.mortal_wounds )
-      debuffs.mortal_wounds->override_buff();
   }
   else
   {
@@ -14121,10 +14133,12 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_CRIT_PERCENT,                       "attack_crit"                      },  // 52
   { A_MOD_SPELL_CRIT_CHANCE,                  "spell_crit"                       },  // 57
   { A_MOD_DAMAGE_PERCENT_DONE,                "damage_multiplier"                },  // 79
+  { A_MOD_HIT_CHANCE,                         "hit"                              },  // 54
+  { A_MOD_SPELL_HIT_CHANCE,                   "spell_hit"                        },  // 55
   { A_MOD_PERCENT_STAT,                       "base_attribute_multiplier"        },  // 80
   { A_RESTORE_POWER,                          "resource_regen"                   },  // 85
   { A_MOD_RESISTANCE_PCT,                     "armor_multiplier"                 },  // 101
-  { A_MOD_POWER_REGEN_PERCENT,                "resource_regen"                   },  // 110
+  { A_MOD_POWER_REGEN_PERCENT,                "resource_regen_multiplier"        },  // 110
   { A_MOD_HEALING_RECEIVED_PCT,               "healing_received_multiplier"      },  // 118
   { A_INCREASE_RESOURCE_PCT,                  "resource_multiplier"              },  // 119
   { A_MOD_SPEED_ALWAYS,                       "move_speed_modifier_-_stacking"   },  // 129
@@ -14174,6 +14188,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_AUTO_ATTACK_DAMAGE_PCT,             "auto_attack_multiplier"           },  // 530
   { A_MOD_GUARDIAN_DAMAGE_DONE,               "guardian_damage_multiplier"       },  // 531
   { A_MOD_RANGED_ATTACK_SPEED_QUIVER,         "ranged_attack_speed_multiplier"   },  // 557
+  { A_MOD_ARMOR,                              "armor"                            },  // 674
 };
 
 std::string attr_formatter( int type )
@@ -14440,6 +14455,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
     {
       // special handling
       case A_MOD_STAT:  // 29
+      case A_MOD_ARMOR: // 674
         // parse scaling value if necessary
         flat_val = modifying_eff.average( this );
         break;
@@ -14527,6 +14543,8 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_PARRY_PERCENT:  // 47
       case A_MOD_DODGE_PERCENT:  // 49
       case A_MOD_BLOCK_PERCENT:  // 51
+      case A_MOD_HIT_CHANCE:  // 54
+      case A_MOD_SPELL_HIT_CHANCE:  // 55
       case A_MOD_CRIT_PERCENT:   // 52
       case A_MOD_SPELL_CRIT_CHANCE:  // 57
       case A_MOD_SPEED_ALWAYS:  // 129
@@ -15218,7 +15236,8 @@ void player_t::parse_passive_effects( const spell_data_t* spell, bool force, par
     }
 
     // filter out non-aura applications
-    if ( eff.type() != E_APPLY_AURA && eff.type() != E_APPLY_AREA_AURA_PARTY && eff.type() != E_APPLY_AURA_PLAYER_AND_PET )
+    if ( eff.type() != E_APPLY_AURA && eff.type() != E_APPLY_AREA_AURA_PARTY &&
+         eff.type() != E_APPLY_AURA_PLAYER_AND_PET && eff.type() != E_APPLY_AREA_AURA_RAID )
       continue;
 
     success = register_passive_effect( eff ) ? true : success;
@@ -15248,7 +15267,7 @@ void player_t::deregister_passive_spell( const spell_data_t* spell )
 
       // filter out non-effect-modifying effects
       if ( eff.type() != E_APPLY_AURA && eff.type() != E_APPLY_AREA_AURA_PARTY &&
-           eff.type() != E_APPLY_AURA_PLAYER_AND_PET )
+           eff.type() != E_APPLY_AURA_PLAYER_AND_PET && eff.type() != E_APPLY_AREA_AURA_RAID )
         continue;
 
       register_passive_effect( eff, true );
@@ -15588,6 +15607,7 @@ void player_t::print_parsed_effects( report::sc_html_stream& os ) const
         case E_APPLY_AURA:
         case E_APPLY_AURA_PET:
         case E_APPLY_AREA_AURA_PET:
+        case E_APPLY_AREA_AURA_RAID:
         case E_APPLY_AREA_AURA_PARTY:
           switch ( spell_eff.subtype() )
           {

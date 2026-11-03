@@ -1442,7 +1442,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_MOD_SCALE,                             "Scale% (Stacking)"                                 },  // 61
   { A_MOD_MAX_RESOURCE_COST,                 "Modify Max Cost"                                   },  // 63
   { A_PERIODIC_MANA_LEECH,                   "Periodic Mana Leech"                               },  // 64
-  { A_MOD_CASTING_SPEED_NOT_STACK,           "Modify Spell Speed%"                               },  // 65
+  { A_MOD_SPELL_HASTE,                       "Modify Spell Haste"                                },  // 65
   { A_FEIGN_DEATH,                           "Feign Death"                                       },  // 66
   { A_MOD_DISARM,                            "Disarm"                                            },  // 67
   { A_MOD_STALKED,                           "Stalked"                                           },  // 68
@@ -1468,7 +1468,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_HOVER,                                 "Levitate"                                          },  // 106
   { A_ADD_FLAT_MODIFIER,                     "Add Flat Modifier"                                 },  // 107
   { A_ADD_PCT_MODIFIER,                      "Add Percent Modifier"                              },  // 108
-  { A_MOD_POWER_REGEN_PERCENT,               "Modify Power Regen"                                },  // 110
+  { A_MOD_POWER_REGEN_PERCENT,               "Modify Power Regen%"                               },  // 110
   { A_MOD_HEALING,                           "Modify Healing Received"                           },  // 115
   { A_MOD_REGEN_DURING_COMBAT,               "Combat Health Regen%"                              },  // 116
   { A_MOD_MECHANIC_RESISTANCE,               "Mechanic Resistance"                               },  // 117
@@ -1483,6 +1483,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_MOD_RANGED_ATTACK_POWER_VERSUS,        "Modify Ranged Attack Power vs Race"                },  // 131
   { A_INCREASE_RESOURCE_PCT,                 "Increase Resource%"                                },  // 132
   { A_INCREASE_HEALTH_PCT,                   "Increase Health%"                                  },  // 133
+  { A_MOD_MANA_REGEN_INTERRUPT,              "Allow Mana Regen While Casting"                    },  // 134
   { A_MOD_HEALING_DONE,                      "Modify Healing Power"                              },  // 135
   { A_MOD_HEALING_DONE_PERCENT,              "Modify Healing% Done"                              },  // 136
   { A_MOD_TOTAL_STAT_PERCENTAGE,             "Modify Total Stat%"                                },  // 137
@@ -1628,7 +1629,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_ENABLE_ALTERATE_POWER,                 "Enable Secondary Resource Cost"                    },  // 346
   { A_MOD_COOLDOWN_BY_HASTE,                 "Modify Cooldown Duration by Haste%"                },  // 347
   { A_MOD_HEALING_DONE_PCT_VS_TARGET_HEALTH, "Modify Healing% Based on Target Health%"           },  // 354
-  { A_MOD_SPELL_HASTE,                       "Modify Spell Haste%"                               },  // 355
+  { A_MOD_CAST_SPEED,                        "Modify Cast Speed"                                 },  // 355
   { A_PROC_TRIGGER_SPELL_COPY,               "Duplicate Ability"                                 },  // 360
   { A_OVERRIDE_AUTO_ATTACK_WITH_ABILITY,     "Override Auto-Attack with Ability"                 },  // 361
   { A_OVERRIDE_SP_PER_AP,                    "Override Spell Power per Attack Power%"            },  // 366
@@ -1728,6 +1729,7 @@ static constexpr auto _effect_subtype_strings = util::make_static_map<unsigned, 
   { A_MOD_PCT_PVP_MULTIPLIER,                "Modify Percent PVP Multiplier"                     },  // 647
   { A_MOD_FLAT_LABEL_PVP_MULTIPLIER,         "Modify Flat PVP Multiplier by Label"               },  // 648
   { A_MOD_PCT_LABEL_PVP_MULTIPLIER,          "Modify Percent PVP Multiplier by Label"            },  // 649
+  { A_MOD_ARMOR,                             "Modify Armor"                                      },  // 674
 } );
 
 static constexpr auto _effect_attribute_strings = util::make_static_map<unsigned, std::string_view>( {

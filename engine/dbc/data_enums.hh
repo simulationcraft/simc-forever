@@ -1088,7 +1088,7 @@ enum effect_subtype_t : unsigned {
   A_PERIODIC_HEALTH_FUNNEL = 62,
   A_MOD_MAX_RESOURCE_COST = 63, // old A_PERIODIC_MANA_FUNNEL
   A_PERIODIC_MANA_LEECH = 64,
-  A_MOD_CASTING_SPEED_NOT_STACK = 65,
+  A_MOD_SPELL_HASTE = 65,
   A_FEIGN_DEATH = 66,
   A_MOD_DISARM = 67,
   A_MOD_STALKED = 68,
@@ -1378,7 +1378,7 @@ enum effect_subtype_t : unsigned {
   A_352 = 352,
   A_MOD_CAMOFLAGE = 353,
   A_MOD_HEALING_DONE_PCT_VS_TARGET_HEALTH = 354,
-  A_MOD_SPELL_HASTE = 355,
+  A_MOD_CAST_SPEED = 355,
   A_PROVIDE_TOTEM_CATEGORY = 356,
   A_ENABLE_BOSS_1_UNIT_FRAME = 357,
   A_ALT_WORGEN_FORM = 358,
@@ -1671,6 +1671,7 @@ enum effect_subtype_t : unsigned {
   A_MOD_PCT_PVP_MULTIPLIER = 647,
   A_MOD_FLAT_LABEL_PVP_MULTIPLIER = 648,
   A_MOD_PCT_LABEL_PVP_MULTIPLIER = 649,
+  A_MOD_ARMOR = 674, // assumed to be armor and 465 is bonus armor, but confirm when its live
   A_MAX
 };
 

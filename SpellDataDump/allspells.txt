@@ -623,7 +623,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685757)   : Apply Aura (6) | Unknown(674)
+#1 (id=685757)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 30 | Scaled Value: 30 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=685758)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -1196,7 +1196,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679080)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=679080)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 55 | Scaled Value: 55 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237419)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -1568,7 +1568,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679452)   : Apply Aura (6) | Unknown(674)
+#1 (id=679452)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 315 | Scaled Value: 315 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -1768,7 +1768,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679193)   : Apply Aura (6) | Unknown(674)
+#1 (id=679193)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 720 | Scaled Value: 720 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -1969,7 +1969,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686403)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=686403)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 275 | Scaled Value: 275 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237421)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -2003,7 +2003,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=679464)   : Apply Aura (6) | Unknown(674)
+#1 (id=679464)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 50 | Scaled Value: 50 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -2157,7 +2157,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679301)   : Apply Aura (6) | Unknown(674)
+#1 (id=679301)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 40 | Scaled Value: 40 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=679302)   : Apply Aura (6) | Modify Health Regeneration Rate in Combat (161)
@@ -2305,7 +2305,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679228)   : Apply Aura (6) | Unknown(674)
+#1 (id=679228)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 120 | Scaled Value: 120 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=679229)   : Apply Aura (6) | Modify Health Regeneration Rate in Combat (161)
@@ -2438,7 +2438,7 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Nameplate Perso
 Effects          :
 #1 (id=686801)   : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-#2 (id=686802)   : Apply Aura (6) | Unknown(674)
+#2 (id=686802)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -175 | Scaled Value: -175 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
 Tooltip          : Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
@@ -2477,7 +2477,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686133)   : Apply Aura (6) | Unknown(674)
+#1 (id=686133)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 210 | Scaled Value: 210 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=686134)   : Apply Aura (6) | Resistance (22)
@@ -2772,7 +2772,7 @@ Affecting Spells : Bear Form (Passive) (1178 effects: #5, #6), Cat Form (Passive
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679903)   : Apply Aura (6) | Unknown(674)
+#1 (id=679903)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -175 | Scaled Value: -175 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=679904)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -2864,7 +2864,7 @@ Affecting Spells : Bear Form (Passive) (1178 effects: #5, #6), Cat Form (Passive
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=680252)   : Apply Aura (6) | Unknown(674)
+#1 (id=680252)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -285 | Scaled Value: -285 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=680253)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -3021,7 +3021,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=679487)   : Apply Aura (6) | Unknown(674)
+#1 (id=679487)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 100 | Scaled Value: 100 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -3636,7 +3636,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685376)   : Apply Aura (6) | Unknown(674)
+#1 (id=685376)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 945 | Scaled Value: 945 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -3806,7 +3806,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685608)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=685608)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 505 | Scaled Value: 505 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237423)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -4040,7 +4040,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=680288)   : Apply Aura (6) | Unknown(674)
+#1 (id=680288)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=680289)   : Apply Aura (6) | Resistance (22)
@@ -4145,7 +4145,7 @@ Effects          :
 #2 (id=680460)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -40 | Scaled Value: -40 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#1), Improved Subjugate Demon (18822 effect#1), Improved Subjugate Demon (18823 effect#1), Improved Subjugate Demon (18824 effect#1), Improved Subjugate Demon (18825 effect#1)
-#3 (id=680461)   : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=680461)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#2), Improved Subjugate Demon (18822 effect#2), Improved Subjugate Demon (18823 effect#2), Improved Subjugate Demon (18824 effect#2), Improved Subjugate Demon (18825 effect#2)
 Description      : Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.  If you repeatedly subjugate the same demon, it will become more difficult to control with each attempt.
@@ -4256,7 +4256,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=680770)   : Apply Aura (6) | Unknown(674)
+#1 (id=680770)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 34 | Scaled Value: 34 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 Description      : Increases the friendly target's armor by $s1 for $d.
@@ -5128,7 +5128,7 @@ Affecting Spells : Grim Reach (18218 effect#1)
 Family Flags     : 31, 73
 Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679427)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=679427)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -50 | Scaled Value: -50 | Target: Targeted Enemy (6)
 Description      : Forces the target to speak in Demonic, increasing the casting time of all spells by $s1%. Only one Curse per Warlock can be active on any one target. Lasts $d.
 Tooltip          : Speaking Demonic increasing casting time by $s1%.
@@ -8242,9 +8242,9 @@ Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (
 Effects          :
 #1 (id=679813)   : Apply Aura (6) | Modify Ranged Haste% (140)
                    Base Value: 40 | Scaled Value: 40 | Target: Self (1)
-#2 (id=1172485)  : Apply Aura (6) | Modify Power Regen (110)
+#2 (id=1172485)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 0 | Scaled Value: 0 | Resource: mana | Target: Self (1)
-#3 (id=1292548)  : Apply Aura (6) | Unknown(134)
+#3 (id=1292548)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #4 (id=1339717)  : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 40 | Scaled Value: 40 | Target: Self (1)
@@ -8481,7 +8481,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=681446)   : Apply Aura (6) | Unknown(674)
+#1 (id=681446)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 150 | Scaled Value: 150 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -10553,7 +10553,7 @@ Category         : 28 (Type 0x0)
 Category Cooldown: 60 seconds
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=683456)   : Apply Aura (6) | Unknown(674)
+#1 (id=683456)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 1000 | Scaled Value: 1000 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Increased armor.
@@ -11542,7 +11542,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=683754)   : Apply Aura (6) | Unknown(674)
+#1 (id=683754)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 88 | Scaled Value: 88 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=683755)   : Apply Aura (6) | Attribute (29)
@@ -11569,7 +11569,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684205)   : Apply Aura (6) | Unknown(674)
+#1 (id=684205)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 203 | Scaled Value: 203 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=684206)   : Apply Aura (6) | Attribute (29)
@@ -11885,7 +11885,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #4 (id=1357988)  : Apply Aura (6) | Unknown(668)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#5 (id=1363096)  : Apply Aura (6) | Modify Power Regen (110)
+#5 (id=1363096)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: -100 | Scaled Value: -100 | Resource: energy | Target: Self (1)
 Description      : Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
 
@@ -12418,7 +12418,7 @@ Affecting Spells : Improved Poisons (14113 effect#1), Vile Poisons (16513 effect
 Family Flags     : 15
 Attributes       : No Redirection (35), No Reflection (39), Do Not Display Range (126), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=683936)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=683936)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -40 | Scaled Value: -40 | Target: Targeted Enemy (6)
 Tooltip          : Casting speed slowed by $s1%.
 
@@ -12843,7 +12843,7 @@ Effects          :
 #1 (id=683276)   : Apply Aura (6) | Resistance (22)
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 126 | Target: Self (1)
                    Modified By: Arcane Shielding (11252 effect#2)
-#2 (id=683277)   : Apply Aura (6) | Unknown(134)
+#2 (id=683277)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
                    Modified By: S03 - Item - T1 - Mage - Damage 6P Bonus (456402 effect#1)
 Description      : Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
@@ -14948,7 +14948,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684910)   : Apply Aura (6) | Unknown(674)
+#1 (id=684910)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 142 | Scaled Value: 142 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=684911)   : Apply Aura (6) | Attribute (29)
@@ -15612,7 +15612,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684875)   : Apply Aura (6) | Unknown(674)
+#1 (id=684875)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 495 | Scaled Value: 495 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -15999,7 +15999,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685311)   : Apply Aura (6) | Unknown(674)
+#1 (id=685311)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 110 | Scaled Value: 110 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=685312)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -16024,7 +16024,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684946)   : Apply Aura (6) | Unknown(674)
+#1 (id=684946)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 200 | Scaled Value: 200 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=684947)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -16049,7 +16049,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685675)   : Apply Aura (6) | Unknown(674)
+#1 (id=685675)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 290 | Scaled Value: 290 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=685676)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -16077,7 +16077,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685713)   : Apply Aura (6) | Unknown(674)
+#1 (id=685713)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 380 | Scaled Value: 380 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=685714)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -16393,7 +16393,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=680100)   : Apply Aura (6) | Unknown(674)
+#1 (id=680100)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -90 | Scaled Value: -90 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234494)  : Threat (63)
                    Base Value: 34 | Scaled Value: 34 | Target: Targeted Enemy (6)
@@ -16487,7 +16487,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686874)   : Apply Aura (6) | Unknown(674)
+#1 (id=686874)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -180 | Scaled Value: -180 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234495)  : Threat (63)
                    Base Value: 75 | Scaled Value: 75 | Target: Targeted Enemy (6)
@@ -17368,7 +17368,7 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Nameplate Perso
 Effects          :
 #1 (id=686372)   : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-#2 (id=686373)   : Apply Aura (6) | Unknown(674)
+#2 (id=686373)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -285 | Scaled Value: -285 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
 Tooltip          : Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
@@ -17391,7 +17391,7 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Nameplate Perso
 Effects          :
 #1 (id=686502)   : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-#2 (id=686503)   : Apply Aura (6) | Unknown(674)
+#2 (id=686503)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -395 | Scaled Value: -395 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
 Tooltip          : Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
@@ -19610,7 +19610,7 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=687703)   : Apply Aura (6) | Unknown(674)
+#1 (id=687703)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 60 | Scaled Value: 60 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -19647,7 +19647,7 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=687687)   : Apply Aura (6) | Unknown(674)
+#1 (id=687687)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 120 | Scaled Value: 120 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -19661,7 +19661,7 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=687688)   : Apply Aura (6) | Unknown(674)
+#1 (id=687688)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 180 | Scaled Value: 180 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -21078,7 +21078,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686586)   : Apply Aura (6) | Unknown(674)
+#1 (id=686586)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -270 | Scaled Value: -270 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234498)  : Threat (63)
                    Base Value: 117 | Scaled Value: 117 | Target: Targeted Enemy (6)
@@ -22249,7 +22249,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686639)   : Apply Aura (6) | Unknown(674)
+#1 (id=686639)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -90 | Target: Targeted Enemy (6)
 #2 (id=686640)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -22279,7 +22279,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687242)   : Apply Aura (6) | Unknown(674)
+#1 (id=687242)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -180 | Target: Targeted Enemy (6)
 #2 (id=687243)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -22309,7 +22309,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687526)   : Apply Aura (6) | Unknown(674)
+#1 (id=687526)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -270 | Target: Targeted Enemy (6)
 #2 (id=687527)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -22553,7 +22553,7 @@ Affecting Spells : Improved Poisons (14113 effect#1), Vile Poisons (16513 effect
 Family Flags     : 15
 Attributes       : No Redirection (35), No Reflection (39), Do Not Display Range (126), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=686346)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=686346)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -50 | Scaled Value: -50 | Target: Targeted Enemy (6)
 Tooltip          : Casting speed slowed by $s1%.
 
@@ -22983,7 +22983,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687941)   : Apply Aura (6) | Unknown(674)
+#1 (id=687941)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 263 | Scaled Value: 263 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=687942)   : Apply Aura (6) | Attribute (29)
@@ -24223,7 +24223,7 @@ Range            : 30 yards
 Duration         : 60 seconds
 Attributes       : Aura Unique (43), Unknown (493)
 Effects          :
-#1 (id=686179)   : Apply Aura (6) | Unknown(674)
+#1 (id=686179)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -50 | Scaled Value: -50 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Decrease the armor of target by $s1 for $d.
 Tooltip          : Decreased armor.
@@ -25720,7 +25720,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #4 (id=1357989)  : Apply Aura (6) | Unknown(668)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#5 (id=1363092)  : Apply Aura (6) | Modify Power Regen (110)
+#5 (id=1363092)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: -100 | Scaled Value: -100 | Resource: energy | Target: Self (1)
 Description      : Shapeshift into Dire Bear Form, increasing Attack Power by $9635s4, Armor contribution from items by $9635s1%, and Health by $9635s3.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
 
@@ -25831,7 +25831,7 @@ Affecting Spells : Bear Form (Passive) (1178 effects: #5, #6), Cat Form (Passive
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684321)   : Apply Aura (6) | Unknown(674)
+#1 (id=684321)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -395 | Scaled Value: -395 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=684322)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -26097,7 +26097,7 @@ Range            : 30 yards
 Duration         : 20 seconds
 Attributes       : Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Unknown (493)
 Effects          :
-#1 (id=687081)   : Apply Aura (6) | Unknown(674)
+#1 (id=687081)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=687082)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -26813,7 +26813,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688189)   : Apply Aura (6) | Unknown(674)
+#1 (id=688189)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 324 | Scaled Value: 324 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=688190)   : Apply Aura (6) | Attribute (29)
@@ -26855,7 +26855,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688485)   : Apply Aura (6) | Unknown(674)
+#1 (id=688485)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 385 | Scaled Value: 385 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=688486)   : Apply Aura (6) | Attribute (29)
@@ -27098,7 +27098,7 @@ Affecting Spells : Bear Form (Passive) (1178 effects: #5, #6), Cat Form (Passive
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687337)   : Apply Aura (6) | Unknown(674)
+#1 (id=687337)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -505 | Scaled Value: -505 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=687338)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -28427,7 +28427,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687610)   : Apply Aura (6) | Unknown(674)
+#1 (id=687610)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 470 | Scaled Value: 470 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=687611)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -28455,7 +28455,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687584)   : Apply Aura (6) | Unknown(674)
+#1 (id=687584)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 560 | Scaled Value: 560 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=687585)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -28645,7 +28645,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689235)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=689235)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 160 | Scaled Value: 160 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237420)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -28667,7 +28667,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689013)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=689013)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 390 | Scaled Value: 390 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237422)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -28689,7 +28689,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688024)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=688024)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 620 | Scaled Value: 620 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237424)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -28711,7 +28711,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688025)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=688025)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 735 | Scaled Value: 735 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237425)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -32254,7 +32254,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687259)   : Apply Aura (6) | Unknown(674)
+#1 (id=687259)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 1170 | Scaled Value: 1170 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -32278,7 +32278,7 @@ Affecting Spells : Mental Agility (14520 effect#1), Improved Inner Fire (14747 e
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688399)   : Apply Aura (6) | Unknown(674)
+#1 (id=688399)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 1395 | Scaled Value: 1395 | Misc Value: 1 | Target: Self (1)
                    Modified By: Improved Inner Fire (14747 effect#1)
 Description      : A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.
@@ -32943,7 +32943,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689964)   : Apply Aura (6) | Unknown(674)
+#1 (id=689964)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -360 | Target: Targeted Enemy (6)
 #2 (id=689965)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -32973,7 +32973,7 @@ Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (1
 Family Flags     : 19
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688758)   : Apply Aura (6) | Unknown(674)
+#1 (id=688758)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -450 | Target: Targeted Enemy (6)
 #2 (id=688759)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -33964,7 +33964,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=688319)   : Apply Aura (6) | Unknown(674)
+#1 (id=688319)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 450 | Scaled Value: 450 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -33975,7 +33975,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=688376)   : Apply Aura (6) | Unknown(674)
+#1 (id=688376)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 250 | Scaled Value: 250 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -34282,7 +34282,7 @@ Affecting Spells : Improved Poisons (14113 effect#1), Vile Poisons (16513 effect
 Family Flags     : 15
 Attributes       : No Redirection (35), No Reflection (39), Do Not Display Range (126), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=689754)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=689754)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -60 | Scaled Value: -60 | Target: Targeted Enemy (6)
 Tooltip          : Casting speed slowed by $s1%.
 
@@ -35131,7 +35131,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688698)   : Apply Aura (6) | Unknown(674)
+#1 (id=688698)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -360 | Scaled Value: -360 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234497)  : Threat (63)
                    Base Value: 158 | Scaled Value: 158 | Target: Targeted Enemy (6)
@@ -35156,7 +35156,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688831)   : Apply Aura (6) | Unknown(674)
+#1 (id=688831)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -450 | Scaled Value: -450 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234496)  : Threat (63)
                    Base Value: 206 | Scaled Value: 206 | Target: Targeted Enemy (6)
@@ -36107,7 +36107,7 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Nameplate Perso
 Effects          :
 #1 (id=690025)   : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-#2 (id=690026)   : Apply Aura (6) | Unknown(674)
+#2 (id=690026)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -505 | Scaled Value: -505 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Curses the target with recklessness, reducing the target's armor by $s2 for $d. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
 Tooltip          : Decreases armor by $s2. Target will not flee and will ignore Fear and Horror effects.
@@ -36128,7 +36128,7 @@ Affecting Spells : Grim Reach (18218 effect#1)
 Family Flags     : 31, 73
 Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=690249)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=690249)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -60 | Scaled Value: -60 | Target: Targeted Enemy (6)
 Description      : Forces the target to speak in Demonic, increasing the casting time of all spells by $s1%. Only one Curse per Warlock can be active on any one target. Lasts $d.
 Tooltip          : Speaking Demonic increasing casting time by $s1%.
@@ -36154,7 +36154,7 @@ Effects          :
 #2 (id=689479)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -40 | Scaled Value: -40 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#1), Improved Subjugate Demon (18822 effect#1), Improved Subjugate Demon (18823 effect#1), Improved Subjugate Demon (18824 effect#1), Improved Subjugate Demon (18825 effect#1)
-#3 (id=689480)   : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=689480)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#2), Improved Subjugate Demon (18822 effect#2), Improved Subjugate Demon (18823 effect#2), Improved Subjugate Demon (18824 effect#2), Improved Subjugate Demon (18825 effect#2)
 Description      : Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.  If you repeatedly subjugate the same demon, it will become more difficult to control with each attempt.
@@ -36181,7 +36181,7 @@ Effects          :
 #2 (id=689869)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -40 | Scaled Value: -40 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#1), Improved Subjugate Demon (18822 effect#1), Improved Subjugate Demon (18823 effect#1), Improved Subjugate Demon (18824 effect#1), Improved Subjugate Demon (18825 effect#1)
-#3 (id=689870)   : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=689870)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#2), Improved Subjugate Demon (18822 effect#2), Improved Subjugate Demon (18823 effect#2), Improved Subjugate Demon (18824 effect#2), Improved Subjugate Demon (18825 effect#2)
 Description      : Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.  If you repeatedly subjugate the same demon, it will become more difficult to control with each attempt.
@@ -36255,7 +36255,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689078)   : Apply Aura (6) | Unknown(674)
+#1 (id=689078)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 390 | Scaled Value: 390 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=689079)   : Apply Aura (6) | Resistance (22)
@@ -36281,7 +36281,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689710)   : Apply Aura (6) | Unknown(674)
+#1 (id=689710)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 480 | Scaled Value: 480 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=689711)   : Apply Aura (6) | Resistance (22)
@@ -36307,7 +36307,7 @@ Affecting Spells : Demonic Aegis (1235316 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689713)   : Apply Aura (6) | Unknown(674)
+#1 (id=689713)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 570 | Scaled Value: 570 | Misc Value: 1 | Target: Self (1)
                    Modified By: Demonic Aegis (1235316 effect#1)
 #2 (id=689714)   : Apply Aura (6) | Resistance (22)
@@ -36950,9 +36950,9 @@ Family Flags     : 26
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
-#1 (id=689809)   : Apply Aura (6) | Modify Power Regen (110)
+#1 (id=689809)   : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 1500 | Scaled Value: 1500 | Resource: mana | Target: Self (1)
-#2 (id=689810)   : Apply Aura (6) | Unknown(134)
+#2 (id=689810)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
 #3 (id=1203756)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
@@ -37222,7 +37222,7 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=690009)   : Apply Aura (6) | Unknown(674)
+#1 (id=690009)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 240 | Scaled Value: 240 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -40119,7 +40119,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Unknown (493)
 Effects          :
-#1 (id=690810)   : Apply Aura (6) | Unknown(674)
+#1 (id=690810)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -50 | Scaled Value: -50 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=690811)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -41459,7 +41459,7 @@ Affecting Spells : Carnage (432275 effect#1), S03 - Item - TAQ - Rogue - Damage 
 Family Flags     : 39
 Attributes       : Is Ability (4), Not Shapeshifted (16), Unknown (493)
 Effects          :
-#1 (id=691038)   : Apply Aura (6) | Modify Power Regen (110)
+#1 (id=691038)   : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Resource: energy | Target: Self (1)
 Description      : Increases your Energy regeneration rate by $s1% for $d.
 Tooltip          : Energy regeneration increased by $s1%.
@@ -42020,7 +42020,7 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=690876)   : Apply Aura (6) | Modify Ranged and Melee Auto Attack Speed% (342)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
-#2 (id=1353963)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1353963)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Enchant Bracer - Deflection (id=13931) 
@@ -45655,7 +45655,7 @@ Spell Type       : None
 Labels           : 18: Priest Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=690269)   : Apply Aura (6) | Unknown(134)
+#1 (id=690269)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -49524,7 +49524,7 @@ Range            : 30 yards
 Duration         : 1800 seconds
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=692774)   : Apply Aura (6) | Unknown(674)
+#1 (id=692774)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 200 | Scaled Value: 200 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Increases armor by $s1.
@@ -49537,7 +49537,7 @@ Range            : 30 yards
 Duration         : 120 seconds
 Attributes       : Do Not Sheath (18), Unknown (493)
 Effects          :
-#1 (id=692383)   : Apply Aura (6) | Unknown(674)
+#1 (id=692383)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -200 | Scaled Value: -200 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Decreases an enemy target's Armor by $s1 for $d.
 Tooltip          : Armor decreased by $s1 for $d.
@@ -49870,7 +49870,7 @@ Attributes       : Unknown (493)
 Effects          :
 #1 (id=692749)   : Apply Aura (6) | Modify Total Stat% (137)
                    Base Value: 100 | Scaled Value: 100 | Misc Value: 4 | Stat: Spi | Target: Self (1)
-#2 (id=692750)   : Apply Aura (6) | Unknown(134)
+#2 (id=692750)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Tooltip          : Spirit increased by $s1% and allows $s2% of Mana regeneration while casting.
 
@@ -49952,7 +49952,7 @@ Velocity         : 19 yards/sec
 Duration         : 20 seconds
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=692922)   : Apply Aura (6) | Unknown(674)
+#1 (id=692922)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -300 | Scaled Value: -300 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Reduces targets armor by $s1 for $d.
 Tooltip          : Armor reduced by $s1.
@@ -50187,7 +50187,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
-#1 (id=692843)   : Apply Aura (6) | Unknown(674)
+#1 (id=692843)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 
 Name             : Lesser Arcane Amalgamation (id=15391) 
@@ -50459,7 +50459,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
-#1 (id=692605)   : Apply Aura (6) | Unknown(674)
+#1 (id=692605)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 110 | Scaled Value: 110 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 #2 (id=692606)   : Apply Aura (6) | Resistance (22)
                    Base Value: 14 | Scaled Value: 14 | SP Coefficient: 1 | Misc Value: 4 | Target: Self (1)
@@ -50601,7 +50601,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
-#1 (id=692460)   : Apply Aura (6) | Unknown(674)
+#1 (id=692460)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 110 | Scaled Value: 110 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 #2 (id=692461)   : Apply Aura (6) | Resistance (22)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Misc Value: 4 | Target: Self (1)
@@ -54566,7 +54566,7 @@ Triggered By     : Nature's Grace (16880)
 Family Flags     : 113
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=693393)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=693393)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
 #2 (id=1135593)  : Apply Aura (6) | Add Percent Modifier (108): Spell Global Cooldown (21)
                    Base Value: -10 | Scaled Value: -10 | SP Coefficient: 1 | Misc Value: 21 | Target: Self (1)
@@ -54823,7 +54823,7 @@ Stacks           : 3 maximum
 Proc Chance      : 101%
 Attributes       : No Redirection (35), No Reflection (39), Unknown (493)
 Effects          :
-#1 (id=693875)   : Apply Aura (6) | Unknown(674)
+#1 (id=693875)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -165 | Scaled Value: -165 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Reduces an enemy's armor by $s1.  Stacks up to 3 times.
 Tooltip          : Armor reduced by $s1.
@@ -55552,7 +55552,7 @@ Spell Type       : None
 Labels           : 21: Druid Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=694418)   : Apply Aura (6) | Unknown(134)
+#1 (id=694418)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -56483,7 +56483,7 @@ Category         : 28 (Type 0x0)
 Category Cooldown: 60 seconds
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=695497)   : Apply Aura (6) | Unknown(674)
+#1 (id=695497)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 2000 | Scaled Value: 2000 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Increased armor.
@@ -60791,7 +60791,7 @@ Spell Type       : None
 Labels           : 17: Mage Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=696606)   : Apply Aura (6) | Unknown(134)
+#1 (id=696606)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -64810,7 +64810,7 @@ Effects          :
 #1 (id=698389)   : Apply Aura (6) | Add Flat Modifier (107): Spell Effects (8)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 8 | Target: Self (1)
                    Family Flags: 29
-#2 (id=1230289)  : Apply Aura (6) | Unknown(134)
+#2 (id=1230289)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Description      : Increases the Focus regeneration of your pets by $s1% and allows $m2% of your Mana regeneration to continue while casting.
 
@@ -69936,7 +69936,7 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
 #2 (id=1269659)  : Apply Aura (6) | Modify Ranged Haste% (140)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
-#3 (id=1269660)  : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=1269660)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
 Description      : Increases your spellcasting and attack speed by $s1% for $26635d.
 Tooltip          : Spellcasting and attack speed increased by $s1%.
@@ -71120,7 +71120,7 @@ Effects          :
 #2 (id=700193)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -43 | Scaled Value: -43 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#1), Improved Subjugate Demon (18822 effect#1), Improved Subjugate Demon (18823 effect#1), Improved Subjugate Demon (18824 effect#1), Improved Subjugate Demon (18825 effect#1)
-#3 (id=700194)   : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=700194)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
                    Modified By: Improved Subjugate Demon (18821 effect#2), Improved Subjugate Demon (18822 effect#2), Improved Subjugate Demon (18823 effect#2), Improved Subjugate Demon (18824 effect#2), Improved Subjugate Demon (18825 effect#2)
 Description      : Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.
@@ -74329,7 +74329,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=699597)   : Apply Aura (6) | Unknown(674)
+#1 (id=699597)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 324 | Scaled Value: 324 | Value Multiplier: 1 | Misc Value: 1 | Radius: 100 yards | Target: Raid in Area (56)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=699598)   : Apply Aura (6) | Attribute (29)
@@ -74370,7 +74370,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=698280)   : Apply Aura (6) | Unknown(674)
+#1 (id=698280)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 385 | Scaled Value: 385 | Value Multiplier: 1 | Misc Value: 1 | Radius: 100 yards | Target: Raid in Area (56)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=698281)   : Apply Aura (6) | Attribute (29)
@@ -75214,7 +75214,7 @@ Effects          :
 #1 (id=699444)   : Apply Aura (6) | Resistance (22)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 126 | Target: Self (1)
                    Modified By: Arcane Shielding (11252 effect#2)
-#2 (id=699445)   : Apply Aura (6) | Unknown(134)
+#2 (id=699445)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
                    Modified By: S03 - Item - T1 - Mage - Damage 6P Bonus (456402 effect#1)
 Description      : Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
@@ -75237,7 +75237,7 @@ Effects          :
 #1 (id=699867)   : Apply Aura (6) | Resistance (22)
                    Base Value: 15 | Scaled Value: 15 | Misc Value: 126 | Target: Self (1)
                    Modified By: Arcane Shielding (11252 effect#2)
-#2 (id=699868)   : Apply Aura (6) | Unknown(134)
+#2 (id=699868)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
                    Modified By: S03 - Item - T1 - Mage - Damage 6P Bonus (456402 effect#1)
 Description      : Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
@@ -77944,7 +77944,7 @@ Duration         : 20 seconds
 Proc Chance      : 101%
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=701380)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=701380)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 33 | Scaled Value: 33 | SP Coefficient: 1 | Target: Self (1)
 Description      : Quickens the mind, increasing the Mage's casting speed by $s1% for $d.
 Tooltip          : Casting speed increased by $s1%.
@@ -77994,7 +77994,7 @@ Duration         : 20 seconds
 Proc Chance      : 101%
 Attributes       : Do Not Sheath (18), Unknown (493)
 Effects          :
-#1 (id=701025)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=701025)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 33 | Scaled Value: 33 | SP Coefficient: 1 | Target: Self (1)
 #2 (id=701026)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 25 | Scaled Value: 25 | SP Coefficient: 1 | Target: Self (1)
@@ -78108,7 +78108,7 @@ Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken
 Attributes       : Do Not Sheath (18), Unknown (493)
 Effects          :
-#1 (id=700893)   : Apply Aura (6) | Unknown(674)
+#1 (id=700893)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 500 | Scaled Value: 500 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 #2 (id=700894)   : Apply Aura (6) | Proc Trigger Spell (42): Aegis Heal
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 23781 | Target: Self (1)
@@ -80357,7 +80357,7 @@ Spell Type       : None
 Spell Level      : 1
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702888)   : Apply Aura (6) | Unknown(674)
+#1 (id=702888)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 50 | Scaled Value: 50 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -80387,7 +80387,7 @@ Spell Type       : None
 Spell Level      : 12
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702278)   : Apply Aura (6) | Unknown(674)
+#1 (id=702278)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 100 | Scaled Value: 100 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -80398,7 +80398,7 @@ Spell Type       : None
 Spell Level      : 18
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701679)   : Apply Aura (6) | Unknown(674)
+#1 (id=701679)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 160 | Scaled Value: 160 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -80409,7 +80409,7 @@ Spell Type       : None
 Spell Level      : 24
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701680)   : Apply Aura (6) | Unknown(674)
+#1 (id=701680)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 240 | Scaled Value: 240 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -80420,7 +80420,7 @@ Spell Type       : None
 Spell Level      : 30
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701681)   : Apply Aura (6) | Unknown(674)
+#1 (id=701681)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 330 | Scaled Value: 330 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -80431,7 +80431,7 @@ Spell Type       : None
 Spell Level      : 36
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701682)   : Apply Aura (6) | Unknown(674)
+#1 (id=701682)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 430 | Scaled Value: 430 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -80442,7 +80442,7 @@ Spell Type       : None
 Spell Level      : 42
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701683)   : Apply Aura (6) | Unknown(674)
+#1 (id=701683)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 550 | Scaled Value: 550 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -80453,7 +80453,7 @@ Spell Type       : None
 Spell Level      : 48
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702158)   : Apply Aura (6) | Unknown(674)
+#1 (id=702158)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 675 | Scaled Value: 675 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -80715,7 +80715,7 @@ Spell Type       : None
 Spell Level      : 54
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702004)   : Apply Aura (6) | Unknown(674)
+#1 (id=702004)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 810 | Scaled Value: 810 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -80726,7 +80726,7 @@ Spell Type       : None
 Spell Level      : 60
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702005)   : Apply Aura (6) | Unknown(674)
+#1 (id=702005)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 1000 | Scaled Value: 1000 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -87755,9 +87755,9 @@ Affecting Spells : S03 - Item - T1 - Druid - Guardian 2P Bonus (456325 effect#1)
 Family Flags     : 44
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=705051)   : Apply Aura (6) | Unknown(134)
+#1 (id=705051)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Targeted Ally (21)
-#2 (id=705052)   : Apply Aura (6) | Modify Power Regen (110)
+#2 (id=705052)   : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 400 | Scaled Value: 400 | SP Coefficient: 1 | Resource: mana | Target: Targeted Ally (21)
 Description      : Increases the target's Mana regeneration by $s2% and allows $s1% of the target's Mana regeneration to continue while casting.  Lasts $d.
 Tooltip          : Mana regeneration increased by $s2%.  $s1% Mana regeneration may continue while casting.
@@ -88275,7 +88275,7 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #2 (id=705613)   : Apply Aura (6) | Attribute (29)
                    Base Value: 16 | Scaled Value: 16 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
-#3 (id=705614)   : Apply Aura (6) | Unknown(674)
+#3 (id=705614)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 
 Name             : Might of the Scourge (id=29482) [Passive, Hidden] 
@@ -89309,7 +89309,7 @@ Proc Chance      : 5%
 Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Helpful, Generic Hostile Spell, Magic Heal, Magic Hostile Spell, Periodic, Helpful Periodic
 Attributes       : Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Aura Points On Client (268), Allow While Banished Aura State (299), Allow While Stunned by Stun Mechanic (378), Only Proc From Class Abilities (415), Unknown (493)
 Effects          :
-#1 (id=982372)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=982372)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
 #2 (id=982475)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 15 | Scaled Value: 15 | Value Multiplier: 1 | Target: Self (1)
@@ -93867,7 +93867,7 @@ Labels           : 21: Druid Spells
 Triggered By     : S03 - Item - T2- Druid - Restoration 2P Bonus (467099)
 Attributes       : Is Ability (4), Suppress Caster Procs (112), Suppress Target Procs (113), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1072253)  : Apply Aura (6) | Unknown(134)
+#1 (id=1072253)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 Tooltip          : Regenerating $w1% of your normal Mana regeneration while casting spells.
@@ -94585,7 +94585,7 @@ Stacks           : 7 maximum
 Proc Chance      : 101%
 Attributes       : Allow While Sitting (27), No Immunities (29), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1072715)  : Apply Aura (6) | Unknown(674)
+#1 (id=1072715)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 30 | Scaled Value: 30 | Misc Value: 1 | Target: Self (1)
 #2 (id=1084756)  : Energize Power% (137)
                    Base Value: 8 | Scaled Value: 8 | Resource: mana | Target: Self (1)
@@ -99391,7 +99391,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 32 | Target: Self (1)
 #8 (id=1085363)  : Apply Aura (6) | Resistance (22)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 64 | Target: Self (1)
-#9 (id=1085364)  : Apply Aura (6) | Unknown(674)
+#9 (id=1085364)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Target: Self (1)
 #10 (id=1085365) : Apply Aura (6) | Modify Hit% (54)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -99399,7 +99399,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #12 (id=1085367) : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#13 (id=1085368) : Apply Aura (6) | Modify Spell Speed% (65)
+#13 (id=1085368) : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #14 (id=1085369) : Apply Aura (6) | Modify Crit% (52)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -100860,7 +100860,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 32 | Target: Self (1)
 #8 (id=1086447)  : Apply Aura (6) | Resistance (22)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 64 | Target: Self (1)
-#9 (id=1086448)  : Apply Aura (6) | Unknown(674)
+#9 (id=1086448)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Target: Self (1)
 #10 (id=1086449) : Apply Aura (6) | Modify Hit% (54)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -100868,7 +100868,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #12 (id=1086451) : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#13 (id=1086452) : Apply Aura (6) | Modify Spell Speed% (65)
+#13 (id=1086452) : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #14 (id=1086453) : Apply Aura (6) | Modify Crit% (52)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -102544,7 +102544,7 @@ Cooldown         : 180 seconds
 Family Flags     : 46
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
-#1 (id=1102701)  : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=1102701)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
 #2 (id=1102702)  : Apply Aura (6) | Modify Casting Pushback (149)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 126 | Target: Self (1)
@@ -102566,9 +102566,9 @@ Attributes       : Do Not Sheath (18), Require All Targets (58), Include In Adva
 Effects          :
 #1 (id=1102705)  : School Damage (2): arcane
                    Base Value: 245 | Scaled Value: 245 (delta=0.155102) | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
-#2 (id=1102706)  : Apply Aura (6) | Modify Power Regen (110)
+#2 (id=1102706)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 300 | Scaled Value: 300 | Resource: mana | Target: Self (1)
-#3 (id=1102707)  : Apply Aura (6) | Unknown(134)
+#3 (id=1102707)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
 #4 (id=1102708)  : Apply Aura (6) | Dummy (4)
                    Base Value: 300 | Scaled Value: 300 | Target: Self (1)
@@ -105380,7 +105380,7 @@ Labels           : 3096
 Triggered By     : Backdraft (427713)
 Attributes       : No Immunities (29), Ignore Line of Sight (66), No School Immunities (90), Always Hit (114), No Attack Miss (249), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1107399)  : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=1107399)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
 Tooltip          : Spellcasting haste increased by $w1%.
 
@@ -110513,7 +110513,7 @@ Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 64, 120
 Attributes       : No Redirection (35), No Reflection (39), Do Not Display Range (126), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1132782)  : Apply Aura (6) | Unknown(674)
+#1 (id=1132782)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -1700 | Scaled Value: -1700 | Misc Value: 1 | Target: Targeted Enemy (6)
 Tooltip          : Armor reduced by $w1.
 
@@ -117188,7 +117188,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Aura Unique (43), Unknown (493)
 Effects          :
-#1 (id=1180747)  : Apply Aura (6) | Unknown(134)
+#1 (id=1180747)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -119984,7 +119984,7 @@ Attributes       : Always Hit (114), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1203163)  : Apply Aura (6) | Modify Attack Power (99)
                    Base Value: 14 | Scaled Value: 90.7 | Points Per Level: 1.3 | Target: Targeted Enemy (6)
-#2 (id=1203164)  : Apply Aura (6) | Unknown(674)
+#2 (id=1203164)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -50 | Scaled Value: -640 | Points Per Level: -10 | Misc Value: 1 | Target: Targeted Enemy (6)
 #3 (id=1203165)  : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -124471,7 +124471,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=1210708)  : Apply Aura (6) | Unknown(134)
+#1 (id=1210708)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 Description      : Allows $m1% of your Mana regeneration to continue while casting.
 
@@ -126130,7 +126130,7 @@ Cone Angle       : 60 degrees
 Duration         : 3600 seconds
 Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1222308)  : Apply Aura (6) | Unknown(674)
+#1 (id=1222308)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 308 | Scaled Value: 308 | Misc Value: 1 | Target: Self (1)
 #2 (id=1298449)  : Apply Aura (6) | Attribute (29)
                    Base Value: 13 | Scaled Value: 13 | Stat: All | Target: Self (1)
@@ -126635,7 +126635,7 @@ Effects          :
                    Base Value: 14 | Scaled Value: 14 | Misc Value: 0x20 | Target: Self (1)
                    Affected School(s): Shadow
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
-#2 (id=1233766)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1233766)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 Description      : Increases your spell haste by $m2% and increases damage done by your Shadow spells by up to $s1.
@@ -126653,7 +126653,7 @@ Effects          :
                    Base Value: 17 | Scaled Value: 17 | Misc Value: 0x20 | Target: Self (1)
                    Affected School(s): Shadow
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
-#2 (id=1233769)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1233769)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 Description      : Increases your spell haste by $m2% and increases damage done by your Shadow spells by up to $s1.
@@ -126671,7 +126671,7 @@ Effects          :
                    Base Value: 21 | Scaled Value: 21 | Misc Value: 0x20 | Target: Self (1)
                    Affected School(s): Shadow
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
-#2 (id=1233771)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1233771)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
                    Modified By: Improved Firestone (18767 effect#1), Improved Firestone (18768 effect#1)
 Description      : Increases your spell haste by $m2% and increases damage done by your Shadow spells by up to $s1.
@@ -127087,7 +127087,7 @@ Duration         : 15 seconds
 Labels           : 24: Shaman Spells
 Attributes       : Do Not Sheath (18), No Immunities (29), Can't Crit (93), Unknown (493)
 Effects          :
-#1 (id=1236322)  : Apply Aura (6) | Unknown(134)
+#1 (id=1236322)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Tooltip          : Regenerating $s1% of your normal Mana regeneration while casting spells.
 
@@ -128013,7 +128013,7 @@ Stacks           : 1 maximum
 Proc Chance      : 101%
 Attributes       : Is Ability (4), Do Not Sheath (18), No Threat (42), Do Not Display Range (126), Aura Points On Client (268), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
-#1 (id=1242059)  : Apply Aura (6) | Unknown(134)
+#1 (id=1242059)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Description      : Regenerating Mana while casting.
 Tooltip          : Regenerating $w1% of normal while casting spells.
@@ -128057,7 +128057,7 @@ Labels           : 23: Hunter Spells
 Triggered By     : Resourcefulness (440529)
 Attributes       : Do Not Sheath (18), Allow While Sitting (27), No Immunities (29), No Threat (42), Ignore Line of Sight (66), Can't Crit (93), Unknown (493)
 Effects          :
-#1 (id=1242361)  : Apply Aura (6) | Unknown(134)
+#1 (id=1242361)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Tooltip          : Regenerating $s1% of your normal Mana regeneration while casting spells.
 
@@ -128069,9 +128069,9 @@ Duration         : 10 seconds
 Labels           : 19: Warlock Spells
 Attributes       : Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1242609)  : Apply Aura (6) | Modify Power Regen (110)
+#1 (id=1242609)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 100 | Scaled Value: 100 | Resource: mana | Target: Self (1)
-#2 (id=1242610)  : Apply Aura (6) | Unknown(134)
+#2 (id=1242610)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
 Description      : Mana regeneration increased by $s1% and allows $s2% of Mana regeneration to continue while casting.
 Tooltip          : Increases Mana regeneration by $w1% and allows $w2% of Mana regeneration to continue while casting.
@@ -129831,7 +129831,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=1251892)  : Apply Aura (6) | Unknown(134)
+#1 (id=1251892)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 8 | Scaled Value: 8 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -131413,7 +131413,7 @@ Attributes       : Allow While Sitting (27), Aura Is Buff (140), Aura Points On 
 Effects          :
 #1 (id=1255227)  : Apply Aura (6) | Increase Health (34)
                    Base Value: 400 | Scaled Value: 400 | Target: Self (1)
-#2 (id=1255228)  : Apply Aura (6) | Unknown(674)
+#2 (id=1255228)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 500 | Scaled Value: 500 | Misc Value: 1 | Target: Self (1)
 Description      : Drink to gain $s1 Maximum Health and $s2 Armor. Lasts for $d.
 Tooltip          : Maximum Health increased by $w1 and Armor increased by $w2.
@@ -137026,7 +137026,7 @@ Effects          :
 #1 (id=1268898)  : Apply Aura (6) | Modify Ranged and Melee Auto Attack Speed% (342)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
 Hotfixed         : Base Value (3 -> 2)
-#2 (id=1354094)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1354094)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
 Hotfixed         : Base Value (3 -> 2)
 Description      : Increases your spellcasting, melee, and ranged Haste by $s1%.
@@ -137777,7 +137777,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275862)  : School Damage (2): nature
                    Base Value: 16 | Scaled Value: 16 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275863)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275863)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -137801,7 +137801,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275865)  : School Damage (2): nature
                    Base Value: 36 | Scaled Value: 36 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275866)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275866)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -137825,7 +137825,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275867)  : School Damage (2): nature
                    Base Value: 48 | Scaled Value: 48 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275868)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275868)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -137849,7 +137849,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275869)  : School Damage (2): nature
                    Base Value: 68 | Scaled Value: 68 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275870)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275870)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -137873,7 +137873,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275871)  : School Damage (2): nature
                    Base Value: 84 | Scaled Value: 84 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275872)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275872)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -138808,7 +138808,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277942)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277942)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -65 | Scaled Value: -65 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.
@@ -138830,7 +138830,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277944)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277944)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -175 | Scaled Value: -175 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.
@@ -138852,7 +138852,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277945)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277945)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -285 | Scaled Value: -285 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.
@@ -138874,7 +138874,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277946)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277946)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -395 | Scaled Value: -395 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.
@@ -138896,7 +138896,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277947)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277947)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -505 | Scaled Value: -505 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.
@@ -139791,7 +139791,7 @@ Labels           : 5710
 Triggered By     : Read Leyline (1259705)
 Attributes       : Ignore Line of Sight (66), Aura Never Bounces (148), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1283214)  : Apply Aura (6) | Modify Power Regen (110)
+#1 (id=1283214)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
 Hotfixed         : Base Value (100 -> 50)
 #2 (id=1283215)  : Apply Aura (6) | Modify Health Regeneration% (88)
@@ -142427,7 +142427,7 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=1310094)  : School Damage (2): shadow
                    Base Value: 250 | Scaled Value: 250 (delta=0.4) | Target: Targeted Enemy (6)
-#2 (id=1310095)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1310095)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -25 | Scaled Value: -25 | Target: Targeted Enemy (6)
 Description      : Wounds the target for $s1 damage and increases the casting time of all spells by $s2% for $d.
 Tooltip          : Increasing casting time by $s2%.
@@ -143739,7 +143739,7 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 #3 (id=1314705)  : Apply Aura (6) | Modify Ranged and Melee Auto Attack Speed% (342)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#4 (id=1354092)  : Apply Aura (6) | Modify Spell Speed% (65)
+#4 (id=1354092)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Haste.
 
@@ -145155,7 +145155,7 @@ Spell Type       : None
 Duration         : 20 seconds
 Attributes       : Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1325576)  : Apply Aura (6) | Unknown(674)
+#1 (id=1325576)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 520 | Scaled Value: 520 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -145790,7 +145790,7 @@ Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Dismiss Pet Fir
 Effects          :
 #2 (id=1326909)  : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -40 | Scaled Value: -40
-#3 (id=1326910)  : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=1326910)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30
 #4 (id=1327649)  : Apply Aura (6) | Modify Melee Attack Power% (166)
                    Base Value: -20 | Scaled Value: -20
@@ -149427,7 +149427,7 @@ Spell Type       : None
 Labels           : 26: Paladin Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=1340794)  : Apply Aura (6) | Unknown(134)
+#1 (id=1340794)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 

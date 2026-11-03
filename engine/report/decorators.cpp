@@ -144,7 +144,7 @@ public:
 
   void base_url( fmt::memory_buffer& buf ) const override
   {
-    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/spell={}",
+    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/forever/spell={}",
                     report_decorators::decoration_domain( *this->m_obj->sim ), this->m_obj->data_reporting().id() );
   }
 
@@ -188,7 +188,7 @@ public:
 
   void base_url( fmt::memory_buffer& buf ) const override
   {
-    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/spell={}",
+    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/forever/spell={}",
                     report_decorators::decoration_domain( *m_sim ), m_spell->id() );
   }
 
@@ -254,7 +254,7 @@ public:
 
   void base_url( fmt::memory_buffer& buf ) const override
   {
-    fmt::format_to( std::back_inserter( buf ), "<a style=\"color:{};\" href=\"https://{}.wowhead.com/item={}",
+    fmt::format_to( std::back_inserter( buf ), "<a style=\"color:{};\" href=\"https://{}.wowhead.com/forever/item={}",
                     item_quality_color( *m_item ), report_decorators::decoration_domain( *m_item->sim ),
                     m_item->parsed.data.id );
   }
@@ -283,7 +283,7 @@ public:
 
   void base_url( fmt::memory_buffer& buf ) const override
   {
-    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/item={}",
+    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/forever/item={}",
                     report_decorators::decoration_domain( *m_sim ), m_item_data->id );
   }
 
@@ -345,7 +345,7 @@ public:
 
   void base_url( fmt::memory_buffer& buf ) const override
   {
-    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/npc={}",
+    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/forever/npc={}",
                     report_decorators::decoration_domain( *m_sim ), m_npc_id );
   }
 
@@ -397,7 +397,7 @@ public:
 
   void base_url( fmt::memory_buffer& buf ) const override
   {
-    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/item-set={}",
+    fmt::format_to( std::back_inserter( buf ), "<a href=\"https://{}.wowhead.com/forever/item-set={}",
                     report_decorators::decoration_domain( *m_sim ), m_bonus->set_id );
   }
 
@@ -440,7 +440,7 @@ std::string decorated_spell_name( const sim_t& sim, const spell_data_t& spell, u
     return fmt::format( "<a href=\"#\">{}</a>", util::encode_html( spell.name_cstr() ) );
   }
 
-  return fmt::format( "<a href=\"https://{}.wowhead.com/spell={}{}{}\">{}</a>", decoration_domain( sim ), spell.id(),
+  return fmt::format( "<a href=\"https://{}.wowhead.com/forever/spell={}{}{}\">{}</a>", decoration_domain( sim ), spell.id(),
                       additional_parameters.empty() ? "" : "?", additional_parameters,
                       util::encode_html( spell.name_cstr() ) );
 }
@@ -474,7 +474,7 @@ std::string decorated_item_name( const item_t* item )
   }
 
   fmt::memory_buffer buf;
-  fmt::format_to( std::back_inserter( buf ), "<a style=\"color:{};\" href=\"https://{}.wowhead.com/item={}",
+  fmt::format_to( std::back_inserter( buf ), "<a style=\"color:{};\" href=\"https://{}.wowhead.com/forever/item={}",
                   item_quality_color( *item ), decoration_domain( *item->sim ), item->parsed.data.id );
   if ( !params.empty() )
   {

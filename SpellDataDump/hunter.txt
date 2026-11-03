@@ -699,9 +699,9 @@ Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (
 Effects          :
 #1 (id=679813)   : Apply Aura (6) | Modify Ranged Haste% (140)
                    Base Value: 40 | Scaled Value: 40 | Target: Self (1)
-#2 (id=1172485)  : Apply Aura (6) | Modify Power Regen (110)
+#2 (id=1172485)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 0 | Scaled Value: 0 | Resource: mana | Target: Self (1)
-#3 (id=1292548)  : Apply Aura (6) | Unknown(134)
+#3 (id=1292548)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #4 (id=1339717)  : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 40 | Scaled Value: 40 | Target: Self (1)
@@ -4447,7 +4447,7 @@ Effects          :
 #1 (id=698389)   : Apply Aura (6) | Add Flat Modifier (107): Spell Effects (8)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 8 | Target: Self (1)
                    Family Flags: 29
-#2 (id=1230289)  : Apply Aura (6) | Unknown(134)
+#2 (id=1230289)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Description      : Increases the Focus regeneration of your pets by $s1% and allows $m2% of your Mana regeneration to continue while casting.
 
@@ -5747,7 +5747,7 @@ Spell Type       : None
 Spell Level      : 1
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702888)   : Apply Aura (6) | Unknown(674)
+#1 (id=702888)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 50 | Scaled Value: 50 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -5758,7 +5758,7 @@ Spell Type       : None
 Spell Level      : 12
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702278)   : Apply Aura (6) | Unknown(674)
+#1 (id=702278)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 100 | Scaled Value: 100 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -5769,7 +5769,7 @@ Spell Type       : None
 Spell Level      : 18
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701679)   : Apply Aura (6) | Unknown(674)
+#1 (id=701679)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 160 | Scaled Value: 160 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -5780,7 +5780,7 @@ Spell Type       : None
 Spell Level      : 24
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701680)   : Apply Aura (6) | Unknown(674)
+#1 (id=701680)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 240 | Scaled Value: 240 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -5791,7 +5791,7 @@ Spell Type       : None
 Spell Level      : 30
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701681)   : Apply Aura (6) | Unknown(674)
+#1 (id=701681)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 330 | Scaled Value: 330 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -5802,7 +5802,7 @@ Spell Type       : None
 Spell Level      : 36
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701682)   : Apply Aura (6) | Unknown(674)
+#1 (id=701682)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 430 | Scaled Value: 430 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -5813,7 +5813,7 @@ Spell Type       : None
 Spell Level      : 42
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=701683)   : Apply Aura (6) | Unknown(674)
+#1 (id=701683)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 550 | Scaled Value: 550 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -5824,7 +5824,7 @@ Spell Type       : None
 Spell Level      : 48
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702158)   : Apply Aura (6) | Unknown(674)
+#1 (id=702158)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 675 | Scaled Value: 675 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -6052,7 +6052,7 @@ Spell Type       : None
 Spell Level      : 54
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702004)   : Apply Aura (6) | Unknown(674)
+#1 (id=702004)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 810 | Scaled Value: 810 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -6063,7 +6063,7 @@ Spell Type       : None
 Spell Level      : 60
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=702005)   : Apply Aura (6) | Unknown(674)
+#1 (id=702005)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 1000 | Scaled Value: 1000 | Misc Value: 1 | Target: Self (1)
 Description      : Armor increased by $s1.
 
@@ -7838,7 +7838,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 32 | Target: Self (1)
 #8 (id=1085363)  : Apply Aura (6) | Resistance (22)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 64 | Target: Self (1)
-#9 (id=1085364)  : Apply Aura (6) | Unknown(674)
+#9 (id=1085364)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Target: Self (1)
 #10 (id=1085365) : Apply Aura (6) | Modify Hit% (54)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -7846,7 +7846,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #12 (id=1085367) : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#13 (id=1085368) : Apply Aura (6) | Modify Spell Speed% (65)
+#13 (id=1085368) : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #14 (id=1085369) : Apply Aura (6) | Modify Crit% (52)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -8031,7 +8031,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 32 | Target: Self (1)
 #8 (id=1086447)  : Apply Aura (6) | Resistance (22)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 64 | Target: Self (1)
-#9 (id=1086448)  : Apply Aura (6) | Unknown(674)
+#9 (id=1086448)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Target: Self (1)
 #10 (id=1086449) : Apply Aura (6) | Modify Hit% (54)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -8039,7 +8039,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #12 (id=1086451) : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#13 (id=1086452) : Apply Aura (6) | Modify Spell Speed% (65)
+#13 (id=1086452) : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #14 (id=1086453) : Apply Aura (6) | Modify Crit% (52)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -9485,7 +9485,7 @@ Attributes       : Always Hit (114), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1203163)  : Apply Aura (6) | Modify Attack Power (99)
                    Base Value: 14 | Scaled Value: 90.7 | Points Per Level: 1.3 | Target: Targeted Enemy (6)
-#2 (id=1203164)  : Apply Aura (6) | Unknown(674)
+#2 (id=1203164)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -50 | Scaled Value: -640 | Points Per Level: -10 | Misc Value: 1 | Target: Targeted Enemy (6)
 #3 (id=1203165)  : Apply Aura (6) | Unknown(92)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -9609,7 +9609,7 @@ Stacks           : 1 maximum
 Proc Chance      : 101%
 Attributes       : Is Ability (4), Do Not Sheath (18), No Threat (42), Do Not Display Range (126), Aura Points On Client (268), Do Not Display Cast Time (441), Unknown (493)
 Effects          :
-#1 (id=1242059)  : Apply Aura (6) | Unknown(134)
+#1 (id=1242059)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Description      : Regenerating Mana while casting.
 Tooltip          : Regenerating $w1% of normal while casting spells.
@@ -9653,7 +9653,7 @@ Labels           : 23: Hunter Spells
 Triggered By     : Resourcefulness (440529)
 Attributes       : Do Not Sheath (18), Allow While Sitting (27), No Immunities (29), No Threat (42), Ignore Line of Sight (66), Can't Crit (93), Unknown (493)
 Effects          :
-#1 (id=1242361)  : Apply Aura (6) | Unknown(134)
+#1 (id=1242361)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Tooltip          : Regenerating $s1% of your normal Mana regeneration while casting spells.
 
@@ -9822,7 +9822,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275862)  : School Damage (2): nature
                    Base Value: 16 | Scaled Value: 16 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275863)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275863)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -9846,7 +9846,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275865)  : School Damage (2): nature
                    Base Value: 36 | Scaled Value: 36 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275866)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275866)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -9870,7 +9870,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275867)  : School Damage (2): nature
                    Base Value: 48 | Scaled Value: 48 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275868)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275868)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -9894,7 +9894,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275869)  : School Damage (2): nature
                    Base Value: 68 | Scaled Value: 68 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275870)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275870)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -9918,7 +9918,7 @@ Attributes       : Not Shapeshifted (16), Nameplate Personal Buffs/Debuffs (423)
 Effects          :
 #1 (id=1275871)  : School Damage (2): nature
                    Base Value: 84 | Scaled Value: 84 (delta=0.166667) | Target: Targeted Enemy (6)
-#2 (id=1275872)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1275872)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
 Description      : Emits a piercing shriek, inflicting $s1 Nature damage and increasing the casting time of all spells by $s2% for $d.
 Tooltip          : Increases casting time by $s2%.
@@ -10790,7 +10790,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277942)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277942)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -65 | Scaled Value: -65 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.
@@ -10812,7 +10812,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277944)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277944)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -175 | Scaled Value: -175 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.
@@ -10834,7 +10834,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277945)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277945)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -285 | Scaled Value: -285 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.
@@ -10856,7 +10856,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277946)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277946)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -395 | Scaled Value: -395 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.
@@ -10878,7 +10878,7 @@ Affecting Spells : Cobra Strikes (425714 effect#1)
 Family Flags     : 60
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Melee Chain Targeting (172), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
-#1 (id=1277947)  : Apply Aura (6) | Unknown(674)
+#1 (id=1277947)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: -505 | Scaled Value: -505 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by $s1 for $d.
 Tooltip          : Decreases armor by $s1.

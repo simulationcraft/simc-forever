@@ -235,7 +235,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685757)   : Apply Aura (6) | Unknown(674)
+#1 (id=685757)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 30 | Scaled Value: 30 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=685758)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -1117,7 +1117,7 @@ Effects          :
 #1 (id=683276)   : Apply Aura (6) | Resistance (22)
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 126 | Target: Self (1)
                    Modified By: Arcane Shielding (11252 effect#2)
-#2 (id=683277)   : Apply Aura (6) | Unknown(134)
+#2 (id=683277)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
                    Modified By: S03 - Item - T1 - Mage - Damage 6P Bonus (456402 effect#1)
 Description      : Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
@@ -1341,7 +1341,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685311)   : Apply Aura (6) | Unknown(674)
+#1 (id=685311)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 110 | Scaled Value: 110 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=685312)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -1366,7 +1366,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684946)   : Apply Aura (6) | Unknown(674)
+#1 (id=684946)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 200 | Scaled Value: 200 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=684947)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -1391,7 +1391,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685675)   : Apply Aura (6) | Unknown(674)
+#1 (id=685675)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 290 | Scaled Value: 290 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=685676)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -1419,7 +1419,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685713)   : Apply Aura (6) | Unknown(674)
+#1 (id=685713)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 380 | Scaled Value: 380 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=685714)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -3260,7 +3260,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687610)   : Apply Aura (6) | Unknown(674)
+#1 (id=687610)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 470 | Scaled Value: 470 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=687611)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -3288,7 +3288,7 @@ Affecting Spells : Frost Channeling (11160 effect#1), Frost Warding (11189 effec
 Family Flags     : 19, 25
 Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687584)   : Apply Aura (6) | Unknown(674)
+#1 (id=687584)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 560 | Scaled Value: 560 | Misc Value: 1 | Target: Self (1)
                    Modified By: Frost Warding (11189 effect#1)
 #2 (id=687585)   : Apply Aura (6) | Proc Trigger Spell (42): Chilled
@@ -4184,9 +4184,9 @@ Family Flags     : 26
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
-#1 (id=689809)   : Apply Aura (6) | Modify Power Regen (110)
+#1 (id=689809)   : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 1500 | Scaled Value: 1500 | Resource: mana | Target: Self (1)
-#2 (id=689810)   : Apply Aura (6) | Unknown(134)
+#2 (id=689810)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
 #3 (id=1203756)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
@@ -4869,7 +4869,7 @@ Spell Type       : None
 Labels           : 17: Mage Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=696606)   : Apply Aura (6) | Unknown(134)
+#1 (id=696606)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -4980,7 +4980,7 @@ Effects          :
 #1 (id=699444)   : Apply Aura (6) | Resistance (22)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 126 | Target: Self (1)
                    Modified By: Arcane Shielding (11252 effect#2)
-#2 (id=699445)   : Apply Aura (6) | Unknown(134)
+#2 (id=699445)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
                    Modified By: S03 - Item - T1 - Mage - Damage 6P Bonus (456402 effect#1)
 Description      : Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
@@ -5003,7 +5003,7 @@ Effects          :
 #1 (id=699867)   : Apply Aura (6) | Resistance (22)
                    Base Value: 15 | Scaled Value: 15 | Misc Value: 126 | Target: Self (1)
                    Modified By: Arcane Shielding (11252 effect#2)
-#2 (id=699868)   : Apply Aura (6) | Unknown(134)
+#2 (id=699868)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
                    Modified By: S03 - Item - T1 - Mage - Damage 6P Bonus (456402 effect#1)
 Description      : Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.
@@ -7965,7 +7965,7 @@ Cooldown         : 180 seconds
 Family Flags     : 46
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
-#1 (id=1102701)  : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=1102701)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
 #2 (id=1102702)  : Apply Aura (6) | Modify Casting Pushback (149)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 126 | Target: Self (1)
@@ -7987,9 +7987,9 @@ Attributes       : Do Not Sheath (18), Require All Targets (58), Include In Adva
 Effects          :
 #1 (id=1102705)  : School Damage (2): arcane
                    Base Value: 245 | Scaled Value: 245 (delta=0.155102) | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
-#2 (id=1102706)  : Apply Aura (6) | Modify Power Regen (110)
+#2 (id=1102706)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 300 | Scaled Value: 300 | Resource: mana | Target: Self (1)
-#3 (id=1102707)  : Apply Aura (6) | Unknown(134)
+#3 (id=1102707)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Self (1)
 #4 (id=1102708)  : Apply Aura (6) | Dummy (4)
                    Base Value: 300 | Scaled Value: 300 | Target: Self (1)
