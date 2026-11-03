@@ -1,4 +1,4 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Auto Shot (id=75) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -18,6 +18,7 @@ Description      : Automatically shoots the target until cancelled.
 Tooltip          : Firing at the target.
 
 Name             : Mend Pet (desc=Rank 1) (id=136) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -29,7 +30,7 @@ Duration         : 5 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Mend Pet (19572 effect#2)
 Family Flags     : 23
-Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=678944)   : Apply Aura (6) | Periodic Heal (8): every 1 seconds
@@ -49,6 +50,7 @@ Effects          :
 Description      : Allows one-hand and off-hand weapons to be equipped in the off-hand.
 
 Name             : Disengage (desc=Rank 1) (id=781) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -61,7 +63,7 @@ Cooldown         : 5 seconds
 Category         : 82 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 5 seconds
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), No School Immunities (90), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679272)   : Threat (63)
                    Base Value: -280 | Scaled Value: -310 | Points Per Level: -3 | Target: Targeted Enemy (6)
@@ -83,6 +85,7 @@ Effects          :
 Description      : Summons your pet to you.
 
 Name             : Eyes of the Beast (id=1002) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -95,7 +98,7 @@ Duration         : 120 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Eyes of the Beast (19557 effect#1), Improved Eyes of the Beast (19558 effect#1)
 Family Flags     : 22
-Attributes       : Not Shapeshifted (16), Cancels Auto Attack Combat (20), Is Channelled (34), Toggle Far Sight (45), No AutoCast (AI) (49), Require All Targets (58), Unknown (493)
+Attributes       : Not Shapeshifted (16), Cancels Auto Attack Combat (20), Is Channelled (34), Toggle Far Sight (45), No AutoCast (AI) (49), Require All Targets (58), Unknown (454), Unknown (493)
 Aura Interrupt   : Leave World (19)
 Channel Interrupt: Damage (2), Action (3), Turning (5), Sheathing (10), Interacting (11), Attacking (13), Use Item (14)
 Effects          :
@@ -107,6 +110,7 @@ Description      : Take direct control of your pet and see through its eyes for 
 Tooltip          : Directly controlling pet.
 
 Name             : Hunter's Mark (desc=Rank 1) (id=1130) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -119,7 +123,7 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Hunter's Mark (19421 effect#1)
 Family Flags     : 10
-Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), No Threat (42), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), No Threat (42), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680259)   : Apply Aura (6) | Stalked (68)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Current Target (25)
@@ -131,6 +135,7 @@ Description      : Places the Hunter's Mark on the target, increasing the Ranged
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
 
 Name             : Beast Lore (id=1462) 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : None
@@ -139,7 +144,7 @@ Spell Level      : 24
 Range            : 40 yards
 GCD              : 1.5 seconds
 Duration         : 30 seconds
-Attributes       : Not Shapeshifted (16), No Threat (42), No AutoCast (AI) (49), Allow Low Level Buff (67), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), No Threat (42), No AutoCast (AI) (49), Allow Low Level Buff (67), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679784)   : Apply Aura (6) | Unknown(121)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Current Target (25)
@@ -147,6 +152,7 @@ Description      : Gather information about the target beast.  The tooltip will 
 Tooltip          : Lore revealed.
 
 Name             : Track Beasts (id=1494) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -156,7 +162,7 @@ Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Tracking (24293 effect#1)
 Family Flags     : 65
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=1095789)  : Apply Aura (6) | Modify Damage Done% vs Race (168)
                    Base Value: 0 | Scaled Value: 0 | Race: beast | Target: Self (1)
@@ -165,6 +171,7 @@ Description      : Shows the location of all nearby beasts on the minimap.  Only
 Tooltip          : Tracking Beasts.
 
 Name             : Mongoose Bite (desc=Rank 1) (id=1495) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -179,13 +186,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 5 seconds
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Melee Specialist (415352 effect#2), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), S03 - Item - T1 - Hunter - Melee 2P Bonus (456389 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 96
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680029)   : Normalized Weapon Damage (121)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Counterattack the enemy for melee weapon damage plus $s1. Can only be performed after you dodge.
 
 Name             : Freezing Trap (desc=Rank 1) (id=1499) [Spell Family (9)] 
+Hotfixed         : Category (2183 -> 411), Attributes
 Class            : Hunter
 School           : Frost
 Spell Type       : None
@@ -194,18 +202,19 @@ Spell Level      : 20
 GCD              : 1.5 seconds
 Duration         : 60 seconds
 Cooldown         : 30 seconds
-Category         : 2183 (Type 0x0)
+Category         : 411 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7, 90
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680230)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 2561 | Target: Front of Self (47)
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $3355d.  Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
 Name             : Volley (desc=Rank 1) (id=1510) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -219,7 +228,7 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=680772)   : Dummy (3)
@@ -231,6 +240,7 @@ Effects          :
 Description      : Continuously fires a volley of ammo at the target area, causing $1279721s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 Name             : Scare Beast (desc=Rank 1) (id=1513) 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -247,7 +257,7 @@ Category Cooldown: 30 seconds
 Proc Chance      : 100%
 Mechanic         : Flee
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Limit N (165), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Limit N (165), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=680451)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
@@ -290,6 +300,7 @@ Effects          :
 Tooltip          : Increases happiness.
 
 Name             : Flare (id=1543) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -304,7 +315,7 @@ Category         : 2368 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 15 seconds
 Family Flags     : 47
-Attributes       : Not Shapeshifted (16), No Threat (42), Immunity Purges Effect (47), No AutoCast (AI) (49), No Initial Threat (86), Missile Speed is Delay (in sec) (292), Unknown (493)
+Attributes       : Not Shapeshifted (16), No Threat (42), Immunity Purges Effect (47), No AutoCast (AI) (49), No Initial Threat (86), Missile Speed is Delay (in sec) (292), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680517)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Radius: 10 yards | Target: at Area (87) -> at Enemy in Area (16)
@@ -399,6 +410,7 @@ Effects          :
 Description      : Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.
 
 Name             : Serpent Sting (desc=Rank 1) (id=1978) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -413,10 +425,11 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Improved Serpent Sting (19464 effects: #1, #2), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#1)
 Family Flags     : 14
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679708)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
-                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (2 -> 3)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
@@ -456,6 +469,7 @@ Effects          :
 Description      : Dismiss your pet.  Dismissing your pet will reduce its happiness by $/1000;s1.
 
 Name             : Multi-Shot (id=2643) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -469,9 +483,9 @@ Cooldown         : 6 seconds
 Category         : 2 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Multi-Shot Damage Increase (28539 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Multi-Shot Damage Increase (459593 effect#1), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
+Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Multi-Shot Damage Increase (28539 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 12
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680907)   : Normalized Weapon Damage (121)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Chain Multiplier: 1 | Chain Targets: 3 | Target: Targeted Enemy (6)
@@ -501,7 +515,6 @@ School           : Physical
 Spell Type       : Ranged
 Spell Level      : 1
 Range            : 8 - 30 yards
-Cast Time        : 0.5 seconds
 Velocity         : 20 yards/sec
 Requires weapon  : Thrown
 Category         : 76 (Type 0x0)
@@ -517,6 +530,7 @@ Effects          :
 Description      : Hurl a thrown weapon at the target.
 
 Name             : Raptor Strike (desc=Rank 1) (id=2973) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -528,15 +542,16 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
-Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680768)   : Weapon Damage (58)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Wing Clip (desc=Rank 1) (id=2974) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -549,7 +564,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 23: Hunter Spells
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Resourcefulness (440529 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 6
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680816)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
@@ -593,6 +608,7 @@ Effects          :
 Description      : Claw the enemy, causing $s1 damage.
 
 Name             : Viper Sting (desc=Rank 1) (id=3034) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -608,7 +624,7 @@ Cooldown         : 15 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#2)
 Family Flags     : 16, 39
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679629)   : Apply Aura (6) | Periodic Mana Leech (64)
                    Base Value: 154 | Scaled Value: 154 | Target: Targeted Enemy (6)
@@ -616,6 +632,7 @@ Description      : Stings the target, draining $o1 mana over $d.  Only one Sting
 Tooltip          : Drains $s1 mana every $t1 seconds.
 
 Name             : Scorpid Sting (id=3043) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -631,7 +648,7 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#3)
 Family Flags     : 15
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680773)   : Apply Aura (6) | Modify Hit% (54)
                    Base Value: -2 | Scaled Value: -2 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -639,6 +656,7 @@ Description      : Stings the target, reducing the target's chance to hit with a
 Tooltip          : Chance to hit with attacks reduced by $s1%.
 
 Name             : Arcane Shot (desc=Rank 1) (id=3044) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -655,13 +673,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Improved Arcane Shot (19454 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Arcane Shot Mana Reduction (23157 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 11
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680797)   : School Damage (2): arcane
-                   Base Value: 20 | Scaled Value: 20 | Target: Targeted Enemy (6)
+                   Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (20 -> 25)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Rapid Fire (id=3045) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -675,7 +695,7 @@ Category Cooldown: 300 seconds
 Proc Chance      : 101%
 Affecting Spells : Rapid Killing (415405 effect#1), S03 - Item - TAQ - Hunter - Ranged 4P Bonus (1213246 effects: #1, #3, #4, #5)
 Family Flags     : 5
-Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679813)   : Apply Aura (6) | Modify Ranged Haste% (140)
                    Base Value: 40 | Scaled Value: 40 | Target: Self (1)
@@ -689,6 +709,7 @@ Description      : Increases ranged and melee attack speed by $s1% for $d.
 Tooltip          : Ranged and melee attack speed increased by $s1%$?$w2>0[,  Mana regeneration increased by $w2%, and $w3% of mana regeneration continued while casting][].
 
 Name             : Mend Pet (desc=Rank 2) (id=3111) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -700,7 +721,7 @@ Duration         : 5 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Mend Pet (19572 effect#2)
 Family Flags     : 23
-Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=681914)   : Apply Aura (6) | Periodic Heal (8): every 1 seconds
@@ -742,6 +763,7 @@ Description      : Freeze your target for $d.
 Tooltip          : Frozen.
 
 Name             : Mend Pet (desc=Rank 3) (id=3661) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -753,7 +775,7 @@ Duration         : 5 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Mend Pet (19572 effect#2)
 Family Flags     : 23
-Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=682140)   : Apply Aura (6) | Periodic Heal (8): every 1 seconds
@@ -762,6 +784,7 @@ Description      : Heals your pet $s1 health every second while you focus.  Last
 Tooltip          : Heals $s1 every second.
 
 Name             : Mend Pet (desc=Rank 4) (id=3662) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -773,7 +796,7 @@ Duration         : 5 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Mend Pet (19572 effect#2)
 Family Flags     : 23
-Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=681705)   : Apply Aura (6) | Periodic Heal (8): every 1 seconds
@@ -933,6 +956,7 @@ Effects          :
 Description      : Stamina increased by $s1.
 
 Name             : Concussive Shot (id=5116) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -949,7 +973,7 @@ Labels           : 23: Hunter Spells
 Mechanic         : Snare
 Affecting Spells : Efficiency (19416 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 9
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=683074)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -50 | Scaled Value: -50 | Target: Targeted Enemy (6)
@@ -957,6 +981,7 @@ Description      : Dazes the target, slowing movement speed by $s1% for $d.
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Aspect of the Cheetah (id=5118) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -969,7 +994,7 @@ Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken
 Affecting Spells : Pathfinding (19559 effect#1)
 Family Flags     : 21
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Aura Interrupt   : Mount (17)
 Effects          :
 #1 (id=683537)   : Apply Aura (6) | Increase Speed% (31)
@@ -996,6 +1021,7 @@ Effects          :
 Description      : Follows a successful block, dodge or parry.
 
 Name             : Feign Death (id=5384) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -1006,7 +1032,7 @@ Cooldown         : 30 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Feign Death (19286 effect#1), Improved Feign Death (19287 effect#1), Survival Tactics (19376 effect#1), Improved Feign Death (24432 effect#1), S03 - Item - T1 - Hunter - Ranged 2P Bonus (456337 effect#2)
 Family Flags     : 8
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), No Threat (42), No AutoCast (AI) (49), Prevents Anim (50), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), No Threat (42), No AutoCast (AI) (49), Prevents Anim (50), Unknown (454), Unknown (493)
 Aura Interrupt   : Action (2), Moving (3), Turning (4), Animation (5), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=683149)   : Apply Aura (6) | Feign Death (66)
@@ -1027,6 +1053,7 @@ Effects          :
 Tooltip          : Ranged attack speed increased by $s1%.
 
 Name             : Eagle Eye (id=6197) 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Magic
@@ -1035,7 +1062,7 @@ Spell Level      : 14
 Range            : 50000 yards
 GCD              : 1.5 seconds
 Duration         : 60 seconds
-Attributes       : Only Outdoors (15), Not Shapeshifted (16), Is Channelled (34), Toggle Far Sight (45), No AutoCast (AI) (49), Ignore Line of Sight (66), Unknown (493)
+Attributes       : Only Outdoors (15), Not Shapeshifted (16), Is Channelled (34), Toggle Far Sight (45), No AutoCast (AI) (49), Ignore Line of Sight (66), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Moving (4), Turning (5), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=684491)   : Add Farsight (72)
@@ -1363,6 +1390,7 @@ Effects          :
 Tooltip          : Stunned.
 
 Name             : Aspect of the Pack (id=13159) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1375,7 +1403,7 @@ Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken
 Affecting Spells : Pathfinding (19559 effect#1)
 Family Flags     : 21
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Aura Interrupt   : Mount (17)
 Effects          :
 #1 (id=689922)   : Apply Party Aura (35) | Increase Speed% (31)
@@ -1387,6 +1415,7 @@ Description      : The hunter and group members within $a1 yards take on the asp
 Tooltip          : $s1% increased movement speed.  Dazed if damage is taken.
 
 Name             : Aspect of the Beast (desc=Rank 1) (id=13161) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1397,7 +1426,7 @@ Duration         : Aura (infinite)
 Proc Flags       : White Melee
 Affecting Spells : Deadly Aspects (19552 effect#2)
 Family Flags     : 68
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690682)   : Apply Aura (6) | Unknown(120)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -1409,6 +1438,7 @@ Description      : The hunter takes on the aspects of a beast, becoming untracka
 Tooltip          : Untrackable. Melee Attack Power increased by $s2.
 
 Name             : Aspect of the Monkey (id=13163) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1420,7 +1450,7 @@ Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Aspect of the Monkey (19549 effect#1)
 Family Flags     : 19
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690683)   : Apply Aura (6) | Modify Dodge% (49)
                    Base Value: 8 | Scaled Value: 8 | Target: Self (1)
@@ -1429,6 +1459,7 @@ Description      : The hunter takes on the aspects of a monkey, increasing chanc
 Tooltip          : Increases chance to dodge by $s1%.
 
 Name             : Aspect of the Hawk (desc=Rank 1) (id=13165) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1440,10 +1471,11 @@ Labels           : 23: Hunter Spells
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Deadly Aspects (19552 effect#1)
 Family Flags     : 20
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690400)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
+Hotfixed         : Base Value (15 -> 20)
 #2 (id=690401)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
@@ -1485,6 +1517,7 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
 
 Name             : Mend Pet (desc=Rank 5) (id=13542) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1496,7 +1529,7 @@ Duration         : 5 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Mend Pet (19572 effect#2)
 Family Flags     : 23
-Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=691531)   : Apply Aura (6) | Periodic Heal (8): every 1 seconds
@@ -1505,6 +1538,7 @@ Description      : Heals your pet $s1 health every second while you focus.  Last
 Tooltip          : Heals $s1 every second.
 
 Name             : Mend Pet (desc=Rank 6) (id=13543) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1516,7 +1550,7 @@ Duration         : 5 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Mend Pet (19572 effect#2)
 Family Flags     : 23
-Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=690907)   : Apply Aura (6) | Periodic Heal (8): every 1 seconds
@@ -1525,6 +1559,7 @@ Description      : Heals your pet $s1 health every second while you focus.  Last
 Tooltip          : Heals $s1 every second.
 
 Name             : Mend Pet (desc=Rank 7) (id=13544) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1536,7 +1571,7 @@ Duration         : 5 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Mend Pet (19572 effect#2)
 Family Flags     : 23
-Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Channelled (34), Periodic Can Crit (265), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=691163)   : Apply Aura (6) | Periodic Heal (8): every 1 seconds
@@ -1545,6 +1580,7 @@ Description      : Heals your pet $s1 health every second while you focus.  Last
 Tooltip          : Heals $s1 every second.
 
 Name             : Serpent Sting (desc=Rank 2) (id=13549) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1559,14 +1595,16 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Improved Serpent Sting (19464 effects: #1, #2), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#1)
 Family Flags     : 14
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691588)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
-                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+                   Base Value: 7 | Scaled Value: 7 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (6 -> 7)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 3) (id=13550) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1581,14 +1619,16 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Improved Serpent Sting (19464 effects: #1, #2), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#1)
 Family Flags     : 14
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691589)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
-                   Base Value: 12 | Scaled Value: 12 | Target: Targeted Enemy (6)
+                   Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (12 -> 14)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 4) (id=13551) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1603,14 +1643,16 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Improved Serpent Sting (19464 effects: #1, #2), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#1)
 Family Flags     : 14
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691570)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
-                   Base Value: 22 | Scaled Value: 22 | Target: Targeted Enemy (6)
+                   Base Value: 26 | Scaled Value: 26 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (22 -> 26)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 5) (id=13552) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1625,14 +1667,16 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Improved Serpent Sting (19464 effects: #1, #2), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#1)
 Family Flags     : 14
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690760)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
-                   Base Value: 34 | Scaled Value: 34 | Target: Targeted Enemy (6)
+                   Base Value: 40 | Scaled Value: 40 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (34 -> 40)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 6) (id=13553) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1647,14 +1691,16 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Improved Serpent Sting (19464 effects: #1, #2), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#1)
 Family Flags     : 14
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690132)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
-                   Base Value: 48 | Scaled Value: 48 | Target: Targeted Enemy (6)
+                   Base Value: 58 | Scaled Value: 58 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (48 -> 58)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 7) (id=13554) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1669,14 +1715,16 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Improved Serpent Sting (19464 effects: #1, #2), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#1)
 Family Flags     : 14
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691479)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
-                   Base Value: 64 | Scaled Value: 64 | Target: Targeted Enemy (6)
+                   Base Value: 75 | Scaled Value: 75 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (64 -> 75)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 8) (id=13555) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1691,14 +1739,16 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Improved Serpent Sting (19464 effects: #1, #2), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#1)
 Family Flags     : 14
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690655)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
-                   Base Value: 83 | Scaled Value: 83 | Target: Targeted Enemy (6)
+                   Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (83 -> 100)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Immolation Trap (desc=Rank 1) (id=13795) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -1712,7 +1762,7 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691205)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164638 | Misc Value 2: 3 | Target: Front of Self (47)
@@ -1737,6 +1787,7 @@ Description      : Inflict $s1 Fire damage every $t1 seconds.
 Tooltip          : $s1 Fire damage every $t1 seconds.
 
 Name             : Frost Trap (id=13809) [Spell Family (9)] 
+Hotfixed         : Category (2183 -> 411), Attributes
 Class            : Hunter
 School           : Frost
 Spell Type       : None
@@ -1745,12 +1796,12 @@ Spell Level      : 28
 GCD              : 1.5 seconds
 Duration         : 60 seconds
 Cooldown         : 30 seconds
-Category         : 2183 (Type 0x0)
+Category         : 411 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7, 82
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690932)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164639 | Target: Front of Self (47)
@@ -1775,7 +1826,6 @@ Effects          :
 Tooltip          : Movement speed slowed by $s1%.
 
 Name             : Explosive Trap (desc=Rank 1) (id=13812) [Spell Family (9)] 
-Hotfixed         : Name
 Class            : Hunter
 School           : Fire
 Spell Type       : Magic
@@ -1795,6 +1845,7 @@ Effects          :
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Explosive Trap (desc=Rank 1) (id=13813) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -1808,7 +1859,7 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691164)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164839 | Misc Value 2: 3 | Target: Front of Self (47)
@@ -1830,6 +1881,7 @@ Effects          :
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Raptor Strike (desc=Rank 2) (id=14260) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1841,15 +1893,16 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
-Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691183)   : Weapon Damage (58)
                    Base Value: 11 | Scaled Value: 11 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 3) (id=14261) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1861,15 +1914,16 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
-Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690456)   : Weapon Damage (58)
                    Base Value: 21 | Scaled Value: 21 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 4) (id=14262) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1881,15 +1935,16 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
-Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691593)   : Weapon Damage (58)
                    Base Value: 30 | Scaled Value: 30 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 5) (id=14263) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1901,15 +1956,16 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
-Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691594)   : Weapon Damage (58)
                    Base Value: 35 | Scaled Value: 35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 6) (id=14264) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1921,15 +1977,16 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
-Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691550)   : Weapon Damage (58)
                    Base Value: 40 | Scaled Value: 40 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 7) (id=14265) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1941,15 +1998,16 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
-Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691551)   : Weapon Damage (58)
                    Base Value: 55 | Scaled Value: 55 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 8) (id=14266) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1961,15 +2019,16 @@ Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
-Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : On Next Swing (No Damage) (2), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691552)   : Weapon Damage (58)
                    Base Value: 70 | Scaled Value: 70 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Wing Clip (desc=Rank 2) (id=14267) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1982,7 +2041,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 23: Hunter Spells
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Resourcefulness (440529 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 6
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690317)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -55 | Scaled Value: -55 | Mechanic: Snare | Target: Targeted Enemy (6)
@@ -1992,6 +2051,7 @@ Description      : Inflicts $s2 damage and reduces the enemy target's movement s
 Tooltip          : Movement speed reduced by $s1%.
 
 Name             : Wing Clip (desc=Rank 3) (id=14268) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2004,7 +2064,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 23: Hunter Spells
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Resourcefulness (440529 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 6
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690646)   : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -60 | Scaled Value: -60 | Mechanic: Snare | Target: Targeted Enemy (6)
@@ -2014,6 +2074,7 @@ Description      : Inflicts $s2 damage and reduces the enemy target's movement s
 Tooltip          : Movement speed reduced by $s1%.
 
 Name             : Mongoose Bite (desc=Rank 2) (id=14269) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2028,13 +2089,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 5 seconds
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Melee Specialist (415352 effect#2), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), S03 - Item - T1 - Hunter - Melee 2P Bonus (456389 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 96
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690392)   : Normalized Weapon Damage (121)
                    Base Value: 22 | Scaled Value: 22 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Counterattack the enemy for melee weapon damage plus $s1. Can only be performed after you dodge.
 
 Name             : Mongoose Bite (desc=Rank 3) (id=14270) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2049,13 +2111,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 5 seconds
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Melee Specialist (415352 effect#2), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), S03 - Item - T1 - Hunter - Melee 2P Bonus (456389 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 96
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690393)   : Normalized Weapon Damage (121)
                    Base Value: 37 | Scaled Value: 37 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Counterattack the enemy for melee weapon damage plus $s1. Can only be performed after you dodge.
 
 Name             : Mongoose Bite (desc=Rank 4) (id=14271) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2069,13 +2132,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 5 seconds
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Melee Specialist (415352 effect#2), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), S03 - Item - T1 - Hunter - Melee 2P Bonus (456389 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 96
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690394)   : Normalized Weapon Damage (121)
                    Base Value: 57 | Scaled Value: 57 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Counterattack the enemy for melee weapon damage plus $s1. Can only be performed after you dodge.
 
 Name             : Disengage (desc=Rank 2) (id=14272) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2088,13 +2152,14 @@ Cooldown         : 5 seconds
 Category         : 82 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 5 seconds
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), No School Immunities (90), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690887)   : Threat (63)
                    Base Value: -560 | Scaled Value: -590 | Points Per Level: -3 | Target: Targeted Enemy (6)
 Description      : Attempts to disengage from the target by reducing threat. More effective than Disengage (Rank 1). Disables auto-attack.
 
 Name             : Disengage (desc=Rank 3) (id=14273) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2107,13 +2172,14 @@ Cooldown         : 5 seconds
 Category         : 82 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 5 seconds
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), No School Immunities (90), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), No School Immunities (90), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691187)   : Threat (63)
                    Base Value: -810 | Scaled Value: -840 | Points Per Level: -3 | Target: Targeted Enemy (6)
 Description      : Attempts to disengage from the target by reducing threat. More effective than Disengage (Rank 2). Disables auto-attack.
 
 Name             : Distracting Shot (desc=Rank 2) (id=14274) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2130,13 +2196,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 8 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 2P Bonus (456337 effect#1), Precision (456382 effects: #1, #2)
 Family Flags     : 16, 49
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691188)   : Threat (63)
                    Base Value: 160 | Scaled Value: 178 | Points Per Level: 2 | Target: Targeted Enemy (6)
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 1).
 
 Name             : Viper Sting (desc=Rank 2) (id=14279) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -2152,7 +2219,7 @@ Cooldown         : 15 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#2)
 Family Flags     : 16, 39
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690930)   : Apply Aura (6) | Periodic Mana Leech (64)
                    Base Value: 212 | Scaled Value: 212 | Target: Targeted Enemy (6)
@@ -2160,6 +2227,7 @@ Description      : Stings the target, draining $o1 mana over $d.  Only one Sting
 Tooltip          : Drains $s1 mana every $t1 seconds.
 
 Name             : Viper Sting (desc=Rank 3) (id=14280) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -2175,7 +2243,7 @@ Cooldown         : 15 seconds
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Improved Stings (1310661 effect#2)
 Family Flags     : 16, 39
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690950)   : Apply Aura (6) | Periodic Mana Leech (64)
                    Base Value: 277 | Scaled Value: 277 | Target: Targeted Enemy (6)
@@ -2183,6 +2251,7 @@ Description      : Stings the target, draining $o1 mana over $d.  Only one Sting
 Tooltip          : Drains $s1 mana every $t1 seconds.
 
 Name             : Arcane Shot (desc=Rank 2) (id=14281) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2199,13 +2268,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Improved Arcane Shot (19454 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Arcane Shot Mana Reduction (23157 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 11
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691213)   : School Damage (2): arcane
-                   Base Value: 26 | Scaled Value: 26 | Target: Targeted Enemy (6)
+                   Base Value: 35 | Scaled Value: 35 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (26 -> 35)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 3) (id=14282) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2222,13 +2293,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Improved Arcane Shot (19454 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Arcane Shot Mana Reduction (23157 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 11
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691984)   : School Damage (2): arcane
-                   Base Value: 39 | Scaled Value: 39 | Target: Targeted Enemy (6)
+                   Base Value: 50 | Scaled Value: 50 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (39 -> 50)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 4) (id=14283) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2245,13 +2318,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Improved Arcane Shot (19454 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Arcane Shot Mana Reduction (23157 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 11
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=692127)   : School Damage (2): arcane
-                   Base Value: 65 | Scaled Value: 65 | Target: Targeted Enemy (6)
+                   Base Value: 85 | Scaled Value: 85 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (65 -> 85)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 5) (id=14284) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2268,13 +2343,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Improved Arcane Shot (19454 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Arcane Shot Mana Reduction (23157 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 11
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690859)   : School Damage (2): arcane
-                   Base Value: 94 | Scaled Value: 94 | Target: Targeted Enemy (6)
+                   Base Value: 120 | Scaled Value: 120 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (94 -> 120)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 6) (id=14285) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2291,13 +2368,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Improved Arcane Shot (19454 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Arcane Shot Mana Reduction (23157 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 11
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690933)   : School Damage (2): arcane
-                   Base Value: 134 | Scaled Value: 134 | Target: Targeted Enemy (6)
+                   Base Value: 175 | Scaled Value: 175 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (134 -> 175)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 7) (id=14286) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2314,13 +2393,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Improved Arcane Shot (19454 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Arcane Shot Mana Reduction (23157 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 11
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690976)   : School Damage (2): arcane
-                   Base Value: 170 | Scaled Value: 170 | Target: Targeted Enemy (6)
+                   Base Value: 220 | Scaled Value: 220 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (170 -> 220)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 8) (id=14287) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2337,13 +2418,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Improved Arcane Shot (19454 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Arcane Shot Mana Reduction (23157 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 11
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691069)   : School Damage (2): arcane
-                   Base Value: 217 | Scaled Value: 217 | Target: Targeted Enemy (6)
+                   Base Value: 280 | Scaled Value: 280 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (217 -> 280)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Volley (desc=Rank 2) (id=14294) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2357,7 +2440,7 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=691336)   : Dummy (3)
@@ -2369,6 +2452,7 @@ Effects          :
 Description      : Continuously fires a volley of ammo at the target area, causing $1279719s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 Name             : Volley (desc=Rank 3) (id=14295) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2382,7 +2466,7 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=692653)   : Dummy (3)
@@ -2487,6 +2571,7 @@ Description      : Inflict $s1 Fire damage every $t1 seconds.
 Tooltip          : $s1 Fire damage every $t1 seconds.
 
 Name             : Immolation Trap (desc=Rank 2) (id=14302) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2500,13 +2585,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691558)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164872 | Misc Value 2: 3 | Target: Front of Self (47)
 Description      : Place a Fire trap that will burn the first enemy to approach for $14298o1 Fire damage over $14298d. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Immolation Trap (desc=Rank 3) (id=14303) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2520,13 +2606,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691295)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164873 | Misc Value 2: 3 | Target: Front of Self (47)
 Description      : Place a Fire trap that will burn the first enemy to approach for $14299o1 Fire damage over $14299d. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Immolation Trap (desc=Rank 4) (id=14304) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2540,13 +2627,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691424)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164874 | Misc Value 2: 3 | Target: Front of Self (47)
 Description      : Place a Fire trap that will burn the first enemy to approach for $14300o1 Fire damage over $14300d. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Immolation Trap (desc=Rank 5) (id=14305) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2560,7 +2648,7 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691547)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164875 | Misc Value 2: 3 | Target: Front of Self (47)
@@ -2607,6 +2695,7 @@ Description      : Freeze your target for $d.
 Tooltip          : Frozen.
 
 Name             : Freezing Trap (desc=Rank 2) (id=14310) [Spell Family (9)] 
+Hotfixed         : Category (2183 -> 411), Attributes
 Class            : Hunter
 School           : Frost
 Spell Type       : None
@@ -2615,18 +2704,19 @@ Spell Level      : 40
 GCD              : 1.5 seconds
 Duration         : 60 seconds
 Cooldown         : 30 seconds
-Category         : 2183 (Type 0x0)
+Category         : 411 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7, 90
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691232)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164876 | Target: Front of Self (47)
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $14308d. Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
 Name             : Freezing Trap (desc=Rank 3) (id=14311) [Spell Family (9)] 
+Hotfixed         : Category (2183 -> 411), Attributes
 Class            : Hunter
 School           : Frost
 Spell Type       : None
@@ -2635,19 +2725,18 @@ Spell Level      : 60
 GCD              : 1.5 seconds
 Duration         : 60 seconds
 Cooldown         : 30 seconds
-Category         : 2183 (Type 0x0)
+Category         : 411 (Type 0x0)
 Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7, 90
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691369)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164877 | Target: Front of Self (47)
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $14309d. Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
 Name             : Explosive Trap (desc=Rank 2) (id=14314) [Spell Family (9)] 
-Hotfixed         : Name
 Class            : Hunter
 School           : Fire
 Spell Type       : Magic
@@ -2667,7 +2756,6 @@ Effects          :
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Explosive Trap (desc=Rank 3) (id=14315) [Spell Family (9)] 
-Hotfixed         : Name
 Class            : Hunter
 School           : Fire
 Spell Type       : Magic
@@ -2687,6 +2775,7 @@ Effects          :
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Explosive Trap (desc=Rank 2) (id=14316) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2700,13 +2789,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691053)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164879 | Misc Value 2: 3 | Target: Front of Self (47)
 Description      : Place a Fire trap that explodes when an enemy approaches, causing $14314s1 Fire damage and $14314o2 additional Fire damage over $14314d to all within $14314a1 yards. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Explosive Trap (desc=Rank 3) (id=14317) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2720,13 +2810,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 30 seconds
 Affecting Spells : Resourcefulness (440529 effect#1), Survivalist's Discipline (1310496 effect#1)
 Family Flags     : 7
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=692346)   : Summon Object (104)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 164880 | Misc Value 2: 3 | Target: Front of Self (47)
 Description      : Place a Fire trap that explodes when an enemy approaches, causing $14315s1 Fire damage and $14315o2 additional Fire damage over $14315d to all within $14315a1 yards. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Aspect of the Hawk (desc=Rank 2) (id=14318) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2738,16 +2829,18 @@ Labels           : 23: Hunter Spells
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Deadly Aspects (19552 effect#1)
 Family Flags     : 20
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691884)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 35 | Scaled Value: 35 | Target: Self (1)
+Hotfixed         : Base Value (22 -> 35)
 #2 (id=691885)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Aspect of the Hawk (desc=Rank 3) (id=14319) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2759,16 +2852,18 @@ Labels           : 23: Hunter Spells
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Deadly Aspects (19552 effect#1)
 Family Flags     : 20
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691886)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
+Hotfixed         : Base Value (30 -> 50)
 #2 (id=691887)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Aspect of the Hawk (desc=Rank 4) (id=14320) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2780,16 +2875,18 @@ Labels           : 23: Hunter Spells
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Deadly Aspects (19552 effect#1)
 Family Flags     : 20
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=692212)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 70 | Scaled Value: 70 | Target: Self (1)
+Hotfixed         : Base Value (38 -> 70)
 #2 (id=692213)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Aspect of the Hawk (desc=Rank 5) (id=14321) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2801,16 +2898,18 @@ Labels           : 23: Hunter Spells
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Deadly Aspects (19552 effect#1)
 Family Flags     : 20
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=692607)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 90 | Scaled Value: 90 | Target: Self (1)
+Hotfixed         : Base Value (47 -> 90)
 #2 (id=692608)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Aspect of the Hawk (desc=Rank 6) (id=14322) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2822,16 +2921,18 @@ Labels           : 23: Hunter Spells
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Deadly Aspects (19552 effect#1)
 Family Flags     : 20
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=692138)   : Apply Aura (6) | Modify Ranged Attack Power (124)
-                   Base Value: 55 | Scaled Value: 55 | Target: Self (1)
+                   Base Value: 110 | Scaled Value: 110 | Target: Self (1)
+Hotfixed         : Base Value (55 -> 110)
 #2 (id=692139)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Hunter's Mark (desc=Rank 2) (id=14323) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -2844,7 +2945,7 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Hunter's Mark (19421 effect#1)
 Family Flags     : 10
-Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), No Threat (42), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), No Threat (42), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691650)   : Apply Aura (6) | Stalked (68)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Current Target (25)
@@ -2856,6 +2957,7 @@ Description      : Places the Hunter's Mark on the target, increasing the Ranged
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
 
 Name             : Hunter's Mark (desc=Rank 3) (id=14324) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -2868,7 +2970,7 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Hunter's Mark (19421 effect#1)
 Family Flags     : 10
-Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), No Threat (42), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), No Threat (42), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691972)   : Apply Aura (6) | Stalked (68)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Current Target (25)
@@ -2880,6 +2982,7 @@ Description      : Places the Hunter's Mark on the target, increasing the Ranged
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
 
 Name             : Hunter's Mark (desc=Rank 4) (id=14325) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -2892,19 +2995,19 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Hunter's Mark (19421 effect#1)
 Family Flags     : 10
-Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), No Threat (42), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), No Threat (42), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690990)   : Apply Aura (6) | Stalked (68)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 1 | Target: Current Target (25)
                    Modified By: Improved Hunter's Mark (19421 effect#1)
 #2 (id=690991)   : Apply Aura (6) | Unknown(127)
                    Base Value: 143 | Scaled Value: 143 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (71 -> 143)
                    Modified By: Improved Hunter's Mark (19421 effect#1)
 Description      : Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
 
 Name             : Scare Beast (desc=Rank 2) (id=14326) 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2921,7 +3024,7 @@ Category Cooldown: 30 seconds
 Proc Chance      : 100%
 Mechanic         : Flee
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Limit N (165), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Limit N (165), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=691087)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
@@ -2929,6 +3032,7 @@ Description      : Scares a beast, causing it to run in fear for up to $d.  Dama
 Tooltip          : Feared.
 
 Name             : Scare Beast (desc=Rank 3) (id=14327) 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2945,7 +3049,7 @@ Category Cooldown: 30 seconds
 Proc Chance      : 100%
 Mechanic         : Flee
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Limit N (165), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Limit N (165), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=691096)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
@@ -3140,6 +3244,7 @@ Effects          :
 Tooltip          : Dazed.
 
 Name             : Distracting Shot (desc=Rank 3) (id=15629) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -3156,13 +3261,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 8 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 2P Bonus (456337 effect#1), Precision (456382 effects: #1, #2)
 Family Flags     : 16, 49
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690362)   : Threat (63)
                    Base Value: 250 | Scaled Value: 272.5 | Points Per Level: 2.5 | Target: Targeted Enemy (6)
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 2).
 
 Name             : Distracting Shot (desc=Rank 4) (id=15630) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -3179,13 +3285,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 8 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 2P Bonus (456337 effect#1), Precision (456382 effects: #1, #2)
 Family Flags     : 16, 49
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690653)   : Threat (63)
                    Base Value: 350 | Scaled Value: 377 | Points Per Level: 3 | Target: Targeted Enemy (6)
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 3).
 
 Name             : Distracting Shot (desc=Rank 5) (id=15631) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -3202,13 +3309,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 8 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 2P Bonus (456337 effect#1), Precision (456382 effects: #1, #2)
 Family Flags     : 16, 49
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690290)   : Threat (63)
                    Base Value: 465 | Scaled Value: 496.5 | Points Per Level: 3.5 | Target: Targeted Enemy (6)
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 4).
 
 Name             : Distracting Shot (desc=Rank 6) (id=15632) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -3225,7 +3333,7 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 8 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 2P Bonus (456337 effect#1), Precision (456382 effects: #1, #2)
 Family Flags     : 16, 49
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690698)   : Threat (63)
                    Base Value: 600 | Scaled Value: 636 | Points Per Level: 4 | Target: Targeted Enemy (6)
@@ -3583,7 +3691,7 @@ Name             : Lightning Reflexes (id=19168) [Passive, Hidden]
 Talent Entry     : Generic [tree=class, row=7, col=13, max_rank=5, req_points=25]
                  : Effect#1 [op=set, values=(3, 6, 9, 12, 15)]
                  : Generic [tree=class, row=6, col=11, max_rank=5, req_points=25]
-                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
+                 : Effect#1 [op=set, values=(3, 6, 9, 12, 15)]
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -3735,6 +3843,7 @@ Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(-10, -20, -30)]
                  : Effect#2 [op=set, values=(-10, -20, -30)]
                  : Effect#3 [op=set, values=(1, 2, 3)]
+                 : Effect#4 [op=set]
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -3747,7 +3856,7 @@ Effects          :
                    Base Value: -30 | Scaled Value: -30 | SP Coefficient: 1 | Misc Value: 7 | Target: Self (1)
 #3 (id=697452)   : Apply Aura (6) | Modify Hit% (54)
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Target: Self (1)
-#4 (id=1349371)  : Apply Aura (6) | Modify Spell Hit% (55)
+#4 (id=1366114)  : Apply Aura (6) | Modify Spell Hit% (55)
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Target: Self (1)
 Description      : Increases your hit chance by $m3% and reduces the duration of movement impairing effects on you by $m2%.
 
@@ -3765,6 +3874,7 @@ Effects          :
 Description      : Increases your Parry chance by $s1%.
 
 Name             : Counterattack (desc=Rank 1) (id=19306) [Spell Family (9)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=11, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Physical
@@ -3782,7 +3892,7 @@ Category Cooldown: 5 seconds
 Proc Chance      : 101%
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Resourcefulness (440529 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 51
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Combat Feedback When Usable (137), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Combat Feedback When Usable (137), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696614)   : Normalized Weapon Damage (121)
                    Base Value: 26 | Scaled Value: 26 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -3928,8 +4038,8 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=696992)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -15 | Scaled Value: -15 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Mongoose Bite (1495), Volley (1510), Serpent Sting (1978), Multi-Shot (2643), Raptor Strike (2973), Wing Clip (2974), Viper Sting (3034), Scorpid Sting (3043), Arcane Shot (3044), Concussive Shot (5116), Serpent Sting (13549), Serpent Sting (13550), Serpent Sting (13551), Serpent Sting (13552), Serpent Sting (13553), Serpent Sting (13554), Serpent Sting (13555), Raptor Strike (14260), Raptor Strike (14261), Raptor Strike (14262), Raptor Strike (14263), Raptor Strike (14264), Raptor Strike (14265), Raptor Strike (14266), Wing Clip (14267), Wing Clip (14268), Mongoose Bite (14269), Mongoose Bite (14270), Mongoose Bite (14271), Distracting Shot (14274), Viper Sting (14279), Viper Sting (14280), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Volley (14294), Volley (14295), Distracting Shot (15629), Distracting Shot (15630), Distracting Shot (15631), Distracting Shot (15632), Counterattack (19306), Aimed Shot (19434), Scatter Shot (19503), Tranquilizing Shot (19801), Distracting Shot (20736), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904), Counterattack (20909), Counterattack (20910), Lacerate (24118), Lacerate (24119), Lacerate (24120), Serpent Sting (25295), Chimera Shot - Serpent (409493), Raptor Strike (409691), Raptor Strike (409693), Raptor Strike (409748), Raptor Strike (409750), Raptor Strike (409751), Raptor Strike (409752), Raptor Strike (409754), Raptor Strike (409755), Raptor Strike (415335), Raptor Strike (415336), Raptor Strike (415337), Raptor Strike (415338), Raptor Strike (415340), Raptor Strike (415341), Raptor Strike (415342), Raptor Strike (415343), Serpent Sting (425728), Serpent Sting (425729), Serpent Sting (425730), Serpent Sting (425732), Serpent Sting (425733), Serpent Sting (425734), Serpent Sting (425735), Serpent Sting (425736), Serpent Sting (425737), Counterattack (1242634), Volley (1279715), Volley (1279719), Volley (1279721), Summon Hawk (1293241), Summon Hawk (1293525), Summon Hawk (1293526), Summon Hawk (1293527), Lacerate (1299332), Lacerating Strikes (1310536), Sniper Shot (1310687), Sniper Shot (1310785), Sniper Shot (1310786)
-                   Family Flags: 1, 6, 9, 11, 12, 13, 14, 15, 16, 17, 18, 44, 51, 63, 77, 119
+                   Affected Spells: Mongoose Bite (1495), Volley (1510), Serpent Sting (1978), Multi-Shot (2643), Raptor Strike (2973), Wing Clip (2974), Viper Sting (3034), Scorpid Sting (3043), Arcane Shot (3044), Concussive Shot (5116), Serpent Sting (13549), Serpent Sting (13550), Serpent Sting (13551), Serpent Sting (13552), Serpent Sting (13553), Serpent Sting (13554), Serpent Sting (13555), Raptor Strike (14260), Raptor Strike (14261), Raptor Strike (14262), Raptor Strike (14263), Raptor Strike (14264), Raptor Strike (14265), Raptor Strike (14266), Wing Clip (14267), Wing Clip (14268), Mongoose Bite (14269), Mongoose Bite (14270), Mongoose Bite (14271), Distracting Shot (14274), Viper Sting (14279), Viper Sting (14280), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Volley (14294), Volley (14295), Distracting Shot (15629), Distracting Shot (15630), Distracting Shot (15631), Distracting Shot (15632), Counterattack (19306), Aimed Shot (19434), Scatter Shot (19503), Tranquilizing Shot (19801), Distracting Shot (20736), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904), Counterattack (20909), Counterattack (20910), Lacerate (24118), Lacerate (24119), Lacerate (24120), Serpent Sting (25295), Chimera Shot - Serpent (409493), Raptor Strike (409691), Raptor Strike (409693), Raptor Strike (409748), Raptor Strike (409750), Raptor Strike (409751), Raptor Strike (409752), Raptor Strike (409754), Raptor Strike (409755), Flanking Strike (415320), Flanking Strike (415327), Raptor Strike (415335), Raptor Strike (415336), Raptor Strike (415337), Raptor Strike (415338), Raptor Strike (415340), Raptor Strike (415341), Raptor Strike (415342), Raptor Strike (415343), Serpent Sting (425728), Serpent Sting (425729), Serpent Sting (425730), Serpent Sting (425732), Serpent Sting (425733), Serpent Sting (425734), Serpent Sting (425735), Serpent Sting (425736), Serpent Sting (425737), Counterattack (1242634), Volley (1279715), Volley (1279719), Volley (1279721), Summon Hawk (1293241), Summon Hawk (1293525), Summon Hawk (1293526), Summon Hawk (1293527), Lacerate (1299332), Lacerating Strikes (1310536), Sniper Shot (1310687), Sniper Shot (1310785), Sniper Shot (1310786), Strider Kick (1317257)
+                   Family Flags: 1, 6, 9, 11, 12, 13, 14, 15, 16, 17, 18, 44, 51, 63, 77, 85, 119
 Description      : Reduces the Mana cost of your Shots, Stings, and melee abilities by $s1%.
 
 Name             : Improved Hunter's Mark (id=19421) [Spell Family (9), Passive, Hidden] 
@@ -3959,6 +4069,7 @@ Effects          :
 Description      : Increases your critical strike chance with all attacks by $m1%.
 
 Name             : Aimed Shot (desc=Rank 1) (id=19434) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -3975,10 +4086,11 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 6P Bonus (456379 effect#1), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 17
-Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (493), Unknown (519)
+Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (454), Unknown (493), Unknown (519)
 Effects          :
 #1 (id=696631)   : Normalized Weapon Damage (121)
-                   Base Value: 20 | Scaled Value: 20 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 40 | Scaled Value: 40 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (20 -> 40)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Improved Arcane Shot (id=19454) [Spell Family (9), Passive, Hidden] 
@@ -3998,7 +4110,7 @@ Description      : Reduces the cooldown of your Arcane Shot by $/1000;S1 sec. Do
 
 Name             : Barrage (id=19461) [Spell Family (9), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=5, col=7, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(3, 7, 10)]
+                 : Effect#1 [op=set, values=(5, 10, 15)]
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4044,7 +4156,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=696507)   : Apply Aura (6) | Add Percent Modifier (108): Spell Critical Bonus Multiplier (15)
                    Base Value: 30 | Scaled Value: 30 | SP Coefficient: 1 | Misc Value: 15 | Target: Self (1)
-                   Affected Spells: Auto Shot (75), Volley (1510), Serpent Sting (1978), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Serpent Sting (13549), Serpent Sting (13550), Serpent Sting (13551), Serpent Sting (13552), Serpent Sting (13553), Serpent Sting (13554), Serpent Sting (13555), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Volley (14294), Volley (14295), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904), Serpent Sting (25295), Chimera Shot - Serpent (409493), Serpent Sting (425728), Serpent Sting (425729), Serpent Sting (425730), Serpent Sting (425732), Serpent Sting (425733), Serpent Sting (425734), Serpent Sting (425735), Serpent Sting (425736), Serpent Sting (425737), Timeworn Shot (1213393), Volley (1279715), Volley (1279719), Volley (1279721), Sniper Shot (1310687), Sniper Shot (1310785), Sniper Shot (1310786)
+                   Affected Spells: Auto Shot (75), Volley (1510), Serpent Sting (1978), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Serpent Sting (13549), Serpent Sting (13550), Serpent Sting (13551), Serpent Sting (13552), Serpent Sting (13553), Serpent Sting (13554), Serpent Sting (13555), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Volley (14294), Volley (14295), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904), Serpent Sting (25295), Chimera Shot - Serpent (409493), Serpent Sting (425728), Serpent Sting (425729), Serpent Sting (425730), Serpent Sting (425732), Serpent Sting (425733), Serpent Sting (425734), Serpent Sting (425735), Serpent Sting (425736), Serpent Sting (425737), Volley (1279715), Volley (1279719), Volley (1279721), Sniper Shot (1310687), Sniper Shot (1310785), Sniper Shot (1310786)
                    Family Flags: 0, 9, 11, 12, 13, 14, 17, 18, 63, 73, 92, 119
 Description      : Increases the critical strike damage bonus on all ranged abilities by $m1%.
 
@@ -4090,6 +4202,7 @@ Description      : A short-range shot that deals $s1% weapon damage and disorien
 Tooltip          : Disoriented.
 
 Name             : Trueshot Aura (desc=Rank 3) (id=19506) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -4099,10 +4212,11 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Labels           : 23: Hunter Spells
 Family Flags     : 53
-Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=697417)   : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
                    Base Value: 50 | Scaled Value: 50 | Radius: 45 yards | Target: Self (1)
+Hotfixed         : Base Value (30 -> 50)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yards by $s1. Lasts $d.
 Tooltip          : Ranged Attack Power increased by $w1.
 
@@ -4187,7 +4301,7 @@ Effects          :
 Description      : Increases the duration of your Eyes of the Beast by $/1000;s1 sec.
 
 Name             : Pathfinding (id=19559) [Spell Family (9), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=2, col=3, max_rank=2, req_points=0]
+Talent Entry     : Generic [tree=class, row=3, col=1, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(3, 6)]
 Class            : Hunter
 School           : Physical
@@ -4442,6 +4556,7 @@ Effects          :
 Description      : Attempts to remove $s1 Frenzy effect from an enemy creature.
 
 Name             : Track Demons (id=19878) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4451,7 +4566,7 @@ Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Tracking (24293 effect#1)
 Family Flags     : 65
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=1242199)  : Apply Aura (6) | Modify Damage Done% vs Race (168)
                    Base Value: 0 | Scaled Value: 0 | Race: demon | Target: Self (1)
@@ -4460,6 +4575,7 @@ Description      : Shows the location of all nearby demons on the minimap.  Only
 Tooltip          : Tracking Demons.
 
 Name             : Track Dragonkin (id=19879) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4469,7 +4585,7 @@ Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Tracking (24293 effect#1)
 Family Flags     : 65
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=1242198)  : Apply Aura (6) | Modify Damage Done% vs Race (168)
                    Base Value: 0 | Scaled Value: 0 | Race: dragonkin | Target: Self (1)
@@ -4478,6 +4594,7 @@ Description      : Shows the location of all nearby dragonkin on the minimap.  O
 Tooltip          : Tracking Dragonkin.
 
 Name             : Track Elementals (id=19880) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4487,7 +4604,7 @@ Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Tracking (24293 effect#1)
 Family Flags     : 65
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=1242197)  : Apply Aura (6) | Modify Damage Done% vs Race (168)
                    Base Value: 0 | Scaled Value: 0 | Race: elemental | Target: Self (1)
@@ -4496,6 +4613,7 @@ Description      : Shows the location of all nearby elementals on the minimap.  
 Tooltip          : Tracking Elementals.
 
 Name             : Track Giants (id=19882) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4505,7 +4623,7 @@ Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Tracking (24293 effect#1)
 Family Flags     : 65
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=1242196)  : Apply Aura (6) | Modify Damage Done% vs Race (168)
                    Base Value: 0 | Scaled Value: 0 | Race: giant | Target: Self (1)
@@ -4514,6 +4632,7 @@ Description      : Shows the location of all nearby giants on the minimap.  Only
 Tooltip          : Tracking Giants.
 
 Name             : Track Humanoids (id=19883) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4523,7 +4642,7 @@ Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Tracking (24293 effect#1)
 Family Flags     : 65
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=1242195)  : Apply Aura (6) | Modify Damage Done% vs Race (168)
                    Base Value: 0 | Scaled Value: 0 | Race: humanoid | Target: Self (1)
@@ -4532,6 +4651,7 @@ Description      : Shows the location of all nearby humanoids on the minimap.  O
 Tooltip          : Tracking Humanoids.
 
 Name             : Track Undead (id=19884) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4541,7 +4661,7 @@ Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Tracking (24293 effect#1)
 Family Flags     : 65
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=1242194)  : Apply Aura (6) | Modify Damage Done% vs Race (168)
                    Base Value: 0 | Scaled Value: 0 | Race: undead | Target: Self (1)
@@ -4550,6 +4670,7 @@ Description      : Shows the location of all nearby undead on the minimap.  Only
 Tooltip          : Tracking Undead.
 
 Name             : Track Hidden (id=19885) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4559,7 +4680,7 @@ Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
 Affecting Spells : Improved Tracking (24293 effect#1)
 Family Flags     : 65
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=697122)   : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -4568,6 +4689,7 @@ Description      : Increases stealth detection and shows hidden units within det
 Tooltip          : Tracking Hidden targets.
 
 Name             : Aspect of the Wild (desc=Rank 1) (id=20043) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -4576,7 +4698,7 @@ Spell Level      : 46
 GCD              : 1.5 seconds
 Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=697261)   : Apply Aura Raid (65) | Resistance (22)
                    Base Value: 45 | Scaled Value: 45 | Misc Value: 8 | Radius: 30 yards | Target: Self (1)
@@ -4584,6 +4706,7 @@ Description      : The hunter and all party and raid members within $a1 yards ta
 Tooltip          : Nature resistance increased by $s1.
 
 Name             : Aspect of the Wild (desc=Rank 2) (id=20190) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -4592,7 +4715,7 @@ Spell Level      : 56
 GCD              : 1.5 seconds
 Duration         : Aura (infinite)
 Labels           : 23: Hunter Spells
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698158)   : Apply Aura Raid (65) | Resistance (22)
                    Base Value: 60 | Scaled Value: 60 | Misc Value: 8 | Radius: 30 yards | Target: Self (1)
@@ -4600,6 +4723,7 @@ Description      : The hunter and all party and raid members within $a1 yards ta
 Tooltip          : Nature resistance increased by $s1.
 
 Name             : Distracting Shot (desc=Rank 1) (id=20736) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -4616,13 +4740,14 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 8 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 2P Bonus (456337 effect#1), Precision (456382 effects: #1, #2)
 Family Flags     : 16, 49
-Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (493)
+Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), No AutoCast (AI) (49), Do Not Reset Combat Timers (81), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698291)   : Threat (63)
                    Base Value: 110 | Scaled Value: 120.5 | Points Per Level: 1.5 | Target: Targeted Enemy (6)
 Description      : Distract the target, causing threat.
 
 Name             : Aimed Shot (desc=Rank 2) (id=20900) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4639,13 +4764,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 6P Bonus (456379 effect#1), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 17
-Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (493), Unknown (519)
+Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (454), Unknown (493), Unknown (519)
 Effects          :
 #1 (id=697762)   : Normalized Weapon Damage (121)
-                   Base Value: 34 | Scaled Value: 34 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 70 | Scaled Value: 70 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (34 -> 70)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Aimed Shot (desc=Rank 3) (id=20901) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4662,13 +4789,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 6P Bonus (456379 effect#1), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 17
-Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (493), Unknown (519)
+Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (454), Unknown (493), Unknown (519)
 Effects          :
 #1 (id=699653)   : Normalized Weapon Damage (121)
-                   Base Value: 55 | Scaled Value: 55 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 115 | Scaled Value: 115 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (55 -> 115)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Aimed Shot (desc=Rank 4) (id=20902) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4685,13 +4814,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 6P Bonus (456379 effect#1), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 17
-Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (493), Unknown (519)
+Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (454), Unknown (493), Unknown (519)
 Effects          :
 #1 (id=697763)   : Normalized Weapon Damage (121)
-                   Base Value: 89 | Scaled Value: 89 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 185 | Scaled Value: 185 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (89 -> 185)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Aimed Shot (desc=Rank 5) (id=20903) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4708,13 +4839,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 6P Bonus (456379 effect#1), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 17
-Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (493), Unknown (519)
+Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (454), Unknown (493), Unknown (519)
 Effects          :
 #1 (id=699670)   : Normalized Weapon Damage (121)
-                   Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 260 | Scaled Value: 260 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (125 -> 260)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Aimed Shot (desc=Rank 6) (id=20904) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4731,13 +4864,15 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Master Marksman (409428 effect#2), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1), Lock and Load (415414 effects: #1, #2), S03 - Item - T1 - Hunter - Ranged 6P Bonus (456379 effect#1), Precision (456382 effects: #1, #2), Sniper Shot (1310687 effect#2), Sniper Shot (1310785 effect#2), Sniper Shot (1310786 effect#2)
 Family Flags     : 17
-Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (493), Unknown (519)
+Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (454), Unknown (493), Unknown (519)
 Effects          :
 #1 (id=697764)   : Normalized Weapon Damage (121)
-                   Base Value: 166 | Scaled Value: 166 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 350 | Scaled Value: 350 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (166 -> 350)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Trueshot Aura (desc=Rank 4) (id=20905) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -4747,14 +4882,16 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Labels           : 23: Hunter Spells
 Family Flags     : 53
-Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698474)   : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
                    Base Value: 75 | Scaled Value: 75 | Radius: 45 yards | Target: Self (1)
+Hotfixed         : Base Value (40 -> 75)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yards by $s1. Lasts $d.
 Tooltip          : Ranged Attack Power increased by $w1.
 
 Name             : Trueshot Aura (desc=Rank 5) (id=20906) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -4764,14 +4901,16 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Labels           : 23: Hunter Spells
 Family Flags     : 53
-Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=697683)   : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
-                   Base Value: 50 | Scaled Value: 50 | Radius: 45 yards | Target: Self (1)
+                   Base Value: 100 | Scaled Value: 100 | Radius: 45 yards | Target: Self (1)
+Hotfixed         : Base Value (50 -> 100)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yards by $s1. Lasts $d.
 Tooltip          : Ranged Attack Power increased by $w1.
 
 Name             : Counterattack (desc=Rank 3) (id=20909) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -4788,7 +4927,7 @@ Category Cooldown: 5 seconds
 Proc Chance      : 101%
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Resourcefulness (440529 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 51
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Combat Feedback When Usable (137), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Combat Feedback When Usable (137), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=699603)   : Normalized Weapon Damage (121)
                    Base Value: 70 | Scaled Value: 70 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -4800,6 +4939,7 @@ Description      : A strike that becomes active after parrying an opponent's att
 Tooltip          : Immobile.
 
 Name             : Counterattack (desc=Rank 4) (id=20910) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -4816,7 +4956,7 @@ Category Cooldown: 5 seconds
 Proc Chance      : 101%
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Resourcefulness (440529 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 51
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Combat Feedback When Usable (137), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Combat Feedback When Usable (137), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698736)   : Normalized Weapon Damage (121)
                    Base Value: 110 | Scaled Value: 110 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -5234,7 +5374,7 @@ Description      : Increases Fire resistance by $s1.
 Tooltip          : Increases Fire resistance by $s1.
 
 Name             : Improved Revive Pet (id=24443) [Spell Family (9), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=2, col=4, max_rank=2, req_points=0]
+Talent Entry     : Generic [tree=class, row=2, col=3, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(-3000, -6000)]
                  : Effect#2 [op=set, values=(-20, -40)]
                  : Effect#3 [op=set, values=(15, 30)]
@@ -6110,11 +6250,13 @@ Family Flags     : 14
 Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Combat Timers (81), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=702403)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
-                   Base Value: 111 | Scaled Value: 111 | Target: Targeted Enemy (6)
+                   Base Value: 135 | Scaled Value: 135 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (111 -> 135)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Aspect of the Hawk (desc=Rank 7) (id=25296) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -6126,7 +6268,7 @@ Labels           : 23: Hunter Spells
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Deadly Aspects (19552 effect#1)
 Family Flags     : 20
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=702702)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 120 | Scaled Value: 120 | Target: Self (1)
@@ -6781,7 +6923,7 @@ Spell Type       : Melee
 Spell Level      : 1
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6796,7 +6938,7 @@ Spell Type       : Melee
 Spell Level      : 8
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6811,7 +6953,7 @@ Spell Type       : Melee
 Spell Level      : 16
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6826,7 +6968,7 @@ Spell Type       : Melee
 Spell Level      : 24
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6841,7 +6983,7 @@ Spell Type       : Melee
 Spell Level      : 32
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6856,7 +6998,7 @@ Spell Type       : Melee
 Spell Level      : 40
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6871,7 +7013,7 @@ Spell Type       : Melee
 Spell Level      : 48
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -6886,7 +7028,7 @@ Spell Type       : Melee
 Spell Level      : 56
 Range            : 5 yards
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
@@ -7245,7 +7387,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 30 seconds
 Stacks           : 3 maximum
 Proc Chance      : 101%
-Affecting Spells : Savage Strikes (19159 effect#1), Catlike Reflexes (415428 effect#3), Resourcefulness (440529 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Catlike Reflexes (415428 effect#3), Resourcefulness (440529 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 85
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Include In Advanced Combat Log (72), Aura Affects Not Just Req. Equipped Item (176), Unknown (493)
 Effects          :
@@ -7268,7 +7410,7 @@ Spell Level      : 1
 Velocity         : 40 yards/sec
 Stacks           : 1 maximum
 Proc Chance      : 101%
-Affecting Spells : Savage Strikes (19159 effect#1), Catlike Reflexes (415428 effect#3), Resourcefulness (440529 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Catlike Reflexes (415428 effect#3), Resourcefulness (440529 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 85
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), Do Not Sheath (18), No Aura Icon (60), Ignore Line of Sight (66), Not In Spellbook (143), Unknown (493)
 Effects          :
@@ -7287,7 +7429,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7307,7 +7449,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7327,7 +7469,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7347,7 +7489,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7367,7 +7509,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7387,7 +7529,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7407,7 +7549,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -7427,7 +7569,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 6 seconds
 Category         : 40 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), Raptor Strike Damage Increase (459598 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Raptor Fury (415362 effect#1), Resourcefulness (440529 effect#1), Hit and Run (440533 effects: #1, #2, #3), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 1, 80
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Unknown (493)
 Effects          :
@@ -9071,28 +9213,6 @@ Effects          :
 Description      : A vicious strike that deals $s2% weapon damage and causes the target to Bleed for ${$m3/100*8*$AP} Physical damage over $d.
 Tooltip          : $w3 Bleed damage every $t3 seconds.
 
-Name             : Multi-Shot Damage Increase (id=459593) [Spell Family (9), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166526)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
-                   Base Value: 4 | Scaled Value: 4 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Multi-Shot (2643)
-                   Family Flags: 12
-Description      : Increases the damage done by your Multi-Shot by $s1%.
-
-Name             : Raptor Strike Damage Increase (id=459598) [Spell Family (9), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166531)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
-                   Base Value: 4 | Scaled Value: 4 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Raptor Strike (2973), Raptor Strike (14260), Raptor Strike (14261), Raptor Strike (14262), Raptor Strike (14263), Raptor Strike (14264), Raptor Strike (14265), Raptor Strike (14266), Raptor Strike (409691), Raptor Strike (409693), Raptor Strike (409748), Raptor Strike (409750), Raptor Strike (409751), Raptor Strike (409752), Raptor Strike (409754), Raptor Strike (409755), Raptor Strike (415335), Raptor Strike (415336), Raptor Strike (415337), Raptor Strike (415338), Raptor Strike (415340), Raptor Strike (415341), Raptor Strike (415342), Raptor Strike (415343)
-                   Family Flags: 80
-Description      : Increases the damage done by your Raptor Strike by $s1%.
-
 Name             : S03 - Item - T2- Hunter - Ranged 2P Bonus (id=467235) [Spell Family (9), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -9333,33 +9453,6 @@ Effects          :
                    Family Flags: 29
 Description      : Increases the Focus regeneration of your pets by $s1%.
 
-Name             : Timeworn Shot (id=1213393) [Spell Family (9)] 
-School           : Physical
-Spell Type       : Ranged
-Spell Level      : 60
-Range            : 100 yards
-Cast Time        : Ranged Shot
-Velocity         : 40 yards/sec
-Affecting Spells : Mortal Shots (19485 effect#1)
-Triggered By     : Timeworn Shot (1213395)
-Family Flags     : 92
-Attributes       : Uses Ranged Slot (1), Normal Ranged Attack (111), Unknown (493)
-Effects          :
-#1 (id=1195032)  : School Damage (2): physical
-                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-
-Name             : Timeworn Shot (id=1213395) [Spell Family (9), Passive] 
-School           : Physical
-Spell Type       : None
-Spell Level      : 60
-Internal Cooldown: 0.2 seconds
-Proc Chance      : 8%
-Proc Flags       : White Ranged, Yellow Ranged
-Attributes       : Passive (6), Unknown (493)
-Effects          :
-#1 (id=1195034)  : Apply Aura (6) | Proc Trigger Spell (42): Timeworn Shot
-                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1213393 | Target: Self (1)
-
 Name             : Kill Shot (id=1218240) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -9522,6 +9615,7 @@ Description      : Regenerating Mana while casting.
 Tooltip          : Regenerating $w1% of normal while casting spells.
 
 Name             : Counterattack (desc=Rank 2) (id=1242634) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -9538,7 +9632,7 @@ Category Cooldown: 5 seconds
 Proc Chance      : 101%
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Resourcefulness (440529 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 51
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Combat Feedback When Usable (137), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Combat Feedback When Usable (137), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1242268)  : Normalized Weapon Damage (121)
                    Base Value: 40 | Scaled Value: 40 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -9564,7 +9658,6 @@ Effects          :
 Tooltip          : Regenerating $s1% of your normal Mana regeneration while casting spells.
 
 Name             : Faster Attack I (id=1263099) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9579,7 +9672,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack II (id=1263100) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9594,7 +9686,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack III (id=1263102) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9609,7 +9700,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack IV (id=1263104) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9624,7 +9714,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack V (id=1263107) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9639,7 +9728,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack VI (id=1263109) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -9654,7 +9742,6 @@ Description      : Increases attack speed by $s1%.
 Tooltip          : Attack speed increased by $s1%.
 
 Name             : Faster Attack VII (id=1263110) [Passive] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10856,6 +10943,7 @@ Effects          :
                    Base Value: 70 | Scaled Value: 70 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Summon Hawk (desc=Rank 1) (id=1293241) [Spell Family (9)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=4, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Physical
@@ -10873,7 +10961,7 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Ferocity (19598 effect#1), Unleashed Fury (19616 effect#1), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1)
 Family Flags     : 77
-Attributes       : Is Ability (4), Do Not Reset Combat Timers (81), Always Hit (114), Unknown (493)
+Attributes       : Is Ability (4), Do Not Reset Combat Timers (81), Always Hit (114), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1313789)  : School Damage (2): physical
                    Base Value: 32 | Scaled Value: 32 | Target: Targeted Enemy (6)
@@ -10899,6 +10987,7 @@ Effects          :
 Description      : Summons a hawk.
 
 Name             : Summon Hawk (desc=Rank 2) (id=1293525) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -10915,7 +11004,7 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Ferocity (19598 effect#1), Unleashed Fury (19616 effect#1), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1)
 Family Flags     : 77
-Attributes       : Is Ability (4), Do Not Reset Combat Timers (81), Always Hit (114), Unknown (493)
+Attributes       : Is Ability (4), Do Not Reset Combat Timers (81), Always Hit (114), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1314233)  : School Damage (2): physical
                    Base Value: 47 | Scaled Value: 47 | Target: Targeted Enemy (6)
@@ -10929,6 +11018,7 @@ Effects          :
 Description      : Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
 
 Name             : Summon Hawk (desc=Rank 3) (id=1293526) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -10945,7 +11035,7 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Ferocity (19598 effect#1), Unleashed Fury (19616 effect#1), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1)
 Family Flags     : 77
-Attributes       : Is Ability (4), Do Not Reset Combat Timers (81), Always Hit (114), Unknown (493)
+Attributes       : Is Ability (4), Do Not Reset Combat Timers (81), Always Hit (114), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1314236)  : School Damage (2): physical
                    Base Value: 85 | Scaled Value: 85 | Target: Targeted Enemy (6)
@@ -10959,6 +11049,7 @@ Effects          :
 Description      : Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
 
 Name             : Summon Hawk (desc=Rank 4) (id=1293527) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -10975,7 +11066,7 @@ Labels           : 23: Hunter Spells
 Category Cooldown: 6 seconds
 Affecting Spells : Efficiency (19416 effect#1), Hawk Eye (19498 effect#1), Ferocity (19598 effect#1), Unleashed Fury (19616 effect#1), Sniper's Aim (415401 effect#1), Rapid Killing (415407 effect#1)
 Family Flags     : 77
-Attributes       : Is Ability (4), Do Not Reset Combat Timers (81), Always Hit (114), Unknown (493)
+Attributes       : Is Ability (4), Do Not Reset Combat Timers (81), Always Hit (114), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1314239)  : School Damage (2): physical
                    Base Value: 108 | Scaled Value: 108 | Target: Targeted Enemy (6)
@@ -11009,6 +11100,7 @@ Description      : Wounds the target causing them to bleed for $o1 damage over $
 Tooltip          : Bleeding for $s1 damage every $t1 sec.
 
 Name             : Trueshot Aura (desc=Rank 1) (id=1299346) [Spell Family (9)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Arcane
@@ -11019,14 +11111,16 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Labels           : 23: Hunter Spells
 Family Flags     : 53
-Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1323534)  : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
-                   Base Value: 30 | Scaled Value: 30 | Radius: 45 yards | Target: Self (1)
+                   Base Value: 20 | Scaled Value: 20 | Radius: 45 yards | Target: Self (1)
+Hotfixed         : Base Value (15 -> 20)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yds by $s1.
 Tooltip          : Ranged Attack Power increased by $w1.
 
 Name             : Trueshot Aura (desc=Rank 2) (id=1299348) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -11036,14 +11130,16 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Labels           : 23: Hunter Spells
 Family Flags     : 53
-Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1323538)  : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
-                   Base Value: 40 | Scaled Value: 40 | Radius: 45 yards | Target: Self (1)
+                   Base Value: 35 | Scaled Value: 35 | Radius: 45 yards | Target: Self (1)
+Hotfixed         : Base Value (22 -> 35)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yds by $s1.
 Tooltip          : Ranged Attack Power increased by $w1.
 
 Name             : Aspect of the Beast (desc=Rank 2) (id=1299445) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -11054,7 +11150,7 @@ Duration         : Aura (infinite)
 Proc Flags       : White Melee
 Affecting Spells : Deadly Aspects (19552 effect#2)
 Family Flags     : 68
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1323688)  : Apply Aura (6) | Unknown(120)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -11066,6 +11162,7 @@ Description      : You take on the aspects of a beast, becoming untrackable and 
 Tooltip          : Untrackable. Melee Attack Power increased by $s2.
 
 Name             : Aspect of the Beast (desc=Rank 3) (id=1299446) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -11076,7 +11173,7 @@ Duration         : Aura (infinite)
 Proc Flags       : White Melee
 Affecting Spells : Deadly Aspects (19552 effect#2)
 Family Flags     : 68
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1323690)  : Apply Aura (6) | Unknown(120)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -11088,6 +11185,7 @@ Description      : You take on the aspects of a beast, becoming untrackable and 
 Tooltip          : Untrackable. Melee Attack Power increased by $s2.
 
 Name             : Aspect of the Beast (desc=Rank 4) (id=1299447) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -11098,7 +11196,7 @@ Duration         : Aura (infinite)
 Proc Flags       : White Melee
 Affecting Spells : Deadly Aspects (19552 effect#2)
 Family Flags     : 68
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1323692)  : Apply Aura (6) | Unknown(120)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -11168,6 +11266,7 @@ Effects          :
 Description      : Your Mongoose Bite also causes the target to Bleed for damage equal to $s1% of the damage done by Mongoose Bite over $1310536d
 
 Name             : Lacerating Strikes (id=1310536) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -11177,7 +11276,7 @@ Duration         : 21 seconds
 Mechanic         : Bleed
 Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 44
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Always Hit (114), Do Not Display Range (126), Ignore Damage Taken Modifiers (136), Ignore Caster Damage Modifiers (221), No Attack Dodge (247), No Attack Parry (248), No Attack Miss (249), No Attack Block (256), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Always Hit (114), Do Not Display Range (126), Ignore Damage Taken Modifiers (136), Aura Never Bounces (148), Ignore Caster Damage Modifiers (221), No Attack Dodge (247), No Attack Parry (248), No Attack Miss (249), No Attack Block (256), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=1340120)  : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 1 | Scaled Value: 1 | Target: Targeted Enemy (6)
@@ -11228,6 +11327,7 @@ Effects          :
 Description      : Increases the damage of your Serpent Sting ability by $s1%, reduces the cooldown of your Viper Sting ability by ${$m2/-1000} sec, and increases the duration of your Scorpid Sting ability by ${$m3/1000} sec.
 
 Name             : Sniper Shot (desc=Rank 1) (id=1310687) [Spell Family (9)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=6, max_rank=1, req_points=30]
 Class            : Hunter
 School           : Physical
@@ -11247,10 +11347,11 @@ Proc Chance      : 100%
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Efficiency (19416 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Rapid Killing (415407 effect#1)
 Family Flags     : 119
-Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (493), Unknown (519)
+Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (454), Unknown (493), Unknown (519)
 Effects          :
 #1 (id=1340384)  : Normalized Weapon Damage (121)
-                   Base Value: 160 | Scaled Value: 160 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 320 | Scaled Value: 320 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (160 -> 320)
 #2 (id=1358438)  : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 5 | Target: Self (1)
                    Affected Spells: Auto Shot (75), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904)
@@ -11291,6 +11392,7 @@ Description      : Follows a successful block, dodge or parry.
 Tooltip          : Mongoose Bite activated.
 
 Name             : Sniper Shot (desc=Rank 2) (id=1310785) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -11309,10 +11411,11 @@ Proc Chance      : 100%
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Efficiency (19416 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Rapid Killing (415407 effect#1)
 Family Flags     : 119
-Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (493), Unknown (519)
+Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (454), Unknown (493), Unknown (519)
 Effects          :
 #1 (id=1340617)  : Normalized Weapon Damage (121)
-                   Base Value: 225 | Scaled Value: 225 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (225 -> 450)
 #2 (id=1358439)  : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 5 | Target: Self (1)
                    Affected Spells: Auto Shot (75), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904)
@@ -11321,6 +11424,7 @@ Description      : A long-range shot that deals ranged damage plus $s1 and incre
 Tooltip          : Shot range increased by $s2.
 
 Name             : Sniper Shot (desc=Rank 3) (id=1310786) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -11339,10 +11443,11 @@ Proc Chance      : 100%
 Proc Flags       : White Ranged, Yellow Ranged
 Affecting Spells : Efficiency (19416 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Rapid Killing (415407 effect#1)
 Family Flags     : 119
-Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (493), Unknown (519)
+Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), Track Target in Cast (Player Only) (22), Do Not Reset Combat Timers (81), Force Display Castbar (155), Ignore Combat Timer (156), Unknown (454), Unknown (493), Unknown (519)
 Effects          :
 #1 (id=1340619)  : Normalized Weapon Damage (121)
-                   Base Value: 295 | Scaled Value: 295 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 590 | Scaled Value: 590 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (295 -> 590)
 #2 (id=1358440)  : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 5 | Target: Self (1)
                    Affected Spells: Auto Shot (75), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904)
@@ -11374,7 +11479,7 @@ GCD              : 1.5 seconds
 Duration         : 3 seconds
 Cooldown         : 8 seconds
 Labels           : 23: Hunter Spells
-Affecting Spells : Savage Strikes (19159 effect#1), Catlike Reflexes (415428 effect#3), Resourcefulness (440529 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
+Affecting Spells : Savage Strikes (19159 effect#1), Efficiency (19416 effect#1), Catlike Reflexes (415428 effect#3), Resourcefulness (440529 effect#1), Clever Strikes (467331 effect#1), S03 - Item - TAQ - Hunter - Melee 4P Bonus (1213309 effect#1), Predator's Edge (1310627 effect#1)
 Family Flags     : 85
 Attributes       : Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Aura Points On Client (268), Unknown (493)
 Effects          :
@@ -11420,7 +11525,7 @@ Name             : Freezing Trap (id=1324500)
 Class            : Hunter
 School           : Frost
 Spell Type       : None
-Resource         : 50 Base Mana (0) (id=315116)[Hotfixed: NEW POWER]
+Resource         : 50 Base Mana (0) (id=315116)
 Range            : 10 yards
 Duration         : 10 seconds
 Cooldown         : 30 seconds
@@ -11438,7 +11543,7 @@ Name             : Freezing Trap (id=1324501)
 Class            : Hunter
 School           : Frost
 Spell Type       : None
-Resource         : 75 Base Mana (0) (id=315115)[Hotfixed: NEW POWER]
+Resource         : 75 Base Mana (0) (id=315115)
 Range            : 10 yards
 Duration         : 15 seconds
 Cooldown         : 30 seconds
@@ -11456,7 +11561,7 @@ Name             : Freezing Trap (id=1324502)
 Class            : Hunter
 School           : Frost
 Spell Type       : None
-Resource         : 100 Base Mana (0) (id=315114)[Hotfixed: NEW POWER]
+Resource         : 100 Base Mana (0) (id=315114)
 Range            : 10 yards
 Duration         : 20 seconds
 Cooldown         : 30 seconds
@@ -11471,11 +11576,10 @@ Description      : $@spelldesc14309
 Tooltip          : $@spellaura14309
 
 Name             : Scare Beast (id=1324506) 
-Hotfixed         : Attributes, Required Level (0 -> 14)
 Class            : Hunter
 School           : Nature
 Spell Type       : None
-Resource         : 35 Base Mana (0) (id=315092)[Hotfixed: NEW POWER]
+Resource         : 35 Base Mana (0) (id=315092)
 Spell Level      : 14
 Range            : 10 yards
 Cast Time        : 1.5 seconds
@@ -11493,11 +11597,10 @@ Description      : $@spelldesc1513
 Tooltip          : $@spellaura1513
 
 Name             : Scare Beast (id=1324507) 
-Hotfixed         : Attributes, Required Level (0 -> 30)
 Class            : Hunter
 School           : Nature
 Spell Type       : None
-Resource         : 50 Base Mana (0) (id=315093)[Hotfixed: NEW POWER]
+Resource         : 50 Base Mana (0) (id=315093)
 Spell Level      : 30
 Range            : 10 yards
 Cast Time        : 1.5 seconds
@@ -11515,11 +11618,10 @@ Description      : $@spelldesc14326
 Tooltip          : $@spellaura14326
 
 Name             : Scare Beast (id=1324510) 
-Hotfixed         : Attributes, Required Level (0 -> 46)
 Class            : Hunter
 School           : Nature
 Spell Type       : None
-Resource         : 75 Base Mana (0) (id=315094)[Hotfixed: NEW POWER]
+Resource         : 75 Base Mana (0) (id=315094)
 Spell Level      : 46
 Range            : 10 yards
 Cast Time        : 1.5 seconds

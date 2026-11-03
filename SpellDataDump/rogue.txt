@@ -1,5 +1,6 @@
-SimulationCraft 1210-01 for World of Warcraft 1.60.1.70532 Live
+SimulationCraft 1210-01 for World of Warcraft 1.60.1.70707 Live
 Name             : Backstab (desc=Rank 1) (id=53) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -11,7 +12,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Opportunity (14057 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Puncturing Wounds (1224716 effect#1), Eureka! (1259812 effects: #1, #2), Thousand Cuts (1310723 effect#1)
 Family Flags     : 2, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679092)   : Normalized Weapon Damage (121)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -40,7 +41,7 @@ Proc Chance      : 101%
 Mechanic         : Stun
 Affecting Spells : Improved Kidney Shot (14174 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 21
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679152)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -70,6 +71,7 @@ Effects          :
 Description      : Allows one-hand and off-hand weapons to be equipped in the off-hand.
 
 Name             : Garrote (desc=Rank 1) (id=703) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -83,7 +85,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Bleed
 Affecting Spells : Opportunity (14057 effect#2), Dirty Deeds (14082 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 8
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679355)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 24 | Scaled Value: 24 | Target: Targeted Enemy (6)
@@ -93,6 +95,7 @@ Description      : Garrote the enemy, causing $o1 damage over $d, increased by y
 Tooltip          : $s1 damage every $t1 seconds.
 
 Name             : Distract (id=1725) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Magic
@@ -106,9 +109,9 @@ Category         : 22 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 30 seconds
 Mechanic         : Distract
-Affecting Spells : Improved Distract (14084 effects: #1, #2), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1)
+Affecting Spells : Improved Distract (14084 effects: #1, #2), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 12
-Attributes       : Is Ability (4), Do Not Sheath (18), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), No AutoCast (AI) (49), Not an Action (92), Suppress Target Procs (113), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), No AutoCast (AI) (49), Not an Action (92), Suppress Target Procs (113), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1)
 Effects          :
 #1 (id=680046)   : Distract (69)
@@ -117,6 +120,7 @@ Description      : Throws a distraction, attracting the attention of all nearby 
 Tooltip          : Stealth detection reduced.
 
 Name             : Sinister Strike (desc=Rank 1) (id=1752) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -128,7 +132,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Sinister Strike (13732 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Saber Slash (424785 effect#5), Main Gauche (424919 effect#4), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Main Gauche (462752 effects: #1, #2, #3), Clearcasting (467735 effect#1), Strikes of the Sinister (1218154 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 1, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680897)   : Normalized Weapon Damage (121)
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
@@ -137,6 +141,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sinister Strike (desc=Rank 2) (id=1757) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -148,7 +153,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Sinister Strike (13732 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Saber Slash (424785 effect#5), Main Gauche (424919 effect#4), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Main Gauche (462752 effects: #1, #2, #3), Clearcasting (467735 effect#1), Strikes of the Sinister (1218154 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 1, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680036)   : Normalized Weapon Damage (121)
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 1 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
@@ -157,6 +162,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sinister Strike (desc=Rank 3) (id=1758) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -168,7 +174,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Sinister Strike (13732 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Saber Slash (424785 effect#5), Main Gauche (424919 effect#4), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Main Gauche (462752 effects: #1, #2, #3), Clearcasting (467735 effect#1), Strikes of the Sinister (1218154 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 1, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680038)   : Normalized Weapon Damage (121)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
@@ -177,6 +183,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sinister Strike (desc=Rank 4) (id=1759) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -188,7 +195,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Sinister Strike (13732 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Saber Slash (424785 effect#5), Main Gauche (424919 effect#4), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Main Gauche (462752 effects: #1, #2, #3), Clearcasting (467735 effect#1), Strikes of the Sinister (1218154 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 1, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680756)   : Normalized Weapon Damage (121)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
@@ -197,6 +204,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sinister Strike (desc=Rank 5) (id=1760) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -209,7 +217,7 @@ Category         : 40 (Type 0x0)
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Sinister Strike (13732 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Saber Slash (424785 effect#5), Main Gauche (424919 effect#4), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Main Gauche (462752 effects: #1, #2, #3), Clearcasting (467735 effect#1), Strikes of the Sinister (1218154 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 1, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679643)   : Normalized Weapon Damage (121)
                    Base Value: 22 | Scaled Value: 22 | SP Coefficient: 1 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
@@ -218,6 +226,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Kick (desc=Rank 1) (id=1766) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -232,7 +241,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Improved Kick (24434 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 4
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679719)   : School Damage (2): physical
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -241,6 +250,7 @@ Effects          :
 Description      : A quick kick that injures a single foe for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 Name             : Kick (desc=Rank 2) (id=1767) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -255,7 +265,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Improved Kick (24434 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 4
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679744)   : School Damage (2): physical
                    Base Value: 30 | Scaled Value: 30 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -264,6 +274,7 @@ Effects          :
 Description      : A quick kick that injures a single foe for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 Name             : Kick (desc=Rank 3) (id=1768) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -278,7 +289,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Improved Kick (24434 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 4
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679746)   : School Damage (2): physical
                    Base Value: 45 | Scaled Value: 45 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -287,6 +298,7 @@ Effects          :
 Description      : A quick kick that injures a single foe for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 Name             : Kick (desc=Rank 4) (id=1769) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -301,7 +313,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Improved Kick (24434 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 4
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679748)   : School Damage (2): physical
                    Base Value: 80 | Scaled Value: 80 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -310,6 +322,7 @@ Effects          :
 Description      : A quick kick that injures a single foe for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.
 
 Name             : Gouge (desc=Rank 1) (id=1776) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -327,7 +340,7 @@ Proc Chance      : 101%
 Mechanic         : Incapacitate
 Affecting Spells : Improved Gouge (13741 effect#1), Lethality (14128 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 3
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=679725)   : School Damage (2): physical
@@ -340,6 +353,7 @@ Description      : Causes $s1 damage, stops your attack, and incapacitates the t
 Tooltip          : Incapacitated.
 
 Name             : Gouge (desc=Rank 2) (id=1777) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -357,7 +371,7 @@ Proc Chance      : 101%
 Mechanic         : Incapacitate
 Affecting Spells : Improved Gouge (13741 effect#1), Lethality (14128 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 3
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=680364)   : School Damage (2): physical
@@ -370,6 +384,7 @@ Description      : Causes $s1 damage, stops your attack, and incapacitates the t
 Tooltip          : Incapacitated.
 
 Name             : Stealth (desc=Rank 1) (id=1784) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -381,7 +396,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Camouflage (13975 effects: #1, #2), Carnage (432275 effect#1)
 Family Flags     : 22
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Aura Points On Client (268), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Aura Points On Client (268), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=680122)   : Apply Aura (6) | Shapeshift (36)
@@ -395,6 +410,7 @@ Description      : Allows the rogue to sneak around, but reduces your speed by $
 Tooltip          : Stealthed.  Movement slowed by $w3%.
 
 Name             : Stealth (desc=Rank 2) (id=1785) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -406,7 +422,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Camouflage (13975 effects: #1, #2), Carnage (432275 effect#1)
 Family Flags     : 22
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Aura Points On Client (268), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Aura Points On Client (268), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=680183)   : Apply Aura (6) | Shapeshift (36)
@@ -420,6 +436,7 @@ Description      : Allows the rogue to sneak around, but reduces your speed by $
 Tooltip          : Stealthed.  Movement slowed by $w3%.
 
 Name             : Stealth (desc=Rank 3) (id=1786) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -431,7 +448,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Camouflage (13975 effects: #1, #2), Carnage (432275 effect#1)
 Family Flags     : 22
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Aura Points On Client (268), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Aura Points On Client (268), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=680082)   : Apply Aura (6) | Shapeshift (36)
@@ -445,6 +462,7 @@ Description      : Allows the rogue to sneak around, but reduces your speed by $
 Tooltip          : Stealthed.  Movement slowed by $w3%.
 
 Name             : Stealth (desc=Rank 4) (id=1787) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -456,7 +474,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Camouflage (13975 effects: #1, #2), Carnage (432275 effect#1)
 Family Flags     : 22
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Aura Points On Client (268), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Aura Points On Client (268), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13), Mount (17)
 Effects          :
 #1 (id=680105)   : Apply Aura (6) | Shapeshift (36)
@@ -470,19 +488,21 @@ Description      : Allows the rogue to sneak around, but reduces your speed by $
 Tooltip          : Stealthed.  Movement slowed by $w3%.
 
 Name             : Pick Lock (id=1804) 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
 Spell Level      : 1
 Range            : 5 yards
 Cast Time        : 5 seconds
-Attributes       : Is Ability (4), Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680465)   : Open Lock (33)
                    Base Value: 5 | Scaled Value: 450 | Points Per Level: 5 | Misc Value: 1 | Target: Targeted Item Gameobject (26)
 Description      : Allows opening of locked chests and doors.
 
 Name             : Cheap Shot (id=1833) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -498,7 +518,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Stun
 Affecting Spells : Dirty Deeds (14082 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 10
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681382)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -508,6 +528,7 @@ Description      : Stuns the target for $d.  Must be stealthed.  Awards $s2 comb
 Tooltip          : Stunned.
 
 Name             : Disarm Trap (id=1842) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -515,15 +536,16 @@ Spell Level      : 30
 Range            : 5 yards
 Cast Time        : 2 seconds
 Labels           : 20: Rogue Spells
-Affecting Spells : Carnage (432275 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1)
+Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 31
-Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679710)   : Open Lock (33)
                    Base Value: 200 | Scaled Value: 500 | Points Per Level: 5 | Misc Value: 4 | Target: Targeted Gameobject (23)
 Description      : Sneak up on the trap in order to disarm it.  Don't get too close or the trap will go off.
 
 Name             : Vanish (desc=Rank 1) (id=1856) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -535,7 +557,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
 Affecting Spells : Elusiveness (13981 effect#1), Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Tank 4P Bonus (457440 effect#1), S03 - Item - T2 - Rogue - Damage 6P Bonus (467739 effects: #1, #3)
 Family Flags     : 11
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Allow While Sitting (27), Allow While Stealthed (37), No shapeshift UI (65), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Allow While Sitting (27), Allow While Stealthed (37), No shapeshift UI (65), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=681213)   : Trigger Spell (64): Vanish
@@ -548,6 +570,7 @@ Description      : Allows the rogue to vanish from sight, entering an improved s
 Tooltip          : Improved stealth.
 
 Name             : Vanish (desc=Rank 2) (id=1857) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -559,7 +582,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
 Affecting Spells : Elusiveness (13981 effect#1), Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Tank 4P Bonus (457440 effect#1), S03 - Item - T2 - Rogue - Damage 6P Bonus (467739 effects: #1, #3)
 Family Flags     : 11
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Allow While Sitting (27), Allow While Stealthed (37), No shapeshift UI (65), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Allow While Sitting (27), Allow While Stealthed (37), No shapeshift UI (65), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=681398)   : Trigger Spell (64): Vanish
@@ -572,13 +595,13 @@ Description      : Allows the rogue to vanish from sight, entering an improved s
 Tooltip          : Improved stealth.
 
 Name             : Safe Fall (desc=Passive) (id=1860) [Passive] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
 Spell Level      : 40
 Duration         : Aura (infinite)
-Proc Chance      : 101%
-Attributes       : Is Ability (4), Passive (6), Do Not Sheath (18), Unknown (493)
+Attributes       : Is Ability (4), Passive (6), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681376)   : Apply Aura (6) | Reduce Fall Damage (144)
                    Base Value: 17 | Scaled Value: 17 | SP Coefficient: 1 | Target: Self (1)
@@ -600,7 +623,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681139)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 5 | Scaled Value: 5 | Points Per Combo Point: 1.18 | Target: Targeted Enemy (6)
@@ -617,6 +640,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Feint (desc=Rank 1) (id=1966) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -630,7 +654,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Sleight of Hand (30892 effect#2), Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Damage 2P Bonus (457329 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 27
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=692957)   : Threat (63)
                    Base Value: -750 | Scaled Value: -800 | Points Per Level: -5 | Target: Targeted Enemy (6)
@@ -638,7 +662,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a small amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 2) (id=2070) [Spell Family (8)] 
-Hotfixed         : Mechanic (14 -> 30)
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -655,7 +679,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Sap
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1)
 Family Flags     : 7
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Limit N (165), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Limit N (165), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=681308)   : Apply Aura (6) | Stun (12)
@@ -664,6 +688,7 @@ Description      : Incapacitates the target for up to $d. Only works on Humanoid
 Tooltip          : Incapacitated.
 
 Name             : Blind (id=2094) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Nature
 Spell Type       : Ranged
@@ -678,7 +703,7 @@ Proc Chance      : 101%
 Mechanic         : Disorient
 Affecting Spells : Elusiveness (13981 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1)
 Family Flags     : 24
-Attributes       : Is Ability (4), Not Shapeshifted (16), Cancels Auto Attack Combat (20), Heartbeat Resist (30), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Cancels Auto Attack Combat (20), Heartbeat Resist (30), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=680256)   : Apply Aura (6) | Decrease Movement Speed% (33)
@@ -700,7 +725,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679923)   : School Damage (2): physical
                    Base Value: 3 | Scaled Value: 3 (delta=1.333333) | SP Coefficient: 1 | Points Per Combo Point: 5 | Target: Targeted Enemy (6)
@@ -736,6 +761,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Backstab (desc=Rank 2) (id=2589) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -747,7 +773,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Opportunity (14057 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Puncturing Wounds (1224716 effect#1), Eureka! (1259812 effects: #1, #2), Thousand Cuts (1310723 effect#1)
 Family Flags     : 2, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679987)   : Normalized Weapon Damage (121)
                    Base Value: 20 | Scaled Value: 20 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -758,6 +784,7 @@ Effects          :
 Description      : Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Backstab (desc=Rank 3) (id=2590) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -769,7 +796,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Opportunity (14057 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Puncturing Wounds (1224716 effect#1), Eureka! (1259812 effects: #1, #2), Thousand Cuts (1310723 effect#1)
 Family Flags     : 2, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679990)   : Normalized Weapon Damage (121)
                    Base Value: 32 | Scaled Value: 32 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -780,6 +807,7 @@ Effects          :
 Description      : Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Backstab (desc=Rank 4) (id=2591) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -791,7 +819,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Opportunity (14057 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Puncturing Wounds (1224716 effect#1), Eureka! (1259812 effects: #1, #2), Thousand Cuts (1310723 effect#1)
 Family Flags     : 2, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680042)   : Normalized Weapon Damage (121)
                    Base Value: 46 | Scaled Value: 46 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -807,7 +835,6 @@ School           : Physical
 Spell Type       : Ranged
 Spell Level      : 1
 Range            : 8 - 30 yards
-Cast Time        : 0.5 seconds
 Velocity         : 20 yards/sec
 Requires weapon  : Thrown
 Category         : 76 (Type 0x0)
@@ -907,6 +934,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy for $2819o1 Nature damage over $2819d.  Stacks up to $2819u times on a single target.  $m3 charges.
 
 Name             : Deadly Poison (desc=Rank 1) (id=2835) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -914,7 +942,7 @@ Spell Level      : 30
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680946)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -926,14 +954,14 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $2823h% chance of poisoning the enemy for $2818o1 Nature damage over $2818d.  Stacks up to $2818u times on a single target.  $m3 charges.
 
 Name             : Detect Traps (desc=Passive) (id=2836) [Passive] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
 Spell Level      : 24
 GCD              : 1.5 seconds
 Duration         : Aura (infinite)
-Proc Chance      : 101%
-Attributes       : Passive (6), Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (493)
+Attributes       : Passive (6), Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
 #2 (id=680534)   : Apply Aura (6) | Invisibility Detection (19)
                    Base Value: 300 | Scaled Value: 300 | Misc Value: 3 | Target: Self (1)
@@ -941,6 +969,7 @@ Description      : Greatly increased chance to detect traps.
 Tooltip          : Detecting traps.
 
 Name             : Deadly Poison II (desc=Rank 2) (id=2837) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -948,7 +977,7 @@ Spell Level      : 38
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680618)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -960,6 +989,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $2824h% chance of poisoning the enemy for $2819o1 Nature damage over $2819d.  Stacks up to $2819u times on a single target.  $m3 charges.
 
 Name             : Sprint (desc=Rank 1) (id=2983) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -970,9 +1000,9 @@ Cooldown         : 300 seconds
 Category         : 44 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1), Sprint Duration Increase (459605 effect#1)
+Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1)
 Family Flags     : 6
-Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680653)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
@@ -1029,6 +1059,7 @@ Description      : Movement slowed by $s1%.
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Crippling Poison (desc=Rank 1) (id=3420) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1036,7 +1067,7 @@ Spell Level      : 20
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681990)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -1046,6 +1077,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $3408h% chance of poisoning the enemy, slowing their movement speed by $3409s1% for $3409d.
 
 Name             : Crippling Poison II (desc=Rank 2) (id=3421) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1053,7 +1085,7 @@ Spell Level      : 50
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681991)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -1076,7 +1108,7 @@ Duration         : 6 seconds
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Slice and Dice (14165 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 18
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=683950)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -1092,6 +1124,7 @@ Tooltip          : Melee attack speed increased by $s2%.
 Variables        : $mult=$?s14165[${$14165m1/100+1}][${1}]
 
 Name             : Evasion (id=5277) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1105,7 +1138,7 @@ Category Cooldown: 300 seconds
 Proc Chance      : 101%
 Affecting Spells : Endurance (13742 effect#1), Carnage (432275 effect#1)
 Family Flags     : 5
-Attributes       : Is Ability (4), Not Shapeshifted (16), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684218)   : Apply Aura (6) | Modify Dodge% (49)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
@@ -1165,6 +1198,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, increasing their casting time by $5760s1% for $5760d.  $m2 charges.
 
 Name             : Mind-numbing Poison (desc=Rank 1) (id=5763) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1172,7 +1206,7 @@ Spell Level      : 24
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684402)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -1210,7 +1244,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684898)   : School Damage (2): physical
                    Base Value: 7 | Scaled Value: 7 (delta=1.142857) | SP Coefficient: 1 | Points Per Combo Point: 11 | Target: Targeted Enemy (6)
@@ -1240,7 +1274,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=685144)   : School Damage (2): physical
                    Base Value: 13 | Scaled Value: 13 (delta=1.076923) | SP Coefficient: 1 | Points Per Combo Point: 19 | Target: Targeted Enemy (6)
@@ -1270,7 +1304,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=685146)   : School Damage (2): physical
                    Base Value: 20 | Scaled Value: 20 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 31 | Target: Targeted Enemy (6)
@@ -1287,6 +1321,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Feint (desc=Rank 2) (id=6768) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1300,7 +1335,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Sleight of Hand (30892 effect#2), Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Damage 2P Bonus (457329 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 27
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684929)   : Threat (63)
                    Base Value: -1200 | Scaled Value: -1250 | Points Per Level: -5 | Target: Targeted Enemy (6)
@@ -1308,7 +1343,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a medium amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 1) (id=6770) [Spell Family (8)] 
-Hotfixed         : Mechanic (14 -> 30)
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1325,7 +1360,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Sap
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1)
 Family Flags     : 7
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Limit N (165), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Limit N (165), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=684682)   : Apply Aura (6) | Stun (12)
@@ -1347,7 +1382,7 @@ Duration         : 6 seconds
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Slice and Dice (14165 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 18
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Immunities (29), No Threat (42), Discount Power On Miss (59), Ignore Line of Sight (66), Always Hit (114), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Ignore Caster & Target Restrictions (124), Do Not Display Range (126), No Harmful Threat (132), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684798)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -1363,6 +1398,7 @@ Tooltip          : Melee attack speed increased by $s2%.
 Variables        : $mult=$?s14165[${$14165m1/100+1}][${1}]
 
 Name             : Sinister Strike (desc=Rank 6) (id=8621) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1375,7 +1411,7 @@ Category         : 40 (Type 0x0)
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Sinister Strike (13732 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Saber Slash (424785 effect#5), Main Gauche (424919 effect#4), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Main Gauche (462752 effects: #1, #2, #3), Clearcasting (467735 effect#1), Strikes of the Sinister (1218154 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 1, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687434)   : Normalized Weapon Damage (121)
                    Base Value: 33 | Scaled Value: 33 | SP Coefficient: 1 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
@@ -1397,7 +1433,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686340)   : School Damage (2): physical
                    Base Value: 30 | Scaled Value: 30 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 45 | Target: Targeted Enemy (6)
@@ -1427,7 +1463,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687549)   : School Damage (2): physical
                    Base Value: 44 | Scaled Value: 44 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 71 | Target: Targeted Enemy (6)
@@ -1444,6 +1480,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Gouge (desc=Rank 3) (id=8629) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1461,7 +1498,7 @@ Proc Chance      : 101%
 Mechanic         : Incapacitate
 Affecting Spells : Improved Gouge (13741 effect#1), Lethality (14128 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 3
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=686161)   : School Damage (2): physical
@@ -1474,6 +1511,7 @@ Description      : Causes $s1 damage, stops your attack, and incapacitates the t
 Tooltip          : Incapacitated.
 
 Name             : Garrote (desc=Rank 2) (id=8631) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1487,7 +1525,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Bleed
 Affecting Spells : Opportunity (14057 effect#2), Dirty Deeds (14082 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 8
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686233)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 34 | Scaled Value: 34 | Target: Targeted Enemy (6)
@@ -1497,6 +1535,7 @@ Description      : Garrote the enemy, causing $o1 damage over $d, increased by y
 Tooltip          : $s1 damage every $t1 seconds.
 
 Name             : Garrote (desc=Rank 3) (id=8632) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1510,7 +1549,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Bleed
 Affecting Spells : Opportunity (14057 effect#2), Dirty Deeds (14082 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 8
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686321)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 47 | Scaled Value: 47 | Target: Targeted Enemy (6)
@@ -1520,6 +1559,7 @@ Description      : Garrote the enemy, causing $o1 damage over $d, increased by y
 Tooltip          : $s1 damage every $t1 seconds.
 
 Name             : Garrote (desc=Rank 4) (id=8633) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1533,7 +1573,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Bleed
 Affecting Spells : Opportunity (14057 effect#2), Dirty Deeds (14082 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 8
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687351)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 59 | Scaled Value: 59 | Target: Targeted Enemy (6)
@@ -1543,6 +1583,7 @@ Description      : Garrote the enemy, causing $o1 damage over $d, increased by y
 Tooltip          : $s1 damage every $t1 seconds.
 
 Name             : Feint (desc=Rank 3) (id=8637) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1556,7 +1597,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Sleight of Hand (30892 effect#2), Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Damage 2P Bonus (457329 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 27
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686763)   : Threat (63)
                    Base Value: -1950 | Scaled Value: -2000 | Points Per Level: -5 | Target: Targeted Enemy (6)
@@ -1579,7 +1620,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686338)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 7 | Scaled Value: 7 | Points Per Combo Point: 1.78 | Target: Targeted Enemy (6)
@@ -1611,7 +1652,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686443)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 11 | Scaled Value: 11 | Points Per Combo Point: 2.37 | Target: Targeted Enemy (6)
@@ -1647,7 +1688,7 @@ Proc Chance      : 101%
 Mechanic         : Stun
 Affecting Spells : Improved Kidney Shot (14174 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 21
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Prevents Anim (50), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686634)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -1681,7 +1722,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686639)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -90 | Target: Targeted Enemy (6)
@@ -1711,7 +1752,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687242)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -180 | Target: Targeted Enemy (6)
@@ -1741,7 +1782,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687526)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -270 | Target: Targeted Enemy (6)
@@ -1756,6 +1797,7 @@ Description      : Finishing move that exposes the target for $d, reducing Armor
 Tooltip          : Armor decreased by $w1.
 
 Name             : Ambush (desc=Rank 1) (id=8676) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1768,7 +1810,7 @@ Labels           : 20: Rogue Spells
 Stance Mask      : 0x20000000
 Affecting Spells : Opportunity (14057 effect#1), Improved Ambush (14079 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Cutthroat (462707 effect#1), Clearcasting (467735 effect#1), S03 - Item - ZG - Rogue - Dagger 5P Bonus (468438 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 9, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686098)   : Normalized Weapon Damage (121)
                    Base Value: 28 | Scaled Value: 28 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -1814,6 +1856,7 @@ Effects          :
 Description      : $s1 Nature damage.
 
 Name             : Instant Poison (desc=Rank 1) (id=8681) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1821,7 +1864,7 @@ Spell Level      : 20
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=685556)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -1868,6 +1911,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy which instantly inflicts $8685s1 Nature damage.  $m2 charges.
 
 Name             : Instant Poison II (desc=Rank 2) (id=8687) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1875,7 +1919,7 @@ Spell Level      : 28
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686845)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -1922,6 +1966,7 @@ Effects          :
 Description      : $s1 Nature damage.
 
 Name             : Instant Poison III (desc=Rank 3) (id=8691) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1929,7 +1974,7 @@ Spell Level      : 36
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686345)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -1978,6 +2023,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, increasing their casting time by $8692s1% for $8692d.  $m2 charges.
 
 Name             : Mind-numbing Poison II (desc=Rank 2) (id=8694) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1985,7 +2031,7 @@ Spell Level      : 38
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686445)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -1997,6 +2043,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $8693h% chance of poisoning the enemy, increasing their casting time by $8692s1% for $8692d.  $m3 charges.
 
 Name             : Sprint (desc=Rank 2) (id=8696) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2007,9 +2054,9 @@ Cooldown         : 300 seconds
 Category         : 44 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1), Sprint Duration Increase (459605 effect#1)
+Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1)
 Family Flags     : 6
-Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687525)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 60 | Scaled Value: 60 | Target: Self (1)
@@ -2017,6 +2064,7 @@ Description      : Increases the rogue's movement speed by $s1% for $d.  Does no
 Tooltip          : Movement speed increased by $s1%.
 
 Name             : Backstab (desc=Rank 5) (id=8721) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2028,7 +2076,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Opportunity (14057 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Puncturing Wounds (1224716 effect#1), Eureka! (1259812 effects: #1, #2), Thousand Cuts (1310723 effect#1)
 Family Flags     : 2, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688226)   : Normalized Weapon Damage (121)
                    Base Value: 60 | Scaled Value: 60 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2039,6 +2087,7 @@ Effects          :
 Description      : Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ambush (desc=Rank 2) (id=8724) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2051,7 +2100,7 @@ Labels           : 20: Rogue Spells
 Stance Mask      : 0x20000000
 Affecting Spells : Opportunity (14057 effect#1), Improved Ambush (14079 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Cutthroat (462707 effect#1), Clearcasting (467735 effect#1), S03 - Item - ZG - Rogue - Dagger 5P Bonus (468438 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 9, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687642)   : Normalized Weapon Damage (121)
                    Base Value: 40 | Scaled Value: 40 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2062,6 +2111,7 @@ Effects          :
 Description      : Ambush the target, causing $s2% weapon damage plus 100 to the target.  Must be stealthed and behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ambush (desc=Rank 3) (id=8725) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2074,7 +2124,7 @@ Labels           : 20: Rogue Spells
 Stance Mask      : 0x20000000
 Affecting Spells : Opportunity (14057 effect#1), Improved Ambush (14079 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Cutthroat (462707 effect#1), Clearcasting (467735 effect#1), S03 - Item - ZG - Rogue - Dagger 5P Bonus (468438 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 9, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686885)   : Normalized Weapon Damage (121)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2100,7 +2150,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689964)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -360 | Target: Targeted Enemy (6)
@@ -2130,7 +2180,7 @@ Labels           : 20: Rogue Spells
 Proc Chance      : 101%
 Affecting Spells : Improved Expose Armor (14168 effect#1), Relentless Strikes (14179 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 19
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Aura Never Bounces (148), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688758)   : Apply Aura (6) | Unknown(674)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Points Per Combo Point: -450 | Target: Targeted Enemy (6)
@@ -2181,6 +2231,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, slowing their movement speed by $11201s1% for $11201d.
 
 Name             : Ambush (desc=Rank 4) (id=11267) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2193,7 +2244,7 @@ Labels           : 20: Rogue Spells
 Stance Mask      : 0x20000000
 Affecting Spells : Opportunity (14057 effect#1), Improved Ambush (14079 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Cutthroat (462707 effect#1), Clearcasting (467735 effect#1), S03 - Item - ZG - Rogue - Dagger 5P Bonus (468438 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 9, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690323)   : Normalized Weapon Damage (121)
                    Base Value: 74 | Scaled Value: 74 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2204,6 +2255,7 @@ Effects          :
 Description      : Ambush the target, causing $s2% weapon damage plus 185 to the target.  Must be stealthed and behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ambush (desc=Rank 5) (id=11268) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2216,7 +2268,7 @@ Labels           : 20: Rogue Spells
 Stance Mask      : 0x20000000
 Affecting Spells : Opportunity (14057 effect#1), Improved Ambush (14079 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Cutthroat (462707 effect#1), Clearcasting (467735 effect#1), S03 - Item - ZG - Rogue - Dagger 5P Bonus (468438 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 9, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689928)   : Normalized Weapon Damage (121)
                    Base Value: 92 | Scaled Value: 92 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2227,6 +2279,7 @@ Effects          :
 Description      : Ambush the target, causing $s2% weapon damage plus 230 to the target.  Must be stealthed and behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ambush (desc=Rank 6) (id=11269) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2239,7 +2292,7 @@ Labels           : 20: Rogue Spells
 Stance Mask      : 0x20000000
 Affecting Spells : Opportunity (14057 effect#1), Improved Ambush (14079 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Cutthroat (462707 effect#1), Clearcasting (467735 effect#1), S03 - Item - ZG - Rogue - Dagger 5P Bonus (468438 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 9, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690070)   : Normalized Weapon Damage (121)
                    Base Value: 116 | Scaled Value: 116 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2265,7 +2318,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687807)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 16 | Scaled Value: 16 | Points Per Combo Point: 2.96 | Target: Targeted Enemy (6)
@@ -2297,7 +2350,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687903)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 22 | Scaled Value: 22 | Points Per Combo Point: 4.14 | Target: Targeted Enemy (6)
@@ -2329,7 +2382,7 @@ Labels           : 20: Rogue Spells
 Mechanic         : Bleed
 Affecting Spells : Serrated Blades (14171 effect#2), Relentless Strikes (14179 effect#1), Hemorrhage (16511 effect#3), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1)
 Family Flags     : 20
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687822)   : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
                    Base Value: 35 | Scaled Value: 35 | Points Per Combo Point: 4.73 | Target: Targeted Enemy (6)
@@ -2346,6 +2399,7 @@ Description      : Finishing move that causes damage over time, increased by you
 Tooltip          : $w1 damage every $t1 seconds.
 
 Name             : Backstab (desc=Rank 6) (id=11279) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2357,7 +2411,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Opportunity (14057 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Puncturing Wounds (1224716 effect#1), Eureka! (1259812 effects: #1, #2), Thousand Cuts (1310723 effect#1)
 Family Flags     : 2, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688864)   : Normalized Weapon Damage (121)
                    Base Value: 90 | Scaled Value: 90 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2368,6 +2422,7 @@ Effects          :
 Description      : Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Backstab (desc=Rank 7) (id=11280) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2379,7 +2434,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Opportunity (14057 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Puncturing Wounds (1224716 effect#1), Eureka! (1259812 effects: #1, #2), Thousand Cuts (1310723 effect#1)
 Family Flags     : 2, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688891)   : Normalized Weapon Damage (121)
                    Base Value: 110 | Scaled Value: 110 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2390,6 +2445,7 @@ Effects          :
 Description      : Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Backstab (desc=Rank 8) (id=11281) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2401,7 +2457,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Opportunity (14057 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Puncturing Wounds (1224716 effect#1), Eureka! (1259812 effects: #1, #2), Thousand Cuts (1310723 effect#1)
 Family Flags     : 2, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690275)   : Normalized Weapon Damage (121)
                    Base Value: 140 | Scaled Value: 140 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2412,6 +2468,7 @@ Effects          :
 Description      : Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Gouge (desc=Rank 4) (id=11285) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2429,7 +2486,7 @@ Proc Chance      : 101%
 Mechanic         : Incapacitate
 Affecting Spells : Improved Gouge (13741 effect#1), Lethality (14128 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 3
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=690542)   : School Damage (2): physical
@@ -2442,6 +2499,7 @@ Description      : Causes $s1 damage, stops your attack, and incapacitates the t
 Tooltip          : Incapacitated.
 
 Name             : Gouge (desc=Rank 5) (id=11286) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2459,7 +2517,7 @@ Proc Chance      : 101%
 Mechanic         : Incapacitate
 Affecting Spells : Improved Gouge (13741 effect#1), Lethality (14128 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 3
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Prevents Anim (50), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), Requires Main-Hand Weapon (106), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=690529)   : School Damage (2): physical
@@ -2472,6 +2530,7 @@ Description      : Causes $s1 damage, stops your attack, and incapacitates the t
 Tooltip          : Incapacitated.
 
 Name             : Garrote (desc=Rank 5) (id=11289) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2485,7 +2544,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Bleed
 Affecting Spells : Opportunity (14057 effect#2), Dirty Deeds (14082 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 8
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689763)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 74 | Scaled Value: 74 | Target: Targeted Enemy (6)
@@ -2495,6 +2554,7 @@ Description      : Garrote the enemy, causing $o1 damage over $d, increased by y
 Tooltip          : $s1 damage every $t1 seconds.
 
 Name             : Garrote (desc=Rank 6) (id=11290) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2508,7 +2568,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Bleed
 Affecting Spells : Opportunity (14057 effect#2), Dirty Deeds (14082 effect#1), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 8
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689794)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 92 | Scaled Value: 92 | Target: Targeted Enemy (6)
@@ -2518,6 +2578,7 @@ Description      : Garrote the enemy, causing $o1 damage over $d, increased by y
 Tooltip          : $s1 damage every $t1 seconds.
 
 Name             : Sinister Strike (desc=Rank 7) (id=11293) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2530,7 +2591,7 @@ Category         : 40 (Type 0x0)
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Sinister Strike (13732 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Saber Slash (424785 effect#5), Main Gauche (424919 effect#4), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Main Gauche (462752 effects: #1, #2, #3), Clearcasting (467735 effect#1), Strikes of the Sinister (1218154 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 1, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689973)   : Normalized Weapon Damage (121)
                    Base Value: 52 | Scaled Value: 52 | SP Coefficient: 1 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
@@ -2539,6 +2600,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sinister Strike (desc=Rank 8) (id=11294) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2551,7 +2613,7 @@ Category         : 40 (Type 0x0)
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Sinister Strike (13732 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Saber Slash (424785 effect#5), Main Gauche (424919 effect#4), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Main Gauche (462752 effects: #1, #2, #3), Clearcasting (467735 effect#1), Strikes of the Sinister (1218154 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 1, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689781)   : Normalized Weapon Damage (121)
                    Base Value: 68 | Scaled Value: 68 | SP Coefficient: 1 | Chain Multiplier: 1 | Chain Targets: 1 | Target: Targeted Enemy (6)
@@ -2560,7 +2622,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sap (desc=Rank 3) (id=11297) [Spell Family (8)] 
-Hotfixed         : Mechanic (14 -> 30)
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2577,7 +2639,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Sap
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1)
 Family Flags     : 7
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Limit N (165), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Limit N (165), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=690591)   : Apply Aura (6) | Stun (12)
@@ -2599,7 +2661,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689292)   : School Damage (2): physical
                    Base Value: 68 | Scaled Value: 68 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 110 | Target: Targeted Enemy (6)
@@ -2629,7 +2691,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689090)   : School Damage (2): physical
                    Base Value: 96 | Scaled Value: 96 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 151 | Target: Targeted Enemy (6)
@@ -2646,6 +2708,7 @@ $agg=$?s18427[${$18427m1/100+1}][${1}]
 $mult=${$<impE>*$<agg>}
 
 Name             : Feint (desc=Rank 4) (id=11303) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2659,7 +2722,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Sleight of Hand (30892 effect#2), Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Damage 2P Bonus (457329 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 27
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688797)   : Threat (63)
                    Base Value: -3000 | Scaled Value: -3050 | Points Per Level: -5 | Target: Targeted Enemy (6)
@@ -2667,6 +2730,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
 Name             : Sprint (desc=Rank 3) (id=11305) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2677,9 +2741,9 @@ Cooldown         : 300 seconds
 Category         : 44 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
-Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1), Sprint Duration Increase (459605 effect#1)
+Affecting Spells : Endurance (13742 effect#1), Improved Sprint (13743 effect#1), Sprint Duration Increase (23049 effect#1), Carnage (432275 effect#1)
 Family Flags     : 6
-Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688799)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 70 | Scaled Value: 70 | Target: Self (1)
@@ -2834,6 +2898,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy which instantly inflicts $11337s1 Nature damage.  $m2 charges.
 
 Name             : Instant Poison IV (desc=Rank 4) (id=11341) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2841,7 +2906,7 @@ Spell Level      : 44
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688731)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -2853,6 +2918,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60}  minutes.
 Each strike has a $11338h% chance of poisoning the enemy which instantly inflicts $11335s1 Nature damage.  $m2 charges.
 
 Name             : Instant Poison V (desc=Rank 5) (id=11342) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2860,7 +2926,7 @@ Spell Level      : 52
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688720)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -2872,6 +2938,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $11339h% chance of poisoning the enemy which instantly inflicts $11336s1 Nature damage.  $m3 charges.
 
 Name             : Instant Poison VI (desc=Rank 6) (id=11343) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2879,7 +2946,7 @@ Spell Level      : 60
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689030)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -2975,6 +3042,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy for $11354o1 Nature damage over $11354d.  Stacks up to $11354u times on a single target.  $m3 charges.
 
 Name             : Deadly Poison III (desc=Rank 3) (id=11357) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2982,7 +3050,7 @@ Spell Level      : 46
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689951)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -2994,6 +3062,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $11355h% chance of poisoning the enemy for $11353o1 Nature damage over $11353d.  Stacks up to $11353u times on a single target.  $m3 charges.
 
 Name             : Deadly Poison IV (desc=Rank 4) (id=11358) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3001,7 +3070,7 @@ Spell Level      : 54
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689852)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -3050,6 +3119,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, increasing their casting time by $11398s1% for $11398d.  $m2 charges.
 
 Name             : Mind-numbing Poison III (desc=Rank 3) (id=11400) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3057,7 +3127,7 @@ Spell Level      : 52
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690750)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -3107,6 +3177,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, reducing all healing effects used on them by $13218s1 for $13218d.  Stacks up to $13218u times on a single target.  $m2 charges.
 
 Name             : Wound Poison (desc=Rank 1) (id=13220) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3114,7 +3185,7 @@ Spell Level      : 32
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691462)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -3240,6 +3311,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, reducing all healing effects used on them by $13224s1 for $13224d.  Stacks up to $13224u times on a single target.  $m2 charges.
 
 Name             : Wound Poison II (desc=Rank 2) (id=13228) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3247,7 +3319,7 @@ Spell Level      : 40
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690826)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -3259,6 +3331,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $13225h% chance of poisoning the enemy, reducing all healing effects used on them by $13222s1 for $13222d.  Stacks up to $13222u times on a single target.  $m3 charges.
 
 Name             : Wound Poison III (desc=Rank 3) (id=13229) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3266,7 +3339,7 @@ Spell Level      : 48
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690493)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -3278,6 +3351,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $13226h% chance of poisoning the enemy, reducing all healing effects used on them by $13223s1 for $13223d.  Stacks up to $13223u times on a single target.  $m3 charges.
 
 Name             : Wound Poison IV (desc=Rank 4) (id=13230) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3285,7 +3359,7 @@ Spell Level      : 56
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690846)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -3907,7 +3981,6 @@ Effects          :
 Description      : Gives your finishing moves a $m1% chance to add a Combo Point to your target.
 
 Name             : Ruthlessness (id=14157) 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -4070,7 +4143,6 @@ Effects          :
 Description      : $s1 Energy restored.
 
 Name             : Premeditation (id=14183) [Spell Family (8)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=10, max_rank=1, req_points=0]
 Class            : Rogue
 School           : Physical
@@ -4304,7 +4376,6 @@ Effects          :
 Description      : Increases the damage dealt by your poisons by $m1% and gives your poisons an additional $m3% chance to resist dispel effects.
 
 Name             : Silenced - Kick (id=18425) [Spell Family (8)] 
-Hotfixed         : Attributes, Stance Mask (134217728 -> 0), Description
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -4421,6 +4492,7 @@ Effects          :
 Description      : Decreases the cooldown of Kick by $/1000;S1 sec.
 
 Name             : Backstab (desc=Rank 9) (id=25300) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -4432,7 +4504,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Opportunity (14057 effect#1), Lethality (14128 effect#1), Remorseless (14143 effect#1), Cold Blood (14177 effect#1), Aggression (18427 effect#1), Slaughter from the Shadows (424925 effects: #1, #2), Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Puncturing Wounds (1224716 effect#1), Eureka! (1259812 effects: #1, #2), Thousand Cuts (1310723 effect#1)
 Family Flags     : 2, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=700789)   : Normalized Weapon Damage (121)
                    Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -4443,6 +4515,7 @@ Effects          :
 Description      : Backstab the target, causing $s2% weapon damage plus $s1 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.
 
 Name             : Feint (desc=Rank 5) (id=25302) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -4456,7 +4529,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 10 seconds
 Affecting Spells : Sleight of Hand (30892 effect#2), Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Damage 2P Bonus (457329 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1)
 Family Flags     : 27
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=700792)   : Threat (63)
                    Base Value: -4000 | Scaled Value: -4050 | Points Per Level: -5 | Target: Targeted Enemy (6)
@@ -4464,6 +4537,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
 Name             : Deadly Poison V (desc=Rank 5) (id=25347) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -4471,7 +4545,7 @@ Spell Level      : 60
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=701940)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -4610,7 +4684,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Labels           : 20: Rogue Spells
 Affecting Spells : Improved Eviscerate (14162 effect#1), Cold Blood (14177 effect#1), Relentless Strikes (14179 effect#1), Aggression (18427 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), S03 - Item - T1 - Rogue - Damage 6P Bonus (457344 effect#1), S03 - Item - T1 - Rogue - Tank 6P Bonus (457464 effect#1), Main Gauche (462752 effect#3), Clearcasting (467735 effect#1), S03 - Item - RAQ - Rogue - Damage 3P Bonus (1213763 effect#1), Eureka! (1259812 effects: #1, #2), Flawless Execution (1310711 effect#1)
 Family Flags     : 17, 23
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), No Helpful Threat (131), No Partial Immunity (139), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=705836)   : School Damage (2): physical
                    Base Value: 108 | Scaled Value: 108 (delta=1) | SP Coefficient: 1 | Points Per Combo Point: 170 | Target: Targeted Enemy (6)
@@ -4684,6 +4758,7 @@ Description      : Coats a weapon with poison that lasts for 30 minutes.
 Each strike has a $h% chance of poisoning the enemy, slowing their movement speed by $3409s1% for $3409d.
 
 Name             : Mutilate (desc=Rank 2) (id=399956) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -4695,7 +4770,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1044476)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
@@ -6821,17 +6896,6 @@ Description      : Engrave your ring with the Defense Specialization rune:
 $@spellicon459312
 $@spelldesc459312
 
-Name             : Sprint Duration Increase (id=459605) [Spell Family (8), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1166538)  : Apply Aura (6) | Add Flat Modifier (107): Spell Duration (1)
-                   Base Value: 3000 | Scaled Value: 3000 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
-                   Affected Spells: Sprint (2983), Sprint (8696), Sprint (11305)
-                   Family Flags: 6
-Description      : Increases the duration of your Sprint ability by $/1000;s1 sec.
-
 Name             : Cutthroat (id=462707) [Spell Family (8)] 
 Class            : Rogue
 School           : Physical
@@ -7198,6 +7262,7 @@ Effects          :
 Description      : Reduces the Energy cost of your Sap and Blind abilities by $m1%.
 
 Name             : Mutilate (desc=Rank 3) (id=1241582) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -7209,7 +7274,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1240641)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
@@ -7222,6 +7287,7 @@ Effects          :
 Description      : Instantly attacks with both weapons for $1241585s2% weapon damage plus an additional ${$1241585m1*$1241585m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
 
 Name             : Mutilate (desc=Rank 4) (id=1241584) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -7233,7 +7299,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1240647)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
@@ -7328,26 +7394,6 @@ Effects          :
 #1 (id=1264777)  : Extra Attacks (19)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
 
-Name             : Improved Pick Pocket and Distract 01 (id=1291987) [Spell Family (8), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
-Effects          :
-#1 (id=1311716)  : Apply Aura (6) | Add Percent Modifier (108): Spell Penetration (16)
-                   Base Value: 1 | Scaled Value: 1 | Misc Value: 16 | Target: Self (1)
-                   Affected Spells: Distract (1725), Disarm Trap (1842)
-                   Family Flags: 12, 31
-Description      : Increases the chance your Pick Pocket and Distract abilities are successful by $s1%
-
-Name             : Safe Fall 05 (id=1292150) [Spell Family (8), Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
-Effects          :
-#1 (id=1312005)  : Apply Aura (6) | Reduce Fall Damage (144)
-                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
-Description      : Reduces damage from falling.
-
 Name             : Improved Expose Armor (id=1310697) 
 Class            : Rogue
 School           : Physical
@@ -7363,7 +7409,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 
 Name             : Venom (id=1310703) [Spell Family (8)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=1]
 Class            : Rogue
 School           : Physical
@@ -7439,6 +7484,7 @@ Effects          :
                    Base Value: 75 | Scaled Value: 0.75 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Mutilate (desc=Rank 1) (id=1310707) [Spell Family (8)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=5, col=2, max_rank=1, req_points=0]
 Class            : Rogue
 School           : Physical
@@ -7451,7 +7497,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1340426)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
