@@ -27,6 +27,14 @@ struct warlock_t final : public player_t
   {
     pet_t* imp = nullptr;
   } pets;
+
+  struct
+  {
+    spell_ranks_t corruption;
+    spell_ranks_t firebolt;
+    spell_ranks_t immolate;
+    spell_ranks_t shadow_bolt;
+  } rank;
 };
 
 struct warlock_module_t : public module_t
@@ -70,64 +78,30 @@ public:
 using warlock_spell_t  = warlock_action_t<spell_t>;
 
 // Shadow Bolt
-
-constexpr std::array shadow_bolt_ranks {
-  spell_container_t().set_spell(   686 ),
-  spell_container_t().set_spell(   695 ),
-  spell_container_t().set_spell(   705 ),
-  spell_container_t().set_spell(  1088 ),
-  spell_container_t().set_spell(  1106 ),
-  spell_container_t().set_spell(  7641 ),
-  spell_container_t().set_spell( 11659 ),
-  spell_container_t().set_spell( 11660 ),
-  spell_container_t().set_spell( 11661 ),
-  spell_container_t().set_spell( 25307 ),
-};
 struct shadow_bolt_t : public warlock_spell_t
 {
   shadow_bolt_t( warlock_t* player, util::string_view options_str ) :
-    warlock_spell_t( "shadow_bolt", player, player->find_rank( shadow_bolt_ranks )->spell( player ) )
+    warlock_spell_t( "shadow_bolt", player, player->rank.shadow_bolt.find_rank()->spell() )
   {
     parse_options( options_str );
   }
 };
 
 // Immolate
-
-constexpr std::array immolate_ranks {
-  spell_container_t().set_spell(   348 ),
-  spell_container_t().set_spell(   707 ),
-  spell_container_t().set_spell(  1094 ),
-  spell_container_t().set_spell(  2941 ),
-  spell_container_t().set_spell( 11665 ),
-  spell_container_t().set_spell( 11667 ),
-  spell_container_t().set_spell( 11668 ),
-  spell_container_t().set_spell( 25309 ),
-};
 struct immolate_t : public warlock_spell_t
 {
   immolate_t( warlock_t* player, util::string_view options_str ) :
-    warlock_spell_t( "immolate", player, player->find_rank( immolate_ranks )->spell( player ) )
+    warlock_spell_t( "immolate", player, player->rank.immolate.find_rank()->spell() )
   {
     parse_options( options_str );
   }
 };
 
 // Corruption
-
-constexpr std::array corruption_ranks {
-  spell_container_t().set_spell(   172 ),
-  spell_container_t().set_spell(  6222 ),
-  spell_container_t().set_spell(  6223 ),
-  spell_container_t().set_spell(  7648 ),
-  spell_container_t().set_spell( 11671 ),
-  spell_container_t().set_spell( 11672 ),
-  spell_container_t().set_spell( 25311 ),
-};
 struct corruption_t : public warlock_spell_t
 {
   corruption_t( warlock_t* player, util::string_view options_str ) :
-    warlock_spell_t( "corruption", player, player->find_rank( corruption_ranks )->spell( player ) )
+    warlock_spell_t( "corruption", player, player->rank.corruption.find_rank()->spell() )
   {
     parse_options( options_str );
   }
@@ -251,21 +225,12 @@ namespace pets {
       action_t* create_action( std::string_view, std::string_view ) override;
     };
 
-    constexpr std::array firebolt_ranks {
-      spell_container_t().set_spell(  3110 ),  // 1
-      spell_container_t().set_spell(  7799 ),  // 8
-      spell_container_t().set_spell(  7800 ),  // 18
-      spell_container_t().set_spell(  7801 ),  // 28
-      spell_container_t().set_spell(  7802 ),  // 38
-      spell_container_t().set_spell( 11762 ),  // 48
-      spell_container_t().set_spell( 11763 ),  // 58
-    };
     // TODO: There's some funky delay on beta. Some casts are back-to-back, some have a 0.5-1.0s gap even when
     // the imp has mana
     struct firebolt_t : warlock_pet_spell_t
     {
       firebolt_t( std::string_view n, imp_pet_t* p, std::string_view options_str  ) :
-        warlock_pet_spell_t( n, p, p->find_rank( firebolt_ranks )->spell( p ) )
+        warlock_pet_spell_t( n, p, p->o()->rank.firebolt.find_rank()->spell() )
       {
         parse_options( options_str );
 
@@ -317,6 +282,50 @@ void warlock_t::init_base_stats()
 void warlock_t::init_spells()
 {
   player_t::init_spells();
+
+  rank.corruption = { this,
+    spell_container_t().set_spell(   172 ),
+    spell_container_t().set_spell(  6222 ),
+    spell_container_t().set_spell(  6223 ),
+    spell_container_t().set_spell(  7648 ),
+    spell_container_t().set_spell( 11671 ),
+    spell_container_t().set_spell( 11672 ),
+    spell_container_t().set_spell( 25311 ),
+  };
+
+  rank.firebolt = { this,
+    spell_container_t().set_spell(  3110 ),  // 1
+    spell_container_t().set_spell(  7799 ),  // 8
+    spell_container_t().set_spell(  7800 ),  // 18
+    spell_container_t().set_spell(  7801 ),  // 28
+    spell_container_t().set_spell(  7802 ),  // 38
+    spell_container_t().set_spell( 11762 ),  // 48
+    spell_container_t().set_spell( 11763 ),  // 58
+  };
+
+  rank.immolate = { this,
+    spell_container_t().set_spell(   348 ),
+    spell_container_t().set_spell(   707 ),
+    spell_container_t().set_spell(  1094 ),
+    spell_container_t().set_spell(  2941 ),
+    spell_container_t().set_spell( 11665 ),
+    spell_container_t().set_spell( 11667 ),
+    spell_container_t().set_spell( 11668 ),
+    spell_container_t().set_spell( 25309 ),
+  };
+
+  rank.shadow_bolt = { this,
+    spell_container_t().set_spell(   686 ),
+    spell_container_t().set_spell(   695 ),
+    spell_container_t().set_spell(   705 ),
+    spell_container_t().set_spell(  1088 ),
+    spell_container_t().set_spell(  1106 ),
+    spell_container_t().set_spell(  7641 ),
+    spell_container_t().set_spell( 11659 ),
+    spell_container_t().set_spell( 11660 ),
+    spell_container_t().set_spell( 11661 ),
+    spell_container_t().set_spell( 25307 ),
+  };
 
   parse_all_class_passives();
   parse_all_passive_talents();

@@ -195,6 +195,15 @@ struct warrior_t final : public parse_player_effects_t
 
 private:
   target_specific_t<warrior_td_t> _target_data;
+  struct
+  {
+    spell_ranks_t battle_shout;
+    spell_ranks_t bloodrage;
+    spell_ranks_t charge;
+    spell_ranks_t heroic_strike;
+    spell_ranks_t rend;
+    spell_ranks_t thunder_clap;
+  } rank;
 };
 
 warrior_td_t::warrior_td_t( player_t* target, warrior_t& p ) : actor_target_data_t( target, &p )
@@ -288,20 +297,11 @@ public:
 using warrior_attack_t = warrior_action_t<melee_attack_t>;
 using warrior_spell_t  = warrior_action_t<spell_t>;
 
-constexpr std::array battle_shout_ranks {
-  spell_container_t().set_spell(  5242 ),
-  spell_container_t().set_spell(  6192 ),
-  spell_container_t().set_spell(  6673 ),
-  spell_container_t().set_spell( 11549 ),
-  spell_container_t().set_spell( 11550 ),
-  spell_container_t().set_spell( 11551 ),
-  spell_container_t().set_spell( 25289 ),
-};
 // TODO: Party buff version
 struct battle_shout_t : public warrior_spell_t
 {
   battle_shout_t( warrior_t* player, util::string_view options_str ) :
-    warrior_spell_t( "battle_shout", player, player->find_rank( battle_shout_ranks )->spell( player ) )
+    warrior_spell_t( "battle_shout", player, player->rank.battle_shout.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -321,13 +321,10 @@ struct battle_shout_t : public warrior_spell_t
   }
 };
 
-constexpr std::array bloodrage_ranks {
-  spell_container_t().set_spell(  2687 ).set_buff( 29131 ),
-};
 struct bloodrage_t : public warrior_spell_t
 {
   bloodrage_t( warrior_t* player, util::string_view options_str ) :
-    warrior_spell_t( "bloodrage", player, player->find_rank( bloodrage_ranks )->spell( player ) )
+    warrior_spell_t( "bloodrage", player, player->rank.bloodrage.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -491,19 +488,10 @@ double warrior_t::rage_per_swing( const weapon_t& w ) const
 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-constexpr std::array rend_ranks {
-  spell_container_t().set_spell(   772 ),
-  spell_container_t().set_spell(  6546 ),
-  spell_container_t().set_spell(  6547 ),
-  spell_container_t().set_spell(  6548 ),
-  spell_container_t().set_spell( 11572 ),
-  spell_container_t().set_spell( 11573 ),
-  spell_container_t().set_spell( 11574 ),
-};
 struct rend_t : public warrior_attack_t
 {
   rend_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "rend", player, player->find_rank( rend_ranks )->spell( player ) )
+    warrior_attack_t( "rend", player, player->rank.rend.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -611,21 +599,10 @@ struct heroic_strike_queue_t : public action_t
   }
 };
 
-constexpr std::array heroic_strike_ranks {
-  spell_container_t().set_spell(    78 ),
-  spell_container_t().set_spell(   284 ),
-  spell_container_t().set_spell(   285 ),
-  spell_container_t().set_spell(  1608 ),
-  spell_container_t().set_spell( 11564 ),
-  spell_container_t().set_spell( 11565 ),
-  spell_container_t().set_spell( 11566 ),
-  spell_container_t().set_spell( 11567 ),
-  spell_container_t().set_spell( 25286 ),
-};
 struct heroic_strike_t : public warrior_attack_t
 {
   heroic_strike_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "heroic_strike", player, player->find_rank( heroic_strike_ranks )->spell( player ) )
+    warrior_attack_t( "heroic_strike", player, player->rank.heroic_strike.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -640,15 +617,10 @@ struct heroic_strike_t : public warrior_attack_t
   }
 };
 
-constexpr std::array charge_ranks {
-  spell_container_t().set_spell(   100 ),
-  spell_container_t().set_spell(  6178 ),
-  spell_container_t().set_spell( 11578 ),
-};
 struct charge_t : public warrior_attack_t
 {
   charge_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "charge", player, player->find_rank( charge_ranks )->spell( player ) )
+    warrior_attack_t( "charge", player, player->rank.charge.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -662,18 +634,10 @@ struct charge_t : public warrior_attack_t
   }
 };
 
-constexpr std::array thunder_clap_ranks {
-  spell_container_t().set_spell(  6343 ),
-  spell_container_t().set_spell(  8198 ),
-  spell_container_t().set_spell(  8204 ),
-  spell_container_t().set_spell(  8205 ),
-  spell_container_t().set_spell( 11580 ),
-  spell_container_t().set_spell( 11581 ),
-};
 struct thunder_clap_t : public warrior_attack_t
 {
   thunder_clap_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "thunder_clap", player, player->find_rank( thunder_clap_ranks )->spell( player ) )
+    warrior_attack_t( "thunder_clap", player, player->rank.thunder_clap.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -751,10 +715,10 @@ void warrior_t::create_buffs()
   buff.defensive_stance = make_buff( this, "defensive_stance", spell.defensive_stance );
   buff.berserker_stance = make_buff( this, "berserker_stance", spell.berserker_stance );
 
-  buff.battle_shout = make_buff<stat_buff_t>( this, "battle_shout", find_rank( battle_shout_ranks )->spell( this ) );
+  buff.battle_shout = make_buff<stat_buff_t>( this, "battle_shout", rank.battle_shout.find_rank()->spell() );
 
   buff.bloodrage = make_buff( this, "bloodrage",
-                        find_rank( bloodrage_ranks )->buff( this ) )
+                              rank.bloodrage.find_rank()->buff() )
                         ->set_tick_callback( [ this ]( buff_t*, int, timespan_t ) {
                             resource_gain( RESOURCE_RAGE, 1.0, get_gain( "bloodrage" ) ); } );
 
@@ -796,6 +760,57 @@ warrior_td_t* warrior_t::get_target_data( player_t* target ) const
 void warrior_t::init_spells()
 {
   parse_player_effects_t::init_spells();
+
+  rank.battle_shout = { this,
+    spell_container_t().set_spell(  5242 ),
+    spell_container_t().set_spell(  6192 ),
+    spell_container_t().set_spell(  6673 ),
+    spell_container_t().set_spell( 11549 ),
+    spell_container_t().set_spell( 11550 ),
+    spell_container_t().set_spell( 11551 ),
+    spell_container_t().set_spell( 25289 ),
+  };
+
+  rank.bloodrage = { this,
+    spell_container_t().set_spell(  2687 ).set_buff( 29131 ),
+  };
+
+  rank.rend = { this,
+    spell_container_t().set_spell(   772 ),
+    spell_container_t().set_spell(  6546 ),
+    spell_container_t().set_spell(  6547 ),
+    spell_container_t().set_spell(  6548 ),
+    spell_container_t().set_spell( 11572 ),
+    spell_container_t().set_spell( 11573 ),
+    spell_container_t().set_spell( 11574 ),
+  };
+
+  rank.heroic_strike = { this,
+    spell_container_t().set_spell(    78 ),
+    spell_container_t().set_spell(   284 ),
+    spell_container_t().set_spell(   285 ),
+    spell_container_t().set_spell(  1608 ),
+    spell_container_t().set_spell( 11564 ),
+    spell_container_t().set_spell( 11565 ),
+    spell_container_t().set_spell( 11566 ),
+    spell_container_t().set_spell( 11567 ),
+    spell_container_t().set_spell( 25286 ),
+  };
+
+  rank.charge = { this,
+    spell_container_t().set_spell(   100 ),
+    spell_container_t().set_spell(  6178 ),
+    spell_container_t().set_spell( 11578 ),
+  };
+
+  rank.thunder_clap = { this,
+    spell_container_t().set_spell(  6343 ),
+    spell_container_t().set_spell(  8198 ),
+    spell_container_t().set_spell(  8204 ),
+    spell_container_t().set_spell(  8205 ),
+    spell_container_t().set_spell( 11580 ),
+    spell_container_t().set_spell( 11581 ),
+  };
 
   parse_all_class_passives();
   parse_all_passive_talents();

@@ -5,6 +5,7 @@
 #include "generated/power_type_data.inc"
 
 #include <array>
+#include <ranges>
 #if SC_USE_PTR
 #include "generated/sc_spell_data_ptr.inc"
 #include "generated/power_type_data_ptr.inc"
@@ -858,26 +859,64 @@ util::span<const hotfix::client_hotfix_entry_t> spellpower_data_t::hotfixes( con
   return find_hotfixes( data, pd.id() );
 }
 
-const spell_data_t* spell_container_t::get_field( const player_t* player, auto id_field, auto spell_field ) const
+void spell_container_t::cache_data( const player_t* player )
 {
-  auto spell = std::invoke( spell_field, this );
-  auto id    = std::invoke( id_field, this );
-  assert( id != 0 );
+  if ( cached )
+    return;
 
-  if ( !spell )
-    spell = player->find_spell( id );
+  cached = true;
 
-  // cannot check spell->id() == id as the spell yields not_found if not available to player
-  assert( spell );
-
-  return spell;
+  _spell   = player->find_spell( spell_id );
+  _driver  = player->find_spell( driver_id );
+  _attack  = player->find_spell( attack_id );
+  _passive = player->find_spell( passive_id );
+  _aura    = player->find_spell( aura_id );
+  _buff    = player->find_spell( buff_id );
+  _talent  = player->find_spell( talent_id );
+  _debuff  = player->find_spell( debuff_id );
 }
 
-const spell_data_t* spell_container_t::spell( const player_t* p ) const   { return get_field( p, &spell_container_t::spell_id,   &spell_container_t::_spell ); }
-const spell_data_t* spell_container_t::driver( const player_t* p ) const  { return get_field( p, &spell_container_t::driver_id,  &spell_container_t::_driver ); }
-const spell_data_t* spell_container_t::attack( const player_t* p ) const  { return get_field( p, &spell_container_t::attack_id,  &spell_container_t::_attack ); }
-const spell_data_t* spell_container_t::passive( const player_t* p ) const { return get_field( p, &spell_container_t::passive_id, &spell_container_t::_passive ); }
-const spell_data_t* spell_container_t::aura( const player_t* p ) const    { return get_field( p, &spell_container_t::aura_id,    &spell_container_t::_aura ); }
-const spell_data_t* spell_container_t::buff( const player_t* p ) const    { return get_field( p, &spell_container_t::buff_id,    &spell_container_t::_buff ); }
-const spell_data_t* spell_container_t::talent( const player_t* p ) const  { return get_field( p, &spell_container_t::talent_id,  &spell_container_t::_talent ); }
-const spell_data_t* spell_container_t::debuff( const player_t* p ) const  { return get_field( p, &spell_container_t::debuff_id,  &spell_container_t::_debuff ); }
+const spell_container_t* spell_ranks_t::find_rank( int rank, spell_ranks_t::rank_ptype_t field )
+{
+  assert( !ranks.empty() );
+  spell_container_t* container = nullptr;
+
+  if ( !std::invoke( validate_fn ) )
+    return spell_container_t::nil();
+
+  if ( rank == RANK_MAX )
+  {
+    container = &ranks.back();
+  }
+  else if ( rank > 0 )
+  {
+    if ( static_cast<size_t>( rank ) <= ranks.size() )
+      container = &ranks[ rank - 1 ];
+  }
+  else
+  {
+    // rank spells are expected to be ordered lowest -> highest, otherwise condition 1 fails
+    // as a result, first ok spell while reverse iterating yields the highest rank spell that is available
+
+    // if the member being referenced for existence is not &spell_container_t::spell, provide a non-default field
+    for ( auto& it : ranks | std::ranges::views::reverse )
+    {
+      if ( it.empty() )
+        continue;
+
+      it.cache_data( player );
+      if ( auto reference_spell = std::invoke( field, it ); reference_spell && reference_spell->ok() )
+      {
+        container = &it;
+        break;
+      }
+    }
+  }
+
+  if ( !container )
+    container = &ranks.front();
+
+  assert( !container->empty() );
+  container->cache_data( player );
+  return container;
+}
