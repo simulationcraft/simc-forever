@@ -25,6 +25,7 @@ struct warrior_t : public player_t
   void create_actions() override;
   void create_buffs() override;
   void init_spells() override;
+  void parse_action_effects( action_t* );
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
   void init_action_list() override;
@@ -39,7 +40,82 @@ struct warrior_t : public player_t
   {
     // Arms
     // Row 1
+    player_talent_t improved_heroic_strike;
     player_talent_t deflection;
+    player_talent_t improved_rend;
+    // Row 2
+    player_talent_t improved_charge;
+    player_talent_t improved_tactical_mastery;
+    player_talent_t improved_overpower;
+    // Row 3
+    player_talent_t anger_management;
+    player_talent_t deep_wounds;
+    // Row 4
+    player_talent_t spearing_strike;
+    player_talent_t two_handed_weapon_specialization;
+    player_talent_t impale;
+    // Row 5
+    player_talent_t bloodthrill;
+    player_talent_t sweeping_strikes;
+    player_talent_t weaponmaster;
+    // Row 6
+    player_talent_t improved_slam;
+    player_talent_t improved_hamstring;
+    // Row 7
+    player_talent_t mortal_strike;
+
+    // Fury
+    // Row 1
+    player_talent_t booming_voice;
+    player_talent_t cruelty;
+    // Row 2
+    player_talent_t lingering_rage;
+    player_talent_t unbridled_wrath;
+    // Row 3
+    player_talent_t furious_precision;
+    player_talent_t piercing_howl;
+    player_talent_t blood_craze;
+    // Row 4
+    player_talent_t dual_wield_specialization;
+    player_talent_t raging_blows;
+    player_talent_t enrage;
+    player_talent_t improved_execute;
+    // Row 5
+    player_talent_t improved_berserker_rage;
+    player_talent_t death_wish;
+    player_talent_t improved_intercept;
+    // Row 6
+    player_talent_t flurry;
+    player_talent_t gore_drinker;
+    // Row 7
+    player_talent_t bloodthirst;
+
+    // Protection
+    // Row 1
+    player_talent_t improved_bloodrage;
+    player_talent_t shield_specialization;
+    player_talent_t iron_will;
+    // Row 2
+    player_talent_t anticipation;
+    player_talent_t improved_revenge;
+    player_talent_t improved_thunder_clap;
+    // Row 3
+    player_talent_t last_stand;
+    player_talent_t master_of_defense;
+    player_talent_t improved_disarm;
+    player_talent_t defiance;
+    // Row 4
+    player_talent_t improved_sunder_armor;
+    player_talent_t vanguard;
+    player_talent_t improved_shield_bash;
+    // Row 5
+    player_talent_t improved_shield_wall;
+    player_talent_t concussion_blow;
+    player_talent_t focused_rage;
+    // Row 6
+    player_talent_t bastion;
+    // Row 7
+    player_talent_t shield_slam;
 
   } talent;
 
@@ -69,7 +145,11 @@ public:
   using base_t = warrior_action_t<Base>;
 
   template <typename... Args>
-  warrior_action_t( Args&&... args ) : ab( std::forward<Args>( args )... ) {}
+  warrior_action_t( Args&&... args ) : ab( std::forward<Args>( args )... )
+  {
+    if ( ab::data().ok() )
+      p()->parse_action_effects( this );
+  }
 
   warrior_t* p()
   { return debug_cast<warrior_t*>( this->player ); }
@@ -468,6 +548,72 @@ void warrior_t::init_spells()
 
   parse_all_class_passives();
   parse_all_passive_talents();
+
+  // Arms
+  talent.improved_heroic_strike           = find_talent_spell( talent_tree::CLASS, "Improved Heroic Strike" );
+  talent.deflection                       = find_talent_spell( talent_tree::CLASS, "Deflection" );
+  talent.improved_rend                    = find_talent_spell( talent_tree::CLASS, "Improved Rend" );
+  talent.improved_charge                  = find_talent_spell( talent_tree::CLASS, "Improved Charge" );
+  talent.improved_tactical_mastery        = find_talent_spell( talent_tree::CLASS, "Improved Tactical Mastery" );
+  talent.improved_overpower               = find_talent_spell( talent_tree::CLASS, "Improved Overpower" );
+  talent.anger_management                 = find_talent_spell( talent_tree::CLASS, "Anger Management" );
+  talent.deep_wounds                      = find_talent_spell( talent_tree::CLASS, "Deep Wounds" );
+  talent.spearing_strike                  = find_talent_spell( talent_tree::CLASS, "Spearing Strike" );
+  talent.two_handed_weapon_specialization = find_talent_spell( talent_tree::CLASS, "Two-Handed Weapon Specialization" );
+  talent.impale                           = find_talent_spell( talent_tree::CLASS, "Impale" );
+  talent.bloodthrill                      = find_talent_spell( talent_tree::CLASS, "Bloodthrill" );
+  talent.sweeping_strikes                 = find_talent_spell( talent_tree::CLASS, "Sweeping Strikes" );
+  talent.weaponmaster                     = find_talent_spell( talent_tree::CLASS, "Weaponmaster" );
+  talent.improved_slam                    = find_talent_spell( talent_tree::CLASS, "Improved Slam" );
+  talent.improved_hamstring               = find_talent_spell( talent_tree::CLASS, "Improved Hamstring" );
+  talent.mortal_strike                    = find_talent_spell( talent_tree::CLASS, "Mortal Strike" );
+
+  // Fury
+  talent.booming_voice             = find_talent_spell( talent_tree::CLASS, "Booming Voice" );
+  talent.cruelty                   = find_talent_spell( talent_tree::CLASS, "Cruelty" );
+  talent.lingering_rage            = find_talent_spell( talent_tree::CLASS, "Lingering Rage" );
+  talent.unbridled_wrath           = find_talent_spell( talent_tree::CLASS, "Unbridled Wrath" );
+  talent.furious_precision         = find_talent_spell( talent_tree::CLASS, "Furious Precision" );
+  talent.piercing_howl             = find_talent_spell( talent_tree::CLASS, "Piercing Howl" );
+  talent.blood_craze               = find_talent_spell( talent_tree::CLASS, "Blood Craze" );
+  talent.dual_wield_specialization = find_talent_spell( talent_tree::CLASS, "Dual Wield Specialization" );
+  talent.raging_blows              = find_talent_spell( talent_tree::CLASS, "Raging Blows" );
+  talent.enrage                    = find_talent_spell( talent_tree::CLASS, "Enrage" );
+  talent.improved_execute          = find_talent_spell( talent_tree::CLASS, "Improved Execute" );
+  talent.improved_berserker_rage   = find_talent_spell( talent_tree::CLASS, "Improved Berserker Rage" );
+  talent.death_wish                = find_talent_spell( talent_tree::CLASS, "Death Wish" );
+  talent.improved_intercept        = find_talent_spell( talent_tree::CLASS, "Improved Intercept" );
+  talent.flurry                    = find_talent_spell( talent_tree::CLASS, "Flurry" );
+  talent.gore_drinker              = find_talent_spell( talent_tree::CLASS, "Gore Drinker" );
+  talent.bloodthirst               = find_talent_spell( talent_tree::CLASS, "Bloodthirst" );
+
+  // Protection
+  talent.improved_bloodrage    = find_talent_spell( talent_tree::CLASS, "Improved Bloodrage" );
+  talent.shield_specialization = find_talent_spell( talent_tree::CLASS, "Shield Specialization" );
+  talent.iron_will             = find_talent_spell( talent_tree::CLASS, "Iron Will" );
+  talent.anticipation          = find_talent_spell( talent_tree::CLASS, "Anticipation" );
+  talent.improved_revenge      = find_talent_spell( talent_tree::CLASS, "Improved Revenge" );
+  talent.improved_thunder_clap = find_talent_spell( talent_tree::CLASS, "Improved Thunder Clap" );
+  talent.last_stand            = find_talent_spell( talent_tree::CLASS, "Last Stand" );
+  talent.master_of_defense     = find_talent_spell( talent_tree::CLASS, "Master of Defense" );
+  talent.improved_disarm       = find_talent_spell( talent_tree::CLASS, "Improved Disarm" );
+  talent.defiance              = find_talent_spell( talent_tree::CLASS, "Defiance" );
+  talent.improved_sunder_armor = find_talent_spell( talent_tree::CLASS, "Improved Sunder Armor" );
+  talent.vanguard              = find_talent_spell( talent_tree::CLASS, "Vanguard" );
+  talent.improved_shield_bash  = find_talent_spell( talent_tree::CLASS, "Improved Shield Bash" );
+  talent.improved_shield_wall  = find_talent_spell( talent_tree::CLASS, "Improved Shield Wall" );
+  talent.concussion_blow       = find_talent_spell( talent_tree::CLASS, "Concussion Blow" );
+  talent.focused_rage          = find_talent_spell( talent_tree::CLASS, "Focused Rage" );
+  talent.bastion               = find_talent_spell( talent_tree::CLASS, "Bastion" );
+  talent.shield_slam           = find_talent_spell( talent_tree::CLASS, "Shield Slam" );
+}
+
+void warrior_t::parse_action_effects( action_t* action )
+{
+  auto _a = dynamic_cast<parse_action_base_t*>( action );
+  assert( _a );
+
+  // TODO: parse action-affecting warrior buffs here as they are implemented.
 }
 
 action_t* warrior_t::create_action( util::string_view name, util::string_view options_str )
