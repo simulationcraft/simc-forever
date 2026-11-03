@@ -154,16 +154,16 @@ constexpr double fp_epsilon = 1e-9;
 // Simc related value definitions
 // ==========================================================================
 
-#define SC_MAJOR_VERSION "1210"
+#define SC_MAJOR_VERSION "160"
 #define SC_MINOR_VERSION "01"
 #define SC_VERSION ( SC_MAJOR_VERSION "-" SC_MINOR_VERSION )
 #define SC_BETA 0
 #if SC_BETA
-#define SC_BETA_STR "midnight"
+#define SC_BETA_STR "forever"
 #endif
 
-constexpr int MAX_LEVEL = 90;
-constexpr int MAX_SCALING_LEVEL = 90;
+constexpr int MAX_LEVEL = 60;
+constexpr int MAX_SCALING_LEVEL = 60;
 constexpr int MAX_ILEVEL = 1300;
 constexpr int MAX_CLASS = 14;
 #if SC_USE_PTR
