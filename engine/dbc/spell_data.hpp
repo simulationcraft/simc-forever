@@ -963,6 +963,8 @@ public:
   virtual void cache_data( const player_t* player );
   static const spell_container_t* nil();
 
+  virtual ~spell_container_t() = default;
+
   const spell_data_t* spell() const   { return get_spell_data( &spell_container_t::spell_id,   &spell_container_t::_spell );   }
   const spell_data_t* driver() const  { return get_spell_data( &spell_container_t::driver_id,  &spell_container_t::_driver );  }
   const spell_data_t* attack() const  { return get_spell_data( &spell_container_t::attack_id,  &spell_container_t::_attack );  }
@@ -971,19 +973,17 @@ public:
   const spell_data_t* buff() const    { return get_spell_data( &spell_container_t::buff_id,    &spell_container_t::_buff );    }
   const spell_data_t* talent() const  { return get_spell_data( &spell_container_t::talent_id,  &spell_container_t::_talent );  }
   const spell_data_t* debuff() const  { return get_spell_data( &spell_container_t::debuff_id,  &spell_container_t::_debuff );  }
-
-  virtual ~spell_container_t() = default;
 };
 
 struct spell_container_nil_t : public spell_container_t
 {
+  ~spell_container_nil_t() = default;
+
   constexpr spell_container_nil_t()
     : spell_container_t()
   {
     cached = true;
   }
-
-  ~spell_container_nil_t() = default;
 
   bool empty() override
   {
