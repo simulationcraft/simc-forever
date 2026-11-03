@@ -13,6 +13,33 @@ namespace warrior
 // Warrior
 // ==========================================================================
 
+struct warrior_t;
+
+struct warrior_td_t : public actor_target_data_t
+{
+  struct dots_t
+  {
+    dot_t* deep_wounds = nullptr;
+    dot_t* rend = nullptr;
+  } dots;
+
+  struct debuffs_t
+  {
+    buff_t* thunder_clap = nullptr;
+  } debuffs;
+
+  warrior_td_t( player_t* target, warrior_t& p );
+};
+
+// utility to create target_effect_t compatible functions from warrior_td_t member references
+template <typename T>
+static std::function<int( actor_target_data_t* )> d_fn( T d )
+{
+  return [ d ]( actor_target_data_t* t ) {
+    return std::invoke( d, static_cast<warrior_td_t*>( t )->debuffs )->check();
+  };
+}
+
 struct warrior_t final : public parse_player_effects_t
 {
   warrior_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) :
@@ -28,6 +55,8 @@ struct warrior_t final : public parse_player_effects_t
   void init_special_effects() override;
   void activate() override;
   void parse_action_effects( action_t* );
+
+  warrior_td_t* get_target_data( player_t* target ) const override;
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
   void init_action_list() override;
@@ -121,6 +150,11 @@ struct warrior_t final : public parse_player_effects_t
 
   } talent;
 
+  struct spells_t
+  {
+    const spell_data_t* thunder_clap = spell_data_t::nil();
+  } spell;
+
   struct buffs_t
   {
     buff_t* battle_shout = nullptr;
@@ -135,7 +169,19 @@ struct warrior_t final : public parse_player_effects_t
   } gain;
 
   action_t* heroic_strike = nullptr;
+
+private:
+  target_specific_t<warrior_td_t> _target_data;
 };
+
+warrior_td_t::warrior_td_t( player_t* target, warrior_t& p ) : actor_target_data_t( target, &p )
+{
+  dots.deep_wounds = target->get_dot( "deep_wounds", &p );
+  dots.rend        = target->get_dot( "rend", &p );
+
+  if ( p.spell.thunder_clap->ok() )
+    debuffs.thunder_clap = make_buff( *this, "thunder_clap", p.spell.thunder_clap );
+}
 
 template <class Base>
 struct warrior_action_t : public parse_action_effects_t<Base>
@@ -544,12 +590,23 @@ void warrior_t::create_buffs()
   parse_player_effects_t::create_buffs();
 }
 
+warrior_td_t* warrior_t::get_target_data( player_t* target ) const
+{
+  warrior_td_t*& td = _target_data[ target ];
+  if ( !td )
+    td = new warrior_td_t( target, const_cast<warrior_t&>( *this ) );
+
+  return td;
+}
+
 void warrior_t::init_spells()
 {
   parse_player_effects_t::init_spells();
 
   parse_all_class_passives();
   parse_all_passive_talents();
+
+  spell.thunder_clap = find_rank( thunder_clap_ranks )->spell( this );
 
   // Arms
   talent.improved_heroic_strike           = find_talent_spell( talent_tree::CLASS, "Improved Heroic Strike" );
