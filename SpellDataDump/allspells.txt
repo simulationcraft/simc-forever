@@ -31752,6 +31752,7 @@ Effects          :
 Description      : Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by $/1000;S1 sec.
 
 Name             : Improved Frostbolt (id=11070) [Spell Family (3), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=1, col=10, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(-100, -200, -300, -400, -500)]
 Class            : Mage
@@ -31765,7 +31766,7 @@ Effects          :
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 10 | Target: Self (1)
                    Affected Spells: Frostbolt (116), Frostbolt (205), Frostbolt (837), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Frostbolt (25304), Frostbolt (350025)
                    Family Flags: 5
-Description      : Reduces the casting time of your Frostbolt and Frost Blast spells by $/1000;S1 sec.
+Description      : Reduces the casting time of your Frostbolt spell by $/1000;S1 sec.
 
 Name             : Frostbite (id=11071) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=10, max_rank=3, req_points=0]
@@ -32086,6 +32087,7 @@ Effects          :
 Description      : Increases the duration of your Chill effects by $s1% and reduces the target's speed by an additional $s2%.
 
 Name             : Winter's Chill (id=11180) [Spell Family (3), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=6, col=11, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(5, 5, 5, 5, 5)]
                  : Effect#2 [op=set, values=(20, 40, 60, 80, 100)]
@@ -32105,7 +32107,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 12579 | Target: Self (1)
 #3 (id=1364855)  : Apply Aura (6) | Dummy (4)
                    Base Value: 7 | Scaled Value: 7 | Target: Self (1)
-Description      : Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
+Description      : Gives your Frostbolt and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
 
 Name             : Improved Blizzard (id=11185) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
@@ -52990,6 +52992,7 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Arctic Reach (id=16757) [Spell Family (3), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=9, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(10, 20)]
                  : Effect#2 [op=set, values=(10, 20)]
@@ -53007,7 +53010,7 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Misc Value: 6 | Target: Self (1)
                    Affected Spells: Cone of Cold (120), Frost Nova (122), Frost Nova (865), Frost Nova (6131), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frost Nova (10230)
                    Family Flags: 6, 9
-Description      : Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.
+Description      : Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.
 
 Name             : Combining Charms (id=16781) 
 School           : Physical
