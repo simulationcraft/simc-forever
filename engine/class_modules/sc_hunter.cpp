@@ -17,19 +17,25 @@ namespace
 // Hunter
 // =========================================================================
 
-struct hunter_t final : public player_t
+struct hunter_t final : public parse_player_effects_t
 {
+  using base_t = parse_player_effects_t;
+  
   hunter_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) :
-    player_t( sim, HUNTER, name, r ) {}
+    base_t( sim, HUNTER, name, r ) {}
 
   resource_e primary_resource() const override { return RESOURCE_MANA; }
 
   void init_spells() override;
   void init_base_stats() override;
+  void init_action_list() override;
+  void init_finished() override;
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
-  void init_action_list() override;
   void create_buffs() override;
+
+  void parse_player_effects() {}
+  void apply_action_effects( action_t* ) {}
 
   struct buffs_t
   {
@@ -54,7 +60,10 @@ struct hunter_action_t : public parse_action_effects_t<Base>
     using base_t = hunter_action_t<Base>;
 
     template <typename... Args>
-    hunter_action_t( Args&&... args ) : ab( std::forward<Args>( args )... ) {}
+    hunter_action_t( Args&&... args ) : ab( std::forward<Args>( args )... ) {
+      if ( ab::data().ok() )
+        p()->apply_action_effects( this );
+    }
 
     hunter_t* p()
     { return debug_cast<hunter_t*>( this->player ); }
@@ -100,7 +109,7 @@ struct hunter_ranged_attack_t : public hunter_ranged_t
 {
   bool first = true;
 
-  hunter_ranged_attack_t( player_t* player, util::string_view name )
+  hunter_ranged_attack_t( hunter_t* player, util::string_view name )
     : hunter_ranged_t( name, player, player->find_spell( 75 ) )
   {
     weapon            = &player->equipped_weapons[ SLOT_RANGED ];
@@ -197,7 +206,10 @@ struct serpent_sting_t : public hunter_ranged_t
 
 void hunter_t::init_spells()
 {
-  player_t::init_spells();
+  base_t::init_spells();
+
+  parse_all_class_passives();
+  parse_all_passive_talents();
 
   rank.aspect_of_the_hawk = { this,
     spell_container_t().set_spell( 13165 ),
@@ -244,7 +256,7 @@ void hunter_t::init_base_stats()
 
   base.ranged_attack_power_per_agility = 2.0;
 
-  player_t::init_base_stats();
+  base_t::init_base_stats();
 
   base.attack_crit_chance = 0;
   // TODO Forever: Only checked on low level characters
@@ -256,6 +268,27 @@ void hunter_t::init_base_stats()
   // TODO Forever: Dodge, parry chance
 }
 
+void hunter_t::init_action_list()
+{
+  if ( !action_list_str.empty() )
+  {
+    base_t::init_action_list();
+    return;
+  }
+
+  clear_action_priority_lists();
+  hunter_apl::hunter( this );
+  use_default_action_list = true;
+  base_t::init_action_list();
+}
+
+void hunter_t::init_finished()
+{
+  parse_player_effects();
+
+  base_t::init_finished();
+}
+
 action_t* hunter_t::create_action( util::string_view name, util::string_view options_str )
 {
   if ( name == "auto_shot" )          return new hunter_auto_shot_t( this, options_str );
@@ -263,28 +296,14 @@ action_t* hunter_t::create_action( util::string_view name, util::string_view opt
   if ( name == "serpent_sting" )      return new serpent_sting_t( this, options_str );
   if ( name == "aspect_of_the_hawk" ) return new aspect_of_the_hawk_t( this, options_str );
 
-  return player_t::create_action( name, options_str );
+  return base_t::create_action( name, options_str );
 }
 
 void hunter_t::create_buffs()
 {
   buff.aspect_of_the_hawk = make_buff<stat_buff_t>( this, "aspect_of_the_hawk", rank.aspect_of_the_hawk.find_rank()->spell() );
 
-  player_t::create_buffs();
-}
-
-void hunter_t::init_action_list()
-{
-  if ( !action_list_str.empty() )
-  {
-    player_t::init_action_list();
-    return;
-  }
-
-  clear_action_priority_lists();
-  hunter_apl::hunter( this );
-  use_default_action_list = true;
-  player_t::init_action_list();
+  base_t::create_buffs();
 }
 
 // HUNTER MODULE INTERFACE ==================================================
