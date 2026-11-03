@@ -4396,7 +4396,7 @@ double player_t::resource_regen_per_second( resource_e r ) const
       spirit_regen *= std::min( 1.0, composite_mana_regen_while_casting() );
 
     reg += spirit_regen;
-  }  
+  }
 
   if ( resources.hasted[ r ] )
     reg /= cache.attack_haste();
