@@ -1578,7 +1578,7 @@ enum effect_subtype_t : unsigned {
   A_554 = 554,
   A_555 = 555,
   A_556 = 556,
-  A_557 = 557,
+  A_MOD_RANGED_ATTACK_SPEED_QUIVER = 557,
   A_558 = 558,
   A_559 = 559,
   A_560 = 560,
