@@ -7,16 +7,16 @@
 #include "action/parse_effects.hpp"
 #include "class_modules/apl/warrior.hpp"
 
-namespace
+namespace warrior
 {
 // ==========================================================================
 // Warrior
 // ==========================================================================
 
-struct warrior_t : public player_t
+struct warrior_t final : public parse_player_effects_t
 {
   warrior_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) :
-    player_t( sim, WARRIOR, name, r ) {}
+    parse_player_effects_t( sim, WARRIOR, name, r ) {}
 
   resource_e primary_resource() const override { return RESOURCE_RAGE; }
 
@@ -25,6 +25,8 @@ struct warrior_t : public player_t
   void create_actions() override;
   void create_buffs() override;
   void init_spells() override;
+  void init_special_effects() override;
+  void activate() override;
   void parse_action_effects( action_t* );
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
@@ -492,7 +494,7 @@ void warrior_t::init_base_stats()
 {
   base.attack_power_per_strength = 2.0;
 
-  player_t::init_base_stats();
+  parse_player_effects_t::init_base_stats();
 
 
   base.parry_per_strength = 0.0;
@@ -516,7 +518,7 @@ void warrior_t::init_base_stats()
 
 void warrior_t::init_gains()
 {
-  player_t::init_gains();
+  parse_player_effects_t::init_gains();
 
   gain.melee = get_gain( "melee" );
 }
@@ -525,7 +527,7 @@ void warrior_t::create_actions()
 {
   heroic_strike = new heroic_strike_t( this, "" );
 
-  player_t::create_actions();
+  parse_player_effects_t::create_actions();
 }
 
 void warrior_t::create_buffs()
@@ -539,12 +541,12 @@ void warrior_t::create_buffs()
                         ->set_tick_callback( [ this ]( buff_t*, int, timespan_t ) {
                             resource_gain( RESOURCE_RAGE, 1.0, get_gain( "bloodrage" ) ); } );
 
-  player_t::create_buffs();
+  parse_player_effects_t::create_buffs();
 }
 
 void warrior_t::init_spells()
 {
-  player_t::init_spells();
+  parse_player_effects_t::init_spells();
 
   parse_all_class_passives();
   parse_all_passive_talents();
@@ -608,6 +610,11 @@ void warrior_t::init_spells()
   talent.shield_slam           = find_talent_spell( talent_tree::CLASS, "Shield Slam" );
 }
 
+void warrior_t::init_special_effects()
+{
+  parse_player_effects_t::init_special_effects();
+}
+
 void warrior_t::parse_action_effects( action_t* action )
 {
   auto _a = dynamic_cast<parse_action_base_t*>( action );
@@ -630,21 +637,26 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
 
   if ( name == "thunder_clap" ) return new thunder_clap_t( this, options_str );
 
-  return player_t::create_action( name, options_str );
+  return parse_player_effects_t::create_action( name, options_str );
 }
 
 void warrior_t::init_action_list()
 {
   if ( !action_list_str.empty() )
   {
-    player_t::init_action_list();
+    parse_player_effects_t::init_action_list();
     return;
   }
 
   clear_action_priority_lists();
   warrior_apl::warrior( this );
   use_default_action_list = true;
-  player_t::init_action_list();
+  parse_player_effects_t::init_action_list();
+}
+
+void warrior_t::activate()
+{
+  parse_player_effects_t::activate();
 }
 
 struct warrior_module_t : public module_t
@@ -666,10 +678,10 @@ struct warrior_module_t : public module_t
 
   void register_actor_initializers( sim_t* ) const override {}
 };
-}  // UNNAMED NAMESPACE
+}  // namespace warrior
 
 const module_t* module_t::warrior()
 {
-  static warrior_module_t m;
+  static warrior::warrior_module_t m;
   return &m;
 }
