@@ -9021,7 +9021,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[9018] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.70755
 
-static const std::array<dbc_item_data_t, 8369> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 8370> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -11966,6 +11966,7 @@ static const std::array<dbc_item_data_t, 8369> __item_data_chunk0 { {
   { "Fire Opal Necklace",  11946, 0x00000000, 0x00006004, 0x00, 52, 47, 0, 0, 2, 2, 4, 0, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Spinel Ring",  11970, 0x00000000, 0x00004004, 0x00, 34, 29, 0, 0, 2, 11, 4, 0, 2, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Thallium Hoop",  11986, 0x00000000, 0x00004004, 0x00, 39, 34, 0, 0, 2, 11, 4, 0, 2, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Vanadium Loop",  11989, 0x00000000, 0x00004004, 0x00, 51, 46, 0, 0, 2, 11, 4, 0, 2, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Selenium Loop",  11990, 0x00000000, 0x00004004, 0x00, 55, 50, 0, 0, 2, 11, 4, 0, 2, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Savannah Ring",  12008, 0x00000000, 0x00004004, 0x00, 28, 23, 0, 0, 2, 11, 4, 0, 2, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Conservator Helm",  12018, 0x00000000, 0x00002004, 0x00, 54, 0, 0, 0, 3, 1, 4, 3, 1, 0, 0.200000f, 0.000000f, &__item_stats_data[1238], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
