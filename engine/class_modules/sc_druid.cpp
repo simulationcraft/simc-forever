@@ -176,6 +176,20 @@ void druid_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
+  talent.improved_entangling_roots = find_talent_spell( talent_tree::CLASS, "Improved Entangling Roots" );
+  talent.insect_swarm              = find_talent_spell( talent_tree::CLASS, "Insect Swarm" );
+  talent.overgrowth                = find_talent_spell( talent_tree::CLASS, "Overgrowth" );
+  talent.natures_grace             = find_talent_spell( talent_tree::CLASS, "Nature's Grace" );
+  talent.eclipse                   = find_talent_spell( talent_tree::CLASS, "Eclipse" );
+  talent.moonkin_form              = find_talent_spell( talent_tree::CLASS, "Moonkin Form" );
+
+  if ( talent.moonkin_form->ok() )
+  {
+    // The omen of clarity mods are on the talent, not the aura.
+    // TODO Confirm if omen is modified by the talent being picked alone
+    parse_passive_effects( talent.moonkin_form, true );
+  }
+
   rank.entangling_roots = { this,
     spell_container_t().set_spell( 339 ), // 19975 is also a rank 1 spell id, it is used by nature's grasp
     spell_container_t().set_spell( 1062 ),
@@ -240,19 +254,6 @@ void druid_t::init_spells()
     spell_container_t().set_spell( 9912 ),
   };
 
-  talent.improved_entangling_roots = find_talent_spell( talent_tree::CLASS, "Improved Entangling Roots" );
-  talent.insect_swarm              = find_talent_spell( talent_tree::CLASS, "Insect Swarm" );
-  talent.overgrowth                = find_talent_spell( talent_tree::CLASS, "Overgrowth" );
-  talent.natures_grace             = find_talent_spell( talent_tree::CLASS, "Nature's Grace" );
-  talent.eclipse                   = find_talent_spell( talent_tree::CLASS, "Eclipse" );
-  talent.moonkin_form              = find_talent_spell( talent_tree::CLASS, "Moonkin Form" );
-
-  if ( talent.moonkin_form->ok() )
-  {
-    // The omen of clarity mods are on the talent, not the aura.
-    // TODO Confirm if omen is modified by the talent being picked alone
-    parse_passive_effects( talent.moonkin_form, true );
-  }
 }
 
 // ==========================================================================
