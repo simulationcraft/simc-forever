@@ -3891,6 +3891,7 @@ Rogue
 1325757 *Death Mark
 1325758 *Death Mark
 1326175 *Stealth
+1329552 *Counterspell - Silenced
 
 Shaman
 324      Lightning Shield

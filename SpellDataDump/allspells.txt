@@ -67346,12 +67346,13 @@ Effects          :
 Description      : Increases your Physical and Holy damage dealt by $s1% for $20050d after landing a non-periodic critical strike.  Stacks up to $20050u times.
 
 Name             : Vengeance (id=20050) 
+Hotfixed         : Max stacks (3 -> 5)
 Class            : Paladin
 School           : Physical
 Spell Type       : None
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
-Stacks           : 3 maximum
+Stacks           : 5 maximum
 Proc Chance      : 101%
 Triggered By     : Vengeance (20049)
 Attributes       : Aura Points On Client (268), Do Not Log Aura Refresh (291), Unknown (493)
@@ -67476,12 +67477,13 @@ Labels           : 26: Paladin Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
 #1 (id=697263)   : Apply Aura (6) | Modify Damage Done% (79)
-                   Base Value: 2 | Scaled Value: 2 | Misc Value: 0x1 | Target: Self (1)
-                   Affected School(s): Physical
+                   Base Value: 2 | Scaled Value: 2 | Misc Value: 0x3 | Target: Self (1)
+                   Affected School(s): Holy, Physical
+Hotfixed         : Misc Value (1 -> 3)
 #2 (id=1367246)  : Apply Aura (6) | Threat (10)
                    Base Value: -20 | Scaled Value: -20 | Misc Value: 127 | Target: Self (1)
 Hotfixed         : NEW EFFECT
-Description      : Increases the physical damage you deal by $s1%, and reduces all threat you generate by $m2% while a two-handed melee weapon is equipped.
+Description      : Increases the Physical and Holy damage you deal by $s1%, and reduces all threat you generate by $m2% while a two-handed melee weapon is equipped.
 
 Name             : Consecration (desc=Rank 2) (id=20116) [Spell Family (10)] 
 Hotfixed         : Attributes
