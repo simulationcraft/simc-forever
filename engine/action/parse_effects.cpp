@@ -83,6 +83,11 @@ std::string cooldown_type( uint32_t opt )
   return opt == 1 ? "Category" : "";
 }
 
+std::string resource_type( uint32_t opt )
+{
+  return util::resource_type_string( util::power_type_to_resource( static_cast<power_e>( opt ) ) );
+}
+
 std::string parse_cb_str( parse_callback_e type )
 {
   switch ( type )
@@ -1118,12 +1123,13 @@ double parse_player_effects_t::composite_mana_regen_while_casting() const
   return m;
 }
 
-double parse_player_effects_t::composite_mana_regen_multiplier() const
+double parse_player_effects_t::composite_resource_regen_multiplier( resource_e r ) const
 {
-  auto m = player_t::composite_mana_regen_multiplier();
+  auto m = player_t::composite_resource_regen_multiplier( r );
 
-  for ( const auto& i : mana_regen_multiplier_effects )
-    m *= 1.0 + get_effect_value( i );
+  for ( const auto& i : resource_regen_multiplier_effects )
+    if ( util::power_type_to_resource( static_cast<power_e>( i.opt_enum ) ) == r )
+      m *= 1.0 + get_effect_value( i );
 
   return m;
 }
@@ -1324,13 +1330,13 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
       str = "mana regen while casting";
       return &mana_regen_while_casting_effects;
 
-    case A_MOD_POWER_REGEN_PERCENT:
-      if ( static_cast<power_e>( eff.misc_value1() ) == POWER_MANA )
-      {
-        str = "mana regen multiplier";
-        return &mana_regen_multiplier_effects;
-      }
-      return nullptr;
+    case A_MOD_POWER_REGEN_PERCENT:    
+      tmp.opt_enum = eff.misc_value1();
+
+      str = opt_strings::resource_type( tmp.opt_enum );
+      str += " regen multiplier";
+      return &resource_regen_multiplier_effects;
+    
 
     case A_MOD_INCREASE_SPEED:
       str = "exclusive move speed";
@@ -1482,7 +1488,7 @@ void parse_player_effects_t::print_custom_parsed_effects( report::sc_html_stream
     print_parsed_type( os, healing_received_effects, "Healing Received" );
     print_parsed_type( os, leech_effects, "Leech" );
     print_parsed_type( os, mana_regen_while_casting_effects, "Mana Regen While Casting" );
-    print_parsed_type( os, mana_regen_multiplier_effects, "Mana Regen Multiplier" );
+    print_parsed_type( os, resource_regen_multiplier_effects, "Regen Multiplier", &opt_strings::resource_type );
     print_parsed_type( os, non_stacking_movement_effects, "Move Speed Modifier - Exclusive" );
     print_parsed_type( os, stacking_movement_effects, "Move Speed Modifier - Stacking" );
     print_parsed_type( os, parry_effects, "Parry" );
@@ -1532,7 +1538,8 @@ size_t parse_player_effects_t::total_effects_count() const
          target_pet_multiplier_effects.size() +
          non_stacking_movement_effects.size() +
          stacking_movement_effects.size() +
-         mana_regen_while_casting_effects.size();
+         mana_regen_while_casting_effects.size() +
+         resource_regen_multiplier_effects.size();
 }
 
 void parse_action_base_t::parse_callback_function( pack_t<player_effect_t>& pack, parse_cb_t cb )

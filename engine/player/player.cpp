@@ -4389,14 +4389,16 @@ double player_t::resource_regen_per_second( resource_e r ) const
 
   if ( r == RESOURCE_MANA && is_player() )
   {
-    // TODO FOREVER Innervate only affects spirit-based mana regen, not base mana regen
-    double spirit_regen = mana_regen_from_spirit() * composite_mana_regen_multiplier();
+    // TODO FOREVER Innervate only affects spirit-based mana regen, not base mana regen (i.e. cant affect mp5)
+    double spirit_regen = mana_regen_from_spirit() * composite_resource_regen_multiplier( r );
 
     if ( recent_cast() )
       spirit_regen *= std::min( 1.0, composite_mana_regen_while_casting() );
 
     reg += spirit_regen;
   }
+  else
+    reg *= composite_resource_regen_multiplier( r );
 
   if ( resources.hasted[ r ] )
     reg /= cache.attack_haste();
@@ -4901,9 +4903,9 @@ double player_t::composite_mana_regen_while_casting() const
   return current.mana_regen_while_casting;
 }
 
-double player_t::composite_mana_regen_multiplier() const
+double player_t::composite_resource_regen_multiplier( resource_e r ) const
 {
-  return resources.regen_multiplier[ RESOURCE_MANA ];
+  return resources.regen_multiplier[ r ];
 }
 
 double player_t::composite_run_speed() const
