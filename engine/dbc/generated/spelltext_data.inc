@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70707
-static constexpr std::array<spelltext_data_t, 8218> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8220> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -1849,7 +1849,7 @@ static constexpr std::array<spelltext_data_t, 8218> __spelltext_data { {
   {   12318, "Increases the melee attack power bonus of your Battle Shout by $s1%.", 0, "Rank 1" },
   {   12319, "Increases your melee attack speed by $m1% for your next $12966n swings after dealing a melee critical strike.", 0, 0 },
   {   12320, "Improves your chance to get a critical strike with melee attacks by $s1%.", 0, 0 },
-  {   12321, "Increases the area of effect of your Shouts by $s1% and reduces their Rage cost by $s2%.", 0, 0 },
+  {   12321, "Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%.", 0, 0 },
   {   12322, "Gives you a $m1% chance to generate ${$12964m1/10} additional Rage when you deal melee damage with a weapon.", 0, 0 },
   {   12323, "Causes all enemies within $a2 yds to be Dazed, reducing movement speed by $s1% for $d.", "Movement speed reduced by $s1%.", 0 },
   {   12324, "Increases the melee attack power reduction of your Demoralizing Shout by $s1%.", 0, "Rank 1" },
@@ -1906,7 +1906,7 @@ static constexpr std::array<spelltext_data_t, 8218> __spelltext_data { {
   {   12858, "Increases the melee attack power bonus of your Battle Shout by $s1%.", 0, "Rank 3" },
   {   12860, "Increases the melee attack power bonus of your Battle Shout by $s1%.", 0, "Rank 4" },
   {   12861, "Increases the melee attack power bonus of your Battle Shout by $s1%.", 0, "Rank 5" },
-  {   12862, "Reduces the global cooldown and cast time of your Slam ability by ${$m1/-1000}.2 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by ${$m3/-1000}.1 sec.", 0, 0 },
+  {   12862, "Reduces the cooldown of your Slam ability by ${$m3/-1000}.1 sec, the cast time and global cooldown by ${$m1/-1000}.2 sec, and Slam no longer interrupts or delays your melee swing.", 0, 0 },
   {   12876, "Increases the melee attack power reduction of your Demoralizing Shout by $s1%.", 0, "Rank 2" },
   {   12877, "Increases the melee attack power reduction of your Demoralizing Shout by $s1%.", 0, "Rank 3" },
   {   12878, "Increases the melee attack power reduction of your Demoralizing Shout by $s1%.", 0, "Rank 4" },
@@ -7972,7 +7972,7 @@ static constexpr std::array<spelltext_data_t, 8218> __spelltext_data { {
   { 1310200, "Slams the opponent, causing weapon damage plus $s1.", 0, "Rank 5" },
   { 1310222, "A brutal attack that deals $s2% weapon damage. Deals an additional ${$s2*$s3}% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.", 0, 0 },
   { 1310308, "Improves your chance to get a critical strike with ranged weapons by ${$s1}.1%.", 0, 0 },
-  { 1310315, "Reduces the Rage cost of your Cleave and Whirlwind abilities by ${$m2/-10}.", 0, 0 },
+  { 1310315, "Reduces the cooldown of your Whirlwind ability by ${$m1/-1000} sec and increases the damage it deals to the closest enemy by $s2%.", 0, 0 },
   { 1310316, "Grants you a $m1% chance to generate ${$23602m1/10} Rage when you Dodge or Parry while a shield is equipped.", 0, 0 },
   { 1310317, "Your Charge ability is now usable while in Defensive Stance.", 0, 0 },
   { 1310318, "Generate ${$1310318m1/10} Rage when you Block.", "Generate ${$1310318m1/10} Rage.", 0 },
@@ -8218,16 +8218,20 @@ static constexpr std::array<spelltext_data_t, 8218> __spelltext_data { {
   { 1328618, "Finishing move that causes damage per combo point and converts each extra point of energy into ${$m2/100}.1 additional damage.  Damage is increased by your Attack Power.\r\n   1 point  : 33-43 damage\r\n   2 points: 57-67 damage\r\n   3 points: 81-91 damage\r\n   4 points: 105-115 damage\r\n   5 points: 129-139 damage\r\n", 0, "Rank 1" },
   { 1328621, "When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to $s1% of your Spirit. If either spell expires due to being dispelled, the target is healed for $s2% of your Spirit instead.", 0, 0 },
   { 1328948, "Permanently enchant boots to increase movement speed by $1328947s1%.", 0, 0 },
+  { 1329554, "${$s1/10} Rage generated.", 0, 0 },
+  { 1329555, "Your next $n melee attacks generate ${$1329554s1/10/$1329554s2} additional Rage. Lasts $d.", "Melee attacks grant ${$1329554s1/10/$1329554s2} additional Rage.", 0 },
 } };
 
 // spelltext hotfix entries, wow build 1.60.1.70707
-static constexpr std::array<hotfix::client_hotfix_entry_t, 50> __spelltext_hotfix_data { {
+static constexpr std::array<hotfix::client_hotfix_entry_t, 53> __spelltext_hotfix_data { {
   {      71,  1, nullptr, "A defensive combat stance.  Decreases damage taken by $7376s1% and damage caused by $7376s2%.  Increases all threat generated by $?a12792[${($7376s3+100)*($12792s1/100+1)-100)}.1%][$7376s3%]." },
   {    2457,  1, nullptr, "A balanced combat stance." },
   {    2458,  1, nullptr, "An aggressive stance. Critical strike chance increased by $7381s1% and all damage taken is increased by $7381s2%." },
   {    2651,  1, "Chance to be hit by melee and ranged attacks reduced by $s1% until you are missed $N times.", "Chance to be hit by melee and ranged attacks reduced by $s~1% until you are missed $N times." },
   {    5923,  0, "Increases the critical strike chance of your Holy Shock and Holy Strike spells by $m2%, and all other spells by $m1%.", "Increases the critical strike healing bonus of your Holy spells by $s1%." },
   {    9452,  0, "Gives your damaging melee attacks a chance to reduce the target's Attack Power by ${$m1/-3*$440667m1}, and increase your Attack Power by $m1% for $440667d.", "Gives your damaging melee attacks a chance to reduce the target's Attack Power by ${$m1/-3*$440667m1} for $440667d." },
+  {   12321,  0, "Increases the area of effect of your Shouts by $s1% and reduces their Rage cost by $s2%.", "Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%." },
+  {   12862,  0, "Reduces the global cooldown and cast time of your Slam ability by ${$m1/-1000}.2 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by ${$m3/-1000}.1 sec.", "Reduces the cooldown of your Slam ability by ${$m3/-1000}.1 sec, the cast time and global cooldown by ${$m1/-1000}.2 sec, and Slam no longer interrupts or delays your melee swing." },
   {   13626,  0, "Permanently enchant a piece of chest armor to grant +2 to all stats.", "Permanently enchant a piece of chest armor to grant +$13624s1 to all stats." },
   {   13890,  0, "Permanently enchant boots to give a slight movement speed increase.", "Permanently enchant boots to increase movement speed by $13889s1%." },
   {   16757,  0, "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.", "Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%." },
@@ -8263,6 +8267,7 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 50> __spelltext_hotfi
   { 1259918,  0, "Gain $s1% increased movement speed every $s2 sec spent moving, up to a maximum of $s3% increase. Taking damage or standing still will reduce this effect. In addition, you move $s4% faster while mounted.", "Gain $s1% increased movement speed every $s2 sec spent moving, up to a maximum of $s3% increase. Taking damage or standing still will reduce this effect." },
   { 1270842,  1, "Mana and health regeneration rate increased by $s1%.", "Mana and health regeneration rate increased by $w1%." },
   { 1270893,  1, "Movement speed and mounted movement speed increased by $s1%.", "Charged by an elemental convergence, increasing the benefit of your Skysight ability by $s1%." },
+  { 1310315,  0, "Reduces the Rage cost of your Cleave and Whirlwind abilities by ${$m2/-10}.", "Reduces the cooldown of your Whirlwind ability by ${$m1/-1000} sec and increases the damage it deals to the closest enemy by $s2%." },
   { 1310735,  0, "Reduces the Mana cost of your Seal spells by $s1%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo.", "Your melee attacks store a copy of your active Seal for $1311701d, stacking up to $1311701u times. Landing an attack with a different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack." },
   { 1310904,  0, "Improves your chance to hit with Holy spells by $s1%.", "Improves your chance to hit with Holy spells by $s1%, and reduces the duration of Silence effects on you by $s2%." },
   { 1310911,  0, "Applies Light's Vigil to the target for $1310909d. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer $1310914s1 Holy damage and refund $s2% of Light's Vigil's Mana cost, or allied targets to heal their party for $1310912s1. You may only have one Light's Vigil active per party.", "Applies Light's Vigil to a friendly target for $1310909d. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for $1310912s1. Only one Vigil per Paladin may be active in each party." },
