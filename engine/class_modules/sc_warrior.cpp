@@ -203,6 +203,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t heroic_strike;
     spell_ranks_t overpower;
     spell_ranks_t rend;
+    spell_ranks_t shield_bash;
     spell_ranks_t sunder_armor;
     spell_ranks_t taunt;
     spell_ranks_t thunder_clap;
@@ -674,6 +675,25 @@ struct taunt_t : public warrior_spell_t
   }
 };
 
+struct shield_bash_t : public warrior_attack_t
+{
+  shield_bash_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "shield_bash", player, player->rank.shield_bash.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    is_interrupt = true;
+  }
+
+  bool ready() override
+  {
+    if ( !player->has_shield_equipped() )
+      return false;
+
+    return warrior_attack_t::ready();
+  }
+};
+
 struct thunder_clap_t : public warrior_attack_t
 {
   thunder_clap_t( warrior_t* player, util::string_view options_str ) :
@@ -856,6 +876,12 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 11585 ),
   };
 
+  rank.shield_bash = { this,
+    spell_container_t().set_spell(   72 ),
+    spell_container_t().set_spell( 1671 ),
+    spell_container_t().set_spell( 1672 ),
+  };
+
   rank.sunder_armor = { this,
     spell_container_t().set_spell(  7386 ),
     spell_container_t().set_spell(  7405 ),
@@ -980,6 +1006,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "bloodrage" ) return new bloodrage_t( this, options_str );
   if ( name == "charge" ) return new charge_t( this, options_str );
   if ( name == "taunt" ) return new taunt_t( this, options_str );
+  if ( name == "shield_bash" ) return new shield_bash_t( this, options_str );
 
   if ( name == "rend" ) return new rend_t( this, options_str );
   if ( name == "hamstring" ) return new hamstring_t( this, options_str );
