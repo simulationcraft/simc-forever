@@ -225,6 +225,8 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t revenge;
     spell_ranks_t shield_bash;
     spell_ranks_t shield_block;
+    spell_ranks_t slam;
+    spell_ranks_t slam_improved;
     spell_ranks_t sunder_armor;
     spell_ranks_t taunt;
     spell_ranks_t thunder_clap;
@@ -704,6 +706,39 @@ struct cleave_t : public warrior_attack_t
     warrior_attack_t::execute();
 
     p()->buff.cleave_queued->expire();
+  }
+};
+
+struct slam_t : public warrior_attack_t
+{
+  slam_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "slam", player,
+                      player->talent.improved_slam.ok()
+                          ? player->rank.slam_improved.find_rank()->spell()
+                          : player->rank.slam.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    if ( player->talent.improved_slam.ok() )
+    {
+      // Improved Slam no longer interrupts or delays the melee swing.
+      interrupt_auto_attack = false;
+      reset_auto_attack     = false;
+    }
+    else
+    {
+      // Base Slam resets the swing timer. The improved variants are the only
+      // ranks with the Do Not Reset Combat Timers attribute in the spell data.
+      reset_auto_attack = true;
+    }
+  }
+
+  bool ready() override
+  {
+    if ( !data().ok() )
+      return false;
+
+    return warrior_attack_t::ready();
   }
 };
 
@@ -1218,6 +1253,22 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 2565 ),
   };
 
+  rank.slam = { this,
+    spell_container_t().set_spell( 1240193 ),
+    spell_container_t().set_spell(    1464 ),
+    spell_container_t().set_spell(    8820 ),
+    spell_container_t().set_spell(   11604 ),
+    spell_container_t().set_spell(   11605 ),
+  };
+
+  rank.slam_improved = { this,
+    spell_container_t().set_spell( 1310196 ),
+    spell_container_t().set_spell( 1310197 ),
+    spell_container_t().set_spell( 1310198 ),
+    spell_container_t().set_spell( 1310199 ),
+    spell_container_t().set_spell( 1310200 ),
+  };
+
   rank.sunder_armor = { this,
     spell_container_t().set_spell(  7386 ),
     spell_container_t().set_spell(  7405 ),
@@ -1360,6 +1411,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "revenge" ) return new revenge_t( this, options_str );
   if ( name == "retaliation" ) return new retaliation_t( this, options_str );
   if ( name == "cleave" ) return new cleave_queue_t( this, options_str );
+  if ( name == "slam" ) return new slam_t( this, options_str );
   if ( name == "heroic_strike" ) return new heroic_strike_queue_t( this, options_str );
 
 

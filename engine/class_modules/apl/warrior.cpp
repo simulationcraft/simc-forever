@@ -56,6 +56,7 @@ void warrior( player_t* p )
   default_->add_action( "shield_bash" );
   default_->add_action( "thunder_clap,if=spell_targets>=2" );
   default_->add_action( "cleave,if=spell_targets>=2" );
+  default_->add_action( "slam,if=rage>=30" );
   default_->add_action( "heroic_strike,if=rage>=30" );
 }
 //warrior_apl_end
