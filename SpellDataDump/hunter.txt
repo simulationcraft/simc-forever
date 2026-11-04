@@ -3065,7 +3065,7 @@ Requires weapon  : Gun
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=690506)   : Apply Aura (6) | Unknown(557)
+#1 (id=690506)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 10 | Scaled Value: 10 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
@@ -3078,7 +3078,7 @@ Requires weapon  : Gun
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=691878)   : Apply Aura (6) | Unknown(557)
+#1 (id=691878)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 11 | Scaled Value: 11 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
@@ -3091,7 +3091,7 @@ Requires weapon  : Gun
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=691879)   : Apply Aura (6) | Unknown(557)
+#1 (id=691879)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 12 | Scaled Value: 12 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
@@ -3104,7 +3104,7 @@ Requires weapon  : Gun
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=691880)   : Apply Aura (6) | Unknown(557)
+#1 (id=691880)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 13 | Scaled Value: 13 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
@@ -3117,7 +3117,7 @@ Requires weapon  : Gun
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=692199)   : Apply Aura (6) | Unknown(557)
+#1 (id=692199)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
@@ -6539,7 +6539,7 @@ Requires weapon  : Bow, Crossbow
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=705679)   : Apply Aura (6) | Unknown(557)
+#1 (id=705679)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 13 | Scaled Value: 13 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
@@ -6552,7 +6552,7 @@ Requires weapon  : Bow, Crossbow
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=705738)   : Apply Aura (6) | Unknown(557)
+#1 (id=705738)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
@@ -6565,7 +6565,7 @@ Requires weapon  : Bow, Crossbow
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=705647)   : Apply Aura (6) | Unknown(557)
+#1 (id=705647)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 12 | Scaled Value: 12 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
@@ -6578,7 +6578,7 @@ Requires weapon  : Bow, Crossbow
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=705648)   : Apply Aura (6) | Unknown(557)
+#1 (id=705648)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 11 | Scaled Value: 11 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
@@ -6591,7 +6591,7 @@ Requires weapon  : Bow, Crossbow
 Proc Chance      : 101%
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
 Effects          :
-#1 (id=705649)   : Apply Aura (6) | Unknown(557)
+#1 (id=705649)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 10 | Scaled Value: 10 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
