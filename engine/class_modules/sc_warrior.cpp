@@ -30,6 +30,7 @@ struct warrior_td_t : public actor_target_data_t
   struct debuffs_t
   {
     buff_t* hamstring = nullptr;
+    buff_t* sunder_armor = nullptr;
     buff_t* thunder_clap = nullptr;
   } debuffs;
 
@@ -202,6 +203,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t heroic_strike;
     spell_ranks_t overpower;
     spell_ranks_t rend;
+    spell_ranks_t sunder_armor;
     spell_ranks_t thunder_clap;
   } rank;
 
@@ -216,6 +218,15 @@ warrior_td_t::warrior_td_t( player_t* target, warrior_t& p ) : actor_target_data
 
   if ( p.spell.hamstring->ok() )
     debuffs.hamstring = make_buff( *this, "hamstring", p.spell.hamstring );
+
+  if ( target->is_enemy() )
+  {
+    auto const sunder_armor = p.rank.sunder_armor.find_rank();
+    if ( sunder_armor->spell()->ok() )
+      debuffs.sunder_armor =
+          make_buff<stat_buff_t>( *this, "sunder_armor", sunder_armor->spell() )
+              ->set_default_value_from_effect( 1 );
+  }
 
   if ( p.spell.thunder_clap->ok() )
     debuffs.thunder_clap = make_buff( *this, "thunder_clap", p.spell.thunder_clap );
@@ -525,6 +536,23 @@ struct hamstring_t : public warrior_attack_t
   }
 };
 
+struct sunder_armor_t : public warrior_attack_t
+{
+  sunder_armor_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "sunder_armor", player, player->rank.sunder_armor.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    warrior_attack_t::impact( s );
+
+    if ( result_is_hit( s->result ) )
+      td( s->target )->debuffs.sunder_armor->trigger();
+  }
+};
+
 struct overpower_t : public warrior_attack_t
 {
   overpower_t( warrior_t* player, util::string_view options_str ) :
@@ -811,6 +839,14 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 11585 ),
   };
 
+  rank.sunder_armor = { this,
+    spell_container_t().set_spell(  7386 ),
+    spell_container_t().set_spell(  7405 ),
+    spell_container_t().set_spell(  8380 ),
+    spell_container_t().set_spell( 11596 ),
+    spell_container_t().set_spell( 11597 ),
+  };
+
   rank.thunder_clap = { this,
     spell_container_t().set_spell(  6343 ),
     spell_container_t().set_spell(  8198 ),
@@ -925,6 +961,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
 
   if ( name == "rend" ) return new rend_t( this, options_str );
   if ( name == "hamstring" ) return new hamstring_t( this, options_str );
+  if ( name == "sunder_armor" ) return new sunder_armor_t( this, options_str );
   if ( name == "overpower" ) return new overpower_t( this, options_str );
   if ( name == "heroic_strike" ) return new heroic_strike_queue_t( this, options_str );
 
