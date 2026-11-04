@@ -1225,7 +1225,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=680100)   : Apply Aura (6) | Unknown(674)
+#1 (id=680100)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -90 | Scaled Value: -90 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234494)  : Threat (63)
                    Base Value: 34 | Scaled Value: 34 | Target: Targeted Enemy (6)
@@ -1306,7 +1306,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686874)   : Apply Aura (6) | Unknown(674)
+#1 (id=686874)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -180 | Scaled Value: -180 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234495)  : Threat (63)
                    Base Value: 75 | Scaled Value: 75 | Target: Targeted Enemy (6)
@@ -1460,7 +1460,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686586)   : Apply Aura (6) | Unknown(674)
+#1 (id=686586)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -270 | Scaled Value: -270 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234498)  : Threat (63)
                    Base Value: 117 | Scaled Value: 117 | Target: Targeted Enemy (6)
@@ -1913,7 +1913,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688698)   : Apply Aura (6) | Unknown(674)
+#1 (id=688698)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -360 | Scaled Value: -360 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234497)  : Threat (63)
                    Base Value: 158 | Scaled Value: 158 | Target: Targeted Enemy (6)
@@ -1938,7 +1938,7 @@ Affecting Spells : Improved Sunder Armor (12308 effect#1), Impale (16493 effect#
 Family Flags     : 14
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Aura Never Bounces (148), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688831)   : Apply Aura (6) | Unknown(674)
+#1 (id=688831)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -450 | Scaled Value: -450 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=1234496)  : Threat (63)
                    Base Value: 206 | Scaled Value: 206 | Target: Targeted Enemy (6)

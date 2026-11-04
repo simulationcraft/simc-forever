@@ -163,7 +163,7 @@ Affecting Spells : Bear Form (Passive) (1178 effects: #5, #6), Cat Form (Passive
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679903)   : Apply Aura (6) | Unknown(674)
+#1 (id=679903)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -175 | Scaled Value: -175 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=679904)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -215,7 +215,7 @@ Affecting Spells : Bear Form (Passive) (1178 effects: #5, #6), Cat Form (Passive
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=680252)   : Apply Aura (6) | Unknown(674)
+#1 (id=680252)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -285 | Scaled Value: -285 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=680253)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -484,7 +484,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=680770)   : Apply Aura (6) | Unknown(674)
+#1 (id=680770)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 34 | Scaled Value: 34 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 Description      : Increases the friendly target's armor by $s1 for $d.
@@ -1338,7 +1338,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=683754)   : Apply Aura (6) | Unknown(674)
+#1 (id=683754)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 88 | Scaled Value: 88 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=683755)   : Apply Aura (6) | Attribute (29)
@@ -1365,7 +1365,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684205)   : Apply Aura (6) | Unknown(674)
+#1 (id=684205)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 203 | Scaled Value: 203 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=684206)   : Apply Aura (6) | Attribute (29)
@@ -1438,7 +1438,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #4 (id=1357988)  : Apply Aura (6) | Unknown(668)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#5 (id=1363096)  : Apply Aura (6) | Modify Power Regen (110)
+#5 (id=1363096)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: -100 | Scaled Value: -100 | Resource: energy | Target: Self (1)
 Description      : Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
 
@@ -1488,7 +1488,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684910)   : Apply Aura (6) | Unknown(674)
+#1 (id=684910)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 142 | Scaled Value: 142 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=684911)   : Apply Aura (6) | Attribute (29)
@@ -1797,7 +1797,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687941)   : Apply Aura (6) | Unknown(674)
+#1 (id=687941)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 263 | Scaled Value: 263 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=687942)   : Apply Aura (6) | Attribute (29)
@@ -2523,7 +2523,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #4 (id=1357989)  : Apply Aura (6) | Unknown(668)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#5 (id=1363092)  : Apply Aura (6) | Modify Power Regen (110)
+#5 (id=1363092)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: -100 | Scaled Value: -100 | Resource: energy | Target: Self (1)
 Description      : Shapeshift into Dire Bear Form, increasing Attack Power by $9635s4, Armor contribution from items by $9635s1%, and Health by $9635s3.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
 
@@ -2620,7 +2620,7 @@ Affecting Spells : Bear Form (Passive) (1178 effects: #5, #6), Cat Form (Passive
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=684321)   : Apply Aura (6) | Unknown(674)
+#1 (id=684321)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -395 | Scaled Value: -395 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=684322)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -3411,7 +3411,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688189)   : Apply Aura (6) | Unknown(674)
+#1 (id=688189)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 324 | Scaled Value: 324 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=688190)   : Apply Aura (6) | Attribute (29)
@@ -3453,7 +3453,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18, 93
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688485)   : Apply Aura (6) | Unknown(674)
+#1 (id=688485)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 385 | Scaled Value: 385 | Value Multiplier: 1 | Misc Value: 1 | Target: Targeted Ally (21)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=688486)   : Apply Aura (6) | Attribute (29)
@@ -3670,7 +3670,7 @@ Affecting Spells : Bear Form (Passive) (1178 effects: #5, #6), Cat Form (Passive
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Allow While Not Shapeshifted (caster form) (83), Taps immediately (215), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=687337)   : Apply Aura (6) | Unknown(674)
+#1 (id=687337)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -505 | Scaled Value: -505 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=687338)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -4199,7 +4199,7 @@ Triggered By     : Nature's Grace (16880)
 Family Flags     : 113
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=693393)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=693393)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
 #2 (id=1135593)  : Apply Aura (6) | Add Percent Modifier (108): Spell Global Cooldown (21)
                    Base Value: -10 | Scaled Value: -10 | SP Coefficient: 1 | Misc Value: 21 | Target: Self (1)
@@ -4858,7 +4858,7 @@ Spell Type       : None
 Labels           : 21: Druid Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=694418)   : Apply Aura (6) | Unknown(134)
+#1 (id=694418)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -5472,7 +5472,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=699597)   : Apply Aura (6) | Unknown(674)
+#1 (id=699597)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 324 | Scaled Value: 324 | Value Multiplier: 1 | Misc Value: 1 | Radius: 100 yards | Target: Raid in Area (56)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=699598)   : Apply Aura (6) | Attribute (29)
@@ -5513,7 +5513,7 @@ Affecting Spells : Nature's Grace (16886 effect#2), Improved Mark of the Wild (1
 Family Flags     : 18
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=698280)   : Apply Aura (6) | Unknown(674)
+#1 (id=698280)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 385 | Scaled Value: 385 | Value Multiplier: 1 | Misc Value: 1 | Radius: 100 yards | Target: Raid in Area (56)
                    Modified By: Improved Mark of the Wild (17050 effect#1), Improved Mark of the Wild (17051 effect#1), Improved Mark of the Wild (17053 effect#1), Improved Mark of the Wild (17054 effect#1), Improved Mark of the Wild (17055 effect#1)
 #2 (id=698281)   : Apply Aura (6) | Attribute (29)
@@ -6102,9 +6102,9 @@ Affecting Spells : S03 - Item - T1 - Druid - Guardian 2P Bonus (456325 effect#1)
 Family Flags     : 44
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=705051)   : Apply Aura (6) | Unknown(134)
+#1 (id=705051)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Targeted Ally (21)
-#2 (id=705052)   : Apply Aura (6) | Modify Power Regen (110)
+#2 (id=705052)   : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 400 | Scaled Value: 400 | SP Coefficient: 1 | Resource: mana | Target: Targeted Ally (21)
 Description      : Increases the target's Mana regeneration by $s2% and allows $s1% of the target's Mana regeneration to continue while casting.  Lasts $d.
 Tooltip          : Mana regeneration increased by $s2%.  $s1% Mana regeneration may continue while casting.
@@ -6444,7 +6444,7 @@ Labels           : 21: Druid Spells
 Triggered By     : S03 - Item - T2- Druid - Restoration 2P Bonus (467099)
 Attributes       : Is Ability (4), Suppress Caster Procs (112), Suppress Target Procs (113), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1072253)  : Apply Aura (6) | Unknown(134)
+#1 (id=1072253)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 Tooltip          : Regenerating $w1% of your normal Mana regeneration while casting spells.

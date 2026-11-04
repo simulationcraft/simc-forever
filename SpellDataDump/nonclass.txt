@@ -340,7 +340,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=679464)   : Apply Aura (6) | Unknown(674)
+#1 (id=679464)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 50 | Scaled Value: 50 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -427,7 +427,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=679487)   : Apply Aura (6) | Unknown(674)
+#1 (id=679487)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 100 | Scaled Value: 100 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -1274,7 +1274,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=681446)   : Apply Aura (6) | Unknown(674)
+#1 (id=681446)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 150 | Scaled Value: 150 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -2825,7 +2825,7 @@ Category         : 28 (Type 0x0)
 Category Cooldown: 60 seconds
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=683456)   : Apply Aura (6) | Unknown(674)
+#1 (id=683456)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 1000 | Scaled Value: 1000 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Increased armor.
@@ -6370,7 +6370,7 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=687703)   : Apply Aura (6) | Unknown(674)
+#1 (id=687703)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 60 | Scaled Value: 60 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -6384,7 +6384,7 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=687687)   : Apply Aura (6) | Unknown(674)
+#1 (id=687687)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 120 | Scaled Value: 120 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -6398,7 +6398,7 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=687688)   : Apply Aura (6) | Unknown(674)
+#1 (id=687688)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 180 | Scaled Value: 180 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -7645,7 +7645,7 @@ Range            : 30 yards
 Duration         : 60 seconds
 Attributes       : Aura Unique (43), Unknown (493)
 Effects          :
-#1 (id=686179)   : Apply Aura (6) | Unknown(674)
+#1 (id=686179)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -50 | Scaled Value: -50 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Decrease the armor of target by $s1 for $d.
 Tooltip          : Decreased armor.
@@ -8954,7 +8954,7 @@ Range            : 30 yards
 Duration         : 20 seconds
 Attributes       : Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Unknown (493)
 Effects          :
-#1 (id=687081)   : Apply Aura (6) | Unknown(674)
+#1 (id=687081)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=687082)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -10135,7 +10135,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=688319)   : Apply Aura (6) | Unknown(674)
+#1 (id=688319)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 450 | Scaled Value: 450 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -10146,7 +10146,7 @@ Spell Type       : Magic
 Duration         : 3600 seconds
 Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
 Effects          :
-#1 (id=688376)   : Apply Aura (6) | Unknown(674)
+#1 (id=688376)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 250 | Scaled Value: 250 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -11177,7 +11177,7 @@ GCD              : 1.5 seconds
 Duration         : 1800 seconds
 Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
 Effects          :
-#1 (id=690009)   : Apply Aura (6) | Unknown(674)
+#1 (id=690009)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 240 | Scaled Value: 240 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -12202,7 +12202,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Unknown (493)
 Effects          :
-#1 (id=690810)   : Apply Aura (6) | Unknown(674)
+#1 (id=690810)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -50 | Scaled Value: -50 | Misc Value: 1 | Target: Targeted Enemy (6)
 #2 (id=690811)   : Apply Aura (6) | Disable Stealth (41)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
@@ -13436,7 +13436,7 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=690876)   : Apply Aura (6) | Modify Ranged and Melee Auto Attack Speed% (342)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
-#2 (id=1353963)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1353963)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Enchant Bracer - Deflection (id=13931) 
@@ -18252,7 +18252,7 @@ Range            : 30 yards
 Duration         : 1800 seconds
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=692774)   : Apply Aura (6) | Unknown(674)
+#1 (id=692774)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 200 | Scaled Value: 200 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Increases armor by $s1.
@@ -18265,7 +18265,7 @@ Range            : 30 yards
 Duration         : 120 seconds
 Attributes       : Do Not Sheath (18), Unknown (493)
 Effects          :
-#1 (id=692383)   : Apply Aura (6) | Unknown(674)
+#1 (id=692383)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -200 | Scaled Value: -200 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Decreases an enemy target's Armor by $s1 for $d.
 Tooltip          : Armor decreased by $s1 for $d.
@@ -18319,7 +18319,7 @@ Velocity         : 19 yards/sec
 Duration         : 20 seconds
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=692922)   : Apply Aura (6) | Unknown(674)
+#1 (id=692922)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -300 | Scaled Value: -300 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Reduces targets armor by $s1 for $d.
 Tooltip          : Armor reduced by $s1.
@@ -18463,7 +18463,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
-#1 (id=692843)   : Apply Aura (6) | Unknown(674)
+#1 (id=692843)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 
 Name             : Lesser Arcane Amalgamation (id=15391) 
@@ -18653,7 +18653,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
-#1 (id=692605)   : Apply Aura (6) | Unknown(674)
+#1 (id=692605)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 110 | Scaled Value: 110 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 #2 (id=692606)   : Apply Aura (6) | Resistance (22)
                    Base Value: 14 | Scaled Value: 14 | SP Coefficient: 1 | Misc Value: 4 | Target: Self (1)
@@ -18795,7 +18795,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
-#1 (id=692460)   : Apply Aura (6) | Unknown(674)
+#1 (id=692460)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 110 | Scaled Value: 110 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 #2 (id=692461)   : Apply Aura (6) | Resistance (22)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Misc Value: 4 | Target: Self (1)
@@ -20637,7 +20637,7 @@ Stacks           : 3 maximum
 Proc Chance      : 101%
 Attributes       : No Redirection (35), No Reflection (39), Unknown (493)
 Effects          :
-#1 (id=693875)   : Apply Aura (6) | Unknown(674)
+#1 (id=693875)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: -165 | Scaled Value: -165 | Misc Value: 1 | Target: Targeted Enemy (6)
 Description      : Reduces an enemy's armor by $s1.  Stacks up to 3 times.
 Tooltip          : Armor reduced by $s1.
@@ -21272,7 +21272,7 @@ Category         : 28 (Type 0x0)
 Category Cooldown: 60 seconds
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=695497)   : Apply Aura (6) | Unknown(674)
+#1 (id=695497)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 2000 | Scaled Value: 2000 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Increased armor.
@@ -31425,7 +31425,7 @@ Duration         : 20 seconds
 Proc Chance      : 101%
 Attributes       : Unknown (493)
 Effects          :
-#1 (id=701380)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=701380)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 33 | Scaled Value: 33 | SP Coefficient: 1 | Target: Self (1)
 Description      : Quickens the mind, increasing the Mage's casting speed by $s1% for $d.
 Tooltip          : Casting speed increased by $s1%.
@@ -31447,7 +31447,7 @@ Duration         : 20 seconds
 Proc Chance      : 101%
 Attributes       : Do Not Sheath (18), Unknown (493)
 Effects          :
-#1 (id=701025)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=701025)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 33 | Scaled Value: 33 | SP Coefficient: 1 | Target: Self (1)
 #2 (id=701026)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 25 | Scaled Value: 25 | SP Coefficient: 1 | Target: Self (1)
@@ -31512,7 +31512,7 @@ Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken
 Attributes       : Do Not Sheath (18), Unknown (493)
 Effects          :
-#1 (id=700893)   : Apply Aura (6) | Unknown(674)
+#1 (id=700893)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 500 | Scaled Value: 500 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 #2 (id=700894)   : Apply Aura (6) | Proc Trigger Spell (42): Aegis Heal
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 23781 | Target: Self (1)
@@ -37281,7 +37281,7 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #2 (id=705613)   : Apply Aura (6) | Attribute (29)
                    Base Value: 16 | Scaled Value: 16 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
-#3 (id=705614)   : Apply Aura (6) | Unknown(674)
+#3 (id=705614)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
 
 Name             : Might of the Scourge (id=29482) [Passive, Hidden] 
@@ -38056,7 +38056,7 @@ Proc Chance      : 5%
 Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Helpful, Generic Hostile Spell, Magic Heal, Magic Hostile Spell, Periodic, Helpful Periodic
 Attributes       : Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Aura Points On Client (268), Allow While Banished Aura State (299), Allow While Stunned by Stun Mechanic (378), Only Proc From Class Abilities (415), Unknown (493)
 Effects          :
-#1 (id=982372)   : Apply Aura (6) | Modify Spell Speed% (65)
+#1 (id=982372)   : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
 #2 (id=982475)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: 15 | Scaled Value: 15 | Value Multiplier: 1 | Target: Self (1)
@@ -43597,7 +43597,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Aura Unique (43), Unknown (493)
 Effects          :
-#1 (id=1180747)  : Apply Aura (6) | Unknown(134)
+#1 (id=1180747)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -50262,7 +50262,7 @@ Cone Angle       : 60 degrees
 Duration         : 3600 seconds
 Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1222308)  : Apply Aura (6) | Unknown(674)
+#1 (id=1222308)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 308 | Scaled Value: 308 | Misc Value: 1 | Target: Self (1)
 #2 (id=1298449)  : Apply Aura (6) | Attribute (29)
                    Base Value: 13 | Scaled Value: 13 | Stat: All | Target: Self (1)
@@ -52430,7 +52430,7 @@ School           : Physical
 Spell Type       : None
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=1251892)  : Apply Aura (6) | Unknown(134)
+#1 (id=1251892)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 8 | Scaled Value: 8 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
@@ -53977,7 +53977,7 @@ Attributes       : Allow While Sitting (27), Aura Is Buff (140), Aura Points On 
 Effects          :
 #1 (id=1255227)  : Apply Aura (6) | Increase Health (34)
                    Base Value: 400 | Scaled Value: 400 | Target: Self (1)
-#2 (id=1255228)  : Apply Aura (6) | Unknown(674)
+#2 (id=1255228)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 500 | Scaled Value: 500 | Misc Value: 1 | Target: Self (1)
 Description      : Drink to gain $s1 Maximum Health and $s2 Armor. Lasts for $d.
 Tooltip          : Maximum Health increased by $w1 and Armor increased by $w2.
@@ -59579,7 +59579,7 @@ Effects          :
 #1 (id=1268898)  : Apply Aura (6) | Modify Ranged and Melee Auto Attack Speed% (342)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
 Hotfixed         : Base Value (3 -> 2)
-#2 (id=1354094)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1354094)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
 Hotfixed         : Base Value (3 -> 2)
 Description      : Increases your spellcasting, melee, and ranged Haste by $s1%.
@@ -60879,7 +60879,7 @@ Labels           : 5710
 Triggered By     : Read Leyline (1259705)
 Attributes       : Ignore Line of Sight (66), Aura Never Bounces (148), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1283214)  : Apply Aura (6) | Modify Power Regen (110)
+#1 (id=1283214)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
 Hotfixed         : Base Value (100 -> 50)
 #2 (id=1283215)  : Apply Aura (6) | Modify Health Regeneration% (88)
@@ -62214,7 +62214,7 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=1310094)  : School Damage (2): shadow
                    Base Value: 250 | Scaled Value: 250 (delta=0.4) | Target: Targeted Enemy (6)
-#2 (id=1310095)  : Apply Aura (6) | Modify Spell Speed% (65)
+#2 (id=1310095)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -25 | Scaled Value: -25 | Target: Targeted Enemy (6)
 Description      : Wounds the target for $s1 damage and increases the casting time of all spells by $s2% for $d.
 Tooltip          : Increasing casting time by $s2%.
@@ -63192,7 +63192,7 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 #3 (id=1314705)  : Apply Aura (6) | Modify Ranged and Melee Auto Attack Speed% (342)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-#4 (id=1354092)  : Apply Aura (6) | Modify Spell Speed% (65)
+#4 (id=1354092)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Haste.
 
@@ -64356,7 +64356,7 @@ Spell Type       : None
 Duration         : 20 seconds
 Attributes       : Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1325576)  : Apply Aura (6) | Unknown(674)
+#1 (id=1325576)  : Apply Aura (6) | Modify Armor (674)
                    Base Value: 520 | Scaled Value: 520 | Misc Value: 1 | Target: Self (1)
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
@@ -64991,7 +64991,7 @@ Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Dismiss Pet Fir
 Effects          :
 #2 (id=1326909)  : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
                    Base Value: -40 | Scaled Value: -40
-#3 (id=1326910)  : Apply Aura (6) | Modify Spell Speed% (65)
+#3 (id=1326910)  : Apply Aura (6) | Modify Spell Haste (65)
                    Base Value: -30 | Scaled Value: -30
 #4 (id=1327649)  : Apply Aura (6) | Modify Melee Attack Power% (166)
                    Base Value: -20 | Scaled Value: -20

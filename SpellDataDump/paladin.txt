@@ -39,7 +39,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=679080)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=679080)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 55 | Scaled Value: 55 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237419)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -159,7 +159,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=686403)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=686403)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 275 | Scaled Value: 275 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237421)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -399,7 +399,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=685608)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=685608)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 505 | Scaled Value: 505 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237423)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -1035,7 +1035,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689235)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=689235)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 160 | Scaled Value: 160 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237420)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -1057,7 +1057,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=689013)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=689013)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 390 | Scaled Value: 390 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237422)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -1079,7 +1079,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688024)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=688024)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 620 | Scaled Value: 620 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237424)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -1101,7 +1101,7 @@ Affecting Spells : Improved Devotion Aura (20138 effects: #1, #2)
 Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Use Shapeshift Bar (68), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
-#1 (id=688025)   : Apply Party Aura (35) | Unknown(674)
+#1 (id=688025)   : Apply Party Aura (35) | Modify Armor (674)
                    Base Value: 735 | Scaled Value: 735 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
                    Modified By: Improved Devotion Aura (20138 effect#1)
 #2 (id=1237425)  : Apply Party Aura (35) | Modify Healing Received% (118)
@@ -8551,7 +8551,7 @@ Spell Type       : None
 Labels           : 26: Paladin Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=1340794)  : Apply Aura (6) | Unknown(134)
+#1 (id=1340794)  : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 

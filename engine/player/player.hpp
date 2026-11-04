@@ -209,10 +209,11 @@ struct player_t : public actor_t
     double health_per_stamina;
     std::array<double, SCHOOL_MAX> resource_reduction;
     double miss, dodge, parry, block;
-    double hit, expertise, leech, avoidance, crit_avoidance;
+    double hit, spell_hit, expertise, leech, avoidance, crit_avoidance;
     double spell_crit_chance, attack_crit_chance, block_value;
     double all_crit, all_haste;
-    double mana_regen_while_casting;
+    double mana_regen_while_casting; 
+    double resource_regen_multiplier;
     double melee_haste, spell_haste, ranged_haste;
     double skill, skill_debuff, distance;
     double distance_to_move;
@@ -229,6 +230,7 @@ struct player_t : public actor_t
     std::array<double, SCHOOL_MAX_PRIMARY> crit_damage_multiplier;
     double crit_healing_multiplier;
     double attack_speed_multiplier;
+    double ranged_attack_speed_multiplier;
     double healing_multiplier;
     std::array<double, SCHOOL_MAX_PRIMARY> damage_multiplier;
     double pet_damage_multiplier, guardian_damage_multiplier;
@@ -471,9 +473,6 @@ struct player_t : public actor_t
     buff_t* invulnerable;
     buff_t* vulnerable;
     buff_t* damage_taken;
-
-    // WoD debuffs
-    buff_t* mortal_wounds;
   } debuffs;
 
   struct external_buffs_t
@@ -875,6 +874,7 @@ public:
 
   virtual double composite_melee_haste() const;
   virtual double composite_melee_auto_attack_speed() const;
+  virtual double composite_ranged_auto_attack_speed() const;
   virtual double composite_melee_attack_power() const;
   virtual double composite_ranged_attack_power() const;
   virtual double composite_weapon_attack_power_by_type( attack_power_type ) const;
@@ -895,6 +895,7 @@ public:
   virtual double composite_spell_hit() const;
   virtual double composite_leech() const;
   virtual double composite_mana_regen_while_casting() const;
+  virtual double composite_resource_regen_multiplier( resource_e r ) const;
   virtual double composite_run_speed() const;
   virtual double composite_avoidance() const;
   virtual double composite_corruption() const;
