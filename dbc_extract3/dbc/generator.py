@@ -1000,6 +1000,7 @@ class SpellDataGenerator(DataGenerator):
             ( 58385,  0 ),          # Glyph of Hamstring
             ( 118779, 0, False ),   # Victory Rush heal is not directly activatable
             ( 119938, 0 ),          # Overpower
+            ( 20240,  0 ),          # Retaliation damage spell 
             ( 209700, 0 ),          # Void Cleave (arms artifact gold medal)
             ( 218877, 0 ),          # Gaze of the Val'kyr
             ( 218850, 0 ),          # Gaze of the Val'kyr
