@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70755
-static constexpr std::array<spelltext_data_t, 8220> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8231> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8188,6 +8188,17 @@ static constexpr std::array<spelltext_data_t, 8220> __spelltext_data { {
   { 1326168, "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by $1326159s1% for $d.\r\n", "Spirit increased by $w1%.", 0 },
   { 1326475, "Call down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional $s2 Fire damage every $t2 for $d.", "Suffering $w2 Fire damage every $t2.", 0 },
   { 1326891, "Increases the damage done by your Frost spells by $s1%.", "Increases the damage done by your Frost spells by $w1%.", 0 },
+  { 1327736, "Increases Intellect by $s1% for $d. This effect stacks up to $u times.", "Intellect increased by $s1%.", 0 },
+  { 1327737, "Increases damage done by $s1% for $d. This effect stacks up to $u times.", "Increases damage dealt by $s1%.", 0 },
+  { 1327738, "Increases healing done by $s1% for $d. This effect stacks up to $u times.", "Increases healing done by $s1%.", 0 },
+  { 1327751, "Increases Haste by $s1% for $d. This effect stacks up to $u times.", "Haste increased by $s1%.", 0 },
+  { 1327753, "Improves your chance to get a Critical Strike by $s1% for $d. This effect stacks up to $u times.", "Critical Strike chance increased by $s1%.", 0 },
+  { 1327754, "Increases Stamina of nearby allies by $s1% for $d.", "Stamina increased by $s1%.", 0 },
+  { 1327991, "Calls forth Anathema.", 0, 0 },
+  { 1327993, "Calls forth Benediction.", 0, 0 },
+  { 1328032, "Increases mana regeneration by $s1% for $d.", "Mana regeneration increased by $s1%.", 0 },
+  { 1328118, "Enlarges the imbiber by a significant amount for $d. This effect stacks up to $u times.", "Feeling much bigger now.", 0 },
+  { 1328119, "Increases run speed of nearby allies by $s1% for $d.", "Increases run speed by $s1%", 0 },
   { 1328348, "Throw a handful into the campfire, transforming its flames.\r\n|cFFffffffRequires WoW: Forever Launch Celebration |r\r\n", 0, 0 },
   { 1328370, "Reduces the cast time of your Turn Undead spell by ${$s1/-1000}.1 sec, its cooldown by ${$s2/-1000} sec, and allows it to affect Demons.", 0, 0 },
   { 1328372, "The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.", "Compelled to flee.", "Rank 3" },

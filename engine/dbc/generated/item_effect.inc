@@ -1,5 +1,5 @@
 // Item effects, wow build 1.60.1.70755
-static constexpr std::array<item_effect_t, 921> __item_effect_data { {
+static constexpr std::array<item_effect_t, 928> __item_effect_data { {
   { 212548, 1241821,      0,   0,   0,    0,      -1,      -1 }, // Stock Ore
   { 213334,  13669,      0,   0,   1,    0,      -1,      -1 }, // Increased Dodge 1
   {  97072, 1248687,    733,   0,   0,    0,      -1,      -1 }, // Nutritious Food
@@ -921,9 +921,16 @@ static constexpr std::array<item_effect_t, 921> __item_effect_data { {
   { 237918, 1318163, 285280,   0,   2,    0,      -1,      -1 }, // Concussed
   { 237920, 1318178, 285281,   0,   2,    0,      -1,      -1 }, // Cracked Skull
   { 239392,  21152, 288900,   0,   2,    0,      -1,      -1 }, // Earthshaker
+  { 239511, 1327736, 289082,   0,   0, 2593,       0,    3000 }, // Elixir of Endless Intellect
+  { 239658,  21992, 289294,   0,   2,    0,      -1,      -1 }, // Thunderfury
+  { 239659,  21162, 289295,   1,   2,    0,      -1,      -1 }, // Fireball
+  { 239660,  21142, 289295,   2,   1,    0,      -1,      -1 }, // Immolation
+  { 239661, 1327991, 289296,   0,   0, 1160,       0,   60000 }, // Call Anathema
+  { 239662,  23236, 289296,   1,   1,    0,      -1,      -1 }, // Benediction
+  { 239663, 1327993, 289297,   0,   0, 1160,       0,   60000 }, // Call Benediction
 } };
 
-static const std::array<uint16_t, 921> __item_effect_id_index { {
+static const std::array<uint16_t, 928> __item_effect_id_index { {
       4,     2,   559,     8,     9,     5,     6,     3,
      19,    10,   560,   561,    31,    20,    29,    26,
      30,    23,    24,    13,    12,    14,    15,    21,
@@ -1039,6 +1046,6 @@ static const std::array<uint16_t, 921> __item_effect_id_index { {
     758,   755,   760,   914,   915,   916,   767,   768,
     917,   773,   774,   771,   772,   761,   762,   918,
     919,   864,   350,   753,   228,   485,   750,    76,
-    920,
+    920,   921,   922,   923,   924,   925,   926,   927,
 } };
 
