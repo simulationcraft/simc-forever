@@ -204,6 +204,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t overpower;
     spell_ranks_t rend;
     spell_ranks_t sunder_armor;
+    spell_ranks_t taunt;
     spell_ranks_t thunder_clap;
   } rank;
 
@@ -657,6 +658,22 @@ struct charge_t : public warrior_attack_t
   }
 };
 
+struct taunt_t : public warrior_spell_t
+{
+  taunt_t( warrior_t* player, util::string_view options_str ) :
+    warrior_spell_t( "taunt", player, player->rank.taunt.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+
+  void execute() override
+  {
+    warrior_spell_t::execute();
+
+    target->taunt( player );
+  }
+};
+
 struct thunder_clap_t : public warrior_attack_t
 {
   thunder_clap_t( warrior_t* player, util::string_view options_str ) :
@@ -847,6 +864,10 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 11597 ),
   };
 
+  rank.taunt = { this,
+    spell_container_t().set_spell( 355 ),
+  };
+
   rank.thunder_clap = { this,
     spell_container_t().set_spell(  6343 ),
     spell_container_t().set_spell(  8198 ),
@@ -958,6 +979,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "battle_shout" ) return new battle_shout_t( this, options_str );
   if ( name == "bloodrage" ) return new bloodrage_t( this, options_str );
   if ( name == "charge" ) return new charge_t( this, options_str );
+  if ( name == "taunt" ) return new taunt_t( this, options_str );
 
   if ( name == "rend" ) return new rend_t( this, options_str );
   if ( name == "hamstring" ) return new hamstring_t( this, options_str );
