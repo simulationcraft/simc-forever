@@ -171,6 +171,7 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* demoralizing_shout       = spell_data_t::nil();
     const spell_data_t* hamstring                = spell_data_t::nil();
     const spell_data_t* overpower_available      = spell_data_t::nil();
+    const spell_data_t* shield_block             = spell_data_t::nil();
     const spell_data_t* sunder_armor             = spell_data_t::nil();
     const spell_data_t* thunder_clap             = spell_data_t::nil();
   } spell;
@@ -187,6 +188,7 @@ struct warrior_t final : public parse_player_effects_t
     buff_t* heroic_strike_queued = nullptr;
     buff_t* overpower_available  = nullptr;
     buff_t* revenge_available    = nullptr;
+    buff_t* shield_block         = nullptr;
   } buff;
 
   struct gains_t
@@ -212,6 +214,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t rend;
     spell_ranks_t revenge;
     spell_ranks_t shield_bash;
+    spell_ranks_t shield_block;
     spell_ranks_t sunder_armor;
     spell_ranks_t taunt;
     spell_ranks_t thunder_clap;
@@ -761,6 +764,37 @@ struct shield_bash_t : public warrior_attack_t
   }
 };
 
+struct shield_block_t : public warrior_spell_t
+{
+  shield_block_t( warrior_t* player, util::string_view options_str ) :
+    warrior_spell_t( "shield_block", player, player->rank.shield_block.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    harmful  = false;
+    may_miss = false;
+    target   = player;
+  }
+
+  bool ready() override
+  {
+    if ( !data().ok() )
+      return false;
+
+    if ( !player->has_shield_equipped() )
+      return false;
+
+    return warrior_spell_t::ready();
+  }
+
+  void execute() override
+  {
+    warrior_spell_t::execute();
+
+    p()->buff.shield_block->trigger();
+  }
+};
+
 struct demoralizing_shout_t : public warrior_spell_t
 {
   demoralizing_shout_t( warrior_t* player, util::string_view options_str ) :
@@ -866,6 +900,7 @@ void warrior_t::create_buffs()
   buff.overpower_available  = make_buff( this, "overpower", spell.overpower_available );
   // Revenge is usable for 5 seconds after a block, dodge, or parry.
   buff.revenge_available = make_buff( this, "revenge_available" )->set_duration( 5_s );
+  buff.shield_block      = make_buff( this, "shield_block", spell.shield_block );
 
   buff.battle_stance    = make_buff( this, "battle_stance", spell.battle_stance );
   buff.defensive_stance = make_buff( this, "defensive_stance", spell.defensive_stance );
@@ -884,6 +919,7 @@ void warrior_t::create_buffs()
                  [ this ] { return buff.defensive_stance->check() > 0; } );
   parse_effects( spell.berserker_stance_passive, PARSE_PASSIVE,
                  [ this ] { return buff.berserker_stance->check() > 0; } );
+  parse_effects( buff.shield_block, IGNORE_STACKS );
 
   register_precombat_begin( buff.battle_stance );
 
@@ -1003,6 +1039,10 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 1672 ),
   };
 
+  rank.shield_block = { this,
+    spell_container_t().set_spell( 2565 ),
+  };
+
   rank.sunder_armor = { this,
     spell_container_t().set_spell(  7386 ),
     spell_container_t().set_spell(  7405 ),
@@ -1036,6 +1076,7 @@ void warrior_t::init_spells()
   spell.demoralizing_shout       = rank.demoralizing_shout.find_rank()->spell();
   spell.hamstring                = rank.hamstring.find_rank()->spell();
   spell.overpower_available      = find_spell( 1282733 );
+  spell.shield_block             = rank.shield_block.find_rank()->spell();
   spell.sunder_armor             = rank.sunder_armor.find_rank()->spell();
   spell.thunder_clap             = rank.thunder_clap.find_rank()->spell();
 
@@ -1132,6 +1173,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "taunt" ) return new taunt_t( this, options_str );
   if ( name == "mocking_blow" ) return new mocking_blow_t( this, options_str );
   if ( name == "shield_bash" ) return new shield_bash_t( this, options_str );
+  if ( name == "shield_block" ) return new shield_block_t( this, options_str );
 
   if ( name == "rend" ) return new rend_t( this, options_str );
   if ( name == "hamstring" ) return new hamstring_t( this, options_str );
@@ -1172,6 +1214,9 @@ void warrior_t::assess_damage( school_e school, result_amount_type type, action_
   if ( s->result == RESULT_DODGE || s->result == RESULT_PARRY ||
        s->block_result == BLOCK_RESULT_BLOCKED )
     buff.revenge_available->trigger();
+
+  if ( s->block_result == BLOCK_RESULT_BLOCKED && buff.shield_block->check() )
+    buff.shield_block->decrement();
 }
 
 struct warrior_module_t : public module_t
