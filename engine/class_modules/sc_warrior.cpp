@@ -173,6 +173,7 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* disarm                   = spell_data_t::nil();
     const spell_data_t* hamstring                = spell_data_t::nil();
     const spell_data_t* overpower_available      = spell_data_t::nil();
+    const spell_data_t* retaliation              = spell_data_t::nil();
     const spell_data_t* shield_block             = spell_data_t::nil();
     const spell_data_t* sunder_armor             = spell_data_t::nil();
     const spell_data_t* thunder_clap             = spell_data_t::nil();
@@ -190,6 +191,7 @@ struct warrior_t final : public parse_player_effects_t
     buff_t* cleave_queued        = nullptr;
     buff_t* heroic_strike_queued = nullptr;
     buff_t* overpower_available  = nullptr;
+    buff_t* retaliation          = nullptr;
     buff_t* revenge_available    = nullptr;
     buff_t* shield_block         = nullptr;
   } buff;
@@ -203,6 +205,7 @@ struct warrior_t final : public parse_player_effects_t
   {
     action_t* cleave        = nullptr;
     action_t* heroic_strike = nullptr;
+    action_t* retaliation   = nullptr;
   } active;
 
   struct
@@ -218,6 +221,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t mocking_blow;
     spell_ranks_t overpower;
     spell_ranks_t rend;
+    spell_ranks_t retaliation;
     spell_ranks_t revenge;
     spell_ranks_t shield_bash;
     spell_ranks_t shield_block;
@@ -703,6 +707,56 @@ struct cleave_t : public warrior_attack_t
   }
 };
 
+// TODO: Use spell 20240 if it becomes available in the client data. It is the historical
+// hidden Retaliation damage spell, but it is absent from the current 70707 spell data.
+struct retaliation_attack_t : public warrior_attack_t
+{
+  retaliation_attack_t( warrior_t* player ) :
+    warrior_attack_t( "retaliation_attack", player, spell_data_t::nil() )
+  {
+    weapon            = &player->equipped_weapons[ SLOT_MAIN_HAND ];
+    weapon_multiplier = 1.0;
+    school            = SCHOOL_PHYSICAL;
+    trigger_gcd       = 0_ms;
+
+    background = true;
+    may_crit   = true;
+    may_dodge  = true;
+    may_parry  = true;
+    special    = true;
+  }
+};
+
+struct retaliation_t : public warrior_spell_t
+{
+  retaliation_t( warrior_t* player, util::string_view options_str ) :
+    warrior_spell_t( "retaliation", player, player->rank.retaliation.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    harmful  = false;
+    may_miss = false;
+    target   = player;
+
+    add_child( p()->active.retaliation );
+  }
+
+  bool ready() override
+  {
+    if ( !data().ok() )
+      return false;
+
+    return warrior_spell_t::ready();
+  }
+
+  void execute() override
+  {
+    warrior_spell_t::execute();
+
+    p()->buff.retaliation->trigger();
+  }
+};
+
 // APL action to queue up heroic strike
 // Checks to make sure warrior has enough rage to queue it up
 // The actual HS execute in the melee swing will check rage again to make sure that rage
@@ -992,6 +1046,7 @@ void warrior_t::create_actions()
 {
   active.cleave        = new cleave_t( this, "" );
   active.heroic_strike = new heroic_strike_t( this, "" );
+  active.retaliation   = new retaliation_attack_t( this );
 
   parse_player_effects_t::create_actions();
 }
@@ -1001,6 +1056,7 @@ void warrior_t::create_buffs()
   buff.cleave_queued        = make_buff( this, "cleave_queued" );
   buff.heroic_strike_queued = make_buff( this, "heroic_strike_queued" );
   buff.overpower_available  = make_buff( this, "overpower", spell.overpower_available );
+  buff.retaliation          = make_buff( this, "retaliation", spell.retaliation );
   // Revenge is usable for 5 seconds after a block, dodge, or parry.
   buff.revenge_available = make_buff( this, "revenge_available" )->set_duration( 5_s );
   buff.shield_block      = make_buff( this, "shield_block", spell.shield_block );
@@ -1139,6 +1195,10 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 11585 ),
   };
 
+  rank.retaliation = { this,
+    spell_container_t().set_spell( 20230 ),
+  };
+
   rank.revenge = { this,
     spell_container_t().set_spell(  6572 ),
     spell_container_t().set_spell(  6574 ),
@@ -1192,6 +1252,7 @@ void warrior_t::init_spells()
   spell.disarm                   = rank.disarm.find_rank()->spell();
   spell.hamstring                = rank.hamstring.find_rank()->spell();
   spell.overpower_available      = find_spell( 1282733 );
+  spell.retaliation              = rank.retaliation.find_rank()->spell();
   spell.shield_block             = rank.shield_block.find_rank()->spell();
   spell.sunder_armor             = rank.sunder_armor.find_rank()->spell();
   spell.thunder_clap             = rank.thunder_clap.find_rank()->spell();
@@ -1297,6 +1358,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "sunder_armor" ) return new sunder_armor_t( this, options_str );
   if ( name == "overpower" ) return new overpower_t( this, options_str );
   if ( name == "revenge" ) return new revenge_t( this, options_str );
+  if ( name == "retaliation" ) return new retaliation_t( this, options_str );
   if ( name == "cleave" ) return new cleave_queue_t( this, options_str );
   if ( name == "heroic_strike" ) return new heroic_strike_queue_t( this, options_str );
 
@@ -1335,6 +1397,13 @@ void warrior_t::assess_damage( school_e school, result_amount_type type, action_
 
   if ( s->block_result == BLOCK_RESULT_BLOCKED && buff.shield_block->check() )
     buff.shield_block->decrement();
+
+  if ( buff.retaliation->check() && s->action && s->action->player != this &&
+       s->action->type == ACTION_ATTACK && s->action->school == SCHOOL_PHYSICAL )
+  {
+    active.retaliation->execute_on_target( s->action->player );
+    buff.retaliation->decrement();
+  }
 }
 
 struct warrior_module_t : public module_t

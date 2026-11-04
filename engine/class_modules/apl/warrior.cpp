@@ -48,6 +48,7 @@ void warrior( player_t* p )
   default_->add_action( "rend,if=!ticking" );
   default_->add_action( "overpower,if=buff.overpower.up" );
   default_->add_action( "revenge,if=buff.revenge_available.up" );
+  default_->add_action( "retaliation" );
   default_->add_action( "mocking_blow" );
   default_->add_action( "disarm" );
   default_->add_action( "shield_block" );
