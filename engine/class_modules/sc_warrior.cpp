@@ -30,6 +30,7 @@ struct warrior_td_t : public actor_target_data_t
   struct debuffs_t
   {
     buff_t* demoralizing_shout = nullptr;
+    buff_t* disarm = nullptr;
     buff_t* hamstring = nullptr;
     buff_t* sunder_armor = nullptr;
     buff_t* thunder_clap = nullptr;
@@ -169,6 +170,7 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* defensive_stance         = spell_data_t::nil();
     const spell_data_t* defensive_stance_passive = spell_data_t::nil();
     const spell_data_t* demoralizing_shout       = spell_data_t::nil();
+    const spell_data_t* disarm                   = spell_data_t::nil();
     const spell_data_t* hamstring                = spell_data_t::nil();
     const spell_data_t* overpower_available      = spell_data_t::nil();
     const spell_data_t* shield_block             = spell_data_t::nil();
@@ -207,6 +209,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t bloodrage;
     spell_ranks_t charge;
     spell_ranks_t demoralizing_shout;
+    spell_ranks_t disarm;
     spell_ranks_t hamstring;
     spell_ranks_t heroic_strike;
     spell_ranks_t mocking_blow;
@@ -233,6 +236,9 @@ warrior_td_t::warrior_td_t( player_t* target, warrior_t& p ) : actor_target_data
       buff_t::make_buff_fallback<stat_buff_t>( p.spell.demoralizing_shout->ok(), *this,
                                                "demoralizing_shout", p.spell.demoralizing_shout )
           ->set_default_value_from_effect( 1 );
+
+  if ( p.spell.disarm->ok() )
+    debuffs.disarm = make_buff( *this, "disarm", p.spell.disarm );
 
   if ( p.spell.hamstring->ok() )
     debuffs.hamstring = make_buff( *this, "hamstring", p.spell.hamstring )
@@ -795,6 +801,31 @@ struct shield_block_t : public warrior_spell_t
   }
 };
 
+struct disarm_t : public warrior_attack_t
+{
+  disarm_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "disarm", player, player->rank.disarm.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+
+  bool ready() override
+  {
+    if ( !data().ok() )
+      return false;
+
+    return warrior_attack_t::ready();
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    warrior_attack_t::impact( s );
+
+    if ( result_is_hit( s->result ) )
+      td( s->target )->debuffs.disarm->trigger();
+  }
+};
+
 struct demoralizing_shout_t : public warrior_spell_t
 {
   demoralizing_shout_t( warrior_t* player, util::string_view options_str ) :
@@ -1003,6 +1034,10 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 11556 ),
   };
 
+  rank.disarm = { this,
+    spell_container_t().set_spell( 676 ),
+  };
+
   rank.hamstring = { this,
     spell_container_t().set_spell( 1715 ),
     spell_container_t().set_spell( 7372 ),
@@ -1074,6 +1109,7 @@ void warrior_t::init_spells()
   spell.defensive_stance         = find_spell( 71 );
   spell.defensive_stance_passive = find_spell( 7376 );
   spell.demoralizing_shout       = rank.demoralizing_shout.find_rank()->spell();
+  spell.disarm                   = rank.disarm.find_rank()->spell();
   spell.hamstring                = rank.hamstring.find_rank()->spell();
   spell.overpower_available      = find_spell( 1282733 );
   spell.shield_block             = rank.shield_block.find_rank()->spell();
@@ -1168,6 +1204,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
 
   if ( name == "battle_shout" ) return new battle_shout_t( this, options_str );
   if ( name == "demoralizing_shout" ) return new demoralizing_shout_t( this, options_str );
+  if ( name == "disarm" ) return new disarm_t( this, options_str );
   if ( name == "bloodrage" ) return new bloodrage_t( this, options_str );
   if ( name == "charge" ) return new charge_t( this, options_str );
   if ( name == "taunt" ) return new taunt_t( this, options_str );
