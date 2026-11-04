@@ -168,6 +168,7 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* defensive_stance_passive = spell_data_t::nil();
     const spell_data_t* hamstring                = spell_data_t::nil();
     const spell_data_t* overpower_available      = spell_data_t::nil();
+    const spell_data_t* sunder_armor             = spell_data_t::nil();
     const spell_data_t* thunder_clap             = spell_data_t::nil();
   } spell;
 
@@ -219,16 +220,13 @@ warrior_td_t::warrior_td_t( player_t* target, warrior_t& p ) : actor_target_data
   dots.rend        = target->get_dot( "rend", &p );
 
   if ( p.spell.hamstring->ok() )
-    debuffs.hamstring = make_buff( *this, "hamstring", p.spell.hamstring );
+    debuffs.hamstring = make_buff( *this, "hamstring", p.spell.hamstring )
+                            ->set_default_value_from_effect( 2 );
 
-  if ( target->is_enemy() )
-  {
-    auto const sunder_armor = p.rank.sunder_armor.find_rank();
-    if ( sunder_armor->spell()->ok() )
-      debuffs.sunder_armor =
-          make_buff<stat_buff_t>( *this, "sunder_armor", sunder_armor->spell() )
-              ->set_default_value_from_effect( 1 );
-  }
+  if ( p.spell.sunder_armor->ok() )
+    debuffs.sunder_armor =
+        make_buff<stat_buff_t>( *this, "sunder_armor", p.spell.sunder_armor )
+            ->set_default_value_from_effect( 1 );
 
   if ( p.spell.thunder_clap->ok() )
     debuffs.thunder_clap = make_buff( *this, "thunder_clap", p.spell.thunder_clap );
@@ -914,6 +912,7 @@ void warrior_t::init_spells()
   spell.defensive_stance_passive = find_spell( 7376 );
   spell.hamstring                = rank.hamstring.find_rank()->spell();
   spell.overpower_available      = find_spell( 1282733 );
+  spell.sunder_armor             = rank.sunder_armor.find_rank()->spell();
   spell.thunder_clap             = rank.thunder_clap.find_rank()->spell();
 
   // Arms
