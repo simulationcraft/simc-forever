@@ -207,6 +207,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t demoralizing_shout;
     spell_ranks_t hamstring;
     spell_ranks_t heroic_strike;
+    spell_ranks_t mocking_blow;
     spell_ranks_t overpower;
     spell_ranks_t rend;
     spell_ranks_t revenge;
@@ -714,6 +715,33 @@ struct taunt_t : public warrior_spell_t
   }
 };
 
+struct mocking_blow_t : public warrior_attack_t
+{
+  mocking_blow_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "mocking_blow", player, player->rank.mocking_blow.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    // Mocking Blow has fixed spell damage and no attack-power coefficient.
+  }
+
+  bool ready() override
+  {
+    if ( !data().ok() )
+      return false;
+
+    return warrior_attack_t::ready();
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    warrior_attack_t::impact( s );
+
+    if ( result_is_hit( s->result ) )
+      s->target->taunt( player );
+  }
+};
+
 struct shield_bash_t : public warrior_attack_t
 {
   shield_bash_t( warrior_t* player, util::string_view options_str ) :
@@ -945,6 +973,14 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 7373 ),
   };
 
+  rank.mocking_blow = { this,
+    spell_container_t().set_spell(   694 ),
+    spell_container_t().set_spell(  7400 ),
+    spell_container_t().set_spell(  7402 ),
+    spell_container_t().set_spell( 20559 ),
+    spell_container_t().set_spell( 20560 ),
+  };
+
   rank.overpower = { this,
     spell_container_t().set_spell(  7384 ),
     spell_container_t().set_spell(  7887 ),
@@ -1094,6 +1130,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "bloodrage" ) return new bloodrage_t( this, options_str );
   if ( name == "charge" ) return new charge_t( this, options_str );
   if ( name == "taunt" ) return new taunt_t( this, options_str );
+  if ( name == "mocking_blow" ) return new mocking_blow_t( this, options_str );
   if ( name == "shield_bash" ) return new shield_bash_t( this, options_str );
 
   if ( name == "rend" ) return new rend_t( this, options_str );
