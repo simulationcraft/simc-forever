@@ -885,7 +885,7 @@ const spell_container_t* spell_ranks_t::find_rank( int rank, spell_ranks_t::rank
   spell_container_t* container = nullptr;
 
   if ( !std::invoke( validate_fn ) )
-    return spell_container_t::nil();
+    return spell_container_t::not_found();
 
   if ( rank == RANK_MAX )
   {
