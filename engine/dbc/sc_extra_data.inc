@@ -1636,8 +1636,8 @@ static constexpr stat_data_t __gt_race_stats[] =
   {   0, -1,  1,  0,  0 }, // Lightforged Draenei
   {   1,  2,  0, -3,  0 }, // Zandalari Troll
   {   1, -2,  2, -1,  0 }, // Kul Tiran
-  {  -1,  1, -1,  1,  0 }, // Skyborne - Alliance TODO: Recheck
-  {  -1,  1, -1,  1,  0 }, // Skyborne - Horde TODO: Recheck
+  {  -3,  4, -1,  4, -3 }, // High Order Skyborne - Alliance
+  {  -4,  3,  0, -1,  3 }, // Windnshaper Skyborne - Horde
 };
 
 // Avoidance diminishing returns information
