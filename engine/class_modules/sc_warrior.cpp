@@ -177,6 +177,8 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* shield_block             = spell_data_t::nil();
     const spell_data_t* sunder_armor             = spell_data_t::nil();
     const spell_data_t* thunder_clap             = spell_data_t::nil();
+    const spell_data_t* victory_rush             = spell_data_t::nil();
+    const spell_data_t* victorious               = spell_data_t::nil();
   } spell;
 
   struct buffs_t
@@ -194,6 +196,7 @@ struct warrior_t final : public parse_player_effects_t
     buff_t* retaliation          = nullptr;
     buff_t* revenge_available    = nullptr;
     buff_t* shield_block         = nullptr;
+    buff_t* victorious           = nullptr;
   } buff;
 
   struct gains_t
@@ -742,6 +745,53 @@ struct slam_t : public warrior_attack_t
   }
 };
 
+struct victory_rush_heal_t : public heal_t
+{
+  victory_rush_heal_t( warrior_t* player ) :
+    heal_t( "victory_rush_heal", player, player->spell.victory_rush )
+  {
+    background  = true;
+    trigger_gcd = 0_ms;
+    target      = player;
+    may_crit    = false;
+  }
+};
+
+struct victory_rush_t : public warrior_attack_t
+{
+  victory_rush_heal_t* heal = nullptr;
+
+  victory_rush_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "victory_rush", player, player->spell.victory_rush )
+  {
+    parse_options( options_str );
+
+    attack_power_mod.direct = data().effectN( 3 ).percent();
+
+    heal = new victory_rush_heal_t( player );
+    add_child( heal );
+  }
+
+  bool ready() override
+  {
+    if ( !data().ok() || !p()->buff.victorious->check() )
+      return false;
+
+    return warrior_attack_t::ready();
+  }
+
+  void execute() override
+  {
+    // Using Victory Rush consumes the Victorious window.
+    p()->buff.victorious->expire();
+
+    warrior_attack_t::execute();
+
+    // The heal happens even if the attack miss, dodge, or parry.
+    heal->execute_on_target( p() );
+  }
+};
+
 // TODO: Use spell 20240 if it becomes available in the client data. It is the historical
 // hidden Retaliation damage spell, but it is absent from the current 70707 spell data.
 struct retaliation_attack_t : public warrior_attack_t
@@ -1095,6 +1145,7 @@ void warrior_t::create_buffs()
   // Revenge is usable for 5 seconds after a block, dodge, or parry.
   buff.revenge_available = make_buff( this, "revenge_available" )->set_duration( 5_s );
   buff.shield_block      = make_buff( this, "shield_block", spell.shield_block );
+  buff.victorious        = make_buff( this, "victorious", spell.victorious );
 
   buff.battle_stance    = make_buff( this, "battle_stance", spell.battle_stance );
   buff.defensive_stance = make_buff( this, "defensive_stance", spell.defensive_stance );
@@ -1307,6 +1358,8 @@ void warrior_t::init_spells()
   spell.shield_block             = rank.shield_block.find_rank()->spell();
   spell.sunder_armor             = rank.sunder_armor.find_rank()->spell();
   spell.thunder_clap             = rank.thunder_clap.find_rank()->spell();
+  spell.victory_rush             = find_spell( 402927 );
+  spell.victorious               = find_spell( 402975 );
 
   // Arms
   talent.improved_heroic_strike           = find_talent_spell( talent_tree::CLASS, "Improved Heroic Strike" );
@@ -1412,6 +1465,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "retaliation" ) return new retaliation_t( this, options_str );
   if ( name == "cleave" ) return new cleave_queue_t( this, options_str );
   if ( name == "slam" ) return new slam_t( this, options_str );
+  if ( name == "victory_rush" ) return new victory_rush_t( this, options_str );
   if ( name == "heroic_strike" ) return new heroic_strike_queue_t( this, options_str );
 
 
@@ -1437,6 +1491,11 @@ void warrior_t::init_action_list()
 void warrior_t::activate()
 {
   parse_player_effects_t::activate();
+
+  register_on_kill_callback( [ this ]( player_t* ) {
+    if ( spell.victory_rush->ok() )
+      buff.victorious->trigger();
+  } );
 }
 
 void warrior_t::assess_damage( school_e school, result_amount_type type, action_state_t* s )
