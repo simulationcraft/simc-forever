@@ -151212,6 +151212,168 @@ Effects          :
 Description      : Increases the damage done by your Frost spells by $s1%.
 Tooltip          : Increases the damage done by your Frost spells by $w1%.
 
+Name             : Elixir of Endless Intellect (id=1327736) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 3600 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#1 (id=1366382)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 2 | Scaled Value: 2 | Stat: Int | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Increases Intellect by $s1% for $d. This effect stacks up to $u times.
+Tooltip          : Intellect increased by $s1%.
+
+Name             : Elixir of Endless Power (id=1327737) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 3600 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#1 (id=1366383)  : Apply Aura (6) | Modify Damage Done% (79)
+                   Base Value: 3 | Scaled Value: 3 | Misc Value: 0x7f | Target: Self (1)
+                   Affected School(s): All
+Hotfixed         : NEW EFFECT
+Description      : Increases damage done by $s1% for $d. This effect stacks up to $u times.
+Tooltip          : Increases damage dealt by $s1%.
+
+Name             : Elixir of Endless Healing (id=1327738) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 3600 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#1 (id=1366384)  : Apply Aura (6) | Modify Healing% Done (136)
+                   Base Value: 2 | Scaled Value: 2 | Misc Value: 0x7f | Target: Self (1)
+                   Affected School(s): All
+Hotfixed         : NEW EFFECT
+Description      : Increases healing done by $s1% for $d. This effect stacks up to $u times.
+Tooltip          : Increases healing done by $s1%.
+
+Name             : Elixir of Endless Rapidity (id=1327751) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 3600 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#1 (id=1366399)  : Apply Aura (6) | Modify All Haste% (193)
+                   Base Value: 4 | Scaled Value: 4 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Increases Haste by $s1% for $d. This effect stacks up to $u times.
+Tooltip          : Haste increased by $s1%.
+
+Name             : Elixir of Endless Opportunity (id=1327753) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 3600 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#1 (id=1366402)  : Apply Aura (6) | Modify Critical Strike% (290)
+                   Base Value: 4 | Scaled Value: 4 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Improves your chance to get a Critical Strike by $s1% for $d. This effect stacks up to $u times.
+Tooltip          : Critical Strike chance increased by $s1%.
+
+Name             : Scroll of Endless Fortitude (id=1327754) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 3600 seconds
+Attributes       : Allow While Sitting (27), No Immunities (29), Aura Unique (43), Unknown (493)
+Effects          :
+#1 (id=1366404)  : Apply Aura (6) | Modify Base Attribute% (80)
+                   Base Value: 10 | Scaled Value: 10 | Stat: Sta | Radius: 0 - 40 yards | Target: Source (22) -> Ally in Area (30)
+Hotfixed         : NEW EFFECT
+Description      : Increases Stamina of nearby allies by $s1% for $d.
+Tooltip          : Stamina increased by $s1%.
+
+Name             : Call Anathema (id=1327991) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366762)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Anathema.
+
+Name             : Call Benediction (id=1327993) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366764)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Benediction.
+
+Name             : Elixir of Endless Mana (id=1328032) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Spell Level      : 30
+Duration         : 3600 seconds
+Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#1 (id=1366821)  : Apply Aura (6) | Modify Power Regen (110)
+                   Base Value: 30 | Scaled Value: 30 | Resource: mana | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Increases mana regeneration by $s1% for $d.
+Tooltip          : Mana regeneration increased by $s1%.
+
+Name             : Elixir of Endless Growth (id=1328118) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 600 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366962)  : Apply Aura (6) | Scale% (Stacking) (61)
+                   Base Value: 30 | Scaled Value: 30 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Enlarges the imbiber by a significant amount for $d. This effect stacks up to $u times.
+Tooltip          : Feeling much bigger now.
+
+Name             : Scroll of Endless Speed (id=1328119) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 30 seconds
+Attributes       : Allow While Sitting (27), No Immunities (29), Aura Unique (43), Unknown (493)
+Effects          :
+#1 (id=1366963)  : Apply Aura (6) | Increase Speed% (31)
+                   Base Value: 50 | Scaled Value: 50 | Radius: 0 - 40 yards | Target: Source (22) -> Ally in Area (30)
+Hotfixed         : NEW EFFECT
+Description      : Increases run speed of nearby allies by $s1% for $d.
+Tooltip          : Increases run speed by $s1%
+
 Name             : Throw Violet Dust (id=1328348) 
 School           : Physical
 Spell Type       : None
