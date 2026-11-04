@@ -187,6 +187,7 @@ struct warrior_t final : public parse_player_effects_t
     buff_t* battle_shout = nullptr;
     buff_t* bloodrage    = nullptr;
 
+    buff_t* cleave_queued        = nullptr;
     buff_t* heroic_strike_queued = nullptr;
     buff_t* overpower_available  = nullptr;
     buff_t* revenge_available    = nullptr;
@@ -200,6 +201,7 @@ struct warrior_t final : public parse_player_effects_t
 
   struct actives_t
   {
+    action_t* cleave        = nullptr;
     action_t* heroic_strike = nullptr;
   } active;
 
@@ -208,6 +210,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t battle_shout;
     spell_ranks_t bloodrage;
     spell_ranks_t charge;
+    spell_ranks_t cleave;
     spell_ranks_t demoralizing_shout;
     spell_ranks_t disarm;
     spell_ranks_t hamstring;
@@ -466,6 +469,19 @@ struct warrior_melee_t : public warrior_attack_t
       p()->buff.heroic_strike_queued->expire();
     }
 
+    // try to trigger a queued cleave
+    if ( p()->buff.cleave_queued->check() )
+    {
+      if ( p()->resource_available( RESOURCE_RAGE, p()->active.cleave->cost() ) )
+      {
+        p()->active.cleave->execute_on_target( target );
+        schedule_execute();
+        return;
+      }
+      // didn't have enough rage, cancel the tracking queue buff
+      p()->buff.cleave_queued->expire();
+    }
+
     warrior_attack_t::execute();
   }
 
@@ -633,6 +649,60 @@ struct revenge_t : public warrior_attack_t
   }
 };
 
+// APL action to queue up cleave
+struct cleave_queue_t : public action_t
+{
+  cleave_queue_t( warrior_t* p, util::string_view options_str ) :
+    action_t( ACTION_OTHER, "cleave_queue", p )
+  {
+    parse_options( options_str );
+
+    trigger_gcd           = 0_ms;
+    harmful               = false;
+    ignore_false_positive = true;
+  }
+
+  warrior_t* p() const
+  { return debug_cast<warrior_t*>( player ); }
+
+  bool ready() override
+  {
+    if ( !p()->active.cleave->data().ok() )
+      return false;
+
+    if ( p()->buff.cleave_queued->check() || p()->buff.heroic_strike_queued->check() )
+      return false;
+
+    if ( !p()->resource_available( RESOURCE_RAGE, p()->active.cleave->cost() ) )
+      return false;
+
+    return action_t::ready();
+  }
+
+  void execute() override
+  {
+    p()->buff.cleave_queued->trigger();
+  }
+};
+
+struct cleave_t : public warrior_attack_t
+{
+  cleave_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "cleave", player, player->rank.cleave.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    trigger_gcd = 0_ms;
+  }
+
+  void execute() override
+  {
+    warrior_attack_t::execute();
+
+    p()->buff.cleave_queued->expire();
+  }
+};
+
 // APL action to queue up heroic strike
 // Checks to make sure warrior has enough rage to queue it up
 // The actual HS execute in the melee swing will check rage again to make sure that rage
@@ -657,7 +727,7 @@ struct heroic_strike_queue_t : public action_t
   bool ready() override
   {
     // already queued
-    if ( p()->buff.heroic_strike_queued->check() )
+    if ( p()->buff.heroic_strike_queued->check() || p()->buff.cleave_queued->check() )
       return false;
 
     // not enough rage
@@ -920,6 +990,7 @@ void warrior_t::init_gains()
 
 void warrior_t::create_actions()
 {
+  active.cleave        = new cleave_t( this, "" );
   active.heroic_strike = new heroic_strike_t( this, "" );
 
   parse_player_effects_t::create_actions();
@@ -927,6 +998,7 @@ void warrior_t::create_actions()
 
 void warrior_t::create_buffs()
 {
+  buff.cleave_queued        = make_buff( this, "cleave_queued" );
   buff.heroic_strike_queued = make_buff( this, "heroic_strike_queued" );
   buff.overpower_available  = make_buff( this, "overpower", spell.overpower_available );
   // Revenge is usable for 5 seconds after a block, dodge, or parry.
@@ -1024,6 +1096,14 @@ void warrior_t::init_spells()
     spell_container_t().set_spell(   100 ),
     spell_container_t().set_spell(  6178 ),
     spell_container_t().set_spell( 11578 ),
+  };
+
+  rank.cleave = { this,
+    spell_container_t().set_spell(   845 ),
+    spell_container_t().set_spell(  7369 ),
+    spell_container_t().set_spell( 11608 ),
+    spell_container_t().set_spell( 11609 ),
+    spell_container_t().set_spell( 20569 ),
   };
 
   rank.demoralizing_shout = { this,
@@ -1217,6 +1297,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "sunder_armor" ) return new sunder_armor_t( this, options_str );
   if ( name == "overpower" ) return new overpower_t( this, options_str );
   if ( name == "revenge" ) return new revenge_t( this, options_str );
+  if ( name == "cleave" ) return new cleave_queue_t( this, options_str );
   if ( name == "heroic_strike" ) return new heroic_strike_queue_t( this, options_str );
 
 
