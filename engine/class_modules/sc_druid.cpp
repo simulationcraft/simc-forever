@@ -3,10 +3,11 @@
 // Send questions to natehieter@gmail.com
 // ==========================================================================
 
-#include "simulationcraft.hpp"
 #include "action/parse_effects.hpp"
 #include "class_modules/apl/druid.hpp"
 #include "dbc/spell_data.hpp"
+
+#include "simulationcraft.hpp"
 
 namespace
 {  // UNNAMED NAMESPACE
@@ -31,7 +32,9 @@ struct druid_td_t final : public actor_target_data_t
 struct druid_t final : public parse_player_effects_t
 {
   druid_t( sim_t* sim, std::string_view name, race_e r = RACE_NIGHT_ELF )
-    : parse_player_effects_t( sim, DRUID, name, r ) {}
+    : parse_player_effects_t( sim, DRUID, name, r )
+  {
+  }
 
   struct talents_t
   {
@@ -65,7 +68,10 @@ struct druid_t final : public parse_player_effects_t
     spell_ranks_t wrath;
   } rank;
 
-  resource_e primary_resource() const override { return RESOURCE_MANA; }
+  resource_e primary_resource() const override
+  {
+    return RESOURCE_MANA;
+  }
 
   void init_base_stats() override;
   void init_spells() override;
@@ -76,9 +82,18 @@ struct druid_t final : public parse_player_effects_t
   void parse_player_effects();
   void apply_action_effects( action_t* a );
 
-  std::string default_potion() const override { return druid_apl::potion( this ); }
-  std::string default_flask() const override  { return druid_apl::flask( this ); }
-  std::string default_food() const override   { return druid_apl::food( this ); }
+  std::string default_potion() const override
+  {
+    return druid_apl::potion( this );
+  }
+  std::string default_flask() const override
+  {
+    return druid_apl::flask( this );
+  }
+  std::string default_food() const override
+  {
+    return druid_apl::food( this );
+  }
 
   target_specific_t<druid_td_t> target_data;
 
@@ -93,13 +108,14 @@ struct druid_t final : public parse_player_effects_t
 
     return td;
   }
-
 };
 
 // DRUID MODULE INTERFACE ===================================================
 struct druid_module_t final : public module_t
 {
-  druid_module_t() : module_t( DRUID ) {}
+  druid_module_t() : module_t( DRUID )
+  {
+  }
 
   player_t* create_player( sim_t* sim, std::string_view name, race_e r = RACE_NONE ) const override
   {
@@ -107,18 +123,25 @@ struct druid_module_t final : public module_t
     return p;
   }
 
-  bool valid() const override { return true; }
+  bool valid() const override
+  {
+    return true;
+  }
 
-  void register_hotfixes() const override {}
+  void register_hotfixes() const override
+  {
+  }
 
-  void register_actor_initializers( sim_t* ) const override {}
+  void register_actor_initializers( sim_t* ) const override
+  {
+  }
 };
 
 template <class Base>
 struct druid_action_t : public parse_action_effects_t<Base>
 {
   using action_base_t = parse_action_effects_t<Base>;
-  using base_t = druid_action_t<Base>;
+  using base_t        = druid_action_t<Base>;
 
   template <typename... Args>
   druid_action_t( std::string_view n, druid_t* p, const spell_data_t* s = spell_data_t::nil() )
@@ -131,10 +154,14 @@ struct druid_action_t : public parse_action_effects_t<Base>
   }
 
   druid_t* p()
-  { return debug_cast<druid_t*>( this->player ); }
+  {
+    return debug_cast<druid_t*>( this->player );
+  }
 
   const druid_t* p() const
-  { return debug_cast<const druid_t*>( this->player ); }
+  {
+    return debug_cast<const druid_t*>( this->player );
+  }
 
   void execute() override
   {
@@ -159,14 +186,14 @@ struct druid_action_t : public parse_action_effects_t<Base>
   }
 };
 
-using druid_spell_t = druid_action_t<spell_t>;
+using druid_spell_t        = druid_action_t<spell_t>;
 using druid_melee_attack_t = druid_action_t<melee_attack_t>;
 
 void druid_t::init_base_stats()
 {
   parse_player_effects_t::init_base_stats();
 
-  // TODO: plug in crit
+  // TODO: plug in baseline stats (see sc_priest::init_base_stats)
 }
 
 void druid_t::init_spells()
@@ -190,70 +217,79 @@ void druid_t::init_spells()
     parse_passive_effects( talent.moonkin_form, true );
   }
 
-  rank.entangling_roots = { this,
-    spell_container_t().set_spell( 339 ), // 19975 is also a rank 1 spell id, it is used by nature's grasp
-    spell_container_t().set_spell( 1062 ),
-    spell_container_t().set_spell( 5195 ),
-    spell_container_t().set_spell( 5196 ),
-    spell_container_t().set_spell( 9852 ),
-    spell_container_t().set_spell( 9853 ),
+  rank.entangling_roots = {
+      this,
+      spell_container_t().set_spell( 339 ),  // 19975 is also a rank 1 spell id, it is used by nature's grasp
+      spell_container_t().set_spell( 1062 ),
+      spell_container_t().set_spell( 5195 ),
+      spell_container_t().set_spell( 5196 ),
+      spell_container_t().set_spell( 9852 ),
+      spell_container_t().set_spell( 9853 ),
   };
-  rank.faerie_fire = { this,
-    spell_container_t().set_spell( 770 ),
-    spell_container_t().set_spell( 778 ),
-    spell_container_t().set_spell( 9749 ),
-    spell_container_t().set_spell( 9907 ),
+  rank.faerie_fire = {
+      this,
+      spell_container_t().set_spell( 770 ),
+      spell_container_t().set_spell( 778 ),
+      spell_container_t().set_spell( 9749 ),
+      spell_container_t().set_spell( 9907 ),
   };
-  rank.hurricane = { this,
-    spell_container_t().set_spell( 16914 ).set_debuff( 1278965 ),
-    spell_container_t().set_spell( 17401 ).set_debuff( 1278968 ),
-    spell_container_t().set_spell( 17402 ).set_debuff( 1278759 ),
+  rank.hurricane = {
+      this,
+      spell_container_t().set_spell( 16914 ).set_debuff( 1278965 ),
+      spell_container_t().set_spell( 17401 ).set_debuff( 1278968 ),
+      spell_container_t().set_spell( 17402 ).set_debuff( 1278759 ),
   };
-  rank.innervate = { this,
-    spell_container_t().set_spell( 29166 ),
+  rank.innervate = {
+      this,
+      spell_container_t().set_spell( 29166 ),
   };
-  rank.insect_swarm = { this, talent.insect_swarm,
-    spell_container_t().set_spell( 5570 ),
-    spell_container_t().set_spell( 24974 ),
-    spell_container_t().set_spell( 24975 ),
-    spell_container_t().set_spell( 24976 ),
-    spell_container_t().set_spell( 24977 ),
+  rank.insect_swarm = {
+      this,
+      talent.insect_swarm,
+      spell_container_t().set_spell( 5570 ),
+      spell_container_t().set_spell( 24974 ),
+      spell_container_t().set_spell( 24975 ),
+      spell_container_t().set_spell( 24976 ),
+      spell_container_t().set_spell( 24977 ),
   };
-  rank.moonfire = { this,
-    spell_container_t().set_spell( 8921 ),
-    spell_container_t().set_spell( 8924 ),
-    spell_container_t().set_spell( 8925 ),
-    spell_container_t().set_spell( 8926 ),
-    spell_container_t().set_spell( 8927 ),
-    spell_container_t().set_spell( 8928 ),
-    spell_container_t().set_spell( 8929 ),
-    spell_container_t().set_spell( 9833 ),
-    spell_container_t().set_spell( 9834 ),
-    spell_container_t().set_spell( 9835 ),
+  rank.moonfire = {
+      this,
+      spell_container_t().set_spell( 8921 ),
+      spell_container_t().set_spell( 8924 ),
+      spell_container_t().set_spell( 8925 ),
+      spell_container_t().set_spell( 8926 ),
+      spell_container_t().set_spell( 8927 ),
+      spell_container_t().set_spell( 8928 ),
+      spell_container_t().set_spell( 8929 ),
+      spell_container_t().set_spell( 9833 ),
+      spell_container_t().set_spell( 9834 ),
+      spell_container_t().set_spell( 9835 ),
   };
-  rank.omen_of_clarity = { this,
-    spell_container_t().set_spell( 16864 ).set_buff( 16870 ),
+  rank.omen_of_clarity = {
+      this,
+      spell_container_t().set_spell( 16864 ).set_buff( 16870 ),
   };
-  rank.starfire = { this,
-    spell_container_t().set_spell(  2912 ),
-    spell_container_t().set_spell(  8949 ),
-    spell_container_t().set_spell(  8950 ),
-    spell_container_t().set_spell(  8951 ),
-    spell_container_t().set_spell(  9875 ),
-    spell_container_t().set_spell(  9876 ),
-    spell_container_t().set_spell( 25298 ),
+  rank.starfire = {
+      this,
+      spell_container_t().set_spell( 2912 ),
+      spell_container_t().set_spell( 8949 ),
+      spell_container_t().set_spell( 8950 ),
+      spell_container_t().set_spell( 8951 ),
+      spell_container_t().set_spell( 9875 ),
+      spell_container_t().set_spell( 9876 ),
+      spell_container_t().set_spell( 25298 ),
   };
-  rank.wrath = { this,
-    spell_container_t().set_spell( 5176 ),
-    spell_container_t().set_spell( 5177 ),
-    spell_container_t().set_spell( 5178 ),
-    spell_container_t().set_spell( 5179 ),
-    spell_container_t().set_spell( 5180 ),
-    spell_container_t().set_spell( 6780 ),
-    spell_container_t().set_spell( 8905 ),
-    spell_container_t().set_spell( 9912 ),
+  rank.wrath = {
+      this,
+      spell_container_t().set_spell( 5176 ),
+      spell_container_t().set_spell( 5177 ),
+      spell_container_t().set_spell( 5178 ),
+      spell_container_t().set_spell( 5179 ),
+      spell_container_t().set_spell( 5180 ),
+      spell_container_t().set_spell( 6780 ),
+      spell_container_t().set_spell( 8905 ),
+      spell_container_t().set_spell( 9912 ),
   };
-
 }
 
 // ==========================================================================
@@ -284,11 +320,10 @@ private:
 
 struct moonfire_t : public druid_spell_t
 {
-  moonfire_t( druid_t* player, std::string_view options_str ) :
-    druid_spell_t( "moonfire", player, player->rank.moonfire.find_rank()->spell() )
+  moonfire_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "moonfire", player, player->rank.moonfire.find_rank()->spell() )
   {
     parse_options( options_str );
-    // TODO moonfire dot reporting
   }
 };
 
@@ -411,7 +446,7 @@ struct faerie_fire_t : public druid_spell_t
   }
 };
 
- struct innervate_t : public druid_spell_t
+struct innervate_t : public druid_spell_t
 {
   innervate_t( druid_t* player, std::string_view options_str )
     : druid_spell_t( "innervate", player, player->rank.innervate.find_rank()->spell() )
@@ -432,7 +467,8 @@ struct faerie_fire_t : public druid_spell_t
 
 struct moonkin_form_t : public druid_spell_t
 {
-  moonkin_form_t( druid_t* player, std::string_view options_str ) : druid_spell_t( "moonkin_form", player, player->talent.moonkin_form )
+  moonkin_form_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "moonkin_form", player, player->talent.moonkin_form )
   {
     parse_options( options_str );
     harmful = false;
@@ -440,6 +476,7 @@ struct moonkin_form_t : public druid_spell_t
 
   void execute() override
   {
+    druid_spell_t::execute();
     p()->buff.moonkin_aura->trigger();
   }
 };
@@ -457,8 +494,8 @@ struct druid_melee_t : public druid_melee_attack_t
     trigger_gcd       = 0_ms;
 
     background = repeating = allow_class_ability_procs = not_a_proc = true;
-    may_glance = may_crit = may_dodge = may_parry  = true;
-    special    = false;
+    may_glance = may_crit = may_dodge = may_parry = true;
+    special                                       = false;
   }
 };
 
@@ -468,11 +505,11 @@ struct auto_attack_t : public druid_melee_attack_t
     : druid_melee_attack_t( "auto_attack", p, spell_data_t::nil() )
   {
     parse_options( options_str );
-    trigger_gcd           = 0_ms;
+    trigger_gcd = 0_ms;
 
     assert( p->equipped_weapons[ SLOT_MAIN_HAND ].type != WEAPON_NONE );
 
-    p->main_hand_attack = new druid_melee_t( "auto_attack_mh", p, &p->equipped_weapons[ SLOT_MAIN_HAND ] );
+    p->main_hand_attack         = new druid_melee_t( "auto_attack_mh", p, &p->equipped_weapons[ SLOT_MAIN_HAND ] );
     p->main_hand_attack->weapon = &p->equipped_weapons[ SLOT_MAIN_HAND ];
     p->main_hand_attack->base_execute_time = p->equipped_weapons[ SLOT_MAIN_HAND ].swing_time;
 
@@ -551,14 +588,13 @@ buff_t* druid_td_t::make_debuff( bool b, Args&&... args )
 inline druid_td_t::druid_td_t( player_t& target, druid_t& p ) : actor_target_data_t( &target, &p )
 {
   auto const hurricane_debuff = p.rank.hurricane.find_rank();
-  debuff.hurricane = make_debuff( hurricane_debuff->spell()->ok(), *this, "hurricane",
-                                  hurricane_debuff->debuff() )
-    ->set_default_value (hurricane_debuff->debuff()->effectN(2).percent() );
+  debuff.hurricane = make_debuff( hurricane_debuff->spell()->ok(), *this, "hurricane", hurricane_debuff->debuff() )
+                         ->set_default_value( hurricane_debuff->debuff()->effectN( 2 ).percent() );
 
   auto const faerie_fire_debuff = p.rank.faerie_fire.find_rank();
   debuff.faerie_fire =
-      make_debuff<stat_buff_t>( faerie_fire_debuff->spell()->ok(), *this, "faerie_fire", faerie_fire_debuff->spell())
-    ->set_default_value_from_effect( 1 );
+      make_debuff<stat_buff_t>( faerie_fire_debuff->spell()->ok(), *this, "faerie_fire", faerie_fire_debuff->spell() )
+          ->set_default_value_from_effect( 1 );
 }
 
 template <typename Buff, typename... Args>
@@ -585,7 +621,10 @@ void druid_t::create_buffs()
   auto const eclipse_buff = find_spell( 408255 );
   buff.eclipse            = make_buff_fallback( talent.eclipse->ok(), this, "eclipse", eclipse_buff );
 
-  buff.moonkin_aura = make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() )->set_default_value_from_effect(1, .01 )->set_pct_buff_type_from_effect(1);
+  buff.moonkin_aura =
+      make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() )
+          ->set_default_value_from_effect( 1, .01 )
+          ->set_pct_buff_type_from_effect( 1 );
 };
 
 void druid_t::init_special_effects()
@@ -596,14 +635,13 @@ void druid_t::init_special_effects()
     const auto driver = new special_effect_t( this );
     driver->name_str  = omen_of_clarity->name_cstr();
     driver->spell_id  = omen_of_clarity->id();
-    // TODO 2 PPM is an educated guess based on old comments from classic. Must be reverified but beta logs were not big enough.
-    // scale ppm by proc chance to pick up modifiers (Moonkin Form).
+    // TODO 2 PPM is an educated guess based on old comments from classic. Must be reverified but beta logs were not big
+    // enough. scale ppm by proc chance to pick up modifiers (Moonkin Form).
     driver->ppm_ = 2.0 * omen_of_clarity->proc_chance();
     special_effects.push_back( driver );
 
-    callbacks.register_callback_execute_function( driver->spell_id, [ this ]( auto, auto, auto, auto ) {
-      buff.clearcasting->trigger();
-    } );
+    callbacks.register_callback_execute_function(
+        driver->spell_id, [ this ]( auto, auto, auto, auto ) { buff.clearcasting->trigger(); } );
 
     new dbc_proc_callback_t( this, *driver );
   }
