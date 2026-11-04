@@ -61,6 +61,7 @@ struct warrior_t final : public parse_player_effects_t
   void init_spells() override;
   void init_special_effects() override;
   void activate() override;
+  void assess_damage( school_e, result_amount_type, action_state_t* ) override;
   void parse_action_effects( action_t* );
 
   warrior_td_t* get_target_data( player_t* target ) const override;
@@ -185,6 +186,7 @@ struct warrior_t final : public parse_player_effects_t
 
     buff_t* heroic_strike_queued = nullptr;
     buff_t* overpower_available  = nullptr;
+    buff_t* revenge_available    = nullptr;
   } buff;
 
   struct gains_t
@@ -207,6 +209,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t heroic_strike;
     spell_ranks_t overpower;
     spell_ranks_t rend;
+    spell_ranks_t revenge;
     spell_ranks_t shield_bash;
     spell_ranks_t sunder_armor;
     spell_ranks_t taunt;
@@ -590,6 +593,36 @@ struct overpower_t : public warrior_attack_t
   }
 };
 
+struct revenge_t : public warrior_attack_t
+{
+  revenge_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "revenge", player, player->rank.revenge.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    // Revenge scales with 22.5% of attack power in Defensive Stance.
+    attack_power_mod.direct = 0.225;
+  }
+
+  bool ready() override
+  {
+    if ( !data().ok() )
+      return false;
+
+    if ( !p()->buff.revenge_available->check() )
+      return false;
+
+    return warrior_attack_t::ready();
+  }
+
+  void execute() override
+  {
+    p()->buff.revenge_available->expire();
+
+    warrior_attack_t::execute();
+  }
+};
+
 // APL action to queue up heroic strike
 // Checks to make sure warrior has enough rage to queue it up
 // The actual HS execute in the melee swing will check rage again to make sure that rage
@@ -803,6 +836,8 @@ void warrior_t::create_buffs()
 {
   buff.heroic_strike_queued = make_buff( this, "heroic_strike_queued" );
   buff.overpower_available  = make_buff( this, "overpower", spell.overpower_available );
+  // Revenge is usable for 5 seconds after a block, dodge, or parry.
+  buff.revenge_available = make_buff( this, "revenge_available" )->set_duration( 5_s );
 
   buff.battle_stance    = make_buff( this, "battle_stance", spell.battle_stance );
   buff.defensive_stance = make_buff( this, "defensive_stance", spell.defensive_stance );
@@ -915,6 +950,15 @@ void warrior_t::init_spells()
     spell_container_t().set_spell(  7887 ),
     spell_container_t().set_spell( 11584 ),
     spell_container_t().set_spell( 11585 ),
+  };
+
+  rank.revenge = { this,
+    spell_container_t().set_spell(  6572 ),
+    spell_container_t().set_spell(  6574 ),
+    spell_container_t().set_spell(  7379 ),
+    spell_container_t().set_spell( 11600 ),
+    spell_container_t().set_spell( 11601 ),
+    spell_container_t().set_spell( 25288 ),
   };
 
   rank.shield_bash = { this,
@@ -1056,6 +1100,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "hamstring" ) return new hamstring_t( this, options_str );
   if ( name == "sunder_armor" ) return new sunder_armor_t( this, options_str );
   if ( name == "overpower" ) return new overpower_t( this, options_str );
+  if ( name == "revenge" ) return new revenge_t( this, options_str );
   if ( name == "heroic_strike" ) return new heroic_strike_queue_t( this, options_str );
 
 
@@ -1081,6 +1126,15 @@ void warrior_t::init_action_list()
 void warrior_t::activate()
 {
   parse_player_effects_t::activate();
+}
+
+void warrior_t::assess_damage( school_e school, result_amount_type type, action_state_t* s )
+{
+  parse_player_effects_t::assess_damage( school, type, s );
+
+  if ( s->result == RESULT_DODGE || s->result == RESULT_PARRY ||
+       s->block_result == BLOCK_RESULT_BLOCKED )
+    buff.revenge_available->trigger();
 }
 
 struct warrior_module_t : public module_t
