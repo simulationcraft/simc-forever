@@ -43,6 +43,7 @@ void warrior( player_t* p )
   default_->add_action( "auto_attack" );
 
   default_->add_action( "battle_shout,if=!buff.battle_shout.up" );
+  default_->add_action( "demoralizing_shout,if=!debuff.demoralizing_shout.up" );
   default_->add_action( "bloodrage,if=rage<80" );
   default_->add_action( "rend,if=!ticking" );
   default_->add_action( "overpower,if=buff.overpower.up" );
