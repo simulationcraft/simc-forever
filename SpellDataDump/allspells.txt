@@ -20471,6 +20471,20 @@ Effects          :
 Description      : Renders a target unable to move for $d.
 Tooltip          : Rooted.
 
+Name             : Poison (id=8313) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 25
+Range            : 5 yards
+Duration         : 9 seconds
+Proc Chance      : 101%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=686664)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
+                   Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+Description      : Poisons target for $s1 Nature damage every $t1 sec for $d.
+Tooltip          : $s1 Nature damage inflicted every $t1 sec.
+
 Name             : Fire Shield (desc=Rank 2) (id=8316) [Spell Family (5)] 
 Class            : Warlock
 School           : Fire
@@ -37672,6 +37686,19 @@ Effects          :
 #1 (id=690534)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Fade (id=12685) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 40
+Duration         : 10 seconds
+Triggered By     : Fade (1292765)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Threat (42), Unknown (493)
+Effects          :
+#1 (id=690583)   : Apply Aura (6) | Temporary Threat Reduction (103)
+                   Base Value: -275 | Scaled Value: -275 | Target: Self (1)
+Description      : Reduces threat level on all enemies by a small amount for $d.
+Tooltip          : Reduced threat level.
+
 Name             : Enrage (id=12686) 
 School           : Physical
 Spell Type       : None
@@ -52272,6 +52299,18 @@ Effects          :
 #1 (id=693208)   : School Damage (2): frost
                    Base Value: 30 | Scaled Value: 30 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Frost damage.
+
+Name             : Shadow Bolt (id=16408) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=693694)   : School Damage (2): shadow
+                   Base Value: 28 | Scaled Value: 28 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
 
 Name             : Shadow Bolt (id=16409) 
 School           : Shadow
@@ -141701,6 +141740,18 @@ Effects          :
                    Base Value: 70 | Scaled Value: 70 (delta=0.428571) | Value Multiplier: 1 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
 
+Name             : Shadow Bolt (id=1292158) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1312024)  : School Damage (2): shadow
+                   Base Value: 42 | Scaled Value: 42 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
+
 Name             : Gloomshroud (id=1292160) [Passive] 
 School           : Shadow
 Spell Type       : None
@@ -141999,6 +142050,19 @@ Effects          :
 #2 (id=1313008)  : School Damage (2): frost
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
 Tooltip          : Movement slowed by $s1%.
+
+Name             : Fade (id=1292765) [Passive] 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 40
+Proc Chance      : 5%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken
+Attributes       : Passive (6), Not Shapeshifted (16), Do Not Sheath (18), No Threat (42), Unknown (493)
+Effects          :
+#1 (id=1313053)  : Apply Aura (6) | Proc Trigger Spell (42): Fade
+                   Base Value: 5 | Scaled Value: 5 | Trigger Spell: 12685 | Target: Self (1)
+Description      : When damaged, has a chance to reduce threat level on all enemies by a small amount for $12685d.
+Tooltip          : When damaged, has a chance to reduce threat level on all enemies by a small amount for $12685d.
 
 Name             : Memory of the Mist (id=1292804) 
 School           : Physical
