@@ -46,7 +46,7 @@ struct priest_racial_ranks_t final : spell_ranks_t
   {
     ranks.front().cache_data( player );
     if ( !( ranks.front().spell()->race_mask() & util::race_mask( player->race ) ) )
-      return spell_container_t::nil();
+      return spell_container_t::not_found();
 
     return spell_ranks_t::find_rank( rank, field );
   }
