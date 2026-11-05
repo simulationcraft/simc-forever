@@ -2141,7 +2141,7 @@ Mage
 1279988  Flamestrike
 1279989  Flamestrike
 1279990  Flamestrike
-1292739 *Hydra Strike
+1292739  Hydra Strike
 1293790 *Frostbolt
 1297659 *Teleport: Dalaran
 1298416 *Frostbolt

@@ -833,7 +833,7 @@ School           : Nature
 Spell Type       : None
 Spell Level      : 26
 Proc Chance      : 101%
-Triggered By     : Abolish Poison (2893)
+Triggered By     : Abolish Poison (2893), Abolish Poison (14253)
 Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
 #1 (id=682101)   : Dispel (38)

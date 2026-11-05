@@ -9655,6 +9655,21 @@ Effects          :
                    Base Value: 83 | Scaled Value: 83 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
+Name             : Hydra Strike (id=1292739) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1313007)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1313008)  : School Damage (2): frost
+                   Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+Tooltip          : Movement slowed by $s1%.
+
 Name             : Fireball (id=1299850) [Spell Family (3)] 
 School           : Fire
 Spell Type       : Magic

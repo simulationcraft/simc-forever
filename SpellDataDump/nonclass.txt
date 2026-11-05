@@ -12419,6 +12419,20 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 255
 Description      : Permanently enchant a shield to give 3 spirit.
 
+Name             : Pummel (id=13491) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 6
+Range            : 100 yards
+Duration         : 5 seconds
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=687729)   : School Damage (2): physical
+                   Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
+#2 (id=687730)   : Interrupt Cast (68)
+                   Base Value: 0 | Scaled Value: 0 | Mechanic: Interrupt | Target: Targeted Enemy (6)
+Description      : Pummel the target for $s1 damage and interrupt the spell being cast for $d.
+
 Name             : Haste (id=13494) 
 School           : Physical
 Spell Type       : Magic
@@ -12473,6 +12487,20 @@ Effects          :
 #1 (id=690389)   : Enchant Item (53)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 241
 Description      : Permanently enchant a Melee Weapon to do 2 additional points of damage.
+
+Name             : Poison (id=13518) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 10 (max 10)
+Range            : 5 yards
+Duration         : 15 seconds
+Proc Chance      : 101%
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=691572)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
+                   Base Value: 5 | Scaled Value: 5 | Target: Targeted Enemy (6)
+Description      : Poisons target for $s1 Nature damage every $t1 sec for $d.
+Tooltip          : $s1 Nature damage inflicted every $t1 sec.
 
 Name             : Enchant Cloak - Lesser Shadow Resistance (id=13522) 
 School           : Physical
@@ -13961,6 +13989,24 @@ Effects          :
 #1 (id=692231)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Nearby Target (38)
 Description      : Use on Grark when the time is right!
+
+Name             : Abolish Poison (desc=Rank 1) (id=14253) 
+School           : Nature
+Spell Type       : Magic
+Resource         : 100 Base Mana (0) (id=180463)
+Spell Level      : 26
+Range            : 30 yards
+GCD              : 1.5 seconds
+Duration         : 8 seconds
+Proc Chance      : 101%
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=692150)   : Apply Aura (6) | Periodic Trigger Spell (23): Abolish Poison Effect every 2 seconds
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 3137 | Target: Targeted Ally (21)
+#2 (id=692151)   : Dispel (38)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 4 | Target: Targeted Ally (21)
+Description      : Attempts to cure $s2 poison $leffect:effects; on the target, and $3137s1 more poison $leffect:effects; every $t1 seconds for $d.
+Tooltip          : Attempts to cure $3137s1 poison every $t1 seconds.
 
 Name             : Increase Spell Dam 19 (id=14254) [Passive, Hidden] 
 School           : Nature
@@ -40092,6 +40138,17 @@ Effects          :
                    Base Value: 75 | Scaled Value: 75 | Target: Self (1)
 Description      : Restores $o Mana over $d.
 
+Name             : Collect Specimen (id=434957) 
+School           : Physical
+Spell Type       : None
+Range            : 5 yards
+Cooldown         : 30 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1125272)  : Dummy (3)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Description      : Catch an exotic bug, and keep it as a specimen. 
+
 Name             : Combine Partial Spell Notes (id=435185) 
 School           : Physical
 Spell Type       : None
@@ -61727,6 +61784,19 @@ Effects          :
 Description      : Sear certain enchanted targets with blazing light causing them to take additional damage from Holy attacks and spells.
 Tooltip          : Damage taken from Holy attacks and spells increased by $s1%.
 
+Name             : Blazewind Blast (id=1282503) 
+School           : Holystorm
+Spell Type       : Magic
+Spell Level      : 55
+Range            : 30 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1296314)  : School Damage (2): holystorm
+                   Base Value: 49 | Scaled Value: 49 (delta=0.42) | Target: Targeted Enemy (6)
+#2 (id=1313827)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Description      : Sear the target with a vortex of blazing wind, dealing $s1 Holystorm damage. Deals $s2 times as much damage to Wolves and Worgen.
+
 Name             : Plant Charge (id=1282576) 
 School           : Physical
 Spell Type       : None
@@ -62836,6 +62906,18 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Nearby Target (38)
 Description      : Throw the bloodied bones of the Ashen Reign leaders into the slime altar.
 
+Name             : Lord of Shadowfang Keep (id=1292121) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1311963)  : Apply Aura (6) | Increase Movement Speed% (Stacking) (129)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : Increases movement speed by $s1% in Tirisfal Glades, Silverpine Forest, and Shadowfang Keep.
+Tooltip          : In Tirisfal Glades, Silverpine Forest, or Shadowfang Keep, movement speed increased by $s1%.
+
 Name             : Slimy Pinecone (id=1292139) 
 School           : Physical
 Spell Type       : None
@@ -62847,6 +62929,16 @@ Effects          :
 #1 (id=1311988)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Nearby Target (38)
 Description      : Throw the pinecones at the workstation altars to let nature retake what has been lost.
+
+Name             : Benevolence (id=1292142) [Passive] 
+School           : Holy
+Spell Type       : Magic
+Attributes       : Passive (6), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Unknown (493)
+Effects          :
+#1 (id=1311994)  : Apply Party Aura (35) | Modify Health Regeneration Rate in Combat (161)
+                   Base Value: 4 | Scaled Value: 4 | Radius: 30 yards | Target: Self (1)
+Description      : Cause party members within $a1 yds to regenerate $s1 health every 5 sec.
+Tooltip          : Regenerate $s1 health every 5 sec.
 
 Name             : Firebolt (id=1292152) 
 School           : Fire
@@ -62860,6 +62952,28 @@ Effects          :
                    Base Value: 42 | Scaled Value: 42 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Fire damage.
 
+Name             : Shadow Bolt (id=1292155) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1312021)  : School Damage (2): shadow
+                   Base Value: 70 | Scaled Value: 70 (delta=0.428571) | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
+
+Name             : Gloomshroud (id=1292160) [Passive] 
+School           : Shadow
+Spell Type       : None
+Spell Level      : 24
+Attributes       : Passive (6), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1312026)  : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : When struck in combat inflicts $s1 Shadow damage to the attacker.
+
 Name             : Resist Silence 04 (id=1292222) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -62868,6 +62982,20 @@ Effects          :
 #1 (id=1312106)  : Apply Aura (6) | Mechanic Resistance (117)
                    Base Value: 4 | Scaled Value: 4 | Mechanic: Silence | Target: Self (1)
 Description      : Reduces the hit chance of Silence effects against you by $s1%.
+
+Name             : Worgenbane (id=1292252) 
+School           : Holy
+Spell Type       : Magic
+Range            : 15 yards
+Duration         : 4 seconds
+Proc Chance      : 101%
+Mechanic         : Stun
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Prevents Anim (50), Unknown (493)
+Effects          :
+#1 (id=1312148)  : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Description      : Stuns target Worgen for $d.
+Tooltip          : Stunned.
 
 Name             : Resist Disorient 07 (id=1292268) [Passive, Hidden] 
 School           : Physical
@@ -62928,6 +63056,27 @@ Effects          :
                    Base Value: -10 | Scaled Value: -10 | Misc Value: 7 | Target: Self (1)
 Description      : Reduces the duration of all movement impairing effects on you by $m2%.
 
+Name             : Dig (id=1292560) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 5 seconds
+Attributes       : Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1312711)  : Create Item (24)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 13 | Target: Self (1)
+Description      : Dig up a grave. Usable at Raven Hill Cemetery and Scarlet Monastery Graveyard.
+
+Name             : Wound (id=1292573) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 50
+Range            : 100 yards
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=1312731)  : School Damage (2): physical
+                   Base Value: 70 | Scaled Value: 70 | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 Physical damage.
+
 Name             : Resist Fear 04 (id=1292574) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -62976,6 +63125,108 @@ Effects          :
 Description      : Grants $s1 health and $s2 mana every 5 sec for $d when one of your spells is resisted.
 Tooltip          : Regenerate $s1 health and $s2 mana every 5 sec.
 
+Name             : Pierce Heart (id=1292647) 
+School           : Physical
+Spell Type       : Melee
+Range            : 100 yards
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=1312847)  : School Damage (2): physical
+                   Base Value: 42 | Scaled Value: 42 | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 damage. Naga are Stunned for $1292648d.
+
+Name             : Pierce Heart (id=1292648) 
+School           : Physical
+Spell Type       : Magic
+Range            : 100 yards
+Duration         : 2 seconds
+Mechanic         : Stun
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=1312848)  : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 damage. Naga are Stunned for $s1 sec.
+Tooltip          : Stunned.
+
+Name             : Resist Sleep 05 (id=1292652) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1312853)  : Apply Aura (6) | Mechanic Resistance (117)
+                   Base Value: 5 | Scaled Value: 5 | Mechanic: Sleep | Target: Self (1)
+Description      : Reduces the hit chance of Sleep effects against you by $s1%.
+
+Name             : Corrosive Poison (id=1292657) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 12 seconds
+Proc Chance      : 101%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1312862)  : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
+                   Base Value: 7 | Scaled Value: 7 | Target: Targeted Enemy (6)
+#2 (id=1312863)  : Apply Aura (6) | Modify Armor (674)
+                   Base Value: -50 | Scaled Value: -50 | Misc Value: 1 | Target: Targeted Enemy (6)
+Description      : Inflict $1292738m1 Fire and $1292739m2 Frost damage, slow the target by $1292739m1% for $1292739d, reduce armor by $m2, and inflict $m1 Nature damage every $t1 sec for $d.
+Tooltip          : Armor lowered by $s2 and inflicting $s1 Nature damage every $t1 sec.
+
+Name             : Spiked Shell (id=1292670) [Passive] 
+School           : Nature
+Spell Type       : None
+Spell Level      : 24
+Attributes       : Passive (6), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1312886)  : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : When struck in combat, inflicts $s1 Nature damage to the attacker.
+
+Name             : Cursed Murloc Eye (id=1292674) [Passive, Hidden] 
+School           : Shadow
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Hostile Spell, Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1312890)  : Apply Aura (6) | Proc Trigger Spell (42): Cursed Murloc Eye
+                   Base Value: 4 | Scaled Value: 4 | Trigger Spell: 1292675 | Target: Self (1)
+Description      : Spells and attacks deal $1292675s1 Shadow damage. Deals $s1 times as much damage to Murlocs.
+
+Name             : Cursed Murloc Eye (id=1292675) 
+School           : Shadow
+Spell Type       : Magic
+Range            : 100 yards
+Triggered By     : Cursed Murloc Eye (1292674)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1312891)  : School Damage (2): shadow
+                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+Description      : Spells and attacks against Murlocs deal $s1 Shadow damage.
+Tooltip          : Deal $s1 Shadow damage to Murlocs.
+
+Name             : Lightning Bolt (id=1292679) 
+School           : Nature
+Spell Type       : Magic
+Range            : 100 yards
+Velocity         : 40 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1312903)  : School Damage (2): nature
+                   Base Value: 70 | Scaled Value: 70 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
+
+Name             : Increase Threat All 01 (id=1292683) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1312907)  : Apply Aura (6) | Threat (10)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 127 | Target: Self (1)
+Description      : Increases all threat generated by $s1%.
+
 Name             : Spell Damage Reduction 05 (id=1292692) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -62985,6 +63236,17 @@ Effects          :
                    Base Value: -5 | Scaled Value: -5 | Misc Value: 0x7e | Target: Self (1)
                    Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
 Description      : Spell Damage received is reduced by $s1.
+
+Name             : Hydra Strike (id=1292738) 
+School           : Fire
+Spell Type       : Magic
+Range            : 100 yards
+Velocity         : 19 yards/sec
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1313006)  : School Damage (2): fire
+                   Base Value: 42 | Scaled Value: 42 | Target: Targeted Enemy (6)
+Tooltip          : Blasts a target for $s1 Fire damage.
 
 Name             : Memory of the Mist (id=1292804) 
 School           : Physical
@@ -69362,6 +69624,21 @@ Effects          :
 #1 (id=1352031)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
+Name             : Graverobber's Shovel (id=1319047) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1352807)  : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: 12 | Scaled Value: 12 | Target: Self (1)
+#2 (id=1352808)  : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: 12 | Scaled Value: 12 | Target: Self (1)
+#3 (id=1352809)  : Apply Aura (6) | Modify Melee Attack Power vs Race (102)
+                   Base Value: 12 | Scaled Value: 12 | Misc Value: 32 | Target: Self (1)
+#4 (id=1352810)  : Apply Aura (6) | Modify Ranged Attack Power vs Race (131)
+                   Base Value: 12 | Scaled Value: 12 | Misc Value: 32 | Target: Self (1)
+Description      : +$s1 Attack Power, doubled against Undead targets.
+
 Name             : Small Purple Rocket (id=1319154) 
 School           : Physical
 Spell Type       : None
@@ -69860,36 +70137,6 @@ Effects          :
 Hotfixed         : NEW EFFECT
 Description      : Increases Stamina of nearby allies by $s1% for $d.
 Tooltip          : Stamina increased by $s1%.
-
-Name             : Call Anathema (id=1327991) 
-Hotfixed         : NEW SPELL
-School           : Physical
-Spell Type       : None
-Cast Time        : 1 seconds
-Cooldown         : 60 seconds
-Category         : 1160 (Type 0x0)
-Category Cooldown: 60 seconds
-Attributes       : Unknown (493)
-Effects          :
-#1 (id=1366762)  : Summon Item (34)
-                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
-Hotfixed         : NEW EFFECT
-Description      : Calls forth Anathema.
-
-Name             : Call Benediction (id=1327993) 
-Hotfixed         : NEW SPELL
-School           : Physical
-Spell Type       : None
-Cast Time        : 1 seconds
-Cooldown         : 60 seconds
-Category         : 1160 (Type 0x0)
-Category Cooldown: 60 seconds
-Attributes       : Unknown (493)
-Effects          :
-#1 (id=1366764)  : Summon Item (34)
-                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
-Hotfixed         : NEW EFFECT
-Description      : Calls forth Benediction.
 
 Name             : Elixir of Endless Mana (id=1328032) 
 Hotfixed         : NEW SPELL
