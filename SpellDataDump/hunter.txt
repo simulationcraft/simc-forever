@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70790 Live
 Name             : Auto Shot (id=75) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -18,7 +18,6 @@ Description      : Automatically shoots the target until cancelled.
 Tooltip          : Firing at the target.
 
 Name             : Mend Pet (desc=Rank 1) (id=136) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -50,7 +49,6 @@ Effects          :
 Description      : Allows one-hand and off-hand weapons to be equipped in the off-hand.
 
 Name             : Disengage (desc=Rank 1) (id=781) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -85,7 +83,6 @@ Effects          :
 Description      : Summons your pet to you.
 
 Name             : Eyes of the Beast (id=1002) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -110,7 +107,6 @@ Description      : Take direct control of your pet and see through its eyes for 
 Tooltip          : Directly controlling pet.
 
 Name             : Hunter's Mark (desc=Rank 1) (id=1130) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -135,7 +131,6 @@ Description      : Places the Hunter's Mark on the target, increasing the Ranged
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
 
 Name             : Beast Lore (id=1462) 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : None
@@ -152,7 +147,6 @@ Description      : Gather information about the target beast.  The tooltip will 
 Tooltip          : Lore revealed.
 
 Name             : Track Beasts (id=1494) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -171,7 +165,6 @@ Description      : Shows the location of all nearby beasts on the minimap.  Only
 Tooltip          : Tracking Beasts.
 
 Name             : Mongoose Bite (desc=Rank 1) (id=1495) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -193,7 +186,6 @@ Effects          :
 Description      : Counterattack the enemy for melee weapon damage plus $s1. Can only be performed after you dodge.
 
 Name             : Freezing Trap (desc=Rank 1) (id=1499) [Spell Family (9)] 
-Hotfixed         : Category (2183 -> 411), Attributes
 Class            : Hunter
 School           : Frost
 Spell Type       : None
@@ -214,7 +206,6 @@ Effects          :
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $3355d.  Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
 Name             : Volley (desc=Rank 1) (id=1510) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -240,7 +231,6 @@ Effects          :
 Description      : Continuously fires a volley of ammo at the target area, causing $1279721s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 Name             : Scare Beast (desc=Rank 1) (id=1513) 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -300,7 +290,6 @@ Effects          :
 Tooltip          : Increases happiness.
 
 Name             : Flare (id=1543) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -410,7 +399,6 @@ Effects          :
 Description      : Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.
 
 Name             : Serpent Sting (desc=Rank 1) (id=1978) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -429,7 +417,6 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=679708)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
                    Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (2 -> 3)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
@@ -469,7 +456,6 @@ Effects          :
 Description      : Dismiss your pet.  Dismissing your pet will reduce its happiness by $/1000;s1.
 
 Name             : Multi-Shot (id=2643) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -530,7 +516,6 @@ Effects          :
 Description      : Hurl a thrown weapon at the target.
 
 Name             : Raptor Strike (desc=Rank 1) (id=2973) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -551,7 +536,6 @@ Effects          :
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Wing Clip (desc=Rank 1) (id=2974) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -608,7 +592,6 @@ Effects          :
 Description      : Claw the enemy, causing $s1 damage.
 
 Name             : Viper Sting (desc=Rank 1) (id=3034) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -632,7 +615,6 @@ Description      : Stings the target, draining $o1 mana over $d.  Only one Sting
 Tooltip          : Drains $s1 mana every $t1 seconds.
 
 Name             : Scorpid Sting (id=3043) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -656,7 +638,6 @@ Description      : Stings the target, reducing the target's chance to hit with a
 Tooltip          : Chance to hit with attacks reduced by $s1%.
 
 Name             : Arcane Shot (desc=Rank 1) (id=3044) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -677,11 +658,9 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=680797)   : School Damage (2): arcane
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (20 -> 25)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Rapid Fire (id=3045) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -709,7 +688,6 @@ Description      : Increases ranged and melee attack speed by $s1% for $d.
 Tooltip          : Ranged and melee attack speed increased by $s1%$?$w2>0[,  Mana regeneration increased by $w2%, and $w3% of mana regeneration continued while casting][].
 
 Name             : Mend Pet (desc=Rank 2) (id=3111) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -763,7 +741,6 @@ Description      : Freeze your target for $d.
 Tooltip          : Frozen.
 
 Name             : Mend Pet (desc=Rank 3) (id=3661) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -784,7 +761,6 @@ Description      : Heals your pet $s1 health every second while you focus.  Last
 Tooltip          : Heals $s1 every second.
 
 Name             : Mend Pet (desc=Rank 4) (id=3662) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -956,7 +932,6 @@ Effects          :
 Description      : Stamina increased by $s1.
 
 Name             : Concussive Shot (id=5116) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -981,7 +956,6 @@ Description      : Dazes the target, slowing movement speed by $s1% for $d.
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Aspect of the Cheetah (id=5118) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1021,7 +995,6 @@ Effects          :
 Description      : Follows a successful block, dodge or parry.
 
 Name             : Feign Death (id=5384) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -1053,7 +1026,6 @@ Effects          :
 Tooltip          : Ranged attack speed increased by $s1%.
 
 Name             : Eagle Eye (id=6197) 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Magic
@@ -1390,7 +1362,6 @@ Effects          :
 Tooltip          : Stunned.
 
 Name             : Aspect of the Pack (id=13159) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1415,7 +1386,6 @@ Description      : The hunter and group members within $a1 yards take on the asp
 Tooltip          : $s1% increased movement speed.  Dazed if damage is taken.
 
 Name             : Aspect of the Beast (desc=Rank 1) (id=13161) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1438,7 +1408,6 @@ Description      : The hunter takes on the aspects of a beast, becoming untracka
 Tooltip          : Untrackable. Melee Attack Power increased by $s2.
 
 Name             : Aspect of the Monkey (id=13163) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1459,7 +1428,6 @@ Description      : The hunter takes on the aspects of a monkey, increasing chanc
 Tooltip          : Increases chance to dodge by $s1%.
 
 Name             : Aspect of the Hawk (desc=Rank 1) (id=13165) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1475,7 +1443,6 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unk
 Effects          :
 #1 (id=690400)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
-Hotfixed         : Base Value (15 -> 20)
 #2 (id=690401)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
@@ -1517,7 +1484,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
 
 Name             : Mend Pet (desc=Rank 5) (id=13542) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1538,7 +1504,6 @@ Description      : Heals your pet $s1 health every second while you focus.  Last
 Tooltip          : Heals $s1 every second.
 
 Name             : Mend Pet (desc=Rank 6) (id=13543) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1559,7 +1524,6 @@ Description      : Heals your pet $s1 health every second while you focus.  Last
 Tooltip          : Heals $s1 every second.
 
 Name             : Mend Pet (desc=Rank 7) (id=13544) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -1580,7 +1544,6 @@ Description      : Heals your pet $s1 health every second while you focus.  Last
 Tooltip          : Heals $s1 every second.
 
 Name             : Serpent Sting (desc=Rank 2) (id=13549) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1599,12 +1562,10 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=691588)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
                    Base Value: 7 | Scaled Value: 7 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (6 -> 7)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 3) (id=13550) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1623,12 +1584,10 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=691589)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (12 -> 14)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 4) (id=13551) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1647,12 +1606,10 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=691570)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
                    Base Value: 26 | Scaled Value: 26 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (22 -> 26)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 5) (id=13552) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1671,12 +1628,10 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=690760)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
                    Base Value: 40 | Scaled Value: 40 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (34 -> 40)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 6) (id=13553) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1695,12 +1650,10 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=690132)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
                    Base Value: 58 | Scaled Value: 58 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (48 -> 58)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 7) (id=13554) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1719,12 +1672,10 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=691479)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
                    Base Value: 75 | Scaled Value: 75 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (64 -> 75)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Serpent Sting (desc=Rank 8) (id=13555) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -1743,12 +1694,10 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=690655)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
                    Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (83 -> 100)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Immolation Trap (desc=Rank 1) (id=13795) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -1787,7 +1736,6 @@ Description      : Inflict $s1 Fire damage every $t1 seconds.
 Tooltip          : $s1 Fire damage every $t1 seconds.
 
 Name             : Frost Trap (id=13809) [Spell Family (9)] 
-Hotfixed         : Category (2183 -> 411), Attributes
 Class            : Hunter
 School           : Frost
 Spell Type       : None
@@ -1845,7 +1793,6 @@ Effects          :
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Explosive Trap (desc=Rank 1) (id=13813) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -1881,7 +1828,6 @@ Effects          :
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Raptor Strike (desc=Rank 2) (id=14260) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1902,7 +1848,6 @@ Effects          :
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 3) (id=14261) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1923,7 +1868,6 @@ Effects          :
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 4) (id=14262) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1944,7 +1888,6 @@ Effects          :
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 5) (id=14263) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1965,7 +1908,6 @@ Effects          :
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 6) (id=14264) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -1986,7 +1928,6 @@ Effects          :
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 7) (id=14265) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2007,7 +1948,6 @@ Effects          :
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Raptor Strike (desc=Rank 8) (id=14266) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2028,7 +1968,6 @@ Effects          :
 Description      : A strong attack that deals melee weapon damage plus $s1.
 
 Name             : Wing Clip (desc=Rank 2) (id=14267) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2051,7 +1990,6 @@ Description      : Inflicts $s2 damage and reduces the enemy target's movement s
 Tooltip          : Movement speed reduced by $s1%.
 
 Name             : Wing Clip (desc=Rank 3) (id=14268) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2074,7 +2012,6 @@ Description      : Inflicts $s2 damage and reduces the enemy target's movement s
 Tooltip          : Movement speed reduced by $s1%.
 
 Name             : Mongoose Bite (desc=Rank 2) (id=14269) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2096,7 +2033,6 @@ Effects          :
 Description      : Counterattack the enemy for melee weapon damage plus $s1. Can only be performed after you dodge.
 
 Name             : Mongoose Bite (desc=Rank 3) (id=14270) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2118,7 +2054,6 @@ Effects          :
 Description      : Counterattack the enemy for melee weapon damage plus $s1. Can only be performed after you dodge.
 
 Name             : Mongoose Bite (desc=Rank 4) (id=14271) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2139,7 +2074,6 @@ Effects          :
 Description      : Counterattack the enemy for melee weapon damage plus $s1. Can only be performed after you dodge.
 
 Name             : Disengage (desc=Rank 2) (id=14272) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2159,7 +2093,6 @@ Effects          :
 Description      : Attempts to disengage from the target by reducing threat. More effective than Disengage (Rank 1). Disables auto-attack.
 
 Name             : Disengage (desc=Rank 3) (id=14273) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -2179,7 +2112,6 @@ Effects          :
 Description      : Attempts to disengage from the target by reducing threat. More effective than Disengage (Rank 2). Disables auto-attack.
 
 Name             : Distracting Shot (desc=Rank 2) (id=14274) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2203,7 +2135,6 @@ Effects          :
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 1).
 
 Name             : Viper Sting (desc=Rank 2) (id=14279) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -2227,7 +2158,6 @@ Description      : Stings the target, draining $o1 mana over $d.  Only one Sting
 Tooltip          : Drains $s1 mana every $t1 seconds.
 
 Name             : Viper Sting (desc=Rank 3) (id=14280) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Ranged
@@ -2251,7 +2181,6 @@ Description      : Stings the target, draining $o1 mana over $d.  Only one Sting
 Tooltip          : Drains $s1 mana every $t1 seconds.
 
 Name             : Arcane Shot (desc=Rank 2) (id=14281) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2272,11 +2201,9 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=691213)   : School Damage (2): arcane
                    Base Value: 35 | Scaled Value: 35 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (26 -> 35)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 3) (id=14282) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2297,11 +2224,9 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=691984)   : School Damage (2): arcane
                    Base Value: 50 | Scaled Value: 50 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (39 -> 50)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 4) (id=14283) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2322,11 +2247,9 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=692127)   : School Damage (2): arcane
                    Base Value: 85 | Scaled Value: 85 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (65 -> 85)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 5) (id=14284) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2347,11 +2270,9 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=690859)   : School Damage (2): arcane
                    Base Value: 120 | Scaled Value: 120 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (94 -> 120)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 6) (id=14285) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2372,11 +2293,9 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=690933)   : School Damage (2): arcane
                    Base Value: 175 | Scaled Value: 175 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (134 -> 175)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 7) (id=14286) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2397,11 +2316,9 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=690976)   : School Damage (2): arcane
                    Base Value: 220 | Scaled Value: 220 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (170 -> 220)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Arcane Shot (desc=Rank 8) (id=14287) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2422,11 +2339,9 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=691069)   : School Damage (2): arcane
                    Base Value: 280 | Scaled Value: 280 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (217 -> 280)
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Volley (desc=Rank 2) (id=14294) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2452,7 +2367,6 @@ Effects          :
 Description      : Continuously fires a volley of ammo at the target area, causing $1279719s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 Name             : Volley (desc=Rank 3) (id=14295) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2571,7 +2485,6 @@ Description      : Inflict $s1 Fire damage every $t1 seconds.
 Tooltip          : $s1 Fire damage every $t1 seconds.
 
 Name             : Immolation Trap (desc=Rank 2) (id=14302) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2592,7 +2505,6 @@ Effects          :
 Description      : Place a Fire trap that will burn the first enemy to approach for $14298o1 Fire damage over $14298d. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Immolation Trap (desc=Rank 3) (id=14303) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2613,7 +2525,6 @@ Effects          :
 Description      : Place a Fire trap that will burn the first enemy to approach for $14299o1 Fire damage over $14299d. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Immolation Trap (desc=Rank 4) (id=14304) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2634,7 +2545,6 @@ Effects          :
 Description      : Place a Fire trap that will burn the first enemy to approach for $14300o1 Fire damage over $14300d. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Immolation Trap (desc=Rank 5) (id=14305) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2695,7 +2605,6 @@ Description      : Freeze your target for $d.
 Tooltip          : Frozen.
 
 Name             : Freezing Trap (desc=Rank 2) (id=14310) [Spell Family (9)] 
-Hotfixed         : Category (2183 -> 411), Attributes
 Class            : Hunter
 School           : Frost
 Spell Type       : None
@@ -2716,7 +2625,6 @@ Effects          :
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $14308d. Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
 Name             : Freezing Trap (desc=Rank 3) (id=14311) [Spell Family (9)] 
-Hotfixed         : Category (2183 -> 411), Attributes
 Class            : Hunter
 School           : Frost
 Spell Type       : None
@@ -2775,7 +2683,6 @@ Effects          :
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Explosive Trap (desc=Rank 2) (id=14316) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2796,7 +2703,6 @@ Effects          :
 Description      : Place a Fire trap that explodes when an enemy approaches, causing $14314s1 Fire damage and $14314o2 additional Fire damage over $14314d to all within $14314a1 yards. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Explosive Trap (desc=Rank 3) (id=14317) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Fire
 Spell Type       : None
@@ -2817,7 +2723,6 @@ Effects          :
 Description      : Place a Fire trap that explodes when an enemy approaches, causing $14315s1 Fire damage and $14315o2 additional Fire damage over $14315d to all within $14315a1 yards. Trap will exist for $d. Only one Fire trap can be active at a time.
 
 Name             : Aspect of the Hawk (desc=Rank 2) (id=14318) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2833,14 +2738,12 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unk
 Effects          :
 #1 (id=691884)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 35 | Scaled Value: 35 | Target: Self (1)
-Hotfixed         : Base Value (22 -> 35)
 #2 (id=691885)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Aspect of the Hawk (desc=Rank 3) (id=14319) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2856,14 +2759,12 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unk
 Effects          :
 #1 (id=691886)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
-Hotfixed         : Base Value (30 -> 50)
 #2 (id=691887)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Aspect of the Hawk (desc=Rank 4) (id=14320) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2879,14 +2780,12 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unk
 Effects          :
 #1 (id=692212)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 70 | Scaled Value: 70 | Target: Self (1)
-Hotfixed         : Base Value (38 -> 70)
 #2 (id=692213)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Aspect of the Hawk (desc=Rank 5) (id=14321) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2902,14 +2801,12 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unk
 Effects          :
 #1 (id=692607)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 90 | Scaled Value: 90 | Target: Self (1)
-Hotfixed         : Base Value (47 -> 90)
 #2 (id=692608)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Aspect of the Hawk (desc=Rank 6) (id=14322) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -2925,14 +2822,12 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unk
 Effects          :
 #1 (id=692138)   : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: 110 | Scaled Value: 110 | Target: Self (1)
-Hotfixed         : Base Value (55 -> 110)
 #2 (id=692139)   : Apply Aura (6) | Proc Trigger Spell (42): Quick Shots
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 6150 | Target: Self (1)
 Description      : The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.
 Tooltip          : Increases Ranged Attack Power by $s1.
 
 Name             : Hunter's Mark (desc=Rank 2) (id=14323) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -2957,7 +2852,6 @@ Description      : Places the Hunter's Mark on the target, increasing the Ranged
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
 
 Name             : Hunter's Mark (desc=Rank 3) (id=14324) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -2982,7 +2876,6 @@ Description      : Places the Hunter's Mark on the target, increasing the Ranged
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
 
 Name             : Hunter's Mark (desc=Rank 4) (id=14325) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -3007,7 +2900,6 @@ Description      : Places the Hunter's Mark on the target, increasing the Ranged
 Tooltip          : All attackers gain $s2 Ranged Attack Power against this target.
 
 Name             : Scare Beast (desc=Rank 2) (id=14326) 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -3032,7 +2924,6 @@ Description      : Scares a beast, causing it to run in fear for up to $d.  Dama
 Tooltip          : Feared.
 
 Name             : Scare Beast (desc=Rank 3) (id=14327) 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -3244,7 +3135,6 @@ Effects          :
 Tooltip          : Dazed.
 
 Name             : Distracting Shot (desc=Rank 3) (id=15629) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -3268,7 +3158,6 @@ Effects          :
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 2).
 
 Name             : Distracting Shot (desc=Rank 4) (id=15630) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -3292,7 +3181,6 @@ Effects          :
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 3).
 
 Name             : Distracting Shot (desc=Rank 5) (id=15631) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -3316,7 +3204,6 @@ Effects          :
 Description      : Distract the target, causing threat.  More effective than Distracting Shot (Rank 4).
 
 Name             : Distracting Shot (desc=Rank 6) (id=15632) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -3843,7 +3730,7 @@ Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(-10, -20, -30)]
                  : Effect#2 [op=set, values=(-10, -20, -30)]
                  : Effect#3 [op=set, values=(1, 2, 3)]
-                 : Effect#4 [op=set]
+                 : Effect#4 [op=set, values=(1, 2, 3)]
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -3874,7 +3761,6 @@ Effects          :
 Description      : Increases your Parry chance by $s1%.
 
 Name             : Counterattack (desc=Rank 1) (id=19306) [Spell Family (9)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=11, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Physical
@@ -4069,7 +3955,6 @@ Effects          :
 Description      : Increases your critical strike chance with all attacks by $m1%.
 
 Name             : Aimed Shot (desc=Rank 1) (id=19434) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4090,7 +3975,6 @@ Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), 
 Effects          :
 #1 (id=696631)   : Normalized Weapon Damage (121)
                    Base Value: 40 | Scaled Value: 40 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (20 -> 40)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Improved Arcane Shot (id=19454) [Spell Family (9), Passive, Hidden] 
@@ -4202,7 +4086,6 @@ Description      : A short-range shot that deals $s1% weapon damage and disorien
 Tooltip          : Disoriented.
 
 Name             : Trueshot Aura (desc=Rank 3) (id=19506) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -4216,7 +4099,6 @@ Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (
 Effects          :
 #1 (id=697417)   : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
                    Base Value: 50 | Scaled Value: 50 | Radius: 45 yards | Target: Self (1)
-Hotfixed         : Base Value (30 -> 50)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yards by $s1. Lasts $d.
 Tooltip          : Ranged Attack Power increased by $w1.
 
@@ -4556,7 +4438,6 @@ Effects          :
 Description      : Attempts to remove $s1 Frenzy effect from an enemy creature.
 
 Name             : Track Demons (id=19878) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4575,7 +4456,6 @@ Description      : Shows the location of all nearby demons on the minimap.  Only
 Tooltip          : Tracking Demons.
 
 Name             : Track Dragonkin (id=19879) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4594,7 +4474,6 @@ Description      : Shows the location of all nearby dragonkin on the minimap.  O
 Tooltip          : Tracking Dragonkin.
 
 Name             : Track Elementals (id=19880) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4613,7 +4492,6 @@ Description      : Shows the location of all nearby elementals on the minimap.  
 Tooltip          : Tracking Elementals.
 
 Name             : Track Giants (id=19882) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4632,7 +4510,6 @@ Description      : Shows the location of all nearby giants on the minimap.  Only
 Tooltip          : Tracking Giants.
 
 Name             : Track Humanoids (id=19883) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4651,7 +4528,6 @@ Description      : Shows the location of all nearby humanoids on the minimap.  O
 Tooltip          : Tracking Humanoids.
 
 Name             : Track Undead (id=19884) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4670,7 +4546,6 @@ Description      : Shows the location of all nearby undead on the minimap.  Only
 Tooltip          : Tracking Undead.
 
 Name             : Track Hidden (id=19885) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -4689,7 +4564,6 @@ Description      : Increases stealth detection and shows hidden units within det
 Tooltip          : Tracking Hidden targets.
 
 Name             : Aspect of the Wild (desc=Rank 1) (id=20043) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -4706,7 +4580,6 @@ Description      : The hunter and all party and raid members within $a1 yards ta
 Tooltip          : Nature resistance increased by $s1.
 
 Name             : Aspect of the Wild (desc=Rank 2) (id=20190) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -4723,7 +4596,6 @@ Description      : The hunter and all party and raid members within $a1 yards ta
 Tooltip          : Nature resistance increased by $s1.
 
 Name             : Distracting Shot (desc=Rank 1) (id=20736) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -4747,7 +4619,6 @@ Effects          :
 Description      : Distract the target, causing threat.
 
 Name             : Aimed Shot (desc=Rank 2) (id=20900) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4768,11 +4639,9 @@ Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), 
 Effects          :
 #1 (id=697762)   : Normalized Weapon Damage (121)
                    Base Value: 70 | Scaled Value: 70 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (34 -> 70)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Aimed Shot (desc=Rank 3) (id=20901) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4793,11 +4662,9 @@ Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), 
 Effects          :
 #1 (id=699653)   : Normalized Weapon Damage (121)
                    Base Value: 115 | Scaled Value: 115 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (55 -> 115)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Aimed Shot (desc=Rank 4) (id=20902) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4818,11 +4685,9 @@ Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), 
 Effects          :
 #1 (id=697763)   : Normalized Weapon Damage (121)
                    Base Value: 185 | Scaled Value: 185 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (89 -> 185)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Aimed Shot (desc=Rank 5) (id=20903) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4843,11 +4708,9 @@ Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), 
 Effects          :
 #1 (id=699670)   : Normalized Weapon Damage (121)
                    Base Value: 260 | Scaled Value: 260 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (125 -> 260)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Aimed Shot (desc=Rank 6) (id=20904) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -4868,11 +4731,9 @@ Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), 
 Effects          :
 #1 (id=697764)   : Normalized Weapon Damage (121)
                    Base Value: 350 | Scaled Value: 350 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (166 -> 350)
 Description      : An aimed shot that increases ranged damage by $s1. Aimed Shot shares its cooldown with Multi-Shot.
 
 Name             : Trueshot Aura (desc=Rank 4) (id=20905) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -4886,12 +4747,10 @@ Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (
 Effects          :
 #1 (id=698474)   : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
                    Base Value: 75 | Scaled Value: 75 | Radius: 45 yards | Target: Self (1)
-Hotfixed         : Base Value (40 -> 75)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yards by $s1. Lasts $d.
 Tooltip          : Ranged Attack Power increased by $w1.
 
 Name             : Trueshot Aura (desc=Rank 5) (id=20906) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -4905,12 +4764,10 @@ Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (
 Effects          :
 #1 (id=697683)   : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
                    Base Value: 100 | Scaled Value: 100 | Radius: 45 yards | Target: Self (1)
-Hotfixed         : Base Value (50 -> 100)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yards by $s1. Lasts $d.
 Tooltip          : Ranged Attack Power increased by $w1.
 
 Name             : Counterattack (desc=Rank 3) (id=20909) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -4939,7 +4796,6 @@ Description      : A strike that becomes active after parrying an opponent's att
 Tooltip          : Immobile.
 
 Name             : Counterattack (desc=Rank 4) (id=20910) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -6251,12 +6107,10 @@ Attributes       : Uses Ranged Slot (1), Not Shapeshifted (16), Do Not Reset Com
 Effects          :
 #1 (id=702403)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
                    Base Value: 135 | Scaled Value: 135 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (111 -> 135)
 Description      : Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.
 Tooltip          : Causes $s1 Nature damage every $t1 sec.
 
 Name             : Aspect of the Hawk (desc=Rank 7) (id=25296) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -9615,7 +9469,6 @@ Description      : Regenerating Mana while casting.
 Tooltip          : Regenerating $w1% of normal while casting spells.
 
 Name             : Counterattack (desc=Rank 2) (id=1242634) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -10943,7 +10796,6 @@ Effects          :
                    Base Value: 70 | Scaled Value: 70 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Summon Hawk (desc=Rank 1) (id=1293241) [Spell Family (9)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=4, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Physical
@@ -10987,7 +10839,6 @@ Effects          :
 Description      : Summons a hawk.
 
 Name             : Summon Hawk (desc=Rank 2) (id=1293525) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -11018,7 +10869,6 @@ Effects          :
 Description      : Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
 
 Name             : Summon Hawk (desc=Rank 3) (id=1293526) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -11049,7 +10899,6 @@ Effects          :
 Description      : Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
 
 Name             : Summon Hawk (desc=Rank 4) (id=1293527) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -11100,7 +10949,6 @@ Description      : Wounds the target causing them to bleed for $o1 damage over $
 Tooltip          : Bleeding for $s1 damage every $t1 sec.
 
 Name             : Trueshot Aura (desc=Rank 1) (id=1299346) [Spell Family (9)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Arcane
@@ -11115,12 +10963,10 @@ Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (
 Effects          :
 #1 (id=1323534)  : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
                    Base Value: 20 | Scaled Value: 20 | Radius: 45 yards | Target: Self (1)
-Hotfixed         : Base Value (15 -> 20)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yds by $s1.
 Tooltip          : Ranged Attack Power increased by $w1.
 
 Name             : Trueshot Aura (desc=Rank 2) (id=1299348) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : None
@@ -11134,12 +10980,10 @@ Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (
 Effects          :
 #1 (id=1323538)  : Apply Aura Raid (65) | Modify Ranged Attack Power (124)
                    Base Value: 35 | Scaled Value: 35 | Radius: 45 yards | Target: Self (1)
-Hotfixed         : Base Value (22 -> 35)
 Description      : Increases the Ranged Attack Power of party or raid members within $a1 yds by $s1.
 Tooltip          : Ranged Attack Power increased by $w1.
 
 Name             : Aspect of the Beast (desc=Rank 2) (id=1299445) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -11162,7 +11006,6 @@ Description      : You take on the aspects of a beast, becoming untrackable and 
 Tooltip          : Untrackable. Melee Attack Power increased by $s2.
 
 Name             : Aspect of the Beast (desc=Rank 3) (id=1299446) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -11185,7 +11028,6 @@ Description      : You take on the aspects of a beast, becoming untrackable and 
 Tooltip          : Untrackable. Melee Attack Power increased by $s2.
 
 Name             : Aspect of the Beast (desc=Rank 4) (id=1299447) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Nature
 Spell Type       : Magic
@@ -11266,7 +11108,6 @@ Effects          :
 Description      : Your Mongoose Bite also causes the target to Bleed for damage equal to $s1% of the damage done by Mongoose Bite over $1310536d
 
 Name             : Lacerating Strikes (id=1310536) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Melee
@@ -11327,7 +11168,6 @@ Effects          :
 Description      : Increases the damage of your Serpent Sting ability by $s1%, reduces the cooldown of your Viper Sting ability by ${$m2/-1000} sec, and increases the duration of your Scorpid Sting ability by ${$m3/1000} sec.
 
 Name             : Sniper Shot (desc=Rank 1) (id=1310687) [Spell Family (9)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=6, max_rank=1, req_points=30]
 Class            : Hunter
 School           : Physical
@@ -11351,7 +11191,6 @@ Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), 
 Effects          :
 #1 (id=1340384)  : Normalized Weapon Damage (121)
                    Base Value: 320 | Scaled Value: 320 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (160 -> 320)
 #2 (id=1358438)  : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 5 | Target: Self (1)
                    Affected Spells: Auto Shot (75), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904)
@@ -11392,7 +11231,6 @@ Description      : Follows a successful block, dodge or parry.
 Tooltip          : Mongoose Bite activated.
 
 Name             : Sniper Shot (desc=Rank 2) (id=1310785) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -11415,7 +11253,6 @@ Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), 
 Effects          :
 #1 (id=1340617)  : Normalized Weapon Damage (121)
                    Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (225 -> 450)
 #2 (id=1358439)  : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 5 | Target: Self (1)
                    Affected Spells: Auto Shot (75), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904)
@@ -11424,7 +11261,6 @@ Description      : A long-range shot that deals ranged damage plus $s1 and incre
 Tooltip          : Shot range increased by $s2.
 
 Name             : Sniper Shot (desc=Rank 3) (id=1310786) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
@@ -11447,7 +11283,6 @@ Attributes       : Uses Ranged Slot (1), Is Ability (4), Not Shapeshifted (16), 
 Effects          :
 #1 (id=1340619)  : Normalized Weapon Damage (121)
                    Base Value: 590 | Scaled Value: 590 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (295 -> 590)
 #2 (id=1358440)  : Apply Aura (6) | Add Flat Modifier (107): Spell Range (5)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 5 | Target: Self (1)
                    Affected Spells: Auto Shot (75), Shoot Bow (2480), Multi-Shot (2643), Arcane Shot (3044), Concussive Shot (5116), Shoot Gun (7918), Shoot Crossbow (7919), Arcane Shot (14281), Arcane Shot (14282), Arcane Shot (14283), Arcane Shot (14284), Arcane Shot (14285), Arcane Shot (14286), Arcane Shot (14287), Aimed Shot (19434), Scatter Shot (19503), Aimed Shot (20900), Aimed Shot (20901), Aimed Shot (20902), Aimed Shot (20903), Aimed Shot (20904)
