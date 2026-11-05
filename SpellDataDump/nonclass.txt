@@ -40302,6 +40302,17 @@ Effects          :
 #2 (id=1126783)  : Destroy Item (169)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : [DNT] Divine Prayer Bead III (id=435839) [Hidden] 
+School           : Physical
+Spell Type       : None
+Triggered By     : [DNT] Tarnished Prayer Bead III (435844)
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1126791)  : Create Item (24)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+#2 (id=1126792)  : Destroy Item (169)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
 Name             : Invoker's Cord (id=435841) 
 School           : Physical
 Spell Type       : None
@@ -62387,32 +62398,35 @@ Effects          :
 Description      : Fletch to create Makeshift Stickin' Spears.
 
 Name             : Makeshift Stickin' Spear (id=1289248) 
+Hotfixed         : Velocity (15 -> 35), Attributes, Max Targets (0 -> 1)
 School           : Physical
 Spell Type       : None
 Range            : 40 yards
-Velocity         : 15 yards/sec
+Max Targets      : 1
+Velocity         : 35 yards/sec
 Min Travel Time  : 1 seconds
-Attributes       : Is Ability (4), Do Not Log (8), Active Threat (94)
+Attributes       : Is Ability (4), Do Not Log (8)
 Effects          :
 #1 (id=1307524)  : Trigger Missiles (32): Impaled
-                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1289250 | Radius: 5 yards | Target: at Area (87) -> at Enemy in Area (16)
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1289250 | Target: at Area (87) -> in Area of Ground Area (138)
+Hotfixed         : Target 2 (16 -> 138)
 Description      : Impales a Freshwater Crocolisk.
 
 Name             : Impaled (id=1289250) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 35
 Range            : 100 yards
 Max Targets      : 1
-Duration         : 30 seconds
+Duration         : 60 seconds
 Mechanic         : Bleed
 Triggered By     : Makeshift Stickin' Spear (1289248)
-Attributes       : Is Ability (4), Scales w/ Creature Level (19), Always Hit (114), Unknown (493)
+Attributes       : Is Ability (4), Scales w/ Creature Level (19), Ignore Line of Sight (66), Always Hit (114), Unknown (493)
 Effects          :
 #1 (id=1307526)  : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
-                   Base Value: 50 | Scaled Value: 50 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
-#2 (id=1339404)  : Kill Credit (134)
-                   Base Value: 0 | Scaled Value: 0 | Misc Value: 259046 | Target: Self (1)
+                   Base Value: 30 | Scaled Value: 30 | Radius: 3 yards | Target: at Enemy in Area (16)
+Hotfixed         : Base Value (50 -> 30), Target 1 (87 -> 16), Target 2 (16 -> 0)
 Description      : Inflicts Physical damage to an enemy every $t1 sec for $d.
 Tooltip          : $s1 Physical damage inflicted every $t1 sec.
 
@@ -63963,6 +63977,32 @@ Effects          :
 #3 (id=1321077)  : Kill Credit (134)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 264867 | Radius: 40 yards | Target: Party in Area (20)
 Description      : Place on the hills along the north-western ridge of the summit.
+
+Name             : Guardian's Durability (id=1293342) [Passive] 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 40
+Internal Cooldown: 60 seconds
+Proc Chance      : 33%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken
+Attributes       : Passive (6), Not Shapeshifted (16), Do Not Sheath (18), No Threat (42), Unknown (493)
+Effects          :
+#1 (id=1313936)  : Apply Aura (6) | Proc Trigger Spell (42): Guardian's Durability
+                   Base Value: 5 | Scaled Value: 5 | Trigger Spell: 1293345 | Target: Self (1)
+Description      : When damaged, has a chance to grant you $1293345s1 armor for $1293345d.
+Tooltip          : When damaged, has a chance to grant you $1293345s1 armor for $1293345d.
+
+Name             : Guardian's Durability (id=1293345) 
+School           : Physical
+Spell Type       : None
+Duration         : 12 seconds
+Triggered By     : Guardian's Durability (1293342)
+Attributes       : Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1313939)  : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 1080 | Scaled Value: 1080 | Misc Value: 1 | Target: Self (1)
+Description      : Increases armor by $s1 for $d.
+Tooltip          : Armor increased by $s1.
 
 Name             : Cleanse Heart (id=1293359) 
 School           : Physical

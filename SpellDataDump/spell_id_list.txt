@@ -2558,7 +2558,7 @@ Paladin
 429259   Improved Hammer of Wrath
 429578   Libram of Banishment
 435833   [DNT] Tarnished Prayer Bead II
-435844  *[DNT] Tarnished Prayer Bead III
+435844   [DNT] Tarnished Prayer Bead III
 435962   Libram of Deliverance
 435977  *Energized Hyperconductor
 435982  *Energize
