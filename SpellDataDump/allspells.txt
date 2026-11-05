@@ -35900,6 +35900,20 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 3973
 Description      : Summons Edana Hatetalon.
 
+Name             : Disarm (id=11879) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 30
+Range            : 5 yards
+Duration         : 5 seconds
+Mechanic         : Disarm
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=689100)   : Apply Aura (6) | Disarm (67)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Description      : Disarm target's weapon for $d.
+Tooltip          : Disarmed.
+
 Name             : Capture Treant (id=11885) 
 School           : Physical
 Spell Type       : None
@@ -141270,6 +141284,15 @@ Effects          :
 #1 (id=1311605)  : Open Lock (33)
                    Base Value: 0 | Scaled Value: 300 | Points Per Level: 5 | Target: Targeted Gameobject (23)
 Description      : Slice open and gather from a target Copper, Tin, Silver, or Iron Vein (does not require Mining).
+
+Name             : Improved Smelting 01 (id=1291915) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8)
+Effects          :
+#1 (id=1311634)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 25 | Scaled Value: 25 | Target: Self (1)
+Description      : Reduces the crafting time of Smelt Copper, Smelt Tin, Smelt Bronze, and Smelt Silver by $s1%.
 
 Name             : Staff of Westfall (id=1292011) 
 School           : Physical
