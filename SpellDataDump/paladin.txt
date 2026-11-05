@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70790 Live
 Name             : Vindication (desc=Rank 1) (id=67) 
 Class            : Paladin
 School           : Holy
@@ -27,7 +27,6 @@ Effects          :
 Description      : Gives a chance to block enemy melee and ranged attacks.
 
 Name             : Devotion Aura (desc=Rank 1) (id=465) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -49,7 +48,6 @@ Description      : Gives $s1 additional armor to party members within $a1 yards.
 Tooltip          : Increases armor by $s1.
 
 Name             : Divine Protection (desc=Rank 1) (id=498) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -76,7 +74,6 @@ Description      : You are protected from all physical attacks and spells for $d
 Tooltip          : Immune to all attacks and spells.  Cannot attack or use physical abilities.
 
 Name             : Lay on Hands (desc=Rank 1) (id=633) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -97,7 +94,6 @@ Effects          :
 Description      : Heals a friendly target for an amount equal to the Paladin's maximum health.  Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.
 
 Name             : Holy Light (desc=Rank 2) (id=639) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -116,7 +112,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Divine Shield (desc=Rank 1) (id=642) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -147,7 +142,6 @@ Description      : Protects the paladin from all damage and spells for $d, but r
 Tooltip          : Immune to all attacks and spells, but reduces all damage you deal by $s3%.
 
 Name             : Devotion Aura (desc=Rank 3) (id=643) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -169,7 +163,6 @@ Description      : Gives $s1 additional armor to party members within $a1 yards.
 Tooltip          : Increases armor by $s1.
 
 Name             : Holy Light (desc=Rank 3) (id=647) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -188,7 +181,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Holy Strike (desc=Rank 2) (id=678) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -214,7 +206,6 @@ Effects          :
 Description      : An instant strike that causes $m2% weapon damage plus an additional $s1 as Holy damage.
 
 Name             : Holy Strike (desc=Rank 1) (id=679) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -240,7 +231,6 @@ Effects          :
 Description      : An instant strike that causes $m2% weapon damage plus an additional $s1 as Holy damage.
 
 Name             : Holy Strike (desc=Rank 4) (id=680) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -266,7 +256,6 @@ Effects          :
 Description      : An instant strike that causes $m2% weapon damage plus an additional $s1 as Holy damage.
 
 Name             : Hammer of Justice (desc=Rank 1) (id=853) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -291,7 +280,6 @@ Description      : Stuns the target for $d.
 Tooltip          : Stunned.
 
 Name             : Exorcism (desc=Rank 1) (id=879) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -312,7 +300,6 @@ Effects          :
 Description      : Causes $s1 Holy damage to an Undead or Demon target.
 
 Name             : Divine Shield (desc=Rank 2) (id=1020) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -343,7 +330,6 @@ Description      : Protects the paladin from all damage and spells for $d, but r
 Tooltip          : Immune to all attacks and spells, but reduces all damage you deal by $s3%.
 
 Name             : Blessing of Protection (desc=Rank 1) (id=1022) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -368,7 +354,6 @@ Description      : A targeted party member is protected from all physical attack
 Tooltip          : Immune to physical attacks.  Cannot attack or use physical abilities.
 
 Name             : Holy Light (desc=Rank 4) (id=1026) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -387,7 +372,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Devotion Aura (desc=Rank 5) (id=1032) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -409,7 +393,6 @@ Description      : Gives $s1 additional armor to party members within $a1 yards.
 Tooltip          : Increases armor by $s1.
 
 Name             : Holy Light (desc=Rank 5) (id=1042) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -428,7 +411,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Blessing of Freedom (id=1044) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -451,7 +433,6 @@ Description      : Places a Blessing on the friendly target, granting immunity t
 Tooltip          : Immune to movement impairing effects.
 
 Name             : Purify (id=1152) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -485,7 +466,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Radius: 100 yards | Target: Targeted Enemy (6)
 
 Name             : Holy Strike (desc=Rank 3) (id=1866) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -511,7 +491,6 @@ Effects          :
 Description      : An instant strike that causes $m2% weapon damage plus an additional $s1 as Holy damage.
 
 Name             : Holy Strike (desc=Rank 5) (id=2495) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -537,7 +516,6 @@ Effects          :
 Description      : An instant strike that causes $m2% weapon damage plus an additional $s1 as Holy damage.
 
 Name             : Lay on Hands (desc=Rank 2) (id=2800) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -558,7 +536,6 @@ Effects          :
 Description      : Heals a friendly target for an amount equal to the Paladin's maximum health and restores $s2 of their mana.  Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.
 
 Name             : Holy Wrath (desc=Rank 1) (id=2812) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -580,7 +557,6 @@ Effects          :
 Description      : Sends bolts of holy power in all directions, causing $s1 Holy damage to all Undead and Demon targets within $a1 yds and stunning them for $429147d.
 
 Name             : Turn Undead (desc=Rank 1) (id=2878) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Nature
 Spell Type       : Magic
@@ -620,7 +596,6 @@ Effects          :
 Description      : Gives a chance to parry enemy melee attacks.
 
 Name             : Holy Light (desc=Rank 6) (id=3472) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -673,7 +648,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Radius: 100 yards | Target: Targeted Enemy (6)
 
 Name             : Holy Strike (desc=Rank 6) (id=5569) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -699,7 +673,6 @@ Effects          :
 Description      : An instant strike that causes $m2% weapon damage plus an additional $s1 as Holy damage.
 
 Name             : Divine Protection (desc=Rank 2) (id=5573) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -727,7 +700,6 @@ Description      : You are protected from all physical attacks and spells for $d
 Tooltip          : Immune to all attacks and spells.  Cannot attack or use physical abilities.
 
 Name             : Hammer of Justice (desc=Rank 2) (id=5588) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -752,7 +724,6 @@ Description      : Stuns the target for $d.
 Tooltip          : Stunned.
 
 Name             : Hammer of Justice (desc=Rank 3) (id=5589) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -777,7 +748,6 @@ Description      : Stuns the target for $d.
 Tooltip          : Stunned.
 
 Name             : Blessing of Protection (desc=Rank 2) (id=5599) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -802,7 +772,6 @@ Description      : A targeted party member is protected from all physical attack
 Tooltip          : Immune to physical attacks.  Cannot attack or use physical abilities.
 
 Name             : Exorcism (desc=Rank 2) (id=5614) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -823,7 +792,6 @@ Effects          :
 Description      : Causes $s1 Holy damage to an Undead or Demon target.
 
 Name             : Exorcism (desc=Rank 3) (id=5615) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -844,7 +812,6 @@ Effects          :
 Description      : Causes $s1 Holy damage to an Undead or Demon target.
 
 Name             : Turn Undead (desc=Rank 2) (id=5627) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Nature
 Spell Type       : Magic
@@ -871,9 +838,8 @@ Description      : The targeted undead enemy will be compelled to flee for up to
 Tooltip          : Compelled to flee.
 
 Name             : Holy Power (id=5923) [Spell Family (10), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=6, col=3, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(1, 2, 3, 4, 5)]
+                 : Effect#1 [op=set, values=(10, 20, 30, 40, 50)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -882,11 +848,9 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=683158)   : Apply Aura (6) | Modify Critical Heal Bonus (50)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 2 | Target: Self (1)
-Hotfixed         : Sub Type (108 -> 50), Base Value (5 -> 0), Misc Value (7 -> 2), Affects Spells
 Description      : Increases the critical strike healing bonus of your Holy spells by $s1%.
 
 Name             : Blessing of Sacrifice (desc=Rank 1) (id=6940) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -907,7 +871,6 @@ Description      : Places a Blessing on the party member, transfering $s1 damage
 Tooltip          : Transfers $s1 damage taken per hit to the paladin.
 
 Name             : Retribution Aura (desc=Rank 1) (id=7294) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -929,7 +892,6 @@ Description      : Causes $s1 Holy damage to any creature that strikes a party m
 Tooltip          : Does $s1 Holy damage to anyone who strikes you.
 
 Name             : Redemption (desc=Rank 1) (id=7328) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -948,7 +910,6 @@ Effects          :
 Description      : Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 Name             : Vindication (id=9452) [Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=3, col=9, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(1, 2, 3)]
 Class            : Paladin
@@ -997,7 +958,6 @@ Effects          :
 Description      : All critical strikes against you cause $s1% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.
 
 Name             : Blessing of Protection (desc=Rank 3) (id=10278) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1023,7 +983,6 @@ Description      : A targeted party member is protected from all physical attack
 Tooltip          : Immune to physical attacks.  Cannot attack or use physical abilities.
 
 Name             : Devotion Aura (desc=Rank 2) (id=10290) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1045,7 +1004,6 @@ Description      : Gives $s1 additional armor to party members within $a1 yards.
 Tooltip          : Increases armor by $s1.
 
 Name             : Devotion Aura (desc=Rank 4) (id=10291) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1067,7 +1025,6 @@ Description      : Gives $s1 additional armor to party members within $a1 yards.
 Tooltip          : Increases armor by $s1.
 
 Name             : Devotion Aura (desc=Rank 6) (id=10292) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1089,7 +1046,6 @@ Description      : Gives $s1 additional armor to party members within $a1 yards.
 Tooltip          : Increases armor by $s1.
 
 Name             : Devotion Aura (desc=Rank 7) (id=10293) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1111,7 +1067,6 @@ Description      : Gives $s1 additional armor to party members within $a1 yards.
 Tooltip          : Increases armor by $s1.
 
 Name             : Retribution Aura (desc=Rank 2) (id=10298) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1133,7 +1088,6 @@ Description      : Causes $s1 Holy damage to any creature that strikes a party m
 Tooltip          : Does $s1 Holy damage to anyone who strikes you.
 
 Name             : Retribution Aura (desc=Rank 3) (id=10299) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1155,7 +1109,6 @@ Description      : Causes $s1 Holy damage to any creature that strikes a party m
 Tooltip          : Does $s1 Holy damage to anyone who strikes you.
 
 Name             : Retribution Aura (desc=Rank 4) (id=10300) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1177,7 +1130,6 @@ Description      : Causes $s1 Holy damage to any creature that strikes a party m
 Tooltip          : Does $s1 Holy damage to anyone who strikes you.
 
 Name             : Retribution Aura (desc=Rank 5) (id=10301) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1199,7 +1151,6 @@ Description      : Causes $s1 Holy damage to any creature that strikes a party m
 Tooltip          : Does $w1 Holy damage to anyone who strikes you.
 
 Name             : Hammer of Justice (desc=Rank 4) (id=10308) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1224,7 +1175,6 @@ Description      : Stuns the target for $d.
 Tooltip          : Stunned.
 
 Name             : Lay on Hands (desc=Rank 3) (id=10310) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1245,7 +1195,6 @@ Effects          :
 Description      : Heals a friendly target for an amount equal to the Paladin's maximum health and restores $s2 of their mana.  Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.
 
 Name             : Exorcism (desc=Rank 4) (id=10312) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1266,7 +1215,6 @@ Effects          :
 Description      : Causes $s1 Holy damage to an Undead or Demon target.
 
 Name             : Exorcism (desc=Rank 5) (id=10313) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1287,7 +1235,6 @@ Effects          :
 Description      : Causes $s1 Holy damage to an Undead or Demon target.
 
 Name             : Exorcism (desc=Rank 6) (id=10314) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1308,7 +1255,6 @@ Effects          :
 Description      : Causes $s1 Holy damage to an Undead or Demon target.
 
 Name             : Holy Wrath (desc=Rank 2) (id=10318) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1330,7 +1276,6 @@ Effects          :
 Description      : Sends bolts of holy power in all directions, causing $s1 Holy damage to all Undead and Demon targets within $a1 yds and stunning them for $429147d.
 
 Name             : Redemption (desc=Rank 2) (id=10322) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1349,7 +1294,6 @@ Effects          :
 Description      : Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 Name             : Redemption (desc=Rank 3) (id=10324) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1368,7 +1312,6 @@ Effects          :
 Description      : Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 Name             : Turn Undead (desc=Rank 3) (id=10326) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Nature
 Spell Type       : Magic
@@ -1395,7 +1338,6 @@ Description      : The targeted undead enemy will be compelled to flee for up to
 Tooltip          : Compelled to flee.
 
 Name             : Holy Light (desc=Rank 7) (id=10328) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1414,7 +1356,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Holy Light (desc=Rank 8) (id=10329) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1433,7 +1374,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Holy Strike (desc=Rank 7) (id=10332) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -1459,7 +1399,6 @@ Effects          :
 Description      : An instant strike that causes $m2% weapon damage plus an additional $s1 as Holy damage.
 
 Name             : Holy Strike (desc=Rank 8) (id=10333) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -1497,7 +1436,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Current Target (25)
 
 Name             : Blessing of Might (desc=Rank 1) (id=19740) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1518,7 +1456,6 @@ Description      : Places a Blessing on the friendly target, increasing melee at
 Tooltip          : Increases melee attack power by $s1.
 
 Name             : Blessing of Wisdom (desc=Rank 1) (id=19742) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1566,7 +1503,6 @@ Description      : Gives a $s1% chance of ignoring spell interruption when damag
 Tooltip          : Gives a $s1% chance of ignoring spell interruption when damaged.
 
 Name             : Flash of Light (desc=Rank 1) (id=19750) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1585,7 +1521,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Divine Intervention (id=19752) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : None
@@ -1627,7 +1562,6 @@ Effects          :
 Tooltip          : Complete immunity but unable to move.
 
 Name             : Blessing of Might (desc=Rank 2) (id=19834) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1648,7 +1582,6 @@ Description      : Places a Blessing on the friendly target, increasing melee at
 Tooltip          : Increases melee attack power by $s1.
 
 Name             : Blessing of Might (desc=Rank 3) (id=19835) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1669,7 +1602,6 @@ Description      : Places a Blessing on the friendly target, increasing melee at
 Tooltip          : Increases melee attack power by $s1.
 
 Name             : Blessing of Might (desc=Rank 4) (id=19836) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1690,7 +1622,6 @@ Description      : Places a Blessing on the friendly target, increasing melee at
 Tooltip          : Increases melee attack power by $s1.
 
 Name             : Blessing of Might (desc=Rank 5) (id=19837) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1711,7 +1642,6 @@ Description      : Places a Blessing on the friendly target, increasing melee at
 Tooltip          : Increases melee attack power by $s1.
 
 Name             : Blessing of Might (desc=Rank 6) (id=19838) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1732,7 +1662,6 @@ Description      : Places a Blessing on the friendly target, increasing melee at
 Tooltip          : Increases melee attack power by $s1.
 
 Name             : Blessing of Wisdom (desc=Rank 2) (id=19850) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1753,7 +1682,6 @@ Description      : Places a Blessing on the friendly target, restoring $s1 mana 
 Tooltip          : Restores $s1 mana every $t1 seconds.
 
 Name             : Blessing of Wisdom (desc=Rank 3) (id=19852) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1774,7 +1702,6 @@ Description      : Places a Blessing on the friendly target, restoring $s1 mana 
 Tooltip          : Restores $s1 mana every $t1 seconds.
 
 Name             : Blessing of Wisdom (desc=Rank 4) (id=19853) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1795,7 +1722,6 @@ Description      : Places a Blessing on the friendly target, restoring $s1 mana 
 Tooltip          : Restores $s1 mana every $t1 seconds.
 
 Name             : Blessing of Wisdom (desc=Rank 5) (id=19854) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1816,7 +1742,6 @@ Description      : Places a Blessing on the friendly target, restoring $s1 mana 
 Tooltip          : Restores $s1 mana every $t1 seconds.
 
 Name             : Shadow Resistance Aura (desc=Rank 1) (id=19876) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1837,7 +1762,6 @@ Description      : Gives $s1 additional Shadow resistance to all party and raid 
 Tooltip          : Increases Shadow resistance by $s1.
 
 Name             : Frost Resistance Aura (desc=Rank 1) (id=19888) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1858,7 +1782,6 @@ Description      : Gives $s1 additional Frost resistance to all party and raid m
 Tooltip          : Increases Frost resistance by $s1.
 
 Name             : Fire Resistance Aura (desc=Rank 1) (id=19891) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1879,7 +1802,6 @@ Description      : Gives $s1 additional Fire resistance to all party and raid me
 Tooltip          : Increases Fire resistance by $s1.
 
 Name             : Shadow Resistance Aura (desc=Rank 2) (id=19895) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1900,7 +1822,6 @@ Description      : Gives $s1 additional Shadow resistance to all party and raid 
 Tooltip          : Increases Shadow resistance by $s1.
 
 Name             : Shadow Resistance Aura (desc=Rank 3) (id=19896) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1921,7 +1842,6 @@ Description      : Gives $s1 additional Shadow resistance to all party and raid 
 Tooltip          : Increases Shadow resistance by $s1.
 
 Name             : Frost Resistance Aura (desc=Rank 2) (id=19897) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1942,7 +1862,6 @@ Description      : Gives $s1 additional Frost resistance to all party and raid m
 Tooltip          : Increases Frost resistance by $s1.
 
 Name             : Frost Resistance Aura (desc=Rank 3) (id=19898) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1963,7 +1882,6 @@ Description      : Gives $s1 additional Frost resistance to all party and raid m
 Tooltip          : Increases Frost resistance by $s1.
 
 Name             : Fire Resistance Aura (desc=Rank 2) (id=19899) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -1984,7 +1902,6 @@ Description      : Gives $s1 additional Fire resistance to all party and raid me
 Tooltip          : Increases Fire resistance by $s1.
 
 Name             : Fire Resistance Aura (desc=Rank 3) (id=19900) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2005,7 +1922,6 @@ Description      : Gives $s1 additional Fire resistance to all party and raid me
 Tooltip          : Increases Fire resistance by $s1.
 
 Name             : Flash of Light (desc=Rank 2) (id=19939) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2024,7 +1940,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Flash of Light (desc=Rank 3) (id=19940) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2043,7 +1958,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Flash of Light (desc=Rank 4) (id=19941) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2062,7 +1976,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Flash of Light (desc=Rank 5) (id=19942) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2081,7 +1994,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Flash of Light (desc=Rank 6) (id=19943) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2266,7 +2178,7 @@ School           : Physical
 Spell Type       : None
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
-Stacks           : 3 maximum
+Stacks           : 5 maximum
 Proc Chance      : 101%
 Triggered By     : Vengeance (20049)
 Attributes       : Aura Points On Client (268), Do Not Log Aura Refresh (291), Unknown (493)
@@ -2364,15 +2276,14 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=695429)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -10 | Scaled Value: -10 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Divine Protection (498), Divine Shield (642), Holy Strike (678), Holy Strike (679), Holy Strike (680), Hammer of Justice (853), Exorcism (879), Divine Shield (1020), Blessing of Protection (1022), Blessing of Freedom (1044), Purify (1152), Holy Strike (1866), Holy Strike (2495), Cleanse (4987), Holy Strike (5569), Divine Protection (5573), Hammer of Justice (5588), Hammer of Justice (5589), Blessing of Protection (5599), Exorcism (5614), Exorcism (5615), Blessing of Sacrifice (6940), Retribution Aura (7294), Blessing of Protection (10278), Retribution Aura (10298), Retribution Aura (10299), Retribution Aura (10300), Retribution Aura (10301), Hammer of Justice (10308), Exorcism (10312), Exorcism (10313), Exorcism (10314), Holy Strike (10332), Holy Strike (10333), Blessing of Might (19740), Blessing of Wisdom (19742), Blessing of Might (19834), Blessing of Might (19835), Blessing of Might (19836), Blessing of Might (19837), Blessing of Might (19838), Blessing of Wisdom (19850), Blessing of Wisdom (19852), Blessing of Wisdom (19853), Blessing of Wisdom (19854), Repentance (20066), Consecration (20116), Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Judgement of Righteousness (20187), Blessing of Kings (20217), Judgement (20271), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Judgement of Command (20467), Holy Shock (20473), Blessing of Sacrifice (20729), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Consecration (20922), Consecration (20923), Consecration (20924), Holy Shield (20925), Holy Shield (20927), Holy Shield (20928), Holy Shock (20929), Holy Shock (20930), Judgement of Command (20963), Judgement of Command (20964), Judgement of Command (20965), Judgement of Command (20966), Seal of the Crusader (21082), Seal of Righteousness (21084), Blessing of Wisdom (25290), Blessing of Might (25291), Righteous Fury (25780), Greater Blessing of Might (25782), Greater Blessing of Wisdom (25894), Greater Blessing of Kings (25898), Holy Shock (25902), Holy Shock (25903), Holy Shock (25911), Holy Shock (25912), Holy Shock (25913), Holy Shock (25914), Greater Blessing of Might (25916), Greater Blessing of Wisdom (25918), Consecration (26573), Cleanse Cost Reduced (27847), Improved Seal of the Crusader (28852), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Exorcism (415068), Exorcism (415069), Exorcism (415070), Exorcism (415071), Exorcism (415072), Exorcism (415073), Wrath (429139), Fanaticism (429142), Improved Hammer of Wrath (429152), Divine Protection (458312), Divine Protection (458371), Blessing of Kings (1213408), Consecration (1280345), Consecration (1280346), Consecration (1280347), Consecration (1280348), Consecration (1280349), Templar's Bulwark (1311015), Holy Shock (1311604), Holy Shock (1311605), Holy Shock (1311606), Seal of Fury (1311649), Seal of Fury (1311656)
+                   Affected Spells: Divine Protection (498), Divine Shield (642), Holy Strike (678), Holy Strike (679), Holy Strike (680), Hammer of Justice (853), Exorcism (879), Divine Shield (1020), Blessing of Protection (1022), Blessing of Freedom (1044), Purify (1152), Holy Strike (1866), Holy Strike (2495), Cleanse (4987), Holy Strike (5569), Divine Protection (5573), Hammer of Justice (5588), Hammer of Justice (5589), Blessing of Protection (5599), Exorcism (5614), Exorcism (5615), Blessing of Sacrifice (6940), Retribution Aura (7294), Blessing of Protection (10278), Retribution Aura (10298), Retribution Aura (10299), Retribution Aura (10300), Retribution Aura (10301), Hammer of Justice (10308), Exorcism (10312), Exorcism (10313), Exorcism (10314), Holy Strike (10332), Holy Strike (10333), Blessing of Might (19740), Blessing of Wisdom (19742), Blessing of Might (19834), Blessing of Might (19835), Blessing of Might (19836), Blessing of Might (19837), Blessing of Might (19838), Blessing of Wisdom (19850), Blessing of Wisdom (19852), Blessing of Wisdom (19853), Blessing of Wisdom (19854), Repentance (20066), Consecration (20116), Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Judgement of Righteousness (20187), Blessing of Kings (20217), Judgement (20271), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Judgement of Command (20467), Holy Shock (20473), Blessing of Sacrifice (20729), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Consecration (20922), Consecration (20923), Consecration (20924), Holy Shield (20925), Holy Shield (20927), Holy Shield (20928), Holy Shock (20929), Holy Shock (20930), Judgement of Command (20963), Judgement of Command (20964), Judgement of Command (20965), Judgement of Command (20966), Seal of the Crusader (21082), Seal of Righteousness (21084), Blessing of Wisdom (25290), Blessing of Might (25291), Righteous Fury (25780), Greater Blessing of Might (25782), Greater Blessing of Wisdom (25894), Greater Blessing of Kings (25898), Holy Shock (25902), Holy Shock (25903), Holy Shock (25911), Holy Shock (25912), Holy Shock (25913), Holy Shock (25914), Greater Blessing of Might (25916), Greater Blessing of Wisdom (25918), Consecration (26573), Cleanse Cost Reduced (27847), Improved Seal of the Crusader (28852), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Exorcism (415068), Exorcism (415069), Exorcism (415070), Exorcism (415071), Exorcism (415072), Exorcism (415073), Wrath (429139), Fanaticism (429142), Improved Hammer of Wrath (429152), Divine Protection (458312), Divine Protection (458371), Blessing of Kings (1213408), Holy Shield (1239570), Consecration (1280345), Consecration (1280346), Consecration (1280347), Consecration (1280348), Consecration (1280349), Templar's Bulwark (1311015), Holy Shock (1311604), Holy Shock (1311605), Holy Shock (1311606), Seal of Fury (1311649), Seal of Fury (1311656)
                    Family Flags: 0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 16, 21, 22, 23, 24, 25, 27, 28, 33, 38, 41, 47, 48, 57, 58, 61, 72, 77, 80, 85, 93, 107, 111
 Description      : Reduces the Mana cost of all instant cast spells and abilities by $m1%.
 
 Name             : Two-Handed Weapon Specialization (id=20111) [Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=12, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(2, 4, 6)]
-                 : Effect#2 [op=set]
+                 : Effect#2 [op=set, values=(-7, -14, -20)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -2382,15 +2293,13 @@ Labels           : 26: Paladin Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
 #1 (id=697263)   : Apply Aura (6) | Modify Damage Done% (79)
-                   Base Value: 2 | Scaled Value: 2 | Misc Value: 0x1 | Target: Self (1)
-                   Affected School(s): Physical
+                   Base Value: 2 | Scaled Value: 2 | Misc Value: 0x3 | Target: Self (1)
+                   Affected School(s): Holy, Physical
 #2 (id=1367246)  : Apply Aura (6) | Threat (10)
                    Base Value: -20 | Scaled Value: -20 | Misc Value: 127 | Target: Self (1)
-Hotfixed         : NEW EFFECT
-Description      : Increases the physical damage you deal by $s1%, and reduces all threat you generate by $m2% while a two-handed melee weapon is equipped.
+Description      : Increases the Physical and Holy damage you deal by $s1%, and reduces all threat you generate by $m2% while a two-handed melee weapon is equipped.
 
 Name             : Consecration (desc=Rank 2) (id=20116) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2415,9 +2324,8 @@ Effects          :
 Description      : Consecrates the land beneath the Paladin, doing ${$1280346m1*8} Holy damage over $d to enemies who enter the area. The first $s3 enemies who enter the area will take an additional ${$1280346m2*8} damage over $d.
 
 Name             : Conviction (id=20117) [Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=2, col=10, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(1, 2, 3, 4, 5)]
+                 : Effect#1 [op=set, values=(2, 4, 6)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -2428,12 +2336,11 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=698173)   : Apply Aura (6) | Modify Critical Strike% (290)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
-Hotfixed         : Sub Type (52 -> 290)
 Description      : Improves your chance to get a critical strike with all spells and attacks by $m1%.
 
 Name             : Redoubt (id=20127) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=7, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(4, 8, 12, 16, 20)]
+                 : Effect#1 [op=set, values=(6, 12, 18, 24, 30)]
                  : Effect#2 [op=set, values=(2, 4, 6, 8, 10)]
 Class            : Paladin
 School           : Physical
@@ -2522,10 +2429,9 @@ Effects          :
 Description      : Increases the amount of damage absorbed by your shield by $s1%.
 
 Name             : Shield Specialization (id=20150) [Passive, Hidden] 
-Hotfixed         : Proc Flags 1 (680 -> 131752)
 Talent Entry     : Generic [tree=class, row=3, col=7, max_rank=2, req_points=0]
-                 : Effect#1 [op=set, values=(10, 20, 30)]
-                 : Effect#2 [op=set, values=(33, 66, 100)]
+                 : Effect#1 [op=set, values=(15, 30)]
+                 : Effect#2 [op=set, values=(50, 100)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -2543,7 +2449,6 @@ Effects          :
 Description      : Increases the amount of damage absorbed by your shield by $m1%, and gives your blocks a $m2% chance to restore $1310925m1% of your maximum Mana.  May only occur once every $proccooldown sec.
 
 Name             : Seal of Righteousness (desc=Rank 1) (id=20154) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2568,7 +2473,6 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Seal of the Crusader (desc=Rank 2) (id=20162) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2595,7 +2499,6 @@ Unleashing this Seal's energy will judge an enemy for $20188d, increasing Holy d
 Tooltip          : Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.
 
 Name             : Seal of Fury (desc=Rank 3) (id=20163) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2623,7 +2526,6 @@ Unleashing this Seal's energy inflicts $20183s1 Holy damage to an enemy and taun
 Tooltip          : Melee attacks cause an additional $20231s1 Holy damage.
 
 Name             : Seal of Justice (id=20164) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2649,7 +2551,6 @@ Unleashing this Seal's energy will judge an enemy for $20184d, preventing them f
 Tooltip          : Melee attacks have a chance to stun for $20170d.
 
 Name             : Seal of Light (desc=Rank 1) (id=20165) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2675,7 +2576,6 @@ Unleashing this Seal's energy will judge an enemy for $20185d, granting melee at
 Tooltip          : Melee attacks have a chance to heal you for $20167s1.
 
 Name             : Seal of Wisdom (desc=Rank 1) (id=20166) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2727,7 +2627,6 @@ Effects          :
                    Base Value: 50 | Scaled Value: 50 | Resource: mana | Target: Self (1)
 
 Name             : Stun (desc=Rank 1) (id=20170) [Spell Family (10)] 
-Hotfixed         : Affecting Spells
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2918,7 +2817,7 @@ Description      : Increases the damage you deal with one-handed melee weapons b
 
 Name             : Spiritual Focus (id=20205) [Spell Family (10), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=2, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(35, 70)]
+                 : Effect#1 [op=set, values=(14, 28, 42, 56, 70)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -2975,7 +2874,6 @@ Description      : When activated, gives your next Flash of Light, Holy Light, o
 Tooltip          : Critical effect chance of next Flash of Light, Holy Light, or Holy Shock spell increased by $s1%.
 
 Name             : Blessing of Kings (id=20217) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -2996,7 +2894,7 @@ Tooltip          : Increases stats by $s1%.
 
 Name             : Improved Seals (id=20224) [Spell Family (10), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=3, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(5, 10, 15)]
+                 : Effect#1 [op=set, values=(3, 6, 9, 12, 15)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -3159,7 +3057,7 @@ Description      : Increases your total Intellect by $s1%.
 
 Name             : Divine Strength (id=20262) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=3, max_rank=5, req_points=0]
-                 : Effect#1 [op=set]
+                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -3194,7 +3092,6 @@ Effects          :
                    Base Value: 33 | Scaled Value: 33 | Resource: mana | Target: Self (1)
 
 Name             : Judgement (id=20271) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : None
@@ -3324,7 +3221,6 @@ Effects          :
                    Base Value: 1786 | Scaled Value: 1880 | Points Per Level: 47 | SP Coefficient: 0.2
 
 Name             : Seal of Righteousness (desc=Rank 2) (id=20287) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3353,7 +3249,6 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Seal of Righteousness (desc=Rank 3) (id=20288) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3382,7 +3277,6 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Seal of Righteousness (desc=Rank 4) (id=20289) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3411,7 +3305,6 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Seal of Righteousness (desc=Rank 5) (id=20290) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3440,7 +3333,6 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Seal of Righteousness (desc=Rank 6) (id=20291) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3469,7 +3361,6 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Seal of Righteousness (desc=Rank 7) (id=20292) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3498,7 +3389,6 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Seal of Righteousness (desc=Rank 8) (id=20293) [Spell Family (10)] 
-Hotfixed         : Attributes, Description
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3603,7 +3493,6 @@ Description      : Increases Holy damage taken by up to $s1.
 Tooltip          : Increases Holy damage taken by up to $s1.
 
 Name             : Seal of the Crusader (desc=Rank 3) (id=20305) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3630,7 +3519,6 @@ Unleashing this Seal's energy will judge an enemy for $20300d, increasing Holy d
 Tooltip          : Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.
 
 Name             : Seal of the Crusader (desc=Rank 4) (id=20306) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3657,7 +3545,6 @@ Unleashing this Seal's energy will judge an enemy for $20301d, increasing Holy d
 Tooltip          : Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.
 
 Name             : Seal of the Crusader (desc=Rank 5) (id=20307) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3684,7 +3571,6 @@ Unleashing this Seal's energy will judge an enemy for $20302d, increasing Holy d
 Tooltip          : Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.
 
 Name             : Seal of the Crusader (desc=Rank 6) (id=20308) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3894,7 +3780,6 @@ Description      : Melee attacks made against you have a chance of causing the a
 Tooltip          : Melee attacks made against you have a chance of causing the attacker to be healed for $20343s1.
 
 Name             : Seal of Light (desc=Rank 2) (id=20347) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3920,7 +3805,6 @@ Unleashing this Seal's energy will judge an enemy for $20344d, granting melee at
 Tooltip          : Melee attacks have a chance to heal you for $20333s1.
 
 Name             : Seal of Light (desc=Rank 3) (id=20348) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -3946,7 +3830,6 @@ Unleashing this Seal's energy will judge an enemy for $20345d, granting melee at
 Tooltip          : Melee attacks have a chance to heal you for $20334s1.
 
 Name             : Seal of Light (desc=Rank 4) (id=20349) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4058,7 +3941,6 @@ Description      : Attacks and spells used against the target have a chance of r
 Tooltip          : Attacks and spells used against you have a chance of restoring $20353s1 of the attacker's mana.
 
 Name             : Seal of Wisdom (desc=Rank 2) (id=20356) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4084,7 +3966,6 @@ Unleashing this Seal's energy will judge an enemy for $20354d, granting attacks 
 Tooltip          : Melee attacks have a chance to restore $20350s1 mana.
 
 Name             : Seal of Wisdom (desc=Rank 3) (id=20357) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4149,7 +4030,6 @@ Effects          :
 Description      : Increases the duration of your Judgement of Light and Judgement of Wisdom by $/1000;s1 sec.
 
 Name             : Seal of Command (desc=Rank 1) (id=20375) [Spell Family (10)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=3, col=11, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Holy
@@ -4318,7 +4198,6 @@ Effects          :
 Description      : Deals additional Holy damage on melee attack.
 
 Name             : Seal of Fury (desc=Rank 4) (id=20419) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4346,7 +4225,6 @@ Unleashing this Seal's energy inflicts $20411s1 Holy damage to an enemy and taun
 Tooltip          : Melee attacks cause an additional $20415s1 Holy damage.
 
 Name             : Seal of Fury (desc=Rank 5) (id=20421) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4374,7 +4252,6 @@ Unleashing this Seal's energy inflicts $20412s1 Holy damage to an enemy and taun
 Tooltip          : Melee attacks cause an additional $20416s1 Holy damage.
 
 Name             : Seal of Fury (desc=Rank 6) (id=20422) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4402,7 +4279,6 @@ Unleashing this Seal's energy inflicts $20413s1 Holy damage to an enemy and taun
 Tooltip          : Melee attacks cause an additional $20417s1 Holy damage.
 
 Name             : Seal of Fury (desc=Rank 7) (id=20423) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4430,7 +4306,6 @@ Unleashing this Seal's energy inflicts $20414s1 Holy damage to an enemy and taun
 Tooltip          : Melee attacks cause an additional $20418s1 Holy damage.
 
 Name             : Seal of Command (id=20424) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4473,7 +4348,7 @@ Effects          :
 
 Name             : Improved Righteous Fury (id=20468) [Spell Family (10), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(-2, -4, -6)]
+                 : Effect#1 [op=set, values=(-3, -6, -9)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -4487,7 +4362,6 @@ Effects          :
 Description      : While Righteous Fury is active, all damage taken is reduced by $m1%.
 
 Name             : Holy Shock (desc=Rank 2) (id=20473) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : None
@@ -4523,7 +4397,6 @@ Effects          :
 Description      : Decreases the cooldown of your Hammer of Justice spell by $/1000;s1 sec.
 
 Name             : Blessing of Sacrifice (desc=Rank 2) (id=20729) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4544,7 +4417,6 @@ Description      : Places a Blessing on the party member, transfering $s1 damage
 Tooltip          : Transfers $s1 damage taken per hit to the paladin.
 
 Name             : Redemption (desc=Rank 4) (id=20772) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4563,7 +4435,6 @@ Effects          :
 Description      : Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 Name             : Redemption (desc=Rank 5) (id=20773) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4582,7 +4453,6 @@ Effects          :
 Description      : Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.
 
 Name             : Seal of Command (desc=Rank 2) (id=20915) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4609,7 +4479,6 @@ Unleashing this Seal's energy will judge an enemy, instantly causing $/2;20963s1
 Tooltip          : Melee attacks have a chance to deal additional Holy damage.
 
 Name             : Seal of Command (desc=Rank 3) (id=20918) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4636,7 +4505,6 @@ Unleashing this Seal's energy will judge an enemy, instantly causing $/2;20964s1
 Tooltip          : Melee attacks have a chance to deal additional Holy damage.
 
 Name             : Seal of Command (desc=Rank 4) (id=20919) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4663,7 +4531,6 @@ Unleashing this Seal's energy will judge an enemy, instantly causing $/2;20965s1
 Tooltip          : Melee attacks have a chance to deal additional Holy damage.
 
 Name             : Seal of Command (desc=Rank 5) (id=20920) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4690,7 +4557,6 @@ Unleashing this Seal's energy will judge an enemy, instantly causing $/2;20966s1
 Tooltip          : Melee attacks have a chance to deal additional Holy damage.
 
 Name             : Consecration (desc=Rank 3) (id=20922) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4715,7 +4581,6 @@ Effects          :
 Description      : Consecrates the land beneath the Paladin, doing ${$1280347m1*8} Holy damage over $d to enemies who enter the area. The first $s3 enemies who enter the area will take an additional ${$1280347m2*8} damage over $d.
 
 Name             : Consecration (desc=Rank 4) (id=20923) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4740,7 +4605,6 @@ Effects          :
 Description      : Consecrates the land beneath the Paladin, doing ${$1280348m1*8} Holy damage over $d to enemies who enter the area. The first $s3 enemies who enter the area will take an additional ${$1280348m2*8} damage over $d.
 
 Name             : Consecration (desc=Rank 5) (id=20924) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -4765,12 +4629,11 @@ Effects          :
 Description      : Consecrates the land beneath the Paladin, doing ${$1280349m1*8} Holy damage over $d to enemies who enter the area. The first $s3 enemies who enter the area will take an additional ${$1280349m2*8} damage over $d.
 
 Name             : Holy Shield (desc=Rank 1) (id=20925) [Spell Family (10)] 
-Hotfixed         : Learn Level (40 -> 30), Proc Flags 1 (680 -> 131752), Attributes, Required Level (40 -> 30)
 Talent Entry     : Generic [tree=class, row=5, col=6, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
-Resource         : 100 Base Mana (0) (id=185892)[Hotfixed: Cost (150 -> 100)]
+Resource         : 100 Base Mana (0) (id=185892)
 Spell Level      : 30
 GCD              : 1.5 seconds
 Duration         : 10 seconds
@@ -4791,18 +4654,16 @@ Effects          :
                    Modified By: S03 - Item - T2 - Paladin - Protection 2P Bonus (467531 effect#1)
 #2 (id=698886)   : Apply Aura (6) | Proc Trigger Damage (43)
                    Base Value: 75 | Scaled Value: 75 | SP Coefficient: 0.08 | Target: Self (1)
-Hotfixed         : Base Value (110 -> 75)
 #3 (id=1339254)  : Apply Aura (6) | Dummy (4)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. $n charges.
 Tooltip          : Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
 
 Name             : Holy Shield (desc=Rank 2) (id=20927) [Spell Family (10)] 
-Hotfixed         : Learn Level (50 -> 40), Proc Flags 1 (680 -> 131752), Attributes, Required Level (50 -> 40)
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
-Resource         : 150 Base Mana (0) (id=186383)[Hotfixed: Cost (195 -> 150)]
+Resource         : 150 Base Mana (0) (id=186383)
 Spell Level      : 40
 GCD              : 1.5 seconds
 Duration         : 10 seconds
@@ -4823,18 +4684,16 @@ Effects          :
                    Modified By: S03 - Item - T2 - Paladin - Protection 2P Bonus (467531 effect#1)
 #2 (id=699487)   : Apply Aura (6) | Proc Trigger Damage (43)
                    Base Value: 110 | Scaled Value: 110 | SP Coefficient: 0.08 | Target: Self (1)
-Hotfixed         : Base Value (153 -> 110)
 #3 (id=1339255)  : Apply Aura (6) | Dummy (4)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.
 Tooltip          : Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
 
 Name             : Holy Shield (desc=Rank 3) (id=20928) [Spell Family (10)] 
-Hotfixed         : Learn Level (60 -> 50), Proc Flags 1 (680 -> 131752), Attributes, Required Level (60 -> 50)
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
-Resource         : 195 Base Mana (0) (id=184913)[Hotfixed: Cost (240 -> 195)]
+Resource         : 195 Base Mana (0) (id=184913)
 Spell Level      : 50
 GCD              : 1.5 seconds
 Duration         : 10 seconds
@@ -4855,14 +4714,12 @@ Effects          :
                    Modified By: S03 - Item - T2 - Paladin - Protection 2P Bonus (467531 effect#1)
 #2 (id=697660)   : Apply Aura (6) | Proc Trigger Damage (43)
                    Base Value: 153 | Scaled Value: 153 | SP Coefficient: 0.08 | Target: Self (1)
-Hotfixed         : Base Value (221 -> 153)
 #3 (id=1339256)  : Apply Aura (6) | Dummy (4)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.
 Tooltip          : Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
 
 Name             : Holy Shock (desc=Rank 3) (id=20929) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : None
@@ -4883,7 +4740,6 @@ Effects          :
 Description      : Blasts the target with Holy energy, causing $25911s1 Holy damage to an enemy, or $25913s1 healing to an ally.
 
 Name             : Holy Shock (desc=Rank 4) (id=20930) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : None
@@ -5012,7 +4868,6 @@ Effects          :
                    Base Value: 20966 | Scaled Value: 20966 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Seal of the Crusader (desc=Rank 1) (id=21082) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5039,7 +4894,6 @@ Unleashing this Seal's energy will judge an enemy for $21183d, increasing Holy d
 Tooltip          : Melee attack power increased by $s1.  Melee attacks are $s2% faster, but deal less damage.
 
 Name             : Seal of Righteousness (desc=Rank 1) (id=21084) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5112,7 +4966,6 @@ Effects          :
 Description      : Increases the duration of Hammer of Justice by $/1000;S1 sec.
 
 Name             : Hammer of Wrath (desc=Rank 3) (id=24239) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -5135,7 +4988,6 @@ Effects          :
 Description      : Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Hammer of Wrath (desc=Rank 2) (id=24274) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -5158,7 +5010,6 @@ Effects          :
 Description      : Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Hammer of Wrath (desc=Rank 1) (id=24275) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -5195,7 +5046,6 @@ Tooltip          : +$s1 Attack Power against Undead.
 Holy damage from spells and effects increased by up to $s2 against Undead.
 
 Name             : Blessing of Wisdom (desc=Rank 6) (id=25290) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5216,7 +5066,6 @@ Description      : Places a Blessing on the friendly target, restoring $s1 mana 
 Tooltip          : Restores $s1 mana every $t1 seconds.
 
 Name             : Blessing of Might (desc=Rank 7) (id=25291) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5237,7 +5086,6 @@ Description      : Places a Blessing on the friendly target, increasing melee at
 Tooltip          : Increases melee attack power by $s1.
 
 Name             : Holy Light (desc=Rank 9) (id=25292) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5256,7 +5104,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Forbearance (id=25771) [Spell Family (10)] 
-Hotfixed         : Affecting Spells
 Class            : Paladin
 School           : Holy
 Spell Type       : None
@@ -5274,7 +5121,6 @@ Effects          :
 Tooltip          : Cannot be made invulnerable by Divine Shield, Divine Protection, Blessing of Protection, or shielded by Templar's Bulwark.
 
 Name             : Righteous Fury (id=25780) [Spell Family (10)] 
-Hotfixed         : Attributes, Description, Tooltip
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5297,17 +5143,14 @@ Effects          :
 #3 (id=1237525)  : Apply Aura (6) | Add Percent Modifier (108): Spell Effect 3 (23)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 23 | Target: Self (1)
                    Family Flags: 114
-Hotfixed         : Misc Value (12 -> 23)
 #4 (id=1357991)  : Apply Aura (6) | Unknown(668)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #5 (id=1367626)  : Apply Aura (6) | Threat (10)
                    Base Value: 33 | Scaled Value: 33 | SP Coefficient: 1 | Misc Value: 127 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Increases all threat generated by $s5%, and all threat generated by your Holy attacks by an additional $s1%.  Lasts $d.
 Tooltip          : Increases all threat generated by $w5%, and all threat generated by your Holy attacks by an additional $w1%.$?$w2<0[ Reduces damage taken by $w2%.][]
 
 Name             : Greater Blessing of Might (desc=Rank 1) (id=25782) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5328,7 +5171,6 @@ Description      : Gives all members of the raid or group that share the same cl
 Tooltip          : Increases melee attack power by $s1.
 
 Name             : Greater Blessing of Wisdom (desc=Rank 1) (id=25894) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5349,7 +5191,6 @@ Description      : Gives all members of the raid or group that share the same cl
 Tooltip          : Restores $s1 mana every $t1 seconds.
 
 Name             : Greater Blessing of Kings (id=25898) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5459,7 +5300,6 @@ Effects          :
 Description      : Healed for $s1.
 
 Name             : Greater Blessing of Might (desc=Rank 2) (id=25916) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5480,7 +5320,6 @@ Description      : Gives all members of the raid or group that share the same cl
 Tooltip          : Increases melee attack power by $s1.
 
 Name             : Greater Blessing of Wisdom (desc=Rank 2) (id=25918) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5516,7 +5355,6 @@ Effects          :
 Description      : Decreases the cooldown of your Judgement ability by $/1000;s1 sec.
 
 Name             : Eye for an Eye (id=25997) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -5544,7 +5382,6 @@ Effects          :
 Description      : Increases movement speed and mounted movement speed by $s1%.  This does not stack with other movement speed increasing effects.
 
 Name             : Consecration (desc=Rank 1) (id=26573) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -6629,7 +6466,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Duration         : 3 seconds
 Cooldown         : 15 seconds
-Affecting Spells : Improved Kick (24434 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2)
+Affecting Spells : Improved Kick (24434 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2), Poised (1328826 effect#1)
 Family Flags     : 4
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Completely Blocked (99), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -7686,7 +7523,7 @@ Attributes       : Passive (6), Aura Unique (43), Unknown (493)
 Effects          :
 #1 (id=1160798)  : Apply Aura (6) | Add Flat Modifier (107): Spell Initial Stacks (4)
                    Base Value: -4 | Scaled Value: -4 | SP Coefficient: 1 | Misc Value: 4 | Target: Self (1)
-                   Affected Spells: Holy Shield (20925), Holy Shield (20927), Holy Shield (20928)
+                   Affected Spells: Holy Shield (20925), Holy Shield (20927), Holy Shield (20928), Holy Shield (1239570)
                    Family Flags: 38
 #2 (id=1160799)  : Apply Aura (6) | Dummy (4)
                    Base Value: 80 | Scaled Value: 80 | SP Coefficient: 1 | Target: Self (1)
@@ -7983,7 +7820,7 @@ Attributes       : Passive (6), Aura Unique (43), Unknown (493)
 Effects          :
 #1 (id=1180738)  : Apply Aura (6) | Add Flat Modifier (107): Spell Effect 1 (3)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Misc Value: 3 | Target: Self (1)
-                   Affected Spells: Holy Shield (20925), Holy Shield (20927), Holy Shield (20928)
+                   Affected Spells: Holy Shield (20925), Holy Shield (20927), Holy Shield (20928), Holy Shield (1239570)
                    Family Flags: 38
 Description      : Increases the bonus chance to Block from Holy Shield by $s1%.
 
@@ -8210,9 +8047,8 @@ Effects          :
 Description      : The Soul of a fallen warrior can be engraved into this slot.
 
 Name             : Sacred Duty (id=1224697) [Spell Family (10), Passive] 
-Hotfixed         : Attributes, Description
 Talent Entry     : Generic [tree=class, row=2, col=8, max_rank=2, req_points=0]
-                 : Effect#1 [op=set, values=(2, 4)]
+                 : Effect#1 [op=set, values=(-5000, -10000)]
                  : Effect#2 [op=set, values=(-30000, -60000)]
 Class            : Paladin
 School           : Physical
@@ -8225,7 +8061,6 @@ Effects          :
                    Base Value: -10000 | Scaled Value: -10000 | Misc Value: 1 | Target: Self (1)
                    Affected Spells: Forbearance (25771)
                    Family Flags: 71
-Hotfixed         : Sub Type (137 -> 107), Base Value (4 -> -10000), Misc Value (0 -> 1), Misc Value 2 (4 -> 0), Affects Spells
 #2 (id=1213491)  : Apply Aura (6) | Add Flat Modifier (107): Spell Cooldown (11)
                    Base Value: -60000 | Scaled Value: -60000 | Misc Value: 11 | Target: Self (1)
                    Affected Spells: Divine Protection (498), Divine Shield (642), Divine Shield (1020), Divine Protection (5573), Divine Protection (458312), Divine Protection (458371), Templar's Bulwark (1311015)
@@ -8274,21 +8109,33 @@ Effects          :
 #1 (id=1237388)  : School Damage (2): holy
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 
-Name             : Holy Shield (desc=Rank 4) (id=1239570) 
-Hotfixed         : NEW SPELL
+Name             : Holy Shield (desc=Rank 4) (id=1239570) [Spell Family (10)] 
 Class            : Paladin
-School           : None
-Spell Type       : None
+School           : Holy
+Spell Type       : Magic
+Resource         : 240 Base Mana (0) (id=310878)
+Spell Level      : 60
+GCD              : 1.5 seconds
+Duration         : 10 seconds
+Requires armor   : Shield 
+Cooldown         : 10 seconds
+Category         : 931 (Type 0x0)
+Labels           : 26: Paladin Spells
+Category Cooldown: 10 seconds
 Stacks           : 4 initial, 4 maximum
 Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Magic Hostile Spell Taken
+Affecting Spells : Benediction (20101 effect#1), S03 - Item - T1 - Paladin - Protection 6P Bonus (456541 effect#1), S03 - Item - T2 - Paladin - Protection 2P Bonus (467531 effect#1)
+Family Flags     : 38
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Proc Equip Requirement (97), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1237444)  : Apply Aura (6) | Modify Block% (51)
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
-Hotfixed         : NEW EFFECT
+                   Modified By: S03 - Item - T2 - Paladin - Protection 2P Bonus (467531 effect#1)
 #2 (id=1237445)  : Apply Aura (6) | Proc Trigger Damage (43)
                    Base Value: 221 | Scaled Value: 221 | SP Coefficient: 0.08 | Target: Self (1)
-Hotfixed         : NEW EFFECT
+#3 (id=1339257)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Increases chance to block by $s1% for $d, and deals $s2 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. $n charges.
 Tooltip          : Block chance increased by ${$m1/$m3}%. $w2 Holy damage dealt to attacker when blocked. Damage caused by Holy Shield causes 20% additional threat.$?$n>0[ $n charges.][]
 
@@ -8507,7 +8354,6 @@ Effects          :
 Tooltip          : Black Value increased by $s1%.
 
 Name             : Unsealed Wrath (id=1310735) [Spell Family (10), Passive, Hidden] 
-Hotfixed         : Name, Description
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Physical
@@ -8520,7 +8366,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
                    Affected Spells: Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Judgement of Righteousness (20187), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Seal of the Crusader (21082), Seal of Righteousness (21084), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Seal of Fury (1311649), Seal of Fury (1311656)
                    Family Flags: 9, 10, 25, 27, 57, 58, 61
-Hotfixed         : Base Value (-20 -> 0)
 Description      : Your melee attacks store a copy of your active Seal for $1311701d, stacking up to $1311701u times. Landing an attack with a different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack.
 
 Name             : Voice of Truth (id=1310897) [Spell Family (10)] 
@@ -8544,7 +8389,7 @@ Tooltip          : Immune to Silence and Interrupt effects.
 
 Name             : Reverence (id=1310899) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=2, max_rank=2, req_points=0]
-                 : Effect#1 [op=set, values=(10, 20, 30)]
+                 : Effect#1 [op=set, values=(15, 30)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -8556,10 +8401,9 @@ Effects          :
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
 Name             : Divine Precision (id=1310904) [Spell Family (10), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=1, max_rank=2, req_points=0]
-                 : Effect#1 [op=set, values=(6, 12, 18)]
-                 : Effect#2 [op=set]
+                 : Effect#1 [op=set, values=(4, 8)]
+                 : Effect#2 [op=set, values=(-10, -20)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -8570,10 +8414,8 @@ Effects          :
                    Base Value: 8 | Scaled Value: 8 | Misc Value: 16 | Target: Self (1)
                    Affected Spells: Holy Strike (678), Holy Strike (679), Holy Strike (680), Hammer of Justice (853), Exorcism (879), Holy Strike (1866), Holy Strike (2495), Holy Wrath (2812), Turn Undead (2878), Holy Strike (5569), Hammer of Justice (5588), Hammer of Justice (5589), Exorcism (5614), Exorcism (5615), Turn Undead (5627), Hammer of Justice (10308), Exorcism (10312), Exorcism (10313), Exorcism (10314), Holy Wrath (10318), Turn Undead (10326), Holy Strike (10332), Holy Strike (10333), Repentance (20066), Consecration (20116), Holy Shock (20473), Consecration (20922), Consecration (20923), Consecration (20924), Holy Shock (20929), Holy Shock (20930), Holy Shock (25902), Holy Shock (25903), Holy Shock (25911), Holy Shock (25912), Holy Shock (25913), Holy Shock (25914), Consecration (26573), Exorcism (415068), Exorcism (415069), Exorcism (415070), Exorcism (415071), Exorcism (415072), Exorcism (415073), Wrath (429139), Fanaticism (429142), Improved Hammer of Wrath (429152), Consecration (1280345), Consecration (1280346), Consecration (1280347), Consecration (1280348), Consecration (1280349), Light's Vigil (1310909), Light's Vigil (1310911), Light's Vigil (1310912), Light's Vigil (1311590), Light's Vigil (1311591), Light's Vigil (1311593), Light's Vigil (1311595), Light's Vigil (1311596), Light's Vigil (1311597), Holy Shock (1311604), Holy Shock (1311605), Holy Shock (1311606), Turn Evil (1328372), Turn Evil (1328373), Turn Evil (1328374)
                    Family Flags: 2, 5, 11, 21, 53, 77, 84, 111, 122
-Hotfixed         : Base Value (18 -> 8), Affects Spells
 #2 (id=1367623)  : Apply Aura (6) | Modify Mechanic Duration% (Stacking) (232)
                    Base Value: -20 | Scaled Value: -20 | Misc Value: 9 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Improves your chance to hit with Holy spells by $s1%, and reduces the duration of Silence effects on you by $s2%.
 
 Name             : Consecrated Ground (id=1310905) [Spell Family (10), Passive, Hidden] 
@@ -8610,7 +8452,6 @@ Description      : The caster's next Holy Shock on this target will activate Lig
 Tooltip          : The caster's next Holy Shock on this target will activate Light's Vigil, healing the target and their party for $1310912s1.
 
 Name             : Light's Vigil (desc=Rank 1) (id=1310911) [Spell Family (10)] 
-Hotfixed         : Attributes, Description
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Holy
@@ -8630,10 +8471,8 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not On Player Cont
 Effects          :
 #1 (id=1340812)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Ally (21)
-Hotfixed         : Target 1 (25 -> 21)
 #2 (id=1341985)  : Dummy (3)
                    Base Value: 75 | Scaled Value: 75 | Target: Targeted Ally (21)
-Hotfixed         : Target 1 (25 -> 21)
 Description      : Applies Light's Vigil to a friendly target for $1310909d. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for $1310912s1. Only one Vigil per Paladin may be active in each party.
 
 Name             : Light's Vigil (desc=Rank 1) (id=1310912) [Spell Family (10)] 
@@ -8666,7 +8505,6 @@ Description      : Restores $m1% of your maximum Mana when you Block.
 Tooltip          : Restoring $m1% of maximum Mana.
 
 Name             : Swift Judgement (id=1310994) [Spell Family (10)] 
-Hotfixed         : School (1 -> 2), Attributes, Spell Type (1 -> 0), Description, Tooltip
 Talent Entry     : Generic [tree=class, row=4, col=5, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Holy
@@ -8681,11 +8519,9 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiate Combat Po
 Effects          :
 #1 (id=1340980)  : Server Side Script (77)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-Hotfixed         : Type (6 -> 77), Sub Type (108 -> 0), Base Value (-100 -> 0), Misc Value (14 -> 0), Affects Spells, Target 1 (1 -> 6)
 Description      : Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect. Does not share a cooldown with your Judgement ability.
 
 Name             : Templar's Bulwark (id=1311015) [Spell Family (10)] 
-Hotfixed         : Learn Level (30 -> 0), Spell Type (0 -> 1), Required Level (30 -> 0)
 Talent Entry     : Generic [tree=class, row=3, col=5, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Holy
@@ -8725,8 +8561,8 @@ Tooltip          : Damage taken reduced by $w1%.
 
 Name             : Iron Creed (id=1311034) [Spell Family (10), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=6, col=7, max_rank=3, req_points=25]
-                 : Effect#1 [op=set, values=(5, 10, 15, 20, 25)]
-                 : Effect#2 [op=set, values=(2, 4, 6, 8, 10)]
+                 : Effect#1 [op=set, values=(10, 20, 30)]
+                 : Effect#2 [op=set, values=(-2, -4, -6)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -8761,10 +8597,9 @@ Effects          :
 Description      : Gives your Judgement ability a $m1% chance to return $m2% of the Mana cost of the judged seal.
 
 Name             : Champion of the Light (id=1311084) [Spell Family (10), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=6, col=11, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(20, 40, 60)]
-                 : Effect#2 [op=set]
+                 : Effect#1 [op=set, values=(12, 24, 36, 48, 60)]
+                 : Effect#2 [op=set, values=(-200, -400, -600, -800, -1000)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -8777,7 +8612,6 @@ Effects          :
                    Base Value: -1000 | Scaled Value: -1000 | SP Coefficient: 1 | Misc Value: 10 | Target: Self (1)
                    Affected Spells: Hammer of Wrath (24239), Hammer of Wrath (24274), Hammer of Wrath (24275)
                    Family Flags: 39
-Hotfixed         : NEW EFFECT
 Description      : Increases your spell damage by up to $m1% of your Intellect, and reduces the cast time of your Hammer of Wrath by ${$m2/-1000}.1 sec.
 
 Name             : Sacred Arbiter (id=1311087) [Spell Family (10), Passive, Hidden] 
@@ -8795,7 +8629,6 @@ Effects          :
 Description      : Increases the damage of your Holy Strike ability by $m1% and causes it to refresh all Judgement effects on the target.
 
 Name             : Light's Vigil (desc=Rank 2) (id=1311590) [Spell Family (10)] 
-Hotfixed         : Attributes, Description
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -8814,10 +8647,8 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not On Player Cont
 Effects          :
 #1 (id=1341986)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Ally (21)
-Hotfixed         : Target 1 (25 -> 21)
 #2 (id=1341987)  : Dummy (3)
                    Base Value: 75 | Scaled Value: 75 | Target: Targeted Ally (21)
-Hotfixed         : Target 1 (25 -> 21)
 Description      : Applies Light's Vigil to a friendly target for $1311593d. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for $1311591s1. Only one Vigil per Paladin may be active in each party.
 
 Name             : Light's Vigil (desc=Rank 2) (id=1311591) [Spell Family (10)] 
@@ -8856,7 +8687,6 @@ Description      : The caster's next Holy Shock on this target will activate Lig
 Tooltip          : The caster's next Holy Shock on this target will activate Light's Vigil, healing the target and their party for $1311591s1.
 
 Name             : Light's Vigil (desc=Rank 3) (id=1311595) [Spell Family (10)] 
-Hotfixed         : Attributes, Description
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -8875,10 +8705,8 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Not On Player Cont
 Effects          :
 #1 (id=1341992)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Ally (21)
-Hotfixed         : Target 1 (25 -> 21)
 #2 (id=1341993)  : Dummy (3)
                    Base Value: 75 | Scaled Value: 75 | Target: Targeted Ally (21)
-Hotfixed         : Target 1 (25 -> 21)
 Description      : Applies Light's Vigil to a friendly target for $1311597d. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for $1311596s1. Only one Vigil per Paladin may be active in each party.
 
 Name             : Light's Vigil (desc=Rank 3) (id=1311596) [Spell Family (10)] 
@@ -8947,7 +8775,6 @@ Effects          :
 Description      : Heals $s1 damage.
 
 Name             : Holy Shock (desc=Rank 1) (id=1311606) [Spell Family (10)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=5, col=2, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Holy
@@ -8985,7 +8812,6 @@ Effects          :
 Description      : Deals additional Holy damage on melee attack.
 
 Name             : Seal of Fury (desc=Rank 1) (id=1311649) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -9067,7 +8893,6 @@ Effects          :
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Seal of Fury (desc=Rank 2) (id=1311656) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
@@ -9095,7 +8920,6 @@ Unleashing this Seal's energy inflicts $1311655s1 Holy damage to an enemy and ta
 Tooltip          : Melee attacks inflict an additional $1311654s1 Holy damage.
 
 Name             : Echo of Fury (id=1311701) 
-Hotfixed         : Max stacks (0 -> 3), Proc Chance (100 -> 101), Proc Stacks (1 -> 0), Proc Flags 1 (4 -> 0), Tooltip
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -9110,10 +8934,8 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #2 (id=1367076)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 #3 (id=1367077)  : Apply Aura (6) | Dummy (4)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Tooltip          : Empowers your next melee attack without Seal of Fury active with $s3 instances of Seal of Fury.
 
 Name             : Flash of Light (id=1313342) [Spell Family (10)] 
@@ -9429,10 +9251,9 @@ Description      : Grants extra attacks after blocking or being critically hit.
 Tooltip          : $s1 additional attacks on next swing.
 
 Name             : Turn Evil (id=1328370) [Spell Family (10), Passive, Hidden] 
-Hotfixed         : NEW SPELL
 Talent Entry     : Generic [tree=class, row=5, col=9, max_rank=2, req_points=0]
-                 : Effect#1 [op=set]
-                 : Effect#2 [op=set]
+                 : Effect#1 [op=set, values=(-500, -1000)]
+                 : Effect#2 [op=set, values=(-5000, -10000)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -9442,29 +9263,23 @@ Effects          :
                    Base Value: -1500 | Scaled Value: -1500 | SP Coefficient: 1 | Misc Value: 10 | Target: Self (1)
                    Affected Spells: Turn Undead (2878), Turn Undead (5627), Turn Undead (10326), Turn Evil (1328372), Turn Evil (1328373), Turn Evil (1328374)
                    Family Flags: 84
-Hotfixed         : NEW EFFECT
 #2 (id=1367358)  : Apply Aura (6) | Add Flat Modifier (107): Spell Cooldown (11)
                    Base Value: -1500 | Scaled Value: -1500 | SP Coefficient: 1 | Misc Value: 11 | Target: Self (1)
                    Affected Spells: Turn Undead (2878), Turn Undead (5627), Turn Undead (10326), Turn Evil (1328372), Turn Evil (1328373), Turn Evil (1328374)
                    Family Flags: 84
-Hotfixed         : NEW EFFECT
 #3 (id=1367367)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Turn Evil overrides Turn Undead
                    Base Value: 1328374 | Scaled Value: 1328374 | Misc Value: 2878 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 #4 (id=1367368)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Turn Evil overrides Turn Undead
                    Base Value: 1328373 | Scaled Value: 1328373 | Misc Value: 5627 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 #5 (id=1367369)  : Apply Aura (6) | Override Action Spell (Misc w/ Base) (332): Turn Evil overrides Turn Undead
                    Base Value: 1328372 | Scaled Value: 1328372 | Misc Value: 10326 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Reduces the cast time of your Turn Undead spell by ${$s1/-1000}.1 sec, its cooldown by ${$s2/-1000} sec, and allows it to affect Demons.
 
 Name             : Turn Evil (desc=Rank 3) (id=1328372) [Spell Family (10)] 
-Hotfixed         : NEW SPELL
 Class            : Paladin
 School           : Nature
 Spell Type       : Magic
-Resource         : 75 Base Mana (0) (id=315129)[Hotfixed: NEW POWER]
+Resource         : 75 Base Mana (0) (id=315129)
 Spell Level      : 52
 Range            : 20 yards
 Max Targets      : 1
@@ -9483,16 +9298,14 @@ Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Limit N (165), 
 Effects          :
 #2 (id=1367362)  : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
 Tooltip          : Compelled to flee.
 
 Name             : Turn Evil (desc=Rank 2) (id=1328373) [Spell Family (10)] 
-Hotfixed         : NEW SPELL
 Class            : Paladin
 School           : Nature
 Spell Type       : Magic
-Resource         : 50 Base Mana (0) (id=315130)[Hotfixed: NEW POWER]
+Resource         : 50 Base Mana (0) (id=315130)
 Spell Level      : 38
 Range            : 20 yards
 Max Targets      : 1
@@ -9511,16 +9324,14 @@ Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Limit N (165), 
 Effects          :
 #2 (id=1367364)  : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
 Tooltip          : Compelled to flee.
 
 Name             : Turn Evil (desc=Rank 1) (id=1328374) [Spell Family (10)] 
-Hotfixed         : NEW SPELL
 Class            : Paladin
 School           : Nature
 Spell Type       : Magic
-Resource         : 35 Base Mana (0) (id=315131)[Hotfixed: NEW POWER]
+Resource         : 35 Base Mana (0) (id=315131)
 Spell Level      : 38
 Range            : 20 yards
 Max Targets      : 1
@@ -9539,12 +9350,10 @@ Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Limit N (165), 
 Effects          :
 #2 (id=1367366)  : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : The targeted Undead or Demon enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.
 Tooltip          : Compelled to flee.
 
 Name             : Shieldsworn (id=1328544) [Spell Family (10), Passive] 
-Hotfixed         : NEW SPELL
 Talent Entry     : Generic [tree=class, row=7, col=6, max_rank=1, req_points=30]
 Class            : Paladin
 School           : Physical
@@ -9557,14 +9366,12 @@ Effects          :
                    Base Value: -4000 | Scaled Value: -4000 | Misc Value: 11 | Target: Self (1)
                    Affected Spells: Holy Strike (678), Holy Strike (679), Holy Strike (680), Holy Strike (1866), Holy Strike (2495), Holy Strike (5569), Holy Strike (10332), Holy Strike (10333)
                    Family Flags: 111
-Hotfixed         : NEW EFFECT
 Description      : Reduces the cooldown of your Holy Strike ability by ${$m1/-1000} sec. Additionally, Holy Strike now strikes with your shield, triggering your active Holy Shield and Shield Specialization talents without consuming their charges or triggering their cooldowns, and allowing you to Block spells for $1328551d.
 
 Name             : Stoicism (id=1328546) [Spell Family (10), Passive] 
-Hotfixed         : NEW SPELL
 Talent Entry     : Generic [tree=class, row=5, col=5, max_rank=2, req_points=0]
-                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
-                 : Effect#2 [op=set]
+                 : Effect#1 [op=set, values=(-10, -20)]
+                 : Effect#2 [op=set, values=(-10, -20)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -9574,19 +9381,16 @@ Attributes       : Passive (6), Include In Advanced Combat Log (72), Aura Points
 Effects          :
 #1 (id=1367614)  : Apply Aura (6) | Modify Mechanic Duration% (Stacking) (232)
                    Base Value: -20 | Scaled Value: -20 | SP Coefficient: 1 | Misc Value: 12 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 #2 (id=1367615)  : Apply Aura (6) | Modify Mechanic Duration% (Stacking) (232)
                    Base Value: -20 | Scaled Value: -20 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Reduces the duration of Stun and Charm effects on you by $s1%.
 
 Name             : Oath of Light (id=1328548) [Spell Family (10)] 
-Hotfixed         : NEW SPELL
 Talent Entry     : Generic [tree=class, row=4, col=3, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Holy
 Spell Type       : Magic
-Resource         : 8% Base Mana (0) (id=315133)[Hotfixed: NEW POWER]
+Resource         : 8% Base Mana (0) (id=315133)
 Range            : 40 yards
 Max Targets      : 1
 GCD              : 1.5 seconds
@@ -9596,20 +9400,16 @@ Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Limit N (165), Unk
 Effects          :
 #1 (id=1367618)  : Apply Aura (6) | Periodic Dummy (226): every 1.5 seconds
                    Base Value: 0 | Scaled Value: 400.0002 | Points Per Level: 6.66667 | Target: Targeted Ally (21)
-Hotfixed         : NEW EFFECT
 #2 (id=1367619)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 115.0002 | Points Per Level: 1.91667 | Target: Targeted Ally (21)
-Hotfixed         : NEW EFFECT
 #3 (id=1367620)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 229.9998 | Points Per Level: 3.83333 | Target: Targeted Ally (21)
-Hotfixed         : NEW EFFECT
 Description      : Swear an Oath to protect target ally for $d, increasing the healing of your Holy Light on them by up to $s1, your Flash of Light by up to $s2, and your Holy Shock by up to $s3. Only one Oath of Light may be sworn by the Paladin at any one time.
 Tooltip          : Receives increased healing from the caster's Holy Light by up to $s1, Flash of Light by up to $s2, and Holy Shock by up to $s3.
 
 Name             : Boundless Light (id=1328550) [Spell Family (10), Passive] 
-Hotfixed         : NEW SPELL
 Talent Entry     : Generic [tree=class, row=5, col=3, max_rank=2, req_points=0]
-                 : Effect#1 [op=set]
+                 : Effect#1 [op=set, values=(15, 30)]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -9619,11 +9419,9 @@ Attributes       : Passive (6), Include In Advanced Combat Log (72), Aura Points
 Effects          :
 #1 (id=1367624)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Increases the critical strike chance of your Holy Shock spell by $s1% when cast on allies not affected by your Oath of Light.
 
 Name             : Shieldsworn (id=1328551) [Spell Family (10)] 
-Hotfixed         : NEW SPELL
 Class            : Paladin
 School           : Physical
 Spell Type       : None
@@ -9634,7 +9432,6 @@ Attributes       : Include In Advanced Combat Log (72), Aura Points On Client (2
 Effects          :
 #1 (id=1367625)  : Apply Aura (6) | Allow Blocking Spells (528)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Able to Block spells for $d.
 Tooltip          : Able to Block spells.
 

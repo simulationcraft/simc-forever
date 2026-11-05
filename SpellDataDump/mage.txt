@@ -1,6 +1,5 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70707 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70790 Live
 Name             : Blizzard (desc=Rank 1) (id=10) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -51,7 +50,6 @@ Description      : Turns the caster invisible for $d, though this spell is unsta
 Tooltip          : Lesser Invisibility.
 
 Name             : Frostbolt (desc=Rank 1) (id=116) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -82,7 +80,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Cone of Cold (desc=Rank 1) (id=120) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -114,7 +111,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Frost Nova (desc=Rank 1) (id=122) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -145,7 +141,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Fireball (desc=Rank 1) (id=133) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -170,7 +165,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Fireball (desc=Rank 2) (id=143) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -195,7 +189,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Fireball (desc=Rank 3) (id=145) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -220,7 +213,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Frost Armor (desc=Rank 1) (id=168) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -245,7 +237,6 @@ Description      : Increases Armor by $s1.  If an enemy strikes the caster, they
 Tooltip          : Increases Armor by $s1 and may slow attackers.
 
 Name             : Frostbolt (desc=Rank 2) (id=205) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -276,7 +267,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Remove Lesser Curse (id=475) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -310,7 +300,6 @@ Effects          :
 Description      : Magically unlocks treasure chests and other locked items.
 
 Name             : Fire Ward (desc=Rank 1) (id=543) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -338,7 +327,6 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Conjure Food (desc=Rank 1) (id=587) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -358,7 +346,6 @@ Description      : Conjures $s1 $lmuffin:muffins;, providing the mage and $ghis:
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Conjure Food (desc=Rank 2) (id=597) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -378,7 +365,6 @@ Description      : Conjures $s1 $lloaf:loaves; of bread, providing the mage and 
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Dampen Magic (desc=Rank 1) (id=604) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -424,7 +410,6 @@ Description      : Puts the enemy target to sleep for up to $d.  Any damage caus
 Tooltip          : Asleep.
 
 Name             : Conjure Mana Agate (id=759) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -444,7 +429,6 @@ Description      : Conjures a mana agate that can be used to instantly restore $
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Frostbolt (desc=Rank 3) (id=837) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -491,7 +475,6 @@ Effects          :
 Description      : Magically unlocks treasure chests and other locked items.
 
 Name             : Frost Nova (desc=Rank 2) (id=865) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -541,7 +524,6 @@ Description      : Turns the caster invisible for $d, though this spell is unsta
 Tooltip          : Invisibility.
 
 Name             : Conjure Food (desc=Rank 3) (id=990) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -561,7 +543,6 @@ Description      : Conjures $s1 $lloaf:loaves; of rye, providing the mage and $g
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Amplify Magic (desc=Rank 1) (id=1008) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -607,7 +588,6 @@ Description      : Puts the enemy target to sleep for up to $d.  Any damage caus
 Tooltip          : Asleep.
 
 Name             : Arcane Explosion (desc=Rank 1) (id=1449) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -624,7 +604,6 @@ Effects          :
 Description      : Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 Name             : Arcane Intellect (desc=Rank 1) (id=1459) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -644,7 +623,6 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Increases Intellect by $s1.
 
 Name             : Arcane Intellect (desc=Rank 2) (id=1460) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -664,7 +642,6 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Increases Intellect by $s1.
 
 Name             : Arcane Intellect (desc=Rank 3) (id=1461) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -684,7 +661,6 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Increases Intellect by $s1.
 
 Name             : Mana Shield (desc=Rank 1) (id=1463) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -704,7 +680,6 @@ Description      : Absorbs $s1 physical damage, draining mana instead.  Drains $
 Tooltip          : Absorbs physical damage, draining mana instead.
 
 Name             : Blink (id=1953) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -729,7 +704,6 @@ Description      : Teleports the caster 20 yards forward, unless something is in
 Tooltip          : Blinking.
 
 Name             : Flamestrike (desc=Rank 1) (id=2120) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -755,7 +729,6 @@ Description      : Calls down a pillar of fire, burning all enemies within the a
 Tooltip          : $1279983m1 Fire damage every $t3 seconds.
 
 Name             : Flamestrike (desc=Rank 2) (id=2121) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -781,7 +754,6 @@ Description      : Calls down a pillar of fire, burning all enemies within the a
 Tooltip          : $279985m1 Fire damage every $t3.
 
 Name             : Fire Blast (desc=Rank 1) (id=2136) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -802,7 +774,6 @@ Effects          :
 Description      : Blasts the enemy for $s1 Fire damage.
 
 Name             : Fire Blast (desc=Rank 2) (id=2137) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -823,7 +794,6 @@ Effects          :
 Description      : Blasts the enemy for $s1 Fire damage.
 
 Name             : Fire Blast (desc=Rank 3) (id=2138) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -844,7 +814,6 @@ Effects          :
 Description      : Blasts the enemy for $s1 Fire damage.
 
 Name             : Counterspell (id=2139) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -866,7 +835,6 @@ Effects          :
 Description      : Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.  Generates a high amount of threat.
 
 Name             : Scorch (desc=Rank 1) (id=2948) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -885,7 +853,6 @@ Effects          :
 Description      : Scorch the enemy for $s1 Fire damage.
 
 Name             : Fireball (desc=Rank 4) (id=3140) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -910,7 +877,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Conjure Mana Jade (id=3552) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -946,7 +912,6 @@ Effects          :
 Description      : Attack with an equipped wand.
 
 Name             : Arcane Missiles (desc=Rank 1) (id=5143) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -968,7 +933,6 @@ Effects          :
 Description      : Launches Arcane Missiles at the enemy, causing $7268s1 Arcane damage each second for $d.
 
 Name             : Arcane Missiles (desc=Rank 2) (id=5144) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -990,7 +954,6 @@ Effects          :
 Description      : Launches Arcane Missiles at the enemy, causing $7269s1 Arcane damage each second for $d.
 
 Name             : Arcane Missiles (desc=Rank 3) (id=5145) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -1026,7 +989,6 @@ Effects          :
 Description      : Restores $s1 mana.
 
 Name             : Conjure Water (desc=Rank 1) (id=5504) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1046,7 +1008,6 @@ Description      : Conjures $s1 $lbottle:bottles; of water, providing the mage a
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Conjure Water (desc=Rank 2) (id=5505) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1066,7 +1027,6 @@ Description      : Conjures $s1 $lbottle:bottles; of fresh water, providing the 
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Conjure Water (desc=Rank 3) (id=5506) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1101,7 +1061,6 @@ Effects          :
 Description      : Increases your damage with Wands by $s1%.
 
 Name             : Mage Armor (desc=Rank 1) (id=6117) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1124,7 +1083,6 @@ Description      : Increases your resistance to all magic by $s1 and allows $s2%
 Tooltip          : Resistance to all magic schools increased by $s1 and allows $s2% of your mana regeneration to continue while casting.
 
 Name             : Conjure Water (desc=Rank 4) (id=6127) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1144,7 +1102,6 @@ Description      : Conjures $s1 $lbottle:bottles; of spring water, providing the
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Conjure Food (desc=Rank 4) (id=6129) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1164,7 +1121,6 @@ Description      : Conjures $s1 $lloaf:loaves; of pumpernickel, providing the ma
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Frost Nova (desc=Rank 3) (id=6131) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1217,7 +1173,6 @@ Description      : Movement slowed by $s1% and time between attacks increased by
 Tooltip          : Movement slowed by $w1% and time between attacks increased by $w2%.
 
 Name             : Blizzard (desc=Rank 2) (id=6141) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1248,7 +1203,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Frost Ward (desc=Rank 1) (id=6143) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1326,7 +1280,6 @@ Effects          :
 Description      : Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 Name             : Frost Armor (desc=Rank 2) (id=7300) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1351,7 +1304,6 @@ Description      : Increases Armor by $s1.  If an enemy strikes the caster, they
 Tooltip          : Increases Armor by $s1 and may slow attackers.
 
 Name             : Frost Armor (desc=Rank 3) (id=7301) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1376,7 +1328,6 @@ Description      : Increases Armor by $s1.  If an enemy strikes the caster, they
 Tooltip          : Increases Armor by $s1 and may slow attackers.
 
 Name             : Ice Armor (desc=Rank 1) (id=7302) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1404,7 +1355,6 @@ Description      : Increases Armor by $s1 and frost resistance by $s3.   If an e
 Tooltip          : Increases Armor by $s1, Frost resistance by $s3 and may slow attackers.
 
 Name             : Ice Armor (desc=Rank 2) (id=7320) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1453,7 +1403,6 @@ Effects          :
 Tooltip          : Movement slowed by $w1% and time between attacks increased by $w2%.
 
 Name             : Frostbolt (desc=Rank 4) (id=7322) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1484,7 +1433,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Fireball (desc=Rank 5) (id=8400) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1509,7 +1457,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Fireball (desc=Rank 6) (id=8401) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1534,7 +1481,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Fireball (desc=Rank 7) (id=8402) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1559,7 +1505,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Frostbolt (desc=Rank 5) (id=8406) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1590,7 +1535,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Frostbolt (desc=Rank 6) (id=8407) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1621,7 +1565,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Frostbolt (desc=Rank 7) (id=8408) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1652,7 +1595,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Fire Blast (desc=Rank 4) (id=8412) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1673,7 +1615,6 @@ Effects          :
 Description      : Blasts the enemy for $s1 Fire damage.
 
 Name             : Fire Blast (desc=Rank 5) (id=8413) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1694,7 +1635,6 @@ Effects          :
 Description      : Blasts the enemy for $s1 Fire damage.
 
 Name             : Arcane Missiles (desc=Rank 4) (id=8416) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -1716,7 +1656,6 @@ Effects          :
 Description      : Launches Arcane Missiles at the enemy, causing $8419s1 Arcane damage each second for $d.
 
 Name             : Arcane Missiles (desc=Rank 5) (id=8417) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -1772,7 +1711,6 @@ Effects          :
 Description      : Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 Name             : Flamestrike (desc=Rank 3) (id=8422) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1798,7 +1736,6 @@ Description      : Calls down a pillar of fire, burning all enemies within the a
 Tooltip          : $1279987m1 Fire damage every $t3.
 
 Name             : Flamestrike (desc=Rank 4) (id=8423) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1824,7 +1761,6 @@ Description      : Calls down a pillar of fire, burning all enemies within the a
 Tooltip          : $1279988s1 Fire damage every $t3.
 
 Name             : Blizzard (desc=Rank 3) (id=8427) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1855,7 +1791,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Arcane Explosion (desc=Rank 2) (id=8437) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1872,7 +1807,6 @@ Effects          :
 Description      : Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 Name             : Arcane Explosion (desc=Rank 3) (id=8438) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1889,7 +1823,6 @@ Effects          :
 Description      : Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 Name             : Arcane Explosion (desc=Rank 4) (id=8439) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1906,7 +1839,6 @@ Effects          :
 Description      : Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 Name             : Scorch (desc=Rank 2) (id=8444) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1925,7 +1857,6 @@ Effects          :
 Description      : Scorch the enemy for $s1 Fire damage.
 
 Name             : Scorch (desc=Rank 3) (id=8445) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1944,7 +1875,6 @@ Effects          :
 Description      : Scorch the enemy for $s1 Fire damage.
 
 Name             : Scorch (desc=Rank 4) (id=8446) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -1963,7 +1893,6 @@ Effects          :
 Description      : Scorch the enemy for $s1 Fire damage.
 
 Name             : Dampen Magic (desc=Rank 2) (id=8450) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -1988,7 +1917,6 @@ Description      : Dampens magic used against the targeted party member, decreas
 Tooltip          : Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 Name             : Dampen Magic (desc=Rank 3) (id=8451) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2013,7 +1941,6 @@ Description      : Dampens magic used against the targeted party member, decreas
 Tooltip          : Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 Name             : Amplify Magic (desc=Rank 2) (id=8455) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2038,7 +1965,6 @@ Description      : Amplifies magic used against the targeted party member, incre
 Tooltip          : Increases magic damage taken by up to $s1 and healing by up to $s2.
 
 Name             : Fire Ward (desc=Rank 2) (id=8457) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -2066,7 +1992,6 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Fire Ward (desc=Rank 3) (id=8458) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -2094,7 +2019,6 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Frost Ward (desc=Rank 2) (id=8461) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2121,7 +2045,6 @@ Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11
 Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Frost Ward (desc=Rank 3) (id=8462) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2148,7 +2071,6 @@ Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11
 Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Cone of Cold (desc=Rank 2) (id=8492) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2180,7 +2102,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Mana Shield (desc=Rank 2) (id=8494) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2200,7 +2121,6 @@ Description      : Absorbs $s1 physical damage, draining mana instead.  Drains $
 Tooltip          : Absorbs physical damage, draining mana instead.
 
 Name             : Mana Shield (desc=Rank 3) (id=8495) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2234,7 +2154,6 @@ Effects          :
 Description      : Restores $s1 mana.
 
 Name             : Conjure Mana Citrine (id=10053) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2254,7 +2173,6 @@ Description      : Conjures a mana citrine that can be used to instantly restore
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Conjure Mana Ruby (id=10054) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2302,7 +2220,6 @@ Effects          :
 Description      : Restores $s1 mana.
 
 Name             : Conjure Water (desc=Rank 5) (id=10138) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2322,7 +2239,6 @@ Description      : Conjures $?s442543[${$max(20,$m1)}][$s1] $lbottle:bottles; of
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Conjure Water (desc=Rank 6) (id=10139) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2342,7 +2258,6 @@ Description      : Conjures $?s442543[${$max(20,$m1)}][$s1] $lbottle:bottles; of
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Conjure Water (desc=Rank 7) (id=10140) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2362,7 +2277,6 @@ Description      : Conjures $?s442543[${$max(20,$m1)}][$s1] $lbottle:bottles; of
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Conjure Food (desc=Rank 5) (id=10144) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2382,7 +2296,6 @@ Description      : Conjures $s1 $lloaf:loaves; of sourdough, providing the mage 
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Conjure Food (desc=Rank 6) (id=10145) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2402,7 +2315,6 @@ Description      : Conjures $s1 $lsweet roll:sweet rolls;, providing the mage an
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Fireball (desc=Rank 8) (id=10148) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -2427,7 +2339,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Fireball (desc=Rank 9) (id=10149) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -2452,7 +2363,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Fireball (desc=Rank 10) (id=10150) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -2477,7 +2387,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Fireball (desc=Rank 11) (id=10151) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -2502,7 +2411,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Arcane Intellect (desc=Rank 4) (id=10156) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2522,7 +2430,6 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Increases Intellect by $s1.
 
 Name             : Arcane Intellect (desc=Rank 5) (id=10157) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2542,7 +2449,6 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Increases Intellect by $s1.
 
 Name             : Cone of Cold (desc=Rank 3) (id=10159) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2574,7 +2480,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Cone of Cold (desc=Rank 4) (id=10160) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2606,7 +2511,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Cone of Cold (desc=Rank 5) (id=10161) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2643,7 +2547,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Amplify Magic (desc=Rank 3) (id=10169) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2668,7 +2571,6 @@ Description      : Amplifies magic used against the targeted party member, incre
 Tooltip          : Increases magic damage taken by up to $s1 and healing by up to $s2.
 
 Name             : Amplify Magic (desc=Rank 4) (id=10170) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2693,7 +2595,6 @@ Description      : Amplifies magic used against the targeted party member, incre
 Tooltip          : Increases magic damage taken by up to $s1 and healing by up to $s2.
 
 Name             : Dampen Magic (desc=Rank 4) (id=10173) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2718,7 +2619,6 @@ Description      : Dampens magic used against the targeted party member, decreas
 Tooltip          : Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 Name             : Dampen Magic (desc=Rank 5) (id=10174) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2743,7 +2643,6 @@ Description      : Dampens magic used against the targeted party member, decreas
 Tooltip          : Reduces magic damage taken by up to $s1 and healing by up to $s2.
 
 Name             : Frost Ward (desc=Rank 4) (id=10177) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2770,7 +2669,6 @@ Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11
 Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Frostbolt (desc=Rank 8) (id=10179) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2801,7 +2699,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Frostbolt (desc=Rank 9) (id=10180) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2832,7 +2729,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Frostbolt (desc=Rank 10) (id=10181) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2863,7 +2759,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Blizzard (desc=Rank 4) (id=10185) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2894,7 +2789,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Blizzard (desc=Rank 5) (id=10186) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2925,7 +2819,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Blizzard (desc=Rank 6) (id=10187) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -2956,7 +2849,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Mana Shield (desc=Rank 4) (id=10191) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2976,7 +2868,6 @@ Description      : Absorbs $s1 physical damage, draining mana instead.  Drains $
 Tooltip          : Absorbs physical damage, draining mana instead.
 
 Name             : Mana Shield (desc=Rank 5) (id=10192) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -2996,7 +2887,6 @@ Description      : Absorbs $s1 physical damage, draining mana instead.  Drains $
 Tooltip          : Absorbs physical damage, draining mana instead.
 
 Name             : Mana Shield (desc=Rank 6) (id=10193) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -3016,7 +2906,6 @@ Description      : Absorbs $s1 physical damage, draining mana instead.  Drains $
 Tooltip          : Absorbs physical damage, draining mana instead.
 
 Name             : Fire Blast (desc=Rank 6) (id=10197) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -3037,7 +2926,6 @@ Effects          :
 Description      : Blasts the enemy for $s1 Fire damage.
 
 Name             : Fire Blast (desc=Rank 7) (id=10199) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -3058,7 +2946,6 @@ Effects          :
 Description      : Blasts the enemy for $s1 Fire damage.
 
 Name             : Arcane Explosion (desc=Rank 5) (id=10201) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -3075,7 +2962,6 @@ Effects          :
 Description      : Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 Name             : Arcane Explosion (desc=Rank 6) (id=10202) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -3092,7 +2978,6 @@ Effects          :
 Description      : Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.
 
 Name             : Scorch (desc=Rank 5) (id=10205) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -3111,7 +2996,6 @@ Effects          :
 Description      : Scorch the enemy for $s1 Fire damage.
 
 Name             : Scorch (desc=Rank 6) (id=10206) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -3130,7 +3014,6 @@ Effects          :
 Description      : Scorch the enemy for $s1 Fire damage.
 
 Name             : Scorch (desc=Rank 7) (id=10207) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -3149,7 +3032,6 @@ Effects          :
 Description      : Scorch the enemy for $s1 Fire damage.
 
 Name             : Arcane Missiles (desc=Rank 6) (id=10211) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -3171,7 +3053,6 @@ Effects          :
 Description      : Launches Arcane Missiles at the enemy, causing $10273s1 Arcane damage each second for $d.
 
 Name             : Arcane Missiles (desc=Rank 7) (id=10212) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -3193,7 +3074,6 @@ Effects          :
 Description      : Launches Arcane Missiles at the enemy, causing $10274s1 Arcane damage each second for $d.
 
 Name             : Flamestrike (desc=Rank 5) (id=10215) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -3219,7 +3099,6 @@ Description      : Calls down a pillar of fire, burning all enemies within the a
 Tooltip          : $1279989m1 Fire damage every $t3.
 
 Name             : Flamestrike (desc=Rank 6) (id=10216) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -3245,7 +3124,6 @@ Description      : Calls down a pillar of fire, burning all enemies within the a
 Tooltip          : $1279990s1 Fire damage every $t3.
 
 Name             : Ice Armor (desc=Rank 3) (id=10219) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -3273,7 +3151,6 @@ Description      : Increases Armor by $s1 and frost resistance by $s3.   If an e
 Tooltip          : Increases Armor by $s1, Frost resistance by $s3 and may slow attackers.
 
 Name             : Ice Armor (desc=Rank 4) (id=10220) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -3301,7 +3178,6 @@ Description      : Increases Armor by $s1 and frost resistance by $s3.   If an e
 Tooltip          : Increases Armor by $s1, Frost resistance by $s3 and may slow attackers.
 
 Name             : Fire Ward (desc=Rank 4) (id=10223) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -3329,7 +3205,6 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Fire Ward (desc=Rank 5) (id=10225) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -3357,7 +3232,6 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Frost Nova (desc=Rank 4) (id=10230) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -3451,7 +3325,7 @@ Effects          :
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 10 | Target: Self (1)
                    Affected Spells: Frostbolt (116), Frostbolt (205), Frostbolt (837), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Frostbolt (25304), Frostbolt (350025)
                    Family Flags: 5
-Description      : Reduces the casting time of your Frostbolt and Frost Blast spells by $/1000;S1 sec.
+Description      : Reduces the casting time of your Frostbolt spell by $/1000;S1 sec.
 
 Name             : Frostbite (id=11071) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=10, max_rank=3, req_points=0]
@@ -3590,7 +3464,6 @@ Effects          :
 Description      : Increases the critical strike chance of your Flamestrike spell by $s1%.
 
 Name             : Blast Wave (desc=Rank 1) (id=11113) [Spell Family (3)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=5, col=7, max_rank=1, req_points=0]
 Class            : Mage
 School           : Fire
@@ -3616,7 +3489,7 @@ Tooltip          : Dazed. Movement speed reduced by 50%.
 
 Name             : Critical Mass (id=11115) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=5, col=6, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
+                 : Effect#1 [op=set, values=(2, 4, 6)]
 Class            : Mage
 School           : Fire
 Spell Type       : None
@@ -3792,7 +3665,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 12579 | Target: Self (1)
 #3 (id=1364855)  : Apply Aura (6) | Dummy (4)
                    Base Value: 7 | Scaled Value: 7 | Target: Self (1)
-Description      : Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
+Description      : Gives your Frostbolt and Fingers of Frost empowered Ice Lance spells a $m2% chance to apply Winter's Chill, increasing the target's damage taken from your next Cone of Cold by $12579s1% and it gains an additional $s3% of your spell damage, stacking up to $s1 times.
 
 Name             : Improved Blizzard (id=11185) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=3, col=10, max_rank=3, req_points=0]
@@ -4028,7 +3901,6 @@ Effects          :
 Description      : Your Counterspell also Silences the target for ${$m1/1000} sec.
 
 Name             : Pyroblast (desc=Rank 1) (id=11366) [Spell Family (3)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=3, col=7, max_rank=1, req_points=0]
 Class            : Mage
 School           : Fire
@@ -4054,7 +3926,6 @@ Description      : Hurls an immense fiery boulder that causes $s1 Fire damage an
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Ice Barrier (desc=Rank 1) (id=11426) [Spell Family (3)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]
 Class            : Mage
 School           : Frost
@@ -4079,12 +3950,10 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
                    Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002)
                    Family Flags: 5, 6, 7, 9, 17, 44
-Hotfixed         : Base Value (3 -> 5)
 #3 (id=1364980)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
                    Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
                    Family Flags: 7, 44
-Hotfixed         : Base Value (3 -> 5)
 Description      : Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
 Tooltip          : Absorbs $w1 damage and increases Frost damage dealt by ${$w2}%.
 
@@ -4170,7 +4039,6 @@ Description      : When activated, your next Mage spell with a casting time less
 Tooltip          : Your next Mage spell with a casting time less than 10 sec will be an instant cast spell.
 
 Name             : Evocation (id=12051) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -4264,7 +4132,6 @@ Effects          :
 Tooltip          : Frozen.
 
 Name             : Pyroblast (desc=Rank 2) (id=12505) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4289,7 +4156,6 @@ Description      : Hurls an immense fiery boulder that causes $s1 Fire damage an
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Pyroblast (desc=Rank 3) (id=12522) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4314,7 +4180,6 @@ Description      : Hurls an immense fiery boulder that causes $s1 Fire damage an
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Pyroblast (desc=Rank 4) (id=12523) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4339,7 +4204,6 @@ Description      : Hurls an immense fiery boulder that causes $s1 Fire damage an
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Pyroblast (desc=Rank 5) (id=12524) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4364,7 +4228,6 @@ Description      : Hurls an immense fiery boulder that causes $s1 Fire damage an
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Pyroblast (desc=Rank 6) (id=12525) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4389,7 +4252,6 @@ Description      : Hurls an immense fiery boulder that causes $s1 Fire damage an
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Pyroblast (desc=Rank 7) (id=12526) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4452,7 +4314,6 @@ Effects          :
                    Base Value: 20 | Scaled Value: 20 | Misc Value: 16 | Target: Targeted Enemy (6)
                    Affected Spells: Cone of Cold (120), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161)
                    Family Flags: 9
-Hotfixed         : Base Value (5 -> 20)
 #2 (id=1364854)  : Apply Aura (6) | Dummy (4)
                    Base Value: 7 | Scaled Value: 7 | Misc Value: 16 | Target: Targeted Enemy (6)
 Tooltip          : Taking $s1% increased damage and $s2% increased spell power coefficient from the caster's next Cone of Cold spell.
@@ -4472,7 +4333,6 @@ Effects          :
 Description      : Increases the effect of your Amplify Magic and Dampen Magic spells by $s1%.
 
 Name             : Blast Wave (desc=Rank 2) (id=13018) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4496,7 +4356,6 @@ Description      : A wave of flame radiates outward from the caster, damaging al
 Tooltip          : Dazed. Movement speed reduced by 50%.
 
 Name             : Blast Wave (desc=Rank 3) (id=13019) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4520,7 +4379,6 @@ Description      : A wave of flame radiates outward from the caster, damaging al
 Tooltip          : Dazed. Movement speed reduced by 50%.
 
 Name             : Blast Wave (desc=Rank 4) (id=13020) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4544,7 +4402,6 @@ Description      : A wave of flame radiates outward from the caster, damaging al
 Tooltip          : Dazed. Movement speed reduced by 50%.
 
 Name             : Blast Wave (desc=Rank 5) (id=13021) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4568,7 +4425,6 @@ Description      : A wave of flame radiates outward from the caster, damaging al
 Tooltip          : Dazed. Movement speed reduced by 50%.
 
 Name             : Ice Barrier (desc=Rank 2) (id=13031) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -4592,17 +4448,14 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
                    Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002)
                    Family Flags: 5, 6, 7, 9, 17, 44
-Hotfixed         : Base Value (3 -> 5)
 #3 (id=1365015)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
                    Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
                    Family Flags: 7, 44
-Hotfixed         : Base Value (3 -> 5)
 Description      : Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
 Tooltip          : Absorbs $w1 damage and increases Frost damage dealt by $w2%.
 
 Name             : Ice Barrier (desc=Rank 3) (id=13032) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -4626,17 +4479,14 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
                    Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002)
                    Family Flags: 5, 6, 7, 9, 17, 44
-Hotfixed         : Base Value (3 -> 5)
 #3 (id=1365013)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
                    Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
                    Family Flags: 7, 44
-Hotfixed         : Base Value (3 -> 5)
 Description      : Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
 Tooltip          : Absorbs $w1 damage and increases Frost damage dealt by $w2%.
 
 Name             : Ice Barrier (desc=Rank 4) (id=13033) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -4660,12 +4510,10 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
                    Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002)
                    Family Flags: 5, 6, 7, 9, 17, 44
-Hotfixed         : Base Value (3 -> 5)
 #3 (id=1365010)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
                    Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
                    Family Flags: 7, 44
-Hotfixed         : Base Value (3 -> 5)
 Description      : Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.
 Tooltip          : Absorbs $w1 damage and increases Frost damage dealt by $w2%.
 
@@ -4760,7 +4608,6 @@ Effects          :
 Description      : Blasts a target for $s1 Frost damage.
 
 Name             : Arctic Reach (id=16757) [Spell Family (3), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=9, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(10, 20)]
                  : Effect#2 [op=set, values=(10, 20)]
@@ -4774,12 +4621,11 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Misc Value: 5 | Target: Self (1)
                    Affected Spells: Blizzard (10), Frostbolt (116), Frostbolt (205), Frostbolt (837), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002)
                    Family Flags: 5, 7, 17
-Hotfixed         : Affects Spells
 #2 (id=694456)   : Apply Aura (6) | Add Percent Modifier (108): Spell Radius (6)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Misc Value: 6 | Target: Self (1)
                    Affected Spells: Cone of Cold (120), Frost Nova (122), Frost Nova (865), Frost Nova (6131), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frost Nova (10230)
                    Family Flags: 6, 9
-Description      : Increases the range of your Frostbolt, Frost Blast, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.
+Description      : Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by $s1%.
 
 Name             : Chilled (id=16927) [Spell Family (3)] 
 School           : Frost
@@ -4829,6 +4675,24 @@ Effects          :
                    Base Value: 85 | Scaled Value: 110 | Points Per Level: 1 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Arcane damage.
 
+Name             : Fireball (id=18199) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 45 Base Mana (0) (id=181954)
+Spell Level      : 30
+Range            : 35 yards
+Cast Time        : 2 seconds
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=693993)   : School Damage (2): fire
+                   Base Value: 98 | Scaled Value: 98 (delta=0.244898) | Target: Targeted Enemy (6)
+#2 (id=693994)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
+
 Name             : Frost Blast (id=18398) [Spell Family (3)] 
 School           : Frost
 Spell Type       : Magic
@@ -4847,7 +4711,7 @@ Description      : Blasts a target for $s1 Frost damage.
 
 Name             : Incineration (id=18459) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=6, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(2, 4, 6)]
+                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
 Class            : Mage
 School           : Physical
 Spell Type       : None
@@ -4874,7 +4738,6 @@ Effects          :
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
 
 Name             : Pyroblast (desc=Rank 8) (id=18809) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -4964,7 +4827,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 sec.
 
 Name             : Mage Armor (desc=Rank 2) (id=22782) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -4987,7 +4849,6 @@ Description      : Increases your resistance to all magic by $s1 and allows $s2%
 Tooltip          : Resistance to all magic schools increased by $s1 and allows $s2% of your mana regeneration to continue while casting.
 
 Name             : Mage Armor (desc=Rank 3) (id=22783) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -5131,7 +4992,6 @@ Tooltip          : Arcane spell critical hit chance increased by $s1%.
 Arcane spell critical hit damage increased by $s2%.
 
 Name             : Frostbolt (desc=Rank 11) (id=25304) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -5162,7 +5022,6 @@ $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
 Name             : Fireball (desc=Rank 12) (id=25306) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Fire
 Spell Type       : Magic
@@ -5187,7 +5046,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
 Name             : Arcane Missiles (desc=Rank 8) (id=25345) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : None
@@ -5258,7 +5116,7 @@ Tooltip          : Provides damage absorption on heal.
 
 Name             : Arcane Resilience (id=28574) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=3, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(20, 40)]
+                 : Effect#1 [op=set, values=(25, 50, 75)]
 Class            : Mage
 School           : Physical
 Spell Type       : None
@@ -5270,7 +5128,6 @@ Effects          :
 Description      : Increases your Armor by an amount equal to $s1% of your Intellect.
 
 Name             : Frost Ward (desc=Rank 5) (id=28609) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -5297,7 +5154,6 @@ Description      : Absorbs ${$s1+($SPFR*0.1)*($11189s3/100+1)} Frost damage$?s11
 Tooltip          : Absorbs $w1 Frost damage.$?$w2!=0[ $w2% chance to negate Frost damage.][]
 
 Name             : Conjure Food (desc=Rank 7) (id=28612) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -5478,18 +5334,15 @@ Attributes       : Do Not Sheath (18), Aura Is Debuff (26), No Threat (42), Not 
 Effects          :
 #1 (id=1045737)  : Apply Aura (6) | Unknown(174)
                    Base Value: 12 | Scaled Value: 12 | Misc Value: 126 | Misc Value 2: 3 | Target: Self (1)
-Hotfixed         : Base Value (15 -> 12)
                    Modified By: S03 - Item - TAQ - Mage - Arcane 2P Bonus (1213312 effect#1)
 #2 (id=1045738)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: 100 | Scaled Value: 100 | Misc Value: 14 | Target: Self (1)
                    Affected Spells: Arcane Blast (400574), Arcane Blast (1239696), Arcane Blast (1239697), Arcane Blast (1239699), Arcane Blast (1239700)
                    Family Flags: 29
-Hotfixed         : Base Value (175 -> 100)
 Description      : Blasts the target with energy, dealing Arcane damage. Each time you cast Arcane Blast, you gain $s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d.
 Tooltip          : Spell damage increased by $s1% of Intellect and mana cost of Arcane Blast increased by $s2%.
 
 Name             : Arcane Blast (desc=Rank 1) (id=400574) [Spell Family (3)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=3, col=4, max_rank=1, req_points=0]
 Class            : Mage
 School           : Arcane
@@ -5510,7 +5363,7 @@ Description      : Blasts the target with energy, dealing $s1 Arcane damage. Eac
 
 Name             : Missile Barrage (id=400588) [Spell Family (3), Passive] 
 Talent Entry     : Generic [tree=class, row=2, col=4, max_rank=2, req_points=0]
-                 : Effect#1 [op=set, values=(25, 50)]
+                 : Effect#1 [op=set, values=(20, 40)]
 Class            : Mage
 School           : Physical
 Spell Type       : None
@@ -5525,7 +5378,7 @@ Effects          :
                    Base Value: 40 | Scaled Value: 40 | Trigger Spell: 400589 | Target: Self (1)
 #2 (id=1237675)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Trigger Spell: 400589 | Target: Self (1)
-Description      : Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.
+Description      : Gives your Arcane Blast spell a $m1% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a ${$m1/2}% chance to reduce the channeled duration of your next Arcane Missiles spell by $400589s1%, reduce the Mana cost by $400589s3%, and missiles fire every ${$m2/10}.1 sec.
 
 Name             : Missile Barrage (id=400589) [Spell Family (3)] 
 Class            : Mage
@@ -5813,7 +5666,6 @@ Description      : Non-periodic critical strikes with Fireball, Frostfire Bolt, 
 Tooltip          : Your next Pyroblast spell has its cast time reduced by $s1%.
 
 Name             : Ice Lance (desc=Rank 2) (id=400640) [Spell Family (3)] 
-Hotfixed         : Cooldown (0 -> 8000), Category Cooldown (0 -> 8000), Category (0 -> 19), Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -5835,7 +5687,6 @@ Effects          :
                    Base Value: 36 | Scaled Value: 37.6 (delta=0.166667) | Points Per Level: 0.4 | Target: Targeted Enemy (6)
 #2 (id=1203129)  : Dummy (3)
                    Base Value: 300 | Scaled Value: 300
-Hotfixed         : Base Value (200 -> 300)
 #3 (id=1203130)  : Dummy (3)
                    Base Value: 20 | Scaled Value: 20
 #4 (id=1203131)  : Dummy (3)
@@ -5985,7 +5836,6 @@ Effects          :
 Description      : Your current target with your Temporal Beacon instantly heals all damage taken over the last $s1 seconds. Ineffective on targets that did not have a Temporal Beacon $s1 seconds ago.
 
 Name             : Frostfire Bolt (desc=Rank 1) (id=401502) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frostfire
 Spell Type       : Magic
@@ -9369,7 +9219,7 @@ Description      : Your Earthbind Totem Immobilizes nearby targets for $1238289d
 
 Name             : Rend and Tear (id=1223246) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=6, col=5, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
+                 : Effect#1 [op=set, values=(3, 6, 9, 12, 15)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -9382,7 +9232,6 @@ Effects          :
 Description      : Increases damage done by your melee abilities on Bleeding targets by $m1%.
 
 Name             : Frostfire Bolt (desc=Rank 2) (id=1237312) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frostfire
 Spell Type       : Magic
@@ -9410,7 +9259,6 @@ Description      : Launches a bolt of frostfire at the enemy, causing $s2 Frostf
 Tooltip          : Movement slowed by $w1%. $w3 Frostfire damage every $t3 sec.
 
 Name             : Frostfire Bolt (desc=Rank 3) (id=1237313) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frostfire
 Spell Type       : Magic
@@ -9438,7 +9286,6 @@ Description      : Launches a bolt of frostfire at the enemy, causing $s2 Frostf
 Tooltip          : Movement slowed by $w1%. $w3 Frostfire damage every $t3 sec.
 
 Name             : Arcane Blast (desc=Rank 2) (id=1239696) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -9457,7 +9304,6 @@ Effects          :
 Description      : Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 Name             : Arcane Blast (desc=Rank 3) (id=1239697) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -9476,7 +9322,6 @@ Effects          :
 Description      : Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 Name             : Arcane Blast (desc=Rank 4) (id=1239699) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -9495,7 +9340,6 @@ Effects          :
 Description      : Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 Name             : Arcane Blast (desc=Rank 5) (id=1239700) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -9514,7 +9358,6 @@ Effects          :
 Description      : Blasts the target with energy, dealing $s1 Arcane damage. Each time you cast Arcane Blast, you gain $400573s1% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by $400573s2%. Effect stacks up to $400573u times and lasts $400573d from time of initial application.
 
 Name             : Ice Lance (desc=Rank 3) (id=1240044) [Spell Family (3)] 
-Hotfixed         : Cooldown (0 -> 8000), Category Cooldown (0 -> 8000), Category (0 -> 19), Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -9536,7 +9379,6 @@ Effects          :
                    Base Value: 45 | Scaled Value: 48 (delta=0.166667) | Points Per Level: 0.5 | Target: Targeted Enemy (6)
 #2 (id=1238140)  : Dummy (3)
                    Base Value: 300 | Scaled Value: 300
-Hotfixed         : Base Value (200 -> 300)
 #3 (id=1238141)  : Dummy (3)
                    Base Value: 20 | Scaled Value: 20
 #4 (id=1238142)  : Dummy (3)
@@ -9544,7 +9386,6 @@ Hotfixed         : Base Value (200 -> 300)
 Description      : Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 Name             : Ice Lance (desc=Rank 4) (id=1240045) [Spell Family (3)] 
-Hotfixed         : Cooldown (0 -> 8000), Category Cooldown (0 -> 8000), Category (0 -> 19), Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -9566,7 +9407,6 @@ Effects          :
                    Base Value: 79 | Scaled Value: 83.2 (delta=0.166667) | Points Per Level: 0.7 | Target: Targeted Enemy (6)
 #2 (id=1238144)  : Dummy (3)
                    Base Value: 300 | Scaled Value: 300
-Hotfixed         : Base Value (200 -> 300)
 #3 (id=1238145)  : Dummy (3)
                    Base Value: 20 | Scaled Value: 20
 #4 (id=1238146)  : Dummy (3)
@@ -9574,7 +9414,6 @@ Hotfixed         : Base Value (200 -> 300)
 Description      : Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 Name             : Ice Lance (desc=Rank 5) (id=1240046) [Spell Family (3)] 
-Hotfixed         : Cooldown (0 -> 8000), Category Cooldown (0 -> 8000), Category (0 -> 19), Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -9596,7 +9435,6 @@ Effects          :
                    Base Value: 98 | Scaled Value: 103.6 (delta=0.166667) | Points Per Level: 0.7 | Target: Targeted Enemy (6)
 #2 (id=1238148)  : Dummy (3)
                    Base Value: 300 | Scaled Value: 300
-Hotfixed         : Base Value (200 -> 300)
 #3 (id=1238149)  : Dummy (3)
                    Base Value: 20 | Scaled Value: 20
 #4 (id=1238150)  : Dummy (3)
@@ -9604,7 +9442,6 @@ Hotfixed         : Base Value (200 -> 300)
 Description      : Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 Name             : Ice Lance (desc=Rank 6) (id=1240047) [Spell Family (3)] 
-Hotfixed         : Cooldown (0 -> 8000), Category Cooldown (0 -> 8000), Category (0 -> 19), Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -9626,7 +9463,6 @@ Effects          :
                    Base Value: 145 | Scaled Value: 148.6 (delta=0.166667) | Points Per Level: 0.9 | Target: Targeted Enemy (6)
 #2 (id=1238152)  : Dummy (3)
                    Base Value: 300 | Scaled Value: 300
-Hotfixed         : Base Value (200 -> 300)
 #3 (id=1238153)  : Dummy (3)
                    Base Value: 20 | Scaled Value: 20
 #4 (id=1238154)  : Dummy (3)
@@ -9819,6 +9655,38 @@ Effects          :
                    Base Value: 83 | Scaled Value: 83 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
 
+Name             : Hydra Strike (id=1292739) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1313007)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1313008)  : School Damage (2): frost
+                   Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+Tooltip          : Movement slowed by $s1%.
+
+Name             : Fireball (id=1299850) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 55
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1324239)  : School Damage (2): fire
+                   Base Value: 80 | Scaled Value: 80 | Target: Targeted Enemy (6)
+#2 (id=1324240)  : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
+
 Name             : Frozen (id=1306620) 
 School           : Frost
 Spell Type       : Magic
@@ -9851,7 +9719,6 @@ Effects          :
 Description      : Launches an Arcane Missile at the enemy, causing $s1 Arcane damage.
 
 Name             : Ice Lance (desc=Rank 1) (id=1312002) [Spell Family (3)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=3, col=11, max_rank=1, req_points=0]
 Class            : Mage
 School           : Frost
@@ -9874,7 +9741,6 @@ Effects          :
                    Base Value: 28 | Scaled Value: 30.1 (delta=0.166667) | Points Per Level: 0.35 | Target: Targeted Enemy (6)
 #2 (id=1342606)  : Dummy (3)
                    Base Value: 300 | Scaled Value: 300
-Hotfixed         : Base Value (200 -> 300)
 #3 (id=1342607)  : Dummy (3)
                    Base Value: 20 | Scaled Value: 20
 #4 (id=1342608)  : Dummy (3)
@@ -9882,7 +9748,6 @@ Hotfixed         : Base Value (200 -> 300)
 Description      : Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.
 
 Name             : Arcane Wrath (desc=Rank 1) (id=1326079) [Spell Family (3)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=4, max_rank=1, req_points=0]
 Class            : Mage
 School           : Arcane
@@ -9907,7 +9772,6 @@ Effects          :
 Description      : Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.
 
 Name             : Arcane Wrath (desc=Rank 2) (id=1326080) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -9931,7 +9795,6 @@ Effects          :
 Description      : Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.
 
 Name             : Arcane Wrath (desc=Rank 3) (id=1326081) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -9955,7 +9818,6 @@ Effects          :
 Description      : Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.
 
 Name             : Arcane Wrath (desc=Rank 4) (id=1326082) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Arcane
 Spell Type       : Magic
@@ -9991,17 +9853,14 @@ Effects          :
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
                    Affected Spells: Blizzard (10), Frostbolt (116), Cone of Cold (120), Frost Nova (122), Frostbolt (205), Frostbolt (837), Frost Nova (865), Frost Nova (6131), Blizzard (6141), Frostbolt (7322), Frostbolt (8406), Frostbolt (8407), Frostbolt (8408), Blizzard (8427), Cone of Cold (8492), Cone of Cold (10159), Cone of Cold (10160), Cone of Cold (10161), Frostbolt (10179), Frostbolt (10180), Frostbolt (10181), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frost Nova (10230), Felfire (24530), Frostbolt (25304), Frostbolt (350025), Ice Lance (400640), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Ice Lance (1240044), Ice Lance (1240045), Ice Lance (1240046), Ice Lance (1240047), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980), Ice Lance (1312002)
                    Family Flags: 5, 6, 7, 9, 17, 44
-Hotfixed         : Base Value (3 -> 15)
 #2 (id=1365008)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
                    Affected Spells: Blizzard (10), Blizzard (6141), Blizzard (8427), Blizzard (10185), Blizzard (10186), Blizzard (10187), Frostfire Bolt (401502), Frostfire Bolt (1237312), Frostfire Bolt (1237313), Blizzard (1279949), Blizzard (1279976), Blizzard (1279977), Blizzard (1279978), Blizzard (1279979), Blizzard (1279980)
                    Family Flags: 7, 44
-Hotfixed         : Base Value (3 -> 15)
 Description      : Increases the damage done by your Frost spells by $s1%.
 Tooltip          : Increases the damage done by your Frost spells by $w1%.
 
 Name             : Predatory Discipline (id=1328613) [Spell Family (3), Passive, Hidden] 
-Hotfixed         : NEW SPELL
 Talent Entry     : Generic [tree=class, row=4, col=7, max_rank=1, req_points=0]
 Class            : Druid
 School           : Physical
@@ -10012,6 +9871,5 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1367715)  : Apply Aura (6) | Dummy (4)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Your Ferocious Bite ability no longer converts extra Energy into damage, but still deals extra damage based on your excess Energy.
 
