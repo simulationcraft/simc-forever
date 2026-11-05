@@ -3349,6 +3349,19 @@ Effects          :
 #1 (id=684690)   : School Damage (2): fire
                    Base Value: 11 | Scaled Value: 11 (delta=0.363636) | Radius: 3 yards | Target: at Enemy in Area (16)
 
+Name             : Form of the Moonstalker (id=6298) 
+School           : Arcane
+Spell Type       : None
+Range            : 20 yards
+Duration         : 300 seconds
+Attributes       : Not Shapeshifted (16), Cancels Auto Attack Combat (20), Not In Combat (Only Peaceful) (28), Only Peaceful Targets (40), Unknown (493)
+Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
+Effects          :
+#2 (id=685014)   : Apply Aura (6) | Invisibility (18)
+                   Base Value: 200 | Scaled Value: 200 | Target: Self (1)
+Description      : Transform into a Moonstalker and become invisible for $d.
+Tooltip          : Invisibility.
+
 Name             : Divining Scroll Spell (id=6310) 
 School           : Physical
 Spell Type       : None
@@ -13729,6 +13742,18 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Gameobject (23)
 Description      : Use on the Secret Safe.
 
+Name             : Wound (id=14126) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 40
+Range            : 5 yards
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=691945)   : School Damage (2): physical
+                   Base Value: 130 | Scaled Value: 130 | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 damage.
+
 Name             : Item - Purify (id=14134) 
 School           : Holy
 Spell Type       : Magic
@@ -23463,6 +23488,17 @@ Effects          :
 #1 (id=694895)   : School Damage (2): nature
                    Base Value: 91 | Scaled Value: 91 (delta=0.314815) | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Nature damage.
+
+Name             : Frost Blast (id=18092) 
+School           : Frost
+Spell Type       : Magic
+Resource         : 80 Base Mana (0) (id=182957)
+Range            : 30 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=695258)   : School Damage (2): frost
+                   Base Value: 50 | Scaled Value: 50 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Frost damage.
 
 Name             : Firebolt (id=18112) 
 School           : Fire
@@ -62359,6 +62395,30 @@ Effects          :
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
 Description      : Wounds the target for $s1 Physical damage.
 
+Name             : Sear (id=1291568) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Internal Cooldown: 0.01 seconds
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1311016)  : Apply Aura (6) | Proc Trigger Spell (42): Sear
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1291570 | Target: Self (1)
+Description      : Harmful spell casts sear the target for $1291570s1 Fire damage.
+
+Name             : Sear (id=1291570) 
+School           : Fire
+Spell Type       : Magic
+Range            : 100 yards
+Triggered By     : Sear (1291568)
+Attributes       : Can't Crit (93), Suppress Caster Procs (112), Suppress Target Procs (113), Do Not Display Range (126), Suppress Weapon Procs (151), Missile Speed is Delay (in sec) (292), Do Not Display Power Cost (303), Do Not Display Cast Time (441), Unknown (493)
+Effects          :
+#1 (id=1311019)  : School Damage (2): fire
+                   Base Value: 7 | Scaled Value: 7 | Target: Targeted Enemy (6)
+Description      : Damaging spell casts sear the target for $1291570s1 Fire damage.
+
 Name             : Bag of Ashen Warlock Bones (id=1292052) 
 School           : Physical
 Spell Type       : None
@@ -67683,6 +67743,19 @@ Effects          :
 Description      : Inflicts $443265o1 Fire damage over $443265d to target Demon or Beast and Roots them in place for $d. Damage caused may interrupt the effect.
 Tooltip          : Rooted.
 
+Name             : Shadow Bolt (id=1312438) 
+School           : Shadow
+Spell Type       : Magic
+Resource         : 40 Base Mana (0) (id=314621)
+Spell Level      : 30
+Range            : 30 yards
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1343353)  : School Damage (2): shadow
+                   Base Value: 100 | Scaled Value: 100 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.
+
 Name             : Crumbling Hearthstone (id=1312670) 
 School           : Physical
 Spell Type       : None
@@ -67778,6 +67851,19 @@ Effects          :
 #1 (id=1344653)  : Create Item (24)
                    Base Value: 3 | Scaled Value: 3 | Target: Self (1)
 Description      : Melt the key at a forge for $s1 Bronze Bars.
+
+Name             : Summon Condor Hatchling (id=1314120) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Cooldown         : 1.5 seconds
+Category         : 133 (Type 0x0)
+Category Cooldown: 1.5 seconds
+Attributes       : Is Ability (4), Do Not Log (8), Do Not Sheath (18), Suppress Caster Procs (112), Suppress Target Procs (113), Ignore Caster Modifiers (125), Unknown (493)
+Effects          :
+#1 (id=1345839)  : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 273956 | Misc Value 2: 41 | Target: Summoner in Area (32)
+Description      : Right Click to summon and dismiss your condor hatchling.
 
 Name             : Ancestor's Vengeance (id=1314143) [Passive, Hidden] 
 School           : Physical
