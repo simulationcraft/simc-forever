@@ -152344,6 +152344,36 @@ Hotfixed         : NEW EFFECT
 Description      : Increases Stamina of nearby allies by $s1% for $d.
 Tooltip          : Stamina increased by $s1%.
 
+Name             : Call Anathema (id=1327991) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366762)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Anathema.
+
+Name             : Call Benediction (id=1327993) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366764)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Benediction.
+
 Name             : Elixir of Endless Mana (id=1328032) 
 Hotfixed         : NEW SPELL
 School           : Physical
