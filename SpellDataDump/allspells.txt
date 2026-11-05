@@ -149939,6 +149939,17 @@ Effects          :
                    Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
 Description      : Ignite the target in the flames of the Great Forge, dealing $s1 Holyfire damage. Deals $s2 times as much damage to Fire Elementals and Earth Elementals.
 
+Name             : Firebolt (id=1322295) 
+School           : Fire
+Spell Type       : Magic
+Range            : 100 yards
+Velocity         : 19 yards/sec
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1357998)  : School Damage (2): fire
+                   Base Value: 42 | Scaled Value: 42 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Rule of Rage (DND) (id=1322574) [Spell Family (4), Passive, Hidden] 
 Class            : Warrior
 Race             : Human, Orc, Dwarf, Night Elf, Undead, Tauren, Gnome, Troll, Goblin, Blood Elf, Draenei, Dark Iron Dwarf, Vulpera, Mag'har Orc, Mechagnome, Dracthyr, Earthen, Haranir, Worgen, Pandaren, Nightborne, Highmountain Tauren, Void Elf, Lightforged Draenei, Zandalari Troll, Kul Tiran (0xffffffffffffffff)

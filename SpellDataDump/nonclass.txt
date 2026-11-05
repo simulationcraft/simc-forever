@@ -68856,6 +68856,17 @@ Effects          :
                    Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
 Description      : Ignite the target in the flames of the Great Forge, dealing $s1 Holyfire damage. Deals $s2 times as much damage to Fire Elementals and Earth Elementals.
 
+Name             : Firebolt (id=1322295) 
+School           : Fire
+Spell Type       : Magic
+Range            : 100 yards
+Velocity         : 19 yards/sec
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1357998)  : School Damage (2): fire
+                   Base Value: 42 | Scaled Value: 42 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Yay (id=1322587) 
 School           : Physical
 Spell Type       : None
