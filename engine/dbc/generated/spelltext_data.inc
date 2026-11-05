@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8337> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8339> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -485,8 +485,8 @@ static constexpr std::array<spelltext_data_t, 8337> __spelltext_data { {
   {    5020, "A powerful brew that increases your strength by $s1 and decreases your intellect by $s2 for $d.", 0, 0 },
   {    5021, "Increases your health by $s1, but decreases your spirit by $s2 for $d.", 0, 0 },
   {    5024, "Increase your run speed by $s1% for $d, but deals $s2 damage and drains $s3 mana every 2 seconds.", "Increased run speed but periodic health and mana loss.", 0 },
-  {    5041, "Stamina increased by $s1.", 0, "Rank 9" },
-  {    5042, "Stamina increased by $s1.", 0, "Rank 10" },
+  {    5041, "Health increased by $s1.", 0, "Rank 9" },
+  {    5042, "Health increased by $s1.", 0, "Rank 10" },
   {    5099, "Place upon the Altar of Fire", 0, 0 },
   {    5100, "Inflicts $s1 Nature damage in a 10 yard radius.", 0, 0 },
   {    5102, "Decreases the physical damage you take by $s1.", 0, "Rank 1" },
@@ -7872,6 +7872,8 @@ static constexpr std::array<spelltext_data_t, 8337> __spelltext_data { {
   { 1299448, 0, "Melee attack speed increased by $s1%.", 0 },
   { 1299796, "Increases your Spirit by $s1%.", "Spirit increased by $w1%.", 0 },
   { 1299850, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
+  { 1300128, "Melee attacks deal $1300130s1 additional Fire damage against Frozen targets.", 0, 0 },
+  { 1300130, "Deal $s2 Fire damage.", "Deals $s2 Fire damage.", 0 },
   { 1300739, "Turn the gizmo on and send the signal to Jurgens.", 0, 0 },
   { 1300744, "Reclaim the lost soul of the death knight's charger, transforming it into a spirit of retribution.", 0, 0 },
   { 1300752, "Increases armor by $s1 for $d.", "Armor increased by $s1.", 0 },
@@ -8340,7 +8342,9 @@ static constexpr std::array<spelltext_data_t, 8337> __spelltext_data { {
 } };
 
 // spelltext hotfix entries, wow build 1.60.1.70790
-static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __spelltext_hotfix_data { {
+static constexpr std::array<hotfix::client_hotfix_entry_t, 2> __spelltext_hotfix_data { {
+  {    5041,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {    5042,  0, "Stamina increased by $s1.", "Health increased by $s1." },
 } };
 
 // Spell description variables, wow build 1.60.1.70790
