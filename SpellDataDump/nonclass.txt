@@ -6820,6 +6820,18 @@ Effects          :
 #1 (id=687326)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Uther's Light (id=8397) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 35
+Proc Chance      : 4%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=686670)   : Apply Aura (6) | Proc Trigger Spell (42): Uther's Light Effect
+                   Base Value: 2 | Scaled Value: 2 | Trigger Spell: 10368 | Target: Self (1)
+Description      : $s1% chance when struck in melee to gain a holy shield, absorbing $10368s1 damage for $10368d. This chance is doubled in Wasteland and Haunted areas.
+
 Name             : Opening Strongbox (id=8517) 
 School           : Physical
 Spell Type       : None
@@ -6912,6 +6924,21 @@ Effects          :
 #3 (id=688430)   : Activate Object (86)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Target: Nearby Gameobject (40)
 Description      : Call forth a felhunter using the summoning circle.
+
+Name             : Conjure Food (desc=Rank 1) (id=8736) 
+School           : Nature
+Spell Type       : Magic
+Resource         : 60 Base Mana (0) (id=176394)
+Spell Level      : 15
+Cast Time        : 3 seconds
+GCD              : 1.5 seconds
+Category         : 31 (Type 0x0)
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=687273)   : Create Item (24)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Description      : Conjures food to eat.
 
 Name             : Hands of Darkness (id=8780) 
 School           : Physical
@@ -9253,6 +9280,20 @@ Effects          :
 #1 (id=688219)   : Enchant Item (53)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 8487
 Description      : Permanently increase the Stamina value by $ec2 and armor value by $ec1 of an item worn on the chest, legs, hands or feet. Only usable on items level $ecim and above.
+
+Name             : Uther's Light Effect (id=10368) 
+School           : Holy
+Spell Type       : Magic
+Spell Level      : 30 (max 35)
+Duration         : 15 seconds
+Triggered By     : Uther's Light (8397)
+Attributes       : Do Not Sheath (18), Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=688280)   : Apply Aura (6) | Absorb Damage (69)
+                   Base Value: 216 | Scaled Value: 216 | Misc Value: 0x7f | Target: Self (1)
+                   Affected School(s): All
+Description      : Instantly shields the target, absorbing $s1 damage.  Lasts $d.
+Tooltip          : Absorbs $w1 damage.
 
 Name             : Scooby Snack Effect (id=10369) 
 School           : Physical
@@ -12301,6 +12342,19 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Gameobject (23)
 Description      : Opens a Black Vault Relic Coffer Door.
 
+Name             : Lightning Bolt (desc=Rank 1) (id=13482) 
+School           : Nature
+Spell Type       : Magic
+Resource         : 20 Base Mana (0) (id=178987)
+Spell Level      : 30
+Range            : 30 yards
+Cast Time        : 1.6 seconds
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=690422)   : School Damage (2): nature
+                   Base Value: 15 | Scaled Value: 15 (delta=0.666667) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
+
 Name             : Plant Gor'tesh Head (id=13484) 
 School           : Physical
 Spell Type       : None
@@ -12397,6 +12451,20 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=690396)   : Apply Aura (6) | Resistance (22)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 32 | Target: Self (1)
+
+Name             : Curse of Stalvan (id=13524) 
+School           : Shadow
+Spell Type       : None
+Spell Level      : 25
+Range            : 30 yards
+Cast Time        : 1 seconds
+Duration         : 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=690151)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: -40 | Scaled Value: -40 | Target: Targeted Enemy (6)
+Description      : Lowers the Attack Power of the target by $s1 for $d.
+Tooltip          : Attack Power lowered by $s1.
 
 Name             : Enchant 2H Weapon - Lesser Impact (id=13529) 
 School           : Physical
@@ -13095,6 +13163,22 @@ Effects          :
 #1 (id=691202)   : Create Item (24)
                    Base Value: 3 | Scaled Value: 3 | Target: Self (1)
 Description      : Turn a greater nether essence into three lesser ones.
+
+Name             : Blazing Emblem (id=13744) 
+School           : Fire
+Spell Type       : None
+Spell Level      : 40
+Duration         : 15 seconds
+Attributes       : Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=691140)   : Apply Aura (6) | Absorb Damage (69)
+                   Base Value: 465 | Scaled Value: 465 | Misc Value: 0x4 | Target: Self (1)
+                   Affected School(s): Fire
+#2 (id=691141)   : Apply Aura (6) | Resistance (22)
+                   Base Value: 33 | Scaled Value: 33 | Misc Value: 4 | Target: Self (1)
+Description      : Increases Fire resistance by $s2 and absorbs $s1 Fire damage.  Lasts $d.
+Tooltip          : Increased Fire resistance by $s2.
+Absorbs $w1 Fire damage.
 
 Name             : Enchant Cloak - Greater Defense (id=13746) 
 School           : Physical
@@ -19861,6 +19945,20 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Nearby Target (38)
 Description      : Take a reading of the temperature at a hot spot.
 
+Name             : Poison (id=16401) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 35
+Range            : 5 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=694820)   : Apply Aura (6) | Periodic Damage (3): nature every 6 seconds
+                   Base Value: 30 | Scaled Value: 30 | Target: Targeted Enemy (6)
+Description      : Poisons target for $s1 Nature damage every $t1 sec for $d.
+Tooltip          : $s1 Nature damage inflicted every $t1 sec.
+
 Name             : Rend (id=16403) 
 School           : Physical
 Spell Type       : Melee
@@ -19875,6 +19973,18 @@ Effects          :
                    Base Value: 17 | Scaled Value: 17 | Target: Targeted Enemy (6)
 Description      : Wounds the target causing them to bleed for $o1 damage over $d.
 Tooltip          : Bleeding for $s1 damage every $t1 sec.
+
+Name             : Wound (id=16405) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 50
+Range            : 5 yards
+Proc Chance      : 101%
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=693188)   : School Damage (2): physical
+                   Base Value: 75 | Scaled Value: 75 | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 damage.
 
 Name             : Rend (id=16406) 
 School           : Physical
@@ -23532,6 +23642,20 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Trigger Spell: 18125 | Target: Self (1)
 Description      : Restores $o1 health over $d.  Must remain seated while eating. Also increases your Strength by $18125s1 for $18125d.
 Tooltip          : Restores $/5;s1 health per second.
+
+Name             : Shadow Bolt (id=18138) 
+School           : Shadow
+Spell Type       : Magic
+Resource         : 40 Base Mana (0) (id=183025)
+Spell Level      : 30
+Range            : 50000 yards
+Cast Time        : 2.2 seconds
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=695344)   : School Damage (2): shadow
+                   Base Value: 125 | Scaled Value: 125 (delta=0.24) | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
 
 Name             : Blessed Sunfruit Juice (id=18140) 
 School           : Physical
@@ -62419,6 +62543,29 @@ Effects          :
                    Base Value: 7 | Scaled Value: 7 | Target: Targeted Enemy (6)
 Description      : Damaging spell casts sear the target for $1291570s1 Fire damage.
 
+Name             : Slicing (id=1291896) 
+School           : Physical
+Spell Type       : None
+Range            : 5 yards
+Cast Time        : 5 seconds
+Attributes       : Is Ability (4), No Threat (42), Suppress Caster Procs (112), Ignore Caster & Target Restrictions (124), Not In Spellbook (143), Unknown (493)
+Effects          :
+#1 (id=1311605)  : Open Lock (33)
+                   Base Value: 0 | Scaled Value: 300 | Points Per Level: 5 | Target: Targeted Gameobject (23)
+Description      : Slice open and gather from a target Copper, Tin, Silver, or Iron Vein (does not require Mining).
+
+Name             : Staff of Westfall (id=1292011) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1311766)  : Apply Aura (6) | Increase Movement Speed% (Stacking) (129)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : Movement speed increased by $s1% in Elwynn Forest, Westfall, Redridge Mountains, and the Deadmines.
+Tooltip          : In Elwynn Forest, Westfall, Redridge Mountains, or the Deadmines, movement speed increased by $s1%.
+
 Name             : Bag of Ashen Warlock Bones (id=1292052) 
 School           : Physical
 Spell Type       : None
@@ -67346,6 +67493,18 @@ Effects          :
 #1 (id=1337753)  : Apply Aura (6) | Proc Trigger Spell (42): Arcane Missile
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1308937 | Target: Self (1)
 
+Name             : Forsaken Weapons (id=1309369) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1338328)  : Apply Aura (6) | Increase Movement Speed% (Stacking) (129)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : Increases movement speed by $s1% in Silverpine Forest and Hillsbrad Foothills.
+Tooltip          : Movement speed increased by $s1%.
+
 Name             : Night Watchman's Torch (id=1309410) 
 School           : Physical
 Spell Type       : None
@@ -67725,6 +67884,18 @@ Effects          :
 Description      : Causes the imbiber to be less detectable by creatures in Winterspring for $d. Only functions in Winterspring.
 Tooltip          : Winterspring Shroud
 
+Name             : Hissing Serum (id=1310681) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 5 seconds
+Attributes       : Ignore Line of Sight (66)
+Effects          :
+#1 (id=1340373)  : Summon Credit Creature (90)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 272513 | Target: Self (1)
+#2 (id=1340374)  : Send Event (61)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 106137
+Description      : Inject Hissing Serum into the system above Othmar's body.
+
 Name             : Infernal Lasso (id=1312052) 
 School           : Fire
 Spell Type       : Magic
@@ -67876,6 +68047,28 @@ Effects          :
 #1 (id=1345888)  : Apply Aura (6) | Proc Trigger Spell (42): Ancestor's Vengeance
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 16939 | Target: Self (1)
 Description      : $@spelldesc16939
+
+Name             : Summon Tallstrider Hatchling (id=1315267) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Cooldown         : 1.5 seconds
+Category         : 133 (Type 0x0)
+Category Cooldown: 1.5 seconds
+Attributes       : Is Ability (4), Do Not Log (8), Do Not Sheath (18), Suppress Caster Procs (112), Suppress Target Procs (113), Ignore Caster Modifiers (125), Unknown (493)
+Effects          :
+#1 (id=1347461)  : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 274334 | Misc Value 2: 41 | Target: Summoner in Area (32)
+Description      : Right Click to summon and dismiss your Tallstrider Hatchling.
+
+Name             : Moon's Touch (id=1315339) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1347587)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Description      : Increases intellect by $s1 at night.
 
 Name             : Rune of Perfection (id=1315969) [Passive] 
 School           : Physical
@@ -69059,6 +69252,36 @@ Effects          :
 #1 (id=1357998)  : School Damage (2): fire
                    Base Value: 42 | Scaled Value: 42 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Fire damage.
+
+Name             : Corpse Chopper (id=1322303) 
+School           : Physical
+Spell Type       : None
+GCD              : 1.5 seconds
+Cooldown         : 420 seconds
+Category         : 2594 (Type 0x0)
+Category Cooldown: 420 seconds
+Attributes       : Is Ability (4), Do Not Sheath (18), No AutoCast (AI) (49), Allow Dead Target (64), Unknown (493)
+Effects          :
+#1 (id=1358011)  : Dummy (3)
+                   Base Value: 0 | Scaled Value: 0 | Radius: 5 yards | Target: Source (22) -> Enemy in Area (15)
+Description      : Chop nearby Humanoid or Undead corpse in two, restoring $1322305s1 Health, $1322305s2 Mana, and ${$1322305s3/10} Rage.
+
+Name             : Corpse Chopper (id=1322305) 
+School           : Shadow
+Spell Type       : None
+Cast Time        : 5 seconds
+Cooldown         : 420 seconds
+Category         : 2594 (Type 0x0)
+Category Cooldown: 420 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1358014)  : Direct Heal (10)
+                   Base Value: 150 | Scaled Value: 150 | Target: Self (1)
+#2 (id=1358015)  : Energize Power (30)
+                   Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
+#3 (id=1358016)  : Energize Power (30)
+                   Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Resource: rage | Target: Self (1)
+Description      : Restore $s1 Health, $s2 Mana, and ${$s3/10} Rage.
 
 Name             : Yay (id=1322587) 
 School           : Physical
