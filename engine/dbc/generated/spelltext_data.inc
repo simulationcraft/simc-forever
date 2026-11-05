@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8332> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8337> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -1012,6 +1012,7 @@ static constexpr std::array<spelltext_data_t, 8332> __spelltext_data { {
   {    8288, "Drains the soul of the target, causing $o2 Shadow damage over $d. Non-trivial targets damaged by Drain Soul have a chance to grant you a Soul Shard. Non-trivial targets killed by Drain Soul will always grant you a Soul shard. Soul Shards are required for other spells.", "$s2 Shadow damage every $t2 seconds.", "Rank 2" },
   {    8289, "Drains the soul of the target, causing $o2 Shadow damage over $d. Non-trivial targets damaged by Drain Soul have a chance to grant you a Soul Shard. Non-trivial targets killed by Drain Soul will always grant you a Soul shard. Soul Shards are required for other spells.", "$s2 Shadow damage every $t2 seconds.", "Rank 3" },
   {    8312, "Renders a target unable to move for $d.", "Rooted.", 0 },
+  {    8313, "Poisons target for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
   {    8316, "Surrounds the target in a shield of fire.  Every strike against the target causes $s1 Fire damage to the attacker.  Lasts $d.  Your pet cannot cast Fire Shield on itself.", "Does $w1 Fire damage to attacker when struck.", "Rank 2" },
   {    8317, "Surrounds the target in a shield of fire.  Every strike against the target causes $s1 Fire damage to the attacker.  Lasts $d.  Your pet cannot cast Fire Shield on itself.", "Does $w1 Fire damage to attacker when struck.", "Rank 3" },
   {    8331, "The dynamite for Non-Engineers that nearly always gets to the target! Inflicts $s1 Fire damage in a 5 yard radius.", 0, 0 },
@@ -1886,6 +1887,7 @@ static constexpr std::array<spelltext_data_t, 8332> __spelltext_data { {
   {   12562, "Inflicts $s1 Fire damage and stuns targets for $d in a 10 yard radius. Any damage will break the effect.", "Stunned. Any damage will break the effect.", 0 },
   {   12579, 0, "Taking $s1% increased damage and $s2% increased spell power coefficient from the caster's next Cone of Cold spell.", 0 },
   {   12606, "Increases the effect of your Amplify Magic and Dampen Magic spells by $s1%.", 0, "Rank 2" },
+  {   12685, "Reduces threat level on all enemies by a small amount for $d.", "Reduced threat level.", 0 },
   {   12686, "Increases Attack Power by $s1 and melee attack speed by $s2% for $d.", "Increased Attack Power by $s1 and melee attack speed by $s2%.", 0 },
   {   12695, 0, 0, "Rank 1" },
   {   12696, 0, 0, "Rank 2" },
@@ -2874,6 +2876,7 @@ static constexpr std::array<spelltext_data_t, 8332> __spelltext_data { {
   {   16405, "Wounds the target for $s1 damage.", 0, 0 },
   {   16406, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   16407, "Blasts a target for $s1 Frost damage.", 0, 0 },
+  {   16408, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   {   16409, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   {   16447, "At Urok's Tribute Pile, combine Omokk's Head with the Roughshod Pike.", 0, 0 },
   {   16450, "Right Click to summon and dismiss your Smolderweb hatchling.", 0, 0 },
@@ -7755,6 +7758,7 @@ static constexpr std::array<spelltext_data_t, 8332> __spelltext_data { {
   { 1292150, "Reduces damage from falling.", 0, 0 },
   { 1292152, "Blasts a target for $s1 Fire damage.", 0, 0 },
   { 1292155, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
+  { 1292158, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   { 1292160, "When struck in combat inflicts $s1 Shadow damage to the attacker.", 0, 0 },
   { 1292222, "Reduces the hit chance of Silence effects against you by $s1%.", 0, 0 },
   { 1292252, "Stuns target Worgen for $d.", "Stunned.", 0 },
@@ -7781,6 +7785,7 @@ static constexpr std::array<spelltext_data_t, 8332> __spelltext_data { {
   { 1292692, "Spell Damage received is reduced by $s1.", 0, 0 },
   { 1292738, 0, "Blasts a target for $s1 Fire damage.", 0 },
   { 1292739, 0, "Movement slowed by $s1%.", 0 },
+  { 1292765, "When damaged, has a chance to reduce threat level on all enemies by a small amount for $12685d.", "When damaged, has a chance to reduce threat level on all enemies by a small amount for $12685d.", 0 },
   { 1292804, "Allow a wisp to rejoin its ancestral roots.", "Returning.", 0 },
   { 1293085, "Restore $s1 charges to a Manual Crowd Pummeler device in your possession.", 0, 0 },
   { 1293241, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 1" },
