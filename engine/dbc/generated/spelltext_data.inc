@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8235> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8236> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8128,6 +8128,7 @@ static constexpr std::array<spelltext_data_t, 8235> __spelltext_data { {
   { 1320922, "$@spelldesc1247451", 0, 0 },
   { 1321320, "$@spelldesc1321323", 0, 0 },
   { 1322218, "Ignite the target in the flames of the Great Forge, dealing $s1 Holyfire damage. Deals $s2 times as much damage to Fire Elementals and Earth Elementals.", 0, 0 },
+  { 1322295, "Blasts a target for $s1 Fire damage.", 0, 0 },
   { 1322587, "Cheesecake makes you happy.", "Yay cheesecake!", 0 },
   { 1322605, "Instantly convert $c Mana into $s2 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.", 0, 0 },
   { 1323075, "Serves Kyle his lunch!", 0, 0 },
