@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8271> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8273> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -1800,6 +1800,7 @@ static constexpr std::array<spelltext_data_t, 8271> __spelltext_data { {
   {   11785, "Soothes the target, increasing the chance that it will attack something else.  More effective than Soothing Kiss (Rank 3).", 0, "Rank 4" },
   {   11789, "Underwater Breath lasts $s1% longer than normal.", "Waterbreathing.", 0 },
   {   11840, "Summons Edana Hatetalon.", 0, 0 },
+  {   11879, "Disarm target's weapon for $d.", "Disarmed.", 0 },
   {   11885, "Shrink and Capture a Fallen Treant.", 0, 0 },
   {   11886, "Shrink and Capture a Fallen Wildkin.", 0, 0 },
   {   11887, "Shrink and Capture a Fallen Hippogryph.", 0, 0 },
@@ -7721,6 +7722,7 @@ static constexpr std::array<spelltext_data_t, 8271> __spelltext_data { {
   { 1291568, "Harmful spell casts sear the target for $1291570s1 Fire damage.", 0, 0 },
   { 1291570, "Damaging spell casts sear the target for $1291570s1 Fire damage.", 0, 0 },
   { 1291896, "Slice open and gather from a target Copper, Tin, Silver, or Iron Vein (does not require Mining).", 0, 0 },
+  { 1291915, "Reduces the crafting time of Smelt Copper, Smelt Tin, Smelt Bronze, and Smelt Silver by $s1%.", 0, 0 },
   { 1292011, "Movement speed increased by $s1% in Elwynn Forest, Westfall, Redridge Mountains, and the Deadmines.", "In Elwynn Forest, Westfall, Redridge Mountains, or the Deadmines, movement speed increased by $s1%.", 0 },
   { 1292052, "Throw the bloodied bones of the Ashen Reign leaders into the slime altar.", 0, 0 },
   { 1292139, "Throw the pinecones at the workstation altars to let nature retake what has been lost.", 0, 0 },
