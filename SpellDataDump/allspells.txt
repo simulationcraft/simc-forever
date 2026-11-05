@@ -35907,6 +35907,20 @@ Effects          :
 Description      : Underwater Breath lasts $s1% longer than normal.
 Tooltip          : Waterbreathing.
 
+Name             : Poison Cloud (id=11790) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 30
+Max Targets      : 3
+Duration         : 12 seconds
+Proc Chance      : 101%
+Attributes       : No Redirection (35), No Reflection (39), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=690492)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
+                   Base Value: 14 | Scaled Value: 14 | Radius: 0 - 8 yards | Target: Source (22) -> Enemy in Area (15)
+Description      : Deals $s1 Nature damage every $t1 sec to any enemy in an $a1 yard radius around the caster for $d.
+Tooltip          : Deals $s1 Nature damage every $t1 sec.
+
 Name             : Opening Cage (id=11792) 
 School           : Physical
 Spell Type       : None
@@ -59244,6 +59258,18 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=693032)   : School Damage (2): shadow
                    Base Value: 150 | Scaled Value: 150 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
+
+Name             : Shadow Bolt (id=18217) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=694862)   : School Damage (2): shadow
+                   Base Value: 98 | Scaled Value: 98 (delta=0.5) | Value Multiplier: 1 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
 
 Name             : Grim Reach (id=18218) [Spell Family (5), Passive, Hidden] 
@@ -142052,6 +142078,18 @@ Effects          :
                    Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
 Description      : Spell Damage received is reduced by $s1.
 
+Name             : Mana Drain (id=1292706) [Passive] 
+School           : Physical
+Spell Type       : None
+Internal Cooldown: 0.1 seconds
+Proc Chance      : 100%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1312957)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : When struck in combat, drain $s1 mana from the attacker.
+
 Name             : Hydra Strike (id=1292738) 
 School           : Fire
 Spell Type       : Magic
@@ -142077,6 +142115,31 @@ Effects          :
 #2 (id=1313008)  : School Damage (2): frost
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
 Tooltip          : Movement slowed by $s1%.
+
+Name             : Martyrdom (id=1292746) 
+School           : Holy
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 15 yards
+Triggered By     : Martyrdom (1292749)
+Attributes       : Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), No Redirection (35), Allow While Stealthed (37), No Reflection (39), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Can't Crit (93), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1313019)  : School Damage (2): holy
+                   Base Value: 420 | Scaled Value: 420 | Radius: 0 - 15 yards | Target: Source (22) -> Enemy in Area (15)
+Description      : Dying inflicts $s1 Holy damage to all enemies within $r1 yds.
+
+Name             : Martyrdom (id=1292749) 
+School           : Holy
+Spell Type       : Magic
+Duration         : Aura (infinite)
+Proc Chance      : 100%
+Proc Flags       : Death
+Attributes       : Aura Is Debuff (26), No Immunities (29), No Redirection (35), No Reflection (39), Active Passive (393), Unknown (493)
+Effects          :
+#1 (id=1313025)  : Apply Aura (6) | Proc Trigger Spell (42): Martyrdom
+                   Base Value: 100 | Scaled Value: 100 | Trigger Spell: 1292746 | Target: Self (1)
+Description      : Dying inflicts $1292746s1 Holy damage to all enemies within $1292746r yds.
+Tooltip          : Dying inflicts $1292746s1 Holy damage to all enemies within $1292746r yds.
 
 Name             : Fade (id=1292765) [Passive] 
 School           : Physical
@@ -142104,6 +142167,29 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1293689 | Target: Nearby Target (38)
 Description      : Allow a wisp to rejoin its ancestral roots.
 Tooltip          : Returning.
+
+Name             : Lightning Bolt (id=1292879) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Triggered By     : Electrostatic Charge (1292880)
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1313226)  : School Damage (2): nature
+                   Base Value: 93 | Scaled Value: 93 (delta=0.6) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
+
+Name             : Electrostatic Charge (id=1292880) [Passive, Hidden] 
+School           : Nature
+Spell Type       : None
+Proc Chance      : 5%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1313227)  : Apply Aura (6) | Proc Trigger Spell (42): Lightning Bolt
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1292879 | Target: Self (1)
+Description      : When struck in combat has a $h% chance of inflicting $1292879s1 Nature damage to the attacker.
 
 Name             : Grovekeeper Trousers (id=1292920) 
 School           : Physical
@@ -142717,6 +142803,20 @@ Effects          :
 #1 (id=1313356)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Archmagister's Wisdom (id=1292997) 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 40
+Cast Time        : 2 seconds
+Duration         : 300 seconds
+Cooldown         : 21600 seconds
+Attributes       : Do Not Sheath (18), No Threat (42), Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1313373)  : Apply Aura (6) | Modify Experience Gained% vs Race (447)
+                   Base Value: 10 | Scaled Value: 10 | Race: undead | Target: Self (1)
+Description      : Increase experience gained from slaying Undead by $s1% for $d.
+Tooltip          : Increase experience gained from slaying Undead by $w1%.
+
 Name             : 9-60 Battery Pack (id=1293085) 
 School           : Physical
 Spell Type       : None
@@ -142726,6 +142826,16 @@ Effects          :
 #1 (id=1313503)  : Recharge Item (66)
                    Base Value: 3 | Scaled Value: 3 | Target: Self (1)
 Description      : Restore $s1 charges to a Manual Crowd Pummeler device in your possession.
+
+Name             : 9-60 Battery Pack (id=1293088) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Cast Time        : 25 seconds
+Attributes       : Is Tradeskill (5), Recipe Hidden Until Known (421)
+Effects          :
+#1 (id=1313506)  : Create Item (24)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Summon Hawk (desc=Rank 1) (id=1293241) [Spell Family (9)] 
 Talent Entry     : Generic [tree=class, row=4, col=4, max_rank=1, req_points=0]
@@ -142769,6 +142879,22 @@ Effects          :
 #1 (id=1313800)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 264850 | Misc Value 2: 6837 | Radius: 2 yards | Target: at Target Random (74)
 Description      : Summons a hawk.
+
+Name             : Grim Fetish (id=1293306) 
+School           : Shadow
+Spell Type       : Magic
+Range            : 15 yards
+Duration         : 5 seconds
+Proc Chance      : 100%
+Mechanic         : Horrify
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Prevents Anim (50), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1313867)  : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Radius: 0 - 15 yards | Mechanic: Horrify | Target: Source (22) -> Enemy in Area (15)
+Description      : Raise the severed head of Roogug, Horrifying and Silencing all Swine within $r yds for $d.
+Tooltip          : Horrified.
+Damage may break this effect.
 
 Name             : Ghansurok Bait (id=1293329) [Hidden] 
 School           : Physical
