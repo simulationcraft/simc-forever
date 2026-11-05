@@ -4675,6 +4675,24 @@ Effects          :
                    Base Value: 85 | Scaled Value: 110 | Points Per Level: 1 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Arcane damage.
 
+Name             : Fireball (id=18199) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 45 Base Mana (0) (id=181954)
+Spell Level      : 30
+Range            : 35 yards
+Cast Time        : 2 seconds
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=693993)   : School Damage (2): fire
+                   Base Value: 98 | Scaled Value: 98 (delta=0.244898) | Target: Targeted Enemy (6)
+#2 (id=693994)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
+
 Name             : Frost Blast (id=18398) [Spell Family (3)] 
 School           : Frost
 Spell Type       : Magic
@@ -9636,6 +9654,23 @@ Effects          :
 #1 (id=1292651)  : School Damage (2): fire
                    Base Value: 83 | Scaled Value: 83 | SP Coefficient: 0.032 | Radius: 0 - 5 yards | Target: at Area (87) -> at Enemy in Area (16)
 Description      : $s1 Fire damage dealt to all enemies in target area.
+
+Name             : Fireball (id=1299850) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 55
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1324239)  : School Damage (2): fire
+                   Base Value: 80 | Scaled Value: 80 | Target: Targeted Enemy (6)
+#2 (id=1324240)  : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
 
 Name             : Frozen (id=1306620) 
 School           : Frost

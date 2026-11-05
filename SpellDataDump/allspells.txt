@@ -20551,6 +20551,21 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Radius: 100 yards | Target: Targeted Enemy (6)
 Description      : Allows control of a mechanical target for a short time.  It may not always work and may just root the machine or make it very very angry.  Gnomish engineering at its finest.
 
+Name             : Julie's Blessing (desc=Rank 1) (id=8348) 
+School           : Holy
+Spell Type       : Magic
+Resource         : 30 Base Mana (0) (id=176374)
+Spell Level      : 50
+Cast Time        : 2 seconds
+Duration         : 12 seconds
+Proc Chance      : 100%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=687250)   : Apply Aura (6) | Periodic Heal (8): every 2 seconds
+                   Base Value: 13 | Scaled Value: 13 | Target: Self (1)
+Description      : Heals wielder of $o1 damage over $d.
+Tooltip          : Heals $s1 damage every $t1 sec.
+
 Name             : Ironforge Breastplate (id=8367) 
 School           : Physical
 Spell Type       : None
@@ -41592,6 +41607,20 @@ Effects          :
                    Base Value: 90 | Scaled Value: 90 | SP Coefficient: 1 | Trigger Spell: 14093 | Target: Self (1)
 Description      : Gives you a $s1% chance to return to stealth mode after using your Sap ability.
 
+Name             : Shadow Bolt (id=14106) 
+School           : Shadow
+Spell Type       : Magic
+Resource         : 40 Base Mana (0) (id=179718)
+Spell Level      : 30
+Range            : 30 yards
+Cast Time        : 2.2 seconds
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=691287)   : School Damage (2): shadow
+                   Base Value: 40 | Scaled Value: 40 (delta=0.25) | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
+
 Name             : Improved Poisons (id=14113) [Spell Family (8), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=4, col=3, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
@@ -55265,6 +55294,21 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Stat: Int | Target: Self (1)
 Description      : Increases your Intellect by $m1%.
 
+Name             : Corruption (id=17510) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 30 yards
+Cast Time        : 2 seconds
+Duration         : 3 seconds
+Proc Chance      : 100%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=694919)   : Apply Aura (6) | Periodic Damage (3): shadow every 1 seconds
+                   Base Value: 10 | Scaled Value: 10 | Target: Targeted Enemy (6)
+Description      : Corrupts the target, causing $o1 damage over $d.
+Tooltip          : Inflicts $s1 Shadow damage every $t1 sec.
+
 Name             : Poison (id=17511) 
 School           : Nature
 Spell Type       : Magic
@@ -58811,6 +58855,24 @@ Effects          :
 Description      : Increases Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
+Name             : Fireball (id=18199) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 45 Base Mana (0) (id=181954)
+Spell Level      : 30
+Range            : 35 yards
+Cast Time        : 2 seconds
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=693993)   : School Damage (2): fire
+                   Base Value: 98 | Scaled Value: 98 (delta=0.244898) | Target: Targeted Enemy (6)
+#2 (id=693994)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
+
 Name             : Rend (id=18202) 
 School           : Physical
 Spell Type       : Melee
@@ -58837,6 +58899,20 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=694767)   : School Damage (2): shadow
                    Base Value: 231 | Scaled Value: 231 (delta=0.608696) | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
+
+Name             : Shadow Bolt (id=18214) 
+School           : Shadow
+Spell Type       : Magic
+Resource         : 40 Base Mana (0) (id=181187)
+Spell Level      : 30
+Range            : 30 yards
+Cast Time        : 2.2 seconds
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=693032)   : School Damage (2): shadow
+                   Base Value: 150 | Scaled Value: 150 | Value Multiplier: 1 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
 
 Name             : Grim Reach (id=18218) [Spell Family (5), Passive, Hidden] 
@@ -59134,6 +59210,22 @@ Effects          :
 #1 (id=695652)   : Apply Aura (6) | Restore Power (85)
                    Base Value: 6 | Scaled Value: 6 | Target: Self (1)
 Description      : Restores $s1 mana per 5 sec.
+
+Name             : Cripple (id=18381) [Spell Family (4)] 
+School           : Physical
+Spell Type       : Magic
+Resource         : 0 Energy (3) (id=183276)
+Spell Level      : 18
+Range            : 5 yards
+Duration         : 30 seconds
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=695653)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: -24 | Scaled Value: -24 | Target: Targeted Enemy (6)
+#2 (id=871976)   : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: -24 | Scaled Value: -24 | Target: Targeted Enemy (6)
+Description      : Reduces target enemy's attack power by $s1 for $d.
+Tooltip          : Attack power lowered by $s1.
 
 Name             : Replenish Mana (id=18385) 
 School           : Physical
@@ -140973,6 +141065,17 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Nearby Target (38)
 Description      : Use on a gnawed corpse to attempt to extract a sample of necrotic toxin.
 
+Name             : Wound (id=1291551) 
+School           : Physical
+Spell Type       : Ranged
+Spell Level      : 50
+Range            : 100 yards
+Attributes       : Is Ability (4), Suppress Caster Procs (112), Suppress Weapon Procs (151), Unknown (493)
+Effects          :
+#1 (id=1310981)  : School Damage (2): physical
+                   Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 Physical damage.
+
 Name             : Bag of Ashen Warlock Bones (id=1292052) 
 School           : Physical
 Spell Type       : None
@@ -143405,6 +143508,23 @@ Effects          :
                    Base Value: 100 | Scaled Value: 100 | Stat: Spi | Target: Self (1)
 Description      : Increases your Spirit by $s1%.
 Tooltip          : Spirit increased by $w1%.
+
+Name             : Fireball (id=1299850) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 55
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1324239)  : School Damage (2): fire
+                   Base Value: 80 | Scaled Value: 80 | Target: Targeted Enemy (6)
+#2 (id=1324240)  : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
 
 Name             : Spiritcaller Kilt (id=1299914) 
 School           : Physical
@@ -148385,6 +148505,19 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 44514 | Target: Front of Self (47)
 Description      : Attempt to Stun other players who also have a Replica Ironforge Air Rifle equipped.
 
+Name             : Summon Baby Crocolisk (id=1312880) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Cooldown         : 1.5 seconds
+Category         : 133 (Type 0x0)
+Category Cooldown: 1.5 seconds
+Attributes       : Is Ability (4), Do Not Log (8), Do Not Sheath (18), Suppress Caster Procs (112), Suppress Target Procs (113), Ignore Caster Modifiers (125), Unknown (493)
+Effects          :
+#1 (id=1343974)  : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 273391 | Misc Value 2: 41 | Target: Summoner in Area (32)
+Description      : Right Click to summon and dismiss your baby crocolisk.
+
 Name             : Thorns (id=1312955) [Passive] 
 School           : Fire
 Spell Type       : None
@@ -149111,6 +149244,17 @@ Effects          :
 Description      : Stuns target for $d. Naga are stunned for $1317288d and refund $1317288s2% of the cooldown.
 Tooltip          : Stunned.
 
+Name             : Heal (id=1317424) 
+School           : Holy
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 40 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1350488)  : Direct Heal (10)
+                   Base Value: 720 | Scaled Value: 720 (delta=0.2) | Value Multiplier: 1 | Target: Targeted Ally (21)
+Description      : Heal your target for $s1.
+
 Name             : Forging Strike (id=1317432) 
 School           : Physical
 Spell Type       : Melee
@@ -149191,6 +149335,20 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1350542)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+
+Name             : Light Lamp (id=1317605) 
+School           : Physical
+Spell Type       : None
+Range            : 8 yards
+Max Targets      : 1
+Cone Angle       : 20 degrees
+Cast Time        : 1 seconds
+Velocity         : 12 yards/sec
+Attributes       : No Threat (42)
+Effects          :
+#1 (id=1350748)  : Activate Object (86)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 8 | Target: Nearby Gameobject (40)
+Description      : Turn on the lights of Dalaran.
 
 Name             : Smotts' Compass (id=1317740) 
 School           : Physical

@@ -1727,7 +1727,7 @@ Mage
 18105   *Fireball
 18108   *Fireball
 18146   *Chilling Touch
-18199   *Fireball
+18199    Fireball
 18398    Frost Blast
 18459    Incineration
 18796   *Fireball
@@ -2145,7 +2145,7 @@ Mage
 1293790 *Frostbolt
 1297659 *Teleport: Dalaran
 1298416 *Frostbolt
-1299850 *Fireball
+1299850  Fireball
 1300130 *Frostburn
 1300140 *Wit's End
 1300176 *Arcane Blast
@@ -5403,7 +5403,7 @@ Warrior
 16636   *Berserker Charge
 17198   *Overpower
 18328   *Incapacitating Shout
-18381   *Cripple
+18381    Cripple
 18499    Berserker Rage
 18826   *Savior's Sacrifice
 19131   *Shield Charge
