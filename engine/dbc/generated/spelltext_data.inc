@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8339> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8341> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -7791,6 +7791,8 @@ static constexpr std::array<spelltext_data_t, 8339> __spelltext_data { {
   { 1293241, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 1" },
   { 1293248, "Summons a hawk.", 0, 0 },
   { 1293329, "Place on the hills along the north-western ridge of the summit.", 0, 0 },
+  { 1293342, "When damaged, has a chance to grant you $1293345s1 armor for $1293345d.", "When damaged, has a chance to grant you $1293345s1 armor for $1293345d.", 0 },
+  { 1293345, "Increases armor by $s1 for $d.", "Armor increased by $s1.", 0 },
   { 1293359, "Dunk the venomous heart in the Well of Eternity. Wait a second...", 0, 0 },
   { 1293421, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   { 1293525, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 2" },
