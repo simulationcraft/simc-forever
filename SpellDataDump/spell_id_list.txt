@@ -3869,8 +3869,8 @@ Rogue
 1289695 *Main Gauche
 1289849 *Main Gauche
 1290708 *Stealth
-1291987 *Improved Pick Pocket and Distract 01
-1292150 *Safe Fall 05
+1291987  Improved Pick Pocket and Distract 01
+1292150  Safe Fall 05
 1295197 *Tyler Test Imbue
 1300663 *Safe Fall 08
 1300956 *1.60.0 - Item - Tier 1 - Rogue 2P Bonus - Hit
