@@ -2146,7 +2146,7 @@ Mage
 1297659 *Teleport: Dalaran
 1298416 *Frostbolt
 1299850  Fireball
-1300130 *Frostburn
+1300130  Frostburn
 1300140 *Wit's End
 1300176 *Arcane Blast
 1300177 *Arcane Blast

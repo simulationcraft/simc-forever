@@ -65264,6 +65264,18 @@ Effects          :
 #1 (id=1324340)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Frostburn (id=1300128) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 21
+Proc Chance      : 100%
+Proc Flags       : White Melee
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1324644)  : Apply Aura (6) | Proc Trigger Spell (42): Frostburn
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1300130 | Target: Self (1)
+Description      : Melee attacks deal $1300130s1 additional Fire damage against Frozen targets.
+
 Name             : Signal Jurgens (id=1300739) 
 School           : Physical
 Spell Type       : None

@@ -9687,6 +9687,20 @@ Effects          :
 Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
 Tooltip          : $s2 Fire damage every $t2 sec.
 
+Name             : Frostburn (id=1300130) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 21
+Range            : 100 yards
+Proc Chance      : 101%
+Triggered By     : Frostburn (1300128)
+Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Unknown (493)
+Effects          :
+#1 (id=1324647)  : School Damage (2): fire
+                   Base Value: 98 | Scaled Value: 98 | Target: Targeted Enemy (6)
+Description      : Deal $s2 Fire damage.
+Tooltip          : Deals $s2 Fire damage.
+
 Name             : Frozen (id=1306620) 
 School           : Frost
 Spell Type       : Magic

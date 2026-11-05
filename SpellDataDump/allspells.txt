@@ -10502,6 +10502,7 @@ Description      : Increase your run speed by $s1% for $d, but deals $s2 damage 
 Tooltip          : Increased run speed but periodic health and mana loss.
 
 Name             : Great Stamina (desc=Rank 9) (id=5041) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10512,9 +10513,10 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=684107)   : Apply Aura (6) | Attribute (29)
                    Base Value: 32 | Scaled Value: 32 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 10) (id=5042) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10525,7 +10527,7 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=684108)   : Apply Aura (6) | Attribute (29)
                    Base Value: 40 | Scaled Value: 40 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+Description      : Health increased by $s1.
 
 Name             : Disruption (id=5099) 
 School           : Physical
@@ -144486,6 +144488,32 @@ Attributes       : Is Ability (4), Is Tradeskill (5), Not Shapeshifted (16), Rec
 Effects          :
 #1 (id=1324340)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
+Name             : Frostburn (id=1300128) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 21
+Proc Chance      : 100%
+Proc Flags       : White Melee
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1324644)  : Apply Aura (6) | Proc Trigger Spell (42): Frostburn
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1300130 | Target: Self (1)
+Description      : Melee attacks deal $1300130s1 additional Fire damage against Frozen targets.
+
+Name             : Frostburn (id=1300130) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 21
+Range            : 100 yards
+Proc Chance      : 101%
+Triggered By     : Frostburn (1300128)
+Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Unknown (493)
+Effects          :
+#1 (id=1324647)  : School Damage (2): fire
+                   Base Value: 98 | Scaled Value: 98 | Target: Targeted Enemy (6)
+Description      : Deal $s2 Fire damage.
+Tooltip          : Deals $s2 Fire damage.
 
 Name             : Signal Jurgens (id=1300739) 
 School           : Physical
