@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8330> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8332> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8295,6 +8295,8 @@ static constexpr std::array<spelltext_data_t, 8330> __spelltext_data { {
   { 1327751, "Increases Haste by $s1% for $d. This effect stacks up to $u times.", "Haste increased by $s1%.", 0 },
   { 1327753, "Improves your chance to get a Critical Strike by $s1% for $d. This effect stacks up to $u times.", "Critical Strike chance increased by $s1%.", 0 },
   { 1327754, "Increases Stamina of nearby allies by $s1% for $d.", "Stamina increased by $s1%.", 0 },
+  { 1327991, "Calls forth Anathema.", 0, 0 },
+  { 1327993, "Calls forth Benediction.", 0, 0 },
   { 1328032, "Increases mana regeneration by $s1% for $d.", "Mana regeneration increased by $s1%.", 0 },
   { 1328118, "Enlarges the imbiber by a significant amount for $d. This effect stacks up to $u times.", "Feeling much bigger now.", 0 },
   { 1328119, "Increases run speed of nearby allies by $s1% for $d.", "Increases run speed by $s1%", 0 },

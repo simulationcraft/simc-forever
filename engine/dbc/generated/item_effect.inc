@@ -1,5 +1,5 @@
 // Item effects, wow build 1.60.1.70790
-static constexpr std::array<item_effect_t, 1015> __item_effect_data { {
+static constexpr std::array<item_effect_t, 1021> __item_effect_data { {
   {      0,      0,      0,   0,   0,    0,       0,       0 },
   { 212548, 1241821,      0,   0,   0,    0,      -1,      -1 }, // Stock Ore
   { 213334,  13669,      0,   0,   1,    0,      -1,      -1 }, // Increased Dodge 1
@@ -1015,9 +1015,15 @@ static constexpr std::array<item_effect_t, 1015> __item_effect_data { {
   { 238224,  29418, 286734,   0,   1,    0,      -1,      -1 }, // Haste
   { 239392,  21152, 288900,   0,   2,    0,      -1,      -1 }, // Earthshaker
   { 239511, 1327736, 289082,   0,   0, 2593,       0,    3000 }, // Elixir of Endless Intellect
+  { 239658,  21992, 289294,   0,   2,    0,      -1,      -1 }, // Thunderfury
+  { 239659,  21162, 289295,   1,   2,    0,      -1,      -1 }, // Fireball
+  { 239660,  21142, 289295,   2,   1,    0,      -1,      -1 }, // Immolation
+  { 239661, 1327991, 289296,   0,   0, 1160,       0,   60000 }, // Call Anathema
+  { 239662,  23236, 289296,   1,   1,    0,      -1,      -1 }, // Benediction
+  { 239663, 1327993, 289297,   0,   0, 1160,       0,   60000 }, // Call Benediction
 } };
 
-static const std::array<uint16_t, 1015> __item_effect_id_index { {
+static const std::array<uint16_t, 1021> __item_effect_id_index { {
       0,     8,    18,     5,     3,   618,     7,    17,
       9,    10,    24,    25,    15,    16,    11,    12,
       4,    38,    21,   619,   620,    23,    56,    40,
@@ -1144,6 +1150,7 @@ static const std::array<uint16_t, 1015> __item_effect_id_index { {
    1003,  1004,  1005,   830,   831,  1006,   836,   837,
     834,   835,   824,   825,  1007,  1008,  1009,   949,
     409,   815,   287,   544,   812,   917,  1010,  1011,
-   1012,   122,   989,   823,    82,  1013,  1014,
+   1012,   122,   989,   823,    82,  1013,  1014,  1015,
+   1016,  1017,  1018,  1019,  1020,
 } };
 
