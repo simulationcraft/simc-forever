@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8385> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8386> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -7845,6 +7845,7 @@ static constexpr std::array<spelltext_data_t, 8385> __spelltext_data { {
   { 1293743, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Haste.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Haste.", 0 },
   { 1293782, "Spells and attacks against Swine deal $1292675s1 Nature damage.", "Deal $s1 Nature damage to Swine.", 0 },
   { 1293783, "Spells and attacks against Swine deal $1292675s1 Nature damage.", 0, 0 },
+  { 1293790, "Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.", "Movement slowed by $s1%.", 0 },
   { 1293800, "Empty the contents of the leather-bound flask into the shallows of the pool of water inside Deadwood Den.", 0, 0 },
   { 1293805, "Call upon newly awakened power to increase the limit of Artisan's Tier items you can equip to $s2.", 0, 0 },
   { 1293812, "Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.", 0, "Rank 2" },
@@ -7852,6 +7853,7 @@ static constexpr std::array<spelltext_data_t, 8385> __spelltext_data { {
   { 1293816, "Increases all Shadow damage done by $s1%.", "Increases all Shadow damage done by $w1%.", 0 },
   { 1293817, "Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.", 0, "Rank 1" },
   { 1293818, "Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.", 0, "Rank 2" },
+  { 1293819, "Reduces the duration of all movement impairing effects on you by $m2%.", 0, 0 },
   { 1293820, "Increases your chance to Dodge by $s1% for $d. This effect is doubled in Strongholds and Cities.", "Chance to dodge increased by $w1%.", 0 },
   { 1293966, "Tosses a torch at the target location, starting a fire.", 0, 0 },
   { 1293986, "Use the crystal to temporarily stun the Master of Vessels.", 0, 0 },
@@ -8225,6 +8227,7 @@ static constexpr std::array<spelltext_data_t, 8385> __spelltext_data { {
   { 1317443, "Your spells pierce $s1 Magical Resistances. Gain an additional $1317444s1 Spell Piercing in Forest and Grassland areas.", 0, 0 },
   { 1317444, 0, "In a Forest or Grassland area, Spell Piercing increased by an additional $s1.", 0 },
   { 1317486, "Increases movement speed by $s1% in Dustwallow Marsh and Swamp of Sorrows.", "Movement speed increased by $s1%.", 0 },
+  { 1317583, "Your attacks have a high chance to poison the target for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
   { 1317605, "Turn on the lights of Dalaran.", 0, 0 },
   { 1317740, "Finds the nearest treasure chest, if one is nearby. Only outdoors.", 0, 0 },
   { 1317999, 0, "In a Forest or Grassland area, Attack Power increased by an additional $w1.", 0 },
@@ -8348,8 +8351,6 @@ static constexpr std::array<spelltext_data_t, 8385> __spelltext_data { {
   { 1327751, "Increases Haste by $s1% for $d. This effect stacks up to $u times.", "Haste increased by $s1%.", 0 },
   { 1327753, "Improves your chance to get a Critical Strike by $s1% for $d. This effect stacks up to $u times.", "Critical Strike chance increased by $s1%.", 0 },
   { 1327754, "Increases Stamina of nearby allies by $s1% for $d.", "Stamina increased by $s1%.", 0 },
-  { 1327991, "Calls forth Anathema.", 0, 0 },
-  { 1327993, "Calls forth Benediction.", 0, 0 },
   { 1328032, "Increases mana regeneration by $s1% for $d.", "Mana regeneration increased by $s1%.", 0 },
   { 1328118, "Enlarges the imbiber by a significant amount for $d. This effect stacks up to $u times.", "Feeling much bigger now.", 0 },
   { 1328119, "Increases run speed of nearby allies by $s1% for $d.", "Increases run speed by $s1%", 0 },
