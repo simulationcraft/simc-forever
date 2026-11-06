@@ -40851,6 +40851,25 @@ Effects          :
 Description      : Increases your Energy regeneration rate by $s1% for $d.
 Tooltip          : Energy regeneration increased by $s1%.
 
+Name             : Faerie Fire (desc=Rank 2) (id=13752) 
+School           : Nature
+Spell Type       : Magic
+Resource         : 55 Base Mana (0) (id=179589)
+Spell Level      : 45
+Range            : 30 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Unknown (493)
+Effects          :
+#1 (id=691147)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: -100 | Scaled Value: -100 | Misc Value: 1 | Target: Targeted Enemy (6)
+#2 (id=691148)   : Apply Aura (6) | Disable Stealth (41)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 6 | Target: Targeted Enemy (6)
+#3 (id=691149)   : Apply Aura (6) | Disable Stealth (41)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 5 | Target: Targeted Enemy (6)
+Description      : Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.
+Tooltip          : Decreases armor by $s1.  Cannot stealth or turn invisible.
+
 Name             : Improved Kick (id=13754) [Spell Family (8), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=4, col=5, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(50, 100)]
@@ -142996,6 +143015,19 @@ Effects          :
 Description      : Increase experience gained from slaying Undead by $s1% for $d.
 Tooltip          : Increase experience gained from slaying Undead by $w1%.
 
+Name             : Petrolspill (id=1293003) 
+School           : Physical
+Spell Type       : None
+Range            : 100 yards
+Duration         : Aura (infinite)
+Attributes       : Do Not Sheath (18), Allow Cast While Dead (23), Allow While Mounted (24), Aura Is Debuff (26), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1313381)  : Apply Aura (6) | Modify Damage Taken% (87)
+                   Base Value: 10 | Scaled Value: 10 | Misc Value: 0x4 | Target: Self (1)
+                   Affected School(s): Fire
+Description      : Fire damage taken increased by $s1%.
+Tooltip          : Increases Fire damage taken by $s1%.
+
 Name             : Puncture Armor (id=1293005) 
 School           : Physical
 Spell Type       : Melee
@@ -143647,6 +143679,29 @@ Lasts for $d. You can only have the effect of one flask at a time. This effect p
 Tooltip          : Stamina increased by $w1.
 
 While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Haste.
+
+Name             : Swine Fists (id=1293782) 
+School           : Nature
+Spell Type       : Magic
+Range            : 100 yards
+Triggered By     : Swine Fists (1293783)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1314763)  : School Damage (2): nature
+                   Base Value: 4 | Scaled Value: 4 | Target: Targeted Enemy (6)
+Description      : Spells and attacks against Swine deal $1292675s1 Nature damage.
+Tooltip          : Deal $s1 Nature damage to Swine.
+
+Name             : Swine Fists (id=1293783) [Passive, Hidden] 
+School           : Nature
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Hostile Spell, Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1314764)  : Apply Aura (6) | Proc Trigger Spell (42): Swine Fists
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1293782 | Target: Self (1)
+Description      : Spells and attacks against Swine deal $1292675s1 Nature damage.
 
 Name             : Barkskin Purification Tonic (id=1293800) [Hidden] 
 School           : Physical
@@ -150969,6 +151024,18 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1350542)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+
+Name             : Swamp Speed (id=1317486) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1350544)  : Apply Aura (6) | Increase Movement Speed% (Stacking) (129)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+Description      : Increases movement speed by $s1% in Dustwallow Marsh and Swamp of Sorrows.
+Tooltip          : Movement speed increased by $s1%.
 
 Name             : Light Lamp (id=1317605) 
 School           : Physical
