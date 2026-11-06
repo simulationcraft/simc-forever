@@ -7072,6 +7072,17 @@ Effects          :
 #1 (id=1126785)  : Apply Aura (6) | Proc Trigger Spell (42): [DNT] Divine Prayer Bead II
                    Base Value: 1 | Scaled Value: 1 | Trigger Spell: 435831 | Target: Self (1)
 
+Name             : [DNT] Tarnished Prayer Bead III (id=435844) [Spell Family (10), Hidden] 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Proc Chance      : 101%
+Proc Flags       : Generic Hostile Spell, Magic Hostile Spell
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1126797)  : Apply Aura (6) | Proc Trigger Spell (42): [DNT] Divine Prayer Bead III
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 435839 | Target: Self (1)
+
 Name             : Libram of Deliverance (id=435962) [Spell Family (10), Passive] 
 School           : Physical
 Spell Type       : None

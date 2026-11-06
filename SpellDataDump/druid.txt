@@ -4776,6 +4776,24 @@ Effects          :
                    Family Flags: 7
 Description      : Reduces threat caused by Tranquility by $s1% and its cooldown by $m2%.
 
+Name             : The Green Tower (desc=Rank 1) (id=17154) [Spell Family (7)] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 45
+Range            : 30 yards
+Duration         : 30 seconds
+Proc Chance      : 3%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Triggered By     : The Green Tower (18097)
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=694562)   : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+#2 (id=1362974)  : Apply Aura (6) | Resistance (22)
+                   Base Value: 50 | Scaled Value: 50 | Misc Value: 8 | Target: Self (1)
+Description      : Causes $s1 Nature damage to attackers when hit and increases Nature resistance by $s2 for $d.
+Tooltip          : Increased Nature resistance and inflicts $s1 Nature damage to attackers.
+
 Name             : Overgrowth (id=17245) [Spell Family (7), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=5, col=1, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(1, 2)]

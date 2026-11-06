@@ -218,7 +218,7 @@ Druid
 17118    Subtlety
 17123    Improved Tranquility
 17144   *Wrath
-17154   *The Green Tower
+17154    The Green Tower
 17245    Overgrowth
 17329    Nature's Grasp
 17401    Hurricane
@@ -2146,7 +2146,7 @@ Mage
 1297659 *Teleport: Dalaran
 1298416 *Frostbolt
 1299850  Fireball
-1300130 *Frostburn
+1300130  Frostburn
 1300140 *Wit's End
 1300176 *Arcane Blast
 1300177 *Arcane Blast
@@ -2558,7 +2558,7 @@ Paladin
 429259   Improved Hammer of Wrath
 429578   Libram of Banishment
 435833   [DNT] Tarnished Prayer Bead II
-435844  *[DNT] Tarnished Prayer Bead III
+435844   [DNT] Tarnished Prayer Bead III
 435962   Libram of Deliverance
 435977  *Energized Hyperconductor
 435982  *Energize
