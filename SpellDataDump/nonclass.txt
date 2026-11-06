@@ -64166,6 +64166,18 @@ Effects          :
 #1 (id=1313506)  : Create Item (24)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
+Name             : Thornspike (id=1293183) 
+School           : Physical
+Spell Type       : Ranged
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 5 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1313674)  : School Damage (2): physical
+                   Base Value: 45 | Scaled Value: 45 | Chain Multiplier: 0.5 | Chain Targets: 2 | Target: Targeted Enemy (6)
+Description      : Hurl spikes at the target, dealing $s1 Physical damage and jumping to ${$x1-1} additional nearby enemy. Each jump reduces the damage by ${$f*100}%.
+
 Name             : Agamaggan's Clutch (id=1293199) 
 School           : Physical
 Spell Type       : None
