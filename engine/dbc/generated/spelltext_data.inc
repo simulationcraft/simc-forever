@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8390> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8393> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -4103,6 +4103,8 @@ static constexpr std::array<spelltext_data_t, 8390> __spelltext_data { {
   {   21957, "Places all five of the Khans' gems in the Amulet of Spirits.", 0, 0 },
   {   21958, "Reduces the hit chance of Stun and Fear effects against you by $s1%.", 0, 0 },
   {   21960, "Forces the spirits of the first centaur Kahns to manifest in the physical world.", 0, 0 },
+  {   21969, "Has a $h% chance when struck in combat of increasing all stats by $21970s1 for $21970d1.", 0, 0 },
+  {   21970, "Increases all stats by $s1 for $d.", "All stats increased by $s1.", 0 },
   {   21991, "When struck in combat inflicts $s1 Nature damage to the attacker.", "Lightning Shield", "Rank 1" },
   {   21992, "Blasts your enemy with lightning, dealing $s2 Nature damage and then jumping to additional nearby enemies.  Each jump reduces that victim's Nature resistance by $s1. Affects $x1 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by $27648s1% for $d.", "Nature resistance reduced by $s1.", 0 },
   {   22562, "Fill the Amethyst Phial at the Oracle Glade moonwell.", 0, 0 },
@@ -8080,6 +8082,7 @@ static constexpr std::array<spelltext_data_t, 8390> __spelltext_data { {
   { 1309788, "Bewitch the target Beast, reducing the Physical damage it does to you by $s1%.", "Dealing $s1% reduced Physical damage to the caster.", 0 },
   { 1309950, "Reduces the mana cost of your Devouring Plague by $s1%.\r\n\r\nTargets that die while Devouring Plague is active spreads it, jumping to $s3 nearby enemies within $s2 yds for the remaining duration.\r\n", 0, 0 },
   { 1309957, "Improves your chance to hit with Holy spells by $s1%.", 0, 0 },
+  { 1309967, "Bash the target in the face, causing $m1 Physical damage every $t1 sec for 20 sec.", "Bleeding for $w1 Physical damage every $t1 sec.", 0 },
   { 1309969, "Your Smite and Penance spells deal $m1% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.", 0, 0 },
   { 1310076, "Increases Shadow Word: Death's critical strike chance on targets at or below $s2% health by $s1%.", 0, 0 },
   { 1310077, "Increases spell Holy damage by up to $s1 for $d.", "Holy damage dealt by spells and abilities is increased by up to $s1.", 0 },
