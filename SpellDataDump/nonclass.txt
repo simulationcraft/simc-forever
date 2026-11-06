@@ -12529,6 +12529,19 @@ Effects          :
 Description      : Increases your attack speed by $s1% for $d1.
 Tooltip          : Increased attack speed.
 
+Name             : Dazed (id=13496) 
+School           : Physical
+Spell Type       : None
+Range            : 5 yards
+Duration         : 10 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=690238)   : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Target: Targeted Enemy (6)
+Description      : Slows the target's movement by $s1% for $d.
+Tooltip          : Lowered movement speed.
+
 Name             : Greater Astral Essence (id=13497) 
 School           : Physical
 Spell Type       : None
@@ -12739,6 +12752,19 @@ Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not
 Effects          :
 #1 (id=690772)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Current Target (25)
+
+Name             : Mount Speed (id=13587) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Cooldown         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=691456)   : Apply Aura (6) | Increase Mount Speed% (Stacking) (130)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+Description      : Increases mount speed by $s1%.
+Tooltip          : Mounted speed increased by $s1%.
 
 Name             : Increase Arcane Dam 1 (id=13590) [Passive, Hidden] 
 School           : Physical
@@ -64370,6 +64396,42 @@ Effects          :
                    Base Value: 93 | Scaled Value: 93 (delta=0.5) | Value Multiplier: 1 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
 
+Name             : Torture (id=1293429) 
+School           : Fire
+Spell Type       : Magic
+Range            : 100 yards
+Triggered By     : Torture (1293433)
+Attributes       : Can't Crit (93), Suppress Caster Procs (112), Suppress Target Procs (113), Do Not Display Range (126), Suppress Weapon Procs (151), Do Not Display Power Cost (303), Do Not Display Cast Time (441), Unknown (493)
+Effects          :
+#1 (id=1314075)  : School Damage (2): fire
+                   Base Value: 1 | Scaled Value: 1 | Target: Targeted Enemy (6)
+Description      : Deal $s1 Fire damage and increase the target's damage taken from this effect by $s1. Stacks up to $1293451s2 times.
+
+Name             : Torture (id=1293433) [Passive, Hidden] 
+School           : Fire
+Spell Type       : Magic
+Range            : 100 yards
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1314085)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1293429 | Target: Targeted Enemy (6)
+Description      : Melee attacks with this weapon torture the target, dealing $1293429s1 Fire damage and increasing your damage dealt to that target with this effect by $1293429s1, stacking up to $1293451u times.
+
+Name             : Tortured (id=1293451) 
+School           : Fire
+Spell Type       : Magic
+Range            : 100 yards
+Duration         : 10 seconds
+Stacks           : 10 maximum
+Proc Chance      : 101%
+Attributes       : Aura Is Debuff (26), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Suppress Weapon Procs (151), Unknown (493)
+Effects          :
+#1 (id=1314111)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 1 | Scaled Value: 1 | Target: Targeted Enemy (6)
+Tooltip          : Damage taken from Torture increased by $s1.
+
 Name             : Tough Love (id=1293482) 
 School           : Physical
 Spell Type       : Melee
@@ -69064,6 +69126,18 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Inflicts $443265o1 Fire damage over $443265d to target Demon or Beast and Roots them in place for $d. Damage caused may interrupt the effect.
 Tooltip          : Rooted.
+
+Name             : Forge Blast (id=1312176) 
+School           : Fire
+Spell Type       : Magic
+Range            : 10 yards
+Proc Chance      : 101%
+Proc Flags       : White Melee, Yellow Melee, Unknown 38
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1342941)  : School Damage (2): fire
+                   Base Value: 51 | Scaled Value: 51 | Target: Current Target (25)
+Description      : Blast the target with the fires of a forge, inflicting $s1 Fire damage.
 
 Name             : Shadow Bolt (id=1312438) 
 School           : Shadow
