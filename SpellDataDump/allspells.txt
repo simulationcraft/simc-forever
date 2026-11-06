@@ -58951,6 +58951,18 @@ Effects          :
 Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
 Tooltip          : $s2 Fire damage every $t2 sec.
 
+Name             : Firebolt (id=18083) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Triggered By     : Firebolt (1293980)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694118)   : School Damage (2): fire
+                   Base Value: 77 | Scaled Value: 77 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Arcane Blast (id=18091) [Spell Family (3)] 
 School           : Arcane
 Spell Type       : Magic
@@ -107788,6 +107800,17 @@ Description      : While you are in Cat Form, Bear Form, or Dire Bear Form, part
 
 Tooltip          : Chance to gain extra attacks.
 
+Name             : Squall-breakers Potion (id=433427) 
+School           : Physical
+Spell Type       : None
+Duration         : 1800 seconds
+Attributes       : No Aura Cancel (31), Unknown (493)
+Effects          :
+#1 (id=1122736)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : Protect yourself against the elements as long as you survive.
+Tooltip          : You feel warm and fuzzy inside.
+
 Name             : Deadly Brew (id=433521) [Spell Family (8), Passive] 
 School           : Physical
 Spell Type       : None
@@ -143891,6 +143914,20 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1294314 | Radius: 10 yards | Target: Source (22) -> at Nearby (46)
 Description      : Tosses a torch at the target location, starting a fire.
 
+Name             : Firebolt (id=1293980) [Passive, Hidden] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Internal Cooldown: 0.1 seconds
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1315088)  : Apply Aura (6) | Proc Trigger Spell (42): Firebolt
+                   Base Value: 0 | Scaled Value: 0 (delta=0.333333) | Trigger Spell: 18083 | Target: Self (1)
+Description      : Chance on harmful spell cast to blast a target for $18083s1 Fire damage.
+
 Name             : Consuming Fel Energies (id=1293986) [Hidden] 
 School           : Physical
 Spell Type       : None
@@ -152692,6 +152729,15 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : $@spelldesc676
 Tooltip          : $@spellaura676
+
+Name             : Resist Fear 02 (id=1324578) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1361449)  : Apply Aura (6) | Mechanic Resistance (117)
+                   Base Value: 2 | Scaled Value: 2 | Mechanic: Flee | Target: Self (1)
+Description      : Reduces the hit chance of Fear effects against you by $s1%.
 
 Name             : Unearthed Barrier (id=1324685) 
 School           : Nature

@@ -23922,6 +23922,18 @@ Effects          :
                    Base Value: 91 | Scaled Value: 91 (delta=0.314815) | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Nature damage.
 
+Name             : Firebolt (id=18083) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Triggered By     : Firebolt (1293980)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694118)   : School Damage (2): fire
+                   Base Value: 77 | Scaled Value: 77 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Frost Blast (id=18092) 
 School           : Frost
 Spell Type       : Magic
@@ -40291,6 +40303,17 @@ Effects          :
 #1 (id=1120534)  : Enchant Item (53)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 7124
 Description      : Permanently enchant a helm slot item, causing you to gain 20 energy or 5 rage when shapeshifting into Cat or Bear form.
+
+Name             : Squall-breakers Potion (id=433427) 
+School           : Physical
+Spell Type       : None
+Duration         : 1800 seconds
+Attributes       : No Aura Cancel (31), Unknown (493)
+Effects          :
+#1 (id=1122736)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : Protect yourself against the elements as long as you survive.
+Tooltip          : You feel warm and fuzzy inside.
 
 Name             : Plant Lightning Rod (id=434350) 
 School           : Physical
@@ -64783,6 +64806,20 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1294314 | Radius: 10 yards | Target: Source (22) -> at Nearby (46)
 Description      : Tosses a torch at the target location, starting a fire.
 
+Name             : Firebolt (id=1293980) [Passive, Hidden] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Internal Cooldown: 0.1 seconds
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1315088)  : Apply Aura (6) | Proc Trigger Spell (42): Firebolt
+                   Base Value: 0 | Scaled Value: 0 (delta=0.333333) | Trigger Spell: 18083 | Target: Self (1)
+Description      : Chance on harmful spell cast to blast a target for $18083s1 Fire damage.
+
 Name             : Consuming Fel Energies (id=1293986) [Hidden] 
 School           : Physical
 Spell Type       : None
@@ -70718,6 +70755,15 @@ Effects          :
 #2 (id=1359172)  : Summon Object - Wild (76)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 703307 | Radius: 3 yards | Target: Summoner in Area (32)
 Description      : Serves Kyle his lunch!
+
+Name             : Resist Fear 02 (id=1324578) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1361449)  : Apply Aura (6) | Mechanic Resistance (117)
+                   Base Value: 2 | Scaled Value: 2 | Mechanic: Flee | Target: Self (1)
+Description      : Reduces the hit chance of Fear effects against you by $s1%.
 
 Name             : Unearthed Barrier (id=1324685) 
 School           : Nature
