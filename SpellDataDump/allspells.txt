@@ -143445,6 +143445,28 @@ $which=${$cond($gt($<spfi>,$<sps>), $<spfi>,$<sps>)}
 $minDam=${((($pl-26)*1.5)+14+(0.078*$<which>))}
 $maxDam=${((($pl-26)*1.5)+17+(0.078*$<which>))}
 
+Name             : Painwalker Buckler (id=1293700) 
+School           : Holy
+Spell Type       : None
+Duration         : 10 seconds
+Triggered By     : Painwalker Buckler (1293701)
+Attributes       : No Threat (42), Unknown (493)
+Effects          :
+#1 (id=1314604)  : Apply Aura (6) | Restore Power (85)
+                   Base Value: 12 | Scaled Value: 12 | Target: Self (1)
+Tooltip          : Restoring $s1 mana per 5 sec.
+
+Name             : Painwalker Buckler (id=1293701) [Passive, Hidden] 
+School           : Holy
+Spell Type       : None
+Proc Chance      : 17%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Threat (42), Unknown (493)
+Effects          :
+#1 (id=1314608)  : Apply Aura (6) | Proc Trigger Spell (42): Painwalker Buckler
+                   Base Value: 12 | Scaled Value: 12 | Trigger Spell: 1293700 | Target: Self (1)
+Description      : $h% chance when struck in combat to gain $1293700s1 mana per 5 sec for $1293700d.
+
 Name             : Spellsever (id=1293714) 
 School           : Physical
 Spell Type       : Ranged
