@@ -64755,6 +64755,19 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1293782 | Target: Self (1)
 Description      : Spells and attacks against Swine deal $1292675s1 Nature damage.
 
+Name             : Holy Cleaver (id=1293787) 
+School           : Holy
+Spell Type       : Magic
+Spell Level      : 55
+Range            : 30 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1314768)  : School Damage (2): holy
+                   Base Value: 42 | Scaled Value: 42 (delta=0.42) | Target: Targeted Enemy (6)
+#2 (id=1314769)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Description      : Unleash a mighty swing, dealing $s1 Holy damage. Deals $s2 times as much damage to Undead and Swine.
+
 Name             : Barkskin Purification Tonic (id=1293800) [Hidden] 
 School           : Physical
 Spell Type       : None
@@ -69492,6 +69505,24 @@ Effects          :
                    Base Value: -4 | Scaled Value: -4 | Misc Value: 126 | Target: Self (1)
 Tooltip          : In a Forest or Grassland area, Spell Piercing increased by an additional $s1.
 
+Name             : Slammed (id=1315972) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 40
+Range            : 5 yards
+Duration         : 3 seconds
+Mechanic         : Stun
+Attributes       : Aura Is Debuff (26), Unknown (493)
+Effects          :
+#1 (id=1348597)  : Apply Aura (6) | Stun (12)
+                   Base Value: 1 | Scaled Value: 1 | Target: Targeted Enemy (6)
+#2 (id=1348598)  : Apply Aura (6) | Stun (12)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+#3 (id=1350523)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 50 | Scaled Value: 50 | Target: Self (1)
+Description      : Stuns target and yourself for $d. Ogres are Stunned for $1317450d and refund $1317450s2% of the cooldown.
+Tooltip          : Stunned.
+
 Name             : Rune of Duty (id=1315989) [Passive] 
 School           : Physical
 Spell Type       : None
@@ -69865,6 +69896,25 @@ Effects          :
 #1 (id=1350515)  : Apply Aura (6) | Modify Target Resistance (123)
                    Base Value: -7 | Scaled Value: -7 | Misc Value: 126 | Target: Self (1)
 Tooltip          : In a Forest or Grassland area, Spell Piercing increased by an additional $s1.
+
+Name             : Slammed (id=1317450) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 40
+Range            : 5 yards
+Duration         : 5 seconds
+Cooldown         : 300 seconds
+Category         : 2585 (Type 0x0)
+Category Cooldown: 300 seconds
+Mechanic         : Stun
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1350526)  : Apply Aura (6) | Stun (12)
+                   Base Value: 1 | Scaled Value: 1 | Target: Targeted Enemy (6)
+#2 (id=1350527)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 50 | Scaled Value: 50 | Target: Targeted Enemy (6)
+Description      : Stuns target and yourself for $d. Ogres are Stunned for $1317450d and refund $1317450s2% of the cooldown.
+Tooltip          : Stunned.
 
 Name             : Gnomish Battle Chicken (id=1317479) [Passive, Hidden] 
 School           : Physical
