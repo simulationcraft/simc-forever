@@ -143703,6 +143703,23 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1293782 | Target: Self (1)
 Description      : Spells and attacks against Swine deal $1292675s1 Nature damage.
 
+Name             : Frostbolt (id=1293790) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1314775)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1314776)  : School Damage (2): frost
+                   Base Value: 42 | Scaled Value: 42 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+Tooltip          : Movement slowed by $s1%.
+
 Name             : Barkskin Purification Tonic (id=1293800) [Hidden] 
 School           : Physical
 Spell Type       : None
@@ -143818,6 +143835,17 @@ Effects          :
 #1 (id=1314822)  : School Damage (2): fire
                    Base Value: 122 | Scaled Value: 127.4 (delta=0.241758) | Points Per Level: 0.9 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
+
+Name             : Reduce Mechanic Duration - Snare/Root 07 (id=1293819) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1314824)  : Apply Aura (6) | Modify Mechanic Duration% (Stacking) (232)
+                   Base Value: -7 | Scaled Value: -7 | Misc Value: 11 | Target: Self (1)
+#2 (id=1314825)  : Apply Aura (6) | Modify Mechanic Duration% (Stacking) (232)
+                   Base Value: -7 | Scaled Value: -7 | Misc Value: 7 | Target: Self (1)
+Description      : Reduces the duration of all movement impairing effects on you by $m2%.
 
 Name             : Toy Soldier (id=1293820) 
 School           : Arcane
@@ -151037,6 +151065,20 @@ Effects          :
 Description      : Increases movement speed by $s1% in Dustwallow Marsh and Swamp of Sorrows.
 Tooltip          : Movement speed increased by $s1%.
 
+Name             : Poison (id=1317583) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 10 (max 10)
+Range            : 5 yards
+Duration         : 9 seconds
+Proc Chance      : 101%
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1350718)  : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
+                   Base Value: 8 | Scaled Value: 8 | Target: Targeted Enemy (6)
+Description      : Your attacks have a high chance to poison the target for $s1 Nature damage every $t1 sec for $d.
+Tooltip          : $s1 Nature damage inflicted every $t1 sec.
+
 Name             : Light Lamp (id=1317605) 
 School           : Physical
 Spell Type       : None
@@ -153109,36 +153151,6 @@ Effects          :
 Hotfixed         : NEW EFFECT
 Description      : Increases Stamina of nearby allies by $s1% for $d.
 Tooltip          : Stamina increased by $s1%.
-
-Name             : Call Anathema (id=1327991) 
-Hotfixed         : NEW SPELL
-School           : Physical
-Spell Type       : None
-Cast Time        : 1 seconds
-Cooldown         : 60 seconds
-Category         : 1160 (Type 0x0)
-Category Cooldown: 60 seconds
-Attributes       : Unknown (493)
-Effects          :
-#1 (id=1366762)  : Summon Item (34)
-                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
-Hotfixed         : NEW EFFECT
-Description      : Calls forth Anathema.
-
-Name             : Call Benediction (id=1327993) 
-Hotfixed         : NEW SPELL
-School           : Physical
-Spell Type       : None
-Cast Time        : 1 seconds
-Cooldown         : 60 seconds
-Category         : 1160 (Type 0x0)
-Category Cooldown: 60 seconds
-Attributes       : Unknown (493)
-Effects          :
-#1 (id=1366764)  : Summon Item (34)
-                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
-Hotfixed         : NEW EFFECT
-Description      : Calls forth Benediction.
 
 Name             : Elixir of Endless Mana (id=1328032) 
 Hotfixed         : NEW SPELL
