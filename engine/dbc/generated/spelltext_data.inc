@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8356> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8362> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -1802,7 +1802,9 @@ static constexpr std::array<spelltext_data_t, 8356> __spelltext_data { {
   {   11785, "Soothes the target, increasing the chance that it will attack something else.  More effective than Soothing Kiss (Rank 3).", 0, "Rank 4" },
   {   11789, "Underwater Breath lasts $s1% longer than normal.", "Waterbreathing.", 0 },
   {   11790, "Deals $s1 Nature damage every $t1 sec to any enemy in an $a1 yard radius around the caster for $d.", "Deals $s1 Nature damage every $t1 sec.", 0 },
+  {   11826, "Channels a bolt of lightning and hurls it towards all enemies in front of the caster causing $11828s1 Nature damage. The caster is then surrounded by a barrier of electricity for $11841d.", "Channel lightning.", 0 },
   {   11840, "Summons Edana Hatetalon.", 0, 0 },
+  {   11841, "Surrounds the caster with a shield of lightning that lasts $d and inflicts $s1 Nature damage to melee attackers.", "$s1 Nature damage inflicted to melee attackers.", 0 },
   {   11879, "Disarm target's weapon for $d.", "Disarmed.", 0 },
   {   11885, "Shrink and Capture a Fallen Treant.", 0, 0 },
   {   11886, "Shrink and Capture a Fallen Wildkin.", 0, 0 },
@@ -1998,6 +2000,7 @@ static constexpr std::array<spelltext_data_t, 8356> __spelltext_data { {
   {   13501, "Permanently enchant a bracer so it increases the wearer's Stamina by 4.", 0, 0 },
   {   13503, "Permanently enchant a Melee Weapon to do 2 additional points of damage.", 0, 0 },
   {   13518, "Poisons target for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
+  {   13519, "Smites an enemy for $s1 Holy damage.", 0, 0 },
   {   13522, "Permanently enchant a cloak so that it increases resistance to shadow by 10.", 0, 0 },
   {   13524, "Lowers the Attack Power of the target by $s1 for $d.", "Attack Power lowered by $s1.", 0 },
   {   13528, "Reduces target enemy's attack power by $s1 for $d.", "Attack power lowered by $s1.", 0 },
@@ -7793,6 +7796,7 @@ static constexpr std::array<spelltext_data_t, 8356> __spelltext_data { {
   { 1292749, "Dying inflicts $1292746s1 Holy damage to all enemies within $1292746r yds.", "Dying inflicts $1292746s1 Holy damage to all enemies within $1292746r yds.", 0 },
   { 1292765, "When damaged, has a chance to reduce threat level on all enemies by a small amount for $12685d.", "When damaged, has a chance to reduce threat level on all enemies by a small amount for $12685d.", 0 },
   { 1292804, "Allow a wisp to rejoin its ancestral roots.", "Returning.", 0 },
+  { 1292851, "Blasts a target for $s1 Nature damage. Mechanical targets take $s2x damage.", 0, 0 },
   { 1292879, "Blasts a target for $s1 Nature damage.", 0, 0 },
   { 1292880, "When struck in combat has a $h% chance of inflicting $1292879s1 Nature damage to the attacker.", 0, 0 },
   { 1292997, "Increase experience gained from slaying Undead by $s1% for $d.", "Increase experience gained from slaying Undead by $w1%.", 0 },
@@ -7809,6 +7813,8 @@ static constexpr std::array<spelltext_data_t, 8356> __spelltext_data { {
   { 1293359, "Dunk the venomous heart in the Well of Eternity. Wait a second...", 0, 0 },
   { 1293407, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   { 1293421, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
+  { 1293482, "Discipline the target, dealing $s1 Physical damage. Canines and Hyenas are Stunned and sit for $1293483d.", 0, 0 },
+  { 1293483, 0, "Stunned and being a good dog.", 0 },
   { 1293525, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 2" },
   { 1293526, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 3" },
   { 1293527, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 4" },
