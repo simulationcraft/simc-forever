@@ -35935,6 +35935,32 @@ Effects          :
 #3 (id=690795)   : Send Event (61)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 2807
 
+Name             : Electromagnetic Gigaflux Reactivator (id=11826) [Hidden] 
+School           : Physical
+Spell Type       : None
+Duration         : 3 seconds
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Wearer Casts Proc Trigger (11), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=689986)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+#2 (id=689987)   : Trigger Spell (64): Static Barrier
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 11841 | Target: Self (1)
+Description      : Channels a bolt of lightning and hurls it towards all enemies in front of the caster causing $11828s1 Nature damage. The caster is then surrounded by a barrier of electricity for $11841d.
+Tooltip          : Channel lightning.
+
+Name             : Forked Lighting (id=11828) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 32 (max 37)
+Range            : 30 yards
+Cone Angle       : 60 degrees
+Velocity         : 50 yards/sec
+Category         : 85 (Type 0x0)
+Attributes       : Not Shapeshifted (16), No Redirection (35), No Reflection (39), Unknown (493)
+Effects          :
+#1 (id=689995)   : School Damage (2): nature
+                   Base Value: 162 | Scaled Value: 167 (delta=0.127389) | Points Per Level: 1 | Radius: 45 yards | Target: Enemies in Cone (24)
+
 Name             : Summon Edana Hatetalon (id=11840) [Hidden] 
 School           : Physical
 Spell Type       : None
@@ -35945,6 +35971,22 @@ Effects          :
 #1 (id=689812)   : Send Event (61)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 3973
 Description      : Summons Edana Hatetalon.
+
+Name             : Static Barrier (id=11841) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 37
+Range            : 30 yards
+Duration         : 300 seconds
+Cooldown         : 1 seconds
+Category Cooldown: 1 seconds
+Triggered By     : Electromagnetic Gigaflux Reactivator (11826)
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=689732)   : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Description      : Surrounds the caster with a shield of lightning that lasts $d and inflicts $s1 Nature damage to melee attackers.
+Tooltip          : $s1 Nature damage inflicted to melee attackers.
 
 Name             : Disarm (id=11879) 
 School           : Physical
@@ -39578,6 +39620,19 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Targeted Enemy (6)
 Description      : Poisons target for $s1 Nature damage every $t1 sec for $d.
 Tooltip          : $s1 Nature damage inflicted every $t1 sec.
+
+Name             : Holy Smite (id=13519) 
+School           : Holy
+Spell Type       : Magic
+Resource         : 35 Base Mana (0) (id=179714)
+Spell Level      : 6 (max 11)
+Range            : 30 yards
+Cast Time        : 2 seconds
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=691283)   : School Damage (2): holy
+                   Base Value: 30 | Scaled Value: 30 | Target: Targeted Enemy (6)
+Description      : Smites an enemy for $s1 Holy damage.
 
 Name             : Enchant Cloak - Lesser Shadow Resistance (id=13522) 
 School           : Physical
@@ -142194,6 +142249,19 @@ Effects          :
 Description      : Allow a wisp to rejoin its ancestral roots.
 Tooltip          : Returning.
 
+Name             : Lightning Bolt (id=1292851) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1313183)  : School Damage (2): nature
+                   Base Value: 28 | Scaled Value: 28 (delta=0.666667) | Target: Targeted Enemy (6)
+#2 (id=1313624)  : Dummy (3)
+                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage. Mechanical targets take $s2x damage.
+
 Name             : Lightning Bolt (id=1292879) 
 School           : Nature
 Spell Type       : Magic
@@ -143043,6 +143111,27 @@ Effects          :
                    Base Value: 93 | Scaled Value: 93 (delta=0.5) | Value Multiplier: 1 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
 
+Name             : Tough Love (id=1293482) 
+School           : Physical
+Spell Type       : Melee
+Range            : 100 yards
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=1314162)  : School Damage (2): physical
+                   Base Value: 91 | Scaled Value: 91 | Target: Targeted Enemy (6)
+Description      : Discipline the target, dealing $s1 Physical damage. Canines and Hyenas are Stunned and sit for $1293483d.
+
+Name             : Tough Love (id=1293483) 
+School           : Physical
+Spell Type       : None
+Range            : 100 yards
+Duration         : 3 seconds
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=1314164)  : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Tooltip          : Stunned and being a good dog.
+
 Name             : Summon Hawk (desc=Rank 2) (id=1293525) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -143282,9 +143371,11 @@ Proc Chance      : 101%
 Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Allow Aura While Dead (116), Aura Points On Client (268), Don't Cancel When All Effects are Disabled (353), Unknown (493)
 Effects          :
 #1 (id=1314691)  : Apply Aura (6) | Attribute (29)
-                   Base Value: 60 | Scaled Value: 60 | Stat: Sta | Target: Self (1)
+                   Base Value: 30 | Scaled Value: 30 | Stat: Sta | Target: Self (1)
+Hotfixed         : Base Value (60 -> 30)
 #2 (id=1314692)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Hotfixed         : Base Value (5 -> 2)
 #3 (id=1314693)  : Apply Aura (6) | Modify Hit% (54)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #4 (id=1314694)  : Apply Aura (6) | Modify Spell Hit% (55)
@@ -143307,9 +143398,11 @@ Proc Chance      : 101%
 Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Allow Aura While Dead (116), Aura Points On Client (268), Don't Cancel When All Effects are Disabled (353), Unknown (493)
 Effects          :
 #1 (id=1314695)  : Apply Aura (6) | Attribute (29)
-                   Base Value: 60 | Scaled Value: 60 | Stat: Sta | Target: Self (1)
+                   Base Value: 30 | Scaled Value: 30 | Stat: Sta | Target: Self (1)
+Hotfixed         : Base Value (60 -> 30)
 #2 (id=1314696)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 4 | Scaled Value: 4 | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Hotfixed         : Base Value (4 -> 2)
 #3 (id=1314697)  : Apply Aura (6) | Modify Critical Strike% (290)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Critical Strike Chance.
@@ -143330,9 +143423,11 @@ Proc Chance      : 101%
 Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Allow Aura While Dead (116), Aura Points On Client (268), Don't Cancel When All Effects are Disabled (353), Unknown (493)
 Effects          :
 #1 (id=1314699)  : Apply Aura (6) | Attribute (29)
-                   Base Value: 60 | Scaled Value: 60 | Stat: Sta | Target: Self (1)
+                   Base Value: 30 | Scaled Value: 30 | Stat: Sta | Target: Self (1)
+Hotfixed         : Base Value (60 -> 30)
 #2 (id=1314700)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Hotfixed         : Base Value (5 -> 2)
 #3 (id=1314701)  : Apply Aura (6) | Modify Expertise% (240)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% reduced chance to be dodged or parried.
@@ -143353,9 +143448,11 @@ Proc Chance      : 101%
 Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Allow Aura While Dead (116), Aura Points On Client (268), Don't Cancel When All Effects are Disabled (353), Unknown (493)
 Effects          :
 #1 (id=1314703)  : Apply Aura (6) | Attribute (29)
-                   Base Value: 60 | Scaled Value: 60 | Stat: Sta | Target: Self (1)
+                   Base Value: 30 | Scaled Value: 30 | Stat: Sta | Target: Self (1)
+Hotfixed         : Base Value (60 -> 30)
 #2 (id=1314704)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Hotfixed         : Base Value (5 -> 2)
 #3 (id=1314705)  : Apply Aura (6) | Modify Ranged and Melee Auto Attack Speed% (342)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #4 (id=1354092)  : Apply Aura (6) | Modify Spell Haste (65)
