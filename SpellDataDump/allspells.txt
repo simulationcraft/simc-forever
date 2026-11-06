@@ -74022,6 +74022,32 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Current Target (25)
 Description      : Forces the spirits of the first centaur Kahns to manifest in the physical world.
 
+Name             : Mark of the Chosen (id=21969) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Internal Cooldown: 120 seconds
+Proc Chance      : 2%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Heal Taken, Magic Hostile Spell Taken
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=699476)   : Apply Aura (6) | Proc Trigger Spell (42): Mark of the Chosen
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 21970 | Target: Self (1)
+Description      : Has a $h% chance when struck in combat of increasing all stats by $21970s1 for $21970d1.
+
+Name             : Mark of the Chosen (id=21970) 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 1
+Duration         : 60 seconds
+Triggered By     : Mark of the Chosen (21969)
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=699071)   : Apply Aura (6) | Attribute (29)
+                   Base Value: 21 | Scaled Value: 21 | Stat: All | Target: Self (1)
+Description      : Increases all stats by $s1 for $d.
+Tooltip          : All stats increased by $s1.
+
 Name             : Talisman of Binding (desc=Rank 1) (id=21991) [Passive] 
 School           : Nature
 Spell Type       : None
@@ -148642,6 +148668,14 @@ Effects          :
                    Affected Spells: Dispel Magic (527), Cure Disease (528), Abolish Disease (552), Smite (585), Smite (591), Smite (598), Smite (984), Dispel Magic (988), Smite (1004), Levitate (1706), Resurrection (2006), Resurrection (2010), Elune's Grace (2651), Touch of Weakness (2652), Smite (6060), Fear Ward (6346), Hex of Weakness (9035), Shackle Undead (9484), Shackle Undead (9485), Power Infusion (10060), Resurrection (10880), Resurrection (10881), Smite (10933), Smite (10934), Shackle Undead (10955), Feedback (13896), Divine Spirit (14752), Divine Spirit (14818), Divine Spirit (14819), Holy Fire (14914), Crystal Restore (15229), Holy Nova (15237), Holy Fire (15261), Holy Fire (15262), Holy Fire (15263), Holy Fire (15264), Holy Fire (15265), Holy Fire (15266), Holy Fire (15267), Vampiric Embrace (15286), Holy Nova (15430), Holy Nova (15431), Shadowform (15473), Silence (15487), Juju Might (16329), Shadowguard (18137), Touch of Weakness (19261), Touch of Weakness (19262), Touch of Weakness (19264), Touch of Weakness (19265), Touch of Weakness (19266), Feedback (19271), Feedback (19273), Feedback (19274), Feedback (19275), Hex of Weakness (19281), Hex of Weakness (19282), Hex of Weakness (19283), Hex of Weakness (19284), Hex of Weakness (19285), Shadowguard (19308), Shadowguard (19309), Shadowguard (19310), Shadowguard (19311), Shadowguard (19312), Resurrection (20770), Holy Nova (23455), Holy Nova (23458), Holy Nova (23459), Prayer of Spirit (27681), Holy Nova (27799), Holy Nova (27800), Holy Nova (27801), Holy Nova (27803), Holy Nova (27804), Holy Nova (27805), Divine Spirit (27841), Shadowguard (28377), Shadowguard (28378), Shadowguard (28379), Shadowguard (28380), Shadowguard (28381), Shadowguard (28382), Shadowfiend (401977), Pain Suppression (402004), Penance (402284), Eye of the Void (402789), Homunculi (402799), Penance (1240727), Penance (1240730), Unholy Might (1287768), Penance (1316993)
                    Family Flags: 7, 20, 22, 27, 30, 31, 32, 47
 Description      : Improves your chance to hit with Holy spells by $s1%.
+
+Name             : Rock to the Face (id=1309967) 
+Hotfixed         : NEW SPELL
+School           : None
+Spell Type       : None
+Effects          :
+Description      : Bash the target in the face, causing $m1 Physical damage every $t1 sec for 20 sec.
+Tooltip          : Bleeding for $w1 Physical damage every $t1 sec.
 
 Name             : Power in Light (id=1309969) [Spell Family (6), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=1, max_rank=5, req_points=0]
