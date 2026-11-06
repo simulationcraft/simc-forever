@@ -6589,6 +6589,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Gore Drinker (id=1323967) [Spell Family (4), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=5, col=7, max_rank=2, req_points=0]
                  : Effect#2 [op=set, values=(0.5, 1)]
 Class            : Warrior
@@ -6602,7 +6603,7 @@ Effects          :
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Target: Self (1)
 #2 (id=1360681)  : Apply Aura (6) | Dummy (4)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
-Description      : Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next $m1 melee attacks to restore ${$s2}.1% of your maximum Health.
+Description      : Your Enrage, Berserker Rage, Bloodrage, Death Wish, Reckless Swings, and Bloodthirst abilities cause your next $m1 melee attacks to restore ${$s2}.1% of your maximum Health.
 
 Name             : Silenced (id=1324551) 
 Class            : Warrior

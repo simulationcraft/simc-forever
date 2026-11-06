@@ -1172,6 +1172,7 @@ Description      : Gives $s1 additional armor to party members within $a1 yards.
 Tooltip          : Increases armor by $s1.
 
 Name             : Thorns (desc=Rank 1) (id=467) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -1189,7 +1190,7 @@ Effects          :
 #1 (id=678994)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 3 | Scaled Value: 3 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Remove Lesser Curse (id=475) [Spell Family (3)] 
@@ -2837,6 +2838,7 @@ Effects          :
 Description      : Attempts to disengage from the target by reducing threat. Disables auto-attack.
 
 Name             : Thorns (desc=Rank 2) (id=782) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -2854,7 +2856,7 @@ Effects          :
 #1 (id=679377)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 6 | Scaled Value: 6 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Travel Form (desc=Shapeshift) (id=783) [Spell Family (7)] 
@@ -3815,6 +3817,7 @@ The act of shapeshifting frees the caster of Polymorph and Movement Impairing ef
 Tooltip          : Immune to Polymorph effects.  Increases swim speed by $5421s1% and allows underwater breathing.
 
 Name             : Thorns (desc=Rank 3) (id=1075) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -3832,7 +3835,7 @@ Effects          :
 #1 (id=679625)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 9 | Scaled Value: 9 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Rip (desc=Rank 1) (id=1079) [Spell Family (7)] 
@@ -11538,6 +11541,7 @@ Description      : Howl, causing $i enemies within $a1 yds to flee in terror for
 Tooltip          : Fleeing in terror.
 
 Name             : Bear Form (desc=Shapeshift) (id=5487) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -11562,7 +11566,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #5 (id=1363096)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: -100 | Scaled Value: -100 | Resource: energy | Target: Self (1)
-Description      : Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
+Description      : Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s3.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
 
 The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
 Tooltip          : Immune to Polymorph effects.  Increases Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.
@@ -14808,6 +14812,7 @@ Description      : Allows the Druid to prowl around, but reduces your movement s
 Tooltip          : Stealthed.  Movement speed slowed by $s2%.
 
 Name             : Ravage (desc=Rank 1) (id=6785) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -14827,9 +14832,10 @@ Effects          :
                    Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #3 (id=684651)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
-Description      : Ravage the target, causing $s2% damage plus 147 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+Description      : Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ravage (desc=Rank 2) (id=6787) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -14849,7 +14855,7 @@ Effects          :
                    Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #3 (id=686650)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
-Description      : Ravage the target, causing $s2% damage plus 217 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+Description      : Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Weakened Soul (id=6788) [Spell Family (6)] 
 Class            : Priest
@@ -22573,6 +22579,7 @@ Effects          :
 Description      : Removes the protective enchantments around Morbent Fel.
 
 Name             : Thorns (desc=Rank 4) (id=8914) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -22590,7 +22597,7 @@ Effects          :
 #1 (id=686498)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 12 | Scaled Value: 12 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Opening (id=8917) 
@@ -25405,6 +25412,7 @@ Effects          :
 Description      : Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 Name             : Thorns (desc=Rank 5) (id=9756) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -25422,7 +25430,7 @@ Effects          :
 #1 (id=687063)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 15 | Scaled Value: 15 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Healing Touch (desc=Rank 8) (id=9758) [Spell Family (7)] 
@@ -26138,6 +26146,7 @@ Description      : Regenerates all nearby party members within $a yards for $?$p
 Tooltip          : Heals nearby party members for $w1 every $t1 sec.
 
 Name             : Ravage (desc=Rank 3) (id=9866) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -26157,9 +26166,10 @@ Effects          :
                    Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #3 (id=687747)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
-Description      : Ravage the target, causing $s2% damage plus 273 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+Description      : Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ravage (desc=Rank 4) (id=9867) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -26179,7 +26189,7 @@ Effects          :
                    Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #3 (id=687813)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
-Description      : Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+Description      : Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Starfire (desc=Rank 5) (id=9875) [Spell Family (7)] 
 Class            : Druid
@@ -26577,6 +26587,7 @@ Effects          :
 Description      : Swipe $x1 nearby enemies, inflicting $s1 damage.
 
 Name             : Thorns (desc=Rank 6) (id=9910) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -26594,7 +26605,7 @@ Effects          :
 #1 (id=687684)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 18 | Scaled Value: 18 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Wrath (desc=Rank 8) (id=9912) [Spell Family (7)] 
@@ -69520,9 +69531,10 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 8 | Target: Self (1)
                    Family Flags: 26
 #2 (id=697943)   : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
-                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
                    Affected Spells: Firebolt (3110), Firebolt (7799), Firebolt (7800), Firebolt (7801), Firebolt (7802), Lash of Pain (7814), Lash of Pain (7815), Lash of Pain (7816), Firebolt (11762), Firebolt (11763), Lash of Pain (11778), Lash of Pain (11779), Lash of Pain (11780)
                    Family Flags: 12, 13
+Hotfixed         : Base Value (5 -> 0)
 Description      : Damage dealt by Hunter and Warlock pets increased by $s1%.
 
 Name             : Command (desc=Racial Passive) (id=20576) [Spell Family (9), Passive] 
@@ -152063,6 +152075,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Gore Drinker (id=1323967) [Spell Family (4), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=5, col=7, max_rank=2, req_points=0]
                  : Effect#2 [op=set, values=(0.5, 1)]
 Class            : Warrior
@@ -152076,7 +152089,7 @@ Effects          :
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Target: Self (1)
 #2 (id=1360681)  : Apply Aura (6) | Dummy (4)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
-Description      : Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next $m1 melee attacks to restore ${$s2}.1% of your maximum Health.
+Description      : Your Enrage, Berserker Rage, Bloodrage, Death Wish, Reckless Swings, and Bloodthirst abilities cause your next $m1 melee attacks to restore ${$s2}.1% of your maximum Health.
 
 Name             : Shackle Undead (id=1324415) 
 Class            : Priest
@@ -152259,24 +152272,12 @@ Effects          :
 Description      : $@spelldesc1225228
 Tooltip          : $@spellaura1225228
 
-Name             : Kidney Shot (id=1324474) 
-Class            : Rogue
-School           : Physical
-Spell Type       : Magic
-Range            : 5 yards
-Proc Chance      : 101%
-Mechanic         : Shackle
-Attributes       : No Aura Icon (60), Aura Required by Client (262), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Do Not Display Cast Time (441), Unknown (493)
-Effects          :
-#1 (id=1361318)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Description      : $@spelldesc408
-Tooltip          : $@spellaura408
-
 Name             : Kidney Shot (id=1324475) 
+Hotfixed         : Learn Level (0 -> 50), Required Level (0 -> 50)
 Class            : Rogue
 School           : Physical
 Spell Type       : None
+Spell Level      : 50
 Range            : 5 yards
 Duration         : 1 seconds
 Proc Chance      : 101%
@@ -152301,20 +152302,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : $@spelldesc2094
 Tooltip          : $@spellaura2094
-
-Name             : Gouge (id=1324481) 
-Class            : Rogue
-School           : Physical
-Spell Type       : None
-Range            : 5 yards
-Duration         : 4 seconds
-Proc Chance      : 101%
-Attributes       : No Aura Icon (60), Aura Required by Client (262), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Do Not Display Cast Time (441), Unknown (493)
-Effects          :
-#1 (id=1361328)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Description      : $@spelldesc1776
-Tooltip          : $@spellaura1776
 
 Name             : Sap (id=1324482) 
 Class            : Rogue
@@ -153198,6 +153185,36 @@ Hotfixed         : NEW EFFECT
 Description      : Increases Stamina of nearby allies by $s1% for $d.
 Tooltip          : Stamina increased by $s1%.
 
+Name             : Call Anathema (id=1327991) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366762)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Anathema.
+
+Name             : Call Benediction (id=1327993) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 1 seconds
+Cooldown         : 60 seconds
+Category         : 1160 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1366764)  : Summon Item (34)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1
+Hotfixed         : NEW EFFECT
+Description      : Calls forth Benediction.
+
 Name             : Elixir of Endless Mana (id=1328032) 
 Hotfixed         : NEW SPELL
 School           : Physical
@@ -153705,7 +153722,8 @@ Effects          :
 Description      : Increases the rogue's movement speed by $s1% for $d.  Does not break stealth.
 Tooltip          : Movement speed increased by $w1%.
 
-Name             : Shank (id=1329283) [Spell Family (8)] 
+Name             : Shank (desc=Rank 1) (id=1329283) [Spell Family (8)] 
+Hotfixed         : Description, Rank
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -153726,7 +153744,7 @@ Effects          :
                    Modified By: Flash of Steel (1329284 effect#1)
 #3 (id=1368717)  : Energize Power (30)
                    Base Value: 0 | Scaled Value: 0 | Resource: combo_points | Target: Self (1)
-Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 1 Combo Point.][] Shank cannot Miss.
+Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.
 
 Name             : Flash of Steel (id=1329284) [Spell Family (8), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=6, col=7, max_rank=5, req_points=0]
@@ -153813,7 +153831,8 @@ Effects          :
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Trigger Spell: 1310703 | Target: Self (1)
 Description      : Causes your Shank ability to increase your Poison damage by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d.
 
-Name             : Shank (id=1329549) [Spell Family (8)] 
+Name             : Shank (desc=Rank 2) (id=1329549) [Spell Family (8)] 
+Hotfixed         : Description, Rank
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -153834,7 +153853,7 @@ Effects          :
                    Modified By: Flash of Steel (1329284 effect#1)
 #3 (id=1369161)  : Energize Power (30)
                    Base Value: 0 | Scaled Value: 0 | Resource: combo_points | Target: Self (1)
-Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 1 Combo Point.][] Shank cannot Miss.
+Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.
 
 Name             : Reckless Swings (id=1329554) [Spell Family (4)] 
 Class            : Warrior
