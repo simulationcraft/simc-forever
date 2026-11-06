@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8362> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8363> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -7801,6 +7801,7 @@ static constexpr std::array<spelltext_data_t, 8362> __spelltext_data { {
   { 1292880, "When struck in combat has a $h% chance of inflicting $1292879s1 Nature damage to the attacker.", 0, 0 },
   { 1292997, "Increase experience gained from slaying Undead by $s1% for $d.", "Increase experience gained from slaying Undead by $w1%.", 0 },
   { 1293085, "Restore $s1 charges to a Manual Crowd Pummeler device in your possession.", 0, 0 },
+  { 1293183, "Hurl spikes at the target, dealing $s1 Physical damage and jumping to ${$x1-1} additional nearby enemy. Each jump reduces the damage by ${$f*100}%.", 0, 0 },
   { 1293199, "Increases movement speed by $s1% in The Barrens, Thousand Needles, Razorfen Kraul, and Razorfen Downs.", "In The Barrens, Thousand Needles, Razorfen Kraul, or Razorfen Downs, movement speed increased by $s1%.", 0 },
   { 1293241, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 1" },
   { 1293248, "Summons a hawk.", 0, 0 },
