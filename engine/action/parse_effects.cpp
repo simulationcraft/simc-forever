@@ -949,6 +949,16 @@ double parse_player_effects_t::composite_parry() const
   return parry;
 }
 
+double parse_player_effects_t::composite_block() const
+{
+  auto block = player_t::composite_block();
+
+  for ( const auto& i : block_effects )
+    block += get_effect_value( i );
+
+  return block;
+}
+
 double parse_player_effects_t::composite_base_armor_multiplier() const
 {
   auto bam = player_t::composite_base_armor_multiplier();
@@ -1279,6 +1289,11 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
       str = "parry";
       invalidate( CACHE_PARRY );
       return &parry_effects;
+
+    case A_MOD_BLOCK_PERCENT:
+      str = "block";
+      invalidate( CACHE_BLOCK );
+      return &block_effects;
 
     case A_MOD_BASE_RESISTANCE_PCT:
       if ( eff.misc_value1() & SCHOOL_MASK_PHYSICAL )
