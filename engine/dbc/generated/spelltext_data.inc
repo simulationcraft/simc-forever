@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8386> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8390> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3275,6 +3275,7 @@ static constexpr std::array<spelltext_data_t, 8386> __spelltext_data { {
   {   18078, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   18081, "Blasts a target for $s1 Nature damage.", 0, 0 },
   {   18082, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
+  {   18083, "Blasts a target for $s1 Fire damage.", 0, 0 },
   {   18091, "Blasts a target for $s1 Arcane damage.", 0, 0 },
   {   18092, "Blasts a target for $s1 Frost damage.", 0, 0 },
   {   18093, 0, "Stunned.", 0 },
@@ -6058,6 +6059,7 @@ static constexpr std::array<spelltext_data_t, 8386> __spelltext_data { {
   {  432300, "Gain the Unfair Advantage ability:\r\n\r\n$@spellicon432273\r\n$@spelldesc432273", 0, 0 },
   {  432301, "Engrave your bracers with the Unfair Advantage rune:\r\n\r\n$@spellicon432273\r\n$@spelldesc432273", 0, 0 },
   {  433107, "While you are in Cat Form, Bear Form, or Dire Bear Form, party members within $407975a1 yards gain increased combat ferocity.  Each melee hit has a $407975h% chance of granting the attacker an extra attack with $407975s1% additional Attack Power. No effect if the party member is already benefitting from Windfury Totem.\r\n", "Chance to gain extra attacks.", 0 },
+  {  433427, "Protect yourself against the elements as long as you survive.", "You feel warm and fuzzy inside.", 0 },
   {  433521, "Grants several improvements to your poisons:\r\n\r\nWhen you inflict any other poison on a target, you also inflict Deadly Poison.\r\n\r\nIf your weapon does not have a poison applied, it has a chance to trigger Instant Poison as if Instant Poison were applied.\r\n\r\nDeadly Poison and Instant Poison now gain increased damage from your Attack Power.", 0, 0 },
   {  433813, "Your next Soul Shard consuming spell cost no Soul Shards to cast.", "Your next Soul Shard consuming spell cost no Soul Shards to cast.", 0 },
   {  434350, "Plant into Soft Soil.", 0, 0 },
@@ -7856,6 +7858,7 @@ static constexpr std::array<spelltext_data_t, 8386> __spelltext_data { {
   { 1293819, "Reduces the duration of all movement impairing effects on you by $m2%.", 0, 0 },
   { 1293820, "Increases your chance to Dodge by $s1% for $d. This effect is doubled in Strongholds and Cities.", "Chance to dodge increased by $w1%.", 0 },
   { 1293966, "Tosses a torch at the target location, starting a fire.", 0, 0 },
+  { 1293980, "Chance on harmful spell cast to blast a target for $18083s1 Fire damage.", 0, 0 },
   { 1293986, "Use the crystal to temporarily stun the Master of Vessels.", 0, 0 },
   { 1294006, "$@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $1294007s2% movement speed while in Hyjal for $1294007d. $@spelldesc1243969", 0, 0 },
   { 1294007, "A nutritious meal has made you Well Fed, increasing your movement speed.", "Your movement speed is increased by $w2% while in Hyjal.", 0 },
@@ -8328,6 +8331,7 @@ static constexpr std::array<spelltext_data_t, 8386> __spelltext_data { {
   { 1324551, "$@spelldesc18498", "$@spellaura18498", 0 },
   { 1324556, "$@spelldesc12809", "$@spellaura12809", 0 },
   { 1324558, "$@spelldesc676", "$@spellaura676", 0 },
+  { 1324578, "Reduces the hit chance of Fear effects against you by $s1%.", 0, 0 },
   { 1324686, "Deals $17496s1 Nature damage every time you block. Damage is doubled in swamps.", 0, 0 },
   { 1325228, "When struck in combat, inflicts $s1 Physical damage to the attacker.", 0, 0 },
   { 1325256, "Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $1325257s1 mana every $1325257t1 seconds to group members within $1325257a1 yards.", 0, "Rank 4" },
