@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8374> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8380> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -1995,6 +1995,7 @@ static constexpr std::array<spelltext_data_t, 8374> __spelltext_data { {
   {   13485, "Permanently enchant a shield to give 3 spirit.", 0, 0 },
   {   13491, "Pummel the target for $s1 damage and interrupt the spell being cast for $d.", 0, 0 },
   {   13494, "Increases your attack speed by $s1% for $d1.", "Increased attack speed.", 0 },
+  {   13496, "Slows the target's movement by $s1% for $d.", "Lowered movement speed.", 0 },
   {   13497, "Turn three lesser astral essences into a greater one.", 0, 0 },
   {   13498, "Turn a greater astral essence into three lesser ones.", 0, 0 },
   {   13501, "Permanently enchant a bracer so it increases the wearer's Stamina by 4.", 0, 0 },
@@ -2021,6 +2022,7 @@ static constexpr std::array<spelltext_data_t, 8374> __spelltext_data { {
   {   13554, "Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.", "Causes $s1 Nature damage every $t1 sec.", "Rank 7" },
   {   13555, "Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.", "Causes $s1 Nature damage every $t1 sec.", "Rank 8" },
   {   13564, "Use on the Dark Coffer in the Black Vault.", 0, 0 },
+  {   13587, "Increases mount speed by $s1%.", "Mounted speed increased by $s1%.", 0 },
   {   13590, "Increases damage done by Arcane spells and effects by up to $s1.", 0, 0 },
   {   13591, "Increases damage done by Arcane spells and effects by up to $s1.", 0, 0 },
   {   13592, "Increases damage done by Arcane spells and effects by up to $s1.", 0, 0 },
@@ -7819,6 +7821,9 @@ static constexpr std::array<spelltext_data_t, 8374> __spelltext_data { {
   { 1293359, "Dunk the venomous heart in the Well of Eternity. Wait a second...", 0, 0 },
   { 1293407, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   { 1293421, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
+  { 1293429, "Deal $s1 Fire damage and increase the target's damage taken from this effect by $s1. Stacks up to $1293451s2 times.", 0, 0 },
+  { 1293433, "Melee attacks with this weapon torture the target, dealing $1293429s1 Fire damage and increasing your damage dealt to that target with this effect by $1293429s1, stacking up to $1293451u times.", 0, 0 },
+  { 1293451, 0, "Damage taken from Torture increased by $s1.", 0 },
   { 1293482, "Discipline the target, dealing $s1 Physical damage. Canines and Hyenas are Stunned and sit for $1293483d.", 0, 0 },
   { 1293483, 0, "Stunned and being a good dog.", 0 },
   { 1293525, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 2" },
@@ -8144,6 +8149,7 @@ static constexpr std::array<spelltext_data_t, 8374> __spelltext_data { {
   { 1311701, 0, "Empowers your next melee attack without Seal of Fury active with $s3 instances of Seal of Fury.", 0 },
   { 1312002, "Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.", 0, "Rank 1" },
   { 1312052, "Inflicts $443265o1 Fire damage over $443265d to target Demon or Beast and Roots them in place for $d. Damage caused may interrupt the effect.", "Rooted.", 0 },
+  { 1312176, "Blast the target with the fires of a forge, inflicting $s1 Fire damage.", 0, 0 },
   { 1312438, "Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.", 0, 0 },
   { 1312639, "Summons a hawk.", 0, 0 },
   { 1312670, "Returns you to $?pc923[Orgrimmar][Stormwind]. Single-use.", 0, 0 },
