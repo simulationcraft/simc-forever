@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70790
-static constexpr std::array<spelltext_data_t, 8380> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8385> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -2086,6 +2086,7 @@ static constexpr std::array<spelltext_data_t, 8380> __spelltext_data { {
   {   13744, "Increases Fire resistance by $s2 and absorbs $s1 Fire damage.  Lasts $d.", "Increased Fire resistance by $s2.\r\nAbsorbs $w1 Fire damage.", 0 },
   {   13746, "Permanently enchant a cloak to give $ec1 additional armor.", 0, 0 },
   {   13750, "Increases your Energy regeneration rate by $s1% for $d.", "Energy regeneration increased by $s1%.", 0 },
+  {   13752, "Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.", "Decreases armor by $s1.  Cannot stealth or turn invisible.", "Rank 2" },
   {   13754, "Gives your Kick ability a $m1% chance to Silence the target for $18425d.", 0, 0 },
   {   13794, "Permanently enchant a cloak to give 3 to all resistances.", 0, 0 },
   {   13795, "Place a Fire trap that will burn the first enemy to approach for $13797o1 Fire damage over $13797d. Trap will exist for $d. Only one Fire trap can be active at a time.", 0, "Rank 1" },
@@ -7806,6 +7807,7 @@ static constexpr std::array<spelltext_data_t, 8380> __spelltext_data { {
   { 1292879, "Blasts a target for $s1 Nature damage.", 0, 0 },
   { 1292880, "When struck in combat has a $h% chance of inflicting $1292879s1 Nature damage to the attacker.", 0, 0 },
   { 1292997, "Increase experience gained from slaying Undead by $s1% for $d.", "Increase experience gained from slaying Undead by $w1%.", 0 },
+  { 1293003, "Fire damage taken increased by $s1%.", "Increases Fire damage taken by $s1%.", 0 },
   { 1293005, "Punctures target's armor, lowering it by $s1.", "Armor decreased by $s1.", 0 },
   { 1293085, "Restore $s1 charges to a Manual Crowd Pummeler device in your possession.", 0, 0 },
   { 1293183, "Hurl spikes at the target, dealing $s1 Physical damage and jumping to ${$x1-1} additional nearby enemy. Each jump reduces the damage by ${$f*100}%.", 0, 0 },
@@ -7841,6 +7843,8 @@ static constexpr std::array<spelltext_data_t, 8380> __spelltext_data { {
   { 1293741, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Critical Strike Chance.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Critical Strike Chance.", 0 },
   { 1293742, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% reduced chance to be dodged or parried.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% reduced chance to be dodged or parried.", 0 },
   { 1293743, "Increases your Stamina by $s1. While in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $s2% Haste.\r\n\r\nLasts for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Stamina increased by $w1.\r\n\r\nWhile in Mount Hyjal, Hyjal Summit, and the Barrow Deeps, you also gain $w2% Haste.", 0 },
+  { 1293782, "Spells and attacks against Swine deal $1292675s1 Nature damage.", "Deal $s1 Nature damage to Swine.", 0 },
+  { 1293783, "Spells and attacks against Swine deal $1292675s1 Nature damage.", 0, 0 },
   { 1293800, "Empty the contents of the leather-bound flask into the shallows of the pool of water inside Deadwood Den.", 0, 0 },
   { 1293805, "Call upon newly awakened power to increase the limit of Artisan's Tier items you can equip to $s2.", 0, 0 },
   { 1293812, "Deals $s1 Fire damage to your target and an additional $m2% damage if the target is afflicted by Immolate.", 0, "Rank 2" },
@@ -8220,6 +8224,7 @@ static constexpr std::array<spelltext_data_t, 8380> __spelltext_data { {
   { 1317442, 0, "In a Forest or Grassland area, all Resistances increased by an additional $w1.", 0 },
   { 1317443, "Your spells pierce $s1 Magical Resistances. Gain an additional $1317444s1 Spell Piercing in Forest and Grassland areas.", 0, 0 },
   { 1317444, 0, "In a Forest or Grassland area, Spell Piercing increased by an additional $s1.", 0 },
+  { 1317486, "Increases movement speed by $s1% in Dustwallow Marsh and Swamp of Sorrows.", "Movement speed increased by $s1%.", 0 },
   { 1317605, "Turn on the lights of Dalaran.", 0, 0 },
   { 1317740, "Finds the nearest treasure chest, if one is nearby. Only outdoors.", 0, 0 },
   { 1317999, 0, "In a Forest or Grassland area, Attack Power increased by an additional $w1.", 0 },
