@@ -218,7 +218,7 @@ Druid
 17118    Subtlety
 17123    Improved Tranquility
 17144   *Wrath
-17154   *The Green Tower
+17154    The Green Tower
 17245    Overgrowth
 17329    Nature's Grasp
 17401    Hurricane

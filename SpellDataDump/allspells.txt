@@ -39668,6 +39668,19 @@ Effects          :
 Description      : Lowers the Attack Power of the target by $s1 for $d.
 Tooltip          : Attack Power lowered by $s1.
 
+Name             : Lightning Bolt (id=13527) 
+School           : Nature
+Spell Type       : Magic
+Resource         : 20 Base Mana (0) (id=178791)
+Spell Level      : 28
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=690192)   : School Damage (2): nature
+                   Base Value: 105 | Scaled Value: 105 (delta=0.222222) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
+
 Name             : Decayed Power (id=13528) 
 School           : Nature
 Spell Type       : Magic
@@ -54960,6 +54973,24 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Attach the pieces into a whole.
 
+Name             : The Green Tower (desc=Rank 1) (id=17154) [Spell Family (7)] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 45
+Range            : 30 yards
+Duration         : 30 seconds
+Proc Chance      : 3%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Triggered By     : The Green Tower (18097)
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=694562)   : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+#2 (id=1362974)  : Apply Aura (6) | Resistance (22)
+                   Base Value: 50 | Scaled Value: 50 | Misc Value: 8 | Target: Self (1)
+Description      : Causes $s1 Nature damage to attackers when hit and increases Nature resistance by $s2 for $d.
+Tooltip          : Increased Nature resistance and inflicts $s1 Nature damage to attackers.
+
 Name             : Sprinkling Purified Water (id=17155) 
 School           : Physical
 Spell Type       : None
@@ -58830,6 +58861,21 @@ Effects          :
 Description      : Poisons target for $s1 Nature damage every $t1 sec for $d.
 Tooltip          : $s1 Nature damage inflicted every $t1 sec.
 
+Name             : Rend (id=18078) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 30
+Range            : 5 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Mechanic         : Bleed
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=695306)   : Apply Aura (6) | Periodic Damage (3): physical every 6 seconds
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+Description      : Wounds the target causing them to bleed for $o1 damage over $d.
+Tooltip          : Bleeding for $s1 damage every $t1 sec.
+
 Name             : Lightning Bolt (id=18081) 
 School           : Nature
 Spell Type       : Magic
@@ -58932,6 +58978,19 @@ Effects          :
 #1 (id=695873)   : Apply Aura (6) | Dummy (4)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
 Description      : Your non-periodic critical strikes with your Fire spells increase your Shadow damage done by $m1% for $18093d, and your non-periodic critical strikes with your Shadow spells increase your Fire damage done by $m1% for $18093d.
+
+Name             : The Green Tower (id=18097) [Passive, Hidden] 
+School           : Shadow
+Spell Type       : None
+Duration         : 30 seconds
+Proc Chance      : 1%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=694860)   : Apply Aura (6) | Proc Trigger Spell (42): The Green Tower
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 17154 | Target: Self (1)
+Description      : When struck in combat has a 1% chance of raising a thorny shield that inflicts $17154s1 Nature damage to attackers when hit and increases Nature resistance by $17154s2 for $17154d.
+
 
 Name             : Firebolt (id=18112) 
 School           : Fire
@@ -142911,6 +142970,20 @@ Effects          :
 Description      : Increase experience gained from slaying Undead by $s1% for $d.
 Tooltip          : Increase experience gained from slaying Undead by $w1%.
 
+Name             : Puncture Armor (id=1293005) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 45
+Range            : 100 yards
+Duration         : 30 seconds
+Category         : 36 (Type 0x0)
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1313384)  : Apply Aura (6) | Modify Armor (674)
+                   Base Value: -100 | Scaled Value: -100 | Misc Value: 1 | Target: Targeted Enemy (6)
+Description      : Punctures target's armor, lowering it by $s1.
+Tooltip          : Armor decreased by $s1.
+
 Name             : 9-60 Battery Pack (id=1293085) 
 School           : Physical
 Spell Type       : None
@@ -143371,6 +143444,21 @@ $spfi=${$SPFI}
 $which=${$cond($gt($<spfi>,$<sps>), $<spfi>,$<sps>)}
 $minDam=${((($pl-26)*1.5)+14+(0.078*$<which>))}
 $maxDam=${((($pl-26)*1.5)+17+(0.078*$<which>))}
+
+Name             : Spellsever (id=1293714) 
+School           : Physical
+Spell Type       : Ranged
+Spell Level      : 6
+Range            : 100 yards
+Velocity         : 40 yards/sec
+Duration         : 5 seconds
+Attributes       : Do Not Sheath (18), Suppress Caster Procs (112), Suppress Weapon Procs (151), Show Mechanic as Combat Text (213), Uses Ranged Slot (Cosmetic Only) (322), Unknown (493)
+Effects          :
+#1 (id=1314642)  : School Damage (2): physical
+                   Base Value: 36 | Scaled Value: 36 | Target: Targeted Enemy (6)
+#2 (id=1314643)  : Interrupt Cast (68)
+                   Base Value: 0 | Scaled Value: 0 | Mechanic: Interrupt | Target: Targeted Enemy (6)
+Description      : Launch a magic severing bolt at the target, dealing $s1 Physical damage and interrupting the spell being cast for $d.
 
 Name             : Flask of Natural Accuracy (id=1293740) 
 School           : Physical
@@ -150058,6 +150146,20 @@ Effects          :
                    Base Value: 3 | Scaled Value: 3 | Target: Self (1)
 Description      : Melt the key at a forge for $s1 Bronze Bars.
 
+Name             : Burning Shell (id=1314040) 
+School           : Fire
+Spell Type       : Ranged
+Spell Level      : 1
+Range            : 100 yards
+Velocity         : 35 yards/sec
+Duration         : 9 seconds
+Attributes       : Is Ability (4), Suppress Caster Procs (112), Suppress Weapon Procs (151), Unknown (493)
+Effects          :
+#1 (id=1345715)  : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
+                   Base Value: 7 | Scaled Value: 7 | Target: Targeted Enemy (6)
+Description      : Strike the target with a Flaming Shell, inflicting $s1 Fire damage every 3 sec for 9 sec.
+Tooltip          : Suffering $s1 Fire damage every 3 sec.
+
 Name             : Improved Seal of Fury (id=1314103) [Passive, Hidden] 
 Class            : Paladin
 School           : Physical
@@ -150097,6 +150199,17 @@ Effects          :
 #1 (id=1345888)  : Apply Aura (6) | Proc Trigger Spell (42): Ancestor's Vengeance
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 16939 | Target: Self (1)
 Description      : $@spelldesc16939
+
+Name             : Puncture (id=1314305) 
+School           : Physical
+Spell Type       : Melee
+Range            : 10 yards
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1346080)  : School Damage (2): physical
+                   Base Value: 21 | Scaled Value: 21 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Puncture the target, inflicting $s1 Physical damage.
 
 Name             : Summon Spider (desc=Summon) (id=1314364) 
 School           : Physical
@@ -152400,6 +152513,16 @@ Effects          :
 #1 (id=1361622)  : Apply Aura (6) | Proc Trigger Spell (42): Unearthed Barrier
                    Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1324685 | Target: Self (1)
 Description      : Deals $17496s1 Nature damage every time you block. Damage is doubled in swamps.
+
+Name             : The Green Tower (id=1325228) [Passive] 
+School           : Nature
+Spell Type       : None
+Spell Level      : 40
+Attributes       : Passive (6), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1362423)  : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+Description      : When struck in combat, inflicts $s1 Physical damage to the attacker.
 
 Name             : Mana Tide Totem (desc=Rank 4) (id=1325256) [Spell Family (11)] 
 Class            : Shaman
