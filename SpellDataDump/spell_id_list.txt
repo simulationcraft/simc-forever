@@ -1730,7 +1730,7 @@ Mage
 18199    Fireball
 18398    Frost Blast
 18459    Incineration
-18796   *Fireball
+18796    Fireball
 18809    Pyroblast
 18833   *Firebolt
 18948   *Dark Energy
