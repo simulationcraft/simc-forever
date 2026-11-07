@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70790 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70862 Live
 Name             : Blizzard (desc=Rank 1) (id=10) [Spell Family (3)] 
 Class            : Mage
 School           : Frost
@@ -131,7 +131,7 @@ Effects          :
 #1 (id=679178)   : School Damage (2): frost
                    Base Value: 20 | Scaled Value: 22.5 (delta=0.1) | Points Per Level: 0.5 | SP Coefficient: 0.029 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 #2 (id=679179)   : Apply Aura (6) | Root (26)
-                   Base Value: 0 | Scaled Value: 0 | Radius: 10 yards | Mechanic: Root | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 0 | Scaled Value: 0 | Radius: 0 - 10 yards | Mechanic: Root | Target: Source (22) -> Enemy in Area (15)
 Description      : Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
 Tooltip          : Frozen in place.
 Variables        : $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
@@ -495,7 +495,7 @@ Effects          :
 #1 (id=679518)   : School Damage (2): frost
                    Base Value: 34 | Scaled Value: 36.5 (delta=0.114286) | Points Per Level: 0.5 | SP Coefficient: 0.029 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 #2 (id=679519)   : Apply Aura (6) | Root (26)
-                   Base Value: 0 | Scaled Value: 0 | Radius: 10 yards | Mechanic: Root | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 0 | Scaled Value: 0 | Radius: 0 - 10 yards | Mechanic: Root | Target: Source (22) -> Enemy in Area (15)
 Description      : Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
 Tooltip          : Frozen in place.
 Variables        : $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
@@ -1141,7 +1141,7 @@ Effects          :
 #1 (id=684315)   : School Damage (2): frost
                    Base Value: 53 | Scaled Value: 55.5 (delta=0.109091) | Points Per Level: 0.5 | SP Coefficient: 0.029 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 #2 (id=684316)   : Apply Aura (6) | Root (26)
-                   Base Value: 0 | Scaled Value: 0 | Radius: 10 yards | Mechanic: Root | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 0 | Scaled Value: 0 | Radius: 0 - 10 yards | Mechanic: Root | Target: Source (22) -> Enemy in Area (15)
 Description      : Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
 Tooltip          : Frozen in place.
 Variables        : $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
@@ -3252,7 +3252,7 @@ Effects          :
 #1 (id=688517)   : School Damage (2): frost
                    Base Value: 73 | Scaled Value: 75.5 (delta=0.106667) | Points Per Level: 0.5 | SP Coefficient: 0.029 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 #2 (id=688518)   : Apply Aura (6) | Root (26)
-                   Base Value: 0 | Scaled Value: 0 | Radius: 10 yards | Mechanic: Root | Target: Source (22) -> Enemy in Area (15)
+                   Base Value: 0 | Scaled Value: 0 | Radius: 0 - 10 yards | Mechanic: Root | Target: Source (22) -> Enemy in Area (15)
 Description      : Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.
 Tooltip          : Frozen in place.
 Variables        : $power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}
@@ -4736,6 +4736,24 @@ Effects          :
 #1 (id=696606)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Description      : Allows $s1% of your Mana regeneration to continue while casting.
+
+Name             : Fireball (id=18796) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 45 Base Mana (0) (id=184197)
+Spell Level      : 45
+Range            : 35 yards
+Cast Time        : 2 seconds
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=696782)   : School Damage (2): fire
+                   Base Value: 262 | Scaled Value: 262 (delta=0.238636) | Target: Targeted Enemy (6)
+#2 (id=696783)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
+                   Base Value: 20 | Scaled Value: 20 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
 
 Name             : Pyroblast (desc=Rank 8) (id=18809) [Spell Family (3)] 
 Class            : Mage
@@ -9668,6 +9686,23 @@ Effects          :
                    Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
 #2 (id=1313008)  : School Damage (2): frost
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+Tooltip          : Movement slowed by $s1%.
+
+Name             : Frostbolt (id=1293790) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1314775)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1314776)  : School Damage (2): frost
+                   Base Value: 42 | Scaled Value: 42 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Fireball (id=1299850) [Spell Family (3)] 

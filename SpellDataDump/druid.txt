@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70790 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70862 Live
 Name             : Demoralizing Roar (desc=Rank 1) (id=99) [Spell Family (7)] 
 Class            : Druid
 School           : Physical
@@ -66,7 +66,7 @@ Effects          :
 #1 (id=678994)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 3 | Scaled Value: 3 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Tranquility (desc=Rank 1) (id=740) [Spell Family (7)] 
@@ -273,7 +273,7 @@ Effects          :
 #1 (id=679377)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 6 | Scaled Value: 6 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Travel Form (desc=Shapeshift) (id=783) [Spell Family (7)] 
@@ -393,7 +393,7 @@ Effects          :
 #1 (id=679625)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 9 | Scaled Value: 9 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Rip (desc=Rank 1) (id=1079) [Spell Family (7)] 
@@ -1385,7 +1385,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 #5 (id=1363096)  : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: -100 | Scaled Value: -100 | Resource: energy | Target: Self (1)
-Description      : Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
+Description      : Shapeshift into Bear Form, increasing Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s3.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.
 
 The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
 Tooltip          : Immune to Polymorph effects.  Increases Attack Power by $1178s4, Armor contribution from items by $1178s1%, and Health by $1178s2.
@@ -1524,7 +1524,7 @@ Effects          :
                    Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #3 (id=684651)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
-Description      : Ravage the target, causing $s2% damage plus 147 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+Description      : Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ravage (desc=Rank 2) (id=6787) [Spell Family (7)] 
 Class            : Druid
@@ -1546,7 +1546,7 @@ Effects          :
                    Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #3 (id=686650)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
-Description      : Ravage the target, causing $s2% damage plus 217 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+Description      : Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Growl (id=6795) [Spell Family (7)] 
 Class            : Druid
@@ -1791,7 +1791,7 @@ Effects          :
 #1 (id=686498)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 12 | Scaled Value: 12 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Tranquility (desc=Rank 2) (id=8918) [Spell Family (7)] 
@@ -2621,7 +2621,7 @@ Effects          :
 #1 (id=687063)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 15 | Scaled Value: 15 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Healing Touch (desc=Rank 8) (id=9758) [Spell Family (7)] 
@@ -3165,7 +3165,7 @@ Effects          :
                    Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #3 (id=687747)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
-Description      : Ravage the target, causing $s2% damage plus 273 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+Description      : Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Ravage (desc=Rank 4) (id=9867) [Spell Family (7)] 
 Class            : Druid
@@ -3187,7 +3187,7 @@ Effects          :
                    Base Value: 435 | Scaled Value: 4.35 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #3 (id=687813)   : Energize Power (30)
                    Base Value: 1 | Scaled Value: 1 | Resource: combo_points | Target: Self (1)
-Description      : Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
+Description      : Ravage the target, causing $s2% damage plus ${$m1} to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 
 Name             : Starfire (desc=Rank 5) (id=9875) [Spell Family (7)] 
 Class            : Druid
@@ -3576,7 +3576,7 @@ Effects          :
 #1 (id=687684)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 18 | Scaled Value: 18 | Target: Targeted Ally (21)
                    Modified By: Improved Thorns (16836 effect#1), Improved Thorns (16839 effect#1), Improved Thorns (16840 effect#1), S03 - Item - T1 - Druid - Balance 2P Bonus (455852 effect#1)
-Description      : Thorns sprout from the friendly target causing $w1 Nature damage to attackers when hit.  Lasts $d.
+Description      : Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.
 Tooltip          : Causes $w1 Nature damage to attackers.
 
 Name             : Wrath (desc=Rank 8) (id=9912) [Spell Family (7)] 
@@ -5303,7 +5303,6 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=700189)   : Apply Aura (6) | Threat (10)
                    Base Value: 115 | Scaled Value: 115 | Misc Value: 127 | Target: Self (1)
-Hotfixed         : Base Value (50 -> 115)
                    Modified By: S03 - Item - T1 - Druid - Guardian 6P Bonus (456332 effect#1)
 
 Name             : Gift of the Wild (desc=Rank 1) (id=21849) [Spell Family (7)] 
