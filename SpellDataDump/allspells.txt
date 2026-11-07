@@ -37957,6 +37957,18 @@ Effects          :
 Description      : Your next $n melee weapon swings strike an additional nearby opponent.
 Tooltip          : Sweeping Strikes.
 
+Name             : Strength of Stone (id=12731) 
+School           : Physical
+Spell Type       : Melee
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=690755)   : School Damage (2): physical
+                   Base Value: 196 | Scaled Value: 196 | Target: Targeted Enemy (6)
+#2 (id=1315096)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+Description      : Rend earth and stone, dealing $s1 Physical damage. Deals $s2 times as much damage to Earth Elementals, Golems, and Titan-forged.
+
 Name             : Fearless (id=12733) 
 School           : Physical
 Spell Type       : None
@@ -152756,6 +152768,33 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 144545 | Target: Self (1)
 Description      : $@spelldesc1320096
 Tooltip          : Feeling down. You'll get over it soon enough.
+
+Name             : Black Horn Necklace (id=1320330) [Passive] 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Attributes       : Passive (6), Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1354899)  : Apply Aura (6) | Modify Healing Power (135)
+                   Base Value: 11 | Scaled Value: 11 | Misc Value: 126 | Target: Self (1)
+#2 (id=1354900)  : Apply Aura (6) | Damage Done (13)
+                   Base Value: 4 | Scaled Value: 4 | Misc Value: 0x7e | Target: Self (1)
+                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
+Description      : Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects. This effect is doubled in Strongholds and Cities.
+
+Name             : Black Horn Necklace (id=1320332) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Aura Points On Client (268), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1354902)  : Apply Aura (6) | Modify Healing Power (135)
+                   Base Value: 11 | Scaled Value: 11 | Misc Value: 126 | Target: Self (1)
+#2 (id=1354903)  : Apply Aura (6) | Damage Done (13)
+                   Base Value: 4 | Scaled Value: 4 | Misc Value: 0x7e | Target: Self (1)
+                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
+Tooltip          : In a Stronghold or City, healing done increased by up to $w1 and spell damage done increased by up to $w2.
 
 Name             : Thunderstomp (id=1320498) 
 School           : Nature
