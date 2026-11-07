@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8472> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8475> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3053,6 +3053,9 @@ static constexpr std::array<spelltext_data_t, 8472> __spelltext_data { {
   {   17320, "Increases healing done by spells and effects by up to $s1.", 0, 0 },
   {   17322, "Increases the range of your offensive Shadow spells by $s1%.", 0, 0 },
   {   17329, "The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 6). Castable while shapeshifted. Lasts $d.", "Melee damage you take will entangle the enemy.", "Rank 6" },
+  {   17350, "Has a chance when struck in combat to increase your chance to block by $17351s1% for $17351d. Undead that strike you are $s2 times as likely to activate this effect.", "Chance to block increased by $17351s1%.", 0 },
+  {   17351, "Chance to block increased by $s1%.", "Chance to block increased by $s1%.", 0 },
+  {   17352, "Increases Attack Power by $s1, and Attack Power against Undead by an additional $s2 for $d.", "Attack Power increased by $s1. Attack Power against Undead increased by $s2.", 0 },
   {   17354, "Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $17355s1 mana every $17355t1 seconds to group members within $17355a1 yards.", 0, "Rank 2" },
   {   17355, 0, "Gain $s1 mana every $t1 seconds.", "Rank 2" },
   {   17359, "Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $17360s1 mana every $17360t1 seconds to group members within $17360a1 yards.", 0, "Rank 3" },
