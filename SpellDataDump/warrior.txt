@@ -3232,6 +3232,19 @@ Effects          :
 Description      : The warrior enters a berserker rage, becoming immune to Fear and Incapacitate effects and generating extra rage when taking damage.  Lasts $d.
 Tooltip          : Immune to Fear and Incapacitate effects.  Generating extra rage when taking damage.
 
+Name             : Savior's Sacrifice (id=18826) [Spell Family (4)] 
+School           : Physical
+Spell Type       : Magic
+Resource         : 0 Energy (3) (id=182845)
+Spell Level      : 45
+Duration         : 20 seconds
+Attributes       : Do Not Sheath (18), No School Immunities (90), Unknown (493)
+Effects          :
+#1 (id=695124)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Self (1)
+Description      : Increases armor by $s1 for $d.
+Tooltip          : Increased armor.
+
 Name             : Improved Intimidating Shout (desc=Rank 1) (id=19870) [Spell Family (4), Passive, Hidden] 
 Class            : Warrior
 School           : Physical

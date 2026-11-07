@@ -5405,7 +5405,7 @@ Warrior
 18328   *Incapacitating Shout
 18381    Cripple
 18499    Berserker Rage
-18826   *Savior's Sacrifice
+18826    Savior's Sacrifice
 19131   *Shield Charge
 19134   *Intimidating Shout
 19196   *Surge
