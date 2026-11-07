@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8464> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8467> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -1904,6 +1904,7 @@ static constexpr std::array<spelltext_data_t, 8464> __spelltext_data { {
   {   12708, "Gives your Pummel ability a $s1% chance to daze the target.", 0, "Rank 3" },
   {   12709, "Captures radioactive fallout.", 0, 0 },
   {   12723, "Your next $n melee weapon swings strike an additional nearby opponent.", "Sweeping Strikes.", 0 },
+  {   12731, "Rend earth and stone, dealing $s1 Physical damage. Deals $s2 times as much damage to Earth Elementals, Golems, and Titan-forged.", 0, 0 },
   {   12733, "Increases all Resistances by $s2 and grants Immunity to Fear for $d.", "Resistances increased by $s2 and Immune to Fear.", 0 },
   {   12735, "Use to fill the Egg of Hakkar.", 0, 0 },
   {   12749, "Activates your Mithril Mechanical Dragonling to fight for you for $d.  It requires an hour to cool down before it can be used again.", 0, 0 },
@@ -8341,6 +8342,8 @@ static constexpr std::array<spelltext_data_t, 8464> __spelltext_data { {
   { 1320097, "They love me not...", 0, 0 },
   { 1320105, "$@spelldesc1320096", "Feeling confident! Make the most out of this moment.", 0 },
   { 1320107, "$@spelldesc1320096", "Feeling down. You'll get over it soon enough.", 0 },
+  { 1320330, "Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects. This effect is doubled in Strongholds and Cities.", 0, 0 },
+  { 1320332, 0, "In a Stronghold or City, healing done increased by up to $w1 and spell damage done increased by up to $w2.", 0 },
   { 1320498, "Thunderstomp nearby enemies, inflicting $s1 Nature damage.", 0, 0 },
   { 1320643, "Water breathing lasts $s1% longer than normal.", "Water breathing.", 0 },
   { 1320898, "Throw into an Unstable Mana Rift.", 0, 0 },
