@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8440> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8443> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -2597,6 +2597,7 @@ static constexpr std::array<spelltext_data_t, 8440> __spelltext_data { {
   {   14825, "Increases ranged attack speed by $s1%.", 0, 0 },
   {   14826, "Increases ranged attack speed by $s1%.", 0, 0 },
   {   14827, "Increases ranged attack speed by $s1%.", 0, 0 },
+  {   14828, "Increases ranged attack speed by $s1%.", 0, 0 },
   {   14829, "Increases ranged attack speed by $s1%.", 0, 0 },
   {   14889, "Increases the critical effect chance of your Holy spells by $s1%.", 0, 0 },
   {   14892, "Your non-periodic critical heals increase your target's Armor by $m1% for $14893d.", 0, 0 },
@@ -2751,6 +2752,7 @@ static constexpr std::array<spelltext_data_t, 8440> __spelltext_data { {
   {   15569, 0, 0, "Rank 4" },
   {   15571, 0, "Dazed.", 0 },
   {   15591, "Revive Ringo with water.", 0, 0 },
+  {   15604, "Restores $s1 Mana every $t1 sec for $d. This effect is doubled in Mountainous areas.", "Restores $s1 Mana every $t1 sec.", 0 },
   {   15627, "Lures out the queen of the Gorishi hive when used on a Gorishi Silithid Crystal.", 0, 0 },
   {   15629, "Distract the target, causing threat.  More effective than Distracting Shot (Rank 2).", 0, "Rank 3" },
   {   15630, "Distract the target, causing threat.  More effective than Distracting Shot (Rank 3).", 0, "Rank 4" },
@@ -8381,6 +8383,7 @@ static constexpr std::array<spelltext_data_t, 8440> __spelltext_data { {
   { 1324578, "Reduces the hit chance of Fear effects against you by $s1%.", 0, 0 },
   { 1324686, "Deals $17496s1 Nature damage every time you block. Damage is doubled in swamps.", 0, 0 },
   { 1325228, "When struck in combat, inflicts $s1 Physical damage to the attacker.", 0, 0 },
+  { 1325229, "Smite your target for $s1 Holy damage. Damage is tripled against Undead.", 0, 0 },
   { 1325256, "Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $1325257s1 mana every $1325257t1 seconds to group members within $1325257a1 yards.", 0, "Rank 4" },
   { 1325257, 0, "Gain $s1 mana every $t1 seconds.", "Rank 4" },
   { 1325756, "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:\r\n   1 point  : ${1*$<ratio>}% stored, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   2 points: ${2*$<ratio>}% stored, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   3 points: ${3*$<ratio>}% stored, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   4 points: ${4*$<ratio>}% stored, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   5 points: ${5*$<ratio>}% stored, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap", "Marked for Death. Taking $w1 damage after $d.", "Rank 2" },
