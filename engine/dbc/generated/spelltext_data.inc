@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70840
-static constexpr std::array<spelltext_data_t, 8426> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8427> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -7949,6 +7949,7 @@ static constexpr std::array<spelltext_data_t, 8426> __spelltext_data { {
   { 1299850, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   { 1300128, "Melee attacks deal $1300130s1 additional Fire damage against Frozen targets.", 0, 0 },
   { 1300130, "Deal $s2 Fire damage.", "Deals $s2 Fire damage.", 0 },
+  { 1300356, "Heals wielder of $s1 damage.", "Heals $s1 damage.", 0 },
   { 1300364, "Reduces the range enemies detect you by $s1 yds for $d.", "Detection range of enemies reduced by $s1 yds.", 0 },
   { 1300739, "Turn the gizmo on and send the signal to Jurgens.", 0, 0 },
   { 1300744, "Reclaim the lost soul of the death knight's charger, transforming it into a spirit of retribution.", 0, 0 },
