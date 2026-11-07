@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8470> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8471> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3333,6 +3333,7 @@ static constexpr std::array<spelltext_data_t, 8470> __spelltext_data { {
   {   18265, "Transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.", "Drains $s1 health to the caster every $t1 secs.", "Rank 1" },
   {   18271, "Increases the damage dealt or life drained by your Shadow spells by $s1%.", 0, 0 },
   {   18288, "Increases the effect of your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.  Lasts $d.", "Increases effect for your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.", 0 },
+  {   18308, "Calls forth 3 servants of the House Barov that will fight, cook, and clean for you.", 0, 0 },
   {   18310, "Increases the speed reduction of your Curse of Exhaustion by $s1%.", 0, "Rank 1" },
   {   18311, "Increases the speed reduction of your Curse of Exhaustion by $s1%.", 0, "Rank 2" },
   {   18312, "Increases the speed reduction of your Curse of Exhaustion by $s1%.", 0, "Rank 3" },
