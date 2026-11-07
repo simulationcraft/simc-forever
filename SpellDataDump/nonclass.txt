@@ -65627,6 +65627,31 @@ Effects          :
 Description      : Movement can generate Static Electricity.
 Tooltip          : Damage of Gahz'rilla Fang's effect increased by $s1%.
 
+Name             : Theka's Last Breath (id=1294617) 
+School           : Shadow
+Spell Type       : Magic
+Range            : 10 yards
+Duration         : 10 seconds
+Mechanic         : Snare
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Prevents Anim (50), No Partial Immunity (139), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1316075)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: 45 | Scaled Value: 45 | Radius: 0 - 10 yards | Mechanic: Snare | Target: Source (22) -> Enemy in Area (15)
+Description      : Transform all enemies within $r yds into scarabs, slowing movement speed by $s1% for $d. Qiraji and Silithid targets are stunned for $1294626d.
+Tooltip          : Movement slowed by $s1%.
+
+Name             : Theka's Last Breath (id=1294626) 
+School           : Shadow
+Spell Type       : Magic
+Range            : 10 yards
+Duration         : 5 seconds
+Mechanic         : Stun
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Prevents Anim (50), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1316094)  : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Mechanic: Stun | Target: Targeted Enemy (6)
+Tooltip          : Stunned.
+
 Name             : Blood Sacrifice (id=1294644) [Passive, Hidden] 
 School           : Shadow
 Spell Type       : None
@@ -71708,6 +71733,20 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 144545 | Target: Self (1)
 Description      : $@spelldesc1320096
 Tooltip          : Feeling down. You'll get over it soon enough.
+
+Name             : Toofbreak (id=1320269) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 45
+Range            : 100 yards
+Cooldown         : 0.1 seconds
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1354774)  : School Damage (2): physical
+                   Base Value: 42 | Scaled Value: 42 | Target: Targeted Enemy (6)
+#2 (id=1354775)  : Dummy (3)
+                   Base Value: 2 | Scaled Value: 2
+Description      : Bash the target, causing $s1 Physical damage. Deals $s2 times as much damage if the target is facing you.
 
 Name             : Black Horn Necklace (id=1320330) [Passive] 
 School           : Physical
