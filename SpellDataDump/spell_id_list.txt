@@ -806,7 +806,7 @@ Hunter
 14825    Haste
 14826    Haste
 14827    Haste
-14828   *Haste
+14828    Haste
 14829    Haste
 14916    Growl
 14917    Growl

@@ -2999,6 +2999,19 @@ Effects          :
                    Base Value: 13 | Scaled Value: 13 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
+Name             : Haste (id=14828) [Spell Family (9), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Velocity         : 40 yards/sec
+Duration         : Aura (infinite)
+Requires weapon  : Gun
+Proc Chance      : 101%
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=691881)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
+                   Base Value: 14 | Scaled Value: 14 | Target: Self (1)
+Description      : Increases ranged attack speed by $s1%.
+
 Name             : Haste (id=14829) [Spell Family (9), Passive, Hidden] 
 School           : Physical
 Spell Type       : None

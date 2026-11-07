@@ -19318,6 +19318,18 @@ Effects          :
 #1 (id=692907)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Second Wind (id=15604) 
+School           : Arcane
+Spell Type       : None
+Spell Level      : 60
+Duration         : 10 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693122)   : Apply Aura (6) | Periodic Energize Power (24): every 1 seconds
+                   Base Value: 63 | Scaled Value: 63 | Target: Self (1)
+Description      : Restores $s1 Mana every $t1 sec for $d. This effect is doubled in Mountainous areas.
+Tooltip          : Restores $s1 Mana every $t1 sec.
+
 Name             : Applying the Lure (id=15627) 
 School           : Physical
 Spell Type       : None
@@ -71444,6 +71456,17 @@ Effects          :
 #1 (id=1362423)  : Apply Aura (6) | Damage Shield (15)
                    Base Value: 3 | Scaled Value: 3 | Target: Self (1)
 Description      : When struck in combat, inflicts $s1 Physical damage to the attacker.
+
+Name             : Gloves of Holy Might (id=1325229) 
+School           : Holy
+Spell Type       : Ranged
+Spell Level      : 1
+Range            : 50000 yards
+Attributes       : Is Ability (4), Suppress Caster Procs (112), Suppress Weapon Procs (151), Unknown (493)
+Effects          :
+#1 (id=1362432)  : School Damage (2): holy
+                   Base Value: 112 | Scaled Value: 112 (delta=0.2) | Target: Targeted Enemy (6)
+Description      : Smite your target for $s1 Holy damage. Damage is tripled against Undead.
 
 Name             : Kill Credit (id=1325859) [Hidden] 
 School           : Physical
