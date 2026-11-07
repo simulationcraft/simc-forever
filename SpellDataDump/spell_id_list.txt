@@ -1,4 +1,4 @@
-Class Spell ID List, wow build 1.60.1.70790
+Class Spell ID List, wow build 1.60.1.70862
 
 Druid
 99       Demoralizing Roar
@@ -2142,7 +2142,7 @@ Mage
 1279989  Flamestrike
 1279990  Flamestrike
 1292739  Hydra Strike
-1293790 *Frostbolt
+1293790  Frostbolt
 1297659 *Teleport: Dalaran
 1298416 *Frostbolt
 1299850  Fireball
