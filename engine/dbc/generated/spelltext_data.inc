@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8471> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8472> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3102,6 +3102,7 @@ static constexpr std::array<spelltext_data_t, 8471> __spelltext_data { {
   {   17627, "Increases the player's maximum Mana by $s1 for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Mana increased by $s1.", 0 },
   {   17628, "Increases damage done by magical spells and effects by up to $s1 for $d. You can only have the effect of one flask at a time. This effect persists through death.", "Spell damage increased by up to $s1.", 0 },
   {   17629, "Increases your resistance to all schools of magic by $s1 for $d. You can only have the effect of one flask at a time. This effect persists through death and stacks with all other resistance spells and items.", "All magic schools resistance increased by $s1.", 0 },
+  {   17639, "Reduces an enemy's chance to hit with attacks by $s1% for $d.", "Chance to hit with attacks reduced by $s1%.", 0 },
   {   17670, 0, "Allows for acquisition of Scourgestones on behalf of the Argent Dawn.", 0 },
   {   17684, "Increases damage done by Fire spells and effects by up to $s1.", 0, 0 },
   {   17707, "Right Click to summon and dismiss your panda cub.", 0, 0 },
