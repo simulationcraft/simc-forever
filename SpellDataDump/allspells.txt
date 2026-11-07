@@ -69710,6 +69710,27 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
 Description      : Dodge chance increased by $s1% and movement speed increased by $s2%. Night Elf Rogues and Druids are harder to detect in Stealth as if they were 1 level higher.
 
+Name             : Ragged John's Neverending Cup (id=20587) 
+School           : Physical
+Spell Type       : None
+Duration         : 125 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=696481)   : Apply Aura (6) | Attribute (29)
+                   Base Value: -10 | Scaled Value: -10 | Stat: Str | Target: Self (1)
+#2 (id=696482)   : Apply Aura (6) | Attribute (29)
+                   Base Value: -10 | Scaled Value: -10 | Stat: Agi | Target: Self (1)
+#3 (id=696483)   : Apply Aura (6) | Attribute (29)
+                   Base Value: 40 | Scaled Value: 40 | Stat: Sta | Target: Self (1)
+#4 (id=1326419)  : Apply Aura (6) | Damage Taken (14)
+                   Base Value: -20 | Scaled Value: -20 | Misc Value: 0x1 | Target: Self (1)
+                   Affected School(s): Physical
+#5 (id=1326420)  : Apply Aura (6) | Damage Taken (14)
+                   Base Value: 80 | Scaled Value: 80 | Misc Value: 0x7e | Target: Self (1)
+                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
+Description      : Increases Stamina by $s3 and reduces physical damage taken by $s4 for $d. However, lowers Strength and Agility by $s1 and increases magical damage taken by up to $s5.
+Tooltip          : Powerful brew.
+
 Name             : Escape Artist (desc=Racial) (id=20589) 
 Race             : Gnome (0x40)
 School           : Physical
@@ -144240,6 +144261,19 @@ Effects          :
 #1 (id=1315137)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Energize (id=1294025) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 28
+Cooldown         : 60 seconds
+Category         : 30 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1315163)  : Energize Power (30)
+                   Base Value: 320 | Scaled Value: 320 (delta=0.125) | Resource: mana | Target: Self (1)
+Description      : Restores $s1 Mana.
+
 Name             : Lotus Claw (id=1294053) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -144272,6 +144306,32 @@ Effects          :
 #1 (id=1315216)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 99999 | Misc Value: 265155 | Misc Value 2: 6853 | Radius: 3 yards | Target: Summoner in Area (32)
 Description      : Calls forth a Barkskin Ancestor to fight at your side and heal you for $d.
+
+Name             : Rock Sentinel (id=1294064) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Proc Chance      : 100%
+Proc Flags       : Magic Heal
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1315219)  : Apply Aura (6) | Proc Trigger Spell (42): Rock Sentinel
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1294065 | Target: Self (1)
+Description      : While in combat, your healing spells have a chance to grant an ally $1294065s1 armor for $1294065d.
+
+Name             : Rock Sentinel (id=1294065) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Range            : 100 yards
+Duration         : 10 seconds
+Triggered By     : Rock Sentinel (1294064)
+Attributes       : Do Not Display Range (126), Unknown (493)
+Effects          :
+#1 (id=1315220)  : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Targeted Ally (21)
+Description      : Increases armor by $s1.
+Tooltip          : Armor increased by $s1.
 
 Name             : Ward of Zum'rah (id=1294255) [Passive, Hidden] 
 School           : Physical
