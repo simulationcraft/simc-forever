@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8430> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8434> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3821,6 +3821,7 @@ static constexpr std::array<spelltext_data_t, 8430> __spelltext_data { {
   {   20578, 0, "Regenerate $s1% of total Health and $s2% of total Mana every $t1 seconds.", 0 },
   {   20580, "Activate to slip into the shadows, reducing the chance for enemies to detect your presence. Lasts until cancelled or upon moving. Using this ability in combat discourages enemies from attacking you, but increases the cooldown to 2 min.", "Shadowmelded.", "Racial" },
   {   20582, "Dodge chance increased by $s1% and movement speed increased by $s2%. Night Elf Rogues and Druids are harder to detect in Stealth as if they were 1 level higher.", 0, "Racial Passive" },
+  {   20587, "Increases Stamina by $s3 and reduces physical damage taken by $s4 for $d. However, lowers Strength and Agility by $s1 and increases magical damage taken by up to $s5.", "Powerful brew.", 0 },
   {   20589, "Instantly escape the effects of any movement impairing effect and gain immunity to those effects for $d.", "Immune to movement impairing effects.", "Racial" },
   {   20591, "Maximum Mana increased by $s1%.", 0, "Racial Passive" },
   {   20593, "Your gnomish ingenuity reduces the rate of engineering devices failing or backfiring when you use them by $s1%.", 0, "Racial Passive" },
@@ -7881,8 +7882,11 @@ static constexpr std::array<spelltext_data_t, 8430> __spelltext_data { {
   { 1293986, "Use the crystal to temporarily stun the Master of Vessels.", 0, 0 },
   { 1294006, "$@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $1294007s2% movement speed while in Hyjal for $1294007d. $@spelldesc1243969", 0, 0 },
   { 1294007, "A nutritious meal has made you Well Fed, increasing your movement speed.", "Your movement speed is increased by $w2% while in Hyjal.", 0 },
+  { 1294025, "Restores $s1 Mana.", 0, 0 },
   { 1294054, "Permanently enchant a pair of gloves to give a small chance to acquire Death Lotus when gathering any herb in Hyjal.", 0, 0 },
   { 1294063, "Calls forth a Barkskin Ancestor to fight at your side and heal you for $d.", 0, 0 },
+  { 1294064, "While in combat, your healing spells have a chance to grant an ally $1294065s1 armor for $1294065d.", 0, 0 },
+  { 1294065, "Increases armor by $s1.", "Armor increased by $s1.", 0 },
   { 1294255, "Chance on harmful spell cast to summon a Zombie Troll of Zum'rah for $1294258d.", 0, 0 },
   { 1294314, "Tosses a torch at the target area.", 0, 0 },
   { 1294339, "Deal $s1 Physical damage and stun for$1294340d. Trolls take $s2 times as much damage and stun duration.", 0, 0 },
