@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8429> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8430> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3378,6 +3378,7 @@ static constexpr std::array<spelltext_data_t, 8429> __spelltext_data { {
   {   18790, 0, "Restores $s1% of total Health every $t1 sec.", 0 },
   {   18791, 0, "Fire damage done increased by $s1%.", 0 },
   {   18792, 0, "Restores $s1% of total Mana every $t1 sec.", 0 },
+  {   18796, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   {   18805, "Dispels Polymorph effects on a friendly target.  Also restores $s2 Health and $s3 Mana.", 0, 0 },
   {   18807, "Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d  and slowing their movement speed by $m2%.", "$w1 Shadow damage every $t1 sec. Movement speed slowed by $w2%.", "Rank 6" },
   {   18809, "Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.", "$s2 Fire damage every $t2 seconds.", "Rank 8" },
