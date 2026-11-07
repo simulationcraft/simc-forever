@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8486> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8490> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3070,6 +3070,7 @@ static constexpr std::array<spelltext_data_t, 8486> __spelltext_data { {
   {   17469, "Summons your pet stone.   It doesn't seem very active though...", 0, 0 },
   {   17474, "Recover Highborne Relic Fragments.", 0, 0 },
   {   17485, "Increases your Intellect by $m1%.", 0, 0 },
+  {   17504, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   17510, "Corrupts the target, causing $o1 damage over $d.", "Inflicts $s1 Shadow damage every $t1 sec.", 0 },
   {   17511, "Poisons target for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
   {   17528, "Increases Rage by $/10;s1 and increases Strength by $s2 for $d.", "Strength increased by $s2.", 0 },
@@ -3302,6 +3303,7 @@ static constexpr std::array<spelltext_data_t, 8486> __spelltext_data { {
   {   18094, "Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a $m1% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by $17941s1%.", 0, 0 },
   {   18096, "Your non-periodic critical strikes with your Fire spells increase your Shadow damage done by $m1% for $18093d, and your non-periodic critical strikes with your Shadow spells increase your Fire damage done by $m1% for $18093d.", 0, 0 },
   {   18097, "When struck in combat has a 1% chance of raising a thorny shield that inflicts $17154s1 Nature damage to attackers when hit and increases Nature resistance by $17154s2 for $17154d.\r\n", 0, 0 },
+  {   18107, "Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health", 0, 0 },
   {   18112, "Blasts a target for $s1 Fire damage.", 0, 0 },
   {   18118, 0, "Movement slowed by $s1%.", 0 },
   {   18119, "Increases the initial damage of your Immolate spell by $m2% and your Conflagrate spell has a $m1% chance to Daze the target, reducing the target's movement speed by $18118m1% for $18118d.", 0, 0 },
@@ -3328,6 +3330,7 @@ static constexpr std::array<spelltext_data_t, 8486> __spelltext_data { {
   {   18200, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   18202, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   18204, "Blasts a target for $s1 Frost damage.", 0, 0 },
+  {   18206, "Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health.", 0, 0 },
   {   18208, "Poisons target for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
   {   18211, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   {   18214, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
@@ -3405,6 +3408,7 @@ static constexpr std::array<spelltext_data_t, 8486> __spelltext_data { {
   {   18823, "Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by $s1% and reduces the resist chance by $s3%.", 0, "Rank 3" },
   {   18824, "Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by $s1% and reduces the resist chance by $s3%.", 0, "Rank 4" },
   {   18825, "Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by $s1% and reduces the resist chance by $s3%.", 0, "Rank 5" },
+  {   18826, "Increases armor by $s1 for $d.", "Increased armor.", 0 },
   {   18827, "Increases the damage done by your Bane of Agony by $s1%.", 0, 0 },
   {   18832, "Restores $s1 health and $s2 mana. Requires Lei of Lillies to be equipped to consume.", 0, 0 },
   {   18848, "Gives a chance to parry enemy melee attacks.", 0, "Passive" },
