@@ -21658,6 +21658,51 @@ Effects          :
                    Base Value: 84 | Scaled Value: 84 | Misc Value: 126 | Target: Self (1)
 Description      : Increases healing done by spells and effects by up to $s1.
 
+Name             : Argent Dawn (id=17350) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 55
+Internal Cooldown: 20 seconds
+Proc Chance      : 100%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=693246)   : Apply Aura (6) | Proc Trigger Spell (42): Argent Dawn
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 17351 | Target: Self (1)
+#2 (id=1322502)  : Dummy (3)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : Has a chance when struck in combat to increase your chance to block by $17351s1% for $17351d. Undead that strike you are $s2 times as likely to activate this effect.
+Tooltip          : Chance to block increased by $17351s1%.
+
+Name             : Argent Dawn (id=17351) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 55
+Duration         : 10 seconds
+Category         : 56 (Type 0x0)
+Triggered By     : Argent Dawn (17350)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=693224)   : Apply Aura (6) | Modify Block% (51)
+                   Base Value: 18 | Scaled Value: 18 | Target: Self (1)
+Description      : Chance to block increased by $s1%.
+Tooltip          : Chance to block increased by $s1%.
+
+Name             : Argent Avenger (id=17352) 
+School           : Physical
+Spell Type       : None
+Duration         : 10 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694100)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+#2 (id=1343328)  : Apply Aura (6) | Modify Melee Attack Power vs Race (102)
+                   Base Value: 100 | Scaled Value: 100 | Misc Value: 32 | Target: Self (1)
+#3 (id=1343329)  : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+Description      : Increases Attack Power by $s1, and Attack Power against Undead by an additional $s2 for $d.
+Tooltip          : Attack Power increased by $s1. Attack Power against Undead increased by $s2.
+
 Name             : Egan's Blaster (id=17368) 
 School           : Physical
 Spell Type       : None
