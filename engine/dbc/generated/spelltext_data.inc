@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8434> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8440> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -2890,6 +2890,7 @@ static constexpr std::array<spelltext_data_t, 8434> __spelltext_data { {
   {   16407, "Blasts a target for $s1 Frost damage.", 0, 0 },
   {   16408, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   {   16409, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
+  {   16414, "Steals $s1 life from target enemy. Deals $s2 times as much damage to Undead.", 0, 0 },
   {   16447, "At Urok's Tribute Pile, combine Omokk's Head with the Roughshod Pike.", 0, 0 },
   {   16450, "Right Click to summon and dismiss your Smolderweb hatchling.", 0, 0 },
   {   16462, "Increases your Parry chance by $s1%.", 0, 0 },
@@ -7961,6 +7962,8 @@ static constexpr std::array<spelltext_data_t, 8434> __spelltext_data { {
   { 1300739, "Turn the gizmo on and send the signal to Jurgens.", 0, 0 },
   { 1300744, "Reclaim the lost soul of the death knight's charger, transforming it into a spirit of retribution.", 0, 0 },
   { 1300752, "Increases armor by $s1 for $d.", "Armor increased by $s1.", 0 },
+  { 1300890, "Dying heals all party members within $1300891r yds for $1300891s1.", "Dying heals all party members within $1300891r yds for $1300891s1.", 0 },
+  { 1300891, "Dying heals all party members within $r yds for $s1.\r\n", "Dying heals all party members within $r yds for $s1.", 0 },
   { 1301167, "Absorb up to $1316048s1 damage and Stun yourself for $d. When the Stun expires, gain $1301168s1% increased movement speed for $1301168d.", "Stunned", 0 },
   { 1301168, "$@spelldesc1301167", "Movement speed increased by $s1%.", 0 },
   { 1301195, "Pour a glass of Silvermoon Shimmerwine.", "Enjoying a glass of Silvermoon Shimmerwine.", 0 },
@@ -8200,6 +8203,7 @@ static constexpr std::array<spelltext_data_t, 8434> __spelltext_data { {
   { 1312002, "Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.", 0, "Rank 1" },
   { 1312052, "Inflicts $443265o1 Fire damage over $443265d to target Demon or Beast and Roots them in place for $d. Damage caused may interrupt the effect.", "Rooted.", 0 },
   { 1312176, "Blast the target with the fires of a forge, inflicting $s1 Fire damage.", 0, 0 },
+  { 1312330, "Smite your target with the power of the holy spring, inflicting $s1 Holy damage.", 0, 0 },
   { 1312438, "Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.", 0, 0 },
   { 1312639, "Summons a hawk.", 0, 0 },
   { 1312670, "Returns you to $?pc923[Orgrimmar][Stormwind]. Single-use.", 0, 0 },
@@ -8221,6 +8225,7 @@ static constexpr std::array<spelltext_data_t, 8434> __spelltext_data { {
   { 1313352, "Heals a friendly target for $s1.", 0, 0 },
   { 1313374, "Melt the key at a forge for $s1 Bronze Bars.", 0, 0 },
   { 1314040, "Strike the target with a Flaming Shell, inflicting $s1 Fire damage every 3 sec for 9 sec.", "Suffering $s1 Fire damage every 3 sec.", 0 },
+  { 1314065, "Increases movement speed while mounted by $s1%. This effect does not stack with similar effects.", "Movement speed increased by $s1% while mounted.", 0 },
   { 1314103, "When Seal of Fury's shield is fully absorbed, restore $m1 Mana, increased by $m2% per level the attacker is above you, up to ${$m2*$m3}%.", 0, 0 },
   { 1314120, "Right Click to summon and dismiss your condor hatchling.", 0, 0 },
   { 1314143, "$@spelldesc16939", 0, 0 },
@@ -8381,6 +8386,7 @@ static constexpr std::array<spelltext_data_t, 8434> __spelltext_data { {
   { 1325756, "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:\r\n   1 point  : ${1*$<ratio>}% stored, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   2 points: ${2*$<ratio>}% stored, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   3 points: ${3*$<ratio>}% stored, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   4 points: ${4*$<ratio>}% stored, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   5 points: ${5*$<ratio>}% stored, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap", "Marked for Death. Taking $w1 damage after $d.", "Rank 2" },
   { 1325757, "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:\r\n   1 point  : ${1*$<ratio>}% stored, ${((138+(1*217)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   2 points: ${2*$<ratio>}% stored, ${((138+(2*217)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   3 points: ${3*$<ratio>}% stored, ${((138+(3*217)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   4 points: ${4*$<ratio>}% stored, ${((138+(4*217)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   5 points: ${5*$<ratio>}% stored, ${((138+(5*217)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap", "Marked for Death. Taking $w1 damage after $d.", "Rank 3" },
   { 1325758, "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:\r\n   1 point  : ${1*$<ratio>}% stored, ${((156+(1*245)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   2 points: ${2*$<ratio>}% stored, ${((156+(2*245)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   3 points: ${3*$<ratio>}% stored, ${((156+(3*245)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   4 points: ${4*$<ratio>}% stored, ${((156+(4*245)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   5 points: ${5*$<ratio>}% stored, ${((156+(5*245)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap", "Marked for Death. Taking $w1 damage after $d.", "Rank 4" },
+  { 1326019, "Smite your target with the power of the holy spring, inflicting $s1 Holy damage.", 0, 0 },
   { 1326056, 0, "Reduces damage taken.", 0 },
   { 1326079, "Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.", 0, "Rank 1" },
   { 1326080, "Launches a projectile of pure Arcane energy at the enemy target, causing $s1 Arcane damage. This spell gains additional Spell Damage equal to $s2% of your maximum Mana.", 0, "Rank 2" },
