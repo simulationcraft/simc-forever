@@ -25123,6 +25123,21 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Gameobject (23)
 Description      : Close Demon Portals.
 
+Name             : Focus (id=18803) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 4 seconds
+Stacks           : 1 initial, 1 maximum
+Proc Chance      : 100%
+Proc Flags       : Yellow Melee, White Ranged, Yellow Ranged, Generic Helpful, Generic Hostile Spell, Magic Heal, Magic Hostile Spell
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=696437)   : Apply Aura (6) | Modify Spell Haste (65)
+                   Base Value: 100000 | Scaled Value: 100000 | Value Multiplier: 1 | Target: Self (1)
+Description      : Next spell cast within $d will cast instantly.
+Tooltip          : Next spell casts instantly.
+
 Name             : Recombobulate (id=18805) 
 School           : Arcane
 Spell Type       : None
