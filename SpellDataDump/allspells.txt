@@ -56597,6 +56597,20 @@ Effects          :
 #1 (id=696576)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Wail of the Banshee (id=17639) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 30 yards
+Cast Time        : 2 seconds
+Duration         : 12 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=696019)   : Apply Aura (6) | Modify Hit% (54)
+                   Base Value: -10 | Scaled Value: -10 | Target: Targeted Enemy (6)
+Description      : Reduces an enemy's chance to hit with attacks by $s1% for $d.
+Tooltip          : Chance to hit with attacks reduced by $s1%.
+
 Name             : Argent Dawn Commission (id=17670) 
 School           : Physical
 Spell Type       : None
