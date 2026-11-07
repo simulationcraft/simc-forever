@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8481> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8484> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -7918,6 +7918,8 @@ static constexpr std::array<spelltext_data_t, 8481> __spelltext_data { {
   { 1294339, "Deal $s1 Physical damage and stun for$1294340d. Trolls take $s2 times as much damage and stun duration.", 0, 0 },
   { 1294340, 0, "Stunned.", 0 },
   { 1294477, "Movement can generate Static Electricity.", "Damage of Gahz'rilla Fang's effect increased by $s1%.", 0 },
+  { 1294617, "Transform all enemies within $r yds into scarabs, slowing movement speed by $s1% for $d. Qiraji and Silithid targets are stunned for $1294626d.", "Movement slowed by $s1%.", 0 },
+  { 1294626, 0, "Stunned.", 0 },
   { 1294644, "Chance on harmful spell cast to afflict the target with a draining ritual, leeching $1294645s1 health every $1294645t1 sec for $1294645d.", 0, 0 },
   { 1294645, "Drain $s1 health, transferring it to you every $t1 sec for $d.", "Drains $s1 health every $t1 sec to the caster.", 0 },
   { 1294646, "Increases mount speed by $s1% in Desert areas.", "In a Desert area, mounted speed increased by $s1%.", 0 },
@@ -8356,6 +8358,7 @@ static constexpr std::array<spelltext_data_t, 8481> __spelltext_data { {
   { 1320097, "They love me not...", 0, 0 },
   { 1320105, "$@spelldesc1320096", "Feeling confident! Make the most out of this moment.", 0 },
   { 1320107, "$@spelldesc1320096", "Feeling down. You'll get over it soon enough.", 0 },
+  { 1320269, "Bash the target, causing $s1 Physical damage. Deals $s2 times as much damage if the target is facing you.", 0, 0 },
   { 1320330, "Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects. This effect is doubled in Strongholds and Cities.", 0, 0 },
   { 1320332, 0, "In a Stronghold or City, healing done increased by up to $w1 and spell damage done increased by up to $w2.", 0 },
   { 1320498, "Thunderstomp nearby enemies, inflicting $s1 Nature damage.", 0, 0 },
