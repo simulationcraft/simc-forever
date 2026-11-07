@@ -52518,6 +52518,19 @@ Effects          :
                    Base Value: 35 | Scaled Value: 35 | Value Multiplier: 1 | Target: Targeted Enemy (6)
 Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage.
 
+Name             : Drain Life (id=16414) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 45
+Range            : 40 yards
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=693154)   : Health Leech (9)
+                   Base Value: 49 | Scaled Value: 49 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+#2 (id=1325773)  : Dummy (3)
+                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+Description      : Steals $s1 life from target enemy. Deals $s2 times as much damage to Undead.
+
 Name             : Spawn Challenge to Urok (id=16447) 
 School           : Physical
 Spell Type       : None
@@ -145734,6 +145747,33 @@ Effects          :
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
+Name             : Grace of the Seven (id=1300890) 
+School           : Holy
+Spell Type       : Magic
+Duration         : Aura (infinite)
+Proc Chance      : 100%
+Proc Flags       : Death
+Attributes       : Do Not Log (8), Aura Is Debuff (26), No Immunities (29), No Redirection (35), No Reflection (39), Active Passive (393), Unknown (493)
+Effects          :
+#1 (id=1325757)  : Apply Aura (6) | Proc Trigger Spell (42): Grace of the Seven
+                   Base Value: 100 | Scaled Value: 100 | Trigger Spell: 1300891 | Target: Self (1)
+Description      : Dying heals all party members within $1300891r yds for $1300891s1.
+Tooltip          : Dying heals all party members within $1300891r yds for $1300891s1.
+
+Name             : Grace of the Seven (id=1300891) 
+School           : Holy
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 40 yards
+Triggered By     : Grace of the Seven (1300890)
+Attributes       : Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), No Redirection (35), Allow While Stealthed (37), No Reflection (39), Exclude Caster (51), Ignore Owner's Death (55), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Can't Crit (93), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1325758)  : Direct Heal (10)
+                   Base Value: 1176 | Scaled Value: 1176 (delta=0.16) | Radius: 0 - 40 yards | Target: Source (22) -> Party in Area (20)
+Description      : Dying heals all party members within $r yds for $s1.
+
+Tooltip          : Dying heals all party members within $r yds for $s1.
+
 Name             : Transformative Cocoon (id=1301167) 
 School           : Physical
 Spell Type       : None
@@ -150629,6 +150669,19 @@ Effects          :
                    Base Value: 51 | Scaled Value: 51 | Target: Current Target (25)
 Description      : Blast the target with the fires of a forge, inflicting $s1 Fire damage.
 
+Name             : Holy Smite (id=1312330) 
+School           : Holy
+Spell Type       : Magic
+Range            : 100 yards
+Proc Chance      : 101%
+Proc Flags       : White Melee, Yellow Melee, Unknown 38
+Triggered By     : Holy Smite (1326019)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1343175)  : School Damage (2): holy
+                   Base Value: 56 | Scaled Value: 56 | Target: Targeted Enemy (6)
+Description      : Smite your target with the power of the holy spring, inflicting $s1 Holy damage.
+
 Name             : Shadow Bolt (id=1312438) 
 School           : Shadow
 Spell Type       : Magic
@@ -150918,6 +150971,18 @@ Effects          :
                    Base Value: 7 | Scaled Value: 7 | Target: Targeted Enemy (6)
 Description      : Strike the target with a Flaming Shell, inflicting $s1 Fire damage every 3 sec for 9 sec.
 Tooltip          : Suffering $s1 Fire damage every 3 sec.
+
+Name             : Mount Speed (id=1314065) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1345748)  : Apply Aura (6) | Increase Mounted Speed% (32)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Description      : Increases movement speed while mounted by $s1%. This effect does not stack with similar effects.
+Tooltip          : Movement speed increased by $s1% while mounted.
 
 Name             : Improved Seal of Fury (id=1314103) [Passive, Hidden] 
 Class            : Paladin
@@ -153485,6 +153550,20 @@ Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not
 Effects          :
 #1 (id=1363471)  : Summon Credit Creature (90)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 278268 | Target: Self (1)
+
+Name             : Holy Smite (id=1326019) [Passive, Hidden] 
+School           : Holy
+Spell Type       : Magic
+Range            : 100 yards
+Proc Chance      : 101%
+Proc Flags       : Generic Hostile Spell, Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1363702)  : Dummy (3)
+                   Base Value: 56 | Scaled Value: 56
+#2 (id=1363703)  : Apply Aura (6) | Proc Trigger Spell (42): Holy Smite
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1312330 | Target: Self (1)
+Description      : Smite your target with the power of the holy spring, inflicting $s1 Holy damage.
 
 Name             : Blackthorne's Ward (id=1326056) 
 School           : Nature
