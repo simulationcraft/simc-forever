@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8475> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8480> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -4950,6 +4950,7 @@ static constexpr std::array<spelltext_data_t, 8475> __spelltext_data { {
   {   29638, "Fires a Searing Arrow at the target for $s1 Fire damage.", 0, 0 },
   {   29641, "Fires a Shadow Shot at the target for $s1 Shadow damage.", 0, 0 },
   {   29644, "Strike your ranged target with a Fire Blast for $s1 Fire damage.", 0, 0 },
+  {   29646, "Strike your ranged target with a Quill Shot for $s1 Nature damage.", 0, 0 },
   {   29647, "Strike the target with a Flaming Shell for $s1 Fire damage.", 0, 0 },
   {   29653, "Venom Shot the target for $s1 Nature damage.", 0, 0 },
   {   29655, "Strike your target with Keeper's Sting for $29655s1 Nature damage.", 0, 0 },
@@ -7906,6 +7907,8 @@ static constexpr std::array<spelltext_data_t, 8475> __spelltext_data { {
   { 1294007, "A nutritious meal has made you Well Fed, increasing your movement speed.", "Your movement speed is increased by $w2% while in Hyjal.", 0 },
   { 1294025, "Restores $s1 Mana.", 0, 0 },
   { 1294054, "Permanently enchant a pair of gloves to give a small chance to acquire Death Lotus when gathering any herb in Hyjal.", 0, 0 },
+  { 1294055, "Chance on hit to reduce the mana cost of your next spell cast within $1294058d by $1294058s1.", 0, 0 },
+  { 1294058, "Reduces the mana cost of your next spell cast by $s1.", "Mana cost of next spell cast reduced by $s1.", 0 },
   { 1294063, "Calls forth a Barkskin Ancestor to fight at your side and heal you for $d.", 0, 0 },
   { 1294064, "While in combat, your healing spells have a chance to grant an ally $1294065s1 armor for $1294065d.", 0, 0 },
   { 1294065, "Increases armor by $s1.", "Armor increased by $s1.", 0 },
@@ -7914,6 +7917,8 @@ static constexpr std::array<spelltext_data_t, 8475> __spelltext_data { {
   { 1294339, "Deal $s1 Physical damage and stun for$1294340d. Trolls take $s2 times as much damage and stun duration.", 0, 0 },
   { 1294340, 0, "Stunned.", 0 },
   { 1294477, "Movement can generate Static Electricity.", "Damage of Gahz'rilla Fang's effect increased by $s1%.", 0 },
+  { 1294644, "Chance on harmful spell cast to afflict the target with a draining ritual, leeching $1294645s1 health every $1294645t1 sec for $1294645d.", 0, 0 },
+  { 1294645, "Drain $s1 health, transferring it to you every $t1 sec for $d.", "Drains $s1 health every $t1 sec to the caster.", 0 },
   { 1294646, "Increases mount speed by $s1% in Desert areas.", "In a Desert area, mounted speed increased by $s1%.", 0 },
   { 1294666, "Restores $s1 mana.", "Restores $s1 mana.", 0 },
   { 1294668, "When struck in combat, has a chance to energize you for $1294666s1 mana. This effect cannot occur more than once every $proccooldown sec.", 0, 0 },
