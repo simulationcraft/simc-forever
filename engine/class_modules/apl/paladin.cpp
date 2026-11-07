@@ -29,4 +29,14 @@ std::string temporary_enchant( const player_t* )
 {
   return "disabled";
 }
+
+// paladin_apl_start
+void paladin( player_t* p )
+{
+  action_priority_list_t* precombat = p->get_action_priority_list( "precombat" );
+  action_priority_list_t* default_  = p->get_action_priority_list( "default" );
+
+  default_->add_action( "auto_attack" );
+}
+// paladin_apl_end
 }  // namespace paladin_apl
