@@ -13355,6 +13355,7 @@ Description      : Blasts nearby enemies, increasing the time between their atta
 Tooltip          : Time between attacks increased by $s2%.
 
 Name             : Fear Ward (id=6346) [Spell Family (6)] 
+Hotfixed         : Stance Mask (0 -> 134217728)
 Class            : Priest
 Race             : Human, Orc, Dwarf, Night Elf, Undead, Tauren, Gnome, Troll, Goblin, Blood Elf, Draenei, Dark Iron Dwarf, Vulpera, Mag'har Orc, Mechagnome, Dracthyr, Earthen, Haranir, Worgen, Pandaren, Nightborne, Highmountain Tauren, Void Elf, Lightforged Draenei, Zandalari Troll, Kul Tiran (0xffffffffffffffff)
 School           : Holy
@@ -13368,6 +13369,7 @@ Cooldown         : 180 seconds
 Labels           : 18: Priest Spells
 Stacks           : 1 initial, 1 maximum
 Proc Chance      : 100%
+Stance Mask      : 0x08000000
 Proc Flags       : Generic Hostile Spell Taken, Magic Hostile Spell Taken
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
 Family Flags     : 31, 57
@@ -74428,6 +74430,22 @@ Effects          :
 #1 (id=699850)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Current Target (25)
 Description      : Forces the spirits of the first centaur Kahns to manifest in the physical world.
+
+Name             : Wound (id=21961) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 50
+Range            : 5 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=698689)   : School Damage (2): physical
+                   Base Value: 168 | Scaled Value: 168 | Target: Targeted Enemy (6)
+#2 (id=698690)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: -100 | Scaled Value: -100 | Misc Value: 1 | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 damage and lowers their armor by $s2.
+Tooltip          : Armor decreased by $s2.
 
 Name             : Mark of the Chosen (id=21969) [Passive, Hidden] 
 School           : Physical
@@ -144848,6 +144866,16 @@ Effects          :
 #1 (id=1316157)  : Apply Aura (6) | Proc Trigger Spell (42): Zealotry
                    Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1294666 | Target: Self (1)
 Description      : When struck in combat, has a chance to energize you for $1294666s1 mana. This effect cannot occur more than once every $proccooldown sec.
+
+Name             : Increased Hit Chance - Ranged - 01 (id=1294769) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Requires weapon  : Bow, Gun, Crossbow
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1316376)  : Apply Aura (6) | Modify Hit% (54)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+Description      : Improves your chance to hit with ranged weapons by ${$s1}.1%.
 
 Name             : Reduce Dispel Type Duration - Poison 10 (id=1294777) [Passive, Hidden] 
 School           : Physical
