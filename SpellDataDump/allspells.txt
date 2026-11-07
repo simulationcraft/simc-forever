@@ -28540,6 +28540,22 @@ Effects          :
 #1 (id=687617)   : Energize Power (30)
                    Base Value: 100000 | Scaled Value: 100000 | Resource: none | Target: Active Pet (5)
 
+Name             : Lacerations (id=10370) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 100 yards
+Duration         : 60 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=687138)   : Apply Aura (6) | Damage Taken (14)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 0x1 | Target: Targeted Enemy (6)
+                   Affected School(s): Physical
+Description      : Leave lacerations on the target, increasing physical damage taken by $s1 for $d. Stacks up to $u times.
+Tooltip          : Physical damage taken increased by $s1.
+
 Name             : Lightning Bolt (desc=Rank 7) (id=10391) [Spell Family (11)] 
 Class            : Shaman
 School           : Nature
@@ -39768,6 +39784,22 @@ Effects          :
 Description      : Corrupts the target, causing $o1 damage over $d.
 Tooltip          : Inflicts $s1 Shadow damage every $t1 sec.
 
+Name             : Thunder Clap (id=13532) 
+School           : Nature
+Spell Type       : Magic
+Resource         : 0 Rage (1) (id=178894)
+Spell Level      : 50
+Max Targets      : 4
+Duration         : 10 seconds
+Attributes       : No Redirection (35), No Reflection (39), Unknown (493)
+Effects          :
+#1 (id=690309)   : School Damage (2): nature
+                   Base Value: 42 | Scaled Value: 42 | Radius: 0 - 8 yards | Target: Source (22) -> Enemy in Area (15)
+#2 (id=690310)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
+                   Base Value: -11 | Scaled Value: -11 | Radius: 0 - 8 yards | Target: Source (22) -> Enemy in Area (15)
+Description      : Blasts nearby enemies with thunder increasing the time between their attacks by $s2% for $d and doing $s1 Nature damage to them.  Will affect up to $i targets.
+Tooltip          : Time between attacks increased by $s2%.
+
 Name             : Disarm (id=13534) 
 School           : Physical
 Spell Type       : None
@@ -50227,6 +50259,32 @@ Effects          :
 #1 (id=692907)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Hand of Justice (id=15600) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Internal Cooldown: 2 seconds
+Proc Chance      : 3%
+Proc Flags       : White Melee, Yellow Melee
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=693890)   : Apply Aura (6) | Proc Trigger Spell (42): Hand of Justice
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 15601 | Target: Self (1)
+#2 (id=1325832)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 3 | Scaled Value: 3 | Trigger Spell: 15601 | Target: Self (1)
+Description      : ${$h/3}% chance on Melee hit to gain $s1 extra attack. Attacks against Dwarves are $s2 times as likely to activate this effect.
+
+Name             : Hand of Justice (id=15601) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Triggered By     : Hand of Justice (15600)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693067)   : Extra Attacks (19)
+                   Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
+Description      : Performs an Extra Attack with your Main Hand weapon.
+
 Name             : Second Wind (id=15604) 
 School           : Arcane
 Spell Type       : None
@@ -59543,6 +59601,18 @@ Effects          :
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
 Description      : Wounds the target causing them to bleed for $o1 damage over $d.
 Tooltip          : Bleeding for $s1 damage every $t1 sec.
+
+Name             : Frost Blast (id=18204) 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 30 yards
+Velocity         : 40 yards/sec
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=695016)   : School Damage (2): frost
+                   Base Value: 133 | Scaled Value: 133 (delta=0.086957) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Frost damage.
 
 Name             : Poison (id=18208) 
 School           : Nature
@@ -87911,6 +87981,17 @@ Effects          :
 #1 (id=705033)   : School Damage (2): shadow
                    Base Value: 26 | Scaled Value: 26 (delta=0.363636) | Target: Targeted Enemy (6)
 Description      : Fires a Shadow Shot at the target for $s1 Shadow damage.
+
+Name             : Fire Blast (id=29644) 
+School           : Fire
+Spell Type       : Ranged
+Spell Level      : 1
+Range            : 50000 yards
+Attributes       : Suppress Caster Procs (112), Suppress Weapon Procs (151), Unknown (493)
+Effects          :
+#1 (id=705034)   : School Damage (2): fire
+                   Base Value: 28 | Scaled Value: 28 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Strike your ranged target with a Fire Blast for $s1 Fire damage.
 
 Name             : Flaming Shell (id=29647) 
 School           : Fire
@@ -117351,6 +117432,16 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Points Per Combo Point: 5 | Target: Self (1)
 Description      : Your Slam hits reset the remaining cooldown on your Mortal Strike, Bloodthirst, and Shield Slam abilities.
 
+Name             : Clean Off Rune (id=468252) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 3 seconds
+Attributes       : Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1181790)  : Loot (189)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 128707 | Target: Self (1)
+Description      : Clean off the rune.
+
 Name             : Animist's Caress (id=468312) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -143806,6 +143897,20 @@ Effects          :
                    Base Value: 63 | Scaled Value: 63 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Frost damage.
 
+Name             : Silence (id=1293654) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 6 seconds
+Mechanic         : Silence
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1314525)  : Apply Aura (6) | Silence (27)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 126 | Target: Targeted Enemy (6)
+Description      : Silences an enemy, preventing it from casting spells for $d.
+Tooltip          : Cannot cast spells.
+
 Name             : Memory of the Mist (id=1293689) 
 School           : Physical
 Spell Type       : None
@@ -153420,6 +153525,18 @@ Effects          :
 #1 (id=1361622)  : Apply Aura (6) | Proc Trigger Spell (42): Unearthed Barrier
                    Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1324685 | Target: Self (1)
 Description      : Deals $17496s1 Nature damage every time you block. Damage is doubled in swamps.
+
+Name             : Water Breathing (id=1324752) [Passive] 
+School           : Nature
+Spell Type       : None
+Spell Level      : 20
+GCD              : 1.5 seconds
+Attributes       : Passive (6), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1361714)  : Apply Aura (6) | Unknown(155)
+                   Base Value: 25 | Scaled Value: 25 | Target: Self (1)
+Description      : Underwater Breath lasts $s1% longer than normal.
+Tooltip          : Waterbreathing.
 
 Name             : The Green Tower (id=1325228) [Passive] 
 School           : Nature
