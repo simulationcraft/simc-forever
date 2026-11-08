@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8541> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8545> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -2902,6 +2902,7 @@ static constexpr std::array<spelltext_data_t, 8541> __spelltext_data { {
   {   16408, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   {   16409, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   {   16414, "Steals $s1 life from target enemy. Deals $s2 times as much damage to Undead.", 0, 0 },
+  {   16415, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   {   16447, "At Urok's Tribute Pile, combine Omokk's Head with the Roughshod Pike.", 0, 0 },
   {   16450, "Right Click to summon and dismiss your Smolderweb hatchling.", 0, 0 },
   {   16462, "Increases your Parry chance by $s1%.", 0, 0 },
@@ -3303,6 +3304,7 @@ static constexpr std::array<spelltext_data_t, 8541> __spelltext_data { {
   {   18082, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   {   18083, "Blasts a target for $s1 Fire damage.", 0, 0 },
   {   18088, "Corrupts the target, causing $o1 damage over $d.", "Inflicts $s1 Shadow damage every $t1 sec.", 0 },
+  {   18089, "Blasts a target for $s1 Nature damage.", 0, 0 },
   {   18090, "Wounds the target for $s1 damage.", 0, 0 },
   {   18091, "Blasts a target for $s1 Arcane damage.", 0, 0 },
   {   18092, "Blasts a target for $s1 Frost damage.", 0, 0 },
@@ -7895,6 +7897,7 @@ static constexpr std::array<spelltext_data_t, 8541> __spelltext_data { {
   { 1293451, 0, "Damage taken from Torture increased by $s1.", 0 },
   { 1293482, "Discipline the target, dealing $s1 Physical damage. Canines and Hyenas are Stunned and sit for $1293483d.", 0, 0 },
   { 1293483, 0, "Stunned and being a good dog.", 0 },
+  { 1293518, "Assault the target with a dangerous toxin, dealing $s1 Nature damage. Deals $s2 times as much damage to Plants.", 0, 0 },
   { 1293525, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 2" },
   { 1293526, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 3" },
   { 1293527, "Command a hawk to dive-bomb your targeted enemy, dealing ${$s1+($rap*($s4/100))} Physical damage and continuing its assault for $1293248d. Only $s3 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.", 0, "Rank 4" },
@@ -7902,6 +7905,7 @@ static constexpr std::array<spelltext_data_t, 8541> __spelltext_data { {
   { 1293540, "Reduces the cast time of spells and effects that revive targets by $s1%.", 0, 0 },
   { 1293542, "Gives you a $s1% chance to avoid interruption caused by damage while casting Flash Heal.", 0, 0 },
   { 1293544, "Increases the critical strike chance of your Flash of Light by $s1%.\r\n", 0, 0 },
+  { 1293568, "Assault the target with a dangerous toxin, dealing $s1 Nature damage. Deals $s2 times as much damage to Plants.", 0, 0 },
   { 1293653, "Blasts a target for $s1 Frost damage.", 0, 0 },
   { 1293654, "Silences an enemy, preventing it from casting spells for $d.", "Cannot cast spells.", 0 },
   { 1293695, "Your Searing Pain generates $s1% less threat and brands the target for $1293696d. Your pet's next $m2 attacks against the target deal $<minDam> to $<maxDam> Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat.", 0, 0 },
