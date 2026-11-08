@@ -42115,6 +42115,23 @@ Effects          :
                    Base Value: 50 | Scaled Value: 50 | SP Coefficient: 1 | Target: Self (1)
 Description      : Increases the chance to apply Poisons to your target by $m1%, and gives Poison applications a $m2% chance to not consume a charge.
 
+Name             : Rend (id=14118) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 50
+Range            : 100 yards
+Duration         : 7 seconds
+Proc Chance      : 101%
+Mechanic         : Bleed
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=691227)   : Apply Aura (6) | Periodic Damage (3): physical every 1 seconds
+                   Base Value: 23 | Scaled Value: 23 | Target: Targeted Enemy (6)
+#2 (id=1324263)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+Description      : Wounds the target causing them to bleed for $o1 damage over $d. Deals $s2 times as much damage to Dragonkin.
+Tooltip          : Bleeding for $s1 damage every $t1 sec.
+
 Name             : Lightning Bolt (desc=Rank 1) (id=14119) 
 School           : Nature
 Spell Type       : Magic
@@ -59323,6 +59340,20 @@ Effects          :
 #1 (id=694118)   : School Damage (2): fire
                    Base Value: 77 | Scaled Value: 77 (delta=0.333333) | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Fire damage.
+
+Name             : Corruption (id=18088) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 40
+Range            : 100 yards
+Duration         : 3 seconds
+Proc Chance      : 100%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=695343)   : Apply Aura (6) | Periodic Damage (3): shadow every 1 seconds
+                   Base Value: 30 | Scaled Value: 30 | Target: Targeted Enemy (6)
+Description      : Corrupts the target, causing $o1 damage over $d.
+Tooltip          : Inflicts $s1 Shadow damage every $t1 sec.
 
 Name             : Wound (id=18090) 
 School           : Physical
@@ -146583,6 +146614,15 @@ Effects          :
 #1 (id=1324383)  : Apply Aura (6) | Proc Trigger Spell (42): Blood Siphon
                    Base Value: 0 | Scaled Value: 0 (delta=0.666667) | Trigger Spell: 1299943 | Target: Self (1)
 Description      : Harmful spell casts have a chance to steal $1299943o1 life from the target enemy over $1299943d.
+
+Name             : Resist Sleep 03 (id=1300001) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1324434)  : Apply Aura (6) | Mechanic Resistance (117)
+                   Base Value: 3 | Scaled Value: 3 | Mechanic: Sleep | Target: Self (1)
+Description      : Reduces the hit chance of Sleep effects against you by $s1%.
 
 Name             : Frostburn (id=1300128) [Passive, Hidden] 
 School           : Physical
