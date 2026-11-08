@@ -20063,6 +20063,21 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 5929 | Misc Value 2: 63 | Target: Front Left of Self (44)
 Description      : Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $8187s1 Fire damage to creatures within $8187a1 yards every $8188t1 seconds.
 
+Name             : Zeal (desc=Rank 1) (id=8191) 
+School           : Holy
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 15 seconds
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=687095)   : Apply Aura (6) | Damage Done (13)
+                   Base Value: 10 | Scaled Value: 10 | Misc Value: 0x1 | Target: Self (1)
+                   Affected School(s): Physical
+#2 (id=687096)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 150 | Scaled Value: 150 | Misc Value: 1 | Target: Self (1)
+Description      : A burst of energy fills the caster, increasing $ghis:her; damage by $s1 and armor by $s2 for $d.
+Tooltip          : Increased armor and damage done.
+
 Name             : Thunder Clap (desc=Rank 2) (id=8198) [Spell Family (4)] 
 Class            : Warrior
 School           : Physical
@@ -52406,6 +52421,17 @@ Effects          :
 #1 (id=693401)   : Dummy (3)
                    Base Value: 2498 | Scaled Value: 2810 | Points Per Level: 78 | Target: Targeted Enemy (6)
 
+Name             : Call of Vaelastrasz (id=16349) 
+School           : Physical
+Spell Type       : None
+Range            : 60 yards
+Category         : 1 (Type 0x0)
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693832)   : Send Event (61)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 4622
+
 Name             : Frostbrand Attack (desc=Rank 4) (id=16352) [Spell Family (11)] 
 Class            : Shaman
 School           : Frost
@@ -52505,6 +52531,17 @@ Effects          :
 #1 (id=693697)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 1669
 Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+
+Name             : Chromatic Protection (id=16372) [Passive] 
+School           : Physical
+Spell Type       : None
+Range            : 10 yards
+Duration         : Aura (infinite)
+Proc Chance      : 101%
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=693089)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Drain Life (id=16375) 
 School           : Shadow
@@ -75711,6 +75748,17 @@ Effects          :
                    Family Flags: 25
 Description      : Increases the damage done by your pets by 4%.
 
+Name             : Speed (id=22863) 
+School           : Physical
+Spell Type       : None
+Duration         : 10 seconds
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=700534)   : Apply Aura (6) | Increase Speed% (31)
+                   Base Value: 35 | Scaled Value: 35 | Target: Self (1)
+Description      : Increases run speed by $s1% for $d1.
+Tooltip          : Increases run speed by $s1%.
+
 Name             : Belt of the Archmage (id=22866) 
 School           : Physical
 Spell Type       : None
@@ -78711,6 +78759,15 @@ Effects          :
 Description      : Conjures $s1 food from the harvest.
 
 Conjured items disappear if logged out for more than 15 minutes.
+
+Name             : Minor Movement Speed (id=24090) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=702356)   : Apply Aura (6) | Increase Speed% (31)
+                   Base Value: 8 | Scaled Value: 8 | Target: Self (1)
+Description      : Minor increase to running and swimming speed. Does not stack with similar effects.
 
 Name             : Bloodvine Vest (id=24091) 
 School           : Physical
@@ -146927,6 +146984,16 @@ Description      : Dying heals all party members within $r yds for $s1.
 
 Tooltip          : Dying heals all party members within $r yds for $s1.
 
+Name             : Increased Hit Chance - Ranged - 03 (id=1301127) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Requires weapon  : Bow, Gun, Crossbow
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1326093)  : Apply Aura (6) | Modify Hit% (54)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+Description      : Improves your chance to hit with ranged weapons by ${$s1}.1%.
+
 Name             : Transformative Cocoon (id=1301167) 
 School           : Physical
 Spell Type       : None
@@ -152191,6 +152258,18 @@ Effects          :
 Description      : Increases movement speed while mounted by $s1%. This effect does not stack with similar effects.
 Tooltip          : Movement speed increased by $s1% while mounted.
 
+Name             : Fire Blast (id=1314069) 
+School           : Fire
+Spell Type       : Magic
+Resource         : 40 Base Mana (0) (id=314663)
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1345756)  : School Damage (2): fire
+                   Base Value: 70 | Scaled Value: 70 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Blast the enemy, inflicting $s1 Fire damage.
+
 Name             : Improved Seal of Fury (id=1314103) [Passive, Hidden] 
 Class            : Paladin
 School           : Physical
@@ -152661,6 +152740,16 @@ Effects          :
 #1 (id=1349811)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 274983 | Misc Value 2: 6853 | Radius: 5 yards | Target: Summoner in Area (32)
 Description      : Summons a wolf that will protect you for $d.
+
+Name             : Underwater Breathing (id=1316928) [Passive] 
+School           : Physical
+Spell Type       : None
+Labels           : 5710
+Attributes       : Is Ability (4), Passive (6), Unknown (493)
+Effects          :
+#1 (id=1349925)  : Apply Aura (6) | Unknown(155)
+                   Base Value: 50 | Scaled Value: 50 | Target: Self (1)
+Description      : Underwater breath lasts $s1% longer than normal.
 
 Name             : Penance (desc=Rank 4) (id=1316991) [Spell Family (6)] 
 Class            : Priest
