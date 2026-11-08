@@ -1776,9 +1776,9 @@ Mage
 23549   *Increased Area
 23603   *Wild Polymorph
 24006    Bounty of the Harvest
-24389   *Chaos Fire
-24392   *Frosty Zap
-24405   *Icy Energy
+24389    Chaos Fire
+24392    Frosty Zap
+24405    Icy Energy
 24429    Improved Counterspell
 24489   *Improved Arcane Intellect
 24491   *Improved Flamestrike

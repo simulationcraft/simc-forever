@@ -25216,6 +25216,16 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Gameobject (23)
 Description      : Close Demon Portals.
 
+Name             : Flurry Axe (id=18797) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=696784)   : Extra Attacks (19)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+Description      : Grants $s1 extra attack on your next swing.
+
 Name             : Focus (id=18803) 
 School           : Physical
 Spell Type       : Magic
@@ -33445,6 +33455,18 @@ Effects          :
                    Base Value: 4 | Scaled Value: 4 | Mechanic: Flee | Target: Self (1)
 Description      : Reduces the hit chance of Fear effects against you by $s1%.
 
+Name             : Prayer Beads Blessing (id=24354) 
+School           : Holy
+Spell Type       : None
+Spell Level      : 52 (max 60)
+Range            : 40 yards
+Attributes       : Is Ability (4), Ignore Healing Modifiers (219), Unknown (493)
+Effects          :
+#1 (id=700851)   : Direct Heal (10)
+                   Base Value: 648 | Scaled Value: 648 (delta=0.2) | Target: Targeted Ally (21)
+Description      : Heal your target for $s1. Usable while Silenced.
+Tooltip          : Heals $s1.
+
 Name             : Drink (id=24355) 
 School           : Physical
 Spell Type       : None
@@ -39038,6 +39060,21 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Current Target (25)
 Description      : Increases hitpoints by 300. 15% haste to melee attacks. 10 mana regen every 5 seconds.
 Tooltip          : Increases hitpoints by 300. 15% haste to melee attacks. 10 mana regen every 5 seconds.
+
+Name             : CHUG! CHUG! CHUG! CHUG! (id=363881) 
+School           : Physical
+Spell Type       : None
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Is Ability (4), Is Channelled (34), Is Self Channelled (38), Name in Channel Bar (61), Can't Crit (93), Ignore Healing Modifiers (219), Unknown (493)
+Channel Interrupt: Damage (2), Action (3), Looting (12)
+Effects          :
+#1 (id=903542)   : Apply Aura (6) | Periodic Heal (8): every 1 seconds
+                   Base Value: 224 | Scaled Value: 224 | Target: Self (1)
+#2 (id=903543)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 20 | Scaled Value: 20 | Target: Self (1)
+Description      : Restores $o1 Health over $d. This healing is strongest at first. If finished, gain $1318070s1 Strength for $1318070d.
+Tooltip          : Restoring $o1 health over $d.
 
 Name             : Summon Incubus (desc=Rank 1) (id=366881) 
 School           : Physical
@@ -67106,6 +67143,16 @@ Effects          :
 Description      : Reduces the range enemies detect you by $s1 yds for $d.
 Tooltip          : Detection range of enemies reduced by $s1 yds.
 
+Name             : Razorsteel (id=1300680) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 24
+Attributes       : Passive (6), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1325445)  : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 3 | Scaled Value: 3 | Target: Self (1)
+Description      : When struck in combat, inflicts $s1 Physical damage to the attacker.
+
 Name             : Signal Jurgens (id=1300739) 
 School           : Physical
 Spell Type       : None
@@ -71544,6 +71591,27 @@ Effects          :
 #1 (id=1351359)  : Apply Aura (6) | Proc Trigger Spell (42): Large Bomb
                    Base Value: 100 | Scaled Value: 100 | Trigger Spell: 1318068 | Target: Self (1)
 Description      : Thrown attacks explode on impact, causing $1318068s1 Fire damage to nearby enemies.
+
+Name             : Diamond Flask (id=1318070) 
+School           : Physical
+Spell Type       : None
+Duration         : 60 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1351360)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 20 | Scaled Value: 20 | Stat: Str | Target: Self (1)
+Description      : Increases Strength by $s1.
+Tooltip          : Increases Strength by $s1.
+
+Name             : Diamond Flask (id=1318073) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Range            : 50000 yards
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Ignore Line of Sight (66), Unknown (493)
+Effects          :
+#1 (id=1351364)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Volunteer's Lucky Seal (id=1318102) [Passive] 
 School           : Physical
