@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8490> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8494> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -7918,10 +7918,13 @@ static constexpr std::array<spelltext_data_t, 8490> __spelltext_data { {
   { 1294063, "Calls forth a Barkskin Ancestor to fight at your side and heal you for $d.", 0, 0 },
   { 1294064, "While in combat, your healing spells have a chance to grant an ally $1294065s1 armor for $1294065d.", 0, 0 },
   { 1294065, "Increases armor by $s1.", "Armor increased by $s1.", 0 },
+  { 1294243, "Increases your chance to Parry attacks by $s1% for $d.", "Parry chance increased by $s1%.", 0 },
   { 1294255, "Chance on harmful spell cast to summon a Zombie Troll of Zum'rah for $1294258d.", 0, 0 },
   { 1294314, "Tosses a torch at the target area.", 0, 0 },
   { 1294339, "Deal $s1 Physical damage and stun for$1294340d. Trolls take $s2 times as much damage and stun duration.", 0, 0 },
   { 1294340, 0, "Stunned.", 0 },
+  { 1294430, "Lash the enemy with the rage of Sul'thraze, reducing their attack power by $s2 for $d and dealing $s1 Shadow damage. After $1294431d, the target suffers an additional $1294431s1 Shadow damage. This additional Shadow damage deals $s5 times as much damage to Trolls.", "Attack power lowered by $s2.", 0 },
+  { 1294431, 0, "$s1 Shadow damage inflicted after $d.", 0 },
   { 1294477, "Movement can generate Static Electricity.", "Damage of Gahz'rilla Fang's effect increased by $s1%.", 0 },
   { 1294617, "Transform all enemies within $r yds into scarabs, slowing movement speed by $s1% for $d. Qiraji and Silithid targets are stunned for $1294626d.", "Movement slowed by $s1%.", 0 },
   { 1294626, 0, "Stunned.", 0 },
@@ -7932,6 +7935,7 @@ static constexpr std::array<spelltext_data_t, 8490> __spelltext_data { {
   { 1294668, "When struck in combat, has a chance to energize you for $1294666s1 mana. This effect cannot occur more than once every $proccooldown sec.", 0, 0 },
   { 1294769, "Improves your chance to hit with ranged weapons by ${$s1}.1%.", 0, 0 },
   { 1294777, "Reduces the duration of all poison effects applied to you by $m1%.", 0, 0 },
+  { 1294786, "Reduces the hit chance of Charm effects against you by $s1%.", 0, 0 },
   { 1294877, "Increases your level to $s1 and grants you gear and supplies appropriate to that level for your class and tradeskills.", 0, 0 },
   { 1294909, "Increases your level to $s1 and grants you gear and supplies appropriate to that level for your class and tradeskills.", 0, 0 },
   { 1294911, "Increases your level to $s1 and grants you gear and supplies appropriate to that level for your class and tradeskills.", 0, 0 },
