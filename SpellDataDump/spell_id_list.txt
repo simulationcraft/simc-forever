@@ -4980,7 +4980,7 @@ Warlock
 24543    Massive Destruction
 24826   *Infernal Fire
 24893   *Black Sapphire
-25112   *Summon Voidwalker
+25112    Summon Voidwalker
 25307    Shadow Bolt
 25309    Immolate
 25311    Corruption

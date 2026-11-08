@@ -52799,6 +52799,23 @@ Effects          :
                    Family Flags: 14, 15, 16, 28
 Description      : Increases the damage dealt by your poisons by $m1% and gives your poisons an additional $m3% chance to resist dispel effects.
 
+Name             : Numbing Pain (id=16528) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 10 seconds
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=692752)   : Apply Aura (6) | Periodic Damage (3): nature every 1 seconds
+                   Base Value: 10 | Scaled Value: 10 | Target: Targeted Enemy (6)
+#2 (id=692753)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
+                   Base Value: -11 | Scaled Value: -11 | Target: Targeted Enemy (6)
+Description      : Inflicts numbing pain that deals $m1 Nature damage every $t1 sec and increases time between target's attacks by $s2% for $d.
+Tooltip          : Deals $s1 Nature damage every $t1 seconds.
+Increases time between attacks by $s2%.
+
 Name             : Immature Venom Sac (id=16537) 
 School           : Nature
 Spell Type       : Magic
@@ -61246,11 +61263,11 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (493)
 Effects          :
 #1 (id=695462)   : Apply Aura (6) | Add Flat Modifier (107): Spell Cast Time (10)
                    Base Value: -5500 | Scaled Value: -5500 | SP Coefficient: 1 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 29
 #2 (id=695463)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -50 | Scaled Value: -50 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 29
 Description      : Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by $/1000;S1 sec and its Mana cost reduced by $s2%.
 Tooltip          : Imp, Voidwalker, Succubus, Incubus, and Fellhunter casting time reduced by $/1000;S1 sec.  Mana cost reduced by $s2%.
@@ -61267,11 +61284,11 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=695481)   : Apply Aura (6) | Add Flat Modifier (107): Spell Cast Time (10)
                    Base Value: -4000 | Scaled Value: -4000 | SP Coefficient: 1 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 29
 #2 (id=695482)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -40 | Scaled Value: -40 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 29
 Description      : Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by $/1000;s1 sec and the Mana cost by $s2%.
 
@@ -61434,7 +61451,7 @@ Effects          :
                    Affected School(s): Shadow
 #2 (id=695781)   : Apply Aura (6) | Unknown(112)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Misc Value: 2228 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 29
 Tooltip          : Shadow damage done increased by $s1%.
 
@@ -61451,7 +61468,7 @@ Effects          :
                    Base Value: 3 | Scaled Value: 3 | Target: Self (1)
 #2 (id=693479)   : Apply Aura (6) | Unknown(112)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Misc Value: 2228 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 29
 Tooltip          : Restores $s1% of total Health every $t1 sec.
 
@@ -61469,7 +61486,7 @@ Effects          :
                    Affected School(s): Fire
 #2 (id=696733)   : Apply Aura (6) | Unknown(112)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Misc Value: 2228 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 29
 Tooltip          : Fire damage done increased by $s1%.
 
@@ -61486,7 +61503,7 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 #2 (id=696275)   : Apply Aura (6) | Unknown(112)
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Misc Value: 2228 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 29
 Tooltip          : Restores $s1% of total Mana every $t1 sec.
 
@@ -64897,6 +64914,17 @@ Effects          :
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Description      : Restores $s1 mana every $t1 sec for $d.
 Tooltip          : Restores $s1 mana every $t1 seconds.
+
+Name             : Prismstone (id=19638) 
+School           : Arcane
+Spell Type       : None
+Duration         : 30 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=697070)   : Apply Aura (6) | Resistance (22)
+                   Base Value: 27 | Scaled Value: 27 | Misc Value: 126 | Target: Self (1)
+Description      : Increases all resistances by $s1 for $d.
+Tooltip          : All resistances increased by $s1.
 
 Name             : Silver Skeleton Key (id=19646) 
 School           : Physical
@@ -81889,6 +81917,22 @@ Effects          :
 #2 (id=702668)   : Apply Aura (6) | Modify Healing Power (135)
                    Base Value: 24 | Scaled Value: 24 | SP Coefficient: 1 | Misc Value: 126 | Target: Self (1)
 Description      : Increases damage and healing done by magical spells and effects by up to $s1.
+
+Name             : Summon Voidwalker (desc=Summon) (id=25112) [Spell Family (5)] 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 10
+Cast Time        : 10 seconds
+GCD              : 1.5 seconds
+Duration         : Aura (infinite)
+Labels           : 19: Warlock Spells
+Affecting Spells : Fel Domination (18708 effects: #1, #2), Master Summoner (18709 effects: #1, #2), Burning Shadow (18789 effect#2), Fel Stamina (18790 effect#2), Touch of Fire (18791 effect#2), Fel Energy (18792 effect#2), Neverending Soul Vessel (433813 effect#1), Grimoire of Synergy (1226981 effect#1)
+Family Flags     : 29
+Attributes       : Dismiss Pet First (32), No AutoCast (AI) (49), Unknown (493)
+Effects          :
+#1 (id=702673)   : Summon Pet (56)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 1860 | Target: Summoner in Area (32)
+Description      : Casts your Summon Voidwalker spell with no mana or Soul Shard requirements.
 
 Name             : Increase Spell Dam 36 and 1% Crit (id=25113) [Passive, Hidden] 
 School           : Nature
@@ -108493,7 +108537,7 @@ Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Unknown (493)
 Effects          :
 #1 (id=1123386)  : Apply Aura (6) | No Reagent Cost (256)
                    Base Value: -50 | Scaled Value: -50 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Create Soulstone (693), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Subjugate Demon (1098), Hellfire (1949), Create Spellstone (2362), Create Healthstone (5699), Hellfire Effect (5857), Create Healthstone (6201), Create Healthstone (6202), Soul Fire (6353), Create Firestone (6366), Hellfire Effect (11681), Hellfire Effect (11682), Hellfire (11683), Hellfire (11684), Subjugate Demon (11725), Subjugate Demon (11726), Create Healthstone (11729), Create Healthstone (11730), Create Spellstone (17727), Create Spellstone (17728), Shadowburn (17877), Soul Fire (17924), Create Firestone (17951), Create Firestone (17952), Create Firestone (17953), Shadowburn (18867), Shadowburn (18868), Shadowburn (18869), Shadowburn (18870), Shadowburn (18871), Create Soulstone (20752), Create Soulstone (20755), Create Soulstone (20756), Create Soulstone (20757), Subjugate Demon (20882), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Create Soulstone (693), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Subjugate Demon (1098), Hellfire (1949), Create Spellstone (2362), Create Healthstone (5699), Hellfire Effect (5857), Create Healthstone (6201), Create Healthstone (6202), Soul Fire (6353), Create Firestone (6366), Hellfire Effect (11681), Hellfire Effect (11682), Hellfire (11683), Hellfire (11684), Subjugate Demon (11725), Subjugate Demon (11726), Create Healthstone (11729), Create Healthstone (11730), Create Spellstone (17727), Create Spellstone (17728), Shadowburn (17877), Soul Fire (17924), Create Firestone (17951), Create Firestone (17952), Create Firestone (17953), Shadowburn (18867), Shadowburn (18868), Shadowburn (18869), Shadowburn (18870), Shadowburn (18871), Create Soulstone (20752), Create Soulstone (20755), Create Soulstone (20756), Create Soulstone (20757), Subjugate Demon (20882), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 6, 7, 11, 20, 29, 39, 63, 89, 91, 110
 Description      : Your next Soul Shard consuming spell cost no Soul Shards to cast.
 Tooltip          : Your next Soul Shard consuming spell cost no Soul Shards to cast.
@@ -125856,7 +125900,7 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1217115)  : Apply Aura (6) | Dummy (4)
                    Base Value: 6 | Scaled Value: 6 | Target: Self (1)
-                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Felguard (427733)
+                   Affected Spells: Summon Imp (688), Summon Felhunter (691), Summon Voidwalker (697), Summon Succubus (712), Summon Incubus (713), Summon Voidwalker (25112), Summon Felguard (427733)
                    Family Flags: 29
 Description      : Damage done by you or your summoned demon has a $426301h% chance to increase the damage done by the other by $426303s1% for $426303d. 
 
@@ -153346,6 +153390,21 @@ Effects          :
 #1 (id=1355153)  : School Damage (2): nature
                    Base Value: 23 | Scaled Value: 23 | Value Multiplier: 1 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
 Description      : Thunderstomp nearby enemies, inflicting $s1 Nature damage.
+
+Name             : Desert Winds (id=1320579) 
+School           : Nature
+Spell Type       : Magic
+Range            : 10 yards
+Duration         : 10 seconds
+Mechanic         : Snare
+Attributes       : Show Mechanic as Combat Text (213), Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1355298)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Radius: 0 - 10 yards | Mechanic: Stun | Target: Source (22) -> Enemy in Area (15)
+#2 (id=1355304)  : Dummy (3)
+                   Base Value: -80 | Scaled Value: -80
+Description      : Slows nearby enemies by $s1% for $d, increased to $s2% in Desert areas.
+Tooltip          : Movement speed reduced by $w1%.
 
 Name             : Water Breathing (id=1320643) [Passive] 
 School           : Nature
