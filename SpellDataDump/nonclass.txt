@@ -19426,6 +19426,33 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Nearby Target (38)
 Description      : Revive Ringo with water.
 
+Name             : Force of Will (id=15594) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Internal Cooldown: 30 seconds
+Proc Chance      : 100%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=693648)   : Apply Aura (6) | Proc Trigger Spell (42): Force of Will
+                   Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Trigger Spell: 15595 | Target: Self (1)
+Description      : When struck in combat has a chance to reduce all damage taken by $15595s1 for $15595d.
+
+Name             : Force of Will (id=15595) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Duration         : 10 seconds
+Triggered By     : Force of Will (15594)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=692889)   : Apply Aura (6) | Damage Taken (14)
+                   Base Value: -51 | Scaled Value: -51 | Misc Value: 0x7f | Target: Self (1)
+                   Affected School(s): All
+Description      : Damage taken reduced by $s1.
+Tooltip          : Damage taken reduced by $s1.
+
 Name             : Smoking Heart of the Mountain (id=15596) 
 School           : Physical
 Spell Type       : None
@@ -68345,6 +68372,29 @@ Effects          :
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
 Description      : Restores $s1 health.
 
+
+Name             : Force Imbued (id=1302247) 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 1
+Range            : 100 yards
+Triggered By     : Add Arcane Dam - Weap 02 (1302248)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1327771)  : School Damage (2): arcane
+                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+Description      : Does $s1 additional Arcane damage to the target.
+
+Name             : Add Arcane Dam - Weap 02 (id=1302248) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1327772)  : Apply Aura (6) | Proc Trigger Spell (42): Force Imbued
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1302247 | Target: Self (1)
+Description      : Adds $1302247s1 Arcane damage to your melee attacks.
 
 Name             : Imbue Frost (id=1302283) 
 School           : Arcane
