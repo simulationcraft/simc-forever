@@ -146547,6 +146547,32 @@ Effects          :
 Description      : Reduces the range enemies detect you by $s1 yds for $d.
 Tooltip          : Detection range of enemies reduced by $s1 yds.
 
+Name             : Moonshadow (id=1300435) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Internal Cooldown: 0.01 seconds
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1325075)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 (delta=0.666667) | Target: Self (1)
+Description      : Harmful spell casts have a chance to deal $1300437s1 Arcane or Shadow damage.
+
+Name             : Moonshadow (id=1300437) 
+School           : Shadow
+Spell Type       : Magic
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Proc Chance      : 101%
+Attributes       : Is Ability (4), Allow While Mounted (24), Aura Is Debuff (26), Allow While Sitting (27), No Immunities (29), No Aura Cancel (31), No Redirection (35), No Reflection (39), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Name in Channel Bar (61), Ignore Line of Sight (66), Unknown (493)
+Effects          :
+#1 (id=1325078)  : School Damage (2): shadow
+                   Base Value: 91 | Scaled Value: 91 | Target: Targeted Enemy (6)
+Description      : Deals $s1 Shadow damage.
+Tooltip          : Deals $s1 Shadow damage.
+
 Name             : Razorsteel (id=1300680) [Passive] 
 School           : Physical
 Spell Type       : None
