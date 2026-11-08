@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8553> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8555> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -2000,6 +2000,7 @@ static constexpr std::array<spelltext_data_t, 8553> __spelltext_data { {
   {   13482, "Blasts a target for $s1 Nature damage.", 0, "Rank 1" },
   {   13484, "Place on a SOFT DIRT MOUND.", 0, 0 },
   {   13485, "Permanently enchant a shield to give 3 spirit.", 0, 0 },
+  {   13486, "Wounds the target for $s1 Physical damage.", 0, 0 },
   {   13490, "Reduces target's attack power by $s1 for $d.", "Reduces attack power by $s1.", "Rank 1" },
   {   13491, "Pummel the target for $s1 damage and interrupt the spell being cast for $d.", 0, 0 },
   {   13494, "Increases your attack speed by $s1% for $d1.", "Increased attack speed.", 0 },
@@ -8060,6 +8061,7 @@ static constexpr std::array<spelltext_data_t, 8553> __spelltext_data { {
   { 1302066, "$@spelldesc1127 If you spend at least 10 sec eating, you will become well fed and gain $s2 Strength for $1248422d. $@spelldesc1243969", 0, 0 },
   { 1302112, "Hold forth the Torch of Eternal Flame.", "Holding the Torch of Eternal Flame. You are unable to defend yourself while wielding the flame. \r\n\r\nAvoiding combat would be wise.", 0 },
   { 1302113, "Eat a handful and make up for lost time on the trail!", "Movement speed increased by $s1%.", 0 },
+  { 1302166, "Slice the target, dealing $s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies.", 0, 0 },
   { 1302196, "Right Click to summon and dismiss your prairie wolf pup.", 0, 0 },
   { 1302217, "Imbue a staff with magic for 1 hour, causing it to occasionally unleash an Arcane Missile at targets you damage with a spell.", 0, 0 },
   { 1302219, "Imbue a staff with magic for 1 hour, reducing your spell targets' Fire resistance by $1306572s1.", 0, 0 },
