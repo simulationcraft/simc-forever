@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8535> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8538> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -2165,6 +2165,7 @@ static constexpr std::array<spelltext_data_t, 8535> __spelltext_data { {
   {   14095, "Gives you a $s1% chance to return to stealth mode after using your Sap ability.", 0, "Rank 3" },
   {   14106, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage.", 0, 0 },
   {   14113, "Increases the chance to apply Poisons to your target by $m1%, and gives Poison applications a $m2% chance to not consume a charge.", 0, 0 },
+  {   14118, "Wounds the target causing them to bleed for $o1 damage over $d. Deals $s2 times as much damage to Dragonkin.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   14119, "Blasts a target for $s1 Nature damage.", 0, "Rank 1" },
   {   14125, "Use on the Secret Safe.", 0, 0 },
   {   14126, "Wounds the target for $s1 damage.", 0, 0 },
@@ -3301,6 +3302,7 @@ static constexpr std::array<spelltext_data_t, 8535> __spelltext_data { {
   {   18081, "Blasts a target for $s1 Nature damage.", 0, 0 },
   {   18082, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   {   18083, "Blasts a target for $s1 Fire damage.", 0, 0 },
+  {   18088, "Corrupts the target, causing $o1 damage over $d.", "Inflicts $s1 Shadow damage every $t1 sec.", 0 },
   {   18090, "Wounds the target for $s1 damage.", 0, 0 },
   {   18091, "Blasts a target for $s1 Arcane damage.", 0, 0 },
   {   18092, "Blasts a target for $s1 Frost damage.", 0, 0 },
@@ -8022,6 +8024,7 @@ static constexpr std::array<spelltext_data_t, 8535> __spelltext_data { {
   { 1299869, "Steals $s1 life from the target enemy. Deals $s2 times as much damage to Undead.", 0, 0 },
   { 1299943, "Inflicts $s1 damage per sec feeding back $s1 health per sec.", "Inflicts $s1 damage per sec.\r\nFeeding back $s1 health per sec.", 0 },
   { 1299948, "Harmful spell casts have a chance to steal $1299943o1 life from the target enemy over $1299943d.", 0, 0 },
+  { 1300001, "Reduces the hit chance of Sleep effects against you by $s1%.", 0, 0 },
   { 1300128, "Melee attacks deal $1300130s1 additional Fire damage against Frozen targets.", 0, 0 },
   { 1300130, "Deal $s2 Fire damage.", "Deals $s2 Fire damage.", 0 },
   { 1300240, "Inflicts$s1 Nature damage per $t1 sec. Deaks $s2 times as much damage to Trolls.", "Taking $w1 Nature damage per $t1 sec.", 0 },
