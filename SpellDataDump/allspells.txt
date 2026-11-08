@@ -69824,6 +69824,7 @@ GCD              : 1.5 seconds
 Cooldown         : 900 seconds
 Category         : 2578 (Type 0x0)
 Labels           : 5710
+Category Cooldown: 900 seconds
 Attributes       : Is Ability (4), Do Not Log (8), No Cast Log (128), Do Not Log Caster (141), Unknown (493)
 Effects          :
 #1 (id=698585)   : Dummy (3)
@@ -151791,6 +151792,19 @@ Effects          :
 #1 (id=1347587)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 Description      : Increases intellect by $s1 at night.
+
+Name             : Summon Minfernal (id=1315451) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Cooldown         : 1.5 seconds
+Category         : 133 (Type 0x0)
+Category Cooldown: 1.5 seconds
+Attributes       : Is Ability (4), Do Not Log (8), Do Not Sheath (18), Suppress Caster Procs (112), Suppress Target Procs (113), Ignore Caster Modifiers (125), Unknown (493)
+Effects          :
+#1 (id=1347784)  : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 274412 | Misc Value 2: 41 | Target: Summoner in Area (32)
+Description      : Right Click to summon and dismiss your Minfernal.
 
 Name             : Rune of Perfection (id=1315969) [Passive] 
 School           : Physical
