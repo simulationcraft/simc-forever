@@ -966,7 +966,7 @@ Hunter
 24335   *Wyvern Sting
 24336   *Wyvern Sting
 24348   *Cheetah Sprint
-24353   *Devilsaur Tooth
+24353    Devilsaur Tooth
 24406    Improved Mend Pet
 24416   *Superior Aspects
 24432    Improved Feign Death

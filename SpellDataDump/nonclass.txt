@@ -33517,6 +33517,18 @@ Effects          :
                    Base Value: 4 | Scaled Value: 4 | Mechanic: Flee | Target: Self (1)
 Description      : Reduces the hit chance of Fear effects against you by $s1%.
 
+Name             : Devilsaur Glare (id=24352) 
+School           : Physical
+Spell Type       : Magic
+Duration         : 10 seconds
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Hostile Spell
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=702040)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : Your next melee or ranged attack within $d will Root the target for $1300493d. The duration of this effect is doubled if the target was moving. Only works against Beasts.
+
 Name             : Prayer Beads Blessing (id=24354) 
 School           : Holy
 Spell Type       : None
@@ -67309,6 +67321,19 @@ Effects          :
                    Base Value: 91 | Scaled Value: 91 | Target: Targeted Enemy (6)
 Description      : Deals $s1 Shadow damage.
 Tooltip          : Deals $s1 Shadow damage.
+
+Name             : Devilsaur Glare (id=1300493) 
+School           : Physical
+Spell Type       : None
+Range            : 50000 yards
+Duration         : 2.5 seconds
+Mechanic         : Root
+Attributes       : No Redirection (35), No Reflection (39), Unknown (493)
+Effects          :
+#1 (id=1325164)  : Apply Aura (6) | Root (26)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Description      : Immobilized.
+Tooltip          : Immobilized.
 
 Name             : Razorsteel (id=1300680) [Passive] 
 School           : Physical

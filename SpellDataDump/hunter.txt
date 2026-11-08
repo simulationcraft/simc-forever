@@ -5164,6 +5164,22 @@ Effects          :
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Misc Value: 19 | Target: Self (1)
 Description      : Increases all damage caused against Beasts, Giants and Dragonkin targets by $s1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional $s2%.
 
+Name             : Devilsaur Tooth (id=24353) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Range            : 100 yards
+Duration         : 30 seconds
+Stacks           : 1 initial, 1 maximum
+Proc Chance      : 100%
+Proc Flags       : Magic Heal
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=702135)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
+                   Base Value: -100 | Scaled Value: -100 | Misc Value: 14 | Target: Self (1)
+                   Family Flags: 24
+Description      : Reduces the Mana cost of your next Revive Pet cast within $d by $s1%.
+Tooltip          : Mana cost of Revive Pet reduced by $s1%.
+
 Name             : Intimidation (id=24394) 
 Class            : Hunter
 School           : Physical
