@@ -55645,6 +55645,22 @@ Effects          :
 Description      : Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d  and slowing their movement speed by $m2%.
 Tooltip          : $w1 Shadow damage every $t1 sec. Movement speed slowed by $w2%.
 
+Name             : Puncture Armor (id=17315) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 30 seconds
+Category         : 36 (Type 0x0)
+Stacks           : 3 maximum
+Proc Chance      : 101%
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=694609)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: -100 | Scaled Value: -100 | Misc Value: 1 | Target: Targeted Enemy (6)
+Description      : Punctures target's armor lowering it by $s1. Can be applied up to $u times.
+Tooltip          : Armor decreased by $s1.
+
 Name             : Increase Healing 84 (id=17320) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
