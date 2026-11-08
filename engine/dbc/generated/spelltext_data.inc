@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8559> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8566> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3413,6 +3413,8 @@ static constexpr std::array<spelltext_data_t, 8559> __spelltext_data { {
   {   18792, 0, "Restores $s1% of total Mana every $t1 sec.", 0 },
   {   18796, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   {   18797, "Grants $s1 extra attack on your next swing.", 0, 0 },
+  {   18798, 0, "Frozen.", 0 },
+  {   18799, "When struck in combat has a 1% chance of inflicting $18798s2 Frost damage to the attacker and freezing them for $18798d.", 0, 0 },
   {   18803, "Next spell cast within $d will cast instantly.", "Next spell casts instantly.", 0 },
   {   18805, "Dispels Polymorph effects on a friendly target.  Also restores $s2 Health and $s3 Mana.", 0, 0 },
   {   18807, "Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d  and slowing their movement speed by $m2%.", "$w1 Shadow damage every $t1 sec. Movement speed slowed by $w2%.", "Rank 6" },
@@ -4964,6 +4966,7 @@ static constexpr std::array<spelltext_data_t, 8559> __spelltext_data { {
   {   29388, "Sets your breath aflame!", "Hot stuff!", 0 },
   {   29413, "Increases ranged attack speed by $s1%.", 0, 0 },
   {   29414, "Increases ranged attack speed by $s1%.", 0, 0 },
+  {   29415, "Increases ranged attack speed by $s1%.", 0, 0 },
   {   29416, "Increases ranged attack speed by $s1%.", 0, 0 },
   {   29417, "Increases ranged attack speed by $s1%.", 0, 0 },
   {   29418, "Increases ranged attack speed by $s1%.", 0, 0 },
@@ -8047,6 +8050,7 @@ static constexpr std::array<spelltext_data_t, 8559> __spelltext_data { {
   { 1300435, "Harmful spell casts have a chance to deal $1300437s1 Arcane or Shadow damage.", 0, 0 },
   { 1300437, "Deals $s1 Shadow damage.", "Deals $s1 Shadow damage.", 0 },
   { 1300493, "Immobilized.", "Immobilized.", 0 },
+  { 1300663, "Reduces damage from falling.", 0, 0 },
   { 1300680, "When struck in combat, inflicts $s1 Physical damage to the attacker.", 0, 0 },
   { 1300739, "Turn the gizmo on and send the signal to Jurgens.", 0, 0 },
   { 1300744, "Reclaim the lost soul of the death knight's charger, transforming it into a spirit of retribution.", 0, 0 },
@@ -8089,6 +8093,9 @@ static constexpr std::array<spelltext_data_t, 8559> __spelltext_data { {
   { 1302310, "Imbue a staff with magic for 1 hour, increasing your chance to critically hit by ${$1306583s1}.1%.", 0, 0 },
   { 1302311, "Imbue a staff with magic for 1 hour, increasing damage done with Fire spells and effects by up to $1306581s1.", 0, 0 },
   { 1302312, "Imbue a staff with magic for 1 hour, increasing damage done with Frost spells and effects by up to $1306582s1.", 0, 0 },
+  { 1302341, "Chance on landing a damaging spell to assault the target's mind, increasing the casting time of all spells by $1302342s1% for $1302342d. Stacks up to $1302342u times.", 0, 0 },
+  { 1302342, "Chance on landing a damaging spell to assault the target's mind, increasing the casting time of all spells by $s1% for $d. Stacks up to $u times.", "Casting time increased by $s1%.", 0 },
+  { 1302345, "Increases the chance your Pick Pocket and Distract abilities are successful by $s1%.", 0, 0 },
   { 1302356, "Energize the lodestone for $d, heightening its magnetic pull and drawing in the weapon of the next melee attacker that strikes you, Disarming them for $1302357d.", "Energized, disarming the next melee attacker that strikes you.", 0 },
   { 1302357, "Disarm the enemy's weapon for $d.", "Disarmed!", 0 },
   { 1302508, "Perform spell research, resulting in a bundle of scrolls. Requires a suitable library.", 0, "Comprehension" },
