@@ -12613,6 +12613,17 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 255
 Description      : Permanently enchant a shield to give 3 spirit.
 
+Name             : Wound (id=13486) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 50
+Range            : 100 yards
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=691259)   : School Damage (2): physical
+                   Base Value: 77 | Scaled Value: 77 (delta=0.153846) | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 Physical damage.
+
 Name             : Pummel (id=13491) 
 School           : Physical
 Spell Type       : Melee
@@ -68262,6 +68273,19 @@ Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until
 Effects          :
 #1 (id=1327638)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
+Name             : Waveslicer (id=1302166) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 45
+Range            : 100 yards
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1327646)  : School Damage (2): nature
+                   Base Value: 70 | Scaled Value: 70 | Target: Targeted Enemy (6)
+#2 (id=1327647)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Description      : Slice the target, dealing $s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies.
 
 Name             : Summon Prairie Wolf Pup (id=1302196) 
 School           : Physical
