@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8538> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8541> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -4411,6 +4411,8 @@ static constexpr std::array<spelltext_data_t, 8538> __spelltext_data { {
   {   24302, "Replaces the fishing line on your fishing pole with a high test eternium line.", 0, 0 },
   {   24325, "Load with 5 Zulian Mudskunks, and then cast from Pagle's Point in Zul'Gurub.", 0, 0 },
   {   24351, "Reduces the hit chance of Fear effects against you by $s1%.", 0, "Passive" },
+  {   24352, "Your next melee or ranged attack within $d will Root the target for $1300493d. The duration of this effect is doubled if the target was moving. Only works against Beasts.", 0, 0 },
+  {   24353, "Reduces the Mana cost of your next Revive Pet cast within $d by $s1%.", "Mana cost of Revive Pet reduced by $s1%.", 0 },
   {   24354, "Heal your target for $s1. Usable while Silenced.", "Heals $s1.", 0 },
   {   24355, "Restores $s1% of your mana per second for $d.  Must remain seated while drinking.", "Restores $s1% of your mana per second.", 0 },
   {   24360, "Puts the imbiber in a dreamless sleep for $d.  During that time the imbiber heals 2100 health and 2100 mana.", "Dreamless Sleep.", 0 },
@@ -8032,6 +8034,7 @@ static constexpr std::array<spelltext_data_t, 8538> __spelltext_data { {
   { 1300364, "Reduces the range enemies detect you by $s1 yds for $d.", "Detection range of enemies reduced by $s1 yds.", 0 },
   { 1300435, "Harmful spell casts have a chance to deal $1300437s1 Arcane or Shadow damage.", 0, 0 },
   { 1300437, "Deals $s1 Shadow damage.", "Deals $s1 Shadow damage.", 0 },
+  { 1300493, "Immobilized.", "Immobilized.", 0 },
   { 1300680, "When struck in combat, inflicts $s1 Physical damage to the attacker.", 0, 0 },
   { 1300739, "Turn the gizmo on and send the signal to Jurgens.", 0, 0 },
   { 1300744, "Reclaim the lost soul of the death knight's charger, transforming it into a spirit of retribution.", 0, 0 },
