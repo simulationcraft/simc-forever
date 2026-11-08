@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8545> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8547> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -4527,6 +4527,8 @@ static constexpr std::array<spelltext_data_t, 8545> __spelltext_data { {
   {   24828, "Creates $o1 Soul Shards.", 0, 0 },
   {   24833, "Shatters the Holy Mightstone, increasing Attack Power by $s1 against Undead and increasing Holy damage from spells and effects by up to $s2 against Undead.  Lasts $d.", "+$s1 Attack Power against Undead.\r\nHoly damage from spells and effects increased by up to $s2 against Undead.", 0 },
   {   24844, "Breathes lightning, instantly dealing $s1 Nature damage to a single target.", 0, "Rank 1" },
+  {   24853, "Gaining $s1 Mana every $t1 sec.", "Gain $s1 Mana every $t1 sec.", 0 },
+  {   24854, "Summons a Mana Spring Totem for $d, restoring $24853s1 Mana every $24853t1 sec to party members within $24853a1 yards.", 0, 0 },
   {   24858, "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.", "Immune to Polymorph effects. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.", "Shapeshift" },
   {   24865, "Restores $s1 Mana. This effect is doubled in Wasteland and Haunted areas.", 0, 0 },
   {   24869, "Restores $s1% of your health per second for $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain Stamina and Spirit for $24870d.", "Restores $s1% of your health per second.", 0 },
