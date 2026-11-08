@@ -5018,7 +5018,7 @@ Category         : 22 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 30 seconds
 Mechanic         : Distract
-Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1), Poised (1328826 effect#1)
+Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1), Improved Pick Pocket and Distract 02 (1302345 effect#1), Poised (1328826 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), No AutoCast (AI) (49), Not an Action (92), Suppress Target Procs (113), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1)
@@ -5628,7 +5628,7 @@ Spell Level      : 30
 Range            : 5 yards
 Cast Time        : 2 seconds
 Labels           : 20: Rogue Spells
-Affecting Spells : Carnage (432275 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1)
+Affecting Spells : Carnage (432275 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1), Improved Pick Pocket and Distract 02 (1302345 effect#1)
 Family Flags     : 31
 Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -61686,6 +61686,33 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Grants $s1 extra attack on your next swing.
 
+Name             : Freeze (id=18798) 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 50
+Range            : 5 yards
+Duration         : 5 seconds
+Triggered By     : Freeze (18799)
+Attributes       : Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=696319)   : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Mechanic: Freeze | Target: Targeted Enemy (6)
+#2 (id=696320)   : School Damage (2): frost
+                   Base Value: 50 | Scaled Value: 50 | Target: Targeted Enemy (6)
+Tooltip          : Frozen.
+
+Name             : Freeze (id=18799) [Passive] 
+School           : Frost
+Spell Type       : None
+Spell Level      : 50
+Proc Chance      : 1%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=695958)   : Apply Aura (6) | Proc Trigger Spell (42): Freeze
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 18798 | Target: Self (1)
+Description      : When struck in combat has a 1% chance of inflicting $18798s2 Frost damage to the attacker and freezing them for $18798d.
+
 Name             : Focus (id=18803) 
 School           : Physical
 Spell Type       : Magic
@@ -88304,6 +88331,19 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=705738)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
+Description      : Increases ranged attack speed by $s1%.
+
+Name             : Haste (id=29415) [Spell Family (9), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Velocity         : 40 yards/sec
+Duration         : Aura (infinite)
+Requires weapon  : Bow, Crossbow
+Proc Chance      : 101%
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=705646)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
+                   Base Value: 14 | Scaled Value: 14 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
 Name             : Haste (id=29416) [Spell Family (9), Passive, Hidden] 
@@ -146935,6 +146975,16 @@ Effects          :
 Description      : Immobilized.
 Tooltip          : Immobilized.
 
+Name             : Safe Fall 08 (id=1300663) [Spell Family (8), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 52
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1325419)  : Apply Aura (6) | Reduce Fall Damage (144)
+                   Base Value: 8 | Scaled Value: 8 | Target: Self (1)
+Description      : Reduces damage from falling.
+
 Name             : Mana Spring Totem (id=1300667) [Passive] 
 School           : Physical
 Spell Type       : None
@@ -148088,6 +148138,45 @@ Effects          :
 #1 (id=1327867)  : Unknown(360)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 8717
 Description      : Imbue a staff with magic for 1 hour, increasing damage done with Frost spells and effects by up to $1306582s1.
+
+Name             : Carve Mind (id=1302341) [Passive, Hidden] 
+School           : Arcane
+Spell Type       : None
+Range            : 100 yards
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1327904)  : Apply Aura (6) | Proc Trigger Spell (42): Carved Mind
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1302342 | Target: Self (1)
+Description      : Chance on landing a damaging spell to assault the target's mind, increasing the casting time of all spells by $1302342s1% for $1302342d. Stacks up to $1302342u times.
+
+Name             : Carved Mind (id=1302342) 
+School           : Arcane
+Spell Type       : Magic
+Range            : 100 yards
+GCD              : 1.5 seconds
+Duration         : 30 seconds
+Stacks           : 5 maximum
+Proc Chance      : 101%
+Triggered By     : Carve Mind (1302341)
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1327905)  : Apply Aura (6) | Modify Spell Haste (65)
+                   Base Value: -10 | Scaled Value: -10 | Target: Targeted Enemy (6)
+Description      : Chance on landing a damaging spell to assault the target's mind, increasing the casting time of all spells by $s1% for $d. Stacks up to $u times.
+Tooltip          : Casting time increased by $s1%.
+
+Name             : Improved Pick Pocket and Distract 02 (id=1302345) [Spell Family (8), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1327909)  : Apply Aura (6) | Add Percent Modifier (108): Spell Penetration (16)
+                   Base Value: 2 | Scaled Value: 2 | Misc Value: 16 | Target: Self (1)
+                   Affected Spells: Distract (1725), Disarm Trap (1842)
+                   Family Flags: 12, 31
+Description      : Increases the chance your Pick Pocket and Distract abilities are successful by $s1%.
 
 Name             : Magnetize (id=1302356) 
 School           : Arcane

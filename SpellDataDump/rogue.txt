@@ -105,7 +105,7 @@ Category         : 22 (Type 0x0)
 Labels           : 20: Rogue Spells
 Category Cooldown: 30 seconds
 Mechanic         : Distract
-Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1), Poised (1328826 effect#1)
+Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1), Improved Pick Pocket and Distract 02 (1302345 effect#1), Poised (1328826 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), No AutoCast (AI) (49), Not an Action (92), Suppress Target Procs (113), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1)
@@ -514,7 +514,7 @@ Spell Level      : 30
 Range            : 5 yards
 Cast Time        : 2 seconds
 Labels           : 20: Rogue Spells
-Affecting Spells : Carnage (432275 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1)
+Affecting Spells : Carnage (432275 effect#1), Improved Pick Pocket and Distract 01 (1291987 effect#1), Improved Pick Pocket and Distract 02 (1302345 effect#1)
 Family Flags     : 31
 Attributes       : Is Ability (4), Not Shapeshifted (16), Allow While Stealthed (37), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -7289,6 +7289,27 @@ Effects          :
 #1 (id=1312005)  : Apply Aura (6) | Reduce Fall Damage (144)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 Description      : Reduces damage from falling.
+
+Name             : Safe Fall 08 (id=1300663) [Spell Family (8), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 52
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1325419)  : Apply Aura (6) | Reduce Fall Damage (144)
+                   Base Value: 8 | Scaled Value: 8 | Target: Self (1)
+Description      : Reduces damage from falling.
+
+Name             : Improved Pick Pocket and Distract 02 (id=1302345) [Spell Family (8), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1327909)  : Apply Aura (6) | Add Percent Modifier (108): Spell Penetration (16)
+                   Base Value: 2 | Scaled Value: 2 | Misc Value: 16 | Target: Self (1)
+                   Affected Spells: Distract (1725), Disarm Trap (1842)
+                   Family Flags: 12, 31
+Description      : Increases the chance your Pick Pocket and Distract abilities are successful by $s1%.
 
 Name             : Improved Expose Armor (id=1310697) 
 Class            : Rogue

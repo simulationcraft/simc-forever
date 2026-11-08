@@ -1014,7 +1014,7 @@ Hunter
 29233   *Beast of the Unseen Path
 29413    Haste
 29414    Haste
-29415   *Haste
+29415    Haste
 29416    Haste
 29417    Haste
 29418    Haste
@@ -3872,12 +3872,12 @@ Rogue
 1291987  Improved Pick Pocket and Distract 01
 1292150  Safe Fall 05
 1295197 *Tyler Test Imbue
-1300663 *Safe Fall 08
+1300663  Safe Fall 08
 1300956 *1.60.0 - Item - Tier 1 - Rogue 2P Bonus - Hit
 1301047 *1.60.0 - Item - Tier 1 - Rogue 3P Bonus - Kidney Shot
 1301088 *1.60.0 - Item - Tier 1 - Rogue 4P Bonus - AP vs. Humanoids
 1301708 *1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Envenom and Eviscerate
-1302345 *Improved Pick Pocket and Distract 02
+1302345  Improved Pick Pocket and Distract 02
 1307943 *Improved Pick Pocket and Distract 03
 1307944 *Improved Pick Pocket and Distract 04
 1307945 *Improved Pick Pocket and Distract 05
