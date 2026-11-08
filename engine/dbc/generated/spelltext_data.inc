@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8509> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8513> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -2908,6 +2908,7 @@ static constexpr std::array<spelltext_data_t, 8509> __spelltext_data { {
   {   16493, "Increases the critical strike damage bonus of your abilities by $s1%.", 0, 0 },
   {   16511, "An instant strike that deals $m4% weapon damage ($m5% if a Dagger is equipped) and causes the target to take $m3% increased Rupture and Garrote damage from the Rogue. Lasts $d. Awards $s2 Combo $lPoint:Points;.", "Taking $w3% increased Rupture and Garrote damage from the caster.", 0 },
   {   16513, "Increases the damage dealt by your poisons by $m1% and gives your poisons an additional $m3% chance to resist dispel effects.", 0, 0 },
+  {   16528, "Inflicts numbing pain that deals $m1 Nature damage every $t1 sec and increases time between target's attacks by $s2% for $d.", "Deals $s1 Nature damage every $t1 seconds.\r\nIncreases time between attacks by $s2%.", 0 },
   {   16537, "Cures $s1 poison $leffect:effects;.", 0, 0 },
   {   16538, "Increases all damage you deal by $s1% while a shield is equipped.", 0, 0 },
   {   16578, "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by ${$m1/-1000}.2 sec.", 0, 0 },
@@ -3559,6 +3560,7 @@ static constexpr std::array<spelltext_data_t, 8509> __spelltext_data { {
   {   19616, "Increases the damage done by your pets and hawks by $s1%.", 0, 0 },
   {   19621, "Gives your pet a $s1% chance to gain a $19615s1% attack speed increase for $19615d after dealing a critical strike.", 0, 0 },
   {   19634, "Restores $s1 mana every $t1 sec for $d.", "Restores $s1 mana every $t1 seconds.", 0 },
+  {   19638, "Increases all resistances by $s1 for $d.", "All resistances increased by $s1.", 0 },
   {   19646, "Allows opening of simple locks.  The skeleton key is consumed in the process.", 0, 0 },
   {   19647, "Silences the enemy for $24259d.  If used on a casting target, it will counter the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.", 0, "Rank 2" },
   {   19649, "Allows opening of standard locks.  The skeleton key is consumed in the process.", 0, 0 },
@@ -4566,6 +4568,7 @@ static constexpr std::array<spelltext_data_t, 8509> __spelltext_data { {
   {   25109, "Increases damage and healing done by magical spells and effects by up to $s1.", 0, 0 },
   {   25110, "Increases damage and healing done by magical spells and effects by up to $s1.", 0, 0 },
   {   25111, "Increases damage and healing done by magical spells and effects by up to $s1.", 0, 0 },
+  {   25112, "Casts your Summon Voidwalker spell with no mana or Soul Shard requirements.", 0, "Summon" },
   {   25113, "Increases damage and healing done by magical spells and effects by up to $s1.   Also increases chance to get a critical hit with spells by $s3%.", 0, 0 },
   {   25114, "Restores $s1 mana per $t1 sec and increases healing by up to $s2.", 0, 0 },
   {   25115, "Restores $s1 mana per $t1 sec and increases healing by up to $s2.", 0, 0 },
@@ -8384,6 +8387,7 @@ static constexpr std::array<spelltext_data_t, 8509> __spelltext_data { {
   { 1320330, "Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects. This effect is doubled in Strongholds and Cities.", 0, 0 },
   { 1320332, 0, "In a Stronghold or City, healing done increased by up to $w1 and spell damage done increased by up to $w2.", 0 },
   { 1320498, "Thunderstomp nearby enemies, inflicting $s1 Nature damage.", 0, 0 },
+  { 1320579, "Slows nearby enemies by $s1% for $d, increased to $s2% in Desert areas.", "Movement speed reduced by $w1%.", 0 },
   { 1320643, "Water breathing lasts $s1% longer than normal.", "Water breathing.", 0 },
   { 1320898, "Throw into an Unstable Mana Rift.", 0, 0 },
   { 1320922, "$@spelldesc1247451", 0, 0 },
