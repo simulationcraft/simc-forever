@@ -65602,6 +65602,17 @@ Effects          :
 Description      : Increases armor by $s1.
 Tooltip          : Armor increased by $s1.
 
+Name             : Deflecting (id=1294243) 
+School           : Physical
+Spell Type       : None
+Duration         : 9 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1315500)  : Apply Aura (6) | Modify Parry% (47)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : Increases your chance to Parry attacks by $s1% for $d.
+Tooltip          : Parry chance increased by $s1%.
+
 Name             : Ward of Zum'rah (id=1294255) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -65672,6 +65683,42 @@ Effects          :
 #1 (id=1315662)  : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Tooltip          : Stunned.
+
+Name             : Rage of Sul'thraze (id=1294430) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 50
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 15 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1315781)  : School Damage (2): shadow
+                   Base Value: 159 | Scaled Value: 159 (delta=0.8) | Target: Targeted Enemy (6)
+#2 (id=1315782)  : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: -180 | Scaled Value: -180 | Target: Targeted Enemy (6)
+#3 (id=1315783)  : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: -180 | Scaled Value: -180 | Target: Targeted Enemy (6)
+#4 (id=1315784)  : Trigger Spell (64): Shadow Lash
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1294431 | Target: Targeted Enemy (6)
+#5 (id=1315810)  : Dummy (3)
+                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+Description      : Lash the enemy with the rage of Sul'thraze, reducing their attack power by $s2 for $d and dealing $s1 Shadow damage. After $1294431d, the target suffers an additional $1294431s1 Shadow damage. This additional Shadow damage deals $s5 times as much damage to Trolls.
+Tooltip          : Attack power lowered by $s2.
+
+Name             : Shadow Lash (id=1294431) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 50
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 5 seconds
+Triggered By     : Rage of Sul'thraze (1294430)
+Attributes       : Always Hit (114), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1315785)  : Apply Aura (6) | Periodic Damage (3): shadow every 5 seconds
+                   Base Value: 159 | Scaled Value: 159 | Target: Targeted Enemy (6)
+Tooltip          : $s1 Shadow damage inflicted after $d.
 
 Name             : Static Electricity (id=1294477) 
 School           : Nature
@@ -65793,6 +65840,15 @@ Effects          :
 #1 (id=1316386)  : Apply Aura (6) | Modify Debuff Duration% (245)
                    Base Value: -10 | Scaled Value: -10 | Misc Value: 4 | Target: Self (1)
 Description      : Reduces the duration of all poison effects applied to you by $m1%.
+
+Name             : Resist Charm 05 (id=1294786) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1316403)  : Apply Aura (6) | Mechanic Resistance (117)
+                   Base Value: 5 | Scaled Value: 5 | Mechanic: Charm | Target: Self (1)
+Description      : Reduces the hit chance of Charm effects against you by $s1%.
 
 Name             : Boosted (id=1294877) 
 School           : Physical
