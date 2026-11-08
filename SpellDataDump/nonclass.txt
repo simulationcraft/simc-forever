@@ -25255,6 +25255,21 @@ Effects          :
                    Base Value: 128 | Scaled Value: 128 (delta=0.5) | Resource: mana | Target: Targeted Ally (21)
 Description      : Dispels Polymorph effects on a friendly target.  Also restores $s2 Health and $s3 Mana.
 
+Name             : Insight (id=18820) 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 50
+Range            : 50000 yards
+Duration         : 12 seconds
+Proc Chance      : 100%
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=692450)   : Apply Aura (6) | Modify Power Cost (73)
+                   Base Value: -200 | Scaled Value: -200 | Misc Value: 0x7e | Misc Value 2: 1 | Target: Self (1)
+                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
+Description      : Reduces the Mana cost of all spells by $s1 for $d.
+Tooltip          : Mana costs reduced by $s1.
+
 Name             : Bone Armor (id=18828) 
 School           : Shadow
 Spell Type       : Magic
@@ -67071,6 +67086,20 @@ Effects          :
 Description      : Increases your Spirit by $s1%.
 Tooltip          : Spirit increased by $w1%.
 
+Name             : Corpse Eater (id=1299869) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1324278)  : Health Leech (9)
+                   Base Value: 21 | Scaled Value: 21 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+#2 (id=1324280)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Steals $s1 life from the target enemy. Deals $s2 times as much damage to Undead.
+
 Name             : Spiritcaller Kilt (id=1299914) 
 School           : Physical
 Spell Type       : None
@@ -67106,6 +67135,34 @@ Attributes       : Is Ability (4), Is Tradeskill (5), Not Shapeshifted (16), Rec
 Effects          :
 #1 (id=1324340)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
+Name             : Blood Siphon (id=1299943) 
+School           : Physical
+Spell Type       : None
+Range            : 100 yards
+Duration         : 8 seconds
+Proc Chance      : 101%
+Triggered By     : Blood Siphon (1299948)
+Attributes       : Is Ability (4), Allow While Mounted (24), Aura Is Debuff (26), Allow While Sitting (27), No Immunities (29), No Aura Cancel (31), No Redirection (35), No Reflection (39), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Name in Channel Bar (61), Ignore Line of Sight (66), Unknown (493)
+Effects          :
+#1 (id=1324373)  : Apply Aura (6) | Periodic Health Leech (53): every 2 seconds
+                   Base Value: 28 | Scaled Value: 28 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Inflicts $s1 damage per sec feeding back $s1 health per sec.
+Tooltip          : Inflicts $s1 damage per sec.
+Feeding back $s1 health per sec.
+
+Name             : Blood Siphon (id=1299948) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Internal Cooldown: 0.01 seconds
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1324383)  : Apply Aura (6) | Proc Trigger Spell (42): Blood Siphon
+                   Base Value: 0 | Scaled Value: 0 (delta=0.666667) | Trigger Spell: 1299943 | Target: Self (1)
+Description      : Harmful spell casts have a chance to steal $1299943o1 life from the target enemy over $1299943d.
 
 Name             : Frostburn (id=1300128) [Passive, Hidden] 
 School           : Physical
