@@ -1700,7 +1700,7 @@ Mage
 16407    Frost Blast
 16412   *Fireball
 16413   *Fireball
-16415   *Fireball
+16415    Fireball
 16454   *Searing Blast
 16551   *Felstriker
 16757    Arctic Reach

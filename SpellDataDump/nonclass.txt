@@ -24300,6 +24300,18 @@ Effects          :
 Description      : Corrupts the target, causing $o1 damage over $d.
 Tooltip          : Inflicts $s1 Shadow damage every $t1 sec.
 
+Name             : Lightning Bolt (id=18089) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 30 yards
+Velocity         : 15 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=695940)   : School Damage (2): nature
+                   Base Value: 98 | Scaled Value: 98 (delta=0.5) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
+
 Name             : Wound (id=18090) 
 School           : Physical
 Spell Type       : Melee
@@ -65303,6 +65315,19 @@ Effects          :
 #1 (id=1314188)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
+Name             : Grass Killer (id=1293518) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 58
+Range            : 30 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1314222)  : School Damage (2): nature
+                   Base Value: 63 | Scaled Value: 63 (delta=0.42) | Target: Targeted Enemy (6)
+#2 (id=1314223)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Description      : Assault the target with a dangerous toxin, dealing $s1 Nature damage. Deals $s2 times as much damage to Plants.
+
 Name             : Scarlet Retribution (id=1293539) [Passive] 
 School           : Holy
 Spell Type       : None
@@ -65359,6 +65384,19 @@ Attributes       : Is Ability (4), Is Tradeskill (5), Not Shapeshifted (16), Rec
 Effects          :
 #1 (id=1314308)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 274276 | Target: Self (1)
+
+Name             : Grass Killer (id=1293568) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 58
+Range            : 30 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1314320)  : School Damage (2): nature
+                   Base Value: 126 | Scaled Value: 126 (delta=0.42) | Target: Targeted Enemy (6)
+#2 (id=1314321)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Description      : Assault the target with a dangerous toxin, dealing $s1 Nature damage. Deals $s2 times as much damage to Plants.
 
 Name             : Frost Blast (id=1293653) 
 School           : Frost
