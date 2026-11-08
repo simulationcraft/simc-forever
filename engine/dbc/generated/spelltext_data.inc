@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8507> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8508> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8287,6 +8287,7 @@ static constexpr std::array<spelltext_data_t, 8507> __spelltext_data { {
   { 1314412, "Absorbs $s1 Fire damage, healing for all damage absorbed.", "Absorbs $w1 Fire damage, healing for all damage absorbed.", 0 },
   { 1315267, "Right Click to summon and dismiss your Tallstrider Hatchling.", 0, 0 },
   { 1315339, "Increases intellect by $s1 at night.", 0, 0 },
+  { 1315451, "Right Click to summon and dismiss your Minfernal.", 0, 0 },
   { 1315969, "Your spells pierce $s1 Magical Resistances. Gain an additional $1315971s1 Spell Piercing in Forest and Grassland areas.", 0, 0 },
   { 1315971, 0, "In a Forest or Grassland area, Spell Piercing increased by an additional $s1.", 0 },
   { 1315972, "Stuns target and yourself for $d. Ogres are Stunned for $1317450d and refund $1317450s2% of the cooldown.", "Stunned.", 0 },
