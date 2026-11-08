@@ -4219,8 +4219,8 @@ Shaman
 24461   *Improved Frost Shock
 24462   *Improved Lightning Bolt
 24499    Energized Shield
-24853   *Mana Spring
-24854   *Mana Spring Totem
+24853    Mana Spring
+24854    Mana Spring Totem
 25001   *Spirit Totem
 25002   *Spirit Disruption
 25076   *Cobra Reflexes

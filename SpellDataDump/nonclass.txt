@@ -67373,6 +67373,14 @@ Effects          :
 Description      : Immobilized.
 Tooltip          : Immobilized.
 
+Name             : Mana Spring Totem (id=1300667) [Passive] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1325424)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+
 Name             : Razorsteel (id=1300680) [Passive] 
 School           : Physical
 Spell Type       : None

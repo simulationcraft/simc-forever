@@ -51523,7 +51523,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=692592)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -5 | Scaled Value: -5 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Totemic Call (437009), Mana Tide Totem (1325256)
+                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Mana Spring Totem (24854), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Totemic Call (437009), Mana Tide Totem (1325256)
                    Family Flags: 3, 4, 12, 19, 29, 103, 107
 Description      : Reduces the Mana cost of your totems and any spells that summon or move them by $m1%.
 
@@ -51676,7 +51676,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=693527)   : Apply Aura (6) | Add Percent Modifier (108): Spell Effects (8)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 8 | Target: Self (1)
-                   Affected Spells: Mana Spring (5677), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494)
+                   Affected Spells: Mana Spring (5677), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Mana Spring (24853)
                    Family Flags: 14
 #2 (id=1230113)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
@@ -51715,7 +51715,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=694885)   : Apply Aura (6) | Add Flat Modifier (107): Spell Radius (6)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 6 | Target: Self (1)
-                   Affected Spells: Healing Stream (5672), Mana Spring (5677), Healing Stream (6371), Healing Stream (6372), Stoneskin (8072), Strength of Earth (8076), Tremor Totem Effect (8146), Stoneskin (8156), Stoneskin (8157), Strength of Earth (8162), Strength of Earth (8163), Poison Cleansing Totem Effect (8168), Disease Cleansing Totem Effect (8171), Grounding Totem (8177), Grounding Totem (8178), Frost Resistance (8182), Fire Resistance (8185), Flametongue Totem (8230), Flametongue Totem (8250), Grace of Air (8836), Stoneskin (10403), Stoneskin (10404), Stoneskin (10405), Strength of Earth (10441), Healing Stream (10460), Healing Stream (10461), Frost Resistance (10476), Frost Resistance (10477), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Flametongue Totem (10521), Fire Resistance (10534), Fire Resistance (10535), Nature Resistance (10596), Nature Resistance (10598), Nature Resistance (10599), Grace of Air (10626), Flametongue Totem (15036), Windwall (15108), Windwall (15109), Windwall (15110), Mana Tide (16191), Mana Tide (17355), Mana Tide (17360), Grace of Air (25360), Strength of Earth (25362), Mana Tide (1325257)
+                   Affected Spells: Healing Stream (5672), Mana Spring (5677), Healing Stream (6371), Healing Stream (6372), Stoneskin (8072), Strength of Earth (8076), Tremor Totem Effect (8146), Stoneskin (8156), Stoneskin (8157), Strength of Earth (8162), Strength of Earth (8163), Poison Cleansing Totem Effect (8168), Disease Cleansing Totem Effect (8171), Grounding Totem (8177), Grounding Totem (8178), Frost Resistance (8182), Fire Resistance (8185), Flametongue Totem (8230), Flametongue Totem (8250), Grace of Air (8836), Stoneskin (10403), Stoneskin (10404), Stoneskin (10405), Strength of Earth (10441), Healing Stream (10460), Healing Stream (10461), Frost Resistance (10476), Frost Resistance (10477), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Flametongue Totem (10521), Fire Resistance (10534), Fire Resistance (10535), Nature Resistance (10596), Nature Resistance (10598), Nature Resistance (10599), Grace of Air (10626), Flametongue Totem (15036), Windwall (15108), Windwall (15109), Windwall (15110), Mana Tide (16191), Mana Tide (17355), Mana Tide (17360), Mana Spring (24853), Grace of Air (25360), Strength of Earth (25362), Mana Tide (1325257)
                    Family Flags: 13, 14, 15, 16, 17, 18, 26
 Description      : The radius of your totems that affect friendly targets is increased to 30 yd.
 
@@ -80025,7 +80025,7 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=701277)   : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
                    Base Value: -20 | Scaled Value: -20 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Healing Stream Totem (5394), Mana Spring Totem (5675), Healing Stream Totem (6375), Healing Stream Totem (6377), Healing Stream Totem (10462), Healing Stream Totem (10463), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497)
+                   Affected Spells: Healing Stream Totem (5394), Mana Spring Totem (5675), Healing Stream Totem (6375), Healing Stream Totem (6377), Healing Stream Totem (10462), Healing Stream Totem (10463), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Mana Spring Totem (24854)
                    Family Flags: 19
 Description      : Decreases the mana cost of your Healing Stream and Mana Spring totems by $s1.
 
@@ -81246,6 +81246,35 @@ Effects          :
 #1 (id=702109)   : School Damage (2): nature
                    Base Value: 9 | Scaled Value: 9 (delta=0.166667) | Target: Targeted Enemy (6)
 Description      : Breathes lightning, instantly dealing $s1 Nature damage to a single target.
+
+Name             : Mana Spring (id=24853) [Spell Family (11), Passive] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 50
+Labels           : 24: Shaman Spells
+Affecting Spells : Restorative Totems (16187 effect#1), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
+Family Flags     : 14
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=702140)   : Apply Party Aura (35) | Periodic Energize Power (24): every 2 seconds
+                   Base Value: 33 | Scaled Value: 33 | Radius: 30 yards | Target: Self (1)
+                   Modified By: Restorative Totems (16187 effect#1)
+Description      : Gaining $s1 Mana every $t1 sec.
+Tooltip          : Gain $s1 Mana every $t1 sec.
+
+Name             : Mana Spring Totem (id=24854) [Spell Family (11)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 50
+GCD              : 1.5 seconds
+Duration         : 24 seconds
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
+Family Flags     : 19
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=700985)   : Summon Guardian (28)
+                   Base Value: 5 | Scaled Value: 5 | Misc Value: 15304 | Misc Value 2: 82 | Target: Back Right of Self (42)
+Description      : Summons a Mana Spring Totem for $d, restoring $24853s1 Mana every $24853t1 sec to party members within $24853a1 yards.
 
 Name             : Moonkin Form (desc=Shapeshift) (id=24858) [Spell Family (7)] 
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=30]
@@ -115004,7 +115033,7 @@ Attributes       : Passive (6), Aura Unique (43), Unknown (493)
 Effects          :
 #1 (id=1162693)  : Apply Aura (6) | Add Flat Modifier (107): Spell Radius (6)
                    Base Value: 20 | Scaled Value: 20 | Misc Value: 6 | Target: Self (1)
-                   Affected Spells: Healing Stream (5672), Mana Spring (5677), Healing Stream (6371), Healing Stream (6372), Stoneskin (8072), Strength of Earth (8076), Tremor Totem Effect (8146), Stoneskin (8156), Stoneskin (8157), Strength of Earth (8162), Strength of Earth (8163), Poison Cleansing Totem Effect (8168), Disease Cleansing Totem Effect (8171), Grounding Totem (8178), Frost Resistance (8182), Fire Resistance (8185), Flametongue Totem (8230), Flametongue Totem (8250), Grace of Air (8836), Stoneskin (10403), Stoneskin (10404), Stoneskin (10405), Strength of Earth (10441), Healing Stream (10460), Healing Stream (10461), Frost Resistance (10476), Frost Resistance (10477), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Flametongue Totem (10521), Fire Resistance (10534), Fire Resistance (10535), Nature Resistance (10596), Nature Resistance (10598), Nature Resistance (10599), Grace of Air (10626), Flametongue Totem (15036), Windwall (15108), Windwall (15109), Windwall (15110), Mana Tide (16191), Mana Tide (17355), Mana Tide (17360), Grace of Air (25360), Strength of Earth (25362), Mana Tide (1325257)
+                   Affected Spells: Healing Stream (5672), Mana Spring (5677), Healing Stream (6371), Healing Stream (6372), Stoneskin (8072), Strength of Earth (8076), Tremor Totem Effect (8146), Stoneskin (8156), Stoneskin (8157), Strength of Earth (8162), Strength of Earth (8163), Poison Cleansing Totem Effect (8168), Disease Cleansing Totem Effect (8171), Grounding Totem (8178), Frost Resistance (8182), Fire Resistance (8185), Flametongue Totem (8230), Flametongue Totem (8250), Grace of Air (8836), Stoneskin (10403), Stoneskin (10404), Stoneskin (10405), Strength of Earth (10441), Healing Stream (10460), Healing Stream (10461), Frost Resistance (10476), Frost Resistance (10477), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Flametongue Totem (10521), Fire Resistance (10534), Fire Resistance (10535), Nature Resistance (10596), Nature Resistance (10598), Nature Resistance (10599), Grace of Air (10626), Flametongue Totem (15036), Windwall (15108), Windwall (15109), Windwall (15110), Mana Tide (16191), Mana Tide (17355), Mana Tide (17360), Mana Spring (24853), Grace of Air (25360), Strength of Earth (25362), Mana Tide (1325257)
                    Family Flags: 13, 14, 15, 16, 17, 26
 Description      : The radius of your totems that affect friendly targets is increased to ${$m1+20} yd.
 
@@ -139755,7 +139784,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1282549)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -5 | Scaled Value: -5 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Mana Tide Totem (1325256)
+                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Mana Spring Totem (24854), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Mana Tide Totem (1325256)
                    Family Flags: 3, 4, 12, 19, 29
 Description      : Reduces the mana cost of your totems by $s1%.
 
@@ -146810,6 +146839,14 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Immobilized.
 Tooltip          : Immobilized.
+
+Name             : Mana Spring Totem (id=1300667) [Passive] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1325424)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Razorsteel (id=1300680) [Passive] 
 School           : Physical
