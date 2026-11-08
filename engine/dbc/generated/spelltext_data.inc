@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8513> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8515> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -4516,6 +4516,7 @@ static constexpr std::array<spelltext_data_t, 8513> __spelltext_data { {
   {   24833, "Shatters the Holy Mightstone, increasing Attack Power by $s1 against Undead and increasing Holy damage from spells and effects by up to $s2 against Undead.  Lasts $d.", "+$s1 Attack Power against Undead.\r\nHoly damage from spells and effects increased by up to $s2 against Undead.", 0 },
   {   24844, "Breathes lightning, instantly dealing $s1 Nature damage to a single target.", 0, "Rank 1" },
   {   24858, "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.", "Immune to Polymorph effects. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.", "Shapeshift" },
+  {   24865, "Restores $s1 Mana. This effect is doubled in Wasteland and Haunted areas.", 0, 0 },
   {   24869, "Restores $s1% of your health per second for $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain Stamina and Spirit for $24870d.", "Restores $s1% of your health per second.", 0 },
   {   24870, 0, "Stamina and Spirit increased by $w1.", 0 },
   {   24874, "Combine with 1 Rugged Leather and 1 Firebloom to create a Crest of Beckoning: Fire.", 0, 0 },
@@ -8289,6 +8290,7 @@ static constexpr std::array<spelltext_data_t, 8513> __spelltext_data { {
   { 1314305, "Puncture the target, inflicting $s1 Physical damage.", 0, 0 },
   { 1314364, "Summons a swarm of spiders that will protect you for $d.", 0, "Summon" },
   { 1314412, "Absorbs $s1 Fire damage, healing for all damage absorbed.", "Absorbs $w1 Fire damage, healing for all damage absorbed.", 0 },
+  { 1314888, "Strike your target with a Poisonous Sting, inflicting $s1 damage every 3 sec for $d1.", "$w1 Nature damage inflicted every 3 sec.", 0 },
   { 1315267, "Right Click to summon and dismiss your Tallstrider Hatchling.", 0, 0 },
   { 1315339, "Increases intellect by $s1 at night.", 0, 0 },
   { 1315451, "Right Click to summon and dismiss your Minfernal.", 0, 0 },
