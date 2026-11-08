@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8508> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8509> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3052,6 +3052,7 @@ static constexpr std::array<spelltext_data_t, 8508> __spelltext_data { {
   {   17312, "Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d  and slowing their movement speed by $m2%.", "$w1 Shadow damage every $t1 sec. Movement speed slowed by $w2%.", "Rank 3" },
   {   17313, "Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d  and slowing their movement speed by $m2%.", "$w1 Shadow damage every $t1 sec. Movement speed slowed by $w2%.", "Rank 4" },
   {   17314, "Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d  and slowing their movement speed by $m2%.", "$w1 Shadow damage every $t1 sec. Movement speed slowed by $w2%.", "Rank 5" },
+  {   17315, "Punctures target's armor lowering it by $s1. Can be applied up to $u times.", "Armor decreased by $s1.", 0 },
   {   17320, "Increases healing done by spells and effects by up to $s1.", 0, 0 },
   {   17322, "Increases the range of your offensive Shadow spells by $s1%.", 0, 0 },
   {   17329, "The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 6). Castable while shapeshifted. Lasts $d.", "Melee damage you take will entangle the enemy.", "Rank 6" },
