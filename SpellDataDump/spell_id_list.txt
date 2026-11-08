@@ -5389,7 +5389,7 @@ Warrior
 12945    Improved Shield Block
 12963    Improved Overpower
 12975    Last Stand
-13490   *Howling Blade
+13490    Howling Blade
 13730   *Demoralizing Shout
 13847   *Recklessness
 14895   *Overpower

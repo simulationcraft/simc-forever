@@ -28556,6 +28556,21 @@ Effects          :
 Description      : Leave lacerations on the target, increasing physical damage taken by $s1 for $d. Stacks up to $u times.
 Tooltip          : Physical damage taken increased by $s1.
 
+Name             : Fatal Wound (id=10373) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 40
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=687779)   : School Damage (2): physical
+                   Base Value: 311 | Scaled Value: 311 (delta=0.333333) | Target: Targeted Enemy (6)
+#2 (id=1315592)  : Dummy (3)
+                   Base Value: 50 | Scaled Value: 50 | Target: Targeted Enemy (6)
+#3 (id=1315593)  : Dummy (3)
+                   Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
+Description      : Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health.
+
 Name             : Lightning Bolt (desc=Rank 7) (id=10391) [Spell Family (11)] 
 Class            : Shaman
 School           : Nature
@@ -39600,6 +39615,22 @@ Effects          :
 #1 (id=690942)   : Enchant Item (53)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 255
 Description      : Permanently enchant a shield to give 3 spirit.
+
+Name             : Howling Blade (desc=Rank 1) (id=13490) [Spell Family (4)] 
+School           : Physical
+Spell Type       : None
+Resource         : 100 Base Mana (0) (id=179942)
+Spell Level      : 35
+Range            : 5 yards
+Duration         : 30 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=691564)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
+#2 (id=871981)   : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
+Description      : Reduces target's attack power by $s1 for $d.
+Tooltip          : Reduces attack power by $s1.
 
 Name             : Pummel (id=13491) 
 School           : Physical
@@ -144592,6 +144623,49 @@ Effects          :
 #1 (id=1314884)  : Create Item (24)
                    Base Value: 200 | Scaled Value: 200 | Target: Self (1)
 
+Name             : Pendulum of Doom (id=1293881) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : White Melee
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1314927)  : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+#2 (id=1314993)  : Apply Aura (6) | Periodic Dummy (226): every 10 seconds
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : Each swing alternates your attack speed between $1293885s1% faster and $1293886s1% slower.
+
+Name             : Pendulum of Doom (id=1293885) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Triggered By     : Pendulum of Doom (1293886)
+Attributes       : Allow While Mounted (24), Allow While Sitting (27), No Aura Cancel (31), Allow While Stealthed (37), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Aura Interrupt   : Leave World (19), Enter World (22)
+Effects          :
+#1 (id=1314933)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+#2 (id=1314936)  : Remove Aura (203): Pendulum of Doom
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1293886 | Target: Self (1)
+Description      : Melee attack speed increased by $s1%.
+Tooltip          : Melee attack speed increased by $s1%.
+
+Name             : Pendulum of Doom (id=1293886) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Triggered By     : Pendulum of Doom (1293885)
+Attributes       : Allow While Mounted (24), Allow While Sitting (27), No Aura Cancel (31), Allow While Stealthed (37), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Aura Interrupt   : Leave World (19), Enter World (22)
+Effects          :
+#1 (id=1314934)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 50 | Scaled Value: 50 | Target: Self (1)
+#2 (id=1314935)  : Remove Aura (203): Pendulum of Doom
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1293885 | Target: Self (1)
+Description      : Melee attack speed slowed by $s1%.
+Tooltip          : Melee attack speed slowed by $s1%.
+
 Name             : Torch Toss (id=1293966) 
 School           : Physical
 Spell Type       : None
@@ -144775,6 +144849,27 @@ Effects          :
                    Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Targeted Ally (21)
 Description      : Increases armor by $s1.
 Tooltip          : Armor increased by $s1.
+
+Name             : Wound (id=1294226) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 40
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1315473)  : School Damage (2): physical
+                   Base Value: 168 | Scaled Value: 168 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 damage.
+
+Name             : Aspects of Doom (id=1294234) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 10 seconds
+Attributes       : Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1315484)  : Create Item (24)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+Description      : Combines Axe of Lingering Dread and Axe of Inevitable Ruin to reconstruct the Pendulum of Doom.
 
 Name             : Deflecting (id=1294243) 
 School           : Physical
@@ -151662,6 +151757,19 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 274028 | Misc Value 2: 6853 | Target: Random in Area (86)
 Description      : Summons a swarm of spiders that will protect you for $d.
 
+Name             : Renewing Flame (id=1314412) 
+School           : Fire
+Spell Type       : None
+Duration         : 10 seconds
+Proc Chance      : 101%
+Attributes       : Is Ability (4), Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1346259)  : Apply Aura (6) | Absorb Damage (69)
+                   Base Value: 570 | Scaled Value: 570 | Misc Value: 0x4 | Target: Self (1)
+                   Affected School(s): Fire
+Description      : Absorbs $s1 Fire damage, healing for all damage absorbed.
+Tooltip          : Absorbs $w1 Fire damage, healing for all damage absorbed.
+
 Name             : Summon Tallstrider Hatchling (id=1315267) 
 School           : Physical
 Spell Type       : None
@@ -154187,6 +154295,52 @@ Effects          :
 #1 (id=1362475)  : Apply Party Aura (35) | Periodic Energize Power (24): every 3 seconds
                    Base Value: 290 | Scaled Value: 290 | Radius: 30 yards | Target: Self (1)
 Tooltip          : Gain $s1 mana every $t1 seconds.
+
+Name             : Perfected Form (id=1325508) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 55
+Range            : 50000 yards
+Duration         : 20 seconds
+Triggered By     : Improving Form (1325509)
+Attributes       : Suppress Caster Procs (112), Suppress Weapon Procs (151), Unknown (493)
+Effects          :
+#1 (id=1362877)  : School Damage (2): physical
+                   Base Value: 490 | Scaled Value: 490 | Target: Targeted Enemy (6)
+#2 (id=1362878)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 20 | Scaled Value: 20 | Stat: All | Target: Self (1)
+#3 (id=1362923)  : Cancel Aura (164): Improving Form
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1325509 | Target: Self (1)
+Description      : Inflict $s1 Physical damage and increase all stats by $s2.
+Tooltip          : All stats increased by $s2.
+
+Name             : Improving Form (id=1325509) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Stacks           : 30 maximum
+Proc Chance      : 101%
+Triggered By     : Perfected Form (1325508), Improving Form (1325535)
+Effects          :
+#1 (id=1362879)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+#2 (id=1362880)  : Apply Aura (6) | Trigger Spell on Aura Stack Count (542): Perfected Form
+                   Base Value: 0 | Scaled Value: 0 | Min Stack Count: 30 | Trigger Spell: 1325508 | Target: Self (1)
+Description      : Each melee hit grants you a stack of Improving Form. At 30 stacks perfect your form, inflicting $1325508s1 Physical damage to your current target and increasing all your stats by $1325508s2 for $1325508d.
+Tooltip          : With each strike, a lesson.
+
+Name             : Improving Form (id=1325535) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Stacks           : 1 maximum
+Proc Chance      : 101%
+Proc Flags       : White Melee, Unknown 38
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1362916)  : Apply Aura (6) | Proc Trigger Spell (42): Improving Form
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1325509 | Target: Self (1)
+Description      : Each melee hit grants you a stack of Improving Form. At 30 stacks perfect your form, inflicting $1325508s1 Physical damage to your current target and increasing all your stats by $1325508s2 for $1325508d.
+Tooltip          : With each strike, a lesson.
 
 Name             : Death Mark (desc=Rank 2) (id=1325756) [Spell Family (8)] 
 Class            : Rogue
