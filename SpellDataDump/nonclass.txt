@@ -34130,6 +34130,18 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Trigger Spell: 24827 | Target: Self (1)
 Description      : Creates $o1 Soul Shards.
 
+Name             : Sanctified Orb (id=24865) 
+School           : Holy
+Spell Type       : Magic
+Cooldown         : 60 seconds
+Category         : 30 (Type 0x0)
+Category Cooldown: 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=701082)   : Energize Power (30)
+                   Base Value: 340 | Scaled Value: 340 (delta=0.125) | Resource: mana | Target: Self (1)
+Description      : Restores $s1 Mana. This effect is doubled in Wasteland and Haunted areas.
+
 Name             : Food (id=24869) 
 School           : Physical
 Spell Type       : Magic
@@ -70732,6 +70744,19 @@ Effects          :
                    Affected School(s): Fire
 Description      : Absorbs $s1 Fire damage, healing for all damage absorbed.
 Tooltip          : Absorbs $w1 Fire damage, healing for all damage absorbed.
+
+Name             : Poison Sting (id=1314888) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 1
+Range            : 100 yards
+Duration         : 9 seconds
+Attributes       : Is Ability (4), Suppress Caster Procs (112), Suppress Weapon Procs (151), Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1346887)  : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
+                   Base Value: 27 | Scaled Value: 27 | Target: Targeted Enemy (6)
+Description      : Strike your target with a Poisonous Sting, inflicting $s1 damage every 3 sec for $d1.
+Tooltip          : $w1 Nature damage inflicted every 3 sec.
 
 Name             : Summon Tallstrider Hatchling (id=1315267) 
 School           : Physical
