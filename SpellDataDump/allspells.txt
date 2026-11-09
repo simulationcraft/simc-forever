@@ -150491,6 +150491,23 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 271915 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Right Click to summon and dismiss your snake.
 
+Name             : Scalding Flamehoof (id=1309551) 
+School           : Physical
+Spell Type       : None
+Duration         : 20 seconds
+Cooldown         : 120 seconds
+Category Cooldown: 20 seconds
+Attributes       : Aura Points On Client (268)
+Effects          :
+#1 (id=1338574)  : Apply Aura (6) | Modify Damage Taken% (87)
+                   Base Value: 14 | Scaled Value: 14 | Misc Value: 0x4 | Target: Self (1)
+                   Affected School(s): Fire
+#2 (id=1348561)  : Apply Aura (6) | Increase Movement Speed% (Stacking) (129)
+                   Base Value: 14 | Scaled Value: 14 | Target: Self (1)
+Description      : Increases Fire damage taken by $s1% and movement speed by $s2% for $d.
+Tooltip          : Fire damage taken increased by $w1%.
+Movement speed increased by $w2%.
+
 Name             : Shadow Word: Death (desc=Rank 1) (id=1309595) [Spell Family (6)] 
 Class            : Priest
 School           : Shadow
@@ -152723,6 +152740,46 @@ Effects          :
 #1 (id=1347784)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 274412 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Right Click to summon and dismiss your Minfernal.
+
+Name             : Behemoth Bone (id=1315849) 
+School           : Holy
+Spell Type       : None
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1348377)  : Direct Heal (10)
+                   Base Value: 505 | Scaled Value: 505 (delta=0.1) | Target: Self (1)
+#2 (id=1348388)  : Trigger Spell w/ Value (142): Behemoth Bones
+                   Base Value: 505 | Scaled Value: 505 (delta=0.1) | Trigger Spell: 1315854 | Target: Self (1)
+Description      : Crack open the bone, healing yourself for $s1 and your nearest ally for $s2. 
+
+Name             : Behemoth Bones (id=1315854) 
+School           : Holy
+Spell Type       : None
+Max Targets      : 1
+Triggered By     : Behemoth Bone (1315849)
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1348387)  : Direct Heal (10)
+                   Base Value: 505 | Scaled Value: 505 (delta=0.1) | Radius: 0 - 40 yards | Target: at Self (18) -> At Ally in Area (31)
+Description      : Heal for $1315849s1.
+
+Name             : Flamebreak Talisman (id=1315878) 
+Hotfixed         : Cooldown (180000 -> 300000)
+School           : Physical
+Spell Type       : None
+Duration         : 30 seconds
+Cooldown         : 300 seconds
+Category         : 1141 (Type 0x0)
+Category Cooldown: 30 seconds
+Attributes       : Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1348442)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 33 | Scaled Value: 33 | Stat: Agi | Target: Self (1)
+#2 (id=1348471)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 33 | Scaled Value: 33 | Stat: Agi | Target: Self (1)
+Hotfixed         : Base Value (50 -> 33)
+Description      : Increase your agility by $s1 for $d. If there is an elemental nearby, gain an additional $s2.
+Tooltip          : Agility increased by ${$w1+$w2}.
 
 Name             : Rune of Perfection (id=1315969) [Passive] 
 School           : Physical
