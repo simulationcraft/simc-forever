@@ -9327,10 +9327,11 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Flare (id=10113) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Range            : 100 yards
-Attributes       : Do Not Log (8), Unknown (493)
+Attributes       : Do Not Log (8), No Immunities (29), No Threat (42), Ignore Line of Sight (66), No Initial Threat (86), Not an Action (92), Not a Proc (105), Suppress Caster Procs (112), Suppress Target Procs (113), Ignore Caster & Target Restrictions (124), Suppress Weapon Procs (151), Ignore Phase Shift (205), Bypass Visibility Check (320), Unknown (493)
 Effects          :
 #1 (id=688482)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Nearby Target (38)
@@ -25674,6 +25675,54 @@ Effects          :
 #3 (id=693270)   : Energize Power (30)
                    Base Value: 128 | Scaled Value: 128 (delta=0.5) | Resource: mana | Target: Targeted Ally (21)
 Description      : Dispels Polymorph effects on a friendly target.  Also restores $s2 Health and $s3 Mana.
+
+Name             : Drain Life (id=18815) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Proc Chance      : 3%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=696685)   : Apply Aura (6) | Proc Trigger Spell (42): Drain Life
+                   Base Value: 3 | Scaled Value: 3 | Trigger Spell: 18817 | Target: Self (1)
+Description      : When struck in melee combat, has a $s1% chance of stealing $18817s1 life from target enemy.
+
+Name             : Flamestrike (id=18816) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Proc Chance      : 2%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=696686)   : Apply Aura (6) | Proc Trigger Spell (42): Flamestrike
+                   Base Value: 2 | Scaled Value: 2 | Trigger Spell: 18818 | Target: Self (1)
+Description      : When struck in combat has a $s1% chance of dealing $18818s1 Fire damage to all targets around you.
+
+Name             : Drain Life (id=18817) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 40 yards
+Triggered By     : Drain Life (18815)
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=695428)   : Health Leech (9)
+                   Base Value: 270 | Scaled Value: 270 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Steals $s1 life from target enemy.
+
+Name             : Flamestrike (id=18818) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 30 yards
+Cast Time        : 1 seconds
+Triggered By     : Flamestrike (18816)
+Attributes       : No Redirection (35), No Reflection (39), Unknown (493)
+Effects          :
+#1 (id=696588)   : School Damage (2): fire
+                   Base Value: 115 | Scaled Value: 115 (delta=0.434783) | Radius: 0 - 10 yards | Target: at Self (18) -> at Enemy in Area (16)
 
 Name             : Insight (id=18820) 
 School           : Arcane
@@ -67552,6 +67601,33 @@ Effects          :
                    Base Value: 56 | Scaled Value: 56 | Target: Targeted Enemy (6)
 Description      : Cremate the target for $s1 Fire damage.
 
+Name             : Stoneform Shoulders (id=1298230) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 22
+Proc Chance      : 100%
+Proc Flags       : Enter Combat
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1321804)  : Apply Aura (6) | Proc Trigger Spell (42): Stoneform Shoulders
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1298231 | Target: Self (1)
+Description      : After entering combat, reduce the next instance of Physical damage taken within $1298231d by $1298231s1.
+
+Name             : Stoneform Shoulders (id=1298231) 
+School           : Physical
+Spell Type       : None
+Duration         : 20 seconds
+Proc Chance      : 100%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken
+Triggered By     : Stoneform Shoulders (1298230)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1321805)  : Apply Aura (6) | Damage Taken (14)
+                   Base Value: -60 | Scaled Value: -60 | Misc Value: 0x1 | Target: Self (1)
+                   Affected School(s): Physical
+Description      : After entering combat, reduce the next instance of Physical damage taken within $1298231d by $1298231s1.
+Tooltip          : Physical damage taken reduced by $s1.
+
 Name             : Wave Fox Fur Tuft (id=1298392) 
 School           : Physical
 Spell Type       : None
@@ -71204,6 +71280,17 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 271915 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Right Click to summon and dismiss your snake.
 
+Name             : Claymore of Two Moons (id=1309550) [Passive] 
+School           : Physical
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1338572)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+Description      : Your attacks have a chance to Wax, dealing $1319378s1 Arcane damage or Wane, granting $1319382s1 Strength for $1319382d.
+
 Name             : Scalding Flamehoof (id=1309551) 
 School           : Physical
 Spell Type       : None
@@ -71824,6 +71911,19 @@ Effects          :
                    Base Value: 27 | Scaled Value: 27 | Target: Targeted Enemy (6)
 Description      : Strike your target with a Poisonous Sting, inflicting $s1 damage every 3 sec for $d1.
 Tooltip          : $w1 Nature damage inflicted every 3 sec.
+
+Name             : Zarla's Snack Pouch (id=1315190) 
+School           : Physical
+Spell Type       : None
+Duration         : 15 seconds
+Cooldown         : 45 seconds
+Category         : 23 (Type 0x0)
+Category Cooldown: 45 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1347318)  : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Value Multiplier: 99999 | Misc Value: 274297 | Misc Value 2: 6698 | Target: Summoner in Area (32)
+Description      : Calls forth a Black Dragon Whelp to protect you in battle for a short period of time.
 
 Name             : Summon Tallstrider Hatchling (id=1315267) 
 School           : Physical
@@ -72742,6 +72842,15 @@ Effects          :
                    Base Value: 8 | Scaled Value: 8 | Misc Value: 126 | Target: Self (1)
 Tooltip          : In a Forest or Grassland area, all Resistances increased by an additional $w1.
 
+Name             : Zarla's Snack Pouch (id=1318104) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Range            : 50000 yards
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Ignore Line of Sight (66), Unknown (493)
+Effects          :
+#1 (id=1351399)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+
 Name             : Huge Bomb (id=1318121) [Hidden] 
 School           : Fire
 Spell Type       : Magic
@@ -73176,6 +73285,30 @@ Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until
 Effects          :
 #1 (id=1353210)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
+Name             : Waxing Moon (id=1319378) 
+School           : Arcane
+Spell Type       : Magic
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Proc Chance      : 101%
+Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Mounted (24), Aura Is Debuff (26), Allow While Sitting (27), No Immunities (29), No Aura Cancel (31), No Redirection (35), No Reflection (39), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Name in Channel Bar (61), Ignore Line of Sight (66), Unknown (493)
+Effects          :
+#1 (id=1353309)  : School Damage (2): arcane
+                   Base Value: 189 | Scaled Value: 189 | Target: Targeted Enemy (6)
+Description      : Inflicts $s1 Arcane damage.
+Tooltip          : Inflicts $s1 Arcane damage.
+
+Name             : Waning Moon (id=1319382) 
+School           : Physical
+Spell Type       : None
+Duration         : 10 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1353313)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 40 | Scaled Value: 40 | Stat: Str | Target: Self (1)
+Description      : Increases Strength by $s1 for $d.
+Tooltip          : Strength increased by $s1.
 
 Name             : Motivated (id=1319421) 
 School           : Physical

@@ -2279,6 +2279,7 @@ Effects          :
 Description      : Cower, causing no damage but lowering your threat a medium amount, making the enemy less likely to attack you.
 
 Name             : Pounce (desc=Rank 1) (id=9005) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2293,7 +2294,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Stun
 Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 17
-Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), No Aura Icon (60), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688477)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -2304,7 +2305,8 @@ Effects          :
 Description      : Pounce, stunning the target for $d and causing $9007o1 damage over $9007d.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 Tooltip          : Stunned.
 
-Name             : Pounce Bleed (desc=Rank 1) (id=9007) 
+Name             : Pounce Bleed (desc=Rank 1) (id=9007) [Spell Family (7)] 
+Hotfixed         : Affecting Spells
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2313,7 +2315,9 @@ Spell Level      : 36
 Range            : 5 yards
 Duration         : 18 seconds
 Mechanic         : Bleed
+Affecting Spells : Natural Instinct (1223242 effect#1)
 Triggered By     : Pounce (9005)
+Family Flags     : 103
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=688148)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
@@ -2663,6 +2667,7 @@ Description      : Increases movement speed by $s1% for $d.  Does not break prow
 Tooltip          : Increases movement speed by $s1%.
 
 Name             : Pounce (desc=Rank 2) (id=9823) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2677,7 +2682,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Stun
 Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 17
-Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), No Aura Icon (60), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687674)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -2688,7 +2693,8 @@ Effects          :
 Description      : Pounce, stunning the target for $d and causing $9824o1 damage over $9824d.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.
 Tooltip          : Stunned.
 
-Name             : Pounce Bleed (desc=Rank 2) (id=9824) 
+Name             : Pounce Bleed (desc=Rank 2) (id=9824) [Spell Family (7)] 
+Hotfixed         : Affecting Spells
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2697,14 +2703,17 @@ Spell Level      : 46
 Range            : 5 yards
 Duration         : 18 seconds
 Mechanic         : Bleed
+Affecting Spells : Natural Instinct (1223242 effect#1)
 Triggered By     : Pounce (9823)
+Family Flags     : 103
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687677)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
                    Base Value: 25 | Scaled Value: 25 | Mechanic: Bleed | Target: Targeted Enemy (6)
 Tooltip          : Bleeding for $w1 damage every $t1 sec.
 
-Name             : Pounce Bleed (desc=Rank 3) (id=9826) 
+Name             : Pounce Bleed (desc=Rank 3) (id=9826) [Spell Family (7)] 
+Hotfixed         : Affecting Spells
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2713,7 +2722,9 @@ Spell Level      : 56
 Range            : 5 yards
 Duration         : 18 seconds
 Mechanic         : Bleed
+Affecting Spells : Natural Instinct (1223242 effect#1)
 Triggered By     : Pounce (9827)
+Family Flags     : 103
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=687678)   : Apply Aura (6) | Periodic Damage (3): physical every 3 seconds
@@ -2721,6 +2732,7 @@ Effects          :
 Tooltip          : Bleeding for $w1 damage every $t1 sec.
 
 Name             : Pounce (desc=Rank 3) (id=9827) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : Melee
@@ -2735,7 +2747,7 @@ Stance Mask      : 0x00000001
 Mechanic         : Stun
 Affecting Spells : Clearcasting (16870 effect#1), Brutal Impact (16940 effect#1), Berserk (417141 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 17
-Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), No Aura Icon (60), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Only Stealthed (17), Do Not Sheath (18), No Active Defense (21), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=687679)   : Apply Aura (6) | Stun (12)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -4912,6 +4924,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 11 | Target: Self (1)
 
 Name             : Swiftmend (id=18562) [Spell Family (7)] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=12, max_rank=1, req_points=0]
 Class            : Druid
 School           : Nature
@@ -4929,7 +4942,7 @@ Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster f
 Effects          :
 #1 (id=696956)   : Direct Heal (10)
                    Base Value: 1 | Scaled Value: 1 | Target: Targeted Ally (21)
-Description      : Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.
+Description      : Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect.
 
 Name             : Hibernate (desc=Rank 2) (id=18657) [Spell Family (7)] 
 Class            : Druid
@@ -6650,6 +6663,7 @@ Spell Level      : 1
 Range            : 50000 yards
 Labels           : 21: Druid Spells
 Proc Chance      : 101%
+Affecting Spells : Natural Instinct (1223242 effect#1)
 Family Flags     : 99
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), Always Hit (114), Do Not Display Range (126), Unknown (493)
 Effects          :
@@ -6868,6 +6882,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 414827 | Target: Self (1)
 
 Name             : Feral Charge (Cat) (id=414924) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -6879,7 +6894,7 @@ Category         : 2182 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 30 seconds
 Stance Mask      : 0x00000001
-Attributes       : Is Ability (4), Do Not Sheath (18), No Immunities (29), No Threat (42), Include In Advanced Combat Log (72), Attack on Charge to Unit (242), Face unit target upon completion of jump charge (300), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), No Immunities (29), Initiates Combat (Enables Auto-Attack) (41), Include In Advanced Combat Log (72), Active Threat (94), Taps immediately (215), Attack on Charge to Unit (242), Face unit target upon completion of jump charge (300), Unknown (493)
 Effects          :
 #1 (id=1084427)  : Unknown(175)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 4 | Misc Value: 5 | Misc Value 2: 150 | Target: at Target Back (65)
@@ -9553,8 +9568,9 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1211036)  : Apply Aura (6) | Add Percent Modifier (108): Spell Critical Bonus Multiplier (15)
                    Base Value: 20 | Scaled Value: 20 | Misc Value: 15 | Target: Self (1)
-                   Affected Spells: Swipe (769), Swipe (779), Swipe (780), Rip (1079), Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Shred (5221), Ravage (6785), Ravage (6787), Shred (6800), Maul (6807), Maul (6808), Maul (6809), Maul (8972), Shred (8992), Pounce (9005), Rip (9492), Rip (9493), Maul (9745), Rip (9752), Swipe (9754), Pounce (9823), Pounce (9827), Shred (9829), Shred (9830), Claw (9849), Claw (9850), Ravage (9866), Ravage (9867), Maul (9880), Maul (9881), Rip (9894), Rip (9896), Rake (9904), Swipe (9908), Ferocious Bite (22568), Ferocious Bite (22827), Ferocious Bite (22828), Ferocious Bite (22829), Ferocious Bite (31018), Primal Bite (407995), Lacerate (414644), Lacerate (1235826), Lacerate (1235827), Primal Bite (1238069), Primal Bite (1238070), Lacerate (1328616), Lacerate (1328617), Ferocious Bite (1328618)
-                   Family Flags: 11, 12, 15, 16, 17, 23, 38, 40, 42
+                   Affected Spells: Swipe (769), Swipe (779), Swipe (780), Rip (1079), Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Shred (5221), Ravage (6785), Ravage (6787), Shred (6800), Maul (6807), Maul (6808), Maul (6809), Maul (8972), Shred (8992), Pounce (9005), Pounce Bleed (9007), Rip (9492), Rip (9493), Maul (9745), Rip (9752), Swipe (9754), Pounce (9823), Pounce Bleed (9824), Pounce Bleed (9826), Pounce (9827), Shred (9829), Shred (9830), Claw (9849), Claw (9850), Ravage (9866), Ravage (9867), Maul (9880), Maul (9881), Rip (9894), Rip (9896), Rake (9904), Swipe (9908), Ferocious Bite (22568), Ferocious Bite (22827), Ferocious Bite (22828), Ferocious Bite (22829), Ferocious Bite (31018), Primal Bite (407995), Lacerate (414644), Lacerate (414647), Lacerate (1235826), Lacerate (1235827), Primal Bite (1238069), Primal Bite (1238070), Lacerate (1328616), Lacerate (1328617), Ferocious Bite (1328618)
+                   Family Flags: 11, 12, 15, 16, 17, 23, 38, 40, 42, 99, 103
+Hotfixed         : Affects Spells
 #2 (id=1361117)  : Apply Aura (6) | Unknown(175)
                    Base Value: 25 | Scaled Value: 25 | Misc Value: 3 | Target: Self (1)
 Description      : Increases the critical strike damage bonus of your melee abilities by $m1% and increases your spell healing by $s2% of your Intellect.

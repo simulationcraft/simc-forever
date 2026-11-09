@@ -103,6 +103,7 @@ Druid
 8998     Cower
 9000     Cower
 9005     Pounce
+9007     Pounce Bleed
 9033    *Shapeshift Form Effect
 9490     Demoralizing Roar
 9492     Rip
@@ -118,6 +119,8 @@ Druid
 9756     Thorns
 9758     Healing Touch
 9823     Pounce
+9824     Pounce Bleed
+9826     Pounce Bleed
 9827     Pounce
 9829     Shred
 9830     Shred

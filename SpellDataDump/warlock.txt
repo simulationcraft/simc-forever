@@ -4658,12 +4658,12 @@ Effects          :
 Description      : Increases the speed reduction of your Curse of Exhaustion by $s1%.
 
 Name             : Dummy Trigger (id=18350) [Hidden] 
-Class            : Warrior, Paladin, Hunter, Warlock
+Class            : Warrior, Paladin, Warlock
 School           : Physical
 Spell Type       : None
 Range            : 50000 yards
 Proc Chance      : 101%
-Triggered By     : Frost Trap (13810), Pyroclasm (18073), Illumination (20210), Mana Drain Trigger (27522), Vigilance (426972)
+Triggered By     : Pyroclasm (18073), Illumination (20210), Mana Drain Trigger (27522), Vigilance (426972)
 Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Ignore Line of Sight (66), Unknown (493)
 Effects          :
 #1 (id=695695)   : Dummy (3)
