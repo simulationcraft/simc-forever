@@ -147451,6 +147451,35 @@ Effects          :
 Description      : Harmful spell casts have a chance to inflict $s1 Fire damage. Deals $s2 times as much damage to Plants.
 Tooltip          : Inflict $s1 Fire damage.
 
+Name             : Slaughter (id=1300783) 
+School           : Physical
+Spell Type       : Melee
+Range            : 100 yards
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=1325614)  : School Damage (2): physical
+                   Base Value: 109 | Scaled Value: 109 | Target: Targeted Enemy (6)
+#2 (id=1325615)  : Dummy (3)
+                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+Description      : Deal $s1 Physical damage. Trolls and Orcs take $s2 times as much damage and are horrified for $1300784d.
+
+Name             : Crippling Dread (id=1300784) 
+School           : Shadow
+Spell Type       : Magic
+Range            : 100 yards
+Duration         : 4 seconds
+Proc Chance      : 100%
+Mechanic         : Horrify
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Redirection (35), No Reflection (39), Prevents Anim (50), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1325616)  : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Mechanic: Horrify | Target: Targeted Enemy (6)
+Description      : Horrified.
+Damage may break this effect.
+Tooltip          : Horrified.
+Damage may break this effect.
+
 Name             : Rend (id=1300787) 
 School           : Physical
 Spell Type       : Melee
@@ -154696,6 +154725,19 @@ Effects          :
                    Base Value: 100 | Scaled Value: 100 | Target: Self (1)
 Description      : Water breathing lasts $s1% longer than normal.
 Tooltip          : Water breathing.
+
+Name             : Summon Spawn of Grubthor (id=1320758) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Cooldown         : 1.5 seconds
+Category         : 133 (Type 0x0)
+Category Cooldown: 1.5 seconds
+Attributes       : Is Ability (4), Do Not Log (8), Do Not Sheath (18), Suppress Caster Procs (112), Suppress Target Procs (113), Ignore Caster Modifiers (125), Unknown (493)
+Effects          :
+#1 (id=1355571)  : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 276331 | Misc Value 2: 41 | Target: Summoner in Area (32)
+Description      : Right Click to summon and dismiss Spawn of Grubthor.
 
 Name             : Toss Crystal Heart (id=1320898) 
 School           : Physical
