@@ -3518,6 +3518,24 @@ Effects          :
                    Base Value: 90 | Scaled Value: 90 (delta=0.2) | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Bite the enemy, causing $s1 damage.
 
+Name             : Fang of the Crystal Spider (id=17331) [Spell Family (9)] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 10 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693433)   : Apply Aura (6) | Modify Spell Haste (65)
+                   Base Value: -9 | Scaled Value: -9 | Target: Targeted Enemy (6)
+#2 (id=693434)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
+                   Base Value: -9 | Scaled Value: -9 | Target: Targeted Enemy (6)
+#3 (id=693435)   : Apply Aura (6) | Modify Ranged Haste% (140)
+                   Base Value: -9 | Scaled Value: -9 | Target: Targeted Enemy (6)
+Description      : Slows target enemy's casting speed and increases the time between melee and ranged attacks by $s1% for $d.
+Tooltip          : Decreased attack speed and casting speed.
+
 Name             : Dummy Trigger (id=18350) [Hidden] 
 Class            : Warrior, Paladin, Hunter, Warlock
 School           : Physical

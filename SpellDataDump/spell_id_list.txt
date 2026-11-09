@@ -841,7 +841,7 @@ Hunter
 17259    Bite
 17260    Bite
 17261    Bite
-17331   *Fang of the Crystal Spider
+17331    Fang of the Crystal Spider
 17353   *Shoot
 18561   *Shoot
 19159    Savage Strikes
@@ -2154,7 +2154,7 @@ Mage
 1301013 *1.60.0 - Item - Tier 1 - Mage 3P Bonus - Counterspell
 1301079 *1.60.0 - Item - Tier 1 - Mage 4P Bonus - SP vs. Elementals
 1301488 *1.60.0 - Item - Tier 1 - Mage 5P Bonus - Frostfire Bolt
-1302360 *Forbidden Magic
+1302360  Forbidden Magic
 1308651 *Chill
 1308652 *Teleport: Dalaran
 1308937  Arcane Missile

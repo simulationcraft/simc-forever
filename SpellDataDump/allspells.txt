@@ -56035,6 +56035,24 @@ Effects          :
 Description      : The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 6). Castable while shapeshifted. Lasts $d.
 Tooltip          : Melee damage you take will entangle the enemy.
 
+Name             : Fang of the Crystal Spider (id=17331) [Spell Family (9)] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 10 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693433)   : Apply Aura (6) | Modify Spell Haste (65)
+                   Base Value: -9 | Scaled Value: -9 | Target: Targeted Enemy (6)
+#2 (id=693434)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
+                   Base Value: -9 | Scaled Value: -9 | Target: Targeted Enemy (6)
+#3 (id=693435)   : Apply Aura (6) | Modify Ranged Haste% (140)
+                   Base Value: -9 | Scaled Value: -9 | Target: Targeted Enemy (6)
+Description      : Slows target enemy's casting speed and increases the time between melee and ranged attacks by $s1% for $d.
+Tooltip          : Decreased attack speed and casting speed.
+
 Name             : Argent Dawn (id=17350) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -60221,6 +60239,20 @@ Effects          :
                    Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
 Description      : Wounds the target causing them to bleed for $o1 damage over $d.
 Tooltip          : Bleeding for $s1 damage every $t1 sec.
+
+Name             : Poison (id=18203) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 5 yards
+Duration         : 15 seconds
+Proc Chance      : 101%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=695357)   : Apply Aura (6) | Periodic Damage (3): nature every 1 seconds
+                   Base Value: 7 | Scaled Value: 7 | Target: Targeted Enemy (6)
+Description      : Poisons target for $s1 Nature damage every $t1 sec for $d.
+Tooltip          : $s1 Nature damage inflicted every $t1 sec.
 
 Name             : Frost Blast (id=18204) 
 School           : Frost
@@ -142270,6 +142302,16 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Radius: 0 - 2 yards | Target: Current Target (25)
 Description      : Use the Concoction of Cleansing on animals that have been experimented on with fel ash.
 
+Name             : Mod Speed 05 (id=1284734) [Passive] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Sheath (18), Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1300230)  : Apply Aura (6) | Increase Speed% (31)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Description      : Increases running and swimming speed by $s1%.
+Tooltip          : Running and swimming speed increased by $s1%.
+
 Name             : Summon Snowy Wolf Pup (id=1286629) 
 School           : Physical
 Spell Type       : None
@@ -148734,6 +148776,29 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Disarm the enemy's weapon for $d.
 Tooltip          : Disarmed!
+
+Name             : Forbidden Magic (id=1302359) 
+School           : Arcane
+Spell Type       : Magic
+Range            : 30 yards
+Duration         : 8 seconds
+Attributes       : Aura Is Debuff (26), No Aura Cancel (31), Extra Initial Period (169), Unknown (493)
+Effects          :
+#1 (id=1327927)  : Apply Aura (6) | Periodic Trigger Spell (23): Forbidden Magic every 4 seconds
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1302360 | Target: Targeted Enemy (6)
+Description      : Dispel $1302360s1 beneficial magic effect from the target enemy and $1302360s1 additional magic effect every $t1 sec for $d.
+
+Name             : Forbidden Magic (id=1302360) [Spell Family (3)] 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 50
+Range            : 30 yards
+Triggered By     : Forbidden Magic (1302359)
+Attributes       : Allow Harmful on Friendly (373), Unknown (493)
+Effects          :
+#1 (id=1327928)  : Dispel (38)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 1 | Target: Targeted Enemy (6)
+Description      : Dispels a magic effect on the current foe.
 
 Name             : Study (desc=Comprehension) (id=1302508) 
 Class            : Mage

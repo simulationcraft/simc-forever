@@ -9835,6 +9835,18 @@ Effects          :
 Description      : Deal $s2 Fire damage.
 Tooltip          : Deals $s2 Fire damage.
 
+Name             : Forbidden Magic (id=1302360) [Spell Family (3)] 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 50
+Range            : 30 yards
+Triggered By     : Forbidden Magic (1302359)
+Attributes       : Allow Harmful on Friendly (373), Unknown (493)
+Effects          :
+#1 (id=1327928)  : Dispel (38)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 1 | Target: Targeted Enemy (6)
+Description      : Dispels a magic effect on the current foe.
+
 Name             : Frozen (id=1306620) 
 School           : Frost
 Spell Type       : Magic
