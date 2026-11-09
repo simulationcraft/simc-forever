@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8606> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8609> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8085,6 +8085,8 @@ static constexpr std::array<spelltext_data_t, 8606> __spelltext_data { {
   { 1300763, "Skin a Humanoid target.", "Skins a Humanoid target.", 0 },
   { 1300781, "Harmful spell casts have a chance to deal $1300782s1 Fire damage. Deals $1300782s2 times as much damage to Plants.", 0, 0 },
   { 1300782, "Harmful spell casts have a chance to inflict $s1 Fire damage. Deals $s2 times as much damage to Plants.", "Inflict $s1 Fire damage.", 0 },
+  { 1300783, "Deal $s1 Physical damage. Trolls and Orcs take $s2 times as much damage and are horrified for $1300784d.", 0, 0 },
+  { 1300784, "Horrified.\r\nDamage may break this effect.", "Horrified.\r\nDamage may break this effect.", 0 },
   { 1300787, "Wounds the target causing them to bleed for $o1 damage over $d. Deals $s2 times as much damage if applied while behind the target.", "Bleeding for $w1 damage every $t1 sec.", 0 },
   { 1300890, "Dying heals all party members within $1300891r yds for $1300891s1.", "Dying heals all party members within $1300891r yds for $1300891s1.", 0 },
   { 1300891, "Dying heals all party members within $r yds for $s1.\r\n", "Dying heals all party members within $r yds for $s1.", 0 },
@@ -8481,6 +8483,7 @@ static constexpr std::array<spelltext_data_t, 8606> __spelltext_data { {
   { 1320498, "Thunderstomp nearby enemies, inflicting $s1 Nature damage.", 0, 0 },
   { 1320579, "Slows nearby enemies by $s1% for $d, increased to $s2% in Desert areas.", "Movement speed reduced by $w1%.", 0 },
   { 1320643, "Water breathing lasts $s1% longer than normal.", "Water breathing.", 0 },
+  { 1320758, "Right Click to summon and dismiss Spawn of Grubthor.", 0, 0 },
   { 1320898, "Throw into an Unstable Mana Rift.", 0, 0 },
   { 1320922, "$@spelldesc1247451", 0, 0 },
   { 1320925, "Burns the target for $s1 Fire damage every $t1 sec for $d.", "$s1 Fire damage inflicted every $t1 sec.", 0 },
