@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8581> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8583> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -1980,6 +1980,7 @@ static constexpr std::array<spelltext_data_t, 8581> __spelltext_data { {
   {   13234, "A shield of force protects you from the next $s1 damage done over the next $d1. WARNING:  Force Field may overload when struck temporarily removing the wearer from this dimension.", "Absorbs damage.  Effectiveness not guaranteed.", 0 },
   {   13237, "Inflicts $s1 Fire damage and stuns the targets in a $a1 yard radius for $d.", "Stunned.", 0 },
   {   13241, "Explodes when triggered dealing $s1 Fire damage to all enemies nearby and $s2 damage to you.", 0, 0 },
+  {   13262, "Extracts the magical element(s) from good quality (Green) or better weapons or armor.  The targeted item will be DESTROYED and will not be retrievable.", 0, 0 },
   {   13278, "The devices charges over time using your life force and then directs a burst of energy at your opponent. Deals $s2 times as much damage to Gnomes.", "Charging death ray using your life force.", 0 },
   {   13318, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   13327, "Charge an enemy, knocking it silly for $d. Also knocks you down, stunning you for a short period of time. Any damage caused will revive the target.", "Incapacitated.", 0 },
@@ -8517,6 +8518,7 @@ static constexpr std::array<spelltext_data_t, 8581> __spelltext_data { {
   { 1324686, "Deals $17496s1 Nature damage every time you block. Damage is doubled in swamps.", 0, 0 },
   { 1324687, "Dismember the target, inflicting $s1 Physical damage.", 0, 0 },
   { 1324752, "Underwater Breath lasts $s1% longer than normal.", "Waterbreathing.", 0 },
+  { 1324981, "Reduces the cast time of Disenchant by $s1%.", 0, 0 },
   { 1325228, "When struck in combat, inflicts $s1 Physical damage to the attacker.", 0, 0 },
   { 1325229, "Smite your target for $s1 Holy damage. Damage is tripled against Undead.", 0, 0 },
   { 1325256, "Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $1325257s1 mana every $1325257t1 seconds to group members within $1325257a1 yards.", 0, "Rank 4" },

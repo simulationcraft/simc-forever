@@ -1,5 +1,5 @@
 // Item effects, wow build 1.60.1.70862
-static constexpr std::array<item_effect_t, 1262> __item_effect_data { {
+static constexpr std::array<item_effect_t, 1263> __item_effect_data { {
   {      0,      0,      0,   0,   0,    0,       0,       0 },
   { 212548, 1241821,      0,   0,   0,    0,      -1,      -1 }, // Stock Ore
   { 213334,  13669,      0,   0,   1,    0,      -1,      -1 }, // Increased Dodge 1
@@ -1254,6 +1254,7 @@ static constexpr std::array<item_effect_t, 1262> __item_effect_data { {
   { 238834, 1324752, 286998,   0,   1,    0,      -1,      -1 }, // Water Breathing
   { 238815, 1324687, 287005,   0,   2,    0,      -1,      -1 }, // Dismember
   { 238864, 1314065, 287010,   0,   1,    0,      -1,      -1 }, // Mount Speed
+  { 238877, 1324981, 287025,   0,   1,    0,      -1,      -1 }, // Disenchanter
   { 239392,  21152, 288900,   0,   2,    0,      -1,      -1 }, // Earthshaker
   { 239511, 1327736, 289082,   0,   0, 2593,       0,    3000 }, // Elixir of Endless Intellect
   { 239658,  21992, 289294,   0,   2,    0,      -1,      -1 }, // Thunderfury
@@ -1264,7 +1265,7 @@ static constexpr std::array<item_effect_t, 1262> __item_effect_data { {
   { 239663, 1327993, 289297,   0,   0, 1160,       0,   60000 }, // Call Benediction
 } };
 
-static const std::array<uint16_t, 1262> __item_effect_id_index { {
+static const std::array<uint16_t, 1263> __item_effect_id_index { {
       0,    14,    28,     6,     7,     3,   799,    11,
      13,    27,    15,    16,    17,     9,    18,    38,
      39,    40,    44,    25,    26,    19,    20,    33,
@@ -1421,7 +1422,7 @@ static const std::array<uint16_t, 1262> __item_effect_id_index { {
     532,   533,   407,   409,   413,  1104,  1242,  1202,
    1203,  1243,  1244,  1245,  1246,  1247,  1248,  1249,
     239,   166,  1205,  1005,   118,   157,   997,  1250,
-   1252,  1251,  1253,    24,     8,    64,  1254,  1255,
-   1256,  1257,  1258,  1259,  1260,  1261,
+   1252,  1251,  1253,  1254,    24,     8,    64,  1255,
+   1256,  1257,  1258,  1259,  1260,  1261,  1262,
 } };
 
