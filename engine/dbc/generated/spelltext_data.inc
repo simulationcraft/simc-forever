@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8622> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8623> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -4948,6 +4948,7 @@ static constexpr std::array<spelltext_data_t, 8622> __spelltext_data { {
   {   28852, "Increases the melee attack power bonus of your Seal of the Crusader by $s1 and the Holy damage increase of your Judgement of the Crusader by $s2.", 0, 0 },
   {   28853, "Causes Judgement to heal all nearby party members for $1302540s1.", 0, 0 },
   {   28854, "Increases the damage of your Moonfire spell by up to $s1.", 0, 0 },
+  {   28856, "Increases the maximum number of charges on your Water Shield by $s1.", 0, 0 },
   {   28857, "Increases damage done by Chain Lightning and Lightning Bolt by up to $s1.", 0, 0 },
   {   28862, "Reduces the threat you generate by $s1% for $d.", "Threat generation reduced by $s1%.", 0 },
   {   28866, "Increases your attack speed by $s1% for $d1.", "Increased attack speed.", 0 },
