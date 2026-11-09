@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8623> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3090,6 +3090,7 @@ static constexpr std::array<spelltext_data_t, 8623> __spelltext_data { {
   {   17371, "Increases healing done by spells and effects by up to $s1.", 0, 0 },
   {   17401, "Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts $d. Druid must channel to maintain the spell.", 0, "Rank 2" },
   {   17402, "Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts $d. Druid must channel to maintain the spell.", 0, "Rank 3" },
+  {   17407, "Wounds the target for $s1 damage and deals an additional $s2 damage every $t2 sec for $d.", "Deals $s2 damage every $t2 sec.", 0 },
   {   17432, "Opens a Stratholme postbox.", 0, 0 },
   {   17448, "Restores $s1 health. Can only be used at $s2% health.", 0, 0 },
   {   17469, "Summons your pet stone.   It doesn't seem very active though...", 0, 0 },
