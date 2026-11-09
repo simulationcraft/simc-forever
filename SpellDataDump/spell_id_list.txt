@@ -1682,7 +1682,7 @@ Mage
 15244   *Cone of Cold
 15288   *Fury of Ragnaros
 15574   *Fire Blast
-15662   *Fireball
+15662    Fireball
 15735   *Arcane Missiles
 15736   *Arcane Missiles
 15744   *Blast Wave
@@ -2477,7 +2477,7 @@ Paladin
 28789   *Holy Power
 28851    Increased Flash of Light Healing
 28852    Improved Seal of the Crusader
-28853   *Libram of Divinity
+28853    Libram of Divinity
 29196   *Corrupted Mind
 29197   *Corrupted Mind
 53489   *The Art of War
@@ -2709,7 +2709,7 @@ Paladin
 1301694 *1.60.0 - Item - Tier 1 - Paladin - Holy 5P Bonus - Holy Shock
 1301697 *1.60.0 - Item - Tier 1 - Paladin - Protection 5P Bonus - Forbearance
 1301702 *1.60.0 - Item - Tier 1 - Paladin - Retribution 5P Bonus - Judgement
-1302540 *Libram of Divinity
+1302540  Libram of Divinity
 1306429  Holy Shock Critical Chance Increase
 1306433  Holy Shield Block Value Increase
 1306687 *Greathelm of the Colossus

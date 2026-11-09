@@ -4574,6 +4574,23 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
 Description      : Increases the damage done by your spells by $m1% and your critical strike chance by $m2%.
 
+Name             : Fireball (id=15662) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 35 yards/sec
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=690466)   : School Damage (2): fire
+                   Base Value: 171 | Scaled Value: 171 | Target: Targeted Enemy (6)
+#2 (id=690467)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
+
 Name             : Juju Guile (id=16327) [Spell Family (3)] 
 School           : Arcane
 Spell Type       : Magic

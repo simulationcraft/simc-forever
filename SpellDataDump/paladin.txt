@@ -5449,6 +5449,17 @@ Effects          :
                    Family Flags: 29
 Description      : Increases the melee attack power bonus of your Seal of the Crusader by $s1 and the Holy damage increase of your Judgement of the Crusader by $s2.
 
+Name             : Libram of Divinity (id=28853) [Spell Family (10), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=705391)   : Apply Aura (6) | Proc Trigger Spell (42): Libram of Divinity
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1302540 | Target: Self (1)
+Description      : Causes Judgement to heal all nearby party members for $1302540s1.
+
 Name             : Righteous Fury (id=407627) [Spell Family (10)] 
 Class            : Paladin
 School           : Holy
@@ -8294,6 +8305,18 @@ Effects          :
                    Family Flags: 13
 Description      : Increases the critical strike chance of your Flash of Light by $s1%.
 
+
+Name             : Libram of Divinity (id=1302540) [Spell Family (10)] 
+School           : Holy
+Spell Type       : None
+Range            : 30 yards
+Triggered By     : Libram of Divinity (28853)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1328138)  : Direct Heal (10)
+                   Base Value: 25 | Scaled Value: 25 (delta=0.2) | Radius: 30 yards | Target: Party in Area (20)
+Description      : Healed for $s1.
+Tooltip          : Healed for $s1.
 
 Name             : Holy Shock Critical Chance Increase (id=1306429) [Spell Family (10), Passive, Hidden] 
 School           : Physical

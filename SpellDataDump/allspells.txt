@@ -50611,6 +50611,19 @@ Effects          :
 #1 (id=690723)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Burst of Knowledge (id=15646) 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 10 seconds
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=689487)   : Apply Aura (6) | Modify Power Cost (73)
+                   Base Value: -150 | Scaled Value: -150 | Misc Value: 0x7e | Target: Self (1)
+                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
+Description      : Reduces the Mana cost of all spells by $s1 for $d.
+Tooltip          : Mana costs reduced by $s1.
+
 Name             : Summon Common Kitten (id=15647) 
 School           : Physical
 Spell Type       : None
@@ -50646,6 +50659,23 @@ Effects          :
 #1 (id=690712)   : Create Item (24)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Fill at the Jadefire Satyrs' corrupted moonwell.
+
+Name             : Fireball (id=15662) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 35 yards/sec
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=690466)   : School Damage (2): fire
+                   Base Value: 171 | Scaled Value: 171 | Target: Targeted Enemy (6)
+#2 (id=690467)   : Apply Aura (6) | Periodic Damage (3): fire every 2 seconds
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
 
 Name             : Increase Healing 53 (id=15696) [Passive, Hidden] 
 School           : Physical
@@ -65999,6 +66029,20 @@ Effects          :
 #3 (id=696645)   : Apply Aura (6) | Unknown(93)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Raid Member (57)
 Tooltip          : Complete immunity but unable to move.
+
+Name             : Frightalon (id=19755) 
+School           : Shadow
+Spell Type       : None
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 60 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=696667)   : Apply Aura (6) | Modify Mechanic Duration% (Stacking) (232)
+                   Base Value: 25 | Scaled Value: 25 | Misc Value: 5 | Target: Targeted Enemy (6)
+Description      : Increase the duration of Fear effects applied to the target by $s1% for $d.
+Tooltip          : Duration of Fear effects on the target are increased by $s1%.
 
 Name             : Thorium Grenade (id=19769) 
 School           : Fire
@@ -87698,6 +87742,17 @@ Effects          :
                    Affected Spells: Judgement of the Crusader (20188), Judgement of the Crusader (20300), Judgement of the Crusader (20301), Judgement of the Crusader (20302), Judgement of the Crusader (20303), Judgement of the Crusader (21183)
                    Family Flags: 29
 Description      : Increases the melee attack power bonus of your Seal of the Crusader by $s1 and the Holy damage increase of your Judgement of the Crusader by $s2.
+
+Name             : Libram of Divinity (id=28853) [Spell Family (10), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=705391)   : Apply Aura (6) | Proc Trigger Spell (42): Libram of Divinity
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1302540 | Target: Self (1)
+Description      : Causes Judgement to heal all nearby party members for $1302540s1.
 
 Name             : Improved Moonfire (id=28854) [Spell Family (7), Passive, Hidden] 
 School           : Physical
@@ -145568,6 +145623,21 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Tooltip          : Stunned.
 
+Name             : Rend (id=1294426) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 45
+Range            : 100 yards
+Duration         : 7 seconds
+Proc Chance      : 101%
+Mechanic         : Bleed
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1315767)  : Apply Aura (6) | Periodic Damage (3): physical every 1 seconds
+                   Base Value: 11 | Scaled Value: 11 | Target: Targeted Enemy (6)
+Description      : Wounds the target causing them to bleed for $o1 damage over $d.
+Tooltip          : Bleeding for $s1 damage every $t1 sec.
+
 Name             : Rage of Sul'thraze (id=1294430) 
 School           : Shadow
 Spell Type       : Magic
@@ -147046,6 +147116,16 @@ Effects          :
 Description      : Deal $s2 Fire damage.
 Tooltip          : Deals $s2 Fire damage.
 
+Name             : Bludgeon (id=1300209) 
+School           : Physical
+Spell Type       : Melee
+Range            : 100 yards
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=1324778)  : School Damage (2): physical
+                   Base Value: 126 | Scaled Value: 126 | Target: Targeted Enemy (6)
+Description      : Bludgeon the target, dealing $s1 Physical damage. Canines and Hyaenidae are stunned and sit for $1293483d.
+
 Name             : Cloud of Chained Essence (id=1300240) 
 School           : Nature
 Spell Type       : None
@@ -147212,6 +147292,34 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Skin a Humanoid target.
 Tooltip          : Skins a Humanoid target.
+
+Name             : Ignition (id=1300781) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Internal Cooldown: 0.01 seconds
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1325611)  : Apply Aura (6) | Proc Trigger Spell (42): Ignition
+                   Base Value: 0 | Scaled Value: 0 (delta=0.666667) | Trigger Spell: 1300782 | Target: Self (1)
+Description      : Harmful spell casts have a chance to deal $1300782s1 Fire damage. Deals $1300782s2 times as much damage to Plants.
+
+Name             : Ignition (id=1300782) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 1
+Range            : 100 yards
+Triggered By     : Ignition (1300781)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1325612)  : School Damage (2): fire
+                   Base Value: 70 | Scaled Value: 70 (delta=0.3) | Target: Targeted Enemy (6)
+#2 (id=1325613)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3
+Description      : Harmful spell casts have a chance to inflict $s1 Fire damage. Deals $s2 times as much damage to Plants.
+Tooltip          : Inflict $s1 Fire damage.
 
 Name             : Grace of the Seven (id=1300890) 
 School           : Holy
@@ -148402,6 +148510,18 @@ Effects          :
                    Base Value: 35 | Scaled Value: 35 | Resource: mana | Target: Self (1)
 Description      : Restores $s1 mana.
 Tooltip          : Restoring $s1 mana.
+
+Name             : Libram of Divinity (id=1302540) [Spell Family (10)] 
+School           : Holy
+Spell Type       : None
+Range            : 30 yards
+Triggered By     : Libram of Divinity (28853)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1328138)  : Direct Heal (10)
+                   Base Value: 25 | Scaled Value: 25 (delta=0.2) | Radius: 30 yards | Target: Party in Area (20)
+Description      : Healed for $s1.
+Tooltip          : Healed for $s1.
 
 Name             : Increased Damage Undead 01 (id=1302545) [Passive, Hidden] 
 School           : Physical
@@ -150239,6 +150359,18 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Use at the Ambermill Leyline Focus to create the Tome of Dalaran.
 
+Name             : Guidance of Ursoc (id=1308520) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1337064)  : Apply Aura (6) | Increase Movement Speed% (Stacking) (129)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : Movement speed increased by $s1% in Forest and Grassland areas.
+Tooltip          : Movement speed increased by $s1%.
+
 Name             : Goaz Stone (id=1308527) 
 School           : Physical
 Spell Type       : None
@@ -150262,6 +150394,18 @@ Effects          :
 #1 (id=1337073)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Activate a Goaz Warder.
+
+Name             : Wisdom of Ursol (id=1308531) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1337076)  : Apply Aura (6) | Restore Power (85)
+                   Base Value: 4 | Scaled Value: 4 | Target: Self (1)
+Description      : Restores $s1 Mana per 5 sec in Forest and Grassland areas.
+Tooltip          : In a Forest or Grassland area, restoring $s1 Mana every 5 sec.
 
 Name             : Shield Spike (id=1308777) [Passive] 
 School           : Physical
