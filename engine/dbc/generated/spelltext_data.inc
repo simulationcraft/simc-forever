@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8572> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8577> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -611,6 +611,7 @@ static constexpr std::array<spelltext_data_t, 8572> __spelltext_data { {
   {    6223, "Corrupts the target, causing $o1 Shadow damage over $d.", "$s1 Shadow damage every $t1 seconds.", "Rank 3" },
   {    6226, "Transfers $s1 Mana every $t1 sec from the target to the caster. Lasts $d.", "Drains $s1 Mana each second to the caster.", "Rank 2" },
   {    6229, "Absorbs $s1 shadow damage.  Lasts $d.", "Absorbs $w1 Shadow damage.", "Rank 1" },
+  {    6251, "Summons a Scarlet Cannon that fires at targets, dealing $17501s1 Holy damage. This effect deals $s2 times as much damage to Undead enemies.", 0, 0 },
   {    6262, "Instantly restores $s1 life.", 0, 0 },
   {    6263, "Instantly restores $s1 life.", 0, 0 },
   {    6280, "Increases the health of the pet by $s1.", 0, "Rank 1" },
@@ -2922,6 +2923,8 @@ static constexpr std::array<spelltext_data_t, 8572> __spelltext_data { {
   {   16528, "Inflicts numbing pain that deals $m1 Nature damage every $t1 sec and increases time between target's attacks by $s2% for $d.", "Deals $s1 Nature damage every $t1 seconds.\r\nIncreases time between attacks by $s2%.", 0 },
   {   16537, "Cures $s1 poison $leffect:effects;.", 0, 0 },
   {   16538, "Increases all damage you deal by $s1% while a shield is equipped.", 0, 0 },
+  {   16559, "Shoots a ring of fire dealing $s1 Fire damage to all nearby enemies, and envelops the caster with a Fire Shield for $16560d.", 0, 0 },
+  {   16560, 0, "Increased Fire resistance and inflicts $s1 Fire damage to attackers.", 0 },
   {   16578, "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by ${$m1/-1000}.2 sec.", 0, 0 },
   {   16579, "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by $/1000;S1 sec.", 0, "Rank 2" },
   {   16580, "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by $/1000;S1 sec.", 0, "Rank 3" },
@@ -3086,6 +3089,7 @@ static constexpr std::array<spelltext_data_t, 8572> __spelltext_data { {
   {   17469, "Summons your pet stone.   It doesn't seem very active though...", 0, 0 },
   {   17474, "Recover Highborne Relic Fragments.", 0, 0 },
   {   17485, "Increases your Intellect by $m1%.", 0, 0 },
+  {   17501, "Hurls a fiery ball that causes $s1 Holy damage to Undead enemies.", 0, 0 },
   {   17504, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   17510, "Corrupts the target, causing $o1 damage over $d.", "Inflicts $s1 Shadow damage every $t1 sec.", 0 },
   {   17511, "Poisons target for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
@@ -3312,6 +3316,7 @@ static constexpr std::array<spelltext_data_t, 8572> __spelltext_data { {
   {   18081, "Blasts a target for $s1 Nature damage.", 0, 0 },
   {   18082, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   {   18083, "Blasts a target for $s1 Fire damage.", 0, 0 },
+  {   18084, "Steals $s1 life from target enemy.", 0, 0 },
   {   18088, "Corrupts the target, causing $o1 damage over $d.", "Inflicts $s1 Shadow damage every $t1 sec.", 0 },
   {   18089, "Blasts a target for $s1 Nature damage.", 0, 0 },
   {   18090, "Wounds the target for $s1 damage.", 0, 0 },
