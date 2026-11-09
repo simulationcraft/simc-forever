@@ -316,7 +316,7 @@ Druid
 27638   *Rake
 27813    Blessed Recovery
 27846    Faster Healing Touch Cast
-27851   *Reduced Claw and Rake Cost
+27851    Reduced Claw and Rake Cost
 27853   *Increased Regrowth Healing
 28716   *Rejuvenation
 28719   *Healing Touch
@@ -2470,7 +2470,7 @@ Paladin
 27787   *Rogue Armor Energize
 27847    Cleanse Cost Reduced
 27848   *Seal Duration Increase
-27850   *Purify and Cleanse Cost Reduced
+27850    Purify and Cleanse Cost Reduced
 28774   *Lay Hands
 28775   *Judgement of Light
 28787   *Cleanse

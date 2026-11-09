@@ -435,7 +435,7 @@ Range            : 5 yards
 GCD              : 1 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Reduced Claw and Rake Cost (27851 effect#1), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -556,7 +556,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Reduced Claw and Rake Cost (27851 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -582,7 +582,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Reduced Claw and Rake Cost (27851 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -608,7 +608,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Reduced Claw and Rake Cost (27851 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -815,7 +815,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Reduced Claw and Rake Cost (27851 effect#1), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -1118,7 +1118,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Reduced Claw and Rake Cost (27851 effect#1), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -2938,7 +2938,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Reduced Claw and Rake Cost (27851 effect#1), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -2962,7 +2962,7 @@ Labels           : 21: Druid Spells
 Proc Chance      : 40%
 Stance Mask      : 0x00000001
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Reduced Claw and Rake Cost (27851 effect#1), Berserk (417141 effect#1), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -3496,7 +3496,7 @@ GCD              : 1 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000001
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#2), Savage Fury (16998 effects: #1, #2), Reduced Claw and Rake Cost (27851 effect#1), Berserk (417141 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #7, #8), S03 - Item - T1 - Druid - Feral 4P Bonus (455872 effect#1), S03 - Item - T2- Druid - Feral 2P Bonus (467207 effects: #1, #2), S03 - Item - T2- Druid - Feral 4P Bonus (467208 effect#1), Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1), Poised (1328827 effect#1)
 Family Flags     : 12, 126
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Completely Blocked (99), DoT Stacking Rule (103), Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -5889,6 +5889,18 @@ Effects          :
                    Affected Spells: Healing Touch (5185), Healing Touch (5186), Healing Touch (5187), Healing Touch (5188), Healing Touch (5189), Healing Touch (6778), Healing Touch (8903), Healing Touch (9758), Healing Touch (9888), Healing Touch (9889), Healing Touch (25297)
                    Family Flags: 5
 Description      : Reduces the casting time of your Healing Touch spell by 0.15 sec.
+
+Name             : Reduced Claw and Rake Cost (id=27851) [Spell Family (7), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 21: Druid Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=704563)   : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
+                   Base Value: -2 | Scaled Value: -2 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Claw (9849), Claw (9850), Rake (9904)
+                   Family Flags: 12, 42
+Description      : Reduces the energy cost of Claw, Rake, and Mangle by $s1.
 
 Name             : Healing Touch Refund (id=28847) [Spell Family (7), Passive, Hidden] 
 School           : Physical

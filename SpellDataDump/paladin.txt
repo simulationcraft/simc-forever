@@ -441,7 +441,7 @@ Spell Level      : 8
 Range            : 30 yards
 GCD              : 1.5 seconds
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Purifying Power (429144 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Purify and Cleanse Cost Reduced (27850 effect#1), Purifying Power (429144 effect#1)
 Family Flags     : 33
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -622,7 +622,7 @@ Spell Level      : 42
 Range            : 30 yards
 GCD              : 1.5 seconds
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Cleanse Cost Reduced (27847 effect#1), Purifying Power (429144 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Cleanse Cost Reduced (27847 effect#1), Purify and Cleanse Cost Reduced (27850 effect#1), Purifying Power (429144 effect#1)
 Family Flags     : 12, 33
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
 Effects          :
@@ -5418,6 +5418,18 @@ Effects          :
                    Affected Spells: Cleanse (4987), Cleanse Cost Reduced (27847), Improved Seal of the Crusader (28852)
                    Family Flags: 12
 Description      : Reduces the mana cost of your Cleanse spell by $s1.
+
+Name             : Purify and Cleanse Cost Reduced (id=27850) [Spell Family (10), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 26: Paladin Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=704452)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
+                   Base Value: -10 | Scaled Value: -10 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Purify (1152), Cleanse (4987)
+                   Family Flags: 33
+Description      : Reduces the Mana cost of Purify and Cleanse by $s1%.
 
 Name             : Increased Flash of Light Healing (id=28851) [Spell Family (10), Passive, Hidden] 
 School           : Physical
