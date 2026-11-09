@@ -4607,6 +4607,23 @@ Effects          :
                    Base Value: 30 | Scaled Value: 30 | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Frost damage.
 
+Name             : Fireball (id=16413) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 55
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 7 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=693152)   : School Damage (2): fire
+                   Base Value: 77 | Scaled Value: 77 | Target: Targeted Enemy (6)
+#2 (id=693153)   : Apply Aura (6) | Periodic Damage (3): fire every 1 seconds
+                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
+Tooltip          : $s2 Fire damage every $t2 sec.
+
 Name             : Fireball (id=16415) [Spell Family (3)] 
 School           : Fire
 Spell Type       : Magic

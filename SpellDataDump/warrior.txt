@@ -3109,6 +3109,21 @@ Effects          :
 Description      : Reduces target's attack power by $s1 for $d.
 Tooltip          : Reduces attack power by $s1.
 
+Name             : Lord General's Sword (id=15602) [Spell Family (4)] 
+School           : Physical
+Spell Type       : None
+Resource         : 0 Energy (3) (id=180849)
+Spell Level      : 56
+Duration         : 10 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=692615)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: 84 | Scaled Value: 84 | Target: Self (1)
+#2 (id=871979)   : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: 84 | Scaled Value: 84 | Target: Self (1)
+Description      : Increases attack power by $s1 for $d.
+Tooltip          : Attack power increased by $s1.
+
 Name             : Deflection (id=16462) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=2, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(1, 2, 3, 4, 5)]

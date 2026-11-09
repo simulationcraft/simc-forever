@@ -1699,7 +1699,7 @@ Mage
 16380   *Greater Invisibility
 16407    Frost Blast
 16412   *Fireball
-16413   *Fireball
+16413    Fireball
 16415    Fireball
 16454   *Searing Blast
 16551   *Felstriker
@@ -5394,7 +5394,7 @@ Warrior
 13847   *Recklessness
 14895   *Overpower
 15062   *Shield Wall
-15602   *Lord General's Sword
+15602    Lord General's Sword
 15615   *Pummel
 15749   *Shield Charge
 16244   *Demoralizing Shout
