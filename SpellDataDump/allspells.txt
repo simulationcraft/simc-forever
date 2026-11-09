@@ -13043,6 +13043,19 @@ Effects          :
 #1 (id=684230)   : Open Lock (33)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Gameobject (23)
 
+Name             : Summon Scarlet Cannon (id=6251) 
+School           : Physical
+Spell Type       : None
+Range            : 5 yards
+Duration         : 10 seconds
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=683398)   : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 11199 | Misc Value 2: 6792 | Target: Front of Self (47)
+#2 (id=1351920)  : None (0)
+                   Base Value: 2 | Scaled Value: 2
+Description      : Summons a Scarlet Cannon that fires at targets, dealing $17501s1 Holy damage. This effect deals $s2 times as much damage to Undead enemies.
+
 Name             : Minor Healthstone (id=6262) [Spell Family (5)] 
 Class            : Warlock
 School           : Physical
@@ -53026,6 +53039,34 @@ Effects          :
                    Affected School(s): Physical
 Description      : Increases all damage you deal by $s1% while a shield is equipped.
 
+Name             : Flame Wrath (id=16559) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 58
+Cooldown         : 5 seconds
+Category Cooldown: 5 seconds
+Attributes       : No Redirection (35), No Reflection (39), Unknown (493)
+Effects          :
+#1 (id=694549)   : School Damage (2): fire
+                   Base Value: 154 | Scaled Value: 154 (delta=0.266667) | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
+#2 (id=694550)   : Trigger Spell (64): Flame Wrath
+                   Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Trigger Spell: 16560 | Target: Self (1)
+Description      : Shoots a ring of fire dealing $s1 Fire damage to all nearby enemies, and envelops the caster with a Fire Shield for $16560d.
+
+Name             : Flame Wrath (id=16560) 
+School           : Fire
+Spell Type       : None
+Spell Level      : 1
+Duration         : 15 seconds
+Triggered By     : Flame Wrath (16559)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694527)   : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 10 | Scaled Value: 10 | Target: Self (1)
+#2 (id=694528)   : Apply Aura (6) | Resistance (22)
+                   Base Value: 30 | Scaled Value: 30 | SP Coefficient: 1 | Misc Value: 4 | Target: Self (1)
+Tooltip          : Increased Fire resistance and inflicts $s1 Fire damage to attackers.
+
 Name             : Elemental Alacrity (id=16578) [Spell Family (11), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=3, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(-170, -330, -500)]
@@ -56228,6 +56269,19 @@ Attributes       : Unknown (493)
 Effects          :
 #1 (id=694852)   : School Damage (2): physical
                    Base Value: 22 | Scaled Value: 22 (delta=1.5) | Target: Targeted Enemy (6)
+
+Name             : Cannon Fire (id=17501) 
+School           : Holy
+Spell Type       : None
+Spell Level      : 60
+Range            : 40 yards
+Cast Time        : 1 seconds
+Velocity         : 25 yards/sec
+Attributes       : Track Target in Cast (Player Only) (22), Unknown (493)
+Effects          :
+#1 (id=695041)   : School Damage (2): holy
+                   Base Value: 112 | Scaled Value: 112 (delta=0.48) | Radius: 5 yards | Target: at Enemy in Area (16)
+Description      : Hurls a fiery ball that causes $s1 Holy damage to Undead enemies.
 
 Name             : Rend (id=17504) 
 School           : Physical
@@ -59504,6 +59558,17 @@ Effects          :
 #1 (id=694118)   : School Damage (2): fire
                    Base Value: 77 | Scaled Value: 77 (delta=0.333333) | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Fire damage.
+
+Name             : Drain Life (id=18084) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 45
+Range            : 100 yards
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=695354)   : Health Leech (9)
+                   Base Value: 56 | Scaled Value: 56 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Steals $s1 life from target enemy.
 
 Name             : Corruption (id=18088) 
 School           : Shadow
@@ -147062,6 +147127,14 @@ Spell Type       : None
 Attributes       : Passive (6), Do Not Log (8), No Aura Icon (60), Unknown (493)
 Effects          :
 #1 (id=1325424)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+
+Name             : Summon Scarlet Cannon (id=1300668) [Passive] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1325425)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Razorsteel (id=1300680) [Passive] 
