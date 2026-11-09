@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8633> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -457,14 +457,14 @@ static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
   {    4131, "Banishes a Cresting Exile", 0, 0 },
   {    4132, "Banishes a Thundering Exile", 0, 0 },
   {    4141, "Summon Myzrael from the Shards of Myzrael.", 0, 0 },
-  {    4187, "Stamina increased by $s1.", 0, "Rank 1" },
-  {    4188, "Stamina increased by $s1.", 0, "Rank 2" },
-  {    4189, "Stamina increased by $s1.", 0, "Rank 3" },
-  {    4190, "Stamina increased by $s1.", 0, "Rank 4" },
-  {    4191, "Stamina increased by $s1.", 0, "Rank 5" },
-  {    4192, "Stamina increased by $s1.", 0, "Rank 6" },
-  {    4193, "Stamina increased by $s1.", 0, "Rank 7" },
-  {    4194, "Stamina increased by $s1.", 0, "Rank 8" },
+  {    4187, "Health increased by $s1.", 0, "Rank 1" },
+  {    4188, "Health increased by $s1.", 0, "Rank 2" },
+  {    4189, "Health increased by $s1.", 0, "Rank 3" },
+  {    4190, "Health increased by $s1.", 0, "Rank 4" },
+  {    4191, "Health increased by $s1.", 0, "Rank 5" },
+  {    4192, "Health increased by $s1.", 0, "Rank 6" },
+  {    4193, "Health increased by $s1.", 0, "Rank 7" },
+  {    4194, "Health increased by $s1.", 0, "Rank 8" },
   {    4239, "Activates Trelane's tower defenses.", 0, 0 },
   {    4318, "Increases your Agility by $s1 for $d.", "Increased Agility.", 0 },
   {    4506, "Will release Yenniku from his imprisonment", 0, 0 },
@@ -3406,7 +3406,7 @@ static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
   {   18551, "Increases your total Intellect by $m1%.", 0, 0 },
   {   18559, "Demon Pick to Destroy Demon Crystal.", 0, 0 },
   {   18560, "The purification of tainted Felcloth into Mooncloth can only be done at a moonwell, and only once every $s2 days will the waters permit themselves to be used in such a way.", 0, 0 },
-  {   18562, "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.", 0, 0 },
+  {   18562, "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect.", 0, 0 },
   {   18608, "Heals $o1 damage over $d.", "Healing $s1 damage every $t1 seconds.", "Rank 9" },
   {   18610, "Heals $o1 damage over $d.", "Healing $s1 damage every $t1 seconds.", "Rank 10" },
   {   18647, "Banishes the enemy target, preventing all action but making it invulnerable for up to $d.  Only one target can be banished at a time.  Only works on Demons and Elementals.", "Invulnerable, but unable to act.", "Rank 2" },
@@ -3443,6 +3443,9 @@ static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
   {   18805, "Dispels Polymorph effects on a friendly target.  Also restores $s2 Health and $s3 Mana.", 0, 0 },
   {   18807, "Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d  and slowing their movement speed by $m2%.", "$w1 Shadow damage every $t1 sec. Movement speed slowed by $w2%.", "Rank 6" },
   {   18809, "Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.", "$s2 Fire damage every $t2 seconds.", "Rank 8" },
+  {   18815, "When struck in melee combat, has a $s1% chance of stealing $18817s1 life from target enemy.", 0, 0 },
+  {   18816, "When struck in combat has a $s1% chance of dealing $18818s1 Fire damage to all targets around you.", 0, 0 },
+  {   18817, "Steals $s1 life from target enemy.", 0, 0 },
   {   18820, "Reduces the Mana cost of all spells by $s1 for $d.", "Mana costs reduced by $s1.", 0 },
   {   18821, "Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by $s1% and reduces the resist chance by $s3%.", 0, "Rank 1" },
   {   18822, "Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by $s1% and reduces the resist chance by $s3%.", 0, "Rank 2" },
@@ -8057,6 +8060,8 @@ static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
   { 1297774, "Suffuse yourself with magical energy, allowing the detection and acquisition of Motes of Unstable Magic from certain spellcasters and powerful enemies.", "Allows the acquisition of Motes of Unstable Magic.", 0 },
   { 1297910, "When struck in combat, inflicts $s1 Nature damage to the attacker.", 0, 0 },
   { 1297921, "Cremate the target for $s1 Fire damage.", 0, 0 },
+  { 1298230, "After entering combat, reduce the next instance of Physical damage taken within $1298231d by $1298231s1.", 0, 0 },
+  { 1298231, "After entering combat, reduce the next instance of Physical damage taken within $1298231d by $1298231s1.", "Physical damage taken reduced by $s1.", 0 },
   { 1298392, "Temporarily transforms a demon in Dae'gun.", 0, 0 },
   { 1298497, "Releases the spirit from an Undead corpse within $a1 yds, laying it to rest and restoring $1298498s1 Health.", 0, 0 },
   { 1298498, "Redeem an Undead corpse, laying its spirit to rest and restoring $s1 Health. Only usable on Undead corpses within $1298497a1 yds.", "Restore $s1 Health.", 0 },
@@ -8257,6 +8262,7 @@ static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
   { 1309545, "Right Click to summon and dismiss your cockroach.", 0, 0 },
   { 1309546, "Right Click to summon and dismiss your cockroach.", 0, 0 },
   { 1309547, "Right Click to summon and dismiss your snake.", 0, 0 },
+  { 1309550, "Your attacks have a chance to Wax, dealing $1319378s1 Arcane damage or Wane, granting $1319382s1 Strength for $1319382d.", 0, 0 },
   { 1309551, "Increases Fire damage taken by $s1% and movement speed by $s2% for $d.", "Fire damage taken increased by $w1%.\r\nMovement speed increased by $w2%.", 0 },
   { 1309595, "A word of dark binding that inflicts $s1 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to $s3% of your maximum health.", 0, "Rank 1" },
   { 1309618, "Summons your own portable Windwell for $d.", 0, 0 },
@@ -8389,6 +8395,7 @@ static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
   { 1314412, "Absorbs $s1 Fire damage, healing for all damage absorbed.", "Absorbs $w1 Fire damage, healing for all damage absorbed.", 0 },
   { 1314784, "Increases Strength by $s1 while affected by a Bleed.", 0, 0 },
   { 1314888, "Strike your target with a Poisonous Sting, inflicting $s1 damage every 3 sec for $d1.", "$w1 Nature damage inflicted every 3 sec.", 0 },
+  { 1315190, "Calls forth a Black Dragon Whelp to protect you in battle for a short period of time.", 0, 0 },
   { 1315267, "Right Click to summon and dismiss your Tallstrider Hatchling.", 0, 0 },
   { 1315339, "Increases intellect by $s1 at night.", 0, 0 },
   { 1315451, "Right Click to summon and dismiss your Minfernal.", 0, 0 },
@@ -8486,6 +8493,8 @@ static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
   { 1319047, "+$s1 Attack Power, doubled against Undead targets.", 0, 0 },
   { 1319310, "A nutritious meal has made you Well Fed, increasing your Armor.", "Your Armor is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]", 0 },
   { 1319311, "$@spelldesc1129 If you spend at least 10 sec eating you will become well fed and gain $s2 Armor for $1319310d. $@spelldesc1243969", 0, 0 },
+  { 1319378, "Inflicts $s1 Arcane damage.", "Inflicts $s1 Arcane damage.", 0 },
+  { 1319382, "Increases Strength by $s1 for $d.", "Strength increased by $s1.", 0 },
   { 1319421, "Motivate a member of the Deathguard.", "Back on task.", 0 },
   { 1320093, "$?pc164873[$@spelldesc1320097][$@spelldesc1320096]", 0, 0 },
   { 1320096, "They love me...", 0, 0 },
@@ -8627,7 +8636,16 @@ static constexpr std::array<spelltext_data_t, 8624> __spelltext_data { {
 } };
 
 // spelltext hotfix entries, wow build 1.60.1.70862
-static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __spelltext_hotfix_data { {
+static constexpr std::array<hotfix::client_hotfix_entry_t, 9> __spelltext_hotfix_data { {
+  {    4187,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {    4188,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {    4189,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {    4190,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {    4191,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {    4192,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {    4193,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {    4194,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {   18562,  0, "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.", "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect." },
 } };
 
 // Spell description variables, wow build 1.60.1.70862
