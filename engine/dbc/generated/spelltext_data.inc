@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8577> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8581> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8219,6 +8219,7 @@ static constexpr std::array<spelltext_data_t, 8577> __spelltext_data { {
   { 1309545, "Right Click to summon and dismiss your cockroach.", 0, 0 },
   { 1309546, "Right Click to summon and dismiss your cockroach.", 0, 0 },
   { 1309547, "Right Click to summon and dismiss your snake.", 0, 0 },
+  { 1309551, "Increases Fire damage taken by $s1% and movement speed by $s2% for $d.", "Fire damage taken increased by $w1%.\r\nMovement speed increased by $w2%.", 0 },
   { 1309595, "A word of dark binding that inflicts $s1 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to $s3% of your maximum health.", 0, "Rank 1" },
   { 1309618, "Summons your own portable Windwell for $d.", 0, 0 },
   { 1309631, "Increases your Spirit by $m1%.", 0, 0 },
@@ -8353,6 +8354,9 @@ static constexpr std::array<spelltext_data_t, 8577> __spelltext_data { {
   { 1315267, "Right Click to summon and dismiss your Tallstrider Hatchling.", 0, 0 },
   { 1315339, "Increases intellect by $s1 at night.", 0, 0 },
   { 1315451, "Right Click to summon and dismiss your Minfernal.", 0, 0 },
+  { 1315849, "Crack open the bone, healing yourself for $s1 and your nearest ally for $s2. ", 0, 0 },
+  { 1315854, "Heal for $1315849s1.", 0, 0 },
+  { 1315878, "Increase your agility by $s1 for $d. If there is an elemental nearby, gain an additional $s2.", "Agility increased by ${$w1+$w2}.", 0 },
   { 1315969, "Your spells pierce $s1 Magical Resistances. Gain an additional $1315971s1 Spell Piercing in Forest and Grassland areas.", 0, 0 },
   { 1315971, 0, "In a Forest or Grassland area, Spell Piercing increased by an additional $s1.", 0 },
   { 1315972, "Stuns target and yourself for $d. Ogres are Stunned for $1317450d and refund $1317450s2% of the cooldown.", "Stunned.", 0 },
