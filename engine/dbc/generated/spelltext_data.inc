@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8617> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8622> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3077,6 +3077,7 @@ static constexpr std::array<spelltext_data_t, 8617> __spelltext_data { {
   {   17320, "Increases healing done by spells and effects by up to $s1.", 0, 0 },
   {   17322, "Increases the range of your offensive Shadow spells by $s1%.", 0, 0 },
   {   17329, "The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 6). Castable while shapeshifted. Lasts $d.", "Melee damage you take will entangle the enemy.", "Rank 6" },
+  {   17331, "Slows target enemy's casting speed and increases the time between melee and ranged attacks by $s1% for $d.", "Decreased attack speed and casting speed.", 0 },
   {   17350, "Has a chance when struck in combat to increase your chance to block by $17351s1% for $17351d. Undead that strike you are $s2 times as likely to activate this effect.", "Chance to block increased by $17351s1%.", 0 },
   {   17351, "Chance to block increased by $s1%.", "Chance to block increased by $s1%.", 0 },
   {   17352, "Increases Attack Power by $s1, and Attack Power against Undead by an additional $s2 for $d.", "Attack Power increased by $s1. Attack Power against Undead increased by $s2.", 0 },
@@ -3362,6 +3363,7 @@ static constexpr std::array<spelltext_data_t, 8617> __spelltext_data { {
   {   18199, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   {   18200, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   18202, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
+  {   18203, "Poisons target for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
   {   18204, "Blasts a target for $s1 Frost damage.", 0, 0 },
   {   18206, "Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health.", 0, 0 },
   {   18208, "Poisons target for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
@@ -7794,6 +7796,7 @@ static constexpr std::array<spelltext_data_t, 8617> __spelltext_data { {
   { 1284035, "Cure a sickly animal afflicted by fel taint.", 0, 0 },
   { 1284536, "Your next Holy Nova costs no Mana.", "Your next Holy Nova costs no Mana.", 0 },
   { 1284701, "Use the Concoction of Cleansing on animals that have been experimented on with fel ash.", 0, 0 },
+  { 1284734, "Increases running and swimming speed by $s1%.", "Running and swimming speed increased by $s1%.", 0 },
   { 1286629, "Right Click to summon and dismiss your snowy wolf pup.", 0, 0 },
   { 1286800, "Deploy a banner representing your chosen faction in the Desolace centaur war for $d.", 0, 0 },
   { 1286814, "Transform into a centaur for $d or until you enter combat.\r\n\r\nWhile in Desolace, your movement speed is also increased by $s2% and this transformation persists through combat.", "Transformed into a centaur.\r\n\r\nWhile in Desolace, you also gain $s2% movement speed and the transformation persists through combat.", 0 },
@@ -8137,6 +8140,8 @@ static constexpr std::array<spelltext_data_t, 8617> __spelltext_data { {
   { 1302345, "Increases the chance your Pick Pocket and Distract abilities are successful by $s1%.", 0, 0 },
   { 1302356, "Energize the lodestone for $d, heightening its magnetic pull and drawing in the weapon of the next melee attacker that strikes you, Disarming them for $1302357d.", "Energized, disarming the next melee attacker that strikes you.", 0 },
   { 1302357, "Disarm the enemy's weapon for $d.", "Disarmed!", 0 },
+  { 1302359, "Dispel $1302360s1 beneficial magic effect from the target enemy and $1302360s1 additional magic effect every $t1 sec for $d.", 0, 0 },
+  { 1302360, "Dispels a magic effect on the current foe.", 0, 0 },
   { 1302508, "Perform spell research, resulting in a bundle of scrolls. Requires a suitable library.", 0, "Comprehension" },
   { 1302521, "Restores $s1 mana.", "Restoring $s1 mana.", 0 },
   { 1302540, "Healed for $s1.", "Healed for $s1.", 0 },
