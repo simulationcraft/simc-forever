@@ -4256,7 +4256,7 @@ Shaman
 28821   *Lightning Shield
 28823   *Totemic Power
 28849    Lesser Healing Wave
-28856   *Increased Water Shield Charges
+28856    Increased Water Shield Charges
 28857    Increased Lightning Damage
 28999    Elemental Reach
 29005   *Storm Mastery
