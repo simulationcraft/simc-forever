@@ -4908,6 +4908,18 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 Description      : You gain an additional ${$m1/10} Rage from activating Enrage and an additional $m2 Energy from activating Shifting Power.
 
+Name             : Wrath (id=18104) [Spell Family (7)] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 55
+Range            : 10 yards
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=695168)   : School Damage (2): nature
+                   Base Value: 126 | Scaled Value: 126 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
+
 Name             : Vanish Purge (id=18461) [Spell Family (7), Hidden] 
 Class            : Rogue
 School           : Physical

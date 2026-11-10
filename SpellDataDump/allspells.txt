@@ -59899,6 +59899,18 @@ Effects          :
 Description      : When struck in combat has a 1% chance of raising a thorny shield that inflicts $17154s1 Nature damage to attackers when hit and increases Nature resistance by $17154s2 for $17154d.
 
 
+Name             : Wrath (id=18104) [Spell Family (7)] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 55
+Range            : 10 yards
+Velocity         : 20 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=695168)   : School Damage (2): nature
+                   Base Value: 126 | Scaled Value: 126 (delta=0.333333) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
+
 Name             : Wound (id=18107) 
 School           : Physical
 Spell Type       : Melee

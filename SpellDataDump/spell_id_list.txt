@@ -227,7 +227,7 @@ Druid
 17401    Hurricane
 17402    Hurricane
 17768    Wolfshead Helm
-18104   *Wrath
+18104    Wrath
 18461    Vanish Purge
 18562    Swiftmend
 18657    Hibernate
