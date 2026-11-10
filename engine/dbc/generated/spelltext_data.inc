@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8658> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8662> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3098,7 +3098,10 @@ static constexpr std::array<spelltext_data_t, 8658> __spelltext_data { {
   {   17448, "Restores $s1 health. Can only be used at $s2% health.", 0, 0 },
   {   17469, "Summons your pet stone.   It doesn't seem very active though...", 0, 0 },
   {   17474, "Recover Highborne Relic Fragments.", 0, 0 },
+  {   17483, "Sends a shadowy bolt at the enemy causing $s1 Shadow damage and dealing $s2 damage every $t2 sec for $d.", "Deals $s2 Shadow damage every $t2 sec.", 0 },
   {   17485, "Increases your Intellect by $m1%.", 0, 0 },
+  {   17499, "Increases Strength by $s1 for $d.", "Increased Strength.", 0 },
+  {   17500, "Knocks target silly for $d and increases Strength by $17499s1 for $17499d.", "Knocked silly.", 0 },
   {   17501, "Hurls a fiery ball that causes $s1 Holy damage to Undead enemies.", 0, 0 },
   {   17504, "Wounds the target causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   {   17505, "Steals $s1 life from target enemy.", 0, 0 },
@@ -8423,6 +8426,7 @@ static constexpr std::array<spelltext_data_t, 8658> __spelltext_data { {
   { 1315267, "Right Click to summon and dismiss your Tallstrider Hatchling.", 0, 0 },
   { 1315339, "Increases intellect by $s1 at night.", 0, 0 },
   { 1315451, "Right Click to summon and dismiss your Minfernal.", 0, 0 },
+  { 1315557, "Charms the target, preventing all actions for up to $d. Any damage caused will remove the effect. Only works against Humanoids.", "Charmed.", 0 },
   { 1315767, "Reduces the target enemy's attack power by $s1 for $d.", "Attack power lowered by $s1.", 0 },
   { 1315844, "Increases your chance to Dodge by $s1% for $d.", "Dodge chance increased by $s1%.", 0 },
   { 1315849, "Crack open the bone, healing yourself for $s1 and your nearest ally for $s2. ", 0, 0 },
