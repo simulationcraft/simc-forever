@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8656> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8658> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3094,6 +3094,7 @@ static constexpr std::array<spelltext_data_t, 8656> __spelltext_data { {
   {   17402, "Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts $d. Druid must channel to maintain the spell.", 0, "Rank 3" },
   {   17407, "Wounds the target for $s1 damage and deals an additional $s2 damage every $t2 sec for $d.", "Deals $s2 damage every $t2 sec.", 0 },
   {   17432, "Opens a Stratholme postbox.", 0, 0 },
+  {   17447, "Channels $s1 health into mana every $t1 sec for $d.", "Converting $s1 health into $s1 mana every $t1 sec.", 0 },
   {   17448, "Restores $s1 health. Can only be used at $s2% health.", 0, 0 },
   {   17469, "Summons your pet stone.   It doesn't seem very active though...", 0, 0 },
   {   17474, "Recover Highborne Relic Fragments.", 0, 0 },
@@ -4961,6 +4962,7 @@ static constexpr std::array<spelltext_data_t, 8656> __spelltext_data { {
   {   28852, "Increases the melee attack power bonus of your Seal of the Crusader by $s1 and the Holy damage increase of your Judgement of the Crusader by $s2.", 0, 0 },
   {   28853, "Causes Judgement to heal all nearby party members for $1302540s1.", 0, 0 },
   {   28854, "Increases the damage of your Moonfire spell by up to $s1.", 0, 0 },
+  {   28855, "Reduces the Rage cost of Maul and Swipe by $/10;s1.", 0, 0 },
   {   28856, "Increases the maximum number of charges on your Water Shield by $s1.", 0, 0 },
   {   28857, "Increases damage done by Chain Lightning and Lightning Bolt by up to $s1.", 0, 0 },
   {   28862, "Reduces the threat you generate by $s1% for $d.", "Threat generation reduced by $s1%.", 0 },
