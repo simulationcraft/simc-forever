@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8652> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8654> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3380,6 +3380,7 @@ static constexpr std::array<spelltext_data_t, 8652> __spelltext_data { {
   {   18271, "Increases the damage dealt or life drained by your Shadow spells by $s1%.", 0, 0 },
   {   18276, "Blasts a target for $s1 Frost damage.", 0, 0 },
   {   18288, "Increases the effect of your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.  Lasts $d.", "Increases effect for your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.", 0 },
+  {   18289, "Diseases target enemy for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
   {   18308, "Calls forth 3 servants of the House Barov that will fight, cook, and clean for you.", 0, 0 },
   {   18310, "Increases the speed reduction of your Curse of Exhaustion by $s1%.", 0, "Rank 1" },
   {   18311, "Increases the speed reduction of your Curse of Exhaustion by $s1%.", 0, "Rank 2" },
@@ -8087,6 +8088,7 @@ static constexpr std::array<spelltext_data_t, 8652> __spelltext_data { {
   { 1299446, "You take on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by $s2. Only one Aspect can be active at a time.", "Untrackable. Melee Attack Power increased by $s2.", "Rank 3" },
   { 1299447, "You take on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by $s2. Only one Aspect can be active at a time.", "Untrackable. Melee Attack Power increased by $s2.", "Rank 4" },
   { 1299448, 0, "Melee attack speed increased by $s1%.", 0 },
+  { 1299631, "Smites a target for $s1 Holy damage. Deals $s2 times as much damage to Undead.", 0, 0 },
   { 1299796, "Increases your Spirit by $s1%.", "Spirit increased by $w1%.", 0 },
   { 1299850, "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.", "$s2 Fire damage every $t2 sec.", 0 },
   { 1299869, "Steals $s1 life from the target enemy. Deals $s2 times as much damage to Undead.", 0, 0 },
