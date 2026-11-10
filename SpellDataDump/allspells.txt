@@ -75318,6 +75318,19 @@ Effects          :
 Description      : Increases all stats by $s1 for $d.
 Tooltip          : All stats increased by $s1.
 
+Name             : Engulfing Shadows (id=21978) [Passive, Hidden] 
+School           : Shadow
+Spell Type       : None
+Range            : 30 yards
+Internal Cooldown: 0.1 seconds
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=698542)   : Apply Aura (6) | Proc Trigger Spell (42): Engulfing Shadows
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 27860 | Target: Self (1)
+Description      : Chance on landing a damaging spell to deal $27860s1 Shadow damage and restore $27860s2 mana to you.
+
 Name             : Talisman of Binding (desc=Rank 1) (id=21991) [Passive] 
 School           : Nature
 Spell Type       : None
@@ -87264,6 +87277,22 @@ Effects          :
                    Affected Spells: Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Flame Shock (10447), Flame Shock (10448), Flame Shock (29228)
                    Family Flags: 28
 Description      : Increases the damage of your Shock spells by $s1%.
+
+Name             : Engulfing Shadows (id=27860) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 55
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Triggered By     : Engulfing Shadows (21978)
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=704163)   : School Damage (2): shadow
+                   Base Value: 112 | Scaled Value: 112 | Target: Targeted Enemy (6)
+#2 (id=704164)   : Energize Power (30)
+                   Base Value: 104 | Scaled Value: 104 | Resource: mana | Target: Self (1)
+Description      : Deal $s1 Shadow damage.
+Restore $s2 mana.
 
 Name             : Dark Rune (id=27869) 
 School           : Shadow
