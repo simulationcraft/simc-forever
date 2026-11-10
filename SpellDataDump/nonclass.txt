@@ -68084,6 +68084,35 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1300130 | Target: Self (1)
 Description      : Melee attacks deal $1300130s1 additional Fire damage against Frozen targets.
 
+Name             : Stealth (id=1300180) 
+School           : Physical
+Spell Type       : None
+Duration         : 20 seconds
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Unknown (493)
+Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
+Effects          :
+#1 (id=1324739)  : Apply Aura (6) | Stealth (16)
+                   Base Value: 5 | Scaled Value: 305 | Points Per Level: 5 | Target: Self (1)
+#2 (id=1324740)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Target: Self (1)
+Description      : Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat.
+Tooltip          : Stealthed. Movement slowed by $s2%.
+
+Name             : Fatal Wound (id=1300185) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 40
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1324745)  : School Damage (2): physical
+                   Base Value: 159 | Scaled Value: 159 (delta=0.333333) | Target: Targeted Enemy (6)
+#2 (id=1324746)  : Dummy (3)
+                   Base Value: 75 | Scaled Value: 75 | Target: Targeted Enemy (6)
+#3 (id=1324747)  : Dummy (3)
+                   Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
+Description      : Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health.
+
 Name             : Bludgeon (id=1300209) 
 School           : Physical
 Spell Type       : Melee
@@ -69153,6 +69182,16 @@ Effects          :
                    Base Value: 48 | Scaled Value: 48 | Resource: mana | Target: Self (1)
 Description      : Restore $s1 mana.
 Tooltip          : $s1 mana restored.
+
+Name             : Razor Gauntlets (id=1302193) [Passive] 
+School           : Nature
+Spell Type       : None
+Spell Level      : 24
+Attributes       : Passive (6), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1327687)  : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 7 | Scaled Value: 7 | Target: Self (1)
+Description      : When struck in combat, inflicts $s1 Nature damage to the attacker.
 
 Name             : Summon Prairie Wolf Pup (id=1302196) 
 School           : Physical
