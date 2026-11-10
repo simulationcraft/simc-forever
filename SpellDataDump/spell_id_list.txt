@@ -1704,7 +1704,7 @@ Mage
 16412   *Fireball
 16413    Fireball
 16415    Fireball
-16454   *Searing Blast
+16454    Searing Blast
 16551   *Felstriker
 16757    Arctic Reach
 16785   *Flamebreak
@@ -4937,7 +4937,7 @@ Warlock
 20801   *Firebolt
 20882    Subjugate Demon
 21068   *Corruption
-22855   *Pimgib's Collar
+22855    Pimgib's Collar
 23046    Searing Pain Cast Pushback Reduction
 23047   *Immolate Cast Time Reduction
 23468    Minor Healthstone

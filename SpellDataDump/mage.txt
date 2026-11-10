@@ -4659,6 +4659,22 @@ Effects          :
 Description      : Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 damage over $d.
 Tooltip          : $s2 Fire damage every $t2 sec.
 
+Name             : Searing Blast (id=16454) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=692622)   : School Damage (2): fire
+                   Base Value: 56 | Scaled Value: 56 | Target: Targeted Enemy (6)
+#2 (id=692623)   : Apply Aura (6) | Damage Done (13)
+                   Base Value: 10 | Scaled Value: 10 | Misc Value: 0x4 | Target: Targeted Enemy (6)
+                   Affected School(s): Fire
+Description      : Blasts a target for $s1 Fire damage and increases Fire damage done to target by $s2 for $d.
+
 Name             : Arctic Reach (id=16757) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=4, col=9, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(10, 20)]

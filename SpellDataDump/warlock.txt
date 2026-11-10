@@ -6101,6 +6101,17 @@ Effects          :
                    Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Radius: 10 yards | Target: at Enemy in Area (16)
 Tooltip          : Stunned.
 
+Name             : Pimgib's Collar (id=22855) [Spell Family (5), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Range            : 100 yards
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=700481)   : Apply Aura (6) | Periodic Trigger Spell (23): Unknown(0) every 5 seconds
+                   Base Value: 9 | Scaled Value: 9 | Target: Self (1)
+Description      : Restores $s1 mana per 5 sec to your Imp.
+Tooltip          : Restoring $s1 mana per 5 sec.
+
 Name             : Searing Pain Cast Pushback Reduction (id=23046) [Spell Family (5), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
