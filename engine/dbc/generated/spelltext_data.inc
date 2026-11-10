@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70888
-static constexpr std::array<spelltext_data_t, 8667> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8668> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3164,7 +3164,7 @@ static constexpr std::array<spelltext_data_t, 8667> __spelltext_data { {
   {   17788, "Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by $/1000;S1 sec and your Soul Fire spell by $/1000;S2 sec.", 0, 0 },
   {   17793, "Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by $m1% for $17794d.", 0, 0 },
   {   17794, 0, "Shadow damage taken from Warlock increased by $w1%.", 0 },
-  {   17804, "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by $s1% per each of your other Affliction effects active on the target, up to a maximum increase of ${$m1*3}%.", 0, 0 },
+  {   17804, "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by $s1% per each of your Corruption, Siphon Life, and Bane of Agony effects active on the target, up to a maximum increase of ${$m1*3}%.", 0, 0 },
   {   17810, "Reduces the casting time of your Corruption spell by $/1000;S1 sec and increases the damage it deals by $m2%.", 0, 0 },
   {   17815, "Increases the initial damage of your Immolate spell by $s1%.", 0, "Rank 1" },
   {   17816, "Impress others with your fashion sense.", 0, 0 },
@@ -3674,6 +3674,7 @@ static constexpr std::array<spelltext_data_t, 8667> __spelltext_data { {
   {   19854, "Places a Blessing on the friendly target, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.", "Restores $s1 mana every $t1 seconds.", "Rank 5" },
   {   19870, "Increases the duration of your Intimidating Shout by $/1000;s1 sec.", 0, "Rank 1" },
   {   19871, "Increases the duration of your Intimidating Shout by $/1000;s1 sec.", 0, "Rank 2" },
+  {   19874, "Blasts a target for $s1 Nature damage.", 0, 0 },
   {   19876, "Gives $s1 additional Shadow resistance to all party and raid members within $a1 yards. Players may only have one Aura on them per Paladin at any one time.", "Increases Shadow resistance by $s1.", "Rank 1" },
   {   19878, "Shows the location of all nearby demons on the minimap.  Only one form of tracking can be active at a time.", "Tracking Demons.", 0 },
   {   19879, "Shows the location of all nearby dragonkin on the minimap.  Only one form of tracking can be active at a time.", "Tracking Dragonkin.", 0 },
@@ -4909,7 +4910,7 @@ static constexpr std::array<spelltext_data_t, 8667> __spelltext_data { {
   {   27846, "Reduces the casting time of your Healing Touch spell by 0.15 sec.", 0, 0 },
   {   27847, "Reduces the mana cost of your Cleanse spell by $s1.", 0, 0 },
   {   27850, "Reduces the Mana cost of Purify and Cleanse by $s1%.", 0, 0 },
-  {   27851, "Reduces the energy cost of Claw, Rake, and Mangle by $s1.", 0, 0 },
+  {   27851, "Reduces the energy cost of Claw and Rake by $s1.", 0, 0 },
   {   27855, "Increases healing done by Lesser Healing Wave by up to $s1.", 0, 0 },
   {   27859, "Increases the damage of your Shock spells by $s1%.", 0, 0 },
   {   27860, "Deal $s1 Shadow damage.\r\nRestore $s2 mana.", 0, 0 },
@@ -8457,7 +8458,7 @@ static constexpr std::array<spelltext_data_t, 8667> __spelltext_data { {
   { 1316596, "$@spelldesc1247432", 0, 0 },
   { 1316597, "$@spelldesc1247437", 0, 0 },
   { 1316598, "$@spelldesc1247442", 0, 0 },
-  { 1316697, "Tears the target apart from within, inflicting $s1 Shadow damage every $t sec and increasing the damage they take from your other Shadow damage over time effects by $s2% for $d.", "Inflicts $s1 Shadow damage every $t1 sec and increases damage taken from the caster's other Shadow damage over time effects by $s2%.", "Rank 1" },
+  { 1316697, "Tears the target apart from within for $d, inflicting $s1 Shadow damage every $t sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage $s2% faster.", "Inflicts $w1 Shadow damage every $t1 sec and increases the speed at which the caster's Siphon Life, Corruption, and Bane of Agony effects deal periodic damage by $w2%.", "Rank 1" },
   { 1316709, "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:\r\n   1 point  : ${1*$<ratio>}% stored, ${((63+(1*102)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   2 points: ${2*$<ratio>}% stored, ${((63+(2*102)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   3 points: ${3*$<ratio>}% stored, ${((63+(3*102)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   4 points: ${4*$<ratio>}% stored, ${((63+(4*102)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   5 points: ${5*$<ratio>}% stored, ${((63+(5*102)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap", "Marked for Death. Taking $w1 damage after $d.", "Rank 1" },
   { 1316778, "Right Click to summon and dismiss your Minimule.", 0, 0 },
   { 1316794, "$@spelldesc1270940", 0, 0 },
@@ -8670,7 +8671,7 @@ static constexpr std::array<spelltext_data_t, 8667> __spelltext_data { {
 } };
 
 // spelltext hotfix entries, wow build 1.60.1.70888
-static constexpr std::array<hotfix::client_hotfix_entry_t, 8> __spelltext_hotfix_data { {
+static constexpr std::array<hotfix::client_hotfix_entry_t, 12> __spelltext_hotfix_data { {
   {    4187,  0, "Stamina increased by $s1.", "Health increased by $s1." },
   {    4188,  0, "Stamina increased by $s1.", "Health increased by $s1." },
   {    4189,  0, "Stamina increased by $s1.", "Health increased by $s1." },
@@ -8679,6 +8680,10 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 8> __spelltext_hotfix
   {    4192,  0, "Stamina increased by $s1.", "Health increased by $s1." },
   {    4193,  0, "Stamina increased by $s1.", "Health increased by $s1." },
   {    4194,  0, "Stamina increased by $s1.", "Health increased by $s1." },
+  {   17804,  0, "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by $s1% per each of your other Affliction effects active on the target, up to a maximum increase of ${$m1*3}%.", "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by $s1% per each of your Corruption, Siphon Life, and Bane of Agony effects active on the target, up to a maximum increase of ${$m1*3}%." },
+  {   27851,  0, "Reduces the energy cost of Claw, Rake, and Mangle by $s1.", "Reduces the energy cost of Claw and Rake by $s1." },
+  { 1316697,  0, "Tears the target apart from within, inflicting $s1 Shadow damage every $t sec and increasing the damage they take from your other Shadow damage over time effects by $s2% for $d.", "Tears the target apart from within for $d, inflicting $s1 Shadow damage every $t sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage $s2% faster." },
+  { 1316697,  1, "Inflicts $s1 Shadow damage every $t1 sec and increases damage taken from the caster's other Shadow damage over time effects by $s2%.", "Inflicts $w1 Shadow damage every $t1 sec and increases the speed at which the caster's Siphon Life, Corruption, and Bane of Agony effects deal periodic damage by $w2%." },
 } };
 
 // Spell description variables, wow build 1.60.1.70888
