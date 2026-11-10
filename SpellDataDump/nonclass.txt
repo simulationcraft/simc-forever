@@ -21748,6 +21748,18 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Attach the pieces into a whole.
 
+Name             : Destiny (id=17152) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 55
+Duration         : 12 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694541)   : Apply Aura (6) | Attribute (29)
+                   Base Value: 200 | Scaled Value: 200 | Stat: Str | Target: Self (1)
+Description      : Increases Strength by $s1 for $d.
+Tooltip          : Strength increased by $s1.
+
 Name             : Rend (id=17153) 
 School           : Physical
 Spell Type       : Melee
@@ -69420,6 +69432,19 @@ Effects          :
 #1 (id=1327927)  : Apply Aura (6) | Periodic Trigger Spell (23): Forbidden Magic every 4 seconds
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1302360 | Target: Targeted Enemy (6)
 Description      : Dispel $1302360s1 beneficial magic effect from the target enemy and $1302360s1 additional magic effect every $t1 sec for $d.
+
+Name             : Eidolon Ward (id=1302362) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 30 seconds
+Attributes       : Not Shapeshifted (16), Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1327931)  : Apply Aura (6) | Absorb Damage (69)
+                   Base Value: 1176 | Scaled Value: 1176 | Misc Value: 0x20 | Target: Self (1)
+                   Affected School(s): Shadow
+Description      : Absorbs $s1 Shadow damage for $d.
+Tooltip          : Absorbs $w1 Shadow damage.
 
 Name             : Improved Wrath (id=1302521) 
 School           : Physical
