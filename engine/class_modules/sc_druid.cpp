@@ -82,6 +82,7 @@ struct druid_t final : public parse_player_effects_t
     buff_t* natures_grace;
     buff_t* eclipse;
     buff_t* moonkin_aura;
+    buff_t* prowl;
   } buff;
 
   struct
@@ -94,6 +95,7 @@ struct druid_t final : public parse_player_effects_t
     spell_ranks_t insect_swarm;
     spell_ranks_t moonfire;
     spell_ranks_t omen_of_clarity;
+    spell_ranks_t prowl;
     spell_ranks_t shred;
     spell_ranks_t starfire;
     spell_ranks_t wrath;
@@ -248,6 +250,12 @@ void druid_t::init_spells()
       this,
       spell_container_t().set_spell( 16864 ).set_buff( 16870 ),
   };
+  rank.prowl = {
+      this,
+      spell_container_t().set_spell( 5215 ),
+      spell_container_t().set_spell( 6783 ),
+      spell_container_t().set_spell( 9913 ),
+  };
   rank.shred = {
       this,
       spell_container_t().set_spell( 5221 ),
@@ -353,6 +361,9 @@ struct druid_action_t : public parse_action_effects_t<Base>
   void execute() override
   {
     action_base_t::execute();
+
+    if ( !this->data().flags( SX_NO_STEALTH_BREAK ) )
+      this->p()->buff.prowl->expire();
 
     if ( this->data().affected_by( this->p()->buff.clearcasting->data() ) )
     {
@@ -495,6 +506,36 @@ struct moonkin_form_t : public druid_form_t
   moonkin_form_t( druid_t* player, std::string_view options_str )
     : druid_form_t( "moonkin_form", player, player->talent.moonkin_form, MOONKIN_FORM, options_str )
   {
+  }
+};
+
+// Flags the druid as stealthed so openers can be modeled from stealth. Only castable out of combat in cat form.
+// TODO: stealth level (effect 1), movement speed reduction (effect 2), Feral Instinct, and the 10s cooldown starting on
+// stealth break instead of on cast
+struct prowl_t : public druid_spell_t
+{
+  prowl_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "prowl", player, player->rank.prowl.find_rank()->spell() )
+  {
+    parse_options( options_str );
+    harmful        = false;
+    use_off_gcd = true;
+
+  }
+
+  bool ready() override
+  {
+    if ( p()->buff.prowl->check() )
+      return false;
+
+    return druid_spell_t::ready();
+  }
+
+  void execute() override
+  {
+    druid_spell_t::execute();
+
+    p()->buff.prowl->trigger();
   }
 };
 
@@ -833,6 +874,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new moonkin_form_t( this, options_str );
   if ( name == "cat_form" )
     return new cat_form_t( this, options_str );
+  if ( name == "prowl" )
+    return new prowl_t( this, options_str );
   if ( name == "shred" )
     return new shred_t( this, options_str );
 
@@ -896,6 +939,9 @@ void druid_t::create_buffs()
 
   auto const cat_form_spell = rank.cat_form.find_rank()->buff();
   buff.cat_form             = make_buff_fallback<stat_buff_t>( cat_form_spell->ok(), this, "cat_form", cat_form_spell );
+
+  auto const prowl_spell = rank.prowl.find_rank()->spell();
+  buff.prowl             = make_buff_fallback( prowl_spell->ok(), this, "prowl", prowl_spell );
 
   buff.moonkin_form =
       make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_form", talent.moonkin_form )
