@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8662> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8664> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -1951,6 +1951,7 @@ static constexpr std::array<spelltext_data_t, 8662> __spelltext_data { {
   {   13031, "Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.", "Absorbs $w1 damage and increases Frost damage dealt by $w2%.", "Rank 2" },
   {   13032, "Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.", "Absorbs $w1 damage and increases Frost damage dealt by $w2%.", "Rank 3" },
   {   13033, "Shield yourself, absorbing ${$s1+($SPFR*0.1)*($11189s3/100+1)} damage and increasing your Frost damage by $1326891s1% for $d. While shielded, your Frost damage is increased by an additional $s2% and you do not lose casting time when you take damage.", "Absorbs $w1 damage and increases Frost damage dealt by $w2%.", "Rank 4" },
+  {   13049, "Calls forth an Emerald Dragon Whelp to protect you in battle for a short period of time.", 0, 0 },
   {   13099, 0, "Unable to move.", 0 },
   {   13119, "$@spelldesc13120", "Rooted.", 0 },
   {   13120, "Captures the target in a net for $13099d.  The net has a lot of hooks however and sometimes gets caught in the user's clothing when fired......", 0, 0 },
@@ -3385,6 +3386,7 @@ static constexpr std::array<spelltext_data_t, 8662> __spelltext_data { {
   {   18276, "Blasts a target for $s1 Frost damage.", 0, 0 },
   {   18288, "Increases the effect of your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.  Lasts $d.", "Increases effect for your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.", 0 },
   {   18289, "Diseases target enemy for $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
+  {   18307, "Calls forth 3 servants of the House Barov that will fight, cook, and clean for you.", 0, 0 },
   {   18308, "Calls forth 3 servants of the House Barov that will fight, cook, and clean for you.", 0, 0 },
   {   18310, "Increases the speed reduction of your Curse of Exhaustion by $s1%.", 0, "Rank 1" },
   {   18311, "Increases the speed reduction of your Curse of Exhaustion by $s1%.", 0, "Rank 2" },
