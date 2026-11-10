@@ -1,5 +1,5 @@
-// Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8664> __spelltext_data { {
+// Spell text, wow build 1.60.1.70888
+static constexpr std::array<spelltext_data_t, 8667> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8388,6 +8388,7 @@ static constexpr std::array<spelltext_data_t, 8664> __spelltext_data { {
   { 1311677, "Curses the target for $d, reducing Magic resistances by $s1 and increasing Magic damage taken by $s2%. Only one Curse per Warlock can be active on any one target.\r\n", "Reduces Magic resistances by $s1. Increases Magic damage taken by $s2%.", "Rank 3" },
   { 1311680, "Curses the target for $d, reducing Magic resistances by $s1 and increasing Magic damage taken by $s2%. Only one Curse per Warlock can be active on any one target.", "Reduces Magic resistances by $s1. Increases Magic damage taken by $s2%.", "Rank 4" },
   { 1311701, 0, "Empowers your next melee attack without Seal of Fury active with $s3 instances of Seal of Fury.", 0 },
+  { 1311895, "Increases movement speed by $s1% in Mount Hyjal.", "Movement speed increased by $s1% while in Mount Hyjal.", 0 },
   { 1312002, "Deals $s1 Frost damage to an enemy target. Deals $s2% increased damage to Frozen targets.", 0, "Rank 1" },
   { 1312052, "Inflicts $443265o1 Fire damage over $443265d to target Demon or Beast and Roots them in place for $d. Damage caused may interrupt the effect.", "Rooted.", 0 },
   { 1312176, "Blast the target with the fires of a forge, inflicting $s1 Fire damage.", 0, 0 },
@@ -8664,10 +8665,12 @@ static constexpr std::array<spelltext_data_t, 8664> __spelltext_data { {
   { 1329549, "Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.", 0, "Rank 2" },
   { 1329554, "${$s1/10} Rage generated.", 0, 0 },
   { 1329555, "Your next $n melee attacks generate ${$1329554s1/10/$1329554s2} additional Rage. Lasts $d.", "Melee attacks grant ${$1329554s1/10/$1329554s2} additional Rage.", 0 },
+  { 1330734, "Restores $o1 mana over $d.  Must remain seated while drinking.", "Restores $/5;s1 mana per second.", 0 },
+  { 1330855, "Smite your target for $s1 Holy damage. Damage is tripled against Undead.", 0, 0 },
 } };
 
-// spelltext hotfix entries, wow build 1.60.1.70862
-static constexpr std::array<hotfix::client_hotfix_entry_t, 9> __spelltext_hotfix_data { {
+// spelltext hotfix entries, wow build 1.60.1.70888
+static constexpr std::array<hotfix::client_hotfix_entry_t, 8> __spelltext_hotfix_data { {
   {    4187,  0, "Stamina increased by $s1.", "Health increased by $s1." },
   {    4188,  0, "Stamina increased by $s1.", "Health increased by $s1." },
   {    4189,  0, "Stamina increased by $s1.", "Health increased by $s1." },
@@ -8676,10 +8679,9 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 9> __spelltext_hotfix
   {    4192,  0, "Stamina increased by $s1.", "Health increased by $s1." },
   {    4193,  0, "Stamina increased by $s1.", "Health increased by $s1." },
   {    4194,  0, "Stamina increased by $s1.", "Health increased by $s1." },
-  {   18562,  0, "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell.", "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect." },
 } };
 
-// Spell description variables, wow build 1.60.1.70862
+// Spell description variables, wow build 1.60.1.70888
 static constexpr std::array<spelldesc_vars_data_t, 141> __spelldesc_vars_data { {
   {      10, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
   {     116, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
@@ -8824,7 +8826,7 @@ static constexpr std::array<spelldesc_vars_data_t, 141> __spelldesc_vars_data { 
   { 1325758, "$ratio=${12}\r\n$maxAP=${0.04}\r\n$attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}\r\n$coup=$?s14162[${$14162s1/100+1}][${1}]" },
 } };
 
-// spelldesc_vars hotfix entries, wow build 1.60.1.70862
+// spelldesc_vars hotfix entries, wow build 1.60.1.70888
 static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __spelldesc_vars_hotfix_data { {
 } };
 

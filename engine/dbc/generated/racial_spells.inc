@@ -1,4 +1,4 @@
-// Racial abilities, wow build 1.60.1.70862
+// Racial abilities, wow build 1.60.1.70888
 static constexpr std::array<racial_spell_entry_t, 47> __racial_spell_data { {
   { 0x0000000000000001, 0x00000000,   20600, "Perception"                         },
   { 0x0000000000000001, 0x00000000,   20597, "Ruthless"                           },
