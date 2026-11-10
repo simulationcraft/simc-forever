@@ -147874,6 +147874,15 @@ Description      : Dying heals all party members within $r yds for $s1.
 
 Tooltip          : Dying heals all party members within $r yds for $s1.
 
+Name             : Resist Charm 10 (id=1300925) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1325797)  : Apply Aura (6) | Mechanic Resistance (117)
+                   Base Value: 10 | Scaled Value: 10 | Mechanic: Charm | Target: Self (1)
+Description      : Reduces the hit chance of Charm effects against you by $s1%.
+
 Name             : Increased Hit Chance - Ranged - 03 (id=1301127) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
