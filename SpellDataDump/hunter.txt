@@ -802,120 +802,119 @@ Description      : Fires a Black Arrow into the target, slowing the target's mov
 Tooltip          : Movement speed reduced by $s1%.  Causes $s2 Shadow damage every $t2 seconds.  Drains $s3 mana every $t3 seconds.
 
 Name             : Great Stamina (desc=Rank 1) (id=4187) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 1
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=682700)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 3 | Scaled Value: 3 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+#1 (id=682700)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 30 | Scaled Value: 30 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (3 -> 30), Misc Value (2 -> 0)
+Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 2) (id=4188) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 12
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=682764)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 5 | Scaled Value: 5 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+#1 (id=682764)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 50 | Scaled Value: 50 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (5 -> 50), Misc Value (2 -> 0)
+Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 3) (id=4189) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 18
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=682915)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 7 | Scaled Value: 7 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+#1 (id=682915)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 70 | Scaled Value: 70 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (7 -> 70), Misc Value (2 -> 0)
+Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 4) (id=4190) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 24
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=683003)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 10 | Scaled Value: 10 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+#1 (id=683003)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (10 -> 100), Misc Value (2 -> 0)
+Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 5) (id=4191) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 30
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=683008)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 13 | Scaled Value: 13 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+#1 (id=683008)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 130 | Scaled Value: 130 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (13 -> 130), Misc Value (2 -> 0)
+Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 6) (id=4192) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 36
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=683009)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 17 | Scaled Value: 17 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+#1 (id=683009)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 170 | Scaled Value: 170 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (17 -> 170), Misc Value (2 -> 0)
+Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 7) (id=4193) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 42
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=683010)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 21 | Scaled Value: 21 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+#1 (id=683010)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 210 | Scaled Value: 210 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (21 -> 210), Misc Value (2 -> 0)
+Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 8) (id=4194) [Passive] 
+Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 48
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=682643)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 26 | Scaled Value: 26 | Stat: Sta | Target: Self (1)
-Description      : Stamina increased by $s1.
+#1 (id=682643)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 260 | Scaled Value: 260 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (26 -> 260), Misc Value (2 -> 0)
+Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 9) (id=5041) [Passive] 
 Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 54
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=684107)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 32 | Scaled Value: 32 | Stat: Sta | Target: Self (1)
+#1 (id=684107)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 320 | Scaled Value: 320 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (32 -> 320), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 10) (id=5042) [Passive] 
@@ -923,12 +922,11 @@ Class            : Hunter
 School           : Physical
 Spell Type       : None
 Spell Level      : 60
-Duration         : Aura (infinite)
-Proc Chance      : 101%
 Attributes       : Passive (6), Unknown (493)
 Effects          :
-#1 (id=684108)   : Apply Aura (6) | Attribute (29)
-                   Base Value: 40 | Scaled Value: 40 | Stat: Sta | Target: Self (1)
+#1 (id=684108)   : Apply Aura (6) | Increase Health (34)
+                   Base Value: 400 | Scaled Value: 400 | Target: Self (1)
+Hotfixed         : Sub Type (29 -> 34), Base Value (40 -> 400), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Concussive Shot (id=5116) [Spell Family (9)] 
@@ -1769,8 +1767,9 @@ Attributes       : No Redirection (35), No Reflection (39), Not an Action (92), 
 Effects          :
 #1 (id=691203)   : Apply Aura in Area (27) | Decrease Movement Speed% (33)
                    Base Value: -60 | Scaled Value: -60 | SP Coefficient: 1 | Radius: 10 yards | Target: at Dynamic Enemy in Area (28)
-#2 (id=691204)   : Apply Aura in Area (27) | Periodic Trigger Spell (23): Dummy Trigger every 2 seconds
-                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 18350 | Radius: 10 yards | Target: at Dynamic Enemy in Area (28)
+#2 (id=691204)   : Apply Aura in Area (27) | Periodic Trigger Spell (23): Unknown(0) every 2 seconds
+                   Base Value: 0 | Scaled Value: 0 | Radius: 10 yards | Target: at Dynamic Enemy in Area (28)
+Hotfixed         : Trigger Spell (18350 -> 0)
 Tooltip          : Movement speed slowed by $s1%.
 
 Name             : Explosive Trap (desc=Rank 1) (id=13812) [Spell Family (9)] 
@@ -3518,17 +3517,23 @@ Effects          :
                    Base Value: 90 | Scaled Value: 90 (delta=0.2) | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Bite the enemy, causing $s1 damage.
 
-Name             : Dummy Trigger (id=18350) [Hidden] 
-Class            : Warrior, Paladin, Hunter, Warlock
-School           : Physical
-Spell Type       : None
-Range            : 50000 yards
-Proc Chance      : 101%
-Triggered By     : Frost Trap (13810), Pyroclasm (18073), Illumination (20210), Mana Drain Trigger (27522), Vigilance (426972)
-Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Ignore Line of Sight (66), Unknown (493)
+Name             : Fang of the Crystal Spider (id=17331) [Spell Family (9)] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 10 seconds
+Attributes       : Unknown (493)
 Effects          :
-#1 (id=695695)   : Dummy (3)
-                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Current Target (25)
+#1 (id=693433)   : Apply Aura (6) | Modify Spell Haste (65)
+                   Base Value: -9 | Scaled Value: -9 | Target: Targeted Enemy (6)
+#2 (id=693434)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
+                   Base Value: -9 | Scaled Value: -9 | Target: Targeted Enemy (6)
+#3 (id=693435)   : Apply Aura (6) | Modify Ranged Haste% (140)
+                   Base Value: -9 | Scaled Value: -9 | Target: Targeted Enemy (6)
+Description      : Slows target enemy's casting speed and increases the time between melee and ranged attacks by $s1% for $d.
+Tooltip          : Decreased attack speed and casting speed.
 
 Name             : Humanoid Slaying (desc=Rank 1) (id=19151) [Passive, Hidden] 
 Class            : Hunter
@@ -5164,6 +5169,22 @@ Effects          :
                    Base Value: 3 | Scaled Value: 3 | SP Coefficient: 1 | Misc Value: 19 | Target: Self (1)
 Description      : Increases all damage caused against Beasts, Giants and Dragonkin targets by $s1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional $s2%.
 
+Name             : Devilsaur Tooth (id=24353) [Spell Family (9)] 
+School           : Physical
+Spell Type       : None
+Range            : 100 yards
+Duration         : 30 seconds
+Stacks           : 1 initial, 1 maximum
+Proc Chance      : 100%
+Proc Flags       : Magic Heal
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=702135)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
+                   Base Value: -100 | Scaled Value: -100 | Misc Value: 14 | Target: Self (1)
+                   Family Flags: 24
+Description      : Reduces the Mana cost of your next Revive Pet cast within $d by $s1%.
+Tooltip          : Mana cost of Revive Pet reduced by $s1%.
+
 Name             : Intimidation (id=24394) 
 Class            : Hunter
 School           : Physical
@@ -6421,6 +6442,19 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=705738)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
+Description      : Increases ranged attack speed by $s1%.
+
+Name             : Haste (id=29415) [Spell Family (9), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Velocity         : 40 yards/sec
+Duration         : Aura (infinite)
+Requires weapon  : Bow, Crossbow
+Proc Chance      : 101%
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=705646)   : Apply Aura (6) | Modify Ranged Attack Speed% (557)
+                   Base Value: 14 | Scaled Value: 14 | Target: Self (1)
 Description      : Increases ranged attack speed by $s1%.
 
 Name             : Haste (id=29416) [Spell Family (9), Passive, Hidden] 

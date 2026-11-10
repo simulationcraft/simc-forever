@@ -103,6 +103,7 @@ Druid
 8998     Cower
 9000     Cower
 9005     Pounce
+9007     Pounce Bleed
 9033    *Shapeshift Form Effect
 9490     Demoralizing Roar
 9492     Rip
@@ -118,6 +119,8 @@ Druid
 9756     Thorns
 9758     Healing Touch
 9823     Pounce
+9824     Pounce Bleed
+9826     Pounce Bleed
 9827     Pounce
 9829     Shred
 9830     Shred
@@ -224,7 +227,7 @@ Druid
 17401    Hurricane
 17402    Hurricane
 17768    Wolfshead Helm
-18104   *Wrath
+18104    Wrath
 18461    Vanish Purge
 18562    Swiftmend
 18657    Hibernate
@@ -316,7 +319,7 @@ Druid
 27638   *Rake
 27813    Blessed Recovery
 27846    Faster Healing Touch Cast
-27851   *Reduced Claw and Rake Cost
+27851    Reduced Claw and Rake Cost
 27853   *Increased Regrowth Healing
 28716   *Rejuvenation
 28719   *Healing Touch
@@ -333,7 +336,7 @@ Druid
 28827   *Totemic Power
 28847    Healing Touch Refund
 28854    Improved Moonfire
-28855   *Reduced Maul and Swipe Cost
+28855    Reduced Maul and Swipe Cost
 29166    Innervate
 29194   *Corrupted Mind
 29195   *Corrupted Mind
@@ -841,7 +844,7 @@ Hunter
 17259    Bite
 17260    Bite
 17261    Bite
-17331   *Fang of the Crystal Spider
+17331    Fang of the Crystal Spider
 17353   *Shoot
 18561   *Shoot
 19159    Savage Strikes
@@ -966,7 +969,7 @@ Hunter
 24335   *Wyvern Sting
 24336   *Wyvern Sting
 24348   *Cheetah Sprint
-24353   *Devilsaur Tooth
+24353    Devilsaur Tooth
 24406    Improved Mend Pet
 24416   *Superior Aspects
 24432    Improved Feign Death
@@ -1014,7 +1017,7 @@ Hunter
 29233   *Beast of the Unseen Path
 29413    Haste
 29414    Haste
-29415   *Haste
+29415    Haste
 29416    Haste
 29417    Haste
 29418    Haste
@@ -1682,7 +1685,7 @@ Mage
 15244   *Cone of Cold
 15288   *Fury of Ragnaros
 15574   *Fire Blast
-15662   *Fireball
+15662    Fireball
 15735   *Arcane Missiles
 15736   *Arcane Missiles
 15744   *Blast Wave
@@ -1699,9 +1702,9 @@ Mage
 16380   *Greater Invisibility
 16407    Frost Blast
 16412   *Fireball
-16413   *Fireball
-16415   *Fireball
-16454   *Searing Blast
+16413    Fireball
+16415    Fireball
+16454    Searing Blast
 16551   *Felstriker
 16757    Arctic Reach
 16785   *Flamebreak
@@ -1776,9 +1779,9 @@ Mage
 23549   *Increased Area
 23603   *Wild Polymorph
 24006    Bounty of the Harvest
-24389   *Chaos Fire
-24392   *Frosty Zap
-24405   *Icy Energy
+24389    Chaos Fire
+24392    Frosty Zap
+24405    Icy Energy
 24429    Improved Counterspell
 24489   *Improved Arcane Intellect
 24491   *Improved Flamestrike
@@ -2154,7 +2157,7 @@ Mage
 1301013 *1.60.0 - Item - Tier 1 - Mage 3P Bonus - Counterspell
 1301079 *1.60.0 - Item - Tier 1 - Mage 4P Bonus - SP vs. Elementals
 1301488 *1.60.0 - Item - Tier 1 - Mage 5P Bonus - Frostfire Bolt
-1302360 *Forbidden Magic
+1302360  Forbidden Magic
 1308651 *Chill
 1308652 *Teleport: Dalaran
 1308937  Arcane Missile
@@ -2470,14 +2473,14 @@ Paladin
 27787   *Rogue Armor Energize
 27847    Cleanse Cost Reduced
 27848   *Seal Duration Increase
-27850   *Purify and Cleanse Cost Reduced
+27850    Purify and Cleanse Cost Reduced
 28774   *Lay Hands
 28775   *Judgement of Light
 28787   *Cleanse
 28789   *Holy Power
 28851    Increased Flash of Light Healing
 28852    Improved Seal of the Crusader
-28853   *Libram of Divinity
+28853    Libram of Divinity
 29196   *Corrupted Mind
 29197   *Corrupted Mind
 53489   *The Art of War
@@ -2709,7 +2712,7 @@ Paladin
 1301694 *1.60.0 - Item - Tier 1 - Paladin - Holy 5P Bonus - Holy Shock
 1301697 *1.60.0 - Item - Tier 1 - Paladin - Protection 5P Bonus - Forbearance
 1301702 *1.60.0 - Item - Tier 1 - Paladin - Retribution 5P Bonus - Judgement
-1302540 *Libram of Divinity
+1302540  Libram of Divinity
 1306429  Holy Shock Critical Chance Increase
 1306433  Holy Shield Block Value Increase
 1306687 *Greathelm of the Colossus
@@ -3872,12 +3875,12 @@ Rogue
 1291987  Improved Pick Pocket and Distract 01
 1292150  Safe Fall 05
 1295197 *Tyler Test Imbue
-1300663 *Safe Fall 08
+1300663  Safe Fall 08
 1300956 *1.60.0 - Item - Tier 1 - Rogue 2P Bonus - Hit
 1301047 *1.60.0 - Item - Tier 1 - Rogue 3P Bonus - Kidney Shot
 1301088 *1.60.0 - Item - Tier 1 - Rogue 4P Bonus - AP vs. Humanoids
 1301708 *1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Envenom and Eviscerate
-1302345 *Improved Pick Pocket and Distract 02
+1302345  Improved Pick Pocket and Distract 02
 1307943 *Improved Pick Pocket and Distract 03
 1307944 *Improved Pick Pocket and Distract 04
 1307945 *Improved Pick Pocket and Distract 05
@@ -4219,8 +4222,8 @@ Shaman
 24461   *Improved Frost Shock
 24462   *Improved Lightning Bolt
 24499    Energized Shield
-24853   *Mana Spring
-24854   *Mana Spring Totem
+24853    Mana Spring
+24854    Mana Spring Totem
 25001   *Spirit Totem
 25002   *Spirit Disruption
 25076   *Cobra Reflexes
@@ -4250,13 +4253,13 @@ Shaman
 27740   *Reincarnation
 27797   *Reduced Riptide Cost
 27855    Increased Lesser Healing Wave
-27859   *Increased Shock Damage
+27859    Increased Shock Damage
 28818   *Totemic Energy
 28820   *Lightning Shield
 28821   *Lightning Shield
 28823   *Totemic Power
 28849    Lesser Healing Wave
-28856   *Increased Water Shield Charges
+28856    Increased Water Shield Charges
 28857    Increased Lightning Damage
 28999    Elemental Reach
 29005   *Storm Mastery
@@ -4934,7 +4937,7 @@ Warlock
 20801   *Firebolt
 20882    Subjugate Demon
 21068   *Corruption
-22855   *Pimgib's Collar
+22855    Pimgib's Collar
 23046    Searing Pain Cast Pushback Reduction
 23047   *Immolate Cast Time Reduction
 23468    Minor Healthstone
@@ -4980,7 +4983,7 @@ Warlock
 24543    Massive Destruction
 24826   *Infernal Fire
 24893   *Black Sapphire
-25112   *Summon Voidwalker
+25112    Summon Voidwalker
 25307    Shadow Bolt
 25309    Immolate
 25311    Corruption
@@ -5389,12 +5392,12 @@ Warrior
 12945    Improved Shield Block
 12963    Improved Overpower
 12975    Last Stand
-13490   *Howling Blade
+13490    Howling Blade
 13730   *Demoralizing Shout
 13847   *Recklessness
 14895   *Overpower
 15062   *Shield Wall
-15602   *Lord General's Sword
+15602    Lord General's Sword
 15615   *Pummel
 15749   *Shield Charge
 16244   *Demoralizing Shout
@@ -5405,7 +5408,7 @@ Warrior
 18328   *Incapacitating Shout
 18381    Cripple
 18499    Berserker Rage
-18826   *Savior's Sacrifice
+18826    Savior's Sacrifice
 19131   *Shield Charge
 19134   *Intimidating Shout
 19196   *Surge

@@ -441,7 +441,7 @@ Spell Level      : 8
 Range            : 30 yards
 GCD              : 1.5 seconds
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Purifying Power (429144 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Purify and Cleanse Cost Reduced (27850 effect#1), Purifying Power (429144 effect#1)
 Family Flags     : 33
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -622,7 +622,7 @@ Spell Level      : 42
 Range            : 30 yards
 GCD              : 1.5 seconds
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Cleanse Cost Reduced (27847 effect#1), Purifying Power (429144 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Cleanse Cost Reduced (27847 effect#1), Purify and Cleanse Cost Reduced (27850 effect#1), Purifying Power (429144 effect#1)
 Family Flags     : 12, 33
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
 Effects          :
@@ -1424,12 +1424,12 @@ Effects          :
 Description      : An instant strike that causes $m2% weapon damage plus an additional $s1 as Holy damage.
 
 Name             : Dummy Trigger (id=18350) [Hidden] 
-Class            : Warrior, Paladin, Hunter, Warlock
+Class            : Warrior, Paladin, Warlock
 School           : Physical
 Spell Type       : None
 Range            : 50000 yards
 Proc Chance      : 101%
-Triggered By     : Frost Trap (13810), Pyroclasm (18073), Illumination (20210), Mana Drain Trigger (27522), Vigilance (426972)
+Triggered By     : Pyroclasm (18073), Illumination (20210), Mana Drain Trigger (27522), Vigilance (426972)
 Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Ignore Line of Sight (66), Unknown (493)
 Effects          :
 #1 (id=695695)   : Dummy (3)
@@ -5419,6 +5419,18 @@ Effects          :
                    Family Flags: 12
 Description      : Reduces the mana cost of your Cleanse spell by $s1.
 
+Name             : Purify and Cleanse Cost Reduced (id=27850) [Spell Family (10), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 26: Paladin Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=704452)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
+                   Base Value: -10 | Scaled Value: -10 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Purify (1152), Cleanse (4987)
+                   Family Flags: 33
+Description      : Reduces the Mana cost of Purify and Cleanse by $s1%.
+
 Name             : Increased Flash of Light Healing (id=28851) [Spell Family (10), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -5448,6 +5460,17 @@ Effects          :
                    Affected Spells: Judgement of the Crusader (20188), Judgement of the Crusader (20300), Judgement of the Crusader (20301), Judgement of the Crusader (20302), Judgement of the Crusader (20303), Judgement of the Crusader (21183)
                    Family Flags: 29
 Description      : Increases the melee attack power bonus of your Seal of the Crusader by $s1 and the Holy damage increase of your Judgement of the Crusader by $s2.
+
+Name             : Libram of Divinity (id=28853) [Spell Family (10), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=705391)   : Apply Aura (6) | Proc Trigger Spell (42): Libram of Divinity
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1302540 | Target: Self (1)
+Description      : Causes Judgement to heal all nearby party members for $1302540s1.
 
 Name             : Righteous Fury (id=407627) [Spell Family (10)] 
 Class            : Paladin
@@ -8294,6 +8317,18 @@ Effects          :
                    Family Flags: 13
 Description      : Increases the critical strike chance of your Flash of Light by $s1%.
 
+
+Name             : Libram of Divinity (id=1302540) [Spell Family (10)] 
+School           : Holy
+Spell Type       : None
+Range            : 30 yards
+Triggered By     : Libram of Divinity (28853)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1328138)  : Direct Heal (10)
+                   Base Value: 25 | Scaled Value: 25 (delta=0.2) | Radius: 30 yards | Target: Party in Area (20)
+Description      : Healed for $s1.
+Tooltip          : Healed for $s1.
 
 Name             : Holy Shock Critical Chance Increase (id=1306429) [Spell Family (10), Passive, Hidden] 
 School           : Physical

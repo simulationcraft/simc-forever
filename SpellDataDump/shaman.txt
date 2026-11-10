@@ -1249,7 +1249,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -1272,7 +1272,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -1295,7 +1295,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -1318,7 +1318,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -1341,7 +1341,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1367,7 +1367,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1393,7 +1393,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1419,7 +1419,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 31
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1443,7 +1443,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 31
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2438,7 +2438,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -2461,7 +2461,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -2484,7 +2484,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -2739,7 +2739,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2765,7 +2765,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2939,7 +2939,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 31
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2963,7 +2963,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 31
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -4117,7 +4117,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=692592)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -5 | Scaled Value: -5 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Totemic Call (437009), Mana Tide Totem (1325256)
+                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Mana Spring Totem (24854), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Totemic Call (437009), Mana Tide Totem (1325256)
                    Family Flags: 3, 4, 12, 19, 29, 103, 107
 Description      : Reduces the Mana cost of your totems and any spells that summon or move them by $m1%.
 
@@ -4270,7 +4270,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=693527)   : Apply Aura (6) | Add Percent Modifier (108): Spell Effects (8)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 8 | Target: Self (1)
-                   Affected Spells: Mana Spring (5677), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494)
+                   Affected Spells: Mana Spring (5677), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Mana Spring (24853)
                    Family Flags: 14
 #2 (id=1230113)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 5 | Scaled Value: 5 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
@@ -4309,7 +4309,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=694885)   : Apply Aura (6) | Add Flat Modifier (107): Spell Radius (6)
                    Base Value: 10 | Scaled Value: 10 | Misc Value: 6 | Target: Self (1)
-                   Affected Spells: Healing Stream (5672), Mana Spring (5677), Healing Stream (6371), Healing Stream (6372), Stoneskin (8072), Strength of Earth (8076), Tremor Totem Effect (8146), Stoneskin (8156), Stoneskin (8157), Strength of Earth (8162), Strength of Earth (8163), Poison Cleansing Totem Effect (8168), Disease Cleansing Totem Effect (8171), Grounding Totem (8177), Grounding Totem (8178), Frost Resistance (8182), Fire Resistance (8185), Flametongue Totem (8230), Flametongue Totem (8250), Grace of Air (8836), Stoneskin (10403), Stoneskin (10404), Stoneskin (10405), Strength of Earth (10441), Healing Stream (10460), Healing Stream (10461), Frost Resistance (10476), Frost Resistance (10477), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Flametongue Totem (10521), Fire Resistance (10534), Fire Resistance (10535), Nature Resistance (10596), Nature Resistance (10598), Nature Resistance (10599), Grace of Air (10626), Flametongue Totem (15036), Windwall (15108), Windwall (15109), Windwall (15110), Mana Tide (16191), Mana Tide (17355), Mana Tide (17360), Grace of Air (25360), Strength of Earth (25362), Mana Tide (1325257)
+                   Affected Spells: Healing Stream (5672), Mana Spring (5677), Healing Stream (6371), Healing Stream (6372), Stoneskin (8072), Strength of Earth (8076), Tremor Totem Effect (8146), Stoneskin (8156), Stoneskin (8157), Strength of Earth (8162), Strength of Earth (8163), Poison Cleansing Totem Effect (8168), Disease Cleansing Totem Effect (8171), Grounding Totem (8177), Grounding Totem (8178), Frost Resistance (8182), Fire Resistance (8185), Flametongue Totem (8230), Flametongue Totem (8250), Grace of Air (8836), Stoneskin (10403), Stoneskin (10404), Stoneskin (10405), Strength of Earth (10441), Healing Stream (10460), Healing Stream (10461), Frost Resistance (10476), Frost Resistance (10477), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Flametongue Totem (10521), Fire Resistance (10534), Fire Resistance (10535), Nature Resistance (10596), Nature Resistance (10598), Nature Resistance (10599), Grace of Air (10626), Flametongue Totem (15036), Windwall (15108), Windwall (15109), Windwall (15110), Mana Tide (16191), Mana Tide (17355), Mana Tide (17360), Mana Spring (24853), Grace of Air (25360), Strength of Earth (25362), Mana Tide (1325257)
                    Family Flags: 13, 14, 15, 16, 17, 18, 26
 Description      : The radius of your totems that affect friendly targets is increased to 30 yd.
 
@@ -5305,7 +5305,7 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=701277)   : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
                    Base Value: -20 | Scaled Value: -20 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Healing Stream Totem (5394), Mana Spring Totem (5675), Healing Stream Totem (6375), Healing Stream Totem (6377), Healing Stream Totem (10462), Healing Stream Totem (10463), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497)
+                   Affected Spells: Healing Stream Totem (5394), Mana Spring Totem (5675), Healing Stream Totem (6375), Healing Stream Totem (6377), Healing Stream Totem (10462), Healing Stream Totem (10463), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Mana Spring Totem (24854)
                    Family Flags: 19
 Description      : Decreases the mana cost of your Healing Stream and Mana Spring totems by $s1.
 
@@ -5322,6 +5322,35 @@ Effects          :
                    Family Flags: 10
 Description      : Increases the damage dealt by your Lightning Shield spell by $s1% for $d.
 Tooltip          : Lightning Shield damage increased by $s1%.
+
+Name             : Mana Spring (id=24853) [Spell Family (11), Passive] 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 50
+Labels           : 24: Shaman Spells
+Affecting Spells : Restorative Totems (16187 effect#1), Totemic Mastery (16189 effect#1), S03 - Item - T1 - Shaman - Elemental/Enhancement/Restoration 2P Bonus (457475 effect#1)
+Family Flags     : 14
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=702140)   : Apply Party Aura (35) | Periodic Energize Power (24): every 2 seconds
+                   Base Value: 33 | Scaled Value: 33 | Radius: 30 yards | Target: Self (1)
+                   Modified By: Restorative Totems (16187 effect#1)
+Description      : Gaining $s1 Mana every $t1 sec.
+Tooltip          : Gain $s1 Mana every $t1 sec.
+
+Name             : Mana Spring Totem (id=24854) [Spell Family (11)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 50
+GCD              : 1.5 seconds
+Duration         : 24 seconds
+Affecting Spells : Totemic Focus (16173 effect#1), Copy of Improved Mana/Health Totems (24436 effect#1), Totem Affinity (1270492 effect#1)
+Family Flags     : 19
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=700985)   : Summon Guardian (28)
+                   Base Value: 5 | Scaled Value: 5 | Misc Value: 15304 | Misc Value 2: 82 | Target: Back Right of Self (42)
+Description      : Summons a Mana Spring Totem for $d, restoring $24853s1 Mana every $24853t1 sec to party members within $24853a1 yards.
 
 Name             : Healing Wave (desc=Rank 10) (id=25357) [Spell Family (11)] 
 Class            : Shaman
@@ -5534,6 +5563,22 @@ Effects          :
                    Family Flags: 7
 Description      : Increases healing done by Lesser Healing Wave by up to $s1.
 
+Name             : Increased Shock Damage (id=27859) [Spell Family (11), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 24: Shaman Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=704622)   : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+                   Affected Spells: Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Flame Shock (29228), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690)
+                   Family Flags: 20, 28, 31
+#2 (id=1328150)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
+                   Base Value: 2 | Scaled Value: 2 | Misc Value: 22 | Target: Self (1)
+                   Affected Spells: Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Flame Shock (10447), Flame Shock (10448), Flame Shock (29228)
+                   Family Flags: 28
+Description      : Increases the damage of your Shock spells by $s1%.
+
 Name             : Lesser Healing Wave (id=28849) [Spell Family (11), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -5546,6 +5591,18 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Self (1)
                    Family Flags: 5
 Description      : Regain up to $28850s1 mana each time you cast Lesser Healing Wave.
+
+Name             : Increased Water Shield Charges (id=28856) [Spell Family (11), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 24: Shaman Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=705031)   : Apply Aura (6) | Add Flat Modifier (107): Spell Initial Stacks (4)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 4 | Target: Self (1)
+                   Affected Spells: Water Shield (408510)
+                   Family Flags: 37
+Description      : Increases the maximum number of charges on your Water Shield by $s1.
 
 Name             : Increased Lightning Damage (id=28857) [Spell Family (11), Passive, Hidden] 
 School           : Physical
@@ -5786,7 +5843,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -6091,7 +6148,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072563)  : School Damage (2): nature
-                   Base Value: 7 | Scaled Value: 8 (delta=0.142857) | Points Per Level: 0.2 | SP Coefficient: 0.2145 | Target: Targeted Enemy (6)
+                   Base Value: 8 | Scaled Value: 8.25 (delta=0.142857) | Points Per Level: 0.05 | SP Coefficient: 0.2145 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (7 -> 8), Points per Level (0.2 -> 0.05)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 2) (id=408440) [Spell Family (11)] 
@@ -6107,7 +6165,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072564)  : School Damage (2): nature
-                   Base Value: 14.5 | Scaled Value: 15.75 (delta=0.142857) | Points Per Level: 0.25 | SP Coefficient: 0.2855 | Target: Targeted Enemy (6)
+                   Base Value: 15 | Scaled Value: 15.25 (delta=0.142857) | Points Per Level: 0.05 | SP Coefficient: 0.2855 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (14.5 -> 15), Points per Level (0.25 -> 0.05)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 3) (id=408441) [Spell Family (11)] 
@@ -6123,7 +6182,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072565)  : School Damage (2): nature
-                   Base Value: 22.5 | Scaled Value: 24 (delta=0.163265) | Points Per Level: 0.3 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 26 | Scaled Value: 26.75 (delta=0.163265) | Points Per Level: 0.15 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (22.5 -> 26), Points per Level (0.3 -> 0.15)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 4) (id=408442) [Spell Family (11)] 
@@ -6139,7 +6199,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072567)  : School Damage (2): nature
-                   Base Value: 28 | Scaled Value: 29.5 (delta=0.134831) | Points Per Level: 0.3 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 36.5 | Scaled Value: 37.75 (delta=0.134831) | Points Per Level: 0.25 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (28 -> 36.5), Points per Level (0.3 -> 0.25)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 5) (id=408443) [Spell Family (11)] 
@@ -6155,7 +6216,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072569)  : School Damage (2): nature
-                   Base Value: 36 | Scaled Value: 37.75 (delta=0.134328) | Points Per Level: 0.35 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 54.5 | Scaled Value: 56.25 (delta=0.134328) | Points Per Level: 0.35 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (36 -> 54.5)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 6) (id=408472) [Spell Family (11)] 
@@ -6171,7 +6233,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072625)  : School Damage (2): nature
-                   Base Value: 56 | Scaled Value: 58 (delta=0.120879) | Points Per Level: 0.4 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 74 | Scaled Value: 76.5 (delta=0.120879) | Points Per Level: 0.5 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (56 -> 74), Points per Level (0.4 -> 0.5)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 7) (id=408473) [Spell Family (11)] 
@@ -6187,7 +6250,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072626)  : School Damage (2): nature
-                   Base Value: 74 | Scaled Value: 76 (delta=0.125) | Points Per Level: 0.4 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 97 | Scaled Value: 99.5 (delta=0.125) | Points Per Level: 0.5 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (74 -> 97), Points per Level (0.4 -> 0.5)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 8) (id=408474) [Spell Family (11)] 
@@ -6204,7 +6268,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072627)  : School Damage (2): nature
-                   Base Value: 81 | Scaled Value: 83.5 (delta=0.114094) | Points Per Level: 0.5 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 120 | Scaled Value: 123.75 (delta=0.114094) | Points Per Level: 0.75 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (81 -> 120), Points per Level (0.5 -> 0.75)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 9) (id=408475) [Spell Family (11)] 
@@ -6220,7 +6285,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072628)  : School Damage (2): nature
-                   Base Value: 89 | Scaled Value: 91.5 (delta=0.119565) | Points Per Level: 0.5 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 147.5 | Scaled Value: 151.5 (delta=0.119565) | Points Per Level: 0.8 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (89 -> 147.5), Points per Level (0.5 -> 0.8)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 10) (id=408477) [Spell Family (11)] 
@@ -6236,7 +6302,8 @@ Family Flags     : 0
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072630)  : School Damage (2): nature
-                   Base Value: 98 | Scaled Value: 100.4 (delta=0.113122) | Points Per Level: 0.6 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+                   Base Value: 176.5 | Scaled Value: 180.7 (delta=0.113122) | Points Per Level: 1.05 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (98 -> 176.5), Points per Level (0.6 -> 1.05)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Chain Lightning (desc=Rank 1) (id=408479) [Spell Family (11)] 
@@ -6251,7 +6318,8 @@ Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072633)  : School Damage (2): nature
-                   Base Value: 44 | Scaled Value: 47.75 (delta=0.137255) | Points Per Level: 0.75 | SP Coefficient: 0.2855 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 107.5 | Scaled Value: 111 (delta=0.137255) | Points Per Level: 0.7 | SP Coefficient: 0.357 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.2855 -> 0.357), Base Value (44 -> 107.5), Points per Level (0.75 -> 0.7)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Chain Lightning (desc=Rank 2) (id=408481) [Spell Family (11)] 
@@ -6266,7 +6334,8 @@ Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072635)  : School Damage (2): nature
-                   Base Value: 50 | Scaled Value: 54.5 (delta=0.122449) | Points Per Level: 0.9 | SP Coefficient: 0.2855 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 174 | Scaled Value: 179.5 (delta=0.122449) | Points Per Level: 1.1 | SP Coefficient: 0.357 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.2855 -> 0.357), Base Value (50 -> 174), Points per Level (0.9 -> 1.1)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Chain Lightning (desc=Rank 3) (id=408482) [Spell Family (11)] 
@@ -6281,7 +6350,8 @@ Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072636)  : School Damage (2): nature
-                   Base Value: 56 | Scaled Value: 61.25 (delta=0.115) | Points Per Level: 1.05 | SP Coefficient: 0.2855 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 214 | Scaled Value: 220.75 (delta=0.115) | Points Per Level: 1.35 | SP Coefficient: 0.357 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.2855 -> 0.357), Base Value (56 -> 214), Points per Level (1.05 -> 1.35)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Chain Lightning (desc=Rank 4) (id=408484) [Spell Family (11)] 
@@ -6296,7 +6366,8 @@ Family Flags     : 1
 Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072638)  : School Damage (2): nature
-                   Base Value: 62 | Scaled Value: 66.8 (delta=0.114943) | Points Per Level: 1.2 | SP Coefficient: 0.2855 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+                   Base Value: 255 | Scaled Value: 261.6 (delta=0.114943) | Points Per Level: 1.65 | SP Coefficient: 0.357 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.2855 -> 0.357), Base Value (62 -> 255), Points per Level (1.2 -> 1.65)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Lava Burst (desc=Rank 1) (id=408490) [Spell Family (11)] 
@@ -6416,6 +6487,7 @@ Internal Cooldown: 3.5 seconds
 Stacks           : 3 initial, 3 maximum
 Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Heal, Magic Hostile Spell, Magic Hostile Spell Taken
+Affecting Spells : Increased Water Shield Charges (28856 effect#1)
 Family Flags     : 37
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No Threat (42), Include In Advanced Combat Log (72), Suppress Caster Procs (112), Suppress Target Procs (113), Allow Proc While Sitting (147), Aura Points On Client (268), Unknown (493)
 Effects          :
@@ -6621,7 +6693,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -6648,7 +6720,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -6675,7 +6747,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -6702,7 +6774,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -6729,7 +6801,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -6756,7 +6828,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -6783,7 +6855,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -8569,7 +8641,7 @@ Attributes       : Passive (6), Aura Unique (43), Unknown (493)
 Effects          :
 #1 (id=1162693)  : Apply Aura (6) | Add Flat Modifier (107): Spell Radius (6)
                    Base Value: 20 | Scaled Value: 20 | Misc Value: 6 | Target: Self (1)
-                   Affected Spells: Healing Stream (5672), Mana Spring (5677), Healing Stream (6371), Healing Stream (6372), Stoneskin (8072), Strength of Earth (8076), Tremor Totem Effect (8146), Stoneskin (8156), Stoneskin (8157), Strength of Earth (8162), Strength of Earth (8163), Poison Cleansing Totem Effect (8168), Disease Cleansing Totem Effect (8171), Grounding Totem (8178), Frost Resistance (8182), Fire Resistance (8185), Flametongue Totem (8230), Flametongue Totem (8250), Grace of Air (8836), Stoneskin (10403), Stoneskin (10404), Stoneskin (10405), Strength of Earth (10441), Healing Stream (10460), Healing Stream (10461), Frost Resistance (10476), Frost Resistance (10477), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Flametongue Totem (10521), Fire Resistance (10534), Fire Resistance (10535), Nature Resistance (10596), Nature Resistance (10598), Nature Resistance (10599), Grace of Air (10626), Flametongue Totem (15036), Windwall (15108), Windwall (15109), Windwall (15110), Mana Tide (16191), Mana Tide (17355), Mana Tide (17360), Grace of Air (25360), Strength of Earth (25362), Mana Tide (1325257)
+                   Affected Spells: Healing Stream (5672), Mana Spring (5677), Healing Stream (6371), Healing Stream (6372), Stoneskin (8072), Strength of Earth (8076), Tremor Totem Effect (8146), Stoneskin (8156), Stoneskin (8157), Strength of Earth (8162), Strength of Earth (8163), Poison Cleansing Totem Effect (8168), Disease Cleansing Totem Effect (8171), Grounding Totem (8178), Frost Resistance (8182), Fire Resistance (8185), Flametongue Totem (8230), Flametongue Totem (8250), Grace of Air (8836), Stoneskin (10403), Stoneskin (10404), Stoneskin (10405), Strength of Earth (10441), Healing Stream (10460), Healing Stream (10461), Frost Resistance (10476), Frost Resistance (10477), Mana Spring (10491), Mana Spring (10493), Mana Spring (10494), Flametongue Totem (10521), Fire Resistance (10534), Fire Resistance (10535), Nature Resistance (10596), Nature Resistance (10598), Nature Resistance (10599), Grace of Air (10626), Flametongue Totem (15036), Windwall (15108), Windwall (15109), Windwall (15110), Mana Tide (16191), Mana Tide (17355), Mana Tide (17360), Mana Spring (24853), Grace of Air (25360), Strength of Earth (25362), Mana Tide (1325257)
                    Family Flags: 13, 14, 15, 16, 17, 26
 Description      : The radius of your totems that affect friendly targets is increased to ${$m1+20} yd.
 
@@ -9328,7 +9400,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1282549)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -5 | Scaled Value: -5 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Mana Tide Totem (1325256)
+                   Affected Spells: Earthbind Totem (2484), Searing Totem (3599), Healing Stream Totem (5394), Mana Spring Totem (5675), Stoneclaw Totem (5730), Searing Totem (6363), Searing Totem (6364), Searing Totem (6365), Healing Stream Totem (6375), Healing Stream Totem (6377), Stoneclaw Totem (6390), Stoneclaw Totem (6391), Stoneclaw Totem (6392), Sentry Totem (6495), Stoneskin Totem (8071), Strength of Earth Totem (8075), Tremor Totem (8143), Stoneskin Totem (8154), Stoneskin Totem (8155), Strength of Earth Totem (8160), Strength of Earth Totem (8161), Poison Cleansing Totem (8166), Disease Cleansing Totem (8170), Grounding Totem (8177), Frost Resistance Totem (8181), Fire Resistance Totem (8184), Magma Totem (8190), Flametongue Totem (8227), Flametongue Totem (8249), Windfury Totem (8512), Grace of Air Totem (8835), Stoneskin Totem (10406), Stoneskin Totem (10407), Stoneskin Totem (10408), Stoneclaw Totem (10427), Stoneclaw Totem (10428), Searing Totem (10437), Searing Totem (10438), Strength of Earth Totem (10442), Healing Stream Totem (10462), Healing Stream Totem (10463), Frost Resistance Totem (10478), Frost Resistance Totem (10479), Mana Spring Totem (10495), Mana Spring Totem (10496), Mana Spring Totem (10497), Flametongue Totem (10526), Fire Resistance Totem (10537), Fire Resistance Totem (10538), Magma Totem (10585), Magma Totem (10586), Magma Totem (10587), Nature Resistance Totem (10595), Nature Resistance Totem (10600), Nature Resistance Totem (10601), Windfury Totem (10613), Windfury Totem (10614), Grace of Air Totem (10627), Windwall Totem (15107), Windwall Totem (15111), Windwall Totem (15112), Mana Tide Totem (16190), Flametongue Totem (16387), Mana Tide Totem (17354), Mana Tide Totem (17359), Mana Spring Totem (24854), Grace of Air Totem (25359), Strength of Earth Totem (25361), Decoy Totem (425874), Mana Tide Totem (1325256)
                    Family Flags: 3, 4, 12, 19, 29
 Description      : Reduces the mana cost of your totems by $s1%.
 

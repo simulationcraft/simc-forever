@@ -3093,6 +3093,37 @@ Effects          :
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
 Tooltip          : Health increased by $w1.
 
+Name             : Howling Blade (desc=Rank 1) (id=13490) [Spell Family (4)] 
+School           : Physical
+Spell Type       : None
+Resource         : 100 Base Mana (0) (id=179942)
+Spell Level      : 35
+Range            : 5 yards
+Duration         : 30 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=691564)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
+#2 (id=871981)   : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
+Description      : Reduces target's attack power by $s1 for $d.
+Tooltip          : Reduces attack power by $s1.
+
+Name             : Lord General's Sword (id=15602) [Spell Family (4)] 
+School           : Physical
+Spell Type       : None
+Resource         : 0 Energy (3) (id=180849)
+Spell Level      : 56
+Duration         : 10 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=692615)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: 84 | Scaled Value: 84 | Target: Self (1)
+#2 (id=871979)   : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: 84 | Scaled Value: 84 | Target: Self (1)
+Description      : Increases attack power by $s1 for $d.
+Tooltip          : Attack power increased by $s1.
+
 Name             : Deflection (id=16462) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=2, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(1, 2, 3, 4, 5)]
@@ -3166,12 +3197,12 @@ Effects          :
 Description      : Increases all damage you deal by $s1% while a shield is equipped.
 
 Name             : Dummy Trigger (id=18350) [Hidden] 
-Class            : Warrior, Paladin, Hunter, Warlock
+Class            : Warrior, Paladin, Warlock
 School           : Physical
 Spell Type       : None
 Range            : 50000 yards
 Proc Chance      : 101%
-Triggered By     : Frost Trap (13810), Pyroclasm (18073), Illumination (20210), Mana Drain Trigger (27522), Vigilance (426972)
+Triggered By     : Pyroclasm (18073), Illumination (20210), Mana Drain Trigger (27522), Vigilance (426972)
 Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Ignore Line of Sight (66), Unknown (493)
 Effects          :
 #1 (id=695695)   : Dummy (3)
@@ -3231,6 +3262,19 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 14 | Target: Self (1)
 Description      : The warrior enters a berserker rage, becoming immune to Fear and Incapacitate effects and generating extra rage when taking damage.  Lasts $d.
 Tooltip          : Immune to Fear and Incapacitate effects.  Generating extra rage when taking damage.
+
+Name             : Savior's Sacrifice (id=18826) [Spell Family (4)] 
+School           : Physical
+Spell Type       : Magic
+Resource         : 0 Energy (3) (id=182845)
+Spell Level      : 45
+Duration         : 20 seconds
+Attributes       : Do Not Sheath (18), No School Immunities (90), Unknown (493)
+Effects          :
+#1 (id=695124)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Self (1)
+Description      : Increases armor by $s1 for $d.
+Tooltip          : Increased armor.
 
 Name             : Improved Intimidating Shout (desc=Rank 1) (id=19870) [Spell Family (4), Passive, Hidden] 
 Class            : Warrior
