@@ -9959,6 +9959,27 @@ Effects          :
 Description      : Curses the target for $d, reducing Magic resistances by $s1 and increasing Magic damage taken by $s2%. Only one Curse per Warlock can be active on any one target.
 Tooltip          : Reduces Magic resistances by $s1. Increases Magic damage taken by $s2%.
 
+Name             : Charm (id=1315557) 
+School           : Shadow
+Spell Type       : Magic
+Range            : 30 yards
+Cast Time        : 1.5 seconds
+GCD              : 1.5 seconds
+Duration         : 15 seconds
+Labels           : 19: Warlock Spells
+Proc Chance      : 101%
+Mechanic         : Charm
+Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), Is Channelled (34), Track Target in Channel (46), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Aura Interrupt   : Damage (1)
+Channel Interrupt: Damage (2), Action (3), Moving (4), Turning (5), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
+Effects          :
+#1 (id=1347970)  : Apply Aura (6) | Stun (12)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+#2 (id=1347971)  : Apply Aura (6) | Replace Animation (Set) (312)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 1422 | Target: Targeted Enemy (6)
+Description      : Charms the target, preventing all actions for up to $d. Any damage caused will remove the effect. Only works against Humanoids.
+Tooltip          : Charmed.
+
 Name             : Wrack (desc=Rank 1) (id=1316697) [Spell Family (5)] 
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=0]
 Class            : Warlock

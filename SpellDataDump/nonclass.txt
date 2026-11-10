@@ -22120,6 +22120,23 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Gameobject (23)
 Description      : Recover Highborne Relic Fragments.
 
+Name             : Shadow Bolt (id=17483) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=696593)   : School Damage (2): shadow
+                   Base Value: 150 | Scaled Value: 150 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+#2 (id=696594)   : Apply Aura (6) | Periodic Damage (3): shadow every 2 seconds
+                   Base Value: 34 | Scaled Value: 34 | Target: Targeted Enemy (6)
+Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage and dealing $s2 damage every $t2 sec for $d.
+Tooltip          : Deals $s2 Shadow damage every $t2 sec.
+
 Name             : Crest of Retribution (id=17496) 
 School           : Physical
 Spell Type       : Magic
@@ -22130,6 +22147,32 @@ Attributes       : Unknown (493)
 Effects          :
 #1 (id=694852)   : School Damage (2): physical
                    Base Value: 22 | Scaled Value: 22 (delta=1.5) | Target: Targeted Enemy (6)
+
+Name             : Surge of Strength (id=17499) 
+School           : Physical
+Spell Type       : None
+Duration         : 20 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=696090)   : Apply Aura (6) | Attribute (29)
+                   Base Value: 53 | Scaled Value: 53 | Stat: Str | Target: Self (1)
+Description      : Increases Strength by $s1 for $d.
+Tooltip          : Increased Strength.
+
+Name             : Malown's Slam (id=17500) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Range            : 5 yards
+Duration         : 2 seconds
+Category         : 32 (Type 0x0)
+Mechanic         : Stun
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=694738)   : Apply Aura (6) | Stun (12)
+                   Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Knocks target silly for $d and increases Strength by $17499s1 for $17499d.
+Tooltip          : Knocked silly.
 
 Name             : Cannon Fire (id=17501) 
 School           : Holy
