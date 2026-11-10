@@ -624,7 +624,7 @@ Cast Time        : 2 seconds
 GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -3341,7 +3341,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 24 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), DoT Stacking Rule (103), Aura Never Bounces (148), Taps immediately (215), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -3575,7 +3575,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 24 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), DoT Stacking Rule (103), Aura Never Bounces (148), Taps immediately (215), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -7989,7 +7989,8 @@ Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=681913)   : School Damage (2): fire
-                   Base Value: 4 | Scaled Value: 4.4 (delta=0.285714) | Points Per Level: 0.1 | SP Coefficient: 0.164 | Target: Targeted Enemy (6)
+                   Base Value: 6 | Scaled Value: 7.2 (delta=0.333333) | Points Per Level: 0.3 | SP Coefficient: 0.164 | Target: Targeted Enemy (6)
+Hotfixed         : Delta (0.285714 -> 0.333333), Base Value (4 -> 6), Points per Level (0.1 -> 0.3)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Mend Pet (desc=Rank 2) (id=3111) [Spell Family (9)] 
@@ -12890,7 +12891,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 24 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), DoT Stacking Rule (103), Aura Never Bounces (148), Taps immediately (215), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -12942,7 +12943,7 @@ Cast Time        : 2 seconds
 GCD              : 1.5 seconds
 Duration         : 15 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -12962,7 +12963,7 @@ Cast Time        : 2 seconds
 GCD              : 1.5 seconds
 Duration         : 18 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -16901,7 +16902,7 @@ Cast Time        : 2 seconds
 GCD              : 1.5 seconds
 Duration         : 18 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -17855,7 +17856,8 @@ Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=685570)   : School Damage (2): fire
-                   Base Value: 7 | Scaled Value: 8 (delta=0.153846) | Points Per Level: 0.2 | SP Coefficient: 0.314 | Target: Targeted Enemy (6)
+                   Base Value: 11 | Scaled Value: 13 (delta=0.181818) | Points Per Level: 0.4 | SP Coefficient: 0.314 | Target: Targeted Enemy (6)
+Hotfixed         : Delta (0.153846 -> 0.181818), Base Value (7 -> 11), Points per Level (0.2 -> 0.4)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Firebolt (desc=Rank 3) (id=7800) [Spell Family (5)] 
@@ -17874,7 +17876,8 @@ Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=685571)   : School Damage (2): fire
-                   Base Value: 12 | Scaled Value: 13.5 (delta=0.166667) | Points Per Level: 0.3 | SP Coefficient: 0.529 | Target: Targeted Enemy (6)
+                   Base Value: 15 | Scaled Value: 17 (delta=0.235294) | Points Per Level: 0.4 | SP Coefficient: 0.529 | Target: Targeted Enemy (6)
+Hotfixed         : Delta (0.166667 -> 0.235294), Base Value (12 -> 15), Points per Level (0.3 -> 0.4)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Firebolt (desc=Rank 4) (id=7801) [Spell Family (5)] 
@@ -17893,7 +17896,8 @@ Family Flags     : 12
 Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=685572)   : School Damage (2): fire
-                   Base Value: 17 | Scaled Value: 18.5 (delta=0.114286) | Points Per Level: 0.3 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
+                   Base Value: 18 | Scaled Value: 20 (delta=0.222222) | Points Per Level: 0.4 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
+Hotfixed         : Delta (0.114286 -> 0.222222), Base Value (17 -> 18), Points per Level (0.3 -> 0.4)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Firebolt (desc=Rank 5) (id=7802) [Spell Family (5)] 
@@ -34886,7 +34890,7 @@ Cast Time        : 2 seconds
 GCD              : 1.5 seconds
 Duration         : 18 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -34906,7 +34910,7 @@ Cast Time        : 2 seconds
 GCD              : 1.5 seconds
 Duration         : 18 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -35337,7 +35341,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 24 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), DoT Stacking Rule (103), Aura Never Bounces (148), Taps immediately (215), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -35362,7 +35366,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 24 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), DoT Stacking Rule (103), Aura Never Bounces (148), Taps immediately (215), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -35387,7 +35391,7 @@ Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 24 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 10
 Attributes       : Not Shapeshifted (16), DoT Stacking Rule (103), Aura Never Bounces (148), Taps immediately (215), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -57555,6 +57559,7 @@ Effects          :
 Tooltip          : Shadow damage taken from Warlock increased by $w1%.
 
 Name             : Soul Siphon (id=17804) [Spell Family (5), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=5, col=3, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(4, 8, 12)]
 Class            : Warlock
@@ -57565,7 +57570,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=695787)   : Apply Aura (6) | Dummy (4)
                    Base Value: 12 | Scaled Value: 12 | SP Coefficient: 1 | Target: Self (1)
-Description      : Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by $s1% per each of your other Affliction effects active on the target, up to a maximum increase of ${$m1*3}%.
+Description      : Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by $s1% per each of your Corruption, Siphon Life, and Bane of Agony effects active on the target, up to a maximum increase of ${$m1*3}%.
 
 Name             : Improved Corruption (id=17810) [Spell Family (5), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=1, col=3, max_rank=5, req_points=0]
@@ -66887,6 +66892,18 @@ Effects          :
                    Affected Spells: Intimidating Shout (5246), Intimidating Shout (20511)
                    Family Flags: 18
 Description      : Increases the duration of your Intimidating Shout by $/1000;s1 sec.
+
+Name             : Lightning Bolt (id=19874) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=697237)   : School Damage (2): nature
+                   Base Value: 252 | Scaled Value: 252 (delta=0.325581) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
 
 Name             : Shadow Resistance Aura (desc=Rank 1) (id=19876) [Spell Family (10)] 
 Class            : Paladin
@@ -83494,7 +83511,7 @@ Cast Time        : 2 seconds
 GCD              : 1.5 seconds
 Duration         : 18 seconds
 Labels           : 19: Warlock Spells
-Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Taps immediately (215), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -87315,6 +87332,7 @@ Effects          :
 Description      : Reduces the Mana cost of Purify and Cleanse by $s1%.
 
 Name             : Reduced Claw and Rake Cost (id=27851) [Spell Family (7), Passive, Hidden] 
+Hotfixed         : Description
 School           : Physical
 Spell Type       : None
 Labels           : 21: Druid Spells
@@ -87323,8 +87341,9 @@ Effects          :
 #1 (id=704563)   : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
                    Base Value: -2 | Scaled Value: -2 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
                    Affected Spells: Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Claw (9849), Claw (9850), Rake (9904)
-                   Family Flags: 12, 42
-Description      : Reduces the energy cost of Claw, Rake, and Mangle by $s1.
+                   Family Flags: 12
+Hotfixed         : Affects Spells
+Description      : Reduces the energy cost of Claw and Rake by $s1.
 
 Name             : Increased Lesser Healing Wave (id=27855) [Spell Family (11), Passive, Hidden] 
 School           : Physical
@@ -105541,7 +105560,7 @@ Spell Level      : 1
 Range            : 50000 yards
 Stacks           : 1 maximum
 Proc Chance      : 101%
-Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Improved Corruption (17810 effects: #1, #2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effects: #1, #2), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 1
 Attributes       : Allow Cast While Dead (23), No Redirection (35), No Reflection (39), Ignore Line of Sight (66), Treat As Periodic (121), Do Not Display Range (126), Unknown (493)
 Effects          :
@@ -105583,7 +105602,7 @@ Spell Level      : 1
 Range            : 50000 yards
 Stacks           : 1 maximum
 Proc Chance      : 101%
-Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1), Wrack (1316697 effect#2)
+Affecting Spells : Bane of Agony (980 effect#2), Bane of Agony (1014 effect#2), Bane of Agony (6217 effect#2), Bane of Agony (11711 effect#2), Bane of Agony (11712 effect#2), Bane of Agony (11713 effect#2), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Improved Bane of Agony (18827 effect#1), Haunt (403501 effect#2), Pandemic (427712 effect#1), S03 - Item - T2 - Warlock - Damage 2P Bonus (467917 effect#1), Malevolence (1310949 effect#1)
 Family Flags     : 10
 Attributes       : Allow Cast While Dead (23), No Redirection (35), No Reflection (39), Ignore Line of Sight (66), Treat As Periodic (121), Do Not Display Range (126), Unknown (493)
 Effects          :
@@ -126431,6 +126450,7 @@ Resource         : 5% Base Mana (0) (id=310177)
 Spell Level      : 1
 Range            : 30 yards
 Max Targets      : 1
+GCD              : 1.5 seconds
 Duration         : 300 seconds
 Labels           : 19: Warlock Spells
 Affecting Spells : Cataclysm (17778 effect#1), Destructive Reach (17917 effect#1), Malevolence (1310949 effect#1)
@@ -154090,6 +154110,7 @@ Effects          :
 Description      : $@spelldesc1247442
 
 Name             : Wrack (desc=Rank 1) (id=1316697) [Spell Family (5)] 
+Hotfixed         : Attributes, Description, Tooltip
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=0]
 Class            : Warlock
 School           : Shadow
@@ -154102,17 +154123,17 @@ Duration         : 6 seconds
 Labels           : 19: Warlock Spells
 Affecting Spells : Fel Concentration (17783 effect#1), Grim Reach (18218 effect#1), Shadow Mastery (18271 effect#2), Pandemic (427712 effect#1), Eureka! (1259821 effects: #1, #3), Malevolence (1310949 effect#1)
 Family Flags     : 50
-Attributes       : Not Shapeshifted (16), Is Channelled (34), Track Target in Channel (46), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Channelled (34), Track Target in Channel (46), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=1349556)  : Apply Aura (6) | Periodic Damage (3): shadow every 1 seconds
-                   Base Value: 36 | Scaled Value: 86 | Points Per Level: 2.5 | Value Multiplier: 1 | SP Coefficient: 0.286 | Target: Targeted Enemy (6)
-#2 (id=1349557)  : Apply Aura (6) | Modify Damage Taken% from Caster's Spells (271)
-                   Base Value: 10 | Scaled Value: 10 | Target: Targeted Enemy (6)
-                   Affected Spells: Corruption (172), Bane of Agony (980), Bane of Agony (1014), Bane of Agony (6217), Corruption (6222), Corruption (6223), Corruption (7648), Corruption (11671), Corruption (11672), Bane of Agony (11711), Bane of Agony (11712), Bane of Agony (11713), Corruption (25311), Invocation (426241), Invocation (426246)
-                   Family Flags: 1, 10
-Description      : Tears the target apart from within, inflicting $s1 Shadow damage every $t sec and increasing the damage they take from your other Shadow damage over time effects by $s2% for $d.
-Tooltip          : Inflicts $s1 Shadow damage every $t1 sec and increases damage taken from the caster's other Shadow damage over time effects by $s2%.
+                   Base Value: 25.2 | Scaled Value: 60.2 | Points Per Level: 1.75 | Value Multiplier: 1 | SP Coefficient: 0.2002 | Target: Targeted Enemy (6)
+Hotfixed         : SP Coefficient (0.286 -> 0.2002), Base Value (36 -> 25.200001), Points per Level (2.5 -> 1.75)
+#2 (id=1349557)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
+Hotfixed         : Sub Type (271 -> 4), Base Value (10 -> 100), Affects Spells
+Description      : Tears the target apart from within for $d, inflicting $s1 Shadow damage every $t sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage $s2% faster.
+Tooltip          : Inflicts $w1 Shadow damage every $t1 sec and increases the speed at which the caster's Siphon Life, Corruption, and Bane of Agony effects deal periodic damage by $w2%.
 
 Name             : Death Mark (desc=Rank 1) (id=1316709) [Spell Family (8)] 
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]

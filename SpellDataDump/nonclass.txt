@@ -27284,6 +27284,18 @@ Effects          :
 #1 (id=697920)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Lightning Bolt (id=19874) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=697237)   : School Damage (2): nature
+                   Base Value: 252 | Scaled Value: 252 (delta=0.325581) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
+
 Name             : Expert Cook (id=19886) 
 School           : Physical
 Spell Type       : None

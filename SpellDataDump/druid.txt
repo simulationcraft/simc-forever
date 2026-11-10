@@ -5910,6 +5910,7 @@ Effects          :
 Description      : Reduces the casting time of your Healing Touch spell by 0.15 sec.
 
 Name             : Reduced Claw and Rake Cost (id=27851) [Spell Family (7), Passive, Hidden] 
+Hotfixed         : Description
 School           : Physical
 Spell Type       : None
 Labels           : 21: Druid Spells
@@ -5918,8 +5919,9 @@ Effects          :
 #1 (id=704563)   : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
                    Base Value: -2 | Scaled Value: -2 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
                    Affected Spells: Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Claw (9849), Claw (9850), Rake (9904)
-                   Family Flags: 12, 42
-Description      : Reduces the energy cost of Claw, Rake, and Mangle by $s1.
+                   Family Flags: 12
+Hotfixed         : Affects Spells
+Description      : Reduces the energy cost of Claw and Rake by $s1.
 
 Name             : Healing Touch Refund (id=28847) [Spell Family (7), Passive, Hidden] 
 School           : Physical
