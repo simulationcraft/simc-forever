@@ -83,6 +83,7 @@ struct druid_t final : public parse_player_effects_t
     buff_t* eclipse;
     buff_t* moonkin_aura;
     buff_t* prowl;
+    buff_t* poised;
   } buff;
 
   struct
@@ -125,6 +126,7 @@ struct druid_t final : public parse_player_effects_t
   void parse_player_effects();
   void apply_action_effects( action_t* a );
   void create_actions() override;
+  double resource_loss( resource_e resource_type, double amount, gain_t* g = nullptr, action_t* a = nullptr ) override;
 
   resource_e primary_resource() const override
   {
@@ -850,6 +852,13 @@ struct auto_attack_t : public druid_melee_attack_t
   }
 };
 
+double druid_t::resource_loss( resource_e resource_type, double amount, gain_t* g, action_t* a )
+{
+  if ( resource_type == RESOURCE_ENERGY && buff.poised->check() && a && a->data().affected_by( buff.poised->data() ) )
+    buff.poised->expire();
+  return parse_player_effects_t::resource_loss( resource_type, amount, g, a );
+}
+
 action_t* druid_t::create_action( std::string_view name, std::string_view options_str )
 {
   if ( name == "auto_attack" )
@@ -943,6 +952,12 @@ void druid_t::create_buffs()
   auto const prowl_spell = rank.prowl.find_rank()->spell();
   buff.prowl             = make_buff_fallback( prowl_spell->ok(), this, "prowl", prowl_spell );
 
+  auto const poised_passive = find_spell( 1328829 );
+  auto const poised_buff    = find_spell( 1328827 );
+  buff.poised = make_buff_fallback( poised_passive->ok() && true_level >= static_cast<int>( poised_passive->level() ), this, "poised",
+                                    poised_buff );
+  register_precombat_begin( buff.poised );
+
   buff.moonkin_form =
       make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_form", talent.moonkin_form )
           ->set_period( 0_ms )
@@ -1000,6 +1015,7 @@ void druid_t::apply_action_effects( action_t* a )
   action->parse_effects( buff.clearcasting );
   action->parse_effects( buff.natures_grace );
   action->parse_effects( buff.cat_form );
+  action->parse_effects( buff.poised ); 
 }
 
 void druid_t::create_actions()
