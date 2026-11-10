@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8643> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8645> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3376,6 +3376,7 @@ static constexpr std::array<spelltext_data_t, 8643> __spelltext_data { {
   {   18223, "Reduces the target's movement speed by $s1% for $d.  Only one Curse per Warlock can be active on any one target.", "Movement speed slowed by $w1%.", 0 },
   {   18265, "Transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.", "Drains $s1 health to the caster every $t1 secs.", "Rank 1" },
   {   18271, "Increases the damage dealt or life drained by your Shadow spells by $s1%.", 0, 0 },
+  {   18276, "Blasts a target for $s1 Frost damage.", 0, 0 },
   {   18288, "Increases the effect of your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.  Lasts $d.", "Increases effect for your next Curse of Weakness or Bane of Agony by $s1%, or your next Curse of Exhaustion by $s2%.", 0 },
   {   18308, "Calls forth 3 servants of the House Barov that will fight, cook, and clean for you.", 0, 0 },
   {   18310, "Increases the speed reduction of your Curse of Exhaustion by $s1%.", 0, "Rank 1" },
@@ -4900,6 +4901,7 @@ static constexpr std::array<spelltext_data_t, 8643> __spelltext_data { {
   {   27850, "Reduces the Mana cost of Purify and Cleanse by $s1%.", 0, 0 },
   {   27851, "Reduces the energy cost of Claw, Rake, and Mangle by $s1.", 0, 0 },
   {   27855, "Increases healing done by Lesser Healing Wave by up to $s1.", 0, 0 },
+  {   27859, "Increases the damage of your Shock spells by $s1%.", 0, 0 },
   {   27869, "Restores $s1 mana at the cost of $s2 life.", 0, 0 },
   {   27873, 0, "Restore $s1 health every $t1 sec.", "Rank 2" },
   {   27874, 0, "Restore $s1 health every $t1 sec.", "Rank 3" },
