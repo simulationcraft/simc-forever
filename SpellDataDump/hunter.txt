@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70862 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
 Name             : Auto Shot (id=75) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -641,7 +641,7 @@ Name             : Arcane Shot (desc=Rank 1) (id=3044) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 25 Base Mana (0) (id=170789)
+Resource         : 11% Base Mana (0) (id=170789)[Hotfixed: Cost (25 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 6
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -1769,7 +1769,6 @@ Effects          :
                    Base Value: -60 | Scaled Value: -60 | SP Coefficient: 1 | Radius: 10 yards | Target: at Dynamic Enemy in Area (28)
 #2 (id=691204)   : Apply Aura in Area (27) | Periodic Trigger Spell (23): Unknown(0) every 2 seconds
                    Base Value: 0 | Scaled Value: 0 | Radius: 10 yards | Target: at Dynamic Enemy in Area (28)
-Hotfixed         : Trigger Spell (18350 -> 0)
 Tooltip          : Movement speed slowed by $s1%.
 
 Name             : Explosive Trap (desc=Rank 1) (id=13812) [Spell Family (9)] 
@@ -2183,7 +2182,7 @@ Name             : Arcane Shot (desc=Rank 2) (id=14281) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 35 Base Mana (0) (id=179648)
+Resource         : 11% Base Mana (0) (id=179648)[Hotfixed: Cost (35 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 12
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2206,7 +2205,7 @@ Name             : Arcane Shot (desc=Rank 3) (id=14282) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 50 Base Mana (0) (id=180317)
+Resource         : 11% Base Mana (0) (id=180317)[Hotfixed: Cost (50 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 20
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2229,7 +2228,7 @@ Name             : Arcane Shot (desc=Rank 4) (id=14283) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 80 Base Mana (0) (id=180443)
+Resource         : 11% Base Mana (0) (id=180443)[Hotfixed: Cost (80 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 28
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2252,7 +2251,7 @@ Name             : Arcane Shot (desc=Rank 5) (id=14284) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 105 Base Mana (0) (id=179345)
+Resource         : 11% Base Mana (0) (id=179345)[Hotfixed: Cost (105 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 36
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2275,7 +2274,7 @@ Name             : Arcane Shot (desc=Rank 6) (id=14285) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 135 Base Mana (0) (id=179406)
+Resource         : 11% Base Mana (0) (id=179406)[Hotfixed: Cost (135 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 44
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2298,7 +2297,7 @@ Name             : Arcane Shot (desc=Rank 7) (id=14286) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 160 Base Mana (0) (id=179444)
+Resource         : 11% Base Mana (0) (id=179444)[Hotfixed: Cost (160 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 52
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2321,7 +2320,7 @@ Name             : Arcane Shot (desc=Rank 8) (id=14287) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 190 Base Mana (0) (id=179523)
+Resource         : 11% Base Mana (0) (id=179523)[Hotfixed: Cost (190 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 60
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -10847,7 +10846,7 @@ Talent Entry     : Generic [tree=class, row=4, col=4, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 80 Base Mana (0) (id=313567)
+Resource         : 11% Base Mana (0) (id=313567)[Hotfixed: Cost (80 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 25
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -10889,7 +10888,7 @@ Name             : Summon Hawk (desc=Rank 2) (id=1293525) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 105 Base Mana (0) (id=313590)
+Resource         : 11% Base Mana (0) (id=313590)[Hotfixed: Cost (105 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 36
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -10919,7 +10918,7 @@ Name             : Summon Hawk (desc=Rank 3) (id=1293526) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 135 Base Mana (0) (id=313591)
+Resource         : 11% Base Mana (0) (id=313591)[Hotfixed: Cost (135 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 48
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -10949,7 +10948,7 @@ Name             : Summon Hawk (desc=Rank 4) (id=1293527) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 190 Base Mana (0) (id=313592)
+Resource         : 11% Base Mana (0) (id=313592)[Hotfixed: Cost (190 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 60
 Range            : 35 yards
 Cast Time        : Ranged Shot
