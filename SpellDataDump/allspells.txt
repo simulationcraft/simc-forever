@@ -2654,7 +2654,7 @@ GCD              : 1.5 seconds
 Category         : 85 (Type 0x0)
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 52
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Unknown (454), Unknown (493)
 Effects          :
@@ -2790,7 +2790,7 @@ GCD              : 1.5 seconds
 Category         : 85 (Type 0x0)
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 52
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Unknown (454), Unknown (493)
 Effects          :
@@ -2809,7 +2809,7 @@ GCD              : 1.5 seconds
 Category         : 85 (Type 0x0)
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 52
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Unknown (454), Unknown (493)
 Effects          :
@@ -15013,7 +15013,7 @@ Spell Level      : 10
 Range            : 5 yards
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 95
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), On Next Swing (10), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -15030,7 +15030,7 @@ Spell Level      : 18
 Range            : 5 yards
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 95
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), On Next Swing (10), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -15047,7 +15047,7 @@ Spell Level      : 26
 Range            : 5 yards
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 95
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), On Next Swing (10), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -23023,7 +23023,7 @@ Spell Level      : 34
 Range            : 5 yards
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 95
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), On Next Swing (10), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -25336,7 +25336,7 @@ Spell Level      : 42
 Range            : 5 yards
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 95
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), On Next Swing (10), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -25461,7 +25461,7 @@ GCD              : 1.5 seconds
 Category         : 85 (Type 0x0)
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 52
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Unknown (454), Unknown (493)
 Effects          :
@@ -26301,7 +26301,7 @@ Spell Level      : 50
 Range            : 5 yards
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 95
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), On Next Swing (10), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -26318,7 +26318,7 @@ Spell Level      : 58
 Range            : 5 yards
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Item - T2- Druid - Guardian 2P Bonus Maul Effect (467217 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 95
 Attributes       : On Next Swing (No Damage) (2), Is Ability (4), On Next Swing (10), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Unknown (454), Unknown (493)
 Effects          :
@@ -26641,7 +26641,7 @@ GCD              : 1.5 seconds
 Category         : 85 (Type 0x0)
 Labels           : 21: Druid Spells
 Stance Mask      : 0x00000090
-Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
+Affecting Spells : Clearcasting (16870 effect#1), Ferocity (16934 effect#1), Feral Instinct (16947 effect#2), Savage Fury (16998 effect#1), Reduced Maul and Swipe Cost (28855 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effect#9), Improved Swipe (439510 effect#1), Animal Fury (1213190 effect#1), Natural Instinct (1223242 effect#1)
 Family Flags     : 11, 52
 Attributes       : Is Ability (4), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Chain From Caster (76), Unknown (454), Unknown (493)
 Effects          :
@@ -56350,6 +56350,21 @@ Effects          :
 #1 (id=692811)   : Open Lock (33)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Gameobject (23)
 Description      : Opens a Stratholme postbox.
+
+Name             : Circle of Flame (id=17447) 
+School           : Fire
+Spell Type       : None
+Spell Level      : 1
+Duration         : 10 seconds
+Attributes       : Is Self Channelled (38), Can't Crit (93), Aura Points On Client (268), Unknown (493)
+Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13)
+Effects          :
+#1 (id=692904)   : Apply Aura (6) | Periodic Energize Power (24): every 1 seconds
+                   Base Value: 79 | Scaled Value: 79 (delta=0.5) | Target: Self (1)
+#2 (id=692905)   : Apply Aura (6) | Periodic Damage (3): fire every 1 seconds
+                   Base Value: 79 | Scaled Value: 79 (delta=0.5) | Target: Self (1)
+Description      : Channels $s1 health into mana every $t1 sec for $d.
+Tooltip          : Converting $s1 health into $s1 mana every $t1 sec.
 
 Name             : Testament of Hope (id=17448) 
 School           : Holy
@@ -88162,6 +88177,18 @@ Effects          :
                    Affected Spells: Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Moonfire (9833), Moonfire (9834), Moonfire (9835)
                    Family Flags: 1
 Description      : Increases the damage of your Moonfire spell by up to $s1.
+
+Name             : Reduced Maul and Swipe Cost (id=28855) [Spell Family (7), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 21: Druid Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=705014)   : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
+                   Base Value: -20 | Scaled Value: -20 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Swipe (769), Swipe (779), Swipe (780), Maul (6807), Maul (6808), Maul (6809), Maul (8972), Maul (9745), Swipe (9754), Maul (9880), Maul (9881), Swipe (9908)
+                   Family Flags: 11
+Description      : Reduces the Rage cost of Maul and Swipe by $/10;s1.
 
 Name             : Increased Water Shield Charges (id=28856) [Spell Family (11), Passive, Hidden] 
 School           : Physical

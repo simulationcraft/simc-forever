@@ -336,7 +336,7 @@ Druid
 28827   *Totemic Power
 28847    Healing Touch Refund
 28854    Improved Moonfire
-28855   *Reduced Maul and Swipe Cost
+28855    Reduced Maul and Swipe Cost
 29166    Innervate
 29194   *Corrupted Mind
 29195   *Corrupted Mind

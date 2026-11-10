@@ -22066,6 +22066,21 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Gameobject (23)
 Description      : Opens a Stratholme postbox.
 
+Name             : Circle of Flame (id=17447) 
+School           : Fire
+Spell Type       : None
+Spell Level      : 1
+Duration         : 10 seconds
+Attributes       : Is Self Channelled (38), Can't Crit (93), Aura Points On Client (268), Unknown (493)
+Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13)
+Effects          :
+#1 (id=692904)   : Apply Aura (6) | Periodic Energize Power (24): every 1 seconds
+                   Base Value: 79 | Scaled Value: 79 (delta=0.5) | Target: Self (1)
+#2 (id=692905)   : Apply Aura (6) | Periodic Damage (3): fire every 1 seconds
+                   Base Value: 79 | Scaled Value: 79 (delta=0.5) | Target: Self (1)
+Description      : Channels $s1 health into mana every $t1 sec for $d.
+Tooltip          : Converting $s1 health into $s1 mana every $t1 sec.
+
 Name             : Testament of Hope (id=17448) 
 School           : Holy
 Spell Type       : None
