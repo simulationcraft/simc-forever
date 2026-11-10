@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70888
-static constexpr std::array<spelltext_data_t, 8668> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8671> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8107,6 +8107,8 @@ static constexpr std::array<spelltext_data_t, 8668> __spelltext_data { {
   { 1300001, "Reduces the hit chance of Sleep effects against you by $s1%.", 0, 0 },
   { 1300128, "Melee attacks deal $1300130s1 additional Fire damage against Frozen targets.", 0, 0 },
   { 1300130, "Deal $s2 Fire damage.", "Deals $s2 Fire damage.", 0 },
+  { 1300180, "Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat.", "Stealthed. Movement slowed by $s2%.", 0 },
+  { 1300185, "Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health.", 0, 0 },
   { 1300209, "Bludgeon the target, dealing $s1 Physical damage. Canines and Hyaenidae are stunned and sit for $1293483d.", 0, 0 },
   { 1300240, "Inflicts$s1 Nature damage per $t1 sec. Deaks $s2 times as much damage to Trolls.", "Taking $w1 Nature damage per $t1 sec.", 0 },
   { 1300356, "Heals wielder of $s1 damage.", "Heals $s1 damage.", 0 },
@@ -8142,6 +8144,7 @@ static constexpr std::array<spelltext_data_t, 8668> __spelltext_data { {
   { 1302166, "Slice the target, dealing $s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies.", 0, 0 },
   { 1302190, "Chance on landing a damaging spell to restore $1302191s1 mana to you.", 0, 0 },
   { 1302191, "Restore $s1 mana.", "$s1 mana restored.", 0 },
+  { 1302193, "When struck in combat, inflicts $s1 Nature damage to the attacker.", 0, 0 },
   { 1302196, "Right Click to summon and dismiss your prairie wolf pup.", 0, 0 },
   { 1302205, "Tap your mind, restoring $o1 mana over $d, but reducing Intellect by $1302206s1 for $1302206d.", "Restoring $s1 mana every $t1 sec.", 0 },
   { 1302206, "Reduces Intellect by $s1.", "Intellect reduced by $s1.", 0 },
