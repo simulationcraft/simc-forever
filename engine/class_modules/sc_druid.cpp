@@ -170,9 +170,13 @@ void druid_t::reset()
 
 void druid_t::init_base_stats()
 {
-  parse_player_effects_t::init_base_stats();
 
-  // TODO: plug in baseline stats (see sc_priest::init_base_stats)
+  base.attack_power_per_strength = 2.0;
+  base.stats.attack_power        = -20.0;
+  base.attack_crit_chance = get_passive_player_value( .0074, "attack_crit" );
+  base.spell_crit_chance  = get_passive_player_value( .018, "spell_crit" );
+
+  parse_player_effects_t::init_base_stats();
 }
 
 void druid_t::init_spells()
@@ -791,14 +795,12 @@ struct cat_melee_t : public druid_melee_attack_t
     double const high_variance = 1.0 + variance / 2.0;
     double const low_variance  = 1.0 - variance / 2.0;
     double const base_damage   = p->equipped_weapons[ SLOT_MAIN_HAND ].dps * swing_time_ms * 0.001;
-    double const ap_damage     = p->composite_melee_attack_power() * ( 0.001 / 14 ) * swing_time_ms;
 
-    auto const top_damage = std::max( 1.0, util::ceil( base_damage * high_variance + ap_damage ) );
-    auto const low_damage = std::max( 1.0, util::floor( base_damage * low_variance + ap_damage ) );
+    auto const top_damage = std::max( 1.0, util::ceil( base_damage * high_variance ) );
+    auto const low_damage = std::max( 1.0, util::floor( base_damage * low_variance ) );
+        
 
-    double damage = p->equipped_weapons[ SLOT_MAIN_HAND ].damage + p->equipped_weapons[ SLOT_MAIN_HAND ].bonus_dmg;
-
-    p->cat_weapon            = weapon_t( WEAPON_FIST, ( 1 + 1 ) / 2, timespan_t::from_millis( 1000 ) );
+    p->cat_weapon            = weapon_t( WEAPON_FIST, ( 1 + 1 ) / 2, timespan_t::from_millis( swing_time_ms ) );
     p->cat_weapon.slot       = SLOT_MAIN_HAND;
     p->cat_weapon.min_dmg    = low_damage;
     p->cat_weapon.max_dmg    = top_damage;
@@ -947,7 +949,11 @@ void druid_t::create_buffs()
   buff.eclipse            = make_buff_fallback( talent.eclipse->ok(), this, "eclipse", eclipse_buff );
 
   auto const cat_form_spell = rank.cat_form.find_rank()->buff();
-  buff.cat_form             = make_buff_fallback<stat_buff_t>( cat_form_spell->ok(), this, "cat_form", cat_form_spell );
+  buff.cat_form             = make_buff_fallback<stat_buff_t>( cat_form_spell->ok(), this, "cat_form", cat_form_spell )
+                                  ->set_stack_change_callback( [ this ]( buff_t*, int, int new_ ) {
+                        current.attack_power_per_agility = new_ ? 1.0 : base.attack_power_per_agility;
+                        invalidate_cache( CACHE_ATTACK_POWER );
+                                  } );
 
   auto const prowl_spell = rank.prowl.find_rank()->spell();
   buff.prowl             = make_buff_fallback( prowl_spell->ok(), this, "prowl", prowl_spell );
