@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8651> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8652> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3340,6 +3340,7 @@ static constexpr std::array<spelltext_data_t, 8651> __spelltext_data { {
   {   18094, "Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a $m1% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by $17941s1%.", 0, 0 },
   {   18096, "Your non-periodic critical strikes with your Fire spells increase your Shadow damage done by $m1% for $18093d, and your non-periodic critical strikes with your Shadow spells increase your Fire damage done by $m1% for $18093d.", 0, 0 },
   {   18097, "When struck in combat has a 1% chance of raising a thorny shield that inflicts $17154s1 Nature damage to attackers when hit and increases Nature resistance by $17154s2 for $17154d.\r\n", 0, 0 },
+  {   18104, "Blasts a target for $s1 Nature damage.", 0, 0 },
   {   18107, "Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health", 0, 0 },
   {   18112, "Blasts a target for $s1 Fire damage.", 0, 0 },
   {   18118, 0, "Movement slowed by $s1%.", 0 },
