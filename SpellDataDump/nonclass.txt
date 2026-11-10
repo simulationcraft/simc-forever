@@ -24982,6 +24982,18 @@ Effects          :
 #1 (id=695224)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Frost Blast (id=18276) 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694728)   : School Damage (2): frost
+                   Base Value: 105 | Scaled Value: 105 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Frost damage.
+
 Name             : Death by Peasant (id=18308) 
 School           : Physical
 Spell Type       : None

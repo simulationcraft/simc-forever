@@ -18814,7 +18814,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -18837,7 +18837,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -18860,7 +18860,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -18883,7 +18883,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -18906,7 +18906,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -18932,7 +18932,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -18958,7 +18958,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -18984,7 +18984,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 31
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -19008,7 +19008,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 31
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -28835,7 +28835,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -28858,7 +28858,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -28881,7 +28881,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (454), Unknown (493)
 Effects          :
@@ -29136,7 +29136,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -29162,7 +29162,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -29349,7 +29349,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 31
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -29373,7 +29373,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 31
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -60544,6 +60544,18 @@ Effects          :
                    Family Flags: 1, 3, 10, 14, 32, 33, 50
 Description      : Increases the damage dealt or life drained by your Shadow spells by $s1%.
 
+Name             : Frost Blast (id=18276) 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 20 yards/sec
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694728)   : School Damage (2): frost
+                   Base Value: 105 | Scaled Value: 105 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Frost damage.
+
 Name             : Amplify Curse (id=18288) [Spell Family (5)] 
 Talent Entry     : Generic [tree=class, row=3, col=3, max_rank=1, req_points=0]
 Class            : Warlock
@@ -87198,6 +87210,22 @@ Effects          :
                    Family Flags: 7
 Description      : Increases healing done by Lesser Healing Wave by up to $s1.
 
+Name             : Increased Shock Damage (id=27859) [Spell Family (11), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 24: Shaman Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=704622)   : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+                   Affected Spells: Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Frost Shock (8056), Frost Shock (8058), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Flame Shock (10447), Flame Shock (10448), Frost Shock (10472), Frost Shock (10473), Flame Shock (29228), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690)
+                   Family Flags: 20, 28, 31
+#2 (id=1328150)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
+                   Base Value: 2 | Scaled Value: 2 | Misc Value: 22 | Target: Self (1)
+                   Affected Spells: Flame Shock (8050), Flame Shock (8052), Flame Shock (8053), Flame Shock (10447), Flame Shock (10448), Flame Shock (29228)
+                   Family Flags: 28
+Description      : Increases the damage of your Shock spells by $s1%.
+
 Name             : Dark Rune (id=27869) 
 School           : Shadow
 Spell Type       : None
@@ -88672,7 +88700,7 @@ Cooldown         : 6 seconds
 Category         : 19 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 6 seconds
-Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
+Affecting Spells : Call of Flame (16038 effects: #1, #2, #3), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Increased Shock Damage (27859 effects: #1, #2), Burn (415231 effects: #1, #2, #3, #4, #5), Storm, Earth, and Fire (440569 effect#3), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1), Flame Charged (1270478 effect#1), Increased Flame Shock Duration (1291077 effect#1)
 Family Flags     : 28
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Periodic Can Crit (265), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -95580,7 +95608,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -95607,7 +95635,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -95634,7 +95662,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -95661,7 +95689,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -95688,7 +95716,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -95715,7 +95743,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :
@@ -95742,7 +95770,7 @@ Duration         : 2 seconds
 Cooldown         : 6 seconds
 Category         : 2171 (Type 0x0)
 Category Cooldown: 6 seconds
-Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
+Affecting Spells : Concussion (16035 effect#1), Convection (16039 effect#1), Reverberation (16040 effect#1), Elemental Fury (16089 effect#1), Clearcasting (16246 effect#1), Stormstrike (17364 effect#2), Increased Shock Damage (27859 effect#1), S03 - Item - TAQ - Shaman - Elemental 4P Bonus (1213902 effect#1), Shamanistic Focus (1223030 effect#1)
 Family Flags     : 20
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Show Mechanic as Combat Text (213), Unknown (493)
 Effects          :

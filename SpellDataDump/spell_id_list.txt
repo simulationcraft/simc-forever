@@ -4253,7 +4253,7 @@ Shaman
 27740   *Reincarnation
 27797   *Reduced Riptide Cost
 27855    Increased Lesser Healing Wave
-27859   *Increased Shock Damage
+27859    Increased Shock Damage
 28818   *Totemic Energy
 28820   *Lightning Shield
 28821   *Lightning Shield
