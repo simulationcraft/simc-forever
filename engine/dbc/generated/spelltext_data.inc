@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70862
-static constexpr std::array<spelltext_data_t, 8648> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8649> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8114,6 +8114,7 @@ static constexpr std::array<spelltext_data_t, 8648> __spelltext_data { {
   { 1300787, "Wounds the target causing them to bleed for $o1 damage over $d. Deals $s2 times as much damage if applied while behind the target.", "Bleeding for $w1 damage every $t1 sec.", 0 },
   { 1300890, "Dying heals all party members within $1300891r yds for $1300891s1.", "Dying heals all party members within $1300891r yds for $1300891s1.", 0 },
   { 1300891, "Dying heals all party members within $r yds for $s1.\r\n", "Dying heals all party members within $r yds for $s1.", 0 },
+  { 1300925, "Reduces the hit chance of Charm effects against you by $s1%.", 0, 0 },
   { 1301127, "Improves your chance to hit with ranged weapons by ${$s1}.1%.", 0, 0 },
   { 1301167, "Absorb up to $1316048s1 damage and Stun yourself for $d. When the Stun expires, gain $1301168s1% increased movement speed for $1301168d.", "Stunned", 0 },
   { 1301168, "$@spelldesc1301167", "Movement speed increased by $s1%.", 0 },
