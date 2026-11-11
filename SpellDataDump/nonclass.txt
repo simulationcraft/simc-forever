@@ -68065,6 +68065,30 @@ Effects          :
 Description      : Redeem an Undead corpse, laying its spirit to rest and restoring $s1 Health. Only usable on Undead corpses within $1298497a1 yds.
 Tooltip          : Restore $s1 Health.
 
+Name             : Warblade of Caer Darrow (id=1298499) 
+School           : Frost
+Spell Type       : Melee
+Range            : 100 yards
+Min Travel Time  : 0.4 seconds
+Triggered By     : Warblade of Caer Darrow (1298500)
+Attributes       : Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Do Not Display Range (126), Suppress Weapon Procs (151), Missile Speed is Delay (in sec) (292), Do Not Display Power Cost (303), Do Not Display Cast Time (441), Unknown (493)
+Effects          :
+#1 (id=1322194)  : School Damage (2): frost
+                   Base Value: 27.72 | Scaled Value: 27.72 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Melee attacks with this weapon deal $s1 Frost damage.
+
+Name             : Warblade of Caer Darrow (id=1298500) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee, Unknown 38
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1322195)  : Apply Aura (6) | Proc Trigger Spell (42): Warblade of Caer Darrow
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1298499 | Target: Self (1)
+Description      : Melee attacks with this weapon deal $1298499s1 Frost damage.
+
 Name             : Decrease Threat All 01 (id=1298501) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None

@@ -4708,6 +4708,7 @@ Effects          :
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $3355d.  Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
 Name             : Volley (desc=Rank 1) (id=1510) [Spell Family (9)] 
+Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -4721,7 +4722,8 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Suppress Weapon Procs (151), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Aura Interrupt   : Action (2), Moving (3), Interacting (10), Looting (11), Attacking (12), Use Item (13), Damage Channel Duration (14)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=680772)   : Dummy (3)
@@ -20386,7 +20388,8 @@ Family Flags     : 26, 127
 Attributes       : Passive (6), Do Not Log (8), Only On Player (104), Newest Exclusive Complete (362), Unknown (493)
 Effects          :
 #1 (id=687698)   : Apply Aura Raid (65) | Proc Trigger Spell (42)
-                   Base Value: 0 | Scaled Value: 0 | Radius: 30 yards | Target: Self (1)
+                   Base Value: 8248 | Scaled Value: 8248 | Radius: 30 yards | Target: Self (1)
+Hotfixed         : Base Value (0 -> 8248)
 Tooltip          : Main hand attacks deal an additional ${$8248m1/77} to ${$8248M1/25} Fire damage.
 
 Name             : Flametongue Totem Proc (desc=Rank 1) (id=8253) [Spell Family (11)] 
@@ -43264,6 +43267,7 @@ Effects          :
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Volley (desc=Rank 2) (id=14294) [Spell Family (9)] 
+Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -43277,7 +43281,8 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Suppress Weapon Procs (151), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Aura Interrupt   : Action (2), Moving (3), Interacting (10), Looting (11), Attacking (12), Use Item (13), Damage Channel Duration (14)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=691336)   : Dummy (3)
@@ -43289,6 +43294,7 @@ Effects          :
 Description      : Continuously fires a volley of ammo at the target area, causing $1279719s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 Name             : Volley (desc=Rank 3) (id=14295) [Spell Family (9)] 
+Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -43302,7 +43308,8 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Suppress Weapon Procs (151), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Aura Interrupt   : Action (2), Moving (3), Interacting (10), Looting (11), Attacking (12), Use Item (13), Damage Channel Duration (14)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=692653)   : Dummy (3)
@@ -142132,6 +142139,7 @@ Effects          :
 Description      : Remove fel taint and stolen energies from the target.
 
 Name             : Volley (desc=Rank 3) (id=1279715) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -142141,12 +142149,13 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Suppress Weapon Procs (151), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1292220)  : School Damage (2): arcane
                    Base Value: 112 | Scaled Value: 112 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Volley (desc=Rank 2) (id=1279719) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -142156,12 +142165,13 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Suppress Weapon Procs (151), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1292228)  : School Damage (2): arcane
                    Base Value: 91 | Scaled Value: 91 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Volley (desc=Rank 1) (id=1279721) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -142171,7 +142181,7 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Suppress Weapon Procs (151), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1292230)  : School Damage (2): arcane
                    Base Value: 70 | Scaled Value: 70 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
@@ -147621,6 +147631,30 @@ Effects          :
                    Base Value: 933 | Scaled Value: 933 (delta=0.118) | Target: Self (1)
 Description      : Redeem an Undead corpse, laying its spirit to rest and restoring $s1 Health. Only usable on Undead corpses within $1298497a1 yds.
 Tooltip          : Restore $s1 Health.
+
+Name             : Warblade of Caer Darrow (id=1298499) 
+School           : Frost
+Spell Type       : Melee
+Range            : 100 yards
+Min Travel Time  : 0.4 seconds
+Triggered By     : Warblade of Caer Darrow (1298500)
+Attributes       : Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Do Not Display Range (126), Suppress Weapon Procs (151), Missile Speed is Delay (in sec) (292), Do Not Display Power Cost (303), Do Not Display Cast Time (441), Unknown (493)
+Effects          :
+#1 (id=1322194)  : School Damage (2): frost
+                   Base Value: 27.72 | Scaled Value: 27.72 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Melee attacks with this weapon deal $s1 Frost damage.
+
+Name             : Warblade of Caer Darrow (id=1298500) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee, Unknown 38
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1322195)  : Apply Aura (6) | Proc Trigger Spell (42): Warblade of Caer Darrow
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1298499 | Target: Self (1)
+Description      : Melee attacks with this weapon deal $1298499s1 Frost damage.
 
 Name             : Decrease Threat All 01 (id=1298501) [Passive, Hidden] 
 School           : Physical

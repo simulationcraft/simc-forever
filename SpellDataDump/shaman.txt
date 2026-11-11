@@ -2109,7 +2109,8 @@ Family Flags     : 26, 127
 Attributes       : Passive (6), Do Not Log (8), Only On Player (104), Newest Exclusive Complete (362), Unknown (493)
 Effects          :
 #1 (id=687698)   : Apply Aura Raid (65) | Proc Trigger Spell (42)
-                   Base Value: 0 | Scaled Value: 0 | Radius: 30 yards | Target: Self (1)
+                   Base Value: 8248 | Scaled Value: 8248 | Radius: 30 yards | Target: Self (1)
+Hotfixed         : Base Value (0 -> 8248)
 Tooltip          : Main hand attacks deal an additional ${$8248m1/77} to ${$8248M1/25} Fire damage.
 
 Name             : Flametongue Totem Proc (desc=Rank 1) (id=8253) [Spell Family (11)] 
