@@ -152205,7 +152205,8 @@ Effects          :
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
 Description      : Increases Shadow Word: Death's critical strike chance on targets at or below $s2% health by $s1%.
 
-Name             : Greater Firepower (id=1310077) 
+Name             : Holy Power (id=1310077) 
+Hotfixed         : Name
 School           : Holy
 Spell Type       : Magic
 Duration         : 1800 seconds

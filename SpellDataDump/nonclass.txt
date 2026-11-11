@@ -72110,7 +72110,8 @@ Effects          :
 Description      : Bash the target in the face, causing $m1 Physical damage every $t1 sec for 20 sec.
 Tooltip          : Bleeding for $w1 Physical damage every $t1 sec.
 
-Name             : Greater Firepower (id=1310077) 
+Name             : Holy Power (id=1310077) 
+Hotfixed         : Name
 School           : Holy
 Spell Type       : Magic
 Duration         : 1800 seconds
