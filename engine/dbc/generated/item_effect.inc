@@ -820,7 +820,7 @@ static constexpr std::array<item_effect_t, 1384> __item_effect_data { {
   { 103144,  26168,  21488,   0,   0,    0,  180000,      -1 }, // Chitinous Spikes
   { 103239,  26208,  21517,   1,   1,    0,      -1,      -1 }, // Resist Silence 10
   { 103574,  11789,  21526,   0,   1,    0,      -1,      -1 }, // Water Breathing
-  { 103511, 1310077,  21546,   0,   0, 2593,       0,    3000 }, // Greater Firepower
+  { 103511, 1310077,  21546,   0,   0, 2593,       0,    3000 }, // Holy Power
   { 237791, 1317443,  21565,   0,   1,    0,      -1,      -1 }, // Rune of Perfection
   { 237792, 1317444,  21565,   1,   1,    0,      -1,      -1 }, // Rune of Perfection
   { 237444, 1315969,  21566,   0,   1,    0,      -1,      -1 }, // Rune of Perfection
