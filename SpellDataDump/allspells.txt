@@ -117848,6 +117848,16 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | Target: Self (1)
 Tooltip          : Enraged.
 
+Name             : Time Step (id=463001) [Hidden] 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 1
+Duration         : Aura (infinite)
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Allow While Mounted (24), Allow While Sitting (27), Unknown (493)
+Effects          :
+#1 (id=1173319)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 17 | Scaled Value: 17 | Target: Self (1)
+
 Name             : Balance of Light and Shadow (id=463008) 
 School           : Physical
 Spell Type       : None
@@ -149517,6 +149527,19 @@ Effects          :
 Description      : Chance on landing a damaging spell to assault the target's mind, increasing the casting time of all spells by $s1% for $d. Stacks up to $u times.
 Tooltip          : Casting time increased by $s1%.
 
+Name             : Hedgecutter (id=1302344) 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 58
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1327907)  : School Damage (2): arcane
+                   Base Value: 42 | Scaled Value: 42 (delta=0.42) | Target: Targeted Enemy (6)
+#2 (id=1327908)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Description      : Slice the target with magically enhanced precision, dealing $s1 Arcane damage. Deals $s2 times as much damage to Plants.
+
 Name             : Improved Pick Pocket and Distract 02 (id=1302345) [Spell Family (8), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -149536,6 +149559,31 @@ Effects          :
 #1 (id=1327910)  : Apply Aura (6) | Mechanic Resistance (117)
                    Base Value: 10 | Scaled Value: 10 | Mechanic: Flee | Target: Self (1)
 Description      : Reduces the hit chance of Fear effects against you by $s1%.
+
+Name             : Mana Channeling (id=1302348) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Internal Cooldown: 0.01 seconds
+Proc Chance      : 100%
+Proc Flags       : White Ranged
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1327912)  : Apply Aura (6) | Proc Trigger Spell (42): Mana Channeling
+                   Base Value: 65 | Scaled Value: 65 | Trigger Spell: 1302350 | Target: Self (1)
+Description      : Chance on hit to restore $s1 mana.
+
+Name             : Mana Channeling (id=1302350) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 28
+Triggered By     : Mana Channeling (1302348)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1327915)  : Energize Power (30)
+                   Base Value: 28 | Scaled Value: 28 | Resource: mana | Target: Self (1)
+Description      : Restores $s1 mana.
+Tooltip          : Restores $s1 mana.
 
 Name             : Magnetize (id=1302356) 
 School           : Arcane
@@ -155911,6 +155959,21 @@ Effects          :
 #1 (id=1355571)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 276331 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Right Click to summon and dismiss Spawn of Grubthor.
+
+Name             : Rend (id=1320824) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 50
+Range            : 100 yards
+Duration         : 14 seconds
+Proc Chance      : 101%
+Mechanic         : Bleed
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1355692)  : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
+                   Base Value: 20 | Scaled Value: 20 | Target: Targeted Enemy (6)
+Description      : Wounds the target, causing them to bleed for $o1 damage over $d.
+Tooltip          : Bleeding for $s1 damage every $t1 sec.
 
 Name             : Toss Crystal Heart (id=1320898) 
 School           : Physical
