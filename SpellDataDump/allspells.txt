@@ -56581,12 +56581,25 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Stat: Int | Target: Self (1)
 Description      : Increases your Intellect by $m1%.
 
+Name             : Crest of Retribution (id=17495) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Proc Chance      : 100%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken
+Attributes       : Passive (6), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=694851)   : Apply Aura (6) | Proc Trigger Spell (42): Crest of Retribution
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 17496 | Target: Self (1)
+Description      : Deals $17496s1 Physical damage every time you block.
+
 Name             : Crest of Retribution (id=17496) 
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 60
 Range            : 100 yards
 Cast Time        : 1 seconds
+Triggered By     : Crest of Retribution (17495)
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=694852)   : School Damage (2): physical
