@@ -21799,6 +21799,22 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Attach the pieces into a whole.
 
+Name             : Brain Hacker (id=17148) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 5 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=694524)   : School Damage (2): physical
+                   Base Value: 250 | Scaled Value: 250 (delta=0.4) | Target: Targeted Enemy (6)
+#2 (id=694525)   : Apply Aura (6) | Modify Spell Haste (65)
+                   Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
+Description      : Wounds the target's head, dealing $s1 Physical damage, and increasing the casting time of all spells by $s2% for $d.
+Tooltip          : Casting time increased by $s2%.
+
 Name             : Destiny (id=17152) 
 School           : Physical
 Spell Type       : None
@@ -25849,6 +25865,20 @@ Effects          :
                    Base Value: -92 | Scaled Value: -92 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Deals $s1 Shadow damage every $t1 sec for $d and lowers their attack power by $s2 for $d.
 Tooltip          : Taking $s1 Shadow damage every $t sec and attack power lowered by $s2.
+
+Name             : Siphon Health (id=18652) 
+School           : Shadow
+Spell Type       : None
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : No Aura Icon (60), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=695978)   : Apply Aura (6) | Periodic Damage (3): shadow every 1 seconds
+                   Base Value: 49 | Scaled Value: 49 | Target: Targeted Enemy (6)
+Description      : Deals $s1 Shadow damage every $t1 sec for $d. All damage done is then transferred to the caster.
+Tooltip          : Deals $s1 Shadow damage every $t1 sec.
 
 Name             : Increased All Resist 05 (id=18676) [Passive, Hidden] 
 School           : Physical
@@ -68650,6 +68680,15 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Trigger Spell: 15601 | Target: Self (1)
 Description      : Attacks have a chance to grant $15494s1 extra attacks on your next swing. Attacks against Orcs are $s2 times as likely to activate this effect.
 Tooltip          : Infused with the spirit of Franclorn Forgewright. You may only speak in Dwarvish.
+
+Name             : Resist Fear 08 (id=1301126) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1326092)  : Apply Aura (6) | Mechanic Resistance (117)
+                   Base Value: 8 | Scaled Value: 8 | Mechanic: Flee | Target: Self (1)
+Description      : Reduces the hit chance of Fear effects against you by $s1%.
 
 Name             : Increased Hit Chance - Ranged - 03 (id=1301127) [Passive, Hidden] 
 School           : Physical
