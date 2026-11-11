@@ -50,6 +50,9 @@ struct druid_td_t final : public actor_target_data_t
     buff_t* faerie_fire;
   } debuff;
 
+  // Combo points belong to the target they were generated on
+  int combo_points = 0;
+
   druid_td_t( player_t& target, druid_t& p );
 
   template <typename Buff = buff_t, typename... Args>
@@ -97,6 +100,7 @@ struct druid_t final : public parse_player_effects_t
     spell_ranks_t moonfire;
     spell_ranks_t omen_of_clarity;
     spell_ranks_t prowl;
+    spell_ranks_t rip;
     spell_ranks_t shred;
     spell_ranks_t starfire;
     spell_ranks_t wrath;
@@ -127,6 +131,15 @@ struct druid_t final : public parse_player_effects_t
   void apply_action_effects( action_t* a );
   void create_actions() override;
   double resource_loss( resource_e resource_type, double amount, gain_t* g = nullptr, action_t* a = nullptr ) override;
+  std::unique_ptr<expr_t> create_expression( util::string_view name ) override;
+
+  static constexpr int max_combo_points = 5;
+  // Target that currently holds the player's combo points
+  player_t* combo_target = nullptr;
+
+  int combo_points( player_t* t ) const;
+  void gain_combo_points( player_t* t, int amount, gain_t* g );
+  void spend_combo_points( player_t* t, gain_t* g );
 
   resource_e primary_resource() const override
   {
@@ -166,6 +179,10 @@ void druid_t::reset()
   parse_player_effects_t::reset();
 
   form = CASTER_FORM;
+
+  if ( combo_target )
+    get_target_data( combo_target )->combo_points = 0;
+  combo_target = nullptr;
 }
 
 void druid_t::init_base_stats()
@@ -261,6 +278,15 @@ void druid_t::init_spells()
       spell_container_t().set_spell( 5215 ),
       spell_container_t().set_spell( 6783 ),
       spell_container_t().set_spell( 9913 ),
+  };
+  rank.rip = {
+      this,
+      spell_container_t().set_spell( 1079 ),
+      spell_container_t().set_spell( 9492 ),
+      spell_container_t().set_spell( 9493 ),
+      spell_container_t().set_spell( 9752 ),
+      spell_container_t().set_spell( 9894 ),
+      spell_container_t().set_spell( 9896 ),
   };
   rank.shred = {
       this,
@@ -362,6 +388,24 @@ struct druid_action_t : public parse_action_effects_t<Base>
                               static_cast<unsigned>( this->p()->form ), form_mask );
     }
     return false;
+  }
+
+  double gain_energize_resource( resource_e resource_type, double amount, gain_t* g ) override
+  {
+    if ( resource_type == RESOURCE_COMBO_POINT )
+    {
+      this->p()->gain_combo_points( this->target, static_cast<int>( amount ), g );
+    }
+
+    return action_base_t::gain_energize_resource( resource_type, amount, g );
+  }
+
+  std::unique_ptr<expr_t> create_expression( util::string_view name ) override
+  {
+    if ( name == "combo_points" )
+      return make_fn_expr( name, [ this ]() { return this->p()->combo_points( this->target ); } );
+
+    return action_base_t::create_expression( name );
   }
 
   void execute() override
@@ -760,6 +804,63 @@ struct shred_t : public druid_melee_attack_t
   }
 };
 
+struct druid_combo_attack_t : public druid_melee_attack_t
+{
+  druid_combo_attack_t( std::string_view n, druid_t* player, const spell_data_t* s )
+    : druid_melee_attack_t( n, player, s )
+  {
+  }
+
+  bool ready() override
+  {
+    if ( p()->combo_points( target ) < 1 )
+      return false;
+
+    return druid_melee_attack_t::ready();
+  }
+
+  void execute() override
+  {
+    combo_points = p()->combo_points( target );
+
+    druid_melee_attack_t::execute();
+
+    p()->spend_combo_points( target, gain );
+  }
+
+protected:
+  int combo_points = 0;
+};
+
+struct rip_t : public druid_combo_attack_t
+{
+  rip_t( druid_t* player, std::string_view options_str )
+
+    : druid_combo_attack_t( "rip", player, player->rank.rip.find_rank()->spell() )
+
+  {
+    parse_options( options_str );
+
+    // TODO confirm refresh behavior
+  }
+
+  double base_ta( const action_state_t* s ) const override
+  {
+    return druid_combo_attack_t::base_ta( s ) + combo_points * data().effectN( 1 ).pp_combo_points();
+  }
+
+  // Per a community source: the total AP scaling is 6% per combo point, capped at 24% (4 combo points).
+  double attack_tick_power_coefficient( const action_state_t* ) const override
+  {
+    constexpr double ap_per_combo_point = 0.06;
+    constexpr int max_scaling_points    = 4;
+
+    auto const base_ticks = data().duration() / data().effectN( 1 ).period();
+
+    return ap_per_combo_point * std::min( combo_points, max_scaling_points ) / base_ticks;
+  }
+};
+
 struct druid_melee_t : public druid_melee_attack_t
 {
   druid_melee_t( std::string_view name, druid_t* p ) : druid_melee_attack_t( name, p, spell_data_t::nil() )
@@ -854,6 +955,45 @@ struct auto_attack_t : public druid_melee_attack_t
   }
 };
 
+int druid_t::combo_points( player_t* t ) const
+{
+  return t ? get_target_data( t )->combo_points : 0;
+}
+
+void druid_t::gain_combo_points( player_t* t, int amount, gain_t* )
+{
+  if ( combo_target && combo_target != t )
+  {
+    auto old_td = get_target_data( combo_target );
+    sim->print_log( "{} loses {} combo_points on {}", *this, old_td->combo_points, *combo_target );
+    resource_loss( RESOURCE_COMBO_POINT, old_td->combo_points, get_gain( "combo_points_lost" ) );
+    old_td->combo_points = 0;
+  }
+
+  combo_target = t;
+
+  auto td      = get_target_data( t );
+  td->combo_points = std::min( td->combo_points + amount, max_combo_points );
+}
+
+void druid_t::spend_combo_points( player_t* t, gain_t* g )
+{
+  auto td = get_target_data( t );
+
+  sim->print_log( "{} spends {} combo_points on {}", *this, td->combo_points, *t );
+
+  resource_loss( RESOURCE_COMBO_POINT, td->combo_points, g );
+  td->combo_points = 0;
+}
+
+std::unique_ptr<expr_t> druid_t::create_expression( util::string_view name )
+{
+  if ( name == "combo_points" )
+    return make_fn_expr( name, [ this ]() { return combo_points( target ); } );
+
+  return parse_player_effects_t::create_expression( name );
+}
+
 double druid_t::resource_loss( resource_e resource_type, double amount, gain_t* g, action_t* a )
 {
   if ( resource_type == RESOURCE_ENERGY && buff.poised->check() && a && a->data().affected_by( buff.poised->data() ) )
@@ -887,6 +1027,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new cat_form_t( this, options_str );
   if ( name == "prowl" )
     return new prowl_t( this, options_str );
+  if ( name == "rip" )
+    return new rip_t( this, options_str );
   if ( name == "shred" )
     return new shred_t( this, options_str );
 
