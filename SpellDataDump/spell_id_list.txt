@@ -1707,7 +1707,7 @@ Mage
 16413    Fireball
 16415    Fireball
 16454    Searing Blast
-16551   *Felstriker
+16551    Felstriker
 16757    Arctic Reach
 16785   *Flamebreak
 16876   *Arcane Intellect
@@ -2149,7 +2149,7 @@ Mage
 1292739  Hydra Strike
 1293790  Frostbolt
 1297659 *Teleport: Dalaran
-1298416 *Frostbolt
+1298416  Frostbolt
 1299850  Fireball
 1300130  Frostburn
 1300140 *Wit's End

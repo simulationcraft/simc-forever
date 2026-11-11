@@ -4675,6 +4675,20 @@ Effects          :
                    Affected School(s): Fire
 Description      : Blasts a target for $s1 Fire damage and increases Fire damage done to target by $s2 for $d.
 
+Name             : Felstriker (id=16551) [Spell Family (3)] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Duration         : 3 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693837)   : Apply Aura (6) | Modify Critical Strike% (290)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+#2 (id=693838)   : Apply Aura (6) | Modify Hit% (54)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+Description      : All attacks are guaranteed to land and will be critical strikes for the next $d.
+Tooltip          : Chance to critically strike increased by $s1% and chance to hit increased by $s2%.
+
 Name             : Arctic Reach (id=16757) [Spell Family (3), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=4, col=9, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(10, 20)]
@@ -9818,6 +9832,23 @@ Effects          :
 #2 (id=1314776)  : School Damage (2): frost
                    Base Value: 42 | Scaled Value: 42 (delta=0.4) | Target: Targeted Enemy (6)
 Description      : Launches a bolt of frost at the enemy causing $s2 Frost damage and slowing movement speed by $s1% for $d.
+Tooltip          : Movement slowed by $s1%.
+
+Name             : Frostbolt (id=1298416) [Spell Family (3)] 
+School           : Frost
+Spell Type       : Magic
+Spell Level      : 30
+Range            : 100 yards
+Velocity         : 28 yards/sec
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1322069)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Mechanic: Snare | Target: Targeted Enemy (6)
+#2 (id=1322070)  : School Damage (2): frost
+                   Base Value: 105 | Scaled Value: 105 (delta=0.6) | Target: Targeted Enemy (6)
+Description      : Deal an additional $s2 Frost damage and slow movement speed by $s1% for $d.
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Fireball (id=1299850) [Spell Family (3)] 
