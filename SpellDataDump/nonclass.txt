@@ -21953,6 +21953,20 @@ Effects          :
 Description      : Gives $s1 additional armor to nearby party members for $d. Players may only have one aura on them per paladin at any one time.
 Tooltip          : Armor increased by $s1.
 
+Name             : Mark of the Dragon Lord (id=17252) 
+School           : Physical
+Spell Type       : None
+Duration         : 1800 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694908)   : Apply Aura (6) | Absorb Damage (69)
+                   Base Value: 500 | Scaled Value: 500 | Misc Value: 0x7f | Target: Self (1)
+                   Affected School(s): All
+#2 (id=694909)   : Apply Aura (6) | Periodic Energize Power (24): every 5 seconds
+                   Base Value: 22 | Scaled Value: 22 | Target: Self (1)
+Description      : A protective mana shield surrounds the caster absorbing $s1 damage. While the shield holds, increases mana regeneration by $s2 every $t2 sec for $d.
+Tooltip          : Absorbs damage and increases mana regeneration by $s2 every $t2 sec.
+
 Name             : Test Fetid Skull (id=17271) 
 School           : Physical
 Spell Type       : None
