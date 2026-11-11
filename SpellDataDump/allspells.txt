@@ -9165,7 +9165,6 @@ Name             : Green Woolen Bag (id=3758)
 School           : Physical
 Spell Type       : None
 Cast Time        : 12.5 seconds
-Proc Chance      : 101%
 Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=686710)   : Create Item (24)
@@ -14434,7 +14433,6 @@ Name             : Red Woolen Bag (id=6688)
 School           : Physical
 Spell Type       : None
 Cast Time        : 25 seconds
-Proc Chance      : 101%
 Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=684554)   : Create Item (24)
@@ -14454,7 +14452,6 @@ Name             : Green Silk Pack (id=6693)
 School           : Physical
 Spell Type       : None
 Cast Time        : 45 seconds
-Proc Chance      : 101%
 Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=685253)   : Create Item (24)
@@ -14464,7 +14461,6 @@ Name             : Black Silk Pack (id=6695)
 School           : Physical
 Spell Type       : None
 Cast Time        : 45 seconds
-Proc Chance      : 101%
 Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=684100)   : Create Item (24)
