@@ -87,6 +87,7 @@ struct druid_t final : public parse_player_effects_t
     buff_t* moonkin_aura;
     buff_t* prowl;
     buff_t* poised;
+    buff_t* mark_of_the_wild;
   } buff;
 
   struct
@@ -97,6 +98,7 @@ struct druid_t final : public parse_player_effects_t
     spell_ranks_t hurricane;
     spell_ranks_t innervate;
     spell_ranks_t insect_swarm;
+    spell_ranks_t mark_of_the_wild;
     spell_ranks_t moonfire;
     spell_ranks_t omen_of_clarity;
     spell_ranks_t prowl;
@@ -255,6 +257,16 @@ void druid_t::init_spells()
       spell_container_t().set_spell( 24975 ),
       spell_container_t().set_spell( 24976 ),
       spell_container_t().set_spell( 24977 ),
+  };
+  rank.mark_of_the_wild = {
+      this,
+      spell_container_t().set_spell( 1126 ),
+      spell_container_t().set_spell( 5232 ),
+      spell_container_t().set_spell( 6756 ),
+      spell_container_t().set_spell( 5234 ),
+      spell_container_t().set_spell( 8907 ),
+      spell_container_t().set_spell( 9884 ),
+      spell_container_t().set_spell( 9885 ),
   };
   rank.moonfire = {
       this,
@@ -771,6 +783,23 @@ private:
   timespan_t cat_gcd_mod  = 0_ms;
 };
 
+struct mark_of_the_wild_t : public druid_spell_t
+{
+  mark_of_the_wild_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "mark_of_the_wild", player, player->rank.mark_of_the_wild.find_rank()->spell() )
+  {
+    parse_options( options_str );
+    harmful = false;
+  }
+
+  void execute() override
+  {
+    druid_spell_t::execute();
+
+    p()->buff.mark_of_the_wild->trigger();
+  }
+};
+
 struct innervate_t : public druid_spell_t
 {
   innervate_t( druid_t* player, std::string_view options_str )
@@ -1019,6 +1048,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new hurricane_t( this, options_str );
   if ( name == "faerie_fire" )
     return new faerie_fire_t( this, options_str );
+  if ( name == "mark_of_the_wild" )
+    return new mark_of_the_wild_t( this, options_str );
   if ( name == "innervate" )
     return new innervate_t( this, options_str );
   if ( name == "moonkin_form" )
@@ -1078,6 +1109,12 @@ void druid_t::create_buffs()
 
   auto const innervate_buff = rank.innervate.find_rank()->spell();
   buff.innervate            = make_buff_fallback( innervate_buff->ok(), this, "innervate", innervate_buff );
+
+  auto const mark_of_the_wild_spell = rank.mark_of_the_wild.find_rank()->spell();
+  auto const mark_of_the_wild_buff = debug_cast<stat_buff_t*>(
+      make_buff_fallback<stat_buff_t>( mark_of_the_wild_spell->ok(), this, "mark_of_the_wild", mark_of_the_wild_spell ) );
+
+  buff.mark_of_the_wild = mark_of_the_wild_buff;
 
   auto const omen_of_clarity_buff = rank.omen_of_clarity.find_rank()->buff();
   buff.clearcasting = make_buff_fallback( omen_of_clarity_buff->ok(), this, "clearcasting", omen_of_clarity_buff );
