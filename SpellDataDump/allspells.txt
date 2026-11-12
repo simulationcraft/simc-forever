@@ -18658,6 +18658,7 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $15568s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 1) (id=8024) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -18669,7 +18670,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=685841)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 5
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8026m1/77-1+($29469m1)} to ${$8026m1/25+($29469m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8026m1/77-1+($29469m1)} to ${$8026m1/25+($29469m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon Proc (desc=Rank 1) (id=8026) [Spell Family (11)] 
 Class            : Shaman
@@ -18686,6 +18687,7 @@ Effects          :
                    Base Value: 326 | Scaled Value: 440 | Points Per Level: 19 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Weapon (desc=Rank 2) (id=8027) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -18697,7 +18699,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=685718)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 4
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8028m1/77-1+($29470m1)} to ${$8028m1/25+($29470m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8028m1/77-1+($29470m1)} to ${$8028m1/25+($29470m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon Proc (desc=Rank 2) (id=8028) [Spell Family (11)] 
 Class            : Shaman
@@ -18728,6 +18730,7 @@ Effects          :
                    Base Value: 716 | Scaled Value: 1052 | Points Per Level: 42 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Weapon (desc=Rank 3) (id=8030) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -18739,7 +18742,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=686022)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 3
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8029m1/77-1+($10444m1)} to ${$8029m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8029m1/77-1+($10444m1)} to ${$8029m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Frostbrand Weapon (desc=Rank 1) (id=8033) 
 Class            : Shaman
@@ -20240,6 +20243,7 @@ Effects          :
 Tooltip          : Main hand attacks deal an additional ${$8253m1/77} to ${$8253M1/25} Fire damage.
 
 Name             : Windfury Weapon (desc=Rank 1) (id=8232) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -20252,7 +20256,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=686257)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 283
-Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8233s2 extra $lattack:attacks; with $8233s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8233s2 extra $lattack:attacks; with $8233s1 extra melee attack power. Lasts for 60 minutes.
 
 Name             : Windfury Weapon (desc=Rank 1) (id=8233) [Spell Family (11)] 
 Class            : Shaman
@@ -20276,6 +20280,7 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 2) (id=8235) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -20288,7 +20293,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=686279)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 284
-Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. When appied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. Lasts for 60 minutes.
 
 Name             : Windfury Weapon (desc=Rank 2) (id=8236) [Spell Family (11)] 
 Class            : Shaman
@@ -29470,6 +29475,7 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 3) (id=10486) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -29482,7 +29488,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=688964)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 525
-Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $10484s2 extra $lattack:attacks; with $10484s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $10484s2 extra $lattack:attacks; with $10484s1 extra melee attack power. Lasts for 60 minutes.
 
 Name             : Comfortable Leather Hat (id=10490) 
 School           : Physical
@@ -52545,6 +52551,7 @@ Description      : Increases attack power by $s1 for $d.
 Tooltip          : Increases attack power by $s1.
 
 Name             : Flametongue Weapon (desc=Rank 4) (id=16339) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -52556,9 +52563,10 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=694389)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 523
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$10445m1/77-1+($10444m1)} to ${$10445m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$10445m1/77-1+($10444m1)} to ${$10445m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 5) (id=16341) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -52570,9 +52578,10 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=693625)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 1665
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$16343m1/77-1+($10444m1)} to ${$16343m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$16343m1/77-1+($10444m1)} to ${$16343m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 6) (id=16342) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -52584,7 +52593,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=693755)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 1666
-Description      : Imbue the Shaman's weapon with fire.  Each hit causes ${$16344m1/77-1+($10444m1)} to ${$16344m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire.  Each hit causes ${$16344m1/77-1+($10444m1)} to ${$16344m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon Proc (desc=Rank 5) (id=16343) [Spell Family (11)] 
 Class            : Shaman
@@ -52711,6 +52720,7 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 4) (id=16362) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -52723,7 +52733,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=693697)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 1669
-Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. Lasts for 60 minutes.
 
 Name             : Chromatic Protection (id=16372) [Passive] 
 School           : Physical
@@ -56358,6 +56368,7 @@ Effects          :
 Tooltip          : Gain $s1 mana every $t1 seconds.
 
 Name             : Stormstrike (id=17364) [Spell Family (11)] 
+Hotfixed         : Cooldown (6000 -> 8000)
 Talent Entry     : Generic [tree=class, row=4, col=7, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Physical
@@ -56367,7 +56378,7 @@ Spell Level      : 40
 Range            : 5 yards
 GCD              : 1.5 seconds
 Duration         : 12 seconds
-Cooldown         : 6 seconds
+Cooldown         : 8 seconds
 Labels           : 24: Shaman Spells
 Stacks           : 1 initial, 1 maximum
 Proc Chance      : 100%
@@ -56383,7 +56394,8 @@ Effects          :
                    Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690)
                    Family Flags: 0, 1, 20
 #3 (id=1368308)  : Weapon Damage% (31)
-                   Base Value: 150 | Scaled Value: 1.5 | Target: Targeted Enemy (6)
+                   Base Value: 100 | Scaled Value: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (150 -> 100)
 Description      : Instantly strike for $s3% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.
 Tooltip          : Increases damage taken from the Shaman's next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2%.
 
@@ -95807,8 +95819,10 @@ Effects          :
 Description      : Increases your chance to hit with both spells and melee attacks by $s1% while dual wielding, your Stormstrike ability now hits with both weapons while dual wielding, and increases the damage done by your offhand weapon by $s3%.
 
 Name             : Maelstrom Weapon (id=408498) [Spell Family (11), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=6, col=7, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(-4, -8, -12, -16, -20)]
+                 : Effect#1 [op=set, values=(-20, -20, -20, -20, -20)]
+                 : Effect#2 [op=set, values=(6, 7, 8, 9, 10)]
 Class            : Shaman
 School           : Nature
 Spell Type       : None
@@ -95822,10 +95836,11 @@ Effects          :
 #1 (id=1072664)  : Apply Aura (6) | Dummy (4)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
 #2 (id=1137418)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 50 | Scaled Value: 50 | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Hotfixed         : Base Value (50 -> 2)
 #3 (id=1217277)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
-Description      : When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d.
+Description      : When you deal damage with a melee attack, you have a ${($mws*$s2/60)*100}% chance (based on weapon speed) to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d.
 
 Name             : Maelstrom Weapon (id=408505) [Spell Family (11)] 
 Class            : Shaman
@@ -100243,7 +100258,7 @@ Tooltip          : Your next Chain Lightning or Lava Burst spell will be an inst
 
 Name             : Mental Dexterity (id=415140) [Spell Family (11), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=6, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(50, 100, 150)]
+                 : Effect#1 [op=set, values=(33, 66, 100)]
 Class            : Shaman
 School           : Fire
 Spell Type       : None
@@ -154626,6 +154641,20 @@ Effects          :
                    Base Value: 100 | Scaled Value: 100 | Trigger Spell: 29502 | Target: Self (1)
 Description      : All ranged auto-attacks conjure an icy bolt to blast your current target, inflicting $29502s1 Frost damage.
 
+Name             : Sliced Ankle (id=1316346) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 30
+Range            : 100 yards
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Is Ability (4), Suppress Caster Procs (112), Instant Target Procs (115), Suppress Weapon Procs (151), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1348985)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -30 | Scaled Value: -30 | Mechanic: Snare | Target: Targeted Enemy (6)
+Description      : Slice the target's ankle, slowing movement speed by $s1% for $d.
+Tooltip          : Movement slowed by $w1%.
+
 Name             : Stock Crate (id=1316591) 
 School           : Physical
 Spell Type       : None
@@ -158432,11 +158461,11 @@ Spell Level      : 1
 Range            : 50000 yards
 Internal Cooldown: 20 seconds
 Proc Chance      : 15%
-Proc Flags       : White Melee, Generic Hostile Spell, Magic Hostile Spell, Unknown 38
+Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Hostile Spell, Magic Hostile Spell
 Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=1371198)  : Apply Aura (6) | Proc Trigger Spell (42): Gloves of Holy Might
                    Base Value: 112 | Scaled Value: 112 (delta=0.2) | Trigger Spell: 1325229 | Target: Self (1)
 Hotfixed         : NEW EFFECT
-Description      : Smite your target for $s1 Holy damage. Damage is tripled against Undead.
+Description      : Has a $h% chance when landing a harmful spell or attack to Smite the target for $s1 Holy damage. Damage is tripled against Undead.
 

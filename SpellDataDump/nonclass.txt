@@ -73066,6 +73066,20 @@ Effects          :
                    Base Value: 100 | Scaled Value: 100 | Trigger Spell: 29502 | Target: Self (1)
 Description      : All ranged auto-attacks conjure an icy bolt to blast your current target, inflicting $29502s1 Frost damage.
 
+Name             : Sliced Ankle (id=1316346) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 30
+Range            : 100 yards
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Is Ability (4), Suppress Caster Procs (112), Instant Target Procs (115), Suppress Weapon Procs (151), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1348985)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -30 | Scaled Value: -30 | Mechanic: Snare | Target: Targeted Enemy (6)
+Description      : Slice the target's ankle, slowing movement speed by $s1% for $d.
+Tooltip          : Movement slowed by $w1%.
+
 Name             : Stock Crate (id=1316591) 
 School           : Physical
 Spell Type       : None
@@ -75036,11 +75050,11 @@ Spell Level      : 1
 Range            : 50000 yards
 Internal Cooldown: 20 seconds
 Proc Chance      : 15%
-Proc Flags       : White Melee, Generic Hostile Spell, Magic Hostile Spell, Unknown 38
+Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Hostile Spell, Magic Hostile Spell
 Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=1371198)  : Apply Aura (6) | Proc Trigger Spell (42): Gloves of Holy Might
                    Base Value: 112 | Scaled Value: 112 (delta=0.2) | Trigger Spell: 1325229 | Target: Self (1)
 Hotfixed         : NEW EFFECT
-Description      : Smite your target for $s1 Holy damage. Damage is tripled against Undead.
+Description      : Has a $h% chance when landing a harmful spell or attack to Smite the target for $s1 Holy damage. Damage is tripled against Undead.
 
