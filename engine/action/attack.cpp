@@ -200,7 +200,7 @@ void attack_t::attack_table_t::build_table( double miss_chance, double dodge_cha
 
   assert( crit_chance >= 0 && crit_chance <= 1.0 );
 
-  double sum = miss_chance + dodge_chance + parry_chance + crit_chance;
+  double sum = miss_chance + dodge_chance + parry_chance + glance_chance + crit_chance;
 
   // Only recalculate attack table if the stats have changed
   if ( attack_table_sum == sum )
@@ -288,8 +288,10 @@ result_e attack_t::calculate_result( action_state_t* s ) const
   // Specials are 2-roll calculations, so only pass crit chance to
   // build_table for non-special attacks
 
-  attack_table.build_table( miss, dodge, parry, may_glance ? glance_chance( delta_level ) : 0.0,
-                            !special ? std::min( 1.0, crit ) : 0.0, sim );
+  // Glancing blows only happen against NPCs
+  double glance = may_glance && s->target->is_enemy() ? glance_chance( delta_level ) : 0.0;
+
+  attack_table.build_table( miss, dodge, parry, glance, !special ? std::min( 1.0, crit ) : 0.0, sim );
 
   if ( attack_table.num_results == 1 )
   {
@@ -432,16 +434,13 @@ double melee_attack_t::parry_chance( double expertise, player_t* t ) const
 
 double melee_attack_t::glance_chance( int delta_level ) const
 {
-  double glance = 0;
-
-  // TODO FOREVER - Needs research
-  // TODO-WOD: Glance chance increase per 4+ level delta?
-  if ( delta_level > 3 )
-  {
-    glance += 0.10 + 0.10 * delta_level;
-  }
-
-  return glance;
+  // Classic-style glancing: 10% + 2% per point of target defense above the attacker's weapon skill, where defense is
+  // target level * 5 and weapon skill is capped at (and assumed to be) attacker level * 5. That works out to 10% vs an
+  // equal level target, +10% per level above, and no glancing blows vs lower level targets (40% vs a +3 boss).
+  // Matches the client's GetGlancingBlowChance (10/20/30/40% at capped skill, +2% per missing skill point).
+  // Tested by kflirik on 2026-11-12, build 1.60.1.70888.
+  // TODO FOREVER: Account for weapon skill below the cap once it is modeled.
+  return std::max( 0.0, 0.10 + 0.10 * delta_level );
 }
 
 proc_types melee_attack_t::proc_type() const
