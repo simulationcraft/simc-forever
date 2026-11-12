@@ -102,6 +102,7 @@ struct druid_t final : public parse_player_effects_t
     spell_ranks_t moonfire;
     spell_ranks_t omen_of_clarity;
     spell_ranks_t prowl;
+    spell_ranks_t rake;
     spell_ranks_t rip;
     spell_ranks_t shred;
     spell_ranks_t starfire;
@@ -290,6 +291,13 @@ void druid_t::init_spells()
       spell_container_t().set_spell( 5215 ),
       spell_container_t().set_spell( 6783 ),
       spell_container_t().set_spell( 9913 ),
+  };
+  rank.rake = {
+      this,
+      spell_container_t().set_spell( 1822 ),
+      spell_container_t().set_spell( 1823 ),
+      spell_container_t().set_spell( 1824 ),
+      spell_container_t().set_spell( 9904 ),
   };
   rank.rip = {
       this,
@@ -833,6 +841,18 @@ struct shred_t : public druid_melee_attack_t
   }
 };
 
+struct rake_t : public druid_melee_attack_t
+{
+  rake_t( druid_t* player, std::string_view options_str )
+    : druid_melee_attack_t( "rake", player, player->rank.rake.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    attack_power_mod.direct = 0.065;
+    attack_power_mod.tick   = 0.065;
+  }
+};
+
 struct druid_combo_attack_t : public druid_melee_attack_t
 {
   druid_combo_attack_t( std::string_view n, druid_t* player, const spell_data_t* s )
@@ -1058,6 +1078,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new cat_form_t( this, options_str );
   if ( name == "prowl" )
     return new prowl_t( this, options_str );
+  if ( name == "rake" )
+    return new rake_t( this, options_str );
   if ( name == "rip" )
     return new rip_t( this, options_str );
   if ( name == "shred" )
