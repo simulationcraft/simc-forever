@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70888
-static constexpr std::array<spelltext_data_t, 8715> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8716> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8559,6 +8559,7 @@ static constexpr std::array<spelltext_data_t, 8715> __spelltext_data { {
   { 1318324, "Deals $s1 Nature damage.", 0, 0 },
   { 1318326, "Increases damage and healing done by magical spells and effects by up to $s1. This effect is doubled in Marsh and Swamp areas.", 0, 0 },
   { 1318327, 0, "In a Swamp area, spell damage and healing increased by an additional $s1.", 0 },
+  { 1318476, "Increases spell damage and healing by up to $s1. Grants an additional $s3 spell damage against Demons.", 0, 0 },
   { 1318477, "Restores $s1 Mana per 5 sec in Haunted areas.\r\n\r\n", "In a Haunted area, restoring $w1 Mana per 5 sec.", 0 },
   { 1318479, "Increases spell damage and healing by up to $s1. Grants an additional $s3 spell damage against Demons.", 0, 0 },
   { 1318480, "Increases Spirit by $s1 in Cavernous or Underground areas.", "In a Cavernous or Underground area, Spirit increased by $w1.", 0 },

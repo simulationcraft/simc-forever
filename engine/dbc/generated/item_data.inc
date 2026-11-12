@@ -14906,7 +14906,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[14903] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.70888
 
-static const std::array<dbc_item_data_t, 13004> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13005> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -22791,6 +22791,7 @@ static const std::array<dbc_item_data_t, 13004> __item_data_chunk0 { {
   { "Royal Seal of Eldre'Thalas",  18467, 0x00000000, 0x00004004, 0x00, 62, 0, 0, 0, 3, 12, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[27], 1, 0x0100, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Royal Seal of Eldre'Thalas",  18468, 0x00000000, 0x00004004, 0x00, 62, 0, 0, 0, 3, 12, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[6696], 3, 0x0080, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Royal Seal of Eldre'Thalas",  18469, 0x00000000, 0x00004004, 0x00, 62, 0, 0, 0, 3, 12, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[6699], 3, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Royal Seal of Eldre'Thalas",  18471, 0x00000000, 0x00004004, 0x00, 62, 0, 0, 0, 3, 12, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[27], 1, 0x0040, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Royal Seal of Eldre'Thalas",  18472, 0x00000000, 0x00004004, 0x00, 62, 0, 0, 0, 3, 12, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[6699], 3, 0x0002, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Royal Seal of Eldre'Thalas",  18473, 0x00000000, 0x00004004, 0x00, 62, 0, 0, 0, 3, 12, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[6702], 3, 0x0004, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Oddly Magical Belt",  18475, 0x00000000, 0x00000004, 0x00, 60, 55, 0, 0, 2, 6, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[6705], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
