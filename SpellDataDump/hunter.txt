@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70862 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
 Name             : Auto Shot (id=75) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -206,6 +206,7 @@ Effects          :
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $3355d.  Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
 Name             : Volley (desc=Rank 1) (id=1510) [Spell Family (9)] 
+Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -219,7 +220,8 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Suppress Weapon Procs (151), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Aura Interrupt   : Action (2), Moving (3), Interacting (10), Looting (11), Attacking (12), Use Item (13), Damage Channel Duration (14)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=680772)   : Dummy (3)
@@ -641,7 +643,7 @@ Name             : Arcane Shot (desc=Rank 1) (id=3044) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 25 Base Mana (0) (id=170789)
+Resource         : 11% Base Mana (0) (id=170789)[Hotfixed: Cost (25 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 6
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -1769,7 +1771,6 @@ Effects          :
                    Base Value: -60 | Scaled Value: -60 | SP Coefficient: 1 | Radius: 10 yards | Target: at Dynamic Enemy in Area (28)
 #2 (id=691204)   : Apply Aura in Area (27) | Periodic Trigger Spell (23): Unknown(0) every 2 seconds
                    Base Value: 0 | Scaled Value: 0 | Radius: 10 yards | Target: at Dynamic Enemy in Area (28)
-Hotfixed         : Trigger Spell (18350 -> 0)
 Tooltip          : Movement speed slowed by $s1%.
 
 Name             : Explosive Trap (desc=Rank 1) (id=13812) [Spell Family (9)] 
@@ -2183,7 +2184,7 @@ Name             : Arcane Shot (desc=Rank 2) (id=14281) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 35 Base Mana (0) (id=179648)
+Resource         : 11% Base Mana (0) (id=179648)[Hotfixed: Cost (35 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 12
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2206,7 +2207,7 @@ Name             : Arcane Shot (desc=Rank 3) (id=14282) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 50 Base Mana (0) (id=180317)
+Resource         : 11% Base Mana (0) (id=180317)[Hotfixed: Cost (50 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 20
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2229,7 +2230,7 @@ Name             : Arcane Shot (desc=Rank 4) (id=14283) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 80 Base Mana (0) (id=180443)
+Resource         : 11% Base Mana (0) (id=180443)[Hotfixed: Cost (80 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 28
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2252,7 +2253,7 @@ Name             : Arcane Shot (desc=Rank 5) (id=14284) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 105 Base Mana (0) (id=179345)
+Resource         : 11% Base Mana (0) (id=179345)[Hotfixed: Cost (105 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 36
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2275,7 +2276,7 @@ Name             : Arcane Shot (desc=Rank 6) (id=14285) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 135 Base Mana (0) (id=179406)
+Resource         : 11% Base Mana (0) (id=179406)[Hotfixed: Cost (135 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 44
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2298,7 +2299,7 @@ Name             : Arcane Shot (desc=Rank 7) (id=14286) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 160 Base Mana (0) (id=179444)
+Resource         : 11% Base Mana (0) (id=179444)[Hotfixed: Cost (160 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 52
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2321,7 +2322,7 @@ Name             : Arcane Shot (desc=Rank 8) (id=14287) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 190 Base Mana (0) (id=179523)
+Resource         : 11% Base Mana (0) (id=179523)[Hotfixed: Cost (190 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 60
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2341,6 +2342,7 @@ Effects          :
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Volley (desc=Rank 2) (id=14294) [Spell Family (9)] 
+Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2354,7 +2356,8 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Suppress Weapon Procs (151), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Aura Interrupt   : Action (2), Moving (3), Interacting (10), Looting (11), Attacking (12), Use Item (13), Damage Channel Duration (14)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=691336)   : Dummy (3)
@@ -2366,6 +2369,7 @@ Effects          :
 Description      : Continuously fires a volley of ammo at the target area, causing $1279719s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 Name             : Volley (desc=Rank 3) (id=14295) [Spell Family (9)] 
+Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2379,7 +2383,8 @@ Requires weapon  : Bow, Gun, Crossbow
 Labels           : 23: Hunter Spells
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Is Self Channelled (38), No Aura Icon (60), Do Not Reset Combat Timers (81), No Initial Threat (86), Suppress Weapon Procs (151), Uses Ranged Slot (Cosmetic Only) (322), Allow Class Ability Procs (416), Unknown (454), Unknown (493)
+Aura Interrupt   : Action (2), Moving (3), Interacting (10), Looting (11), Attacking (12), Use Item (13), Damage Channel Duration (14)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #1 (id=692653)   : Dummy (3)
@@ -10798,6 +10803,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 102176
 
 Name             : Volley (desc=Rank 3) (id=1279715) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -10807,12 +10813,13 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Suppress Weapon Procs (151), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1292220)  : School Damage (2): arcane
                    Base Value: 112 | Scaled Value: 112 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Volley (desc=Rank 2) (id=1279719) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -10822,12 +10829,13 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Suppress Weapon Procs (151), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1292228)  : School Damage (2): arcane
                    Base Value: 91 | Scaled Value: 91 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Volley (desc=Rank 1) (id=1279721) [Spell Family (9)] 
+Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -10837,7 +10845,7 @@ Labels           : 23: Hunter Spells
 Proc Chance      : 101%
 Affecting Spells : Efficiency (19416 effect#1), Barrage (19461 effect#1), Mortal Shots (19485 effect#1), Hawk Eye (19498 effect#1), Improved Volley (440520 effects: #1, #2, #3, #5)
 Family Flags     : 13
-Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
+Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Suppress Weapon Procs (151), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Unknown (493)
 Effects          :
 #1 (id=1292230)  : School Damage (2): arcane
                    Base Value: 70 | Scaled Value: 70 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
@@ -10847,7 +10855,7 @@ Talent Entry     : Generic [tree=class, row=4, col=4, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 80 Base Mana (0) (id=313567)
+Resource         : 11% Base Mana (0) (id=313567)[Hotfixed: Cost (80 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 25
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -10889,7 +10897,7 @@ Name             : Summon Hawk (desc=Rank 2) (id=1293525) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 105 Base Mana (0) (id=313590)
+Resource         : 11% Base Mana (0) (id=313590)[Hotfixed: Cost (105 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 36
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -10919,7 +10927,7 @@ Name             : Summon Hawk (desc=Rank 3) (id=1293526) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 135 Base Mana (0) (id=313591)
+Resource         : 11% Base Mana (0) (id=313591)[Hotfixed: Cost (135 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 48
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -10949,7 +10957,7 @@ Name             : Summon Hawk (desc=Rank 4) (id=1293527) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 190 Base Mana (0) (id=313592)
+Resource         : 11% Base Mana (0) (id=313592)[Hotfixed: Cost (190 -> 0), Percent Cost (0 -> 11)]
 Spell Level      : 60
 Range            : 35 yards
 Cast Time        : Ranged Shot

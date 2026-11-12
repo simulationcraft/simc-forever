@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70862 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
 Name             : Backstab (desc=Rank 1) (id=53) [Spell Family (8)] 
 Class            : Rogue
 School           : Physical
@@ -7625,18 +7625,24 @@ $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
 $coup=$?s14162[${$14162s1/100+1}][${1}]
 
 Name             : Poised (desc=Passive) (id=1328825) [Spell Family (8), Passive] 
+Hotfixed         : Aura Interrupt, Channel Interrupt
 Class            : Rogue
 School           : Physical
 Spell Type       : None
 Spell Level      : 18
 Labels           : 20: Rogue Spells
+Proc Chance      : 100%
+Proc Flags       : Enter Combat
 Attributes       : Is Ability (4), Passive (6), Do Not Sheath (18), Unknown (454), Unknown (493)
+Aura Interrupt   : Leave Combat (31)
 Effects          :
-#1 (id=1368038)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Self (1)
+#1 (id=1368038)  : Apply Aura (6) | Proc Trigger Spell (42): Poised
+                   Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Trigger Spell: 1330741 | Target: Self (1)
+Hotfixed         : Sub Type (4 -> 42), Trigger Spell (0 -> 1330741)
 Description      : While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328826s1.
 
 Name             : Poised (id=1328826) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -7648,7 +7654,7 @@ Proc Chance      : 100%
 Proc Flags       : Yellow Melee, White Ranged, Yellow Ranged, Generic Helpful, Generic Hostile Spell, Magic Heal, Magic Hostile Spell
 Affecting Spells : Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Damage 4P Bonus (457339 effect#1), Composure (1329265 effect#1)
 Family Flags     : 36
-Attributes       : Is Ability (4), Do Not Sheath (18), Can Proc From Procs (122), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), No Aura Cancel (31), Can Proc From Procs (122), Unknown (493)
 Effects          :
 #1 (id=1368039)  : Apply Aura (6) | Add Flat Modifier (107): Spell Resource Cost 1 (14)
                    Base Value: -10 | Scaled Value: -10 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
@@ -7839,4 +7845,20 @@ Effects          :
 #3 (id=1369161)  : Energize Power (30)
                    Base Value: 0 | Scaled Value: 0 | Resource: combo_points | Target: Self (1)
 Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.
+
+Name             : Poised (id=1330741) [Spell Family (8), Hidden] 
+Hotfixed         : NEW SPELL
+Class            : Rogue
+School           : Physical
+Spell Type       : None
+Resource         : 0% Health (-2) (id=315223)[Hotfixed: NEW POWER]
+Duration         : Aura (infinite)
+Labels           : 20: Rogue Spells
+Triggered By     : Poised (1328825)
+Attributes       : Is Ability (4), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Sheath (18), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Aura Interrupt   : Leave Combat (31)
+Effects          :
+#1 (id=1371039)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Hotfixed         : NEW EFFECT
 

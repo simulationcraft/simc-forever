@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70862 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
 Class            : Priest
 School           : Holy
@@ -2663,6 +2663,7 @@ Description      : When activated, reduces the Mana cost of your next spell by $
 Tooltip          : The Mana cost of your next spell is reduced by $s1% and its non-periodic critical effect chance is increased by $s2%.
 
 Name             : Divine Spirit (desc=Rank 1) (id=14752) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -2674,7 +2675,7 @@ Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 31
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=692824)   : Apply Aura (6) | Attribute (29)
@@ -2696,6 +2697,7 @@ Effects          :
 Description      : Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by $s1%.
 
 Name             : Divine Spirit (desc=Rank 2) (id=14818) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -2707,7 +2709,7 @@ Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 31
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691641)   : Apply Aura (6) | Attribute (29)
@@ -2716,6 +2718,7 @@ Description      : Holy power infuses the target, increasing their Spirit by $s1
 Tooltip          : Increases Spirit by $s1.
 
 Name             : Divine Spirit (desc=Rank 3) (id=14819) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -2727,7 +2730,7 @@ Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 31
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691642)   : Apply Aura (6) | Attribute (29)
@@ -2795,7 +2798,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=692104)   : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Prayer of Healing (596), Prayer of Healing (996), Lesser Heal (2050), Lesser Heal (2052), Lesser Heal (2053), Heal (2054), Heal (2055), Greater Heal (2060), Flash Heal (2061), Heal (6063), Heal (6064), Flash Heal (9472), Flash Heal (9473), Flash Heal (9474), Flash Heal (10915), Flash Heal (10916), Flash Heal (10917), Prayer of Healing (10960), Prayer of Healing (10961), Greater Heal (10963), Greater Heal (10964), Greater Heal (10965), Desperate Prayer (13908), Desperate Prayer (19236), Desperate Prayer (19238), Desperate Prayer (19240), Desperate Prayer (19241), Desperate Prayer (19242), Desperate Prayer (19243), Holy Nova (23455), Holy Nova (23458), Holy Nova (23459), Greater Heal (25314), Prayer of Healing (25316), Prayer of Spirit (27681), Holy Nova (27803), Holy Nova (27804), Holy Nova (27805), Prayer of Mending (401859), Prayer of Mending (401880), Binding Heal (401937), Penance (402277), Penance (402289), Penance (1240723), Penance (1240724), Penance (1240732), Penance (1240733), Prayer of Mending (1240826), Prayer of Mending (1240827), Divine Grace (1277370), Divine Grace (1277371), Divine Grace (1277372), Divine Grace (1277374), Divine Grace (1277376), Divine Grace (1277377), Divine Grace (1277378), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640), Penance (1316991), Penance (1316992)
+                   Affected Spells: Prayer of Healing (596), Prayer of Healing (996), Lesser Heal (2050), Lesser Heal (2052), Lesser Heal (2053), Heal (2054), Heal (2055), Greater Heal (2060), Flash Heal (2061), Heal (6063), Heal (6064), Flash Heal (9472), Flash Heal (9473), Flash Heal (9474), Flash Heal (10915), Flash Heal (10916), Flash Heal (10917), Prayer of Healing (10960), Prayer of Healing (10961), Greater Heal (10963), Greater Heal (10964), Greater Heal (10965), Desperate Prayer (13908), Desperate Prayer (19236), Desperate Prayer (19238), Desperate Prayer (19240), Desperate Prayer (19241), Desperate Prayer (19242), Desperate Prayer (19243), Holy Nova (23455), Holy Nova (23458), Holy Nova (23459), Greater Heal (25314), Prayer of Healing (25316), Holy Nova (27803), Holy Nova (27804), Holy Nova (27805), Prayer of Mending (401859), Prayer of Mending (401880), Binding Heal (401937), Penance (402277), Penance (402289), Penance (1240723), Penance (1240724), Penance (1240732), Penance (1240733), Prayer of Mending (1240826), Prayer of Mending (1240827), Divine Grace (1277370), Divine Grace (1277371), Divine Grace (1277372), Divine Grace (1277374), Divine Grace (1277376), Divine Grace (1277377), Divine Grace (1277378), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640), Penance (1316991), Penance (1316992)
                    Family Flags: 5, 9, 10, 11, 12, 18, 24, 27, 34, 37, 48
 #2 (id=1239404)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
@@ -4091,6 +4094,7 @@ Effects          :
 Description      : A powerful prayer that heals the target and their party for $s1. Party members must be within $a1 yards of target.
 
 Name             : Prayer of Spirit (desc=Rank 1) (id=27681) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -4101,8 +4105,8 @@ GCD              : 1.5 seconds
 Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Spiritual Healing (14898 effect#1), Twin Disciplines (1225132 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 5, 31
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=701842)   : Apply Aura (6) | Attribute (29)
@@ -4329,6 +4333,7 @@ Effects          :
 Description      : Increases the percentage healed by your Vampiric Embrace by an additional $s1%.
 
 Name             : Divine Spirit (desc=Rank 4) (id=27841) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -4340,7 +4345,7 @@ Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 31
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=704677)   : Apply Aura (6) | Attribute (29)
@@ -6584,11 +6589,11 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1214136)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
-                   Affected Spells: Touch of Weakness (2943), Desperate Prayer (13908), Holy Nova (15237), Holy Nova (15430), Holy Nova (15431), Shadowguard (18137), Desperate Prayer (19236), Desperate Prayer (19238), Desperate Prayer (19240), Desperate Prayer (19241), Desperate Prayer (19242), Desperate Prayer (19243), Touch of Weakness (19249), Touch of Weakness (19251), Touch of Weakness (19252), Touch of Weakness (19253), Touch of Weakness (19254), Shadowguard (19308), Shadowguard (19309), Shadowguard (19310), Shadowguard (19311), Shadowguard (19312), Holy Nova (23455), Holy Nova (23458), Holy Nova (23459), Prayer of Spirit (27681), Holy Nova (27799), Holy Nova (27800), Holy Nova (27801), Holy Nova (27803), Holy Nova (27804), Holy Nova (27805), Shadowguard (28377), Shadowguard (28378), Shadowguard (28379), Shadowguard (28380), Shadowguard (28381), Shadowguard (28382), Prayer of Mending (401863), Circle of Healing (401946), Shadow Word: Death (401955), Penance (402277), Penance (402284), Penance (402289), Penance (1240723), Penance (1240724), Penance (1240727), Penance (1240730), Penance (1240732), Penance (1240733), Chastise (1277331), Chastise (1277332), Chastise (1277333), Chastise (1277334), Chastise (1277335), Divine Grace (1277370), Divine Grace (1277371), Divine Grace (1277372), Divine Grace (1277374), Divine Grace (1277376), Divine Grace (1277377), Divine Grace (1277378), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640), Shadow Word: Death (1309595), Shadow Word: Death (1309633), Shadow Word: Death (1309635), Shadow Word: Death (1309636), Early Demise (1310076), Penance (1316991), Penance (1316992), Penance (1316993)
+                   Affected Spells: Touch of Weakness (2943), Desperate Prayer (13908), Holy Nova (15237), Holy Nova (15430), Holy Nova (15431), Shadowguard (18137), Desperate Prayer (19236), Desperate Prayer (19238), Desperate Prayer (19240), Desperate Prayer (19241), Desperate Prayer (19242), Desperate Prayer (19243), Touch of Weakness (19249), Touch of Weakness (19251), Touch of Weakness (19252), Touch of Weakness (19253), Touch of Weakness (19254), Shadowguard (19308), Shadowguard (19309), Shadowguard (19310), Shadowguard (19311), Shadowguard (19312), Holy Nova (23455), Holy Nova (23458), Holy Nova (23459), Holy Nova (27799), Holy Nova (27800), Holy Nova (27801), Holy Nova (27803), Holy Nova (27804), Holy Nova (27805), Shadowguard (28377), Shadowguard (28378), Shadowguard (28379), Shadowguard (28380), Shadowguard (28381), Shadowguard (28382), Prayer of Mending (401863), Circle of Healing (401946), Shadow Word: Death (401955), Penance (402277), Penance (402284), Penance (402289), Penance (1240723), Penance (1240724), Penance (1240727), Penance (1240730), Penance (1240732), Penance (1240733), Chastise (1277331), Chastise (1277332), Chastise (1277333), Chastise (1277334), Chastise (1277335), Divine Grace (1277370), Divine Grace (1277371), Divine Grace (1277372), Divine Grace (1277374), Divine Grace (1277376), Divine Grace (1277377), Divine Grace (1277378), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640), Shadow Word: Death (1309595), Shadow Word: Death (1309633), Shadow Word: Death (1309635), Shadow Word: Death (1309636), Early Demise (1310076), Penance (1316991), Penance (1316992), Penance (1316993)
                    Family Flags: 5, 19, 22, 24, 27, 28, 33, 36, 47, 48, 117
 #2 (id=1239165)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 22 | Target: Self (1)
-                   Affected Spells: Renew (139), Shadow Word: Pain (589), Shadow Word: Pain (594), Shadow Word: Pain (970), Shadow Word: Pain (992), Shadow Word: Pain (2767), Devouring Plague (2944), Renew (6074), Renew (6075), Renew (6076), Renew (6077), Renew (6078), Starshards (10797), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Renew (10927), Renew (10928), Renew (10929), Crystal Restore (15229), Mind Flay (15407), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Mind Flay (18807), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Starshards (19296), Starshards (19299), Starshards (19302), Starshards (19303), Starshards (19304), Starshards (19305), Renew (25315), Prayer of Spirit (27681), Renew (425268), Renew (425269), Renew (425270), Renew (425271), Renew (425272), Renew (425273), Renew (425274), Renew (425275), Renew (425276), Renew (425277), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640)
+                   Affected Spells: Renew (139), Shadow Word: Pain (589), Shadow Word: Pain (594), Shadow Word: Pain (970), Shadow Word: Pain (992), Shadow Word: Pain (2767), Devouring Plague (2944), Renew (6074), Renew (6075), Renew (6076), Renew (6077), Renew (6078), Starshards (10797), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Renew (10927), Renew (10928), Renew (10929), Crystal Restore (15229), Mind Flay (15407), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Mind Flay (18807), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Starshards (19296), Starshards (19299), Starshards (19302), Starshards (19303), Starshards (19304), Starshards (19305), Renew (25315), Renew (425268), Renew (425269), Renew (425270), Renew (425271), Renew (425272), Renew (425273), Renew (425274), Renew (425275), Renew (425276), Renew (425277), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640)
                    Family Flags: 5, 6, 15, 21, 23, 100
 Description      : Increases the damage and healing of your instant cast spells by $s1%.
 

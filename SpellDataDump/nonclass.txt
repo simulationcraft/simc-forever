@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70862 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -1845,7 +1845,6 @@ Name             : Green Woolen Bag (id=3758)
 School           : Physical
 Spell Type       : None
 Cast Time        : 12.5 seconds
-Proc Chance      : 101%
 Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=686710)   : Create Item (24)
@@ -3785,7 +3784,6 @@ Name             : Red Woolen Bag (id=6688)
 School           : Physical
 Spell Type       : None
 Cast Time        : 25 seconds
-Proc Chance      : 101%
 Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=684554)   : Create Item (24)
@@ -3805,7 +3803,6 @@ Name             : Green Silk Pack (id=6693)
 School           : Physical
 Spell Type       : None
 Cast Time        : 45 seconds
-Proc Chance      : 101%
 Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=685253)   : Create Item (24)
@@ -3815,7 +3812,6 @@ Name             : Black Silk Pack (id=6695)
 School           : Physical
 Spell Type       : None
 Cast Time        : 45 seconds
-Proc Chance      : 101%
 Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=684100)   : Create Item (24)
@@ -19495,6 +19491,18 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Fill in the Temple of the Moon.
 
+Name             : Fury of Forgewright (id=15494) 
+School           : Physical
+Spell Type       : None
+Duration         : 10 seconds
+Triggered By     : Fury of Forgewright (1301046)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=692942)   : Extra Attacks (19)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Description      : Grants $s1 extra attacks on your next swing. Attacks against Orcs are $1301046s2 times as likely to activate this effect.
+Tooltip          : Infused with the spirit of Franclorn Forgewright. You may only speak in Dwarvish.
+
 Name             : Revive Ringo (id=15591) 
 School           : Physical
 Spell Type       : None
@@ -19562,7 +19570,7 @@ Name             : Hand of Justice (id=15601)
 School           : Physical
 Spell Type       : None
 Spell Level      : 60
-Triggered By     : Hand of Justice (15600)
+Triggered By     : Hand of Justice (15600), Fury of Forgewright (1301046)
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=693067)   : Extra Attacks (19)
@@ -20729,6 +20737,21 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 4 | Target: Self (1)
 Description      : Cures $s1 poison $leffect:effects;.
 
+Name             : Fatal Wound (id=16549) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 40
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694000)   : School Damage (2): physical
+                   Base Value: 448 | Scaled Value: 448 (delta=0.333333) | Target: Targeted Enemy (6)
+#2 (id=1326520)  : Dummy (3)
+                   Base Value: 50 | Scaled Value: 50 | Target: Targeted Enemy (6)
+#3 (id=1326521)  : Dummy (3)
+                   Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
+Description      : Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health.
+
 Name             : Flame Wrath (id=16559) 
 School           : Fire
 Spell Type       : Magic
@@ -20766,6 +20789,20 @@ Effects          :
 #1 (id=694470)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Drink Me.
+
+Name             : Demonfork (id=16603) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 5 seconds
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Channel Interrupt: Damage (2), Action (3), Turning (5), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
+Effects          :
+#1 (id=691801)   : Apply Aura (6) | Periodic Health Leech (53): every 1 seconds
+                   Base Value: 10 | Scaled Value: 10 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+Description      : Transfers $s1 health every $t1 seconds from the target to the caster for $d.
+Tooltip          : Drains $s1 health every $t1 sec to the caster.
 
 Name             : Drain Life (id=16608) 
 School           : Shadow
@@ -21762,6 +21799,22 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Attach the pieces into a whole.
 
+Name             : Brain Hacker (id=17148) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 5 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=694524)   : School Damage (2): physical
+                   Base Value: 250 | Scaled Value: 250 (delta=0.4) | Target: Targeted Enemy (6)
+#2 (id=694525)   : Apply Aura (6) | Modify Spell Haste (65)
+                   Base Value: -30 | Scaled Value: -30 | Target: Targeted Enemy (6)
+Description      : Wounds the target's head, dealing $s1 Physical damage, and increasing the casting time of all spells by $s2% for $d.
+Tooltip          : Casting time increased by $s2%.
+
 Name             : Destiny (id=17152) 
 School           : Physical
 Spell Type       : None
@@ -21876,6 +21929,19 @@ Effects          :
 #1 (id=694865)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Nearby Target (38)
 
+Name             : Seeping Willow (id=17196) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 10 seconds
+Proc Chance      : 101%
+Attributes       : No Redirection (35), No Reflection (39), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=694706)   : Apply Aura (6) | Periodic Damage (3): nature every 2 seconds
+                   Base Value: 51 | Scaled Value: 51 | Radius: 0 - 8 yards | Target: Source (22) -> Enemy in Area (15)
+Description      : Deals $s1 Nature damage every $t1 sec to all enemies within an $a1 yard radius of the caster for $d.
+Tooltip          : Taking periodic Nature damage.
+
 Name             : Fire Cannon (id=17199) 
 School           : Physical
 Spell Type       : None
@@ -21898,6 +21964,20 @@ Effects          :
                    Base Value: 40 | Scaled Value: 2400 | Points Per Level: 40 | Misc Value: 1 | Radius: 30 yards | Target: Self (1)
 Description      : Gives $s1 additional armor to nearby party members for $d. Players may only have one aura on them per paladin at any one time.
 Tooltip          : Armor increased by $s1.
+
+Name             : Mark of the Dragon Lord (id=17252) 
+School           : Physical
+Spell Type       : None
+Duration         : 1800 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694908)   : Apply Aura (6) | Absorb Damage (69)
+                   Base Value: 500 | Scaled Value: 500 | Misc Value: 0x7f | Target: Self (1)
+                   Affected School(s): All
+#2 (id=694909)   : Apply Aura (6) | Periodic Energize Power (24): every 5 seconds
+                   Base Value: 22 | Scaled Value: 22 | Target: Self (1)
+Description      : A protective mana shield surrounds the caster absorbing $s1 damage. While the shield holds, increases mana regeneration by $s2 every $t2 sec for $d.
+Tooltip          : Absorbs damage and increases mana regeneration by $s2 every $t2 sec.
 
 Name             : Test Fetid Skull (id=17271) 
 School           : Physical
@@ -21945,6 +22025,23 @@ Effects          :
 #1 (id=695686)   : School Damage (2): holy
                    Base Value: 500 | Scaled Value: 500 (delta=0.248) | Radius: 5 yards | Target: at Enemy in Area (16)
 Description      : Inflicts between 438 and 562 damage to Undead in a 10 yard radius.
+
+Name             : Stun (id=17308) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 50
+Range            : 100 yards
+Duration         : 1 seconds
+Category         : 32 (Type 0x0)
+Mechanic         : Stun
+Attributes       : Do Not Sheath (18), No Redirection (35), No Reflection (39), Unknown (493)
+Effects          :
+#1 (id=695165)   : Apply Aura (6) | Stun (12)
+                   Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1 | Target: Targeted Enemy (6)
+#2 (id=1327557)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 2 | Scaled Value: 2 | Target: Targeted Enemy (6)
+Description      : Knocks target silly for $d1. Orcs and Ogres are stunned for $s2 times as long.
+Tooltip          : Stunned.
 
 Name             : Puncture Armor (id=17315) 
 School           : Physical
@@ -22151,12 +22248,52 @@ Effects          :
 Description      : Sends a shadowy bolt at the enemy causing $s1 Shadow damage and dealing $s2 damage every $t2 sec for $d.
 Tooltip          : Deals $s2 Shadow damage every $t2 sec.
 
+Name             : Skullforge Brand (id=17484) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 40
+Range            : 100 yards
+Duration         : 10 seconds
+Proc Chance      : 100%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=696714)   : Apply Aura (6) | Periodic Damage (3): shadow every 1 seconds
+                   Base Value: 21 | Scaled Value: 21 | Target: Targeted Enemy (6)
+#2 (id=696715)   : Apply Aura (6) | Periodic Heal (8): every 1 seconds
+                   Base Value: 21 | Scaled Value: 21 | Target: Self (1)
+Description      : Drains target for $s1 Shadow damage every $t1 sec and transfers it to the caster. Lasts for $d.
+Tooltip          : Life leech.
+
+Name             : Summon Skeleton (id=17490) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60 (max 60)
+Duration         : 60 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=694988)   : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 11200 | Misc Value 2: 6698 | Target: Summoner in Area (32)
+Description      : Summons a Skeleton that will protect you for $d.
+
+Name             : Crest of Retribution (id=17495) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Proc Chance      : 100%
+Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken
+Attributes       : Passive (6), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=694851)   : Apply Aura (6) | Proc Trigger Spell (42): Crest of Retribution
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 17496 | Target: Self (1)
+Description      : Deals $17496s1 Physical damage every time you block.
+
 Name             : Crest of Retribution (id=17496) 
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 60
 Range            : 100 yards
 Cast Time        : 1 seconds
+Triggered By     : Crest of Retribution (17495)
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=694852)   : School Damage (2): physical
@@ -22819,6 +22956,18 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : You turn to stone, protecting you from all physical attacks and spells for $d, but during that time you cannot attack, move or cast spells. You can only have the effect of one flask at a time.
 Tooltip          : Immune to all attacks and spells. Cannot attack, move or use spells.
+
+Name             : Unholy Aura (id=17625) [Passive] 
+School           : Physical
+Spell Type       : Magic
+Attributes       : Passive (6), Do Not Log (8), Not Shapeshifted (16), Do Not Sheath (18), Allow While Sitting (27), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=695941)   : Apply Aura (6) | Periodic Heal (8): every 5 seconds
+                   Base Value: 60 | Scaled Value: 60 | Target: Self (1)
+#2 (id=695942)   : Apply Aura (6) | Increase Speed% (31)
+                   Base Value: 8 | Scaled Value: 8 | Target: Self (1)
+Description      : Increases movement speed by $s2% and restores $s1 health every $t1.
+Tooltip          : Increased movement speed and life regeneration.
 
 Name             : Flask of the Titans (id=17626) [Spell Family (13)] 
 School           : Physical
@@ -24852,6 +25001,20 @@ Effects          :
 Description      : Increases Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
+Name             : Poison (id=18197) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 10 (max 10)
+Range            : 5 yards
+Duration         : 15 seconds
+Proc Chance      : 101%
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=695347)   : Apply Aura (6) | Periodic Damage (3): nature every 3 seconds
+                   Base Value: 9 | Scaled Value: 9 | Target: Targeted Enemy (6)
+Description      : Poisons target for $s1 Nature damage every $t1 sec for $d.
+Tooltip          : $s1 Nature damage inflicted every $t1 sec.
+
 Name             : Rend (id=18200) 
 School           : Physical
 Spell Type       : Melee
@@ -25065,6 +25228,17 @@ Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until
 Effects          :
 #1 (id=695224)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
+Name             : Headmaster's Charge (id=18264) 
+School           : Arcane
+Spell Type       : Magic
+Duration         : 900 seconds
+Attributes       : Do Not Log (8), Include In Advanced Combat Log (72), Unknown (493)
+Effects          :
+#1 (id=694113)   : Apply Party Aura (35) | Attribute (29)
+                   Base Value: 20 | Scaled Value: 20 | Misc Value: 3 | Radius: 30 yards | Target: Self (1)
+Description      : Gives $M1 additional intellect to party members within $a1 yards.
+Tooltip          : Intellect increased by $s1.
 
 Name             : Frost Blast (id=18276) 
 School           : Frost
@@ -25699,6 +25873,50 @@ Effects          :
                    Base Value: 250 | Scaled Value: 250 | Target: Targeted Ally (21)
 Description      : Heals $o1 damage over $d.
 Tooltip          : Healing $s1 damage every $t1 seconds.
+
+Name             : Weakening Disease (id=18633) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 14 seconds
+Proc Chance      : 101%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=696720)   : Apply Aura (6) | Periodic Damage (3): shadow every 2 seconds
+                   Base Value: 15 | Scaled Value: 15 | Target: Targeted Enemy (6)
+#2 (id=696721)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: -92 | Scaled Value: -92 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Description      : Deals $s1 Shadow damage every $t1 sec for $d and lowers their attack power by $s2 for $d.
+Tooltip          : Taking $s1 Shadow damage every $t sec and attack power lowered by $s2.
+
+Name             : Siphon Health (id=18652) 
+School           : Shadow
+Spell Type       : None
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 5 seconds
+Proc Chance      : 101%
+Attributes       : No Aura Icon (60), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=695978)   : Apply Aura (6) | Periodic Damage (3): shadow every 1 seconds
+                   Base Value: 49 | Scaled Value: 49 | Target: Targeted Enemy (6)
+Description      : Deals $s1 Shadow damage every $t1 sec for $d. All damage done is then transferred to the caster.
+Tooltip          : Deals $s1 Shadow damage every $t1 sec.
+
+Name             : Corruption (id=18656) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 9 seconds
+Proc Chance      : 100%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=696702)   : Apply Aura (6) | Periodic Damage (3): shadow every 3 seconds
+                   Base Value: 28 | Scaled Value: 28 | Target: Targeted Enemy (6)
+Description      : Corrupts the target, causing $o1 damage over $d.
+Tooltip          : Inflicts $s1 Shadow damage every $t1 sec.
 
 Name             : Increased All Resist 05 (id=18676) [Passive, Hidden] 
 School           : Physical
@@ -27283,6 +27501,18 @@ Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until
 Effects          :
 #1 (id=697920)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
+Name             : Lightning Bolt (id=19874) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Attributes       : Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=697237)   : School Damage (2): nature
+                   Base Value: 252 | Scaled Value: 252 (delta=0.325581) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Nature damage.
 
 Name             : Expert Cook (id=19886) 
 School           : Physical
@@ -33544,6 +33774,17 @@ Effects          :
 #1 (id=701703)   : Server Side Script (77)
                    Base Value: 0 | Scaled Value: 0 | Target: Current Target (25)
 
+Name             : Seal of the Dawn (id=23930) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Allow While Mounted (24), Unknown (493)
+Effects          :
+#1 (id=701288)   : Apply Aura (6) | Modify Melee Attack Power vs Race (102)
+                   Base Value: 78 | Scaled Value: 78 | Misc Value: 32 | Target: Self (1)
+#2 (id=701289)   : Apply Aura (6) | Modify Ranged Attack Power vs Race (131)
+                   Base Value: 78 | Scaled Value: 78 | SP Coefficient: 1 | Misc Value: 32 | Target: Self (1)
+Description      : +$s1 Attack Power against Undead.  Allows the acquisition of Scourgestones on behalf of the Argent Dawn.
+
 Name             : Item - Minor Run Speed (id=23990) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -33966,6 +34207,15 @@ Effects          :
 #1 (id=700937)   : Server Side Script (77)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Offer a tribute at Grom Hellscream's monument in Ashenvale.
+
+Name             : Rune of the Dawn (id=24198) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Allow While Mounted (24), Unknown (493)
+Effects          :
+#1 (id=701041)   : Apply Aura (6) | Modify Spell Damage vs Race (180)
+                   Base Value: 46 | Scaled Value: 46 | Misc Value: 32 | Target: Self (1)
+Description      : Increases damage done to Undead by magical spells and effects by up to $s1.  Allows the acquisition of Scourgestones on behalf of the Argent Dawn.
 
 Name             : String Together Heads (id=24245) [Hidden] 
 School           : Physical
@@ -39309,6 +39559,18 @@ Effects          :
                    Base Value: 28 | Scaled Value: 28 (delta=0.363636) | Target: Targeted Enemy (6)
 Description      : Fires a Searing Arrow at the target for $s1 Fire damage.
 
+Name             : Flaming Cannonball (id=29639) 
+School           : Fire
+Spell Type       : Ranged
+Spell Level      : 1
+Range            : 50000 yards
+Velocity         : 35 yards/sec
+Attributes       : Is Ability (4), Suppress Caster Procs (112), Suppress Weapon Procs (151), Unknown (493)
+Effects          :
+#1 (id=704922)   : School Damage (2): fire
+                   Base Value: 49 | Scaled Value: 49 (delta=0.390244) | Target: Targeted Enemy (6)
+Description      : Fires a Flaming Cannonball at your target for $s1 Fire damage.
+
 Name             : Shadowbolt (id=29640) 
 School           : Shadow
 Spell Type       : Ranged
@@ -42558,9 +42820,11 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Strike Gong (id=436278) 
+Hotfixed         : Aura Interrupt, Channel Interrupt
 School           : Physical
 Spell Type       : None
 Range            : 50000 yards
+Cast Time        : 3 seconds
 Attributes       : Do Not Log (8), Unknown (493)
 Effects          :
 #1 (id=1127493)  : Send Event (61)
@@ -45455,6 +45719,16 @@ Effects          :
 #1 (id=1172678)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Nearby Target (38) -> Self (1)
 Description      : Drive into the heart of the brood mother to temper the heated blade.
+
+Name             : Time Step (id=463001) [Hidden] 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 1
+Duration         : Aura (infinite)
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Allow While Mounted (24), Allow While Sitting (27), Unknown (493)
+Effects          :
+#1 (id=1173319)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 17 | Scaled Value: 17 | Target: Self (1)
 
 Name             : Balance of Light and Shadow (id=463008) 
 School           : Physical
@@ -67817,6 +68091,30 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 Description      : Temporarily transforms a demon in Dae'gun.
 
+Name             : Iceblade Hacker (id=1298413) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee, Unknown 38
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1322066)  : Apply Aura (6) | Proc Trigger Spell (42): Iceblade Hacker
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1298414 | Target: Self (1)
+Description      : Melee attacks with this weapon deal $1298414s1 Frost damage.
+
+Name             : Iceblade Hacker (id=1298414) 
+School           : Frost
+Spell Type       : Melee
+Range            : 100 yards
+Min Travel Time  : 0.4 seconds
+Triggered By     : Iceblade Hacker (1298413)
+Attributes       : Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Do Not Display Range (126), Suppress Weapon Procs (151), Missile Speed is Delay (in sec) (292), Do Not Display Power Cost (303), Do Not Display Cast Time (441), Unknown (493)
+Effects          :
+#1 (id=1322067)  : School Damage (2): frost
+                   Base Value: 40.7 | Scaled Value: 40.7 | Target: Targeted Enemy (6)
+Description      : Melee attacks with this weapon deal $1298414s1 Frost damage.
+
 Name             : Refilling Drinking Gourd (id=1298445) [Hidden] 
 School           : Physical
 Spell Type       : Magic
@@ -67851,6 +68149,30 @@ Effects          :
 Description      : Redeem an Undead corpse, laying its spirit to rest and restoring $s1 Health. Only usable on Undead corpses within $1298497a1 yds.
 Tooltip          : Restore $s1 Health.
 
+Name             : Warblade of Caer Darrow (id=1298499) 
+School           : Frost
+Spell Type       : Melee
+Range            : 100 yards
+Min Travel Time  : 0.4 seconds
+Triggered By     : Warblade of Caer Darrow (1298500)
+Attributes       : Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Do Not Display Range (126), Suppress Weapon Procs (151), Missile Speed is Delay (in sec) (292), Do Not Display Power Cost (303), Do Not Display Cast Time (441), Unknown (493)
+Effects          :
+#1 (id=1322194)  : School Damage (2): frost
+                   Base Value: 27.72 | Scaled Value: 27.72 (delta=0.4) | Target: Targeted Enemy (6)
+Description      : Melee attacks with this weapon deal $s1 Frost damage.
+
+Name             : Warblade of Caer Darrow (id=1298500) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Proc Chance      : 100%
+Proc Flags       : White Melee, Yellow Melee, Unknown 38
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1322195)  : Apply Aura (6) | Proc Trigger Spell (42): Warblade of Caer Darrow
+                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1298499 | Target: Self (1)
+Description      : Melee attacks with this weapon deal $1298499s1 Frost damage.
+
 Name             : Decrease Threat All 01 (id=1298501) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -67876,6 +68198,15 @@ Range            : 50000 yards
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Ignore Line of Sight (66), Unknown (493)
 Effects          :
 #1 (id=1322205)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+
+Name             : Book of the Dead (id=1298517) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Range            : 50000 yards
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Ignore Line of Sight (66), Unknown (493)
+Effects          :
+#1 (id=1322215)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Sprinkle Refined Concoction (id=1298546) 
@@ -67947,6 +68278,20 @@ Effects          :
 #1 (id=1323527)  : Summon Guardian (28)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 267842 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Summons a Bitter Baitling.
+
+Name             : Ramstein's Lightning Bolts (id=1299443) 
+School           : Nature
+Spell Type       : None
+Range            : 30 yards
+Cast Time        : 1.5 seconds
+Duration         : 2 seconds
+Mechanic         : Stun
+Attributes       : Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1323675)  : Apply Aura (6) | Stun (12)
+                   Base Value: 2 | Scaled Value: 2 | Mechanic: Stun | Target: Targeted Enemy (6)
+Description      : Harness the power of lightning to strike the target, stunning them for $d. Stuns players in water for $s1 times as long.
+Tooltip          : Stunned.
 
 Name             : Smite (id=1299631) 
 School           : Holy
@@ -68071,6 +68416,35 @@ Effects          :
 #1 (id=1324644)  : Apply Aura (6) | Proc Trigger Spell (42): Frostburn
                    Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1300130 | Target: Self (1)
 Description      : Melee attacks deal $1300130s1 additional Fire damage against Frozen targets.
+
+Name             : Stealth (id=1300180) 
+School           : Physical
+Spell Type       : None
+Duration         : 20 seconds
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Cooldown On Event (25), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), No Skill Increase (36), Fail on all targets immune (85), Unknown (493)
+Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
+Effects          :
+#1 (id=1324739)  : Apply Aura (6) | Stealth (16)
+                   Base Value: 5 | Scaled Value: 305 | Points Per Level: 5 | Target: Self (1)
+#2 (id=1324740)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -50 | Scaled Value: -50 | Target: Self (1)
+Description      : Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat.
+Tooltip          : Stealthed. Movement slowed by $s2%.
+
+Name             : Fatal Wound (id=1300185) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 40
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1324745)  : School Damage (2): physical
+                   Base Value: 159 | Scaled Value: 159 (delta=0.333333) | Target: Targeted Enemy (6)
+#2 (id=1324746)  : Dummy (3)
+                   Base Value: 75 | Scaled Value: 75 | Target: Targeted Enemy (6)
+#3 (id=1324747)  : Dummy (3)
+                   Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
+Description      : Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health.
 
 Name             : Bludgeon (id=1300209) 
 School           : Physical
@@ -68227,6 +68601,18 @@ Effects          :
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
+Name             : Firebolt (id=1300753) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 45
+Range            : 100 yards
+Velocity         : 19 yards/sec
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1325577)  : School Damage (2): fire
+                   Base Value: 140 | Scaled Value: 140 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Resist Bleed 10 (id=1300755) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -68357,6 +68743,31 @@ Effects          :
 #1 (id=1325797)  : Apply Aura (6) | Mechanic Resistance (117)
                    Base Value: 10 | Scaled Value: 10 | Mechanic: Charm | Target: Self (1)
 Description      : Reduces the hit chance of Charm effects against you by $s1%.
+
+Name             : Fury of Forgewright (id=1301046) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Internal Cooldown: 0.1 seconds
+Proc Chance      : 6%
+Proc Flags       : White Melee, Yellow Melee, Unknown 38
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1325971)  : Apply Aura (6) | Proc Trigger Spell (42): Fury of Forgewright
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 15494 | Target: Self (1)
+#2 (id=1325972)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 2 | Scaled Value: 2 | Trigger Spell: 15601 | Target: Self (1)
+Description      : Attacks have a chance to grant $15494s1 extra attacks on your next swing. Attacks against Orcs are $s2 times as likely to activate this effect.
+Tooltip          : Infused with the spirit of Franclorn Forgewright. You may only speak in Dwarvish.
+
+Name             : Resist Fear 08 (id=1301126) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1326092)  : Apply Aura (6) | Mechanic Resistance (117)
+                   Base Value: 8 | Scaled Value: 8 | Mechanic: Flee | Target: Self (1)
+Description      : Reduces the hit chance of Fear effects against you by $s1%.
 
 Name             : Increased Hit Chance - Ranged - 03 (id=1301127) [Passive, Hidden] 
 School           : Physical
@@ -68985,6 +69396,19 @@ Effects          :
 #1 (id=1326692)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Flame Walker (id=1301625) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 45
+Duration         : 15 seconds
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1326806)  : Apply Aura (6) | Absorb Damage (69)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 0x4 | Target: Self (1)
+                   Affected School(s): Fire
+Description      : Ignore all damage taken from standing or swimming in Lava for $d.
+Tooltip          : Ignoring all damage taken from Lava.
+
 Name             : Harvester Override Signalcaster (id=1301683) 
 School           : Physical
 Spell Type       : Magic
@@ -69004,6 +69428,16 @@ Effects          :
                    Base Value: -20 | Scaled Value: -20
 Description      : Override control of the target mechanical creature for up to $d. The target will attack slower while under your control. Ineffective on targets above level $m1.
 Tooltip          : Overridden.
+
+Name             : Briarwood Reed (id=1301707) [Passive] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1326933)  : Apply Aura (6) | Unknown(120)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : Unable to be tracked.
+Tooltip          : Untrackable.
 
 Name             : Gatehouse Shipment Placed (id=1301784) 
 School           : Physical
@@ -69141,6 +69575,16 @@ Effects          :
                    Base Value: 48 | Scaled Value: 48 | Resource: mana | Target: Self (1)
 Description      : Restore $s1 mana.
 Tooltip          : $s1 mana restored.
+
+Name             : Razor Gauntlets (id=1302193) [Passive] 
+School           : Nature
+Spell Type       : None
+Spell Level      : 24
+Attributes       : Passive (6), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1327687)  : Apply Aura (6) | Damage Shield (15)
+                   Base Value: 7 | Scaled Value: 7 | Target: Self (1)
+Description      : When struck in combat, inflicts $s1 Nature damage to the attacker.
 
 Name             : Summon Prairie Wolf Pup (id=1302196) 
 School           : Physical
@@ -69530,6 +69974,53 @@ Effects          :
                    Base Value: -10 | Scaled Value: -10 | Target: Targeted Enemy (6)
 Description      : Chance on landing a damaging spell to assault the target's mind, increasing the casting time of all spells by $s1% for $d. Stacks up to $u times.
 Tooltip          : Casting time increased by $s1%.
+
+Name             : Hedgecutter (id=1302344) 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 58
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1327907)  : School Damage (2): arcane
+                   Base Value: 42 | Scaled Value: 42 (delta=0.42) | Target: Targeted Enemy (6)
+#2 (id=1327908)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Description      : Slice the target with magically enhanced precision, dealing $s1 Arcane damage. Deals $s2 times as much damage to Plants.
+
+Name             : Resist Fear 10 (id=1302346) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=1327910)  : Apply Aura (6) | Mechanic Resistance (117)
+                   Base Value: 10 | Scaled Value: 10 | Mechanic: Flee | Target: Self (1)
+Description      : Reduces the hit chance of Fear effects against you by $s1%.
+
+Name             : Mana Channeling (id=1302348) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Internal Cooldown: 0.01 seconds
+Proc Chance      : 100%
+Proc Flags       : White Ranged
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1327912)  : Apply Aura (6) | Proc Trigger Spell (42): Mana Channeling
+                   Base Value: 65 | Scaled Value: 65 | Trigger Spell: 1302350 | Target: Self (1)
+Description      : Chance on hit to restore $s1 mana.
+
+Name             : Mana Channeling (id=1302350) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 28
+Triggered By     : Mana Channeling (1302348)
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1327915)  : Energize Power (30)
+                   Base Value: 28 | Scaled Value: 28 | Resource: mana | Target: Self (1)
+Description      : Restores $s1 mana.
+Tooltip          : Restores $s1 mana.
 
 Name             : Magnetize (id=1302356) 
 School           : Arcane
@@ -71770,7 +72261,8 @@ Effects          :
 Description      : Bash the target in the face, causing $m1 Physical damage every $t1 sec for 20 sec.
 Tooltip          : Bleeding for $w1 Physical damage every $t1 sec.
 
-Name             : Greater Firepower (id=1310077) 
+Name             : Holy Power (id=1310077) 
+Hotfixed         : Name
 School           : Holy
 Spell Type       : Magic
 Duration         : 1800 seconds
@@ -71934,6 +72426,18 @@ Effects          :
 #2 (id=1340374)  : Send Event (61)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 106137
 Description      : Inject Hissing Serum into the system above Othmar's body.
+
+Name             : Hyjal Speed (id=1311895) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1342425)  : Apply Aura (6) | Increase Movement Speed% (Stacking) (129)
+                   Base Value: 4 | Scaled Value: 4 | Target: Self (1)
+Description      : Increases movement speed by $s1% in Mount Hyjal.
+Tooltip          : Movement speed increased by $s1% while in Mount Hyjal.
 
 Name             : Infernal Lasso (id=1312052) 
 School           : Fire
@@ -72284,6 +72788,18 @@ Effects          :
 Description      : Reduces the target enemy's attack power by $s1 for $d.
 Tooltip          : Attack power lowered by $s1.
 
+Name             : Mount Speed (id=1315778) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1348238)  : Apply Aura (6) | Increase Mount Speed% (Stacking) (130)
+                   Base Value: 6 | Scaled Value: 6 | Target: Self (1)
+Description      : Increases movement speed while mounted by $s1% in Winterspring.
+Tooltip          : Movement speed increased by $s1% while mounted.
+
 Name             : Lucky Shovelnose Snout (id=1315844) 
 School           : Physical
 Spell Type       : None
@@ -72319,7 +72835,6 @@ Effects          :
 Description      : Heal for $1315849s1.
 
 Name             : Flamebreak Talisman (id=1315878) 
-Hotfixed         : Cooldown (180000 -> 300000)
 School           : Physical
 Spell Type       : None
 Duration         : 30 seconds
@@ -72332,7 +72847,6 @@ Effects          :
                    Base Value: 33 | Scaled Value: 33 | Stat: Agi | Target: Self (1)
 #2 (id=1348471)  : Apply Aura (6) | Attribute (29)
                    Base Value: 33 | Scaled Value: 33 | Stat: Agi | Target: Self (1)
-Hotfixed         : Base Value (50 -> 33)
 Description      : Increase your agility by $s1 for $d. If there is an elemental nearby, gain an additional $s2.
 Tooltip          : Agility increased by ${$w1+$w2}.
 
@@ -73359,6 +73873,33 @@ Effects          :
 #1 (id=1351741)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
+Name             : Briarwood Reed (id=1318326) [Passive] 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Attributes       : Passive (6), Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1351742)  : Apply Aura (6) | Damage Done (13)
+                   Base Value: 15 | Scaled Value: 15 | Misc Value: 0x7e | Target: Self (1)
+                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
+#2 (id=1351743)  : Apply Aura (6) | Modify Healing Power (135)
+                   Base Value: 15 | Scaled Value: 15 | Misc Value: 126 | Target: Self (1)
+Description      : Increases damage and healing done by magical spells and effects by up to $s1. This effect is doubled in Marsh and Swamp areas.
+
+Name             : Briarwood Reed (id=1318327) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1351744)  : Apply Aura (6) | Damage Done (13)
+                   Base Value: 15 | Scaled Value: 15 | Misc Value: 0x7e | Target: Self (1)
+                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
+#2 (id=1351745)  : Apply Aura (6) | Modify Healing Power (135)
+                   Base Value: 15 | Scaled Value: 15 | Misc Value: 126 | Target: Self (1)
+Tooltip          : In a Swamp area, spell damage and healing increased by an additional $s1.
+
 Name             : Defender of the Timbermaw (id=1318470) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -73367,6 +73908,20 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1351946)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+
+Name             : Royal Seal of Eldre'Thalas (id=1318477) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Aura Points On Client (268), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1351972)  : Apply Aura (6) | Restore Power (85)
+                   Base Value: 9 | Scaled Value: 9 | Target: Self (1)
+Description      : Restores $s1 Mana per 5 sec in Haunted areas.
+
+
+Tooltip          : In a Haunted area, restoring $w1 Mana per 5 sec.
 
 Name             : Royal Seal of Eldre'Thalas (id=1318479) [Passive] 
 School           : Physical
@@ -73382,6 +73937,18 @@ Effects          :
 #3 (id=1351976)  : Apply Aura (6) | Modify Spell Damage vs Race (180)
                    Base Value: 18 | Scaled Value: 18 | Misc Value: 4 | Target: Self (1)
 Description      : Increases spell damage and healing by up to $s1. Grants an additional $s3 spell damage against Demons.
+
+Name             : Royal Seal of Eldre'Thalas (id=1318480) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Aura Points On Client (268), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1351977)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 16 | Scaled Value: 16 | Stat: Spi | Target: Self (1)
+Description      : Increases Spirit by $s1 in Cavernous or Underground areas.
+Tooltip          : In a Cavernous or Underground area, Spirit increased by $w1.
 
 Name             : Defender of the Barkskin (id=1318514) [Passive, Hidden] 
 School           : Physical
@@ -73400,6 +73967,35 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1352485)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+
+Name             : Draconic Infused Emblem (id=1318930) 
+School           : Shadow
+Spell Type       : Magic
+Duration         : 10 seconds
+Proc Chance      : 101%
+Triggered By     : Draconic Infused Emblem (1318931)
+Attributes       : Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1352624)  : Apply Aura (6) | Damage Done (13)
+                   Base Value: 35 | Scaled Value: 35 | SP Coefficient: 1 | Misc Value: 0x7e | Target: Self (1)
+                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
+#2 (id=1352625)  : Apply Aura (6) | Modify Healing Power (135)
+                   Base Value: 35 | Scaled Value: 35 | SP Coefficient: 1 | Misc Value: 126 | Target: Self (1)
+#3 (id=1352626)  : Apply Aura (6) | Modify Spell Damage vs Race (180)
+                   Base Value: 35 | Scaled Value: 35 | SP Coefficient: 1 | Misc Value: 2 | Target: Self (1)
+Description      : Increases spell damage and healing done by up to $s1 for $d. This spell damage increase is doubled against Dragonkin.
+Tooltip          : Spell damage and healing increased by $w1. Spell damage increased by an additional $w3 against Dragonkin.
+
+Name             : Draconic Infused Emblem (id=1318931) [Passive] 
+School           : Physical
+Spell Type       : None
+Proc Chance      : 100%
+Proc Flags       : Magic Hostile Spell
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1352627)  : Apply Aura (6) | Proc Trigger Spell (42): Draconic Infused Emblem
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1318930 | Target: Self (1)
+Description      : Chance on harmful spellcast to increase your spell damage and healing by up to $1318930s1 for $1318930d. This spell damage increase is doubled against Dragonkin.
 
 Name             : Counterattack Lodestone (id=1318938) [Passive, Hidden] 
 School           : Physical
@@ -73810,6 +74406,21 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 276331 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Right Click to summon and dismiss Spawn of Grubthor.
 
+Name             : Rend (id=1320824) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 50
+Range            : 100 yards
+Duration         : 14 seconds
+Proc Chance      : 101%
+Mechanic         : Bleed
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1355692)  : Apply Aura (6) | Periodic Damage (3): physical every 2 seconds
+                   Base Value: 20 | Scaled Value: 20 | Target: Targeted Enemy (6)
+Description      : Wounds the target, causing them to bleed for $o1 damage over $d.
+Tooltip          : Bleeding for $s1 damage every $t1 sec.
+
 Name             : Toss Crystal Heart (id=1320898) 
 School           : Physical
 Spell Type       : None
@@ -74015,6 +74626,19 @@ Effects          :
                    Base Value: -25 | Scaled Value: -25 | Misc Value: 10 | Trigger Spell: 13262 | Target: Self (1)
 Description      : Reduces the cast time of Disenchant by $s1%.
 
+Name             : Sift Soil (id=1325180) 
+School           : Physical
+Spell Type       : None
+Range            : 5 yards
+Cast Time        : 5 seconds
+Cooldown         : 600 seconds
+Effects          :
+#1 (id=1362281)  : Activate Object (86)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 15 | Target: Nearby Gameobject (40)
+#2 (id=1362282)  : Create Item (157)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 144975 | Target: Self (1)
+Description      : Sift through an Un'Goro Dirt Pile.
+
 Name             : The Green Tower (id=1325228) [Passive] 
 School           : Nature
 Spell Type       : None
@@ -74026,11 +74650,13 @@ Effects          :
 Description      : When struck in combat, inflicts $s1 Physical damage to the attacker.
 
 Name             : Gloves of Holy Might (id=1325229) 
+Hotfixed         : Attributes
 School           : Holy
 Spell Type       : Ranged
 Spell Level      : 1
 Range            : 50000 yards
-Attributes       : Is Ability (4), Suppress Caster Procs (112), Suppress Weapon Procs (151), Unknown (493)
+Triggered By     : Gloves of Holy Might (1330855)
+Attributes       : Is Ability (4), Unknown (493)
 Effects          :
 #1 (id=1362432)  : School Damage (2): holy
                    Base Value: 112 | Scaled Value: 112 (delta=0.2) | Target: Targeted Enemy (6)
@@ -74318,4 +74944,38 @@ Effects          :
 #1 (id=1368223)  : Enchant Item (53)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 8737
 Description      : Permanently enchant boots to increase movement speed by $1328947s1%.
+
+Name             : Drink (id=1330734) 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Duration         : 30 seconds
+Cooldown         : 1 seconds
+Category         : 59 (Type 0x0)
+Labels           : 5360
+Category Cooldown: 1 seconds
+Attributes       : Do Not Log (8), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), Unknown (493)
+Aura Interrupt   : Under Water (7), Standing (18)
+Effects          :
+#1 (id=1371030)  : Apply Aura (6) | Restore Power (85)
+                   Base Value: 489 | Scaled Value: 489 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Restores $o1 mana over $d.  Must remain seated while drinking.
+Tooltip          : Restores $/5;s1 mana per second.
+
+Name             : Gloves of Holy Might (id=1330855) [Passive] 
+Hotfixed         : NEW SPELL
+School           : Holy
+Spell Type       : Ranged
+Spell Level      : 1
+Range            : 50000 yards
+Internal Cooldown: 20 seconds
+Proc Chance      : 15%
+Proc Flags       : White Melee, Generic Hostile Spell, Magic Hostile Spell, Unknown 38
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1371198)  : Apply Aura (6) | Proc Trigger Spell (42): Gloves of Holy Might
+                   Base Value: 112 | Scaled Value: 112 (delta=0.2) | Trigger Spell: 1325229 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Smite your target for $s1 Holy damage. Damage is tripled against Undead.
 

@@ -1,4 +1,4 @@
-Class Spell ID List, wow build 1.60.1.70862
+Class Spell ID List, wow build 1.60.1.70888
 
 Druid
 99       Demoralizing Roar
@@ -697,6 +697,8 @@ Druid
 1328621  Bloom
 1328622 *Bloom
 1328827  Poised
+1330763  Poised
+1330765 *Poised
 
 Hunter
 75       Auto Shot
@@ -1705,7 +1707,7 @@ Mage
 16413    Fireball
 16415    Fireball
 16454    Searing Blast
-16551   *Felstriker
+16551    Felstriker
 16757    Arctic Reach
 16785   *Flamebreak
 16876   *Arcane Intellect
@@ -2147,7 +2149,7 @@ Mage
 1292739  Hydra Strike
 1293790  Frostbolt
 1297659 *Teleport: Dalaran
-1298416 *Frostbolt
+1298416  Frostbolt
 1299850  Fireball
 1300130  Frostburn
 1300140 *Wit's End
@@ -3907,6 +3909,8 @@ Rogue
 1329328  Venom
 1329549  Shank
 1329552 *Counterspell - Silenced
+1330741  Poised
+1330746 *Poised
 
 Shaman
 324      Lightning Shield
