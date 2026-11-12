@@ -149828,6 +149828,19 @@ Effects          :
 Description      : Restores $s1 mana.
 Tooltip          : Restores $s1 mana.
 
+Name             : Treant Slayer (id=1302354) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 58
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1327921)  : School Damage (2): fire
+                   Base Value: 175 | Scaled Value: 175 (delta=0.42) | Target: Targeted Enemy (6)
+#2 (id=1327922)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Description      : Deal $s1 Fire damage. Deals $s2 times as much damage to Plants.
+
 Name             : Magnetize (id=1302356) 
 School           : Arcane
 Spell Type       : None
