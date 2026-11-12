@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70888
-static constexpr std::array<spelltext_data_t, 8721> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8722> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8214,6 +8214,7 @@ static constexpr std::array<spelltext_data_t, 8721> __spelltext_data { {
   { 1302346, "Reduces the hit chance of Fear effects against you by $s1%.", 0, 0 },
   { 1302348, "Chance on hit to restore $s1 mana.", 0, 0 },
   { 1302350, "Restores $s1 mana.", "Restores $s1 mana.", 0 },
+  { 1302354, "Deal $s1 Fire damage. Deals $s2 times as much damage to Plants.", 0, 0 },
   { 1302356, "Energize the lodestone for $d, heightening its magnetic pull and drawing in the weapon of the next melee attacker that strikes you, Disarming them for $1302357d.", "Energized, disarming the next melee attacker that strikes you.", 0 },
   { 1302357, "Disarm the enemy's weapon for $d.", "Disarmed!", 0 },
   { 1302359, "Dispel $1302360s1 beneficial magic effect from the target enemy and $1302360s1 additional magic effect every $t1 sec for $d.", 0, 0 },
