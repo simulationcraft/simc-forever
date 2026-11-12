@@ -781,11 +781,17 @@ int item_database::random_suffix_type( const dbc_item_data_t& item )
         case ITEM_SUBCLASS_WEAPON_POLEARM:
         case ITEM_SUBCLASS_WEAPON_SWORD2:
         case ITEM_SUBCLASS_WEAPON_STAFF:
+          return 0;
+        // Weapons that go in the ranged slot have a budget of their own in Forever, unlike retail where they share
+        // the two-hand one. A rare ilevel 36 thrown weapon (item 274160) has 4 strength and 40 armor in game, which
+        // is what this budget gives; the two-hand one gave 13 and 133. Tested by kflirik on 2026-11-12, build
+        // 1.60.1.70888. Only thrown is verified, the rest follows the Classic rule of going by the ranged slot.
         case ITEM_SUBCLASS_WEAPON_GUN:
         case ITEM_SUBCLASS_WEAPON_BOW:
         case ITEM_SUBCLASS_WEAPON_CROSSBOW:
         case ITEM_SUBCLASS_WEAPON_THROWN:
-          return 0;
+        case ITEM_SUBCLASS_WEAPON_WAND:
+          return 4;
         default:
           return 3;
       }
@@ -837,11 +843,15 @@ int item_database::random_suffix_type( item_t& item )
       case WEAPON_POLEARM:
       case WEAPON_SWORD_2H:
       case WEAPON_STAFF:
+        return 0;
+
+      // Ranged slot weapons use the fifth point allocation budget
       case WEAPON_BOW:
       case WEAPON_CROSSBOW:
       case WEAPON_GUN:
       case WEAPON_THROWN:
-        return 0;
+      case WEAPON_WAND:
+        return 4;
 
       // One-hand/Off-hand/Main-hand weapons use the fourth point allocation budget
       default:
