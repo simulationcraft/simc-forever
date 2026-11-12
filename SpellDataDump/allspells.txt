@@ -3027,6 +3027,7 @@ Effects          :
 Description      : Magically unlocks treasure chests and other locked items.
 
 Name             : Frost Nova (desc=Rank 2) (id=865) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -3042,7 +3043,7 @@ Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
 Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 6, 19
-Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Can Proc From Procs (122), Show Mechanic as Combat Text (213), Can Proc From Suppressed Target Procs (254), Can Proc from Suppressed Caster Procs (385), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=679518)   : School Damage (2): frost
                    Base Value: 34 | Scaled Value: 36.5 (delta=0.114286) | Points Per Level: 0.5 | SP Coefficient: 0.029 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
@@ -12528,6 +12529,7 @@ Description      : Conjures $s1 $lloaf:loaves; of pumpernickel, providing the ma
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Frost Nova (desc=Rank 3) (id=6131) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -12543,7 +12545,7 @@ Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
 Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 6, 19
-Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Can Proc From Procs (122), Show Mechanic as Combat Text (213), Can Proc From Suppressed Target Procs (254), Can Proc from Suppressed Caster Procs (385), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684315)   : School Damage (2): frost
                    Base Value: 53 | Scaled Value: 55.5 (delta=0.109091) | Points Per Level: 0.5 | SP Coefficient: 0.029 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
@@ -27994,6 +27996,7 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Frost Nova (desc=Rank 4) (id=10230) [Spell Family (3)] 
+Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -28009,7 +28012,7 @@ Proc Chance      : 100%
 Proc Flags       : White Melee Taken, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Hostile Spell Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
 Affecting Spells : Piercing Ice (11151 effect#1), Frost Channeling (11160 effect#1), Improved Frost Nova (11165 effect#1), Ice Shards (11207 effect#1), Ice Barrier (11426 effect#2), Arcane Power (12042 effects: #1, #2), Clearcasting (12536 effect#1), Ice Barrier (13031 effect#2), Ice Barrier (13032 effect#2), Ice Barrier (13033 effect#2), Arcane Instability (15058 effect#1), Arctic Reach (16757 effect#2), Spell Power (412322 effect#1), Eureka! (1259817 effects: #1, #2), Frigid Power (1326891 effect#1)
 Family Flags     : 6, 19
-Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Heartbeat Resist (30), No Redirection (35), No Reflection (39), Can Proc From Procs (122), Show Mechanic as Combat Text (213), Can Proc From Suppressed Target Procs (254), Can Proc from Suppressed Caster Procs (385), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688517)   : School Damage (2): frost
                    Base Value: 73 | Scaled Value: 75.5 (delta=0.106667) | Points Per Level: 0.5 | SP Coefficient: 0.029 | Radius: 0 - 10 yards | Target: Source (22) -> Enemy in Area (15)
@@ -47668,6 +47671,7 @@ Description      : When activated, reduces the Mana cost of your next spell by $
 Tooltip          : The Mana cost of your next spell is reduced by $s1% and its non-periodic critical effect chance is increased by $s2%.
 
 Name             : Divine Spirit (desc=Rank 1) (id=14752) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -47679,7 +47683,7 @@ Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 31
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=692824)   : Apply Aura (6) | Attribute (29)
@@ -47766,6 +47770,7 @@ Effects          :
 Description      : Throw near a patron of the Grim Guzzler
 
 Name             : Divine Spirit (desc=Rank 2) (id=14818) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -47777,7 +47782,7 @@ Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 31
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691641)   : Apply Aura (6) | Attribute (29)
@@ -47786,6 +47791,7 @@ Description      : Holy power infuses the target, increasing their Spirit by $s1
 Tooltip          : Increases Spirit by $s1.
 
 Name             : Divine Spirit (desc=Rank 3) (id=14819) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -47797,7 +47803,7 @@ Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 31
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691642)   : Apply Aura (6) | Attribute (29)
@@ -47943,7 +47949,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=692104)   : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Prayer of Healing (596), Prayer of Healing (996), Lesser Heal (2050), Lesser Heal (2052), Lesser Heal (2053), Heal (2054), Heal (2055), Greater Heal (2060), Flash Heal (2061), Heal (6063), Heal (6064), Flash Heal (9472), Flash Heal (9473), Flash Heal (9474), Flash Heal (10915), Flash Heal (10916), Flash Heal (10917), Prayer of Healing (10960), Prayer of Healing (10961), Greater Heal (10963), Greater Heal (10964), Greater Heal (10965), Desperate Prayer (13908), Desperate Prayer (19236), Desperate Prayer (19238), Desperate Prayer (19240), Desperate Prayer (19241), Desperate Prayer (19242), Desperate Prayer (19243), Holy Nova (23455), Holy Nova (23458), Holy Nova (23459), Greater Heal (25314), Prayer of Healing (25316), Prayer of Spirit (27681), Holy Nova (27803), Holy Nova (27804), Holy Nova (27805), Prayer of Mending (401859), Prayer of Mending (401880), Binding Heal (401937), Penance (402277), Penance (402289), Penance (1240723), Penance (1240724), Penance (1240732), Penance (1240733), Prayer of Mending (1240826), Prayer of Mending (1240827), Divine Grace (1277370), Divine Grace (1277371), Divine Grace (1277372), Divine Grace (1277374), Divine Grace (1277376), Divine Grace (1277377), Divine Grace (1277378), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640), Penance (1316991), Penance (1316992)
+                   Affected Spells: Prayer of Healing (596), Prayer of Healing (996), Lesser Heal (2050), Lesser Heal (2052), Lesser Heal (2053), Heal (2054), Heal (2055), Greater Heal (2060), Flash Heal (2061), Heal (6063), Heal (6064), Flash Heal (9472), Flash Heal (9473), Flash Heal (9474), Flash Heal (10915), Flash Heal (10916), Flash Heal (10917), Prayer of Healing (10960), Prayer of Healing (10961), Greater Heal (10963), Greater Heal (10964), Greater Heal (10965), Desperate Prayer (13908), Desperate Prayer (19236), Desperate Prayer (19238), Desperate Prayer (19240), Desperate Prayer (19241), Desperate Prayer (19242), Desperate Prayer (19243), Holy Nova (23455), Holy Nova (23458), Holy Nova (23459), Greater Heal (25314), Prayer of Healing (25316), Holy Nova (27803), Holy Nova (27804), Holy Nova (27805), Prayer of Mending (401859), Prayer of Mending (401880), Binding Heal (401937), Penance (402277), Penance (402289), Penance (1240723), Penance (1240724), Penance (1240732), Penance (1240733), Prayer of Mending (1240826), Prayer of Mending (1240827), Divine Grace (1277370), Divine Grace (1277371), Divine Grace (1277372), Divine Grace (1277374), Divine Grace (1277376), Divine Grace (1277377), Divine Grace (1277378), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640), Penance (1316991), Penance (1316992)
                    Family Flags: 5, 9, 10, 11, 12, 18, 24, 27, 34, 37, 48
 #2 (id=1239404)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
@@ -61926,6 +61932,20 @@ Effects          :
                    Base Value: 49 | Scaled Value: 49 | Target: Targeted Enemy (6)
 Description      : Deals $s1 Shadow damage every $t1 sec for $d. All damage done is then transferred to the caster.
 Tooltip          : Deals $s1 Shadow damage every $t1 sec.
+
+Name             : Corruption (id=18656) 
+School           : Shadow
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 9 seconds
+Proc Chance      : 100%
+Attributes       : Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=696702)   : Apply Aura (6) | Periodic Damage (3): shadow every 3 seconds
+                   Base Value: 28 | Scaled Value: 28 | Target: Targeted Enemy (6)
+Description      : Corrupts the target, causing $o1 damage over $d.
+Tooltip          : Inflicts $s1 Shadow damage every $t1 sec.
 
 Name             : Hibernate (desc=Rank 2) (id=18657) [Spell Family (7)] 
 Class            : Druid
@@ -79558,6 +79578,17 @@ Effects          :
                    Base Value: 655 | Scaled Value: 655 (delta=0.045714) | SP Coefficient: 1 | Target: Targeted Enemy (6)
 Description      : Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.
 
+Name             : Seal of the Dawn (id=23930) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Allow While Mounted (24), Unknown (493)
+Effects          :
+#1 (id=701288)   : Apply Aura (6) | Modify Melee Attack Power vs Race (102)
+                   Base Value: 78 | Scaled Value: 78 | Misc Value: 32 | Target: Self (1)
+#2 (id=701289)   : Apply Aura (6) | Modify Ranged Attack Power vs Race (131)
+                   Base Value: 78 | Scaled Value: 78 | SP Coefficient: 1 | Misc Value: 32 | Target: Self (1)
+Description      : +$s1 Attack Power against Undead.  Allows the acquisition of Scourgestones on behalf of the Argent Dawn.
+
 Name             : Readiness (id=23989) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -80111,6 +80142,15 @@ Effects          :
 #1 (id=700937)   : Server Side Script (77)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Offer a tribute at Grom Hellscream's monument in Ashenvale.
+
+Name             : Rune of the Dawn (id=24198) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Allow While Mounted (24), Unknown (493)
+Effects          :
+#1 (id=701041)   : Apply Aura (6) | Modify Spell Damage vs Race (180)
+                   Base Value: 46 | Scaled Value: 46 | Misc Value: 32 | Target: Self (1)
+Description      : Increases damage done to Undead by magical spells and effects by up to $s1.  Allows the acquisition of Scourgestones on behalf of the Argent Dawn.
 
 Name             : Hammer of Wrath (desc=Rank 3) (id=24239) [Spell Family (10)] 
 Class            : Paladin
@@ -86919,6 +86959,7 @@ Description      : Combines a Book of Romantic Poetry, a Sheaf of Cards and an U
 Tooltip          : Your Intellect is increased by $m2.
 
 Name             : Prayer of Spirit (desc=Rank 1) (id=27681) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -86929,8 +86970,8 @@ GCD              : 1.5 seconds
 Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Spiritual Healing (14898 effect#1), Twin Disciplines (1225132 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 5, 31
+Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), No AutoCast (AI) (49), Allow While Not Shapeshifted (caster form) (83), Only On Player (104), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=701842)   : Apply Aura (6) | Attribute (29)
@@ -87488,6 +87529,7 @@ Effects          :
 Description      : Increases the percentage healed by your Vampiric Embrace by an additional $s1%.
 
 Name             : Divine Spirit (desc=Rank 4) (id=27841) [Spell Family (6)] 
+Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -87499,7 +87541,7 @@ Duration         : 3600 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
-Family Flags     : 31
+Family Flags     : 31, 54
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=704677)   : Apply Aura (6) | Attribute (29)
@@ -95090,7 +95132,8 @@ Family Flags     : 58
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Aura Never Bounces (148), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1072065)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
-                   Base Value: 40 | Scaled Value: 48 | Points Per Level: 1 | SP Coefficient: 0.033 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 40 | Scaled Value: 48 | Points Per Level: 1 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1075729)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -126605,11 +126648,11 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1214136)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
-                   Affected Spells: Touch of Weakness (2943), Desperate Prayer (13908), Holy Nova (15237), Holy Nova (15430), Holy Nova (15431), Shadowguard (18137), Desperate Prayer (19236), Desperate Prayer (19238), Desperate Prayer (19240), Desperate Prayer (19241), Desperate Prayer (19242), Desperate Prayer (19243), Touch of Weakness (19249), Touch of Weakness (19251), Touch of Weakness (19252), Touch of Weakness (19253), Touch of Weakness (19254), Shadowguard (19308), Shadowguard (19309), Shadowguard (19310), Shadowguard (19311), Shadowguard (19312), Holy Nova (23455), Holy Nova (23458), Holy Nova (23459), Prayer of Spirit (27681), Holy Nova (27799), Holy Nova (27800), Holy Nova (27801), Holy Nova (27803), Holy Nova (27804), Holy Nova (27805), Shadowguard (28377), Shadowguard (28378), Shadowguard (28379), Shadowguard (28380), Shadowguard (28381), Shadowguard (28382), Prayer of Mending (401863), Circle of Healing (401946), Shadow Word: Death (401955), Penance (402277), Penance (402284), Penance (402289), Penance (1240723), Penance (1240724), Penance (1240727), Penance (1240730), Penance (1240732), Penance (1240733), Chastise (1277331), Chastise (1277332), Chastise (1277333), Chastise (1277334), Chastise (1277335), Divine Grace (1277370), Divine Grace (1277371), Divine Grace (1277372), Divine Grace (1277374), Divine Grace (1277376), Divine Grace (1277377), Divine Grace (1277378), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640), Shadow Word: Death (1309595), Shadow Word: Death (1309633), Shadow Word: Death (1309635), Shadow Word: Death (1309636), Early Demise (1310076), Penance (1316991), Penance (1316992), Penance (1316993)
+                   Affected Spells: Touch of Weakness (2943), Desperate Prayer (13908), Holy Nova (15237), Holy Nova (15430), Holy Nova (15431), Shadowguard (18137), Desperate Prayer (19236), Desperate Prayer (19238), Desperate Prayer (19240), Desperate Prayer (19241), Desperate Prayer (19242), Desperate Prayer (19243), Touch of Weakness (19249), Touch of Weakness (19251), Touch of Weakness (19252), Touch of Weakness (19253), Touch of Weakness (19254), Shadowguard (19308), Shadowguard (19309), Shadowguard (19310), Shadowguard (19311), Shadowguard (19312), Holy Nova (23455), Holy Nova (23458), Holy Nova (23459), Holy Nova (27799), Holy Nova (27800), Holy Nova (27801), Holy Nova (27803), Holy Nova (27804), Holy Nova (27805), Shadowguard (28377), Shadowguard (28378), Shadowguard (28379), Shadowguard (28380), Shadowguard (28381), Shadowguard (28382), Prayer of Mending (401863), Circle of Healing (401946), Shadow Word: Death (401955), Penance (402277), Penance (402284), Penance (402289), Penance (1240723), Penance (1240724), Penance (1240727), Penance (1240730), Penance (1240732), Penance (1240733), Chastise (1277331), Chastise (1277332), Chastise (1277333), Chastise (1277334), Chastise (1277335), Divine Grace (1277370), Divine Grace (1277371), Divine Grace (1277372), Divine Grace (1277374), Divine Grace (1277376), Divine Grace (1277377), Divine Grace (1277378), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640), Shadow Word: Death (1309595), Shadow Word: Death (1309633), Shadow Word: Death (1309635), Shadow Word: Death (1309636), Early Demise (1310076), Penance (1316991), Penance (1316992), Penance (1316993)
                    Family Flags: 5, 19, 22, 24, 27, 28, 33, 36, 47, 48, 117
 #2 (id=1239165)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 22 | Target: Self (1)
-                   Affected Spells: Renew (139), Shadow Word: Pain (589), Shadow Word: Pain (594), Shadow Word: Pain (970), Shadow Word: Pain (992), Shadow Word: Pain (2767), Devouring Plague (2944), Renew (6074), Renew (6075), Renew (6076), Renew (6077), Renew (6078), Starshards (10797), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Renew (10927), Renew (10928), Renew (10929), Crystal Restore (15229), Mind Flay (15407), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Mind Flay (18807), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Starshards (19296), Starshards (19299), Starshards (19302), Starshards (19303), Starshards (19304), Starshards (19305), Renew (25315), Prayer of Spirit (27681), Renew (425268), Renew (425269), Renew (425270), Renew (425271), Renew (425272), Renew (425273), Renew (425274), Renew (425275), Renew (425276), Renew (425277), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640)
+                   Affected Spells: Renew (139), Shadow Word: Pain (589), Shadow Word: Pain (594), Shadow Word: Pain (970), Shadow Word: Pain (992), Shadow Word: Pain (2767), Devouring Plague (2944), Renew (6074), Renew (6075), Renew (6076), Renew (6077), Renew (6078), Starshards (10797), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Renew (10927), Renew (10928), Renew (10929), Crystal Restore (15229), Mind Flay (15407), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Mind Flay (18807), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Starshards (19296), Starshards (19299), Starshards (19302), Starshards (19303), Starshards (19304), Starshards (19305), Renew (25315), Renew (425268), Renew (425269), Renew (425270), Renew (425271), Renew (425272), Renew (425273), Renew (425274), Renew (425275), Renew (425276), Renew (425277), Contingency Plan (1277456), Contingency Plan (1277457), Contingency Plan (1277458), Contingency Plan (1277459), Contingency Plan (1277460), Contingency Plan (1277462), Contingency Plan (1277463), Contingency Plan (1277464), Contingency Plan (1277465), Contingency Plan (1277466), Contingency Plan (1277467), Contingency Plan (1277634), Contingency Plan (1277638), Contingency Plan (1277639), Contingency Plan (1277640)
                    Family Flags: 5, 6, 15, 21, 23, 100
 Description      : Increases the damage and healing of your instant cast spells by $s1%.
 
@@ -128313,7 +128356,8 @@ Family Flags     : 58
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Aura Never Bounces (148), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1235327)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
-                   Base Value: 60 | Scaled Value: 70.4 | Points Per Level: 1.3 | SP Coefficient: 0.033 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 60 | Scaled Value: 70.4 | Points Per Level: 1.3 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1235328)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -128339,7 +128383,8 @@ Family Flags     : 58
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Aura Never Bounces (148), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1235329)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
-                   Base Value: 97 | Scaled Value: 97 | Points Per Level: 1.6 | SP Coefficient: 0.033 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 97 | Scaled Value: 97 | Points Per Level: 1.6 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1235330)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -148288,6 +148333,18 @@ Effects          :
 Description      : Increases armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
+Name             : Firebolt (id=1300753) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 45
+Range            : 100 yards
+Velocity         : 19 yards/sec
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1325577)  : School Damage (2): fire
+                   Base Value: 140 | Scaled Value: 140 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Resist Bleed 10 (id=1300755) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -149070,6 +149127,19 @@ Attributes       : Is Ability (4), Is Tradeskill (5), Not Shapeshifted (16), Rec
 Effects          :
 #1 (id=1326692)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
+Name             : Flame Walker (id=1301625) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 45
+Duration         : 15 seconds
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#1 (id=1326806)  : Apply Aura (6) | Absorb Damage (69)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 0x4 | Target: Self (1)
+                   Affected School(s): Fire
+Description      : Ignore all damage taken from standing or swimming in Lava for $d.
+Tooltip          : Ignoring all damage taken from Lava.
 
 Name             : Harvester Override Signalcaster (id=1301683) 
 School           : Physical

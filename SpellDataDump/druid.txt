@@ -6182,7 +6182,8 @@ Family Flags     : 58
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Aura Never Bounces (148), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1072065)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
-                   Base Value: 40 | Scaled Value: 48 | Points Per Level: 1 | SP Coefficient: 0.033 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 40 | Scaled Value: 48 | Points Per Level: 1 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1075729)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -9846,7 +9847,8 @@ Family Flags     : 58
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Aura Never Bounces (148), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1235327)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
-                   Base Value: 60 | Scaled Value: 70.4 | Points Per Level: 1.3 | SP Coefficient: 0.033 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 60 | Scaled Value: 70.4 | Points Per Level: 1.3 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1235328)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -9872,7 +9874,8 @@ Family Flags     : 58
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Aura Never Bounces (148), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=1235329)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
-                   Base Value: 97 | Scaled Value: 97 | Points Per Level: 1.6 | SP Coefficient: 0.033 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+                   Base Value: 97 | Scaled Value: 97 | Points Per Level: 1.6 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
+Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1235330)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
