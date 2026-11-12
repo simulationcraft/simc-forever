@@ -20707,6 +20707,20 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 10598 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Right Click to summon and dismiss your Smolderweb hatchling.
 
+Name             : Gift of Stone (id=16470) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 55
+Duration         : 10 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693350)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 4000 | Scaled Value: 4000 | Misc Value: 1 | Target: Self (1)
+#2 (id=693351)   : Apply Aura (6) | Pacify Silence (60)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 127 | Target: Self (1)
+Description      : Increases armor by $s1 for $d1 but cannot cast spells or attack for the duration of the spell.
+Tooltip          : Increased armor by $s1 but cannot attack or cast spells.
+
 Name             : Numbing Pain (id=16528) 
 School           : Nature
 Spell Type       : Magic
