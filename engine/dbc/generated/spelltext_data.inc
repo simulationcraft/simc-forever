@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70888
-static constexpr std::array<spelltext_data_t, 8709> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8714> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3436,6 +3436,7 @@ static constexpr std::array<spelltext_data_t, 8709> __spelltext_data { {
   {   18633, "Deals $s1 Shadow damage every $t1 sec for $d and lowers their attack power by $s2 for $d.", "Taking $s1 Shadow damage every $t sec and attack power lowered by $s2.", 0 },
   {   18647, "Banishes the enemy target, preventing all action but making it invulnerable for up to $d.  Only one target can be banished at a time.  Only works on Demons and Elementals.", "Invulnerable, but unable to act.", "Rank 2" },
   {   18652, "Deals $s1 Shadow damage every $t1 sec for $d. All damage done is then transferred to the caster.", "Deals $s1 Shadow damage every $t1 sec.", 0 },
+  {   18656, "Corrupts the target, causing $o1 damage over $d.", "Inflicts $s1 Shadow damage every $t1 sec.", 0 },
   {   18657, "Forces the enemy target to sleep for up to $d.  Any damage will awaken the target.  Only one target can be forced to hibernate at a time.  Only works on Beasts and Dragonkin.", "Asleep.", "Rank 2" },
   {   18658, "Forces the enemy target to sleep for up to $d.  Any damage will awaken the target.  Only one target can be forced to hibernate at a time.  Only works on Beasts and Dragonkin.", "Asleep.", "Rank 3" },
   {   18676, "+$s1 All Resistances.", 0, 0 },
@@ -4435,6 +4436,7 @@ static constexpr std::array<spelltext_data_t, 8709> __spelltext_data { {
   {   23923, "Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.", 0, "Rank 2" },
   {   23924, "Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.", 0, "Rank 3" },
   {   23925, "Slam the target with your shield, causing $s2 damage, increased by your Block Value, and has a 50% chance of dispelling $s1 magic effect on the target. Causes a very high amount of threat.", 0, "Rank 4" },
+  {   23930, "+$s1 Attack Power against Undead.  Allows the acquisition of Scourgestones on behalf of the Argent Dawn.", 0, 0 },
   {   23989, "When activated, this ability immediately finishes the cooldown on all your other Hunter abilities.", 0, 0 },
   {   23990, "Run speed increased slightly.", 0, 0 },
   {   23991, "Absorbs $s1 physical damage.  Lasts $d.", "Absorbs $s1 physical damage.", 0 },
@@ -4458,6 +4460,7 @@ static constexpr std::array<spelltext_data_t, 8709> __spelltext_data { {
   {   24191, "Increases the amount of damage absorbed by Power Word: Shield by $s1.", 0, 0 },
   {   24194, "Offer a tribute at Uther Lightbringer's tomb in Western Plaguelands.", 0, 0 },
   {   24195, "Offer a tribute at Grom Hellscream's monument in Ashenvale.", 0, 0 },
+  {   24198, "Increases damage done to Undead by magical spells and effects by up to $s1.  Allows the acquisition of Scourgestones on behalf of the Argent Dawn.", 0, 0 },
   {   24239, "Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.", 0, "Rank 3" },
   {   24245, "Combine with 5 Channeler's Heads into a Gurubashi Head Collection.", 0, 0 },
   {   24259, 0, "Silenced.", 0 },
@@ -8143,6 +8146,7 @@ static constexpr std::array<spelltext_data_t, 8709> __spelltext_data { {
   { 1300739, "Turn the gizmo on and send the signal to Jurgens.", 0, 0 },
   { 1300744, "Reclaim the lost soul of the death knight's charger, transforming it into a spirit of retribution.", 0, 0 },
   { 1300752, "Increases armor by $s1 for $d.", "Armor increased by $s1.", 0 },
+  { 1300753, "Blasts a target for $s1 Fire damage.", 0, 0 },
   { 1300755, "Reduces the hit chance of Bleed effects against you by $s1%.", 0, 0 },
   { 1300763, "Skin a Humanoid target.", "Skins a Humanoid target.", 0 },
   { 1300781, "Harmful spell casts have a chance to deal $1300782s1 Fire damage. Deals $1300782s2 times as much damage to Plants.", 0, 0 },
@@ -8159,6 +8163,7 @@ static constexpr std::array<spelltext_data_t, 8709> __spelltext_data { {
   { 1301167, "Absorb up to $1316048s1 damage and Stun yourself for $d. When the Stun expires, gain $1301168s1% increased movement speed for $1301168d.", "Stunned", 0 },
   { 1301168, "$@spelldesc1301167", "Movement speed increased by $s1%.", 0 },
   { 1301195, "Pour a glass of Silvermoon Shimmerwine.", "Enjoying a glass of Silvermoon Shimmerwine.", 0 },
+  { 1301625, "Ignore all damage taken from standing or swimming in Lava for $d.", "Ignoring all damage taken from Lava.", 0 },
   { 1301683, "Override control of the target mechanical creature for up to $d. The target will attack slower while under your control. Ineffective on targets above level $m1.", "Overridden.", 0 },
   { 1301707, "Unable to be tracked.", "Untrackable.", 0 },
   { 1301784, "Place outside the door on the second floor of Trias' Cheese.", 0, 0 },
