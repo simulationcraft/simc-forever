@@ -815,11 +815,15 @@ int item_database::random_suffix_type( const dbc_item_data_t& item )
         case INVTYPE_FINGER:
         case INVTYPE_CLOAK:
         case INVTYPE_WRISTS:
+        // Shields and held in off-hand items share the budget of necks, rings, cloaks and wrists in Forever, unlike
+        // retail where they use the one-hand weapon one. An uncommon ilevel 31 shield (item 281307) has 3 strength
+        // and 5 stamina in game, which is what this budget gives; the one-hand one gave 2 and 4. Tested by kflirik
+        // on 2026-11-12, build 1.60.1.70888. Only the shield is verified, holdables follow the Classic rule.
+        case INVTYPE_HOLDABLE:
+        case INVTYPE_SHIELD:
           return 2;
 
         case INVTYPE_WEAPONOFFHAND:
-        case INVTYPE_HOLDABLE:
-        case INVTYPE_SHIELD:
           return 3;
 
         default:
@@ -880,10 +884,8 @@ int item_database::random_suffix_type( item_t& item )
     case SLOT_FINGER_1:
     case SLOT_FINGER_2:
     case SLOT_BACK:
-      return 2;
-
     case SLOT_OFF_HAND: // Shields, off hand items
-      return 3;
+      return 2;
 
     default:
       return -1;
