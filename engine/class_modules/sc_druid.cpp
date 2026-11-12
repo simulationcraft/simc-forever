@@ -93,6 +93,7 @@ struct druid_t final : public parse_player_effects_t
   struct
   {
     spell_ranks_t cat_form;
+    spell_ranks_t claw;
     spell_ranks_t entangling_roots;
     spell_ranks_t faerie_fire;
     spell_ranks_t hurricane;
@@ -223,6 +224,14 @@ void druid_t::init_spells()
   rank.cat_form = {
       this,
       spell_container_t().set_spell( 768 ).set_buff( 3025 ),
+  };
+  rank.claw = {
+      this,
+      spell_container_t().set_spell( 1082 ),
+      spell_container_t().set_spell( 3029 ),
+      spell_container_t().set_spell( 5201 ),
+      spell_container_t().set_spell( 9849 ),
+      spell_container_t().set_spell( 9850 ),
   };
   rank.entangling_roots = {
       this,
@@ -841,6 +850,15 @@ struct shred_t : public druid_melee_attack_t
   }
 };
 
+struct claw_t : public druid_melee_attack_t
+{
+  claw_t( druid_t* player, std::string_view options_str )
+    : druid_melee_attack_t( "claw", player, player->rank.claw.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+};
+
 struct rake_t : public druid_melee_attack_t
 {
   rake_t( druid_t* player, std::string_view options_str )
@@ -1078,6 +1096,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new cat_form_t( this, options_str );
   if ( name == "prowl" )
     return new prowl_t( this, options_str );
+  if ( name == "claw" )
+    return new claw_t( this, options_str );
   if ( name == "rake" )
     return new rake_t( this, options_str );
   if ( name == "rip" )
