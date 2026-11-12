@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70888
-static constexpr std::array<spelltext_data_t, 8716> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8717> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -2923,6 +2923,7 @@ static constexpr std::array<spelltext_data_t, 8716> __spelltext_data { {
   {   16450, "Right Click to summon and dismiss your Smolderweb hatchling.", 0, 0 },
   {   16454, "Blasts a target for $s1 Fire damage and increases Fire damage done to target by $s2 for $d.", 0, 0 },
   {   16462, "Increases your Parry chance by $s1%.", 0, 0 },
+  {   16470, "Increases armor by $s1 for $d1 but cannot cast spells or attack for the duration of the spell.", "Increased armor by $s1 but cannot attack or cast spells.", 0 },
   {   16487, "Regenerates $m1% of your total Health over $16488d after being the victim of a critical strike or suffering more than $m2% of your maximum Health from a single attack.", 0, 0 },
   {   16488, 0, "Regenerates $w1 Health every $t sec.", 0 },
   {   16493, "Increases the critical strike damage bonus of your abilities by $s1%.", 0, 0 },
