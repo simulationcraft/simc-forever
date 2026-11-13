@@ -107,7 +107,7 @@ struct white_swing_t : public melee_attack_t
 {
   white_swing_t( std::string_view name, weapon_t& weapon, action_t* parent ) : melee_attack_t( name, parent->player )
   {
-    background = repeating = may_glance = may_crit = allow_class_ability_procs = not_a_proc = true;
+    background = repeating = may_glance = may_crit = may_miss = may_dodge = may_parry = allow_class_ability_procs = not_a_proc = true;
 
     special                = false;
     trigger_gcd            = 0_ms;
@@ -135,6 +135,8 @@ struct auto_attack_t : public action_t
   auto_attack_t( std::string_view options_str, player_t* p ) : action_t( ACTION_OTHER, "auto_attack", p )
   {
     parse_options( options_str );
+
+    trigger_gcd = 0_ms;
 
     for ( auto& [ slot, weapon ] : p->equipped_weapons )
       if ( slot != SLOT_RANGED )
