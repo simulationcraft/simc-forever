@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70888
-static constexpr std::array<spelltext_data_t, 8722> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8724> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3500,6 +3500,7 @@ static constexpr std::array<spelltext_data_t, 8722> __spelltext_data { {
   {   18930, "Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.", 0, "Rank 4" },
   {   18931, "Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.", 0, "Rank 5" },
   {   18932, "Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.", 0, "Rank 6" },
+  {   18946, "Increases Armor by $s1 for $d.", "Increases Armor by $w1.", 0 },
   {   18952, "Opens the termite barrel placed in the Northridge Lumber Mill.", 0, 0 },
   {   18956, "Restores $s1 health every $t1 sec for $d.", "Healing.", 0 },
   {   18957, "Restores $s1 health every $t1 sec for $d.", "Healing.", 0 },
@@ -3968,6 +3969,7 @@ static constexpr std::array<spelltext_data_t, 8722> __spelltext_data { {
   {   20777, "Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.", 0, "Rank 5" },
   {   20804, "Use on Injured, Badly Injured, and Critically Injured Soldiers.", 0, 0 },
   {   20814, "Fill at the Dire Pool.", 0, 0 },
+  {   20847, "When struck in combat has a ${$h/2}% chance of increasing all party member's armor by $18946s1 for $18946d. This chance is doubled in Strongholds and Cities.", 0, 0 },
   {   20869, "Blasts a target for $s1 Frost damage.", 0, 0 },
   {   20875, "Increases Stamina by $s1 for $d and gets you drunk to boot!", "Stamina increased by $s1.", 0 },
   {   20882, "Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.", "Enslaved.", 0 },
