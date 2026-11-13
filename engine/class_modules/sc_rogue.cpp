@@ -24,11 +24,19 @@ struct rogue_t final : public player_t
   void init_action_list() override;
 
   void init_base_stats() override;
+  void init_spells() override;
 
   double current_cp() const
   {
     return resources.current[ RESOURCE_COMBO_POINT ];
   }
+
+  struct
+  {
+    spell_ranks_t backstab;
+    spell_ranks_t eviscerate;
+    spell_ranks_t sinister_strike;
+  } rank;
 };
 
 template <class Base>
@@ -151,40 +159,19 @@ struct rogue_auto_attack_t : public auto_attack_t
   }
 };
 
-constexpr std::array sinister_strike_ranks {
-  spell_container_t().set_spell(  1752 ),
-  spell_container_t().set_spell(  1757 ),
-  spell_container_t().set_spell(  1758 ),
-  spell_container_t().set_spell(  1759 ),
-  spell_container_t().set_spell(  1760 ),
-  spell_container_t().set_spell(  8621 ),
-  spell_container_t().set_spell( 11293 ),
-  spell_container_t().set_spell( 11294 ),
-};
 struct sinister_strike_t : public rogue_attack_t
 {
   sinister_strike_t( rogue_t* player, util::string_view options_str )
-    :  rogue_attack_t( "sinister_strike", player, player->find_rank( sinister_strike_ranks )->spell( player ) )
+    :  rogue_attack_t( "sinister_strike", player, player->rank.sinister_strike.find_rank()->spell() )
   {
     parse_options( options_str );
   }
 };
 
-constexpr std::array backstab_ranks {
-  spell_container_t().set_spell(    53 ),
-  spell_container_t().set_spell(  2589 ),
-  spell_container_t().set_spell(  2590 ),
-  spell_container_t().set_spell(  2591 ),
-  spell_container_t().set_spell(  8721 ),
-  spell_container_t().set_spell( 11279 ),
-  spell_container_t().set_spell( 11280 ),
-  spell_container_t().set_spell( 11281 ),
-  spell_container_t().set_spell( 25300 ),
-};
 struct backstab_t : public rogue_attack_t
 {
   backstab_t( rogue_t* player, util::string_view options_str )
-    :  rogue_attack_t( "backstab", player, player->find_rank( backstab_ranks )->spell( player ) )
+    :  rogue_attack_t( "backstab", player, player->rank.backstab.find_rank()->spell() )
   {
     parse_options( options_str );
   }
@@ -195,21 +182,10 @@ struct backstab_t : public rogue_attack_t
   }
 };
 
-constexpr std::array eviscerate_ranks {
-  spell_container_t().set_spell(  2098 ),
-  spell_container_t().set_spell(  6760 ),
-  spell_container_t().set_spell(  6761 ),
-  spell_container_t().set_spell(  6762 ),
-  spell_container_t().set_spell(  8623 ),
-  spell_container_t().set_spell(  8624 ),
-  spell_container_t().set_spell( 11299 ),
-  spell_container_t().set_spell( 11300 ),
-  spell_container_t().set_spell( 31016 ),
-};
 struct eviscerate_t : public rogue_attack_t
 {
   eviscerate_t( rogue_t* player, util::string_view options_str )
-    :  rogue_attack_t( "eviscerate", player, player->find_rank( eviscerate_ranks )->spell( player ) )
+    :  rogue_attack_t( "eviscerate", player, player->rank.eviscerate.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -242,6 +218,46 @@ struct eviscerate_t : public rogue_attack_t
     return e.base_value() * ( 1 + e.m_delta() / 2 ) + cp_bonus();
   }
 };
+
+void rogue_t::init_spells()
+{
+  player_t::init_spells();
+
+  rank.backstab = { this,
+    spell_container_t().set_spell(    53 ),
+    spell_container_t().set_spell(  2589 ),
+    spell_container_t().set_spell(  2590 ),
+    spell_container_t().set_spell(  2591 ),
+    spell_container_t().set_spell(  8721 ),
+    spell_container_t().set_spell( 11279 ),
+    spell_container_t().set_spell( 11280 ),
+    spell_container_t().set_spell( 11281 ),
+    spell_container_t().set_spell( 25300 ),
+  };
+
+  rank.eviscerate = { this,
+    spell_container_t().set_spell(  2098 ),
+    spell_container_t().set_spell(  6760 ),
+    spell_container_t().set_spell(  6761 ),
+    spell_container_t().set_spell(  6762 ),
+    spell_container_t().set_spell(  8623 ),
+    spell_container_t().set_spell(  8624 ),
+    spell_container_t().set_spell( 11299 ),
+    spell_container_t().set_spell( 11300 ),
+    spell_container_t().set_spell( 31016 ),
+  };
+
+  rank.sinister_strike = { this,
+    spell_container_t().set_spell(  1752 ),
+    spell_container_t().set_spell(  1757 ),
+    spell_container_t().set_spell(  1758 ),
+    spell_container_t().set_spell(  1759 ),
+    spell_container_t().set_spell(  1760 ),
+    spell_container_t().set_spell(  8621 ),
+    spell_container_t().set_spell( 11293 ),
+    spell_container_t().set_spell( 11294 ),
+  };
+}
 
 action_t* rogue_t::create_action( util::string_view name, util::string_view options_str )
 {
