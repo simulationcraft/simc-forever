@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -3027,7 +3027,6 @@ Effects          :
 Description      : Magically unlocks treasure chests and other locked items.
 
 Name             : Frost Nova (desc=Rank 2) (id=865) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -4709,7 +4708,6 @@ Effects          :
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $3355d.  Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
 Name             : Volley (desc=Rank 1) (id=1510) [Spell Family (9)] 
-Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -7930,7 +7928,7 @@ Name             : Arcane Shot (desc=Rank 1) (id=3044) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=170789)[Hotfixed: Cost (25 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=170789)
 Spell Level      : 6
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -7993,7 +7991,6 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=681913)   : School Damage (2): fire
                    Base Value: 6 | Scaled Value: 7.2 (delta=0.333333) | Points Per Level: 0.3 | SP Coefficient: 0.164 | Target: Targeted Enemy (6)
-Hotfixed         : Delta (0.285714 -> 0.333333), Base Value (4 -> 6), Points per Level (0.1 -> 0.3)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Mend Pet (desc=Rank 2) (id=3111) [Spell Family (9)] 
@@ -10090,7 +10087,6 @@ Effects          :
 Description      : Summon Myzrael from the Shards of Myzrael.
 
 Name             : Great Stamina (desc=Rank 1) (id=4187) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10099,11 +10095,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=682700)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (3 -> 30), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 2) (id=4188) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10112,11 +10106,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=682764)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (5 -> 50), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 3) (id=4189) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10125,11 +10117,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=682915)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 70 | Scaled Value: 70 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (7 -> 70), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 4) (id=4190) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10138,11 +10128,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=683003)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 100 | Scaled Value: 100 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (10 -> 100), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 5) (id=4191) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10151,11 +10139,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=683008)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 130 | Scaled Value: 130 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (13 -> 130), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 6) (id=4192) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10164,11 +10150,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=683009)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 170 | Scaled Value: 170 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (17 -> 170), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 7) (id=4193) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10177,11 +10161,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=683010)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 210 | Scaled Value: 210 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (21 -> 210), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 8) (id=4194) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -10190,7 +10172,6 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=682643)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 260 | Scaled Value: 260 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (26 -> 260), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Activating Defenses (id=4239) 
@@ -10513,7 +10494,6 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=684107)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 320 | Scaled Value: 320 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (32 -> 320), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 10) (id=5042) [Passive] 
@@ -10525,7 +10505,6 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=684108)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 400 | Scaled Value: 400 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (40 -> 400), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Disruption (id=5099) 
@@ -12529,7 +12508,6 @@ Description      : Conjures $s1 $lloaf:loaves; of pumpernickel, providing the ma
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Frost Nova (desc=Rank 3) (id=6131) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -17857,7 +17835,6 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=685570)   : School Damage (2): fire
                    Base Value: 11 | Scaled Value: 13 (delta=0.181818) | Points Per Level: 0.4 | SP Coefficient: 0.314 | Target: Targeted Enemy (6)
-Hotfixed         : Delta (0.153846 -> 0.181818), Base Value (7 -> 11), Points per Level (0.2 -> 0.4)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Firebolt (desc=Rank 3) (id=7800) [Spell Family (5)] 
@@ -17877,7 +17854,6 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=685571)   : School Damage (2): fire
                    Base Value: 15 | Scaled Value: 17 (delta=0.235294) | Points Per Level: 0.4 | SP Coefficient: 0.529 | Target: Targeted Enemy (6)
-Hotfixed         : Delta (0.166667 -> 0.235294), Base Value (12 -> 15), Points per Level (0.3 -> 0.4)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Firebolt (desc=Rank 4) (id=7801) [Spell Family (5)] 
@@ -17897,7 +17873,6 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=685572)   : School Damage (2): fire
                    Base Value: 18 | Scaled Value: 20 (delta=0.222222) | Points Per Level: 0.4 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
-Hotfixed         : Delta (0.114286 -> 0.222222), Base Value (17 -> 18), Points per Level (0.3 -> 0.4)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Firebolt (desc=Rank 5) (id=7802) [Spell Family (5)] 
@@ -18658,6 +18633,7 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $15568s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 1) (id=8024) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -18669,7 +18645,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=685841)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 5
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8026m1/77-1+($29469m1)} to ${$8026m1/25+($29469m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8026m1/77-1+($29469m1)} to ${$8026m1/25+($29469m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon Proc (desc=Rank 1) (id=8026) [Spell Family (11)] 
 Class            : Shaman
@@ -18686,6 +18662,7 @@ Effects          :
                    Base Value: 326 | Scaled Value: 440 | Points Per Level: 19 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Weapon (desc=Rank 2) (id=8027) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -18697,7 +18674,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=685718)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 4
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8028m1/77-1+($29470m1)} to ${$8028m1/25+($29470m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8028m1/77-1+($29470m1)} to ${$8028m1/25+($29470m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon Proc (desc=Rank 2) (id=8028) [Spell Family (11)] 
 Class            : Shaman
@@ -18728,6 +18705,7 @@ Effects          :
                    Base Value: 716 | Scaled Value: 1052 | Points Per Level: 42 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Weapon (desc=Rank 3) (id=8030) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -18739,7 +18717,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=686022)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 3
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8029m1/77-1+($10444m1)} to ${$8029m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$8029m1/77-1+($10444m1)} to ${$8029m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Frostbrand Weapon (desc=Rank 1) (id=8033) 
 Class            : Shaman
@@ -20240,6 +20218,7 @@ Effects          :
 Tooltip          : Main hand attacks deal an additional ${$8253m1/77} to ${$8253M1/25} Fire damage.
 
 Name             : Windfury Weapon (desc=Rank 1) (id=8232) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -20252,7 +20231,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=686257)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 283
-Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8233s2 extra $lattack:attacks; with $8233s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8233s2 extra $lattack:attacks; with $8233s1 extra melee attack power. Lasts for 60 minutes.
 
 Name             : Windfury Weapon (desc=Rank 1) (id=8233) [Spell Family (11)] 
 Class            : Shaman
@@ -20276,6 +20255,7 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 2) (id=8235) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -20288,7 +20268,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=686279)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 284
-Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. When appied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $8236s2 extra $lattack:attacks; with $8236s1 extra melee attack power. Lasts for 60 minutes.
 
 Name             : Windfury Weapon (desc=Rank 2) (id=8236) [Spell Family (11)] 
 Class            : Shaman
@@ -20387,7 +20367,6 @@ Attributes       : Passive (6), Do Not Log (8), Only On Player (104), Newest Exc
 Effects          :
 #1 (id=687698)   : Apply Aura Raid (65) | Proc Trigger Spell (42)
                    Base Value: 8248 | Scaled Value: 8248 | Radius: 30 yards | Target: Self (1)
-Hotfixed         : Base Value (0 -> 8248)
 Tooltip          : Main hand attacks deal an additional ${$8248m1/77} to ${$8248M1/25} Fire damage.
 
 Name             : Flametongue Totem Proc (desc=Rank 1) (id=8253) [Spell Family (11)] 
@@ -26962,7 +26941,6 @@ Description      : Infuses the target with power, increasing their spell damage 
 Tooltip          : Spell damage and healing done increased by $s2%.
 
 Name             : Flare (id=10113) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Range            : 100 yards
@@ -27996,7 +27974,6 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Frost Nova (desc=Rank 4) (id=10230) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -29470,6 +29447,7 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 3) (id=10486) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -29482,7 +29460,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=688964)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 525
-Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $10484s2 extra $lattack:attacks; with $10484s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $10484s2 extra $lattack:attacks; with $10484s1 extra melee attack power. Lasts for 60 minutes.
 
 Name             : Comfortable Leather Hat (id=10490) 
 School           : Physical
@@ -33830,6 +33808,15 @@ Effects          :
 #1 (id=688605)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Join together the Lower, Middle and Upper Map Fragments.
+
+Name             : Draught of Water Walking (id=11447) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 3 seconds
+Attributes       : Is Ability (4), Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Effects          :
+#1 (id=688674)   : Create Item (24)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Magic Resistance Potion (id=11453) 
 School           : Physical
@@ -39606,6 +39593,20 @@ Effects          :
                    Base Value: 60 | Scaled Value: 60 (delta=0.333333) | Target: Targeted Enemy (6)
 Description      : Blasts a target for $s1 Fire damage.
 
+Name             : Firebolt (id=13442) 
+School           : Fire
+Spell Type       : Magic
+Resource         : 18 Base Mana (0) (id=179478)
+Spell Level      : 30
+Range            : 30 yards
+Cast Time        : 3 seconds
+Velocity         : 19 yards/sec
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=691018)   : School Damage (2): fire
+                   Base Value: 90 | Scaled Value: 90 | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Minor Blocking (id=13462) [Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -43108,7 +43109,7 @@ Name             : Arcane Shot (desc=Rank 2) (id=14281) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179648)[Hotfixed: Cost (35 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179648)
 Spell Level      : 12
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -43131,7 +43132,7 @@ Name             : Arcane Shot (desc=Rank 3) (id=14282) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=180317)[Hotfixed: Cost (50 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=180317)
 Spell Level      : 20
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -43154,7 +43155,7 @@ Name             : Arcane Shot (desc=Rank 4) (id=14283) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=180443)[Hotfixed: Cost (80 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=180443)
 Spell Level      : 28
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -43177,7 +43178,7 @@ Name             : Arcane Shot (desc=Rank 5) (id=14284) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179345)[Hotfixed: Cost (105 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179345)
 Spell Level      : 36
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -43200,7 +43201,7 @@ Name             : Arcane Shot (desc=Rank 6) (id=14285) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179406)[Hotfixed: Cost (135 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179406)
 Spell Level      : 44
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -43223,7 +43224,7 @@ Name             : Arcane Shot (desc=Rank 7) (id=14286) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179444)[Hotfixed: Cost (160 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179444)
 Spell Level      : 52
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -43246,7 +43247,7 @@ Name             : Arcane Shot (desc=Rank 8) (id=14287) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179523)[Hotfixed: Cost (190 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179523)
 Spell Level      : 60
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -43266,7 +43267,6 @@ Effects          :
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Volley (desc=Rank 2) (id=14294) [Spell Family (9)] 
-Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -43293,7 +43293,6 @@ Effects          :
 Description      : Continuously fires a volley of ammo at the target area, causing $1279719s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 Name             : Volley (desc=Rank 3) (id=14295) [Spell Family (9)] 
-Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -47671,7 +47670,6 @@ Description      : When activated, reduces the Mana cost of your next spell by $
 Tooltip          : The Mana cost of your next spell is reduced by $s1% and its non-periodic critical effect chance is increased by $s2%.
 
 Name             : Divine Spirit (desc=Rank 1) (id=14752) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -47770,7 +47768,6 @@ Effects          :
 Description      : Throw near a patron of the Grim Guzzler
 
 Name             : Divine Spirit (desc=Rank 2) (id=14818) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -47791,7 +47788,6 @@ Description      : Holy power infuses the target, increasing their Spirit by $s1
 Tooltip          : Increases Spirit by $s1.
 
 Name             : Divine Spirit (desc=Rank 3) (id=14819) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -52545,6 +52541,7 @@ Description      : Increases attack power by $s1 for $d.
 Tooltip          : Increases attack power by $s1.
 
 Name             : Flametongue Weapon (desc=Rank 4) (id=16339) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -52556,9 +52553,10 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=694389)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 523
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$10445m1/77-1+($10444m1)} to ${$10445m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$10445m1/77-1+($10444m1)} to ${$10445m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 5) (id=16341) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -52570,9 +52568,10 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=693625)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 1665
-Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$16343m1/77-1+($10444m1)} to ${$16343m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$16343m1/77-1+($10444m1)} to ${$16343m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 6) (id=16342) 
+Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -52584,7 +52583,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=693755)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 1666
-Description      : Imbue the Shaman's weapon with fire.  Each hit causes ${$16344m1/77-1+($10444m1)} to ${$16344m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with fire.  Each hit causes ${$16344m1/77-1+($10444m1)} to ${$16344m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon Proc (desc=Rank 5) (id=16343) [Spell Family (11)] 
 Class            : Shaman
@@ -52711,6 +52710,7 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 4) (id=16362) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -52723,7 +52723,7 @@ Attributes       : Held Item Only (9), Not Shapeshifted (16), Do Not Sheath (18)
 Effects          :
 #1 (id=693697)   : Unknown(360)
                    Base Value: 1800 | Scaled Value: 1800 | Misc Value: 1669
-Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+Description      : Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. Lasts for 60 minutes.
 
 Name             : Chromatic Protection (id=16372) [Passive] 
 School           : Physical
@@ -53022,6 +53022,20 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Self (1)
 Description      : Increases your Parry chance by $s1%.
 
+Name             : Gift of Stone (id=16470) 
+School           : Physical
+Spell Type       : None
+Spell Level      : 55
+Duration         : 10 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693350)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 4000 | Scaled Value: 4000 | Misc Value: 1 | Target: Self (1)
+#2 (id=693351)   : Apply Aura (6) | Pacify Silence (60)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 127 | Target: Self (1)
+Description      : Increases armor by $s1 for $d1 but cannot cast spells or attack for the duration of the spell.
+Tooltip          : Increased armor by $s1 but cannot attack or cast spells.
+
 Name             : Blood Craze (id=16487) [Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=3, col=7, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(1, 2, 3)]
@@ -53302,6 +53316,17 @@ Effects          :
 #1 (id=694470)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Drink Me.
+
+Name             : Shahram (id=16602) 
+School           : Arcane
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : Aura (infinite)
+Attributes       : No Redirection (35), No Reflection (39), Unknown (493)
+Effects          :
+#1 (id=691643)   : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 10718 | Misc Value 2: 5121 | Radius: 3 yards | Target: Summoner in Area (32)
+Description      : Summons the infernal spirit of Shahram.
 
 Name             : Demonfork (id=16603) 
 School           : Shadow
@@ -55570,7 +55595,6 @@ Effects          :
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 10 | Target: Self (1)
                    Affected Spells: Entangling Roots (339), Entangling Roots (1062), Hibernate (2637), Wrath (5176), Wrath (5177), Wrath (5178), Wrath (5179), Wrath (5180), Healing Touch (5185), Healing Touch (5186), Healing Touch (5187), Healing Touch (5188), Healing Touch (5189), Entangling Roots (5195), Entangling Roots (5196), Healing Touch (6778), Wrath (6780), Healing Touch (8903), Wrath (8905), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Regrowth (9750), Healing Touch (9758), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Healing Touch (9888), Healing Touch (9889), Wrath (9912), Hibernate (18657), Hibernate (18658), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Rebirth (20484), Rebirth (20739), Rebirth (20742), Rebirth (20747), Rebirth (20748), Healing Touch (25297), Wild Growth (408120), Nourish (408247), Starsurge (417157), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Wild Growth (1238214), Wild Growth (1238215)
                    Family Flags: 0, 5, 6, 9, 24, 57, 58, 89
-Hotfixed         : Affects Spells
 Description      : When activated, your next Nature spell becomes an instant cast spell.
 Tooltip          : Your next Nature spell will be an instant cast spell.
 
@@ -56344,6 +56368,7 @@ Effects          :
 Tooltip          : Gain $s1 mana every $t1 seconds.
 
 Name             : Stormstrike (id=17364) [Spell Family (11)] 
+Hotfixed         : Cooldown (6000 -> 8000)
 Talent Entry     : Generic [tree=class, row=4, col=7, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Physical
@@ -56353,7 +56378,7 @@ Spell Level      : 40
 Range            : 5 yards
 GCD              : 1.5 seconds
 Duration         : 12 seconds
-Cooldown         : 6 seconds
+Cooldown         : 8 seconds
 Labels           : 24: Shaman Spells
 Stacks           : 1 initial, 1 maximum
 Proc Chance      : 100%
@@ -56369,7 +56394,8 @@ Effects          :
                    Affected Spells: Lightning Bolt (403), Chain Lightning (421), Lightning Bolt (529), Lightning Bolt (548), Lightning Bolt (915), Chain Lightning (930), Lightning Bolt (943), Chain Lightning (2860), Lightning Bolt (6041), Earth Shock (8042), Earth Shock (8044), Earth Shock (8045), Earth Shock (8046), Lightning Bolt (10391), Lightning Bolt (10392), Earth Shock (10412), Earth Shock (10413), Earth Shock (10414), Chain Lightning (10605), Lightning Bolt (15207), Lightning Bolt (15208), Lightning Bolt (408439), Lightning Bolt (408440), Lightning Bolt (408441), Lightning Bolt (408442), Lightning Bolt (408443), Lightning Bolt (408472), Lightning Bolt (408473), Lightning Bolt (408474), Lightning Bolt (408475), Lightning Bolt (408477), Chain Lightning (408479), Chain Lightning (408481), Chain Lightning (408482), Chain Lightning (408484), Earth Shock (408681), Earth Shock (408683), Earth Shock (408685), Earth Shock (408687), Earth Shock (408688), Earth Shock (408689), Earth Shock (408690)
                    Family Flags: 0, 1, 20
 #3 (id=1368308)  : Weapon Damage% (31)
-                   Base Value: 150 | Scaled Value: 1.5 | Target: Targeted Enemy (6)
+                   Base Value: 100 | Scaled Value: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (150 -> 100)
 Description      : Instantly strike for $s3% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.
 Tooltip          : Increases damage taken from the Shaman's next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2%.
 
@@ -57735,7 +57761,6 @@ Effects          :
 Tooltip          : Shadow damage taken from Warlock increased by $w1%.
 
 Name             : Soul Siphon (id=17804) [Spell Family (5), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=5, col=3, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(4, 8, 12)]
 Class            : Warlock
@@ -62300,6 +62325,20 @@ Effects          :
                    Family Flags: 17
 Description      : Increases the amount of damage absorbed by your Spellstone by $s1%.
 
+Name             : Heaven's Blessing (id=18787) 
+School           : Holy
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 30 seconds
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=693477)   : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: 100 | Scaled Value: 100 | Value Multiplier: 1 | Target: Self (1)
+#2 (id=871975)   : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+Description      : Increases Attack Power by $s1 for $d.
+Tooltip          : Increased attack power.
+
 Name             : Demonic Sacrifice (id=18788) 
 Talent Entry     : Generic [tree=class, row=3, col=6, max_rank=1, req_points=0]
 Class            : Warlock
@@ -63030,6 +63069,20 @@ Effects          :
 #1 (id=696822)   : School Damage (2): fire
                    Base Value: 282 | Scaled Value: 282 (delta=0.219124) | Points Per Level: 1.3 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 Description      : Ignites a target that is already afflicted by your Immolate spell, dealing $s1 Fire damage and consuming your Immolate effect.
+
+Name             : The Lion Horn of Stormwind (id=18946) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 30 yards
+Duration         : 30 seconds
+Triggered By     : The Lion Horn of Stormwind (20847)
+Attributes       : Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=697588)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 725 | Scaled Value: 725 | Misc Value: 1 | Radius: 30 yards | Target: Party in Area (20)
+Description      : Increases Armor by $s1 for $d.
+Tooltip          : Increases Armor by $w1.
 
 Name             : Opening Termite Barrel (id=18952) 
 School           : Physical
@@ -71136,6 +71189,20 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Target: Self (1)
 Description      : Dodge chance increased by $s1% and movement speed increased by $s2%. Night Elf Rogues and Druids are harder to detect in Stealth as if they were 1 level higher.
 
+Name             : Windreaper (id=20586) 
+School           : Nature
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 100 yards
+Duration         : 10 seconds
+Proc Chance      : 101%
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=697145)   : Apply Aura (6) | Periodic Damage (3): nature every 2 seconds
+                   Base Value: 21 | Scaled Value: 21 | Target: Targeted Enemy (6)
+Description      : Inflicts $s1 Nature damage every $t1 sec for $d.
+Tooltip          : $s1 Nature damage inflicted every $t1 sec.
+
 Name             : Ragged John's Neverending Cup (id=20587) 
 School           : Physical
 Spell Type       : None
@@ -71962,6 +72029,19 @@ Effects          :
 #1 (id=698382)   : Create Item (24)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Fill at the Dire Pool.
+
+Name             : The Lion Horn of Stormwind (id=20847) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Internal Cooldown: 60 seconds
+Proc Chance      : 10%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=698675)   : Apply Aura (6) | Proc Trigger Spell (42): The Lion Horn of Stormwind
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 18946 | Target: Self (1)
+Description      : When struck in combat has a ${$h/2}% chance of increasing all party member's armor by $18946s1 for $18946d. This chance is doubled in Strongholds and Cities.
 
 Name             : Flarecore Mantle (id=20848) 
 School           : Physical
@@ -76635,6 +76715,22 @@ Attributes       : Is Ability (4), Do Not Display (Spellbook, Aura Icon, Combat 
 Effects          :
 #1 (id=698467)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Self (1)
+
+Name             : Sanctuary (id=22850) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 60
+Duration         : 10 seconds
+Attributes       : Do Not Sheath (18), Unknown (493)
+Effects          :
+#2 (id=700383)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 300 | Scaled Value: 300 | Misc Value: 1 | Target: Self (1)
+#3 (id=1337029)  : Apply Aura (6) | Modify Attack Power (99)
+                   Base Value: 30 | Scaled Value: 30 | Target: Self (1)
+#4 (id=1337030)  : Apply Aura (6) | Modify Melee Attack Power vs Race (102)
+                   Base Value: 36 | Scaled Value: 36 | Misc Value: 2 | Target: Self (1)
+Description      : Grants the wielder $s1 Defense, $s2 Armor, $s3 Attack Power, and $s4 additional Attack Power against Dragonkin for $d.
+Tooltip          : Armor increased by $s2, Defense increased by $s1, Attack Power increased by $s3, and Attack Power against Dragonkin increased by $s4.
 
 Name             : Increased Hunter Pet Damage (id=22854) [Spell Family (9), Passive, Hidden] 
 School           : Physical
@@ -86970,7 +87066,6 @@ Description      : Combines a Book of Romantic Poetry, a Sheaf of Cards and an U
 Tooltip          : Your Intellect is increased by $m2.
 
 Name             : Prayer of Spirit (desc=Rank 1) (id=27681) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -87540,7 +87635,6 @@ Effects          :
 Description      : Increases the percentage healed by your Vampiric Embrace by an additional $s1%.
 
 Name             : Divine Spirit (desc=Rank 4) (id=27841) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -87599,7 +87693,6 @@ Effects          :
 Description      : Reduces the Mana cost of Purify and Cleanse by $s1%.
 
 Name             : Reduced Claw and Rake Cost (id=27851) [Spell Family (7), Passive, Hidden] 
-Hotfixed         : Description
 School           : Physical
 Spell Type       : None
 Labels           : 21: Druid Spells
@@ -87609,7 +87702,6 @@ Effects          :
                    Base Value: -2 | Scaled Value: -2 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
                    Affected Spells: Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Claw (9849), Claw (9850), Rake (9904)
                    Family Flags: 12
-Hotfixed         : Affects Spells
 Description      : Reduces the energy cost of Claw and Rake by $s1.
 
 Name             : Increased Lesser Healing Wave (id=27855) [Spell Family (11), Passive, Hidden] 
@@ -95144,7 +95236,6 @@ Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), A
 Effects          :
 #1 (id=1072065)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
                    Base Value: 40 | Scaled Value: 48 | Points Per Level: 1 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
-Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1075729)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -95519,7 +95610,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072563)  : School Damage (2): nature
                    Base Value: 8 | Scaled Value: 8.25 (delta=0.142857) | Points Per Level: 0.05 | SP Coefficient: 0.2145 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (7 -> 8), Points per Level (0.2 -> 0.05)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 2) (id=408440) [Spell Family (11)] 
@@ -95536,7 +95626,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072564)  : School Damage (2): nature
                    Base Value: 15 | Scaled Value: 15.25 (delta=0.142857) | Points Per Level: 0.05 | SP Coefficient: 0.2855 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (14.5 -> 15), Points per Level (0.25 -> 0.05)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 3) (id=408441) [Spell Family (11)] 
@@ -95553,7 +95642,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072565)  : School Damage (2): nature
                    Base Value: 26 | Scaled Value: 26.75 (delta=0.163265) | Points Per Level: 0.15 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (22.5 -> 26), Points per Level (0.3 -> 0.15)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 4) (id=408442) [Spell Family (11)] 
@@ -95570,7 +95658,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072567)  : School Damage (2): nature
                    Base Value: 36.5 | Scaled Value: 37.75 (delta=0.134831) | Points Per Level: 0.25 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (28 -> 36.5), Points per Level (0.3 -> 0.25)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 5) (id=408443) [Spell Family (11)] 
@@ -95587,7 +95674,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072569)  : School Damage (2): nature
                    Base Value: 54.5 | Scaled Value: 56.25 (delta=0.134328) | Points Per Level: 0.35 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (36 -> 54.5)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 6) (id=408472) [Spell Family (11)] 
@@ -95604,7 +95690,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072625)  : School Damage (2): nature
                    Base Value: 74 | Scaled Value: 76.5 (delta=0.120879) | Points Per Level: 0.5 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (56 -> 74), Points per Level (0.4 -> 0.5)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 7) (id=408473) [Spell Family (11)] 
@@ -95621,7 +95706,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072626)  : School Damage (2): nature
                    Base Value: 97 | Scaled Value: 99.5 (delta=0.125) | Points Per Level: 0.5 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (74 -> 97), Points per Level (0.4 -> 0.5)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 8) (id=408474) [Spell Family (11)] 
@@ -95639,7 +95723,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072627)  : School Damage (2): nature
                    Base Value: 120 | Scaled Value: 123.75 (delta=0.114094) | Points Per Level: 0.75 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (81 -> 120), Points per Level (0.5 -> 0.75)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 9) (id=408475) [Spell Family (11)] 
@@ -95656,7 +95739,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072628)  : School Damage (2): nature
                    Base Value: 147.5 | Scaled Value: 151.5 (delta=0.119565) | Points Per Level: 0.8 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (89 -> 147.5), Points per Level (0.5 -> 0.8)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Lightning Bolt (desc=Rank 10) (id=408477) [Spell Family (11)] 
@@ -95673,7 +95755,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072630)  : School Damage (2): nature
                    Base Value: 176.5 | Scaled Value: 180.7 (delta=0.113122) | Points Per Level: 1.05 | SP Coefficient: 0.357 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (98 -> 176.5), Points per Level (0.6 -> 1.05)
 Description      : Casts a bolt of lightning at the target for $s1 Nature damage.
 
 Name             : Chain Lightning (desc=Rank 1) (id=408479) [Spell Family (11)] 
@@ -95689,7 +95770,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072633)  : School Damage (2): nature
                    Base Value: 107.5 | Scaled Value: 111 (delta=0.137255) | Points Per Level: 0.7 | SP Coefficient: 0.357 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
-Hotfixed         : SP Coefficient (0.2855 -> 0.357), Base Value (44 -> 107.5), Points per Level (0.75 -> 0.7)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Chain Lightning (desc=Rank 2) (id=408481) [Spell Family (11)] 
@@ -95705,7 +95785,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072635)  : School Damage (2): nature
                    Base Value: 174 | Scaled Value: 179.5 (delta=0.122449) | Points Per Level: 1.1 | SP Coefficient: 0.357 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
-Hotfixed         : SP Coefficient (0.2855 -> 0.357), Base Value (50 -> 174), Points per Level (0.9 -> 1.1)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Chain Lightning (desc=Rank 3) (id=408482) [Spell Family (11)] 
@@ -95721,7 +95800,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072636)  : School Damage (2): nature
                    Base Value: 214 | Scaled Value: 220.75 (delta=0.115) | Points Per Level: 1.35 | SP Coefficient: 0.357 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
-Hotfixed         : SP Coefficient (0.2855 -> 0.357), Base Value (56 -> 214), Points per Level (1.05 -> 1.35)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Chain Lightning (desc=Rank 4) (id=408484) [Spell Family (11)] 
@@ -95737,7 +95815,6 @@ Attributes       : Not Shapeshifted (16), No Threat (42), Unknown (493)
 Effects          :
 #1 (id=1072638)  : School Damage (2): nature
                    Base Value: 255 | Scaled Value: 261.6 (delta=0.114943) | Points Per Level: 1.65 | SP Coefficient: 0.357 | Chain Multiplier: 0.7 | Chain Targets: 3 | Target: Targeted Enemy (6)
-Hotfixed         : SP Coefficient (0.2855 -> 0.357), Base Value (62 -> 255), Points per Level (1.2 -> 1.65)
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by 30%.  Affects $x1 total targets.
 
 Name             : Lava Burst (desc=Rank 1) (id=408490) [Spell Family (11)] 
@@ -95779,8 +95856,10 @@ Effects          :
 Description      : Increases your chance to hit with both spells and melee attacks by $s1% while dual wielding, your Stormstrike ability now hits with both weapons while dual wielding, and increases the damage done by your offhand weapon by $s3%.
 
 Name             : Maelstrom Weapon (id=408498) [Spell Family (11), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=6, col=7, max_rank=5, req_points=0]
-                 : Effect#1 [op=set, values=(-4, -8, -12, -16, -20)]
+                 : Effect#1 [op=set, values=(-20, -20, -20, -20, -20)]
+                 : Effect#2 [op=set, values=(6, 7, 8, 9, 10)]
 Class            : Shaman
 School           : Nature
 Spell Type       : None
@@ -95794,10 +95873,11 @@ Effects          :
 #1 (id=1072664)  : Apply Aura (6) | Dummy (4)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
 #2 (id=1137418)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 50 | Scaled Value: 50 | Target: Self (1)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Hotfixed         : Base Value (50 -> 2)
 #3 (id=1217277)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
-Description      : When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d.
+Description      : When you deal damage with a melee attack, you have a ${($mws*$s2/60)*100}% chance (based on weapon speed) to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d.
 
 Name             : Maelstrom Weapon (id=408505) [Spell Family (11)] 
 Class            : Shaman
@@ -100215,7 +100295,7 @@ Tooltip          : Your next Chain Lightning or Lava Burst spell will be an inst
 
 Name             : Mental Dexterity (id=415140) [Spell Family (11), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=6, max_rank=3, req_points=0]
-                 : Effect#1 [op=set, values=(50, 100, 150)]
+                 : Effect#1 [op=set, values=(33, 66, 100)]
 Class            : Shaman
 School           : Fire
 Spell Type       : None
@@ -110872,7 +110952,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Strike Gong (id=436278) 
-Hotfixed         : Aura Interrupt, Channel Interrupt
 School           : Physical
 Spell Type       : None
 Range            : 50000 yards
@@ -128368,7 +128447,6 @@ Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), A
 Effects          :
 #1 (id=1235327)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
                    Base Value: 60 | Scaled Value: 70.4 | Points Per Level: 1.3 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
-Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1235328)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -128395,7 +128473,6 @@ Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), A
 Effects          :
 #1 (id=1235329)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
                    Base Value: 97 | Scaled Value: 97 | Points Per Level: 1.6 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
-Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1235330)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -142234,7 +142311,6 @@ Effects          :
 Description      : Remove fel taint and stolen energies from the target.
 
 Name             : Volley (desc=Rank 3) (id=1279715) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -142250,7 +142326,6 @@ Effects          :
                    Base Value: 112 | Scaled Value: 112 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Volley (desc=Rank 2) (id=1279719) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -142266,7 +142341,6 @@ Effects          :
                    Base Value: 91 | Scaled Value: 91 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Volley (desc=Rank 1) (id=1279721) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -145312,7 +145386,7 @@ Talent Entry     : Generic [tree=class, row=4, col=4, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=313567)[Hotfixed: Cost (80 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=313567)
 Spell Level      : 25
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -145557,7 +145631,7 @@ Name             : Summon Hawk (desc=Rank 2) (id=1293525) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=313590)[Hotfixed: Cost (105 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=313590)
 Spell Level      : 36
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -145587,7 +145661,7 @@ Name             : Summon Hawk (desc=Rank 3) (id=1293526) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=313591)[Hotfixed: Cost (135 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=313591)
 Spell Level      : 48
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -145617,7 +145691,7 @@ Name             : Summon Hawk (desc=Rank 4) (id=1293527) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=313592)[Hotfixed: Cost (190 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=313592)
 Spell Level      : 60
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -149785,6 +149859,19 @@ Effects          :
 Description      : Restores $s1 mana.
 Tooltip          : Restores $s1 mana.
 
+Name             : Treant Slayer (id=1302354) 
+School           : Fire
+Spell Type       : Magic
+Spell Level      : 58
+Range            : 100 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1327921)  : School Damage (2): fire
+                   Base Value: 175 | Scaled Value: 175 (delta=0.42) | Target: Targeted Enemy (6)
+#2 (id=1327922)  : Dummy (3)
+                   Base Value: 3 | Scaled Value: 3 | Target: Targeted Enemy (6)
+Description      : Deal $s1 Fire damage. Deals $s2 times as much damage to Plants.
+
 Name             : Magnetize (id=1302356) 
 School           : Arcane
 Spell Type       : None
@@ -152378,7 +152465,6 @@ Effects          :
 Description      : Increases Shadow Word: Death's critical strike chance on targets at or below $s2% health by $s1%.
 
 Name             : Holy Power (id=1310077) 
-Hotfixed         : Name
 School           : Holy
 Spell Type       : Magic
 Duration         : 1800 seconds
@@ -154598,6 +154684,20 @@ Effects          :
                    Base Value: 100 | Scaled Value: 100 | Trigger Spell: 29502 | Target: Self (1)
 Description      : All ranged auto-attacks conjure an icy bolt to blast your current target, inflicting $29502s1 Frost damage.
 
+Name             : Sliced Ankle (id=1316346) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 30
+Range            : 100 yards
+Duration         : 6 seconds
+Proc Chance      : 101%
+Attributes       : Is Ability (4), Suppress Caster Procs (112), Instant Target Procs (115), Suppress Weapon Procs (151), Show Mechanic as Combat Text (213), Unknown (493)
+Effects          :
+#1 (id=1348985)  : Apply Aura (6) | Decrease Movement Speed% (33)
+                   Base Value: -30 | Scaled Value: -30 | Mechanic: Snare | Target: Targeted Enemy (6)
+Description      : Slice the target's ankle, slowing movement speed by $s1% for $d.
+Tooltip          : Movement slowed by $w1%.
+
 Name             : Stock Crate (id=1316591) 
 School           : Physical
 Spell Type       : None
@@ -154654,7 +154754,6 @@ Effects          :
 Description      : $@spelldesc1247442
 
 Name             : Wrack (desc=Rank 1) (id=1316697) [Spell Family (5)] 
-Hotfixed         : Attributes, Description, Tooltip
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=0]
 Class            : Warlock
 School           : Shadow
@@ -154672,10 +154771,8 @@ Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Loo
 Effects          :
 #1 (id=1349556)  : Apply Aura (6) | Periodic Damage (3): shadow every 1 seconds
                    Base Value: 25.2 | Scaled Value: 60.2 | Points Per Level: 1.75 | Value Multiplier: 1 | SP Coefficient: 0.2002 | Target: Targeted Enemy (6)
-Hotfixed         : SP Coefficient (0.286 -> 0.2002), Base Value (36 -> 25.200001), Points per Level (2.5 -> 1.75)
 #2 (id=1349557)  : Apply Aura (6) | Dummy (4)
                    Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
-Hotfixed         : Sub Type (271 -> 4), Base Value (10 -> 100), Affects Spells
 Description      : Tears the target apart from within for $d, inflicting $s1 Shadow damage every $t sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage $s2% faster.
 Tooltip          : Inflicts $w1 Shadow damage every $t1 sec and increases the speed at which the caster's Siphon Life, Corruption, and Bane of Agony effects deal periodic damage by $w2%.
 
@@ -154746,6 +154843,19 @@ Effects          :
 #1 (id=1349811)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 274983 | Misc Value 2: 6853 | Radius: 5 yards | Target: Summoner in Area (32)
 Description      : Summons a wolf that will protect you for $d.
+
+Name             : Immolate (id=1316865) 
+School           : Fire
+Spell Type       : Magic
+Range            : 100 yards
+Duration         : 15 seconds
+Proc Chance      : 101%
+Attributes       : Do Not Sheath (18), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1349837)  : Apply Aura (6) | Periodic Damage (3): fire every 3 seconds
+                   Base Value: 33 | Scaled Value: 33 | Target: Targeted Enemy (6)
+Description      : Burns the target for $s1 Fire damage every $t1 sec for $d.
+Tooltip          : $s1 Fire damage inflicted every $t1 sec.
 
 Name             : Underwater Breathing (id=1316928) [Passive] 
 School           : Physical
@@ -155048,6 +155158,15 @@ Effects          :
 #1 (id=1350515)  : Apply Aura (6) | Modify Target Resistance (123)
                    Base Value: -7 | Scaled Value: -7 | Misc Value: 126 | Target: Self (1)
 Tooltip          : In a Forest or Grassland area, Spell Piercing increased by an additional $s1.
+
+Name             : Ooze Covered Miner (id=1317446) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452)
+Effects          :
+#1 (id=1350518)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : You have a small chance to find additional ore when mining Ooze Covered Thorium Veins.
 
 Name             : Slammed (id=1317450) 
 School           : Physical
@@ -155664,6 +155783,21 @@ Effects          :
 #1 (id=1351946)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
+Name             : Royal Seal of Eldre'Thalas (id=1318476) [Passive] 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Attributes       : Passive (6), Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1351954)  : Apply Aura (6) | Damage Done (13)
+                   Base Value: 18 | Scaled Value: 18 | Misc Value: 0x7e | Target: Self (1)
+                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
+#2 (id=1351955)  : Apply Aura (6) | Modify Healing Power (135)
+                   Base Value: 18 | Scaled Value: 18 | Misc Value: 126 | Target: Self (1)
+#3 (id=1351956)  : Apply Aura (6) | Modify Spell Damage vs Race (180)
+                   Base Value: 18 | Scaled Value: 18 | Misc Value: 4 | Target: Self (1)
+Description      : Increases spell damage and healing by up to $s1. Grants an additional $s3 spell damage against Demons.
+
 Name             : Royal Seal of Eldre'Thalas (id=1318477) 
 School           : Physical
 Spell Type       : None
@@ -155677,6 +155811,18 @@ Description      : Restores $s1 Mana per 5 sec in Haunted areas.
 
 
 Tooltip          : In a Haunted area, restoring $w1 Mana per 5 sec.
+
+Name             : Royal Seal of Eldre'Thalas (id=1318478) 
+School           : Physical
+Spell Type       : None
+Cone Angle       : 60 degrees
+Duration         : Aura (infinite)
+Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Aura Points On Client (268), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Effects          :
+#1 (id=1351973)  : Apply Aura (6) | Attribute (29)
+                   Base Value: 16 | Scaled Value: 16 | Stat: Spi | Target: Self (1)
+Description      : Increases Spirit by $s1 in Forest and Grassland areas.
+Tooltip          : In a Forest or Grassland area, Spirit increased by $w1.
 
 Name             : Royal Seal of Eldre'Thalas (id=1318479) [Passive] 
 School           : Physical
@@ -156147,6 +156293,16 @@ Effects          :
                    Base Value: 100 | Scaled Value: 100 | Target: Self (1)
 Description      : Water breathing lasts $s1% longer than normal.
 Tooltip          : Water breathing.
+
+Name             : Unleash Swarm (id=1320658) 
+School           : Physical
+Spell Type       : None
+Duration         : 10 seconds
+Cooldown         : 300 seconds
+Effects          :
+#1 (id=1355438)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : Open a silithid hive, unleashing the swarm.
 
 Name             : Summon Spawn of Grubthor (id=1320758) 
 School           : Physical
@@ -157121,7 +157277,6 @@ Effects          :
 Description      : When struck in combat, inflicts $s1 Physical damage to the attacker.
 
 Name             : Gloves of Holy Might (id=1325229) 
-Hotfixed         : Attributes
 School           : Holy
 Spell Type       : Ranged
 Spell Level      : 1
@@ -157997,7 +158152,6 @@ Effects          :
 Description      : When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to $s1% of your Spirit. If either spell expires due to being dispelled, the target is healed for $s2% of your Spirit instead.
 
 Name             : Poised (desc=Passive) (id=1328825) [Spell Family (8), Passive] 
-Hotfixed         : Aura Interrupt, Channel Interrupt
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -158010,11 +158164,9 @@ Aura Interrupt   : Leave Combat (31)
 Effects          :
 #1 (id=1368038)  : Apply Aura (6) | Proc Trigger Spell (42): Poised
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Trigger Spell: 1330741 | Target: Self (1)
-Hotfixed         : Sub Type (4 -> 42), Trigger Spell (0 -> 1330741)
 Description      : While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328826s1.
 
 Name             : Poised (id=1328826) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -158038,7 +158190,6 @@ Description      : Energy cost of the next ability performed is reduced by $s1.
 Tooltip          : Your next Energy ability has its Energy cost reduced by $s1.
 
 Name             : Poised (id=1328827) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -158069,7 +158220,6 @@ Attributes       : Is Ability (4), Passive (6), Do Not Sheath (18), Unknown (454
 Effects          :
 #1 (id=1368043)  : Apply Aura (6) | Proc Trigger Spell (42): Poised
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Trigger Spell: 1330763 | Target: Self (1)
-Hotfixed         : Sub Type (4 -> 42), Trigger Spell (0 -> 1330763)
 Description      : While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328827s1.
 
 Name             : Speed (id=1328947) [Passive, Hidden] 
@@ -158310,7 +158460,6 @@ Description      : Your next $n melee attacks generate ${$1329554s1/10/$1329554s
 Tooltip          : Melee attacks grant ${$1329554s1/10/$1329554s2} additional Rage.
 
 Name             : Drink (id=1330734) 
-Hotfixed         : NEW SPELL
 School           : Physical
 Spell Type       : None
 Duration         : 30 seconds
@@ -158323,16 +158472,14 @@ Aura Interrupt   : Under Water (7), Standing (18)
 Effects          :
 #1 (id=1371030)  : Apply Aura (6) | Restore Power (85)
                    Base Value: 489 | Scaled Value: 489 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Restores $o1 mana over $d.  Must remain seated while drinking.
 Tooltip          : Restores $/5;s1 mana per second.
 
 Name             : Poised (id=1330741) [Spell Family (8), Hidden] 
-Hotfixed         : NEW SPELL
 Class            : Rogue
 School           : Physical
 Spell Type       : None
-Resource         : 0% Health (-2) (id=315223)[Hotfixed: NEW POWER]
+Resource         : 0% Health (-2) (id=315223)
 Duration         : Aura (infinite)
 Labels           : 20: Rogue Spells
 Triggered By     : Poised (1328825)
@@ -158341,14 +158488,12 @@ Aura Interrupt   : Leave Combat (31)
 Effects          :
 #1 (id=1371039)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 
 Name             : Poised (id=1330763) [Spell Family (7), Hidden] 
-Hotfixed         : NEW SPELL
 Class            : Druid
 School           : Physical
 Spell Type       : None
-Resource         : 0% Health (-2) (id=315225)[Hotfixed: NEW POWER]
+Resource         : 0% Health (-2) (id=315225)
 Duration         : Aura (infinite)
 Labels           : 21: Druid Spells
 Triggered By     : Poised (1328829)
@@ -158357,21 +158502,19 @@ Aura Interrupt   : Leave Combat (31)
 Effects          :
 #1 (id=1371063)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 
 Name             : Gloves of Holy Might (id=1330855) [Passive] 
-Hotfixed         : NEW SPELL
+Hotfixed         : Proc Flags 1 (69636 -> 69972), Proc Flags 2 (32 -> 0), Description
 School           : Holy
 Spell Type       : Ranged
 Spell Level      : 1
 Range            : 50000 yards
 Internal Cooldown: 20 seconds
 Proc Chance      : 15%
-Proc Flags       : White Melee, Generic Hostile Spell, Magic Hostile Spell, Unknown 38
+Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Hostile Spell, Magic Hostile Spell
 Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=1371198)  : Apply Aura (6) | Proc Trigger Spell (42): Gloves of Holy Might
                    Base Value: 112 | Scaled Value: 112 (delta=0.2) | Trigger Spell: 1325229 | Target: Self (1)
-Hotfixed         : NEW EFFECT
-Description      : Smite your target for $s1 Holy damage. Damage is tripled against Undead.
+Description      : Has a $h% chance when landing a harmful spell or attack to Smite the target for $s1 Holy damage. Damage is tripled against Undead.
 

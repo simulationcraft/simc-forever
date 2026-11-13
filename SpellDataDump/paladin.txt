@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
 Name             : Vindication (desc=Rank 1) (id=67) 
 Class            : Paladin
 School           : Holy

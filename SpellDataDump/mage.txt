@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
 Name             : Blizzard (desc=Rank 1) (id=10) [Spell Family (3)] 
 Class            : Mage
 School           : Frost
@@ -475,7 +475,6 @@ Effects          :
 Description      : Magically unlocks treasure chests and other locked items.
 
 Name             : Frost Nova (desc=Rank 2) (id=865) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -1122,7 +1121,6 @@ Description      : Conjures $s1 $lloaf:loaves; of pumpernickel, providing the ma
 Conjured items disappear if logged out for more than 15 minutes.
 
 Name             : Frost Nova (desc=Rank 3) (id=6131) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic
@@ -3234,7 +3232,6 @@ Description      : Absorbs $s1 Fire damage$?s11094[ and grants a $s2% chance to 
 Tooltip          : Absorbs $w1 Fire damage.$?s11094[ $w2% chance to reflect Fire spells and effects.][]
 
 Name             : Frost Nova (desc=Rank 4) (id=10230) [Spell Family (3)] 
-Hotfixed         : Attributes
 Class            : Mage
 School           : Frost
 Spell Type       : Magic

@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
 Name             : Auto Shot (id=75) [Spell Family (9)] 
 Class            : Hunter
 School           : Physical
@@ -206,7 +206,6 @@ Effects          :
 Description      : Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to $3355d.  Any damage caused will break the ice. Trap will exist for $d. Only one Frost trap can be active at a time.
 
 Name             : Volley (desc=Rank 1) (id=1510) [Spell Family (9)] 
-Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -643,7 +642,7 @@ Name             : Arcane Shot (desc=Rank 1) (id=3044) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=170789)[Hotfixed: Cost (25 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=170789)
 Spell Level      : 6
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -804,7 +803,6 @@ Description      : Fires a Black Arrow into the target, slowing the target's mov
 Tooltip          : Movement speed reduced by $s1%.  Causes $s2 Shadow damage every $t2 seconds.  Drains $s3 mana every $t3 seconds.
 
 Name             : Great Stamina (desc=Rank 1) (id=4187) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -813,11 +811,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=682700)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (3 -> 30), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 2) (id=4188) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -826,11 +822,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=682764)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 50 | Scaled Value: 50 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (5 -> 50), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 3) (id=4189) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -839,11 +833,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=682915)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 70 | Scaled Value: 70 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (7 -> 70), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 4) (id=4190) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -852,11 +844,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=683003)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 100 | Scaled Value: 100 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (10 -> 100), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 5) (id=4191) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -865,11 +855,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=683008)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 130 | Scaled Value: 130 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (13 -> 130), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 6) (id=4192) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -878,11 +866,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=683009)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 170 | Scaled Value: 170 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (17 -> 170), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 7) (id=4193) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -891,11 +877,9 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=683010)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 210 | Scaled Value: 210 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (21 -> 210), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 8) (id=4194) [Passive] 
-Hotfixed         : Description
 Class            : Hunter
 School           : Physical
 Spell Type       : None
@@ -904,7 +888,6 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=682643)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 260 | Scaled Value: 260 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (26 -> 260), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 9) (id=5041) [Passive] 
@@ -916,7 +899,6 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=684107)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 320 | Scaled Value: 320 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (32 -> 320), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Great Stamina (desc=Rank 10) (id=5042) [Passive] 
@@ -928,7 +910,6 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=684108)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 400 | Scaled Value: 400 | Target: Self (1)
-Hotfixed         : Sub Type (29 -> 34), Base Value (40 -> 400), Misc Value (2 -> 0)
 Description      : Health increased by $s1.
 
 Name             : Concussive Shot (id=5116) [Spell Family (9)] 
@@ -2184,7 +2165,7 @@ Name             : Arcane Shot (desc=Rank 2) (id=14281) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179648)[Hotfixed: Cost (35 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179648)
 Spell Level      : 12
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2207,7 +2188,7 @@ Name             : Arcane Shot (desc=Rank 3) (id=14282) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=180317)[Hotfixed: Cost (50 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=180317)
 Spell Level      : 20
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2230,7 +2211,7 @@ Name             : Arcane Shot (desc=Rank 4) (id=14283) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=180443)[Hotfixed: Cost (80 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=180443)
 Spell Level      : 28
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2253,7 +2234,7 @@ Name             : Arcane Shot (desc=Rank 5) (id=14284) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179345)[Hotfixed: Cost (105 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179345)
 Spell Level      : 36
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2276,7 +2257,7 @@ Name             : Arcane Shot (desc=Rank 6) (id=14285) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179406)[Hotfixed: Cost (135 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179406)
 Spell Level      : 44
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2299,7 +2280,7 @@ Name             : Arcane Shot (desc=Rank 7) (id=14286) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179444)[Hotfixed: Cost (160 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179444)
 Spell Level      : 52
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2322,7 +2303,7 @@ Name             : Arcane Shot (desc=Rank 8) (id=14287) [Spell Family (9)]
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=179523)[Hotfixed: Cost (190 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=179523)
 Spell Level      : 60
 Range            : 8 - 35 yards
 Cast Time        : Ranged Shot
@@ -2342,7 +2323,6 @@ Effects          :
 Description      : An instant shot that causes $s1 Arcane damage.
 
 Name             : Volley (desc=Rank 2) (id=14294) [Spell Family (9)] 
-Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -2369,7 +2349,6 @@ Effects          :
 Description      : Continuously fires a volley of ammo at the target area, causing $1279719s1 Arcane damage to enemy targets within $a1 yards every $t3 sec for $d.
 
 Name             : Volley (desc=Rank 3) (id=14295) [Spell Family (9)] 
-Hotfixed         : Attributes, Aura Interrupt
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -10803,7 +10782,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 102176
 
 Name             : Volley (desc=Rank 3) (id=1279715) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -10819,7 +10797,6 @@ Effects          :
                    Base Value: 112 | Scaled Value: 112 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Volley (desc=Rank 2) (id=1279719) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -10835,7 +10812,6 @@ Effects          :
                    Base Value: 91 | Scaled Value: 91 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 
 Name             : Volley (desc=Rank 1) (id=1279721) [Spell Family (9)] 
-Hotfixed         : Attributes
 Class            : Hunter
 School           : Arcane
 Spell Type       : Ranged
@@ -10855,7 +10831,7 @@ Talent Entry     : Generic [tree=class, row=4, col=4, max_rank=1, req_points=0]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=313567)[Hotfixed: Cost (80 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=313567)
 Spell Level      : 25
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -10897,7 +10873,7 @@ Name             : Summon Hawk (desc=Rank 2) (id=1293525) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=313590)[Hotfixed: Cost (105 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=313590)
 Spell Level      : 36
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -10927,7 +10903,7 @@ Name             : Summon Hawk (desc=Rank 3) (id=1293526) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=313591)[Hotfixed: Cost (135 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=313591)
 Spell Level      : 48
 Range            : 35 yards
 Cast Time        : Ranged Shot
@@ -10957,7 +10933,7 @@ Name             : Summon Hawk (desc=Rank 4) (id=1293527) [Spell Family (9)]
 Class            : Hunter
 School           : Physical
 Spell Type       : Ranged
-Resource         : 11% Base Mana (0) (id=313592)[Hotfixed: Cost (190 -> 0), Percent Cost (0 -> 11)]
+Resource         : 11% Base Mana (0) (id=313592)
 Spell Level      : 60
 Range            : 35 yards
 Cast Time        : Ranged Shot

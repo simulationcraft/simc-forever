@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
 Name             : Demoralizing Roar (desc=Rank 1) (id=99) [Spell Family (7)] 
 Class            : Druid
 School           : Physical
@@ -4746,7 +4746,6 @@ Effects          :
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 10 | Target: Self (1)
                    Affected Spells: Entangling Roots (339), Entangling Roots (1062), Hibernate (2637), Wrath (5176), Wrath (5177), Wrath (5178), Wrath (5179), Wrath (5180), Healing Touch (5185), Healing Touch (5186), Healing Touch (5187), Healing Touch (5188), Healing Touch (5189), Entangling Roots (5195), Entangling Roots (5196), Healing Touch (6778), Wrath (6780), Healing Touch (8903), Wrath (8905), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Regrowth (9750), Healing Touch (9758), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Healing Touch (9888), Healing Touch (9889), Wrath (9912), Hibernate (18657), Hibernate (18658), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Rebirth (20484), Rebirth (20739), Rebirth (20742), Rebirth (20747), Rebirth (20748), Healing Touch (25297), Wild Growth (408120), Nourish (408247), Starsurge (417157), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Wild Growth (1238214), Wild Growth (1238215)
                    Family Flags: 0, 5, 6, 9, 24, 57, 58, 89
-Hotfixed         : Affects Spells
 Description      : When activated, your next Nature spell becomes an instant cast spell.
 Tooltip          : Your next Nature spell will be an instant cast spell.
 
@@ -5910,7 +5909,6 @@ Effects          :
 Description      : Reduces the casting time of your Healing Touch spell by 0.15 sec.
 
 Name             : Reduced Claw and Rake Cost (id=27851) [Spell Family (7), Passive, Hidden] 
-Hotfixed         : Description
 School           : Physical
 Spell Type       : None
 Labels           : 21: Druid Spells
@@ -5920,7 +5918,6 @@ Effects          :
                    Base Value: -2 | Scaled Value: -2 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
                    Affected Spells: Claw (1082), Rake (1822), Rake (1823), Rake (1824), Claw (3029), Claw (5201), Claw (9849), Claw (9850), Rake (9904)
                    Family Flags: 12
-Hotfixed         : Affects Spells
 Description      : Reduces the energy cost of Claw and Rake by $s1.
 
 Name             : Healing Touch Refund (id=28847) [Spell Family (7), Passive, Hidden] 
@@ -6183,7 +6180,6 @@ Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), A
 Effects          :
 #1 (id=1072065)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
                    Base Value: 40 | Scaled Value: 48 | Points Per Level: 1 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
-Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1075729)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -9848,7 +9844,6 @@ Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), A
 Effects          :
 #1 (id=1235327)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
                    Base Value: 60 | Scaled Value: 70.4 | Points Per Level: 1.3 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
-Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1235328)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -9875,7 +9870,6 @@ Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), A
 Effects          :
 #1 (id=1235329)  : Apply Aura (6) | Periodic Heal (8): every 1 seconds
                    Base Value: 97 | Scaled Value: 97 | Points Per Level: 1.6 | SP Coefficient: 0.066 | Radius: 0 - 43.5 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
-Hotfixed         : SP Coefficient (0.033 -> 0.066)
 #2 (id=1235330)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Radius: 0 - 15 yards | Target: at Targeted Ally (132) -> At Ally in Area (31)
 Description      : Heals the target and their party for $o1 over $d. Party members must be within $a1 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
@@ -10256,7 +10250,6 @@ Effects          :
 Description      : When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to $s1% of your Spirit. If either spell expires due to being dispelled, the target is healed for $s2% of your Spirit instead.
 
 Name             : Poised (id=1328827) [Spell Family (7)] 
-Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -10287,15 +10280,13 @@ Attributes       : Is Ability (4), Passive (6), Do Not Sheath (18), Unknown (454
 Effects          :
 #1 (id=1368043)  : Apply Aura (6) | Proc Trigger Spell (42): Poised
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Trigger Spell: 1330763 | Target: Self (1)
-Hotfixed         : Sub Type (4 -> 42), Trigger Spell (0 -> 1330763)
 Description      : While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328827s1.
 
 Name             : Poised (id=1330763) [Spell Family (7), Hidden] 
-Hotfixed         : NEW SPELL
 Class            : Druid
 School           : Physical
 Spell Type       : None
-Resource         : 0% Health (-2) (id=315225)[Hotfixed: NEW POWER]
+Resource         : 0% Health (-2) (id=315225)
 Duration         : Aura (infinite)
 Labels           : 21: Druid Spells
 Triggered By     : Poised (1328829)
@@ -10304,5 +10295,4 @@ Aura Interrupt   : Leave Combat (31)
 Effects          :
 #1 (id=1371063)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 
