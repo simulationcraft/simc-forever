@@ -271,8 +271,13 @@ struct rend_t : public warrior_attack_t
 
     dot_behavior = DOT_CLIP;
 
+    // Rend scales with attack power only, the equipped weapons do not contribute. Rank 4 with 3/3 Improved Rend
+    // ticks for 22.4 at 279 AP, 24.7 at 361 AP and 28.0 at 489 AP, and deals the same damage with a one-hand
+    // sword, a two-hand mace, and with or without an off hand weapon.
+    // Tested by kflirik on 2026-11-13, build 1.60.1.70938.
     // TODO: Verify this at higher levels
-    attack_power_mod.tick = 0.016;
+    ap_type               = attack_power_type::NO_WEAPON;
+    attack_power_mod.tick = 0.02;
   }
 };
 
