@@ -10578,6 +10578,15 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Join together the Lower, Middle and Upper Map Fragments.
 
+Name             : Draught of Water Walking (id=11447) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 3 seconds
+Attributes       : Is Ability (4), Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Effects          :
+#1 (id=688674)   : Create Item (24)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
 Name             : Magic Resistance Potion (id=11453) 
 School           : Physical
 Spell Type       : None
