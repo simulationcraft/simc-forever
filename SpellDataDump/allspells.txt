@@ -95308,6 +95308,7 @@ Effects          :
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
 
 Name             : Wild Growth (desc=Rank 1) (id=408120) [Spell Family (7)] 
+Hotfixed         : Cooldown (6000 -> 0), Category Cooldown (0 -> 6000), Category (0 -> 1237)
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]
 Class            : Druid
 School           : Nature
@@ -95319,7 +95320,9 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Duration         : 7 seconds
 Cooldown         : 6 seconds
+Category         : 1237 (Type 0x0)
 Labels           : 21: Druid Spells
+Category Cooldown: 6 seconds
 Stance Mask      : 0x00000002
 Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Naturalist (17069 effect#1), Gift of Nature (17104 effect#2), Nature's Swiftness (17116 effect#1), Gift of the Earthmother (414673 effect#1), Tree of Life (Passive) (439734 effects: #1, #3), S03 - Item - T2- Druid - Restoration 6P Bonus (467205 effect#1), S03 - Item - T2- Druid - Restoration 6P Bonus Moonkin Effect (467206 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 58
@@ -128524,6 +128527,7 @@ $@spelltooltip414924
 Tooltip          : Immobilized.
 
 Name             : Wild Growth (desc=Rank 2) (id=1238214) [Spell Family (7)] 
+Hotfixed         : Cooldown (6000 -> 0), Category Cooldown (0 -> 6000), Category (0 -> 1237)
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -128534,7 +128538,9 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Duration         : 7 seconds
 Cooldown         : 6 seconds
+Category         : 1237 (Type 0x0)
 Labels           : 21: Druid Spells
+Category Cooldown: 6 seconds
 Stance Mask      : 0x00000002
 Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Naturalist (17069 effect#1), Gift of Nature (17104 effect#2), Nature's Swiftness (17116 effect#1), Gift of the Earthmother (414673 effect#1), Tree of Life (Passive) (439734 effects: #1, #3), S03 - Item - T2- Druid - Restoration 6P Bonus (467205 effect#1), S03 - Item - T2- Druid - Restoration 6P Bonus Moonkin Effect (467206 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 58
@@ -128550,6 +128556,7 @@ Variables        : $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
 $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 Name             : Wild Growth (desc=Rank 3) (id=1238215) [Spell Family (7)] 
+Hotfixed         : Cooldown (6000 -> 0), Category Cooldown (0 -> 6000), Category (0 -> 1237)
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -128560,7 +128567,9 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Duration         : 7 seconds
 Cooldown         : 6 seconds
+Category         : 1237 (Type 0x0)
 Labels           : 21: Druid Spells
+Category Cooldown: 6 seconds
 Stance Mask      : 0x00000002
 Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Naturalist (17069 effect#1), Gift of Nature (17104 effect#2), Nature's Swiftness (17116 effect#1), Gift of the Earthmother (414673 effect#1), Tree of Life (Passive) (439734 effects: #1, #3), S03 - Item - T2- Druid - Restoration 6P Bonus (467205 effect#1), S03 - Item - T2- Druid - Restoration 6P Bonus Moonkin Effect (467206 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 58
@@ -133150,11 +133159,11 @@ Description      : Drink to increase your Intellect by $s1. Lasts for $d.
 Tooltip          : Your Intellect is increased by $w1.
 
 Name             : Unstable Package (id=1251286) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
-Range            : 100 yards
 Duration         : Aura (infinite)
-Attributes       : Unknown (493)
+Attributes       : Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), No Aura Cancel (31), Allow While Stealthed (37), Always Cast As Unit (73), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Always Hit (114), Allow Aura While Dead (116), Allow Cast While Casting (135), Allow Proc While Sitting (147), Allow Actions During Channel (160), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow Equip While Casting (209), Allow While Charmed (261), Allow While Banished Aura State (299), Allow Cast While Channeling (308), Allow Defense While Casting (337), Allow Defense While Channeling (338), Allow While Stunned By Horror Mechanic (342), Visible only to caster (conversations only) (343), Don't Cancel When All Effects are Disabled (353), Allow While Stunned by Stun Mechanic (378), Allow during spell override (404), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
 Effects          :
 #1 (id=1255750)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
