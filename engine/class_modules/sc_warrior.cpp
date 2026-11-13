@@ -229,9 +229,18 @@ struct warrior_auto_attack_t : public warrior_attack_t
     trigger_gcd           = 0_ms;
     ignore_false_positive = true;
 
-    assert( p->equipped_weapons[ SLOT_MAIN_HAND ].type != WEAPON_NONE );
+    weapon_t& main_hand = p->equipped_weapons[ SLOT_MAIN_HAND ];
 
-    p->main_hand_attack = new warrior_melee_t( "melee", p, &p->equipped_weapons[ SLOT_MAIN_HAND ] );
+    // A profile without a main hand weapon is valid: the character punches. Unarmed attacks have a 2.0 swing time
+    // (the weapon_t default) and 1 base damage. The character sheet shows 49.71 - 49.71 damage at 341 attack power,
+    // which is 1 + 341 / 14 * 2.0. Tested by kflirik on 2026-11-12, build 1.60.1.70888.
+    if ( main_hand.type == WEAPON_NONE )
+    {
+      main_hand.damage = main_hand.min_dmg = main_hand.max_dmg = 1.0;
+      main_hand.dps = main_hand.damage / main_hand.swing_time.total_seconds();
+    }
+
+    p->main_hand_attack = new warrior_melee_t( "melee", p, &main_hand );
   }
 
   void execute() override
