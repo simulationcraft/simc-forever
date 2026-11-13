@@ -26160,6 +26160,20 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Attach 20 Witherbark Skulls to create Nimboya's Laden Pike.
 
+Name             : The Lion Horn of Stormwind (id=18946) 
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 60
+Range            : 30 yards
+Duration         : 30 seconds
+Triggered By     : The Lion Horn of Stormwind (20847)
+Attributes       : Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=697588)   : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 725 | Scaled Value: 725 | Misc Value: 1 | Radius: 30 yards | Target: Party in Area (20)
+Description      : Increases Armor by $s1 for $d.
+Tooltip          : Increases Armor by $w1.
+
 Name             : Opening Termite Barrel (id=18952) 
 School           : Physical
 Spell Type       : None
@@ -28408,6 +28422,19 @@ Effects          :
 #1 (id=698382)   : Create Item (24)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 Description      : Fill at the Dire Pool.
+
+Name             : The Lion Horn of Stormwind (id=20847) [Passive] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 60
+Internal Cooldown: 60 seconds
+Proc Chance      : 10%
+Proc Flags       : White Melee Taken, Yellow Melee Taken
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=698675)   : Apply Aura (6) | Proc Trigger Spell (42): The Lion Horn of Stormwind
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 18946 | Target: Self (1)
+Description      : When struck in combat has a ${$h/2}% chance of increasing all party member's armor by $18946s1 for $18946d. This chance is doubled in Strongholds and Cities.
 
 Name             : Flarecore Mantle (id=20848) 
 School           : Physical
