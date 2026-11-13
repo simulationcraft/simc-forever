@@ -70768,10 +70768,10 @@ Effects          :
                    Base Value: 70 | Scaled Value: 0.7 | SP Coefficient: 0.29 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 1) (id=20425) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 20 (max 28)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -70782,10 +70782,10 @@ Effects          :
                    Base Value: 20467 | Scaled Value: 20467 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 1) (id=20467) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 20 (max 28)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
@@ -72816,10 +72816,10 @@ Effects          :
 Description      : Restores $s1 mana per 5 sec.
 
 Name             : Judgement of Command (desc=Rank 3) (id=20961) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 40 (max 48)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -72830,10 +72830,10 @@ Effects          :
                    Base Value: 20964 | Scaled Value: 20964 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 2) (id=20962) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 30 (max 38)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -72844,10 +72844,10 @@ Effects          :
                    Base Value: 20963 | Scaled Value: 20963 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 2) (id=20963) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 30 (max 38)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
@@ -72859,10 +72859,10 @@ Effects          :
                    Base Value: 153 | Scaled Value: 201.8 (delta=0.091503) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 3) (id=20964) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 40 (max 48)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
@@ -72874,10 +72874,10 @@ Effects          :
                    Base Value: 214 | Scaled Value: 258.8 (delta=0.093458) | Points Per Level: 5.6 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20965) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 50 (max 58)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
@@ -72889,10 +72889,10 @@ Effects          :
                    Base Value: 274 | Scaled Value: 322.8 (delta=0.094891) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 5) (id=20966) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 60 (max 68)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
@@ -72904,10 +72904,10 @@ Effects          :
                    Base Value: 356 | Scaled Value: 356 (delta=0.095506) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20967) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 50 (max 58)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -72918,10 +72918,10 @@ Effects          :
                    Base Value: 20965 | Scaled Value: 20965 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 5) (id=20968) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
-Spell Type       : Ranged
+Spell Type       : Melee
 Spell Level      : 60 (max 68)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
