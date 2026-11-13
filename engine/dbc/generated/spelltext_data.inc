@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70938
-static constexpr std::array<spelltext_data_t, 8726> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8729> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -2942,6 +2942,7 @@ static constexpr std::array<spelltext_data_t, 8726> __spelltext_data { {
   {   16581, "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by $/1000;S1 sec.", 0, "Rank 4" },
   {   16582, "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by $/1000;S1 sec.", 0, "Rank 5" },
   {   16589, "Drink Me.", 0, 0 },
+  {   16602, "Summons the infernal spirit of Shahram.", 0, 0 },
   {   16603, "Transfers $s1 health every $t1 seconds from the target to the caster for $d.", "Drains $s1 health every $t1 sec to the caster.", 0 },
   {   16608, "Transfers $s1 health every $t1 from the target to the caster for $d.", "Drains $s1 health each second to the caster.", 0 },
   {   16611, "When struck has a $h% chance of stealing $16608o1 life from the attacker over $16608d.\r\n", 0, 0 },
@@ -4271,6 +4272,7 @@ static constexpr std::array<spelltext_data_t, 8726> __spelltext_data { {
   {   22843, "Increases damage and healing done by magical spells and effects by up to $s1.", 0, 0 },
   {   22844, "Permanently adds +8 to your Healing and Damage from spells to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.", 0, 0 },
   {   22846, "Permanently adds 1% dodge to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot.", 0, 0 },
+  {   22850, "Grants the wielder $s1 Defense, $s2 Armor, $s3 Attack Power, and $s4 additional Attack Power against Dragonkin for $d.", "Armor increased by $s2, Defense increased by $s1, Attack Power increased by $s3, and Attack Power against Dragonkin increased by $s4.", 0 },
   {   22854, "Increases the damage done by your pets by 4%.", 0, 0 },
   {   22855, "Restores $s1 mana per 5 sec to your Imp.", "Restoring $s1 mana per 5 sec.", 0 },
   {   22863, "Increases run speed by $s1% for $d1.", "Increases run speed by $s1%.", 0 },
@@ -8509,6 +8511,7 @@ static constexpr std::array<spelltext_data_t, 8726> __spelltext_data { {
   { 1316778, "Right Click to summon and dismiss your Minimule.", 0, 0 },
   { 1316794, "$@spelldesc1270940", 0, 0 },
   { 1316847, "Summons a wolf that will protect you for $d.", 0, "Summon" },
+  { 1316865, "Burns the target for $s1 Fire damage every $t1 sec for $d.", "$s1 Fire damage inflicted every $t1 sec.", 0 },
   { 1316928, "Underwater breath lasts $s1% longer than normal.", 0, 0 },
   { 1316991, "Healing for $s1 every $1316992t2 sec for $1316992d.", 0, "Rank 4" },
   { 1316992, "Healing every $t2 sec for $d.", 0, "Rank 4" },

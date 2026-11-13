@@ -15039,7 +15039,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15036] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.70938
 
-static const std::array<dbc_item_data_t, 13053> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13056> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -20009,6 +20009,7 @@ static const std::array<dbc_item_data_t, 13053> __item_data_chunk0 { {
   { "Dustfeather Sash",  12589, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 6, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[3287], 4, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Felstriker",  12590, 0x00080000, 0x00000004, 0x00, 63, 58, 0, 0, 4, 13, 2, 15, 1, 1700, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monster - Staff, Holy Staff",  12591, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 17, 2, 10, 0, 2000, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Blackblade of Shahram",  12592, 0x00000000, 0x00000004, 0x00, 63, 58, 0, 0, 4, 17, 2, 8, 1, 3500, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monster - Sword, Horde Sword Bronze",  12593, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 13, 2, 7, 0, 2000, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Draconian Deflector",  12602, 0x00000000, 0x00000004, 0x00, 63, 58, 0, 0, 3, 14, 4, 6, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[3291], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Nightbrace Tunic",  12603, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 5, 4, 2, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[3294], 5, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -22837,6 +22838,7 @@ static const std::array<dbc_item_data_t, 13053> __item_data_chunk0 { {
   { "Murmuring Ring",  18345, 0x00080000, 0x00000004, 0x00, 60, 55, 0, 0, 3, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[28], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Threadbare Trousers",  18346, 0x00000000, 0x00000004, 0x00, 60, 55, 0, 0, 3, 7, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[6509], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Well Balanced Axe",  18347, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 13, 2, 0, 1, 1900, 0.600000f, 0.000000f, &__item_stats_data[6512], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Quel'Serrar",  18348, 0x00008400, 0x00000004, 0x00, 65, 60, 0, 0, 4, 21, 2, 7, 1, 2000, 0.400000f, 0.000000f, &__item_stats_data[164], 1, 0x0003, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Gauntlets of Accuracy",  18349, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 10, 4, 3, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[6514], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Amplifying Cloak",  18350, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 16, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[6517], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Magically Sealed Bracers",  18351, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 9, 4, 4, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[6519], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -27849,6 +27851,7 @@ static const std::array<dbc_item_data_t, 13053> __item_data_chunk0 { {
   { "Snapped Branch Wand", 284574, 0x00000000, 0x00004004, 0x00, 27, 22, 0, 0, 2, 26, 2, 19, 2, 1700, 0.600000f, 0.000000f, &__item_stats_data[283], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Ankle Slicers", 284587, 0x00000000, 0x00000004, 0x00, 63, 58, 0, 0, 4, 25, 2, 16, 2, 1800, 0.600000f, 0.000000f, &__item_stats_data[14703], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monster - Mace, Thaurissan Hammer", 284597, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 13, 2, 4, 0, 2000, 0.600000f, 0.000000f, 0, 0, 0x7fff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Flame Seared Sword", 284667, 0x00000000, 0x00000000, 0x00, 28, 23, 0, 0, 3, 13, 2, 7, 2, 2600, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Apothecary's Concoction", 284668, 0x00000000, 0x00000004, 0x00, 24, 19, 0, 0, 2, 23, 4, 0, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[14705], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Carved Furbolg Tooth", 284696, 0x00000000, 0x00000004, 0x00, 29, 24, 0, 0, 2, 25, 2, 16, 2, 1900, 0.600000f, 0.000000f, &__item_stats_data[116], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Arcane Charged Robes", 284697, 0x00000000, 0x00000004, 0x00, 34, 29, 0, 0, 2, 5, 4, 1, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[14708], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
