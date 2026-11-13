@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70938
-static constexpr std::array<spelltext_data_t, 8725> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8726> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3924,6 +3924,7 @@ static constexpr std::array<spelltext_data_t, 8725> __spelltext_data { {
   {   20578, 0, "Regenerate $s1% of total Health and $s2% of total Mana every $t1 seconds.", 0 },
   {   20580, "Activate to slip into the shadows, reducing the chance for enemies to detect your presence. Lasts until cancelled or upon moving. Using this ability in combat discourages enemies from attacking you, but increases the cooldown to 2 min.", "Shadowmelded.", "Racial" },
   {   20582, "Dodge chance increased by $s1% and movement speed increased by $s2%. Night Elf Rogues and Druids are harder to detect in Stealth as if they were 1 level higher.", 0, "Racial Passive" },
+  {   20586, "Inflicts $s1 Nature damage every $t1 sec for $d.", "$s1 Nature damage inflicted every $t1 sec.", 0 },
   {   20587, "Increases Stamina by $s3 and reduces physical damage taken by $s4 for $d. However, lowers Strength and Agility by $s1 and increases magical damage taken by up to $s5.", "Powerful brew.", 0 },
   {   20589, "Instantly escape the effects of any movement impairing effect and gain immunity to those effects for $d.", "Immune to movement impairing effects.", "Racial" },
   {   20591, "Maximum Mana increased by $s1%.", 0, "Racial Passive" },
