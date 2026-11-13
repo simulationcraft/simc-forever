@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
 Name             : Backstab (desc=Rank 1) (id=53) [Spell Family (8)] 
 Class            : Rogue
 School           : Physical
@@ -7625,7 +7625,6 @@ $attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}
 $coup=$?s14162[${$14162s1/100+1}][${1}]
 
 Name             : Poised (desc=Passive) (id=1328825) [Spell Family (8), Passive] 
-Hotfixed         : Aura Interrupt, Channel Interrupt
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -7638,11 +7637,9 @@ Aura Interrupt   : Leave Combat (31)
 Effects          :
 #1 (id=1368038)  : Apply Aura (6) | Proc Trigger Spell (42): Poised
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Trigger Spell: 1330741 | Target: Self (1)
-Hotfixed         : Sub Type (4 -> 42), Trigger Spell (0 -> 1330741)
 Description      : While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by $1328826s1.
 
 Name             : Poised (id=1328826) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -7847,11 +7844,10 @@ Effects          :
 Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.
 
 Name             : Poised (id=1330741) [Spell Family (8), Hidden] 
-Hotfixed         : NEW SPELL
 Class            : Rogue
 School           : Physical
 Spell Type       : None
-Resource         : 0% Health (-2) (id=315223)[Hotfixed: NEW POWER]
+Resource         : 0% Health (-2) (id=315223)
 Duration         : Aura (infinite)
 Labels           : 20: Rogue Spells
 Triggered By     : Poised (1328825)
@@ -7860,5 +7856,4 @@ Aura Interrupt   : Leave Combat (31)
 Effects          :
 #1 (id=1371039)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 

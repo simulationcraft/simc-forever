@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
 Name             : Eye of Kilrogg (desc=Summon) (id=126) 
 Class            : Warlock
 School           : Shadow
@@ -994,7 +994,6 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=681913)   : School Damage (2): fire
                    Base Value: 6 | Scaled Value: 7.2 (delta=0.333333) | Points Per Level: 0.3 | SP Coefficient: 0.164 | Target: Targeted Enemy (6)
-Hotfixed         : Delta (0.285714 -> 0.333333), Base Value (4 -> 6), Points per Level (0.1 -> 0.3)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Health Funnel (desc=Rank 2) (id=3698) [Spell Family (5)] 
@@ -1843,7 +1842,6 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=685570)   : School Damage (2): fire
                    Base Value: 11 | Scaled Value: 13 (delta=0.181818) | Points Per Level: 0.4 | SP Coefficient: 0.314 | Target: Targeted Enemy (6)
-Hotfixed         : Delta (0.153846 -> 0.181818), Base Value (7 -> 11), Points per Level (0.2 -> 0.4)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Firebolt (desc=Rank 3) (id=7800) [Spell Family (5)] 
@@ -1863,7 +1861,6 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=685571)   : School Damage (2): fire
                    Base Value: 15 | Scaled Value: 17 (delta=0.235294) | Points Per Level: 0.4 | SP Coefficient: 0.529 | Target: Targeted Enemy (6)
-Hotfixed         : Delta (0.166667 -> 0.235294), Base Value (12 -> 15), Points per Level (0.3 -> 0.4)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Firebolt (desc=Rank 4) (id=7801) [Spell Family (5)] 
@@ -1883,7 +1880,6 @@ Attributes       : Not Shapeshifted (16), Unknown (493)
 Effects          :
 #1 (id=685572)   : School Damage (2): fire
                    Base Value: 18 | Scaled Value: 20 (delta=0.222222) | Points Per Level: 0.4 | SP Coefficient: 0.571 | Target: Targeted Enemy (6)
-Hotfixed         : Delta (0.114286 -> 0.222222), Base Value (17 -> 18), Points per Level (0.3 -> 0.4)
 Description      : Deals $?s18769[${$m1*($18769m1/100+1)} to ${$M1*($18769m1/100+1)}][$s1] Fire damage to a target.
 
 Name             : Firebolt (desc=Rank 5) (id=7802) [Spell Family (5)] 
@@ -3661,7 +3657,6 @@ Effects          :
 Tooltip          : Shadow damage taken from Warlock increased by $w1%.
 
 Name             : Soul Siphon (id=17804) [Spell Family (5), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=5, col=3, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(4, 8, 12)]
 Class            : Warlock
@@ -9987,7 +9982,6 @@ Description      : Charms the target, preventing all actions for up to $d. Any d
 Tooltip          : Charmed.
 
 Name             : Wrack (desc=Rank 1) (id=1316697) [Spell Family (5)] 
-Hotfixed         : Attributes, Description, Tooltip
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=0]
 Class            : Warlock
 School           : Shadow
@@ -10005,10 +9999,8 @@ Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Loo
 Effects          :
 #1 (id=1349556)  : Apply Aura (6) | Periodic Damage (3): shadow every 1 seconds
                    Base Value: 25.2 | Scaled Value: 60.2 | Points Per Level: 1.75 | Value Multiplier: 1 | SP Coefficient: 0.2002 | Target: Targeted Enemy (6)
-Hotfixed         : SP Coefficient (0.286 -> 0.2002), Base Value (36 -> 25.200001), Points per Level (2.5 -> 1.75)
 #2 (id=1349557)  : Apply Aura (6) | Dummy (4)
                    Base Value: 100 | Scaled Value: 100 | Target: Targeted Enemy (6)
-Hotfixed         : Sub Type (271 -> 4), Base Value (10 -> 100), Affects Spells
 Description      : Tears the target apart from within for $d, inflicting $s1 Shadow damage every $t sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage $s2% faster.
 Tooltip          : Inflicts $w1 Shadow damage every $t1 sec and increases the speed at which the caster's Siphon Life, Corruption, and Bane of Agony effects deal periodic damage by $w2%.
 

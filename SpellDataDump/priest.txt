@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70888 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
 Class            : Priest
 School           : Holy
@@ -2663,7 +2663,6 @@ Description      : When activated, reduces the Mana cost of your next spell by $
 Tooltip          : The Mana cost of your next spell is reduced by $s1% and its non-periodic critical effect chance is increased by $s2%.
 
 Name             : Divine Spirit (desc=Rank 1) (id=14752) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -2697,7 +2696,6 @@ Effects          :
 Description      : Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by $s1%.
 
 Name             : Divine Spirit (desc=Rank 2) (id=14818) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -2718,7 +2716,6 @@ Description      : Holy power infuses the target, increasing their Spirit by $s1
 Tooltip          : Increases Spirit by $s1.
 
 Name             : Divine Spirit (desc=Rank 3) (id=14819) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -4094,7 +4091,6 @@ Effects          :
 Description      : A powerful prayer that heals the target and their party for $s1. Party members must be within $a1 yards of target.
 
 Name             : Prayer of Spirit (desc=Rank 1) (id=27681) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
@@ -4333,7 +4329,6 @@ Effects          :
 Description      : Increases the percentage healed by your Vampiric Embrace by an additional $s1%.
 
 Name             : Divine Spirit (desc=Rank 4) (id=27841) [Spell Family (6)] 
-Hotfixed         : Affecting Spells
 Class            : Priest
 School           : Holy
 Spell Type       : Magic
