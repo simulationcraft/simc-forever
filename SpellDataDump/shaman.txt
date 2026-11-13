@@ -2132,6 +2132,7 @@ Effects          :
                    Base Value: 548 | Scaled Value: 548 | Target: Targeted Enemy (6)
 
 Name             : Windfury Totem (desc=Rank 1) (id=8512) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2146,11 +2147,12 @@ Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454)
 Effects          :
 #1 (id=686146)   : Summon Guardian (28)
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 6112 | Misc Value 2: 83 | Target: Back Left of Self (43)
-Description      : Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $8515a1 yards.  Each main hand hit has a 20% chance of granting the attacker $8516s2 extra attack with ${$8516m1*$<mult>} extra melee attack power. Lasts $d.
+Description      : Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $8515a1 yards.  Each main hand hit has a 20% chance of granting the attacker 1 extra attack with ${$8515m2*$<mult>} extra melee attack power. Lasts $d.
 Variables        : $mult1=$?s29192[${1.15}][${1.0}]
 $mult=$?s29193[${1.30}][${$<mult1>}]
 
 Name             : Windfury Totem (desc=Rank 1) (id=8515) [Passive] 
+Hotfixed         : Attributes, Tooltip
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2158,33 +2160,29 @@ Spell Level      : 32 (max 40)
 Internal Cooldown: 0.1 seconds
 Proc Chance      : 20%
 Proc Flags       : White Melee, Yellow Melee
-Attributes       : Passive (6), Do Not Log (8), Only On Player (104), Newest Exclusive Complete (362), Unknown (493)
+Attributes       : Passive (6), Do Not Log (8), Only On Player (104), Aura Points On Client (268), Newest Exclusive Complete (362), Unknown (493)
 Effects          :
 #1 (id=685641)   : Apply Aura Raid (65) | Proc Trigger Spell (42)
                    Base Value: 8516 | Scaled Value: 8516 | Radius: 30 yards | Target: Self (1)
-Tooltip          : Main hand attacks have a $h% chance to grant $8516s2 extra attack with $8516m1 increased attack power.
+#2 (id=1371582)  : Apply Aura Raid (65) | Dummy (4)
+                   Base Value: 95 | Scaled Value: 95 | Radius: 30 yards | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 1) (id=8516) [Spell Family (11)] 
-Class            : Shaman
+Hotfixed         : Attributes, Description, Tooltip
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 32 (max 40)
 Range            : 100 yards
-Duration         : 1 seconds
 Labels           : 24: Shaman Spells
-Stacks           : 2 initial, 2 maximum
-Proc Chance      : 100%
-Proc Flags       : White Melee
 Affecting Spells : Improved Weapon Totems (29192 effect#1), Improved Weapon Totems (29193 effect#1)
 Family Flags     : 33
-Attributes       : No Aura Icon (60), No Aura Log (202), Unknown (493)
+Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Display Range (126), Normal Melee Attack (345), Unknown (493)
 Effects          :
-#1 (id=685411)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 95 | Scaled Value: 95 | Target: Self (1)
-#2 (id=685412)   : Extra Attacks (19)
-                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
-Description      : Attack Power increased by $s1. Granted $s2 Extra Attack.
-Tooltip          : Attack Power increased by $s1. Granted $s2 Extra Attack.
+#1 (id=685411)   : Weapon Damage (58)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : Type (6 -> 58), Sub Type (99 -> 0), Base Value (95 -> 0), Target 1 (1 -> 6)
 
 Name             : Grace of Air Totem (desc=Rank 1) (id=8835) [Spell Family (11)] 
 Class            : Shaman
@@ -3534,28 +3532,22 @@ Effects          :
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10608) [Spell Family (11)] 
-Class            : Shaman
+Hotfixed         : Attributes, Description, Tooltip
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 42 (max 50)
 Range            : 100 yards
-Duration         : 1 seconds
 Labels           : 24: Shaman Spells
-Stacks           : 2 initial, 2 maximum
-Proc Chance      : 100%
-Proc Flags       : White Melee
 Affecting Spells : Improved Weapon Totems (29192 effect#1), Improved Weapon Totems (29193 effect#1)
 Family Flags     : 33
-Attributes       : No Aura Icon (60), No Aura Log (202), Unknown (493)
+Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Display Range (126), Normal Melee Attack (345), Unknown (493)
 Effects          :
-#1 (id=689101)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 179 | Scaled Value: 179 | Target: Self (1)
-#2 (id=689102)   : Extra Attacks (19)
-                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
-Description      : Attack Power increased by $s1. Granted $s2 Extra Attack.
-Tooltip          : Attack Power increased by $s1. Granted $s2 Extra Attack.
+#1 (id=689101)   : Weapon Damage (58)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : Type (6 -> 58), Sub Type (99 -> 0), Base Value (179 -> 0), Target 1 (1 -> 6)
 
 Name             : Windfury Totem (desc=Rank 2) (id=10609) [Passive] 
+Hotfixed         : Attributes, Tooltip
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3563,35 +3555,32 @@ Spell Level      : 42 (max 50)
 Internal Cooldown: 0.1 seconds
 Proc Chance      : 20%
 Proc Flags       : White Melee, Yellow Melee
-Attributes       : Passive (6), Do Not Log (8), Only On Player (104), Newest Exclusive Complete (362), Unknown (493)
+Attributes       : Passive (6), Do Not Log (8), Only On Player (104), Aura Points On Client (268), Newest Exclusive Complete (362), Unknown (493)
 Effects          :
 #1 (id=688845)   : Apply Aura Raid (65) | Proc Trigger Spell (42)
                    Base Value: 10608 | Scaled Value: 10608 | Radius: 30 yards | Target: Self (1)
-Tooltip          : Main hand attacks have a $h% chance to grant $10608s2 extra attack with $10608m1 increased attack power.
+#2 (id=1371583)  : Apply Aura Raid (65) | Dummy (4)
+                   Base Value: 179 | Scaled Value: 179 | Radius: 30 yards | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 3) (id=10610) [Spell Family (11)] 
-Class            : Shaman
+Hotfixed         : Attributes, Description, Tooltip
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 52 (max 60)
 Range            : 100 yards
-Duration         : 1 seconds
 Labels           : 24: Shaman Spells
-Stacks           : 2 initial, 2 maximum
-Proc Chance      : 100%
-Proc Flags       : White Melee
 Affecting Spells : Improved Weapon Totems (29192 effect#1), Improved Weapon Totems (29193 effect#1)
 Family Flags     : 33
-Attributes       : No Aura Icon (60), No Aura Log (202), Unknown (493)
+Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Display Range (126), Normal Melee Attack (345), Unknown (493)
 Effects          :
-#1 (id=689167)   : Apply Aura (6) | Modify Attack Power (99)
-                   Base Value: 246 | Scaled Value: 246 | Target: Self (1)
-#2 (id=689168)   : Extra Attacks (19)
-                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
-Description      : Attack Power increased by $s1. Granted $s2 Extra Attack.
-Tooltip          : Attack Power increased by $s1. Granted $s2 Extra Attack.
+#1 (id=689167)   : Weapon Damage (58)
+                   Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
+Hotfixed         : Type (6 -> 58), Sub Type (99 -> 0), Base Value (246 -> 0), Target 1 (1 -> 6)
 
 Name             : Windfury Totem (desc=Rank 3) (id=10612) [Passive] 
+Hotfixed         : Attributes, Tooltip
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3599,13 +3588,17 @@ Spell Level      : 52 (max 60)
 Internal Cooldown: 0.1 seconds
 Proc Chance      : 20%
 Proc Flags       : White Melee, Yellow Melee
-Attributes       : Passive (6), Do Not Log (8), Only On Player (104), Newest Exclusive Complete (362), Unknown (493)
+Attributes       : Passive (6), Do Not Log (8), Only On Player (104), Aura Points On Client (268), Newest Exclusive Complete (362), Unknown (493)
 Effects          :
 #1 (id=688784)   : Apply Aura Raid (65) | Proc Trigger Spell (42)
                    Base Value: 10610 | Scaled Value: 10610 | Radius: 30 yards | Target: Self (1)
-Tooltip          : Main hand attacks have a $h% chance to grant $10610s2 extra attack with $10610m1 increased attack power.
+#2 (id=1371584)  : Apply Aura Raid (65) | Dummy (4)
+                   Base Value: 246 | Scaled Value: 246 | Radius: 30 yards | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10613) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3620,11 +3613,12 @@ Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454)
 Effects          :
 #1 (id=688574)   : Summon Guardian (28)
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 7483 | Misc Value 2: 83 | Target: Back Left of Self (43)
-Description      : Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10609a1 yards. Each main hand hit has a 20% chance of granting the attacker $10608s2 extra attack with ${$10608m1*$<mult>} extra melee attack power. Lasts $d.
+Description      : Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10609a1 yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with ${$10609m2*$<mult>} extra melee attack power. Lasts $d.
 Variables        : $mult1=$?s29192[${1.15}][${1.0}]
 $mult=$?s29193[${1.30}][${$<mult1>}]
 
 Name             : Windfury Totem (desc=Rank 3) (id=10614) [Spell Family (11)] 
+Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3639,7 +3633,7 @@ Attributes       : Not Shapeshifted (16), Can Be Multi Cast (229), Unknown (454)
 Effects          :
 #1 (id=688626)   : Summon Guardian (28)
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 7484 | Misc Value 2: 83 | Target: Back Left of Self (43)
-Description      : Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10612a1 yards. Each main hand hit has a 20% chance of granting the attacker $10610s2 extra attack with ${$10610m1*$<mult>} extra melee attack power. Lasts $d.
+Description      : Summons a Windfury Totem with $s1 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within $10612a1 yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with ${$10612m2*$<mult>} extra melee attack power. Lasts $d.
 Variables        : $mult1=$?s29192[${1.15}][${1.0}]
 $mult=$?s29193[${1.30}][${$<mult1>}]
 
