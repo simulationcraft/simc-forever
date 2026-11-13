@@ -15097,7 +15097,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15094] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.70938
 
-static const std::array<dbc_item_data_t, 13073> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13074> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -23073,6 +23073,7 @@ static const std::array<dbc_item_data_t, 13073> __item_data_chunk0 { {
   { "The Eye of Shadow",  18665, 0x00000000, 0x00006004, 0x00, 71, 60, 0, 0, 4, 12, 4, 0, 2, 0, 0.000000f, 0.000000f, 0, 0, 0x05ff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Baron Charr's Sceptre",  18671, 0x00000000, 0x00004004, 0x00, 60, 55, 0, 0, 3, 21, 2, 4, 2, 2600, 0.600000f, 0.000000f, &__item_stats_data[162], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Elemental Ember",  18672, 0x00000000, 0x00004004, 0x00, 60, 55, 0, 0, 2, 23, 4, 0, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[6931], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Zephyr Cloak",  18677, 0x00000000, 0x00004004, 0x00, 62, 57, 0, 0, 2, 16, 4, 1, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[283], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Tempestria's Frozen Necklace",  18678, 0x00000000, 0x00004004, 0x00, 62, 57, 0, 0, 3, 2, 4, 0, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[6933], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Frigid Ring",  18679, 0x00000000, 0x00004004, 0x00, 62, 57, 0, 0, 2, 11, 4, 0, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[6936], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Ancient Bone Bow",  18680, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 15, 2, 2, 1, 2800, 0.600000f, 0.000000f, &__item_stats_data[7], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
