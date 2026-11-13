@@ -1,4 +1,4 @@
-// Player trait definitions, wow build 1.60.1.70888
+// Player trait definitions, wow build 1.60.1.70938
 static constexpr std::array<trait_data_t, 470> __trait_data_data { {
   { 1,  1, 130656, 105926, 2,  0, 135457,   20504,      0,      0,  5,  8, 100,                     "Improved Intercept", {    0,    0,    0,    0 }, {    0,    0,    0,    0 },   0, 0 },
   { 1,  1, 130657, 105927, 1,  0, 135458,   12328,      0,      0,  5,  6, 100,                             "Death Wish", {    0,    0,    0,    0 }, {    0,    0,    0,    0 },   0, 0 },
@@ -472,8 +472,8 @@ static constexpr std::array<trait_data_t, 470> __trait_data_data { {
   { 1, 11, 141188, 113563, 1,  0, 145859, 1322605,      0,      0,  7,  7, 100,                         "Shifting Power", {    0,    0,    0,    0 }, {    0,    0,    0,    0 },   0, 0 },
 } };
 
-// Player trait definition effect entries, wow build 1.60.1.70888
-static constexpr std::array<trait_definition_effect_entry_t, 534> __trait_definition_effect_data { {
+// Player trait definition effect entries, wow build 1.60.1.70938
+static constexpr std::array<trait_definition_effect_entry_t, 535> __trait_definition_effect_data { {
   { 134186, 0, 0, 85323 },
   { 134186, 1, 0, 87379 },
   { 134188, 0, 0, 85322 },
@@ -493,6 +493,7 @@ static constexpr std::array<trait_definition_effect_entry_t, 534> __trait_defini
   { 134199, 0, 0, 85308 },
   { 134200, 0, 0, 85307 },
   { 134202, 0, 0, 85306 },
+  { 134202, 1, 0, 128299 },
   { 134203, 0, 0, 85305 },
   { 134203, 1, 0, 85304 },
   { 134205, 0, 0, 85303 },
