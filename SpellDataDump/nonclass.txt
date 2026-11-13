@@ -68604,6 +68604,18 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1300130 | Target: Self (1)
 Description      : Melee attacks deal $1300130s1 additional Fire damage against Frozen targets.
 
+Name             : Wit's End (id=1300141) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 57
+Proc Chance      : 15%
+Proc Flags       : White Melee
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), No Aura Icon (60), Unknown (493)
+Effects          :
+#1 (id=1324667)  : Apply Aura (6) | Proc Trigger Spell (42): Wit's End
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 1300140 | Target: Self (1)
+Description      : Melee attacks have a $h% chance to grant a Clearcasting state, reducing the mana cost of your next damage spell by 100%.
+
 Name             : Stealth (id=1300180) 
 School           : Physical
 Spell Type       : None

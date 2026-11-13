@@ -2152,7 +2152,7 @@ Mage
 1298416  Frostbolt
 1299850  Fireball
 1300130  Frostburn
-1300140 *Wit's End
+1300140  Wit's End
 1300176 *Arcane Blast
 1300177 *Arcane Blast
 1300947 *1.60.0 - Item - Tier 1 - Mage 2P Bonus - Hit
