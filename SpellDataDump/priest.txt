@@ -3511,6 +3511,7 @@ Effects          :
 Description      : Controls Emberstrife's mind when his will falters.
 
 Name             : Juju Might (id=16329) [Spell Family (6)] 
+Hotfixed         : Attributes
 School           : Holy
 Spell Type       : Magic
 Spell Level      : 50
@@ -3520,7 +3521,7 @@ Duration         : 600 seconds
 Stance Mask      : 0x08000000
 Affecting Spells : Mental Agility (14520 effect#1), Inner Focus (14751 effects: #1, #2), Holy Precision (1309957 effect#1)
 Family Flags     : 31
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
 #1 (id=693538)   : Apply Aura (6) | Modify Attack Power (99)
                    Base Value: 40 | Scaled Value: 40 | Target: Targeted Ally (21)
@@ -3637,6 +3638,7 @@ Effects          :
 Description      : Increases the range of your offensive Shadow spells by $s1%.
 
 Name             : Blessed Sunfruit (id=18125) [Spell Family (6)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 GCD              : 1.5 seconds
@@ -3644,7 +3646,7 @@ Duration         : 600 seconds
 Proc Chance      : 101%
 Stance Mask      : 0x08000000
 Triggered By     : Blessed Sunfruit (18124)
-Attributes       : Allow While Sitting (27), No Immunities (29), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
 #1 (id=694827)   : Apply Aura (6) | Attribute (29)
                    Base Value: 10 | Scaled Value: 10 | Stat: Str | Target: Self (1)
@@ -3652,6 +3654,7 @@ Description      : Increases Strength by $s1 for $d.
 Tooltip          : Strength increased by $m1.
 
 Name             : Blessed Sunfruit Juice (id=18141) [Spell Family (6)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 GCD              : 1.5 seconds
@@ -3659,7 +3662,7 @@ Duration         : 600 seconds
 Proc Chance      : 101%
 Stance Mask      : 0x08000000
 Triggered By     : Blessed Sunfruit Juice (18140)
-Attributes       : Allow While Sitting (27), No Immunities (29), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Allow While Not Shapeshifted (caster form) (83), Unknown (493)
 Effects          :
 #1 (id=695161)   : Apply Aura (6) | Attribute (29)
                    Base Value: 10 | Scaled Value: 10 | Stat: Spi | Target: Self (1)

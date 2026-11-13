@@ -4592,16 +4592,16 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 sec.
 
 Name             : Juju Guile (id=16327) [Spell Family (3)] 
+Hotfixed         : Attributes
 School           : Arcane
 Spell Type       : Magic
 Spell Level      : 42
 Range            : 20 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Proc Chance      : 101%
 Affecting Spells : Arcane Geometry (11247 effect#1)
 Family Flags     : 10
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=693765)   : Apply Aura (6) | Attribute (29)
                    Base Value: 30 | Scaled Value: 30 | Stat: Int | Target: Targeted Ally (21)

@@ -1729,10 +1729,11 @@ Effects          :
 Description      : Cures diseases and neutralizes poisons up to level 35.
 
 Name             : Health II (id=3593) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=680529)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 120 | Scaled Value: 120 | Target: Self (1)
@@ -3191,12 +3192,13 @@ Effects          :
 Description      : Dispels all Immobilizing, Slowing and Stun effects.
 
 Name             : Fury of the Bogling (id=5665) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 10
 Duration         : 600 seconds
 Category         : 102 (Type 0x0)
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=684081)   : Apply Aura (6) | Damage Done (13)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 0x1 | Target: Self (1)
@@ -6383,13 +6385,14 @@ Effects          :
 Description      : When applied to your fishing pole, increases Fishing by 75 for 10 minutes.
 
 Name             : Armor (desc=Rank 1) (id=8091) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 10 (max 10)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=687703)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 60 | Scaled Value: 60 | Misc Value: 1 | Target: Targeted Ally (21)
@@ -6397,13 +6400,14 @@ Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
 Name             : Armor (desc=Rank 2) (id=8094) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 25 (max 25)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=687687)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 120 | Scaled Value: 120 | Misc Value: 1 | Target: Targeted Ally (21)
@@ -6411,13 +6415,14 @@ Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
 Name             : Armor (desc=Rank 3) (id=8095) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 40 (max 40)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=687688)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 180 | Scaled Value: 180 | Misc Value: 1 | Target: Targeted Ally (21)
@@ -6425,13 +6430,14 @@ Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
 Name             : Intellect (desc=Rank 1) (id=8096) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 15 (max 15)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=686438)   : Apply Aura (6) | Attribute (29)
                    Base Value: 4 | Scaled Value: 4 | Stat: Int | Target: Targeted Ally (21)
@@ -6439,13 +6445,14 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Intellect increased by $s1.
 
 Name             : Intellect (desc=Rank 2) (id=8097) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 30 (max 30)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=686083)   : Apply Aura (6) | Attribute (29)
                    Base Value: 8 | Scaled Value: 8 | Stat: Int | Target: Targeted Ally (21)
@@ -6453,13 +6460,14 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Intellect increased by $s1.
 
 Name             : Intellect (desc=Rank 3) (id=8098) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 45 (max 45)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=686637)   : Apply Aura (6) | Attribute (29)
                    Base Value: 12 | Scaled Value: 12 | Stat: Int | Target: Targeted Ally (21)
@@ -6467,13 +6475,14 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Intellect increased by $s1.
 
 Name             : Stamina (desc=Level 1) (id=8099) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 15 (max 15)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=686218)   : Apply Aura (6) | Attribute (29)
                    Base Value: 4 | Scaled Value: 4 | Stat: Sta | Target: Targeted Ally (21)
@@ -6481,13 +6490,14 @@ Description      : Increases the target's Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
 Name             : Stamina (desc=Level 2) (id=8100) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 30 (max 30)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=687993)   : Apply Aura (6) | Attribute (29)
                    Base Value: 8 | Scaled Value: 8 | Stat: Sta | Target: Targeted Ally (21)
@@ -6495,13 +6505,14 @@ Description      : Increases the target's Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
 Name             : Stamina (desc=Level 3) (id=8101) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 45 (max 45)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=688018)   : Apply Aura (6) | Attribute (29)
                    Base Value: 12 | Scaled Value: 12 | Stat: Sta | Target: Targeted Ally (21)
@@ -6509,13 +6520,14 @@ Description      : Increases the target's Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
 Name             : Spirit (desc=Rank 1) (id=8112) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 10 (max 10)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=687487)   : Apply Aura (6) | Attribute (29)
                    Base Value: 3 | Scaled Value: 3 | Stat: Spi | Target: Targeted Ally (21)
@@ -6523,13 +6535,14 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Spirit (desc=Rank 2) (id=8113) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 25 (max 25)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=687488)   : Apply Aura (6) | Attribute (29)
                    Base Value: 7 | Scaled Value: 7 | Stat: Spi | Target: Targeted Ally (21)
@@ -6537,13 +6550,14 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Spirit (desc=Rank 3) (id=8114) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 40 (max 40)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=687489)   : Apply Aura (6) | Attribute (29)
                    Base Value: 11 | Scaled Value: 11 | Stat: Spi | Target: Targeted Ally (21)
@@ -6551,13 +6565,14 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Agility (desc=Rank 1) (id=8115) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 20 (max 20)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=687490)   : Apply Aura (6) | Attribute (29)
                    Base Value: 5 | Scaled Value: 5 | Stat: Agi | Target: Targeted Ally (21)
@@ -6565,13 +6580,14 @@ Description      : Increases the target's Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Agility (desc=Rank 2) (id=8116) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 35 (max 35)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=686450)   : Apply Aura (6) | Attribute (29)
                    Base Value: 9 | Scaled Value: 9 | Stat: Agi | Target: Targeted Ally (21)
@@ -6579,13 +6595,14 @@ Description      : Increases the target's Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Agility (desc=Rank 3) (id=8117) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50 (max 50)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=686715)   : Apply Aura (6) | Attribute (29)
                    Base Value: 13 | Scaled Value: 13 | Stat: Agi | Target: Targeted Ally (21)
@@ -6593,13 +6610,14 @@ Description      : Increases the target's Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Strength (desc=Rank 1) (id=8118) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 20 (max 20)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=686387)   : Apply Aura (6) | Attribute (29)
                    Base Value: 5 | Scaled Value: 5 | Stat: Str | Target: Targeted Ally (21)
@@ -6607,13 +6625,14 @@ Description      : Increases the target's Strength by $s1 for $d.
 Tooltip          : Strength increased by $s1.
 
 Name             : Strength (desc=Rank 2) (id=8119) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 35 (max 35)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=686388)   : Apply Aura (6) | Attribute (29)
                    Base Value: 9 | Scaled Value: 9 | Stat: Str | Target: Targeted Ally (21)
@@ -6621,13 +6640,14 @@ Description      : Increases the target's Strength by $s1 for $d.
 Tooltip          : Strength increased by $s1.
 
 Name             : Strength (desc=Rank 3) (id=8120) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50 (max 50)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=686408)   : Apply Aura (6) | Attribute (29)
                    Base Value: 13 | Scaled Value: 13 | Stat: Str | Target: Targeted Ally (21)
@@ -9701,6 +9721,7 @@ Description      : Absorbs $s1 magical damage.  Lasts $d.
 Tooltip          : Magic damage absorption.
 
 Name             : Rage of Ages (id=10667) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -9708,8 +9729,7 @@ Duration         : 3600 seconds
 Cooldown         : 210 seconds
 Category         : 1 (Type 0x0)
 Category Cooldown: 210 seconds
-Proc Chance      : 101%
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=688956)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Str | Target: Self (1)
@@ -9717,6 +9737,7 @@ Description      : Increases Strength by $s1 when consumed. Effect lasts for 60 
 Tooltip          : Increases Strength by $s1.
 
 Name             : Spirit of Boar (id=10668) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -9724,8 +9745,7 @@ Duration         : 3600 seconds
 Cooldown         : 210 seconds
 Category         : 1 (Type 0x0)
 Category Cooldown: 210 seconds
-Proc Chance      : 101%
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=688972)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Sta | Target: Self (1)
@@ -9733,6 +9753,7 @@ Description      : Increases Stamina by $s1 when consumed. Effect lasts for 60 m
 Tooltip          : Increases Stamina by $s1.
 
 Name             : Strike of the Scorpok (id=10669) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -9741,7 +9762,7 @@ Cooldown         : 210 seconds
 Category         : 1 (Type 0x0)
 Category Cooldown: 210 seconds
 Proc Chance      : 101%
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=688328)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Agi | Target: Self (1)
@@ -9918,6 +9939,7 @@ Effects          :
 Description      : Right Click to summon and dismiss your cockroach.
 
 Name             : Infallible Mind (id=10692) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -9925,8 +9947,7 @@ Duration         : 3600 seconds
 Cooldown         : 210 seconds
 Category         : 1 (Type 0x0)
 Category Cooldown: 210 seconds
-Proc Chance      : 101%
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=689008)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Int | Target: Self (1)
@@ -9934,6 +9955,7 @@ Description      : Increases Intellect by $s1 when consumed. Effect lasts for 60
 Tooltip          : Increases Intellect by $s1.
 
 Name             : Spiritual Domination (id=10693) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -9941,8 +9963,7 @@ Duration         : 3600 seconds
 Cooldown         : 210 seconds
 Category         : 1 (Type 0x0)
 Category Cooldown: 210 seconds
-Proc Chance      : 101%
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=688435)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Spi | Target: Self (1)
@@ -10310,10 +10331,11 @@ Description      : Increases Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Greater Agility (id=11334) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=689169)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Agi | Target: Self (1)
@@ -10321,10 +10343,11 @@ Description      : Increases Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Greater Armor (id=11348) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Duration         : 3600 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=688319)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 450 | Scaled Value: 450 | Misc Value: 1 | Target: Self (1)
@@ -10409,13 +10432,13 @@ Description      : Increases resistance to shadow by $s1.  If an enemy strikes t
 Tooltip          : Increases shadow resist by $s1 and may disease attackers.
 
 Name             : Gift of Arthas (id=11374) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : None
 Range            : 5 yards
 Duration         : 180 seconds
-Proc Chance      : 101%
 Triggered By     : Gift of Arthas (11371)
-Attributes       : Do Not Sheath (18), Aura Is Debuff (26), Unknown (493)
+Attributes       : Do Not Sheath (18), Aura Is Debuff (26), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=689853)   : Apply Aura (6) | Damage Taken (14)
                    Base Value: 8 | Scaled Value: 8 | Misc Value: 0x1 | Target: Targeted Enemy (6)
@@ -10511,10 +10534,11 @@ Description      : Gives you a dream vision that lets you explore areas that are
 Tooltip          : In a dream vision.
 
 Name             : Greater Strength (id=11405) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=689181)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Str | Target: Self (1)
@@ -10522,6 +10546,7 @@ Description      : Increases your Strength by $s1 for $d.
 Tooltip          : Increases Strength by $s1.
 
 Name             : Potion of Demon Slaying (id=11406) 
+Hotfixed         : Attributes
 School           : Holy
 Spell Type       : None
 Duration         : 300 seconds
@@ -10529,7 +10554,7 @@ Cooldown         : 120 seconds
 Category         : 4 (Type 0x0)
 Labels           : 4519
 Category Cooldown: 120 seconds
-Attributes       : Do Not Sheath (18), Allow While Sitting (27), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Sheath (18), Allow While Sitting (27), Include In Advanced Combat Log (72), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=689775)   : Apply Aura (6) | Modify Melee Attack Power vs Race (102)
                    Base Value: 180 | Scaled Value: 180 | Misc Value: 4 | Target: Self (1)
@@ -10678,13 +10703,14 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Shadow Power (id=11474) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Fire
 Spell Type       : Magic
 Duration         : 1800 seconds
 Cooldown         : 1 seconds
 Category         : 99 (Type 0x0)
 Category Cooldown: 1 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=690822)   : Apply Aura (6) | Damage Done (13)
                    Base Value: 40 | Scaled Value: 40 | Misc Value: 0x20 | Target: Self (1)
@@ -11425,13 +11451,14 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Agility (desc=Rank 4) (id=12174) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 65 (max 65)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=689887)   : Apply Aura (6) | Attribute (29)
                    Base Value: 17 | Scaled Value: 17 | Stat: Agi | Target: Targeted Ally (21)
@@ -11439,13 +11466,14 @@ Description      : Increases the target's Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Armor (desc=Rank 4) (id=12175) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 55 (max 55)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=690009)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 240 | Scaled Value: 240 | Misc Value: 1 | Target: Targeted Ally (21)
@@ -11453,13 +11481,14 @@ Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
 Name             : Intellect (desc=Rank 4) (id=12176) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60 (max 60)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=689638)   : Apply Aura (6) | Attribute (29)
                    Base Value: 16 | Scaled Value: 16 | Stat: Int | Target: Targeted Ally (21)
@@ -11467,13 +11496,14 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Intellect increased by $s1.
 
 Name             : Spirit (desc=Rank 4) (id=12177) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 55 (max 55)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=689888)   : Apply Aura (6) | Attribute (29)
                    Base Value: 15 | Scaled Value: 15 | Stat: Spi | Target: Targeted Ally (21)
@@ -11481,13 +11511,14 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Stamina (desc=Level 4) (id=12178) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60 (max 60)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=690087)   : Apply Aura (6) | Attribute (29)
                    Base Value: 16 | Scaled Value: 16 | Stat: Sta | Target: Targeted Ally (21)
@@ -11495,13 +11526,14 @@ Description      : Increases the target's Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
 Name             : Strength (desc=Rank 4) (id=12179) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 65 (max 65)
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 1800 seconds
-Attributes       : Not Shapeshifted (16), Only On Player (104), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Only On Player (104), Unknown (493)
 Effects          :
 #1 (id=689792)   : Apply Aura (6) | Attribute (29)
                    Base Value: 17 | Scaled Value: 17 | Stat: Str | Target: Targeted Ally (21)
@@ -18892,11 +18924,12 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Crystal Ward (id=15233) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Range            : 30 yards
 Duration         : 1800 seconds
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=692774)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 200 | Scaled Value: 200 | Misc Value: 1 | Target: Targeted Ally (21)
@@ -18942,14 +18975,14 @@ Effects          :
 Description      : Open locked bar door.
 
 Name             : Crystal Spire (id=15279) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 34
 Range            : 30 yards
 GCD              : 1.5 seconds
 Duration         : 600 seconds
-Proc Chance      : 101%
-Attributes       : Not Shapeshifted (16), Unknown (493)
+Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=692360)   : Apply Aura (6) | Damage Shield (15)
                    Base Value: 12 | Scaled Value: 12 | Target: Targeted Ally (21)
@@ -20477,6 +20510,7 @@ Effects          :
 Description      : Empty to create a Charm Pouch.
 
 Name             : Juju Flurry (id=16322) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 22
@@ -20485,8 +20519,7 @@ Duration         : 20 seconds
 Cooldown         : 10 seconds
 Category         : 55 (Type 0x0)
 Category Cooldown: 10 seconds
-Proc Chance      : 101%
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=694132)   : Apply Aura (6) | Auto Attack Speed (Normalized wDPS) (9)
                    Base Value: 3 | Scaled Value: 3 | Value Multiplier: 1 | Target: Targeted Ally (21)
@@ -20494,13 +20527,13 @@ Description      : Increases the target's attack speed by $s1% for $d.
 Tooltip          : Increases the target's attack speed by $s1%.
 
 Name             : Juju Power (id=16323) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 65 (max 65)
 Range            : 20 yards
 Duration         : 1800 seconds
-Proc Chance      : 101%
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=693528)   : Apply Aura (6) | Attribute (29)
                    Base Value: 30 | Scaled Value: 30 | Stat: Str | Target: Targeted Ally (21)
@@ -20508,13 +20541,13 @@ Description      : Increases the target's Strength by $s1 for $d.
 Tooltip          : Strength increased by $s1.
 
 Name             : Juju Chill (id=16325) 
+Hotfixed         : Attributes
 School           : Frost
 Spell Type       : None
 Spell Level      : 65
 Range            : 20 yards
 Duration         : 600 seconds
-Proc Chance      : 101%
-Attributes       : Do Not Log (8), Do Not Sheath (18), Unknown (493)
+Attributes       : Do Not Log (8), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=694133)   : Apply Aura (6) | Resistance (22)
                    Base Value: 15 | Scaled Value: 15 | Misc Value: 16 | Target: Targeted Ally (21)
@@ -20522,13 +20555,13 @@ Description      : Increase Frost resistance by $s1 for $d.
 Tooltip          : Frost resistance increased by $s1.
 
 Name             : Juju Ember (id=16326) 
+Hotfixed         : Attributes
 School           : Fire
 Spell Type       : None
 Spell Level      : 65
 Range            : 20 yards
 Duration         : 600 seconds
-Proc Chance      : 101%
-Attributes       : Do Not Log (8), Do Not Sheath (18), Unknown (493)
+Attributes       : Do Not Log (8), Do Not Sheath (18), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=693764)   : Apply Aura (6) | Resistance (22)
                    Base Value: 15 | Scaled Value: 15 | Misc Value: 4 | Target: Targeted Ally (21)
@@ -21796,11 +21829,11 @@ Effects          :
 Description      : Place in the doorway at one of Andorhal's ruined towers as a magical marker for future troop movement.
 
 Name             : Winterfall Firewater (id=17038) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 1200 seconds
-Proc Chance      : 101%
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=694742)   : Apply Aura (6) | Modify Attack Power (99)
                    Base Value: 35 | Scaled Value: 35 | Target: Self (1)
@@ -22521,10 +22554,11 @@ Effects          :
 Description      : Restores $s1 health.
 
 Name             : Elixir of the Sages (id=17535) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=695964)   : Apply Aura (6) | Attribute (29)
                    Base Value: 18 | Scaled Value: 18 | Stat: Int | Target: Self (1)
@@ -22546,10 +22580,11 @@ Effects          :
 Description      : Awaken the sleeping druid.
 
 Name             : Elixir of Brute Force (id=17537) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=695528)   : Apply Aura (6) | Attribute (29)
                    Base Value: 18 | Scaled Value: 18 | Stat: Str | Target: Self (1)
@@ -22559,10 +22594,11 @@ Description      : Increases Strength and Stamina by $s1 for $d.
 Tooltip          : Strength and Stamina increased by $s1.
 
 Name             : Elixir of the Mongoose (id=17538) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 1800 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Aura Points On Client (268), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=696137)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Agi | Target: Self (1)
@@ -22572,13 +22608,14 @@ Description      : Increases Agility by $s1 and chance to get a critical hit by 
 Tooltip          : Agility increased by $w1 and critical hit chance increases by $w2%.
 
 Name             : Greater Arcane Elixir (id=17539) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
 Cooldown         : 1 seconds
 Category         : 99 (Type 0x0)
 Category Cooldown: 1 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=695533)   : Apply Aura (6) | Damage Done (13)
                    Base Value: 35 | Scaled Value: 35 | Misc Value: 0x7e | Target: Self (1)
@@ -22587,13 +22624,14 @@ Description      : Increases spell damage by up to $s1 for $d.
 Tooltip          : Magical damage dealt by spells and abilities is increased by up to $s1.
 
 Name             : Greater Stoneshield (id=17540) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Duration         : 120 seconds
 Cooldown         : 60 seconds
 Category         : 28 (Type 0x0)
 Category Cooldown: 60 seconds
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=695497)   : Apply Aura (6) | Modify Armor (674)
                    Base Value: 2000 | Scaled Value: 2000 | Misc Value: 1 | Target: Self (1)
@@ -23017,11 +23055,12 @@ Description      : Increases movement speed by $s2% and restores $s1 health ever
 Tooltip          : Increased movement speed and life regeneration.
 
 Name             : Flask of the Titans (id=17626) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 7200 seconds
 Proc Chance      : 101%
-Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Allow Aura While Dead (116), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Unknown (493)
 Effects          :
 #1 (id=696081)   : Apply Aura (6) | Increase Health (34)
                    Base Value: 1200 | Scaled Value: 1200 | Target: Self (1)
@@ -23029,11 +23068,12 @@ Description      : Increases the player's maximum health by $s1 for $d. You can 
 Tooltip          : Health increased by $s1.
 
 Name             : Distilled Wisdom (id=17627) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 7200 seconds
 Proc Chance      : 101%
-Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Allow Aura While Dead (116), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Unknown (493)
 Effects          :
 #1 (id=696350)   : Apply Aura (6) | Modify Max Resource (418)
                    Base Value: 2000 | Scaled Value: 2000 | Resource: mana | Target: Self (1)
@@ -23041,6 +23081,7 @@ Description      : Increases the player's maximum Mana by $s1 for $d. You can on
 Tooltip          : Mana increased by $s1.
 
 Name             : Supreme Power (id=17628) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 7200 seconds
@@ -23048,7 +23089,7 @@ Cooldown         : 1 seconds
 Category         : 99 (Type 0x0)
 Category Cooldown: 1 seconds
 Proc Chance      : 101%
-Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Allow Aura While Dead (116), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Unknown (493)
 Effects          :
 #1 (id=696351)   : Apply Aura (6) | Damage Done (13)
                    Base Value: 150 | Scaled Value: 150 | Misc Value: 0x7e | Target: Self (1)
@@ -23057,11 +23098,12 @@ Description      : Increases damage done by magical spells and effects by up to 
 Tooltip          : Spell damage increased by up to $s1.
 
 Name             : Chromatic Resistance (id=17629) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 7200 seconds
 Proc Chance      : 101%
-Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Allow Aura While Dead (116), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Allow Dead Target (64), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Unknown (493)
 Effects          :
 #1 (id=695014)   : Apply Aura (6) | Resistance (22)
                    Base Value: 25 | Scaled Value: 25 | Misc Value: 126 | Target: Self (1)
@@ -27244,13 +27286,14 @@ Description      : Begins taming a Strigid Screecher to be your companion for 10
 Tooltip          : Taming Strigid Screecher.
 
 Name             : Well Fed (id=19705) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
 Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Triggered By     : Food (5004), Egg Nog (21149)
-Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=696520)   : Apply Aura (6) | Attribute (29)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
@@ -27259,13 +27302,14 @@ Effects          :
 Tooltip          : Stamina and Spirit increased by $w1.
 
 Name             : Well Fed (id=19708) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
 Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Triggered By     : Food (5006), Test Crocolisk Gumbo (1244245)
-Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=696522)   : Apply Aura (6) | Attribute (29)
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
@@ -27275,13 +27319,14 @@ Description      : If you spend at least 10 seconds eating you will become well 
 Tooltip          : Stamina and Spirit increased by $w1.
 
 Name             : Well Fed (id=19710) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
 Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Triggered By     : Food (10256)
-Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=696440)   : Apply Aura (6) | Attribute (29)
                    Base Value: 12 | Scaled Value: 12 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
@@ -30889,13 +30934,14 @@ Effects          :
 Description      : Grants an extra attack on your next swing.
 
 Name             : Frost Power (id=21920) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Frost
 Spell Type       : Magic
 Duration         : 1800 seconds
 Cooldown         : 1 seconds
 Category         : 99 (Type 0x0)
 Category Cooldown: 1 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=699668)   : Apply Aura (6) | Damage Done (13)
                    Base Value: 15 | Scaled Value: 15 | Misc Value: 0x10 | Target: Self (1)
@@ -31673,13 +31719,14 @@ Effects          :
 Description      : Improves your chance to hit with ranged weapons by ${$s1}.1%.
 
 Name             : Gordok Green Grog (id=22789) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 1
 Cast Time        : 1 seconds
 Duration         : 900 seconds
 Proc Chance      : 101%
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=699490)   : Apply Aura (6) | Attribute (29)
                    Base Value: 10 | Scaled Value: 10 | Stat: Sta | Target: Self (1)
@@ -31689,13 +31736,14 @@ Description      : Increases Stamina by $s1 for $d and gets you drunk to boot.  
 Tooltip          : Stamina increased by $s1.
 
 Name             : Kreeg's Stout Beatdown (id=22790) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 1
 Cast Time        : 1 seconds
 Duration         : 900 seconds
 Proc Chance      : 101%
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=699492)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Spi | Target: Self (1)
@@ -34571,10 +34619,11 @@ Description      : Puts the imbiber in a dreamless sleep for $d.  During that ti
 Tooltip          : Dreamless Sleep.
 
 Name             : Major Troll's Blood Elixir (id=24361) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Duration         : 3600 seconds
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=699991)   : Apply Aura (6) | Modify Health Regeneration Rate in Combat (161)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
@@ -34582,10 +34631,11 @@ Description      : Regenerate $s1 health every 5 sec for $d.
 Tooltip          : Regenerate $s1 health every 5 sec.
 
 Name             : Mana Regeneration (id=24363) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Duration         : 3600 seconds
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), No Threat (42), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), No Threat (42), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=701257)   : Apply Aura (6) | Restore Power (85)
                    Base Value: 12 | Scaled Value: 12 | Target: Self (1)
@@ -34657,12 +34707,13 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Spirit of Zanza (id=24382) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 15
 Duration         : 7200 seconds
 Proc Chance      : 101%
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=701184)   : Apply Aura (6) | Attribute (29)
                    Base Value: 50 | Scaled Value: 50 | Stat: Spi | Target: Self (1)
@@ -34672,12 +34723,12 @@ Description      : Increases the player's Spirit by $s1 and Stamina by $s2 for $
 Tooltip          : Spirit increased by $s1 and Stamina by $s2.
 
 Name             : Swiftness of Zanza (id=24383) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 15
 Duration         : 7200 seconds
-Proc Chance      : 101%
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=701429)   : Apply Aura (6) | Increase Speed% (31)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
@@ -34792,12 +34843,12 @@ Description      : Heals $o1 damage over $d.  Usable only inside Arathi Basin.
 Tooltip          : Healing $s1 damage every $t1 seconds.
 
 Name             : Sheen of Zanza (id=24417) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 15
 Duration         : 7200 seconds
-Proc Chance      : 101%
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=701192)   : Apply Aura (6) | Spell Reflection (28)
                    Base Value: 3 | Scaled Value: 3 | Value Multiplier: 1 | Target: Self (1)
@@ -35154,12 +35205,13 @@ Effects          :
 Description      : When worn with the Twilight Trappings Set and the Medallion of Station, allows access to a Greater Wind Stone.
 
 Name             : Well Fed (id=24799) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
 Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
-Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=701575)   : Apply Aura (6) | Attribute (29)
                    Base Value: 20 | Scaled Value: 20 | SP Coefficient: 1 | Stat: Str | Target: Self (1)
@@ -35225,12 +35277,13 @@ Description      : Restores $s1% of your health per second for $d.  Must remain 
 Tooltip          : Restores $s1% of your health per second.
 
 Name             : Well Fed (id=24870) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
 Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
-Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=701004)   : Apply Aura (6) | Attribute (29)
                    Base Value: 1 | Scaled Value: 7 | Points Per Level: 0.1 | SP Coefficient: 1 | Stat: Sta | Target: Self (1)
@@ -36029,13 +36082,13 @@ Description      : Restores $o1 health over $d.  Must remain seated while eating
 Tooltip          : Restores $/5;s1 health per second.
 
 Name             : Increased Stamina (id=25661) [Spell Family (13)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 16
 Duration         : 900 seconds
-Proc Chance      : 101%
 Triggered By     : Food (25660)
-Attributes       : Allow While Sitting (27), No Immunities (29), Unknown (493)
+Attributes       : Allow While Sitting (27), No Immunities (29), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=703645)   : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Sta | Target: Self (1)
@@ -36267,13 +36320,13 @@ Effects          :
 Description      : Place the torch in the mouth of High Chief Winterfall's cave to summon the demon that is corrupting the Winterfall furbolgs.  Bring some friends before planting it...
 
 Name             : Rumsey Rum Black Label (id=25804) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 1
 Cast Time        : 1 seconds
 Duration         : 900 seconds
-Proc Chance      : 101%
-Attributes       : Unknown (493)
+Attributes       : Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=702748)   : Apply Aura (6) | Attribute (29)
                    Base Value: 15 | Scaled Value: 15 | Stat: Sta | Target: Self (1)
@@ -36487,13 +36540,14 @@ Effects          :
 Tooltip          : Spell effects increased by $s1.
 
 Name             : Well Fed (id=25941) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
 Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Triggered By     : Brain Food (25889)
-Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), No Threat (42), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), No Threat (42), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=702677)   : Apply Aura (6) | Periodic Energize Power (24): every 5 seconds
                    Base Value: 6 | Scaled Value: 6 | SP Coefficient: 1 | Target: Self (1)
@@ -52079,6 +52133,7 @@ Description      : Restores $o1 health over $d.  Must remain seated while eating
 Tooltip          : Restores $/5;s1 health per second.
 
 Name             : Well Fed (id=1225778) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -52086,7 +52141,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Food (1225769)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1215192)  : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Str | Target: Self (1)
@@ -52096,6 +52151,7 @@ Description      : If you spend at least $1225769t2 sec eating you will become W
 Tooltip          : Your Strength is increased by $w1 and Stamina by $w2.
 
 Name             : Well Fed (id=1225779) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -52103,7 +52159,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Food (1225771)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1215193)  : Apply Aura (6) | Attribute (29)
                    Base Value: 25 | Scaled Value: 25 | Stat: Agi | Target: Self (1)
@@ -52113,6 +52169,7 @@ Description      : If you spend at least $1225771t2 sec eating you will become W
 Tooltip          : Your Agility is increased by $w1 and Stamina by $w2.
 
 Name             : Well Fed (id=1225780) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -52120,7 +52177,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Food (1225772)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1215194)  : Apply Aura (6) | Damage Done (13)
                    Base Value: 25 | Scaled Value: 25 | Misc Value: 0x7e | Target: Self (1)
@@ -52133,6 +52190,7 @@ Description      : If you spend at least $1225772t2 sec eating you will become W
 Tooltip          : Your Spell Damage is increased by $w1, Healing Power by $w3, and Stamina by $w2.
 
 Name             : Well Fed (id=1225782) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 2700 seconds
@@ -52140,7 +52198,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Food (1225774)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1215196)  : Apply Aura (6) | Modify Attack Power (99)
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
@@ -53175,11 +53233,12 @@ Effects          :
 Description      : Summon Vek'zol.
 
 Name             : Well Fed XP Boost (id=1243969) [Hidden] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : Aura (infinite)
 Labels           : 5287
-Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Allow Cast While Dead (23), Allow While Sitting (27), No Aura Cancel (31), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Not a Proc (105), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Can Target Untargetable (216), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Allow Cast While Dead (23), Allow While Sitting (27), No Aura Cancel (31), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Not a Proc (105), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Can Target Untargetable (216), Aura Points On Client (268), Unknown (493)
 Effects          :
 #3 (id=1244477)  : Apply Aura (6) | Unknown(637)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
@@ -54485,6 +54544,7 @@ Effects          :
 Description      : $@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $s2 Strength for $1248422d. $@spelldesc1243969
 
 Name             : Well Fed (id=1248406) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -54492,7 +54552,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1248377), Nutritious Food (1248381), Nutritious Food (1248386), Nutritious Food (1248390), Nutritious Food (1248394), Nutritious Food (1248398)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1251321)  : Apply Aura (6) | Attribute (29)
                    Base Value: 1 | Scaled Value: 1 | Stat: Sta | Target: Self (1)
@@ -54500,6 +54560,7 @@ Description      : A nutritious meal has made you Well Fed, increasing your Stam
 Tooltip          : Your Stamina is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1248420) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -54507,7 +54568,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1248378), Nutritious Food (1248382), Nutritious Food (1248387), Nutritious Food (1248391), Nutritious Food (1248395), Nutritious Food (1248399)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1251339)  : Apply Aura (6) | Attribute (29)
                    Base Value: 1 | Scaled Value: 1 | Stat: Agi | Target: Self (1)
@@ -54515,6 +54576,7 @@ Description      : A nutritious meal has made you Well Fed, increasing your Agil
 Tooltip          : Your Agility is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1248421) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -54522,7 +54584,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1248379), Nutritious Food (1248383), Nutritious Food (1248388), Nutritious Food (1248392), Nutritious Food (1248396), Nutritious Food (1248400)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1251340)  : Apply Aura (6) | Attribute (29)
                    Base Value: 1 | Scaled Value: 1 | Stat: Int | Target: Self (1)
@@ -54530,6 +54592,7 @@ Description      : A nutritious meal has made you Well Fed, increasing your Inte
 Tooltip          : Your Intellect is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1248422) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -54537,7 +54600,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1248380), Nutritious Food (1248384), Nutritious Food (1248389), Nutritious Food (1248393), Nutritious Food (1248397), Nutritious Food (1248401)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1251341)  : Apply Aura (6) | Attribute (29)
                    Base Value: 1 | Scaled Value: 1 | Stat: Str | Target: Self (1)
@@ -54808,6 +54871,7 @@ Effects          :
 Description      : $@spelldesc434 If you spend at least 10 sec eating, you will become well fed and gain $1248688s2% movement speed while in Westfall for $1248688d. $@spelldesc1243969
 
 Name             : Well Fed (id=1248688) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -54815,7 +54879,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1248687)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Don't Cancel When All Effects are Disabled (353), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Don't Cancel When All Effects are Disabled (353), Unknown (493)
 Effects          :
 #1 (id=1251776)  : Apply Aura (6) | Increase Movement Speed% (Stacking) (129)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
@@ -55548,6 +55612,7 @@ Effects          :
 Description      : $@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $s2 Fishing Skill for $1249521d. $@spelldesc1243969
 
 Name             : Well Fed (id=1249519) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55555,7 +55620,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1249500), Nutritious Food (1249503), Nutritious Food (1249506), Nutritious Food (1249509), Nutritious Food (1249512), Nutritious Food (1249515)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1253075)  : Apply Aura (6) | Modify Attack Power (99)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -55565,6 +55630,7 @@ Description      : A nutritious meal has made you Well Fed, increasing your Atta
 Tooltip          : Your Attack Power is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1249520) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55572,7 +55638,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1249501), Nutritious Food (1249504), Nutritious Food (1249507), Nutritious Food (1249510), Nutritious Food (1249513), Nutritious Food (1249516)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1253076)  : Apply Aura (6) | Damage Done (13)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 0x7e | Target: Self (1)
@@ -55597,6 +55663,7 @@ Effects          :
 Description      : $@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $s2% Critical Strike chance for $1249523d. $@spelldesc1243969
 
 Name             : Well Fed (id=1249523) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55604,7 +55671,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1249522)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1253080)  : Apply Aura (6) | Modify Critical Strike% (290)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -55820,6 +55887,7 @@ Effects          :
 Description      : $@spelldesc1137 If you spend at least 10 sec eating, you will become well fed and gain $s2 Healing Power for $1249927d. $@spelldesc1243969
 
 Name             : Well Fed (id=1249926) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55827,7 +55895,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Drink (1249914), Nutritious Drink (1249915), Nutritious Drink (1249916), Nutritious Drink (1249917), Nutritious Drink (1249918), Nutritious Drink (1249919)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1253745)  : Apply Aura (6) | Attribute (29)
                    Base Value: 1 | Scaled Value: 1 | Stat: Spi | Target: Self (1)
@@ -55835,6 +55903,7 @@ Description      : A tasty drink has made you Well Fed, increasing your Spirit.
 Tooltip          : Your Spirit is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1249927) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55842,7 +55911,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Drink (1249920), Nutritious Drink (1249921), Nutritious Drink (1249922), Nutritious Drink (1249923), Nutritious Drink (1249924), Nutritious Drink (1249925)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1253747)  : Apply Aura (6) | Modify Healing Power (135)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 126 | Target: Self (1)
@@ -66842,6 +66911,7 @@ Effects          :
 Description      : $@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $1294007s2% movement speed while in Hyjal for $1294007d. $@spelldesc1243969
 
 Name             : Well Fed (id=1294007) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -66849,7 +66919,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1294006)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Don't Cancel When All Effects are Disabled (353), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Don't Cancel When All Effects are Disabled (353), Unknown (493)
 Effects          :
 #1 (id=1315126)  : Apply Aura (6) | Increase Movement Speed% (Stacking) (129)
                    Base Value: 15 | Scaled Value: 15 | Target: Self (1)
@@ -69581,6 +69651,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Well Fed (id=1302064) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -69588,7 +69659,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1302066)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268)
 Effects          :
 #1 (id=1327487)  : Apply Aura (6) | Attribute (29)
                    Base Value: 0 | Scaled Value: 0 | Stat: Str | Target: Self (1)
@@ -74368,6 +74439,7 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 
 Name             : Well Fed (id=1319310) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -74375,7 +74447,7 @@ Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
 Proc Chance      : 101%
 Triggered By     : Nutritious Food (1319311)
-Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
+Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=1353206)  : Apply Aura (6) | Increase Armor (465)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
