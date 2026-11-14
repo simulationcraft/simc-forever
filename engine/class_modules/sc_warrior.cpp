@@ -126,8 +126,9 @@ struct battle_shout_t : public warrior_spell_t
   {
     parse_options( options_str );
 
-    harmful  = false;
-    may_miss = false;
+    harmful    = false;
+    may_miss   = false;
+    background = sim->overrides.battle_shout != 0;
 
     target   = player;
   }

@@ -609,6 +609,7 @@ protected:
   void parse_all_class_passives();
   void parse_all_passive_talents();
   void parse_all_passive_sets();
+  const spell_data_t* find_raid_buff_rank( std::initializer_list<unsigned> ) const;
   void parse_raid_buffs();
   // directly override the values
   void register_passive_spell_override( const spell_data_t&, double value, std::string_view field );

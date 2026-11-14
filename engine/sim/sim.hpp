@@ -215,7 +215,6 @@ struct sim_t : private sc_thread_t
     // Buff overrides
     int arcane_intellect;
     int battle_shout;
-    int blessing_of_the_bronze;
     int mark_of_the_wild;
     int power_word_fortitude;
 
@@ -231,10 +230,6 @@ struct sim_t : private sc_thread_t
   struct auras_t
   {
     buff_t* fallback; // generic global fallback buff
-    buff_t* arcane_intellect;
-    buff_t* battle_shout;
-    buff_t* mark_of_the_wild;
-    buff_t* power_word_fortitude;
   } auras;
 
   // Auras and De-Buffs

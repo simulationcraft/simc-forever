@@ -3374,7 +3374,7 @@ stat_buff_t::stat_buff_t( actor_pair_t q, util::string_view name, const spell_da
     {
       s = STAT_SPELL_POWER;
     }
-    else if ( effect.subtype() == A_MOD_RESISTANCE )
+    else if ( effect.subtype() == A_MOD_RESISTANCE && ( effect.misc_value1() & SCHOOL_MASK_PHYSICAL ) )
     {
       s = STAT_BONUS_ARMOR;
     }

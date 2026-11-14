@@ -806,7 +806,8 @@ struct mark_of_the_wild_t : public druid_spell_t
     : druid_spell_t( "mark_of_the_wild", player, player->rank.mark_of_the_wild.find_rank()->spell() )
   {
     parse_options( options_str );
-    harmful = false;
+    harmful    = false;
+    background = sim->overrides.mark_of_the_wild != 0;
   }
 
   void execute() override

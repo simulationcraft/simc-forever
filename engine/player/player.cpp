@@ -4350,6 +4350,8 @@ void player_t::create_buffs()
     }
 
     buffs.movement = new movement_buff_t( this );
+
+    parse_raid_buffs();
   }
   // .. for enemies
   else
@@ -4608,8 +4610,6 @@ double player_t::composite_attack_power_multiplier() const
   }
 
   double m = current.attack_power_multiplier;
-
-  m *= 1.0 + sim->auras.battle_shout->check_value();
 
   // multiplier is rounded to 3 digits
   return std::round( m * 1000 ) * 0.001;
@@ -5167,18 +5167,12 @@ double player_t::composite_attribute_multiplier( attribute_e attr ) const
       break;
     case ATTR_INTELLECT:
       pct_type = STAT_PCT_BUFF_INTELLECT;
-      if ( sim->auras.arcane_intellect->check() )
-        m *= 1.0 + sim->auras.arcane_intellect->current_value;
       break;
     case ATTR_SPIRIT:
       pct_type = STAT_PCT_BUFF_SPIRIT;
       break;
     case ATTR_STAMINA:
       pct_type = STAT_PCT_BUFF_STAMINA;
-      if ( sim->auras.power_word_fortitude->check() )
-      {
-        m *= 1.0 + sim->auras.power_word_fortitude->current_value;
-      }
       break;
     default:
       break;
@@ -15454,27 +15448,44 @@ void player_t::parse_all_passive_sets()
           parse_passive_effects( data.spell, false, PARSE_SOURCE_SET );
 }
 
+// A buff cast on a lower level target lands as the highest rank whose spell level is at most 10 above the target's
+// level (cmangos SpellMgr::SelectAuraRankForLevel). Ranks are ordered lowest to highest.
+const spell_data_t* player_t::find_raid_buff_rank( std::initializer_list<unsigned> ranks ) const
+{
+  for ( auto id : ranks | std::ranges::views::reverse )
+  {
+    auto spell = dbc::find_spell( this, id );
+    if ( spell->ok() && as<int>( spell->level() ) <= level() + 10 )
+      return spell;
+  }
+
+  return spell_data_t::not_found();
+}
+
+// The group versions (Prayer of Fortitude, Arcane Brilliance, Gift of the Wild) match the top single target ranks.
 void player_t::parse_raid_buffs()
 {
-  // blessing of the bronze
-  if ( sim->overrides.blessing_of_the_bronze )
-  {
-    // classes are assigned alphabetically starting from eff#1
-    auto spell = find_spell( 364342 )->effectN( static_cast<unsigned>( type ) ).trigger();
-    parse_passive_effects( spell, true );
+  auto raid_buff = [ this ]( std::string_view name, std::initializer_list<unsigned> ranks ) {
+    auto buff = make_buff<stat_buff_t>( this, name, find_raid_buff_rank( ranks ) );
+    register_precombat_begin( [ buff ]( player_t* ) { buff->override_buff(); } );
+    return buff;
+  };
 
-    auto buff = make_buff( this, "blessing_of_the_bronze", spell );
-    register_precombat_begin( [ buff ]( auto ) { buff->override_buff(); } );
+  if ( sim->overrides.arcane_intellect )
+    raid_buff( "arcane_intellect", { 1459, 1460, 1461, 10156, 10157 } );
+
+  // amount scales with the caster's level, assumed to be max level
+  if ( sim->overrides.battle_shout )
+  {
+    auto buff = raid_buff( "battle_shout", { 6673, 5242, 6192, 11549, 11550, 11551, 25289 } );
+    buff->set_stat( STAT_ATTACK_POWER, buff->data().effectN( 1 ).average( this, MAX_LEVEL ) );
   }
 
-  // mark of the wild
   if ( sim->overrides.mark_of_the_wild )
-  {
-    // if overrides are registered for the 'self-buff' talents, use the cloned spell_data_t
-    auto spell = dbc_override->find_spell( sim->auras.mark_of_the_wild->data().id(), is_ptr() );
+    raid_buff( "mark_of_the_wild", { 1126, 5232, 6756, 5234, 8907, 9884, 9885 } );
 
-    parse_passive_effects( spell ? spell : &sim->auras.mark_of_the_wild->data(), true );
-  }
+  if ( sim->overrides.power_word_fortitude )
+    raid_buff( "power_word_fortitude", { 1243, 1244, 1245, 2791, 10937, 10938 } );
 }
 
 void player_t::register_passive_spell_override( const spell_data_t& spell, double value, std::string_view field )

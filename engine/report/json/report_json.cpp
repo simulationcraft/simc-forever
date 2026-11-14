@@ -1230,6 +1230,7 @@ void to_json( const ::report::json::report_configuration_t& report_configuration
   auto overrides = root[ "overrides" ];
   add_non_zero( overrides, "arcane_intellect", sim.overrides.arcane_intellect );
   add_non_zero( overrides, "battle_shout", sim.overrides.battle_shout );
+  add_non_zero( overrides, "mark_of_the_wild", sim.overrides.mark_of_the_wild );
   add_non_zero( overrides, "power_word_fortitude", sim.overrides.power_word_fortitude );
   add_non_zero( overrides, "mortal_wounds", sim.overrides.mortal_wounds );
   add_non_zero( overrides, "bleeding", sim.overrides.bleeding );
