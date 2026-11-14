@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70938
-static constexpr std::array<spelltext_data_t, 8732> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8737> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -6378,8 +6378,10 @@ static constexpr std::array<spelltext_data_t, 8732> __spelltext_data { {
   {  440794, "Gain the Righteous Vengeance ability:\r\n\r\n$@spellicon440672\r\n$@spelldesc440672", 0, 0 },
   {  440802, "Launches an orb of swirling ice which rapidly moves forward over $d. While it is moving, every $440804t sec the orb deals ${$440809m2*$<power>/100*$<frostdamage>} Frost Damage and applies a Chill for $440809s1% movement speed reduction to all enemies it passes through. The first time it damages an enemy, its movement will slow and it will have a 100% chance to trigger the Fingers of Frost rune.", 0, 0 },
   {  440809, 0, "Movement speed reduced by $w1%.", 0 },
+  {  440827, "Throw into a bubbling cauldron to cause an explosion of noxious gas. Does not break stealth.", 0, 0 },
   {  440829, "Combine offerings of flesh and bone.", 0, 0 },
   {  440830, "Imbue a hollow emblem with blood magic essence.", 0, 0 },
+  {  440841, "Reveals the grave which hides an offering.", "Reveals the grave which hides an offering.", 0 },
   {  440858, "Engrave your cloak with the Frozen Orb\r\nrune:\r\n\r\n$@spellicon440802\r\n$@spelldesc440802", 0, 0 },
   {  440859, "Gain the Frozen Orb ability:\r\n\r\n$@spellicon440802\r\n$@spelldesc440802", 0, 0 },
   {  440870, "Reduces the cooldown of your Soul Fire spell by $m2%. When you cast Shadow Bolt or Searing Pain on an enemy below $m3% health, they deal $m4% increased damage, and for the next $440873d your Soul Fire spell has its cast time reduced by $m1% and costs no Soul Shards.", 0, 0 },
@@ -8217,6 +8219,7 @@ static constexpr std::array<spelltext_data_t, 8732> __spelltext_data { {
   { 1302312, "Imbue a staff with magic for 1 hour, increasing damage done with Frost spells and effects by up to $1306582s1.", 0, 0 },
   { 1302341, "Chance on landing a damaging spell to assault the target's mind, increasing the casting time of all spells by $1302342s1% for $1302342d. Stacks up to $1302342u times.", 0, 0 },
   { 1302342, "Chance on landing a damaging spell to assault the target's mind, increasing the casting time of all spells by $s1% for $d. Stacks up to $u times.", "Casting time increased by $s1%.", 0 },
+  { 1302343, "Deal $o1 Fire damage over $d.", 0, 0 },
   { 1302344, "Slice the target with magically enhanced precision, dealing $s1 Arcane damage. Deals $s2 times as much damage to Plants.", 0, 0 },
   { 1302345, "Increases the chance your Pick Pocket and Distract abilities are successful by $s1%.", 0, 0 },
   { 1302346, "Reduces the hit chance of Fear effects against you by $s1%.", 0, 0 },
@@ -8476,6 +8479,8 @@ static constexpr std::array<spelltext_data_t, 8732> __spelltext_data { {
   { 1314784, "Increases Strength by $s1 while affected by a Bleed.", 0, 0 },
   { 1314888, "Strike your target with a Poisonous Sting, inflicting $s1 damage every 3 sec for $d1.", "$w1 Nature damage inflicted every 3 sec.", 0 },
   { 1315190, "Calls forth a Black Dragon Whelp to protect you in battle for a short period of time.", 0, 0 },
+  { 1315212, "Burn in the scarlet flames to return to $z. Speak to an Innkeeper in a different place to change your home location.", 0, 0 },
+  { 1315213, "Create a Scarlet Hearthstone.", 0, 0 },
   { 1315267, "Right Click to summon and dismiss your Tallstrider Hatchling.", 0, 0 },
   { 1315339, "Increases intellect by $s1 at night.", 0, 0 },
   { 1315451, "Right Click to summon and dismiss your Minfernal.", 0, 0 },
