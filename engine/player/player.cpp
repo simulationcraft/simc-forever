@@ -2220,6 +2220,20 @@ void player_t::create_special_effects()
 
   unique_gear::initialize_racial_effects( this );
 
+  auto raid_proc = [ this ]( unsigned spell_id ) {
+    special_effect_t effect( this );
+
+    unique_gear::initialize_special_effect( effect, spell_id );
+    if ( !effect.custom_init_object.empty() )
+      special_effects.push_back( new special_effect_t( effect ) );
+  };
+
+  if ( sim->overrides.flametongue_totem )
+    raid_proc( 15036 );
+
+  if ( sim->overrides.windfury_totem )
+    raid_proc( 10612 );
+
   // 12.0.7 omnium folio talents
   unique_gear::initialize_expansion_trait_effects( this, omnium_talents_str );
 
@@ -15491,6 +15505,17 @@ void player_t::parse_raid_buffs()
 
   if ( sim->overrides.blessing_of_might )
     raid_buff( "blessing_of_might", find_raid_buff_rank( { 19740, 19834, 19835, 19836, 19837, 19838, 25291 } ) );
+
+  if ( sim->overrides.blessing_of_wisdom && resources.base[ RESOURCE_MANA ] > 0 )
+  {
+    if ( auto buff = raid_buff( "blessing_of_wisdom", find_raid_buff_rank( { 19742, 19850, 19852, 19853, 19854, 25290 } ) ) )
+    {
+      buff->set_default_value_from_effect_type( A_PERIODIC_ENERGIZE )
+          ->set_tick_callback( [ this, gain = get_gain( "blessing_of_wisdom" ) ]( buff_t* b, int, timespan_t ) {
+            resource_gain( RESOURCE_MANA, b->current_value, gain );
+          } );
+    }
+  }
 
   if ( sim->overrides.divine_spirit )
     raid_buff( "divine_spirit", find_raid_buff_rank( { 14752, 14818, 14819, 27841 } ) );

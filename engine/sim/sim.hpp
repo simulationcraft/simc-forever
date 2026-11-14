@@ -217,7 +217,9 @@ struct sim_t : private sc_thread_t
     int battle_shout;
     int blessing_of_kings;
     int blessing_of_might;
+    int blessing_of_wisdom;
     int divine_spirit;
+    int flametongue_totem;
     int grace_of_air_totem;
     int leader_of_the_pack;
     int mark_of_the_wild;
@@ -225,6 +227,7 @@ struct sim_t : private sc_thread_t
     int power_word_fortitude;
     int strength_of_earth_totem;
     int trueshot_aura;
+    int windfury_totem;
 
     // Debuff overrides
     int mortal_wounds;

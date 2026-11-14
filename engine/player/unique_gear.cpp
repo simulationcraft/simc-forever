@@ -57,6 +57,8 @@ namespace racial
 namespace generic
 {
   void enable_all_item_effects( special_effect_t& );
+  void windfury_totem( special_effect_t& );
+  void flametongue_totem( special_effect_t& );
 }
 
 /**
@@ -428,6 +430,106 @@ void generic::enable_all_item_effects( special_effect_t& effect )
   };
 
   effect.execute_action = new enable_all_item_effects_t( effect );
+}
+
+// Main hand attacks only. The attack power has charges that landed main hand auto attacks spend, the triggering one
+// included, so an auto attack proc buffs only the extra attack.
+void generic::windfury_totem( special_effect_t& effect )
+{
+  // the triggered spell id is in the driver's base value
+  effect.trigger_spell_id = as<unsigned>( effect.driver()->effectN( 1 ).base_value() );
+
+  struct windfury_totem_cb_t : public dbc_proc_callback_t
+  {
+    buff_t* attack_power;
+    proc_t* proc;
+    int charges;
+    bool extra_attack;
+
+    windfury_totem_cb_t( const special_effect_t& e )
+      : dbc_proc_callback_t( e.player, e ),
+        attack_power( make_buff<stat_buff_t>( e.player, "windfury_totem", e.trigger() )->set_max_stack( 1 ) ),
+        proc( e.player->get_proc( "Windfury Totem" ) ),
+        charges( 0 ),
+        extra_attack( false )
+    {
+    }
+
+    void spend_charge()
+    {
+      if ( attack_power->check() && --charges <= 0 )
+        attack_power->expire();
+    }
+
+    void trigger( const proc_data_t& data, player_t* t, action_state_t* s, proc_trigger_type_e type ) override
+    {
+      if ( !s->action->weapon || s->action->weapon->slot != SLOT_MAIN_HAND )
+        return;
+
+      if ( s->action == listener->main_hand_attack && s->action->result_is_hit( s->result ) )
+        spend_charge();
+
+      // the extra attack can't grant another one
+      if ( !extra_attack )
+        dbc_proc_callback_t::trigger( data, t, s, type );
+    }
+
+    void execute( const spell_data_t*, player_t* t, action_state_t* s ) override
+    {
+      auto atk = listener->main_hand_attack;
+      if ( !atk )
+        return;
+
+      proc->occur();
+      charges = attack_power->data().initial_stacks();
+      attack_power->trigger();
+
+      if ( s->action == atk )
+        spend_charge();
+
+      auto old_target = atk->target;
+
+      extra_attack   = true;
+      atk->repeating = false;
+      atk->set_target( t );
+      atk->execute();
+      atk->repeating = true;
+      atk->set_target( old_target );
+      extra_attack = false;
+    }
+  };
+
+  new windfury_totem_cb_t( effect );
+}
+
+// TODO: check in game that it stacks with Flametongue Weapon on the same swing
+void generic::flametongue_totem( special_effect_t& effect )
+{
+  effect.trigger_spell_id = as<unsigned>( effect.driver()->effectN( 1 ).base_value() );
+
+  struct flametongue_totem_t : public proc_spell_t
+  {
+    flametongue_totem_t( const special_effect_t& e ) : proc_spell_t( "flametongue_totem", e.player, e.trigger() )
+    {
+      double weapon_speed = e.player->equipped_weapons[ SLOT_MAIN_HAND ].swing_time.total_seconds();
+
+      base_dd_min = base_dd_max = data().effectN( 1 ).base_value() * weapon_speed / 100.0;
+    }
+  };
+
+  struct flametongue_totem_cb_t : public dbc_proc_callback_t
+  {
+    using dbc_proc_callback_t::dbc_proc_callback_t;
+
+    void trigger( const proc_data_t& data, player_t* t, action_state_t* s, proc_trigger_type_e type ) override
+    {
+      if ( s->action->weapon && s->action->weapon->slot == SLOT_MAIN_HAND )
+        dbc_proc_callback_t::trigger( data, t, s, type );
+    }
+  };
+
+  effect.execute_action = new flametongue_totem_t( effect );
+  new flametongue_totem_cb_t( effect.player, effect );
 }
 
 bool stat_fits_criteria( stat_e stat, stat_e criteria )
@@ -1759,6 +1861,8 @@ void unique_gear::register_special_effects()
 
   /* Generic "global scope" special effects */
   register_special_effect( 63604, generic::enable_all_item_effects );
+  register_special_effect( 10612, generic::windfury_totem );
+  register_special_effect( 15036, generic::flametongue_totem );
 }
 
 void unique_gear::unregister_special_effects()
