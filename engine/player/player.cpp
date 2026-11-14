@@ -4374,6 +4374,14 @@ void player_t::create_buffs()
     debuffs.invulnerable  = make_buff<invulnerable_debuff_t>( this );
     debuffs.vulnerable    = make_buff( this, "vulnerable" )->set_max_stack( 1 );
     debuffs.flying        = make_buff( this, "flying" )->set_max_stack( 1 );
+
+    // Raid debuffs use the top rank, cast by a max level player. Expose Armor at 5 combo points matches 5 Sunder
+    // Armor and they don't stack.
+    debuffs.curse_of_recklessness = make_buff<stat_buff_t>( this, "curse_of_recklessness", dbc::find_spell( this, 11717 ) );
+    debuffs.curse_of_the_elements = make_buff( this, "curse_of_the_elements", dbc::find_spell( this, 1311680 ) )
+      ->set_default_value_from_effect_type( A_MOD_DAMAGE_PERCENT_TAKEN );
+    debuffs.faerie_fire  = make_buff<stat_buff_t>( this, "faerie_fire", dbc::find_spell( this, 9907 ) );
+    debuffs.sunder_armor = make_buff<stat_buff_t>( this, "sunder_armor", dbc::find_spell( this, 11597 ) );
   }
 
   // set up always since this can be applied by enemy actions and raid events.
@@ -5263,12 +5271,15 @@ double player_t::composite_rating( rating_e rating ) const
   return util::round( v * composite_rating_multiplier( rating ), 0 );
 }
 
-double player_t::composite_player_vulnerability( school_e ) const
+double player_t::composite_player_vulnerability( school_e school ) const
 {
   double m = debuffs.invulnerable && debuffs.invulnerable->check() ? 0.0 : 1.0;
 
   if ( debuffs.vulnerable && debuffs.vulnerable->check() )
     m *= 1.0 + debuffs.vulnerable->check_value();
+
+  if ( debuffs.curse_of_the_elements && debuffs.curse_of_the_elements->has_common_school( school ) )
+    m *= 1.0 + debuffs.curse_of_the_elements->check_value();
 
   // 1% damage taken per stack, arbitrary because this buff is completely fabricated!
   if ( debuffs.damage_taken && debuffs.damage_taken->check() )
@@ -6425,6 +6436,18 @@ void player_t::arise()
 
     if ( sim->overrides.bleeding && debuffs.bleeding )
       debuffs.bleeding->override_buff( 1, 1.0 );
+
+    if ( sim->overrides.curse_of_recklessness && debuffs.curse_of_recklessness )
+      debuffs.curse_of_recklessness->override_buff();
+
+    if ( sim->overrides.curse_of_the_elements && debuffs.curse_of_the_elements )
+      debuffs.curse_of_the_elements->override_buff();
+
+    if ( sim->overrides.faerie_fire && debuffs.faerie_fire )
+      debuffs.faerie_fire->override_buff();
+
+    if ( sim->overrides.sunder_armor && debuffs.sunder_armor )
+      debuffs.sunder_armor->override_buff( debuffs.sunder_armor->max_stack() );
   }
   else
   {

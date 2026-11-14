@@ -3511,6 +3511,10 @@ void sim_t::use_optimal_buffs_and_debuffs( int value )
   overrides.trueshot_aura           = optimal_raid;
   overrides.windfury_totem          = optimal_raid;
 
+  overrides.curse_of_recklessness   = optimal_raid;
+  overrides.curse_of_the_elements   = optimal_raid;
+  overrides.faerie_fire             = optimal_raid;
+  overrides.sunder_armor            = optimal_raid;
   overrides.mortal_wounds           = optimal_raid;
   overrides.bleeding                = optimal_raid;
 
@@ -3780,6 +3784,10 @@ void sim_t::create_options()
   add_option( opt_int( "override.blood_pact", overrides.blood_pact ) );
   add_option( opt_int( "override.dark_inspiration", overrides.dark_inspiration ) );
   add_option( opt_int( "override.mana_spring_totem", overrides.mana_spring_totem ) );
+  add_option( opt_int( "override.curse_of_recklessness", overrides.curse_of_recklessness ) );
+  add_option( opt_int( "override.curse_of_the_elements", overrides.curse_of_the_elements ) );
+  add_option( opt_int( "override.faerie_fire", overrides.faerie_fire ) );
+  add_option( opt_int( "override.sunder_armor", overrides.sunder_armor ) );
   add_option( opt_int( "override.mortal_wounds", overrides.mortal_wounds ) );
   add_option( opt_int( "override.bleeding", overrides.bleeding ) );
   add_option( opt_func( "override.spell_data", parse_override_spell_data ) );

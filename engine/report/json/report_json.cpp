@@ -1246,6 +1246,10 @@ void to_json( const ::report::json::report_configuration_t& report_configuration
   add_non_zero( overrides, "blood_pact", sim.overrides.blood_pact );
   add_non_zero( overrides, "dark_inspiration", sim.overrides.dark_inspiration );
   add_non_zero( overrides, "mana_spring_totem", sim.overrides.mana_spring_totem );
+  add_non_zero( overrides, "curse_of_recklessness", sim.overrides.curse_of_recklessness );
+  add_non_zero( overrides, "curse_of_the_elements", sim.overrides.curse_of_the_elements );
+  add_non_zero( overrides, "faerie_fire", sim.overrides.faerie_fire );
+  add_non_zero( overrides, "sunder_armor", sim.overrides.sunder_armor );
   add_non_zero( overrides, "mortal_wounds", sim.overrides.mortal_wounds );
   add_non_zero( overrides, "bleeding", sim.overrides.bleeding );
   add_non_zero( overrides, "bloodlust", sim.overrides.bloodlust );

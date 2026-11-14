@@ -468,7 +468,11 @@ struct player_t : public actor_t
   {
     buff_t* bleeding;
     buff_t* casting;
+    buff_t* curse_of_recklessness;
+    buff_t* curse_of_the_elements;
+    buff_t* faerie_fire;
     buff_t* flying;
+    buff_t* sunder_armor;
     buff_t* forbearance;
     buff_t* invulnerable;
     buff_t* vulnerable;

@@ -235,6 +235,10 @@ struct sim_t : private sc_thread_t
     int mana_spring_totem;
 
     // Debuff overrides
+    int curse_of_recklessness;
+    int curse_of_the_elements;
+    int faerie_fire;
+    int sunder_armor;
     int mortal_wounds;
     int bleeding;
 

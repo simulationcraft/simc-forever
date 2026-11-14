@@ -759,6 +759,7 @@ struct faerie_fire_t : public druid_spell_t
     : druid_spell_t( "faerie_fire", player, player->rank.faerie_fire.find_rank()->spell() )
   {
     parse_options( options_str );
+    background = sim->overrides.faerie_fire != 0;
 
     if ( p()->buff.cat_form->data().ok() )
     {
