@@ -328,6 +328,7 @@ struct strength_of_earth_totem_t : public shaman_spell_t
   {
     parse_options( options_str );
     harmful = false;
+    background = sim->overrides.strength_of_earth_totem != 0;
     target = player;
   }
 

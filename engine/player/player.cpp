@@ -15462,30 +15462,59 @@ const spell_data_t* player_t::find_raid_buff_rank( std::initializer_list<unsigne
   return spell_data_t::not_found();
 }
 
-// The group versions (Prayer of Fortitude, Arcane Brilliance, Gift of the Wild) match the top single target ranks.
+// The group versions (Prayer of Fortitude, Arcane Brilliance, Gift of the Wild, Greater Blessings, Prayer of Spirit)
+// match the top single target ranks. Raid area auras and totem auras are never downranked.
 void player_t::parse_raid_buffs()
 {
-  auto raid_buff = [ this ]( std::string_view name, std::initializer_list<unsigned> ranks ) {
-    auto buff = make_buff<stat_buff_t>( this, name, find_raid_buff_rank( ranks ) );
+  auto raid_buff = [ this ]( std::string_view name, const spell_data_t* spell ) -> stat_buff_t* {
+    if ( !spell->ok() )
+      return nullptr;
+
+    auto buff = make_buff<stat_buff_t>( this, name, spell );
+    buff->set_pct_buff_type_from_data( true );
     register_precombat_begin( [ buff ]( player_t* ) { buff->override_buff(); } );
     return buff;
   };
 
   if ( sim->overrides.arcane_intellect )
-    raid_buff( "arcane_intellect", { 1459, 1460, 1461, 10156, 10157 } );
+    raid_buff( "arcane_intellect", find_raid_buff_rank( { 1459, 1460, 1461, 10156, 10157 } ) );
 
   // amount scales with the caster's level, assumed to be max level
   if ( sim->overrides.battle_shout )
   {
-    auto buff = raid_buff( "battle_shout", { 6673, 5242, 6192, 11549, 11550, 11551, 25289 } );
-    buff->set_stat_from_effect( 1, buff->data().effectN( 1 ).average( this, MAX_LEVEL ) );
+    if ( auto buff = raid_buff( "battle_shout", find_raid_buff_rank( { 6673, 5242, 6192, 11549, 11550, 11551, 25289 } ) ) )
+      buff->set_stat_from_effect( 1, buff->data().effectN( 1 ).average( this, MAX_LEVEL ) );
   }
 
+  if ( sim->overrides.blessing_of_kings )
+    raid_buff( "blessing_of_kings", find_raid_buff_rank( { 20217 } ) );
+
+  if ( sim->overrides.blessing_of_might )
+    raid_buff( "blessing_of_might", find_raid_buff_rank( { 19740, 19834, 19835, 19836, 19837, 19838, 25291 } ) );
+
+  if ( sim->overrides.divine_spirit )
+    raid_buff( "divine_spirit", find_raid_buff_rank( { 14752, 14818, 14819, 27841 } ) );
+
+  if ( sim->overrides.grace_of_air_totem )
+    raid_buff( "grace_of_air", dbc::find_spell( this, 25360 ) );
+
+  // same aura in Forever, they don't stack
+  if ( sim->overrides.moonkin_aura )
+    raid_buff( "moonkin_aura", dbc::find_spell( this, 24907 ) );
+  else if ( sim->overrides.leader_of_the_pack )
+    raid_buff( "leader_of_the_pack", dbc::find_spell( this, 24932 ) );
+
   if ( sim->overrides.mark_of_the_wild )
-    raid_buff( "mark_of_the_wild", { 1126, 5232, 6756, 5234, 8907, 9884, 9885 } );
+    raid_buff( "mark_of_the_wild", find_raid_buff_rank( { 1126, 5232, 6756, 5234, 8907, 9884, 9885 } ) );
 
   if ( sim->overrides.power_word_fortitude )
-    raid_buff( "power_word_fortitude", { 1243, 1244, 1245, 2791, 10937, 10938 } );
+    raid_buff( "power_word_fortitude", find_raid_buff_rank( { 1243, 1244, 1245, 2791, 10937, 10938 } ) );
+
+  if ( sim->overrides.strength_of_earth_totem )
+    raid_buff( "strength_of_earth", dbc::find_spell( this, 25362 ) );
+
+  if ( sim->overrides.trueshot_aura )
+    raid_buff( "trueshot_aura", dbc::find_spell( this, 20906 ) );
 }
 
 void player_t::register_passive_spell_override( const spell_data_t& spell, double value, std::string_view field )

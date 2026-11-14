@@ -215,8 +215,16 @@ struct sim_t : private sc_thread_t
     // Buff overrides
     int arcane_intellect;
     int battle_shout;
+    int blessing_of_kings;
+    int blessing_of_might;
+    int divine_spirit;
+    int grace_of_air_totem;
+    int leader_of_the_pack;
     int mark_of_the_wild;
+    int moonkin_aura;
     int power_word_fortitude;
+    int strength_of_earth_totem;
+    int trueshot_aura;
 
     // Debuff overrides
     int mortal_wounds;

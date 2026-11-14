@@ -1193,7 +1193,8 @@ void druid_t::create_buffs()
           ->set_stack_change_callback( [ this ]( buff_t*, int, int ) { buff.moonkin_aura->trigger(); } );
 
   buff.moonkin_aura =
-      make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() )
+      make_buff_fallback( talent.moonkin_form->ok() && !sim->overrides.moonkin_aura && !sim->overrides.leader_of_the_pack,
+                          this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() )
           ->set_default_value_from_effect( 1, .01 )
           ->set_pct_buff_type_from_effect( 1 );
 };

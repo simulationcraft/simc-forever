@@ -3497,8 +3497,16 @@ void sim_t::use_optimal_buffs_and_debuffs( int value )
 
   overrides.arcane_intellect        = optimal_raid;
   overrides.battle_shout            = optimal_raid;
+  overrides.blessing_of_kings       = optimal_raid;
+  overrides.blessing_of_might       = optimal_raid;
+  overrides.divine_spirit           = optimal_raid;
+  overrides.grace_of_air_totem      = optimal_raid;
+  overrides.leader_of_the_pack      = optimal_raid;
   overrides.mark_of_the_wild        = optimal_raid;
+  overrides.moonkin_aura            = optimal_raid;
   overrides.power_word_fortitude    = optimal_raid;
+  overrides.strength_of_earth_totem = optimal_raid;
+  overrides.trueshot_aura           = optimal_raid;
 
   overrides.mortal_wounds           = optimal_raid;
   overrides.bleeding                = optimal_raid;
@@ -3753,8 +3761,16 @@ void sim_t::create_options()
   add_option( opt_func( "fight_style", parse_fight_style ) );
   add_option( opt_int( "override.arcane_intellect", overrides.arcane_intellect ) );
   add_option( opt_int( "override.battle_shout", overrides.battle_shout ) );
+  add_option( opt_int( "override.blessing_of_kings", overrides.blessing_of_kings ) );
+  add_option( opt_int( "override.blessing_of_might", overrides.blessing_of_might ) );
+  add_option( opt_int( "override.divine_spirit", overrides.divine_spirit ) );
+  add_option( opt_int( "override.grace_of_air_totem", overrides.grace_of_air_totem ) );
+  add_option( opt_int( "override.leader_of_the_pack", overrides.leader_of_the_pack ) );
   add_option( opt_int( "override.mark_of_the_wild", overrides.mark_of_the_wild ) );
+  add_option( opt_int( "override.moonkin_aura", overrides.moonkin_aura ) );
   add_option( opt_int( "override.power_word_fortitude", overrides.power_word_fortitude ) );
+  add_option( opt_int( "override.strength_of_earth_totem", overrides.strength_of_earth_totem ) );
+  add_option( opt_int( "override.trueshot_aura", overrides.trueshot_aura ) );
   add_option( opt_int( "override.mortal_wounds", overrides.mortal_wounds ) );
   add_option( opt_int( "override.bleeding", overrides.bleeding ) );
   add_option( opt_func( "override.spell_data", parse_override_spell_data ) );

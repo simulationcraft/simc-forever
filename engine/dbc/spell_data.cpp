@@ -506,6 +506,8 @@ double spelleffect_data_t::default_multiplier() const
   switch ( type() )
   {
     case E_APPLY_AURA:
+    case E_APPLY_AREA_AURA_PARTY:
+    case E_APPLY_AREA_AURA_RAID:
     case E_APPLY_AREA_AURA_OWNER:
     case E_APPLY_AURA_PET:
     case E_APPLY_AURA_PLAYER_AND_PET:
