@@ -829,9 +829,9 @@ struct innervate_t : public druid_spell_t
     // assumed that the regen buff applies only to spirit regen
   }
 
-  void impact( action_state_t* s ) override
+  void execute() override
   {
-    druid_spell_t::impact( s );
+    druid_spell_t::execute();
 
     p()->buffs.innervate->trigger();
   }
