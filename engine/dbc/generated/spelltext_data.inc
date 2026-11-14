@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70938
-static constexpr std::array<spelltext_data_t, 8737> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8738> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -3489,6 +3489,7 @@ static constexpr std::array<spelltext_data_t, 8737> __spelltext_data { {
   {   18828, "When struck in combat has a 3% chance to encase the caster in bone, increasing armor by $s1 for $d.", "Increased armor.", 0 },
   {   18831, "Conjures a Lily Root that restores health and mana when eaten.", 0, "Rank 1" },
   {   18832, "Restores $s1 health and $s2 mana. Requires Lei of Lillies to be equipped to consume.", 0, 0 },
+  {   18833, "Blasts a target for $s1 Fire damage.", 0, 0 },
   {   18848, "Gives a chance to parry enemy melee attacks.", 0, "Passive" },
   {   18867, "Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.", "Death will grant the Warlock a Soul Shard.", "Rank 2" },
   {   18868, "Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.", "Death will grant the Warlock a Soul Shard.", "Rank 3" },

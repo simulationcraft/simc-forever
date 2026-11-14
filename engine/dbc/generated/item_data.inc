@@ -15217,7 +15217,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15214] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.70938
 
-static const std::array<dbc_item_data_t, 13115> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13116> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -21272,6 +21272,7 @@ static const std::array<dbc_item_data_t, 13115> __item_data_chunk0 { {
   { "Stockade Pauldrons",  14552, 0x00000000, 0x00004004, 0x00, 55, 50, 0, 0, 4, 3, 4, 4, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[4501], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Sash of Mercy",  14553, 0x00000000, 0x00004004, 0x00, 61, 56, 0, 0, 4, 6, 4, 2, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[4504], 4, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Cloudkeeper Legplates",  14554, 0x00000000, 0x00004004, 0x00, 62, 57, 0, 0, 4, 7, 4, 4, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[4508], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Alcor's Sunrazor",  14555, 0x00000000, 0x00004004, 0x00, 63, 58, 0, 0, 4, 13, 2, 15, 2, 1300, 0.600000f, 0.000000f, &__item_stats_data[2712], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "The Lion Horn of Stormwind",  14557, 0x00080000, 0x00000004, 0x00, 63, 58, 0, 0, 4, 12, 4, 0, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[4511], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Lady Maye's Pendant",  14558, 0x00000000, 0x00004004, 0x00, 64, 59, 0, 0, 4, 2, 4, 0, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[4512], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Prospector's Sash",  14559, 0x00000000, 0x00004004, 0x00, 18, 13, 0, 0, 2, 6, 4, 2, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[294], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
