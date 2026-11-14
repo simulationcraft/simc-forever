@@ -4365,6 +4365,24 @@ void player_t::create_buffs()
 
     buffs.movement = new movement_buff_t( this );
 
+    bool mana_user = resources.base[ RESOURCE_MANA ] > 0;
+
+    buffs.innervate = make_buff_fallback( mana_user, this, "innervate", dbc::find_spell( this, 29166 ) )
+      ->set_default_value_from_effect_type( A_MOD_POWER_REGEN_PERCENT )
+      ->set_cooldown( 0_ms );
+
+    // Totem lasts 1s longer than its last tick
+    buffs.mana_tide_totem = make_buff_fallback( mana_user, this, "mana_tide_totem", dbc::find_spell( this, 1325257 ) )
+      ->set_duration( dbc::find_spell( this, 1325256 )->duration() )
+      ->set_default_value_from_effect_type( A_PERIODIC_ENERGIZE, P_MAX, 0.0, E_APPLY_AREA_AURA_PARTY )
+      ->set_tick_callback( [ this, gain = get_gain( "mana_tide_totem" ) ]( buff_t* b, int, timespan_t ) {
+        resource_gain( RESOURCE_MANA, b->current_value, gain );
+      } );
+
+    buffs.power_infusion = make_buff( this, "power_infusion", dbc::find_spell( this, 10060 ) )
+      ->set_default_value_from_effect_type( A_MOD_DAMAGE_PERCENT_DONE )
+      ->set_cooldown( 0_ms );
+
     parse_raid_buffs();
   }
   // .. for enemies
@@ -4962,12 +4980,22 @@ double player_t::composite_leech() const
 
 double player_t::composite_mana_regen_while_casting() const
 {
-  return current.mana_regen_while_casting;
+  double m = current.mana_regen_while_casting;
+
+  if ( buffs.innervate && buffs.innervate->check() )
+    m += buffs.innervate->data().effectN( 1 ).percent();
+
+  return m;
 }
 
 double player_t::composite_resource_regen_multiplier( resource_e r ) const
 {
-  return resources.regen_multiplier[ r ];
+  double m = resources.regen_multiplier[ r ];
+
+  if ( r == RESOURCE_MANA && buffs.innervate && buffs.innervate->check() )
+    m *= 1.0 + buffs.innervate->check_value();
+
+  return m;
 }
 
 double player_t::composite_run_speed() const
@@ -5021,6 +5049,9 @@ double player_t::composite_player_multiplier( school_e school ) const
 
   if ( buffs.entropic_embrace && buffs.entropic_embrace->check() )
     m *= 1.0 + buffs.entropic_embrace->data().effectN( 1 ).percent();
+
+  if ( buffs.power_infusion && buffs.power_infusion->has_common_school( school ) )
+    m *= 1.0 + buffs.power_infusion->check_value();
 
   return m;
 }
@@ -5557,6 +5588,16 @@ void player_t::combat_begin()
   first_cast = false;
 
   sim->print_debug( "Combat begins for {}.", *this );
+
+  auto add_timed_buff_triggers = [ this ]( const std::vector<timespan_t>& times, buff_t* buff ) {
+    if ( buff )
+      for ( auto t : times )
+        make_event( *sim, t, [ buff ] { buff->trigger(); } );
+  };
+
+  add_timed_buff_triggers( external_buffs.innervate, buffs.innervate );
+  add_timed_buff_triggers( external_buffs.mana_tide_totem, buffs.mana_tide_totem );
+  add_timed_buff_triggers( external_buffs.power_infusion, buffs.power_infusion );
 
   if ( !precombat_action_list.empty() )
     enter_combat();
@@ -12711,6 +12752,8 @@ void player_t::create_options()
     } );
   };
 
+  add_option( opt_external_buff_times( "external_buffs.innervate", external_buffs.innervate ) );
+  add_option( opt_external_buff_times( "external_buffs.mana_tide_totem", external_buffs.mana_tide_totem ) );
   add_option( opt_external_buff_times( "external_buffs.power_infusion", external_buffs.power_infusion ) );
 
   // Player only options

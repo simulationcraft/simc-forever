@@ -80,7 +80,6 @@ struct druid_t final : public parse_player_effects_t
   {
     buff_t* cat_form;
     buff_t* moonkin_form;
-    buff_t* innervate;
     buff_t* clearcasting;
     buff_t* natures_grace;
     buff_t* eclipse;
@@ -834,7 +833,7 @@ struct innervate_t : public druid_spell_t
   {
     druid_spell_t::impact( s );
 
-    p()->buff.innervate->trigger();
+    p()->buffs.innervate->trigger();
   }
 };
 
@@ -1151,9 +1150,6 @@ void druid_t::create_buffs()
 {
   player_t::create_buffs();
 
-  auto const innervate_buff = rank.innervate.find_rank()->spell();
-  buff.innervate            = make_buff_fallback( innervate_buff->ok(), this, "innervate", innervate_buff );
-
   auto const mark_of_the_wild_spell = rank.mark_of_the_wild.find_rank()->spell();
   auto const mark_of_the_wild_buff = debug_cast<stat_buff_t*>(
       make_buff_fallback<stat_buff_t>( mark_of_the_wild_spell->ok(), this, "mark_of_the_wild", mark_of_the_wild_spell ) );
@@ -1231,7 +1227,6 @@ void druid_t::init_finished()
 
 void druid_t::parse_player_effects()
 {
-  parse_effects( buff.innervate );
   parse_effects( buff.moonkin_aura );
   parse_effects( buff.natures_grace );  // buffs spell haste and gcd, confirm the double dip on gcd speed
   parse_effects( buff.cat_form );

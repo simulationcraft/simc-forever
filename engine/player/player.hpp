@@ -454,6 +454,9 @@ struct player_t : public actor_t
     buff_t* entropic_embrace;
     buff_t* exhaustion;
     buff_t* guardian_spirit;
+    buff_t* innervate;
+    buff_t* mana_tide_totem;
+    buff_t* power_infusion;
     buff_t* blessing_of_sacrifice;
     buff_t* pain_suppression;
     buff_t* movement;
@@ -483,6 +486,8 @@ struct player_t : public actor_t
   {
     std::string pool;
     std::unordered_map<buff_t*, std::vector<cooldown_t*>> invoke_cds;
+    std::vector<timespan_t> innervate;
+    std::vector<timespan_t> mana_tide_totem;
     std::vector<timespan_t> power_infusion;
   } external_buffs;
 
