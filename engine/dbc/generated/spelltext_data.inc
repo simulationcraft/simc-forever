@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70938
-static constexpr std::array<spelltext_data_t, 8738> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8739> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -4939,6 +4939,7 @@ static constexpr std::array<spelltext_data_t, 8738> __spelltext_data { {
   {   27847, "Reduces the mana cost of your Cleanse spell by $s1.", 0, 0 },
   {   27850, "Reduces the Mana cost of Purify and Cleanse by $s1%.", 0, 0 },
   {   27851, "Reduces the energy cost of Claw and Rake by $s1.", 0, 0 },
+  {   27853, "Increases the initial healing of Regrowth by $s1% when cast on a target affected by your Rejuvenation.", 0, 0 },
   {   27855, "Increases healing done by Lesser Healing Wave by up to $s1.", 0, 0 },
   {   27859, "Increases the damage of your Shock spells by $s1%.", 0, 0 },
   {   27860, "Deal $s1 Shadow damage.\r\nRestore $s2 mana.", 0, 0 },
