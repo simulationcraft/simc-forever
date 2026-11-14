@@ -114,6 +114,7 @@ KEY_FIELD_HOTFIX_RECORD = {
     'ModifiedCraftingSpellSlot'   : 'id_spell',
     'RenownRewards'               : 'id_covenant',
     'SkillLineAbility'            : 'id_skill',
+    'SkillRaceClassInfo'          : 'id_skill',
     'SkillLineXTraitTree'         : 'id_skill_line',
     'SpecializationSpells'        : 'spec_id',
     'TraitCond'                   : 'id_trait_tree',
