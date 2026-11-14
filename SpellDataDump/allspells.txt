@@ -21413,12 +21413,15 @@ Hotfixed         : NEW EFFECT
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 1) (id=8516) [Spell Family (11)] 
-Hotfixed         : Attributes, Description, Tooltip
+Hotfixed         : Category (0 -> 2619), Attributes, Description, Tooltip
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 32 (max 40)
 Range            : 100 yards
+Cooldown         : 0.1 seconds
+Category         : 2619 (Type 0x0)
 Labels           : 24: Shaman Spells
+Category Cooldown: 0.1 seconds
 Affecting Spells : Improved Weapon Totems (29192 effect#1), Improved Weapon Totems (29193 effect#1)
 Family Flags     : 33
 Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Display Range (126), Normal Melee Attack (345), Unknown (493)
@@ -30166,12 +30169,15 @@ Effects          :
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10608) [Spell Family (11)] 
-Hotfixed         : Attributes, Description, Tooltip
+Hotfixed         : Category (0 -> 2619), Attributes, Description, Tooltip
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 42 (max 50)
 Range            : 100 yards
+Cooldown         : 0.1 seconds
+Category         : 2619 (Type 0x0)
 Labels           : 24: Shaman Spells
+Category Cooldown: 0.1 seconds
 Affecting Spells : Improved Weapon Totems (29192 effect#1), Improved Weapon Totems (29193 effect#1)
 Family Flags     : 33
 Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Display Range (126), Normal Melee Attack (345), Unknown (493)
@@ -30199,12 +30205,15 @@ Hotfixed         : NEW EFFECT
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 3) (id=10610) [Spell Family (11)] 
-Hotfixed         : Attributes, Description, Tooltip
+Hotfixed         : Category (0 -> 2619), Attributes, Description, Tooltip
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 52 (max 60)
 Range            : 100 yards
+Cooldown         : 0.1 seconds
+Category         : 2619 (Type 0x0)
 Labels           : 24: Shaman Spells
+Category Cooldown: 0.1 seconds
 Affecting Spells : Improved Weapon Totems (29192 effect#1), Improved Weapon Totems (29193 effect#1)
 Family Flags     : 33
 Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Display Range (126), Normal Melee Attack (345), Unknown (493)
@@ -113200,6 +113209,19 @@ $frostdamage1=$?s11151[${1.02}][${1.0}]
 $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
 
+Name             : Throw Concoction (id=440827) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 2 seconds
+Cooldown         : 30 seconds
+Attributes       : Is Ability (4), Do Not Sheath (18), Not In Combat (Only Peaceful) (28), Allow While Stealthed (37), No Threat (42), Unknown (493)
+Effects          :
+#1 (id=1134963)  : Send Event (61)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 90343 | Target: Self (1)
+#2 (id=1136033)  : Dummy (3)
+                   Base Value: 0 | Scaled Value: 0 | Radius: 0 - 20 yards | Target: Source (22) -> Enemy in Area (15)
+Description      : Throw into a bubbling cauldron to cause an explosion of noxious gas. Does not break stealth.
+
 Name             : Combine Offerings (id=440829) 
 School           : Physical
 Spell Type       : None
@@ -113219,6 +113241,17 @@ Effects          :
 #1 (id=1134966)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Imbue a hollow emblem with blood magic essence.
+
+Name             : Ward of the Dead (id=440841) 
+School           : Physical
+Spell Type       : None
+Duration         : Aura (infinite)
+Attributes       : Allow While Stealthed (37), Unknown (493)
+Effects          :
+#1 (id=1134980)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : Reveals the grave which hides an offering.
+Tooltip          : Reveals the grave which hides an offering.
 
 Name             : Engrave Cloak - Frozen Orb (id=440858) 
 Class            : Mage
@@ -141517,8 +141550,9 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Gameobject (23)
 #2 (id=1289754)  : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1277397
-#3 (id=1290061)  : Summon Credit Creature (90)
+#3 (id=1290061)  : Kill Credit (134)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 272737 | Target: Self (1)
+Hotfixed         : Type (90 -> 134)
 
 Name             : Dark Sacrifice (desc=Rank 1) (id=1277324) [Spell Family (6)] 
 Class            : Priest
@@ -149949,6 +149983,20 @@ Effects          :
 Description      : Chance on landing a damaging spell to assault the target's mind, increasing the casting time of all spells by $s1% for $d. Stacks up to $u times.
 Tooltip          : Casting time increased by $s1%.
 
+Name             : Xorothian Fire (id=1302343) 
+School           : Fire
+Spell Type       : Ranged
+Range            : 100 yards
+Velocity         : 30 yards/sec
+Duration         : 3 seconds
+Cooldown         : 1 seconds
+Category Cooldown: 1 seconds
+Attributes       : Suppress Caster Procs (112), Suppress Weapon Procs (151), Periodic Can Crit (265), Unknown (493)
+Effects          :
+#1 (id=1327906)  : Apply Aura (6) | Periodic Damage (3): fire every 1 seconds
+                   Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+Description      : Deal $o1 Fire damage over $d.
+
 Name             : Hedgecutter (id=1302344) 
 School           : Arcane
 Spell Type       : Magic
@@ -154503,6 +154551,30 @@ Effects          :
 #1 (id=1347318)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 99999 | Misc Value: 274297 | Misc Value 2: 6698 | Target: Summoner in Area (32)
 Description      : Calls forth a Black Dragon Whelp to protect you in battle for a short period of time.
+
+Name             : Hearthstone (id=1315212) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 10 seconds
+GCD              : 1.5 seconds
+Cooldown         : 3600 seconds
+Category         : 89 (Type 0x0)
+Category Cooldown: 3600 seconds
+Attributes       : Not Shapeshifted (16), Allow While Sitting (27), No Immunities (29), Unknown (493)
+Effects          :
+#2 (id=1347363)  : Server Side Script (77)
+                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+Description      : Burn in the scarlet flames to return to $z. Speak to an Innkeeper in a different place to change your home location.
+
+Name             : Create Scarlet Hearthstone (id=1315213) [Hidden] 
+School           : Physical
+Spell Type       : None
+Cooldown         : 3600 seconds
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Not In Combat (Only Peaceful) (28), No Threat (42), Visible only to caster (conversations only) (343)
+Effects          :
+#1 (id=1347364)  : Create Item (24)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+Description      : Create a Scarlet Hearthstone.
 
 Name             : Summon Tallstrider Hatchling (id=1315267) 
 School           : Physical

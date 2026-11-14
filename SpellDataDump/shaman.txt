@@ -2170,12 +2170,15 @@ Hotfixed         : NEW EFFECT
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 1) (id=8516) [Spell Family (11)] 
-Hotfixed         : Attributes, Description, Tooltip
+Hotfixed         : Category (0 -> 2619), Attributes, Description, Tooltip
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 32 (max 40)
 Range            : 100 yards
+Cooldown         : 0.1 seconds
+Category         : 2619 (Type 0x0)
 Labels           : 24: Shaman Spells
+Category Cooldown: 0.1 seconds
 Affecting Spells : Improved Weapon Totems (29192 effect#1), Improved Weapon Totems (29193 effect#1)
 Family Flags     : 33
 Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Display Range (126), Normal Melee Attack (345), Unknown (493)
@@ -3532,12 +3535,15 @@ Effects          :
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10608) [Spell Family (11)] 
-Hotfixed         : Attributes, Description, Tooltip
+Hotfixed         : Category (0 -> 2619), Attributes, Description, Tooltip
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 42 (max 50)
 Range            : 100 yards
+Cooldown         : 0.1 seconds
+Category         : 2619 (Type 0x0)
 Labels           : 24: Shaman Spells
+Category Cooldown: 0.1 seconds
 Affecting Spells : Improved Weapon Totems (29192 effect#1), Improved Weapon Totems (29193 effect#1)
 Family Flags     : 33
 Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Display Range (126), Normal Melee Attack (345), Unknown (493)
@@ -3565,12 +3571,15 @@ Hotfixed         : NEW EFFECT
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 3) (id=10610) [Spell Family (11)] 
-Hotfixed         : Attributes, Description, Tooltip
+Hotfixed         : Category (0 -> 2619), Attributes, Description, Tooltip
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 52 (max 60)
 Range            : 100 yards
+Cooldown         : 0.1 seconds
+Category         : 2619 (Type 0x0)
 Labels           : 24: Shaman Spells
+Category Cooldown: 0.1 seconds
 Affecting Spells : Improved Weapon Totems (29192 effect#1), Improved Weapon Totems (29193 effect#1)
 Family Flags     : 33
 Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Display Range (126), Normal Melee Attack (345), Unknown (493)
