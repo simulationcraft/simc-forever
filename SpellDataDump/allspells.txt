@@ -87816,6 +87816,16 @@ Effects          :
                    Family Flags: 12
 Description      : Reduces the energy cost of Claw and Rake by $s1.
 
+Name             : Increased Regrowth Healing (id=27853) [Spell Family (7), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 21: Druid Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=704565)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Description      : Increases the initial healing of Regrowth by $s1% when cast on a target affected by your Rejuvenation.
+
 Name             : Increased Lesser Healing Wave (id=27855) [Spell Family (11), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
