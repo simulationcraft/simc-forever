@@ -3260,6 +3260,9 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 5 | Target: Self (1)
 #2 (id=695864)   : Apply Aura (6) | Mechanic Immunity (77)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 14 | Target: Self (1)
+#3 (id=1372182)  : Apply Aura (6) | Mechanic Immunity (77)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 30 | Target: Self (1)
+Hotfixed         : NEW EFFECT
 Description      : The warrior enters a berserker rage, becoming immune to Fear and Incapacitate effects and generating extra rage when taking damage.  Lasts $d.
 Tooltip          : Immune to Fear and Incapacitate effects.  Generating extra rage when taking damage.
 

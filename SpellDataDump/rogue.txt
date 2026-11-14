@@ -4189,15 +4189,15 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 5302 | Target: Self (1)
 
 Name             : Juju Escape (id=16321) [Spell Family (8)] 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 8
 Range            : 20 yards
 Duration         : 10 seconds
-Proc Chance      : 101%
 Affecting Spells : Endurance (13742 effect#1), Carnage (432275 effect#1)
 Family Flags     : 5
-Attributes       : Do Not Log (8), Not Shapeshifted (16), Unknown (493)
+Attributes       : Do Not Log (8), Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=693189)   : Apply Aura (6) | Modify Dodge% (49)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
