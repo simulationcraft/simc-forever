@@ -138825,240 +138825,264 @@ Description      : Resurrect the fallen Khan.
 Tooltip          : Being resurrected.
 
 Name             : Rock Garden (desc=Tier 2) (id=1262975) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273510)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Rock Garden.
 
 Name             : Cookie's Feast (desc=Tier 2) (id=1262978) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273514)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft Cookie's Feast.
 
 Name             : Greenhouse (desc=Tier 2) (id=1262980) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273516)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Greenhouse.
 
 Name             : Trapper's Workbench (desc=Tier 3) (id=1262982) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273519)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Trapper's Workbench.
 
 Name             : Field Guide (desc=Tier 2) (id=1262985) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273522)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Field Guide.
 
 Name             : Fishing Rack (desc=Tier 2) (id=1262990) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273531)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Fishing Rack.
 
 Name             : Toxin Study (desc=Tier 2) (id=1262996) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273538)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Toxin Study.
 
 Name             : Fishing Hut (desc=Tier 3) (id=1262998) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273541)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Fishing Hut.
 
 Name             : Plague Doctor's Laboratory (desc=Tier 4) (id=1263001) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273546)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Plague Doctor's Laboratory.
 
 Name             : Fermenter (desc=Tier 2) (id=1263005) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273551)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Fermenter.
 
 Name             : Tanning Rack (desc=Tier 2) (id=1263031) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273582)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Tanning Rack.
 
 Name             : Spinning Wheel (desc=Tier 2) (id=1263032) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273585)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Spinning Wheel.
 
 Name             : Repair Bot (desc=Tier 2) (id=1263034) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273587)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Repair Bot.
 
 Name             : Anvil (desc=Tier 2) (id=1263041) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273594)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft an Anvil.
 
 Name             : Arcane Salvager (desc=Tier 2) (id=1263056) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273610)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft an Arcane Salvager.
 
 Name             : Iron Oven (desc=Tier 4) (id=1263067) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273622)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft an Iron Oven.
 
 Name             : Seed Hybridizer (desc=Tier 3) (id=1263070) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273625)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Seed Hybridizer.
 
 Name             : Molten Foundry (desc=Tier 3) (id=1263071) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273626)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Molten Foundry.
 
 Name             : Master Forge (desc=Tier 3) (id=1263073) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273628)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Master Forge.
 
 Name             : Alchemy Laboratory (desc=Tier 3) (id=1263078) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273636)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft an Alchemy Laboratory.
 
 Name             : Sewing Machine (desc=Tier 3) (id=1263079) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273637)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Sewing Machine.
 
 Name             : Loom (desc=Tier 4) (id=1263080) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273638)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft a Loom.
 
 Name             : Arcane Forge (desc=Tier 3) (id=1263082) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273640)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 Description      : Craft an Arcane Forge.
 
 Name             : Anarchist's Workbench (desc=Tier 3) (id=1263083) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1273641)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -143115,10 +143139,11 @@ Effects          :
 Description      : Place bait to attract the sea monster.
 
 Name             : Journeyman Campfire (desc=Tier 2) (id=1283400) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1297687)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -144113,10 +144138,11 @@ Description      : Increases your Block chance by $s1% for $d. This effect is do
 Tooltip          : Block Chance increased by $w1%.
 
 Name             : Expert Campfire (desc=Tier 3) (id=1291341) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
-Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Ability (4), Is Tradeskill (5), Not In Combat (Only Peaceful) (28), No Threat (42), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1310607)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
