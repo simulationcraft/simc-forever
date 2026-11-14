@@ -65,6 +65,7 @@
 #include <cerrno>
 #include <limits>
 #include <memory>
+#include <ranges>
 #include <sstream>
 #include <stdexcept>
 #include <utility>
