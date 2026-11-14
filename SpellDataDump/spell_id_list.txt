@@ -1737,7 +1737,7 @@ Mage
 18459    Incineration
 18796    Fireball
 18809    Pyroblast
-18833   *Firebolt
+18833    Firebolt
 18948   *Dark Energy
 18949   *Atal'ai Poison
 19260   *Frost Blast

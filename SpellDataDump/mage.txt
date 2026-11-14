@@ -4861,6 +4861,18 @@ Effects          :
 Description      : Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.
 Tooltip          : $s2 Fire damage every $t2 seconds.
 
+Name             : Firebolt (id=18833) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 80 Base Mana (0) (id=183807)
+Spell Level      : 30
+Range            : 50000 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=696289)   : School Damage (2): fire
+                   Base Value: 105 | Scaled Value: 105 (delta=0.2) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Frost Blast (id=20869) [Spell Family (3)] 
 School           : Frost
 Spell Type       : Magic

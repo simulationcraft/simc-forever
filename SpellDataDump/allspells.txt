@@ -62863,6 +62863,18 @@ Effects          :
                    Base Value: 1200 | Scaled Value: 1200 (delta=0.5) | Resource: mana | Target: Self (1)
 Description      : Restores $s1 health and $s2 mana. Requires Lei of Lillies to be equipped to consume.
 
+Name             : Firebolt (id=18833) [Spell Family (3)] 
+School           : Fire
+Spell Type       : Magic
+Resource         : 80 Base Mana (0) (id=183807)
+Spell Level      : 30
+Range            : 50000 yards
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=696289)   : School Damage (2): fire
+                   Base Value: 105 | Scaled Value: 105 (delta=0.2) | Target: Targeted Enemy (6)
+Description      : Blasts a target for $s1 Fire damage.
+
 Name             : Parry (desc=Passive) (id=18848) [Passive] 
 Class            : Shaman
 School           : Physical
