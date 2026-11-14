@@ -229,6 +229,11 @@ struct sim_t : private sc_thread_t
     int trueshot_aura;
     int windfury_totem;
 
+    // Party buff overrides
+    int blood_pact;
+    int dark_inspiration;
+    int mana_spring_totem;
+
     // Debuff overrides
     int mortal_wounds;
     int bleeding;

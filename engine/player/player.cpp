@@ -15478,6 +15478,7 @@ const spell_data_t* player_t::find_raid_buff_rank( std::initializer_list<unsigne
 
 // The group versions (Prayer of Fortitude, Arcane Brilliance, Gift of the Wild, Greater Blessings, Prayer of Spirit)
 // match the top single target ranks. Raid area auras and totem auras are never downranked.
+// Party buffs (Blood Pact, Dark Inspiration, Mana Spring) are not set by optimal_raid.
 void player_t::parse_raid_buffs()
 {
   auto raid_buff = [ this ]( std::string_view name, const spell_data_t* spell ) -> stat_buff_t* {
@@ -15517,6 +15518,16 @@ void player_t::parse_raid_buffs()
     }
   }
 
+  // amount scales with the imp's level, assumed to be max level
+  if ( sim->overrides.blood_pact )
+  {
+    if ( auto buff = raid_buff( "blood_pact", dbc::find_spell( this, 11767 ) ) )
+      buff->set_stat_from_effect( 1, buff->data().effectN( 1 ).average( this, MAX_LEVEL ) );
+  }
+
+  if ( sim->overrides.dark_inspiration )
+    raid_buff( "dark_inspiration", dbc::find_spell( this, 1326168 ) );
+
   if ( sim->overrides.divine_spirit )
     raid_buff( "divine_spirit", find_raid_buff_rank( { 14752, 14818, 14819, 27841 } ) );
 
@@ -15528,6 +15539,17 @@ void player_t::parse_raid_buffs()
     raid_buff( "moonkin_aura", dbc::find_spell( this, 24907 ) );
   else if ( sim->overrides.leader_of_the_pack )
     raid_buff( "leader_of_the_pack", dbc::find_spell( this, 24932 ) );
+
+  if ( sim->overrides.mana_spring_totem && resources.base[ RESOURCE_MANA ] > 0 )
+  {
+    if ( auto buff = raid_buff( "mana_spring", dbc::find_spell( this, 10494 ) ) )
+    {
+      buff->set_default_value_from_effect_type( A_PERIODIC_ENERGIZE, P_MAX, 0.0, E_APPLY_AREA_AURA_PARTY )
+          ->set_tick_callback( [ this, gain = get_gain( "mana_spring" ) ]( buff_t* b, int, timespan_t ) {
+            resource_gain( RESOURCE_MANA, b->current_value, gain );
+          } );
+    }
+  }
 
   if ( sim->overrides.mark_of_the_wild )
     raid_buff( "mark_of_the_wild", find_raid_buff_rank( { 1126, 5232, 6756, 5234, 8907, 9884, 9885 } ) );

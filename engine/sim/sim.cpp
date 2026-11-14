@@ -3777,6 +3777,9 @@ void sim_t::create_options()
   add_option( opt_int( "override.strength_of_earth_totem", overrides.strength_of_earth_totem ) );
   add_option( opt_int( "override.trueshot_aura", overrides.trueshot_aura ) );
   add_option( opt_int( "override.windfury_totem", overrides.windfury_totem ) );
+  add_option( opt_int( "override.blood_pact", overrides.blood_pact ) );
+  add_option( opt_int( "override.dark_inspiration", overrides.dark_inspiration ) );
+  add_option( opt_int( "override.mana_spring_totem", overrides.mana_spring_totem ) );
   add_option( opt_int( "override.mortal_wounds", overrides.mortal_wounds ) );
   add_option( opt_int( "override.bleeding", overrides.bleeding ) );
   add_option( opt_func( "override.spell_data", parse_override_spell_data ) );
