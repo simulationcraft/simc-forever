@@ -15478,7 +15478,7 @@ void player_t::parse_raid_buffs()
   if ( sim->overrides.battle_shout )
   {
     auto buff = raid_buff( "battle_shout", { 6673, 5242, 6192, 11549, 11550, 11551, 25289 } );
-    buff->set_stat( STAT_ATTACK_POWER, buff->data().effectN( 1 ).average( this, MAX_LEVEL ) );
+    buff->set_stat_from_effect( 1, buff->data().effectN( 1 ).average( this, MAX_LEVEL ) );
   }
 
   if ( sim->overrides.mark_of_the_wild )

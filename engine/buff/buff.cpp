@@ -3504,6 +3504,26 @@ stat_buff_t* stat_buff_t::add_stat_from_effect( size_t i, double a, const stat_c
   {
     return add_stat( STAT_ARMOR, a, c );
   }
+  else if ( eff.subtype() == A_MOD_DAMAGE_DONE && ( eff.misc_value1() & 0x7E ) )
+  {
+    return add_stat( STAT_SPELL_POWER, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_RESISTANCE && ( eff.misc_value1() & SCHOOL_MASK_PHYSICAL ) )
+  {
+    return add_stat( STAT_BONUS_ARMOR, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_ATTACK_POWER )
+  {
+    return add_stat( STAT_ATTACK_POWER, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_RANGED_ATTACK_POWER )
+  {
+    return add_stat( STAT_RANGED_ATTACK_POWER, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_BONUS_ARMOR )
+  {
+    return add_stat( STAT_BONUS_ARMOR, a, c );
+  }
 
   return do_error( "STAT_NONE" );
 }
