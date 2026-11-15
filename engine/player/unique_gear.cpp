@@ -790,6 +790,18 @@ void unique_gear::initialize_special_effect( special_effect_t& effect, unsigned 
     if (!special_effect::usable_proc( effect ))
     {
       effect.type = SPECIAL_EFFECT_NONE;
+
+      auto driver = p->find_spell( effect.spell_id );
+      effect_mask_t mask( false );
+      for ( const auto& eff : driver->effects() )
+        if ( eff.subtype() == A_MOD_SPELL_CRIT_CHANCE )
+          mask.enable( eff.index() + 1 );
+
+      if ( effect.proc_flags() == 0 && driver->flags( SX_PASSIVE ) && mask != effect_mask_t( false ) )
+      {
+        p->parse_passive_item_effect( driver, mask );
+        effect.type = SPECIAL_EFFECT_PASSIVE;
+      }
     }
   }
 
