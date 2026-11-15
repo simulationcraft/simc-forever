@@ -78,20 +78,7 @@ struct shaman_module_t : public module_t
     return true;
   }
 
-  void register_actor_initializers( sim_t* sim ) const override
-  {
-    sim->register_actor_initializer( INIT_ACTOR_CREATE_BUFFS + offset(), []( player_t* p ) {
-      p->buffs.bloodlust = make_buff( p, "bloodlust", p->find_spell( 2825 ) )
-          ->set_cooldown( 0_ms )
-          ->set_max_stack( 1 )
-          ->set_default_value_from_effect_type( A_HASTE_ALL )
-          ->add_invalidate( CACHE_HASTE );
-
-      p->buffs.exhaustion = make_buff( p, "exhaustion", p->find_spell( 57723 ) )
-          ->set_max_stack( 1 )
-          ->set_quiet( true );
-    }, "create_buffs_shaman" );
-  }
+  void register_actor_initializers( sim_t* ) const override {}
 
   void register_hotfixes() const override {}
 };

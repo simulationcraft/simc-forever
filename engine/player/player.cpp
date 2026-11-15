@@ -4515,9 +4515,6 @@ double player_t::composite_melee_haste() const
   {
     for ( auto b : buffs.stat_pct_buffs[ STAT_PCT_BUFF_HASTE ] )
       h /= 1.0 + b->check_stack_value();
-
-    if ( buffs.bloodlust->check() )
-      h *= 1.0 / ( 1.0 + buffs.bloodlust->check_stack_value() );
   }
 
   return h;
@@ -4877,9 +4874,6 @@ double player_t::composite_spell_haste() const
   {
     for ( auto b : buffs.stat_pct_buffs[ STAT_PCT_BUFF_HASTE ] )
       h /= 1.0 + b->check_stack_value();
-
-    if ( buffs.bloodlust->check() )
-      h *= 1.0 / ( 1.0 + buffs.bloodlust->check_stack_value() );
   }
 
   return h;
@@ -5110,12 +5104,7 @@ double player_t::composite_player_absorb_multiplier( const action_state_t* ) con
 
 double player_t::composite_player_healing_received_multiplier() const
 {
-  auto m = current.healing_received_multiplier;
-
-  if ( buffs.guardian_spirit && buffs.guardian_spirit->up() )
-    m *= 1.0 + buffs.guardian_spirit->check_value();
-
-  return m;
+  return current.healing_received_multiplier;
 }
 
 double player_t::composite_player_absorb_received_multiplier() const
@@ -11203,9 +11192,6 @@ std::unique_ptr<expr_t> player_t::create_expression( util::string_view expressio
   if ( expression_str == "position_back" )
     return std::make_unique<position_expr_t>( "position_back", *this, ( 1 << POSITION_BACK ) | ( 1 << POSITION_RANGED_BACK ) );
 
-  if ( expression_str == "time_to_bloodlust" )
-    return make_fn_expr( expression_str, [this] { return calculate_time_to_bloodlust(); } );
-
   // Get the actor's raw initial haste percent
   if ( expression_str == "raw_haste_pct" )
   {
@@ -12001,67 +11987,6 @@ double player_t::compute_incoming_magic_damage( timespan_t interval ) const
   }
 
   return amount;
-}
-
-double player_t::calculate_time_to_bloodlust() const
-{
-  // only bother if the sim is automatically casting bloodlust. Otherwise error out
-  if ( sim->overrides.bloodlust )
-  {
-    timespan_t time_to_bl  = timespan_t::from_seconds( -1 );
-    timespan_t bl_pct_time = timespan_t::from_seconds( -1 );
-
-    // first, check bloodlust_time.  If it's >0, we just compare to current_time()
-    // if it's <0, then use time_to_die estimate
-    if ( sim->bloodlust_time > timespan_t::zero() )
-      time_to_bl = sim->bloodlust_time - sim->current_time();
-    else if ( sim->bloodlust_time < timespan_t::zero() )
-      time_to_bl = target->time_to_percent( 0.0 ) + sim->bloodlust_time;
-
-    // check bloodlust_percent, if >0 then we need to estimate time based on time_to_die and health_percentage
-    if ( sim->bloodlust_percent > 0 && target->health_percentage() > 0 )
-      bl_pct_time = ( target->health_percentage() - sim->bloodlust_percent ) * target->time_to_percent( 0.0 ) /
-                    target->health_percentage();
-
-    // now that we have both times, we want to check for the Exhaustion buff.  If either time is shorter than
-    // the remaining duration on Exhaustion, we won't get that bloodlust and should ignore it
-    if ( buffs.exhaustion->check() )
-    {
-      if ( time_to_bl < buffs.exhaustion->remains() )
-        time_to_bl = timespan_t::from_seconds( -1 );
-      if ( bl_pct_time < buffs.exhaustion->remains() )
-        bl_pct_time = timespan_t::from_seconds( -1 );
-    }
-    else
-    {
-      // the sim's bloodlust_check event fires every second, so negative times under 1 second should be treated as
-      // zero for safety. without this, time_to_bloodlust can spike to the next target value up to a second before
-      // bloodlust is actually cast. probably a non-issue since the worst case is likely to be casting something 1
-      // second too early, but we may as well account for it
-      if ( time_to_bl < timespan_t::zero() && -time_to_bl < timespan_t::from_seconds( 1.0 ) )
-        time_to_bl = timespan_t::zero();
-      if ( bl_pct_time < timespan_t::zero() && -bl_pct_time < timespan_t::from_seconds( 1.0 ) )
-        bl_pct_time = timespan_t::zero();
-    }
-
-    // if both times are non-negative, take the shortest one since that will happen first
-    if ( bl_pct_time >= timespan_t::zero() && time_to_bl >= timespan_t::zero() )
-      time_to_bl = std::min( bl_pct_time, time_to_bl );
-    // otherwise, at least one is negative, so take the larger of the two
-    else
-      time_to_bl = std::max( bl_pct_time, time_to_bl );
-
-    // if both are negative, time_to_bl will still be negative and we won't be benefitting from another BL cast.
-    // Otherwise we return the positive time until BL is being cast.
-    if ( time_to_bl >= timespan_t::zero() )
-      return time_to_bl.total_seconds();
-  }
-  else if ( sim->debug )
-    sim->errorf( "Trying to call time_to_bloodlust conditional with overrides.bloodlust=0" );
-
-  // Return a nonsensical time that's much longer than the simulation.  This happens if time_to_bl was negative
-  // or if overrides.bloodlust was 0
-  return 3 * sim->expected_iteration_time.total_seconds();
 }
 
 std::string player_t::create_profile( save_e stype )

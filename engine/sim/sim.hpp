@@ -243,7 +243,6 @@ struct sim_t : private sc_thread_t
     int bleeding;
 
     // Misc stuff needs resolving
-    int    bloodlust;
     std::vector<uint64_t> target_health;
   } overrides;
 
@@ -283,8 +282,6 @@ struct sim_t : private sc_thread_t
   // Report all iterations in strict thread & iteration order with no sorting. Takes precedence over above 2 options.
   bool report_strict_iteration_data;
   int report_progress;
-  int bloodlust_percent;
-  timespan_t bloodlust_time;
   std::string reference_player_str;
   std::vector<player_t*> players_by_dps;
   std::vector<player_t*> players_by_priority_dps;

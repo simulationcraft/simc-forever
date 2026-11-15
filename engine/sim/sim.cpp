@@ -1152,56 +1152,6 @@ std::string get_api_key()
   return {};
 }
 
-/// Setup a periodic check for Bloodlust
-struct bloodlust_check_t : public event_t
-{
-  bloodlust_check_t( sim_t& sim, timespan_t time_until_next_check = timespan_t::from_seconds( 1.0 ) )
-    : event_t( sim, time_until_next_check )
-  {}
-
-  const char* name() const override
-  {
-    return "Bloodlust Check";
-  }
-
-  void execute() override
-  {
-    sim_t& sim = this->sim();
-    player_t* t = sim.target;
-    if ( ( sim.bloodlust_percent > 0 && t->health_percentage() < sim.bloodlust_percent ) ||
-         ( sim.bloodlust_time < timespan_t::zero() && t->time_to_percent( 0.0 ) < -sim.bloodlust_time ) ||
-         ( sim.bloodlust_time >= timespan_t::zero() && sim.current_time() >= sim.bloodlust_time ) )
-    {
-      if ( !sim.single_actor_batch )
-      {
-        // use indices since it's possible to spawn new actors when bloodlust is triggered
-        for ( size_t i = 0; i < sim.player_non_sleeping_list.size(); i++ )
-        {
-          auto* p = sim.player_non_sleeping_list[ i ];
-          if ( p->is_pet() || p->buffs.exhaustion->check() )
-            continue;
-
-          p->buffs.bloodlust->trigger();
-          p->buffs.exhaustion->trigger();
-        }
-      }
-      else
-      {
-        auto p = sim.player_no_pet_list[ sim.current_index ];
-        if ( p )
-        {
-          p->buffs.bloodlust->trigger();
-          p->buffs.exhaustion->trigger();
-        }
-      }
-    }
-    else
-    {
-      make_event<bloodlust_check_t>( sim, sim );
-    }
-  }
-};
-
 struct heartbeat_event_t : public event_t
 {
   heartbeat_event_t( sim_t& s, timespan_t t ) : event_t( s, t ) {}
@@ -1512,8 +1462,6 @@ sim_t::sim_t()
     min_report_iteration_data( -1 ),
     report_strict_iteration_data( false ),
     report_progress( 1 ),
-    bloodlust_percent( 0 ),
-    bloodlust_time( 0_ms ),
     // Report
     display_build( 1 ),
     report_precision( 2 ),
@@ -1927,11 +1875,6 @@ void sim_t::combat_begin()
   if ( requires_regen_event )
     make_event<regen_event_t>( *this, *this );
 
-  if ( overrides.bloodlust )
-  {
-    make_event<bloodlust_check_t>( *this, *this, timespan_t::from_seconds( 0.0 ) );
-  }
-
   // Keep droute from creating an end event, it will end itself after the last pull ends
   if ( ( fixed_time || target -> resources.base[ RESOURCE_HEALTH ] == 0 ) && fight_style != FIGHT_STYLE_DUNGEON_ROUTE )
   {
@@ -2342,8 +2285,6 @@ void sim_t::init_fight_style()
       // To be used in conjunction with "pull" raid events for a simulated dungeon run.
       desired_targets = 1;
       fixed_time = false;
-      // Bloodlust is handled by an option on each pull raid event.
-      overrides.bloodlust = 0;
       // Only use for this should be setting the safeguard event (max_time * 2). As long as Blizzard remains sane and tunes around a typical dungeon
       // taking about 30 minutes to complete, a safeguard of 1.5 hours should be a safe point to assume something has gone wrong in the sim, either the
       // input needs to be checked or something got stuck.
@@ -3517,8 +3458,6 @@ void sim_t::use_optimal_buffs_and_debuffs( int value )
   overrides.sunder_armor            = optimal_raid;
   overrides.mortal_wounds           = optimal_raid;
   overrides.bleeding                = optimal_raid;
-
-  overrides.bloodlust               = optimal_raid;
 }
 
 // sim_t::time_to_think =====================================================
@@ -3832,14 +3771,10 @@ void sim_t::create_options()
   add_option( opt_bool( "save_gear_comments", save_gear_comments ) );
   add_option( opt_bool( "buff_uptime_timeline", buff_uptime_timeline ) );
   add_option( opt_bool( "buff_stack_uptime_timeline", buff_stack_uptime_timeline ) );
-  // Bloodlust
-  add_option( opt_int( "bloodlust_percent", bloodlust_percent ) );
-  add_option( opt_timespan( "bloodlust_time", bloodlust_time ) );
   // Overrides
   add_option( opt_bool( "override.allow_potions", allow_potions ) );
   add_option( opt_bool( "override.allow_food", allow_food ) );
   add_option( opt_bool( "override.allow_flasks", allow_flasks ) );
-  add_option( opt_bool( "override.bloodlust", overrides.bloodlust ) );
   // Regen
   add_option( opt_timespan( "regen_periodicity", regen_periodicity ) );
   // RNG

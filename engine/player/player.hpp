@@ -452,8 +452,6 @@ struct player_t : public actor_t
     buff_t* damage_done;
     buff_t* devotion_aura;
     buff_t* entropic_embrace;
-    buff_t* exhaustion;
-    buff_t* guardian_spirit;
     buff_t* innervate;
     buff_t* mana_tide_totem;
     buff_t* power_infusion;
@@ -464,7 +462,6 @@ struct player_t : public actor_t
     buff_t* stoneform;
     buff_t* stunned;
     buff_t* rooted;
-    buff_t* bloodlust;
   } buffs;
 
   struct debuffs_t
@@ -718,7 +715,6 @@ public:
   double get_position_distance( double m = 0, double v = 0 ) const;
   double compute_incoming_damage( timespan_t interval) const;
   double compute_incoming_magic_damage( timespan_t interval ) const;
-  double calculate_time_to_bloodlust() const;
   slot_e parent_item_slot( const item_t& item ) const;
   slot_e child_item_slot( const item_t& item ) const;
   /// Actor-specific cooldown tolerance for queueable actions

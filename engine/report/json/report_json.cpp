@@ -1252,12 +1252,6 @@ void to_json( const ::report::json::report_configuration_t& report_configuration
   add_non_zero( overrides, "sunder_armor", sim.overrides.sunder_armor );
   add_non_zero( overrides, "mortal_wounds", sim.overrides.mortal_wounds );
   add_non_zero( overrides, "bleeding", sim.overrides.bleeding );
-  add_non_zero( overrides, "bloodlust", sim.overrides.bloodlust );
-  if ( sim.overrides.bloodlust )
-  {
-    add_non_zero( overrides, "bloodlust_percent", sim.bloodlust_percent );
-    add_non_zero( overrides, "bloodlust_time", sim.bloodlust_time );
-  }
 
   if ( !sim.overrides.target_health.empty() )
   {
