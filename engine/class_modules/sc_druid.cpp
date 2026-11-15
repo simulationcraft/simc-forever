@@ -11,9 +11,36 @@
 
 namespace
 {  // UNNAMED NAMESPACE
+
+// Finds an action with the given name. If no action exists, a new one will
+// be created.
+//
+// Use this with secondary background actions to ensure the player only has
+// one copy of the action.
+// Shamelessly borrowed from the mage module
+template <typename Action, typename Actor, typename... Args>
+action_t* get_action( std::string_view name, Actor* actor, Args&&... args )
+{
+  action_t* a = actor->find_action( name );
+  if ( !a )
+    a = new Action( name, actor, std::forward<Args>( args )... );
+  assert( dynamic_cast<Action*>( a ) && a->name_str == name && a->background );
+  return a;
+}
+
 // ==========================================================================
 // Druid
 // ==========================================================================
+enum form_e : unsigned
+{
+  NONE_FORM    = 0x00000000,
+  CAT_FORM     = 0x00000001,
+  CASTER_FORM  = 0x00000002,
+  MOONKIN_FORM = 0x40000000,
+
+  ANY_FORM = CAT_FORM | MOONKIN_FORM | CASTER_FORM
+};
+
 struct druid_t;
 struct druid_td_t final : public actor_target_data_t
 {
@@ -22,6 +49,9 @@ struct druid_td_t final : public actor_target_data_t
     buff_t* hurricane;
     buff_t* faerie_fire;
   } debuff;
+
+  // Combo points belong to the target they were generated on
+  int combo_points = 0;
 
   druid_td_t( player_t& target, druid_t& p );
 
@@ -48,31 +78,54 @@ struct druid_t final : public parse_player_effects_t
 
   struct buffs_t
   {
+    buff_t* cat_form;
+    buff_t* moonkin_form;
     buff_t* innervate;
     buff_t* clearcasting;
     buff_t* natures_grace;
     buff_t* eclipse;
     buff_t* moonkin_aura;
+    buff_t* prowl;
+    buff_t* poised;
+    buff_t* mark_of_the_wild;
   } buff;
 
   struct
   {
+    spell_ranks_t cat_form;
+    spell_ranks_t claw;
     spell_ranks_t entangling_roots;
     spell_ranks_t faerie_fire;
     spell_ranks_t hurricane;
     spell_ranks_t innervate;
     spell_ranks_t insect_swarm;
+    spell_ranks_t mark_of_the_wild;
     spell_ranks_t moonfire;
     spell_ranks_t omen_of_clarity;
+    spell_ranks_t prowl;
+    spell_ranks_t rake;
+    spell_ranks_t ravage;
+    spell_ranks_t rip;
+    spell_ranks_t shred;
     spell_ranks_t starfire;
     spell_ranks_t wrath;
   } rank;
 
-  resource_e primary_resource() const override
+  struct background_actions_t
   {
-    return RESOURCE_MANA;
-  }
+    action_t* mainhand_melee;
+    action_t* offhand_melee;
+    action_t* cat_melee;
+  } background_actions;
 
+  form_e form                  = CASTER_FORM;
+  weapon_t caster_form_weapon  = equipped_weapons[ SLOT_MAIN_HAND ];
+  weapon_t caster_form_offhand = equipped_weapons[ SLOT_OFF_HAND ];
+  weapon_t cat_weapon;
+  melee_attack_t* caster_melee_attack = nullptr;
+  melee_attack_t* cat_melee_attack    = nullptr;
+
+  void reset() override;
   void init_base_stats() override;
   void init_spells() override;
   void init_action_list() override;
@@ -81,6 +134,22 @@ struct druid_t final : public parse_player_effects_t
   void init_finished() override;
   void parse_player_effects();
   void apply_action_effects( action_t* a );
+  void create_actions() override;
+  double resource_loss( resource_e resource_type, double amount, gain_t* g = nullptr, action_t* a = nullptr ) override;
+  std::unique_ptr<expr_t> create_expression( util::string_view name ) override;
+
+  static constexpr int max_combo_points = 5;
+  // Target that currently holds the player's combo points
+  player_t* combo_target = nullptr;
+
+  int combo_points( player_t* t ) const;
+  void gain_combo_points( player_t* t, int amount, gain_t* g );
+  void spend_combo_points( player_t* t, gain_t* g );
+
+  resource_e primary_resource() const override
+  {
+    return RESOURCE_MANA;
+  }
 
   std::string default_potion() const override
   {
@@ -110,90 +179,26 @@ struct druid_t final : public parse_player_effects_t
   }
 };
 
-// DRUID MODULE INTERFACE ===================================================
-struct druid_module_t final : public module_t
+void druid_t::reset()
 {
-  druid_module_t() : module_t( DRUID )
-  {
-  }
+  parse_player_effects_t::reset();
 
-  player_t* create_player( sim_t* sim, std::string_view name, race_e r = RACE_NONE ) const override
-  {
-    auto p = new druid_t( sim, name, r );
-    return p;
-  }
+  form = CASTER_FORM;
 
-  bool valid() const override
-  {
-    return true;
-  }
-
-  void register_hotfixes() const override
-  {
-  }
-
-  void register_actor_initializers( sim_t* ) const override
-  {
-  }
-};
-
-template <class Base>
-struct druid_action_t : public parse_action_effects_t<Base>
-{
-  using action_base_t = parse_action_effects_t<Base>;
-  using base_t        = druid_action_t<Base>;
-
-  template <typename... Args>
-  druid_action_t( std::string_view n, druid_t* p, const spell_data_t* s = spell_data_t::nil() )
-    : action_base_t( n, p, s )
-  {
-    if ( this->data().ok() )
-    {
-      p->apply_action_effects( this );
-    }
-  }
-
-  druid_t* p()
-  {
-    return debug_cast<druid_t*>( this->player );
-  }
-
-  const druid_t* p() const
-  {
-    return debug_cast<const druid_t*>( this->player );
-  }
-
-  void execute() override
-  {
-    action_base_t::execute();
-
-    if ( this->data().affected_by( this->p()->buff.clearcasting->data() ) )
-    {
-      this->p()->buff.clearcasting->expire();
-    }
-  }
-
-  void impact( action_state_t* s ) override
-  {
-    action_base_t::impact( s );
-
-    // Nature's Grace: non-periodic spell criticals. impact() is only the direct component, ticks go through tick()
-    if constexpr ( std::is_base_of_v<spell_t, Base> )
-    {
-      if ( s->result == RESULT_CRIT && this->spell_power_mod.direct > 0 )
-        this->p()->buff.natures_grace->trigger();
-    }
-  }
-};
-
-using druid_spell_t        = druid_action_t<spell_t>;
-using druid_melee_attack_t = druid_action_t<melee_attack_t>;
+  if ( combo_target )
+    get_target_data( combo_target )->combo_points = 0;
+  combo_target = nullptr;
+}
 
 void druid_t::init_base_stats()
 {
-  parse_player_effects_t::init_base_stats();
 
-  // TODO: plug in baseline stats (see sc_priest::init_base_stats)
+  base.attack_power_per_strength = 2.0;
+  base.stats.attack_power        = -20.0;
+  base.attack_crit_chance = get_passive_player_value( .0074, "attack_crit" );
+  base.spell_crit_chance  = get_passive_player_value( .018, "spell_crit" );
+
+  parse_player_effects_t::init_base_stats();
 }
 
 void druid_t::init_spells()
@@ -217,6 +222,18 @@ void druid_t::init_spells()
     parse_passive_effects( talent.moonkin_form, true );
   }
 
+  rank.cat_form = {
+      this,
+      spell_container_t().set_spell( 768 ).set_buff( 3025 ),
+  };
+  rank.claw = {
+      this,
+      spell_container_t().set_spell( 1082 ),
+      spell_container_t().set_spell( 3029 ),
+      spell_container_t().set_spell( 5201 ),
+      spell_container_t().set_spell( 9849 ),
+      spell_container_t().set_spell( 9850 ),
+  };
   rank.entangling_roots = {
       this,
       spell_container_t().set_spell( 339 ),  // 19975 is also a rank 1 spell id, it is used by nature's grasp
@@ -252,6 +269,16 @@ void druid_t::init_spells()
       spell_container_t().set_spell( 24976 ),
       spell_container_t().set_spell( 24977 ),
   };
+  rank.mark_of_the_wild = {
+      this,
+      spell_container_t().set_spell( 1126 ),
+      spell_container_t().set_spell( 5232 ),
+      spell_container_t().set_spell( 6756 ),
+      spell_container_t().set_spell( 5234 ),
+      spell_container_t().set_spell( 8907 ),
+      spell_container_t().set_spell( 9884 ),
+      spell_container_t().set_spell( 9885 ),
+  };
   rank.moonfire = {
       this,
       spell_container_t().set_spell( 8921 ),
@@ -268,6 +295,43 @@ void druid_t::init_spells()
   rank.omen_of_clarity = {
       this,
       spell_container_t().set_spell( 16864 ).set_buff( 16870 ),
+  };
+  rank.prowl = {
+      this,
+      spell_container_t().set_spell( 5215 ),
+      spell_container_t().set_spell( 6783 ),
+      spell_container_t().set_spell( 9913 ),
+  };
+  rank.rake = {
+      this,
+      spell_container_t().set_spell( 1822 ),
+      spell_container_t().set_spell( 1823 ),
+      spell_container_t().set_spell( 1824 ),
+      spell_container_t().set_spell( 9904 ),
+  };
+  rank.ravage = {
+      this,
+      spell_container_t().set_spell( 6785 ),
+      spell_container_t().set_spell( 6787 ),
+      spell_container_t().set_spell( 9866 ),
+      spell_container_t().set_spell( 9867 ),
+  };
+  rank.rip = {
+      this,
+      spell_container_t().set_spell( 1079 ),
+      spell_container_t().set_spell( 9492 ),
+      spell_container_t().set_spell( 9493 ),
+      spell_container_t().set_spell( 9752 ),
+      spell_container_t().set_spell( 9894 ),
+      spell_container_t().set_spell( 9896 ),
+  };
+  rank.shred = {
+      this,
+      spell_container_t().set_spell( 5221 ),
+      spell_container_t().set_spell( 6800 ),
+      spell_container_t().set_spell( 8992 ),
+      spell_container_t().set_spell( 9829 ),
+      spell_container_t().set_spell( 9830 ),
   };
   rank.starfire = {
       this,
@@ -292,9 +356,276 @@ void druid_t::init_spells()
   };
 }
 
+// DRUID MODULE INTERFACE ===================================================
+struct druid_module_t final : public module_t
+{
+  druid_module_t() : module_t( DRUID )
+  {
+  }
+
+  player_t* create_player( sim_t* sim, std::string_view name, race_e r = RACE_NONE ) const override
+  {
+    auto p = new druid_t( sim, name, r );
+    return p;
+  }
+
+  bool valid() const override
+  {
+    return true;
+  }
+
+  void register_hotfixes() const override
+  {
+  }
+
+  void register_actor_initializers( sim_t* ) const override
+  {
+  }
+};
+
+template <class Base>
+struct druid_action_t : public parse_action_effects_t<Base>
+{
+  using action_base_t = parse_action_effects_t<Base>;
+  using base_t        = druid_action_t<Base>;
+
+  unsigned form_mask = 0;
+
+  template <typename... Args>
+  druid_action_t( std::string_view n, druid_t* p, const spell_data_t* s = spell_data_t::nil() )
+    : action_base_t( n, p, s )
+  {
+    form_mask = this->data().stance_mask();
+
+    if ( this->data().ok() )
+    {
+      p->apply_action_effects( this );
+    }
+  }
+
+  druid_t* p()
+  {
+    return debug_cast<druid_t*>( this->player );
+  }
+
+  const druid_t* p() const
+  {
+    return debug_cast<const druid_t*>( this->player );
+  }
+
+  bool ready() override
+  {
+    if ( !form_mask || ( form_mask & p()->form ) == p()->form )
+    {
+      return action_base_t::ready();
+    }
+    if ( this->sim->debug )
+    {
+      this->sim->print_debug( "{} ready() failed due to wrong form. form={:#010x} form_mask={:#010x}", this->name(),
+                              static_cast<unsigned>( this->p()->form ), form_mask );
+    }
+    return false;
+  }
+
+  double gain_energize_resource( resource_e resource_type, double amount, gain_t* g ) override
+  {
+    if ( resource_type == RESOURCE_COMBO_POINT )
+    {
+      this->p()->gain_combo_points( this->target, static_cast<int>( amount ), g );
+    }
+
+    return action_base_t::gain_energize_resource( resource_type, amount, g );
+  }
+
+  std::unique_ptr<expr_t> create_expression( util::string_view name ) override
+  {
+    if ( name == "combo_points" )
+      return make_fn_expr( name, [ this ]() { return this->p()->combo_points( this->target ); } );
+
+    return action_base_t::create_expression( name );
+  }
+
+  void execute() override
+  {
+    action_base_t::execute();
+
+    if ( !this->data().flags( SX_NO_STEALTH_BREAK ) )
+      this->p()->buff.prowl->expire();
+
+    if ( this->data().affected_by( this->p()->buff.clearcasting->data() ) )
+    {
+      this->p()->buff.clearcasting->expire();
+    }
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    action_base_t::impact( s );
+
+    // Nature's Grace: non-periodic spell criticals. impact() is only the direct component, ticks go through tick()
+    if constexpr ( std::is_base_of_v<spell_t, Base> )
+    {
+      if ( s->result == RESULT_CRIT && this->spell_power_mod.direct > 0 )
+        this->p()->buff.natures_grace->trigger();
+    }
+  }
+};
+
+using druid_spell_t        = druid_action_t<spell_t>;
+using druid_melee_attack_t = druid_action_t<melee_attack_t>;
+
 // ==========================================================================
 // Druid Spells
 // ==========================================================================
+struct druid_form_t : public druid_spell_t
+{
+  druid_form_t( std::string_view n, druid_t* player, const spell_data_t* s, form_e f, std::string_view options_str )
+    : druid_spell_t( n, player, s ), form( f )
+  {
+    parse_options( options_str );
+    harmful = false;
+
+    // Castable from every form except itself
+    form_mask = ANY_FORM & ~form;
+  }
+
+  void execute() override
+  {
+    druid_spell_t::execute();
+
+    shapeshift();
+  }
+
+protected:
+  form_e form;
+
+  buff_t* get_form_buff( form_e f ) const
+  {
+    switch ( f )
+    {
+      case CAT_FORM:
+        return p()->buff.cat_form;
+      case MOONKIN_FORM:
+        return p()->buff.moonkin_form;
+      default:
+        return nullptr;
+    }
+  }
+
+  action_t* get_form_mh_attack( form_e f ) const
+  {
+    switch ( f )
+    {
+      case CAT_FORM:
+        return p()->background_actions.cat_melee;
+      case MOONKIN_FORM:
+      case CASTER_FORM:
+        return p()->background_actions.mainhand_melee;
+      default:
+        return nullptr;
+    }
+  }
+
+  action_t* get_form_oh_attack( form_e f ) const
+  {
+    switch ( f )
+    {
+      case MOONKIN_FORM:
+      case CASTER_FORM:
+        return p()->caster_form_offhand.type != WEAPON_NONE ? p()->background_actions.offhand_melee : nullptr;
+      default:
+        return nullptr;
+    }
+  }
+
+  weapon_t get_form_weapon( form_e f ) const
+  {
+    switch ( f )
+    {
+      case CAT_FORM:
+        return p()->cat_weapon;
+      default:
+        return p()->caster_form_weapon;
+    }
+  }
+
+  weapon_t get_form_offhand_weapon( form_e f ) const
+  {
+    switch ( f )
+    {
+      case CASTER_FORM:
+      case MOONKIN_FORM:
+        return p()->caster_form_offhand;
+      default:
+        return WEAPON_NONE;
+    }
+  }
+
+  void shapeshift()
+  {
+    auto old_form = p()->form;
+
+    if ( auto old_buff = get_form_buff( old_form ) )
+      old_buff->expire();
+
+    p()->form = form;
+
+    if ( auto new_buff = get_form_buff( form ) )
+      new_buff->trigger();
+
+    p()->main_hand_attack                   = static_cast<attack_t*>( get_form_mh_attack( form ) );
+    p()->off_hand_attack                    = static_cast<attack_t*>( get_form_oh_attack( form ) );
+    p()->equipped_weapons[ SLOT_MAIN_HAND ] = get_form_weapon( form );
+    p()->equipped_weapons[ SLOT_OFF_HAND ]  = get_form_offhand_weapon( form );
+  }
+};
+
+struct cat_form_t : public druid_form_t
+{
+  cat_form_t( druid_t* player, std::string_view options_str )
+    : druid_form_t( "cat_form", player, player->rank.cat_form.find_rank()->spell(), CAT_FORM, options_str )
+  {
+  }
+};
+
+struct moonkin_form_t : public druid_form_t
+{
+  moonkin_form_t( druid_t* player, std::string_view options_str )
+    : druid_form_t( "moonkin_form", player, player->talent.moonkin_form, MOONKIN_FORM, options_str )
+  {
+  }
+};
+
+// Flags the druid as stealthed so openers can be modeled from stealth. Only castable out of combat in cat form.
+// TODO: stealth level (effect 1), movement speed reduction (effect 2), Feral Instinct, and the 10s cooldown starting on
+// stealth break instead of on cast
+struct prowl_t : public druid_spell_t
+{
+  prowl_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "prowl", player, player->rank.prowl.find_rank()->spell() )
+  {
+    parse_options( options_str );
+    harmful        = false;
+    use_off_gcd = true;
+
+  }
+
+  bool ready() override
+  {
+    if ( p()->buff.prowl->check() )
+      return false;
+
+    return druid_spell_t::ready();
+  }
+
+  void execute() override
+  {
+    druid_spell_t::execute();
+
+    p()->buff.prowl->trigger();
+  }
+};
+
 struct wrath_t : public druid_spell_t
 {
   wrath_t( druid_t* player, std::string_view options_str )
@@ -436,6 +767,33 @@ struct faerie_fire_t : public druid_spell_t
     : druid_spell_t( "faerie_fire", player, player->rank.faerie_fire.find_rank()->spell() )
   {
     parse_options( options_str );
+
+    if ( p()->buff.cat_form->data().ok() )
+    {
+      // TODO see about putting flat cdr effects in core
+      cat_cooldown = timespan_t::from_millis( p()->buff.cat_form->data().effectN( 4 ).base_value() );
+      cat_gcd_mod  = timespan_t::from_millis( p()->buff.cat_form->data().effectN( 5 ).base_value() );
+    }
+
+  }
+
+  timespan_t gcd() const override
+  {
+    auto g = druid_spell_t::gcd();
+
+    if ( p()->buff.cat_form->check() )
+      g -= cat_gcd_mod;
+
+    return g;
+  }
+
+  // Faerie Fire has no cooldown of its own, so cooldown_t::start ignores a default duration. Pass it explicitly.
+  void update_ready( timespan_t cd = timespan_t::min() ) override
+  {
+    if ( cat_cooldown > 0_ms && p()->buff.cat_form->check() )
+      cd = cat_cooldown;
+
+    druid_spell_t::update_ready( cd );
   }
 
   void impact( action_state_t* s ) override
@@ -443,6 +801,27 @@ struct faerie_fire_t : public druid_spell_t
     druid_spell_t::impact( s );
 
     p()->get_target_data( s->target )->debuff.faerie_fire->trigger();
+  }
+
+private:
+  timespan_t cat_cooldown = 0_ms;
+  timespan_t cat_gcd_mod  = 0_ms;
+};
+
+struct mark_of_the_wild_t : public druid_spell_t
+{
+  mark_of_the_wild_t( druid_t* player, std::string_view options_str )
+    : druid_spell_t( "mark_of_the_wild", player, player->rank.mark_of_the_wild.find_rank()->spell() )
+  {
+    parse_options( options_str );
+    harmful = false;
+  }
+
+  void execute() override
+  {
+    druid_spell_t::execute();
+
+    p()->buff.mark_of_the_wild->trigger();
   }
 };
 
@@ -465,29 +844,118 @@ struct innervate_t : public druid_spell_t
   }
 };
 
-struct moonkin_form_t : public druid_spell_t
+// ==========================================================================
+// Druid Attacks
+// ==========================================================================
+struct shred_t : public druid_melee_attack_t
 {
-  moonkin_form_t( druid_t* player, std::string_view options_str )
-    : druid_spell_t( "moonkin_form", player, player->talent.moonkin_form )
+  shred_t( druid_t* player, std::string_view options_str )
+    : druid_melee_attack_t( "shred", player, player->rank.shred.find_rank()->spell() )
   {
     parse_options( options_str );
-    harmful = false;
+
+    // TODO get a log or level to 20 and see how the refund on miss works + the weapon scaling
+  }
+};
+
+struct claw_t : public druid_melee_attack_t
+{
+  claw_t( druid_t* player, std::string_view options_str )
+    : druid_melee_attack_t( "claw", player, player->rank.claw.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+};
+
+struct ravage_t : public druid_melee_attack_t
+{
+  ravage_t( druid_t* player, std::string_view options_str )
+    : druid_melee_attack_t( "ravage", player, player->rank.ravage.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+
+  bool ready() override
+  {
+    if ( !p()->buff.prowl->check() )
+      return false;
+
+    return druid_melee_attack_t::ready();
+  }
+};
+
+struct rake_t : public druid_melee_attack_t
+{
+  rake_t( druid_t* player, std::string_view options_str )
+    : druid_melee_attack_t( "rake", player, player->rank.rake.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    attack_power_mod.direct = 0.065;
+    attack_power_mod.tick   = 0.065;
+  }
+};
+
+struct druid_combo_attack_t : public druid_melee_attack_t
+{
+  druid_combo_attack_t( std::string_view n, druid_t* player, const spell_data_t* s )
+    : druid_melee_attack_t( n, player, s )
+  {
+  }
+
+  bool ready() override
+  {
+    if ( p()->combo_points( target ) < 1 )
+      return false;
+
+    return druid_melee_attack_t::ready();
   }
 
   void execute() override
   {
-    druid_spell_t::execute();
-    p()->buff.moonkin_aura->trigger();
+    combo_points = p()->combo_points( target );
+
+    druid_melee_attack_t::execute();
+
+    p()->spend_combo_points( target, gain );
+  }
+
+protected:
+  int combo_points = 0;
+};
+
+struct rip_t : public druid_combo_attack_t
+{
+  rip_t( druid_t* player, std::string_view options_str )
+
+    : druid_combo_attack_t( "rip", player, player->rank.rip.find_rank()->spell() )
+
+  {
+    parse_options( options_str );
+
+    // TODO confirm refresh behavior
+  }
+
+  double base_ta( const action_state_t* s ) const override
+  {
+    return druid_combo_attack_t::base_ta( s ) + combo_points * data().effectN( 1 ).pp_combo_points();
+  }
+
+  // Per a community source: the total AP scaling is 6% per combo point, capped at 24% (4 combo points).
+  double attack_tick_power_coefficient( const action_state_t* ) const override
+  {
+    constexpr double ap_per_combo_point = 0.06;
+    constexpr int max_scaling_points    = 4;
+
+    auto const base_ticks = data().duration() / data().effectN( 1 ).period();
+
+    return ap_per_combo_point * std::min( combo_points, max_scaling_points ) / base_ticks;
   }
 };
 
-// ==========================================================================
-// Druid Attacks
-// ==========================================================================
 struct druid_melee_t : public druid_melee_attack_t
 {
-  druid_melee_t( std::string_view name, druid_t* player, weapon_t* w )
-    : druid_melee_attack_t( name, player, spell_data_t::nil() )
+  druid_melee_t( std::string_view name, druid_t* p ) : druid_melee_attack_t( name, p, spell_data_t::nil() )
   {
     weapon_multiplier = 1.0;
     school            = SCHOOL_PHYSICAL;
@@ -497,6 +965,43 @@ struct druid_melee_t : public druid_melee_attack_t
     may_glance = may_crit = may_dodge = may_parry = true;
     special                                       = false;
   }
+};
+
+struct cat_melee_t : public druid_melee_attack_t
+{
+  cat_melee_t( std::string_view name, druid_t* p ) : druid_melee_attack_t( name, p, spell_data_t::nil() )
+  {
+    form_mask = form_e::CAT_FORM;
+
+    weapon_multiplier = 1.0;
+    school            = SCHOOL_PHYSICAL;
+    trigger_gcd       = 0_ms;
+
+    background = repeating = allow_class_ability_procs = not_a_proc = true;
+    may_glance = may_crit = may_dodge = may_parry = true;
+    special                                       = false;
+
+    // Speculative implementation via notes from the druid discord
+    // https://discord.com/channels/253205420225724416/1548424199184588931/1552873876537737236
+    double const swing_time_ms = 1000.0;
+    double const variance      = 0.4 / 2;  // TODO this can be driven by SpellShapeshiftForm.db2
+    double const high_variance = 1.0 + variance / 2.0;
+    double const low_variance  = 1.0 - variance / 2.0;
+    double const base_damage   = p->equipped_weapons[ SLOT_MAIN_HAND ].dps * swing_time_ms * 0.001;
+
+    auto const top_damage = std::max( 1.0, util::ceil( base_damage * high_variance ) );
+    auto const low_damage = std::max( 1.0, util::floor( base_damage * low_variance ) );
+        
+
+    p->cat_weapon            = weapon_t( WEAPON_FIST, ( 1 + 1 ) / 2, timespan_t::from_millis( swing_time_ms ) );
+    p->cat_weapon.slot       = SLOT_MAIN_HAND;
+    p->cat_weapon.min_dmg    = low_damage;
+    p->cat_weapon.max_dmg    = top_damage;
+    p->cat_weapon.swing_time = timespan_t::from_millis( swing_time_ms );
+
+    weapon            = &p->cat_weapon;
+    base_execute_time = p->cat_weapon.swing_time;
+  };
 };
 
 struct auto_attack_t : public druid_melee_attack_t
@@ -509,15 +1014,17 @@ struct auto_attack_t : public druid_melee_attack_t
 
     assert( p->equipped_weapons[ SLOT_MAIN_HAND ].type != WEAPON_NONE );
 
-    p->main_hand_attack         = new druid_melee_t( "auto_attack_mh", p, &p->equipped_weapons[ SLOT_MAIN_HAND ] );
-    p->main_hand_attack->weapon = &p->equipped_weapons[ SLOT_MAIN_HAND ];
+    p->main_hand_attack                    = static_cast<attack_t*>( p->background_actions.mainhand_melee );
+    p->main_hand_attack->weapon            = &p->equipped_weapons[ SLOT_MAIN_HAND ];
     p->main_hand_attack->base_execute_time = p->equipped_weapons[ SLOT_MAIN_HAND ].swing_time;
+    p->caster_form_weapon                  = p->equipped_weapons[ SLOT_MAIN_HAND ];
 
     if ( p->equipped_weapons[ SLOT_OFF_HAND ].type != WEAPON_NONE )
     {
-      p->off_hand_attack         = new druid_melee_t( "auto_attack_oh", p, &p->equipped_weapons[ SLOT_OFF_HAND ] );
-      p->off_hand_attack->weapon = &p->equipped_weapons[ SLOT_OFF_HAND ];
+      p->off_hand_attack                    = static_cast<attack_t*>( p->background_actions.offhand_melee );
+      p->off_hand_attack->weapon            = &p->equipped_weapons[ SLOT_OFF_HAND ];
       p->off_hand_attack->base_execute_time = p->equipped_weapons[ SLOT_OFF_HAND ].swing_time;
+      p->caster_form_offhand                = p->equipped_weapons[ SLOT_OFF_HAND ];
     }
   }
 
@@ -540,6 +1047,52 @@ struct auto_attack_t : public druid_melee_attack_t
   }
 };
 
+int druid_t::combo_points( player_t* t ) const
+{
+  return t ? get_target_data( t )->combo_points : 0;
+}
+
+void druid_t::gain_combo_points( player_t* t, int amount, gain_t* )
+{
+  if ( combo_target && combo_target != t )
+  {
+    auto old_td = get_target_data( combo_target );
+    sim->print_log( "{} loses {} combo_points on {}", *this, old_td->combo_points, *combo_target );
+    resource_loss( RESOURCE_COMBO_POINT, old_td->combo_points, get_gain( "combo_points_lost" ) );
+    old_td->combo_points = 0;
+  }
+
+  combo_target = t;
+
+  auto td      = get_target_data( t );
+  td->combo_points = std::min( td->combo_points + amount, max_combo_points );
+}
+
+void druid_t::spend_combo_points( player_t* t, gain_t* g )
+{
+  auto td = get_target_data( t );
+
+  sim->print_log( "{} spends {} combo_points on {}", *this, td->combo_points, *t );
+
+  resource_loss( RESOURCE_COMBO_POINT, td->combo_points, g );
+  td->combo_points = 0;
+}
+
+std::unique_ptr<expr_t> druid_t::create_expression( util::string_view name )
+{
+  if ( name == "combo_points" )
+    return make_fn_expr( name, [ this ]() { return combo_points( target ); } );
+
+  return parse_player_effects_t::create_expression( name );
+}
+
+double druid_t::resource_loss( resource_e resource_type, double amount, gain_t* g, action_t* a )
+{
+  if ( resource_type == RESOURCE_ENERGY && buff.poised->check() && a && a->data().affected_by( buff.poised->data() ) )
+    buff.poised->expire();
+  return parse_player_effects_t::resource_loss( resource_type, amount, g, a );
+}
+
 action_t* druid_t::create_action( std::string_view name, std::string_view options_str )
 {
   if ( name == "auto_attack" )
@@ -558,10 +1111,26 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new hurricane_t( this, options_str );
   if ( name == "faerie_fire" )
     return new faerie_fire_t( this, options_str );
+  if ( name == "mark_of_the_wild" )
+    return new mark_of_the_wild_t( this, options_str );
   if ( name == "innervate" )
     return new innervate_t( this, options_str );
   if ( name == "moonkin_form" )
     return new moonkin_form_t( this, options_str );
+  if ( name == "cat_form" )
+    return new cat_form_t( this, options_str );
+  if ( name == "prowl" )
+    return new prowl_t( this, options_str );
+  if ( name == "claw" )
+    return new claw_t( this, options_str );
+  if ( name == "ravage" )
+    return new ravage_t( this, options_str );
+  if ( name == "rake" )
+    return new rake_t( this, options_str );
+  if ( name == "rip" )
+    return new rip_t( this, options_str );
+  if ( name == "shred" )
+    return new shred_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
 }
@@ -610,6 +1179,12 @@ void druid_t::create_buffs()
   auto const innervate_buff = rank.innervate.find_rank()->spell();
   buff.innervate            = make_buff_fallback( innervate_buff->ok(), this, "innervate", innervate_buff );
 
+  auto const mark_of_the_wild_spell = rank.mark_of_the_wild.find_rank()->spell();
+  auto const mark_of_the_wild_buff = debug_cast<stat_buff_t*>(
+      make_buff_fallback<stat_buff_t>( mark_of_the_wild_spell->ok(), this, "mark_of_the_wild", mark_of_the_wild_spell ) );
+
+  buff.mark_of_the_wild = mark_of_the_wild_buff;
+
   auto const omen_of_clarity_buff = rank.omen_of_clarity.find_rank()->buff();
   buff.clearcasting = make_buff_fallback( omen_of_clarity_buff->ok(), this, "clearcasting", omen_of_clarity_buff );
 
@@ -621,10 +1196,30 @@ void druid_t::create_buffs()
   auto const eclipse_buff = find_spell( 408255 );
   buff.eclipse            = make_buff_fallback( talent.eclipse->ok(), this, "eclipse", eclipse_buff );
 
+  auto const cat_form_spell = rank.cat_form.find_rank()->buff();
+  buff.cat_form             = make_buff_fallback<stat_buff_t>( cat_form_spell->ok(), this, "cat_form", cat_form_spell )
+                                  ->set_stack_change_callback( [ this ]( buff_t*, int, int new_ ) {
+                        current.attack_power_per_agility = new_ ? 1.0 : base.attack_power_per_agility;
+                        invalidate_cache( CACHE_ATTACK_POWER );
+                                  } );
+
+  auto const prowl_spell = rank.prowl.find_rank()->spell();
+  buff.prowl             = make_buff_fallback( prowl_spell->ok(), this, "prowl", prowl_spell );
+
+  auto const poised_passive = find_spell( 1328829 );
+  auto const poised_buff    = find_spell( 1328827 );
+  buff.poised = make_buff_fallback( poised_passive->ok() && true_level >= static_cast<int>( poised_passive->level() ), this, "poised",
+                                    poised_buff );
+  register_precombat_begin( buff.poised );
+
+  buff.moonkin_form =
+      make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_form", talent.moonkin_form )
+          ->set_period( 0_ms )
+          ->set_expire_callback( [ this ]( buff_t*, int, timespan_t ) { buff.moonkin_aura->expire(); } )
+          ->set_stack_change_callback( [ this ]( buff_t*, int, int ) { buff.moonkin_aura->trigger(); } );
+
   buff.moonkin_aura =
-      make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() )
-          ->set_default_value_from_effect( 1, .01 )
-          ->set_pct_buff_type_from_effect( 1 );
+      make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() );
 };
 
 void druid_t::init_special_effects()
@@ -661,6 +1256,7 @@ void druid_t::parse_player_effects()
   parse_effects( buff.innervate );
   parse_effects( buff.moonkin_aura );
   parse_effects( buff.natures_grace );  // buffs spell haste and gcd, confirm the double dip on gcd speed
+  parse_effects( buff.cat_form );
 };
 
 void druid_t::apply_action_effects( action_t* a )
@@ -670,6 +1266,17 @@ void druid_t::apply_action_effects( action_t* a )
 
   action->parse_effects( buff.clearcasting );
   action->parse_effects( buff.natures_grace );
+  action->parse_effects( buff.cat_form );
+  action->parse_effects( buff.poised ); 
+}
+
+void druid_t::create_actions()
+{
+  background_actions.mainhand_melee = get_action<druid_melee_t>( "auto_attack_mh", this );
+  background_actions.offhand_melee  = get_action<druid_melee_t>( "auto_attack_oh", this );
+  background_actions.cat_melee      = get_action<cat_melee_t>( "paw_attack", this );
+
+  parse_player_effects_t::create_actions();
 }
 
 }  // UNNAMED NAMESPACE

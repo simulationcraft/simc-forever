@@ -939,6 +939,8 @@ protected:
   {
     assert( cached );
 
+    if ( this == not_found() )
+      return spell_data_t::not_found();
     if ( std::invoke( id_field, this ) == 0 )
       return spell_data_t::nil();
     if ( auto spell = std::invoke( data_field, this ); spell && spell->ok() )
@@ -961,6 +963,7 @@ public:
   bool empty() { return !( spell_id || driver_id || attack_id || passive_id || aura_id || buff_id || talent_id || debuff_id ); }
   void cache_data( const player_t* player );
   static const spell_container_t* nil();
+  static const spell_container_t* not_found();
 
   const spell_data_t* spell() const   { return get_spell_data( &spell_container_t::spell_id,   &spell_container_t::_spell );   }
   const spell_data_t* driver() const  { return get_spell_data( &spell_container_t::driver_id,  &spell_container_t::_driver );  }
@@ -982,6 +985,8 @@ struct spell_container_nil_t : public spell_container_t
 };
 inline constexpr spell_container_nil_t spell_container_nil_v {};
 inline const spell_container_t* spell_container_t::nil() { return &spell_container_nil_v; }
+inline constexpr spell_container_nil_t spell_container_not_found_v {};
+inline const spell_container_t* spell_container_t::not_found() { return &spell_container_not_found_v; }
 
 enum spell_rank_e : int
 {
@@ -1024,7 +1029,7 @@ struct spell_ranks_t
   spell_ranks_t( player_t* player, T& validate, Pack&&... pack )
     : player( player ),
       ranks{ std::forward<Pack>( pack )... },
-      validate_fn( [ validate ](){ return std::invoke( &T::ok, validate ); } )
+      validate_fn( [ &validate ](){ return std::invoke( &T::ok, validate ); } )
   {}
 
   virtual ~spell_ranks_t() = default;

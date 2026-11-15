@@ -4658,7 +4658,7 @@ double player_t::composite_melee_hit() const
 {
   double ah = current.hit;
 
-  // ah += composite_melee_hit_rating() / current.rating.attack_hit;
+  ah += composite_melee_hit_rating() / current.rating.attack_hit;
 
   return ah;
 }
@@ -4924,8 +4924,9 @@ double player_t::composite_spell_hit() const
 {
   double sh = current.spell_hit;
 
-  // sh += composite_spell_hit_rating() / current.rating.spell_hit;
-    return sh;
+  sh += composite_spell_hit_rating() / current.rating.spell_hit;
+
+  return sh;
 }
 
 double player_t::composite_bonus_armor() const
