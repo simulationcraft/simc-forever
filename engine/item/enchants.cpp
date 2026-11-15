@@ -290,6 +290,10 @@ bool enchant::passive_enchant( item_t& item, unsigned spell_id )
       case A_MOD_RATING:
         stat = util::translate_rating_mod( effect.misc_value1() );
         break;
+      case A_MOD_DAMAGE_DONE:
+        if ( effect.misc_value1() & 0x7E )
+          stat = STAT_SPELL_POWER;
+        break;
       // Clump all movement speed enchants additively into "passive_movement_speed"
       case A_MOD_SPEED_ALWAYS:
         item.player->base.stacking_movement_speed_modifier += effect.percent();
