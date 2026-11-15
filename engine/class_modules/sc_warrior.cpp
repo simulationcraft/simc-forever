@@ -177,6 +177,7 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* intimidating_shout_fear  = spell_data_t::nil();
     const spell_data_t* overpower_available      = spell_data_t::nil();
     const spell_data_t* retaliation              = spell_data_t::nil();
+    const spell_data_t* retaliation_attack       = spell_data_t::nil();
     const spell_data_t* shield_block             = spell_data_t::nil();
     const spell_data_t* sunder_armor             = spell_data_t::nil();
     const spell_data_t* thunder_clap             = spell_data_t::nil();
@@ -797,23 +798,17 @@ struct victory_rush_t : public warrior_attack_t
   }
 };
 
-// TODO: Use spell 20240 if it becomes available in the client data. It is the historical
-// hidden Retaliation damage spell, but it is absent from the current 70707 spell data.
 struct retaliation_attack_t : public warrior_attack_t
 {
   retaliation_attack_t( warrior_t* player ) :
-    warrior_attack_t( "retaliation_attack", player, spell_data_t::nil() )
+    warrior_attack_t( "retaliation_attack", player, player->spell.retaliation_attack )
   {
-    weapon            = &player->equipped_weapons[ SLOT_MAIN_HAND ];
-    weapon_multiplier = 1.0;
-    school            = SCHOOL_PHYSICAL;
-    trigger_gcd       = 0_ms;
-
-    background = true;
-    may_crit   = true;
-    may_dodge  = true;
-    may_parry  = true;
-    special    = true;
+    background  = true;
+    trigger_gcd = 0_ms;
+    may_crit    = true;
+    may_dodge   = true;
+    may_parry   = true;
+    special     = true;
   }
 };
 
@@ -1389,6 +1384,7 @@ void warrior_t::init_spells()
   spell.intimidating_shout_fear  = find_spell( 20511 );
   spell.overpower_available      = find_spell( 1282733 );
   spell.retaliation              = rank.retaliation.find_rank()->spell();
+  spell.retaliation_attack       = find_spell( 20240 );
   spell.shield_block             = rank.shield_block.find_rank()->spell();
   spell.sunder_armor             = rank.sunder_armor.find_rank()->spell();
   spell.thunder_clap             = rank.thunder_clap.find_rank()->spell();
@@ -1545,7 +1541,8 @@ void warrior_t::assess_damage( school_e school, result_amount_type type, action_
     buff.shield_block->decrement();
 
   if ( buff.retaliation->check() && s->action && s->action->player != this &&
-       s->action->type == ACTION_ATTACK && s->action->school == SCHOOL_PHYSICAL )
+       s->action->type == ACTION_ATTACK && s->action->school == SCHOOL_PHYSICAL &&
+       action_t::result_is_hit( s->result ) )
   {
     active.retaliation->execute_on_target( s->action->player );
     buff.retaliation->decrement();
