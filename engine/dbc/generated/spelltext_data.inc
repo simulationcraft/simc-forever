@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70938
-static constexpr std::array<spelltext_data_t, 8740> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8741> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8475,6 +8475,7 @@ static constexpr std::array<spelltext_data_t, 8740> __spelltext_data { {
   { 1314103, "When Seal of Fury's shield is fully absorbed, restore $m1 Mana, increased by $m2% per level the attacker is above you, up to ${$m2*$m3}%.", 0, 0 },
   { 1314120, "Right Click to summon and dismiss your condor hatchling.", 0, 0 },
   { 1314143, "$@spelldesc16939", 0, 0 },
+  { 1314274, "Unleash a shadow bolt volley at all nearby targets, inflicting $s1 damage to each enemy struck.", 0, 0 },
   { 1314305, "Puncture the target, inflicting $s1 Physical damage.", 0, 0 },
   { 1314364, "Summons a swarm of spiders that will protect you for $d.", 0, "Summon" },
   { 1314412, "Absorbs $s1 Fire damage, healing for all damage absorbed.", "Absorbs $w1 Fire damage, healing for all damage absorbed.", 0 },

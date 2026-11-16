@@ -15456,7 +15456,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15453] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.70938
 
-static const std::array<dbc_item_data_t, 13186> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13187> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -28295,6 +28295,7 @@ static const std::array<dbc_item_data_t, 13186> __item_data_chunk0 { {
   { "Gnawed Bone", 282654, 0x00000000, 0x00000004, 0x00, 26, 21, 0, 0, 2, 23, 4, 0, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[14324], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bog Pickers", 282655, 0x00000000, 0x00000004, 0x00, 27, 22, 0, 0, 2, 10, 4, 1, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[14968], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Dragonmaw Battle Shroud", 282658, 0x00000000, 0x00000004, 0x00, 32, 27, 0, 0, 2, 16, 4, 1, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[14970], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Shadow Scalper", 282700, 0x00000000, 0x00000000, 0x00, 42, 37, 0, 0, 2, 13, 2, 0, 2, 2600, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Molok's Masher", 282702, 0x00000000, 0x00000004, 0x00, 41, 36, 0, 0, 2, 17, 2, 5, 2, 3700, 0.400000f, 0.000000f, &__item_stats_data[4], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Needletooth's Needletooth", 282703, 0x00000000, 0x00004000, 0x00, 37, 32, 0, 0, 2, 13, 2, 15, 2, 1700, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Shadow Council Apprentice's Mantle", 282704, 0x00000000, 0x00004004, 0x00, 41, 36, 0, 0, 3, 3, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[14972], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
