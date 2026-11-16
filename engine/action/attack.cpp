@@ -434,11 +434,6 @@ double melee_attack_t::parry_chance( double expertise, player_t* t ) const
 
 double melee_attack_t::glance_chance( int delta_level ) const
 {
-  // Classic-style glancing: 10% + 2% per point of target defense above the attacker's weapon skill, where defense is
-  // target level * 5 and weapon skill is capped at (and assumed to be) attacker level * 5. That works out to 10% vs an
-  // equal level target, +10% per level above, and no glancing blows vs lower level targets (40% vs a +3 boss).
-  // Matches the client's GetGlancingBlowChance (10/20/30/40% at capped skill, +2% per missing skill point).
-  // Tested by kflirik on 2026-11-12, build 1.60.1.70888.
   // TODO FOREVER: Account for weapon skill below the cap once it is modeled.
   return std::max( 0.0, 0.10 + 0.10 * delta_level );
 }

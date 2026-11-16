@@ -1573,10 +1573,6 @@ double action_t::calculate_direct_amount( action_state_t* state ) const
     if ( delta_skill < 0.0 )
       delta_skill = 0.0;
 
-    // Classic glancing damage range, with delta_skill being target defense minus attacker weapon skill (assumed to
-    // be at the level cap here). The average of the range matches the client's GetGlancingBlowPenalty: 5% penalty at
-    // 1 and 6 skill below, 19% at 11 and 39% at 16. The API only exposes the average, so the split into low and high
-    // end is taken from Classic. Tested by kflirik on 2026-11-12, build 1.60.1.70888.
     double max_glance = 1.2 - 0.03 * delta_skill;
 
     if ( max_glance > 0.99 )
