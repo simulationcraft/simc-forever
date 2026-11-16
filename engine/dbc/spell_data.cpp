@@ -347,6 +347,8 @@ double spelleffect_data_t::average( const player_t* p, unsigned level ) const
   }
   else if ( _real_ppl != 0 )
   {
+    level = std::max( level, _spell->level() );
+
     if ( _spell->max_level() > 0 )
       return _base_value + ( std::min( level, _spell->max_level() ) - _spell->level() ) * _real_ppl;
     else
@@ -504,6 +506,8 @@ double spelleffect_data_t::default_multiplier() const
   switch ( type() )
   {
     case E_APPLY_AURA:
+    case E_APPLY_AREA_AURA_PARTY:
+    case E_APPLY_AREA_AURA_RAID:
     case E_APPLY_AREA_AURA_OWNER:
     case E_APPLY_AURA_PET:
     case E_APPLY_AURA_PLAYER_AND_PET:

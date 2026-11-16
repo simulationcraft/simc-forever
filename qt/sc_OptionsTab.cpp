@@ -471,8 +471,6 @@ void SC_OptionsTab::createBuffsDebuffsTab()
   buffsButtonGroup->setExclusive( false );
 
   appendCheckBox( tr( "Toggle All Buffs" ), "", tr( "Toggle all buffs on/off" ), buffsLayout, buffsButtonGroup );
-  appendCheckBox( tr( "Bloodlust" ), "override.bloodlust", tr( "Ancient Hysteria\nBloodlust\nHeroism\nTime Warp" ),
-                  buffsLayout, buffsButtonGroup );
   appendCheckBox( tr( "Arcane Intellect" ), "override.arcane_intellect", tr( "Arcane Intellect" ), buffsLayout,
                   buffsButtonGroup );
   appendCheckBox( tr( "Power Word: Fortitude" ), "override.power_word_fortitude", tr( "Power Word: Fortitude" ),

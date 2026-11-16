@@ -215,26 +215,40 @@ struct sim_t : private sc_thread_t
     // Buff overrides
     int arcane_intellect;
     int battle_shout;
-    int blessing_of_the_bronze;
+    int blessing_of_kings;
+    int blessing_of_might;
+    int blessing_of_wisdom;
+    int divine_spirit;
+    int flametongue_totem;
+    int grace_of_air_totem;
+    int leader_of_the_pack;
     int mark_of_the_wild;
+    int moonkin_aura;
     int power_word_fortitude;
+    int strength_of_earth_totem;
+    int trueshot_aura;
+    int windfury_totem;
+
+    // Party buff overrides
+    int blood_pact;
+    int dark_inspiration;
+    int mana_spring_totem;
 
     // Debuff overrides
+    int curse_of_recklessness;
+    int curse_of_the_elements;
+    int faerie_fire;
+    int sunder_armor;
     int mortal_wounds;
     int bleeding;
 
     // Misc stuff needs resolving
-    int    bloodlust;
     std::vector<uint64_t> target_health;
   } overrides;
 
   struct auras_t
   {
     buff_t* fallback; // generic global fallback buff
-    buff_t* arcane_intellect;
-    buff_t* battle_shout;
-    buff_t* mark_of_the_wild;
-    buff_t* power_word_fortitude;
   } auras;
 
   // Auras and De-Buffs
@@ -268,8 +282,6 @@ struct sim_t : private sc_thread_t
   // Report all iterations in strict thread & iteration order with no sorting. Takes precedence over above 2 options.
   bool report_strict_iteration_data;
   int report_progress;
-  int bloodlust_percent;
-  timespan_t bloodlust_time;
   std::string reference_player_str;
   std::vector<player_t*> players_by_dps;
   std::vector<player_t*> players_by_priority_dps;

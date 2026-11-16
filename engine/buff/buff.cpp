@@ -1199,7 +1199,8 @@ buff_t* buff_t::set_period( timespan_t period )
     for ( size_t i = 1; i <= s_data->effect_count(); i++ )
     {
       const spelleffect_data_t& e = s_data->effectN( i );
-      if ( !e.ok() || ( e.type() != E_APPLY_AURA && e.type() != E_APPLY_AREA_AURA_PET ) )
+      if ( !e.ok() || ( e.type() != E_APPLY_AURA && e.type() != E_APPLY_AREA_AURA_PET &&
+                        e.type() != E_APPLY_AREA_AURA_PARTY && e.type() != E_APPLY_AREA_AURA_RAID ) )
         continue;
 
       switch ( e.subtype() )
@@ -3374,7 +3375,7 @@ stat_buff_t::stat_buff_t( actor_pair_t q, util::string_view name, const spell_da
     {
       s = STAT_SPELL_POWER;
     }
-    else if ( effect.subtype() == A_MOD_RESISTANCE )
+    else if ( effect.subtype() == A_MOD_RESISTANCE && ( effect.misc_value1() & SCHOOL_MASK_PHYSICAL ) )
     {
       s = STAT_BONUS_ARMOR;
     }
@@ -3503,6 +3504,26 @@ stat_buff_t* stat_buff_t::add_stat_from_effect( size_t i, double a, const stat_c
   else if ( eff.subtype() == A_MOD_ARMOR )
   {
     return add_stat( STAT_ARMOR, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_DAMAGE_DONE && ( eff.misc_value1() & 0x7E ) )
+  {
+    return add_stat( STAT_SPELL_POWER, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_RESISTANCE && ( eff.misc_value1() & SCHOOL_MASK_PHYSICAL ) )
+  {
+    return add_stat( STAT_BONUS_ARMOR, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_ATTACK_POWER )
+  {
+    return add_stat( STAT_ATTACK_POWER, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_RANGED_ATTACK_POWER )
+  {
+    return add_stat( STAT_RANGED_ATTACK_POWER, a, c );
+  }
+  else if ( eff.subtype() == A_MOD_BONUS_ARMOR )
+  {
+    return add_stat( STAT_BONUS_ARMOR, a, c );
   }
 
   return do_error( "STAT_NONE" );

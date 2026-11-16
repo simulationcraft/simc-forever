@@ -381,7 +381,7 @@ void priest_t::create_buffs()
 {
   parse_player_effects_t::create_buffs();
 
-  buff.dark_inspiration = make_buff( this, "dark_inspiration", spell.dark_inspiration )
+  buff.dark_inspiration = make_buff_fallback( !sim->overrides.dark_inspiration, this, "dark_inspiration", spell.dark_inspiration )
     ->set_default_value( talent.dark_inspiration->effectN( 1 ).percent() )
     ->add_invalidate( CACHE_SPIRIT );
 

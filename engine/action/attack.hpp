@@ -22,6 +22,7 @@ struct attack_t : public action_t
   attack_t( util::string_view token, player_t* p, const spell_data_t* s );
 
   // Attack Overrides
+  void init() override;
   double execute_time_pct_multiplier() const override;
   void execute() override;
   result_e calculate_result( action_state_t* ) const override;
