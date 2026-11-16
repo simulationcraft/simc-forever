@@ -3899,8 +3899,9 @@ Range            : 5 yards
 Duration         : 30 seconds
 Attributes       : Aura Is Debuff (26), Allow While Sitting (27), Unknown (493)
 Effects          :
-#1 (id=684162)   : Apply Aura (6) | Periodic Damage (3): nature every 5 seconds
+#1 (id=684162)   : Apply Aura (6) | Periodic Dummy (226): every 5 seconds
                    Base Value: 10 | Scaled Value: 10 | Target: Self (1)
+Hotfixed         : Sub Type (3 -> 226)
 Description      : Don't eat me.
 
 Name             : Party Fever (id=6758) 
@@ -33412,46 +33413,49 @@ Name             : Heroism (id=23682)
 School           : Holy
 Spell Type       : None
 Spell Level      : 50
-Proc Chance      : 101%
 Triggered By     : Heroism (23689)
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=701084)   : Direct Heal (10)
-                   Base Value: 150 | Scaled Value: 150 (delta=0.4) | Target: Self (1)
+                   Base Value: 198 | Scaled Value: 198 (delta=0.4) | Target: Self (1)
+Hotfixed         : Base Value (150 -> 198)
 Description      : Sometimes heals bearer of $s1 damage when attacking an enemy.
 
 Name             : Aura of the Blue Dragon (id=23684) 
+Hotfixed         : Proc Chance (100 -> 2), Description
 School           : Physical
 Spell Type       : None
 Duration         : 15 seconds
-Proc Chance      : 100%
+Proc Chance      : 2%
 Triggered By     : Aura of the Blue Dragon (23688)
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=700646)   : Apply Aura (6) | Attribute (29)
                    Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Stat: Spi | Target: Self (1)
-Description      : 2% chance on successful spellcast to increase your Spirit by $s1 for $d.
+Description      : $h% chance on successful spellcast to increase your Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Lightning Strike (id=23686) [Passive, Hidden] 
+Hotfixed         : Description
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60
-Duration         : Aura (infinite)
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Aura Icon (60), Unknown (493)
 Effects          :
 #1 (id=699862)   : Apply Aura (6) | Proc Trigger Spell (42): Lightning Strike
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 23687 | Target: Self (1)
-Description      : Chance to strike your melee target with lightning for $23687s1 Nature damage.
+#2 (id=1372164)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Chance to strike your melee target with lightning for $23687s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies.
 
 Name             : Lightning Strike (id=23687) 
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60
 Range            : 20 yards
-Proc Chance      : 101%
 Triggered By     : Lightning Strike (23686)
 Attributes       : Unknown (493)
 Effects          :
@@ -33460,28 +33464,29 @@ Effects          :
 Description      : Lightning Strike for $s1 Nature damage.
 
 Name             : Aura of the Blue Dragon (id=23688) [Passive, Hidden] 
+Hotfixed         : Proc Chance (2 -> 3), Description
 School           : Physical
 Spell Type       : None
-Proc Chance      : 2%
+Proc Chance      : 3%
 Proc Flags       : Magic Heal, Magic Hostile Spell
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=699570)   : Apply Aura (6) | Proc Trigger Spell (42): Aura of the Blue Dragon
                    Base Value: 100 | Scaled Value: 100 | Trigger Spell: 23684 | Target: Self (1)
-Description      : 2% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.
+Description      : $h% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.
 
 Name             : Heroism (id=23689) [Passive, Hidden] 
+Hotfixed         : Description
 School           : Holy
 Spell Type       : None
 Spell Level      : 50
-Duration         : Aura (infinite)
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=700322)   : Apply Aura (6) | Proc Trigger Spell (42): Heroism
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 23682 | Target: Self (1)
-Description      : Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee.
+Description      : Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee. This effect occurs twice as often in Strongholds and Cities.
 
 Name             : Alterac Manna Biscuit (id=23692) 
 School           : Physical
@@ -64358,20 +64363,6 @@ Effects          :
                    Base Value: 28 | Scaled Value: 28 | Target: Self (1)
 Tooltip          : In a Forest or Grassland area, Attack Power increased by an additional $w1.
 
-Name             : Blood of the Broodmother (id=1287808) 
-School           : Physical
-Spell Type       : None
-Duration         : 15 seconds
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Sitting (27), Can Proc From Procs (122), Unknown (493)
-Effects          :
-#1 (id=1305572)  : Apply Aura (6) | Absorb Damage (69)
-                   Base Value: 10000000000 | Scaled Value: 1e+10 | SP Coefficient: 1 | Misc Value: 0x7e | Target: Self (1)
-                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
-#2 (id=1332645)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 33 | Scaled Value: 33 | SP Coefficient: 1 | Target: Self (1)
-Description      : Reduces your magic damage taken from Dragon Breath spells by $s2% for $d.
-Tooltip          : Magic damage taken from Dragon Breath spells reduced by $s2%.
-
 Name             : Eye of the Beast (id=1287840) 
 School           : Shadow
 Spell Type       : Magic
@@ -72924,8 +72915,9 @@ Cone Angle       : 60 degrees
 Duration         : Aura (infinite)
 Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
 Effects          :
-#1 (id=1345748)  : Apply Aura (6) | Increase Mounted Speed% (32)
+#1 (id=1345748)  : Apply Aura (6) | Increase Mounted Speed% (172)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Hotfixed         : Sub Type (32 -> 172)
 Description      : Increases movement speed while mounted by $s1%. This effect does not stack with similar effects.
 Tooltip          : Movement speed increased by $s1% while mounted.
 
