@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70938
-static constexpr std::array<spelltext_data_t, 8739> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8740> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8611,6 +8611,7 @@ static constexpr std::array<spelltext_data_t, 8739> __spelltext_data { {
   { 1320658, "Open a silithid hive, unleashing the swarm.", 0, 0 },
   { 1320758, "Right Click to summon and dismiss Spawn of Grubthor.", 0, 0 },
   { 1320824, "Wounds the target, causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
+  { 1320864, "The spear must be reforged before it can be used. Reforging the spear requires 40 Mithril Bars, 10 Truesilver Bars, 8 Aquamarine, 4 Solid Grinding Stone, and 2 Elemental Fire.", 0, 0 },
   { 1320898, "Throw into an Unstable Mana Rift.", 0, 0 },
   { 1320922, "$@spelldesc1247451", 0, 0 },
   { 1320925, "Burns the target for $s1 Fire damage every $t1 sec for $d.", "$s1 Fire damage inflicted every $t1 sec.", 0 },
