@@ -782,10 +782,6 @@ int item_database::random_suffix_type( const dbc_item_data_t& item )
         case ITEM_SUBCLASS_WEAPON_SWORD2:
         case ITEM_SUBCLASS_WEAPON_STAFF:
           return 0;
-        // Weapons that go in the ranged slot have a budget of their own in Forever, unlike retail where they share
-        // the two-hand one. A rare ilevel 36 thrown weapon (item 274160) has 4 strength and 40 armor in game, which
-        // is what this budget gives; the two-hand one gave 13 and 133. Tested by kflirik on 2026-11-12, build
-        // 1.60.1.70888. Only thrown is verified, the rest follows the Classic rule of going by the ranged slot.
         case ITEM_SUBCLASS_WEAPON_GUN:
         case ITEM_SUBCLASS_WEAPON_BOW:
         case ITEM_SUBCLASS_WEAPON_CROSSBOW:
@@ -815,10 +811,6 @@ int item_database::random_suffix_type( const dbc_item_data_t& item )
         case INVTYPE_FINGER:
         case INVTYPE_CLOAK:
         case INVTYPE_WRISTS:
-        // Shields and held in off-hand items share the budget of necks, rings, cloaks and wrists in Forever, unlike
-        // retail where they use the one-hand weapon one. An uncommon ilevel 31 shield (item 281307) has 3 strength
-        // and 5 stamina in game, which is what this budget gives; the one-hand one gave 2 and 4. Tested by kflirik
-        // on 2026-11-12, build 1.60.1.70888. Only the shield is verified, holdables follow the Classic rule.
         case INVTYPE_HOLDABLE:
         case INVTYPE_SHIELD:
           return 2;
