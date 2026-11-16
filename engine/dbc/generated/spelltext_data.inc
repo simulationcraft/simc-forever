@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70938
-static constexpr std::array<spelltext_data_t, 8743> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8742> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -4400,11 +4400,11 @@ static constexpr std::array<spelltext_data_t, 8743> __spelltext_data { {
   {   23679, "Combine the Ace through Eight of Elementals to complete the set.", 0, 0 },
   {   23680, "Combine the Ace through Eight of Portals to complete the set.", 0, 0 },
   {   23682, "Sometimes heals bearer of $s1 damage when attacking an enemy.", 0, 0 },
-  {   23684, "2% chance on successful spellcast to increase your Spirit by $s1 for $d.", "Spirit increased by $s1.", 0 },
-  {   23686, "Chance to strike your melee target with lightning for $23687s1 Nature damage.", 0, 0 },
+  {   23684, "$h% chance on successful spellcast to increase your Spirit by $s1 for $d.", "Spirit increased by $s1.", 0 },
+  {   23686, "Chance to strike your melee target with lightning for $23687s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies.", 0, 0 },
   {   23687, "Lightning Strike for $s1 Nature damage.", 0, 0 },
-  {   23688, "2% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.", 0, 0 },
-  {   23689, "Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee.", 0, 0 },
+  {   23688, "$h% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.", 0, 0 },
+  {   23689, "Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee. This effect occurs twice as often in Strongholds and Cities.", 0, 0 },
   {   23692, "Restores $26260o1 health and $26261o2 mana over $26260d.  Must remain seated while eating.", "Restores $/5;s1 health and $/5;s2 mana per second.", 0 },
   {   23694, 0, "Immobilized.", 0 },
   {   23696, "Heals $o1 damage over $d.", "Healing $s1 damage every $t1 seconds.", "Rank 10" },
@@ -7863,7 +7863,6 @@ static constexpr std::array<spelltext_data_t, 8743> __spelltext_data { {
   { 1287571, "Increases all attributes by $s1 for $d. Effect and duration are doubled in Forest and Grassland areas.", "All attributes increased by $w1.", 0 },
   { 1287704, 0, "In a Forest or Grassland area, Attack Power increased by an additional $w1.", 0 },
   { 1287768, "Increases attack power by $s1 for $d.", "Increases attack power by $s1.", 0 },
-  { 1287808, "Reduces your magic damage taken from Dragon Breath spells by $s2% for $d.", "Magic damage taken from Dragon Breath spells reduced by $s2%.", 0 },
   { 1287840, "Increases your Spell Hit chance by $s1% for $d.", "Spell Hit chance increased by $w1%.", 0 },
   { 1287842, "Increases maximum health by $s1 for $d. This effect is doubled in Strongholds and Cities.", "Health increased by $w1.", 0 },
   { 1287963, "Summon a ring of light on a specific location that lasts for $d. Reveals ghosts of the past.", 0, 0 },
@@ -8746,7 +8745,7 @@ static constexpr std::array<spelltext_data_t, 8743> __spelltext_data { {
 } };
 
 // spelltext hotfix entries, wow build 1.60.1.70938
-static constexpr std::array<hotfix::client_hotfix_entry_t, 24> __spelltext_hotfix_data { {
+static constexpr std::array<hotfix::client_hotfix_entry_t, 28> __spelltext_hotfix_data { {
   {    8024,  0, "Imbue the Shaman's weapon with fire. Each hit causes ${$8026m1/77-1+($29469m1)} to ${$8026m1/25+($29469m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.", "Imbue the Shaman's weapon with fire. Each hit causes ${$8026m1/77-1+($29469m1)} to ${$8026m1/25+($29469m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes." },
   {    8027,  0, "Imbue the Shaman's weapon with fire. Each hit causes ${$8028m1/77-1+($29470m1)} to ${$8028m1/25+($29470m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.", "Imbue the Shaman's weapon with fire. Each hit causes ${$8028m1/77-1+($29470m1)} to ${$8028m1/25+($29470m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes." },
   {    8030,  0, "Imbue the Shaman's weapon with fire. Each hit causes ${$8029m1/77-1+($10444m1)} to ${$8029m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.", "Imbue the Shaman's weapon with fire. Each hit causes ${$8029m1/77-1+($10444m1)} to ${$8029m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes." },
@@ -8769,6 +8768,10 @@ static constexpr std::array<hotfix::client_hotfix_entry_t, 24> __spelltext_hotfi
   {   16341,  0, "Imbue the Shaman's weapon with fire. Each hit causes ${$16343m1/77-1+($10444m1)} to ${$16343m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.", "Imbue the Shaman's weapon with fire. Each hit causes ${$16343m1/77-1+($10444m1)} to ${$16343m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes." },
   {   16342,  0, "Imbue the Shaman's weapon with fire.  Each hit causes ${$16344m1/77-1+($10444m1)} to ${$16344m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.", "Imbue the Shaman's weapon with fire.  Each hit causes ${$16344m1/77-1+($10444m1)} to ${$16344m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes." },
   {   16362,  0, "Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.", "Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power. Lasts for 60 minutes." },
+  {   23684,  0, "2% chance on successful spellcast to increase your Spirit by $s1 for $d.", "$h% chance on successful spellcast to increase your Spirit by $s1 for $d." },
+  {   23686,  0, "Chance to strike your melee target with lightning for $23687s1 Nature damage.", "Chance to strike your melee target with lightning for $23687s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies." },
+  {   23688,  0, "2% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.", "$h% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d." },
+  {   23689,  0, "Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee.", "Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee. This effect occurs twice as often in Strongholds and Cities." },
   {  408498,  0, "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d.", "When you deal damage with a melee attack, you have a ${($mws*$s2/60)*100}% chance (based on weapon speed) to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d." },
   { 1330855,  0, "Smite your target for $s1 Holy damage. Damage is tripled against Undead.", "Has a $h% chance when landing a harmful spell or attack to Smite the target for $s1 Holy damage. Damage is tripled against Undead." },
 } };
