@@ -15456,7 +15456,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15453] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.70938
 
-static const std::array<dbc_item_data_t, 13188> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13189> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -24854,6 +24854,7 @@ static const std::array<dbc_item_data_t, 13188> __item_data_chunk0 { {
   { "Idol of Rejuvenation",  22398, 0x00000000, 0x00000004, 0x00, 62, 57, 0, 0, 3, 28, 4, 8, 1, 0, 0.000000f, 0.000000f, 0, 0, 0x7fff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Idol of Health",  22399, 0x00000000, 0x00006004, 0x00, 78, 60, 0, 0, 4, 28, 4, 8, 1, 0, 0.000000f, 0.000000f, 0, 0, 0x7fff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Libram of Truth",  22400, 0x00000000, 0x00000004, 0x00, 57, 52, 0, 0, 3, 28, 4, 7, 1, 0, 0.000000f, 0.000000f, 0, 0, 0x7fff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Libram of Hope",  22401, 0x00000000, 0x00000004, 0x00, 62, 57, 0, 0, 3, 28, 4, 7, 1, 0, 0.000000f, 0.000000f, 0, 0, 0x7fff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Libram of Grace",  22402, 0x00000000, 0x00006004, 0x00, 78, 60, 0, 0, 4, 28, 4, 7, 1, 0, 0.000000f, 0.000000f, 0, 0, 0x7fff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Nacreous Shell Necklace",  22403, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 2, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[9791], 4, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Willey's Back Scratcher",  22404, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 21, 2, 13, 1, 2600, 0.600000f, 0.000000f, &__item_stats_data[9795], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
