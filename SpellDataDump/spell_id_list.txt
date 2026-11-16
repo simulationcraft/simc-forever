@@ -3881,7 +3881,7 @@ Rogue
 1300956 *1.60.0 - Item - Tier 1 - Rogue 2P Bonus - Hit
 1301047 *1.60.0 - Item - Tier 1 - Rogue 3P Bonus - Kidney Shot
 1301088 *1.60.0 - Item - Tier 1 - Rogue 4P Bonus - AP vs. Humanoids
-1301708 *1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Envenom and Eviscerate
+1301708 *1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Eviscerate and Death Mark
 1302345  Improved Pick Pocket and Distract 02
 1307943 *Improved Pick Pocket and Distract 03
 1307944 *Improved Pick Pocket and Distract 04
