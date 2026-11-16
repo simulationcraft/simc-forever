@@ -4471,7 +4471,6 @@ Class            : Shaman
 School           : Physical
 Spell Type       : None
 Spell Level      : 1
-Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
 Labels           : 24: Shaman Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :

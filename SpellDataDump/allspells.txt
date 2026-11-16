@@ -11371,6 +11371,7 @@ Effects          :
 Description      : Follows a successful block, dodge or parry.
 
 Name             : Execute (desc=Rank 1) (id=5308) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -11383,7 +11384,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=682416)   : Dummy (3)
                    Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -14528,8 +14529,9 @@ Range            : 5 yards
 Duration         : 30 seconds
 Attributes       : Aura Is Debuff (26), Allow While Sitting (27), Unknown (493)
 Effects          :
-#1 (id=684162)   : Apply Aura (6) | Periodic Damage (3): nature every 5 seconds
+#1 (id=684162)   : Apply Aura (6) | Periodic Dummy (226): every 5 seconds
                    Base Value: 10 | Scaled Value: 10 | Target: Self (1)
+Hotfixed         : Sub Type (3 -> 226)
 Description      : Don't eat me.
 
 Name             : Mark of the Wild (desc=Rank 3) (id=6756) [Spell Family (7)] 
@@ -23162,7 +23164,7 @@ Spell Level      : 36
 Range            : 5 yards
 Duration         : 18 seconds
 Mechanic         : Bleed
-Affecting Spells : Natural Instinct (1223242 effect#1)
+Affecting Spells : Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Triggered By     : Pounce (9005)
 Family Flags     : 103
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
@@ -25757,7 +25759,7 @@ Spell Level      : 46
 Range            : 5 yards
 Duration         : 18 seconds
 Mechanic         : Bleed
-Affecting Spells : Natural Instinct (1223242 effect#1)
+Affecting Spells : Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Triggered By     : Pounce (9823)
 Family Flags     : 103
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
@@ -25775,7 +25777,7 @@ Spell Level      : 56
 Range            : 5 yards
 Duration         : 18 seconds
 Mechanic         : Bleed
-Affecting Spells : Natural Instinct (1223242 effect#1)
+Affecting Spells : Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Triggered By     : Pounce (9827)
 Family Flags     : 103
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
@@ -37267,6 +37269,7 @@ Effects          :
 Description      : Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%.
 
 Name             : Unbridled Wrath (id=12322) [Passive, Hidden] 
+Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=2, col=7, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(12, 24, 36, 48, 60)]
 Class            : Warrior
@@ -37276,7 +37279,7 @@ Spell Level      : 1
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
 Labels           : 25: Warrior Spells
 Proc Chance      : 100%
-Proc Flags       : White Melee
+Proc Flags       : White Melee, Yellow Melee
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
 #1 (id=689427)   : Apply Aura (6) | Proc Trigger Spell (42): Unbridled Wrath
@@ -38533,6 +38536,7 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | Resource: rage | Target: Self (1)
 
 Name             : Flurry (id=12966) 
+Hotfixed         : Proc Flags 1 (4 -> 20)
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -38541,7 +38545,7 @@ Duration         : 15 seconds
 Labels           : 25: Warrior Spells
 Stacks           : 3 initial, 3 maximum
 Proc Chance      : 100%
-Proc Flags       : White Melee
+Proc Flags       : White Melee, Yellow Melee
 Attributes       : Do Not Sheath (18), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=691586)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
@@ -52130,7 +52134,6 @@ Class            : Shaman
 School           : Physical
 Spell Type       : None
 Spell Level      : 1
-Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
 Labels           : 24: Shaman Spells
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
@@ -68759,7 +68762,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -68781,7 +68784,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -68809,7 +68812,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -68836,7 +68839,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -68861,7 +68864,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -68886,7 +68889,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -69663,7 +69666,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -69691,7 +69694,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -69719,7 +69722,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -69747,7 +69750,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -69775,7 +69778,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -69803,7 +69806,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -69831,7 +69834,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
@@ -69937,7 +69940,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -69963,7 +69966,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -69989,7 +69992,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70015,7 +70018,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70243,7 +70246,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70268,7 +70271,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70293,7 +70296,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70406,7 +70409,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70431,7 +70434,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70508,7 +70511,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70678,7 +70681,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -70705,7 +70708,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70732,7 +70735,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70759,7 +70762,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -70780,7 +70783,7 @@ School           : Holy
 Spell Type       : Melee
 Range            : 5 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Triggered By     : Seal of Command (20375), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920)
 Family Flags     : 25
 Attributes       : Do Not Sheath (18), Not a Proc (105), Allow Cast While Casting (135), Unknown (454), Unknown (493)
@@ -71585,6 +71588,7 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Execute (desc=Rank 2) (id=20658) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71597,7 +71601,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698799)   : Dummy (3)
                    Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -71606,6 +71610,7 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 3) (id=20660) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71618,7 +71623,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698551)   : Dummy (3)
                    Base Value: 325 | Scaled Value: 325 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -71627,6 +71632,7 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 4) (id=20661) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71639,7 +71645,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698803)   : Dummy (3)
                    Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -71648,6 +71654,7 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 5) (id=20662) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71660,7 +71667,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696172)   : Dummy (3)
                    Base Value: 600 | Scaled Value: 600 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -72522,7 +72529,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -72557,7 +72564,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -72583,7 +72590,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -72609,7 +72616,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -72985,7 +72992,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -73013,7 +73020,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -78914,46 +78921,49 @@ Name             : Heroism (id=23682)
 School           : Holy
 Spell Type       : None
 Spell Level      : 50
-Proc Chance      : 101%
 Triggered By     : Heroism (23689)
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=701084)   : Direct Heal (10)
-                   Base Value: 150 | Scaled Value: 150 (delta=0.4) | Target: Self (1)
+                   Base Value: 198 | Scaled Value: 198 (delta=0.4) | Target: Self (1)
+Hotfixed         : Base Value (150 -> 198)
 Description      : Sometimes heals bearer of $s1 damage when attacking an enemy.
 
 Name             : Aura of the Blue Dragon (id=23684) 
+Hotfixed         : Proc Chance (100 -> 2), Description
 School           : Physical
 Spell Type       : None
 Duration         : 15 seconds
-Proc Chance      : 100%
+Proc Chance      : 2%
 Triggered By     : Aura of the Blue Dragon (23688)
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=700646)   : Apply Aura (6) | Attribute (29)
                    Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Stat: Spi | Target: Self (1)
-Description      : 2% chance on successful spellcast to increase your Spirit by $s1 for $d.
+Description      : $h% chance on successful spellcast to increase your Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Lightning Strike (id=23686) [Passive, Hidden] 
+Hotfixed         : Description
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60
-Duration         : Aura (infinite)
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), No Aura Icon (60), Unknown (493)
 Effects          :
 #1 (id=699862)   : Apply Aura (6) | Proc Trigger Spell (42): Lightning Strike
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 23687 | Target: Self (1)
-Description      : Chance to strike your melee target with lightning for $23687s1 Nature damage.
+#2 (id=1372164)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 2 | Scaled Value: 2 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+Description      : Chance to strike your melee target with lightning for $23687s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies.
 
 Name             : Lightning Strike (id=23687) 
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60
 Range            : 20 yards
-Proc Chance      : 101%
 Triggered By     : Lightning Strike (23686)
 Attributes       : Unknown (493)
 Effects          :
@@ -78962,28 +78972,29 @@ Effects          :
 Description      : Lightning Strike for $s1 Nature damage.
 
 Name             : Aura of the Blue Dragon (id=23688) [Passive, Hidden] 
+Hotfixed         : Proc Chance (2 -> 3), Description
 School           : Physical
 Spell Type       : None
-Proc Chance      : 2%
+Proc Chance      : 3%
 Proc Flags       : Magic Heal, Magic Hostile Spell
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=699570)   : Apply Aura (6) | Proc Trigger Spell (42): Aura of the Blue Dragon
                    Base Value: 100 | Scaled Value: 100 | Trigger Spell: 23684 | Target: Self (1)
-Description      : 2% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.
+Description      : $h% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.
 
 Name             : Heroism (id=23689) [Passive, Hidden] 
+Hotfixed         : Description
 School           : Holy
 Spell Type       : None
 Spell Level      : 50
-Duration         : Aura (infinite)
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
 Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
 Effects          :
 #1 (id=700322)   : Apply Aura (6) | Proc Trigger Spell (42): Heroism
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 23682 | Target: Self (1)
-Description      : Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee.
+Description      : Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee. This effect occurs twice as often in Strongholds and Cities.
 
 Name             : Alterac Manna Biscuit (id=23692) 
 School           : Physical
@@ -87792,6 +87803,18 @@ Effects          :
                    Family Flags: 12
 Description      : Reduces the mana cost of your Cleanse spell by $s1.
 
+Name             : Seal Duration Increase (id=27848) [Spell Family (10), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 26: Paladin Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=695801)   : Apply Aura (6) | Add Flat Modifier (107): Spell Duration (1)
+                   Base Value: 4000 | Scaled Value: 4000 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
+                   Affected Spells: Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Seal of the Crusader (21082), Seal of Righteousness (21084), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Seal of Fury (1311649), Seal of Fury (1311656)
+                   Family Flags: 9, 25, 27
+Description      : Increases the duration of your Seal spells by ${$s1/1000} sec.
+
 Name             : Purify and Cleanse Cost Reduced (id=27850) [Spell Family (10), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -95105,7 +95128,7 @@ Duration         : 30 seconds
 Labels           : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, White Melee Taken, Yellow Melee, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Helpful Taken, Generic Hostile Spell Taken, Magic Heal Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Can Proc From Procs (122), Allow Proc While Sitting (147), Can Proc From Suppressed Target Procs (254), Can Proc from Suppressed Caster Procs (385), Unknown (493)
 Effects          :
@@ -95131,7 +95154,7 @@ School           : Holy
 Spell Type       : Melee
 Range            : 100 yards
 Max Targets      : 1
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Triggered By     : Seal of Martyrdom (407798)
 Family Flags     : 27, 42
 Attributes       : Do Not Sheath (18), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Suppress Weapon Procs (151), Unknown (493)
@@ -126176,8 +126199,9 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1210794)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 22 | Target: Self (1)
-                   Affected Spells: Entangling Roots (339), Rejuvenation (774), Rejuvenation (1058), Entangling Roots (1062), Rip (1079), Rejuvenation (1430), Rake (1822), Rake (1823), Rake (1824), Rejuvenation (2090), Rejuvenation (2091), Rejuvenation (3627), Entangling Roots (5195), Entangling Roots (5196), Insect Swarm (5570), Rejuvenation (8910), Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Pounce (9005), Rip (9492), Rip (9493), Regrowth (9750), Rip (9752), Pounce (9823), Pounce (9827), Moonfire (9833), Moonfire (9834), Moonfire (9835), Rejuvenation (9839), Rejuvenation (9840), Rejuvenation (9841), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Rip (9894), Rip (9896), Rake (9904), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Insect Swarm (24974), Insect Swarm (24975), Insect Swarm (24976), Insect Swarm (24977), Rejuvenation (25299), Blessed Recovery (27813), Wild Growth (408120), Lacerate (414644), Rejuvenation (417057), Rejuvenation (417058), Rejuvenation (417059), Rejuvenation (417060), Rejuvenation (417061), Rejuvenation (417062), Rejuvenation (417063), Rejuvenation (417064), Rejuvenation (417065), Rejuvenation (417066), Rejuvenation (417068), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Lacerate (1235826), Lacerate (1235827), Wild Growth (1238214), Wild Growth (1238215), Lacerate (1328616), Lacerate (1328617)
-                   Family Flags: 1, 4, 6, 9, 17, 21, 40, 58, 85, 126
+                   Affected Spells: Entangling Roots (339), Rejuvenation (774), Rejuvenation (1058), Entangling Roots (1062), Rip (1079), Rejuvenation (1430), Rake (1822), Rake (1823), Rake (1824), Rejuvenation (2090), Rejuvenation (2091), Rejuvenation (3627), Entangling Roots (5195), Entangling Roots (5196), Insect Swarm (5570), Rejuvenation (8910), Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Pounce (9005), Pounce Bleed (9007), Rip (9492), Rip (9493), Regrowth (9750), Rip (9752), Pounce (9823), Pounce Bleed (9824), Pounce Bleed (9826), Pounce (9827), Moonfire (9833), Moonfire (9834), Moonfire (9835), Rejuvenation (9839), Rejuvenation (9840), Rejuvenation (9841), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Rip (9894), Rip (9896), Rake (9904), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Insect Swarm (24974), Insect Swarm (24975), Insect Swarm (24976), Insect Swarm (24977), Rejuvenation (25299), Blessed Recovery (27813), Wild Growth (408120), Lacerate (414644), Rejuvenation (417057), Rejuvenation (417058), Rejuvenation (417059), Rejuvenation (417060), Rejuvenation (417061), Rejuvenation (417062), Rejuvenation (417063), Rejuvenation (417064), Rejuvenation (417065), Rejuvenation (417066), Rejuvenation (417068), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Lacerate (1235826), Lacerate (1235827), Wild Growth (1238214), Wild Growth (1238215), Lacerate (1328616), Lacerate (1328617)
+                   Family Flags: 1, 4, 6, 9, 17, 21, 40, 58, 85, 103, 126
+Hotfixed         : Affects Spells
 #2 (id=1291838)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
                    Affected Spells: Swiftmend (18562)
@@ -143417,20 +143441,6 @@ Effects          :
 Description      : Increases attack power by $s1 for $d.
 Tooltip          : Increases attack power by $s1.
 
-Name             : Blood of the Broodmother (id=1287808) 
-School           : Physical
-Spell Type       : None
-Duration         : 15 seconds
-Attributes       : Is Ability (4), Do Not Sheath (18), Allow While Sitting (27), Can Proc From Procs (122), Unknown (493)
-Effects          :
-#1 (id=1305572)  : Apply Aura (6) | Absorb Damage (69)
-                   Base Value: 10000000000 | Scaled Value: 1e+10 | SP Coefficient: 1 | Misc Value: 0x7e | Target: Self (1)
-                   Affected School(s): Arcane, Fire, Frost, Holy, Nature, Shadow
-#2 (id=1332645)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 33 | Scaled Value: 33 | SP Coefficient: 1 | Target: Self (1)
-Description      : Reduces your magic damage taken from Dragon Breath spells by $s2% for $d.
-Tooltip          : Magic damage taken from Dragon Breath spells reduced by $s2%.
-
 Name             : Eye of the Beast (id=1287840) 
 School           : Shadow
 Spell Type       : Magic
@@ -153914,7 +153924,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -153997,7 +154007,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -154494,8 +154504,9 @@ Cone Angle       : 60 degrees
 Duration         : Aura (infinite)
 Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mounted (24), Allow While Sitting (27), Allow While Stealthed (37), Allow Dead Target (64), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Aura While Dead (116), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Allow While Banished Aura State (299), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
 Effects          :
-#1 (id=1345748)  : Apply Aura (6) | Increase Mounted Speed% (32)
+#1 (id=1345748)  : Apply Aura (6) | Increase Mounted Speed% (172)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Hotfixed         : Sub Type (32 -> 172)
 Description      : Increases movement speed while mounted by $s1%. This effect does not stack with similar effects.
 Tooltip          : Movement speed increased by $s1% while mounted.
 
@@ -158757,6 +158768,7 @@ Effects          :
 Description      : ${$s1/10} Rage generated.
 
 Name             : Reckless Swings (id=1329555) [Spell Family (4)] 
+Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
                  : Effect#1 [op=set, values=(50, 50)]
 Class            : Warrior
@@ -158769,7 +158781,7 @@ Cooldown         : 15 seconds
 Labels           : 25: Warrior Spells
 Stacks           : 4 initial, 4 maximum
 Proc Chance      : 100%
-Proc Flags       : White Melee
+Proc Flags       : White Melee, Yellow Melee
 Family Flags     : 49
 Attributes       : Is Ability (4), Do Not Sheath (18), Aura Is Debuff (26), Allow While Sitting (27), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Unknown (454), Unknown (493)
 Effects          :

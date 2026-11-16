@@ -700,6 +700,7 @@ Effects          :
 Description      : Follows a successful block, dodge or parry.
 
 Name             : Execute (desc=Rank 1) (id=5308) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -712,7 +713,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=682416)   : Dummy (3)
                    Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2504,6 +2505,7 @@ Effects          :
 Description      : Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%.
 
 Name             : Unbridled Wrath (id=12322) [Passive, Hidden] 
+Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=2, col=7, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(12, 24, 36, 48, 60)]
 Class            : Warrior
@@ -2513,7 +2515,7 @@ Spell Level      : 1
 Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed Mace, Polearm, One-handed Sword, Two-handed Sword, Staff, Fist Weapon, Dagger, Spear
 Labels           : 25: Warrior Spells
 Proc Chance      : 100%
-Proc Flags       : White Melee
+Proc Flags       : White Melee, Yellow Melee
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
 #1 (id=689427)   : Apply Aura (6) | Proc Trigger Spell (42): Unbridled Wrath
@@ -3048,6 +3050,7 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | Resource: rage | Target: Self (1)
 
 Name             : Flurry (id=12966) 
+Hotfixed         : Proc Flags 1 (4 -> 20)
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -3056,7 +3059,7 @@ Duration         : 15 seconds
 Labels           : 25: Warrior Spells
 Stacks           : 3 initial, 3 maximum
 Proc Chance      : 100%
-Proc Flags       : White Melee
+Proc Flags       : White Melee, Yellow Melee
 Attributes       : Do Not Sheath (18), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=691586)   : Apply Aura (6) | Modify Melee Auto Attack Speed% (319)
@@ -3625,6 +3628,7 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Execute (desc=Rank 2) (id=20658) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3637,7 +3641,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698799)   : Dummy (3)
                    Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -3646,6 +3650,7 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 3) (id=20660) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3658,7 +3663,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698551)   : Dummy (3)
                    Base Value: 325 | Scaled Value: 325 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -3667,6 +3672,7 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 4) (id=20661) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3679,7 +3685,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698803)   : Dummy (3)
                    Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -3688,6 +3694,7 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 5) (id=20662) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3700,7 +3707,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696172)   : Dummy (3)
                    Base Value: 600 | Scaled Value: 600 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -6708,6 +6715,7 @@ Effects          :
 Description      : ${$s1/10} Rage generated.
 
 Name             : Reckless Swings (id=1329555) [Spell Family (4)] 
+Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
                  : Effect#1 [op=set, values=(50, 50)]
 Class            : Warrior
@@ -6720,7 +6728,7 @@ Cooldown         : 15 seconds
 Labels           : 25: Warrior Spells
 Stacks           : 4 initial, 4 maximum
 Proc Chance      : 100%
-Proc Flags       : White Melee
+Proc Flags       : White Melee, Yellow Melee
 Family Flags     : 49
 Attributes       : Is Ability (4), Do Not Sheath (18), Aura Is Debuff (26), Allow While Sitting (27), Immunity Purges Effect (47), Immunity to Hostile & Friendly Effects (48), Unknown (454), Unknown (493)
 Effects          :
