@@ -2460,7 +2460,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -2482,7 +2482,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -2510,7 +2510,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -2537,7 +2537,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -2562,7 +2562,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -2587,7 +2587,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3245,7 +3245,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3273,7 +3273,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3301,7 +3301,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3329,7 +3329,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3357,7 +3357,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3385,7 +3385,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3413,7 +3413,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
@@ -3519,7 +3519,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3545,7 +3545,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3571,7 +3571,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3597,7 +3597,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3811,7 +3811,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3836,7 +3836,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3861,7 +3861,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3974,7 +3974,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3999,7 +3999,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4065,7 +4065,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4235,7 +4235,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -4262,7 +4262,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4289,7 +4289,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4316,7 +4316,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4337,7 +4337,7 @@ School           : Holy
 Spell Type       : Melee
 Range            : 5 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Triggered By     : Seal of Command (20375), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920)
 Family Flags     : 25
 Attributes       : Do Not Sheath (18), Not a Proc (105), Allow Cast While Casting (135), Unknown (454), Unknown (493)
@@ -4493,7 +4493,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4519,7 +4519,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4545,7 +4545,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4571,7 +4571,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4913,7 +4913,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4941,7 +4941,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -5456,6 +5456,18 @@ Effects          :
                    Family Flags: 12
 Description      : Reduces the mana cost of your Cleanse spell by $s1.
 
+Name             : Seal Duration Increase (id=27848) [Spell Family (10), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 26: Paladin Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=695801)   : Apply Aura (6) | Add Flat Modifier (107): Spell Duration (1)
+                   Base Value: 4000 | Scaled Value: 4000 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
+                   Affected Spells: Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Seal of the Crusader (21082), Seal of Righteousness (21084), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Seal of Fury (1311649), Seal of Fury (1311656)
+                   Family Flags: 9, 25, 27
+Description      : Increases the duration of your Seal spells by ${$s1/1000} sec.
+
 Name             : Purify and Cleanse Cost Reduced (id=27850) [Spell Family (10), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -5645,7 +5657,7 @@ Duration         : 30 seconds
 Labels           : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, White Melee Taken, Yellow Melee, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Helpful Taken, Generic Hostile Spell Taken, Magic Heal Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Can Proc From Procs (122), Allow Proc While Sitting (147), Can Proc From Suppressed Target Procs (254), Can Proc from Suppressed Caster Procs (385), Unknown (493)
 Effects          :
@@ -5671,7 +5683,7 @@ School           : Holy
 Spell Type       : Melee
 Range            : 100 yards
 Max Targets      : 1
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Triggered By     : Seal of Martyrdom (407798)
 Family Flags     : 27, 42
 Attributes       : Do Not Sheath (18), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Suppress Weapon Procs (151), Unknown (493)
@@ -8908,7 +8920,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -8991,7 +9003,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :

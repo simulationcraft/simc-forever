@@ -2474,7 +2474,7 @@ Paladin
 27785   *Hunter Armor Energize
 27787   *Rogue Armor Energize
 27847    Cleanse Cost Reduced
-27848   *Seal Duration Increase
+27848    Seal Duration Increase
 27850    Purify and Cleanse Cost Reduced
 28774   *Lay Hands
 28775   *Judgement of Light
