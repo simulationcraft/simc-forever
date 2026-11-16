@@ -156605,6 +156605,16 @@ Effects          :
 Description      : Wounds the target, causing them to bleed for $o1 damage over $d.
 Tooltip          : Bleeding for $s1 damage every $t1 sec.
 
+Name             : Repair the Atal'ai Spear (id=1320864) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 45 seconds
+Attributes       : Is Ability (4), Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Effects          :
+#1 (id=1355769)  : Create Item (24)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+Description      : The spear must be reforged before it can be used. Reforging the spear requires 40 Mithril Bars, 10 Truesilver Bars, 8 Aquamarine, 4 Solid Grinding Stone, and 2 Elemental Fire.
+
 Name             : Toss Crystal Heart (id=1320898) 
 School           : Physical
 Spell Type       : None
