@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.70938
-static constexpr std::array<spelltext_data_t, 8741> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8742> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -8184,6 +8184,7 @@ static constexpr std::array<spelltext_data_t, 8741> __spelltext_data { {
   { 1301784, "Place outside the door on the second floor of Trias' Cheese.", 0, 0 },
   { 1302064, "A nutritious meal has made you Well Fed, increasing your Strength.", "Your Strength is increased by $w1.", 0 },
   { 1302066, "$@spelldesc1127 If you spend at least 10 sec eating, you will become well fed and gain $s2 Strength for $1248422d. $@spelldesc1243969", 0, 0 },
+  { 1302108, "Killing a non-trivial enemy has a chance to raise a Skeleton from their corpse for $1302109d.", 0, 0 },
   { 1302112, "Hold forth the Torch of Eternal Flame.", "Holding the Torch of Eternal Flame. You are unable to defend yourself while wielding the flame. \r\n\r\nAvoiding combat would be wise.", 0 },
   { 1302113, "Eat a handful and make up for lost time on the trail!", "Movement speed increased by $s1%.", 0 },
   { 1302166, "Slice the target, dealing $s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies.", 0, 0 },

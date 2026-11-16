@@ -15456,7 +15456,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15453] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.70938
 
-static const std::array<dbc_item_data_t, 13187> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13188> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -24827,6 +24827,7 @@ static const std::array<dbc_item_data_t, 13187> __item_data_chunk0 { {
   { "Scepter of Interminable Focus",  22329, 0x00000000, 0x00000004, 0x00, 63, 58, 0, 0, 3, 23, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[9742], 4, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Shroud of Arcane Mastery",  22330, 0x00000000, 0x00000004, 0x00, 61, 56, 0, 0, 3, 16, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[9746], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Band of the Steadfast Hero",  22331, 0x00080000, 0x00000004, 0x00, 62, 57, 0, 0, 3, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[9749], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Blade of Necromancy",  22332, 0x00000000, 0x00000004, 0x00, 62, 57, 0, 0, 3, 21, 2, 7, 1, 1500, 0.600000f, 0.000000f, 0, 0, 0x7fff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Hammer of Divine Might",  22333, 0x00000000, 0x00000004, 0x00, 62, 57, 0, 0, 3, 17, 2, 5, 1, 2100, 0.400000f, 0.000000f, &__item_stats_data[9752], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Band of Mending",  22334, 0x00080000, 0x00000004, 0x00, 62, 57, 0, 0, 3, 11, 4, 0, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[9754], 5, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Lord Valthalak's Staff of Command",  22335, 0x00000000, 0x00000004, 0x00, 63, 58, 0, 0, 3, 17, 2, 10, 1, 2100, 0.400000f, 0.000000f, &__item_stats_data[9759], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
