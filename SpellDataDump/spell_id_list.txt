@@ -320,7 +320,7 @@ Druid
 27813    Blessed Recovery
 27846    Faster Healing Touch Cast
 27851    Reduced Claw and Rake Cost
-27853   *Increased Regrowth Healing
+27853    Increased Regrowth Healing
 28716   *Rejuvenation
 28719   *Healing Touch
 28743   *Dreamwalker
@@ -1737,7 +1737,7 @@ Mage
 18459    Incineration
 18796    Fireball
 18809    Pyroblast
-18833   *Firebolt
+18833    Firebolt
 18948   *Dark Energy
 18949   *Atal'ai Poison
 19260   *Frost Blast
@@ -2152,7 +2152,7 @@ Mage
 1298416  Frostbolt
 1299850  Fireball
 1300130  Frostburn
-1300140 *Wit's End
+1300140  Wit's End
 1300176 *Arcane Blast
 1300177 *Arcane Blast
 1300947 *1.60.0 - Item - Tier 1 - Mage 2P Bonus - Hit
