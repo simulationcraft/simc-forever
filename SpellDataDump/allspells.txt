@@ -149550,6 +149550,30 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Trigger Spell: 1302064 | Target: Self (1)
 Description      : $@spelldesc1127 If you spend at least 10 sec eating, you will become well fed and gain $s2 Strength for $1248422d. $@spelldesc1243969
 
+Name             : Necromancy (id=1302108) [Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Spell Level      : 1
+Internal Cooldown: 120 seconds
+Proc Chance      : 5%
+Proc Flags       : Killing Blow
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=1327564)  : Apply Aura (6) | Proc Trigger Spell (42): Necromancy
+                   Base Value: 0 | Scaled Value: 0 (delta=0.666667) | Trigger Spell: 1302109 | Target: Self (1)
+Description      : Killing a non-trivial enemy has a chance to raise a Skeleton from their corpse for $1302109d.
+
+Name             : Necromancy (id=1302109) 
+School           : Shadow
+Spell Type       : None
+Range            : 100 yards
+Duration         : 120 seconds
+Triggered By     : Necromancy (1302108)
+Attributes       : Do Not Log (8), Allow Dead Target (64), Unknown (493)
+Effects          :
+#1 (id=1327565)  : Summon Guardian (28)
+                   Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1.0000000272564224e+16 | Misc Value: 268677 | Misc Value 2: 6792 | Target: at Target (63)
+
 Name             : Bearing the Flame (id=1302112) 
 School           : Physical
 Spell Type       : None
