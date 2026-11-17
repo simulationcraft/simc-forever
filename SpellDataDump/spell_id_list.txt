@@ -3762,7 +3762,6 @@ Rogue
 439471   Sebacious Poison
 439472   Numbing Poison
 439473   Atrophic Poison
-443632  *Filcher's Cowl
 446391  *Torment
 446707  *Parasomnia
 449927  *Blood Corruption
