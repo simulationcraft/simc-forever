@@ -11,6 +11,6 @@ static const wowv_t __client_data_version { 1, 60, 1, 70959 };
 
 #define CLIENT_DATA_HOTFIX_DATE "2026-11-17"
 #define CLIENT_DATA_HOTFIX_BUILD (70959)
-#define CLIENT_DATA_HOTFIX_HASH "4e6fb8fdbeb6314a525e607b9cfb277c2a7bfbf67ae5d362fb78326ce134976f"
+#define CLIENT_DATA_HOTFIX_HASH "f7ce901dddb2e820dfb0996d0e521b7a5dc9878213f9d7bdbe52469413ccae80"
 
 #endif /* CLIENT_DATA_VERSION_INC*/
