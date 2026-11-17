@@ -15500,7 +15500,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15497] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.70938
 
-static const std::array<dbc_item_data_t, 13272> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13275> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -25500,7 +25500,10 @@ static const std::array<dbc_item_data_t, 13272> __item_data_chunk0 { {
   { "Virtuous Sandals", 226952, 0x00008000, 0x00000004, 0x00, 60, 0, 0, 0, 4, 8, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[11053], 6, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
   { "Virtuous Wraps", 226953, 0x00008000, 0x00000004, 0x00, 65, 0, 0, 0, 3, 9, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[11059], 4, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
   { "Virtuous Cord", 226954, 0x00008000, 0x00000004, 0x00, 65, 0, 0, 0, 3, 6, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[11063], 4, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
+  { "Virtuous Epaulets", 226955, 0x00008000, 0x00000004, 0x00, 65, 0, 0, 0, 3, 3, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[10736], 4, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
+  { "Virtuous Leggings", 226956, 0x00008000, 0x00000004, 0x00, 66, 0, 0, 0, 3, 7, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[10740], 4, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
   { "Virtuous Hands", 226958, 0x00008000, 0x00000004, 0x00, 55, 0, 0, 0, 4, 10, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[10732], 4, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
+  { "Virtuous Slippers", 226959, 0x00008000, 0x00000004, 0x00, 60, 0, 0, 0, 4, 8, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[10720], 4, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
   { "Virtuous Wrists", 226961, 0x00000000, 0x00006004, 0x00, 65, 0, 0, 0, 3, 9, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[9418], 5, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
   { "Virtuous Waist", 226962, 0x00000000, 0x00006004, 0x00, 65, 0, 0, 0, 3, 6, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[9414], 4, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
   { "Virtuous Shoulders", 226963, 0x00000000, 0x00006004, 0x00, 65, 0, 0, 0, 3, 3, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[9414], 4, 0x0010, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 1675, 0, 0, 0 },
@@ -28718,7 +28721,7 @@ static const std::array<dbc_item_data_t, 13272> __item_data_chunk0 { {
   { "Iron-Wrought Cuffs", 287023, 0x00000000, 0x00000000, 0x00, 53, 48, 0, 0, 3, 9, 4, 4, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[15416], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Mark of Captivity", 287024, 0x00000000, 0x00000000, 0x00, 52, 47, 0, 0, 3, 2, 4, 0, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[15419], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Enchantresses' Spire", 287025, 0x00000000, 0x00000000, 0x00, 54, 49, 0, 0, 3, 17, 2, 10, 2, 2400, 0.400000f, 0.000000f, &__item_stats_data[14404], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
-  { "Escape Plan", 287026, 0x00000000, 0x00000000, 0x00, 54, 49, 0, 0, 3, 26, 2, 3, 2, 2800, 0.000000f, 0.000000f, &__item_stats_data[15422], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Escape Plan", 287026, 0x00000000, 0x00000000, 0x00, 54, 49, 0, 0, 3, 26, 2, 3, 2, 2800, 0.600000f, 0.000000f, &__item_stats_data[15422], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Tormented Cuffs", 287028, 0x00000000, 0x00000000, 0x00, 58, 53, 0, 0, 3, 9, 4, 1, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[15423], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Nature Guardian's Legguards", 287029, 0x00000000, 0x00000000, 0x00, 57, 52, 0, 0, 3, 7, 4, 2, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[15426], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Blackmaw Bindings", 287030, 0x00000000, 0x00000000, 0x00, 59, 54, 0, 0, 3, 9, 4, 3, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[15429], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
