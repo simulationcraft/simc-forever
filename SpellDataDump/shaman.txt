@@ -5565,6 +5565,18 @@ Effects          :
 #1 (id=703448)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
+Name             : Reduced Riptide Cost (id=27797) [Spell Family (11), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 24: Shaman Spells
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=704732)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
+                   Base Value: -5 | Scaled Value: -5 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Riptide (408521), Riptide (1239242), Riptide (1239243)
+                   Family Flags: 68
+Description      : Reduces the Mana cost of Riptide by $s1%.
+
 Name             : Increased Lesser Healing Wave (id=27855) [Spell Family (11), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -6574,7 +6586,7 @@ Cooldown         : 12 seconds
 Category         : 1228 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 12 seconds
-Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
+Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Reduced Riptide Cost (27797 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
@@ -9324,7 +9336,7 @@ Cooldown         : 12 seconds
 Category         : 1228 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 12 seconds
-Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
+Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Reduced Riptide Cost (27797 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
@@ -9354,7 +9366,7 @@ Cooldown         : 12 seconds
 Category         : 1228 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 12 seconds
-Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
+Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Reduced Riptide Cost (27797 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
