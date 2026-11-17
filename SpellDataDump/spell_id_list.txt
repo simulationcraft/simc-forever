@@ -320,7 +320,7 @@ Druid
 27813    Blessed Recovery
 27846    Faster Healing Touch Cast
 27851    Reduced Claw and Rake Cost
-27853   *Increased Regrowth Healing
+27853    Increased Regrowth Healing
 28716   *Rejuvenation
 28719   *Healing Touch
 28743   *Dreamwalker
@@ -1737,7 +1737,7 @@ Mage
 18459    Incineration
 18796    Fireball
 18809    Pyroblast
-18833   *Firebolt
+18833    Firebolt
 18948   *Dark Energy
 18949   *Atal'ai Poison
 19260   *Frost Blast
@@ -2152,7 +2152,7 @@ Mage
 1298416  Frostbolt
 1299850  Fireball
 1300130  Frostburn
-1300140 *Wit's End
+1300140  Wit's End
 1300176 *Arcane Blast
 1300177 *Arcane Blast
 1300947 *1.60.0 - Item - Tier 1 - Mage 2P Bonus - Hit
@@ -2474,7 +2474,7 @@ Paladin
 27785   *Hunter Armor Energize
 27787   *Rogue Armor Energize
 27847    Cleanse Cost Reduced
-27848   *Seal Duration Increase
+27848    Seal Duration Increase
 27850    Purify and Cleanse Cost Reduced
 28774   *Lay Hands
 28775   *Judgement of Light
@@ -3881,7 +3881,7 @@ Rogue
 1300956 *1.60.0 - Item - Tier 1 - Rogue 2P Bonus - Hit
 1301047 *1.60.0 - Item - Tier 1 - Rogue 3P Bonus - Kidney Shot
 1301088 *1.60.0 - Item - Tier 1 - Rogue 4P Bonus - AP vs. Humanoids
-1301708 *1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Envenom and Eviscerate
+1301708 *1.60.0 - Item - Tier 1 - Rogue 5P Bonus - Eviscerate and Death Mark
 1302345  Improved Pick Pocket and Distract 02
 1307943 *Improved Pick Pocket and Distract 03
 1307944 *Improved Pick Pocket and Distract 04

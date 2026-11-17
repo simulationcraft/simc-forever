@@ -37,6 +37,15 @@ attack_t::attack_t( util::string_view n, player_t* p, const spell_data_t* s )
   }
 }
 
+void attack_t::init()
+{
+  action_t::init();
+
+  // auto attacks are not procs
+  if ( !special )
+    not_a_proc = true;
+}
+
 void attack_t::execute()
 {
   action_t::execute();

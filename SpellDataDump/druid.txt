@@ -2313,7 +2313,7 @@ Spell Level      : 36
 Range            : 5 yards
 Duration         : 18 seconds
 Mechanic         : Bleed
-Affecting Spells : Natural Instinct (1223242 effect#1)
+Affecting Spells : Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Triggered By     : Pounce (9005)
 Family Flags     : 103
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
@@ -2699,7 +2699,7 @@ Spell Level      : 46
 Range            : 5 yards
 Duration         : 18 seconds
 Mechanic         : Bleed
-Affecting Spells : Natural Instinct (1223242 effect#1)
+Affecting Spells : Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Triggered By     : Pounce (9823)
 Family Flags     : 103
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
@@ -2717,7 +2717,7 @@ Spell Level      : 56
 Range            : 5 yards
 Duration         : 18 seconds
 Mechanic         : Bleed
-Affecting Spells : Natural Instinct (1223242 effect#1)
+Affecting Spells : Genesis (1223081 effect#1), Natural Instinct (1223242 effect#1)
 Triggered By     : Pounce (9827)
 Family Flags     : 103
 Attributes       : Show Mechanic as Combat Text (213), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
@@ -5920,6 +5920,16 @@ Effects          :
                    Family Flags: 12
 Description      : Reduces the energy cost of Claw and Rake by $s1.
 
+Name             : Increased Regrowth Healing (id=27853) [Spell Family (7), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 21: Druid Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=704565)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 5 | Scaled Value: 5 | Target: Self (1)
+Description      : Increases the initial healing of Regrowth by $s1% when cast on a target affected by your Rejuvenation.
+
 Name             : Healing Touch Refund (id=28847) [Spell Family (7), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -6161,6 +6171,7 @@ Effects          :
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
 
 Name             : Wild Growth (desc=Rank 1) (id=408120) [Spell Family (7)] 
+Hotfixed         : Cooldown (6000 -> 0), Category Cooldown (0 -> 6000), Category (0 -> 1237)
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]
 Class            : Druid
 School           : Nature
@@ -6172,7 +6183,9 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Duration         : 7 seconds
 Cooldown         : 6 seconds
+Category         : 1237 (Type 0x0)
 Labels           : 21: Druid Spells
+Category Cooldown: 6 seconds
 Stance Mask      : 0x00000002
 Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Naturalist (17069 effect#1), Gift of Nature (17104 effect#2), Nature's Swiftness (17116 effect#1), Gift of the Earthmother (414673 effect#1), Tree of Life (Passive) (439734 effects: #1, #3), S03 - Item - T2- Druid - Restoration 6P Bonus (467205 effect#1), S03 - Item - T2- Druid - Restoration 6P Bonus Moonkin Effect (467206 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 58
@@ -9526,8 +9539,9 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1210794)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 22 | Target: Self (1)
-                   Affected Spells: Entangling Roots (339), Rejuvenation (774), Rejuvenation (1058), Entangling Roots (1062), Rip (1079), Rejuvenation (1430), Rake (1822), Rake (1823), Rake (1824), Rejuvenation (2090), Rejuvenation (2091), Rejuvenation (3627), Entangling Roots (5195), Entangling Roots (5196), Insect Swarm (5570), Rejuvenation (8910), Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Pounce (9005), Rip (9492), Rip (9493), Regrowth (9750), Rip (9752), Pounce (9823), Pounce (9827), Moonfire (9833), Moonfire (9834), Moonfire (9835), Rejuvenation (9839), Rejuvenation (9840), Rejuvenation (9841), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Rip (9894), Rip (9896), Rake (9904), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Insect Swarm (24974), Insect Swarm (24975), Insect Swarm (24976), Insect Swarm (24977), Rejuvenation (25299), Blessed Recovery (27813), Wild Growth (408120), Lacerate (414644), Rejuvenation (417057), Rejuvenation (417058), Rejuvenation (417059), Rejuvenation (417060), Rejuvenation (417061), Rejuvenation (417062), Rejuvenation (417063), Rejuvenation (417064), Rejuvenation (417065), Rejuvenation (417066), Rejuvenation (417068), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Lacerate (1235826), Lacerate (1235827), Wild Growth (1238214), Wild Growth (1238215), Lacerate (1328616), Lacerate (1328617)
-                   Family Flags: 1, 4, 6, 9, 17, 21, 40, 58, 85, 126
+                   Affected Spells: Entangling Roots (339), Rejuvenation (774), Rejuvenation (1058), Entangling Roots (1062), Rip (1079), Rejuvenation (1430), Rake (1822), Rake (1823), Rake (1824), Rejuvenation (2090), Rejuvenation (2091), Rejuvenation (3627), Entangling Roots (5195), Entangling Roots (5196), Insect Swarm (5570), Rejuvenation (8910), Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Pounce (9005), Pounce Bleed (9007), Rip (9492), Rip (9493), Regrowth (9750), Rip (9752), Pounce (9823), Pounce Bleed (9824), Pounce Bleed (9826), Pounce (9827), Moonfire (9833), Moonfire (9834), Moonfire (9835), Rejuvenation (9839), Rejuvenation (9840), Rejuvenation (9841), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Rip (9894), Rip (9896), Rake (9904), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Insect Swarm (24974), Insect Swarm (24975), Insect Swarm (24976), Insect Swarm (24977), Rejuvenation (25299), Blessed Recovery (27813), Wild Growth (408120), Lacerate (414644), Rejuvenation (417057), Rejuvenation (417058), Rejuvenation (417059), Rejuvenation (417060), Rejuvenation (417061), Rejuvenation (417062), Rejuvenation (417063), Rejuvenation (417064), Rejuvenation (417065), Rejuvenation (417066), Rejuvenation (417068), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Lacerate (1235826), Lacerate (1235827), Wild Growth (1238214), Wild Growth (1238215), Lacerate (1328616), Lacerate (1328617)
+                   Family Flags: 1, 4, 6, 9, 17, 21, 40, 58, 85, 103, 126
+Hotfixed         : Affects Spells
 #2 (id=1291838)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
                    Affected Spells: Swiftmend (18562)
@@ -9826,6 +9840,7 @@ $@spelltooltip414924
 Tooltip          : Immobilized.
 
 Name             : Wild Growth (desc=Rank 2) (id=1238214) [Spell Family (7)] 
+Hotfixed         : Cooldown (6000 -> 0), Category Cooldown (0 -> 6000), Category (0 -> 1237)
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -9836,7 +9851,9 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Duration         : 7 seconds
 Cooldown         : 6 seconds
+Category         : 1237 (Type 0x0)
 Labels           : 21: Druid Spells
+Category Cooldown: 6 seconds
 Stance Mask      : 0x00000002
 Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Naturalist (17069 effect#1), Gift of Nature (17104 effect#2), Nature's Swiftness (17116 effect#1), Gift of the Earthmother (414673 effect#1), Tree of Life (Passive) (439734 effects: #1, #3), S03 - Item - T2- Druid - Restoration 6P Bonus (467205 effect#1), S03 - Item - T2- Druid - Restoration 6P Bonus Moonkin Effect (467206 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 58
@@ -9852,6 +9869,7 @@ Variables        : $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
 $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 Name             : Wild Growth (desc=Rank 3) (id=1238215) [Spell Family (7)] 
+Hotfixed         : Cooldown (6000 -> 0), Category Cooldown (0 -> 6000), Category (0 -> 1237)
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -9862,7 +9880,9 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Duration         : 7 seconds
 Cooldown         : 6 seconds
+Category         : 1237 (Type 0x0)
 Labels           : 21: Druid Spells
+Category Cooldown: 6 seconds
 Stance Mask      : 0x00000002
 Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Naturalist (17069 effect#1), Gift of Nature (17104 effect#2), Nature's Swiftness (17116 effect#1), Gift of the Earthmother (414673 effect#1), Tree of Life (Passive) (439734 effects: #1, #3), S03 - Item - T2- Druid - Restoration 6P Bonus (467205 effect#1), S03 - Item - T2- Druid - Restoration 6P Bonus Moonkin Effect (467206 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 58

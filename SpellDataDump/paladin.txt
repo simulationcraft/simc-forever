@@ -2460,7 +2460,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -2482,7 +2482,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -2510,7 +2510,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -2537,7 +2537,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -2562,7 +2562,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -2587,7 +2587,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -2679,9 +2679,10 @@ Effects          :
 Description      : Gives you a $m1% chance after Blocking and a ${$m1*2.5}% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to $1326084u extra attacks. Cannot occur from Blocks more than once every ${$proccooldown}.1 sec.
 
 Name             : Judgement of Fury (desc=Rank 3) (id=20183) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 25 (max 31)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -2698,9 +2699,10 @@ Effects          :
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Judgement of Justice (desc=Rank 1) (id=20184) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 22
 Range            : 100 yards
 Duration         : 10 seconds
@@ -2714,9 +2716,10 @@ Description      : Prevents the target from fleeing.
 Tooltip          : Cannot flee.
 
 Name             : Judgement of Light (desc=Rank 1) (id=20185) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 30
 Range            : 100 yards
 Duration         : 40 seconds
@@ -2733,9 +2736,10 @@ Description      : Melee attacks made against you have a chance of causing the a
 Tooltip          : Melee attacks made against you have a chance of causing the attacker to be healed for $20267s1.
 
 Name             : Judgement of Wisdom (desc=Rank 1) (id=20186) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 38
 Range            : 100 yards
 Duration         : 40 seconds
@@ -2752,9 +2756,10 @@ Description      : Attacks and spells used against the target have a chance of r
 Tooltip          : Attacks and spells used against you have a chance of restoring $20268s1 of the attacker's mana.
 
 Name             : Judgement of Righteousness (desc=Rank 1) (id=20187) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 1 (max 7)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -2768,9 +2773,10 @@ Effects          :
                    Base Value: 108 | Scaled Value: 216 | Points Per Level: 18 | SP Coefficient: 0.058
 
 Name             : Judgement of the Crusader (desc=Rank 2) (id=20188) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 12
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3109,9 +3115,10 @@ Effects          :
 Description      : Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect.
 
 Name             : Judgement of Righteousness (desc=Rank 2) (id=20280) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 10 (max 16)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -3125,9 +3132,10 @@ Effects          :
                    Base Value: 216 | Scaled Value: 318 | Points Per Level: 17 | SP Coefficient: 0.125
 
 Name             : Judgement of Righteousness (desc=Rank 3) (id=20281) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 18 (max 24)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -3141,9 +3149,10 @@ Effects          :
                    Base Value: 352 | Scaled Value: 490 | Points Per Level: 23 | SP Coefficient: 0.185
 
 Name             : Judgement of Righteousness (desc=Rank 4) (id=20282) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 26 (max 32)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -3157,9 +3166,10 @@ Effects          :
                    Base Value: 541 | Scaled Value: 727 | Points Per Level: 31 | SP Coefficient: 0.2
 
 Name             : Judgement of Righteousness (desc=Rank 5) (id=20283) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 34 (max 40)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -3173,9 +3183,10 @@ Effects          :
                    Base Value: 785 | Scaled Value: 1007 | Points Per Level: 37 | SP Coefficient: 0.2
 
 Name             : Judgement of Righteousness (desc=Rank 6) (id=20284) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 42 (max 48)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -3189,9 +3200,10 @@ Effects          :
                    Base Value: 1082 | Scaled Value: 1328 | Points Per Level: 41 | SP Coefficient: 0.2
 
 Name             : Judgement of Righteousness (desc=Rank 7) (id=20285) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 50 (max 56)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -3205,9 +3217,10 @@ Effects          :
                    Base Value: 1407 | Scaled Value: 1689 | Points Per Level: 47 | SP Coefficient: 0.2
 
 Name             : Judgement of Righteousness (desc=Rank 8) (id=20286) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 58 (max 64)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -3232,7 +3245,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3260,7 +3273,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3288,7 +3301,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3316,7 +3329,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3344,7 +3357,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3372,7 +3385,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3400,7 +3413,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
@@ -3417,9 +3430,10 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Judgement of the Crusader (desc=Rank 3) (id=20300) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 22
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3436,9 +3450,10 @@ Description      : Increases Holy damage taken by up to $s1.
 Tooltip          : Increases Holy damage taken by up to $s1.
 
 Name             : Judgement of the Crusader (desc=Rank 4) (id=20301) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 32
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3455,9 +3470,10 @@ Description      : Increases Holy damage taken by up to $s1.
 Tooltip          : Increases Holy damage taken by up to $s1.
 
 Name             : Judgement of the Crusader (desc=Rank 5) (id=20302) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 42
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3474,9 +3490,10 @@ Description      : Increases Holy damage taken by up to $s1.
 Tooltip          : Increases Holy damage taken by up to $s1.
 
 Name             : Judgement of the Crusader (desc=Rank 6) (id=20303) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 52
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3502,7 +3519,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3528,7 +3545,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3554,7 +3571,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3580,7 +3597,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3723,9 +3740,10 @@ Effects          :
                    Base Value: 61 | Scaled Value: 61 | Target: Self (1)
 
 Name             : Judgement of Light (desc=Rank 2) (id=20344) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 40
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3742,9 +3760,10 @@ Description      : Melee attacks made against you have a chance of causing the a
 Tooltip          : Melee attacks made against you have a chance of causing the attacker to be healed for $20341s1.
 
 Name             : Judgement of Light (desc=Rank 3) (id=20345) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 50
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3761,9 +3780,10 @@ Description      : Melee attacks made against you have a chance of causing the a
 Tooltip          : Melee attacks made against you have a chance of causing the attacker to be healed for $20342s1.
 
 Name             : Judgement of Light (desc=Rank 4) (id=20346) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 60
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3791,7 +3811,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3816,7 +3836,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3841,7 +3861,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3903,9 +3923,10 @@ Effects          :
                    Base Value: 59 | Scaled Value: 59 | Resource: mana | Target: Self (1)
 
 Name             : Judgement of Wisdom (desc=Rank 2) (id=20354) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 48
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3922,9 +3943,10 @@ Description      : Attacks and spells used against the target have a chance of r
 Tooltip          : Attacks and spells used against you have a chance of restoring $20352s1 of the attacker's mana.
 
 Name             : Judgement of Wisdom (desc=Rank 3) (id=20355) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 58
 Range            : 100 yards
 Duration         : 40 seconds
@@ -3952,7 +3974,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -3977,7 +3999,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, Yellow Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4043,7 +4065,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4057,9 +4079,10 @@ Unleashing this Seal's energy will judge an enemy, instantly causing $/2;20467s1
 Tooltip          : Melee attacks have a chance to deal additional Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 4) (id=20411) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 34 (max 40)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -4077,9 +4100,10 @@ Effects          :
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 5) (id=20412) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 42 (max 48)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -4096,9 +4120,10 @@ Effects          :
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 6) (id=20413) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 50 (max 56)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -4115,9 +4140,10 @@ Effects          :
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 7) (id=20414) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 58 (max 64)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -4209,7 +4235,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -4236,7 +4262,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4263,7 +4289,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4290,7 +4316,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4311,7 +4337,7 @@ School           : Holy
 Spell Type       : Melee
 Range            : 5 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Triggered By     : Seal of Command (20375), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920)
 Family Flags     : 25
 Attributes       : Do Not Sheath (18), Not a Proc (105), Allow Cast While Casting (135), Unknown (454), Unknown (493)
@@ -4320,6 +4346,7 @@ Effects          :
                    Base Value: 70 | Scaled Value: 0.7 | SP Coefficient: 0.29 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 1) (id=20425) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4333,6 +4360,7 @@ Effects          :
                    Base Value: 20467 | Scaled Value: 20467 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 1) (id=20467) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4465,7 +4493,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4491,7 +4519,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4517,7 +4545,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4543,7 +4571,7 @@ Labels           : 26: Paladin Spells
 Internal Cooldown: 1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 25
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4760,6 +4788,7 @@ Effects          :
 Description      : Blasts the target with Holy energy, causing $25902s1 Holy damage to an enemy, or $25903s1 healing to an ally.
 
 Name             : Judgement of Command (desc=Rank 3) (id=20961) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4773,6 +4802,7 @@ Effects          :
                    Base Value: 20964 | Scaled Value: 20964 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 2) (id=20962) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4786,6 +4816,7 @@ Effects          :
                    Base Value: 20963 | Scaled Value: 20963 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 2) (id=20963) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4800,6 +4831,7 @@ Effects          :
                    Base Value: 153 | Scaled Value: 201.8 (delta=0.091503) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 3) (id=20964) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4814,6 +4846,7 @@ Effects          :
                    Base Value: 214 | Scaled Value: 258.8 (delta=0.093458) | Points Per Level: 5.6 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20965) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4828,6 +4861,7 @@ Effects          :
                    Base Value: 274 | Scaled Value: 322.8 (delta=0.094891) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 5) (id=20966) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4842,6 +4876,7 @@ Effects          :
                    Base Value: 356 | Scaled Value: 356 (delta=0.095506) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20967) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4855,6 +4890,7 @@ Effects          :
                    Base Value: 20965 | Scaled Value: 20965 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 5) (id=20968) [Spell Family (10)] 
+Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4877,7 +4913,7 @@ GCD              : 1.5 seconds
 Duration         : 30 seconds
 Labels           : 26: Paladin Spells
                  : 1203
-Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Improved Seal of the Crusader (20335 effect#1), Improved Seal of the Crusader (20336 effect#1), Improved Seal of the Crusader (20337 effect#1), Seal Duration Increase (27848 effect#1), Improved Seal of the Crusader (28852 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 9
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4905,7 +4941,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Unknown (454), Unknown (493)
 Effects          :
@@ -4922,9 +4958,10 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Judgement of the Crusader (desc=Rank 1) (id=21183) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 6
 Range            : 100 yards
 Duration         : 40 seconds
@@ -5419,6 +5456,18 @@ Effects          :
                    Family Flags: 12
 Description      : Reduces the mana cost of your Cleanse spell by $s1.
 
+Name             : Seal Duration Increase (id=27848) [Spell Family (10), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 26: Paladin Spells
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Effects          :
+#1 (id=695801)   : Apply Aura (6) | Add Flat Modifier (107): Spell Duration (1)
+                   Base Value: 4000 | Scaled Value: 4000 | SP Coefficient: 1 | Misc Value: 1 | Target: Self (1)
+                   Affected Spells: Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Seal of the Crusader (21082), Seal of Righteousness (21084), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Seal of Fury (1311649), Seal of Fury (1311656)
+                   Family Flags: 9, 25, 27
+Description      : Increases the duration of your Seal spells by ${$s1/1000} sec.
+
 Name             : Purify and Cleanse Cost Reduced (id=27850) [Spell Family (10), Passive, Hidden] 
 School           : Physical
 Spell Type       : None
@@ -5608,7 +5657,7 @@ Duration         : 30 seconds
 Labels           : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee, White Melee Taken, Yellow Melee, Yellow Melee Taken, White Ranged Taken, Yellow Ranged Taken, Generic Helpful Taken, Generic Hostile Spell Taken, Magic Heal Taken, Magic Hostile Spell Taken, Periodic Taken, Helpful Periodic Taken
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Include In Advanced Combat Log (72), Can Proc From Procs (122), Allow Proc While Sitting (147), Can Proc From Suppressed Target Procs (254), Can Proc from Suppressed Caster Procs (385), Unknown (493)
 Effects          :
@@ -5634,7 +5683,7 @@ School           : Holy
 Spell Type       : Melee
 Range            : 100 yards
 Max Targets      : 1
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Triggered By     : Seal of Martyrdom (407798)
 Family Flags     : 27, 42
 Attributes       : Do Not Sheath (18), Not a Proc (105), Do Not Display Range (126), Allow Cast While Casting (135), Suppress Weapon Procs (151), Unknown (493)
@@ -8400,10 +8449,12 @@ Effects          :
 Tooltip          : Black Value increased by $s1%.
 
 Name             : Unsealed Wrath (id=1310735) [Spell Family (10), Passive, Hidden] 
+Hotfixed         : Internal Cooldown (0 -> 100)
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Physical
 Spell Type       : None
+Internal Cooldown: 0.1 seconds
 Proc Chance      : 100%
 Proc Flags       : White Melee
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
@@ -8869,7 +8920,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :
@@ -8885,9 +8936,10 @@ Unleashing this Seal's energy inflicts $1311650s1 Holy damage to an enemy and ta
 Tooltip          : Melee attacks inflict an additional $1311647s1 Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 1) (id=1311650) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 10 (max 16)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -8920,9 +8972,10 @@ Effects          :
 Description      : Deals additional Holy damage on melee attack.
 
 Name             : Judgement of Fury (desc=Rank 2) (id=1311655) [Spell Family (10)] 
+Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
-Spell Type       : Melee
+Spell Type       : Ranged
 Spell Level      : 18 (max 24)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
@@ -8950,7 +9003,7 @@ Labels           : 26: Paladin Spells
                  : 1203
 Proc Chance      : 100%
 Proc Flags       : White Melee
-Affecting Spells : Benediction (20101 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Affecting Spells : Benediction (20101 effect#1), Seal Duration Increase (27848 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
 Family Flags     : 27
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), No AutoCast (AI) (49), Unknown (454), Unknown (493)
 Effects          :

@@ -1230,15 +1230,28 @@ void to_json( const ::report::json::report_configuration_t& report_configuration
   auto overrides = root[ "overrides" ];
   add_non_zero( overrides, "arcane_intellect", sim.overrides.arcane_intellect );
   add_non_zero( overrides, "battle_shout", sim.overrides.battle_shout );
+  add_non_zero( overrides, "blessing_of_kings", sim.overrides.blessing_of_kings );
+  add_non_zero( overrides, "blessing_of_might", sim.overrides.blessing_of_might );
+  add_non_zero( overrides, "blessing_of_wisdom", sim.overrides.blessing_of_wisdom );
+  add_non_zero( overrides, "divine_spirit", sim.overrides.divine_spirit );
+  add_non_zero( overrides, "flametongue_totem", sim.overrides.flametongue_totem );
+  add_non_zero( overrides, "grace_of_air_totem", sim.overrides.grace_of_air_totem );
+  add_non_zero( overrides, "leader_of_the_pack", sim.overrides.leader_of_the_pack );
+  add_non_zero( overrides, "mark_of_the_wild", sim.overrides.mark_of_the_wild );
+  add_non_zero( overrides, "moonkin_aura", sim.overrides.moonkin_aura );
   add_non_zero( overrides, "power_word_fortitude", sim.overrides.power_word_fortitude );
+  add_non_zero( overrides, "strength_of_earth_totem", sim.overrides.strength_of_earth_totem );
+  add_non_zero( overrides, "trueshot_aura", sim.overrides.trueshot_aura );
+  add_non_zero( overrides, "windfury_totem", sim.overrides.windfury_totem );
+  add_non_zero( overrides, "blood_pact", sim.overrides.blood_pact );
+  add_non_zero( overrides, "dark_inspiration", sim.overrides.dark_inspiration );
+  add_non_zero( overrides, "mana_spring_totem", sim.overrides.mana_spring_totem );
+  add_non_zero( overrides, "curse_of_recklessness", sim.overrides.curse_of_recklessness );
+  add_non_zero( overrides, "curse_of_the_elements", sim.overrides.curse_of_the_elements );
+  add_non_zero( overrides, "faerie_fire", sim.overrides.faerie_fire );
+  add_non_zero( overrides, "sunder_armor", sim.overrides.sunder_armor );
   add_non_zero( overrides, "mortal_wounds", sim.overrides.mortal_wounds );
   add_non_zero( overrides, "bleeding", sim.overrides.bleeding );
-  add_non_zero( overrides, "bloodlust", sim.overrides.bloodlust );
-  if ( sim.overrides.bloodlust )
-  {
-    add_non_zero( overrides, "bloodlust_percent", sim.bloodlust_percent );
-    add_non_zero( overrides, "bloodlust_time", sim.bloodlust_time );
-  }
 
   if ( !sim.overrides.target_health.empty() )
   {

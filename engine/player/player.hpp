@@ -452,8 +452,9 @@ struct player_t : public actor_t
     buff_t* damage_done;
     buff_t* devotion_aura;
     buff_t* entropic_embrace;
-    buff_t* exhaustion;
-    buff_t* guardian_spirit;
+    buff_t* innervate;
+    buff_t* mana_tide_totem;
+    buff_t* power_infusion;
     buff_t* blessing_of_sacrifice;
     buff_t* pain_suppression;
     buff_t* movement;
@@ -461,14 +462,17 @@ struct player_t : public actor_t
     buff_t* stoneform;
     buff_t* stunned;
     buff_t* rooted;
-    buff_t* bloodlust;
   } buffs;
 
   struct debuffs_t
   {
     buff_t* bleeding;
     buff_t* casting;
+    buff_t* curse_of_recklessness;
+    buff_t* curse_of_the_elements;
+    buff_t* faerie_fire;
     buff_t* flying;
+    buff_t* sunder_armor;
     buff_t* forbearance;
     buff_t* invulnerable;
     buff_t* vulnerable;
@@ -479,6 +483,8 @@ struct player_t : public actor_t
   {
     std::string pool;
     std::unordered_map<buff_t*, std::vector<cooldown_t*>> invoke_cds;
+    std::vector<timespan_t> innervate;
+    std::vector<timespan_t> mana_tide_totem;
     std::vector<timespan_t> power_infusion;
   } external_buffs;
 
@@ -609,6 +615,7 @@ protected:
   void parse_all_class_passives();
   void parse_all_passive_talents();
   void parse_all_passive_sets();
+  const spell_data_t* find_raid_buff_rank( std::initializer_list<unsigned> ) const;
   void parse_raid_buffs();
   // directly override the values
   void register_passive_spell_override( const spell_data_t&, double value, std::string_view field );
@@ -708,7 +715,6 @@ public:
   double get_position_distance( double m = 0, double v = 0 ) const;
   double compute_incoming_damage( timespan_t interval) const;
   double compute_incoming_magic_damage( timespan_t interval ) const;
-  double calculate_time_to_bloodlust() const;
   slot_e parent_item_slot( const item_t& item ) const;
   slot_e child_item_slot( const item_t& item ) const;
   /// Actor-specific cooldown tolerance for queueable actions

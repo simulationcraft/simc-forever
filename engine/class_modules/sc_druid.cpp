@@ -80,7 +80,6 @@ struct druid_t final : public parse_player_effects_t
   {
     buff_t* cat_form;
     buff_t* moonkin_form;
-    buff_t* innervate;
     buff_t* clearcasting;
     buff_t* natures_grace;
     buff_t* eclipse;
@@ -767,6 +766,7 @@ struct faerie_fire_t : public druid_spell_t
     : druid_spell_t( "faerie_fire", player, player->rank.faerie_fire.find_rank()->spell() )
   {
     parse_options( options_str );
+    background = sim->overrides.faerie_fire != 0;
 
     if ( p()->buff.cat_form->data().ok() )
     {
@@ -814,7 +814,8 @@ struct mark_of_the_wild_t : public druid_spell_t
     : druid_spell_t( "mark_of_the_wild", player, player->rank.mark_of_the_wild.find_rank()->spell() )
   {
     parse_options( options_str );
-    harmful = false;
+    harmful    = false;
+    background = sim->overrides.mark_of_the_wild != 0;
   }
 
   void execute() override
@@ -836,11 +837,11 @@ struct innervate_t : public druid_spell_t
     // assumed that the regen buff applies only to spirit regen
   }
 
-  void impact( action_state_t* s ) override
+  void execute() override
   {
-    druid_spell_t::impact( s );
+    druid_spell_t::execute();
 
-    p()->buff.innervate->trigger();
+    p()->buffs.innervate->trigger();
   }
 };
 
@@ -1176,9 +1177,6 @@ void druid_t::create_buffs()
 {
   player_t::create_buffs();
 
-  auto const innervate_buff = rank.innervate.find_rank()->spell();
-  buff.innervate            = make_buff_fallback( innervate_buff->ok(), this, "innervate", innervate_buff );
-
   auto const mark_of_the_wild_spell = rank.mark_of_the_wild.find_rank()->spell();
   auto const mark_of_the_wild_buff = debug_cast<stat_buff_t*>(
       make_buff_fallback<stat_buff_t>( mark_of_the_wild_spell->ok(), this, "mark_of_the_wild", mark_of_the_wild_spell ) );
@@ -1219,7 +1217,8 @@ void druid_t::create_buffs()
           ->set_stack_change_callback( [ this ]( buff_t*, int, int ) { buff.moonkin_aura->trigger(); } );
 
   buff.moonkin_aura =
-      make_buff_fallback( talent.moonkin_form->ok(), this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() );
+      make_buff_fallback( talent.moonkin_form->ok() && !sim->overrides.moonkin_aura && !sim->overrides.leader_of_the_pack,
+                          this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() );
 };
 
 void druid_t::init_special_effects()
@@ -1253,7 +1252,6 @@ void druid_t::init_finished()
 
 void druid_t::parse_player_effects()
 {
-  parse_effects( buff.innervate );
   parse_effects( buff.moonkin_aura );
   parse_effects( buff.natures_grace );  // buffs spell haste and gcd, confirm the double dip on gcd speed
   parse_effects( buff.cat_form );
