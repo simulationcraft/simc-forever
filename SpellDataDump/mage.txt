@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
 Name             : Blizzard (desc=Rank 1) (id=10) [Spell Family (3)] 
 Class            : Mage
 School           : Frost
@@ -4592,7 +4592,6 @@ Description      : Hurls a fiery ball that causes $s1 Fire damage and an additio
 Tooltip          : $s2 Fire damage every $t2 sec.
 
 Name             : Juju Guile (id=16327) [Spell Family (3)] 
-Hotfixed         : Attributes
 School           : Arcane
 Spell Type       : Magic
 Spell Level      : 42

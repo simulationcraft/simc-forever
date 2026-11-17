@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
 Name             : Backstab (desc=Rank 1) (id=53) [Spell Family (8)] 
 Class            : Rogue
 School           : Physical
@@ -4189,7 +4189,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 5302 | Target: Self (1)
 
 Name             : Juju Escape (id=16321) [Spell Family (8)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 8
