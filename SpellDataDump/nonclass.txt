@@ -68253,6 +68253,7 @@ Name             : Magical Awareness (id=1297774)
 School           : Physical
 Spell Type       : None
 Duration         : 7200 seconds
+Cooldown         : 30 seconds
 Attributes       : Allow While Mounted (24), Aura Is Buff (140), Unknown (493)
 Effects          :
 #1 (id=1321155)  : Apply Aura (6) | Dummy (4)
@@ -70640,15 +70641,17 @@ Description      : Throw the loosely tied pouch of tomb dust into The Great Sea.
 Name             : Traveler's Mark (id=1306267) 
 School           : Physical
 Spell Type       : None
-Range            : 60 yards
+Range            : 2 yards
 Cone Angle       : 60 degrees
 Cast Time        : 3 seconds
+Duration         : 60 seconds
 Cooldown         : 1800 seconds
 Attributes       : No Aura Cancel (31), No Threat (42), Aura Unique (43), Do Not Report Spell Failure (71), Not an Action (92), Always Hit (114), Not an Attack (194), No Attack Miss (249), Force Dest Location (288), Unknown (493)
 Aura Interrupt   : Moving (3)
 Effects          :
-#1 (id=1333627)  : Force Cast (160): Create
-                   Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1308883 | Target: Self (1)
+#1 (id=1333627)  : Summon Guardian (28)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 257480 | Misc Value 2: 3077 | Target: at Area (87)
+Hotfixed         : Type (160 -> 28), Misc Value (0 -> 257480), Misc Value 2 (0 -> 3077), Trigger Spell (1308883 -> 0), Target 1 (1 -> 87)
 Description      : Place a Traveler's Sign that lasts for 1 min. A message can be written on the sign, causing it to last for 1 hour and making it visible to other players.
 Tooltip          : Carving traveler's marks.
 
@@ -72203,17 +72206,6 @@ Effects          :
 #1 (id=1337655)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 271636 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Right Click to summon and dismiss your weevil.
-
-Name             : Create (id=1308883) 
-School           : Physical
-Spell Type       : None
-Duration         : 60 seconds
-Triggered By     : Traveler's Mark (1306267)
-Attributes       : Unknown (493)
-Aura Interrupt   : Moving (3)
-Effects          :
-#1 (id=1337676)  : Summon Guardian (28)
-                   Base Value: 0 | Scaled Value: 0 | Misc Value: 257480 | Misc Value 2: 3077 | Target: Front of Self (47)
 
 Name             : Manablade (id=1308913) [Hidden] 
 School           : Physical
