@@ -136,12 +136,13 @@ static constexpr std::array<expected_stat_t, 133> __expected_stat_data { {
 } };
 
 // Expected stat mods, wow build 1.60.1.70959
-static constexpr std::array<expected_stat_mod_t, 5> __expected_stat_mod_data { {
+static constexpr std::array<expected_stat_mod_t, 6> __expected_stat_mod_data { {
   {   1, 1.000000f, 0.730000f, 0.510000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 0 },
   {   2, 1.000000f, 0.930000f, 0.810000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 0 },
   {   3, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 0 },
   {   4, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 0 },
   { 489, 1.000000f, 1.200000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 1.200000f, 0 },
+  { 535, 1.500000f, 1.500000f, 1.000000f, 1.000000f, 1.000000f, 1.000000f, 1.500000f, 0 },
 } };
 
 // Player expected stat by class and level, wow build 1.60.1.70959
