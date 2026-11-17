@@ -172,6 +172,7 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* defensive_stance_passive = spell_data_t::nil();
     const spell_data_t* demoralizing_shout       = spell_data_t::nil();
     const spell_data_t* disarm                   = spell_data_t::nil();
+    const spell_data_t* execute_damage           = spell_data_t::nil();
     const spell_data_t* hamstring                = spell_data_t::nil();
     const spell_data_t* intimidating_shout       = spell_data_t::nil();
     const spell_data_t* intimidating_shout_fear  = spell_data_t::nil();
@@ -223,6 +224,7 @@ struct warrior_t final : public parse_player_effects_t
     spell_ranks_t cleave;
     spell_ranks_t demoralizing_shout;
     spell_ranks_t disarm;
+    spell_ranks_t execute;
     spell_ranks_t hamstring;
     spell_ranks_t heroic_strike;
     spell_ranks_t mocking_blow;
@@ -798,6 +800,97 @@ struct victory_rush_t : public warrior_attack_t
   }
 };
 
+struct execute_damage_t : public warrior_attack_t
+{
+  execute_damage_t( warrior_t* player ) :
+    warrior_attack_t( "execute_damage", player, player->spell.execute_damage )
+  {
+    background  = true;
+    trigger_gcd = 0_ms;
+    special     = true;
+
+    base_dd_min = base_dd_max = 0;
+  }
+
+  double cost() const override
+  { return 0; }
+};
+
+struct execute_t : public warrior_attack_t
+{
+  execute_damage_t* damage = nullptr;
+  double base_damage       = 0;
+  double rage_conversion   = 0;
+
+  execute_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "execute", player, player->rank.execute.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    base_damage = data().effectN( 1 ).base_value();
+
+    // per-rage conversion in effect 1's chain-multiplier
+    rage_conversion = data().effectN( 1 ).chain_multiplier() * 10.0;
+
+    may_miss = may_dodge = may_parry = may_block = may_crit = false;
+    base_dd_min = base_dd_max = 0;
+    attack_power_mod.direct = 0;
+
+    damage = new execute_damage_t( player );
+    add_child( damage );
+  }
+
+  double cost() const override
+  {
+    return std::max( warrior_attack_t::cost(), p()->resources.current[ RESOURCE_RAGE ] );
+  }
+
+  // Execute only consumes rage when the damage actually lands.  Miss/dodge/parry
+  // refunds base cost, and extra rage isn't deducted
+  void consume_resource() override
+  {
+    last_resource_cost = 0;
+  }
+
+  bool ready() override
+  {
+    if ( !data().ok() || !target || !target->is_enemy() )
+      return false;
+
+    if ( target->resources.pct( RESOURCE_HEALTH ) > 0.20 )
+      return false;
+
+    return warrior_attack_t::ready();
+  }
+
+  void execute() override
+  {
+    double base_cost    = warrior_attack_t::cost();
+    double current_rage = p()->resources.current[ RESOURCE_RAGE ];
+
+    double extra_rage = std::max( 0.0, current_rage - base_cost );
+
+    damage->base_dd_min = damage->base_dd_max = base_damage + extra_rage * rage_conversion;
+
+    warrior_attack_t::execute();
+
+    damage->execute_on_target( target );
+
+    if ( damage->execute_state && result_is_hit( damage->execute_state->result ) )
+      action_t::consume_resource();
+    else
+    {
+      last_resource_cost = 0.2 * base_cost;
+
+      p()->resource_loss( RESOURCE_RAGE, last_resource_cost, nullptr, this );
+      stats->consume_resource( RESOURCE_RAGE, last_resource_cost );
+
+      sim->print_log("{} consumes {} {} for {} ({})",
+          *p(), last_resource_cost, RESOURCE_RAGE, *this, p()->resources.current[ RESOURCE_RAGE ] );
+    }
+  }
+};
+
 struct retaliation_attack_t : public warrior_attack_t
 {
   retaliation_attack_t( warrior_t* player ) :
@@ -1287,6 +1380,14 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 676 ),
   };
 
+  rank.execute = { this,
+    spell_container_t().set_spell(  5308 ),
+    spell_container_t().set_spell( 20658 ),
+    spell_container_t().set_spell( 20660 ),
+    spell_container_t().set_spell( 20661 ),
+    spell_container_t().set_spell( 20662 ),
+  };
+
   rank.hamstring = { this,
     spell_container_t().set_spell( 1715 ),
     spell_container_t().set_spell( 7372 ),
@@ -1379,6 +1480,7 @@ void warrior_t::init_spells()
   spell.defensive_stance_passive = find_spell( 7376 );
   spell.demoralizing_shout       = rank.demoralizing_shout.find_rank()->spell();
   spell.disarm                   = rank.disarm.find_rank()->spell();
+  spell.execute_damage           = find_spell( 20647 );
   spell.hamstring                = rank.hamstring.find_rank()->spell();
   spell.intimidating_shout       = find_spell( 5246 );
   spell.intimidating_shout_fear  = find_spell( 20511 );
@@ -1489,6 +1591,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "shield_block" ) return new shield_block_t( this, options_str );
 
   if ( name == "rend" ) return new rend_t( this, options_str );
+  if ( name == "execute" ) return new execute_t( this, options_str );
   if ( name == "hamstring" ) return new hamstring_t( this, options_str );
   if ( name == "sunder_armor" ) return new sunder_armor_t( this, options_str );
   if ( name == "overpower" ) return new overpower_t( this, options_str );

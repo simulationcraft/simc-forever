@@ -2118,7 +2118,7 @@ std::ostringstream& spell_info::effect_to_str( const dbc_t& dbc, const spell_dat
   if ( e->pvp_coeff() != 1.0 )
     tokens.emplace_back( fmt::format( "PvP Coefficient: {:.7g}", e->pvp_coeff() ) );
 
-  if ( e->chain_target() != 0 )
+  if ( e->chain_target() != 0 || ( e->chain_multiplier() != 0.0 && e->chain_multiplier() != 1.0 ) )
     tokens.emplace_back( fmt::format( "Chain Multiplier: {}", e->chain_multiplier() ) );
 
   if ( e->type() == E_ENERGIZE || e->type() == E_ENERGIZE_PCT ||

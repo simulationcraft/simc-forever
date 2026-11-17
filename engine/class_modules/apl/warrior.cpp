@@ -47,6 +47,7 @@ void warrior( player_t* p )
   default_->add_action( "intimidating_shout" );
   default_->add_action( "bloodrage,if=rage<80" );
   default_->add_action( "victory_rush,if=buff.victorious.up" );
+  default_->add_action( "execute,if=target.health.pct<=20" );
   default_->add_action( "rend,if=!ticking" );
   default_->add_action( "overpower,if=buff.overpower.up" );
   default_->add_action( "revenge,if=buff.revenge_available.up" );
