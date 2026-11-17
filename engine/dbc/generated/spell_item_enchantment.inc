@@ -1,5 +1,5 @@
-// Item enchantment data, wow build 1.60.1.70938
-static constexpr std::array<item_enchantment_data_t, 2218> __spell_item_ench_data { {
+// Item enchantment data, wow build 1.60.1.70959
+static constexpr std::array<item_enchantment_data_t, 2219> __spell_item_ench_data { {
   {    1,      0,  0,   0,   0, 0, 0,   0,   0, {   3,   0,   0 }, {    0,    0,    0 }, {  15568,      0,      0 }, {  0.0000f,  0.0000f,  0.0000f },    2605, "Rockbiter 3"                       },
   {    2,      0,  0,   0,   0, 0, 0,   0,   0, {   1,   0,   0 }, {    0,    0,    0 }, {   8034,      0,      0 }, {  0.0000f,  0.0000f,  0.0000f },       0, "Frostbrand 1"                      },
   {    3,      0,  0,   0,   0, 0, 0,   0,   0, {   3,   0,   0 }, {  100,    0,    0 }, { 436519,      0,      0 }, {  0.0000f,  0.0000f,  0.0000f },       0, "Flametongue 3"                     },
@@ -2218,5 +2218,6 @@ static constexpr std::array<item_enchantment_data_t, 2218> __spell_item_ench_dat
   { 8721,      0,  0,   0,   0, 0, 0,   0,   0, {   3,   0,   0 }, {    0,    0,    0 }, { 1248761,      0,      0 }, {  0.0000f,  0.0000f,  0.0000f }, 1248760, "Recovery"                          },
   { 8734,      0,  0,   0,   0, 0, 0,   0,   0, {   5,   0,   0 }, {    3,    0,    0 }, {      5,      0,      0 }, {  0.0000f,  0.0000f,  0.0000f },   13622, "Intellect +$k1"                    },
   { 8737,      0,  0,   0,   0, 0, 0,   0,   0, {   3,   0,   0 }, {    0,    0,    0 }, { 1328947,      0,      0 }, {  0.0000f,  0.0000f,  0.0000f }, 1328948, "Speed Increase"                    },
+  { 8773,      0,  0,   0,   0, 0, 0,   0,   0, {   3,   3,   0 }, {   60,    0,    0 }, { 1331727, 1277246,      0 }, {  0.0000f,  0.0000f,  0.0000f },       0, "Fishing Lure +$k1"                 },
 } };
 
