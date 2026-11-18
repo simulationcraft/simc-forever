@@ -16569,7 +16569,7 @@ static const std::array<dbc_item_data_t, 13277> __item_data_chunk0 { {
   { "Copper Mace",   2844, 0x00000000, 0x00006004, 0x00, 9, 4, 0, 0, 1, 13, 2, 4, 0, 2600, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Copper Axe",   2845, 0x00000000, 0x00006004, 0x00, 9, 4, 0, 0, 1, 13, 2, 0, 0, 2400, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Copper Shortsword",   2847, 0x00000000, 0x00006004, 0x00, 10, 4, 0, 0, 2, 13, 2, 7, 2, 2500, 0.600000f, 0.000000f, &__item_stats_data[17], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
-  { "Bronze Mace",   2848, 0x00000000, 0x00006004, 0x00, 22, 17, 0, 0, 2, 13, 2, 4, 0, 2600, 0.600000f, 0.000000f, &__item_stats_data[4], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Bronze Mace",   2848, 0x00000000, 0x00006004, 0x00, 22, 17, 0, 0, 2, 13, 2, 4, 2, 2600, 0.600000f, 0.000000f, &__item_stats_data[4], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bronze Axe",   2849, 0x00000000, 0x00006004, 0x00, 23, 18, 0, 0, 2, 13, 2, 0, 2, 2500, 0.600000f, 0.000000f, &__item_stats_data[17], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bronze Shortsword",   2850, 0x00000000, 0x00006004, 0x00, 24, 19, 0, 0, 2, 13, 2, 7, 2, 2500, 0.600000f, 0.000000f, &__item_stats_data[7], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Copper Chain Belt",   2851, 0x00000000, 0x00006004, 0x00, 11, 6, 0, 0, 2, 6, 4, 3, 2, 0, 0.000000f, 0.000000f, &__item_stats_data[4], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
