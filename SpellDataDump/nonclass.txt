@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -1729,7 +1729,6 @@ Effects          :
 Description      : Cures diseases and neutralizes poisons up to level 35.
 
 Name             : Health II (id=3593) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
@@ -3192,7 +3191,6 @@ Effects          :
 Description      : Dispels all Immobilizing, Slowing and Stun effects.
 
 Name             : Fury of the Bogling (id=5665) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 10
@@ -6386,7 +6384,6 @@ Effects          :
 Description      : When applied to your fishing pole, increases Fishing by 75 for 10 minutes.
 
 Name             : Armor (desc=Rank 1) (id=8091) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 10 (max 10)
@@ -6401,7 +6398,6 @@ Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
 Name             : Armor (desc=Rank 2) (id=8094) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 25 (max 25)
@@ -6416,7 +6412,6 @@ Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
 Name             : Armor (desc=Rank 3) (id=8095) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 40 (max 40)
@@ -6431,7 +6426,6 @@ Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
 Name             : Intellect (desc=Rank 1) (id=8096) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 15 (max 15)
@@ -6446,7 +6440,6 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Intellect increased by $s1.
 
 Name             : Intellect (desc=Rank 2) (id=8097) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 30 (max 30)
@@ -6461,7 +6454,6 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Intellect increased by $s1.
 
 Name             : Intellect (desc=Rank 3) (id=8098) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 45 (max 45)
@@ -6476,7 +6468,6 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Intellect increased by $s1.
 
 Name             : Stamina (desc=Level 1) (id=8099) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 15 (max 15)
@@ -6491,7 +6482,6 @@ Description      : Increases the target's Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
 Name             : Stamina (desc=Level 2) (id=8100) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 30 (max 30)
@@ -6506,7 +6496,6 @@ Description      : Increases the target's Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
 Name             : Stamina (desc=Level 3) (id=8101) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 45 (max 45)
@@ -6521,7 +6510,6 @@ Description      : Increases the target's Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
 Name             : Spirit (desc=Rank 1) (id=8112) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 10 (max 10)
@@ -6536,7 +6524,6 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Spirit (desc=Rank 2) (id=8113) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 25 (max 25)
@@ -6551,7 +6538,6 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Spirit (desc=Rank 3) (id=8114) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 40 (max 40)
@@ -6566,7 +6552,6 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Agility (desc=Rank 1) (id=8115) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 20 (max 20)
@@ -6581,7 +6566,6 @@ Description      : Increases the target's Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Agility (desc=Rank 2) (id=8116) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 35 (max 35)
@@ -6596,7 +6580,6 @@ Description      : Increases the target's Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Agility (desc=Rank 3) (id=8117) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50 (max 50)
@@ -6611,7 +6594,6 @@ Description      : Increases the target's Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Strength (desc=Rank 1) (id=8118) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 20 (max 20)
@@ -6626,7 +6608,6 @@ Description      : Increases the target's Strength by $s1 for $d.
 Tooltip          : Strength increased by $s1.
 
 Name             : Strength (desc=Rank 2) (id=8119) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 35 (max 35)
@@ -6641,7 +6622,6 @@ Description      : Increases the target's Strength by $s1 for $d.
 Tooltip          : Strength increased by $s1.
 
 Name             : Strength (desc=Rank 3) (id=8120) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50 (max 50)
@@ -9255,6 +9235,15 @@ Effects          :
 #1 (id=688229)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
+Name             : Orcish War Leggings (id=9957) 
+School           : Physical
+Spell Type       : None
+Cast Time        : 60 seconds
+Attributes       : Is Ability (4), Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Effects          :
+#1 (id=687017)   : Create Item (24)
+                   Base Value: 1 | Scaled Value: 1 | Target: Self (1)
+
 Name             : Mithril Spurs (id=9964) 
 School           : Physical
 Spell Type       : None
@@ -9722,7 +9711,6 @@ Description      : Absorbs $s1 magical damage.  Lasts $d.
 Tooltip          : Magic damage absorption.
 
 Name             : Rage of Ages (id=10667) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -9738,7 +9726,6 @@ Description      : Increases Strength by $s1 when consumed. Effect lasts for 60 
 Tooltip          : Increases Strength by $s1.
 
 Name             : Spirit of Boar (id=10668) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -9754,7 +9741,6 @@ Description      : Increases Stamina by $s1 when consumed. Effect lasts for 60 m
 Tooltip          : Increases Stamina by $s1.
 
 Name             : Strike of the Scorpok (id=10669) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -9940,7 +9926,6 @@ Effects          :
 Description      : Right Click to summon and dismiss your cockroach.
 
 Name             : Infallible Mind (id=10692) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -9956,7 +9941,6 @@ Description      : Increases Intellect by $s1 when consumed. Effect lasts for 60
 Tooltip          : Increases Intellect by $s1.
 
 Name             : Spiritual Domination (id=10693) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 36 (max 255)
@@ -10332,7 +10316,6 @@ Description      : Increases Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Greater Agility (id=11334) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
@@ -10344,7 +10327,6 @@ Description      : Increases Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Greater Armor (id=11348) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Duration         : 3600 seconds
@@ -10433,7 +10415,6 @@ Description      : Increases resistance to shadow by $s1.  If an enemy strikes t
 Tooltip          : Increases shadow resist by $s1 and may disease attackers.
 
 Name             : Gift of Arthas (id=11374) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : None
 Range            : 5 yards
@@ -10535,7 +10516,6 @@ Description      : Gives you a dream vision that lets you explore areas that are
 Tooltip          : In a dream vision.
 
 Name             : Greater Strength (id=11405) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
@@ -10547,7 +10527,6 @@ Description      : Increases your Strength by $s1 for $d.
 Tooltip          : Increases Strength by $s1.
 
 Name             : Potion of Demon Slaying (id=11406) 
-Hotfixed         : Attributes
 School           : Holy
 Spell Type       : None
 Duration         : 300 seconds
@@ -10704,7 +10683,6 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Shadow Power (id=11474) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Fire
 Spell Type       : Magic
 Duration         : 1800 seconds
@@ -11452,7 +11430,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Agility (desc=Rank 4) (id=12174) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 65 (max 65)
@@ -11467,7 +11444,6 @@ Description      : Increases the target's Agility by $s1 for $d.
 Tooltip          : Agility increased by $s1.
 
 Name             : Armor (desc=Rank 4) (id=12175) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 55 (max 55)
@@ -11482,7 +11458,6 @@ Description      : Increases the target's Armor by $s1 for $d.
 Tooltip          : Armor increased by $s1.
 
 Name             : Intellect (desc=Rank 4) (id=12176) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60 (max 60)
@@ -11497,7 +11472,6 @@ Description      : Increases the target's Intellect by $s1 for $d.
 Tooltip          : Intellect increased by $s1.
 
 Name             : Spirit (desc=Rank 4) (id=12177) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 55 (max 55)
@@ -11512,7 +11486,6 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Stamina (desc=Level 4) (id=12178) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60 (max 60)
@@ -11527,7 +11500,6 @@ Description      : Increases the target's Stamina by $s1 for $d.
 Tooltip          : Stamina increased by $s1.
 
 Name             : Strength (desc=Rank 4) (id=12179) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 65 (max 65)
@@ -18925,7 +18897,6 @@ Description      : Increases the target's Spirit by $s1 for $d.
 Tooltip          : Spirit increased by $s1.
 
 Name             : Crystal Ward (id=15233) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Range            : 30 yards
@@ -18976,7 +18947,6 @@ Effects          :
 Description      : Open locked bar door.
 
 Name             : Crystal Spire (id=15279) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 34
@@ -20511,7 +20481,6 @@ Effects          :
 Description      : Empty to create a Charm Pouch.
 
 Name             : Juju Flurry (id=16322) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 22
@@ -20528,7 +20497,6 @@ Description      : Increases the target's attack speed by $s1% for $d.
 Tooltip          : Increases the target's attack speed by $s1%.
 
 Name             : Juju Power (id=16323) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 65 (max 65)
@@ -20542,7 +20510,6 @@ Description      : Increases the target's Strength by $s1 for $d.
 Tooltip          : Strength increased by $s1.
 
 Name             : Juju Chill (id=16325) 
-Hotfixed         : Attributes
 School           : Frost
 Spell Type       : None
 Spell Level      : 65
@@ -20556,7 +20523,6 @@ Description      : Increase Frost resistance by $s1 for $d.
 Tooltip          : Frost resistance increased by $s1.
 
 Name             : Juju Ember (id=16326) 
-Hotfixed         : Attributes
 School           : Fire
 Spell Type       : None
 Spell Level      : 65
@@ -21830,7 +21796,6 @@ Effects          :
 Description      : Place in the doorway at one of Andorhal's ruined towers as a magical marker for future troop movement.
 
 Name             : Winterfall Firewater (id=17038) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 1200 seconds
@@ -22555,7 +22520,6 @@ Effects          :
 Description      : Restores $s1 health.
 
 Name             : Elixir of the Sages (id=17535) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
@@ -22581,7 +22545,6 @@ Effects          :
 Description      : Awaken the sleeping druid.
 
 Name             : Elixir of Brute Force (id=17537) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
@@ -22595,7 +22558,6 @@ Description      : Increases Strength and Stamina by $s1 for $d.
 Tooltip          : Strength and Stamina increased by $s1.
 
 Name             : Elixir of the Mongoose (id=17538) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 1800 seconds
@@ -22609,7 +22571,6 @@ Description      : Increases Agility by $s1 and chance to get a critical hit by 
 Tooltip          : Agility increased by $w1 and critical hit chance increases by $w2%.
 
 Name             : Greater Arcane Elixir (id=17539) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 3600 seconds
@@ -22625,7 +22586,6 @@ Description      : Increases spell damage by up to $s1 for $d.
 Tooltip          : Magical damage dealt by spells and abilities is increased by up to $s1.
 
 Name             : Greater Stoneshield (id=17540) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Duration         : 120 seconds
@@ -23056,7 +23016,6 @@ Description      : Increases movement speed by $s2% and restores $s1 health ever
 Tooltip          : Increased movement speed and life regeneration.
 
 Name             : Flask of the Titans (id=17626) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 7200 seconds
@@ -23069,7 +23028,6 @@ Description      : Increases the player's maximum health by $s1 for $d. You can 
 Tooltip          : Health increased by $s1.
 
 Name             : Distilled Wisdom (id=17627) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 7200 seconds
@@ -23082,7 +23040,6 @@ Description      : Increases the player's maximum Mana by $s1 for $d. You can on
 Tooltip          : Mana increased by $s1.
 
 Name             : Supreme Power (id=17628) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 7200 seconds
@@ -23099,7 +23056,6 @@ Description      : Increases damage done by magical spells and effects by up to 
 Tooltip          : Spell damage increased by up to $s1.
 
 Name             : Chromatic Resistance (id=17629) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 7200 seconds
@@ -27287,7 +27243,6 @@ Description      : Begins taming a Strigid Screecher to be your companion for 10
 Tooltip          : Taming Strigid Screecher.
 
 Name             : Well Fed (id=19705) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -27303,7 +27258,6 @@ Effects          :
 Tooltip          : Stamina and Spirit increased by $w1.
 
 Name             : Well Fed (id=19708) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -27320,7 +27274,6 @@ Description      : If you spend at least 10 seconds eating you will become well 
 Tooltip          : Stamina and Spirit increased by $w1.
 
 Name             : Well Fed (id=19710) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -30935,7 +30888,6 @@ Effects          :
 Description      : Grants an extra attack on your next swing.
 
 Name             : Frost Power (id=21920) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Frost
 Spell Type       : Magic
 Duration         : 1800 seconds
@@ -31720,7 +31672,6 @@ Effects          :
 Description      : Improves your chance to hit with ranged weapons by ${$s1}.1%.
 
 Name             : Gordok Green Grog (id=22789) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 1
@@ -31737,7 +31688,6 @@ Description      : Increases Stamina by $s1 for $d and gets you drunk to boot.  
 Tooltip          : Stamina increased by $s1.
 
 Name             : Kreeg's Stout Beatdown (id=22790) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 1
@@ -34624,7 +34574,6 @@ Description      : Puts the imbiber in a dreamless sleep for $d.  During that ti
 Tooltip          : Dreamless Sleep.
 
 Name             : Major Troll's Blood Elixir (id=24361) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Duration         : 3600 seconds
@@ -34636,7 +34585,6 @@ Description      : Regenerate $s1 health every 5 sec for $d.
 Tooltip          : Regenerate $s1 health every 5 sec.
 
 Name             : Mana Regeneration (id=24363) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Duration         : 3600 seconds
@@ -34712,7 +34660,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Spirit of Zanza (id=24382) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 15
@@ -34728,7 +34675,6 @@ Description      : Increases the player's Spirit by $s1 and Stamina by $s2 for $
 Tooltip          : Spirit increased by $s1 and Stamina by $s2.
 
 Name             : Swiftness of Zanza (id=24383) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 15
@@ -34848,7 +34794,6 @@ Description      : Heals $o1 damage over $d.  Usable only inside Arathi Basin.
 Tooltip          : Healing $s1 damage every $t1 seconds.
 
 Name             : Sheen of Zanza (id=24417) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 15
@@ -35210,7 +35155,6 @@ Effects          :
 Description      : When worn with the Twilight Trappings Set and the Medallion of Station, allows access to a Greater Wind Stone.
 
 Name             : Well Fed (id=24799) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -35282,7 +35226,6 @@ Description      : Restores $s1% of your health per second for $d.  Must remain 
 Tooltip          : Restores $s1% of your health per second.
 
 Name             : Well Fed (id=24870) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -36087,7 +36030,6 @@ Description      : Restores $o1 health over $d.  Must remain seated while eating
 Tooltip          : Restores $/5;s1 health per second.
 
 Name             : Increased Stamina (id=25661) [Spell Family (13)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 16
@@ -36325,7 +36267,6 @@ Effects          :
 Description      : Place the torch in the mouth of High Chief Winterfall's cave to summon the demon that is corrupting the Winterfall furbolgs.  Bring some friends before planting it...
 
 Name             : Rumsey Rum Black Label (id=25804) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 1
@@ -36545,7 +36486,6 @@ Effects          :
 Tooltip          : Spell effects increased by $s1.
 
 Name             : Well Fed (id=25941) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -41723,17 +41663,21 @@ Effects          :
 Description      : Place a bomb with a short fuse on the ground in front of you.
 
 Name             : Unroll Bag (id=429961) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
+Range            : 2 yards
 Cast Time        : 15 seconds
 Duration         : 1200 seconds
 Cooldown         : 3600 seconds
-Attributes       : Not In Combat (Only Peaceful) (28), Not in Battleground (284), Unknown (493)
+Attributes       : Is Ability (4), Not In Combat (Only Peaceful) (28), Not in Battleground (284), Unknown (493)
 Effects          :
 #1 (id=1114590)  : Create Area Trigger (179)
-                   Base Value: 3 | Scaled Value: 3 | Misc Value: 30821 | Target: Front of Self (47)
+                   Base Value: 3 | Scaled Value: 3 | Misc Value: 30821 | Target: at Area (87)
+Hotfixed         : Target 1 (47 -> 87)
 #2 (id=1114591)  : Summon Guardian (28)
-                   Base Value: 1 | Scaled Value: 1 | Misc Value: 214589 | Misc Value 2: 61 | Radius: 3 yards | Target: Front of Self (47)
+                   Base Value: 1 | Scaled Value: 1 | Misc Value: 214589 | Misc Value 2: 61 | Target: at Area (87)
+Hotfixed         : Target 1 (47 -> 87)
 Description      : Unfurl a sleeping bag. Resting inside for at least one minute will provide a bonus to experience earned, stacking up to 3 times.
 
 Name             : Dark Insight (id=429972) 
@@ -52162,7 +52106,6 @@ Description      : Restores $o1 health over $d.  Must remain seated while eating
 Tooltip          : Restores $/5;s1 health per second.
 
 Name             : Well Fed (id=1225778) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -52180,7 +52123,6 @@ Description      : If you spend at least $1225769t2 sec eating you will become W
 Tooltip          : Your Strength is increased by $w1 and Stamina by $w2.
 
 Name             : Well Fed (id=1225779) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -52198,7 +52140,6 @@ Description      : If you spend at least $1225771t2 sec eating you will become W
 Tooltip          : Your Agility is increased by $w1 and Stamina by $w2.
 
 Name             : Well Fed (id=1225780) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -52219,7 +52160,6 @@ Description      : If you spend at least $1225772t2 sec eating you will become W
 Tooltip          : Your Spell Damage is increased by $w1, Healing Power by $w3, and Stamina by $w2.
 
 Name             : Well Fed (id=1225782) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 2700 seconds
@@ -53262,7 +53202,6 @@ Effects          :
 Description      : Summon Vek'zol.
 
 Name             : Well Fed XP Boost (id=1243969) [Hidden] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : Aura (infinite)
@@ -54573,7 +54512,6 @@ Effects          :
 Description      : $@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $s2 Strength for $1248422d. $@spelldesc1243969
 
 Name             : Well Fed (id=1248406) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -54589,7 +54527,6 @@ Description      : A nutritious meal has made you Well Fed, increasing your Stam
 Tooltip          : Your Stamina is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1248420) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -54605,7 +54542,6 @@ Description      : A nutritious meal has made you Well Fed, increasing your Agil
 Tooltip          : Your Agility is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1248421) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -54621,7 +54557,6 @@ Description      : A nutritious meal has made you Well Fed, increasing your Inte
 Tooltip          : Your Intellect is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1248422) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -54900,7 +54835,6 @@ Effects          :
 Description      : $@spelldesc434 If you spend at least 10 sec eating, you will become well fed and gain $1248688s2% movement speed while in Westfall for $1248688d. $@spelldesc1243969
 
 Name             : Well Fed (id=1248688) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55641,7 +55575,6 @@ Effects          :
 Description      : $@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $s2 Fishing Skill for $1249521d. $@spelldesc1243969
 
 Name             : Well Fed (id=1249519) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55659,7 +55592,6 @@ Description      : A nutritious meal has made you Well Fed, increasing your Atta
 Tooltip          : Your Attack Power is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1249520) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55692,7 +55624,6 @@ Effects          :
 Description      : $@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $s2% Critical Strike chance for $1249523d. $@spelldesc1243969
 
 Name             : Well Fed (id=1249523) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55916,7 +55847,6 @@ Effects          :
 Description      : $@spelldesc1137 If you spend at least 10 sec eating, you will become well fed and gain $s2 Healing Power for $1249927d. $@spelldesc1243969
 
 Name             : Well Fed (id=1249926) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -55932,7 +55862,6 @@ Description      : A tasty drink has made you Well Fed, increasing your Spirit.
 Tooltip          : Your Spirit is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
 Name             : Well Fed (id=1249927) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -56861,7 +56790,6 @@ Description      : Drink to increase your Intellect by $s1. Lasts for $d.
 Tooltip          : Your Intellect is increased by $w1.
 
 Name             : Unstable Package (id=1251286) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : Aura (infinite)
@@ -63771,7 +63699,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1277397
 #3 (id=1290061)  : Kill Credit (134)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 272737 | Target: Self (1)
-Hotfixed         : Type (90 -> 134)
 
 Name             : [DNT] Ping Scouts (id=1277397) 
 School           : Physical
@@ -66953,7 +66880,6 @@ Effects          :
 Description      : $@spelldesc1131 If you spend at least 10 sec eating, you will become well fed and gain $1294007s2% movement speed while in Hyjal for $1294007d. $@spelldesc1243969
 
 Name             : Well Fed (id=1294007) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -69706,7 +69632,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
 Name             : Well Fed (id=1302064) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -73100,6 +73025,7 @@ Spell Type       : Magic
 Spell Level      : 1
 Range            : 100 yards
 Duration         : 30 seconds
+Triggered By     : Howler's Cry (1330916)
 Attributes       : Unknown (493)
 Effects          :
 #1 (id=1348227)  : Apply Aura (6) | Modify Attack Power (99)
@@ -74560,7 +74486,6 @@ Effects          :
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 
 Name             : Well Fed (id=1319310) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Duration         : 900 seconds
@@ -75366,7 +75291,6 @@ Description      : Restores $o1 mana over $d.  Must remain seated while drinking
 Tooltip          : Restores $/5;s1 mana per second.
 
 Name             : Gloves of Holy Might (id=1330855) [Passive] 
-Hotfixed         : Proc Flags 1 (69636 -> 69972), Proc Flags 2 (32 -> 0), Description
 School           : Holy
 Spell Type       : Ranged
 Spell Level      : 1
@@ -75379,4 +75303,36 @@ Effects          :
 #1 (id=1371198)  : Apply Aura (6) | Proc Trigger Spell (42): Gloves of Holy Might
                    Base Value: 112 | Scaled Value: 112 (delta=0.2) | Trigger Spell: 1325229 | Target: Self (1)
 Description      : Has a $h% chance when landing a harmful spell or attack to Smite the target for $s1 Holy damage. Damage is tripled against Undead.
+
+Name             : Howler's Cry (id=1330916) [Passive] 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : Magic
+Spell Level      : 1
+Range            : 100 yards
+Internal Cooldown: 20 seconds
+Proc Chance      : 10%
+Proc Flags       : White Melee, Yellow Melee, White Ranged, Yellow Ranged, Generic Hostile Spell, Magic Hostile Spell
+Attributes       : Passive (6), Unknown (493)
+Effects          :
+#1 (id=1371297)  : Apply Aura (6) | Proc Trigger Spell (42): Howler's Cry
+                   Base Value: -60 | Scaled Value: -60 | Trigger Spell: 1315767 | Target: Self (1)
+Hotfixed         : NEW EFFECT
+#2 (id=1371298)  : Apply Aura (6) | Modify Ranged Attack Power (124)
+                   Base Value: -60 | Scaled Value: -60 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
+Description      : Reduces the target enemy's attack power by $s1 for $1315767d.
+Tooltip          : Attack power lowered by $s1.
+
+Name             : Camper's Lure (id=1331725) [Hidden] 
+Hotfixed         : NEW SPELL
+School           : Physical
+Spell Type       : None
+Cast Time        : 5 seconds
+Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Shapeshifted (16), Unknown (493)
+Effects          :
+#1 (id=1372437)  : Enchant Item Temporary (54)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 8773
+Hotfixed         : NEW EFFECT
+Description      : When applied to your fishing pole, increases Fishing by $ec1 for 5 minutes.
 

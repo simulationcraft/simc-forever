@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
 Name             : Demoralizing Roar (desc=Rank 1) (id=99) [Spell Family (7)] 
 Class            : Druid
 School           : Physical
@@ -6171,7 +6171,6 @@ Effects          :
                    Base Value: 30 | Scaled Value: 30 | Target: Self (1)
 
 Name             : Wild Growth (desc=Rank 1) (id=408120) [Spell Family (7)] 
-Hotfixed         : Cooldown (6000 -> 0), Category Cooldown (0 -> 6000), Category (0 -> 1237)
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]
 Class            : Druid
 School           : Nature
@@ -9840,7 +9839,6 @@ $@spelltooltip414924
 Tooltip          : Immobilized.
 
 Name             : Wild Growth (desc=Rank 2) (id=1238214) [Spell Family (7)] 
-Hotfixed         : Cooldown (6000 -> 0), Category Cooldown (0 -> 6000), Category (0 -> 1237)
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -9869,7 +9867,6 @@ Variables        : $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
 $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 Name             : Wild Growth (desc=Rank 3) (id=1238215) [Spell Family (7)] 
-Hotfixed         : Cooldown (6000 -> 0), Category Cooldown (0 -> 6000), Category (0 -> 1237)
 Class            : Druid
 School           : Nature
 Spell Type       : Magic

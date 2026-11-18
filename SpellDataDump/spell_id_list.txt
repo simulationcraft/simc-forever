@@ -1,4 +1,4 @@
-Class Spell ID List, wow build 1.60.1.70938
+Class Spell ID List, wow build 1.60.1.70959
 
 Druid
 99       Demoralizing Roar
@@ -3762,7 +3762,6 @@ Rogue
 439471   Sebacious Poison
 439472   Numbing Poison
 439473   Atrophic Poison
-443632  *Filcher's Cowl
 446391  *Torment
 446707  *Parasomnia
 449927  *Blood Corruption
@@ -4255,7 +4254,7 @@ Shaman
 27626   *Purge
 27635   *Lightning Shield
 27740   *Reincarnation
-27797   *Reduced Riptide Cost
+27797    Reduced Riptide Cost
 27855    Increased Lesser Healing Wave
 27859    Increased Shock Damage
 28818   *Totemic Energy

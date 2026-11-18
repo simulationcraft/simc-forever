@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
 Name             : Block (desc=Passive) (id=107) [Passive] 
 Class            : Warrior, Paladin, Shaman
 School           : Physical
@@ -1089,7 +1089,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $15568s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 1) (id=8024) 
-Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1118,7 +1117,6 @@ Effects          :
                    Base Value: 326 | Scaled Value: 440 | Points Per Level: 19 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Weapon (desc=Rank 2) (id=8027) 
-Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1161,7 +1159,6 @@ Effects          :
                    Base Value: 716 | Scaled Value: 1052 | Points Per Level: 42 | Target: Targeted Enemy (6)
 
 Name             : Flametongue Weapon (desc=Rank 3) (id=8030) 
-Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -1994,7 +1991,6 @@ Effects          :
 Tooltip          : Main hand attacks deal an additional ${$8253m1/77} to ${$8253M1/25} Fire damage.
 
 Name             : Windfury Weapon (desc=Rank 1) (id=8232) [Spell Family (11)] 
-Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2031,7 +2027,6 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 2) (id=8235) [Spell Family (11)] 
-Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2132,7 +2127,6 @@ Effects          :
                    Base Value: 548 | Scaled Value: 548 | Target: Targeted Enemy (6)
 
 Name             : Windfury Totem (desc=Rank 1) (id=8512) [Spell Family (11)] 
-Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2152,7 +2146,6 @@ Variables        : $mult1=$?s29192[${1.15}][${1.0}]
 $mult=$?s29193[${1.30}][${$<mult1>}]
 
 Name             : Windfury Totem (desc=Rank 1) (id=8515) [Passive] 
-Hotfixed         : Attributes, Tooltip
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -2166,11 +2159,10 @@ Effects          :
                    Base Value: 8516 | Scaled Value: 8516 | Radius: 30 yards | Target: Self (1)
 #2 (id=1371582)  : Apply Aura Raid (65) | Dummy (4)
                    Base Value: 95 | Scaled Value: 95 | Radius: 30 yards | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 1) (id=8516) [Spell Family (11)] 
-Hotfixed         : Category (0 -> 2619), Attributes, Description, Tooltip
+Hotfixed         : Category (0 -> 2619)
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 32 (max 40)
@@ -2185,7 +2177,6 @@ Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Dis
 Effects          :
 #1 (id=685411)   : Weapon Damage (58)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-Hotfixed         : Type (6 -> 58), Sub Type (99 -> 0), Base Value (95 -> 0), Target 1 (1 -> 6)
 
 Name             : Grace of Air Totem (desc=Rank 1) (id=8835) [Spell Family (11)] 
 Class            : Shaman
@@ -3066,7 +3057,6 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 3) (id=10486) [Spell Family (11)] 
-Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3535,7 +3525,7 @@ Effects          :
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10608) [Spell Family (11)] 
-Hotfixed         : Category (0 -> 2619), Attributes, Description, Tooltip
+Hotfixed         : Category (0 -> 2619)
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 42 (max 50)
@@ -3550,10 +3540,8 @@ Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Dis
 Effects          :
 #1 (id=689101)   : Weapon Damage (58)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-Hotfixed         : Type (6 -> 58), Sub Type (99 -> 0), Base Value (179 -> 0), Target 1 (1 -> 6)
 
 Name             : Windfury Totem (desc=Rank 2) (id=10609) [Passive] 
-Hotfixed         : Attributes, Tooltip
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3567,11 +3555,10 @@ Effects          :
                    Base Value: 10608 | Scaled Value: 10608 | Radius: 30 yards | Target: Self (1)
 #2 (id=1371583)  : Apply Aura Raid (65) | Dummy (4)
                    Base Value: 179 | Scaled Value: 179 | Radius: 30 yards | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 3) (id=10610) [Spell Family (11)] 
-Hotfixed         : Category (0 -> 2619), Attributes, Description, Tooltip
+Hotfixed         : Category (0 -> 2619)
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 52 (max 60)
@@ -3586,10 +3573,8 @@ Attributes       : Not a Proc (105), Requires Main-Hand Weapon (106), Do Not Dis
 Effects          :
 #1 (id=689167)   : Weapon Damage (58)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
-Hotfixed         : Type (6 -> 58), Sub Type (99 -> 0), Base Value (246 -> 0), Target 1 (1 -> 6)
 
 Name             : Windfury Totem (desc=Rank 3) (id=10612) [Passive] 
-Hotfixed         : Attributes, Tooltip
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3603,11 +3588,9 @@ Effects          :
                    Base Value: 10610 | Scaled Value: 10610 | Radius: 30 yards | Target: Self (1)
 #2 (id=1371584)  : Apply Aura Raid (65) | Dummy (4)
                    Base Value: 246 | Scaled Value: 246 | Radius: 30 yards | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10613) [Spell Family (11)] 
-Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -3627,7 +3610,6 @@ Variables        : $mult1=$?s29192[${1.15}][${1.0}]
 $mult=$?s29193[${1.30}][${$<mult1>}]
 
 Name             : Windfury Totem (desc=Rank 3) (id=10614) [Spell Family (11)] 
-Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -4806,7 +4788,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon, increasing melee attack power by $16313s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 4) (id=16339) 
-Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -4821,7 +4802,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$10445m1/77-1+($10444m1)} to ${$10445m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 5) (id=16341) 
-Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -4836,7 +4816,6 @@ Effects          :
 Description      : Imbue the Shaman's weapon with fire. Each hit causes ${$16343m1/77-1+($10444m1)} to ${$16343m1/25+($10444m1)} additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.
 
 Name             : Flametongue Weapon (desc=Rank 6) (id=16342) 
-Hotfixed         : Description
 Class            : Shaman
 School           : Fire
 Spell Type       : Magic
@@ -4964,7 +4943,6 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 
 Name             : Windfury Weapon (desc=Rank 4) (id=16362) [Spell Family (11)] 
-Hotfixed         : Description
 Class            : Shaman
 School           : Nature
 Spell Type       : Magic
@@ -5150,7 +5128,6 @@ Effects          :
 Tooltip          : Gain $s1 mana every $t1 seconds.
 
 Name             : Stormstrike (id=17364) [Spell Family (11)] 
-Hotfixed         : Cooldown (6000 -> 8000)
 Talent Entry     : Generic [tree=class, row=4, col=7, max_rank=1, req_points=0]
 Class            : Shaman
 School           : Physical
@@ -5177,7 +5154,6 @@ Effects          :
                    Family Flags: 0, 1, 20
 #3 (id=1368308)  : Weapon Damage% (31)
                    Base Value: 100 | Scaled Value: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (150 -> 100)
 Description      : Instantly strike for $s3% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.
 Tooltip          : Increases damage taken from the Shaman's next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2%.
 
@@ -5564,6 +5540,18 @@ Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not
 Effects          :
 #1 (id=703448)   : Dummy (3)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+
+Name             : Reduced Riptide Cost (id=27797) [Spell Family (11), Passive, Hidden] 
+School           : Physical
+Spell Type       : None
+Labels           : 24: Shaman Spells
+Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Unknown (493)
+Effects          :
+#1 (id=704732)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
+                   Base Value: -5 | Scaled Value: -5 | Misc Value: 14 | Target: Self (1)
+                   Affected Spells: Riptide (408521), Riptide (1239242), Riptide (1239243)
+                   Family Flags: 68
+Description      : Reduces the Mana cost of Riptide by $s1%.
 
 Name             : Increased Lesser Healing Wave (id=27855) [Spell Family (11), Passive, Hidden] 
 School           : Physical
@@ -6409,7 +6397,6 @@ Effects          :
 Description      : Increases your chance to hit with both spells and melee attacks by $s1% while dual wielding, your Stormstrike ability now hits with both weapons while dual wielding, and increases the damage done by your offhand weapon by $s3%.
 
 Name             : Maelstrom Weapon (id=408498) [Spell Family (11), Passive, Hidden] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=6, col=7, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(-20, -20, -20, -20, -20)]
                  : Effect#2 [op=set, values=(6, 7, 8, 9, 10)]
@@ -6427,7 +6414,6 @@ Effects          :
                    Base Value: 20 | Scaled Value: 20 | Target: Self (1)
 #2 (id=1137418)  : Apply Aura (6) | Dummy (4)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
-Hotfixed         : Base Value (50 -> 2)
 #3 (id=1217277)  : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
 Description      : When you deal damage with a melee attack, you have a ${($mws*$s2/60)*100}% chance (based on weapon speed) to reduce the cast time and Mana cost of your next Lightning Bolt spell by $m1%. Stacks up to $s3 times. Lasts $408505d.
@@ -6574,7 +6560,7 @@ Cooldown         : 12 seconds
 Category         : 1228 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 12 seconds
-Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
+Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Reduced Riptide Cost (27797 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
@@ -9324,7 +9310,7 @@ Cooldown         : 12 seconds
 Category         : 1228 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 12 seconds
-Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
+Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Reduced Riptide Cost (27797 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
@@ -9354,7 +9340,7 @@ Cooldown         : 12 seconds
 Category         : 1228 (Type 0x0)
 Labels           : 24: Shaman Spells
 Category Cooldown: 12 seconds
-Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
+Affecting Spells : Purification (16178 effects: #1, #2), Tidal Focus (16179 effect#1), Tidal Mastery (16194 effect#1), Reduced Riptide Cost (27797 effect#1), Healing Grace (29189 effect#1), Healing Grace (29191 effect#1), S03 - Item - TAQ - Shaman - Restoration 2P Bonus (1213810 effect#1)
 Family Flags     : 68
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), DoT Stacking Rule (103), Vehicle Immunity Category (218), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493), Unknown (516)
 Effects          :

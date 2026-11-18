@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
 Name             : Vindication (desc=Rank 1) (id=67) 
 Class            : Paladin
 School           : Holy
@@ -2679,7 +2679,6 @@ Effects          :
 Description      : Gives you a $m1% chance after Blocking and a ${$m1*2.5}% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to $1326084u extra attacks. Cannot occur from Blocks more than once every ${$proccooldown}.1 sec.
 
 Name             : Judgement of Fury (desc=Rank 3) (id=20183) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -2699,7 +2698,6 @@ Effects          :
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Judgement of Justice (desc=Rank 1) (id=20184) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -2716,7 +2714,6 @@ Description      : Prevents the target from fleeing.
 Tooltip          : Cannot flee.
 
 Name             : Judgement of Light (desc=Rank 1) (id=20185) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -2736,7 +2733,6 @@ Description      : Melee attacks made against you have a chance of causing the a
 Tooltip          : Melee attacks made against you have a chance of causing the attacker to be healed for $20267s1.
 
 Name             : Judgement of Wisdom (desc=Rank 1) (id=20186) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -2756,7 +2752,6 @@ Description      : Attacks and spells used against the target have a chance of r
 Tooltip          : Attacks and spells used against you have a chance of restoring $20268s1 of the attacker's mana.
 
 Name             : Judgement of Righteousness (desc=Rank 1) (id=20187) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -2773,7 +2768,6 @@ Effects          :
                    Base Value: 108 | Scaled Value: 216 | Points Per Level: 18 | SP Coefficient: 0.058
 
 Name             : Judgement of the Crusader (desc=Rank 2) (id=20188) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3115,7 +3109,6 @@ Effects          :
 Description      : Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect.
 
 Name             : Judgement of Righteousness (desc=Rank 2) (id=20280) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3132,7 +3125,6 @@ Effects          :
                    Base Value: 216 | Scaled Value: 318 | Points Per Level: 17 | SP Coefficient: 0.125
 
 Name             : Judgement of Righteousness (desc=Rank 3) (id=20281) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3149,7 +3141,6 @@ Effects          :
                    Base Value: 352 | Scaled Value: 490 | Points Per Level: 23 | SP Coefficient: 0.185
 
 Name             : Judgement of Righteousness (desc=Rank 4) (id=20282) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3166,7 +3157,6 @@ Effects          :
                    Base Value: 541 | Scaled Value: 727 | Points Per Level: 31 | SP Coefficient: 0.2
 
 Name             : Judgement of Righteousness (desc=Rank 5) (id=20283) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3183,7 +3173,6 @@ Effects          :
                    Base Value: 785 | Scaled Value: 1007 | Points Per Level: 37 | SP Coefficient: 0.2
 
 Name             : Judgement of Righteousness (desc=Rank 6) (id=20284) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3200,7 +3189,6 @@ Effects          :
                    Base Value: 1082 | Scaled Value: 1328 | Points Per Level: 41 | SP Coefficient: 0.2
 
 Name             : Judgement of Righteousness (desc=Rank 7) (id=20285) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3217,7 +3205,6 @@ Effects          :
                    Base Value: 1407 | Scaled Value: 1689 | Points Per Level: 47 | SP Coefficient: 0.2
 
 Name             : Judgement of Righteousness (desc=Rank 8) (id=20286) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3430,7 +3417,6 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Judgement of the Crusader (desc=Rank 3) (id=20300) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3450,7 +3436,6 @@ Description      : Increases Holy damage taken by up to $s1.
 Tooltip          : Increases Holy damage taken by up to $s1.
 
 Name             : Judgement of the Crusader (desc=Rank 4) (id=20301) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3470,7 +3455,6 @@ Description      : Increases Holy damage taken by up to $s1.
 Tooltip          : Increases Holy damage taken by up to $s1.
 
 Name             : Judgement of the Crusader (desc=Rank 5) (id=20302) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3490,7 +3474,6 @@ Description      : Increases Holy damage taken by up to $s1.
 Tooltip          : Increases Holy damage taken by up to $s1.
 
 Name             : Judgement of the Crusader (desc=Rank 6) (id=20303) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3740,7 +3723,6 @@ Effects          :
                    Base Value: 61 | Scaled Value: 61 | Target: Self (1)
 
 Name             : Judgement of Light (desc=Rank 2) (id=20344) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3760,7 +3742,6 @@ Description      : Melee attacks made against you have a chance of causing the a
 Tooltip          : Melee attacks made against you have a chance of causing the attacker to be healed for $20341s1.
 
 Name             : Judgement of Light (desc=Rank 3) (id=20345) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3780,7 +3761,6 @@ Description      : Melee attacks made against you have a chance of causing the a
 Tooltip          : Melee attacks made against you have a chance of causing the attacker to be healed for $20342s1.
 
 Name             : Judgement of Light (desc=Rank 4) (id=20346) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3923,7 +3903,6 @@ Effects          :
                    Base Value: 59 | Scaled Value: 59 | Resource: mana | Target: Self (1)
 
 Name             : Judgement of Wisdom (desc=Rank 2) (id=20354) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -3943,7 +3922,6 @@ Description      : Attacks and spells used against the target have a chance of r
 Tooltip          : Attacks and spells used against you have a chance of restoring $20352s1 of the attacker's mana.
 
 Name             : Judgement of Wisdom (desc=Rank 3) (id=20355) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -4079,7 +4057,6 @@ Unleashing this Seal's energy will judge an enemy, instantly causing $/2;20467s1
 Tooltip          : Melee attacks have a chance to deal additional Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 4) (id=20411) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -4100,7 +4077,6 @@ Effects          :
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 5) (id=20412) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -4120,7 +4096,6 @@ Effects          :
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 6) (id=20413) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -4140,7 +4115,6 @@ Effects          :
 Description      : Judge the target, dealing Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 7) (id=20414) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -4346,7 +4320,6 @@ Effects          :
                    Base Value: 70 | Scaled Value: 0.7 | SP Coefficient: 0.29 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 1) (id=20425) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4360,7 +4333,6 @@ Effects          :
                    Base Value: 20467 | Scaled Value: 20467 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 1) (id=20467) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4788,7 +4760,6 @@ Effects          :
 Description      : Blasts the target with Holy energy, causing $25902s1 Holy damage to an enemy, or $25903s1 healing to an ally.
 
 Name             : Judgement of Command (desc=Rank 3) (id=20961) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4802,7 +4773,6 @@ Effects          :
                    Base Value: 20964 | Scaled Value: 20964 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 2) (id=20962) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4816,7 +4786,6 @@ Effects          :
                    Base Value: 20963 | Scaled Value: 20963 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 2) (id=20963) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4831,7 +4800,6 @@ Effects          :
                    Base Value: 153 | Scaled Value: 201.8 (delta=0.091503) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 3) (id=20964) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4846,7 +4814,6 @@ Effects          :
                    Base Value: 214 | Scaled Value: 258.8 (delta=0.093458) | Points Per Level: 5.6 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20965) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4861,7 +4828,6 @@ Effects          :
                    Base Value: 274 | Scaled Value: 322.8 (delta=0.094891) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 5) (id=20966) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4876,7 +4842,6 @@ Effects          :
                    Base Value: 356 | Scaled Value: 356 (delta=0.095506) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20967) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4890,7 +4855,6 @@ Effects          :
                    Base Value: 20965 | Scaled Value: 20965 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 5) (id=20968) [Spell Family (10)] 
-Hotfixed         : Spell Type (3 -> 2)
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4958,7 +4922,6 @@ $1h=${0.0765*$SPH}
 $mult=${$20224s1/100+1}
 
 Name             : Judgement of the Crusader (desc=Rank 1) (id=21183) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -8449,7 +8412,6 @@ Effects          :
 Tooltip          : Black Value increased by $s1%.
 
 Name             : Unsealed Wrath (id=1310735) [Spell Family (10), Passive, Hidden] 
-Hotfixed         : Internal Cooldown (0 -> 100)
 Talent Entry     : Generic [tree=class, row=7, col=10, max_rank=1, req_points=0]
 Class            : Paladin
 School           : Physical
@@ -8936,7 +8898,6 @@ Unleashing this Seal's energy inflicts $1311650s1 Holy damage to an enemy and ta
 Tooltip          : Melee attacks inflict an additional $1311647s1 Holy damage.
 
 Name             : Judgement of Fury (desc=Rank 1) (id=1311650) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
@@ -8972,7 +8933,6 @@ Effects          :
 Description      : Deals additional Holy damage on melee attack.
 
 Name             : Judgement of Fury (desc=Rank 2) (id=1311655) [Spell Family (10)] 
-Hotfixed         : Spell Type (2 -> 3)
 Class            : Paladin
 School           : Holy
 Spell Type       : Ranged
