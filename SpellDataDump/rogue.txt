@@ -7715,6 +7715,7 @@ Description      : Increases the rogue's movement speed by $s1% for $d.  Does no
 Tooltip          : Movement speed increased by $w1%.
 
 Name             : Shank (desc=Rank 1) (id=1329283) [Spell Family (8)] 
+Hotfixed         : Attributes, Description
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -7726,16 +7727,14 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 10 seconds
 Affecting Spells : Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Flash of Steel (1329284 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Do Not Sheath (18), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Enable Procs from Suppressed Caster Procs (384), Unknown (493)
 Effects          :
 #1 (id=1368710)  : Weapon Damage% (31)
                    Base Value: 50 | Scaled Value: 0.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=1368711)  : Energize Power (30)
                    Base Value: 15 | Scaled Value: 15 | Resource: energy | Target: Self (1)
                    Modified By: Flash of Steel (1329284 effect#1)
-#3 (id=1368717)  : Energize Power (30)
-                   Base Value: 0 | Scaled Value: 0 | Resource: combo_points | Target: Self (1)
-Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.
+Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[ $1329286s1% chance to award $1329285s1 Combo Points.][] Shank cannot Miss.
 
 Name             : Flash of Steel (id=1329284) [Spell Family (8), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=6, col=7, max_rank=5, req_points=0]
@@ -7772,18 +7771,23 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 
 Name             : Boot Knife (id=1329286) [Spell Family (8), Passive, Hidden] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=6, col=11, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(20, 40, 60, 80, 100)]
 Class            : Rogue
 School           : Physical
 Spell Type       : None
 Labels           : 20: Rogue Spells
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Proc Chance      : 100%
+Proc Flags       : Yellow Melee, Generic Hostile Spell
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Can Proc from Suppressed Caster Procs (385), Unknown (493)
 Effects          :
-#1 (id=1368715)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Trigger Spell: 1329285 | Target: Self (1)
-#2 (id=1369145)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Trigger Spell: 1329285 | Target: Self (1)
+#1 (id=1368715)  : Apply Aura (6) | Proc Trigger Spell (42): Boot Knife
+                   Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Trigger Spell: 1329285 | Target: Targeted Enemy (6)
+Hotfixed         : Sub Type (4 -> 42), Target 1 (1 -> 6)
+#2 (id=1371756)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Trigger Spell: 1329285 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Grants your Shank ability a $s1% chance to add $s2 Combo Points to the target.
 
 Name             : Ghostly Strike (id=1329326) [Spell Family (8)] 
@@ -7823,6 +7827,7 @@ Effects          :
 Description      : Causes your Shank ability to increase your Poison damage by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d.
 
 Name             : Shank (desc=Rank 2) (id=1329549) [Spell Family (8)] 
+Hotfixed         : Attributes, Description
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -7834,16 +7839,14 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 10 seconds
 Affecting Spells : Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Flash of Steel (1329284 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Do Not Sheath (18), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Enable Procs from Suppressed Caster Procs (384), Unknown (493)
 Effects          :
 #1 (id=1369159)  : Weapon Damage% (31)
                    Base Value: 50 | Scaled Value: 0.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 #2 (id=1369160)  : Energize Power (30)
                    Base Value: 25 | Scaled Value: 25 | Resource: energy | Target: Self (1)
                    Modified By: Flash of Steel (1329284 effect#1)
-#3 (id=1369161)  : Energize Power (30)
-                   Base Value: 0 | Scaled Value: 0 | Resource: combo_points | Target: Self (1)
-Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.
+Description      : Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[ $1329286s1% chance to award $1329285s1 Combo Points.][] Shank cannot Miss.
 
 Name             : Poised (id=1330741) [Spell Family (8), Hidden] 
 Class            : Rogue
