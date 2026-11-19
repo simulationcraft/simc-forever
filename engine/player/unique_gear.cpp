@@ -178,6 +178,9 @@ struct touch_of_the_grave_t : public spell_t
 
 void racial::touch_of_the_grave( special_effect_t& effect )
 {
+  if ( !effect.driver()->ok() )
+    return;
+
   effect.execute_action = new touch_of_the_grave_t( effect.player, effect.trigger() );
 
   new dbc_proc_callback_t( effect.player, effect );
@@ -185,6 +188,9 @@ void racial::touch_of_the_grave( special_effect_t& effect )
 
 void racial::entropic_embrace( special_effect_t& effect )
 {
+  if ( !effect.driver()->ok() )
+    return;
+
   buff_t* base_buff = buff_t::find( effect.player, "entropic_embrace" );
   if ( base_buff == nullptr )
   {
@@ -200,6 +206,9 @@ void racial::entropic_embrace( special_effect_t& effect )
 
 void racial::brush_it_off( special_effect_t& effect )
 {
+  if ( !effect.driver()->ok() )
+    return;
+
   struct brush_it_off_cb_t : public dbc_proc_callback_t
   {
     action_t* regen;
@@ -436,6 +445,9 @@ void generic::enable_all_item_effects( special_effect_t& effect )
 // included, so an auto attack proc buffs only the extra attack.
 void generic::windfury_totem( special_effect_t& effect )
 {
+  if ( !effect.driver()->ok() )
+    return;
+
   // the triggered spell id is in the driver's base value
   effect.trigger_spell_id = as<unsigned>( effect.driver()->effectN( 1 ).base_value() );
 
@@ -505,6 +517,10 @@ void generic::windfury_totem( special_effect_t& effect )
 // TODO: check in game that it stacks with Flametongue Weapon on the same swing
 void generic::flametongue_totem( special_effect_t& effect )
 {
+  if ( !effect.driver()->ok() )
+    return;
+
+
   effect.trigger_spell_id = as<unsigned>( effect.driver()->effectN( 1 ).base_value() );
 
   struct flametongue_totem_t : public proc_spell_t
@@ -1865,7 +1881,7 @@ void unique_gear::register_special_effects()
 {
   /* Racial special effects */
   // TODO: Undead racial in Forever
-  //register_special_effect( 5227,   racial::touch_of_the_grave );
+  // register_special_effect( 5227,   racial::touch_of_the_grave );
   register_special_effect( 255669, racial::entropic_embrace );
   register_special_effect( 291628, racial::brush_it_off );
   register_special_effect( 292751, racial::zandalari_loa, true );
@@ -1873,8 +1889,8 @@ void unique_gear::register_special_effects()
 
   /* Generic "global scope" special effects */
   register_special_effect( 63604, generic::enable_all_item_effects );
-  register_special_effect( 10612, generic::windfury_totem );
-  register_special_effect( 15036, generic::flametongue_totem );
+  register_special_effect( { 8515, 10609, 10612 }, generic::windfury_totem );
+  register_special_effect( { 8230, 8250, 10521, 15036 }, generic::flametongue_totem );
 }
 
 void unique_gear::unregister_special_effects()

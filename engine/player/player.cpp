@@ -2229,11 +2229,23 @@ void player_t::create_special_effects()
       special_effects.push_back( new special_effect_t( effect ) );
   };
 
+  auto raid_procs = [ this, raid_proc ]( std::vector<unsigned> spell_ids ) {
+    for ( auto id : spell_ids | std::ranges::views::reverse )
+    {
+      auto spell = find_spell( id );
+      if ( spell->ok() && as<int>( spell->level() ) <= true_level )
+      {
+        raid_proc( id );
+        break;
+      }
+    };
+  };
+
   if ( sim->overrides.flametongue_totem )
-    raid_proc( 15036 );
+    raid_procs( { 8230, 8250, 10521, 15036 } );
 
   if ( sim->overrides.windfury_totem )
-    raid_proc( 10612 );
+    raid_procs( { 8515, 10609, 10612 } );
 
   // 12.0.7 omnium folio talents
   unique_gear::initialize_expansion_trait_effects( this, omnium_talents_str );
@@ -15457,12 +15469,12 @@ void player_t::parse_all_passive_sets()
 
 // A buff cast on a lower level target lands as the highest rank whose spell level is at most 10 above the target's
 // level (cmangos SpellMgr::SelectAuraRankForLevel). Ranks are ordered lowest to highest.
-const spell_data_t* player_t::find_raid_buff_rank( std::initializer_list<unsigned> ranks ) const
+const spell_data_t* player_t::find_raid_buff_rank( std::initializer_list<unsigned> ranks, int max_level_offset ) const
 {
   for ( auto id : ranks | std::ranges::views::reverse )
   {
     auto spell = dbc::find_spell( this, id );
-    if ( spell->ok() && as<int>( spell->level() ) <= level() + 10 )
+    if ( spell->ok() && as<int>( spell->level() ) <= level() + max_level_offset )
       return spell;
   }
 
@@ -15525,7 +15537,7 @@ void player_t::parse_raid_buffs()
     raid_buff( "divine_spirit", find_raid_buff_rank( { 14752, 14818, 14819, 27841 } ) );
 
   if ( sim->overrides.grace_of_air_totem )
-    raid_buff( "grace_of_air", dbc::find_spell( this, 25360 ) );
+    raid_buff( "grace_of_air",  find_raid_buff_rank( { 8836, 10626, 25360 } ) );
 
   // same aura in Forever, they don't stack
   if ( sim->overrides.moonkin_aura )
@@ -15535,7 +15547,7 @@ void player_t::parse_raid_buffs()
 
   if ( sim->overrides.mana_spring_totem && resources.base[ RESOURCE_MANA ] > 0 )
   {
-    if ( auto buff = raid_buff( "mana_spring", dbc::find_spell( this, 10494 ) ) )
+    if ( auto buff = raid_buff( "mana_spring", find_raid_buff_rank( { 5677, 10491, 10493, 10494 } ) ) )
     {
       buff->set_default_value_from_effect_type( A_PERIODIC_ENERGIZE, P_MAX, 0.0, E_APPLY_AREA_AURA_PARTY )
           ->set_tick_callback( [ this, gain = get_gain( "mana_spring" ) ]( buff_t* b, int, timespan_t ) {
@@ -15551,10 +15563,10 @@ void player_t::parse_raid_buffs()
     raid_buff( "power_word_fortitude", find_raid_buff_rank( { 1243, 1244, 1245, 2791, 10937, 10938 } ) );
 
   if ( sim->overrides.strength_of_earth_totem )
-    raid_buff( "strength_of_earth", dbc::find_spell( this, 25362 ) );
+    raid_buff( "strength_of_earth", find_raid_buff_rank( { 8076, 8162, 8163, 10441, 25362 } ) );
 
   if ( sim->overrides.trueshot_aura )
-    raid_buff( "trueshot_aura", dbc::find_spell( this, 20906 ) );
+    raid_buff( "trueshot_aura", find_raid_buff_rank( { 1299346, 1299348, 19506, 20905, 20906 } ) );
 }
 
 void player_t::register_passive_spell_override( const spell_data_t& spell, double value, std::string_view field )
