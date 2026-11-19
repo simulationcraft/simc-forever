@@ -6093,6 +6093,7 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Sap (desc=Rank 2) (id=2070) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -6109,7 +6110,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Sap
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1), Poised (1328826 effect#1)
 Family Flags     : 7
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=681308)   : Apply Aura (6) | Stun (12)
@@ -14681,6 +14682,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a medium amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 1) (id=6770) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -14697,7 +14699,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Sap
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1), Poised (1328826 effect#1)
 Family Flags     : 7
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=684682)   : Apply Aura (6) | Stun (12)
@@ -32960,6 +32962,7 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sap (desc=Rank 3) (id=11297) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -32976,7 +32979,7 @@ Stance Mask      : 0x20000000
 Mechanic         : Sap
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Dirty Tricks (1224782 effect#1), Poised (1328826 effect#1)
 Family Flags     : 7
-Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Not an Attack (194), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Only Stealthed (17), Do Not Sheath (18), Cancels Auto Attack Combat (20), No Active Defense (21), Heartbeat Resist (30), Allow While Stealthed (37), Only Peaceful Targets (40), No Threat (42), Prevents Anim (50), Discount Power On Miss (59), Not an Action (92), PvP Enabling (96), Suppress Caster Procs (112), Suppress Target Procs (113), Suppress Weapon Procs (151), Show Mechanic as Combat Text (213), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Aura Interrupt   : Damage (1)
 Effects          :
 #1 (id=690591)   : Apply Aura (6) | Stun (12)
@@ -68512,6 +68515,7 @@ Effects          :
 Description      : Reduces the Mana cost of all instant cast spells and abilities by $m1%.
 
 Name             : Two-Handed Weapon Specialization (id=20111) [Passive, Hidden] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=12, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(2, 4, 6)]
                  : Effect#2 [op=set, values=(-7, -14, -20)]
@@ -68521,7 +68525,7 @@ Spell Type       : None
 Spell Level      : 1
 Requires weapon  : Two-handed Axe, Two-handed Mace, Polearm, Two-handed Sword, Staff, Exotic (2), Spear
 Labels           : 26: Paladin Spells
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Aura Affects Not Just Req. Equipped Item (176), Unknown (493)
 Effects          :
 #1 (id=697263)   : Apply Aura (6) | Modify Damage Done% (79)
                    Base Value: 2 | Scaled Value: 2 | Misc Value: 0x3 | Target: Self (1)
