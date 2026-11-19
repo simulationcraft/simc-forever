@@ -2281,6 +2281,7 @@ Effects          :
 Description      : Reduces the Mana cost of all instant cast spells and abilities by $m1%.
 
 Name             : Two-Handed Weapon Specialization (id=20111) [Passive, Hidden] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=12, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(2, 4, 6)]
                  : Effect#2 [op=set, values=(-7, -14, -20)]
@@ -2290,7 +2291,7 @@ Spell Type       : None
 Spell Level      : 1
 Requires weapon  : Two-handed Axe, Two-handed Mace, Polearm, Two-handed Sword, Staff, Exotic (2), Spear
 Labels           : 26: Paladin Spells
-Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
+Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Aura Affects Not Just Req. Equipped Item (176), Unknown (493)
 Effects          :
 #1 (id=697263)   : Apply Aura (6) | Modify Damage Done% (79)
                    Base Value: 2 | Scaled Value: 2 | Misc Value: 0x3 | Target: Self (1)
