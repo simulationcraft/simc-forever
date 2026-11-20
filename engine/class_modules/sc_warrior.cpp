@@ -49,6 +49,7 @@ struct warrior_t : public player_t
     buff_t* bloodrage    = nullptr;
 
     buff_t* heroic_strike_queued = nullptr;
+    buff_t* cleave_queued = nullptr;
   } buff;
 
   struct gains_t
@@ -64,9 +65,11 @@ struct warrior_t : public player_t
     spell_ranks_t heroic_strike;
     spell_ranks_t rend;
     spell_ranks_t thunder_clap;
+    spell_ranks_t cleave;
   } rank;
 
   action_t* heroic_strike = nullptr;
+  action_t* cleave = nullptr;
 };
 
 template <class Base>
@@ -206,6 +209,19 @@ struct warrior_melee_t : public warrior_attack_t
       p()->buff.heroic_strike_queued->expire();
     }
 
+    // try to trigger a queued cleave
+    if ( p()->buff.cleave_queued->check() )
+    {
+      if ( p()->resource_available( RESOURCE_RAGE, p()->cleave->cost() ) )
+      {
+        p()->cleave->execute_on_target( target );
+        schedule_execute();
+        return;
+      }
+      // didn't have enough rage, cancel the tracking queue buff
+      p()->buff.cleave_queued->expire();
+    }
+
     warrior_attack_t::execute();
   }
 
@@ -313,6 +329,8 @@ struct heroic_strike_queue_t : public action_t
 
   void execute() override
   {
+    // Pressing Heroic Strike de-queues Cleave and queues Heroic Strike
+    p()->buff.cleave_queued->expire();
     p()->buff.heroic_strike_queued->trigger();
   }
 };
@@ -368,6 +386,66 @@ struct thunder_clap_t : public warrior_attack_t
   }
 };
 
+// APL action to queue up Cleave
+// Checks to make sure warrior has enough rage to queue it up
+// The actual HS execute in the melee swing will check rage again to make sure that rage
+// wasn't consumed mid-swing
+// TODO: Is there a better way to handle On Next Swing?
+// TODO: look into generalizing this pattern for cleave, hunter (raptor strike), and druid (maul)
+struct cleave_queue_t : public action_t
+{
+  cleave_queue_t( warrior_t* p, util::string_view options_str )
+    : action_t( ACTION_OTHER, "cleave_queue", p )
+  {
+    parse_options( options_str );
+
+    trigger_gcd = 0_ms;
+    harmful = false;
+    ignore_false_positive = true;
+  }
+
+  warrior_t* p() const
+  { return debug_cast<warrior_t*>( player ); }
+
+  bool ready() override
+  {
+    // already queued
+    if ( p()->buff.cleave_queued->check() )
+      return false;
+
+    // not enough rage
+    if ( !p()->resource_available( RESOURCE_RAGE, p()->cleave->cost() ) )
+      return false;
+
+    return action_t::ready();
+  }
+
+  void execute() override
+  {
+    // Pressing Cleave de-queues Heroic Strike and queues Cleave
+    p()->buff.heroic_strike_queued->expire();
+    p()->buff.cleave_queued->trigger();
+  }
+};
+
+struct cleave_t : public warrior_attack_t
+{
+  cleave_t( warrior_t* player, util::string_view options_str ) :
+    warrior_attack_t( "cleave", player, player->rank.cleave.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    trigger_gcd = 0_ms;
+  }
+
+  void execute() override
+  {
+    warrior_attack_t::execute();
+
+    p()->buff.cleave_queued->expire();
+  }
+};
+
 /////////////////////////////////////////////////////////////////////////////////////
 //
 // Stats, Actions, Oh my
@@ -410,6 +488,7 @@ void warrior_t::init_gains()
 void warrior_t::create_actions()
 {
   heroic_strike = new heroic_strike_t( this, "" );
+  cleave = new cleave_t( this, "" );
 
   player_t::create_actions();
 }
@@ -417,6 +496,7 @@ void warrior_t::create_actions()
 void warrior_t::create_buffs()
 {
   buff.heroic_strike_queued = make_buff( this, "heroic_strike_queued" );
+  buff.cleave_queued = make_buff( this, "cleave_queued" );
 
   buff.battle_shout = make_buff<stat_buff_t>( this, "battle_shout", rank.battle_shout.find_rank()->spell() );
 
@@ -483,6 +563,14 @@ void warrior_t::init_spells()
     spell_container_t().set_spell( 11581 ),
   };
 
+  rank.cleave = { this,
+  spell_container_t().set_spell( 845 ),
+  spell_container_t().set_spell( 7369 ),
+  spell_container_t().set_spell( 11608 ),
+  spell_container_t().set_spell( 11609 ),
+  spell_container_t().set_spell( 20569 ),
+  };
+
   parse_all_class_passives();
   parse_all_passive_talents();
 }
@@ -497,6 +585,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
 
   if ( name == "rend" ) return new rend_t( this, options_str );
   if ( name == "heroic_strike" ) return new heroic_strike_queue_t( this, options_str );
+  if ( name == "cleave" ) return new cleave_queue_t( this, options_str );
 
 
   if ( name == "thunder_clap" ) return new thunder_clap_t( this, options_str );
