@@ -1,4 +1,4 @@
-// 11051 spells, wow build level 1.60.1.70959
+// 11051 spells, wow build level 1.60.1.71037
 static spell_data_t __spell_data[11051] = {
   { "Death Touch"                       ,       5, 2, 0.000000, 0.000000, 0.000000, 0x0000000000000000, 0x00000000, 0, 0, 0, 0, 0, 0, 0.000000, 100.000000,       0, 0, 0, 0, 0, 0, 0,    0, 0, 0, 0.000000, 0.000000, 0, 0, 0, 0, 0x0000000000000000, 0, 0.000000,  0, 0x00000000, 0x00000000, 0, { 150994944, 131072, 67108868, 268435456, 0, 393224, 0, 0, 32, 0, 0, 0, 0, 0, 0, 8192, 0 }, { 0, 0, 0, 0 }, 0, { 0, 0 }, { 0, 0 }, 0x00000000, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0 }, /* 679075 */
   { "Blizzard"                          ,      10, 16, 0.000000, 0.000000, 0.000000, 0x0000000000000000, 0x00000080, 0, 0, 0, 20, 25, 0, 0.000000, 30.000000,       0, 1500, 0, 0, 0, 0, 0, 2518, 1, 0, 0.000000, 0.000000, 8000, 0, 100, 0, 0x0000000000000000, 0, 0.000000,  0, 0x00000000, 0x00000000, 0, { 65536, 268435520, 4325376, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 1, 64, 8192, 0 }, { 524416, 0, 0, 0 }, 3, { 0, 0 }, { 31756, 0 }, 0x00000000, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 1 }, /* 678988, 1292631, 1292632 */
@@ -11053,7 +11053,7 @@ static spell_data_t __spell_data[11051] = {
   { "Camper's Lure"                     , 1331725, 1, 0.000000, 0.000000, 0.000000, 0x0000000000000000, 0x00000000, 0, 0, 0, 0, 0, 0, 0.000000, 0.000000,       0, 0, 0, 0, 0, 0, 0,    0, 0, 0, 0.000000, 0.000000, 0, 0, 0, 0, 0x0000000000000000, 0, 0.000000,  2, 0x00000000, 0x00100000, 5000, { 65664, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8192, 0 }, { 0, 0, 0, 0 }, 0, { 0, 0 }, { 0, 0 }, 0x00000000, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0 }, /* 1372437 */
 };
 
-// 14942 effects, wow build level 1.60.1.70959
+// 14942 effects, wow build level 1.60.1.71037
 static spelleffect_data_t __spelleffect_data[14942] = {
   {  679075,       5,  0,   1,   0, 0, 0x00000000, 0.000000, 1.666667, 0.000000, 0.000000, 0.000000, 0, 0.000000, 0.000000,      3.0000, 0, 0, { 0, 0, 0, 0 }, 0, 1.000000, 0.000000, 0.000000, 0,   0, 25, 0, 1.000000, 1.000000, 0, 0 },
   {  678988,      10,  0,   3,   0, 0, 0x00000000, 0.000000, 0.000000, 0.000000, 0.030000, 0.000000, 0, 8.000000, 8.000000,      0.0000, 0, 0, { 0, 0, 0, 0 }, 0, 1.000000, 0.000000, 0.300000, 0,   0, 87, 16, 0.000000, 1.000000, 0, 0 },
@@ -27844,7 +27844,7 @@ static const std::array<uint16_t, 14733> __spelleffect_id_index { {
   14927,  6872,  5300, 14941,  4173,
 } };
 
-// Spell powers, wow build 1.60.1.70959
+// Spell powers, wow build 1.60.1.71037
 static constexpr std::array<spellpower_data_t, 1918> __spellpower_data { {
   { 169192,      10,       0,   0,   320,    0, 0,   0.000,   0.000,   0.000 },
   { 176617,      17,       0,   0,    45,    0, 0,   0.000,   0.000,   0.000 },
@@ -30009,7 +30009,7 @@ static const std::array<uint16_t, 1918> __spellpower_id_index { {
    1912,  1913,  1914,  1915,  1916,  1917,
 } };
 
-// Spell labels, wow build 1.60.1.70959
+// Spell labels, wow build 1.60.1.71037
 static constexpr std::array<spelllabel_data_t, 3918> __spelllabel_data { {
   {      10,   17 },
   {      17,   18 },
@@ -33931,85 +33931,23 @@ static constexpr std::array<spelllabel_data_t, 3918> __spelllabel_data { {
   { 1330763,   21 },
 } };
 
-// spell hotfix entries, wow build 1.60.1.70959
-static constexpr std::array<hotfix::client_hotfix_entry_t, 50> __spell_hotfix_data { {
-  {    2070, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  {    5308, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  {    6770, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  {    8516, 18, 0, 2619 },
-  {   10608, 18, 0, 2619 },
-  {   10610, 18, 0, 2619 },
-  {   11297, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  {   12322, 23, 4U, 20U },
-  {   12966, 23, 4U, 20U },
+// spell hotfix entries, wow build 1.60.1.71037
+static constexpr std::array<hotfix::client_hotfix_entry_t, 5> __spell_hotfix_data { {
   {   20111, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  {   20658, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  {   20660, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  {   20661, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  {   20662, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  {   23684, 21, 100U, 2U },
-  {   23688, 21, 2U, 3U },
-  {  429961, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1262975, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1262978, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1262980, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1262982, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1262985, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1262990, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1262996, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1262998, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263001, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263005, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263031, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263032, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263034, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263041, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263056, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263067, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263070, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263071, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263073, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263078, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263079, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263080, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263082, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1263083, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1283400, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1291341, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
   { 1309967, 4294967295, 0, 0 },
   { 1329283, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
   { 1329286, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
   { 1329549, 35, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1329555, 23, 4U, 20U },
-  { 1330916, 4294967295, 0, 0 },
-  { 1331725, 4294967295, 0, 0 },
 } };
 
-// effect hotfix entries, wow build 1.60.1.70959
-static constexpr std::array<hotfix::client_hotfix_entry_t, 20> __effect_hotfix_data { {
-  {  684162,  5, 3, 226 },
-  {  694156, 14, 20.000000, 10.000000 },
-  {  701084, 14, 150.000000, 198.000000 },
-  { 1114590, 24, 47, 87 },
-  { 1114591, 24, 47, 87 },
-  { 1210794, 17, hotfix::client_hotfix_entry_t::flags_value_t{}, hotfix::client_hotfix_entry_t::flags_value_t{} },
-  { 1333627,  4, 160U, 28U },
-  { 1333627, 15, 0, 257480 },
-  { 1333627, 16, 0, 3077 },
-  { 1333627, 18, 1308883, 0 },
-  { 1333627, 24, 1, 87 },
-  { 1345748,  5, 32, 172 },
+// effect hotfix entries, wow build 1.60.1.71037
+static constexpr std::array<hotfix::client_hotfix_entry_t, 3> __effect_hotfix_data { {
   { 1368715,  5, 4, 42 },
   { 1368715, 24, 1, 6 },
-  { 1371297, 4294967295, 0, 0 },
-  { 1371298, 4294967295, 0, 0 },
   { 1371756, 4294967295, 0, 0 },
-  { 1372164, 4294967295, 0, 0 },
-  { 1372437, 4294967295, 0, 0 },
-  { 1372611, 4294967295, 0, 0 },
 } };
 
-// power hotfix entries, wow build 1.60.1.70959
+// power hotfix entries, wow build 1.60.1.71037
 static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __power_hotfix_data { {
 } };
 

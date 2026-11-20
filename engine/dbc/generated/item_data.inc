@@ -15880,7 +15880,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15879] = {
   { 127, 20001, 0.000000f },
 };
 
-// Items, ilevel 0-1300, wow build 1.60.1.70959
+// Items, ilevel 0-1300, wow build 1.60.1.71037
 
 static const std::array<dbc_item_data_t, 13285> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
