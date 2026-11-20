@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Demoralizing Roar (desc=Rank 1) (id=99) [Spell Family (7)] 
 Class            : Druid
 School           : Physical
@@ -9540,7 +9540,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 22 | Target: Self (1)
                    Affected Spells: Entangling Roots (339), Rejuvenation (774), Rejuvenation (1058), Entangling Roots (1062), Rip (1079), Rejuvenation (1430), Rake (1822), Rake (1823), Rake (1824), Rejuvenation (2090), Rejuvenation (2091), Rejuvenation (3627), Entangling Roots (5195), Entangling Roots (5196), Insect Swarm (5570), Rejuvenation (8910), Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Pounce (9005), Pounce Bleed (9007), Rip (9492), Rip (9493), Regrowth (9750), Rip (9752), Pounce (9823), Pounce Bleed (9824), Pounce Bleed (9826), Pounce (9827), Moonfire (9833), Moonfire (9834), Moonfire (9835), Rejuvenation (9839), Rejuvenation (9840), Rejuvenation (9841), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Rip (9894), Rip (9896), Rake (9904), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Insect Swarm (24974), Insect Swarm (24975), Insect Swarm (24976), Insect Swarm (24977), Rejuvenation (25299), Blessed Recovery (27813), Wild Growth (408120), Lacerate (414644), Rejuvenation (417057), Rejuvenation (417058), Rejuvenation (417059), Rejuvenation (417060), Rejuvenation (417061), Rejuvenation (417062), Rejuvenation (417063), Rejuvenation (417064), Rejuvenation (417065), Rejuvenation (417066), Rejuvenation (417068), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Lacerate (1235826), Lacerate (1235827), Wild Growth (1238214), Wild Growth (1238215), Lacerate (1328616), Lacerate (1328617)
                    Family Flags: 1, 4, 6, 9, 17, 21, 40, 58, 85, 103, 126
-Hotfixed         : Affects Spells
 #2 (id=1291838)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
                    Affected Spells: Swiftmend (18562)

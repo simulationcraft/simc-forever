@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
 Class            : Priest
 School           : Holy
@@ -3262,7 +3262,6 @@ Effects          :
 Description      : Increases the duration of your Shadow Word: Pain spell by ${$s1/1000} sec.
 
 Name             : Vampiric Embrace (id=15286) [Spell Family (6)] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=11, max_rank=1, req_points=0]
 Class            : Priest
 School           : Shadow
@@ -3282,11 +3281,9 @@ Attributes       : DoT Stacking Rule (103), Always Hit (114), Can Proc From Proc
 Effects          :
 #1 (id=694156)   : Apply Aura (6) | Dummy (4)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (20 -> 10)
                    Modified By: Improved Vampiric Embrace (27839 effect#1)
 #2 (id=1372611)  : Apply Aura (6) | Dummy (4)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
                    Modified By: Improved Vampiric Embrace (27839 effect#1)
 Description      : Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d. You receive $s2% increased healing on yourself from this effect.
 Tooltip          : $w1% of Shadow spell damage caused by casting priest heals the priest's group.

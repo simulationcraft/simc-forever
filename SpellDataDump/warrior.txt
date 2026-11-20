@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Defensive Stance (id=71) [Spell Family (4)] 
 Class            : Warrior
 School           : Physical
@@ -700,7 +700,6 @@ Effects          :
 Description      : Follows a successful block, dodge or parry.
 
 Name             : Execute (desc=Rank 1) (id=5308) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -2505,7 +2504,6 @@ Effects          :
 Description      : Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%.
 
 Name             : Unbridled Wrath (id=12322) [Passive, Hidden] 
-Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=2, col=7, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(12, 24, 36, 48, 60)]
 Class            : Warrior
@@ -3050,7 +3048,6 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | Resource: rage | Target: Self (1)
 
 Name             : Flurry (id=12966) 
-Hotfixed         : Proc Flags 1 (4 -> 20)
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -3627,7 +3624,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Execute (desc=Rank 2) (id=20658) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3649,7 +3645,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 3) (id=20660) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3671,7 +3666,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 4) (id=20661) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3693,7 +3687,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 5) (id=20662) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -6714,7 +6707,6 @@ Effects          :
 Description      : ${$s1/10} Rage generated.
 
 Name             : Reckless Swings (id=1329555) [Spell Family (4)] 
-Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
                  : Effect#1 [op=set, values=(50, 50)]
 Class            : Warrior

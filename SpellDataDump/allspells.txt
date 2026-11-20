@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -6093,7 +6093,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Sap (desc=Rank 2) (id=2070) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -11371,7 +11370,6 @@ Effects          :
 Description      : Follows a successful block, dodge or parry.
 
 Name             : Execute (desc=Rank 1) (id=5308) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -14530,7 +14528,6 @@ Attributes       : Aura Is Debuff (26), Allow While Sitting (27), Unknown (493)
 Effects          :
 #1 (id=684162)   : Apply Aura (6) | Periodic Dummy (226): every 5 seconds
                    Base Value: 10 | Scaled Value: 10 | Target: Self (1)
-Hotfixed         : Sub Type (3 -> 226)
 Description      : Don't eat me.
 
 Name             : Mark of the Wild (desc=Rank 3) (id=6756) [Spell Family (7)] 
@@ -14682,7 +14679,6 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a medium amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 1) (id=6770) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -21389,7 +21385,6 @@ Effects          :
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 1) (id=8516) [Spell Family (11)] 
-Hotfixed         : Category (0 -> 2619)
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 32 (max 40)
@@ -30152,7 +30147,6 @@ Effects          :
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10608) [Spell Family (11)] 
-Hotfixed         : Category (0 -> 2619)
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 42 (max 50)
@@ -30185,7 +30179,6 @@ Effects          :
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 3) (id=10610) [Spell Family (11)] 
-Hotfixed         : Category (0 -> 2619)
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 52 (max 60)
@@ -32962,7 +32955,6 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sap (desc=Rank 3) (id=11297) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -37226,7 +37218,6 @@ Effects          :
 Description      : Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%.
 
 Name             : Unbridled Wrath (id=12322) [Passive, Hidden] 
-Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=2, col=7, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(12, 24, 36, 48, 60)]
 Class            : Warrior
@@ -38493,7 +38484,6 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | Resource: rage | Target: Self (1)
 
 Name             : Flurry (id=12966) 
-Hotfixed         : Proc Flags 1 (4 -> 20)
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -49603,7 +49593,6 @@ Description      : Stuns target for $d.
 Tooltip          : Stunned.
 
 Name             : Vampiric Embrace (id=15286) [Spell Family (6)] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=11, max_rank=1, req_points=0]
 Class            : Priest
 School           : Shadow
@@ -49623,11 +49612,9 @@ Attributes       : DoT Stacking Rule (103), Always Hit (114), Can Proc From Proc
 Effects          :
 #1 (id=694156)   : Apply Aura (6) | Dummy (4)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (20 -> 10)
                    Modified By: Improved Vampiric Embrace (27839 effect#1)
 #2 (id=1372611)  : Apply Aura (6) | Dummy (4)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
                    Modified By: Improved Vampiric Embrace (27839 effect#1)
 Description      : Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d. You receive $s2% increased healing on yourself from this effect.
 Tooltip          : $w1% of Shadow spell damage caused by casting priest heals the priest's group.
@@ -71493,7 +71480,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Execute (desc=Rank 2) (id=20658) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71515,7 +71501,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 3) (id=20660) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71537,7 +71522,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 4) (id=20661) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71559,7 +71543,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 5) (id=20662) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -78819,11 +78802,9 @@ Attributes       : Unknown (493)
 Effects          :
 #1 (id=701084)   : Direct Heal (10)
                    Base Value: 198 | Scaled Value: 198 (delta=0.4) | Target: Self (1)
-Hotfixed         : Base Value (150 -> 198)
 Description      : Sometimes heals bearer of $s1 damage when attacking an enemy.
 
 Name             : Aura of the Blue Dragon (id=23684) 
-Hotfixed         : Proc Chance (100 -> 2), Description
 School           : Physical
 Spell Type       : None
 Duration         : 15 seconds
@@ -78837,7 +78818,6 @@ Description      : $h% chance on successful spellcast to increase your Spirit by
 Tooltip          : Spirit increased by $s1.
 
 Name             : Lightning Strike (id=23686) [Passive, Hidden] 
-Hotfixed         : Description
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60
@@ -78849,7 +78829,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 23687 | Target: Self (1)
 #2 (id=1372164)  : Apply Aura (6) | Dummy (4)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Chance to strike your melee target with lightning for $23687s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies.
 
 Name             : Lightning Strike (id=23687) 
@@ -78865,7 +78844,6 @@ Effects          :
 Description      : Lightning Strike for $s1 Nature damage.
 
 Name             : Aura of the Blue Dragon (id=23688) [Passive, Hidden] 
-Hotfixed         : Proc Chance (2 -> 3), Description
 School           : Physical
 Spell Type       : None
 Proc Chance      : 3%
@@ -78877,7 +78855,6 @@ Effects          :
 Description      : $h% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.
 
 Name             : Heroism (id=23689) [Passive, Hidden] 
-Hotfixed         : Description
 School           : Holy
 Spell Type       : None
 Spell Level      : 50
@@ -108181,7 +108158,6 @@ Description      : A reckless instant melee attack with your two-handed weapon d
 
 
 Name             : Unroll Bag (id=429961) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Range            : 2 yards
@@ -108192,10 +108168,8 @@ Attributes       : Is Ability (4), Not In Combat (Only Peaceful) (28), Not in Ba
 Effects          :
 #1 (id=1114590)  : Create Area Trigger (179)
                    Base Value: 3 | Scaled Value: 3 | Misc Value: 30821 | Target: at Area (87)
-Hotfixed         : Target 1 (47 -> 87)
 #2 (id=1114591)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 214589 | Misc Value 2: 61 | Target: at Area (87)
-Hotfixed         : Target 1 (47 -> 87)
 Description      : Unfurl a sleeping bag. Resting inside for at least one minute will provide a bonus to experience earned, stacking up to 3 times.
 
 Name             : Dark Insight (id=429972) 
@@ -126097,7 +126071,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 22 | Target: Self (1)
                    Affected Spells: Entangling Roots (339), Rejuvenation (774), Rejuvenation (1058), Entangling Roots (1062), Rip (1079), Rejuvenation (1430), Rake (1822), Rake (1823), Rake (1824), Rejuvenation (2090), Rejuvenation (2091), Rejuvenation (3627), Entangling Roots (5195), Entangling Roots (5196), Insect Swarm (5570), Rejuvenation (8910), Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Pounce (9005), Pounce Bleed (9007), Rip (9492), Rip (9493), Regrowth (9750), Rip (9752), Pounce (9823), Pounce Bleed (9824), Pounce Bleed (9826), Pounce (9827), Moonfire (9833), Moonfire (9834), Moonfire (9835), Rejuvenation (9839), Rejuvenation (9840), Rejuvenation (9841), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Rip (9894), Rip (9896), Rake (9904), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Insect Swarm (24974), Insect Swarm (24975), Insect Swarm (24976), Insect Swarm (24977), Rejuvenation (25299), Blessed Recovery (27813), Wild Growth (408120), Lacerate (414644), Rejuvenation (417057), Rejuvenation (417058), Rejuvenation (417059), Rejuvenation (417060), Rejuvenation (417061), Rejuvenation (417062), Rejuvenation (417063), Rejuvenation (417064), Rejuvenation (417065), Rejuvenation (417066), Rejuvenation (417068), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Lacerate (1235826), Lacerate (1235827), Wild Growth (1238214), Wild Growth (1238215), Lacerate (1328616), Lacerate (1328617)
                    Family Flags: 1, 4, 6, 9, 17, 21, 40, 58, 85, 103, 126
-Hotfixed         : Affects Spells
 #2 (id=1291838)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
                    Affected Spells: Swiftmend (18562)
@@ -138727,7 +138700,6 @@ Description      : Resurrect the fallen Khan.
 Tooltip          : Being resurrected.
 
 Name             : Rock Garden (desc=Tier 2) (id=1262975) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138738,7 +138710,6 @@ Effects          :
 Description      : Craft a Rock Garden.
 
 Name             : Cookie's Feast (desc=Tier 2) (id=1262978) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138749,7 +138720,6 @@ Effects          :
 Description      : Craft Cookie's Feast.
 
 Name             : Greenhouse (desc=Tier 2) (id=1262980) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138760,7 +138730,6 @@ Effects          :
 Description      : Craft a Greenhouse.
 
 Name             : Trapper's Workbench (desc=Tier 3) (id=1262982) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138771,7 +138740,6 @@ Effects          :
 Description      : Craft a Trapper's Workbench.
 
 Name             : Field Guide (desc=Tier 2) (id=1262985) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138782,7 +138750,6 @@ Effects          :
 Description      : Craft a Field Guide.
 
 Name             : Fishing Rack (desc=Tier 2) (id=1262990) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138793,7 +138760,6 @@ Effects          :
 Description      : Craft a Fishing Rack.
 
 Name             : Toxin Study (desc=Tier 2) (id=1262996) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138804,7 +138770,6 @@ Effects          :
 Description      : Craft a Toxin Study.
 
 Name             : Fishing Hut (desc=Tier 3) (id=1262998) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138815,7 +138780,6 @@ Effects          :
 Description      : Craft a Fishing Hut.
 
 Name             : Plague Doctor's Laboratory (desc=Tier 4) (id=1263001) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138826,7 +138790,6 @@ Effects          :
 Description      : Craft a Plague Doctor's Laboratory.
 
 Name             : Fermenter (desc=Tier 2) (id=1263005) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138837,7 +138800,6 @@ Effects          :
 Description      : Craft a Fermenter.
 
 Name             : Tanning Rack (desc=Tier 2) (id=1263031) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138848,7 +138810,6 @@ Effects          :
 Description      : Craft a Tanning Rack.
 
 Name             : Spinning Wheel (desc=Tier 2) (id=1263032) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138859,7 +138820,6 @@ Effects          :
 Description      : Craft a Spinning Wheel.
 
 Name             : Repair Bot (desc=Tier 2) (id=1263034) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138870,7 +138830,6 @@ Effects          :
 Description      : Craft a Repair Bot.
 
 Name             : Anvil (desc=Tier 2) (id=1263041) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138881,7 +138840,6 @@ Effects          :
 Description      : Craft an Anvil.
 
 Name             : Arcane Salvager (desc=Tier 2) (id=1263056) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138892,7 +138850,6 @@ Effects          :
 Description      : Craft an Arcane Salvager.
 
 Name             : Iron Oven (desc=Tier 4) (id=1263067) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138903,7 +138860,6 @@ Effects          :
 Description      : Craft an Iron Oven.
 
 Name             : Seed Hybridizer (desc=Tier 3) (id=1263070) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138914,7 +138870,6 @@ Effects          :
 Description      : Craft a Seed Hybridizer.
 
 Name             : Molten Foundry (desc=Tier 3) (id=1263071) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138925,7 +138880,6 @@ Effects          :
 Description      : Craft a Molten Foundry.
 
 Name             : Master Forge (desc=Tier 3) (id=1263073) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138936,7 +138890,6 @@ Effects          :
 Description      : Craft a Master Forge.
 
 Name             : Alchemy Laboratory (desc=Tier 3) (id=1263078) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138947,7 +138900,6 @@ Effects          :
 Description      : Craft an Alchemy Laboratory.
 
 Name             : Sewing Machine (desc=Tier 3) (id=1263079) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138958,7 +138910,6 @@ Effects          :
 Description      : Craft a Sewing Machine.
 
 Name             : Loom (desc=Tier 4) (id=1263080) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138969,7 +138920,6 @@ Effects          :
 Description      : Craft a Loom.
 
 Name             : Arcane Forge (desc=Tier 3) (id=1263082) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -138980,7 +138930,6 @@ Effects          :
 Description      : Craft an Arcane Forge.
 
 Name             : Anarchist's Workbench (desc=Tier 3) (id=1263083) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -143040,7 +142989,6 @@ Effects          :
 Description      : Place bait to attract the sea monster.
 
 Name             : Journeyman Campfire (desc=Tier 2) (id=1283400) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -144025,7 +143973,6 @@ Description      : Increases your Block chance by $s1% for $d. This effect is do
 Tooltip          : Block Chance increased by $w1%.
 
 Name             : Expert Campfire (desc=Tier 3) (id=1291341) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -150399,7 +150346,6 @@ Aura Interrupt   : Moving (3)
 Effects          :
 #1 (id=1333627)  : Summon Guardian (28)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 257480 | Misc Value 2: 3077 | Target: at Area (87)
-Hotfixed         : Type (160 -> 28), Misc Value (0 -> 257480), Misc Value 2 (0 -> 3077), Trigger Spell (1308883 -> 0), Target 1 (1 -> 87)
 Description      : Place a Traveler's Sign that lasts for 1 min. A message can be written on the sign, causing it to last for 1 hour and making it visible to other players.
 Tooltip          : Carving traveler's marks.
 
@@ -154370,7 +154316,6 @@ Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mount
 Effects          :
 #1 (id=1345748)  : Apply Aura (6) | Increase Mounted Speed% (172)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
-Hotfixed         : Sub Type (32 -> 172)
 Description      : Increases movement speed while mounted by $s1%. This effect does not stack with similar effects.
 Tooltip          : Movement speed increased by $s1% while mounted.
 
@@ -158626,7 +158571,6 @@ Effects          :
 Description      : ${$s1/10} Rage generated.
 
 Name             : Reckless Swings (id=1329555) [Spell Family (4)] 
-Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
                  : Effect#1 [op=set, values=(50, 50)]
 Class            : Warrior
@@ -158707,7 +158651,6 @@ Effects          :
 Description      : Has a $h% chance when landing a harmful spell or attack to Smite the target for $s1 Holy damage. Damage is tripled against Undead.
 
 Name             : Howler's Cry (id=1330916) [Passive] 
-Hotfixed         : NEW SPELL
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 1
@@ -158719,15 +158662,12 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=1371297)  : Apply Aura (6) | Proc Trigger Spell (42): Howler's Cry
                    Base Value: -60 | Scaled Value: -60 | Trigger Spell: 1315767 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 #2 (id=1371298)  : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: -60 | Scaled Value: -60 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : Reduces the target enemy's attack power by $s1 for $1315767d.
 Tooltip          : Attack power lowered by $s1.
 
 Name             : Camper's Lure (id=1331725) [Hidden] 
-Hotfixed         : NEW SPELL
 School           : Physical
 Spell Type       : None
 Cast Time        : 5 seconds
@@ -158735,6 +158675,5 @@ Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Sh
 Effects          :
 #1 (id=1372437)  : Enchant Item Temporary (54)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 8773
-Hotfixed         : NEW EFFECT
 Description      : When applied to your fishing pole, increases Fishing by $ec1 for 5 minutes.
 

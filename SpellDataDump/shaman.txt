@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Block (desc=Passive) (id=107) [Passive] 
 Class            : Warrior, Paladin, Shaman
 School           : Physical
@@ -2162,7 +2162,6 @@ Effects          :
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 1) (id=8516) [Spell Family (11)] 
-Hotfixed         : Category (0 -> 2619)
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 32 (max 40)
@@ -3525,7 +3524,6 @@ Effects          :
 Description      : Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.
 
 Name             : Windfury Totem (desc=Rank 2) (id=10608) [Spell Family (11)] 
-Hotfixed         : Category (0 -> 2619)
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 42 (max 50)
@@ -3558,7 +3556,6 @@ Effects          :
 Tooltip          : Main hand attacks have a $h% chance to grant 1 extra attack with $w2 increased attack power.
 
 Name             : Windfury Totem (desc=Rank 3) (id=10610) [Spell Family (11)] 
-Hotfixed         : Category (0 -> 2619)
 School           : Physical
 Spell Type       : Melee
 Spell Level      : 52 (max 60)

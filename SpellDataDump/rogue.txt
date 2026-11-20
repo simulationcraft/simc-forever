@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Backstab (desc=Rank 1) (id=53) [Spell Family (8)] 
 Class            : Rogue
 School           : Physical
@@ -636,7 +636,6 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a small amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 2) (id=2070) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -1297,7 +1296,6 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a medium amount, making the enemy less likely to attack you.
 
 Name             : Sap (desc=Rank 1) (id=6770) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -2540,7 +2538,6 @@ Effects          :
 Description      : An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.
 
 Name             : Sap (desc=Rank 3) (id=11297) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
