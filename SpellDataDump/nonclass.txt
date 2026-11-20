@@ -74269,15 +74269,6 @@ Effects          :
 #1 (id=1352031)  : Apply Aura (6) | Dummy (4)
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
 
-Name             : Eye of the Beast (id=1318846) [Passive, Hidden] 
-School           : Physical
-Spell Type       : None
-Range            : 50000 yards
-Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Ignore Line of Sight (66), Unknown (493)
-Effects          :
-#1 (id=1352485)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-
 Name             : Draconic Infused Emblem (id=1318930) 
 School           : Shadow
 Spell Type       : Magic

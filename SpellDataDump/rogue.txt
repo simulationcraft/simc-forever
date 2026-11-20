@@ -7727,7 +7727,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 10 seconds
 Affecting Spells : Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Flash of Steel (1329284 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Do Not Sheath (18), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Enable Procs from Suppressed Caster Procs (384), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Always Hit (114), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
 #1 (id=1368710)  : Weapon Damage% (31)
                    Base Value: 50 | Scaled Value: 0.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -7839,7 +7839,7 @@ Requires weapon  : One-handed Axe, Two-handed Axe, One-handed Mace, Two-handed M
 Cooldown         : 10 seconds
 Affecting Spells : Honor Among Thieves (432266 effect#1), Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Flash of Steel (1329284 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Do Not Sheath (18), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Enable Procs from Suppressed Caster Procs (384), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Always Hit (114), Requires Off-Hand Weapon (120), Unknown (493)
 Effects          :
 #1 (id=1369159)  : Weapon Damage% (31)
                    Base Value: 50 | Scaled Value: 0.5 | SP Coefficient: 1 | Target: Targeted Enemy (6)
