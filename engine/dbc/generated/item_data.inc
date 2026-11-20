@@ -15882,7 +15882,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15879] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.71037
 
-static const std::array<dbc_item_data_t, 13285> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13286> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -25729,6 +25729,7 @@ static const std::array<dbc_item_data_t, 13285> __item_data_chunk0 { {
   { "Lesser Arcane Elixir", 217398, 0x00008000, 0x00006004, 0x00, 38, 28, 0, 0, 1, 0, 0, 2, 0, 0, 1.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Narpas Sword", 217497, 0x00000000, 0x00000004, 0x00, 42, 34, 0, 0, 3, 21, 2, 7, 1, 2000, 0.600000f, 0.000000f, &__item_stats_data[890], 1, 0x0080, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Ward of the Dead", 217727, 0x00000000, 0x00006004, 0x00, 1, 0, 0, 0, 1, 12, 4, 0, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Seed of Renewal", 219326, 0x00008040, 0x00004004, 0x00, 50, 0, 0, 0, 3, 12, 4, 0, 1, 0, 1.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Filcher's Cowl", 219343, 0x00008000, 0x00004004, 0x00, 50, 50, 0, 0, 3, 16, 4, 1, 1, 0, 0.000000f, 0.000000f, &__item_stats_data[10710], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Infernal Lasso", 219345, 0x00008040, 0x00002004, 0x00, 50, 50, 0, 0, 3, 12, 4, 0, 1, 0, 1.000000f, 0.000000f, &__item_stats_data[10712], 1, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Idol of the Dream", 220606, 0x00000000, 0x00006004, 0x00, 60, 55, 0, 0, 3, 28, 4, 8, 1, 0, 1.000000f, 0.000000f, 0, 0, 0x7fff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },

@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.71037
-static constexpr std::array<spelltext_data_t, 8745> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8747> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -6407,8 +6407,10 @@ static constexpr std::array<spelltext_data_t, 8745> __spelltext_data { {
   {  442897, "Chance to hit with spells increased by $s1%. Not cumulative with other ring runes.", 0, 0 },
   {  442898, "Chance to hit with spells increased by $s1%. Not cumulative with other ring runes.", 0, 0 },
   {  443265, "Deals $o1 Fire damage over $d. Demons and Beasts are Rooted in place for $1312052d.", "Taking $s1 Fire damage every $t1 seconds.", 0 },
+  {  443278, "Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells. If the creature is slain within 30 seconds of the seed being embedded, a Healing Blossom will grow from its corpse.\r\n", "Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells.", 0 },
   {  443320, 0, "Physical$?$w3>0[, Fire, Frost, and Nature][] damage done increased by $s1% and all threat generated reduced by $s2%.", 0 },
   {  443369, 0, "Chronomantic energy ready to be unleashed. Instantly healing a friendly target for ${$<healpower>*$436517m1/100} to ${$<healpower>*$436517M1/100}.", 0 },
+  {  443678, 0, "Will grow a Healing Blossom from corpse when killed.", 0 },
   {  443813, 0, "Irradiated. Suffering damage over time and movement is slowed.", 0 },
   {  444519, "Deputize a party member, sharing this quest with them so they can complete it with you.", 0, 0 },
   {  444524, "Deputize a party member, sharing this quest with them so they can complete it with you.", 0, 0 },
