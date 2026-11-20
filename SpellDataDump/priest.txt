@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70938 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
 Class            : Priest
 School           : Holy
@@ -3262,6 +3262,7 @@ Effects          :
 Description      : Increases the duration of your Shadow Word: Pain spell by ${$s1/1000} sec.
 
 Name             : Vampiric Embrace (id=15286) [Spell Family (6)] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=11, max_rank=1, req_points=0]
 Class            : Priest
 School           : Shadow
@@ -3280,9 +3281,14 @@ Family Flags     : 2, 26, 31
 Attributes       : DoT Stacking Rule (103), Always Hit (114), Can Proc From Procs (122), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
 #1 (id=694156)   : Apply Aura (6) | Dummy (4)
-                   Base Value: 20 | Scaled Value: 20 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : Base Value (20 -> 10)
                    Modified By: Improved Vampiric Embrace (27839 effect#1)
-Description      : Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d.
+#2 (id=1372611)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
+                   Modified By: Improved Vampiric Embrace (27839 effect#1)
+Description      : Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d. You receive $s2% increased healing on yourself from this effect.
 Tooltip          : $w1% of Shadow spell damage caused by casting priest heals the priest's group.
 
 Name             : Shadow Affinity (id=15318) [Spell Family (6), Passive, Hidden] 
@@ -3511,7 +3517,6 @@ Effects          :
 Description      : Controls Emberstrife's mind when his will falters.
 
 Name             : Juju Might (id=16329) [Spell Family (6)] 
-Hotfixed         : Attributes
 School           : Holy
 Spell Type       : Magic
 Spell Level      : 50
@@ -3638,7 +3643,6 @@ Effects          :
 Description      : Increases the range of your offensive Shadow spells by $s1%.
 
 Name             : Blessed Sunfruit (id=18125) [Spell Family (6)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 GCD              : 1.5 seconds
@@ -3654,7 +3658,6 @@ Description      : Increases Strength by $s1 for $d.
 Tooltip          : Strength increased by $m1.
 
 Name             : Blessed Sunfruit Juice (id=18141) [Spell Family (6)] 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 GCD              : 1.5 seconds
