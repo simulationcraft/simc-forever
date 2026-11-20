@@ -273,7 +273,8 @@ struct rend_t : public warrior_attack_t
     dot_behavior = DOT_CLIP;
 
     // TODO: Verify this at higher levels
-    attack_power_mod.tick = 0.016;
+    ap_type               = attack_power_type::NO_WEAPON;
+    attack_power_mod.tick = 0.02;
   }
 };
 
