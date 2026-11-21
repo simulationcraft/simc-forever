@@ -51,6 +51,14 @@ struct shaman_t final : public player_t
 
   action_t* flametongue_attack = nullptr;
 
+  struct
+  {
+    spell_ranks_t earth_shock;
+    spell_ranks_t flame_shock;
+    spell_ranks_t flametongue_weapon;
+    spell_ranks_t rockbiter_weapon;
+    spell_ranks_t strength_of_earth_totem;
+  } rank;
 };
 
 // SHAMAN MODULE INTERFACE ==================================================
@@ -70,20 +78,7 @@ struct shaman_module_t : public module_t
     return true;
   }
 
-  void register_actor_initializers( sim_t* sim ) const override
-  {
-    sim->register_actor_initializer( INIT_ACTOR_CREATE_BUFFS + offset(), []( player_t* p ) {
-      p->buffs.bloodlust = make_buff( p, "bloodlust", p->find_spell( 2825 ) )
-          ->set_cooldown( 0_ms )
-          ->set_max_stack( 1 )
-          ->set_default_value_from_effect_type( A_HASTE_ALL )
-          ->add_invalidate( CACHE_HASTE );
-
-      p->buffs.exhaustion = make_buff( p, "exhaustion", p->find_spell( 57723 ) )
-          ->set_max_stack( 1 )
-          ->set_quiet( true );
-    }, "create_buffs_shaman" );
-  }
+  void register_actor_initializers( sim_t* ) const override {}
 
   void register_hotfixes() const override {}
 };
@@ -130,6 +125,48 @@ void shaman_t::init_spells()
 {
   player_t::init_spells();
 
+  rank.earth_shock = spell_ranks_t( this,
+    spell_container_t().set_spell( 8042 ),
+    spell_container_t().set_spell( 8044 ),
+    spell_container_t().set_spell( 8045 ),
+    spell_container_t().set_spell( 8046 ),
+    spell_container_t().set_spell( 10412 ),
+    spell_container_t().set_spell( 10413 ),
+    spell_container_t().set_spell( 10414 )
+  );
+  rank.flame_shock = spell_ranks_t( this,
+    spell_container_t().set_spell( 8050 ),
+    spell_container_t().set_spell( 8052 ),
+    spell_container_t().set_spell( 8053 ),
+    spell_container_t().set_spell( 10447 ),
+    spell_container_t().set_spell( 10448 ),
+    spell_container_t().set_spell( 29228 )
+  );
+  rank.flametongue_weapon = spell_ranks_t( this,
+    spell_container_t().set_spell( 8024 ).set_driver( 8026 ).set_attack( 29469 ),
+    spell_container_t().set_spell( 8027 ).set_driver( 8028 ).set_attack( 29470 ),
+    spell_container_t().set_spell( 8030 ).set_driver( 8029 ).set_attack( 10444 ),
+    spell_container_t().set_spell( 16339 ).set_driver( 10445 ).set_attack( 10444 ),
+    spell_container_t().set_spell( 16341 ).set_driver( 16343 ).set_attack( 10444 ),
+    spell_container_t().set_spell( 16342 ).set_driver( 16344 ).set_attack( 10444 )
+  );
+  rank.rockbiter_weapon = spell_ranks_t( this,
+    spell_container_t().set_spell( 8017 ).set_passive( 10400 ),
+    spell_container_t().set_spell( 8018 ).set_passive( 15567 ),
+    spell_container_t().set_spell( 8019 ).set_passive( 15568 ),
+    spell_container_t().set_spell( 10399 ).set_passive( 15569 ),
+    spell_container_t().set_spell( 16314 ).set_passive( 16311 ),
+    spell_container_t().set_spell( 16315 ).set_passive( 16312 ),
+    spell_container_t().set_spell( 16316 ).set_passive( 16313 )
+  );
+  rank.strength_of_earth_totem = spell_ranks_t( this,
+    spell_container_t().set_spell( 8075 ).set_aura( 8076 ),
+    spell_container_t().set_spell( 8160 ).set_aura( 8162 ),
+    spell_container_t().set_spell( 8161 ).set_aura( 8163 ),
+    spell_container_t().set_spell( 10442 ).set_aura( 10441 ),
+    spell_container_t().set_spell( 25361 ).set_aura( 25362 )
+  );
+
   parse_all_class_passives();
   parse_all_passive_talents();
 
@@ -161,19 +198,10 @@ void shaman_t::invalidate_cache( cache_e c )
 
 // Earth Shock
 
-constexpr std::array earth_shock_ranks {
-  spell_container_t().set_spell(  8042 ),
-  spell_container_t().set_spell(  8044 ),
-  spell_container_t().set_spell(  8045 ),
-  spell_container_t().set_spell(  8046 ),
-  spell_container_t().set_spell( 10412 ),
-  spell_container_t().set_spell( 10413 ),
-  spell_container_t().set_spell( 10414 ),
-};
 struct earth_shock_t : public shaman_spell_t
 {
   earth_shock_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "earth_shock", player, player->find_rank( earth_shock_ranks )->spell( player ) )
+    shaman_spell_t( "earth_shock", player, player->rank.earth_shock.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -184,18 +212,10 @@ struct earth_shock_t : public shaman_spell_t
 
 // Flame Shock
 
-constexpr std::array flame_shock_ranks {
-  spell_container_t().set_spell(  8050 ),
-  spell_container_t().set_spell(  8052 ),
-  spell_container_t().set_spell(  8053 ),
-  spell_container_t().set_spell( 10447 ),
-  spell_container_t().set_spell( 10448 ),
-  spell_container_t().set_spell( 29228 ),
-};
 struct flame_shock_t : public shaman_spell_t
 {
   flame_shock_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "flame_shock", player, player->find_rank( flame_shock_ranks )->spell( player) )
+    shaman_spell_t( "flame_shock", player, player->rank.flame_shock.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -208,23 +228,14 @@ struct flame_shock_t : public shaman_spell_t
 // Shaman Weapon Imbues
 // ==========================================================================
 
-constexpr std::array flametongue_weapon_ranks {
-  spell_container_t().set_spell(  8024 ).set_driver(  8026 ).set_attack( 29469 ),
-  spell_container_t().set_spell(  8027 ).set_driver(  8028 ).set_attack( 29470 ),
-  spell_container_t().set_spell(  8030 ).set_driver(  8029 ).set_attack( 10444 ),
-  spell_container_t().set_spell( 16339 ).set_driver( 10445 ).set_attack( 10444 ),
-  spell_container_t().set_spell( 16341 ).set_driver( 16343 ).set_attack( 10444 ),
-  spell_container_t().set_spell( 16342 ).set_driver( 16344 ).set_attack( 10444 ),
-};
-
 struct flametongue_attack_t : public shaman_spell_t
 {
   flametongue_attack_t( shaman_t* player ) :
-    shaman_spell_t( "flametongue_attack", player, player->find_rank( flametongue_weapon_ranks )->attack( player ) )
+    shaman_spell_t( "flametongue_attack", player, player->rank.flametongue_weapon.find_rank()->attack() )
   {
     background = true;
 
-    auto driver = player->find_rank( flametongue_weapon_ranks )->driver( player );
+    auto driver = player->rank.flametongue_weapon.find_rank()->driver();
 
     double proc_value = driver->effectN( 1 ).average( player, player->level() );
     double weapon_speed = player->equipped_weapons[ SLOT_MAIN_HAND ].swing_time.total_seconds();
@@ -236,7 +247,7 @@ struct flametongue_attack_t : public shaman_spell_t
 struct flametongue_weapon_t : public shaman_spell_t
 {
   flametongue_weapon_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "flametongue_weapon", player, player->find_rank( flametongue_weapon_ranks )->spell( player ) )
+    shaman_spell_t( "flametongue_weapon", player, player->rank.flametongue_weapon.find_rank()->spell() )
   {
     parse_options( options_str );
     harmful = false;
@@ -262,19 +273,10 @@ struct flametongue_weapon_t : public shaman_spell_t
 
 // rockbiter weapon
 
-constexpr std::array rockbiter_weapon_ranks {
-  spell_container_t().set_spell(  8017 ).set_passive( 10400 ),
-  spell_container_t().set_spell(  8018 ).set_passive( 15567 ),
-  spell_container_t().set_spell(  8019 ).set_passive( 15568 ),
-  spell_container_t().set_spell( 10399 ).set_passive( 15569 ),
-  spell_container_t().set_spell( 16314 ).set_passive( 16311 ),
-  spell_container_t().set_spell( 16315 ).set_passive( 16312 ),
-  spell_container_t().set_spell( 16316 ).set_passive( 16313 ),
-};
 struct rockbiter_weapon_t : public shaman_spell_t
 {
   rockbiter_weapon_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "rockbiter_weapon", player, player->find_rank( rockbiter_weapon_ranks )->spell( player ) )
+    shaman_spell_t( "rockbiter_weapon", player, player->rank.rockbiter_weapon.find_rank()->spell() )
   {
     parse_options( options_str );
     harmful = false;
@@ -306,20 +308,14 @@ struct rockbiter_weapon_t : public shaman_spell_t
 // TODO: Make totems a unit for use with range?
 // TODO: Party buff
 
-constexpr std::array strength_of_earth_totem_ranks {
-  spell_container_t().set_spell(  8075 ).set_aura(  8076 ),
-  spell_container_t().set_spell(  8160 ).set_aura(  8162 ),
-  spell_container_t().set_spell(  8161 ).set_aura(  8163 ),
-  spell_container_t().set_spell( 10442 ).set_aura( 10441 ),
-  spell_container_t().set_spell( 25361 ).set_aura( 25362 ),
-};
 struct strength_of_earth_totem_t : public shaman_spell_t
 {
   strength_of_earth_totem_t( shaman_t* player, util::string_view options_str ) :
-    shaman_spell_t( "strength_of_earth_totem", player, player->find_rank( strength_of_earth_totem_ranks )->spell( player ) )
+    shaman_spell_t( "strength_of_earth_totem", player, player->rank.strength_of_earth_totem.find_rank()->spell() )
   {
     parse_options( options_str );
     harmful = false;
+    background = sim->overrides.strength_of_earth_totem != 0;
     target = player;
   }
 
@@ -423,11 +419,12 @@ void shaman_t::create_buffs()
 {
   player_t::create_buffs();
 
-  buff.flametongue_weapon = make_buff( this, "flametongue_weapon", find_rank( flametongue_weapon_ranks )->spell( this ) );
-  buff.rockbiter_weapon = make_buff<stat_buff_t>( this, "rockbiter_weapon", find_rank( rockbiter_weapon_ranks )->passive( this ) );
+  buff.flametongue_weapon = make_buff( this, "flametongue_weapon", rank.flametongue_weapon.find_rank()->spell() );
+  buff.rockbiter_weapon = make_buff<stat_buff_t>( this, "rockbiter_weapon", rank.rockbiter_weapon.find_rank()->passive() );
 
-  buff.strength_of_earth = make_buff<stat_buff_t>( this, "strength_of_earth", find_rank( strength_of_earth_totem_ranks )->aura( this ) )
-    ->set_duration( find_rank( strength_of_earth_totem_ranks )->spell( this )->duration() );
+  auto soet_rank = rank.strength_of_earth_totem.find_rank();
+  buff.strength_of_earth = make_buff<stat_buff_t>( this, "strength_of_earth", soet_rank->aura() )
+    ->set_duration( soet_rank->spell()->duration() );
 }
 
 void shaman_t::create_actions()

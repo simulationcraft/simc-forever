@@ -37,6 +37,15 @@ attack_t::attack_t( util::string_view n, player_t* p, const spell_data_t* s )
   }
 }
 
+void attack_t::init()
+{
+  action_t::init();
+
+  // auto attacks are not procs
+  if ( !special )
+    not_a_proc = true;
+}
+
 void attack_t::execute()
 {
   action_t::execute();
@@ -489,6 +498,11 @@ double ranged_attack_t::composite_target_multiplier( player_t* t ) const
   double v = attack_t::composite_target_multiplier( t );
 
   return v;
+}
+
+double ranged_attack_t::execute_time_pct_multiplier() const
+{
+  return action_t::execute_time_pct_multiplier() * player->composite_ranged_auto_attack_speed();
 }
 
 void ranged_attack_t::schedule_execute( action_state_t* state )

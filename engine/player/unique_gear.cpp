@@ -57,6 +57,8 @@ namespace racial
 namespace generic
 {
   void enable_all_item_effects( special_effect_t& );
+  void windfury_totem( special_effect_t& );
+  void flametongue_totem( special_effect_t& );
 }
 
 /**
@@ -176,6 +178,9 @@ struct touch_of_the_grave_t : public spell_t
 
 void racial::touch_of_the_grave( special_effect_t& effect )
 {
+  if ( !effect.driver()->ok() )
+    return;
+
   effect.execute_action = new touch_of_the_grave_t( effect.player, effect.trigger() );
 
   new dbc_proc_callback_t( effect.player, effect );
@@ -183,6 +188,9 @@ void racial::touch_of_the_grave( special_effect_t& effect )
 
 void racial::entropic_embrace( special_effect_t& effect )
 {
+  if ( !effect.driver()->ok() )
+    return;
+
   buff_t* base_buff = buff_t::find( effect.player, "entropic_embrace" );
   if ( base_buff == nullptr )
   {
@@ -198,6 +206,9 @@ void racial::entropic_embrace( special_effect_t& effect )
 
 void racial::brush_it_off( special_effect_t& effect )
 {
+  if ( !effect.driver()->ok() )
+    return;
+
   struct brush_it_off_cb_t : public dbc_proc_callback_t
   {
     action_t* regen;
@@ -428,6 +439,113 @@ void generic::enable_all_item_effects( special_effect_t& effect )
   };
 
   effect.execute_action = new enable_all_item_effects_t( effect );
+}
+
+// Main hand attacks only. The attack power has charges that landed main hand auto attacks spend, the triggering one
+// included, so an auto attack proc buffs only the extra attack.
+void generic::windfury_totem( special_effect_t& effect )
+{
+  if ( !effect.driver()->ok() )
+    return;
+
+  // the triggered spell id is in the driver's base value
+  effect.trigger_spell_id = as<unsigned>( effect.driver()->effectN( 1 ).base_value() );
+
+  struct windfury_totem_cb_t : public dbc_proc_callback_t
+  {
+    buff_t* attack_power;
+    proc_t* proc;
+    int charges;
+    bool extra_attack;
+
+    windfury_totem_cb_t( const special_effect_t& e )
+      : dbc_proc_callback_t( e.player, e ),
+        attack_power( make_buff<stat_buff_t>( e.player, "windfury_totem", e.trigger() )->set_max_stack( 1 ) ),
+        proc( e.player->get_proc( "Windfury Totem" ) ),
+        charges( 0 ),
+        extra_attack( false )
+    {
+    }
+
+    void spend_charge()
+    {
+      if ( attack_power->check() && --charges <= 0 )
+        attack_power->expire();
+    }
+
+    void trigger( const proc_data_t& data, player_t* t, action_state_t* s, proc_trigger_type_e type ) override
+    {
+      if ( !s->action->weapon || s->action->weapon->slot != SLOT_MAIN_HAND )
+        return;
+
+      if ( s->action == listener->main_hand_attack && s->action->result_is_hit( s->result ) )
+        spend_charge();
+
+      // the extra attack can't grant another one
+      if ( !extra_attack )
+        dbc_proc_callback_t::trigger( data, t, s, type );
+    }
+
+    void execute( const spell_data_t*, player_t* t, action_state_t* s ) override
+    {
+      auto atk = listener->main_hand_attack;
+      if ( !atk )
+        return;
+
+      proc->occur();
+      charges = attack_power->data().initial_stacks();
+      attack_power->trigger();
+
+      if ( s->action == atk )
+        spend_charge();
+
+      auto old_target = atk->target;
+
+      extra_attack   = true;
+      atk->repeating = false;
+      atk->set_target( t );
+      atk->execute();
+      atk->repeating = true;
+      atk->set_target( old_target );
+      extra_attack = false;
+    }
+  };
+
+  new windfury_totem_cb_t( effect );
+}
+
+// TODO: check in game that it stacks with Flametongue Weapon on the same swing
+void generic::flametongue_totem( special_effect_t& effect )
+{
+  if ( !effect.driver()->ok() )
+    return;
+
+
+  effect.trigger_spell_id = as<unsigned>( effect.driver()->effectN( 1 ).base_value() );
+
+  struct flametongue_totem_t : public proc_spell_t
+  {
+    flametongue_totem_t( const special_effect_t& e ) : proc_spell_t( "flametongue_totem", e.player, e.trigger() )
+    {
+      double weapon_speed = e.player->equipped_weapons[ SLOT_MAIN_HAND ].swing_time.total_seconds();
+
+      base_dd_min = base_dd_max = data().effectN( 1 ).base_value() * weapon_speed / 100.0;
+    }
+  };
+
+  struct flametongue_totem_cb_t : public dbc_proc_callback_t
+  {
+    using dbc_proc_callback_t::dbc_proc_callback_t;
+
+    void trigger( const proc_data_t& data, player_t* t, action_state_t* s, proc_trigger_type_e type ) override
+    {
+      if ( s->action->weapon && s->action->weapon->slot == SLOT_MAIN_HAND )
+        dbc_proc_callback_t::trigger( data, t, s, type );
+    }
+  };
+
+  effect.execute_action = new flametongue_totem_t( effect );
+  new flametongue_totem_cb_t( effect.player, effect );
 }
 
 bool stat_fits_criteria( stat_e stat, stat_e criteria )
@@ -688,6 +806,18 @@ void unique_gear::initialize_special_effect( special_effect_t& effect, unsigned 
     if (!special_effect::usable_proc( effect ))
     {
       effect.type = SPECIAL_EFFECT_NONE;
+
+      auto driver = p->find_spell( effect.spell_id );
+      effect_mask_t mask( false );
+      for ( const auto& eff : driver->effects() )
+        if ( eff.subtype() == A_MOD_SPELL_CRIT_CHANCE )
+          mask.enable( eff.index() + 1 );
+
+      if ( effect.proc_flags() == 0 && driver->flags( SX_PASSIVE ) && mask != effect_mask_t( false ) )
+      {
+        p->parse_passive_item_effect( driver, mask );
+        effect.type = SPECIAL_EFFECT_PASSIVE;
+      }
     }
   }
 
@@ -1751,7 +1881,7 @@ void unique_gear::register_special_effects()
 {
   /* Racial special effects */
   // TODO: Undead racial in Forever
-  //register_special_effect( 5227,   racial::touch_of_the_grave );
+  // register_special_effect( 5227,   racial::touch_of_the_grave );
   register_special_effect( 255669, racial::entropic_embrace );
   register_special_effect( 291628, racial::brush_it_off );
   register_special_effect( 292751, racial::zandalari_loa, true );
@@ -1759,6 +1889,8 @@ void unique_gear::register_special_effects()
 
   /* Generic "global scope" special effects */
   register_special_effect( 63604, generic::enable_all_item_effects );
+  register_special_effect( { 8515, 10609, 10612 }, generic::windfury_totem );
+  register_special_effect( { 8230, 8250, 10521, 15036 }, generic::flametongue_totem );
 }
 
 void unique_gear::unregister_special_effects()

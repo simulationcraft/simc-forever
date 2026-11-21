@@ -209,10 +209,11 @@ struct player_t : public actor_t
     double health_per_stamina;
     std::array<double, SCHOOL_MAX> resource_reduction;
     double miss, dodge, parry, block;
-    double hit, expertise, leech, avoidance, crit_avoidance;
+    double hit, spell_hit, expertise, leech, avoidance, crit_avoidance;
     double spell_crit_chance, attack_crit_chance, block_value;
     double all_crit, all_haste;
-    double mana_regen_while_casting;
+    double mana_regen_while_casting; 
+    double resource_regen_multiplier;
     double melee_haste, spell_haste, ranged_haste;
     double skill, skill_debuff, distance;
     double distance_to_move;
@@ -229,6 +230,7 @@ struct player_t : public actor_t
     std::array<double, SCHOOL_MAX_PRIMARY> crit_damage_multiplier;
     double crit_healing_multiplier;
     double attack_speed_multiplier;
+    double ranged_attack_speed_multiplier;
     double healing_multiplier;
     std::array<double, SCHOOL_MAX_PRIMARY> damage_multiplier;
     double pet_damage_multiplier, guardian_damage_multiplier;
@@ -450,8 +452,9 @@ struct player_t : public actor_t
     buff_t* damage_done;
     buff_t* devotion_aura;
     buff_t* entropic_embrace;
-    buff_t* exhaustion;
-    buff_t* guardian_spirit;
+    buff_t* innervate;
+    buff_t* mana_tide_totem;
+    buff_t* power_infusion;
     buff_t* blessing_of_sacrifice;
     buff_t* pain_suppression;
     buff_t* movement;
@@ -459,27 +462,29 @@ struct player_t : public actor_t
     buff_t* stoneform;
     buff_t* stunned;
     buff_t* rooted;
-    buff_t* bloodlust;
   } buffs;
 
   struct debuffs_t
   {
     buff_t* bleeding;
     buff_t* casting;
+    buff_t* curse_of_recklessness;
+    buff_t* curse_of_the_elements;
+    buff_t* faerie_fire;
     buff_t* flying;
+    buff_t* sunder_armor;
     buff_t* forbearance;
     buff_t* invulnerable;
     buff_t* vulnerable;
     buff_t* damage_taken;
-
-    // WoD debuffs
-    buff_t* mortal_wounds;
   } debuffs;
 
   struct external_buffs_t
   {
     std::string pool;
     std::unordered_map<buff_t*, std::vector<cooldown_t*>> invoke_cds;
+    std::vector<timespan_t> innervate;
+    std::vector<timespan_t> mana_tide_totem;
     std::vector<timespan_t> power_infusion;
   } external_buffs;
 
@@ -610,6 +615,7 @@ protected:
   void parse_all_class_passives();
   void parse_all_passive_talents();
   void parse_all_passive_sets();
+  const spell_data_t* find_raid_buff_rank( std::initializer_list<unsigned>, int max_level_offset = 10 ) const;
   void parse_raid_buffs();
   // directly override the values
   void register_passive_spell_override( const spell_data_t&, double value, std::string_view field );
@@ -709,7 +715,6 @@ public:
   double get_position_distance( double m = 0, double v = 0 ) const;
   double compute_incoming_damage( timespan_t interval) const;
   double compute_incoming_magic_damage( timespan_t interval ) const;
-  double calculate_time_to_bloodlust() const;
   slot_e parent_item_slot( const item_t& item ) const;
   slot_e child_item_slot( const item_t& item ) const;
   /// Actor-specific cooldown tolerance for queueable actions
@@ -739,10 +744,6 @@ public:
   const spell_data_t* find_spell( util::string_view name, specialization_e s = SPEC_NONE ) const;
   const spell_data_t* find_spell( unsigned int id, specialization_e s ) const;
   const spell_data_t* find_spell( unsigned int id ) const;
-
-  using rank_ptype_t = const spell_data_t*(spell_container_t::*)(const player_t*) const;
-  const spell_container_t* find_rank( util::span<const spell_container_t> ranks, int rank = RANK_MAX_USABLE, // ) const;
-                                      rank_ptype_t field = &spell_container_t::spell ) const;
 
   pet_t*      find_pet( util::string_view name ) const;
   item_t*     find_item_by_name( util::string_view name );
@@ -879,6 +880,7 @@ public:
 
   virtual double composite_melee_haste() const;
   virtual double composite_melee_auto_attack_speed() const;
+  virtual double composite_ranged_auto_attack_speed() const;
   virtual double composite_melee_attack_power() const;
   virtual double composite_ranged_attack_power() const;
   virtual double composite_weapon_attack_power_by_type( attack_power_type ) const;
@@ -899,6 +901,7 @@ public:
   virtual double composite_spell_hit() const;
   virtual double composite_leech() const;
   virtual double composite_mana_regen_while_casting() const;
+  virtual double composite_resource_regen_multiplier( resource_e r ) const;
   virtual double composite_run_speed() const;
   virtual double composite_avoidance() const;
   virtual double composite_corruption() const;

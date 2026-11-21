@@ -83,6 +83,11 @@ std::string cooldown_type( uint32_t opt )
   return opt == 1 ? "Category" : "";
 }
 
+std::string resource_type( uint32_t opt )
+{
+  return util::resource_type_string( util::power_type_to_resource( static_cast<power_e>( opt ) ) );
+}
+
 std::string parse_cb_str( parse_callback_e type )
 {
   switch ( type )
@@ -423,6 +428,7 @@ void modified_spelleffect_t::print_parsed_effect( report::sc_html_stream& os, co
     case E_APPLY_AURA:
     case E_APPLY_AURA_PET:
     case E_APPLY_AREA_AURA_PARTY:
+    case E_APPLY_AREA_AURA_RAID:
     case E_APPLY_AREA_AURA_PET:
       switch ( _eff.subtype() )
       {
@@ -903,6 +909,26 @@ double parse_player_effects_t::composite_melee_expertise( const weapon_t* ) cons
   return me;
 }
 
+double parse_player_effects_t::composite_melee_hit() const
+{
+  auto mh = player_t::composite_melee_hit();
+
+  for ( const auto& i : hit_effects )
+    mh += get_effect_value( i );
+
+  return mh;
+}
+
+double parse_player_effects_t::composite_spell_hit() const
+{
+  auto sh = player_t::composite_spell_hit();
+
+  for ( const auto& i : spell_hit_effects )
+    sh += get_effect_value( i );
+
+  return sh;
+}
+
 double parse_player_effects_t::composite_crit_avoidance() const
 {
   auto ca = player_t::composite_crit_avoidance();
@@ -921,6 +947,16 @@ double parse_player_effects_t::composite_parry() const
     parry += get_effect_value( i );
 
   return parry;
+}
+
+double parse_player_effects_t::composite_block() const
+{
+  auto block = player_t::composite_block();
+
+  for ( const auto& i : block_effects )
+    block += get_effect_value( i );
+
+  return block;
 }
 
 double parse_player_effects_t::composite_base_armor_multiplier() const
@@ -1097,6 +1133,17 @@ double parse_player_effects_t::composite_mana_regen_while_casting() const
   return m;
 }
 
+double parse_player_effects_t::composite_resource_regen_multiplier( resource_e r ) const
+{
+  auto m = player_t::composite_resource_regen_multiplier( r );
+
+  for ( const auto& i : resource_regen_multiplier_effects )
+    if ( util::power_type_to_resource( static_cast<power_e>( i.opt_enum ) ) == r )
+      m *= 1.0 + get_effect_value( i );
+
+  return m;
+}
+
 void parse_player_effects_t::invalidate_cache( cache_e c )
 {
   player_t::invalidate_cache( c );
@@ -1120,6 +1167,7 @@ bool parse_player_effects_t::is_valid_aura( const spelleffect_data_t& eff ) cons
         return false;
       break;
     case E_APPLY_AREA_AURA_PARTY:
+    case E_APPLY_AREA_AURA_RAID:
     case E_APPLY_AREA_AURA_PET:
       break;
     default:
@@ -1222,6 +1270,16 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
       invalidate( CACHE_EXP );
       return &expertise_effects;
 
+    case A_MOD_HIT_CHANCE:
+      str = "hit";
+      invalidate( CACHE_ATTACK_HIT );
+      return &hit_effects;
+
+    case A_MOD_SPELL_HIT_CHANCE:
+      str = "spell hit";
+      invalidate( CACHE_SPELL_HIT );
+      return &spell_hit_effects;
+
     case A_MOD_ATTACKER_MELEE_CRIT_CHANCE:
       str = "crit avoidance";
       invalidate( CACHE_CRIT_AVOIDANCE );
@@ -1231,6 +1289,11 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
       str = "parry";
       invalidate( CACHE_PARRY );
       return &parry_effects;
+
+    case A_MOD_BLOCK_PERCENT:
+      str = "block";
+      invalidate( CACHE_BLOCK );
+      return &block_effects;
 
     case A_MOD_BASE_RESISTANCE_PCT:
       if ( eff.misc_value1() & SCHOOL_MASK_PHYSICAL )
@@ -1281,6 +1344,14 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
     case A_MOD_MANA_REGEN_INTERRUPT:
       str = "mana regen while casting";
       return &mana_regen_while_casting_effects;
+
+    case A_MOD_POWER_REGEN_PERCENT:    
+      tmp.opt_enum = eff.misc_value1();
+
+      str = opt_strings::resource_type( tmp.opt_enum );
+      str += " regen multiplier";
+      return &resource_regen_multiplier_effects;
+    
 
     case A_MOD_INCREASE_SPEED:
       str = "exclusive move speed";
@@ -1424,12 +1495,15 @@ void parse_player_effects_t::print_custom_parsed_effects( report::sc_html_stream
                        &opt_strings::school );
     print_parsed_type( os, dodge_effects, "Dodge" );
     print_parsed_type( os, expertise_effects, "Expertise" );
+    print_parsed_type( os, hit_effects, "Hit" );
+    print_parsed_type( os, spell_hit_effects, "Spell Hit" );
     print_parsed_type( os, haste_effects, "All Haste" );
     print_parsed_type( os, melee_haste_effects, "Melee Haste" );
     print_parsed_type( os, spell_haste_effects, "Spell Haste" );
     print_parsed_type( os, healing_received_effects, "Healing Received" );
     print_parsed_type( os, leech_effects, "Leech" );
     print_parsed_type( os, mana_regen_while_casting_effects, "Mana Regen While Casting" );
+    print_parsed_type( os, resource_regen_multiplier_effects, "Regen Multiplier", &opt_strings::resource_type );
     print_parsed_type( os, non_stacking_movement_effects, "Move Speed Modifier - Exclusive" );
     print_parsed_type( os, stacking_movement_effects, "Move Speed Modifier - Stacking" );
     print_parsed_type( os, parry_effects, "Parry" );
@@ -1440,6 +1514,7 @@ void parse_player_effects_t::print_custom_parsed_effects( report::sc_html_stream
     print_parsed_type( os, spell_crit_chance_effects, "Spell Crit Chance" );
     print_parsed_type( os, target_multiplier_effects, "Target Multiplier", &opt_strings::school );
     print_parsed_type( os, target_pet_multiplier_effects, "Target Pet Multiplier", &opt_strings::pet_type );
+    print_parsed_type( os, block_effects, "Block" );
     print_parsed_custom_type( os );
 
     os << "</table>\n";
@@ -1459,6 +1534,8 @@ size_t parse_player_effects_t::total_effects_count() const
          crit_bonus_effects.size() +
          leech_effects.size() +
          expertise_effects.size() +
+         hit_effects.size() +
+         spell_hit_effects.size() +
          crit_avoidance_effects.size() +
          parry_effects.size() +
          base_armor_multiplier_effects.size() +
@@ -1477,7 +1554,9 @@ size_t parse_player_effects_t::total_effects_count() const
          target_pet_multiplier_effects.size() +
          non_stacking_movement_effects.size() +
          stacking_movement_effects.size() +
-         mana_regen_while_casting_effects.size();
+         mana_regen_while_casting_effects.size() +
+         resource_regen_multiplier_effects.size() +
+         block_effects.size();
 }
 
 void parse_action_base_t::parse_callback_function( pack_t<player_effect_t>& pack, parse_cb_t cb )
@@ -1552,6 +1631,7 @@ bool parse_action_base_t::is_valid_aura( const spelleffect_data_t& eff ) const
       break;
     case E_APPLY_AREA_AURA_PARTY:
     case E_APPLY_AREA_AURA_PET:
+    case E_APPLY_AREA_AURA_RAID:
       break;
     default:
       return false;

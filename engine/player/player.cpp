@@ -65,10 +65,10 @@
 #include <cerrno>
 #include <limits>
 #include <memory>
+#include <ranges>
 #include <sstream>
 #include <stdexcept>
 #include <utility>
-#include <ranges>
 
 namespace
 {
@@ -1263,6 +1263,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   parry( 0 ),
   block( 0 ),
   hit( 0 ),
+  spell_hit( 0 ),
   expertise( 0 ),
   leech( 0 ),
   avoidance( 0 ),
@@ -1296,6 +1297,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   crit_damage_multiplier(),
   crit_healing_multiplier( 1.0 ),
   attack_speed_multiplier( 1.0 ),
+  ranged_attack_speed_multiplier( 1.0 ),
   healing_multiplier( 1.0 ),
   damage_multiplier(),
   pet_damage_multiplier( 1.0 ),
@@ -1345,6 +1347,8 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
   fmt::format_to( out, " spell_haste={:.6g}", s.spell_haste );
   fmt::format_to( out, " ranged_haste={:.6g}", s.ranged_haste );
   fmt::format_to( out, " leech={:.6g}", s.leech );
+  fmt::format_to( out, " hit={:.6g}", s.hit );
+  fmt::format_to( out, " spell_hit={:.6g}", s.spell_hit );
   fmt::format_to( out, " expertise={:.6g}", s.expertise );
   fmt::format_to( out, " skill={:.6g}", s.skill );
   fmt::format_to( out, " distance={:.6g}", s.distance );
@@ -1376,6 +1380,7 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
   fmt::format_to( out, " healing_multiplier={:.6g}", s.healing_multiplier );
   fmt::format_to( out, " crit_healing_multiplier={:.6g}", s.crit_healing_multiplier );
   fmt::format_to( out, " attack_speed_multiplier={:.6g}", s.attack_speed_multiplier );
+  fmt::format_to( out, " ranged_attack_speed_multiplier={:.6g}", s.ranged_attack_speed_multiplier );
   fmt::format_to( out, " pet_damage_multiplier={:.6g}", s.pet_damage_multiplier );
   fmt::format_to( out, " guardian_damage_multiplier={:.6g}", s.guardian_damage_multiplier );
   fmt::format_to( out, " absorb_multiplier={:.6g}", s.absorb_multiplier );
@@ -1555,6 +1560,7 @@ void player_t::init_base_stats()
     double attack_speed_multiplier = base.attack_speed_multiplier;
     base.attack_speed_multiplier /= get_passive_player_value( attack_speed_multiplier, "attack_speed" );
     base.attack_speed_multiplier *= get_passive_player_value( attack_speed_multiplier, "attack_speed_modifier" );
+    base.ranged_attack_speed_multiplier /= get_passive_player_value( base.ranged_attack_speed_multiplier, "ranged_attack_speed_multiplier" );
     base.attack_power_multiplier = get_passive_player_value( base.attack_power_multiplier, "attack_power_multiplier" );
     base.ranged_attack_power_multiplier = get_passive_player_value( base.ranged_attack_power_multiplier, "ranged_attack_power_multiplier" );
 
@@ -1613,6 +1619,7 @@ void player_t::init_base_stats()
       resources.base[ rt ]                  = get_passive_player_value( rt_base, "resource_max", rt );
       resources.base_multiplier[ rt ]       = get_passive_player_value( rt_mul, "resource_multiplier", rt );
       resources.base_regen_per_second[ rt ] = get_passive_player_value( rt_regen, "resource_regen", rt );
+      resources.regen_multiplier[ rt ]      = get_passive_player_value( 1.0, "resource_regen_multiplier", rt );
       resources.hasted[ rt ]                = _data.is_hasted_regen();
       // Starting amount, the actual start-of-combat resource is min( computed_max, start_at )
       resources.start_at[ rt ] = rt_start == -1.0 ? std::numeric_limits<double>::max() : rt_start;
@@ -1622,7 +1629,11 @@ void player_t::init_base_stats()
 
     // Forever: no base line hit or expertise
     base.hit       = 0.0;
+    base.spell_hit = 0.0;
     base.expertise = 0.0;
+
+    base.hit       = get_passive_player_value( base.hit, "hit" );
+    base.spell_hit = get_passive_player_value( base.spell_hit, "spell_hit" );
 
     base.expertise = get_passive_player_value( base.expertise, "expertise" );
     base.armor_penetration = get_passive_player_value( base.armor_penetration, "armor_penetration" );
@@ -1633,6 +1644,8 @@ void player_t::init_base_stats()
     // Armor Coefficient, based on level (1054 @ 50; 2500 @ 60-63)
     base.armor_coeff = dbc->armor_mitigation_constant( level() );
     sim->print_debug( "{} base armor coefficient set to {}.", *this, base.armor_coeff );
+
+    base.stats.armor = get_passive_player_value( base.stats.armor, "armor" );
   }
 
   base.attack_power_per_spell_power =
@@ -2040,6 +2053,22 @@ void player_t::init_items()
     assert( item.slot >= SLOT_MAIN_HAND && item.slot <= SLOT_RANGED && "Weapon found in unexpected slot!" );
     init_weapon( equipped_weapons[ item.slot ] );
   }
+
+  // Bags - register on-equip spells from quivers
+  if ( !items.empty() )
+  {
+    for ( slot_e slot = SLOT_BAG_1; slot <= SLOT_BAG_5; slot++ )
+    {
+      if ( !items[ slot ].parsed.data.id )
+        continue;
+
+      for ( const auto& effect : item_effect_t::find_for_item( items[ slot ].parsed.data.id, dbc->ptr ) )
+      {
+        if ( effect.type == ITEM_SPELLTRIGGER_ON_EQUIP )
+          parse_passive_item_effect( find_spell( effect.spell_id ) );
+      }
+    }
+  }
 }
 
 void player_t::init_position()
@@ -2124,6 +2153,21 @@ void player_t::init_weapon( weapon_t& w )
     assert( w.type > WEAPON_NONE && w.type < WEAPON_RANGED );
   if ( w.slot == SLOT_OFF_HAND )
     assert( w.type > WEAPON_NONE && w.type < WEAPON_2H );
+  // Store ammo min/max damage on the ranged weapon
+  // TODO Forever: This all needs to be verified. I was only able to test Light Shot in-game at level 11
+  if ( w.slot == SLOT_RANGED && items[ SLOT_AMMO ].parsed.data.id )
+  {
+    const item_t& ammo = items[ SLOT_AMMO ];
+    double dps = dbc->item_damage_ammo( ammo.item_level() ).value( ammo.parsed.data.quality );
+    // TODO: Verify that ammo damage is speed normalized
+    double avg = dps * w.swing_time.total_seconds() / w.get_normalized_speed().total_seconds();
+    double r = items[ SLOT_RANGED ].parsed.data.dmg_range;
+    // 60% range fallback if no weapon data is present. This seems to be the default in game data for these items
+    if ( r <= 0 )
+      r = 0.6;
+    w.ammo_min_dmg = std::floor( avg * ( 1 - r / 2 ) );
+    w.ammo_max_dmg = std::floor( avg * ( 1 + r / 2 ) + 0.5 );
+  }
 }
 
 void player_t::create_special_effects()
@@ -2176,6 +2220,32 @@ void player_t::create_special_effects()
   }
 
   unique_gear::initialize_racial_effects( this );
+
+  auto raid_proc = [ this ]( unsigned spell_id ) {
+    special_effect_t effect( this );
+
+    unique_gear::initialize_special_effect( effect, spell_id );
+    if ( !effect.custom_init_object.empty() )
+      special_effects.push_back( new special_effect_t( effect ) );
+  };
+
+  auto raid_procs = [ this, raid_proc ]( std::vector<unsigned> spell_ids ) {
+    for ( auto id : spell_ids | std::ranges::views::reverse )
+    {
+      auto spell = find_spell( id );
+      if ( spell->ok() && as<int>( spell->level() ) <= true_level )
+      {
+        raid_proc( id );
+        break;
+      }
+    };
+  };
+
+  if ( sim->overrides.flametongue_totem )
+    raid_procs( { 8230, 8250, 10521, 15036 } );
+
+  if ( sim->overrides.windfury_totem )
+    raid_procs( { 8515, 10609, 10612 } );
 
   // 12.0.7 omnium folio talents
   unique_gear::initialize_expansion_trait_effects( this, omnium_talents_str );
@@ -4200,10 +4270,10 @@ void player_t::min_threshold_trigger()
 
     // Special handling for the spirit 5-second rule. If the player is within the 5-seconds of 0 regen, we
     // need to schedule based on the end of that window
-    if ( pres == RESOURCE_MANA && is_player() && recent_cast() )
+    if ( pres == RESOURCE_MANA && is_player() && recent_cast() && rps == 0 )
     {
       regen_delay = last_cast + 5_s - sim->current_time();
-      rps         = resources.base_regen_per_second[ pres ] + mana_regen_from_spirit();
+      rps = resources.base_regen_per_second[ pres ] + ( mana_regen_from_spirit() * resources.regen_multiplier[ pres ] );
     }
 
     if ( rps > 0 )
@@ -4307,6 +4377,26 @@ void player_t::create_buffs()
     }
 
     buffs.movement = new movement_buff_t( this );
+
+    bool mana_user = resources.base[ RESOURCE_MANA ] > 0;
+
+    buffs.innervate = make_buff_fallback( mana_user, this, "innervate", dbc::find_spell( this, 29166 ) )
+      ->set_default_value_from_effect_type( A_MOD_POWER_REGEN_PERCENT )
+      ->set_cooldown( 0_ms );
+
+    // Totem lasts 1s longer than its last tick
+    buffs.mana_tide_totem = make_buff_fallback( mana_user, this, "mana_tide_totem", dbc::find_spell( this, 1325257 ) )
+      ->set_duration( dbc::find_spell( this, 1325256 )->duration() )
+      ->set_default_value_from_effect_type( A_PERIODIC_ENERGIZE, P_MAX, 0.0, E_APPLY_AREA_AURA_PARTY )
+      ->set_tick_callback( [ this, gain = get_gain( "mana_tide_totem" ) ]( buff_t* b, int, timespan_t ) {
+        resource_gain( RESOURCE_MANA, b->current_value, gain );
+      } );
+
+    buffs.power_infusion = make_buff( this, "power_infusion", dbc::find_spell( this, 10060 ) )
+      ->set_default_value_from_effect_type( A_MOD_DAMAGE_PERCENT_DONE )
+      ->set_cooldown( 0_ms );
+
+    parse_raid_buffs();
   }
   // .. for enemies
   else
@@ -4315,8 +4405,14 @@ void player_t::create_buffs()
     debuffs.invulnerable  = make_buff<invulnerable_debuff_t>( this );
     debuffs.vulnerable    = make_buff( this, "vulnerable" )->set_max_stack( 1 );
     debuffs.flying        = make_buff( this, "flying" )->set_max_stack( 1 );
-    debuffs.mortal_wounds = make_buff( this, "mortal_wounds", find_spell( 115804 ) )
-      ->set_default_value( std::fabs( find_spell( 115804 )->effectN( 1 ).percent() ) );
+
+    // Raid debuffs use the top rank, cast by a max level player. Expose Armor at 5 combo points matches 5 Sunder
+    // Armor and they don't stack.
+    debuffs.curse_of_recklessness = make_buff<stat_buff_t>( this, "curse_of_recklessness", dbc::find_spell( this, 11717 ) );
+    debuffs.curse_of_the_elements = make_buff( this, "curse_of_the_elements", dbc::find_spell( this, 1311680 ) )
+      ->set_default_value_from_effect_type( A_MOD_DAMAGE_PERCENT_TAKEN );
+    debuffs.faerie_fire  = make_buff<stat_buff_t>( this, "faerie_fire", dbc::find_spell( this, 9907 ) );
+    debuffs.sunder_armor = make_buff<stat_buff_t>( this, "sunder_armor", dbc::find_spell( this, 11597 ) );
   }
 
   // set up always since this can be applied by enemy actions and raid events.
@@ -4382,13 +4478,16 @@ double player_t::resource_regen_per_second( resource_e r ) const
 
   if ( r == RESOURCE_MANA && is_player() )
   {
-    double spirit_regen = mana_regen_from_spirit();
+    // TODO FOREVER Innervate only affects spirit-based mana regen, not base mana regen (i.e. cant affect mp5)
+    double spirit_regen = mana_regen_from_spirit() * composite_resource_regen_multiplier( r );
 
     if ( recent_cast() )
       spirit_regen *= std::min( 1.0, composite_mana_regen_while_casting() );
 
     reg += spirit_regen;
   }
+  else
+    reg *= composite_resource_regen_multiplier( r );
 
   if ( resources.hasted[ r ] )
     reg /= cache.attack_haste();
@@ -4428,9 +4527,6 @@ double player_t::composite_melee_haste() const
   {
     for ( auto b : buffs.stat_pct_buffs[ STAT_PCT_BUFF_HASTE ] )
       h /= 1.0 + b->check_stack_value();
-
-    if ( buffs.bloodlust->check() )
-      h *= 1.0 / ( 1.0 + buffs.bloodlust->check_stack_value() );
   }
 
   return h;
@@ -4443,6 +4539,12 @@ double player_t::composite_melee_auto_attack_speed() const
   h *= current.attack_speed_multiplier;
 
   return h;
+}
+
+double player_t::composite_ranged_auto_attack_speed() const
+{
+  // TODO FOREVER: Ranged Haste from Rapid Fire, Aspect of the Hawk
+  return current.ranged_attack_speed_multiplier;
 }
 
 double player_t::composite_melee_attack_power() const
@@ -4558,8 +4660,6 @@ double player_t::composite_attack_power_multiplier() const
 
   double m = current.attack_power_multiplier;
 
-  m *= 1.0 + sim->auras.battle_shout->check_value();
-
   // multiplier is rounded to 3 digits
   return std::round( m * 1000 ) * 0.001;
 }
@@ -4607,7 +4707,7 @@ double player_t::composite_melee_hit() const
 {
   double ah = current.hit;
 
-  // ah += composite_melee_hit_rating() / current.rating.attack_hit;
+  ah += composite_melee_hit_rating() / current.rating.attack_hit;
 
   return ah;
 }
@@ -4785,9 +4885,6 @@ double player_t::composite_spell_haste() const
   {
     for ( auto b : buffs.stat_pct_buffs[ STAT_PCT_BUFF_HASTE ] )
       h /= 1.0 + b->check_stack_value();
-
-    if ( buffs.bloodlust->check() )
-      h *= 1.0 / ( 1.0 + buffs.bloodlust->check_stack_value() );
   }
 
   return h;
@@ -4795,6 +4892,7 @@ double player_t::composite_spell_haste() const
 
 /**
  * This is the old spell_haste and incorporates everything that buffs cast speed
+ * TODO Forever this might need to be modified if they add an effect with subtype 355 (A_MOD_CAST_SPEED)
  */
 double player_t::composite_spell_cast_speed() const
 {
@@ -4870,11 +4968,9 @@ double player_t::composite_spell_crit_chance() const
 
 double player_t::composite_spell_hit() const
 {
-  double sh = current.hit;
+  double sh = current.spell_hit;
 
-  // sh += composite_spell_hit_rating() / current.rating.spell_hit;
-
-  sh += composite_melee_expertise();
+  sh += composite_spell_hit_rating() / current.rating.spell_hit;
 
   return sh;
 }
@@ -4891,7 +4987,22 @@ double player_t::composite_leech() const
 
 double player_t::composite_mana_regen_while_casting() const
 {
-  return current.mana_regen_while_casting;
+  double m = current.mana_regen_while_casting;
+
+  if ( buffs.innervate && buffs.innervate->check() )
+    m += buffs.innervate->data().effectN( 1 ).percent();
+
+  return m;
+}
+
+double player_t::composite_resource_regen_multiplier( resource_e r ) const
+{
+  double m = resources.regen_multiplier[ r ];
+
+  if ( r == RESOURCE_MANA && buffs.innervate && buffs.innervate->check() )
+    m *= 1.0 + buffs.innervate->check_value();
+
+  return m;
 }
 
 double player_t::composite_run_speed() const
@@ -4945,6 +5056,9 @@ double player_t::composite_player_multiplier( school_e school ) const
 
   if ( buffs.entropic_embrace && buffs.entropic_embrace->check() )
     m *= 1.0 + buffs.entropic_embrace->data().effectN( 1 ).percent();
+
+  if ( buffs.power_infusion && buffs.power_infusion->has_common_school( school ) )
+    m *= 1.0 + buffs.power_infusion->check_value();
 
   return m;
 }
@@ -5001,12 +5115,7 @@ double player_t::composite_player_absorb_multiplier( const action_state_t* ) con
 
 double player_t::composite_player_healing_received_multiplier() const
 {
-  auto m = current.healing_received_multiplier;
-
-  if ( buffs.guardian_spirit && buffs.guardian_spirit->up() )
-    m *= 1.0 + buffs.guardian_spirit->check_value();
-
-  return m;
+  return current.healing_received_multiplier;
 }
 
 double player_t::composite_player_absorb_received_multiplier() const
@@ -5113,18 +5222,12 @@ double player_t::composite_attribute_multiplier( attribute_e attr ) const
       break;
     case ATTR_INTELLECT:
       pct_type = STAT_PCT_BUFF_INTELLECT;
-      if ( sim->auras.arcane_intellect->check() )
-        m *= 1.0 + sim->auras.arcane_intellect->current_value;
       break;
     case ATTR_SPIRIT:
       pct_type = STAT_PCT_BUFF_SPIRIT;
       break;
     case ATTR_STAMINA:
       pct_type = STAT_PCT_BUFF_STAMINA;
-      if ( sim->auras.power_word_fortitude->check() )
-      {
-        m *= 1.0 + sim->auras.power_word_fortitude->current_value;
-      }
       break;
     default:
       break;
@@ -5201,12 +5304,15 @@ double player_t::composite_rating( rating_e rating ) const
   return util::round( v * composite_rating_multiplier( rating ), 0 );
 }
 
-double player_t::composite_player_vulnerability( school_e ) const
+double player_t::composite_player_vulnerability( school_e school ) const
 {
   double m = debuffs.invulnerable && debuffs.invulnerable->check() ? 0.0 : 1.0;
 
   if ( debuffs.vulnerable && debuffs.vulnerable->check() )
     m *= 1.0 + debuffs.vulnerable->check_value();
+
+  if ( debuffs.curse_of_the_elements && debuffs.curse_of_the_elements->has_common_school( school ) )
+    m *= 1.0 + debuffs.curse_of_the_elements->check_value();
 
   // 1% damage taken per stack, arbitrary because this buff is completely fabricated!
   if ( debuffs.damage_taken && debuffs.damage_taken->check() )
@@ -5484,6 +5590,16 @@ void player_t::combat_begin()
   first_cast = false;
 
   sim->print_debug( "Combat begins for {}.", *this );
+
+  auto add_timed_buff_triggers = [ this ]( const std::vector<timespan_t>& times, buff_t* buff ) {
+    if ( buff )
+      for ( auto t : times )
+        make_event( *sim, t, [ buff ] { buff->trigger(); } );
+  };
+
+  add_timed_buff_triggers( external_buffs.innervate, buffs.innervate );
+  add_timed_buff_triggers( external_buffs.mana_tide_totem, buffs.mana_tide_totem );
+  add_timed_buff_triggers( external_buffs.power_infusion, buffs.power_infusion );
 
   if ( !precombat_action_list.empty() )
     enter_combat();
@@ -6363,8 +6479,18 @@ void player_t::arise()
 
     if ( sim->overrides.bleeding && debuffs.bleeding )
       debuffs.bleeding->override_buff( 1, 1.0 );
-    if ( sim->overrides.mortal_wounds && debuffs.mortal_wounds )
-      debuffs.mortal_wounds->override_buff();
+
+    if ( sim->overrides.curse_of_recklessness && debuffs.curse_of_recklessness )
+      debuffs.curse_of_recklessness->override_buff();
+
+    if ( sim->overrides.curse_of_the_elements && debuffs.curse_of_the_elements )
+      debuffs.curse_of_the_elements->override_buff();
+
+    if ( sim->overrides.faerie_fire && debuffs.faerie_fire )
+      debuffs.faerie_fire->override_buff();
+
+    if ( sim->overrides.sunder_armor && debuffs.sunder_armor )
+      debuffs.sunder_armor->override_buff( debuffs.sunder_armor->max_stack() );
   }
   else
   {
@@ -10475,6 +10601,24 @@ pet_t* player_t::create_pet( util::string_view, util::string_view )
   return nullptr;
 }
 
+static bool slot_counts_for_ilevel( slot_e slot )
+{
+  switch ( slot )
+  {
+    case SLOT_SHIRT:
+    case SLOT_TABARD:
+    case SLOT_AMMO:
+    case SLOT_BAG_1:
+    case SLOT_BAG_2:
+    case SLOT_BAG_3:
+    case SLOT_BAG_4:
+    case SLOT_BAG_5:
+      return false;
+    default:
+      return true;
+  }
+}
+
 /**
  * Get average item level the player is wearing
  */
@@ -10484,7 +10628,7 @@ double player_t::avg_item_level() const
   int num_ilvl_items = 0;
   for ( const auto& item : items )
   {
-    if ( item.slot != SLOT_SHIRT && item.slot != SLOT_TABARD && item.slot != SLOT_RANGED && item.active() )
+    if ( slot_counts_for_ilevel( item.slot ) && item.active() )
     {
       avg_ilvl += item.item_level();
       num_ilvl_items++;
@@ -10914,32 +11058,6 @@ const spell_data_t* player_t::find_spell( unsigned int id, specialization_e s ) 
   return spell_data_t::not_found();
 }
 
-const spell_container_t* player_t::find_rank( util::span<const spell_container_t> ranks, int rank,
-                                              player_t::rank_ptype_t field ) const
-{
-  assert( !ranks.empty() );
-
-  if ( rank == RANK_MAX )
-    return &ranks.back();
-  else if ( rank > 0 )
-  {
-    if ( static_cast<size_t>( rank ) <= ranks.size() )
-      return &ranks[ rank - 1 ];
-  }
-  else
-  {
-    // rank spells are expected to be ordered lowest -> highest, otherwise condition 1 fails
-    // as a result, first ok spell while reverse iterating yields the highest rank spell that is available
-
-    // if the member being referenced for existence is not &spell_container_t::spell, provide a non-default field
-    for ( const auto& it : ranks | std::ranges::views::reverse )
-      if ( auto reference_spell = std::invoke( field, it, this ); reference_spell && reference_spell->ok() )
-        return &it;
-  }
-
-  assert( false && "unreachable" );
-}
-
 namespace
 {
 std::unique_ptr<expr_t> deprecate_expression( player_t& p, util::string_view old_name, util::string_view new_name, action_t* a = nullptr  )
@@ -11084,9 +11202,6 @@ std::unique_ptr<expr_t> player_t::create_expression( util::string_view expressio
     return std::make_unique<position_expr_t>( "position_front", *this, ( 1 << POSITION_FRONT ) | ( 1 << POSITION_RANGED_FRONT ) );
   if ( expression_str == "position_back" )
     return std::make_unique<position_expr_t>( "position_back", *this, ( 1 << POSITION_BACK ) | ( 1 << POSITION_RANGED_BACK ) );
-
-  if ( expression_str == "time_to_bloodlust" )
-    return make_fn_expr( expression_str, [this] { return calculate_time_to_bloodlust(); } );
 
   // Get the actor's raw initial haste percent
   if ( expression_str == "raw_haste_pct" )
@@ -11885,67 +12000,6 @@ double player_t::compute_incoming_magic_damage( timespan_t interval ) const
   return amount;
 }
 
-double player_t::calculate_time_to_bloodlust() const
-{
-  // only bother if the sim is automatically casting bloodlust. Otherwise error out
-  if ( sim->overrides.bloodlust )
-  {
-    timespan_t time_to_bl  = timespan_t::from_seconds( -1 );
-    timespan_t bl_pct_time = timespan_t::from_seconds( -1 );
-
-    // first, check bloodlust_time.  If it's >0, we just compare to current_time()
-    // if it's <0, then use time_to_die estimate
-    if ( sim->bloodlust_time > timespan_t::zero() )
-      time_to_bl = sim->bloodlust_time - sim->current_time();
-    else if ( sim->bloodlust_time < timespan_t::zero() )
-      time_to_bl = target->time_to_percent( 0.0 ) + sim->bloodlust_time;
-
-    // check bloodlust_percent, if >0 then we need to estimate time based on time_to_die and health_percentage
-    if ( sim->bloodlust_percent > 0 && target->health_percentage() > 0 )
-      bl_pct_time = ( target->health_percentage() - sim->bloodlust_percent ) * target->time_to_percent( 0.0 ) /
-                    target->health_percentage();
-
-    // now that we have both times, we want to check for the Exhaustion buff.  If either time is shorter than
-    // the remaining duration on Exhaustion, we won't get that bloodlust and should ignore it
-    if ( buffs.exhaustion->check() )
-    {
-      if ( time_to_bl < buffs.exhaustion->remains() )
-        time_to_bl = timespan_t::from_seconds( -1 );
-      if ( bl_pct_time < buffs.exhaustion->remains() )
-        bl_pct_time = timespan_t::from_seconds( -1 );
-    }
-    else
-    {
-      // the sim's bloodlust_check event fires every second, so negative times under 1 second should be treated as
-      // zero for safety. without this, time_to_bloodlust can spike to the next target value up to a second before
-      // bloodlust is actually cast. probably a non-issue since the worst case is likely to be casting something 1
-      // second too early, but we may as well account for it
-      if ( time_to_bl < timespan_t::zero() && -time_to_bl < timespan_t::from_seconds( 1.0 ) )
-        time_to_bl = timespan_t::zero();
-      if ( bl_pct_time < timespan_t::zero() && -bl_pct_time < timespan_t::from_seconds( 1.0 ) )
-        bl_pct_time = timespan_t::zero();
-    }
-
-    // if both times are non-negative, take the shortest one since that will happen first
-    if ( bl_pct_time >= timespan_t::zero() && time_to_bl >= timespan_t::zero() )
-      time_to_bl = std::min( bl_pct_time, time_to_bl );
-    // otherwise, at least one is negative, so take the larger of the two
-    else
-      time_to_bl = std::max( bl_pct_time, time_to_bl );
-
-    // if both are negative, time_to_bl will still be negative and we won't be benefitting from another BL cast.
-    // Otherwise we return the positive time until BL is being cast.
-    if ( time_to_bl >= timespan_t::zero() )
-      return time_to_bl.total_seconds();
-  }
-  else if ( sim->debug )
-    sim->errorf( "Trying to call time_to_bloodlust conditional with overrides.bloodlust=0" );
-
-  // Return a nonsensical time that's much longer than the simulation.  This happens if time_to_bl was negative
-  // or if overrides.bloodlust was 0
-  return 3 * sim->expected_iteration_time.total_seconds();
-}
-
 std::string player_t::create_profile( save_e stype )
 {
   std::string profile_str;
@@ -12161,7 +12215,8 @@ std::string player_t::create_profile( save_e stype )
     const slot_e SLOT_OUT_ORDER[] = {
         SLOT_HEAD,      SLOT_NECK,      SLOT_SHOULDERS, SLOT_BACK,     SLOT_CHEST,  SLOT_SHIRT,    SLOT_TABARD,
         SLOT_WRISTS,    SLOT_HANDS,     SLOT_WAIST,     SLOT_LEGS,     SLOT_FEET,   SLOT_FINGER_1, SLOT_FINGER_2,
-        SLOT_TRINKET_1, SLOT_TRINKET_2, SLOT_MAIN_HAND, SLOT_OFF_HAND, SLOT_RANGED,
+        SLOT_TRINKET_1, SLOT_TRINKET_2, SLOT_MAIN_HAND, SLOT_OFF_HAND, SLOT_RANGED, SLOT_AMMO,     SLOT_BAG_1,
+        SLOT_BAG_2,     SLOT_BAG_3,     SLOT_BAG_4,     SLOT_BAG_5,
     };
 
     for ( auto& slot : SLOT_OUT_ORDER )
@@ -12435,7 +12490,15 @@ void player_t::create_options()
   add_option( opt_string( "main_hand", items[ SLOT_MAIN_HAND ].options_str ) );
   add_option( opt_string( "off_hand", items[ SLOT_OFF_HAND ].options_str ) );
   add_option( opt_string( "ranged", items[ SLOT_RANGED ].options_str ) );
+  add_option( opt_string( "ammo", items[ SLOT_AMMO ].options_str ) );
   add_option( opt_string( "tabard", items[ SLOT_TABARD ].options_str ) );
+
+  // Bags (mostly to pick up quiver ranged attack speed bonus)
+  add_option( opt_string( "bag1", items[ SLOT_BAG_1 ].options_str ) );
+  add_option( opt_string( "bag2", items[ SLOT_BAG_2 ].options_str ) );
+  add_option( opt_string( "bag3", items[ SLOT_BAG_3 ].options_str ) );
+  add_option( opt_string( "bag4", items[ SLOT_BAG_4 ].options_str ) );
+  add_option( opt_string( "bag5", items[ SLOT_BAG_5 ].options_str ) );
 
   // Set Bonus
   add_option( opt_func( "set_bonus", parse_set_bonus ) );
@@ -12627,6 +12690,8 @@ void player_t::create_options()
     } );
   };
 
+  add_option( opt_external_buff_times( "external_buffs.innervate", external_buffs.innervate ) );
+  add_option( opt_external_buff_times( "external_buffs.mana_tide_totem", external_buffs.mana_tide_totem ) );
   add_option( opt_external_buff_times( "external_buffs.power_infusion", external_buffs.power_infusion ) );
 
   // Player only options
@@ -14080,10 +14145,12 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_CRIT_PERCENT,                       "attack_crit"                      },  // 52
   { A_MOD_SPELL_CRIT_CHANCE,                  "spell_crit"                       },  // 57
   { A_MOD_DAMAGE_PERCENT_DONE,                "damage_multiplier"                },  // 79
+  { A_MOD_HIT_CHANCE,                         "hit"                              },  // 54
+  { A_MOD_SPELL_HIT_CHANCE,                   "spell_hit"                        },  // 55
   { A_MOD_PERCENT_STAT,                       "base_attribute_multiplier"        },  // 80
   { A_RESTORE_POWER,                          "resource_regen"                   },  // 85
   { A_MOD_RESISTANCE_PCT,                     "armor_multiplier"                 },  // 101
-  { A_MOD_POWER_REGEN_PERCENT,                "resource_regen"                   },  // 110
+  { A_MOD_POWER_REGEN_PERCENT,                "resource_regen_multiplier"        },  // 110
   { A_MOD_HEALING_RECEIVED_PCT,               "healing_received_multiplier"      },  // 118
   { A_INCREASE_RESOURCE_PCT,                  "resource_multiplier"              },  // 119
   { A_MOD_SPEED_ALWAYS,                       "move_speed_modifier_-_stacking"   },  // 129
@@ -14132,6 +14199,8 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_PARRY_FROM_CRIT_RATING,             "parry_from_crit_rating"           },  // 463
   { A_MOD_AUTO_ATTACK_DAMAGE_PCT,             "auto_attack_multiplier"           },  // 530
   { A_MOD_GUARDIAN_DAMAGE_DONE,               "guardian_damage_multiplier"       },  // 531
+  { A_MOD_RANGED_ATTACK_SPEED_QUIVER,         "ranged_attack_speed_multiplier"   },  // 557
+  { A_MOD_ARMOR,                              "armor"                            },  // 674
 };
 
 std::string attr_formatter( int type )
@@ -14398,6 +14467,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
     {
       // special handling
       case A_MOD_STAT:  // 29
+      case A_MOD_ARMOR: // 674
         // parse scaling value if necessary
         flat_val = modifying_eff.average( this );
         break;
@@ -14477,6 +14547,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_PET_DAMAGE_DONE:  // 429
       case A_MOD_AUTO_ATTACK_DAMAGE_PCT:  // 530
       case A_MOD_GUARDIAN_DAMAGE_DONE:  // 531
+      case A_MOD_RANGED_ATTACK_SPEED_QUIVER: // 557
         pct_val = modifying_eff.average( this );
         break;
 
@@ -14484,6 +14555,8 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_PARRY_PERCENT:  // 47
       case A_MOD_DODGE_PERCENT:  // 49
       case A_MOD_BLOCK_PERCENT:  // 51
+      case A_MOD_HIT_CHANCE:  // 54
+      case A_MOD_SPELL_HIT_CHANCE:  // 55
       case A_MOD_CRIT_PERCENT:   // 52
       case A_MOD_SPELL_CRIT_CHANCE:  // 57
       case A_MOD_SPEED_ALWAYS:  // 129
@@ -15175,7 +15248,8 @@ void player_t::parse_passive_effects( const spell_data_t* spell, bool force, par
     }
 
     // filter out non-aura applications
-    if ( eff.type() != E_APPLY_AURA && eff.type() != E_APPLY_AREA_AURA_PARTY && eff.type() != E_APPLY_AURA_PLAYER_AND_PET )
+    if ( eff.type() != E_APPLY_AURA && eff.type() != E_APPLY_AREA_AURA_PARTY &&
+         eff.type() != E_APPLY_AURA_PLAYER_AND_PET && eff.type() != E_APPLY_AREA_AURA_RAID )
       continue;
 
     success = register_passive_effect( eff ) ? true : success;
@@ -15205,7 +15279,7 @@ void player_t::deregister_passive_spell( const spell_data_t* spell )
 
       // filter out non-effect-modifying effects
       if ( eff.type() != E_APPLY_AURA && eff.type() != E_APPLY_AREA_AURA_PARTY &&
-           eff.type() != E_APPLY_AURA_PLAYER_AND_PET )
+           eff.type() != E_APPLY_AURA_PLAYER_AND_PET && eff.type() != E_APPLY_AREA_AURA_RAID )
         continue;
 
       register_passive_effect( eff, true );
@@ -15392,27 +15466,106 @@ void player_t::parse_all_passive_sets()
           parse_passive_effects( data.spell, false, PARSE_SOURCE_SET );
 }
 
+// A buff cast on a lower level target lands as the highest rank whose spell level is at most 10 above the target's
+// level (cmangos SpellMgr::SelectAuraRankForLevel). Ranks are ordered lowest to highest.
+const spell_data_t* player_t::find_raid_buff_rank( std::initializer_list<unsigned> ranks, int max_level_offset ) const
+{
+  for ( auto id : ranks | std::ranges::views::reverse )
+  {
+    auto spell = dbc::find_spell( this, id );
+    if ( spell->ok() && as<int>( spell->level() ) <= level() + max_level_offset )
+      return spell;
+  }
+
+  return spell_data_t::not_found();
+}
+
+// The group versions (Prayer of Fortitude, Arcane Brilliance, Gift of the Wild, Greater Blessings, Prayer of Spirit)
+// match the top single target ranks. Raid area auras and totem auras are never downranked.
+// Party buffs (Blood Pact, Dark Inspiration, Mana Spring) are not set by optimal_raid.
 void player_t::parse_raid_buffs()
 {
-  // blessing of the bronze
-  if ( sim->overrides.blessing_of_the_bronze )
-  {
-    // classes are assigned alphabetically starting from eff#1
-    auto spell = find_spell( 364342 )->effectN( static_cast<unsigned>( type ) ).trigger();
-    parse_passive_effects( spell, true );
+  auto raid_buff = [ this ]( std::string_view name, const spell_data_t* spell ) -> stat_buff_t* {
+    if ( !spell->ok() )
+      return nullptr;
 
-    auto buff = make_buff( this, "blessing_of_the_bronze", spell );
-    register_precombat_begin( [ buff ]( auto ) { buff->override_buff(); } );
+    auto buff = make_buff<stat_buff_t>( this, name, spell );
+    buff->set_pct_buff_type_from_data( true );
+    register_precombat_begin( [ buff ]( player_t* ) { buff->override_buff(); } );
+    return buff;
+  };
+
+  if ( sim->overrides.arcane_intellect )
+    raid_buff( "arcane_intellect", find_raid_buff_rank( { 1459, 1460, 1461, 10156, 10157 } ) );
+
+  // amount scales with the caster's level, assumed to be max level
+  if ( sim->overrides.battle_shout )
+  {
+    if ( auto buff = raid_buff( "battle_shout", find_raid_buff_rank( { 6673, 5242, 6192, 11549, 11550, 11551, 25289 } ) ) )
+      buff->set_stat_from_effect( 1, buff->data().effectN( 1 ).average( this, MAX_LEVEL ) );
   }
 
-  // mark of the wild
+  if ( sim->overrides.blessing_of_kings )
+    raid_buff( "blessing_of_kings", find_raid_buff_rank( { 20217 } ) );
+
+  if ( sim->overrides.blessing_of_might )
+    raid_buff( "blessing_of_might", find_raid_buff_rank( { 19740, 19834, 19835, 19836, 19837, 19838, 25291 } ) );
+
+  if ( sim->overrides.blessing_of_wisdom && resources.base[ RESOURCE_MANA ] > 0 )
+  {
+    if ( auto buff = raid_buff( "blessing_of_wisdom", find_raid_buff_rank( { 19742, 19850, 19852, 19853, 19854, 25290 } ) ) )
+    {
+      buff->set_default_value_from_effect_type( A_PERIODIC_ENERGIZE )
+          ->set_tick_callback( [ this, gain = get_gain( "blessing_of_wisdom" ) ]( buff_t* b, int, timespan_t ) {
+            resource_gain( RESOURCE_MANA, b->current_value, gain );
+          } );
+    }
+  }
+
+  // amount scales with the imp's level, assumed to be max level
+  if ( sim->overrides.blood_pact )
+  {
+    if ( auto buff = raid_buff( "blood_pact", dbc::find_spell( this, 11767 ) ) )
+      buff->set_stat_from_effect( 1, buff->data().effectN( 1 ).average( this, MAX_LEVEL ) );
+  }
+
+  if ( sim->overrides.dark_inspiration )
+    raid_buff( "dark_inspiration", dbc::find_spell( this, 1326168 ) );
+
+  if ( sim->overrides.divine_spirit )
+    raid_buff( "divine_spirit", find_raid_buff_rank( { 14752, 14818, 14819, 27841 } ) );
+
+  if ( sim->overrides.grace_of_air_totem )
+    raid_buff( "grace_of_air",  find_raid_buff_rank( { 8836, 10626, 25360 } ) );
+
+  // same aura in Forever, they don't stack
+  if ( sim->overrides.moonkin_aura )
+    raid_buff( "moonkin_aura", dbc::find_spell( this, 24907 ) );
+  else if ( sim->overrides.leader_of_the_pack )
+    raid_buff( "leader_of_the_pack", dbc::find_spell( this, 24932 ) );
+
+  if ( sim->overrides.mana_spring_totem && resources.base[ RESOURCE_MANA ] > 0 )
+  {
+    if ( auto buff = raid_buff( "mana_spring", find_raid_buff_rank( { 5677, 10491, 10493, 10494 } ) ) )
+    {
+      buff->set_default_value_from_effect_type( A_PERIODIC_ENERGIZE, P_MAX, 0.0, E_APPLY_AREA_AURA_PARTY )
+          ->set_tick_callback( [ this, gain = get_gain( "mana_spring" ) ]( buff_t* b, int, timespan_t ) {
+            resource_gain( RESOURCE_MANA, b->current_value, gain );
+          } );
+    }
+  }
+
   if ( sim->overrides.mark_of_the_wild )
-  {
-    // if overrides are registered for the 'self-buff' talents, use the cloned spell_data_t
-    auto spell = dbc_override->find_spell( sim->auras.mark_of_the_wild->data().id(), is_ptr() );
+    raid_buff( "mark_of_the_wild", find_raid_buff_rank( { 1126, 5232, 6756, 5234, 8907, 9884, 9885 } ) );
 
-    parse_passive_effects( spell ? spell : &sim->auras.mark_of_the_wild->data(), true );
-  }
+  if ( sim->overrides.power_word_fortitude )
+    raid_buff( "power_word_fortitude", find_raid_buff_rank( { 1243, 1244, 1245, 2791, 10937, 10938 } ) );
+
+  if ( sim->overrides.strength_of_earth_totem )
+    raid_buff( "strength_of_earth", find_raid_buff_rank( { 8076, 8162, 8163, 10441, 25362 } ) );
+
+  if ( sim->overrides.trueshot_aura )
+    raid_buff( "trueshot_aura", find_raid_buff_rank( { 1299346, 1299348, 19506, 20905, 20906 } ) );
 }
 
 void player_t::register_passive_spell_override( const spell_data_t& spell, double value, std::string_view field )
@@ -15545,6 +15698,7 @@ void player_t::print_parsed_effects( report::sc_html_stream& os ) const
         case E_APPLY_AURA:
         case E_APPLY_AURA_PET:
         case E_APPLY_AREA_AURA_PET:
+        case E_APPLY_AREA_AURA_RAID:
         case E_APPLY_AREA_AURA_PARTY:
           switch ( spell_eff.subtype() )
           {
