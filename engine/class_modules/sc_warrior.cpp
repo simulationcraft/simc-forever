@@ -164,26 +164,27 @@ struct warrior_t final : public parse_player_effects_t
 
   struct spells_t
   {
-    const spell_data_t* battle_stance            = spell_data_t::nil();
-    const spell_data_t* battle_stance_passive    = spell_data_t::nil();
-    const spell_data_t* berserker_stance         = spell_data_t::nil();
-    const spell_data_t* berserker_stance_passive = spell_data_t::nil();
-    const spell_data_t* defensive_stance         = spell_data_t::nil();
-    const spell_data_t* defensive_stance_passive = spell_data_t::nil();
-    const spell_data_t* demoralizing_shout       = spell_data_t::nil();
-    const spell_data_t* disarm                   = spell_data_t::nil();
-    const spell_data_t* execute_damage           = spell_data_t::nil();
-    const spell_data_t* hamstring                = spell_data_t::nil();
-    const spell_data_t* intimidating_shout       = spell_data_t::nil();
-    const spell_data_t* intimidating_shout_fear  = spell_data_t::nil();
-    const spell_data_t* overpower_available      = spell_data_t::nil();
-    const spell_data_t* retaliation              = spell_data_t::nil();
-    const spell_data_t* retaliation_attack       = spell_data_t::nil();
-    const spell_data_t* shield_block             = spell_data_t::nil();
-    const spell_data_t* sunder_armor             = spell_data_t::nil();
-    const spell_data_t* thunder_clap             = spell_data_t::nil();
-    const spell_data_t* victory_rush             = spell_data_t::nil();
-    const spell_data_t* victorious               = spell_data_t::nil();
+    const spell_data_t* battle_stance              = spell_data_t::nil();
+    const spell_data_t* battle_stance_passive      = spell_data_t::nil();
+    const spell_data_t* berserker_stance           = spell_data_t::nil();
+    const spell_data_t* berserker_stance_passive   = spell_data_t::nil();
+    const spell_data_t* defensive_stance           = spell_data_t::nil();
+    const spell_data_t* defensive_stance_passive   = spell_data_t::nil();
+    const spell_data_t* demoralizing_shout         = spell_data_t::nil();
+    const spell_data_t* disarm                     = spell_data_t::nil();
+    const spell_data_t* execute_damage             = spell_data_t::nil();
+    const spell_data_t* hamstring                  = spell_data_t::nil();
+    const spell_data_t* intimidating_shout         = spell_data_t::nil();
+    const spell_data_t* intimidating_shout_fear    = spell_data_t::nil();
+    const spell_data_t* master_of_defense_energize = spell_data_t::nil();
+    const spell_data_t* overpower_available        = spell_data_t::nil();
+    const spell_data_t* retaliation                = spell_data_t::nil();
+    const spell_data_t* retaliation_attack         = spell_data_t::nil();
+    const spell_data_t* shield_block               = spell_data_t::nil();
+    const spell_data_t* sunder_armor               = spell_data_t::nil();
+    const spell_data_t* thunder_clap               = spell_data_t::nil();
+    const spell_data_t* victory_rush               = spell_data_t::nil();
+    const spell_data_t* victorious                 = spell_data_t::nil();
   } spell;
 
   struct buffs_t
@@ -206,7 +207,8 @@ struct warrior_t final : public parse_player_effects_t
 
   struct gains_t
   {
-    gain_t* melee = nullptr;
+    gain_t* master_of_defense = nullptr;
+    gain_t* melee             = nullptr;
   } gain;
 
   struct actives_t
@@ -1245,7 +1247,8 @@ void warrior_t::init_gains()
 {
   parse_player_effects_t::init_gains();
 
-  gain.melee = get_gain( "melee" );
+  gain.master_of_defense = get_gain( "master_of_defense" );
+  gain.melee             = get_gain( "melee" );
 }
 
 void warrior_t::create_actions()
@@ -1473,26 +1476,26 @@ void warrior_t::init_spells()
   parse_all_class_passives();
   parse_all_passive_talents();
 
-  spell.battle_stance            = find_spell( 2457 );
-  spell.battle_stance_passive    = find_spell( 21156 );
-  spell.berserker_stance         = find_spell( 2458 );
-  spell.berserker_stance_passive = find_spell( 7381 );
-  spell.defensive_stance         = find_spell( 71 );
-  spell.defensive_stance_passive = find_spell( 7376 );
-  spell.demoralizing_shout       = rank.demoralizing_shout.find_rank()->spell();
-  spell.disarm                   = rank.disarm.find_rank()->spell();
-  spell.execute_damage           = find_spell( 20647 );
-  spell.hamstring                = rank.hamstring.find_rank()->spell();
-  spell.intimidating_shout       = find_spell( 5246 );
-  spell.intimidating_shout_fear  = find_spell( 20511 );
-  spell.overpower_available      = find_spell( 1282733 );
-  spell.retaliation              = rank.retaliation.find_rank()->spell();
-  spell.retaliation_attack       = find_spell( 20240 );
-  spell.shield_block             = rank.shield_block.find_rank()->spell();
-  spell.sunder_armor             = rank.sunder_armor.find_rank()->spell();
-  spell.thunder_clap             = rank.thunder_clap.find_rank()->spell();
-  spell.victory_rush             = find_spell( 402927 );
-  spell.victorious               = find_spell( 402975 );
+  spell.battle_stance              = find_spell( 2457 );
+  spell.battle_stance_passive      = find_spell( 21156 );
+  spell.berserker_stance           = find_spell( 2458 );
+  spell.berserker_stance_passive   = find_spell( 7381 );
+  spell.defensive_stance           = find_spell( 71 );
+  spell.defensive_stance_passive   = find_spell( 7376 );
+  spell.demoralizing_shout         = rank.demoralizing_shout.find_rank()->spell();
+  spell.disarm                     = rank.disarm.find_rank()->spell();
+  spell.execute_damage             = find_spell( 20647 );
+  spell.hamstring                  = rank.hamstring.find_rank()->spell();
+  spell.intimidating_shout         = find_spell( 5246 );
+  spell.intimidating_shout_fear    = find_spell( 20511 );
+  spell.overpower_available        = find_spell( 1282733 );
+  spell.retaliation                = rank.retaliation.find_rank()->spell();
+  spell.retaliation_attack         = find_spell( 20240 );
+  spell.shield_block               = rank.shield_block.find_rank()->spell();
+  spell.sunder_armor               = rank.sunder_armor.find_rank()->spell();
+  spell.thunder_clap               = rank.thunder_clap.find_rank()->spell();
+  spell.victory_rush               = find_spell( 402927 );
+  spell.victorious                 = find_spell( 402975 );
 
   // Arms
   talent.improved_heroic_strike           = find_talent_spell( talent_tree::CLASS, "Improved Heroic Strike" );
@@ -1640,6 +1643,14 @@ void warrior_t::assess_damage( school_e school, result_amount_type type, action_
   if ( s->result == RESULT_DODGE || s->result == RESULT_PARRY ||
        s->block_result == BLOCK_RESULT_BLOCKED )
     buff.revenge_available->trigger();
+
+  if ( ( s->result == RESULT_DODGE || s->result == RESULT_PARRY ) && talent.master_of_defense->ok() &&
+       has_shield_equipped() )
+  {
+    resource_gain( RESOURCE_RAGE,
+                   talent.master_of_defense->effectN( 1 ).trigger()->effectN( 1 ).resource( RESOURCE_RAGE ),
+                   gain.master_of_defense );
+  }
 
   if ( s->block_result == BLOCK_RESULT_BLOCKED && buff.shield_block->check() )
     buff.shield_block->decrement();
