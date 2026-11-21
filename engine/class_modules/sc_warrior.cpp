@@ -208,8 +208,9 @@ struct warrior_t final : public parse_player_effects_t
 
   struct gains_t
   {
-    gain_t* master_of_defense = nullptr;
-    gain_t* melee             = nullptr;
+    gain_t* master_of_defense     = nullptr;
+    gain_t* melee                 = nullptr;
+    gain_t* shield_specialization = nullptr;
   } gain;
 
   struct actives_t
@@ -1248,8 +1249,9 @@ void warrior_t::init_gains()
 {
   parse_player_effects_t::init_gains();
 
-  gain.master_of_defense = get_gain( "master_of_defense" );
-  gain.melee             = get_gain( "melee" );
+  gain.master_of_defense     = get_gain( "master_of_defense" );
+  gain.melee                 = get_gain( "melee" );
+  gain.shield_specialization = get_gain( "shield_specialization" );
 }
 
 void warrior_t::create_actions()
@@ -1678,6 +1680,14 @@ void warrior_t::assess_damage( school_e school, result_amount_type type, action_
 
   if ( s->block_result == BLOCK_RESULT_BLOCKED && buff.shield_block->check() )
     buff.shield_block->decrement();
+
+  if ( s->block_result == BLOCK_RESULT_BLOCKED && talent.shield_specialization->ok() &&
+       rng().roll( talent.shield_specialization->effectN( 2 ).percent() ) )
+  {
+    resource_gain( RESOURCE_RAGE,
+                   talent.shield_specialization->effectN( 2 ).trigger()->effectN( 1 ).resource( RESOURCE_RAGE ),
+                   gain.shield_specialization );
+  }
 
   if ( buff.retaliation->check() && s->action && s->action->player != this &&
        s->action->type == ACTION_ATTACK && s->action->school == SCHOOL_PHYSICAL &&
