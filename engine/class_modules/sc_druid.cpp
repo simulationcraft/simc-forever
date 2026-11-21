@@ -94,6 +94,7 @@ struct druid_t final : public parse_player_effects_t
     spell_ranks_t cat_form;
     spell_ranks_t claw;
     spell_ranks_t entangling_roots;
+    spell_ranks_t ferocious_bite;
     spell_ranks_t faerie_fire;
     spell_ranks_t hurricane;
     spell_ranks_t innervate;
@@ -232,6 +233,15 @@ void druid_t::init_spells()
       spell_container_t().set_spell( 5201 ),
       spell_container_t().set_spell( 9849 ),
       spell_container_t().set_spell( 9850 ),
+  };
+  rank.ferocious_bite = {
+      this,
+      spell_container_t().set_spell( 1328618 ),
+      spell_container_t().set_spell( 22568 ),
+      spell_container_t().set_spell( 22827 ),
+      spell_container_t().set_spell( 22828 ),
+      spell_container_t().set_spell( 22829 ),
+      spell_container_t().set_spell( 31018 ),
   };
   rank.entangling_roots = {
       this,
@@ -917,12 +927,98 @@ struct druid_combo_attack_t : public druid_melee_attack_t
     combo_points = p()->combo_points( target );
 
     druid_melee_attack_t::execute();
+  }
 
-    p()->spend_combo_points( target, gain );
+  void consume_resource() override
+  {
+    if ( this->data().flags( SX_DISCOUNT_ON_MISS ) && this->result_is_miss( execute_state->result ) )
+    {
+      resource_e cr = current_resource();
+
+      last_resource_cost = cost();
+
+      last_resource_cost *= .2;
+
+      player->resource_loss( cr, last_resource_cost, nullptr, this );
+
+      sim->print_log( "{} consumes {} {} for {} ({})", *player, last_resource_cost, cr, *this,
+                      player->resources.current[ cr ] );
+
+      stats->consume_resource( cr, last_resource_cost );
+    }
+    else
+    {
+      druid_melee_attack_t::consume_resource();
+
+      p()->spend_combo_points( target, gain );
+
+    }
   }
 
 protected:
   int combo_points = 0;
+};
+
+struct ferocious_bite_t : public druid_combo_attack_t
+{
+  // Toggle for the extra energy conversion for future predatory discipline support
+  bool extra_energy = true;
+
+  ferocious_bite_t( druid_t* player, std::string_view options_str )
+    : druid_combo_attack_t( "ferocious_bite", player, player->rank.ferocious_bite.find_rank()->spell() ),
+      extra_energy_spent( 0.0 )
+  {
+    add_option( opt_bool( "extra_energy", extra_energy ) );
+    parse_options( options_str );
+
+    // The roll is applied to the base value in base_da_min/max, but amount_delta gets applied to the whole thing in
+    // action_t when enabled
+    amount_delta = 0.0;
+
+    // TODO confirm how it interacts with Clearcasting
+  }
+
+  void execute() override
+  {
+    extra_energy_spent = 0.0;
+
+    if ( extra_energy )
+      extra_energy_spent = std::max( 0.0, p()->resources.current[ RESOURCE_ENERGY ] - cost() );
+
+    druid_combo_attack_t::execute();
+
+    if ( extra_energy_spent > 0.0 && this->result_is_hit( execute_state->result ) )
+    {
+      auto const drained = std::min( extra_energy_spent, p()->resources.current[ RESOURCE_ENERGY ] );
+      p()->resource_loss( RESOURCE_ENERGY, drained, gain );
+    }
+  }
+
+  double bonus_da( const action_state_t* s ) const override
+  {
+    return druid_combo_attack_t::bonus_da( s ) + combo_points * data().effectN( 1 ).pp_combo_points() +
+           extra_energy_spent * data().effectN( 2 ).base_value() / 100.0;
+  }
+
+  double base_da_min( const action_state_t* s ) const override
+  {
+    return druid_combo_attack_t::base_da_min( s ) * ( 1.0 - data().effectN( 1 ).m_delta() / 2.0 );
+  }
+
+  double base_da_max( const action_state_t* s ) const override
+  {
+    return druid_combo_attack_t::base_da_max( s ) * ( 1.0 + data().effectN( 1 ).m_delta() / 2.0 );
+  }
+
+  double attack_direct_power_coefficient( const action_state_t* ) const override
+  {
+    constexpr double ap_per_combo_point = 0.0357;
+
+    return ap_per_combo_point * combo_points;
+  }
+
+private:
+  double extra_energy_spent;
 };
 
 struct rip_t : public druid_combo_attack_t
@@ -1128,6 +1224,8 @@ action_t* druid_t::create_action( std::string_view name, std::string_view option
     return new ravage_t( this, options_str );
   if ( name == "rake" )
     return new rake_t( this, options_str );
+  if ( name == "ferocious_bite" )
+    return new ferocious_bite_t( this, options_str );
   if ( name == "rip" )
     return new rip_t( this, options_str );
   if ( name == "shred" )
