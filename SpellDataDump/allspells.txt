@@ -789,7 +789,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679574)   : Direct Heal (10)
-                   Base Value: 39 | Scaled Value: 41.8 (delta=0.25641) | Points Per Level: 0.7 | SP Coefficient: 0.429 | Target: Chain Heal Ally (45)
+                   Base Value: 39 | Scaled Value: 41.8 (delta=0.25641) | Points Per Level: 0.7 | SP Coefficient: 0.429 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Wave (desc=Rank 2) (id=332) [Spell Family (11)] 
@@ -807,7 +807,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679575)   : Direct Heal (10)
-                   Base Value: 71 | Scaled Value: 76 (delta=0.197183) | Points Per Level: 1 | SP Coefficient: 0.571 | Target: Chain Heal Ally (45)
+                   Base Value: 71 | Scaled Value: 76 (delta=0.197183) | Points Per Level: 1 | SP Coefficient: 0.571 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Entangling Roots (desc=Rank 1) (id=339) [Spell Family (7)] 
@@ -1383,7 +1383,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679029)   : Direct Heal (10)
-                   Base Value: 131 | Scaled Value: 138.5 (delta=0.183099) | Points Per Level: 1.5 | SP Coefficient: 0.714 | Target: Chain Heal Ally (45)
+                   Base Value: 131 | Scaled Value: 138.5 (delta=0.183099) | Points Per Level: 1.5 | SP Coefficient: 0.714 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Lightning Bolt (desc=Rank 3) (id=548) [Spell Family (11)] 
@@ -3170,7 +3170,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679203)   : Direct Heal (10)
-                   Base Value: 256 | Scaled Value: 267.5 (delta=0.164384) | Points Per Level: 2.3 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 256 | Scaled Value: 267.5 (delta=0.164384) | Points Per Level: 2.3 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Lightning Bolt (desc=Rank 4) (id=915) [Spell Family (11)] 
@@ -3228,7 +3228,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679544)   : Direct Heal (10)
-                   Base Value: 342 | Scaled Value: 355.5 (delta=0.156863) | Points Per Level: 2.7 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 342 | Scaled Value: 355.5 (delta=0.156863) | Points Per Level: 2.7 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Lightning Bolt (desc=Rank 5) (id=943) [Spell Family (11)] 
@@ -3287,7 +3287,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679823)   : Direct Heal (10)
-                   Base Value: 484 | Scaled Value: 500.5 (delta=0.148532) | Points Per Level: 3.3 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 484 | Scaled Value: 500.5 (delta=0.148532) | Points Per Level: 3.3 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Shadow Word: Pain (desc=Rank 3) (id=970) [Spell Family (6)] 
@@ -11387,7 +11387,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=682416)   : Dummy (3)
-                   Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Chain Multiplier: 0.3 | Target: Targeted Enemy (6)
 #2 (id=682417)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -18540,7 +18540,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=685707)   : Direct Heal (10)
-                   Base Value: 685 | Scaled Value: 704.5 (delta=0.143036) | Points Per Level: 3.9 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 685 | Scaled Value: 704.5 (delta=0.143036) | Points Per Level: 3.9 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Lesser Healing Wave (desc=Rank 2) (id=8008) [Spell Family (11)] 
@@ -28645,7 +28645,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688498)   : Direct Heal (10)
-                   Base Value: 972 | Scaled Value: 995.5 (delta=0.137363) | Points Per Level: 4.7 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 972 | Scaled Value: 995.5 (delta=0.137363) | Points Per Level: 4.7 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Wave (desc=Rank 9) (id=10396) [Spell Family (11)] 
@@ -28663,7 +28663,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687722)   : Direct Heal (10)
-                   Base Value: 1344 | Scaled Value: 1366 (delta=0.132514) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 1344 | Scaled Value: 1366 (delta=0.132514) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Rockbiter Weapon (desc=Rank 4) (id=10399) 
@@ -71509,7 +71509,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698799)   : Dummy (3)
-                   Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Chain Multiplier: 0.6 | Target: Targeted Enemy (6)
 #2 (id=698800)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -71531,7 +71531,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698551)   : Dummy (3)
-                   Base Value: 325 | Scaled Value: 325 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 325 | Scaled Value: 325 | SP Coefficient: 1 | Chain Multiplier: 0.9 | Target: Targeted Enemy (6)
 #2 (id=698552)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -71553,7 +71553,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698803)   : Dummy (3)
-                   Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Chain Multiplier: 1.2 | Target: Targeted Enemy (6)
 #2 (id=698804)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -71575,7 +71575,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696172)   : Dummy (3)
-                   Base Value: 600 | Scaled Value: 600 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 600 | Scaled Value: 600 | SP Coefficient: 1 | Chain Multiplier: 1.5 | Target: Targeted Enemy (6)
 #2 (id=696173)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -84059,7 +84059,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=701698)   : Direct Heal (10)
-                   Base Value: 1615 | Scaled Value: 1615 (delta=0.132565) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 1615 | Scaled Value: 1615 (delta=0.132565) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Grace of Air Totem (desc=Rank 3) (id=25359) [Spell Family (11)] 
@@ -93665,7 +93665,7 @@ Family Flags     : 90
 Attributes       : Exclude Caster (51), Cannot cast on tapped (70), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Taps immediately (215), Do Not Auto Select Target with Initiates Combat (220), Unknown (493)
 Effects          :
 #1 (id=1050055)  : Dummy (3)
-                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Chain Multiplier: 0.3 | Target: Targeted Enemy (6)
 Description      : Throw out a hooked chain to restrain the target and pull them toward you. May not be used on enemies higher than level ${$PL+1} or which are marked as boss enemies.
 
 Name             : Flagellation (id=403344) [Spell Family (3), Passive] 
@@ -121660,7 +121660,7 @@ Range            : 50000 yards
 Attributes       : Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Active Threat (94), Always Hit (114), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=1204564)  : Dummy (3)
-                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6) -> Front of Self (47)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Chain Multiplier: 0.3 | Target: Targeted Enemy (6) -> Front of Self (47)
 Description      : $@spelldesc1219093
 
 Name             : Death Grip (id=1219111) [Hidden] 

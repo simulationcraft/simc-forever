@@ -716,7 +716,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=682416)   : Dummy (3)
-                   Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Chain Multiplier: 0.3 | Target: Targeted Enemy (6)
 #2 (id=682417)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -3643,7 +3643,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698799)   : Dummy (3)
-                   Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Chain Multiplier: 0.6 | Target: Targeted Enemy (6)
 #2 (id=698800)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -3665,7 +3665,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698551)   : Dummy (3)
-                   Base Value: 325 | Scaled Value: 325 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 325 | Scaled Value: 325 | SP Coefficient: 1 | Chain Multiplier: 0.9 | Target: Targeted Enemy (6)
 #2 (id=698552)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -3687,7 +3687,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698803)   : Dummy (3)
-                   Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Chain Multiplier: 1.2 | Target: Targeted Enemy (6)
 #2 (id=698804)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -3709,7 +3709,7 @@ Family Flags     : 29
 Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696172)   : Dummy (3)
-                   Base Value: 600 | Scaled Value: 600 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 600 | Scaled Value: 600 | SP Coefficient: 1 | Chain Multiplier: 1.5 | Target: Targeted Enemy (6)
 #2 (id=696173)   : Trigger Spell (64): Execute
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 26651 | Target: Self (1)
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
@@ -4397,7 +4397,7 @@ Family Flags     : 90
 Attributes       : Exclude Caster (51), Cannot cast on tapped (70), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Taps immediately (215), Do Not Auto Select Target with Initiates Combat (220), Unknown (493)
 Effects          :
 #1 (id=1050055)  : Dummy (3)
-                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Chain Multiplier: 0.3 | Target: Targeted Enemy (6)
 Description      : Throw out a hooked chain to restrain the target and pull them toward you. May not be used on enemies higher than level ${$PL+1} or which are marked as boss enemies.
 
 Name             : Endless Rage (id=403349) [Spell Family (4), Passive] 
@@ -6210,7 +6210,7 @@ Range            : 50000 yards
 Attributes       : Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Active Threat (94), Always Hit (114), No Partial Immunity (139), Unknown (493)
 Effects          :
 #1 (id=1204564)  : Dummy (3)
-                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Targeted Enemy (6) -> Front of Self (47)
+                   Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Chain Multiplier: 0.3 | Target: Targeted Enemy (6) -> Front of Self (47)
 Description      : $@spelldesc1219093
 
 Name             : Soul Engraving (id=1219955) [Hidden] 

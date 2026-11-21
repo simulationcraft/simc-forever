@@ -71,7 +71,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679574)   : Direct Heal (10)
-                   Base Value: 39 | Scaled Value: 41.8 (delta=0.25641) | Points Per Level: 0.7 | SP Coefficient: 0.429 | Target: Chain Heal Ally (45)
+                   Base Value: 39 | Scaled Value: 41.8 (delta=0.25641) | Points Per Level: 0.7 | SP Coefficient: 0.429 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Wave (desc=Rank 2) (id=332) [Spell Family (11)] 
@@ -89,7 +89,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679575)   : Direct Heal (10)
-                   Base Value: 71 | Scaled Value: 76 (delta=0.197183) | Points Per Level: 1 | SP Coefficient: 0.571 | Target: Chain Heal Ally (45)
+                   Base Value: 71 | Scaled Value: 76 (delta=0.197183) | Points Per Level: 1 | SP Coefficient: 0.571 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Purge (desc=Rank 1) (id=370) [Spell Family (11)] 
@@ -197,7 +197,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679029)   : Direct Heal (10)
-                   Base Value: 131 | Scaled Value: 138.5 (delta=0.183099) | Points Per Level: 1.5 | SP Coefficient: 0.714 | Target: Chain Heal Ally (45)
+                   Base Value: 131 | Scaled Value: 138.5 (delta=0.183099) | Points Per Level: 1.5 | SP Coefficient: 0.714 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Lightning Bolt (desc=Rank 3) (id=548) [Spell Family (11)] 
@@ -267,7 +267,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679203)   : Direct Heal (10)
-                   Base Value: 256 | Scaled Value: 267.5 (delta=0.164384) | Points Per Level: 2.3 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 256 | Scaled Value: 267.5 (delta=0.164384) | Points Per Level: 2.3 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Lightning Bolt (desc=Rank 4) (id=915) [Spell Family (11)] 
@@ -325,7 +325,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679544)   : Direct Heal (10)
-                   Base Value: 342 | Scaled Value: 355.5 (delta=0.156863) | Points Per Level: 2.7 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 342 | Scaled Value: 355.5 (delta=0.156863) | Points Per Level: 2.7 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Lightning Bolt (desc=Rank 5) (id=943) [Spell Family (11)] 
@@ -384,7 +384,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=679823)   : Direct Heal (10)
-                   Base Value: 484 | Scaled Value: 500.5 (delta=0.148532) | Points Per Level: 3.3 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 484 | Scaled Value: 500.5 (delta=0.148532) | Points Per Level: 3.3 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Chain Heal (desc=Rank 1) (id=1064) [Spell Family (11)] 
@@ -992,7 +992,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=685707)   : Direct Heal (10)
-                   Base Value: 685 | Scaled Value: 704.5 (delta=0.143036) | Points Per Level: 3.9 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 685 | Scaled Value: 704.5 (delta=0.143036) | Points Per Level: 3.9 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Lesser Healing Wave (desc=Rank 2) (id=8008) [Spell Family (11)] 
@@ -2263,7 +2263,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=688498)   : Direct Heal (10)
-                   Base Value: 972 | Scaled Value: 995.5 (delta=0.137363) | Points Per Level: 4.7 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 972 | Scaled Value: 995.5 (delta=0.137363) | Points Per Level: 4.7 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Healing Wave (desc=Rank 9) (id=10396) [Spell Family (11)] 
@@ -2281,7 +2281,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=687722)   : Direct Heal (10)
-                   Base Value: 1344 | Scaled Value: 1366 (delta=0.132514) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 1344 | Scaled Value: 1366 (delta=0.132514) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Rockbiter Weapon (desc=Rank 4) (id=10399) 
@@ -5357,7 +5357,7 @@ Family Flags     : 6
 Attributes       : Not Shapeshifted (16), Doesn't Reset Swing Timer if Instant (217), Heal Prediction (280), Unknown (454), Unknown (493), Unknown (516)
 Effects          :
 #1 (id=701698)   : Direct Heal (10)
-                   Base Value: 1615 | Scaled Value: 1615 (delta=0.132565) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Target: Chain Heal Ally (45)
+                   Base Value: 1615 | Scaled Value: 1615 (delta=0.132565) | Points Per Level: 5.5 | SP Coefficient: 0.857 | Chain Multiplier: 0.2 | Target: Chain Heal Ally (45)
 Description      : Heals a friendly target for $s1.
 
 Name             : Grace of Air Totem (desc=Rank 3) (id=25359) [Spell Family (11)] 
