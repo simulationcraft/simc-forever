@@ -3,18 +3,24 @@
 // Send questions to natehieter@gmail.com
 // ==========================================================================
 
-#include "simulationcraft.hpp"
 #include "action/parse_effects.hpp"
 #include "class_modules/apl/rogue.hpp"
 
-namespace { // UNNAMED NAMESPACE
+#include "simulationcraft.hpp"
+
+namespace
+{  // UNNAMED NAMESPACE
 
 struct rogue_t final : public parse_player_effects_t
 {
-  rogue_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) :
-    parse_player_effects_t( sim, ROGUE, name, r ) {}
+  rogue_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) : parse_player_effects_t( sim, ROGUE, name, r )
+  {
+  }
 
-  resource_e primary_resource() const override { return RESOURCE_ENERGY; }
+  resource_e primary_resource() const override
+  {
+    return RESOURCE_ENERGY;
+  }
 
   void init_base_stats() override;
   void create_buffs() override;
@@ -158,10 +164,14 @@ public:
   }
 
   rogue_t* p()
-  { return debug_cast<rogue_t*>( this->player ); }
+  {
+    return debug_cast<rogue_t*>( this->player );
+  }
 
   const rogue_t* p() const
-  { return debug_cast<const rogue_t*>( this->player ); }
+  {
+    return debug_cast<const rogue_t*>( this->player );
+  }
 
   bool consumes_combo_points() const
   {
@@ -179,8 +189,8 @@ public:
 
     p()->resource_loss( RESOURCE_COMBO_POINT, cp_loss, nullptr, this );
 
-    p()->sim->print_log( "{} consumes {} {} for {} ({})", *p(), cp_loss, util::resource_type_string( RESOURCE_COMBO_POINT ),
-                         *this, p()->current_cp() );
+    p()->sim->print_log( "{} consumes {} {} for {} ({})", *p(), cp_loss,
+                         util::resource_type_string( RESOURCE_COMBO_POINT ), *this, p()->current_cp() );
   }
 
   bool ready() override
@@ -198,20 +208,16 @@ public:
     auto discountOnMiss = this->data().flags( spell_attribute::SX_DISCOUNT_ON_MISS );
 
     // TODO: Move this into core? I basically copied this from warrior
-    if (
-        cr == RESOURCE_ENERGY
-        && this->cost() > 0
-        && discountOnMiss
-        && !this->proc
-        && !this->result_is_hit( this->execute_state->result ) )
+    if ( cr == RESOURCE_ENERGY && this->cost() > 0 && discountOnMiss && !this->proc &&
+         !this->result_is_hit( this->execute_state->result ) )
     {
       this->last_resource_cost = 0.2 * this->cost();
 
       this->player->resource_loss( cr, this->last_resource_cost, nullptr, this );
       this->stats->consume_resource( cr, this->last_resource_cost );
 
-      this->sim->print_log("{} consumes {} {} for {} ({})",
-          *this->player, this->last_resource_cost, cr, *this, this->player->resources.current[ cr ] );
+      this->sim->print_log( "{} consumes {} {} for {} ({})", *this->player, this->last_resource_cost, cr, *this,
+                            this->player->resources.current[ cr ] );
     }
     else
     {
@@ -231,12 +237,12 @@ void rogue_t::init_base_stats()
 
   // TODO - can this base stuff be moved into core?
 
-  base.all_crit           = 0.0;
-  base.spell_crit_chance  = 0.0;
+  base.all_crit          = 0.0;
+  base.spell_crit_chance = 0.0;
 
   base.dodge_per_agility = 2.0 * base.attack_crit_per_agility;
-  auto base_dodge = ( dbc->race_base( race ).agility + dbc->attribute_base( type, level() ).agility )
-               * base.dodge_per_agility;
+  auto base_dodge =
+      ( dbc->race_base( race ).agility + dbc->attribute_base( type, level() ).agility ) * base.dodge_per_agility;
 
   base.attack_crit_chance = get_passive_player_value( 0.0, "attack_crit" );
   base.parry              = get_passive_player_value( 0.0, "parry" );
@@ -252,8 +258,7 @@ using rogue_spell_t  = rogue_action_t<spell_t>;
 
 struct rogue_auto_attack_t : public auto_attack_t
 {
-  rogue_auto_attack_t( rogue_t* p, util::string_view options_str )
-    : auto_attack_t( options_str, p )
+  rogue_auto_attack_t( rogue_t* p, util::string_view options_str ) : auto_attack_t( options_str, p )
   {
     parse_options( options_str );
 
@@ -268,7 +273,7 @@ struct rogue_auto_attack_t : public auto_attack_t
 struct sinister_strike_t : public rogue_attack_t
 {
   sinister_strike_t( rogue_t* player, util::string_view options_str )
-    :  rogue_attack_t( "sinister_strike", player, player->rank.sinister_strike.find_rank()->spell() )
+    : rogue_attack_t( "sinister_strike", player, player->rank.sinister_strike.find_rank()->spell() )
   {
     parse_options( options_str );
   }
@@ -277,7 +282,7 @@ struct sinister_strike_t : public rogue_attack_t
 struct backstab_t : public rogue_attack_t
 {
   backstab_t( rogue_t* player, util::string_view options_str )
-    :  rogue_attack_t( "backstab", player, player->rank.backstab.find_rank()->spell() )
+    : rogue_attack_t( "backstab", player, player->rank.backstab.find_rank()->spell() )
   {
     parse_options( options_str );
   }
@@ -291,12 +296,12 @@ struct backstab_t : public rogue_attack_t
 struct eviscerate_t : public rogue_attack_t
 {
   eviscerate_t( rogue_t* player, util::string_view options_str )
-    :  rogue_attack_t( "eviscerate", player, player->rank.eviscerate.find_rank()->spell() )
+    : rogue_attack_t( "eviscerate", player, player->rank.eviscerate.find_rank()->spell() )
   {
     parse_options( options_str );
 
-    amount_delta           = 0.0; // combo point damage is flat so we handle spread in base_da_min/max
-    spell_power_mod.direct = 0.0; // nullify the 1 from spell data
+    amount_delta           = 0.0;  // combo point damage is flat so we handle spread in base_da_min/max
+    spell_power_mod.direct = 0.0;  // nullify the 1 from spell data
   }
 
   double cp_bonus() const
@@ -328,7 +333,7 @@ struct eviscerate_t : public rogue_attack_t
 struct slice_and_dice_t : public rogue_attack_t
 {
   slice_and_dice_t( rogue_t* player, util::string_view options_str )
-  :  rogue_attack_t( "slice_and_dice", player, player->rank.slice_and_dice.find_rank()->spell() )
+    : rogue_attack_t( "slice_and_dice", player, player->rank.slice_and_dice.find_rank()->spell() )
   {
     parse_options( options_str );
     set_target( player );
@@ -379,35 +384,31 @@ void rogue_t::init_spells()
 
   rank.eviscerate = {
       this,
-    spell_container_t().set_spell(  2098 ),
-    spell_container_t().set_spell(  6760 ),
-    spell_container_t().set_spell(  6761 ),
-    spell_container_t().set_spell(  6762 ),
-    spell_container_t().set_spell(  8623 ),
-    spell_container_t().set_spell(  8624 ),
-    spell_container_t().set_spell( 11299 ),
-    spell_container_t().set_spell( 11300 ),
-    spell_container_t().set_spell( 31016 ),
+      spell_container_t().set_spell( 2098 ),
+      spell_container_t().set_spell( 6760 ),
+      spell_container_t().set_spell( 6761 ),
+      spell_container_t().set_spell( 6762 ),
+      spell_container_t().set_spell( 8623 ),
+      spell_container_t().set_spell( 8624 ),
+      spell_container_t().set_spell( 11299 ),
+      spell_container_t().set_spell( 11300 ),
+      spell_container_t().set_spell( 31016 ),
   };
 
   rank.backstab = {
       this,
-    spell_container_t().set_spell(    53 ),
-    spell_container_t().set_spell(  2589 ),
-    spell_container_t().set_spell(  2590 ),
-    spell_container_t().set_spell(  2591 ),
-    spell_container_t().set_spell(  8721 ),
-    spell_container_t().set_spell( 11279 ),
-    spell_container_t().set_spell( 11280 ),
-    spell_container_t().set_spell( 11281 ),
-    spell_container_t().set_spell( 25300 ),
+      spell_container_t().set_spell( 53 ),
+      spell_container_t().set_spell( 2589 ),
+      spell_container_t().set_spell( 2590 ),
+      spell_container_t().set_spell( 2591 ),
+      spell_container_t().set_spell( 8721 ),
+      spell_container_t().set_spell( 11279 ),
+      spell_container_t().set_spell( 11280 ),
+      spell_container_t().set_spell( 11281 ),
+      spell_container_t().set_spell( 25300 ),
   };
 
-  rank.slice_and_dice = {
-    this,
-    spell_container_t().set_spell(    5171 ),
-    spell_container_t().set_spell(    6774 )
-  };
+  rank.slice_and_dice = { this, spell_container_t().set_spell( 5171 ), spell_container_t().set_spell( 6774 ) };
 
   parse_all_class_passives();
   parse_all_passive_talents();
@@ -478,15 +479,20 @@ void rogue_t::init_spells()
 
 action_t* rogue_t::create_action( util::string_view name, util::string_view options_str )
 {
-  if ( name == "auto_attack" ) return new rogue_auto_attack_t( this, options_str );
+  if ( name == "auto_attack" )
+    return new rogue_auto_attack_t( this, options_str );
 
   // builders
-  if ( name == "sinister_strike" ) return new sinister_strike_t( this, options_str );
-  if ( name == "backstab" ) return new backstab_t( this, options_str );
+  if ( name == "sinister_strike" )
+    return new sinister_strike_t( this, options_str );
+  if ( name == "backstab" )
+    return new backstab_t( this, options_str );
 
   // finishers
-  if ( name == "eviscerate" ) return new eviscerate_t( this, options_str );
-  if ( name == "slice_and_dice" ) return new slice_and_dice_t( this, options_str );
+  if ( name == "eviscerate" )
+    return new eviscerate_t( this, options_str );
+  if ( name == "slice_and_dice" )
+    return new slice_and_dice_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
 }
@@ -518,7 +524,9 @@ void rogue_t::parse_action_effects( action_t* action )
 class rogue_module_t : public module_t
 {
 public:
-  rogue_module_t() : module_t( ROGUE ) {}
+  rogue_module_t() : module_t( ROGUE )
+  {
+  }
 
   player_t* create_player( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) const override
   {
@@ -526,14 +534,20 @@ public:
   }
 
   bool valid() const override
-  { return true; }
+  {
+    return true;
+  }
 
-  void register_hotfixes() const override {}
+  void register_hotfixes() const override
+  {
+  }
 
-  void register_actor_initializers( sim_t* ) const override {}
+  void register_actor_initializers( sim_t* ) const override
+  {
+  }
 };
 
-} // UNNAMED NAMESPACE
+}  // UNNAMED NAMESPACE
 
 const module_t* module_t::rogue()
 {
