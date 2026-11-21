@@ -1554,6 +1554,10 @@ void warrior_t::init_spells()
   talent.focused_rage          = find_talent_spell( talent_tree::CLASS, "Focused Rage" );
   talent.bastion               = find_talent_spell( talent_tree::CLASS, "Bastion" );
   talent.shield_slam           = find_talent_spell( talent_tree::CLASS, "Shield Slam" );
+
+  // Bastion is a passive but also requires a shield equipped, so needs special handling
+  deregister_passive_spell( talent.bastion );
+  parse_effects( talent.bastion, PARSE_PASSIVE, [ this ] { return has_shield_equipped(); } );
 }
 
 void warrior_t::init_special_effects()
