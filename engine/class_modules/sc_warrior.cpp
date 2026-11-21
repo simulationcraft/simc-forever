@@ -178,7 +178,6 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* hamstring                  = spell_data_t::nil();
     const spell_data_t* intimidating_shout         = spell_data_t::nil();
     const spell_data_t* intimidating_shout_fear    = spell_data_t::nil();
-    const spell_data_t* master_of_defense_energize = spell_data_t::nil();
     const spell_data_t* overpower_available        = spell_data_t::nil();
     const spell_data_t* retaliation                = spell_data_t::nil();
     const spell_data_t* retaliation_attack         = spell_data_t::nil();
@@ -1733,7 +1732,7 @@ void warrior_t::assess_damage( school_e school, result_amount_type type, action_
     buff.revenge_available->trigger();
 
   if ( ( s->result == RESULT_DODGE || s->result == RESULT_PARRY ) && talent.master_of_defense->ok() &&
-       has_shield_equipped() )
+       has_shield_equipped() && rng().roll( talent.master_of_defense->effectN( 1 ).percent() ) )
   {
     resource_gain( RESOURCE_RAGE,
                    talent.master_of_defense->effectN( 1 ).trigger()->effectN( 1 ).resource( RESOURCE_RAGE ),
