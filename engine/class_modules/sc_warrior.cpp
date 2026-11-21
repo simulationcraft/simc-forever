@@ -169,6 +169,7 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* battle_stance_passive      = spell_data_t::nil();
     const spell_data_t* berserker_stance           = spell_data_t::nil();
     const spell_data_t* berserker_stance_passive   = spell_data_t::nil();
+    const spell_data_t* challenging_shout          = spell_data_t::nil();
     const spell_data_t* defensive_stance           = spell_data_t::nil();
     const spell_data_t* defensive_stance_passive   = spell_data_t::nil();
     const spell_data_t* demoralizing_shout         = spell_data_t::nil();
@@ -182,6 +183,7 @@ struct warrior_t final : public parse_player_effects_t
     const spell_data_t* retaliation                = spell_data_t::nil();
     const spell_data_t* retaliation_attack         = spell_data_t::nil();
     const spell_data_t* shield_block               = spell_data_t::nil();
+    const spell_data_t* shield_wall                = spell_data_t::nil();
     const spell_data_t* sunder_armor               = spell_data_t::nil();
     const spell_data_t* thunder_clap               = spell_data_t::nil();
     const spell_data_t* victory_rush               = spell_data_t::nil();
@@ -203,6 +205,7 @@ struct warrior_t final : public parse_player_effects_t
     buff_t* retaliation          = nullptr;
     buff_t* revenge_available    = nullptr;
     buff_t* shield_block         = nullptr;
+    buff_t* shield_wall          = nullptr;
     buff_t* victorious           = nullptr;
   } buff;
 
@@ -1031,6 +1034,28 @@ struct taunt_t : public warrior_spell_t
   }
 };
 
+struct challenging_shout_t : public warrior_spell_t
+{
+  challenging_shout_t( warrior_t* player, util::string_view options_str ) :
+    warrior_spell_t( "challenging_shout", player, player->spell.challenging_shout )
+  {
+    parse_options( options_str );
+
+    harmful  = false;
+    may_miss = false;
+    target   = player;
+  }
+
+  void execute() override
+  {
+    warrior_spell_t::execute();
+
+    for ( auto* t : sim->actor_list )
+      if ( t->is_enemy() && !t->is_sleeping() )
+        t->taunt( player );
+  }
+};
+
 struct mocking_blow_t : public warrior_attack_t
 {
   mocking_blow_t( warrior_t* player, util::string_view options_str ) :
@@ -1105,6 +1130,37 @@ struct shield_block_t : public warrior_spell_t
     warrior_spell_t::execute();
 
     p()->buff.shield_block->trigger();
+  }
+};
+
+struct shield_wall_t : public warrior_spell_t
+{
+  shield_wall_t( warrior_t* player, util::string_view options_str ) :
+    warrior_spell_t( "shield_wall", player, player->spell.shield_wall )
+  {
+    parse_options( options_str );
+
+    harmful  = false;
+    may_miss = false;
+    target   = player;
+  }
+
+  bool ready() override
+  {
+    if ( !data().ok() )
+      return false;
+
+    if ( !player->has_shield_equipped() )
+      return false;
+
+    return warrior_spell_t::ready();
+  }
+
+  void execute() override
+  {
+    warrior_spell_t::execute();
+
+    p()->buff.shield_wall->trigger();
   }
 };
 
@@ -1272,6 +1328,7 @@ void warrior_t::create_buffs()
   // Revenge is usable for 5 seconds after a block, dodge, or parry.
   buff.revenge_available = make_buff( this, "revenge_available" )->set_duration( 5_s );
   buff.shield_block      = make_buff( this, "shield_block", spell.shield_block );
+  buff.shield_wall       = make_buff( this, "shield_wall", spell.shield_wall );
   buff.victorious        = make_buff( this, "victorious", spell.victorious );
 
   buff.battle_stance    = make_buff( this, "battle_stance", spell.battle_stance );
@@ -1292,6 +1349,7 @@ void warrior_t::create_buffs()
   parse_effects( spell.berserker_stance_passive, PARSE_PASSIVE,
                  [ this ] { return buff.berserker_stance->check() > 0; } );
   parse_effects( buff.shield_block, IGNORE_STACKS );
+  parse_effects( buff.shield_wall );
 
   register_precombat_begin( buff.battle_stance );
 
@@ -1483,6 +1541,7 @@ void warrior_t::init_spells()
   spell.battle_stance_passive      = find_spell( 21156 );
   spell.berserker_stance           = find_spell( 2458 );
   spell.berserker_stance_passive   = find_spell( 7381 );
+  spell.challenging_shout          = find_spell( 1161 );
   spell.defensive_stance           = find_spell( 71 );
   spell.defensive_stance_passive   = find_spell( 7376 );
   spell.demoralizing_shout         = rank.demoralizing_shout.find_rank()->spell();
@@ -1495,6 +1554,7 @@ void warrior_t::init_spells()
   spell.retaliation                = rank.retaliation.find_rank()->spell();
   spell.retaliation_attack         = find_spell( 20240 );
   spell.shield_block               = rank.shield_block.find_rank()->spell();
+  spell.shield_wall                = find_spell( 871 );
   spell.sunder_armor               = rank.sunder_armor.find_rank()->spell();
   spell.thunder_clap               = rank.thunder_clap.find_rank()->spell();
   spell.victory_rush               = find_spell( 402927 );
@@ -1612,6 +1672,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "battle_shout" ) return new battle_shout_t( this, options_str );
   if ( name == "demoralizing_shout" ) return new demoralizing_shout_t( this, options_str );
   if ( name == "intimidating_shout" ) return new intimidating_shout_t( this, options_str );
+  if ( name == "challenging_shout" ) return new challenging_shout_t( this, options_str );
   if ( name == "disarm" ) return new disarm_t( this, options_str );
   if ( name == "bloodrage" ) return new bloodrage_t( this, options_str );
   if ( name == "charge" ) return new charge_t( this, options_str );
@@ -1619,6 +1680,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "mocking_blow" ) return new mocking_blow_t( this, options_str );
   if ( name == "shield_bash" ) return new shield_bash_t( this, options_str );
   if ( name == "shield_block" ) return new shield_block_t( this, options_str );
+  if ( name == "shield_wall" ) return new shield_wall_t( this, options_str );
 
   if ( name == "rend" ) return new rend_t( this, options_str );
   if ( name == "execute" ) return new execute_t( this, options_str );
