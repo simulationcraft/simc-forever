@@ -15881,7 +15881,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15878] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.71037
 
-static const std::array<dbc_item_data_t, 13286> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13285> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -18224,7 +18224,6 @@ static const std::array<dbc_item_data_t, 13286> __item_data_chunk0 { {
   { "Mana Agate",   5514, 0x00000002, 0x00006004, 0x00, 28, 23, 0, 0, 1, 0, 4, 0, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Threshadon Fang",   5516, 0x00000000, 0x00006004, 0x00, 16, 11, 0, 0, 0, 13, 2, 15, 0, 1500, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Spellstone",   5522, 0x00000042, 0x00006004, 0x00, 36, 0, 0, 0, 1, 0, 4, 0, 1, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
-  { "Goblin Deviled Clams",   5527, 0x00000000, 0x00006004, 0x00, 25, 15, 0, 0, 1, 0, 0, 5, 0, 0, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monster - Hot Iron Poker",   5532, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 13, 2, 14, 0, 0, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Pearl-handled Dagger",   5540, 0x00000000, 0x00006004, 0x00, 23, 18, 0, 0, 2, 13, 2, 15, 2, 1700, 0.600000f, 0.000000f, &__item_stats_data[98], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Iridescent Hammer",   5541, 0x00000000, 0x00006004, 0x00, 28, 23, 0, 0, 2, 13, 2, 4, 2, 2400, 0.600000f, 0.000000f, &__item_stats_data[139], 2, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
