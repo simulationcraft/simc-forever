@@ -9,10 +9,10 @@
 
 namespace { // UNNAMED NAMESPACE
 
-struct rogue_t final : public player_t
+struct rogue_t final : public parse_player_effects_t
 {
   rogue_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) :
-    player_t( sim, ROGUE, name, r ) {}
+    parse_player_effects_t( sim, ROGUE, name, r ) {}
 
   resource_e primary_resource() const override { return RESOURCE_ENERGY; }
 
@@ -21,6 +21,8 @@ struct rogue_t final : public player_t
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
   void init_action_list() override;
+
+  void parse_action_effects( action_t* );
 
   std::string default_potion() const override
   {
@@ -58,7 +60,11 @@ public:
   using base_t = rogue_action_t<Base>;
 
   template <typename... Args>
-  rogue_action_t( Args&&... args ) : ab( std::forward<Args>( args )... ) {}
+  rogue_action_t( Args&&... args ) : ab( std::forward<Args>( args )... )
+  {
+    if ( ab::data().ok() )
+      p()->parse_action_effects( this );
+  }
 
   rogue_t* p()
   { return debug_cast<rogue_t*>( this->player ); }
@@ -130,7 +136,7 @@ void rogue_t::init_base_stats()
   base.attack_power_per_strength = 1.0;
   base.attack_power_per_agility  = 1.0;
 
-  player_t::init_base_stats();
+  parse_player_effects_t::init_base_stats();
 
   // TODO - can this base stuff be moved into core?
 
@@ -230,6 +236,8 @@ struct eviscerate_t : public rogue_attack_t
 
 void rogue_t::init_spells()
 {
+  parse_player_effects_t::init_spells();
+
   rank.sinister_strike = {
       this,
       spell_container_t().set_spell( 1752 ),
@@ -267,6 +275,9 @@ void rogue_t::init_spells()
     spell_container_t().set_spell( 11281 ),
     spell_container_t().set_spell( 25300 ),
   };
+
+  parse_all_class_passives();
+  parse_all_passive_talents();
 }
 
 action_t* rogue_t::create_action( util::string_view name, util::string_view options_str )
@@ -280,21 +291,29 @@ action_t* rogue_t::create_action( util::string_view name, util::string_view opti
   // finishers
   if ( name == "eviscerate" ) return new eviscerate_t( this, options_str );
 
-  return player_t::create_action( name, options_str );
+  return parse_player_effects_t::create_action( name, options_str );
 }
 
 void rogue_t::init_action_list()
 {
   if ( !action_list_str.empty() )
   {
-    player_t::init_action_list();
+    parse_player_effects_t::init_action_list();
     return;
   }
 
   clear_action_priority_lists();
   rogue_apl::rogue( this );
   use_default_action_list = true;
-  player_t::init_action_list();
+  parse_player_effects_t::init_action_list();
+}
+
+void rogue_t::parse_action_effects( action_t* action )
+{
+  auto _a = dynamic_cast<parse_action_base_t*>( action );
+  assert( _a );
+
+  // TODO: parse action-affecting rogue buffs here as they are implemented.
 }
 
 // ROGUE MODULE INTERFACE ===================================================
