@@ -1,0 +1,105 @@
+# Topple Thewar - 2026-11-21 11:35 - US
+# SimC Addon 12.1.5-05
+# WoW 1.60.1.71037, TOC 16001
+# Requires SimulationCraft 1000-01 or newer
+
+warrior="Topple Thewar"
+level=25
+race=undead
+region=us
+role=
+professions=alchemy=80/herbalism=128
+spec=unknown
+
+talents=CMdBLekOoVOj3Zcu3A55irmVtDAAAAADzMPwYwDAA
+
+# Primary Talents
+# talents=CMdBLekOoVOj3Zcu3A55irmVtDAAAAADzMPwYwDAA
+
+legacy_talents=136864:1
+
+# Hooded Cowl (30)
+head=,id=3732
+# Roadwatcher's Confidence (20)
+neck=,id=281265
+# Bronzed Shoulderguards (27)
+shoulder=,id=270024
+# Satyrskin Cloak (18)
+back=,id=273005,content_tuning=5244
+# Mutant Scale Breastplate (23)
+chest=,id=6627,content_tuning=5254
+# Brawler's Harness (1)
+shirt=,id=6125
+# Steel-clasped Bracers (28)
+wrist=,id=4534
+# Dagmire Gauntlets (23)
+hands=,id=6481
+# Cobrahn's Grasp (22)
+waist=,id=6460,content_tuning=5254
+# Gargoyle Leggings (18)
+legs=,id=15451
+# Quagmire Galoshes (25)
+feet=,id=10658
+# Seal of Sylvanas (29)
+finger1=,id=6414
+# Loop of Sacrifice (28)
+finger2=,id=281673
+# Wingblade (24)
+main_hand=,id=6504
+# Mirror of Rath'mael (24)
+off_hand=,id=271213,content_tuning=5256
+# Exploding Shot
+ammo=,id=3465
+# ammo_count=165
+# Misplaced Shooter (12)
+ranged=,id=277255
+
+bag1=,id=5571
+bag2=,id=5571
+bag3=,id=918
+bag4=,id=221498
+
+### Gear from Bags
+#
+# Shimmering Trousers of the Sorcerer (24)
+# legs=,id=6568,bonus_id=12745
+#
+# Tough Leather Boots (26)
+# feet=,id=1804
+#
+# Stomping Boots (24)
+# feet=,id=3741
+#
+# Standard Claymore (24)
+# main_hand=,id=1818
+#
+# Fishing Pole (1)
+# main_hand=,id=6256
+#
+# Bow of Plunder (28)
+# ranged=,id=3742
+
+### Additional Character Info
+#
+# character_stats=health:984/power_type:1/mana:0/rage:100/focus:0/energy:0/strength:95/agility:51/stamina:89/intellect:33/spirit:52
+# character_stats_base=strength:53/agility:37/stamina:51/intellect:21/spirit:33
+# character_stats_bonus=strength:42/agility:14/stamina:38/intellect:12/spirit:19
+# character_stats_gear=agility:10/attack_power:6/block_rating:5/damage_per_second:20.50/fire_resistance:3/intellect:9/spirit:15/stamina:30/strength:34/armor:1501/resistance2:3
+# attack_power=melee:245:6:0/ranged:107:6:0
+# spell_power=holy:0/fire:0/nature:0/frost:0/shadow:0/arcane:0
+# spell_stats=healing:0/penetration:0
+# regen=health:21.58:0/health_from_spirit:28.78:0/mana:0:0/mana_from_spirit:12.75:0/mana_power:0.00:0.00/rage_power:-12.50:0.00/focus_power:10.00:10.00/energy_power:10.00:10.00
+# crit=melee:7.67/ranged:4.47/spell:2
+# hit=melee_rating_bonus:0/melee_modifier:0/ranged_rating_bonus:0/ranged_modifier:0/spell_rating_bonus:0/spell_modifier:0
+# haste=melee:0/ranged:0/ranged_ammo:0/spell:0
+# combat_modifiers=expertise:0/expertise_offhand:0/expertise_ranged:0/armor_penetration:0/mastery:0
+# combat_ratings=block:5:1
+# defense=armor_base:0/armor_effective:1603/armor:1603/armor_bonus:1603/defense_skill:125/defense_modifier:0/dodge:5.67/parry:5/block:11/block_value:14
+# resistances=holy:0/fire:3/nature:0/frost:0/shadow:0/arcane:0
+# weapon_damage=mainhand:57.10:76.00:2.20/pos_buff:0/neg_buff:0/percent:0.90/ranged:55.44:64.54:2.80/ranged_pos_buff:0/ranged_neg_buff:0/ranged_percent:0.90
+#
+# skills=26:1:0:1/43:125:0:125/44:1:0:125/46:45:0:125/54:120:0:125/55:1:0:125/95:125:0:125/109:300:0:300/129:109:0:150/162:41:0:125/171:80:0:150/173:1:0:125/182:128:0:150/185:43:0:75/256:1:0:1/257:1:0:1/356:32:0:75/413:1:0:1/414:1:0:1/415:1:0:1/433:1:0:1/673:300:0:300/2937:80:0:150/2939:43:0:75/2942:109:0:150/2943:32:0:75/2944:128:0:150
+#
+# buffs=2383:0/20217:0/429959:3/1229739:0/1229741:0/1283391:0/1328375:0/1331671:0
+
+# Checksum: 837b3c36
