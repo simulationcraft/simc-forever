@@ -2966,24 +2966,6 @@ Effects          :
 Description      : Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19705s1 Stamina and Spirit for $19705d.
 Tooltip          : Restores $/5;s1 health per second.
 
-Name             : Food (id=5006) 
-School           : Physical
-Spell Type       : None
-Duration         : 24 seconds
-Cooldown         : 1 seconds
-Category         : 11 (Type 0x0)
-Labels           : 6882
-Category Cooldown: 1 seconds
-Attributes       : Do Not Log (8), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), Unknown (493)
-Aura Interrupt   : Under Water (7), Standing (18)
-Effects          :
-#1 (id=683682)   : Apply Aura (6) | Restore Health (84)
-                   Base Value: 115 | Scaled Value: 115 | Value Multiplier: 1 | Target: Self (1)
-#2 (id=683683)   : Apply Aura (6) | Periodic Trigger Spell (23): Well Fed every 10 seconds
-                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 19708 | Target: Self (1)
-Description      : Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19708s1 Stamina and Spirit for $19708d.
-Tooltip          : Restores $/5;s1 health per second.
-
 Name             : Stormstout (id=5020) 
 School           : Physical
 Spell Type       : None
@@ -27262,7 +27244,7 @@ Spell Type       : None
 Duration         : 900 seconds
 Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
-Triggered By     : Food (5006), Test Crocolisk Gumbo (1244245)
+Triggered By     : Test Crocolisk Gumbo (1244245)
 Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=696522)   : Apply Aura (6) | Attribute (29)

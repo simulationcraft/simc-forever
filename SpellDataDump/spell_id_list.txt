@@ -1709,7 +1709,6 @@ Mage
 16454    Searing Blast
 16551    Felstriker
 16757    Arctic Reach
-16785   *Flamebreak
 16876   *Arcane Intellect
 16927    Chilled
 17010   *Freezing Claw
@@ -2980,9 +2979,6 @@ Priest
 16875   *Divine Spirit
 17137   *Flash Heal
 17138   *Flash Heal
-17140   *Holy Fire
-17141   *Holy Fire
-17142   *Holy Fire
 17151   *Shadow Barrier
 17165   *Mind Flay
 17201   *Dispel Magic
@@ -2995,8 +2991,6 @@ Priest
 18125    Blessed Sunfruit
 18137    Shadowguard
 18141    Blessed Sunfruit Juice
-18165   *Holy Fire
-18167   *Holy Fire
 18388    Quick Fade
 18530    Divine Fury
 18544    Force of Will
@@ -3091,7 +3085,6 @@ Priest
 23697    Alterac Spring Water
 23858   *Holy Nova
 23859   *Dispel Magic
-23860   *Holy Fire
 23947   *Power Word: Fortitude
 23948   *Power Word: Fortitude
 23953   *Mind Flay
