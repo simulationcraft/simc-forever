@@ -25,6 +25,7 @@ struct warrior_t : public player_t
   void create_actions() override;
   void create_buffs() override;
   void init_spells() override;
+  block_result_e target_block_resolution( const action_state_t* ) const override;
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
   void init_action_list() override;
@@ -573,6 +574,25 @@ void warrior_t::init_spells()
 
   parse_all_class_passives();
   parse_all_passive_talents();
+}
+
+// TODO: Verify
+// This is mostly yoinked from Warrior in the Midnight branch of simc
+block_result_e warrior_t::target_block_resolution( const action_state_t* s ) const
+{
+  // Only direct physical attacks may be blocked
+  if ( s->result_type == result_amount_type::DMG_DIRECT && s->action->get_school() == SCHOOL_PHYSICAL &&
+       s->action->type == ACTION_ATTACK )
+  {
+    auto block_chance = cache.block();
+
+    if ( rng().roll( block_chance ) )
+    {
+      return block_result_e::BLOCK_RESULT_BLOCKED;
+    }
+  }
+
+  return block_result_e::BLOCK_RESULT_UNBLOCKED;
 }
 
 action_t* warrior_t::create_action( util::string_view name, util::string_view options_str )
