@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Vindication (desc=Rank 1) (id=67) 
 Class            : Paladin
 School           : Holy
@@ -3093,6 +3093,7 @@ Effects          :
                    Base Value: 33 | Scaled Value: 33 | Resource: mana | Target: Self (1)
 
 Name             : Judgement (id=20271) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : None
@@ -3103,7 +3104,7 @@ Cooldown         : 10 seconds
 Labels           : 26: Paladin Spells
 Affecting Spells : Benediction (20101 effect#1), Improved Judgement (25956 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#1)
 Family Flags     : 23
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Not a Proc (105), Taps immediately (215), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Not a Proc (105), Suppress Weapon Procs (151), Taps immediately (215), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=695899)   : Server Side Script (77)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)

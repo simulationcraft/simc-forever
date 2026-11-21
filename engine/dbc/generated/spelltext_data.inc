@@ -1,5 +1,5 @@
-// Spell text, wow build 1.60.1.70959
-static constexpr std::array<spelltext_data_t, 8745> __spelltext_data { {
+// Spell text, wow build 1.60.1.71037
+static constexpr std::array<spelltext_data_t, 8746> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -480,7 +480,6 @@ static constexpr std::array<spelltext_data_t, 8745> __spelltext_data { {
   {    4981, "Induces a Vision.", 0, 0 },
   {    4987, "Cleanses a friendly target, removing $s1 poison effect, $s2 disease effect, and $s3 magic effect.", 0, 0 },
   {    5004, "Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19705s1 Stamina and Spirit for $19705d.", "Restores $/5;s1 health per second.", 0 },
-  {    5006, "Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19708s1 Stamina and Spirit for $19708d.", "Restores $/5;s1 health per second.", 0 },
   {    5019, "Attack with an equipped wand.", 0, 0 },
   {    5020, "A powerful brew that increases your strength by $s1 and decreases your intellect by $s2 for $d.", 0, 0 },
   {    5021, "Increases your health by $s1, but decreases your spirit by $s2 for $d.", 0, 0 },
@@ -6407,8 +6406,10 @@ static constexpr std::array<spelltext_data_t, 8745> __spelltext_data { {
   {  442897, "Chance to hit with spells increased by $s1%. Not cumulative with other ring runes.", 0, 0 },
   {  442898, "Chance to hit with spells increased by $s1%. Not cumulative with other ring runes.", 0, 0 },
   {  443265, "Deals $o1 Fire damage over $d. Demons and Beasts are Rooted in place for $1312052d.", "Taking $s1 Fire damage every $t1 seconds.", 0 },
+  {  443278, "Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells. If the creature is slain within 30 seconds of the seed being embedded, a Healing Blossom will grow from its corpse.\r\n", "Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells.", 0 },
   {  443320, 0, "Physical$?$w3>0[, Fire, Frost, and Nature][] damage done increased by $s1% and all threat generated reduced by $s2%.", 0 },
   {  443369, 0, "Chronomantic energy ready to be unleashed. Instantly healing a friendly target for ${$<healpower>*$436517m1/100} to ${$<healpower>*$436517M1/100}.", 0 },
+  {  443678, 0, "Will grow a Healing Blossom from corpse when killed.", 0 },
   {  443813, 0, "Irradiated. Suffering damage over time and movement is slowed.", 0 },
   {  444519, "Deputize a party member, sharing this quest with them so they can complete it with you.", 0, 0 },
   {  444524, "Deputize a party member, sharing this quest with them so they can complete it with you.", 0, 0 },
@@ -8747,18 +8748,13 @@ static constexpr std::array<spelltext_data_t, 8745> __spelltext_data { {
   { 1331725, "When applied to your fishing pole, increases Fishing by $ec1 for 5 minutes.", 0, 0 },
 } };
 
-// spelltext hotfix entries, wow build 1.60.1.70959
-static constexpr std::array<hotfix::client_hotfix_entry_t, 7> __spelltext_hotfix_data { {
-  {   15286,  0, "Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d.", "Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d. You receive $s2% increased healing on yourself from this effect." },
-  {   23684,  0, "2% chance on successful spellcast to increase your Spirit by $s1 for $d.", "$h% chance on successful spellcast to increase your Spirit by $s1 for $d." },
-  {   23686,  0, "Chance to strike your melee target with lightning for $23687s1 Nature damage.", "Chance to strike your melee target with lightning for $23687s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies." },
-  {   23688,  0, "2% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.", "$h% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d." },
-  {   23689,  0, "Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee.", "Sometimes heals bearer of $23682s1 damage when damaging an enemy in melee. This effect occurs twice as often in Strongholds and Cities." },
+// spelltext hotfix entries, wow build 1.60.1.71037
+static constexpr std::array<hotfix::client_hotfix_entry_t, 2> __spelltext_hotfix_data { {
   { 1329283,  0, "Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.", "Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[ $1329286s1% chance to award $1329285s1 Combo Points.][] Shank cannot Miss." },
   { 1329549,  0, "Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.", "Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[ $1329286s1% chance to award $1329285s1 Combo Points.][] Shank cannot Miss." },
 } };
 
-// Spell description variables, wow build 1.60.1.70959
+// Spell description variables, wow build 1.60.1.71037
 static constexpr std::array<spelldesc_vars_data_t, 141> __spelldesc_vars_data { {
   {      10, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
   {     116, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
@@ -8903,7 +8899,7 @@ static constexpr std::array<spelldesc_vars_data_t, 141> __spelldesc_vars_data { 
   { 1325758, "$ratio=${12}\r\n$maxAP=${0.04}\r\n$attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}\r\n$coup=$?s14162[${$14162s1/100+1}][${1}]" },
 } };
 
-// spelldesc_vars hotfix entries, wow build 1.60.1.70959
+// spelldesc_vars hotfix entries, wow build 1.60.1.71037
 static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __spelldesc_vars_hotfix_data { {
 } };
 

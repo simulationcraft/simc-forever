@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Defensive Stance (id=71) [Spell Family (4)] 
 Class            : Warrior
 School           : Physical
@@ -713,7 +713,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=682416)   : Dummy (3)
                    Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -2505,7 +2505,6 @@ Effects          :
 Description      : Increases the area of effect of your Shouts by $s1% and reduces the Rage cost by of your Shouts and Howls by $s2%.
 
 Name             : Unbridled Wrath (id=12322) [Passive, Hidden] 
-Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=2, col=7, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(12, 24, 36, 48, 60)]
 Class            : Warrior
@@ -3050,7 +3049,6 @@ Effects          :
                    Base Value: 10 | Scaled Value: 10 | Resource: rage | Target: Self (1)
 
 Name             : Flurry (id=12966) 
-Hotfixed         : Proc Flags 1 (4 -> 20)
 Class            : Warrior
 School           : Physical
 Spell Type       : None
@@ -3640,7 +3638,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698799)   : Dummy (3)
                    Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -3662,7 +3660,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698551)   : Dummy (3)
                    Base Value: 325 | Scaled Value: 325 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -3684,7 +3682,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698803)   : Dummy (3)
                    Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -3706,7 +3704,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696172)   : Dummy (3)
                    Base Value: 600 | Scaled Value: 600 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -6714,7 +6712,6 @@ Effects          :
 Description      : ${$s1/10} Rage generated.
 
 Name             : Reckless Swings (id=1329555) [Spell Family (4)] 
-Hotfixed         : Proc Flags 1 (4 -> 20)
 Talent Entry     : Generic [tree=class, row=4, col=6, max_rank=1, req_points=0]
                  : Effect#1 [op=set, values=(50, 50)]
 Class            : Warrior
