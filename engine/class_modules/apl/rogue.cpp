@@ -29,4 +29,17 @@ std::string temporary_enchant( const player_t* )
 {
   return "disabled";
 }
+//rogue_apl_start
+void rogue( player_t* p )
+{
+  action_priority_list_t* precombat = p->get_action_priority_list( "precombat" );
+  action_priority_list_t* default_  = p->get_action_priority_list( "default" );
+
+  default_->add_action( "auto_attack" );
+
+  default_->add_action( "eviscerate,if=combo_points>=5" );
+  default_->add_action( "backstab" );
+  default_->add_action( "sinister_strike,if=position_front" );
+}
+//rogue_apl_end
 }  // namespace rogue_apl
