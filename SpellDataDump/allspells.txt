@@ -6185,6 +6185,7 @@ Description      : Blinds the target, causing it to wander disoriented for up to
 Tooltip          : Disoriented.
 
 Name             : Mind Vision (desc=Rank 1) (id=2096) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Shadow
 Spell Type       : Magic
@@ -6198,7 +6199,7 @@ Proc Chance      : 101%
 Stance Mask      : 0x08000000
 Affecting Spells : Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Focused Casting (27828 effect#1)
 Family Flags     : 26
-Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), Is Channelled (34), No Threat (42), Toggle Far Sight (45), No AutoCast (AI) (49), Exclude Caster (51), Require All Targets (58), Allow Low Level Buff (67), Allow While Not Shapeshifted (caster form) (83), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), Is Channelled (34), No Threat (42), Toggle Far Sight (45), No AutoCast (AI) (49), Exclude Caster (51), Require All Targets (58), Allow Low Level Buff (67), Allow While Not Shapeshifted (caster form) (83), Suppress Caster Procs (112), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Suppress Weapon Procs (151), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Moving (4), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #2 (id=681275)   : Apply Aura (6) | Dummy (4)
@@ -11370,6 +11371,7 @@ Effects          :
 Description      : Follows a successful block, dodge or parry.
 
 Name             : Execute (desc=Rank 1) (id=5308) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -11382,7 +11384,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=682416)   : Dummy (3)
                    Base Value: 125 | Scaled Value: 125 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -31235,6 +31237,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Mind Vision (desc=Rank 2) (id=10909) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Shadow
 Spell Type       : Magic
@@ -31248,7 +31251,7 @@ Proc Chance      : 101%
 Stance Mask      : 0x08000000
 Affecting Spells : Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Focused Casting (27828 effect#1)
 Family Flags     : 26
-Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), Is Channelled (34), No Threat (42), Toggle Far Sight (45), No AutoCast (AI) (49), Exclude Caster (51), Require All Targets (58), Ignore Line of Sight (66), Allow Low Level Buff (67), Allow While Not Shapeshifted (caster form) (83), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), Is Channelled (34), No Threat (42), Toggle Far Sight (45), No AutoCast (AI) (49), Exclude Caster (51), Require All Targets (58), Ignore Line of Sight (66), Allow Low Level Buff (67), Allow While Not Shapeshifted (caster form) (83), Suppress Caster Procs (112), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Suppress Weapon Procs (151), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Moving (4), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #2 (id=689066)   : Apply Aura (6) | Dummy (4)
@@ -69422,6 +69425,7 @@ Effects          :
 Description      : Place the Gaea seed into the Gaea dirt mound.
 
 Name             : Judgement (id=20271) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : None
@@ -69432,7 +69436,7 @@ Cooldown         : 10 seconds
 Labels           : 26: Paladin Spells
 Affecting Spells : Benediction (20101 effect#1), Improved Judgement (25956 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#1)
 Family Flags     : 23
-Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Not a Proc (105), Taps immediately (215), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Not a Proc (105), Suppress Weapon Procs (151), Taps immediately (215), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=695899)   : Server Side Script (77)
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
@@ -71480,6 +71484,7 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Execute (desc=Rank 2) (id=20658) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71492,7 +71497,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698799)   : Dummy (3)
                    Base Value: 200 | Scaled Value: 200 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -71501,6 +71506,7 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 3) (id=20660) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71513,7 +71519,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698551)   : Dummy (3)
                    Base Value: 325 | Scaled Value: 325 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -71522,6 +71528,7 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 4) (id=20661) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71534,7 +71541,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=698803)   : Dummy (3)
                    Base Value: 450 | Scaled Value: 450 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -71543,6 +71550,7 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 5) (id=20662) [Spell Family (4)] 
+Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71555,7 +71563,7 @@ Labels           : 25: Warrior Spells
 Stance Mask      : 0x00050000
 Affecting Spells : Impale (16493 effect#1), Improved Execute (20502 effect#1), Focused Rage (29787 effect#1), Gladiator Stance Shield Passive (413479 effect#3), Sudden Death (440114 effect#1), Eureka! (1259813 effects: #1, #2)
 Family Flags     : 29
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Caster Procs (112), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Discount Power On Miss (59), Include In Advanced Combat Log (72), Requires Main-Hand Weapon (106), Suppress Target Procs (113), Always Hit (114), Combat Feedback When Usable (137), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=696172)   : Dummy (3)
                    Base Value: 600 | Scaled Value: 600 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -90969,6 +90977,7 @@ Effects          :
 Description      : Equip a Chest slot item with a Rune engraved to activate an ability in this slot.
 
 Name             : Mutilate (desc=Rank 1) (id=399956) [Spell Family (8)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=0]
 Class            : Rogue
 School           : Physical
@@ -90981,7 +90990,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2), Poised (1328826 effect#1)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1044476)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
@@ -113547,22 +113556,6 @@ Effects          :
 Description      : Deals $o1 Fire damage over $d. Demons and Beasts are Rooted in place for $1312052d.
 Tooltip          : Taking $s1 Fire damage every $t1 seconds.
 
-Name             : Seed of Renewal (id=443278) 
-School           : Nature
-Spell Type       : None
-Spell Level      : 50
-Duration         : Aura (infinite)
-Internal Cooldown: 120 seconds
-Proc Chance      : 40%
-Proc Flags       : Generic Hostile Spell, Magic Hostile Spell, Periodic
-Attributes       : Unknown (493)
-Effects          :
-#1 (id=1139080)  : Apply Aura (6) | Proc Trigger Spell (42): Seed of Renewal
-                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 443678 | Target: Self (1)
-Description      : Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells. If the creature is slain within 30 seconds of the seed being embedded, a Healing Blossom will grow from its corpse.
-
-Tooltip          : Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells.
-
 Name             : Loyal Beta (id=443320) [Spell Family (11)] 
 Class            : Shaman
 School           : Physical
@@ -113612,21 +113605,6 @@ $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 $frostdamage1=$?s11151[${1.02}][${1.0}]
 $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
-
-Name             : Seed of Renewal (id=443678) 
-School           : Nature
-Spell Type       : None
-Spell Level      : 50
-Range            : 100 yards
-Duration         : 30 seconds
-Proc Chance      : 101%
-Proc Flags       : Death
-Triggered By     : Seed of Renewal (443278)
-Attributes       : Aura Is Debuff (26), Unknown (493)
-Effects          :
-#1 (id=1139756)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 1 | Scaled Value: 1 | Target: Targeted Enemy (6)
-Tooltip          : Will grow a Healing Blossom from corpse when killed.
 
 Name             : High-Yield Radiation Bomb (id=443813) 
 School           : Nature
@@ -129274,6 +129252,7 @@ Effects          :
 Tooltip          : Interrupted.
 
 Name             : Mutilate (desc=Rank 2) (id=1241582) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -129285,7 +129264,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2), Poised (1328826 effect#1)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1240641)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
@@ -129298,6 +129277,7 @@ Effects          :
 Description      : Instantly attacks with both weapons for $1241585s2% weapon damage plus an additional ${$1241585m1*$1241585m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
 
 Name             : Mutilate (desc=Rank 3) (id=1241584) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -129309,7 +129289,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2), Poised (1328826 effect#1)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1240647)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)

@@ -4639,6 +4639,7 @@ Description      : Coats a weapon with poison that lasts for 30 minutes.
 Each strike has a $h% chance of poisoning the enemy, slowing their movement speed by $3409s1% for $3409d.
 
 Name             : Mutilate (desc=Rank 1) (id=399956) [Spell Family (8)] 
+Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=0]
 Class            : Rogue
 School           : Physical
@@ -4651,7 +4652,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2), Poised (1328826 effect#1)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1044476)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
@@ -7139,6 +7140,7 @@ Effects          :
 Description      : Reduces the Energy cost of your Sap and Blind abilities by $m1%.
 
 Name             : Mutilate (desc=Rank 2) (id=1241582) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -7150,7 +7152,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2), Poised (1328826 effect#1)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1240641)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)
@@ -7163,6 +7165,7 @@ Effects          :
 Description      : Instantly attacks with both weapons for $1241585s2% weapon damage plus an additional ${$1241585m1*$1241585m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
 
 Name             : Mutilate (desc=Rank 3) (id=1241584) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -7174,7 +7177,7 @@ Requires weapon  : Dagger
 Labels           : 20: Rogue Spells
 Affecting Spells : Carnage (432275 effect#1), Clearcasting (457342 effect#1), Clearcasting (467735 effect#1), Eureka! (1259812 effects: #1, #2), Poised (1328826 effect#1)
 Family Flags     : 53
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Initiates Combat (Enables Auto-Attack) (41), Require All Targets (58), Discount Power On Miss (59), Include In Advanced Combat Log (72), Initiate Combat Post-Cast (Enables Auto-Attack) (84), Requires Main-Hand Weapon (106), Requires Off-Hand Weapon (120), Suppress Weapon Procs (151), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=1240647)  : Energize Power (30)
                    Base Value: 2 | Scaled Value: 2 | Resource: combo_points | Target: Self (1)

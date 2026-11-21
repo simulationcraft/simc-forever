@@ -43408,37 +43408,6 @@ Effects          :
 Description      : Deals $o1 Fire damage over $d. Demons and Beasts are Rooted in place for $1312052d.
 Tooltip          : Taking $s1 Fire damage every $t1 seconds.
 
-Name             : Seed of Renewal (id=443278) 
-School           : Nature
-Spell Type       : None
-Spell Level      : 50
-Duration         : Aura (infinite)
-Internal Cooldown: 120 seconds
-Proc Chance      : 40%
-Proc Flags       : Generic Hostile Spell, Magic Hostile Spell, Periodic
-Attributes       : Unknown (493)
-Effects          :
-#1 (id=1139080)  : Apply Aura (6) | Proc Trigger Spell (42): Seed of Renewal
-                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 443678 | Target: Self (1)
-Description      : Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells. If the creature is slain within 30 seconds of the seed being embedded, a Healing Blossom will grow from its corpse.
-
-Tooltip          : Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells.
-
-Name             : Seed of Renewal (id=443678) 
-School           : Nature
-Spell Type       : None
-Spell Level      : 50
-Range            : 100 yards
-Duration         : 30 seconds
-Proc Chance      : 101%
-Proc Flags       : Death
-Triggered By     : Seed of Renewal (443278)
-Attributes       : Aura Is Debuff (26), Unknown (493)
-Effects          :
-#1 (id=1139756)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 1 | Scaled Value: 1 | Target: Targeted Enemy (6)
-Tooltip          : Will grow a Healing Blossom from corpse when killed.
-
 Name             : High-Yield Radiation Bomb (id=443813) 
 School           : Nature
 Spell Type       : Magic
