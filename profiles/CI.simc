@@ -7,5 +7,6 @@ profiles/LowLevel/warrior-11.simc
 profiles/LowLevel/warlock-10.simc
 profiles/LowLevel/hunter-11.simc
 profiles/LowLevel/warrior-25.simc
+profiles/LowLevel/rogue-10.simc
 
 iterations=100
