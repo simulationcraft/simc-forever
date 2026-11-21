@@ -60333,8 +60333,9 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=695261)   : Apply Aura (6) | Add Percent Modifier (108): Spell Pushback (9)
                    Base Value: 70 | Scaled Value: 70 | SP Coefficient: 1 | Misc Value: 9 | Target: Self (1)
-                   Affected Spells: Area Death (TEST) (265), Immolate (348), Shadow Bolt (686), Shadow Bolt (695), Shadow Bolt (705), Immolate (707), Shadow Bolt (1088), Immolate (1094), Shadow Bolt (1106), Hellfire (1949), Immolate (2941), Searing Pain (5676), Rain of Fire (5740), Hellfire Effect (5857), Rain of Fire (6219), Soul Fire (6353), Shadow Bolt (7641), Shadow Bolt (11659), Shadow Bolt (11660), Shadow Bolt (11661), Immolate (11665), Immolate (11667), Immolate (11668), Rain of Fire (11677), Rain of Fire (11678), Hellfire Effect (11681), Hellfire Effect (11682), Hellfire (11683), Hellfire (11684), Shadowburn (17877), Searing Pain (17919), Searing Pain (17920), Searing Pain (17921), Searing Pain (17922), Searing Pain (17923), Soul Fire (17924), Conflagrate (17962), Shadowburn (18867), Shadowburn (18868), Shadowburn (18869), Shadowburn (18870), Shadowburn (18871), Conflagrate (18930), Conflagrate (18931), Conflagrate (18932), Shadow Bolt (25307), Immolate (25309), Shadow Bolt (350026), Invocation (426245), Rain of Fire (460692), Rain of Fire (460698), Rain of Fire (460699), Rain of Fire (460700), Rain of Fire (1282380), Rain of Fire (1282383), Rain of Fire (1282384), Rain of Fire (1282385), Conflagrate (1293817), Conflagrate (1293818)
-                   Family Flags: 0, 2, 5, 6, 7, 8, 9
+                   Affected Spells: Area Death (TEST) (265), Immolate (348), Shadow Bolt (686), Shadow Bolt (695), Shadow Bolt (705), Immolate (707), Shadow Bolt (1088), Immolate (1094), Shadow Bolt (1106), Hellfire (1949), Immolate (2941), Searing Pain (5676), Rain of Fire (5740), Hellfire Effect (5857), Rain of Fire (6219), Soul Fire (6353), Shadow Bolt (7641), Shadow Bolt (11659), Shadow Bolt (11660), Shadow Bolt (11661), Immolate (11665), Immolate (11667), Immolate (11668), Rain of Fire (11677), Rain of Fire (11678), Hellfire Effect (11681), Hellfire Effect (11682), Hellfire (11683), Hellfire (11684), Shadowburn (17877), Searing Pain (17919), Searing Pain (17920), Searing Pain (17921), Searing Pain (17922), Searing Pain (17923), Soul Fire (17924), Conflagrate (17962), Shadowburn (18867), Shadowburn (18868), Shadowburn (18869), Shadowburn (18870), Shadowburn (18871), Conflagrate (18930), Conflagrate (18931), Conflagrate (18932), Shadow Bolt (25307), Immolate (25309), Shadow Bolt (350026), Incinerate (412758), Invocation (426245), Rain of Fire (460692), Rain of Fire (460698), Rain of Fire (460699), Rain of Fire (460700), Rain of Fire (1282380), Rain of Fire (1282383), Rain of Fire (1282384), Rain of Fire (1282385), Incinerate (1293812), Incinerate (1293813), Conflagrate (1293817), Conflagrate (1293818)
+                   Family Flags: 0, 2, 5, 6, 7, 8, 9, 38
+Hotfixed         : Affects Spells
 Description      : Gives your Destruction spells a $s1% chance to not lose casting time when you take damage.
 
 Name             : Shadowguard (desc=Rank 1) (id=18137) [Spell Family (6)] 
@@ -99386,7 +99387,7 @@ Range            : 30 yards
 Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
-Affecting Spells : Cataclysm (17778 effect#1), Bane (17788 effect#1), Destructive Reach (17917 effect#1), Agonizing Flames (17927 effect#2), Ruin (17959 effect#1), Devastation (18130 effect#1)
+Affecting Spells : Cataclysm (17778 effect#1), Bane (17788 effect#1), Destructive Reach (17917 effect#1), Agonizing Flames (17927 effect#2), Ruin (17959 effect#1), Devastation (18130 effect#1), Intensity (18135 effect#1)
 Family Flags     : 38
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
@@ -113556,6 +113557,22 @@ Effects          :
 Description      : Deals $o1 Fire damage over $d. Demons and Beasts are Rooted in place for $1312052d.
 Tooltip          : Taking $s1 Fire damage every $t1 seconds.
 
+Name             : Seed of Renewal (id=443278) 
+School           : Nature
+Spell Type       : None
+Spell Level      : 50
+Duration         : Aura (infinite)
+Internal Cooldown: 120 seconds
+Proc Chance      : 40%
+Proc Flags       : Generic Hostile Spell, Magic Hostile Spell, Periodic
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1139080)  : Apply Aura (6) | Proc Trigger Spell (42): Seed of Renewal
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 443678 | Target: Self (1)
+Description      : Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells. If the creature is slain within 30 seconds of the seed being embedded, a Healing Blossom will grow from its corpse.
+
+Tooltip          : Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells.
+
 Name             : Loyal Beta (id=443320) [Spell Family (11)] 
 Class            : Shaman
 School           : Physical
@@ -113605,6 +113622,21 @@ $healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}
 $frostdamage1=$?s11151[${1.02}][${1.0}]
 $frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]
 $frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]
+
+Name             : Seed of Renewal (id=443678) 
+School           : Nature
+Spell Type       : None
+Spell Level      : 50
+Range            : 100 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Proc Flags       : Death
+Triggered By     : Seed of Renewal (443278)
+Attributes       : Aura Is Debuff (26), Unknown (493)
+Effects          :
+#1 (id=1139756)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 1 | Scaled Value: 1 | Target: Targeted Enemy (6)
+Tooltip          : Will grow a Healing Blossom from corpse when killed.
 
 Name             : High-Yield Radiation Bomb (id=443813) 
 School           : Nature
@@ -146163,7 +146195,7 @@ Range            : 30 yards
 Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
-Affecting Spells : Cataclysm (17778 effect#1), Bane (17788 effect#1), Destructive Reach (17917 effect#1), Agonizing Flames (17927 effect#2), Ruin (17959 effect#1), Devastation (18130 effect#1)
+Affecting Spells : Cataclysm (17778 effect#1), Bane (17788 effect#1), Destructive Reach (17917 effect#1), Agonizing Flames (17927 effect#2), Ruin (17959 effect#1), Devastation (18130 effect#1), Intensity (18135 effect#1)
 Family Flags     : 38
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
@@ -146183,7 +146215,7 @@ Range            : 30 yards
 Cast Time        : 2.5 seconds
 GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
-Affecting Spells : Cataclysm (17778 effect#1), Bane (17788 effect#1), Destructive Reach (17917 effect#1), Agonizing Flames (17927 effect#2), Ruin (17959 effect#1), Devastation (18130 effect#1)
+Affecting Spells : Cataclysm (17778 effect#1), Bane (17788 effect#1), Destructive Reach (17917 effect#1), Agonizing Flames (17927 effect#2), Ruin (17959 effect#1), Devastation (18130 effect#1), Intensity (18135 effect#1)
 Family Flags     : 38
 Attributes       : Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (454), Unknown (493)
 Effects          :
