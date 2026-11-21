@@ -47,31 +47,84 @@ struct rogue_t final : public parse_player_effects_t
   {
     // Assassination
     // Row 1
+    player_talent_t improved_gouge;
+    player_talent_t remorseless_attacks;
+    player_talent_t malice;
     // Row 2
+    player_talent_t ruthlessness;
+    player_talent_t improved_expose_armor;
     player_talent_t improved_slice_and_dice;
     // Row 3
+    player_talent_t vigor;
+    player_talent_t blood_spatter;
+    player_talent_t lethality;
     // Row 4
+    player_talent_t vile_poisons;
+    player_talent_t cold_blood;
+    player_talent_t improved_poisons;
     // Row 5
+    player_talent_t relentless_strikes;
+    player_talent_t venom;
+    player_talent_t improved_kidney_shot;
     // Row 6
+    player_talent_t seal_fate;
     // Row 7
+    player_talent_t mutilate;
 
     // Combat
     // Row 1
+    player_talent_t coup_de_grace;
+    player_talent_t efficient_strikes;
+    player_talent_t lightning_reflexes;
     // Row 2
+    player_talent_t puncturing_wounds;
+    player_talent_t deflection;
+    player_talent_t precision;
+    player_talent_t improved_sprint;
     // Row 3
+    player_talent_t endurance;
+    player_talent_t riposte;
+    player_talent_t composure;
     // Row 4
+    player_talent_t improved_kick;
+    player_talent_t flawless_execution;
+    player_talent_t weapon_expertise;
+    player_talent_t aggression;
     // Row 5
+    player_talent_t dual_wield_specialization;
+    player_talent_t blade_flurry;
+    player_talent_t hack_and_slash;
     // Row 6
+    player_talent_t flash_of_steel;
     // Row 7
+    player_talent_t adrenaline_rush;
 
     // Subtlety
     // Row 1
+    player_talent_t setup;
+    player_talent_t master_of_deception;
+    player_talent_t opportunity;
     // Row 2
+    player_talent_t dirty_deeds;
+    player_talent_t camouflage;
+    player_talent_t improved_ambush;
+    player_talent_t dirty_tricks;
     // Row 3
+    player_talent_t initiative;
+    player_talent_t premeditation;
+    player_talent_t serrated_blades;
     // Row 4
+    player_talent_t elusiveness;
+    player_talent_t ghostly_strike;
+    player_talent_t quick_getaway;
     // Row 5
+    player_talent_t heightened_senses;
+    player_talent_t preparation;
+    player_talent_t hemorrhage;
     // Row 6
+    player_talent_t boot_knife;
     // Row 7
+    player_talent_t death_mark;
   } talent;
 
   struct buffs_t
@@ -360,11 +413,64 @@ void rogue_t::init_spells()
   parse_all_passive_talents();
 
   // Assassination
+  talent.improved_gouge          = find_talent_spell( talent_tree::CLASS, "Improved Gouge" );
+  talent.remorseless_attacks     = find_talent_spell( talent_tree::CLASS, "Remorseless Attacks" );
+  talent.malice                  = find_talent_spell( talent_tree::CLASS, "Malice" );
+  talent.ruthlessness            = find_talent_spell( talent_tree::CLASS, "Ruthlessness" );
+  talent.improved_expose_armor   = find_talent_spell( talent_tree::CLASS, "Improved Expose Armor" );
   talent.improved_slice_and_dice = find_talent_spell( talent_tree::CLASS, "Improved Slice and Dice" );
+  talent.vigor                   = find_talent_spell( talent_tree::CLASS, "Vigor" );
+  talent.blood_spatter           = find_talent_spell( talent_tree::CLASS, "Blood Spatter" );
+  talent.lethality               = find_talent_spell( talent_tree::CLASS, "Lethality" );
+  talent.vile_poisons            = find_talent_spell( talent_tree::CLASS, "Vile Poisons" );
+  talent.cold_blood              = find_talent_spell( talent_tree::CLASS, "Cold Blood" );
+  talent.improved_poisons        = find_talent_spell( talent_tree::CLASS, "Improved Poisons" );
+  talent.relentless_strikes      = find_talent_spell( talent_tree::CLASS, "Relentles Strikes" );
+  talent.venom                   = find_talent_spell( talent_tree::CLASS, "Venom" );
+  talent.improved_kidney_shot    = find_talent_spell( talent_tree::CLASS, "Improved Kidney Shot" );
+  talent.seal_fate               = find_talent_spell( talent_tree::CLASS, "Seal Fate" );
+  talent.mutilate                = find_talent_spell( talent_tree::CLASS, "Mutilate" );
 
   // Combat
+  talent.coup_de_grace             = find_talent_spell( talent_tree::CLASS, "Coup de Grace" );
+  talent.efficient_strikes         = find_talent_spell( talent_tree::CLASS, "Efficient Strikes" );
+  talent.lightning_reflexes        = find_talent_spell( talent_tree::CLASS, "Lightning Reflexes" );
+  talent.puncturing_wounds         = find_talent_spell( talent_tree::CLASS, "Puncturing Wounds" );
+  talent.deflection                = find_talent_spell( talent_tree::CLASS, "Deflection" );
+  talent.precision                 = find_talent_spell( talent_tree::CLASS, "Precision" );
+  talent.improved_sprint           = find_talent_spell( talent_tree::CLASS, "Improved Sprint" );
+  talent.endurance                 = find_talent_spell( talent_tree::CLASS, "Endurance" );
+  talent.riposte                   = find_talent_spell( talent_tree::CLASS, "Riposte" );
+  talent.composure                 = find_talent_spell( talent_tree::CLASS, "Composure" );
+  talent.improved_kick             = find_talent_spell( talent_tree::CLASS, "Improved Kick" );
+  talent.flawless_execution        = find_talent_spell( talent_tree::CLASS, "Flawless Execution" );
+  talent.weapon_expertise          = find_talent_spell( talent_tree::CLASS, "Weapon Expertise" );
+  talent.aggression                = find_talent_spell( talent_tree::CLASS, "Aggression" );
+  talent.dual_wield_specialization = find_talent_spell( talent_tree::CLASS, "Dual Wield Specialization" );
+  talent.blade_flurry              = find_talent_spell( talent_tree::CLASS, "Blade Flurry" );
+  talent.hack_and_slash            = find_talent_spell( talent_tree::CLASS, "Hack and Slash" );
+  talent.flash_of_steel            = find_talent_spell( talent_tree::CLASS, "Flash of Steel" );
+  talent.adrenaline_rush           = find_talent_spell( talent_tree::CLASS, "Adrenaline Rush" );
 
   // Subtlety
+  talent.setup               = find_talent_spell( talent_tree::CLASS, "Setup" );
+  talent.master_of_deception = find_talent_spell( talent_tree::CLASS, "Master of Deception" );
+  talent.opportunity         = find_talent_spell( talent_tree::CLASS, "Opportunity" );
+  talent.dirty_deeds         = find_talent_spell( talent_tree::CLASS, "Dirty Deeds" );
+  talent.camouflage          = find_talent_spell( talent_tree::CLASS, "Camouflage" );
+  talent.improved_ambush     = find_talent_spell( talent_tree::CLASS, "Improved Ambush" );
+  talent.dirty_tricks        = find_talent_spell( talent_tree::CLASS, "Dirty Tricks" );
+  talent.initiative          = find_talent_spell( talent_tree::CLASS, "Initiative" );
+  talent.premeditation       = find_talent_spell( talent_tree::CLASS, "Premeditation" );
+  talent.serrated_blades     = find_talent_spell( talent_tree::CLASS, "Serrated Blades" );
+  talent.elusiveness         = find_talent_spell( talent_tree::CLASS, "Elusiveness" );
+  talent.ghostly_strike      = find_talent_spell( talent_tree::CLASS, "Ghostly Strike" );
+  talent.quick_getaway       = find_talent_spell( talent_tree::CLASS, "Quick Getaway" );
+  talent.heightened_senses   = find_talent_spell( talent_tree::CLASS, "Heightened Senses" );
+  talent.preparation         = find_talent_spell( talent_tree::CLASS, "Preparation" );
+  talent.hemorrhage          = find_talent_spell( talent_tree::CLASS, "Hemorrhage" );
+  talent.boot_knife          = find_talent_spell( talent_tree::CLASS, "Boot Knife" );
+  talent.death_mark          = find_talent_spell( talent_tree::CLASS, "Death Mark" );
 
   // Improved Slice and Dice applies to the total duration, not the base duration
   deregister_passive_spell( talent.improved_slice_and_dice );
