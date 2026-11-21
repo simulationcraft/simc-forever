@@ -374,6 +374,7 @@ struct heroic_strike_t : public warrior_attack_t
   }
 };
 
+// TODO: Battle Stance requirement (Defensive Stance too with Vanguard)
 struct charge_t : public warrior_attack_t
 {
   charge_t( warrior_t* player, util::string_view options_str ) :
