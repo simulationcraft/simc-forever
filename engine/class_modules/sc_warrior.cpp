@@ -34,8 +34,6 @@ struct warrior_t : public player_t
   std::string default_flask() const override    { return warrior_apl::flask( this ); }
   std::string default_food() const override     { return warrior_apl::food( this ); }
 
-  void assess_damage( school_e, result_amount_type, action_state_t* s ) override;
-
   double rage_per_swing( const weapon_t& w ) const;
 
   struct talents_t
@@ -53,9 +51,6 @@ struct warrior_t : public player_t
 
     buff_t* heroic_strike_queued = nullptr;
     buff_t* cleave_queued = nullptr;
-
-    // buff tracking if revenge is available
-    buff_t* revenge = nullptr;
   } buff;
 
   struct gains_t
@@ -72,7 +67,6 @@ struct warrior_t : public player_t
     spell_ranks_t rend;
     spell_ranks_t thunder_clap;
     spell_ranks_t cleave;
-    spell_ranks_t revenge;
   } rank;
 
   action_t* heroic_strike = nullptr;
@@ -280,20 +274,6 @@ double warrior_t::rage_per_swing( const weapon_t& w ) const
   return w.swing_time.total_seconds() * mult;
 }
 
-void warrior_t::assess_damage( school_e school, result_amount_type dt, action_state_t* s )
-{
-  player_t::assess_damage( school, dt, s );
-
-  if ( s->result == RESULT_DODGE || s->result == RESULT_PARRY)
-  {
-    buff.revenge->trigger();
-  }
-  if ( s->action->result_is_block( s->block_result ) )
-  {
-    buff.revenge->trigger();
-  }
-}
-
 /////////////////////////////////////////////////////////////////////////////////////
 //
 // Abilities
@@ -467,28 +447,6 @@ struct cleave_t : public warrior_attack_t
   }
 };
 
-// TODO: Defensive Stance requirement
-struct revenge_t : public warrior_attack_t
-{
-  revenge_t( warrior_t* player, util::string_view options_str ) :
-    warrior_attack_t( "revenge", player, player->rank.revenge.find_rank()->spell() )
-  {
-    parse_options( options_str );
-  }
-
-  void execute() override
-  {
-    warrior_attack_t::execute();
-
-    p()->buff.revenge->expire();
-  }
-
-  bool ready() override
-  {
-    return p()->buff.revenge->check() && warrior_attack_t::ready();
-  }
-};
-
 /////////////////////////////////////////////////////////////////////////////////////
 //
 // Stats, Actions, Oh my
@@ -547,8 +505,6 @@ void warrior_t::create_buffs()
                               rank.bloodrage.find_rank()->buff() )
                         ->set_tick_callback( [ this ]( buff_t*, int, timespan_t ) {
                             resource_gain( RESOURCE_RAGE, 1.0, get_gain( "bloodrage" ) ); } );
-
-  buff.revenge = make_buff( this, "revenge" );
 
   player_t::create_buffs();
 }
@@ -616,15 +572,6 @@ void warrior_t::init_spells()
   spell_container_t().set_spell( 20569 ),
   };
 
-  rank.revenge = { this,
-    spell_container_t().set_spell( 6572 ),
-    spell_container_t().set_spell( 6574 ),
-    spell_container_t().set_spell( 7379 ),
-    spell_container_t().set_spell( 11600 ),
-    spell_container_t().set_spell( 11601 ),
-    spell_container_t().set_spell( 25288 ),
-  };
-
   parse_all_class_passives();
   parse_all_passive_talents();
 }
@@ -660,7 +607,7 @@ action_t* warrior_t::create_action( util::string_view name, util::string_view op
   if ( name == "heroic_strike" ) return new heroic_strike_queue_t( this, options_str );
   if ( name == "cleave" ) return new cleave_queue_t( this, options_str );
 
-  if ( name == "revenge" ) return new revenge_t( this, options_str );
+
   if ( name == "thunder_clap" ) return new thunder_clap_t( this, options_str );
 
   return player_t::create_action( name, options_str );
