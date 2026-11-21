@@ -43,6 +43,37 @@ struct rogue_t final : public parse_player_effects_t
     return resources.current[ RESOURCE_COMBO_POINT ];
   }
 
+  struct talents_t
+  {
+    // Assassination
+    // Row 1
+    // Row 2
+    player_talent_t improved_slice_and_dice;
+    // Row 3
+    // Row 4
+    // Row 5
+    // Row 6
+    // Row 7
+
+    // Combat
+    // Row 1
+    // Row 2
+    // Row 3
+    // Row 4
+    // Row 5
+    // Row 6
+    // Row 7
+
+    // Subtlety
+    // Row 1
+    // Row 2
+    // Row 3
+    // Row 4
+    // Row 5
+    // Row 6
+    // Row 7
+  } talent;
+
   struct buffs_t
   {
     buff_t* slice_and_dice = nullptr;
@@ -253,8 +284,8 @@ struct slice_and_dice_t : public rogue_attack_t
 
   timespan_t get_triggered_duration( const int cp )
   {
-    // TODO: Verify how this works with Improved Slice and Dice
-    return timespan_t::from_seconds( cp * 3 ) + p()->buff.slice_and_dice->data().duration();
+    return ( timespan_t::from_seconds( cp * 3 ) + p()->buff.slice_and_dice->data().duration() ) *
+           ( 1.0 + p()->talent.improved_slice_and_dice->effectN( 1 ).percent() );
   }
 
   void execute() override
@@ -327,6 +358,16 @@ void rogue_t::init_spells()
 
   parse_all_class_passives();
   parse_all_passive_talents();
+
+  // Assassination
+  talent.improved_slice_and_dice = find_talent_spell( talent_tree::CLASS, "Improved Slice and Dice" );
+
+  // Combat
+
+  // Subtlety
+
+  // Improved Slice and Dice applies to the total duration, not the base duration
+  deregister_passive_spell( talent.improved_slice_and_dice );
 }
 
 action_t* rogue_t::create_action( util::string_view name, util::string_view options_str )
