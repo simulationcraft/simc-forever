@@ -949,6 +949,16 @@ double parse_player_effects_t::composite_parry() const
   return parry;
 }
 
+double parse_player_effects_t::composite_block() const
+{
+  auto block = player_t::composite_block();
+
+  for ( const auto& i : block_effects )
+    block += get_effect_value( i );
+
+  return block;
+}
+
 double parse_player_effects_t::composite_base_armor_multiplier() const
 {
   auto bam = player_t::composite_base_armor_multiplier();
@@ -1280,6 +1290,11 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
       invalidate( CACHE_PARRY );
       return &parry_effects;
 
+    case A_MOD_BLOCK_PERCENT:
+      str = "block";
+      invalidate( CACHE_BLOCK );
+      return &block_effects;
+
     case A_MOD_BASE_RESISTANCE_PCT:
       if ( eff.misc_value1() & SCHOOL_MASK_PHYSICAL )
       {
@@ -1499,6 +1514,7 @@ void parse_player_effects_t::print_custom_parsed_effects( report::sc_html_stream
     print_parsed_type( os, spell_crit_chance_effects, "Spell Crit Chance" );
     print_parsed_type( os, target_multiplier_effects, "Target Multiplier", &opt_strings::school );
     print_parsed_type( os, target_pet_multiplier_effects, "Target Pet Multiplier", &opt_strings::pet_type );
+    print_parsed_type( os, block_effects, "Block" );
     print_parsed_custom_type( os );
 
     os << "</table>\n";
@@ -1539,7 +1555,8 @@ size_t parse_player_effects_t::total_effects_count() const
          non_stacking_movement_effects.size() +
          stacking_movement_effects.size() +
          mana_regen_while_casting_effects.size() +
-         resource_regen_multiplier_effects.size();
+         resource_regen_multiplier_effects.size() +
+         block_effects.size();
 }
 
 void parse_action_base_t::parse_callback_function( pack_t<player_effect_t>& pack, parse_cb_t cb )
