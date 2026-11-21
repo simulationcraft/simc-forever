@@ -65,6 +65,7 @@ struct warrior_t final : public parse_player_effects_t
   void activate() override;
   void assess_damage( school_e, result_amount_type, action_state_t* ) override;
   void parse_action_effects( action_t* );
+  block_result_e target_block_resolution( const action_state_t* ) const override;
 
   warrior_td_t* get_target_data( player_t* target ) const override;
 
@@ -1571,6 +1572,25 @@ void warrior_t::parse_action_effects( action_t* action )
   assert( _a );
 
   // TODO: parse action-affecting warrior buffs here as they are implemented.
+}
+
+// TODO: Verify
+// This is mostly yoinked from Warrior in the Midnight branch of simc
+block_result_e warrior_t::target_block_resolution( const action_state_t* s ) const
+{
+  // Only direct physical attacks may be blocked
+  if ( s->result_type == result_amount_type::DMG_DIRECT && s->action->get_school() == SCHOOL_PHYSICAL &&
+       s->action->type == ACTION_ATTACK )
+  {
+    auto block_chance = cache.block();
+
+    if ( rng().roll( block_chance ) )
+    {
+      return block_result_e::BLOCK_RESULT_BLOCKED;
+    }
+  }
+
+  return block_result_e::BLOCK_RESULT_UNBLOCKED;
 }
 
 action_t* warrior_t::create_action( util::string_view name, util::string_view options_str )
