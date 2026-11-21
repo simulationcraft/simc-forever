@@ -17,6 +17,7 @@ struct rogue_t final : public parse_player_effects_t
   resource_e primary_resource() const override { return RESOURCE_ENERGY; }
 
   void init_base_stats() override;
+  void create_buffs() override;
   void init_spells() override;
 
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
@@ -42,11 +43,17 @@ struct rogue_t final : public parse_player_effects_t
     return resources.current[ RESOURCE_COMBO_POINT ];
   }
 
+  struct buffs_t
+  {
+    buff_t* slice_and_dice = nullptr;
+  } buff;
+
   struct
   {
     spell_ranks_t sinister_strike;
     spell_ranks_t backstab;
     spell_ranks_t eviscerate;
+    spell_ranks_t slice_and_dice;
   } rank;
 };
 
@@ -234,6 +241,42 @@ struct eviscerate_t : public rogue_attack_t
   }
 };
 
+struct slice_and_dice_t : public rogue_attack_t
+{
+  slice_and_dice_t( rogue_t* player, util::string_view options_str )
+  :  rogue_attack_t( "slice_and_dice", player, player->rank.slice_and_dice.find_rank()->spell() )
+  {
+    parse_options( options_str );
+    set_target( player );
+    harmful = false;
+  }
+
+  timespan_t get_triggered_duration( const int cp )
+  {
+    // TODO: Verify how this works with Improved Slice and Dice
+    return timespan_t::from_seconds( cp * 3 ) + p()->buff.slice_and_dice->data().duration();
+  }
+
+  void execute() override
+  {
+    timespan_t buff_duration = get_triggered_duration( p()->current_cp() );
+
+    rogue_attack_t::execute();
+
+    p()->buff.slice_and_dice->trigger( buff_duration );
+  }
+};
+
+void rogue_t::create_buffs()
+{
+  buff.slice_and_dice = make_buff( this, "slice_and_dice", rank.slice_and_dice.find_rank()->spell() )
+                            ->set_constant_behavior( buff_constant_behavior::NEVER_CONSTANT );
+
+  parse_effects( buff.slice_and_dice );
+
+  parse_player_effects_t::create_buffs();
+}
+
 void rogue_t::init_spells()
 {
   parse_player_effects_t::init_spells();
@@ -276,6 +319,12 @@ void rogue_t::init_spells()
     spell_container_t().set_spell( 25300 ),
   };
 
+  rank.slice_and_dice = {
+    this,
+    spell_container_t().set_spell(    5171 ),
+    spell_container_t().set_spell(    6774 )
+  };
+
   parse_all_class_passives();
   parse_all_passive_talents();
 }
@@ -290,6 +339,7 @@ action_t* rogue_t::create_action( util::string_view name, util::string_view opti
 
   // finishers
   if ( name == "eviscerate" ) return new eviscerate_t( this, options_str );
+  if ( name == "slice_and_dice" ) return new slice_and_dice_t( this, options_str );
 
   return parse_player_effects_t::create_action( name, options_str );
 }
