@@ -74692,6 +74692,17 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 276331 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Right Click to summon and dismiss Spawn of Grubthor.
 
+Name             : Wound (id=1320808) 
+School           : Physical
+Spell Type       : Melee
+Spell Level      : 50
+Range            : 5 yards
+Attributes       : Is Ability (4), Unknown (493)
+Effects          :
+#1 (id=1355656)  : School Damage (2): physical
+                   Base Value: 225 | Scaled Value: 225 | Target: Targeted Enemy (6)
+Description      : Wounds the target for $s1 damage.
+
 Name             : Rend (id=1320824) 
 School           : Physical
 Spell Type       : Melee

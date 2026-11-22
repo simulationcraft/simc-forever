@@ -2276,7 +2276,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=695429)   : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -10 | Scaled Value: -10 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Divine Protection (498), Divine Shield (642), Holy Strike (678), Holy Strike (679), Holy Strike (680), Hammer of Justice (853), Exorcism (879), Divine Shield (1020), Blessing of Protection (1022), Blessing of Freedom (1044), Purify (1152), Holy Strike (1866), Holy Strike (2495), Cleanse (4987), Holy Strike (5569), Divine Protection (5573), Hammer of Justice (5588), Hammer of Justice (5589), Blessing of Protection (5599), Exorcism (5614), Exorcism (5615), Blessing of Sacrifice (6940), Retribution Aura (7294), Blessing of Protection (10278), Retribution Aura (10298), Retribution Aura (10299), Retribution Aura (10300), Retribution Aura (10301), Hammer of Justice (10308), Exorcism (10312), Exorcism (10313), Exorcism (10314), Holy Strike (10332), Holy Strike (10333), Blessing of Might (19740), Blessing of Wisdom (19742), Blessing of Might (19834), Blessing of Might (19835), Blessing of Might (19836), Blessing of Might (19837), Blessing of Might (19838), Blessing of Wisdom (19850), Blessing of Wisdom (19852), Blessing of Wisdom (19853), Blessing of Wisdom (19854), Repentance (20066), Consecration (20116), Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Judgement of Righteousness (20187), Blessing of Kings (20217), Judgement (20271), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Judgement of Command (20467), Holy Shock (20473), Blessing of Sacrifice (20729), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Consecration (20922), Consecration (20923), Consecration (20924), Holy Shield (20925), Holy Shield (20927), Holy Shield (20928), Holy Shock (20929), Holy Shock (20930), Judgement of Command (20963), Judgement of Command (20964), Judgement of Command (20965), Judgement of Command (20966), Seal of the Crusader (21082), Seal of Righteousness (21084), Blessing of Wisdom (25290), Blessing of Might (25291), Righteous Fury (25780), Greater Blessing of Might (25782), Greater Blessing of Wisdom (25894), Greater Blessing of Kings (25898), Holy Shock (25902), Holy Shock (25903), Holy Shock (25911), Holy Shock (25912), Holy Shock (25913), Holy Shock (25914), Greater Blessing of Might (25916), Greater Blessing of Wisdom (25918), Consecration (26573), Cleanse Cost Reduced (27847), Improved Seal of the Crusader (28852), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Exorcism (415068), Exorcism (415069), Exorcism (415070), Exorcism (415071), Exorcism (415072), Exorcism (415073), Wrath (429139), Fanaticism (429142), Improved Hammer of Wrath (429152), Divine Protection (458312), Divine Protection (458371), Blessing of Kings (1213408), Holy Shield (1239570), Consecration (1280345), Consecration (1280346), Consecration (1280347), Consecration (1280348), Consecration (1280349), Templar's Bulwark (1311015), Holy Shock (1311604), Holy Shock (1311605), Holy Shock (1311606), Seal of Fury (1311649), Seal of Fury (1311656)
+                   Affected Spells: Divine Protection (498), Divine Shield (642), Holy Strike (678), Holy Strike (679), Holy Strike (680), Hammer of Justice (853), Exorcism (879), Divine Shield (1020), Blessing of Protection (1022), Blessing of Freedom (1044), Purify (1152), Holy Strike (1866), Holy Strike (2495), Cleanse (4987), Holy Strike (5569), Divine Protection (5573), Hammer of Justice (5588), Hammer of Justice (5589), Blessing of Protection (5599), Exorcism (5614), Exorcism (5615), Blessing of Sacrifice (6940), Retribution Aura (7294), Blessing of Protection (10278), Retribution Aura (10298), Retribution Aura (10299), Retribution Aura (10300), Retribution Aura (10301), Hammer of Justice (10308), Exorcism (10312), Exorcism (10313), Exorcism (10314), Holy Strike (10332), Holy Strike (10333), Blessing of Might (19740), Blessing of Wisdom (19742), Blessing of Might (19834), Blessing of Might (19835), Blessing of Might (19836), Blessing of Might (19837), Blessing of Might (19838), Blessing of Wisdom (19850), Blessing of Wisdom (19852), Blessing of Wisdom (19853), Blessing of Wisdom (19854), Repentance (20066), Consecration (20116), Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Judgement of Righteousness (20187), Blessing of Kings (20217), Judgement (20271), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Judgement of Command (20467), Holy Shock (20473), Blessing of Sacrifice (20729), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Consecration (20922), Consecration (20923), Consecration (20924), Holy Shield (20925), Holy Shield (20927), Holy Shield (20928), Holy Shock (20929), Holy Shock (20930), Judgement of Command (20963), Judgement of Command (20964), Judgement of Command (20965), Judgement of Command (20966), Seal of the Crusader (21082), Seal of Righteousness (21084), Blessing of Wisdom (25290), Blessing of Might (25291), Seal of Righteousness (25735), Seal of Righteousness (25736), Seal of Righteousness (25737), Seal of Righteousness (25738), Seal of Righteousness (25739), Seal of Righteousness (25740), Seal of Righteousness (25741), Seal of Righteousness (25742), Righteous Fury (25780), Greater Blessing of Might (25782), Greater Blessing of Wisdom (25894), Greater Blessing of Kings (25898), Holy Shock (25902), Holy Shock (25903), Holy Shock (25911), Holy Shock (25912), Holy Shock (25913), Holy Shock (25914), Greater Blessing of Might (25916), Greater Blessing of Wisdom (25918), Consecration (26573), Cleanse Cost Reduced (27847), Improved Seal of the Crusader (28852), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Exorcism (415068), Exorcism (415069), Exorcism (415070), Exorcism (415071), Exorcism (415072), Exorcism (415073), Wrath (429139), Fanaticism (429142), Improved Hammer of Wrath (429152), Divine Protection (458312), Divine Protection (458371), Blessing of Kings (1213408), Holy Shield (1239570), Consecration (1280345), Consecration (1280346), Consecration (1280347), Consecration (1280348), Consecration (1280349), Templar's Bulwark (1311015), Holy Shock (1311604), Holy Shock (1311605), Holy Shock (1311606), Seal of Fury (1311649), Seal of Fury (1311656)
                    Family Flags: 0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 16, 21, 22, 23, 24, 25, 27, 28, 33, 38, 41, 47, 48, 57, 58, 61, 72, 77, 80, 85, 93, 107, 111
 Description      : Reduces the Mana cost of all instant cast spells and abilities by $m1%.
 
@@ -2904,7 +2904,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=698053)   : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Target: Self (1)
-                   Affected Spells: Judgement of Fury (20183), Judgement of Righteousness (20187), Seal of Fury (20231), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Seal of Command (20375), Judgement of Fury (20411), Judgement of Fury (20412), Judgement of Fury (20413), Judgement of Fury (20414), Seal of Fury (20415), Seal of Fury (20416), Seal of Fury (20417), Seal of Fury (20418), Seal of Command (20424), Judgement of Command (20467), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Judgement of Command (20963), Judgement of Command (20964), Judgement of Command (20965), Judgement of Command (20966), Seal of Fury (1311647), Judgement of Fury (1311650), Seal of Fury (1311654), Judgement of Fury (1311655)
+                   Affected Spells: Judgement of Fury (20183), Judgement of Righteousness (20187), Seal of Fury (20231), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Seal of Command (20375), Judgement of Fury (20411), Judgement of Fury (20412), Judgement of Fury (20413), Judgement of Fury (20414), Seal of Fury (20415), Seal of Fury (20416), Seal of Fury (20417), Seal of Fury (20418), Seal of Command (20424), Judgement of Command (20467), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Judgement of Command (20963), Judgement of Command (20964), Judgement of Command (20965), Judgement of Command (20966), Seal of Righteousness (25735), Seal of Righteousness (25736), Seal of Righteousness (25737), Seal of Righteousness (25738), Seal of Righteousness (25739), Seal of Righteousness (25740), Seal of Righteousness (25741), Seal of Righteousness (25742), Seal of Fury (1311647), Judgement of Fury (1311650), Seal of Fury (1311654), Judgement of Fury (1311655)
                    Family Flags: 10, 25, 41, 43, 61, 70
 Description      : Increases the damage done by your Seals and Judgements by $s1%.
 
@@ -5104,6 +5104,118 @@ Effects          :
 #1 (id=702679)   : Direct Heal (10)
                    Base Value: 1580 | Scaled Value: 1580 (delta=0.107143) | Points Per Level: 5.8 | SP Coefficient: 0.714 | Target: Targeted Ally (21)
 Description      : Heals a friendly target for $s1.
+
+Name             : Seal of Righteousness (desc=Rank 7) (id=25735) [Spell Family (10)] 
+Class            : Paladin
+School           : Holy
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 50000 yards
+Labels           : 26: Paladin Spells
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Family Flags     : 61
+Attributes       : Do Not Sheath (18), No Active Defense (21), Always Hit (114), Unknown (493)
+Effects          :
+#1 (id=701722)   : School Damage (2): holy
+                   Base Value: 32 | Scaled Value: 32 | Target: Targeted Enemy (6)
+
+Name             : Seal of Righteousness (desc=Rank 6) (id=25736) [Spell Family (10)] 
+Class            : Paladin
+School           : Holy
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 50000 yards
+Labels           : 26: Paladin Spells
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Family Flags     : 61
+Attributes       : Do Not Sheath (18), No Active Defense (21), Always Hit (114), Unknown (493)
+Effects          :
+#1 (id=701723)   : School Damage (2): holy
+                   Base Value: 25 | Scaled Value: 25 | Target: Targeted Enemy (6)
+
+Name             : Seal of Righteousness (desc=Rank 5) (id=25737) [Spell Family (10)] 
+Class            : Paladin
+School           : Holy
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 50000 yards
+Labels           : 26: Paladin Spells
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Family Flags     : 61
+Attributes       : Do Not Sheath (18), No Active Defense (21), Always Hit (114), Unknown (493)
+Effects          :
+#1 (id=701724)   : School Damage (2): holy
+                   Base Value: 19 | Scaled Value: 19 | Target: Targeted Enemy (6)
+
+Name             : Seal of Righteousness (desc=Rank 4) (id=25738) [Spell Family (10)] 
+Class            : Paladin
+School           : Holy
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 50000 yards
+Labels           : 26: Paladin Spells
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Family Flags     : 61
+Attributes       : Do Not Sheath (18), No Active Defense (21), Always Hit (114), Unknown (493)
+Effects          :
+#1 (id=701725)   : School Damage (2): holy
+                   Base Value: 14 | Scaled Value: 14 | Target: Targeted Enemy (6)
+
+Name             : Seal of Righteousness (desc=Rank 3) (id=25739) [Spell Family (10)] 
+Class            : Paladin
+School           : Holy
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 50000 yards
+Labels           : 26: Paladin Spells
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Family Flags     : 61
+Attributes       : Do Not Sheath (18), No Active Defense (21), Always Hit (114), Unknown (493)
+Effects          :
+#1 (id=702470)   : School Damage (2): holy
+                   Base Value: 9 | Scaled Value: 9 | Target: Targeted Enemy (6)
+
+Name             : Seal of Righteousness (desc=Rank 2) (id=25740) [Spell Family (10)] 
+Class            : Paladin
+School           : Holy
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 50000 yards
+Labels           : 26: Paladin Spells
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Family Flags     : 61
+Attributes       : Do Not Sheath (18), No Active Defense (21), Always Hit (114), Unknown (493)
+Effects          :
+#1 (id=702471)   : School Damage (2): holy
+                   Base Value: 6 | Scaled Value: 6 | Target: Targeted Enemy (6)
+
+Name             : Seal of Righteousness (desc=Rank 1.5) (id=25741) [Spell Family (10)] 
+Class            : Paladin
+School           : Holy
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 50000 yards
+Labels           : 26: Paladin Spells
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Family Flags     : 61
+Attributes       : Do Not Sheath (18), No Active Defense (21), Always Hit (114), Unknown (493)
+Effects          :
+#1 (id=702472)   : School Damage (2): holy
+                   Base Value: 4 | Scaled Value: 4 | Target: Targeted Enemy (6)
+
+Name             : Seal of Righteousness (desc=Rank 1) (id=25742) [Spell Family (10)] 
+Class            : Paladin
+School           : Holy
+Spell Type       : Melee
+Spell Level      : 1
+Range            : 50000 yards
+Labels           : 26: Paladin Spells
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), Seal Cost Reduction (1249005 effect#1), Unsealed Wrath (1310735 effect#1)
+Family Flags     : 61
+Attributes       : Do Not Sheath (18), No Active Defense (21), Always Hit (114), Unknown (493)
+Effects          :
+#1 (id=702473)   : School Damage (2): holy
+                   Base Value: 4 | Scaled Value: 4 | Target: Targeted Enemy (6)
 
 Name             : Forbearance (id=25771) [Spell Family (10)] 
 Class            : Paladin
@@ -8195,7 +8307,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1252236)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -5 | Scaled Value: -5 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Seal of Fury (20231), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20415), Seal of Fury (20416), Seal of Fury (20417), Seal of Fury (20418), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Seal of the Crusader (21082), Seal of Righteousness (21084), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Seal of Fury (1311647), Seal of Fury (1311649), Seal of Fury (1311654), Seal of Fury (1311656)
+                   Affected Spells: Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Seal of Fury (20231), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20415), Seal of Fury (20416), Seal of Fury (20417), Seal of Fury (20418), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Seal of the Crusader (21082), Seal of Righteousness (21084), Seal of Righteousness (25735), Seal of Righteousness (25736), Seal of Righteousness (25737), Seal of Righteousness (25738), Seal of Righteousness (25739), Seal of Righteousness (25740), Seal of Righteousness (25741), Seal of Righteousness (25742), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Seal of Fury (1311647), Seal of Fury (1311649), Seal of Fury (1311654), Seal of Fury (1311656)
                    Family Flags: 9, 25, 27, 42, 43, 61
 Description      : Reduces the mana cost of your Seal spells by $s1%.
 
@@ -8425,7 +8537,7 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1340538)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
-                   Affected Spells: Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Judgement of Righteousness (20187), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Seal of the Crusader (21082), Seal of Righteousness (21084), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Seal of Fury (1311649), Seal of Fury (1311656)
+                   Affected Spells: Seal of Righteousness (20154), Seal of the Crusader (20162), Seal of Fury (20163), Seal of Justice (20164), Seal of Light (20165), Seal of Wisdom (20166), Judgement of Righteousness (20187), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Seal of Righteousness (20287), Seal of Righteousness (20288), Seal of Righteousness (20289), Seal of Righteousness (20290), Seal of Righteousness (20291), Seal of Righteousness (20292), Seal of Righteousness (20293), Seal of the Crusader (20305), Seal of the Crusader (20306), Seal of the Crusader (20307), Seal of the Crusader (20308), Seal of Light (20347), Seal of Light (20348), Seal of Light (20349), Seal of Wisdom (20356), Seal of Wisdom (20357), Seal of Command (20375), Seal of Fury (20419), Seal of Fury (20421), Seal of Fury (20422), Seal of Fury (20423), Seal of Command (20424), Seal of Command (20915), Seal of Command (20918), Seal of Command (20919), Seal of Command (20920), Seal of the Crusader (21082), Seal of Righteousness (21084), Seal of Righteousness (25735), Seal of Righteousness (25736), Seal of Righteousness (25737), Seal of Righteousness (25738), Seal of Righteousness (25739), Seal of Righteousness (25740), Seal of Righteousness (25741), Seal of Righteousness (25742), Seal of Martyrdom (407798), Seal of Martyrdom (407799), Seal of Fury (1311649), Seal of Fury (1311656)
                    Family Flags: 9, 10, 25, 27, 57, 58, 61
 Description      : Your melee attacks store a copy of your active Seal for $1311701d, stacking up to $1311701u times. Landing an attack with a different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack.
 
