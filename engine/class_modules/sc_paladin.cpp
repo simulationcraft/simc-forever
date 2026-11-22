@@ -165,10 +165,15 @@ public:
     return debug_cast<const paladin_t*>( this->player );
   }
 
+  static bool is_undead_or_demon( const player_t* target )
+  {
+    return target->race == RACE_UNDEAD || target->race == RACE_DEMON;
+  }
+
   static target_filter_callback_t undead_and_demons_only()
   {
     return [ & ]( const action_t* action, player_t* target ) {
-      return target->race == RACE_UNDEAD || target->race == RACE_DEMON;
+      return is_undead_or_demon( target );
     };
   }
 };
