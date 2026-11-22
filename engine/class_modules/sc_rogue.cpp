@@ -11,6 +11,16 @@
 namespace
 {  // UNNAMED NAMESPACE
 
+struct rogue_t;
+
+struct rogue_td_t : public actor_target_data_t
+{
+  // Combo points belong to the target they were generated on
+  int combo_points = 0;
+
+  rogue_td_t( player_t& target, rogue_t& p );
+};
+
 struct rogue_t final : public parse_player_effects_t
 {
   rogue_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) : parse_player_effects_t( sim, ROGUE, name, r )
@@ -44,9 +54,23 @@ struct rogue_t final : public parse_player_effects_t
     return rogue_apl::food( this );
   }
 
-  double current_cp() const
+  static constexpr int max_combo_points = 5;
+  // Target that currently holds the player's combo points
+  player_t* combo_target = nullptr;
+
+  int combo_points( player_t* t ) const;
+  void gain_combo_points( player_t* t, int amount, gain_t* g );
+  void spend_combo_points( player_t* t, gain_t* g );
+
+  target_specific_t<rogue_td_t> target_data;
+  rogue_td_t* get_target_data( player_t* target ) const override
   {
-    return resources.current[ RESOURCE_COMBO_POINT ];
+    assert( target );
+    rogue_td_t*& td = target_data[ target ];
+    if ( !td )
+      td = new rogue_td_t( *target, const_cast<rogue_t&>( *this ) );
+
+    return td;
   }
 
   struct talents_t
@@ -147,15 +171,13 @@ struct rogue_t final : public parse_player_effects_t
   } rank;
 };
 
+rogue_td_t::rogue_td_t( player_t& target, rogue_t& p ) : actor_target_data_t( &target, &p )
+{
+}
+
 template <class Base>
 struct rogue_action_t : public parse_action_effects_t<Base>
 {
-private:
-  using ab = parse_action_effects_t<Base>;
-
-public:
-  using base_t = rogue_action_t<Base>;
-
   template <typename... Args>
   rogue_action_t( Args&&... args ) : ab( std::forward<Args>( args )... )
   {
@@ -173,88 +195,89 @@ public:
     return debug_cast<const rogue_t*>( this->player );
   }
 
-  bool consumes_combo_points() const
+  double gain_energize_resource( resource_e resource_type, double amount, gain_t* g ) override
   {
-    return ab::base_costs[ RESOURCE_COMBO_POINT ] > 0;
+    if ( resource_type == RESOURCE_COMBO_POINT )
+    {
+      this->p()->gain_combo_points( this->target, static_cast<int>( amount ), g );
+    }
+
+    return ab::gain_energize_resource( resource_type, amount, g );
   }
 
-  void spend_combo_points()
+  std::unique_ptr<expr_t> create_expression( util::string_view name ) override
   {
-    if ( !consumes_combo_points() )
-      return;
+    if ( name == "combo_points" )
+      return make_fn_expr( name, [ this ]() { return this->p()->combo_points( this->target ); } );
 
-    double cp_loss = p()->current_cp();
+    return ab::create_expression( name );
+  }
 
-    ab::stats->consume_resource( RESOURCE_COMBO_POINT, cp_loss );
+  // TODO: Verify if we need to put the Energy refund back here
 
-    p()->resource_loss( RESOURCE_COMBO_POINT, cp_loss, nullptr, this );
+protected:
+  /// typedef for rogue_action_t<action_base_t>
+  using base_t = rogue_action_t<Base>;
 
-    p()->sim->print_log( "{} consumes {} {} for {} ({})", *p(), cp_loss,
-                         util::resource_type_string( RESOURCE_COMBO_POINT ), *this, p()->current_cp() );
+private:
+  /// typedef for the templated action type, eg. spell_t, attack_t, heal_t
+  using ab = parse_action_effects_t<Base>;
+};
+
+using rogue_attack_t = rogue_action_t<melee_attack_t>;
+using rogue_spell_t  = rogue_action_t<spell_t>;
+
+struct rogue_combo_attack_t : public rogue_attack_t
+{
+  rogue_combo_attack_t( std::string_view n, rogue_t* player, const spell_data_t* s ) : rogue_attack_t( n, player, s )
+  {
   }
 
   bool ready() override
   {
-    if ( consumes_combo_points() )
-      return ab::ready() && p()->current_cp() > 0;
+    if ( p()->combo_points( target ) < 1 )
+      return false;
 
-    return ab::ready();
+    return rogue_attack_t::ready();
+  }
+
+  void execute() override
+  {
+    combo_points = p()->combo_points( target );
+
+    rogue_attack_t::execute();
   }
 
   void consume_resource() override
   {
-    resource_e cr = this->current_resource();
-
-    auto discountOnMiss = this->data().flags( spell_attribute::SX_DISCOUNT_ON_MISS );
-
-    // TODO: Move this into core? I basically copied this from warrior
-    if ( cr == RESOURCE_ENERGY && this->cost() > 0 && discountOnMiss && !this->proc &&
-         !this->result_is_hit( this->execute_state->result ) )
+    if ( this->data().flags( SX_DISCOUNT_ON_MISS ) && this->result_is_miss( execute_state->result ) )
     {
-      this->last_resource_cost = 0.2 * this->cost();
+      resource_e cr = current_resource();
 
-      this->player->resource_loss( cr, this->last_resource_cost, nullptr, this );
-      this->stats->consume_resource( cr, this->last_resource_cost );
+      last_resource_cost = cost();
 
-      this->sim->print_log( "{} consumes {} {} for {} ({})", *this->player, this->last_resource_cost, cr, *this,
-                            this->player->resources.current[ cr ] );
+      last_resource_cost *= .2;
+
+      player->resource_loss( cr, last_resource_cost, nullptr, this );
+
+      sim->print_log( "{} consumes {} {} for {} ({})", *player, last_resource_cost, cr, *this,
+                      player->resources.current[ cr ] );
+
+      stats->consume_resource( cr, last_resource_cost );
     }
     else
     {
-      ab::consume_resource();
+      rogue_attack_t::consume_resource();
 
-      spend_combo_points();
+      p()->spend_combo_points( target, gain );
     }
   }
+
+protected:
+  int combo_points = 0;
 };
 
-void rogue_t::init_base_stats()
-{
-  base.attack_power_per_strength = 1.0;
-  base.attack_power_per_agility  = 1.0;
-
-  parse_player_effects_t::init_base_stats();
-
-  // TODO - can this base stuff be moved into core?
-
-  base.all_crit          = 0.0;
-  base.spell_crit_chance = 0.0;
-
-  base.dodge_per_agility = 2.0 * base.attack_crit_per_agility;
-  auto base_dodge =
-      ( dbc->race_base( race ).agility + dbc->attribute_base( type, level() ).agility ) * base.dodge_per_agility;
-
-  base.attack_crit_chance = get_passive_player_value( 0.0, "attack_crit" );
-  base.parry              = get_passive_player_value( 0.0, "parry" );
-  base.dodge              = get_passive_player_value( base_dodge, "dodge" );
-
-  base.stats.attack_power = 2.0 * level() - 20.0;
-}
-
 // Abilities
-
-using rogue_attack_t = rogue_action_t<melee_attack_t>;
-using rogue_spell_t  = rogue_action_t<spell_t>;
 
 struct rogue_auto_attack_t : public auto_attack_t
 {
@@ -293,10 +316,10 @@ struct backstab_t : public rogue_attack_t
   }
 };
 
-struct eviscerate_t : public rogue_attack_t
+struct eviscerate_t : public rogue_combo_attack_t
 {
   eviscerate_t( rogue_t* player, util::string_view options_str )
-    : rogue_attack_t( "eviscerate", player, player->rank.eviscerate.find_rank()->spell() )
+    : rogue_combo_attack_t( "eviscerate", player, player->rank.eviscerate.find_rank()->spell() )
   {
     parse_options( options_str );
 
@@ -306,13 +329,13 @@ struct eviscerate_t : public rogue_attack_t
 
   double cp_bonus() const
   {
-    return p()->current_cp() * data().effectN( 1 ).pp_combo_points();
+    return combo_points * data().effectN( 1 ).pp_combo_points();
   }
 
   // TODO Forever: Verify the 3% per combo point. Looks right from low level logs
   double attack_direct_power_coefficient( const action_state_t* ) const override
   {
-    return 0.03 * p()->current_cp();
+    return 0.03 * combo_points;
   }
 
   // Eviscerate doesn't apply the base damage spread to the extra damage from combo points
@@ -330,13 +353,12 @@ struct eviscerate_t : public rogue_attack_t
   }
 };
 
-struct slice_and_dice_t : public rogue_attack_t
+struct slice_and_dice_t : public rogue_combo_attack_t
 {
   slice_and_dice_t( rogue_t* player, util::string_view options_str )
-    : rogue_attack_t( "slice_and_dice", player, player->rank.slice_and_dice.find_rank()->spell() )
+    : rogue_combo_attack_t( "slice_and_dice", player, player->rank.slice_and_dice.find_rank()->spell() )
   {
     parse_options( options_str );
-    set_target( player );
     harmful = false;
   }
 
@@ -348,13 +370,34 @@ struct slice_and_dice_t : public rogue_attack_t
 
   void execute() override
   {
-    timespan_t buff_duration = get_triggered_duration( p()->current_cp() );
+    rogue_combo_attack_t::execute();
 
-    rogue_attack_t::execute();
-
-    p()->buff.slice_and_dice->trigger( buff_duration );
+    p()->buff.slice_and_dice->trigger( get_triggered_duration( combo_points ) );
   }
 };
+
+void rogue_t::init_base_stats()
+{
+  base.attack_power_per_strength = 1.0;
+  base.attack_power_per_agility  = 1.0;
+
+  parse_player_effects_t::init_base_stats();
+
+  // TODO - can this base stuff be moved into core?
+
+  base.all_crit          = 0.0;
+  base.spell_crit_chance = 0.0;
+
+  base.dodge_per_agility = 2.0 * base.attack_crit_per_agility;
+  auto base_dodge =
+      ( dbc->race_base( race ).agility + dbc->attribute_base( type, level() ).agility ) * base.dodge_per_agility;
+
+  base.attack_crit_chance = get_passive_player_value( 0.0, "attack_crit" );
+  base.parry              = get_passive_player_value( 0.0, "parry" );
+  base.dodge              = get_passive_player_value( base_dodge, "dodge" );
+
+  base.stats.attack_power = 2.0 * level() - 20.0;
+}
 
 void rogue_t::create_buffs()
 {
@@ -517,6 +560,37 @@ void rogue_t::parse_action_effects( action_t* action )
   assert( _a );
 
   // TODO: parse action-affecting rogue buffs here as they are implemented.
+}
+
+int rogue_t::combo_points( player_t* t ) const
+{
+  return t ? get_target_data( t )->combo_points : 0;
+}
+
+void rogue_t::gain_combo_points( player_t* t, int amount, gain_t* )
+{
+  if ( combo_target && combo_target != t )
+  {
+    auto old_td = get_target_data( combo_target );
+    sim->print_log( "{} loses {} combo_points on {}", *this, old_td->combo_points, *combo_target );
+    resource_loss( RESOURCE_COMBO_POINT, old_td->combo_points, get_gain( "combo_points_lost" ) );
+    old_td->combo_points = 0;
+  }
+
+  combo_target = t;
+
+  auto td          = get_target_data( t );
+  td->combo_points = std::min( td->combo_points + amount, max_combo_points );
+}
+
+void rogue_t::spend_combo_points( player_t* t, gain_t* g )
+{
+  auto td = get_target_data( t );
+
+  sim->print_log( "{} spends {} combo_points on {}", *this, td->combo_points, *t );
+
+  resource_loss( RESOURCE_COMBO_POINT, td->combo_points, g );
+  td->combo_points = 0;
 }
 
 // ROGUE MODULE INTERFACE ===================================================
