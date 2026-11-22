@@ -1,0 +1,79 @@
+# Topple Thedin - 2026-11-22 17:40 - US
+# SimC Addon 12.1.5-05
+# WoW 1.60.1.71037, TOC 16001
+# Requires SimulationCraft 1000-01 or newer
+
+paladin="Topple Thedin"
+level=10
+race=undead
+region=us
+role=
+professions=blacksmithing=20/mining=32
+spec=unknown
+
+talents=C4cBGcV93ZFuZit9ndAatAMOTDAAAAAAAA
+
+# Primary Talents
+# talents=C4cBGcV93ZFuZit9ndAatAMOTDAAAAAAAA
+
+legacy_talents=136864:1
+
+# Adept's Cloak (8)
+back=,id=3833
+# Rough Copper Vest (10)
+chest=,id=10421
+# Brawler's Harness (1)
+shirt=,id=6125
+# Copper Bracers (7)
+wrist=,id=2853
+# Cold Steel Gauntlets (8)
+hands=,id=6063
+# Flimsy Chain Belt (2)
+waist=,id=2649
+# Copper Chain Pants (10)
+legs=,id=2852
+# Finscale Soles (11)
+feet=,id=281285
+# Training Sword of the Boar (10)
+main_hand=,id=8178,bonus_id=12725
+
+bag1=,id=4238
+bag2=,id=4238
+bag3=,id=4238
+bag4=,id=4238
+
+### Gear from Bags
+#
+# Spiked Wooden Plank (11)
+# main_hand=,id=3329
+#
+# Blacksmith Hammer (1)
+# main_hand=,id=5956
+#
+# Mining Pick (4)
+# main_hand=,id=2901
+
+### Additional Character Info
+#
+# character_stats=health:380/power_type:0/mana:272/rage:0/focus:0/energy:0/strength:34/agility:24/stamina:46/intellect:24/spirit:50
+# character_stats_base=strength:30/agility:23/stamina:31/intellect:23/spirit:32
+# character_stats_bonus=strength:4/agility:1/stamina:15/intellect:1/spirit:18
+# character_stats_gear=damage_per_second:7.14/spirit:1/stamina:2/strength:2/armor:402
+# attack_power=melee:78:14:0/ranged:0:0:0
+# spell_power=holy:0/fire:0/nature:0/frost:0/shadow:0/arcane:0
+# spell_stats=healing:0/penetration:0
+# regen=health:6.45:0/health_from_spirit:8.59:0/mana:12.50:0.00/mana_from_spirit:12.50:0/mana_power:12.50:0.00/rage_power:-12.50:0.00/focus_power:10.00:10.00/energy_power:10.00:10.00
+# crit=melee:4.59/ranged:2.87/spell:4.94
+# hit=melee_rating_bonus:0/melee_modifier:0/ranged_rating_bonus:0/ranged_modifier:0/spell_rating_bonus:0/spell_modifier:0
+# haste=melee:0/ranged:0/ranged_ammo:0/spell:0
+# combat_modifiers=expertise:0/expertise_offhand:0/expertise_ranged:0/armor_penetration:0/mastery:0
+# combat_ratings=
+# defense=armor_base:55/armor_effective:505/armor:505/armor_bonus:450/defense_skill:43/defense_modifier:0/dodge:4.55/parry:4.72/block:4.72/block_value:1
+# resistances=holy:0/fire:0/nature:0/frost:0/shadow:0/arcane:0
+# weapon_damage=mainhand:45:55:3.50/pos_buff:0/neg_buff:0/percent:1
+#
+# skills=43:1:0:50/54:14:0:50/55:44:0:50/95:43:0:50/109:300:0:300/129:21:0:75/160:35:0:50/162:1:0:50/164:20:0:75/184:1:0:1/185:1:0:75/186:32:0:75/267:1:0:1/413:1:0:1/414:1:0:1/415:1:0:1/433:1:0:1/594:1:0:1/673:300:0:300/2938:20:0:75/2939:1:0:75/2942:21:0:75/2946:32:0:75
+#
+# buffs=465:0/1244:0/2580:0/19740:0/1229741:0
+
+# Checksum: c7e03307
