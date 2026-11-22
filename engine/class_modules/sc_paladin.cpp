@@ -93,8 +93,98 @@ public:
 
   struct talents_t
   {
+    // Row 1 Holy
     player_talent_t spiritual_focus;
     player_talent_t divine_strength;
+
+    // Row 1 Prot
+    player_talent_t divine_intellect;
+    player_talent_t redoubt;
+
+    // Row 1 Ret
+    player_talent_t parry;
+    player_talent_t benediction;
+    
+    // Row 2 Holy
+    player_talent_t healing_light;
+    player_talent_t reverence;
+    player_talent_t improved_seals;
+    player_talent_t purifying_power;
+
+    // Row 2 Prot
+    player_talent_t precision;
+    player_talent_t guardians_favor;
+    player_talent_t sacred_duty;
+
+    // Row 2 Ret
+    player_talent_t improved_judgement;
+    player_talent_t conviction;
+    player_talent_t sanctified_judgement;
+
+    // Row 3 Holy
+    player_talent_t divine_favor;
+    player_talent_t illumination;
+    player_talent_t holy_conduit;
+
+    // Row 3 Prot
+    player_talent_t templars_bulwark;
+    player_talent_t improved_hammer_of_justice;
+    player_talent_t shield_specialization;
+    player_talent_t toughness;
+
+    // Row 3 Ret
+    player_talent_t vindication;
+    player_talent_t unyielding_faith;
+    player_talent_t seal_of_command;
+    player_talent_t pursuit_of_justice;
+
+    // Row 4 Holy
+    player_talent_t divine_precision;
+    player_talent_t infusion_of_light;
+    player_talent_t oath_of_light;
+
+    // Row 4 Prot
+    player_talent_t swift_judgement;
+    player_talent_t improved_righteous_fury;
+    player_talent_t anticipation;
+
+    // Row 4 Ret
+    player_talent_t eye_for_an_eye;
+    player_talent_t sacred_arbiter;
+    player_talent_t two_handed_weapon_specialization;
+
+    // Row 5 Holy
+    player_talent_t consecrated_ground;
+    player_talent_t holy_shock;
+    player_talent_t boundless_light;
+
+    // Row 5 Prot
+    player_talent_t stoicism;
+    player_talent_t holy_shield;
+    player_talent_t reckoning;
+
+    // Row 5 Ret
+    player_talent_t turn_evil;
+    player_talent_t repentance;
+    player_talent_t vengeance;
+
+    // Row 6 Holy
+    player_talent_t holy_power;
+
+    // Row 6 Prot
+    player_talent_t iron_creed;
+
+    // Row 6 Ret
+    player_talent_t champion_of_the_light;
+
+    // Row 7 Holy
+    player_talent_t lights_vigil;
+
+    // Row 7 Prot
+    player_talent_t shieldsworn;
+
+    // Row 7 Ret
+    player_talent_t unsealed_wrath;
   } talent;
 
   struct spells_t
@@ -247,6 +337,14 @@ struct exorcism_t : public paladin_spell_t
 
     target_filter_callback = undead_and_demons_only();
   }
+
+  bool target_ready(player_t* t)
+  {
+    if ( !is_undead_or_demon( t ) )
+      return false;
+
+    return paladin_spell_t::target_ready( t );
+  }
 };
 
 struct holy_wrath_t : public paladin_spell_t
@@ -272,6 +370,14 @@ struct holy_wrath_t : public paladin_spell_t
       s->target->buffs.stunned->trigger( stun_duration );
       s->target->stun();
     }
+  }
+
+  bool target_ready( player_t* t )
+  {
+    if ( !is_undead_or_demon( t ) )
+      return false;
+
+    return paladin_spell_t::target_ready( t );
   }
 };
 
@@ -302,6 +408,24 @@ struct holy_light_t : public paladin_heal_t
   }
 };
 
+struct holy_strike_t : public paladin_attack_t
+{
+  holy_strike_t( paladin_t* player, util::string_view options_str )
+    : paladin_attack_t( "holy_strike", player, player->rank.holy_strike.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    base_t::impact( s );
+
+    if ( p()->talent.sacred_arbiter.enabled() )
+    {
+      // Refresh all judgement effects, kinda doesn't matter mostly except for command. (Procs)
+    }
+  }
+};
 
 void paladin_t::activate()
 {
@@ -327,6 +451,8 @@ action_t* paladin_t::create_action( util::string_view name, util::string_view op
 {
   if ( name == "auto_attack" )
     return new paladin_auto_attack_t( this, options_str );
+  if ( name == "holy_strike" )
+    return new holy_strike_t( this, options_str );
 
   if ( name == "exorcism" )
     return new exorcism_t( this, options_str );
@@ -379,6 +505,101 @@ double paladin_t::composite_attribute_multiplier( attribute_e attr ) const
 void paladin_t::init_spells()
 {
   base_t::init_spells();
+
+  auto CT = [ & ]( std::string_view n ) { return find_talent_spell( talent_tree::CLASS, n ); };
+
+    // Row 1 Holy
+  talent.spiritual_focus = CT( "Spiritual Focus" );
+  talent.divine_strength = CT( "Divine Strength" );
+
+  // Row 1 Prot
+  talent.divine_intellect = CT( "Divine Intellect" );
+  talent.redoubt          = CT( "Redoubt" );
+
+  // Row 1 Ret
+  talent.parry       = CT( "Parry" );
+  talent.benediction = CT( "Benediction" );
+
+  // Row 2 Holy
+  talent.healing_light   = CT( "Healing Light" );
+  talent.reverence       = CT( "Reverence" );
+  talent.improved_seals  = CT( "Improved Seals" );
+  talent.purifying_power = CT( "Purifying Power" );
+
+  // Row 2 Prot
+  talent.precision       = CT( "Precision" );
+  talent.guardians_favor = CT( "Guardian's Favor" );
+  talent.sacred_duty     = CT( "Sacred Duty" );
+
+  // Row 2 Ret
+  talent.improved_judgement   = CT( "Improved Judgement" );
+  talent.conviction           = CT( "Conviction" );
+  talent.sanctified_judgement = CT( "Sanctified Judgement" );
+
+  // Row 3 Holy
+  talent.divine_favor = CT( "Divine Favor" );
+  talent.illumination = CT( "Illumination" );
+  talent.holy_conduit = CT( "Holy Conduit" );
+
+  // Row 3 Prot
+  talent.templars_bulwark           = CT( "Templar's Bulwark" );
+  talent.improved_hammer_of_justice = CT( "Improved Hammer of Justice" );
+  talent.shield_specialization      = CT( "Shield Specialization" );
+  talent.toughness                  = CT( "Toughness" );
+
+  // Row 3 Ret
+  talent.vindication        = CT( "Vindication" );
+  talent.unyielding_faith   = CT( "Unyielding Faith" );
+  talent.seal_of_command    = CT( "Seal of Command" );
+  talent.pursuit_of_justice = CT( "Pursuit of Justice" );
+
+  // Row 4 Holy
+  talent.divine_precision  = CT( "Divine Precision" );
+  talent.infusion_of_light = CT( "Infusion of Light" );
+  talent.oath_of_light     = CT( "Oath of Light" );
+
+  // Row 4 Prot
+  talent.swift_judgement         = CT( "Swift Judgement" );
+  talent.improved_righteous_fury = CT( "Improved Righteous Fury" );
+  talent.anticipation            = CT( "Anticipation" );
+
+  // Row 4 Ret
+  talent.eye_for_an_eye                   = CT( "Eye for an Eye" );
+  talent.sacred_arbiter                   = CT( "Sacred Arbiter" );
+  talent.two_handed_weapon_specialization = CT( "Two-Handed Weapon Specialization" );
+
+  // Row 5 Holy
+  talent.consecrated_ground = CT( "Consecrated Ground" );
+  talent.holy_shock         = CT( "Holy Shock" );
+  talent.boundless_light    = CT( "Boundless Light" );
+
+  // Row 5 Prot
+  talent.stoicism    = CT( "Stoicism" );
+  talent.holy_shield = CT( "Holy Shield" );
+  talent.reckoning   = CT( "Reckoning" );
+
+  // Row 5 Ret
+  talent.turn_evil  = CT( "Turn Evil" );
+  talent.repentance = CT( "Repentance" );
+  talent.vengeance  = CT( "Vengeance" );
+
+  // Row 6 Holy
+  talent.holy_power = CT( "Holy Power" );
+
+  // Row 6 Prot
+  talent.iron_creed = CT( "Iron Creed" );
+
+  // Row 6 Ret
+  talent.champion_of_the_light = CT( "Champion of the Light" );
+
+  // Row 7 Holy
+  talent.lights_vigil = CT( "Light's Vigil" );
+
+  // Row 7 Prot
+  talent.shieldsworn = CT( "Shieldsworn" );
+
+  // Row 7 Ret
+  talent.unsealed_wrath = CT( "Unsealed Wrath" );
 
   rank.blessing_of_might = {
       this,
