@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -2966,24 +2966,6 @@ Effects          :
 Description      : Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19705s1 Stamina and Spirit for $19705d.
 Tooltip          : Restores $/5;s1 health per second.
 
-Name             : Food (id=5006) 
-School           : Physical
-Spell Type       : None
-Duration         : 24 seconds
-Cooldown         : 1 seconds
-Category         : 11 (Type 0x0)
-Labels           : 6882
-Category Cooldown: 1 seconds
-Attributes       : Do Not Log (8), Allow While Sitting (27), Not In Combat (Only Peaceful) (28), Unknown (493)
-Aura Interrupt   : Under Water (7), Standing (18)
-Effects          :
-#1 (id=683682)   : Apply Aura (6) | Restore Health (84)
-                   Base Value: 115 | Scaled Value: 115 | Value Multiplier: 1 | Target: Self (1)
-#2 (id=683683)   : Apply Aura (6) | Periodic Trigger Spell (23): Well Fed every 10 seconds
-                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 19708 | Target: Self (1)
-Description      : Restores $o1 health over $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain $19708s1 Stamina and Spirit for $19708d.
-Tooltip          : Restores $/5;s1 health per second.
-
 Name             : Stormstout (id=5020) 
 School           : Physical
 Spell Type       : None
@@ -3899,7 +3881,6 @@ Attributes       : Aura Is Debuff (26), Allow While Sitting (27), Unknown (493)
 Effects          :
 #1 (id=684162)   : Apply Aura (6) | Periodic Dummy (226): every 5 seconds
                    Base Value: 10 | Scaled Value: 10 | Target: Self (1)
-Hotfixed         : Sub Type (3 -> 226)
 Description      : Don't eat me.
 
 Name             : Party Fever (id=6758) 
@@ -27263,7 +27244,7 @@ Spell Type       : None
 Duration         : 900 seconds
 Labels           : 4530
                  : 4697: Wastewanderer Rations (1302968 effect#2)
-Triggered By     : Food (5006), Test Crocolisk Gumbo (1244245)
+Triggered By     : Test Crocolisk Gumbo (1244245)
 Attributes       : Do Not Log (8), Allow While Sitting (27), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
 #1 (id=696522)   : Apply Aura (6) | Attribute (29)
@@ -33368,11 +33349,9 @@ Attributes       : Unknown (493)
 Effects          :
 #1 (id=701084)   : Direct Heal (10)
                    Base Value: 198 | Scaled Value: 198 (delta=0.4) | Target: Self (1)
-Hotfixed         : Base Value (150 -> 198)
 Description      : Sometimes heals bearer of $s1 damage when attacking an enemy.
 
 Name             : Aura of the Blue Dragon (id=23684) 
-Hotfixed         : Proc Chance (100 -> 2), Description
 School           : Physical
 Spell Type       : None
 Duration         : 15 seconds
@@ -33386,7 +33365,6 @@ Description      : $h% chance on successful spellcast to increase your Spirit by
 Tooltip          : Spirit increased by $s1.
 
 Name             : Lightning Strike (id=23686) [Passive, Hidden] 
-Hotfixed         : Description
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 60
@@ -33398,7 +33376,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 23687 | Target: Self (1)
 #2 (id=1372164)  : Apply Aura (6) | Dummy (4)
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 Description      : Chance to strike your melee target with lightning for $23687s1 Nature damage. Deals $s2 times as much damage to Aquatic enemies.
 
 Name             : Lightning Strike (id=23687) 
@@ -33414,7 +33391,6 @@ Effects          :
 Description      : Lightning Strike for $s1 Nature damage.
 
 Name             : Aura of the Blue Dragon (id=23688) [Passive, Hidden] 
-Hotfixed         : Proc Chance (2 -> 3), Description
 School           : Physical
 Spell Type       : None
 Proc Chance      : 3%
@@ -33426,7 +33402,6 @@ Effects          :
 Description      : $h% chance on successful spellcast to increase your Spirit by $23684s1 for $23684d.
 
 Name             : Heroism (id=23689) [Passive, Hidden] 
-Hotfixed         : Description
 School           : Holy
 Spell Type       : None
 Spell Level      : 50
@@ -41663,7 +41638,6 @@ Effects          :
 Description      : Place a bomb with a short fuse on the ground in front of you.
 
 Name             : Unroll Bag (id=429961) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Range            : 2 yards
@@ -41674,10 +41648,8 @@ Attributes       : Is Ability (4), Not In Combat (Only Peaceful) (28), Not in Ba
 Effects          :
 #1 (id=1114590)  : Create Area Trigger (179)
                    Base Value: 3 | Scaled Value: 3 | Misc Value: 30821 | Target: at Area (87)
-Hotfixed         : Target 1 (47 -> 87)
 #2 (id=1114591)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 214589 | Misc Value 2: 61 | Target: at Area (87)
-Hotfixed         : Target 1 (47 -> 87)
 Description      : Unfurl a sleeping bag. Resting inside for at least one minute will provide a bonus to experience earned, stacking up to 3 times.
 
 Name             : Dark Insight (id=429972) 
@@ -43417,6 +43389,37 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 1312052 | Target: Targeted Enemy (6)
 Description      : Deals $o1 Fire damage over $d. Demons and Beasts are Rooted in place for $1312052d.
 Tooltip          : Taking $s1 Fire damage every $t1 seconds.
+
+Name             : Seed of Renewal (id=443278) 
+School           : Nature
+Spell Type       : None
+Spell Level      : 50
+Duration         : Aura (infinite)
+Internal Cooldown: 120 seconds
+Proc Chance      : 40%
+Proc Flags       : Generic Hostile Spell, Magic Hostile Spell, Periodic
+Attributes       : Unknown (493)
+Effects          :
+#1 (id=1139080)  : Apply Aura (6) | Proc Trigger Spell (42): Seed of Renewal
+                   Base Value: 1 | Scaled Value: 1 | Trigger Spell: 443678 | Target: Self (1)
+Description      : Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells. If the creature is slain within 30 seconds of the seed being embedded, a Healing Blossom will grow from its corpse.
+
+Tooltip          : Chance to embed a seed into enemy humanoids, beasts, or dragonkin hit by your abilities or spells.
+
+Name             : Seed of Renewal (id=443678) 
+School           : Nature
+Spell Type       : None
+Spell Level      : 50
+Range            : 100 yards
+Duration         : 30 seconds
+Proc Chance      : 101%
+Proc Flags       : Death
+Triggered By     : Seed of Renewal (443278)
+Attributes       : Aura Is Debuff (26), Unknown (493)
+Effects          :
+#1 (id=1139756)  : Apply Aura (6) | Dummy (4)
+                   Base Value: 1 | Scaled Value: 1 | Target: Targeted Enemy (6)
+Tooltip          : Will grow a Healing Blossom from corpse when killed.
 
 Name             : High-Yield Radiation Bomb (id=443813) 
 School           : Nature
@@ -62200,7 +62203,6 @@ Description      : Resurrect the fallen Khan.
 Tooltip          : Being resurrected.
 
 Name             : Rock Garden (desc=Tier 2) (id=1262975) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62211,7 +62213,6 @@ Effects          :
 Description      : Craft a Rock Garden.
 
 Name             : Cookie's Feast (desc=Tier 2) (id=1262978) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62222,7 +62223,6 @@ Effects          :
 Description      : Craft Cookie's Feast.
 
 Name             : Greenhouse (desc=Tier 2) (id=1262980) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62233,7 +62233,6 @@ Effects          :
 Description      : Craft a Greenhouse.
 
 Name             : Trapper's Workbench (desc=Tier 3) (id=1262982) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62244,7 +62243,6 @@ Effects          :
 Description      : Craft a Trapper's Workbench.
 
 Name             : Field Guide (desc=Tier 2) (id=1262985) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62255,7 +62253,6 @@ Effects          :
 Description      : Craft a Field Guide.
 
 Name             : Fishing Rack (desc=Tier 2) (id=1262990) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62266,7 +62263,6 @@ Effects          :
 Description      : Craft a Fishing Rack.
 
 Name             : Toxin Study (desc=Tier 2) (id=1262996) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62277,7 +62273,6 @@ Effects          :
 Description      : Craft a Toxin Study.
 
 Name             : Fishing Hut (desc=Tier 3) (id=1262998) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62288,7 +62283,6 @@ Effects          :
 Description      : Craft a Fishing Hut.
 
 Name             : Plague Doctor's Laboratory (desc=Tier 4) (id=1263001) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62299,7 +62293,6 @@ Effects          :
 Description      : Craft a Plague Doctor's Laboratory.
 
 Name             : Fermenter (desc=Tier 2) (id=1263005) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62310,7 +62303,6 @@ Effects          :
 Description      : Craft a Fermenter.
 
 Name             : Tanning Rack (desc=Tier 2) (id=1263031) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62321,7 +62313,6 @@ Effects          :
 Description      : Craft a Tanning Rack.
 
 Name             : Spinning Wheel (desc=Tier 2) (id=1263032) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62332,7 +62323,6 @@ Effects          :
 Description      : Craft a Spinning Wheel.
 
 Name             : Repair Bot (desc=Tier 2) (id=1263034) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62343,7 +62333,6 @@ Effects          :
 Description      : Craft a Repair Bot.
 
 Name             : Anvil (desc=Tier 2) (id=1263041) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62354,7 +62343,6 @@ Effects          :
 Description      : Craft an Anvil.
 
 Name             : Arcane Salvager (desc=Tier 2) (id=1263056) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62365,7 +62353,6 @@ Effects          :
 Description      : Craft an Arcane Salvager.
 
 Name             : Iron Oven (desc=Tier 4) (id=1263067) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62376,7 +62363,6 @@ Effects          :
 Description      : Craft an Iron Oven.
 
 Name             : Seed Hybridizer (desc=Tier 3) (id=1263070) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62387,7 +62373,6 @@ Effects          :
 Description      : Craft a Seed Hybridizer.
 
 Name             : Molten Foundry (desc=Tier 3) (id=1263071) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62398,7 +62383,6 @@ Effects          :
 Description      : Craft a Molten Foundry.
 
 Name             : Master Forge (desc=Tier 3) (id=1263073) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62409,7 +62393,6 @@ Effects          :
 Description      : Craft a Master Forge.
 
 Name             : Alchemy Laboratory (desc=Tier 3) (id=1263078) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62420,7 +62403,6 @@ Effects          :
 Description      : Craft an Alchemy Laboratory.
 
 Name             : Sewing Machine (desc=Tier 3) (id=1263079) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62431,7 +62413,6 @@ Effects          :
 Description      : Craft a Sewing Machine.
 
 Name             : Loom (desc=Tier 4) (id=1263080) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62442,7 +62423,6 @@ Effects          :
 Description      : Craft a Loom.
 
 Name             : Arcane Forge (desc=Tier 3) (id=1263082) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -62453,7 +62433,6 @@ Effects          :
 Description      : Craft an Arcane Forge.
 
 Name             : Anarchist's Workbench (desc=Tier 3) (id=1263083) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -64052,7 +64031,6 @@ Effects          :
 Description      : Place bait to attract the sea monster.
 
 Name             : Journeyman Campfire (desc=Tier 2) (id=1283400) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -64834,7 +64812,6 @@ Description      : Increases your Block chance by $s1% for $d. This effect is do
 Tooltip          : Block Chance increased by $w1%.
 
 Name             : Expert Campfire (desc=Tier 3) (id=1291341) 
-Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Cast Time        : 10 seconds
@@ -70576,7 +70553,6 @@ Aura Interrupt   : Moving (3)
 Effects          :
 #1 (id=1333627)  : Summon Guardian (28)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 257480 | Misc Value 2: 3077 | Target: at Area (87)
-Hotfixed         : Type (160 -> 28), Misc Value (0 -> 257480), Misc Value 2 (0 -> 3077), Trigger Spell (1308883 -> 0), Target 1 (1 -> 87)
 Description      : Place a Traveler's Sign that lasts for 1 min. A message can be written on the sign, causing it to last for 1 hour and making it visible to other players.
 Tooltip          : Carving traveler's marks.
 
@@ -72834,7 +72810,6 @@ Attributes       : Do Not Log (8), Allow Cast While Dead (23), Allow While Mount
 Effects          :
 #1 (id=1345748)  : Apply Aura (6) | Increase Mounted Speed% (172)
                    Base Value: 5 | Scaled Value: 5 | Target: Self (1)
-Hotfixed         : Sub Type (32 -> 172)
 Description      : Increases movement speed while mounted by $s1%. This effect does not stack with similar effects.
 Tooltip          : Movement speed increased by $s1% while mounted.
 
@@ -75296,7 +75271,6 @@ Effects          :
 Description      : Has a $h% chance when landing a harmful spell or attack to Smite the target for $s1 Holy damage. Damage is tripled against Undead.
 
 Name             : Howler's Cry (id=1330916) [Passive] 
-Hotfixed         : NEW SPELL
 School           : Physical
 Spell Type       : Magic
 Spell Level      : 1
@@ -75308,15 +75282,12 @@ Attributes       : Passive (6), Unknown (493)
 Effects          :
 #1 (id=1371297)  : Apply Aura (6) | Proc Trigger Spell (42): Howler's Cry
                    Base Value: -60 | Scaled Value: -60 | Trigger Spell: 1315767 | Target: Self (1)
-Hotfixed         : NEW EFFECT
 #2 (id=1371298)  : Apply Aura (6) | Modify Ranged Attack Power (124)
                    Base Value: -60 | Scaled Value: -60 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : Reduces the target enemy's attack power by $s1 for $1315767d.
 Tooltip          : Attack power lowered by $s1.
 
 Name             : Camper's Lure (id=1331725) [Hidden] 
-Hotfixed         : NEW SPELL
 School           : Physical
 Spell Type       : None
 Cast Time        : 5 seconds
@@ -75324,6 +75295,5 @@ Attributes       : Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Not Sh
 Effects          :
 #1 (id=1372437)  : Enchant Item Temporary (54)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 8773
-Hotfixed         : NEW EFFECT
 Description      : When applied to your fishing pole, increases Fishing by $ec1 for 5 minutes.
 

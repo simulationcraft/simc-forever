@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.70959 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
 Class            : Priest
 School           : Holy
@@ -777,6 +777,7 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Mind Vision (desc=Rank 1) (id=2096) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Shadow
 Spell Type       : Magic
@@ -790,7 +791,7 @@ Proc Chance      : 101%
 Stance Mask      : 0x08000000
 Affecting Spells : Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Focused Casting (27828 effect#1)
 Family Flags     : 26
-Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), Is Channelled (34), No Threat (42), Toggle Far Sight (45), No AutoCast (AI) (49), Exclude Caster (51), Require All Targets (58), Allow Low Level Buff (67), Allow While Not Shapeshifted (caster form) (83), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), Is Channelled (34), No Threat (42), Toggle Far Sight (45), No AutoCast (AI) (49), Exclude Caster (51), Require All Targets (58), Allow Low Level Buff (67), Allow While Not Shapeshifted (caster form) (83), Suppress Caster Procs (112), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Suppress Weapon Procs (151), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Moving (4), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #2 (id=681275)   : Apply Aura (6) | Dummy (4)
@@ -1892,6 +1893,7 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Mind Vision (desc=Rank 2) (id=10909) [Spell Family (6)] 
+Hotfixed         : Attributes
 Class            : Priest
 School           : Shadow
 Spell Type       : Magic
@@ -1905,7 +1907,7 @@ Proc Chance      : 101%
 Stance Mask      : 0x08000000
 Affecting Spells : Inner Focus (14751 effect#1), Shadow Focus (15260 effect#1), Shadow Affinity (15318 effect#1), Focused Casting (27828 effect#1)
 Family Flags     : 26
-Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), Is Channelled (34), No Threat (42), Toggle Far Sight (45), No AutoCast (AI) (49), Exclude Caster (51), Require All Targets (58), Ignore Line of Sight (66), Allow Low Level Buff (67), Allow While Not Shapeshifted (caster form) (83), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Aura Is Debuff (26), Is Channelled (34), No Threat (42), Toggle Far Sight (45), No AutoCast (AI) (49), Exclude Caster (51), Require All Targets (58), Ignore Line of Sight (66), Allow Low Level Buff (67), Allow While Not Shapeshifted (caster form) (83), Suppress Caster Procs (112), Suppress Target Procs (113), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Suppress Weapon Procs (151), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Moving (4), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
 Effects          :
 #2 (id=689066)   : Apply Aura (6) | Dummy (4)
@@ -3262,7 +3264,6 @@ Effects          :
 Description      : Increases the duration of your Shadow Word: Pain spell by ${$s1/1000} sec.
 
 Name             : Vampiric Embrace (id=15286) [Spell Family (6)] 
-Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=4, col=11, max_rank=1, req_points=0]
 Class            : Priest
 School           : Shadow
@@ -3282,11 +3283,9 @@ Attributes       : DoT Stacking Rule (103), Always Hit (114), Can Proc From Proc
 Effects          :
 #1 (id=694156)   : Apply Aura (6) | Dummy (4)
                    Base Value: 10 | Scaled Value: 10 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : Base Value (20 -> 10)
                    Modified By: Improved Vampiric Embrace (27839 effect#1)
 #2 (id=1372611)  : Apply Aura (6) | Dummy (4)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
                    Modified By: Improved Vampiric Embrace (27839 effect#1)
 Description      : Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d. You receive $s2% increased healing on yourself from this effect.
 Tooltip          : $w1% of Shadow spell damage caused by casting priest heals the priest's group.
