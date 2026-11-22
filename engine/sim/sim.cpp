@@ -1532,7 +1532,7 @@ sim_t::sim_t()
 {
   item_db_sources.assign( std::begin( default_item_db_sources ), std::end( default_item_db_sources ) );
 
-  max_time = 300_s;
+  max_time = 180_s;
   vary_combat_length = 0.2;
   use_optimal_buffs_and_debuffs( 1 );
 
