@@ -74,6 +74,14 @@ struct druid_t final : public parse_player_effects_t
     player_talent_t natures_grace;
     player_talent_t eclipse;
     player_talent_t moonkin_form;
+
+    // feral
+
+    // Furor
+    // Predatory Strikes
+    // Predatory Discipline
+    // Sharpened Claws
+
   } talent;
 
   struct buffs_t
@@ -195,10 +203,11 @@ void druid_t::init_base_stats()
 
   base.attack_power_per_strength = 2.0;
   base.stats.attack_power        = -20.0;
-  base.attack_crit_chance = get_passive_player_value( .0074, "attack_crit" );
-  base.spell_crit_chance  = get_passive_player_value( .018, "spell_crit" );
 
   parse_player_effects_t::init_base_stats();
+
+  base.attack_crit_chance = get_passive_player_value( .009, "attack_crit" );
+  base.spell_crit_chance  = get_passive_player_value( .018, "spell_crit" );
 }
 
 void druid_t::init_spells()
@@ -1030,7 +1039,7 @@ struct rip_t : public druid_combo_attack_t
   {
     parse_options( options_str );
 
-    // TODO confirm refresh behavior
+    dot_behavior = DOT_CLIP;
   }
 
   double base_ta( const action_state_t* s ) const override
