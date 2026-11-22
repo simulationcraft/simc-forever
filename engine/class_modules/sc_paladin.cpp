@@ -109,7 +109,8 @@ public:
   {
     spell_ranks_t blessing_of_might;
     spell_ranks_t blessing_of_wisdom;
-    spell_ranks_t consecration;
+    spell_ranks_t consecration_cast;
+    spell_ranks_t consecration_damage;
     spell_ranks_t devotion_aura;
     spell_ranks_t exorcism;
     spell_ranks_t flash_of_light;
@@ -117,16 +118,18 @@ public:
     spell_ranks_t hammer_of_wrath;
     spell_ranks_t holy_light;
     spell_ranks_t holy_shield;
-    spell_ranks_t holy_shock;
+    spell_ranks_t holy_shock_cast;
+    spell_ranks_t holy_shock_damage;
+    spell_ranks_t holy_shock_heal;
     spell_ranks_t holy_strike;
     spell_ranks_t holy_wrath;
-    spell_ranks_t judgement;
     spell_ranks_t lay_on_hands;
-    spell_ranks_t lights_vigil;
+    spell_ranks_t lights_vigil_buff;
+    spell_ranks_t lights_vigil_cast;
+    spell_ranks_t lights_vigil_heal;
     spell_ranks_t retribution_aura;
     spell_ranks_t seal_of_command;
     spell_ranks_t seal_of_fury;
-    spell_ranks_t seal_of_justice;
     spell_ranks_t seal_of_light;
     spell_ranks_t seal_of_righteousness;
     spell_ranks_t seal_of_the_crusader;
@@ -164,6 +167,7 @@ public:
 };
 
 using paladin_attack_t = paladin_action_t<melee_attack_t>;
+using paladin_heal_t = paladin_action_t<heal_t>;
 using paladin_spell_t  = paladin_action_t<spell_t>;
 
 struct paladin_melee_t : public paladin_attack_t
@@ -221,6 +225,13 @@ struct paladin_auto_attack_t : public paladin_attack_t
   }
 };
 
+struct holy_light_t : public paladin_heal_t
+{
+  holy_light_t( paladin_t* player, util::string_view options_str ) : paladin_heal_t("holy_light", player, player->rank.holy_light.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+};
 
 
 void paladin_t::activate()
@@ -247,6 +258,10 @@ action_t* paladin_t::create_action( util::string_view name, util::string_view op
 {
   if ( name == "auto_attack" )
     return new paladin_auto_attack_t( this, options_str );
+
+  // heals
+  if ( name == "holy_light" )
+    return new holy_light_t( this, options_str );
 
   return base_t::create_action( name, options_str );
 }
@@ -286,6 +301,222 @@ double paladin_t::composite_attribute_multiplier( attribute_e attr ) const
 void paladin_t::init_spells()
 {
   base_t::init_spells();
+
+  rank.blessing_of_might = {
+      this,
+      spell_container_t().set_spell( 19740 ),
+      spell_container_t().set_spell( 19834 ),
+      spell_container_t().set_spell( 19835 ),
+      spell_container_t().set_spell( 19836 ),
+      spell_container_t().set_spell( 19837 ),
+      spell_container_t().set_spell( 19838 ),
+      spell_container_t().set_spell( 25291 ),
+  };
+  rank.blessing_of_wisdom = {
+      this,
+      spell_container_t().set_spell( 19742 ),
+      spell_container_t().set_spell( 19850 ),
+      spell_container_t().set_spell( 19852 ),
+      spell_container_t().set_spell( 19853 ),
+      spell_container_t().set_spell( 19854 ),
+      spell_container_t().set_spell( 25290 ),
+  };
+  rank.consecration_cast = {
+      this,
+      spell_container_t().set_spell( 26573 ),
+      spell_container_t().set_spell( 20116 ),
+      spell_container_t().set_spell( 20922 ),
+      spell_container_t().set_spell( 20923 ),
+      spell_container_t().set_spell( 20924 ),
+  };
+  rank.consecration_damage = {
+      this,
+      spell_container_t().set_spell( 1280345 ),
+      spell_container_t().set_spell( 1280346 ),
+      spell_container_t().set_spell( 1280347 ),
+      spell_container_t().set_spell( 1280348 ),
+      spell_container_t().set_spell( 1280349 ),
+  };
+  rank.devotion_aura = {
+      this,
+      spell_container_t().set_spell( 465 ),
+      spell_container_t().set_spell( 10290 ),
+      spell_container_t().set_spell( 643 ),
+      spell_container_t().set_spell( 10291 ),
+      spell_container_t().set_spell( 1032 ),
+      spell_container_t().set_spell( 10292 ),
+      spell_container_t().set_spell( 10293 ),
+  };
+  rank.exorcism = {
+      this,
+      spell_container_t().set_spell( 879 ),
+      spell_container_t().set_spell( 5614 ),
+      spell_container_t().set_spell( 5615 ),
+      spell_container_t().set_spell( 10312 ),
+      spell_container_t().set_spell( 10313 ),
+      spell_container_t().set_spell( 10314 ),
+  };
+  rank.flash_of_light = {
+      this,
+      spell_container_t().set_spell( 19750 ),
+      spell_container_t().set_spell( 19939 ),
+      spell_container_t().set_spell( 19940 ),
+      spell_container_t().set_spell( 19941 ),
+      spell_container_t().set_spell( 19942 ),
+      spell_container_t().set_spell( 19943 ),
+  };
+  rank.hammer_of_justice = {
+      this,
+      spell_container_t().set_spell( 853 ),
+      spell_container_t().set_spell( 5588 ),
+      spell_container_t().set_spell( 5589 ),
+      spell_container_t().set_spell( 10308 ),
+  };
+  rank.hammer_of_wrath = {
+      this,
+      spell_container_t().set_spell( 24275 ),
+      spell_container_t().set_spell( 24274 ),
+      spell_container_t().set_spell( 24239 ),
+  };
+  rank.holy_light = {
+      this,
+      spell_container_t().set_spell( 635 ),
+      spell_container_t().set_spell( 639 ),
+      spell_container_t().set_spell( 647 ),
+      spell_container_t().set_spell( 1026 ),
+      spell_container_t().set_spell( 1042 ),
+      spell_container_t().set_spell( 3472 ),
+      spell_container_t().set_spell( 10328 ),
+      spell_container_t().set_spell( 10329 ),
+      spell_container_t().set_spell( 25292 ),
+  };
+  rank.holy_shield = {
+      this,
+      spell_container_t().set_spell( 20925 ),
+      spell_container_t().set_spell( 20927 ),
+      spell_container_t().set_spell( 20928 ),
+      spell_container_t().set_spell( 1239570 ),
+  };
+  rank.holy_shock_cast = {
+      this,
+      spell_container_t().set_spell( 1311606 ),
+      spell_container_t().set_spell( 20473 ),
+      spell_container_t().set_spell( 20929 ),
+      spell_container_t().set_spell( 20930 ),
+  };
+  rank.holy_shock_damage = {
+      this,
+      spell_container_t().set_spell( 1311604 ),
+      spell_container_t().set_spell( 25912 ),
+      spell_container_t().set_spell( 25911 ),
+      spell_container_t().set_spell( 25902 ),
+  };
+  rank.holy_shock_heal = {
+      this,
+      spell_container_t().set_spell( 1311605 ),
+      spell_container_t().set_spell( 25914 ),
+      spell_container_t().set_spell( 25913 ),
+      spell_container_t().set_spell( 25903 ),
+  };
+  rank.holy_strike = {
+      this,
+      spell_container_t().set_spell( 679 ),
+      spell_container_t().set_spell( 678 ),
+      spell_container_t().set_spell( 1866 ),
+      spell_container_t().set_spell( 680 ),
+      spell_container_t().set_spell( 2495 ),
+      spell_container_t().set_spell( 5569 ),
+      spell_container_t().set_spell( 10332 ),
+      spell_container_t().set_spell( 10333 ),
+  };
+  rank.holy_wrath = {
+      this,
+      spell_container_t().set_spell( 2812 ),
+      spell_container_t().set_spell( 10318 ),
+  };
+  rank.lay_on_hands = {
+      this,
+      spell_container_t().set_spell( 633 ),
+      spell_container_t().set_spell( 2800 ),
+      spell_container_t().set_spell( 10310 ),
+  };
+  rank.lights_vigil_buff = {
+      this,
+      spell_container_t().set_spell( 1310909 ),
+      spell_container_t().set_spell( 1311593 ),
+      spell_container_t().set_spell( 1311597 ),
+  };
+  rank.lights_vigil_cast = {
+      this,
+      spell_container_t().set_spell( 1310911 ),
+      spell_container_t().set_spell( 1311590 ),
+      spell_container_t().set_spell( 1311595 ),
+  };
+  rank.lights_vigil_heal = {
+      this,
+      spell_container_t().set_spell( 1310912 ),
+      spell_container_t().set_spell( 1311591 ),
+      spell_container_t().set_spell( 1311596 ),
+  };
+  rank.retribution_aura = {
+      this,
+      spell_container_t().set_spell( 7294 ),
+      spell_container_t().set_spell( 10298 ),
+      spell_container_t().set_spell( 10299 ),
+      spell_container_t().set_spell( 10300 ),
+      spell_container_t().set_spell( 10301 ),
+  };
+  rank.seal_of_command = {
+      this,
+      spell_container_t().set_spell( 20375 ),
+      spell_container_t().set_spell( 20915 ),
+      spell_container_t().set_spell( 20918 ),
+      spell_container_t().set_spell( 20919 ),
+      spell_container_t().set_spell( 20920 ),
+  };
+  rank.seal_of_fury = {
+      this,
+      spell_container_t().set_spell( 1311649 ),
+      spell_container_t().set_spell( 1311656 ),
+      spell_container_t().set_spell( 20163 ),
+      spell_container_t().set_spell( 20419 ),
+      spell_container_t().set_spell( 20421 ),
+      spell_container_t().set_spell( 20422 ),
+      spell_container_t().set_spell( 20423 ),
+  };
+  rank.seal_of_light = {
+      this,
+      spell_container_t().set_spell( 20165 ),
+      spell_container_t().set_spell( 10298 ),
+      spell_container_t().set_spell( 10299 ),
+      spell_container_t().set_spell( 10300 ),
+  };
+  rank.seal_of_righteousness = {
+      this,
+      spell_container_t().set_spell( 20154 ),
+      spell_container_t().set_spell( 20287 ),
+      spell_container_t().set_spell( 20288 ),
+      spell_container_t().set_spell( 20289 ),
+      spell_container_t().set_spell( 20290 ),
+      spell_container_t().set_spell( 20291 ),
+      spell_container_t().set_spell( 20292 ),
+      spell_container_t().set_spell( 20293 ),
+  };
+  rank.seal_of_the_crusader = {
+      this,
+      spell_container_t().set_spell( 21082 ),
+      spell_container_t().set_spell( 20162 ),
+      spell_container_t().set_spell( 20305 ),
+      spell_container_t().set_spell( 20306 ),
+      spell_container_t().set_spell( 20307 ),
+      spell_container_t().set_spell( 20308 ),
+  };
+  rank.seal_of_wisdom = {
+      this,
+      spell_container_t().set_spell( 20166 ),
+      spell_container_t().set_spell( 20356 ),
+      spell_container_t().set_spell( 20357 ),
+  };
 }
 
   void paladin_t::parse_action_effects( action_t* action )

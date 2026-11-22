@@ -37,6 +37,8 @@ void paladin( player_t* p )
   action_priority_list_t* default_  = p->get_action_priority_list( "default" );
 
   default_->add_action( "auto_attack" );
+
+  default_->add_action( "holy_light" );
 }
 // paladin_apl_end
 }  // namespace paladin_apl
