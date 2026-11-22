@@ -816,6 +816,9 @@ void paladin_t::init_spells()
       spell_container_t().set_spell( 20356 ),
       spell_container_t().set_spell( 20357 ),
   };
+
+  parse_all_class_passives();
+  parse_all_passive_talents();
 }
 
   void paladin_t::parse_action_effects( action_t* action )
