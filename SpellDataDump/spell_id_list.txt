@@ -2432,14 +2432,14 @@ Paladin
 25291    Blessing of Might
 25292    Holy Light
 25713   *Seal of Righteousness
-25735   *Seal of Righteousness
-25736   *Seal of Righteousness
-25737   *Seal of Righteousness
-25738   *Seal of Righteousness
-25739   *Seal of Righteousness
-25740   *Seal of Righteousness
-25741   *Seal of Righteousness
-25742   *Seal of Righteousness
+25735    Seal of Righteousness
+25736    Seal of Righteousness
+25737    Seal of Righteousness
+25738    Seal of Righteousness
+25739    Seal of Righteousness
+25740    Seal of Righteousness
+25741    Seal of Righteousness
+25742    Seal of Righteousness
 25751   *Copy of Judgement of Light
 25752   *Judgement of Light
 25753   *Judgement of Light

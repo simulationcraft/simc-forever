@@ -37,6 +37,7 @@ void paladin( player_t* p )
   action_priority_list_t* default_  = p->get_action_priority_list( "default" );
 
   default_->add_action( "auto_attack" );
+  default_->add_action( "seal_of_righteousness,if=!buff.seal_of_righteousness.up" );
   default_->add_action( "holy_strike" );
   default_->add_action( "hammer_of_justice" );
   default_->add_action( "holy_wrath" );
