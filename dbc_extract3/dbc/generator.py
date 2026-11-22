@@ -1105,6 +1105,23 @@ class SpellDataGenerator(DataGenerator):
             ( 402916, 0),           # Righteous Cause Buff
             ( 1268810, 0),          # Vanguard
             ( 1305230, 0),          # Divine Power
+            # Forever
+            ( 25742, 0 ), # Seal of Righteousness R1
+            ( 25741, 0 ), # Seal of Righteousness R2
+            ( 25740, 0 ), # Seal of Righteousness R3
+            ( 25739, 0 ), # Seal of Righteousness R4
+            ( 25738, 0 ), # Seal of Righteousness R5
+            ( 25737, 0 ), # Seal of Righteousness R6
+            ( 25736, 0 ), # Seal of Righteousness R7
+            ( 25735, 0 ), # Seal of Righteousness R8
+            
+            ( 1311647, 0 ), # Seal of Fury R1
+            ( 1311654, 0 ), # Seal of Fury R2
+            ( 20231, 0 ),   # Seal of Fury R3
+            ( 20415, 0 ),   # Seal of Fury R4
+            ( 20416, 0 ),   # Seal of Fury R5
+            ( 20417, 0 ),   # Seal of Fury R6
+            ( 20418, 0 ),   # Seal of Fury R7
         ),
 
         # Hunter:

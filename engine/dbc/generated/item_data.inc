@@ -15881,7 +15881,7 @@ static const dbc_item_data_t::stats_t __item_stats_data[15878] = {
 
 // Items, ilevel 0-1300, wow build 1.60.1.71037
 
-static const std::array<dbc_item_data_t, 13285> __item_data_chunk0 { {
+static const std::array<dbc_item_data_t, 13286> __item_data_chunk0 { {
   { "Worn Shortsword",     25, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 7, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Bent Staff",     35, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 17, 2, 10, 0, 2900, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Worn Mace",     36, 0x00000000, 0x00006000, 0x00, 2, 1, 0, 0, 1, 21, 2, 4, 0, 1900, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
@@ -20459,6 +20459,7 @@ static const std::array<dbc_item_data_t, 13285> __item_data_chunk0 { {
   { "Monster - Staff, Jeweled D01 Green",  11588, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 17, 2, 10, 0, 2000, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monster - Shield, Orange Skull",  11589, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 14, 4, 6, 0, 2000, 0.000000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Monster - Sword2H, Battlefield Destroyer",  11591, 0x00000000, 0x00006004, 0x00, 1, 1, 0, 0, 0, 13, 2, 8, 0, 2000, 0.400000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
+  { "Vilerend Slicer",  11603, 0x00000000, 0x00004004, 0x00, 51, 46, 0, 0, 3, 21, 2, 13, 2, 1400, 0.600000f, 0.000000f, 0, 0, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Dark Iron Plate",  11604, 0x00000000, 0x00006004, 0x00, 59, 54, 0, 0, 3, 5, 4, 4, 1, 0, 0.000000f, 200.000000f, &__item_stats_data[2709], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Dark Iron Shoulders",  11605, 0x00000000, 0x00006004, 0x00, 58, 53, 0, 0, 2, 3, 4, 4, 2, 0, 0.000000f, 100.000000f, &__item_stats_data[2712], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },
   { "Dark Iron Mail",  11606, 0x00000000, 0x00006004, 0x00, 56, 51, 0, 0, 2, 5, 4, 3, 2, 0, 0.000000f, 130.000000f, &__item_stats_data[2715], 3, 0xffff, 0xffffffffffffffff, { 0, 0, 0 }, 0, 0, 0, 0, 0, 0 },

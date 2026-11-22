@@ -1,5 +1,5 @@
 // Spell text, wow build 1.60.1.71037
-static constexpr std::array<spelltext_data_t, 8746> __spelltext_data { {
+static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
   {      17, "Draws on the soul of the party member to shield them, absorbing $?a14748[${$s1*(1+$14748s1/100)}][$s1] damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.", "Absorbs $w1 damage.", "Rank 1" },
@@ -4727,6 +4727,14 @@ static constexpr std::array<spelltext_data_t, 8746> __spelltext_data { {
   {   25719, "Combine with Draconic For Dummies Chapters 1 - 8 to create Draconic for Dummies: Volume II.", 0, 0 },
   {   25720, "Places the Bag of Gold at the designated Drop-Off Point.", 0, 0 },
   {   25722, "Increases Stamina by $s1 for $d and gets you drunk to boot!", "Stamina increased by $s1.", 0 },
+  {   25735, 0, 0, "Rank 7" },
+  {   25736, 0, 0, "Rank 6" },
+  {   25737, 0, 0, "Rank 5" },
+  {   25738, 0, 0, "Rank 4" },
+  {   25739, 0, 0, "Rank 3" },
+  {   25740, 0, 0, "Rank 2" },
+  {   25741, 0, 0, "Rank 1.5" },
+  {   25742, 0, 0, "Rank 1" },
   {   25746, "Absorbs $s1 physical damage.  Lasts $d.", "Absorbs $s1 physical damage.", 0 },
   {   25747, "Absorbs $s1 physical damage.  Lasts $d.", "Absorbs $s1 physical damage.", 0 },
   {   25750, "Absorbs $s1 physical damage.  Lasts $d.", "Absorbs $s1 physical damage.", 0 },
@@ -8614,6 +8622,7 @@ static constexpr std::array<spelltext_data_t, 8746> __spelltext_data { {
   { 1320643, "Water breathing lasts $s1% longer than normal.", "Water breathing.", 0 },
   { 1320658, "Open a silithid hive, unleashing the swarm.", 0, 0 },
   { 1320758, "Right Click to summon and dismiss Spawn of Grubthor.", 0, 0 },
+  { 1320808, "Wounds the target for $s1 damage.", 0, 0 },
   { 1320824, "Wounds the target, causing them to bleed for $o1 damage over $d.", "Bleeding for $s1 damage every $t1 sec.", 0 },
   { 1320864, "The spear must be reforged before it can be used. Reforging the spear requires 40 Mithril Bars, 10 Truesilver Bars, 8 Aquamarine, 4 Solid Grinding Stone, and 2 Elemental Fire.", 0, 0 },
   { 1320898, "Throw into an Unstable Mana Rift.", 0, 0 },
