@@ -74,14 +74,7 @@ struct druid_t final : public parse_player_effects_t
     player_talent_t natures_grace;
     player_talent_t eclipse;
     player_talent_t moonkin_form;
-
-    // feral
-
-    // Furor
-    // Predatory Strikes
-    // Predatory Discipline
-    // Sharpened Claws
-
+    player_talent_t predatory_strikes;
   } talent;
 
   struct buffs_t
@@ -202,7 +195,9 @@ void druid_t::init_base_stats()
 {
 
   base.attack_power_per_strength = 2.0;
-  base.stats.attack_power        = -20.0;
+  base.stats.attack_power        = get_passive_player_value( -20.0, "attack_power" );
+  base.attack_crit_chance = get_passive_player_value( .0074, "attack_crit" );
+  base.spell_crit_chance  = get_passive_player_value( .018, "spell_crit" );
 
   parse_player_effects_t::init_base_stats();
 
@@ -214,15 +209,19 @@ void druid_t::init_spells()
 {
   parse_player_effects_t::init_spells();
 
-  parse_all_class_passives();
-  parse_all_passive_talents();
-
   talent.improved_entangling_roots = find_talent_spell( talent_tree::CLASS, "Improved Entangling Roots" );
   talent.insect_swarm              = find_talent_spell( talent_tree::CLASS, "Insect Swarm" );
   talent.overgrowth                = find_talent_spell( talent_tree::CLASS, "Overgrowth" );
   talent.natures_grace             = find_talent_spell( talent_tree::CLASS, "Nature's Grace" );
   talent.eclipse                   = find_talent_spell( talent_tree::CLASS, "Eclipse" );
   talent.moonkin_form              = find_talent_spell( talent_tree::CLASS, "Moonkin Form" );
+  talent.predatory_strikes         = find_talent_spell( talent_tree::CLASS, "Predatory Strikes" );
+
+      register_passive_effect_override( talent.predatory_strikes->effectN( 2 ),
+                                    talent.predatory_strikes->effectN( 1 ).base_value() / 100 * true_level );
+
+  parse_all_class_passives();
+  parse_all_passive_talents();
 
   if ( talent.moonkin_form->ok() )
   {
