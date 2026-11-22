@@ -426,7 +426,7 @@ void rogue_t::init_spells()
   talent.vile_poisons            = find_talent_spell( talent_tree::CLASS, "Vile Poisons" );
   talent.cold_blood              = find_talent_spell( talent_tree::CLASS, "Cold Blood" );
   talent.improved_poisons        = find_talent_spell( talent_tree::CLASS, "Improved Poisons" );
-  talent.relentless_strikes      = find_talent_spell( talent_tree::CLASS, "Relentles Strikes" );
+  talent.relentless_strikes      = find_talent_spell( talent_tree::CLASS, "Relentless Strikes" );
   talent.venom                   = find_talent_spell( talent_tree::CLASS, "Venom" );
   talent.improved_kidney_shot    = find_talent_spell( talent_tree::CLASS, "Improved Kidney Shot" );
   talent.seal_fate               = find_talent_spell( talent_tree::CLASS, "Seal Fate" );
