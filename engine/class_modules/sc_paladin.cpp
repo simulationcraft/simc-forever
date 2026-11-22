@@ -167,6 +167,7 @@ public:
 };
 
 using paladin_attack_t = paladin_action_t<melee_attack_t>;
+using paladin_heal_t = paladin_action_t<heal_t>;
 using paladin_spell_t  = paladin_action_t<spell_t>;
 
 struct paladin_melee_t : public paladin_attack_t
@@ -224,6 +225,13 @@ struct paladin_auto_attack_t : public paladin_attack_t
   }
 };
 
+struct holy_light_t : public paladin_heal_t
+{
+  holy_light_t( paladin_t* player, util::string_view options_str ) : paladin_heal_t("holy_light", player, player->rank.holy_light.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+};
 
 
 void paladin_t::activate()
@@ -250,6 +258,10 @@ action_t* paladin_t::create_action( util::string_view name, util::string_view op
 {
   if ( name == "auto_attack" )
     return new paladin_auto_attack_t( this, options_str );
+
+  // heals
+  if ( name == "holy_light" )
+    return new holy_light_t( this, options_str );
 
   return base_t::create_action( name, options_str );
 }
