@@ -14148,7 +14148,8 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MOD_HIT_CHANCE,                         "hit"                              },  // 54
   { A_MOD_SPELL_HIT_CHANCE,                   "spell_hit"                        },  // 55
   { A_MOD_PERCENT_STAT,                       "base_attribute_multiplier"        },  // 80
-  { A_RESTORE_POWER,                          "resource_regen"                   },  // 85
+  { A_RESTORE_POWER,                          "resource_regen"                   },  // 85  
+  { A_MOD_ATTACK_POWER,                       "attack_power"                     },  // 99
   { A_MOD_RESISTANCE_PCT,                     "armor_multiplier"                 },  // 101
   { A_MOD_POWER_REGEN_PERCENT,                "resource_regen_multiplier"        },  // 110
   { A_MOD_HEALING_RECEIVED_PCT,               "healing_received_multiplier"      },  // 118
@@ -14467,6 +14468,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
     {
       // special handling
       case A_MOD_STAT:  // 29
+      case A_MOD_ATTACK_POWER: // 99
       case A_MOD_ARMOR: // 674
         // parse scaling value if necessary
         flat_val = modifying_eff.average( this );
