@@ -37,8 +37,11 @@ void paladin( player_t* p )
   action_priority_list_t* default_  = p->get_action_priority_list( "default" );
 
   default_->add_action( "auto_attack" );
+  default_->add_action( "hammer_of_justice" );
+  default_->add_action( "holy_wrath" );
+  default_->add_action( "exorcism" );
 
-  default_->add_action( "holy_light" );
+  default_->add_action( "holy_light,if=target.health.deficit>=crit_heal" );
 }
 // paladin_apl_end
 }  // namespace paladin_apl

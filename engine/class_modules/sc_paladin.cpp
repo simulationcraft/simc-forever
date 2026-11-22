@@ -164,6 +164,13 @@ public:
   {
     return debug_cast<const paladin_t*>( this->player );
   }
+
+  static target_filter_callback_t undead_and_demons_only()
+  {
+    return [ & ]( const action_t* action, player_t* target ) {
+      return target->race == RACE_UNDEAD || target->race == RACE_DEMON;
+    };
+  }
 };
 
 using paladin_attack_t = paladin_action_t<melee_attack_t>;
@@ -225,6 +232,63 @@ struct paladin_auto_attack_t : public paladin_attack_t
   }
 };
 
+
+struct exorcism_t : public paladin_spell_t
+{
+  exorcism_t( paladin_t* player, util::string_view options_str )
+    : paladin_spell_t( "exorcism", player, player->rank.exorcism.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    target_filter_callback = undead_and_demons_only();
+  }
+};
+
+struct holy_wrath_t : public paladin_spell_t
+{
+  timespan_t stun_duration;
+  holy_wrath_t( paladin_t* player, util::string_view options_str )
+    : paladin_spell_t( "holy_wrath", player, player->rank.holy_wrath.find_rank()->spell() ),
+      stun_duration( player->find_spell( 429147 )->duration() )
+  {
+    parse_options( options_str );
+
+    aoe = -1;
+
+    target_filter_callback = undead_and_demons_only();
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    base_t::impact( s );
+
+    if ( result_is_hit( s->result ) )
+    {
+      s->target->buffs.stunned->trigger( stun_duration );
+      s->target->stun();
+    }
+  }
+};
+
+struct hammer_of_justice_t : public paladin_spell_t
+{
+  hammer_of_justice_t( paladin_t* player, util::string_view options_str )
+    : paladin_spell_t( "hammer_of_justice", player, player->rank.hammer_of_justice.find_rank()->spell() )
+  {
+    parse_options( options_str );
+  }
+
+  void impact( action_state_t* s ) override
+  {
+    base_t::impact( s );
+    if ( result_is_hit( s->result ) )
+    {
+      s->target->buffs.stunned->trigger( data().duration() );
+      s->target->stun();
+    }
+  }
+};
+
 struct holy_light_t : public paladin_heal_t
 {
   holy_light_t( paladin_t* player, util::string_view options_str ) : paladin_heal_t("holy_light", player, player->rank.holy_light.find_rank()->spell() )
@@ -258,6 +322,15 @@ action_t* paladin_t::create_action( util::string_view name, util::string_view op
 {
   if ( name == "auto_attack" )
     return new paladin_auto_attack_t( this, options_str );
+
+  if ( name == "exorcism" )
+    return new exorcism_t( this, options_str );
+  if ( name == "holy_wrath" )
+    return new holy_wrath_t( this, options_str );
+
+  // utility
+  if ( name == "hammer_of_justice" )
+    return new hammer_of_justice_t( this, options_str );
 
   // heals
   if ( name == "holy_light" )
