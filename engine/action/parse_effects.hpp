@@ -695,6 +695,7 @@ struct parse_player_effects_t : public player_t, public parse_effects_t
   std::vector<player_effect_t> block_effects;
   std::vector<player_effect_t> base_armor_multiplier_effects;
   std::vector<player_effect_t> armor_multiplier_effects;
+  std::vector<player_effect_t> base_armor_effects;
   std::vector<player_effect_t> haste_effects;
   std::vector<player_effect_t> melee_haste_effects;
   std::vector<player_effect_t> spell_haste_effects;
@@ -735,6 +736,7 @@ struct parse_player_effects_t : public player_t, public parse_effects_t
   double composite_crit_avoidance() const override;
   double composite_parry() const override;
   double composite_block() const override;
+  double composite_base_armor() const override;
   double composite_base_armor_multiplier() const override;
   double composite_armor_multiplier() const override;
   double composite_melee_haste() const override;

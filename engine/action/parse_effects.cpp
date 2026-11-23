@@ -959,6 +959,16 @@ double parse_player_effects_t::composite_block() const
   return block;
 }
 
+double parse_player_effects_t::composite_base_armor() const
+{
+  auto ba = player_t::composite_base_armor();
+
+  for ( const auto& i : base_armor_effects )
+    ba += get_effect_value( i );
+
+  return ba;
+}
+
 double parse_player_effects_t::composite_base_armor_multiplier() const
 {
   auto bam = player_t::composite_base_armor_multiplier();
@@ -1179,7 +1189,7 @@ bool parse_player_effects_t::is_valid_aura( const spelleffect_data_t& eff ) cons
 
 std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const spelleffect_data_t& eff,
                                                                          player_effect_t& tmp, double& val_mul,
-                                                                         std::string& str, bool& /* flat */,
+                                                                         std::string& str, bool& flat,
                                                                          bool /* force */,
                                                                          const pack_t<player_effect_t>& /* pack */ )
 {
@@ -1312,6 +1322,13 @@ std::vector<player_effect_t>* parse_player_effects_t::get_effect_vector( const s
         return &armor_multiplier_effects;
       }
       return nullptr;
+
+    case A_MOD_ARMOR:
+      str = "base armor";
+      flat = true;
+      val_mul = 1.0;
+      invalidate( CACHE_ARMOR );
+      return &base_armor_effects;
 
     case A_MOD_PARRY_FROM_CRIT_RATING:
       str = "parry rating|of crit rating";
@@ -1515,6 +1532,7 @@ void parse_player_effects_t::print_custom_parsed_effects( report::sc_html_stream
     print_parsed_type( os, target_multiplier_effects, "Target Multiplier", &opt_strings::school );
     print_parsed_type( os, target_pet_multiplier_effects, "Target Pet Multiplier", &opt_strings::pet_type );
     print_parsed_type( os, block_effects, "Block" );
+    print_parsed_type( os, base_armor_effects, "Base Armor" );
     print_parsed_custom_type( os );
 
     os << "</table>\n";
@@ -1556,7 +1574,8 @@ size_t parse_player_effects_t::total_effects_count() const
          stacking_movement_effects.size() +
          mana_regen_while_casting_effects.size() +
          resource_regen_multiplier_effects.size() +
-         block_effects.size();
+         block_effects.size() +
+         base_armor_effects.size();
 }
 
 void parse_action_base_t::parse_callback_function( pack_t<player_effect_t>& pack, parse_cb_t cb )
