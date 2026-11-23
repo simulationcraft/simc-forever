@@ -207,7 +207,7 @@ struct player_t : public actor_t
     double dodge_per_agility, parry_per_strength, parry_rating_per_crit_rating;
     double attack_crit_per_agility, spell_crit_per_intellect;
     double health_per_stamina;
-    double armor_per_agility;
+    double armor_per_agility, block_per_strength;
     std::array<double, SCHOOL_MAX> resource_reduction;
     double miss, dodge, parry, block;
     double hit, spell_hit, expertise, leech, avoidance, crit_avoidance;

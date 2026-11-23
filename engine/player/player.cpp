@@ -1258,6 +1258,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   spell_crit_per_intellect( 0 ),
   health_per_stamina( 0 ),
   armor_per_agility( 0 ),
+  block_per_strength( 0 ),
   resource_reduction(),
   miss( 0 ),
   dodge( 0 ),
@@ -1336,6 +1337,7 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
   fmt::format_to( out, " spell_crit_per_intellect={:.6g}", s.spell_crit_per_intellect );
   fmt::format_to( out, " health_per_stamina={:.6g}", s.health_per_stamina );
   fmt::format_to( out, " armor_per_agility={:.6g}", s.armor_per_agility );
+  fmt::format_to( out, " block_per_strength={:.6g}", s.block_per_strength );
   // resource_reduction
   fmt::format_to( out, " miss={:.6g}", s.miss );
   fmt::format_to( out, " dodge={:.6g}", s.dodge );
@@ -1630,6 +1632,8 @@ void player_t::init_base_stats()
     base.health_per_stamina = dbc->health_per_stamina( level() );
     // TODO: Pull this from DBC if possible, but it's hardcoded in the UI, so might not be in DBC
     base.armor_per_agility = 2;
+    // TODO: Pull this from DBC if possible, but it's hardcoded in the UI, so might not be in DBC
+    base.block_per_strength = 20;
 
     // Forever: no base line hit or expertise
     base.hit       = 0.0;
@@ -4791,6 +4795,10 @@ double player_t::composite_block_dr( double extra_block ) const
 {
   // Start with sources not subject to DR - base block (stored in current.block)
   double total_block = current.block;
+  if ( current.block_per_strength > 0 )
+  {
+    total_block += util::floor( cache.strength() / current.block_per_strength );
+  }
 
   // bonus_block is block from rating or other sources subject to DR (passed from class module via extra_block)
   double bonus_block = composite_block_rating() / current.rating.block;
