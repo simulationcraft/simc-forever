@@ -75,6 +75,7 @@ public:
   void init_spells() override;
   void create_buffs() override;
   void parse_action_effects( action_t* );
+  block_result_e target_block_resolution( const action_state_t* ) const override;
 
   void init_special_effects() override;
   void create_actions() override;
@@ -1093,6 +1094,25 @@ void paladin_t::init_spells()
 {
   auto _a = dynamic_cast<parse_action_base_t*>( action );
   assert( _a );
+}
+
+// TODO: Verify
+// This is mostly yoinked from Warrior in the Midnight branch of simc
+block_result_e paladin_t::target_block_resolution( const action_state_t* s ) const
+{
+  // Only direct physical attacks may be blocked
+  if ( s->result_type == result_amount_type::DMG_DIRECT && s->action->get_school() == SCHOOL_PHYSICAL &&
+       s->action->type == ACTION_ATTACK )
+  {
+    auto block_chance = cache.block();
+
+    if ( rng().roll( block_chance ) )
+    {
+      return block_result_e::BLOCK_RESULT_BLOCKED;
+    }
+  }
+
+  return block_result_e::BLOCK_RESULT_UNBLOCKED;
 }
 
 paladin_td_t* paladin_t::get_target_data( player_t* target ) const
