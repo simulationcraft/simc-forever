@@ -109,6 +109,7 @@ public:
 
   struct buffs_t
   {
+    buff_t* devotion_aura;
     std::array<std::vector<buff_t*>, SEAL_MAX> seal_buffs;
     std::array<buff_t*, SEAL_MAX> seal_expression_buffs;
   } buff;
@@ -276,7 +277,7 @@ public:
   {
     return debug_cast<paladin_t*>( this->player );
   }
-  
+
   const paladin_t* p() const
   {
     return debug_cast<const paladin_t*>( this->player );
@@ -615,6 +616,24 @@ struct seal_of_fury_t : public paladin_seal_t
   }
 };
 
+struct devotion_aura_t : public paladin_spell_t
+{
+  devotion_aura_t( paladin_t* player, util::string_view options_str ) : paladin_spell_t( "devotion_aura", player, player->rank.devotion_aura.find_rank()->spell() )
+  {
+    parse_options( options_str );
+    harmful = false;
+    set_target( player );
+  }
+
+  void execute() override
+  {
+    paladin_spell_t::execute();
+
+    // TODO: Disable other auras
+    p()->buff.devotion_aura->trigger();
+  }
+};
+
 void paladin_t::activate()
 {
   base_t::activate();
@@ -656,11 +675,15 @@ action_t* paladin_t::create_action( util::string_view name, util::string_view op
     return new exorcism_t( this, options_str );
   if ( name == "holy_wrath" )
     return new holy_wrath_t( this, options_str );
-    
+
   if ( name == "seal_of_righteousness" )
     return new seal_of_righteousness_t( this, options_str );
   if ( name == "seal_of_fury" )
     return new seal_of_fury_t( this, options_str );
+
+  // auras
+  if ( name == "devotion_aura" )
+    return new devotion_aura_t( this, options_str );
 
   // utility
   if ( name == "hammer_of_justice" )
@@ -689,6 +712,10 @@ void paladin_t::create_buffs()
       make_buff( this, "seal_of_wisdom", rank.seal_of_wisdom.find_rank()->spell() );
   buff.seal_expression_buffs[ SEAL_OF_THE_CRUSADER ] =
       make_buff( this, "seal_of_the_crusader", rank.seal_of_the_crusader.find_rank()->spell() );
+
+  buff.devotion_aura = make_buff( this, "devotion_aura", rank.devotion_aura.find_rank()->spell() );
+
+  parse_effects( buff.devotion_aura );
 }
 
 void paladin_t::create_actions()
