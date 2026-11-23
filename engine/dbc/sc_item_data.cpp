@@ -781,11 +781,13 @@ int item_database::random_suffix_type( const dbc_item_data_t& item )
         case ITEM_SUBCLASS_WEAPON_POLEARM:
         case ITEM_SUBCLASS_WEAPON_SWORD2:
         case ITEM_SUBCLASS_WEAPON_STAFF:
+          return 0;
         case ITEM_SUBCLASS_WEAPON_GUN:
         case ITEM_SUBCLASS_WEAPON_BOW:
         case ITEM_SUBCLASS_WEAPON_CROSSBOW:
         case ITEM_SUBCLASS_WEAPON_THROWN:
-          return 0;
+        case ITEM_SUBCLASS_WEAPON_WAND:
+          return 4;
         default:
           return 3;
       }
@@ -809,11 +811,11 @@ int item_database::random_suffix_type( const dbc_item_data_t& item )
         case INVTYPE_FINGER:
         case INVTYPE_CLOAK:
         case INVTYPE_WRISTS:
+        case INVTYPE_HOLDABLE:
+        case INVTYPE_SHIELD:
           return 2;
 
         case INVTYPE_WEAPONOFFHAND:
-        case INVTYPE_HOLDABLE:
-        case INVTYPE_SHIELD:
           return 3;
 
         default:
@@ -837,11 +839,15 @@ int item_database::random_suffix_type( item_t& item )
       case WEAPON_POLEARM:
       case WEAPON_SWORD_2H:
       case WEAPON_STAFF:
+        return 0;
+
+      // Ranged slot weapons use the fifth point allocation budget
       case WEAPON_BOW:
       case WEAPON_CROSSBOW:
       case WEAPON_GUN:
       case WEAPON_THROWN:
-        return 0;
+      case WEAPON_WAND:
+        return 4;
 
       // One-hand/Off-hand/Main-hand weapons use the fourth point allocation budget
       default:
@@ -870,10 +876,8 @@ int item_database::random_suffix_type( item_t& item )
     case SLOT_FINGER_1:
     case SLOT_FINGER_2:
     case SLOT_BACK:
-      return 2;
-
     case SLOT_OFF_HAND: // Shields, off hand items
-      return 3;
+      return 2;
 
     default:
       return -1;
