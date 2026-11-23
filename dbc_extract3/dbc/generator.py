@@ -1122,6 +1122,7 @@ class SpellDataGenerator(DataGenerator):
             ( 20416, 0 ),   # Seal of Fury R5
             ( 20417, 0 ),   # Seal of Fury R6
             ( 20418, 0 ),   # Seal of Fury R7
+            ( 1310927, 0 ), # Seal of Fury absorb
         ),
 
         # Hunter:

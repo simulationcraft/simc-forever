@@ -2729,7 +2729,7 @@ Paladin
 1310911  Light's Vigil
 1310912  Light's Vigil
 1310914 *Light's Vigil
-1310927 *Light's Fury
+1310927  Light's Fury
 1310994  Swift Judgement
 1311015  Templar's Bulwark
 1311033  Iron Creed

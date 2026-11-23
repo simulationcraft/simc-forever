@@ -153539,6 +153539,20 @@ Effects          :
 Description      : Restores $m1% of your maximum Mana when you Block.
 Tooltip          : Restoring $m1% of maximum Mana.
 
+Name             : Light's Fury (id=1310927) [Spell Family (10)] 
+Class            : Paladin
+School           : Holy
+Spell Type       : Magic
+Duration         : 10 seconds
+Requires armor   : Shield 
+Attributes       : Do Not Sheath (18), Aura Never Bounces (148), Aura Points On Client (268), Unknown (493)
+Effects          :
+#1 (id=1340833)  : Apply Aura (6) | Absorb Damage (69)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 0x7f | Target: Self (1)
+                   Affected School(s): All
+Description      : Absorbs $s1 damage.
+Tooltip          : Absorbs $w1 damage.
+
 Name             : Malevolence (id=1310949) [Spell Family (5), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=4, col=1, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(1, 2, 3, 4, 5)]
@@ -156573,17 +156587,6 @@ Effects          :
 #1 (id=1355571)  : Summon Guardian (28)
                    Base Value: 1 | Scaled Value: 1 | Value Multiplier: 1000 | Misc Value: 276331 | Misc Value 2: 41 | Target: Summoner in Area (32)
 Description      : Right Click to summon and dismiss Spawn of Grubthor.
-
-Name             : Wound (id=1320808) 
-School           : Physical
-Spell Type       : Melee
-Spell Level      : 50
-Range            : 5 yards
-Attributes       : Is Ability (4), Unknown (493)
-Effects          :
-#1 (id=1355656)  : School Damage (2): physical
-                   Base Value: 225 | Scaled Value: 225 | Target: Targeted Enemy (6)
-Description      : Wounds the target for $s1 damage.
 
 Name             : Rend (id=1320824) 
 School           : Physical
