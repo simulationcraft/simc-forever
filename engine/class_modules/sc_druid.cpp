@@ -75,6 +75,7 @@ struct druid_t final : public parse_player_effects_t
     player_talent_t eclipse;
     player_talent_t moonkin_form;
     player_talent_t predatory_strikes;
+    player_talent_t blood_frenzy;
   } talent;
 
   struct buffs_t
@@ -193,13 +194,10 @@ void druid_t::reset()
 
 void druid_t::init_base_stats()
 {
+  parse_player_effects_t::init_base_stats();
 
   base.attack_power_per_strength = 2.0;
   base.stats.attack_power        = get_passive_player_value( -20.0, "attack_power" );
-  base.attack_crit_chance = get_passive_player_value( .0074, "attack_crit" );
-  base.spell_crit_chance  = get_passive_player_value( .018, "spell_crit" );
-
-  parse_player_effects_t::init_base_stats();
 
   base.attack_crit_chance = get_passive_player_value( .009, "attack_crit" );
   base.spell_crit_chance  = get_passive_player_value( .018, "spell_crit" );
@@ -216,8 +214,9 @@ void druid_t::init_spells()
   talent.eclipse                   = find_talent_spell( talent_tree::CLASS, "Eclipse" );
   talent.moonkin_form              = find_talent_spell( talent_tree::CLASS, "Moonkin Form" );
   talent.predatory_strikes         = find_talent_spell( talent_tree::CLASS, "Predatory Strikes" );
+  talent.blood_frenzy              = find_talent_spell( talent_tree::CLASS, "Blood Frenzy" );
 
-      register_passive_effect_override( talent.predatory_strikes->effectN( 2 ),
+  register_passive_effect_override( talent.predatory_strikes->effectN( 2 ),
                                     talent.predatory_strikes->effectN( 1 ).base_value() / 100 * true_level );
 
   parse_all_class_passives();
@@ -475,16 +474,22 @@ struct druid_action_t : public parse_action_effects_t<Base>
     }
   }
 
+  double composite_energize_amount( const action_state_t* s ) const override
+  {
+    auto amt = action_base_t::composite_energize_amount( s );
+    if ( this->energize_resource_() == resource_e::RESOURCE_COMBO_POINT && s->result == RESULT_CRIT )    
+      amt += 1;    
+
+    return amt;
+  }
+
   void impact( action_state_t* s ) override
   {
     action_base_t::impact( s );
 
     // Nature's Grace: non-periodic spell criticals. impact() is only the direct component, ticks go through tick()
-    if constexpr ( std::is_base_of_v<spell_t, Base> )
-    {
-      if ( s->result == RESULT_CRIT && this->spell_power_mod.direct > 0 )
+    if ( std::is_base_of_v<spell_t, Base> && s->result == RESULT_CRIT )
         this->p()->buff.natures_grace->trigger();
-    }
   }
 };
 
@@ -614,7 +619,7 @@ struct moonkin_form_t : public druid_form_t
 };
 
 // Flags the druid as stealthed so openers can be modeled from stealth. Only castable out of combat in cat form.
-// TODO: stealth level (effect 1), movement speed reduction (effect 2), Feral Instinct, and the 10s cooldown starting on
+// TODO: stealth level (effect 1), Feral Instinct, and the 10s cooldown starting on
 // stealth break instead of on cast
 struct prowl_t : public druid_spell_t
 {
