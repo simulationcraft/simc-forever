@@ -909,6 +909,7 @@ public:
   virtual double composite_corruption_resistance() const;
   virtual double composite_total_corruption() const;
   virtual double composite_armor() const;
+  virtual double composite_base_armor() const;
   virtual double composite_bonus_armor() const;
   virtual double composite_base_armor_multiplier() const; // Modify Base Besistance
   virtual double composite_armor_multiplier() const; // Modify Armor%, affects everything

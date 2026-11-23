@@ -4718,9 +4718,7 @@ double player_t::composite_melee_hit() const
 
 double player_t::composite_armor() const
 {
-  double a = current.stats.armor;
-
-  a += cache.agility() * current.armor_per_agility;
+  double a = composite_base_armor();
 
   a *= composite_base_armor_multiplier();
 
@@ -4731,6 +4729,11 @@ double player_t::composite_armor() const
   a *= composite_armor_multiplier();
 
   return a;
+}
+
+double player_t::composite_base_armor() const
+{
+  return current.stats.armor + cache.agility() * current.armor_per_agility;
 }
 
 double player_t::composite_base_armor_multiplier() const
