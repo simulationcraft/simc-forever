@@ -19,6 +19,20 @@ namespace paladin
 {
 struct paladin_t;
 
+// Order does not mean anything, just convenience.
+enum paladin_seal_e
+{
+  SEAL_NONE = 0,
+  SEAL_OF_RIGHTEOUSNESS,
+  SEAL_OF_THE_CRUSADER,
+  SEAL_OF_COMMAND,
+  SEAL_OF_FURY,
+  SEAL_OF_LIGHT,
+  SEAL_OF_WISDOM,
+  SEAL_OF_JUSTICE,
+  SEAL_MAX
+};
+
 struct paladin_td_t final : public actor_target_data_t
 {
   struct debuffs_t
@@ -65,6 +79,7 @@ public:
   void init_special_effects() override;
   void create_actions() override;
   void activate() override;
+  void reset() override;
 
   double composite_attribute_multiplier( attribute_e ) const override;
 
@@ -87,9 +102,15 @@ public:
   action_t* create_action( util::string_view name, util::string_view options_str ) override;
   void init_action_list() override;
 
+  action_t* current_seal_judgement;
+  buff_t* current_seal_buff;
+  paladin_seal_e current_seal;
+  paladin_seal_e previous_seal;
+
   struct buffs_t
   {
-    std::vector<buff_t*> seals;
+    std::array<std::vector<buff_t*>, SEAL_MAX> seal_buffs;
+    std::array<buff_t*, SEAL_MAX> seal_expression_buffs;
   } buff;
 
   struct talents_t
@@ -221,11 +242,13 @@ public:
     spell_ranks_t retribution_aura;
     spell_ranks_t seal_of_command;
     spell_ranks_t seal_of_fury;
+    spell_ranks_t seal_of_fury_damage;
     spell_ranks_t seal_of_light;
     spell_ranks_t seal_of_righteousness;
     spell_ranks_t seal_of_righteousness_damage;
     spell_ranks_t seal_of_the_crusader;
     spell_ranks_t seal_of_wisdom;
+    spell_ranks_t seal_of_justice;
   } rank;
 
 private:
@@ -242,8 +265,10 @@ private:
 public:
   using base_t = paladin_action_t<Base>;
 
+
   template <typename... Args>
-  paladin_action_t( Args&&... args ) : ab( std::forward<Args>( args )... )
+  paladin_action_t( Args&&... args )
+    : ab( std::forward<Args>( args )... )
   {
   }
 
@@ -251,7 +276,7 @@ public:
   {
     return debug_cast<paladin_t*>( this->player );
   }
-
+  
   const paladin_t* p() const
   {
     return debug_cast<const paladin_t*>( this->player );
@@ -340,7 +365,7 @@ struct exorcism_t : public paladin_spell_t
     target_filter_callback = undead_and_demons_only();
   }
 
-  bool target_ready(player_t* t)
+  bool target_ready( player_t* t )
   {
     if ( !is_undead_or_demon( t ) )
       return false;
@@ -433,9 +458,10 @@ struct holy_strike_t : public paladin_attack_t
 struct paladin_seal_t : public paladin_spell_t
 {
   buff_t* seal_buff;
+  paladin_seal_e seal_type;
 
-  paladin_seal_t( paladin_t* player, util::string_view name, spell_ranks_t rank )
-    : paladin_spell_t( name, player, rank.find_rank()->spell() )
+  paladin_seal_t( paladin_t* player, util::string_view name, spell_ranks_t rank, paladin_seal_e seal_type )
+    : paladin_spell_t( name, player, rank.find_rank()->spell() ), seal_type( seal_type )
   {
   }
 
@@ -447,18 +473,35 @@ struct paladin_seal_t : public paladin_spell_t
     base_t::init();
 
     create_buff();
-
-    if ( seal_buff )
-      p()->buff.seals.push_back( seal_buff );
   }
 
   virtual void initialize_procs()
   {
   }
 
-  virtual void create_buff()
+  void create_buff()
   {
-    seal_buff = make_buff( p(), name_str, &data() );
+    std::string buff_name = util::tokenize_fn( name_str + "_" + p()->dbc->spell_text( data().id() ).rank() );
+
+    if ( auto found_buff = buff_t::find( p(), buff_name, p() ) )
+    {
+      seal_buff = found_buff;
+      return;
+    }
+
+    seal_buff = make_buff( p(), buff_name, &data() );
+    p()->buff.seal_buffs[ seal_type ].push_back( seal_buff );
+
+    seal_buff->add_stack_change_callback( [ this ]( buff_t* b, int old, int _new ) {
+      if ( _new )
+      {
+        p()->buff.seal_expression_buffs[ seal_type ]->trigger( 1, b->buff_duration() );
+      }
+      else
+      {
+        p()->buff.seal_expression_buffs[ seal_type ]->expire();
+      }
+    } );
     
     initialize_procs();
   }
@@ -467,11 +510,23 @@ struct paladin_seal_t : public paladin_spell_t
   {
     paladin_spell_t::execute();
 
-    for ( auto& seal : p()->buff.seals )
-      seal->expire();
+    if ( seal_type != p()->current_seal )
+    {
+      p()->previous_seal = p()->current_seal;
+      p()->current_seal  = seal_type;
+
+      if ( p()->current_seal_buff )
+      {
+        p()->current_seal_buff->expire();
+        p()->current_seal_buff = nullptr;
+      }
+    }
 
     if ( seal_buff )
+    {
       seal_buff->trigger();
+      p()->current_seal_buff = seal_buff;
+    }
   }
 };
 
@@ -499,7 +554,7 @@ struct seal_of_righteousness_t : public paladin_seal_t
 
   action_t* damage_action;
   seal_of_righteousness_t( paladin_t* player, util::string_view options_str )
-    : paladin_seal_t( player, "seal_of_righteousness", player->rank.seal_of_righteousness )
+    : paladin_seal_t( player, "seal_of_righteousness", player->rank.seal_of_righteousness, SEAL_OF_RIGHTEOUSNESS )
   {
     parse_options( options_str );
 
@@ -509,10 +564,6 @@ struct seal_of_righteousness_t : public paladin_seal_t
 
   void initialize_procs() override
   {
-    // seal_buff
-
-    //using trigger_type = dbc_proc_callback_t::trigger_fn_type;
-
     const auto driver    = new special_effect_t( p() );
     driver->name_str     = data().name_cstr();
     driver->spell_id     = data().id();
@@ -528,16 +579,55 @@ struct seal_of_righteousness_t : public paladin_seal_t
 
 struct seal_of_fury_t : public paladin_seal_t
 {
+  struct seal_of_fury_damage_t : public paladin_spell_t
+  {
+    seal_of_fury_damage_t( paladin_t* player )
+      : paladin_spell_t( "seal_of_fury_damage", player,
+                         player->rank.seal_of_fury_damage.find_rank()->spell() )
+    {
+      background = true;
+      spell_power_mod.direct = 0.1;
+    }
+  };
+
+  action_t* damage_action;
   seal_of_fury_t( paladin_t* player, util::string_view options_str )
-    : paladin_seal_t( player, "seal_of_fury", player->rank.seal_of_fury )
+    : paladin_seal_t( player, "seal_of_fury", player->rank.seal_of_fury, SEAL_OF_FURY )
   {
     parse_options( options_str );
+
+    damage_action = new seal_of_fury_damage_t( player );
+    add_child( damage_action );
+  }
+
+  void initialize_procs() override
+  {
+    const auto driver    = new special_effect_t( p() );
+    driver->name_str     = data().name_cstr();
+    driver->spell_id     = data().id();
+    driver->proc_chance_ = 1.0;
+
+    p()->special_effects.push_back( driver );
+
+    auto cb = new dbc_proc_callback_t( p(), *driver );
+    cb->activate_with_buff( seal_buff, true );
+    cb->proc_action = damage_action;
   }
 };
 
 void paladin_t::activate()
 {
   base_t::activate();
+}
+
+void paladin_t::reset()
+{
+  base_t::reset();
+
+  current_seal_judgement = nullptr;
+  previous_seal     = SEAL_NONE;
+  current_seal      = SEAL_NONE;
+  current_seal_buff = nullptr;
 }
 
 void paladin_t::init_base_stats()
@@ -586,6 +676,19 @@ action_t* paladin_t::create_action( util::string_view name, util::string_view op
 void paladin_t::create_buffs()
 {
   base_t::create_buffs();
+
+  buff.seal_expression_buffs[ SEAL_OF_LIGHT ] =
+      make_buff( this, "seal_of_light", rank.seal_of_light.find_rank()->spell() );
+  buff.seal_expression_buffs[ SEAL_OF_FURY ] =
+      make_buff( this, "seal_of_fury", rank.seal_of_fury.find_rank()->spell() );
+  buff.seal_expression_buffs[ SEAL_OF_RIGHTEOUSNESS ] =
+      make_buff( this, "seal_of_righteousness", rank.seal_of_righteousness.find_rank()->spell() );
+  buff.seal_expression_buffs[ SEAL_OF_JUSTICE ] =
+      make_buff( this, "seal_of_justice", rank.seal_of_justice.find_rank()->spell() );
+  buff.seal_expression_buffs[ SEAL_OF_WISDOM ] =
+      make_buff( this, "seal_of_wisdom", rank.seal_of_wisdom.find_rank()->spell() );
+  buff.seal_expression_buffs[ SEAL_OF_THE_CRUSADER ] =
+      make_buff( this, "seal_of_the_crusader", rank.seal_of_the_crusader.find_rank()->spell() );
 }
 
 void paladin_t::create_actions()
@@ -896,6 +999,16 @@ void paladin_t::init_spells()
       spell_container_t().set_spell( 20422 ),
       spell_container_t().set_spell( 20423 ),
   };
+  rank.seal_of_fury_damage = {
+      this,
+      spell_container_t().set_spell( 1311647 ),
+      spell_container_t().set_spell( 1311654 ),
+      spell_container_t().set_spell( 20231 ),
+      spell_container_t().set_spell( 20415 ),
+      spell_container_t().set_spell( 20416 ),
+      spell_container_t().set_spell( 20417 ),
+      spell_container_t().set_spell( 20418 ),
+  };
   rank.seal_of_light = {
       this,
       spell_container_t().set_spell( 20165 ),
@@ -939,6 +1052,10 @@ void paladin_t::init_spells()
       spell_container_t().set_spell( 20166 ),
       spell_container_t().set_spell( 20356 ),
       spell_container_t().set_spell( 20357 ),
+  };
+  rank.seal_of_justice = {
+      this,
+      spell_container_t().set_spell( 20164 )
   };
 
   parse_all_class_passives();
