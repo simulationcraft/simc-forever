@@ -1257,6 +1257,7 @@ player_t::base_initial_current_t::base_initial_current_t() :
   attack_crit_per_agility( 0 ),
   spell_crit_per_intellect( 0 ),
   health_per_stamina( 0 ),
+  armor_per_agility( 0 ),
   resource_reduction(),
   miss( 0 ),
   dodge( 0 ),
