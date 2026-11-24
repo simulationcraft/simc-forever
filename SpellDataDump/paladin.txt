@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
 Name             : Vindication (desc=Rank 1) (id=67) 
 Class            : Paladin
 School           : Holy
@@ -2281,7 +2281,6 @@ Effects          :
 Description      : Reduces the Mana cost of all instant cast spells and abilities by $m1%.
 
 Name             : Two-Handed Weapon Specialization (id=20111) [Passive, Hidden] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=12, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(2, 4, 6)]
                  : Effect#2 [op=set, values=(-7, -14, -20)]
@@ -3093,7 +3092,6 @@ Effects          :
                    Base Value: 33 | Scaled Value: 33 | Resource: mana | Target: Self (1)
 
 Name             : Judgement (id=20271) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : None
