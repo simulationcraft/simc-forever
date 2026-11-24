@@ -39,6 +39,7 @@ struct gear_stats_t
   double dodge_rating;
   double parry_rating;
   double block_rating;
+  double block_value;
   double resilience_rating;
   double pvp_power;
   double leech_rating;
@@ -70,6 +71,7 @@ struct gear_stats_t
       dodge_rating( 0.0 ),
       parry_rating( 0.0 ),
       block_rating( 0.0 ),
+      block_value( 0.0 ),
       resilience_rating( 0.0 ),
       pvp_power( 0.0 ),
       leech_rating( 0.0 ),
@@ -105,6 +107,7 @@ struct gear_stats_t
     dodge_rating = initializer;
     parry_rating = initializer;
     block_rating = initializer;
+    block_value = initializer;
     resilience_rating = initializer;
     pvp_power = initializer;
     leech_rating = initializer;
@@ -141,6 +144,7 @@ struct gear_stats_t
     dodge_rating += right.dodge_rating;
     parry_rating += right.parry_rating;
     block_rating += right.block_rating;
+    block_value += right.block_value;
     resilience_rating += right.resilience_rating;
     pvp_power += right.pvp_power;
     leech_rating += right.leech_rating;

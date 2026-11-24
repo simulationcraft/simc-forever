@@ -875,6 +875,7 @@ enum stat_e
   STAT_DODGE_RATING,
   STAT_PARRY_RATING,
   STAT_BLOCK_RATING, // Block CHANCE rating. Block damage reduction is in player_t::composite_block_value()
+  STAT_BLOCK_VALUE,
   STAT_PVP_POWER,
   STAT_WEAPON_DPS,
   STAT_WEAPON_OFFHAND_DPS,
@@ -980,6 +981,7 @@ enum cache_e
   CACHE_DODGE,
   CACHE_PARRY,
   CACHE_BLOCK,
+  CACHE_BLOCK_VALUE,
   CACHE_ARMOR,
   CACHE_BONUS_ARMOR,
   CACHE_CRIT_AVOIDANCE,
@@ -1068,6 +1070,8 @@ inline cache_e cache_from_stat( stat_e st )
         return CACHE_PARRY;
       case STAT_BLOCK_RATING:
         return CACHE_BLOCK;
+      case STAT_BLOCK_VALUE:
+        return CACHE_BLOCK_VALUE;
       case STAT_ARMOR:
         return CACHE_ARMOR;
       case STAT_BONUS_ARMOR:

@@ -1272,7 +1272,6 @@ player_t::base_initial_current_t::base_initial_current_t() :
   crit_avoidance( 0 ),
   spell_crit_chance(),
   attack_crit_chance(),
-  block_value(),
   all_crit( 0 ),
   all_haste( 1.0 ),
   mana_regen_while_casting( 0 ),
@@ -1345,7 +1344,6 @@ void sc_format_to( const player_t::base_initial_current_t& s, fmt::format_contex
   fmt::format_to( out, " block={:.6g}", s.block );
   fmt::format_to( out, " spell_crit_chance={:.6g}", s.spell_crit_chance );
   fmt::format_to( out, " attack_crit_chance={:.6g}", s.attack_crit_chance );
-  fmt::format_to( out, " block_value={:.6g}", s.block_value );
   fmt::format_to( out, " all_haste={:.6g}", s.all_haste );
   fmt::format_to( out, " melee_haste={:.6g}", s.melee_haste );
   fmt::format_to( out, " spell_haste={:.6g}", s.spell_haste );
@@ -1693,13 +1691,12 @@ void player_t::init_base_stats()
       base.block = 0.03;
       base.block = get_passive_player_value( base.block, "block" );
 
-      // Currently block reduction is 2.5x the armor value of the shield
-      if ( items[ SLOT_OFF_HAND ].dbc_inventory_type() == INVTYPE_SHIELD )
-        base.block_value = items[ SLOT_OFF_HAND ].stats.armor * 2.5;
-      else
-        base.block_value = 0;
-
-      base.block_value = get_passive_player_value( base.block_value, "block_value" );
+      if ( items[ SLOT_OFF_HAND ].dbc_inventory_type() == INVTYPE_SHIELD &&
+           items[ SLOT_OFF_HAND ].stats.get_stat( STAT_BLOCK_VALUE ) == 0 )
+      {
+        sim->print_debug( "{} shield '{}' has no block value from item data or ShieldBlockRegular; add "
+                          "block_value= to the item to override.", *this, items[ SLOT_OFF_HAND ].name() );
+      }
 
       // Parry from base strength isn't affected by diminishing returns and is added here
       base.parry = ( dbc->race_base( race ).strength + dbc->attribute_base( type, level() ).strength ) * base.parry_per_strength;
@@ -3644,6 +3641,10 @@ void player_t::init_scaling()
           add_stat( initial.stats.block_rating, v, 0 );
           break;
 
+        case STAT_BLOCK_VALUE:
+          add_stat( initial.stats.block_value, v, 0 );
+          break;
+
         case STAT_MAX:
           break;
 
@@ -4875,12 +4876,23 @@ double player_t::composite_parry() const
 
 double player_t::composite_block_value( const action_state_t* ) const
 {
-  double bv = current.block_value;
+  if ( items[ SLOT_OFF_HAND ].dbc_inventory_type() != INVTYPE_SHIELD )
+    return 0.0;
 
+  // TBC/Vanilla: flat block value = gear block value + floor(strength / block_per_strength) - 1.
+  // Percentage modifiers (e.g. Paladin Shield Specialization, A_MOD_BLOCK_PCT) increase all
+  // gear block value (shield white Block and green Block Value from any item). Forever logs
+  // seem to be applying the percentage before the Strength term and round the result:
+  //
+  // round((white + green) * shield_specialization + (floor(strength / 20) - 1))
+  //
+  // CMaNGOS TBC and TrinityCore instead multiply the total (including Strength) and truncate.
+  // This appears to be changed behavior in the forever client.
+  double block_value = get_passive_player_value( current.stats.block_value, "block_value" );
   if ( current.block_per_strength > 0 )
-    bv += util::floor( cache.strength() / current.block_per_strength );
+    block_value += util::floor( cache.strength() / current.block_per_strength ) - 1.0;
 
-  return bv;
+  return std::max( 0.0, util::round( block_value ) );
 }
 
 double player_t::composite_crit_avoidance() const
@@ -5398,6 +5410,7 @@ void player_t::invalidate_cache( cache_e c )
         invalidate_cache( CACHE_ATTACK_POWER );
       if ( current.parry_per_strength > 0 )
         invalidate_cache( CACHE_PARRY );
+      invalidate_cache( CACHE_BLOCK_VALUE );
       break;
 
     case CACHE_AGILITY:
@@ -7249,6 +7262,7 @@ void player_t::stat_gain( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_DODGE_RATING:
     case STAT_PARRY_RATING:
     case STAT_BLOCK_RATING:
+    case STAT_BLOCK_VALUE:
     case STAT_LEECH_RATING:
     case STAT_AVOIDANCE_RATING:
     case STAT_SPEED_RATING:
@@ -7415,6 +7429,7 @@ void player_t::stat_loss( stat_e stat, double amount, gain_t* gain, action_t* ac
     case STAT_DODGE_RATING:
     case STAT_PARRY_RATING:
     case STAT_BLOCK_RATING:
+    case STAT_BLOCK_VALUE:
     case STAT_LEECH_RATING:
     case STAT_AVOIDANCE_RATING:
     case STAT_SPEED_RATING:
@@ -7940,20 +7955,17 @@ void player_t::target_mitigation( school_e, result_amount_type dmg_type, action_
       }
     }
 
-    // Block and Crit Block work in the same manner as armor and are affected by the same cap
+    // Block is a flat damage reduction applied after armor. This is the TBC/Vanilla behavior;
     if ( s->block_result == BLOCK_RESULT_BLOCKED )
     {
       double block_value = s->target_block_value;
-      double block_resist = util::calculate_armor_resist( block_value, s->action->player->current.armor_coeff );
-
-      block_resist = clamp( block_resist, 0.0, MAX_ARMOR_DAMAGE_REDUCTION );
-      s->result_amount *= 1.0 - block_resist;
+      double blocked = std::min( s->result_amount, block_value );
+      s->result_amount -= blocked;
 
       if ( sim->debug )
       {
-        sim->print_debug( "{} {} damage to {} reduced by {:.7g}% from block (block value={:.7g}, armor coeff={:.7g}).",
-                          *s->action->player, *s->action, *s->target, block_resist * 100, block_value,
-                          s->action->player->current.armor_coeff );
+        sim->print_debug( "{} {} damage to {} reduced by {:.7g} from block (block value={:.7g}).",
+                          *s->action->player, *s->action, *s->target, blocked, block_value );
       }
     }
   }
@@ -14191,6 +14203,7 @@ static constexpr std::pair<int, std::string_view> field_type_map[] = {
   { A_MODIFY_SCHOOL,                          "school"                           },  // 220
   { A_MOD_EXPERTISE,                          "expertise"                        },  // 240
   { A_MOD_BLOCK_PCT,                          "block_value"                      },  // 272
+  { A_MOD_BLOCK_FLAT,                         "block_value"                      },  // 274
   { A_MOD_MECHANIC_DAMAGE_DONE_PERCENT,       "mechanic_damage_done"             },  // 276
   { A_MOD_TARGET_ARMOR_PCT,                   "armor_penetration"                },  // 280
   { A_MOD_ALL_CRIT_CHANCE,                    "all_crit"                         },  // 290
@@ -14488,6 +14501,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_STAT:  // 29
       case A_MOD_ATTACK_POWER: // 99
       case A_MOD_ARMOR: // 674
+      case A_MOD_BLOCK_FLAT: // 274
         // parse scaling value if necessary
         flat_val = modifying_eff.average( this );
         break;
@@ -14568,6 +14582,7 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_AUTO_ATTACK_DAMAGE_PCT:  // 530
       case A_MOD_GUARDIAN_DAMAGE_DONE:  // 531
       case A_MOD_RANGED_ATTACK_SPEED_QUIVER: // 557
+      case A_MOD_BLOCK_PCT:  // 272
         pct_val = modifying_eff.average( this );
         break;
 
@@ -14582,7 +14597,6 @@ bool player_t::register_passive_effect( const spelleffect_data_t& modifying_eff,
       case A_MOD_SPEED_ALWAYS:  // 129
       case A_MOD_ATTACKER_MELEE_CRIT_CHANCE:  // 187
       case A_MOD_EXPERTISE:  // 240
-      case A_MOD_BLOCK_PCT:  // 272
       case A_MOD_ALL_CRIT_CHANCE:  // 290
       case A_OVERRIDE_SP_PER_AP:  // 366
       case A_OVERRIDE_AP_PER_SP:  // 404

@@ -277,7 +277,7 @@ struct enemy_action_t : public ACTION_TYPE
     action_type_t::snapshot_internal( s, fl, rt );
 
     if ( s->target->is_player() )
-      s->target_block_value = s->target->composite_block_value( s );
+      s->target_block_value = s->target->cache.block_value();
   }
 
   double calculate_direct_amount( action_state_t* s ) const override

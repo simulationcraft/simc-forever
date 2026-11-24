@@ -1114,6 +1114,14 @@ double dbc_t::armor_mitigation_constant( unsigned level ) const
   return expected_stat( level ).armor_constant;
 }
 
+double dbc_t::shield_block_regular( unsigned ilevel, int quality ) const
+{
+  if ( ilevel == 0 || ilevel > 100 || quality < 0 || quality >= 7 )
+    return 0.0;
+
+  return __shield_block_regular[ quality ][ ilevel - 1 ];
+}
+
 double dbc_t::get_armor_constant_mod( difficulty_e diff ) const
 {
   return expected_stat_mod( diff, &expected_stat_mod_t::armor_constant );

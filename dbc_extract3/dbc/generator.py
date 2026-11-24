@@ -257,6 +257,13 @@ class CSVDataGenerator(object):
 
         for i in self._dbc:
             v = os.path.abspath(os.path.join(self._options.path, i))
+            if not os.path.exists(v):
+                fallback = self._csv_options.get(i, {}).get('fallback', None)
+                if fallback and os.path.exists(fallback):
+                    v = fallback
+                else:
+                    print('Unable to open game table "%s"' % v)
+                    return False
             if self._csv_options.get(i, {}).get('simple_reader', False):
                 dbcp = csv.reader(open(v, 'r'), delimiter = '\t')
             else:
