@@ -4795,10 +4795,6 @@ double player_t::composite_block_dr( double extra_block ) const
 {
   // Start with sources not subject to DR - base block (stored in current.block)
   double total_block = current.block;
-  if ( current.block_per_strength > 0 )
-  {
-    total_block += util::floor( cache.strength() / current.block_per_strength );
-  }
 
   // bonus_block is block from rating or other sources subject to DR (passed from class module via extra_block)
   double bonus_block = composite_block_rating() / current.rating.block;
@@ -4879,7 +4875,12 @@ double player_t::composite_parry() const
 
 double player_t::composite_block_value( const action_state_t* ) const
 {
-  return current.block_value;
+  double bv = current.block_value;
+
+  if ( current.block_per_strength > 0 )
+    bv += util::floor( cache.strength() / current.block_per_strength );
+
+  return bv;
 }
 
 double player_t::composite_crit_avoidance() const
