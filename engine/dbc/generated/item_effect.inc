@@ -1,4 +1,4 @@
-// Item effects, wow build 1.60.1.71037
+// Item effects, wow build 1.60.1.71091
 static constexpr std::array<item_effect_t, 1432> __item_effect_data { {
   {      0,      0,      0,   0,   0,    0,       0,       0 },
   { 212548, 1241821,      0,   0,   0,    0,      -1,      -1 }, // Stock Ore

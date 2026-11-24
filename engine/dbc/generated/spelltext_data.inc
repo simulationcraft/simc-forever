@@ -1,4 +1,4 @@
-// Spell text, wow build 1.60.1.71037
+// Spell text, wow build 1.60.1.71091
 static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
@@ -8757,13 +8757,11 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   { 1331725, "When applied to your fishing pole, increases Fishing by $ec1 for 5 minutes.", 0, 0 },
 } };
 
-// spelltext hotfix entries, wow build 1.60.1.71037
-static constexpr std::array<hotfix::client_hotfix_entry_t, 2> __spelltext_hotfix_data { {
-  { 1329283,  0, "Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.", "Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[ $1329286s1% chance to award $1329285s1 Combo Points.][] Shank cannot Miss." },
-  { 1329549,  0, "Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[  $1329286s1% Chance to award 2 Combo Points.][] Shank cannot Miss.", "Instantly strike with your off-hand weapon, dealing $s1% weapon damage$?s1329328[, increasing your Poison damage dealt by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d, ][ ]and generating $s2 Energy.$?s1329286[ $1329286s1% chance to award $1329285s1 Combo Points.][] Shank cannot Miss." },
+// spelltext hotfix entries, wow build 1.60.1.71091
+static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __spelltext_hotfix_data { {
 } };
 
-// Spell description variables, wow build 1.60.1.71037
+// Spell description variables, wow build 1.60.1.71091
 static constexpr std::array<spelldesc_vars_data_t, 141> __spelldesc_vars_data { {
   {      10, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
   {     116, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
@@ -8908,7 +8906,7 @@ static constexpr std::array<spelldesc_vars_data_t, 141> __spelldesc_vars_data { 
   { 1325758, "$ratio=${12}\r\n$maxAP=${0.04}\r\n$attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}\r\n$coup=$?s14162[${$14162s1/100+1}][${1}]" },
 } };
 
-// spelldesc_vars hotfix entries, wow build 1.60.1.71037
+// spelldesc_vars hotfix entries, wow build 1.60.1.71091
 static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __spelldesc_vars_hotfix_data { {
 } };
 
