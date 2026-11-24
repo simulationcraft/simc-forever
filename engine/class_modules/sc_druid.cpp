@@ -77,6 +77,7 @@ struct druid_t final : public parse_player_effects_t
     player_talent_t predatory_strikes;
     player_talent_t blood_frenzy;
     player_talent_t predatory_discipline;
+    player_talent_t leader_of_the_pack;
   } talent;
 
   struct buffs_t
@@ -90,6 +91,7 @@ struct druid_t final : public parse_player_effects_t
     buff_t* prowl;
     buff_t* poised;
     buff_t* mark_of_the_wild;
+    buff_t* leader_of_the_pack;
   } buff;
 
   struct
@@ -217,6 +219,7 @@ void druid_t::init_spells()
   talent.predatory_strikes         = find_talent_spell( talent_tree::CLASS, "Predatory Strikes" );
   talent.blood_frenzy              = find_talent_spell( talent_tree::CLASS, "Blood Frenzy" );
   talent.predatory_discipline      = find_talent_spell( talent_tree::CLASS, "Predatory Discipline" );
+  talent.leader_of_the_pack        = find_talent_spell( talent_tree::CLASS, "Leader of the Pack" );
 
   register_passive_effect_override( talent.predatory_strikes->effectN( 2 ),
                                     talent.predatory_strikes->effectN( 1 ).base_value() / 100 * true_level );
@@ -1302,11 +1305,14 @@ void druid_t::create_buffs()
   buff.eclipse            = make_buff_fallback( talent.eclipse->ok(), this, "eclipse", eclipse_buff );
 
   auto const cat_form_spell = rank.cat_form.find_rank()->buff();
-  buff.cat_form             = make_buff_fallback<stat_buff_t>( cat_form_spell->ok(), this, "cat_form", cat_form_spell )
-                                  ->set_stack_change_callback( [ this ]( buff_t*, int, int new_ ) {
-                        current.attack_power_per_agility = new_ ? 1.0 : base.attack_power_per_agility;
-                        invalidate_cache( CACHE_ATTACK_POWER );
-                                  } );
+  buff.cat_form =
+      make_buff_fallback<stat_buff_t>( cat_form_spell->ok(), this, "cat_form", cat_form_spell )
+          ->set_stack_change_callback( [ this ]( buff_t*, int, int new_ ) {
+            current.attack_power_per_agility = new_ ? 1.0 : base.attack_power_per_agility;
+            invalidate_cache( CACHE_ATTACK_POWER );
+            buff.leader_of_the_pack->trigger();
+          } )
+          ->set_expire_callback( [ this ]( buff_t*, int, timespan_t ) { buff.leader_of_the_pack->expire(); } );
 
   auto const prowl_spell = rank.prowl.find_rank()->spell();
   buff.prowl             = make_buff_fallback( prowl_spell->ok(), this, "prowl", prowl_spell );
@@ -1326,6 +1332,11 @@ void druid_t::create_buffs()
   buff.moonkin_aura =
       make_buff_fallback( talent.moonkin_form->ok() && !sim->overrides.moonkin_aura && !sim->overrides.leader_of_the_pack,
                           this, "moonkin_aura", talent.moonkin_form->effectN( 3 ).trigger() );
+
+  auto const leader_of_the_pack_buff = find_spell( 24932 );
+  buff.leader_of_the_pack = make_buff_fallback(
+      talent.leader_of_the_pack->ok() && !sim->overrides.moonkin_aura && !sim->overrides.leader_of_the_pack, this,
+      "leader_of_the_pack", leader_of_the_pack_buff );
 };
 
 void druid_t::init_special_effects()
@@ -1362,6 +1373,7 @@ void druid_t::parse_player_effects()
   parse_effects( buff.moonkin_aura );
   parse_effects( buff.natures_grace );  // buffs spell haste and gcd, confirm the double dip on gcd speed
   parse_effects( buff.cat_form );
+  parse_effects( buff.leader_of_the_pack );
 };
 
 void druid_t::apply_action_effects( action_t* a )
