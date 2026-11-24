@@ -68565,6 +68565,7 @@ Effects          :
 Description      : Melee attacks have a $h% chance to grant a Clearcasting state, reducing the mana cost of your next damage spell by 100%.
 
 Name             : Stealth (id=1300180) 
+Hotfixed         : Description
 School           : Physical
 Spell Type       : None
 Duration         : 20 seconds
@@ -68575,7 +68576,7 @@ Effects          :
                    Base Value: 5 | Scaled Value: 305 | Points Per Level: 5 | Target: Self (1)
 #2 (id=1324740)  : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -50 | Scaled Value: -50 | Target: Self (1)
-Description      : Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat.
+Description      : Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat. Lasts $d.
 Tooltip          : Stealthed. Movement slowed by $s2%.
 
 Name             : Fatal Wound (id=1300185) 
@@ -72188,6 +72189,7 @@ Description      : Increases movement speed by $s1% in Silverpine Forest and Hil
 Tooltip          : Movement speed increased by $s1%.
 
 Name             : Night Watchman's Torch (id=1309410) 
+Hotfixed         : Aura Interrupt
 School           : Physical
 Spell Type       : None
 Range            : 10 yards
@@ -72196,7 +72198,7 @@ Duration         : 300 seconds
 Stacks           : 1 maximum
 Proc Chance      : 101%
 Attributes       : Do Not Log (8), Not In Combat (Only Peaceful) (28), No Immunities (29), Unknown (493)
-Aura Interrupt   : Enter Combat (28), Swimming (33)
+Aura Interrupt   : Action (2), Enter Combat (28), Swimming (33)
 Channel Interrupt: Action (3)
 Effects          :
 #1 (id=1338389)  : Apply Aura (6) | Area Trigger (395)

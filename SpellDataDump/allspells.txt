@@ -54685,6 +54685,7 @@ Effects          :
 Description      : Increases the critical strike damage bonus of your Arcane and Nature spells by $m1%.
 
 Name             : Hurricane (desc=Rank 1) (id=16914) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -54708,7 +54709,7 @@ Effects          :
                    Base Value: -20 | Scaled Value: -20 | Misc Value: 41199 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1291351)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Description      : Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts $d. Druid must channel to maintain the spell.
+Description      : Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts ${$d}. Druid must channel to maintain the spell.
 
 Name             : Strength of the Champion (id=16916) 
 School           : Holy
@@ -56391,6 +56392,7 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Nearby Target (38)
 
 Name             : Hurricane (desc=Rank 2) (id=17401) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -56414,9 +56416,10 @@ Effects          :
                    Base Value: -20 | Scaled Value: -20 | Misc Value: 41198 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1291318)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Description      : Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts $d. Druid must channel to maintain the spell.
+Description      : Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts ${$d}. Druid must channel to maintain the spell.
 
 Name             : Hurricane (desc=Rank 3) (id=17402) [Spell Family (7)] 
+Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -56440,7 +56443,7 @@ Effects          :
                    Base Value: -20 | Scaled Value: -20 | Misc Value: 41170 | Radius: 0 - 8 yards | Target: at Area (87) -> at Enemy in Area (16)
 #3 (id=1291065)  : Apply Aura (6) | Periodic Dummy (226): every 1 seconds
                    Base Value: 0 | Scaled Value: 0 | Target: Self (1)
-Description      : Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts $d. Druid must channel to maintain the spell.
+Description      : Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts ${$d}. Druid must channel to maintain the spell.
 
 Name             : Wound (id=17407) 
 School           : Physical
@@ -148423,6 +148426,7 @@ Effects          :
 Description      : Melee attacks have a $h% chance to grant a Clearcasting state, reducing the mana cost of your next damage spell by 100%.
 
 Name             : Stealth (id=1300180) 
+Hotfixed         : Description
 School           : Physical
 Spell Type       : None
 Duration         : 20 seconds
@@ -148433,7 +148437,7 @@ Effects          :
                    Base Value: 5 | Scaled Value: 305 | Points Per Level: 5 | Target: Self (1)
 #2 (id=1324740)  : Apply Aura (6) | Decrease Movement Speed% (33)
                    Base Value: -50 | Scaled Value: -50 | Target: Self (1)
-Description      : Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat.
+Description      : Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat. Lasts $d.
 Tooltip          : Stealthed. Movement slowed by $s2%.
 
 Name             : Fatal Wound (id=1300185) 
@@ -152205,6 +152209,7 @@ Description      : Increases movement speed by $s1% in Silverpine Forest and Hil
 Tooltip          : Movement speed increased by $s1%.
 
 Name             : Night Watchman's Torch (id=1309410) 
+Hotfixed         : Aura Interrupt
 School           : Physical
 Spell Type       : None
 Range            : 10 yards
@@ -152213,7 +152218,7 @@ Duration         : 300 seconds
 Stacks           : 1 maximum
 Proc Chance      : 101%
 Attributes       : Do Not Log (8), Not In Combat (Only Peaceful) (28), No Immunities (29), Unknown (493)
-Aura Interrupt   : Enter Combat (28), Swimming (33)
+Aura Interrupt   : Action (2), Enter Combat (28), Swimming (33)
 Channel Interrupt: Action (3)
 Effects          :
 #1 (id=1338389)  : Apply Aura (6) | Area Trigger (395)
