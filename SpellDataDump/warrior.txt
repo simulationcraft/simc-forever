@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
 Name             : Defensive Stance (id=71) [Spell Family (4)] 
 Class            : Warrior
 School           : Physical
@@ -700,7 +700,6 @@ Effects          :
 Description      : Follows a successful block, dodge or parry.
 
 Name             : Execute (desc=Rank 1) (id=5308) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3625,7 +3624,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Execute (desc=Rank 2) (id=20658) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3647,7 +3645,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 3) (id=20660) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3669,7 +3666,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 4) (id=20661) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -3691,7 +3687,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 5) (id=20662) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee

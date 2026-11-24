@@ -1,4 +1,4 @@
-Class Spell ID List, wow build 1.60.1.71037
+Class Spell ID List, wow build 1.60.1.71091
 
 Druid
 99       Demoralizing Roar

@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -6185,7 +6185,6 @@ Description      : Blinds the target, causing it to wander disoriented for up to
 Tooltip          : Disoriented.
 
 Name             : Mind Vision (desc=Rank 1) (id=2096) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Shadow
 Spell Type       : Magic
@@ -11353,7 +11352,6 @@ Effects          :
 Description      : Follows a successful block, dodge or parry.
 
 Name             : Execute (desc=Rank 1) (id=5308) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -31219,7 +31217,6 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Mind Vision (desc=Rank 2) (id=10909) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Shadow
 Spell Type       : Magic
@@ -49749,6 +49746,7 @@ Effects          :
                    Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
 
 Name             : Songflower Serenade (id=15366) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : None
 Spell Level      : 50
@@ -49758,8 +49756,7 @@ Duration         : 3600 seconds
 Labels           : 1299
 Proc Chance      : 101%
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Is Ability (4), Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Include In Advanced Combat Log (72), Not In Raid Instances (203), Unknown (493)
 Effects          :
 #1 (id=692476)   : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Value Multiplier: 1 | Target: Targeted Ally (21)
@@ -60317,7 +60314,6 @@ Effects          :
                    Base Value: 70 | Scaled Value: 70 | SP Coefficient: 1 | Misc Value: 9 | Target: Self (1)
                    Affected Spells: Area Death (TEST) (265), Immolate (348), Shadow Bolt (686), Shadow Bolt (695), Shadow Bolt (705), Immolate (707), Shadow Bolt (1088), Immolate (1094), Shadow Bolt (1106), Hellfire (1949), Immolate (2941), Searing Pain (5676), Rain of Fire (5740), Hellfire Effect (5857), Rain of Fire (6219), Soul Fire (6353), Shadow Bolt (7641), Shadow Bolt (11659), Shadow Bolt (11660), Shadow Bolt (11661), Immolate (11665), Immolate (11667), Immolate (11668), Rain of Fire (11677), Rain of Fire (11678), Hellfire Effect (11681), Hellfire Effect (11682), Hellfire (11683), Hellfire (11684), Shadowburn (17877), Searing Pain (17919), Searing Pain (17920), Searing Pain (17921), Searing Pain (17922), Searing Pain (17923), Soul Fire (17924), Conflagrate (17962), Shadowburn (18867), Shadowburn (18868), Shadowburn (18869), Shadowburn (18870), Shadowburn (18871), Conflagrate (18930), Conflagrate (18931), Conflagrate (18932), Shadow Bolt (25307), Immolate (25309), Shadow Bolt (350026), Incinerate (412758), Invocation (426245), Rain of Fire (460692), Rain of Fire (460698), Rain of Fire (460699), Rain of Fire (460700), Rain of Fire (1282380), Rain of Fire (1282383), Rain of Fire (1282384), Rain of Fire (1282385), Incinerate (1293812), Incinerate (1293813), Conflagrate (1293817), Conflagrate (1293818)
                    Family Flags: 0, 2, 5, 6, 7, 8, 9, 38
-Hotfixed         : Affects Spells
 Description      : Gives your Destruction spells a $s1% chance to not lose casting time when you take damage.
 
 Name             : Shadowguard (desc=Rank 1) (id=18137) [Spell Family (6)] 
@@ -68488,7 +68484,6 @@ Effects          :
 Description      : Reduces the Mana cost of all instant cast spells and abilities by $m1%.
 
 Name             : Two-Handed Weapon Specialization (id=20111) [Passive, Hidden] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=4, col=12, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(2, 4, 6)]
                  : Effect#2 [op=set, values=(-7, -14, -20)]
@@ -69408,7 +69403,6 @@ Effects          :
 Description      : Place the Gaea seed into the Gaea dirt mound.
 
 Name             : Judgement (id=20271) [Spell Family (10)] 
-Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : None
@@ -71467,7 +71461,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Execute (desc=Rank 2) (id=20658) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71489,7 +71482,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 3) (id=20660) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71511,7 +71503,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 4) (id=20661) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -71533,7 +71524,6 @@ Effects          :
 Description      : Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.
 
 Name             : Execute (desc=Rank 5) (id=20662) [Spell Family (4)] 
-Hotfixed         : Attributes
 Class            : Warrior
 School           : Physical
 Spell Type       : Melee
@@ -76447,6 +76437,7 @@ Description      : Your skin becomes as tough as bark. Physical damage taken is 
 Tooltip          : Physical damage taken is reduced by $s2%. While protected, damaging attacks will not cause spellcasting delays.
 
 Name             : Fengus' Ferocity (id=22817) 
+Hotfixed         : Attributes, Aura Interrupt
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50
@@ -76456,21 +76447,23 @@ Duration         : 7200 seconds
 Labels           : 1299
 Proc Chance      : 101%
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Not In Raid Instances (203), Unknown (493)
 Effects          :
 #1 (id=700462)   : Apply Aura (6) | Dummy (4)
                    Base Value: 200 | Scaled Value: 200 | Value Multiplier: 1 | Target: Targeted Ally (21)
 #2 (id=870850)   : Apply Aura (6) | Dummy (4)
                    Base Value: 200 | Scaled Value: 200 | Target: Targeted Ally (21)
 #3 (id=1331558)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 230 | Scaled Value: 230 | Value Multiplier: 1 | Target: Targeted Ally (21)
+                   Base Value: 115 | Scaled Value: 115 | Value Multiplier: 1 | Target: Targeted Ally (21)
+Hotfixed         : Base Value (230 -> 115)
 #4 (id=1331559)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 230 | Scaled Value: 230 | Value Multiplier: 1 | Target: Targeted Ally (21)
+                   Base Value: 115 | Scaled Value: 115 | Value Multiplier: 1 | Target: Targeted Ally (21)
+Hotfixed         : Base Value (230 -> 115)
 Description      : Attack power increased by $s1 and spell damage and healing increased by up to $s3.
 Tooltip          : Attack power increased by $s1 and spell damage and healing increased by up to $s3. No effect while in a raid instance.
 
 Name             : Mol'dar's Moxie (id=22818) 
+Hotfixed         : Attributes, Aura Interrupt
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50
@@ -76481,8 +76474,7 @@ Labels           : 1299
 Proc Chance      : 101%
 Proc Flags       : Heartbeat
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Not In Raid Instances (203), Unknown (493)
 Effects          :
 #1 (id=700537)   : Apply Aura (6) | Dummy (4)
                    Base Value: 15 | Scaled Value: 15 | Value Multiplier: 1 | Misc Value: 2 | Target: Targeted Ally (21)
@@ -76490,6 +76482,7 @@ Description      : Overall Stamina increased by $s1%.
 Tooltip          : Overall Stamina increased by $s1%. Lasts $d. No effect while in a raid instance.
 
 Name             : Slip'kik's Savvy (id=22820) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50
@@ -76499,8 +76492,7 @@ Duration         : 7200 seconds
 Labels           : 1299
 Proc Chance      : 101%
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Allow While Stunned (163), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Allow While Stunned (163), Not In Raid Instances (203), Unknown (493)
 Effects          :
 #1 (id=700351)   : Apply Aura (6) | Dummy (4)
                    Base Value: 3 | Scaled Value: 3 | Value Multiplier: 1 | Target: Targeted Ally (21)
@@ -79200,6 +79192,7 @@ Effects          :
 Tooltip          : Reduces Magic damage taken by $w1%.
 
 Name             : Sayge's Dark Fortune of Damage (id=23768) 
+Hotfixed         : Attributes
 School           : Shadow
 Spell Type       : None
 Range            : 50000 yards
@@ -79207,12 +79200,11 @@ Duration         : 7200 seconds
 Labels           : 1299
 Proc Chance      : 101%
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Include In Advanced Combat Log (72), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Include In Advanced Combat Log (72), Not In Raid Instances (203), Unknown (493)
 Effects          :
-#1 (id=696766)   : Apply Aura (6) | Modify Damage Done% (79)
-                   Base Value: 10 | Scaled Value: 10 | Misc Value: 0x7f | Target: Current Target (25)
-                   Affected School(s): All
+#1 (id=696766)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 10 | Scaled Value: 10 | Target: Current Target (25)
+Hotfixed         : Sub Type (79 -> 4), Misc Value (127 -> 0)
 #2 (id=696767)   : Trigger Spell (64): Sayge's Carnie Buff
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 23770 | Target: Current Target (25)
 Tooltip          : Increases damage by $s1%. No effect while in a raid instance.
@@ -91072,7 +91064,6 @@ Effects          :
 Description      : Equip a Chest slot item with a Rune engraved to activate an ability in this slot.
 
 Name             : Mutilate (desc=Rank 1) (id=399956) [Spell Family (8)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=0]
 Class            : Rogue
 School           : Physical
@@ -129378,7 +129369,6 @@ Effects          :
 Tooltip          : Interrupted.
 
 Name             : Mutilate (desc=Rank 2) (id=1241582) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -129403,7 +129393,6 @@ Effects          :
 Description      : Instantly attacks with both weapons for $1241585s2% weapon damage plus an additional ${$1241585m1*$1241585m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
 
 Name             : Mutilate (desc=Rank 3) (id=1241584) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -158573,7 +158562,6 @@ Description      : Increases the rogue's movement speed by $s1% for $d.  Does no
 Tooltip          : Movement speed increased by $w1%.
 
 Name             : Shank (desc=Rank 1) (id=1329283) [Spell Family (8)] 
-Hotfixed         : Attributes, Description
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -158629,7 +158617,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 
 Name             : Boot Knife (id=1329286) [Spell Family (8), Passive, Hidden] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=6, col=11, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(20, 40, 60, 80, 100)]
 Class            : Rogue
@@ -158642,10 +158629,8 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1368715)  : Apply Aura (6) | Proc Trigger Spell (42): Boot Knife
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Trigger Spell: 1329285 | Target: Targeted Enemy (6)
-Hotfixed         : Sub Type (4 -> 42), Target 1 (1 -> 6)
 #2 (id=1371756)  : Apply Aura (6) | Dummy (4)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Trigger Spell: 1329285 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : Grants your Shank ability a $s1% chance to add $s2 Combo Points to the target.
 
 Name             : Ghostly Strike (id=1329326) [Spell Family (8)] 
@@ -158685,7 +158670,6 @@ Effects          :
 Description      : Causes your Shank ability to increase your Poison damage by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d.
 
 Name             : Shank (desc=Rank 2) (id=1329549) [Spell Family (8)] 
-Hotfixed         : Attributes, Description
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee

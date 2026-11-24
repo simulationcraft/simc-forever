@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
 Name             : Backstab (desc=Rank 1) (id=53) [Spell Family (8)] 
 Class            : Rogue
 School           : Physical
@@ -4639,7 +4639,6 @@ Description      : Coats a weapon with poison that lasts for 30 minutes.
 Each strike has a $h% chance of poisoning the enemy, slowing their movement speed by $3409s1% for $3409d.
 
 Name             : Mutilate (desc=Rank 1) (id=399956) [Spell Family (8)] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=0]
 Class            : Rogue
 School           : Physical
@@ -7140,7 +7139,6 @@ Effects          :
 Description      : Reduces the Energy cost of your Sap and Blind abilities by $m1%.
 
 Name             : Mutilate (desc=Rank 2) (id=1241582) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -7165,7 +7163,6 @@ Effects          :
 Description      : Instantly attacks with both weapons for $1241585s2% weapon damage plus an additional ${$1241585m1*$1241585m2/100} with each weapon. Damage increased by $m4% against Poisoned targets. Awards $m1 Combo $LPoint:Points;.
 
 Name             : Mutilate (desc=Rank 3) (id=1241584) [Spell Family (8)] 
-Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -7715,7 +7712,6 @@ Description      : Increases the rogue's movement speed by $s1% for $d.  Does no
 Tooltip          : Movement speed increased by $w1%.
 
 Name             : Shank (desc=Rank 1) (id=1329283) [Spell Family (8)] 
-Hotfixed         : Attributes, Description
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee
@@ -7771,7 +7767,6 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Target: Targeted Enemy (6)
 
 Name             : Boot Knife (id=1329286) [Spell Family (8), Passive, Hidden] 
-Hotfixed         : Attributes
 Talent Entry     : Generic [tree=class, row=6, col=11, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(20, 40, 60, 80, 100)]
 Class            : Rogue
@@ -7784,10 +7779,8 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1368715)  : Apply Aura (6) | Proc Trigger Spell (42): Boot Knife
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Trigger Spell: 1329285 | Target: Targeted Enemy (6)
-Hotfixed         : Sub Type (4 -> 42), Target 1 (1 -> 6)
 #2 (id=1371756)  : Apply Aura (6) | Dummy (4)
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Trigger Spell: 1329285 | Target: Targeted Enemy (6)
-Hotfixed         : NEW EFFECT
 Description      : Grants your Shank ability a $s1% chance to add $s2 Combo Points to the target.
 
 Name             : Ghostly Strike (id=1329326) [Spell Family (8)] 
@@ -7827,7 +7820,6 @@ Effects          :
 Description      : Causes your Shank ability to increase your Poison damage by $1310703s1% and your chance to apply Poisons by $1310703s3% for $1310703d.
 
 Name             : Shank (desc=Rank 2) (id=1329549) [Spell Family (8)] 
-Hotfixed         : Attributes, Description
 Class            : Rogue
 School           : Physical
 Spell Type       : Melee

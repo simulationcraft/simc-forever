@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -19049,6 +19049,7 @@ Effects          :
                    Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
 
 Name             : Songflower Serenade (id=15366) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : None
 Spell Level      : 50
@@ -19058,8 +19059,7 @@ Duration         : 3600 seconds
 Labels           : 1299
 Proc Chance      : 101%
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Is Ability (4), Not Shapeshifted (16), Include In Advanced Combat Log (72), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Include In Advanced Combat Log (72), Not In Raid Instances (203), Unknown (493)
 Effects          :
 #1 (id=692476)   : Apply Aura (6) | Dummy (4)
                    Base Value: 5 | Scaled Value: 5 | Value Multiplier: 1 | Target: Targeted Ally (21)
@@ -31726,6 +31726,7 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Fengus' Ferocity (id=22817) 
+Hotfixed         : Attributes, Aura Interrupt
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50
@@ -31735,21 +31736,23 @@ Duration         : 7200 seconds
 Labels           : 1299
 Proc Chance      : 101%
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Not In Raid Instances (203), Unknown (493)
 Effects          :
 #1 (id=700462)   : Apply Aura (6) | Dummy (4)
                    Base Value: 200 | Scaled Value: 200 | Value Multiplier: 1 | Target: Targeted Ally (21)
 #2 (id=870850)   : Apply Aura (6) | Dummy (4)
                    Base Value: 200 | Scaled Value: 200 | Target: Targeted Ally (21)
 #3 (id=1331558)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 230 | Scaled Value: 230 | Value Multiplier: 1 | Target: Targeted Ally (21)
+                   Base Value: 115 | Scaled Value: 115 | Value Multiplier: 1 | Target: Targeted Ally (21)
+Hotfixed         : Base Value (230 -> 115)
 #4 (id=1331559)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 230 | Scaled Value: 230 | Value Multiplier: 1 | Target: Targeted Ally (21)
+                   Base Value: 115 | Scaled Value: 115 | Value Multiplier: 1 | Target: Targeted Ally (21)
+Hotfixed         : Base Value (230 -> 115)
 Description      : Attack power increased by $s1 and spell damage and healing increased by up to $s3.
 Tooltip          : Attack power increased by $s1 and spell damage and healing increased by up to $s3. No effect while in a raid instance.
 
 Name             : Mol'dar's Moxie (id=22818) 
+Hotfixed         : Attributes, Aura Interrupt
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50
@@ -31760,8 +31763,7 @@ Labels           : 1299
 Proc Chance      : 101%
 Proc Flags       : Heartbeat
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Not In Raid Instances (203), Unknown (493)
 Effects          :
 #1 (id=700537)   : Apply Aura (6) | Dummy (4)
                    Base Value: 15 | Scaled Value: 15 | Value Multiplier: 1 | Misc Value: 2 | Target: Targeted Ally (21)
@@ -31769,6 +31771,7 @@ Description      : Overall Stamina increased by $s1%.
 Tooltip          : Overall Stamina increased by $s1%. Lasts $d. No effect while in a raid instance.
 
 Name             : Slip'kik's Savvy (id=22820) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50
@@ -31778,8 +31781,7 @@ Duration         : 7200 seconds
 Labels           : 1299
 Proc Chance      : 101%
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Allow While Stunned (163), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Aura Unique (43), Include In Advanced Combat Log (72), Allow Aura While Dead (116), Allow While Stunned (163), Not In Raid Instances (203), Unknown (493)
 Effects          :
 #1 (id=700351)   : Apply Aura (6) | Dummy (4)
                    Base Value: 3 | Scaled Value: 3 | Value Multiplier: 1 | Target: Targeted Ally (21)
@@ -33635,6 +33637,7 @@ Healing effects increased by $s2%.
 Mana cost increased by $s3%.
 
 Name             : Sayge's Dark Fortune of Damage (id=23768) 
+Hotfixed         : Attributes
 School           : Shadow
 Spell Type       : None
 Range            : 50000 yards
@@ -33642,12 +33645,11 @@ Duration         : 7200 seconds
 Labels           : 1299
 Proc Chance      : 101%
 Triggered By     : [DNT] Power Overwhelming (461520)
-Attributes       : Include In Advanced Combat Log (72), Unknown (493)
-Aura Interrupt   : Enter World (22)
+Attributes       : Include In Advanced Combat Log (72), Not In Raid Instances (203), Unknown (493)
 Effects          :
-#1 (id=696766)   : Apply Aura (6) | Modify Damage Done% (79)
-                   Base Value: 10 | Scaled Value: 10 | Misc Value: 0x7f | Target: Current Target (25)
-                   Affected School(s): All
+#1 (id=696766)   : Apply Aura (6) | Dummy (4)
+                   Base Value: 10 | Scaled Value: 10 | Target: Current Target (25)
+Hotfixed         : Sub Type (79 -> 4), Misc Value (127 -> 0)
 #2 (id=696767)   : Trigger Spell (64): Sayge's Carnie Buff
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 23770 | Target: Current Target (25)
 Tooltip          : Increases damage by $s1%. No effect while in a raid instance.

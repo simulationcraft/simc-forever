@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71037 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
 Class            : Priest
 School           : Holy
@@ -777,7 +777,6 @@ Effects          :
 Description      : Heals a friendly target for $s1.
 
 Name             : Mind Vision (desc=Rank 1) (id=2096) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Shadow
 Spell Type       : Magic
@@ -1893,7 +1892,6 @@ Description      : Draws on the soul of the party member to shield them, absorbi
 Tooltip          : Absorbs $w1 damage.
 
 Name             : Mind Vision (desc=Rank 2) (id=10909) [Spell Family (6)] 
-Hotfixed         : Attributes
 Class            : Priest
 School           : Shadow
 Spell Type       : Magic
