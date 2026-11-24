@@ -76,6 +76,7 @@ struct druid_t final : public parse_player_effects_t
     player_talent_t moonkin_form;
     player_talent_t predatory_strikes;
     player_talent_t blood_frenzy;
+    player_talent_t predatory_discipline;
   } talent;
 
   struct buffs_t
@@ -215,6 +216,7 @@ void druid_t::init_spells()
   talent.moonkin_form              = find_talent_spell( talent_tree::CLASS, "Moonkin Form" );
   talent.predatory_strikes         = find_talent_spell( talent_tree::CLASS, "Predatory Strikes" );
   talent.blood_frenzy              = find_talent_spell( talent_tree::CLASS, "Blood Frenzy" );
+  talent.predatory_discipline      = find_talent_spell( talent_tree::CLASS, "Predatory Discipline" );
 
   register_passive_effect_override( talent.predatory_strikes->effectN( 2 ),
                                     talent.predatory_strikes->effectN( 1 ).base_value() / 100 * true_level );
@@ -974,33 +976,26 @@ protected:
 
 struct ferocious_bite_t : public druid_combo_attack_t
 {
-  // Toggle for the extra energy conversion for future predatory discipline support
-  bool extra_energy = true;
-
-  ferocious_bite_t( druid_t* player, std::string_view options_str )
-    : druid_combo_attack_t( "ferocious_bite", player, player->rank.ferocious_bite.find_rank()->spell() ),
+  ferocious_bite_t( druid_t* p, std::string_view options_str )
+    : druid_combo_attack_t( "ferocious_bite", p, p->rank.ferocious_bite.find_rank()->spell() ),
       extra_energy_spent( 0.0 )
   {
-    add_option( opt_bool( "extra_energy", extra_energy ) );
     parse_options( options_str );
+
+    drain_energy = p->talent.predatory_strikes->ok();
 
     // The roll is applied to the base value in base_da_min/max, but amount_delta gets applied to the whole thing in
     // action_t when enabled
     amount_delta = 0.0;
-
-    // TODO confirm how it interacts with Clearcasting
   }
 
   void execute() override
   {
-    extra_energy_spent = 0.0;
-
-    if ( extra_energy )
-      extra_energy_spent = std::max( 0.0, p()->resources.current[ RESOURCE_ENERGY ] - cost() );
+    extra_energy_spent = std::max( 0.0, p()->resources.current[ RESOURCE_ENERGY ] - cost() );
 
     druid_combo_attack_t::execute();
 
-    if ( extra_energy_spent > 0.0 && this->result_is_hit( execute_state->result ) )
+    if ( drain_energy && extra_energy_spent > 0.0 && this->result_is_hit( execute_state->result ) )
     {
       auto const drained = std::min( extra_energy_spent, p()->resources.current[ RESOURCE_ENERGY ] );
       p()->resource_loss( RESOURCE_ENERGY, drained, gain );
@@ -1032,6 +1027,7 @@ struct ferocious_bite_t : public druid_combo_attack_t
 
 private:
   double extra_energy_spent;
+  bool drain_energy;
 };
 
 struct rip_t : public druid_combo_attack_t
