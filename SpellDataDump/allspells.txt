@@ -152227,7 +152227,7 @@ Duration         : 300 seconds
 Stacks           : 1 maximum
 Proc Chance      : 101%
 Attributes       : Do Not Log (8), Not In Combat (Only Peaceful) (28), No Immunities (29), Unknown (493)
-Aura Interrupt   : Action (2), Enter Combat (28), Swimming (33)
+Aura Interrupt   : Enter Combat (28), Swimming (33)
 Channel Interrupt: Action (3)
 Effects          :
 #1 (id=1338389)  : Apply Aura (6) | Area Trigger (395)
