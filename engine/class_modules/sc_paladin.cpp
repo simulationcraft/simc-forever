@@ -111,6 +111,7 @@ public:
   struct buffs_t
   {
     buff_t* devotion_aura;
+    absorb_buff_t* lights_fury;
     std::array<std::vector<buff_t*>, SEAL_MAX> seal_buffs;
     std::array<buff_t*, SEAL_MAX> seal_expression_buffs;
   } buff;
@@ -213,6 +214,7 @@ public:
 
   struct spells_t
   {
+    const spell_data_t* lights_fury = spell_data_t::nil(); // Seal of Fury absorb
   } spell;
 
   struct actives_t
@@ -297,6 +299,7 @@ public:
   }
 };
 
+using paladin_absorb_t = paladin_action_t<absorb_t>;
 using paladin_attack_t = paladin_action_t<melee_attack_t>;
 using paladin_heal_t = paladin_action_t<heal_t>;
 using paladin_spell_t  = paladin_action_t<spell_t>;
@@ -583,12 +586,21 @@ struct seal_of_fury_t : public paladin_seal_t
 {
   struct seal_of_fury_damage_t : public paladin_spell_t
   {
+    double damage_percent_absorb;
     seal_of_fury_damage_t( paladin_t* player )
       : paladin_spell_t( "seal_of_fury_damage", player,
-                         player->rank.seal_of_fury_damage.find_rank()->spell() )
+                         player->rank.seal_of_fury_damage.find_rank()->spell() ), damage_percent_absorb( player->rank.seal_of_fury.find_rank()->spell()->effectN( 2 ).percent() )
     {
       background = true;
       spell_power_mod.direct = 0.1;
+    }
+
+    void impact(action_state_t* s) override
+    {
+      paladin_spell_t::impact( s );
+
+      const double damage = s->result_amount * damage_percent_absorb;
+      p()->buff.lights_fury->trigger( 1, damage );
     }
   };
 
@@ -715,6 +727,12 @@ void paladin_t::create_buffs()
       make_buff( this, "seal_of_the_crusader", rank.seal_of_the_crusader.find_rank()->spell() );
 
   buff.devotion_aura = make_buff( this, "devotion_aura", rank.devotion_aura.find_rank()->spell() );
+
+  buff.lights_fury = make_buff<absorb_buff_t>( this, "lights_fury", spell.lights_fury );
+  buff.lights_fury->set_absorb_source( get_stats( "lights_fury" ) )
+      ->set_absorb_gain( get_gain( "lights_fury" ) )
+      ->set_cumulative( true )
+      ->set_cooldown( timespan_t::zero() );
 
   parse_effects( buff.devotion_aura );
 }
@@ -844,6 +862,8 @@ void paladin_t::init_spells()
 
   // Row 7 Ret
   talent.unsealed_wrath = CT( "Unsealed Wrath" );
+
+  spell.lights_fury = find_spell( 1310927 );
 
   rank.blessing_of_might = {
       this,
