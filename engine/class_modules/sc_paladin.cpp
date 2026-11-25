@@ -79,6 +79,7 @@ public:
 
   void init_special_effects() override;
   void create_actions() override;
+  void assess_damage( school_e, result_amount_type, action_state_t* ) override;
   void activate() override;
   void reset() override;
 
@@ -111,6 +112,7 @@ public:
   struct buffs_t
   {
     buff_t* devotion_aura;
+    buff_t* retribution_aura;
     absorb_buff_t* lights_fury;
     std::array<std::vector<buff_t*>, SEAL_MAX> seal_buffs;
     std::array<buff_t*, SEAL_MAX> seal_expression_buffs;
@@ -219,6 +221,7 @@ public:
 
   struct actives_t
   {
+    spell_t* retribution_aura = nullptr;
   } active;
 
   struct
@@ -643,7 +646,40 @@ struct devotion_aura_t : public paladin_spell_t
     paladin_spell_t::execute();
 
     // TODO: Disable other auras
+    p()->buff.retribution_aura->trigger();
     p()->buff.devotion_aura->trigger();
+  }
+};
+
+struct retribution_aura_damage_t : public paladin_spell_t
+{
+  retribution_aura_damage_t( paladin_t* player )
+    : paladin_spell_t( "retribution_aura_damage", player, player->rank.retribution_aura.find_rank()->spell() )
+  {
+    background = true;
+    may_miss = may_dodge = may_block = may_crit = may_glance = may_parry = false; // TOCHECK
+
+    if ( data().ok() )
+      base_dd_min = base_dd_max = data().effectN( 1 ).base_value();
+  }
+};
+
+struct retribution_aura_t : public paladin_spell_t
+{
+  retribution_aura_t( paladin_t* player, util::string_view options_str ) : paladin_spell_t( "retribution_aura", player, player->rank.retribution_aura.find_rank()->spell() )
+  {
+    parse_options( options_str );
+    harmful = false;
+    set_target( player );
+  }
+
+  void execute() override
+  {
+    paladin_spell_t::execute();
+
+    // TODO: Disable other auras
+    p()->buff.devotion_aura->expire();
+    p()->buff.retribution_aura->trigger();
   }
 };
 
@@ -697,6 +733,8 @@ action_t* paladin_t::create_action( util::string_view name, util::string_view op
   // auras
   if ( name == "devotion_aura" )
     return new devotion_aura_t( this, options_str );
+  if ( name == "retribution_aura" )
+    return new retribution_aura_t( this, options_str );
 
   // utility
   if ( name == "hammer_of_justice" )
@@ -727,6 +765,7 @@ void paladin_t::create_buffs()
       make_buff( this, "seal_of_the_crusader", rank.seal_of_the_crusader.find_rank()->spell() );
 
   buff.devotion_aura = make_buff( this, "devotion_aura", rank.devotion_aura.find_rank()->spell() );
+  buff.retribution_aura = make_buff( this, "retribution_aura", rank.retribution_aura.find_rank()->spell() );
 
   buff.lights_fury = make_buff<absorb_buff_t>( this, "lights_fury", spell.lights_fury );
   buff.lights_fury->set_absorb_source( get_stats( "lights_fury" ) )
@@ -740,6 +779,22 @@ void paladin_t::create_buffs()
 void paladin_t::create_actions()
 {
   base_t::create_actions();
+
+  if ( rank.retribution_aura.find_rank()->spell()->ok() )
+  {
+    active.retribution_aura = new retribution_aura_damage_t( this );
+  }
+}
+
+void paladin_t::assess_damage( school_e school, result_amount_type type, action_state_t* s )
+{
+  parse_player_effects_t::assess_damage( school, type, s );
+
+  if ( active.retribution_aura && buff.retribution_aura->check() && type == result_amount_type::DMG_DIRECT &&
+       s->action->player->is_enemy() && !s->action->special && s->action->result_is_hit( s->result ) )
+  {
+    active.retribution_aura->execute_on_target( s->action->player );
+  }
 }
 
 void paladin_t::init_action_list()
