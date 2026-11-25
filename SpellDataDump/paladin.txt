@@ -4320,6 +4320,7 @@ Effects          :
                    Base Value: 70 | Scaled Value: 0.7 | SP Coefficient: 0.29 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 1) (id=20425) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4327,7 +4328,7 @@ Spell Level      : 20 (max 28)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698430)   : Dummy (3)
                    Base Value: 20467 | Scaled Value: 20467 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -4339,7 +4340,7 @@ Spell Type       : Melee
 Spell Level      : 20 (max 28)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -4760,6 +4761,7 @@ Effects          :
 Description      : Blasts the target with Holy energy, causing $25902s1 Holy damage to an enemy, or $25903s1 healing to an ally.
 
 Name             : Judgement of Command (desc=Rank 3) (id=20961) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4767,12 +4769,13 @@ Spell Level      : 40 (max 48)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698309)   : Dummy (3)
                    Base Value: 20964 | Scaled Value: 20964 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 2) (id=20962) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4780,7 +4783,7 @@ Spell Level      : 30 (max 38)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698310)   : Dummy (3)
                    Base Value: 20963 | Scaled Value: 20963 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -4792,7 +4795,7 @@ Spell Type       : Melee
 Spell Level      : 30 (max 38)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -4806,7 +4809,7 @@ Spell Type       : Melee
 Spell Level      : 40 (max 48)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -4820,7 +4823,7 @@ Spell Type       : Melee
 Spell Level      : 50 (max 58)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -4834,7 +4837,7 @@ Spell Type       : Melee
 Spell Level      : 60 (max 68)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -4842,6 +4845,7 @@ Effects          :
                    Base Value: 356 | Scaled Value: 356 (delta=0.095506) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20967) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4849,12 +4853,13 @@ Spell Level      : 50 (max 58)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698532)   : Dummy (3)
                    Base Value: 20965 | Scaled Value: 20965 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 5) (id=20968) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -4862,7 +4867,7 @@ Spell Level      : 60 (max 68)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698854)   : Dummy (3)
                    Base Value: 20966 | Scaled Value: 20966 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -8414,8 +8419,9 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1310269)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 4 | Scaled Value: 4 | Target: Self (1)
-                   Affected Spells: Judgement of Fury (20183), Judgement of Righteousness (20187), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Judgement of Fury (20411), Judgement of Fury (20412), Judgement of Fury (20413), Judgement of Fury (20414), Judgement of Fury (1311650), Judgement of Fury (1311655)
-                   Family Flags: 10, 35, 70
+                   Affected Spells: Judgement of Fury (20183), Judgement of Righteousness (20187), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Judgement of Fury (20411), Judgement of Fury (20412), Judgement of Fury (20413), Judgement of Fury (20414), Judgement of Command (20467), Judgement of Command (20963), Judgement of Command (20964), Judgement of Command (20965), Judgement of Command (20966), Judgement of Fury (1311650), Judgement of Fury (1311655)
+                   Family Flags: 10, 35, 41, 70
+Hotfixed         : Affects Spells
 Description      : Increases the damage of your Judgement ability by $s1%.
 
 Name             : Holy Light Mana Cost Reduction (id=1291089) [Spell Family (10), Passive, Hidden] 
@@ -9579,7 +9585,7 @@ Resource         : 8% Base Mana (0) (id=315133)
 Range            : 40 yards
 Max Targets      : 1
 GCD              : 1.5 seconds
-Duration         : 300 seconds
+Duration         : 3600 seconds
 Labels           : 26: Paladin Spells
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Limit N (165), Unknown (493)
 Effects          :

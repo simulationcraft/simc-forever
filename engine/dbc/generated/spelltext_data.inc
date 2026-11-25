@@ -3006,7 +3006,7 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {   16906, "$?s436895[Increases all damage you deal by $s1%.][Increases the damage you deal with physical attacks in all forms by $s1%.]", 0, "Rank 5" },
   {   16908, "Dispels a magic effect on the current foe.", 0, 0 },
   {   16909, "Increases the critical strike damage bonus of your Arcane and Nature spells by $m1%.", 0, 0 },
-  {   16914, "Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts $d. Druid must channel to maintain the spell.", 0, "Rank 1" },
+  {   16914, "Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts ${$d}. Druid must channel to maintain the spell.", 0, "Rank 1" },
   {   16916, "Heal yourself for $s2 and increase your Strength by $s1 for $d.", "Strength increased by $w1.", 0 },
   {   16918, "Increases the damage done by your Entangling Roots spell by $m1%, and its victims can take up to $m1% more damage without interrupting the effect.", 0, 0 },
   {   16921, "Blasts up to 3 targets for $s1 Nature damage.", 0, 0 },
@@ -3101,8 +3101,8 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {   17364, "Instantly strike for $s3% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2% for $d.", "Increases damage taken from the Shaman's next Lightning Bolt, Chain Lightning, or Earth Shock spell by $s2%.", 0 },
   {   17368, "Use to free Spectral and Ghostly Citizens.", 0, 0 },
   {   17371, "Increases healing done by spells and effects by up to $s1.", 0, 0 },
-  {   17401, "Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts $d. Druid must channel to maintain the spell.", 0, "Rank 2" },
-  {   17402, "Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts $d. Druid must channel to maintain the spell.", 0, "Rank 3" },
+  {   17401, "Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts ${$d}. Druid must channel to maintain the spell.", 0, "Rank 2" },
+  {   17402, "Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts ${$d}. Druid must channel to maintain the spell.", 0, "Rank 3" },
   {   17407, "Wounds the target for $s1 damage and deals an additional $s2 damage every $t2 sec for $d.", "Deals $s2 damage every $t2 sec.", 0 },
   {   17432, "Opens a Stratholme postbox.", 0, 0 },
   {   17447, "Channels $s1 health into mana every $t1 sec for $d.", "Converting $s1 health into $s1 mana every $t1 sec.", 0 },
@@ -8157,7 +8157,7 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   { 1300130, "Deal $s2 Fire damage.", "Deals $s2 Fire damage.", 0 },
   { 1300140, 0, "Your next damage spell has its mana cost reduced by $/10;s1%.", 0 },
   { 1300141, "Melee attacks have a $h% chance to grant a Clearcasting state, reducing the mana cost of your next damage spell by 100%.", 0, 0 },
-  { 1300180, "Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat.", "Stealthed. Movement slowed by $s2%.", 0 },
+  { 1300180, "Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat. Lasts $d.", "Stealthed. Movement slowed by $s2%.", 0 },
   { 1300185, "Delivers a fatal wound for $s1 Physical damage. Deals $s2% increased damage to targets below $s3% health.", 0, 0 },
   { 1300209, "Bludgeon the target, dealing $s1 Physical damage. Canines and Hyaenidae are stunned and sit for $1293483d.", 0, 0 },
   { 1300240, "Inflicts$s1 Nature damage per $t1 sec. Deaks $s2 times as much damage to Trolls.", "Taking $w1 Nature damage per $t1 sec.", 0 },
@@ -8758,7 +8758,11 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
 } };
 
 // spelltext hotfix entries, wow build 1.60.1.71091
-static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __spelltext_hotfix_data { {
+static constexpr std::array<hotfix::client_hotfix_entry_t, 4> __spelltext_hotfix_data { {
+  {   16914,  0, "Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts $d. Druid must channel to maintain the spell.", "Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts ${$d}. Druid must channel to maintain the spell." },
+  {   17401,  0, "Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts $d. Druid must channel to maintain the spell.", "Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts ${$d}. Druid must channel to maintain the spell." },
+  {   17402,  0, "Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts $d. Druid must channel to maintain the spell.", "Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts ${$d}. Druid must channel to maintain the spell." },
+  { 1300180,  0, "Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat.", "Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat. Lasts $d." },
 } };
 
 // Spell description variables, wow build 1.60.1.71091
