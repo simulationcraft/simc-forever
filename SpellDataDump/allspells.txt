@@ -2530,7 +2530,7 @@ Category         : 46 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 300 seconds
 Stance Mask      : 0x00000002
-Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Nature's Focus (17063 effect#1), Gift of Nature (17104 effect#1), Improved Tranquility (17123 effects: #1, #2), Nimble Healing Touch (24542 effect#2), Tranquil Spirit (24968 effect#1), Tree of Life (Passive) (439734 effect#1), S03 - Item - T1 - Druid - Restoration 6P Bonus (456322 effects: #1, #2)
+Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Nature's Focus (17063 effect#1), Gift of Nature (17104 effect#1), Improved Tranquility (17123 effects: #1, #2), Nimble Healing Touch (24542 effect#2), Tranquil Spirit (24968 effect#1), Tree of Life (Passive) (439734 effect#1), S03 - Item - T1 - Druid - Restoration 6P Bonus (456322 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 7
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), Allow While Not Shapeshifted (caster form) (83), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -22597,7 +22597,7 @@ Category         : 46 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 300 seconds
 Stance Mask      : 0x00000002
-Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Nature's Focus (17063 effect#1), Gift of Nature (17104 effect#1), Improved Tranquility (17123 effects: #1, #2), Nimble Healing Touch (24542 effect#2), Tranquil Spirit (24968 effect#1), Tree of Life (Passive) (439734 effect#1), S03 - Item - T1 - Druid - Restoration 6P Bonus (456322 effects: #1, #2)
+Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Nature's Focus (17063 effect#1), Gift of Nature (17104 effect#1), Improved Tranquility (17123 effects: #1, #2), Nimble Healing Touch (24542 effect#2), Tranquil Spirit (24968 effect#1), Tree of Life (Passive) (439734 effect#1), S03 - Item - T1 - Druid - Restoration 6P Bonus (456322 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 7
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), Allow While Not Shapeshifted (caster form) (83), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -26128,7 +26128,7 @@ Category         : 46 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 300 seconds
 Stance Mask      : 0x00000002
-Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Nature's Focus (17063 effect#1), Gift of Nature (17104 effect#1), Improved Tranquility (17123 effects: #1, #2), Nimble Healing Touch (24542 effect#2), Tranquil Spirit (24968 effect#1), Tree of Life (Passive) (439734 effect#1), S03 - Item - T1 - Druid - Restoration 6P Bonus (456322 effects: #1, #2)
+Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Nature's Focus (17063 effect#1), Gift of Nature (17104 effect#1), Improved Tranquility (17123 effects: #1, #2), Nimble Healing Touch (24542 effect#2), Tranquil Spirit (24968 effect#1), Tree of Life (Passive) (439734 effect#1), S03 - Item - T1 - Druid - Restoration 6P Bonus (456322 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 7
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), Allow While Not Shapeshifted (caster form) (83), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -26151,7 +26151,7 @@ Category         : 46 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 300 seconds
 Stance Mask      : 0x00000002
-Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Nature's Focus (17063 effect#1), Gift of Nature (17104 effect#1), Improved Tranquility (17123 effects: #1, #2), Nimble Healing Touch (24542 effect#2), Tranquil Spirit (24968 effect#1), Tree of Life (Passive) (439734 effect#1), S03 - Item - T1 - Druid - Restoration 6P Bonus (456322 effects: #1, #2)
+Affecting Spells : Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Nature's Focus (17063 effect#1), Gift of Nature (17104 effect#1), Improved Tranquility (17123 effects: #1, #2), Nimble Healing Touch (24542 effect#2), Tranquil Spirit (24968 effect#1), Tree of Life (Passive) (439734 effect#1), S03 - Item - T1 - Druid - Restoration 6P Bonus (456322 effects: #1, #2), Genesis (1223081 effect#1)
 Family Flags     : 7
 Attributes       : Not Shapeshifted (16), Is Self Channelled (38), Allow While Not Shapeshifted (caster form) (83), Periodic Can Crit (265), Aura Points On Client (268), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -54698,7 +54698,7 @@ Category         : 571 (Type 0x0)
 Labels           : 21: Druid Spells
 Proc Chance      : 101%
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3)
+Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3), Genesis (1223081 effect#2)
 Family Flags     : 22
 Attributes       : Not Shapeshifted (16), No Redirection (35), Is Self Channelled (38), No Reflection (39), Allow While Not Shapeshifted (caster form) (83), No Initial Threat (86), No Caster Aura Icon (187), Show Mechanic as Combat Text (213), Aura Points On Client (268), Allow Class Ability Procs (416), Periodic Refresh Extends Duration (436), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -56405,7 +56405,7 @@ Category         : 571 (Type 0x0)
 Labels           : 21: Druid Spells
 Proc Chance      : 101%
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3)
+Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3), Genesis (1223081 effect#2)
 Family Flags     : 22
 Attributes       : Not Shapeshifted (16), No Redirection (35), Is Self Channelled (38), No Reflection (39), Allow While Not Shapeshifted (caster form) (83), No Initial Threat (86), No Caster Aura Icon (187), Show Mechanic as Combat Text (213), Aura Points On Client (268), Allow Class Ability Procs (416), Periodic Refresh Extends Duration (436), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -56432,7 +56432,7 @@ Category         : 571 (Type 0x0)
 Labels           : 21: Druid Spells
 Proc Chance      : 101%
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3)
+Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3), Genesis (1223081 effect#2)
 Family Flags     : 22
 Attributes       : Not Shapeshifted (16), No Redirection (35), Is Self Channelled (38), No Reflection (39), Allow While Not Shapeshifted (caster form) (83), No Initial Threat (86), No Caster Aura Icon (187), Show Mechanic as Combat Text (213), Aura Points On Client (268), Allow Class Ability Procs (416), Periodic Refresh Extends Duration (436), Unknown (454), Unknown (493)
 Channel Interrupt: Damage (2), Action (3), Sheathing (10), Interacting (11), Looting (12), Attacking (13), Use Item (14)
@@ -70670,6 +70670,7 @@ Effects          :
                    Base Value: 70 | Scaled Value: 0.7 | SP Coefficient: 0.29 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 1) (id=20425) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -70677,7 +70678,7 @@ Spell Level      : 20 (max 28)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698430)   : Dummy (3)
                    Base Value: 20467 | Scaled Value: 20467 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -70689,7 +70690,7 @@ Spell Type       : Melee
 Spell Level      : 20 (max 28)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -72716,6 +72717,7 @@ Effects          :
 Description      : Restores $s1 mana per 5 sec.
 
 Name             : Judgement of Command (desc=Rank 3) (id=20961) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -72723,12 +72725,13 @@ Spell Level      : 40 (max 48)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698309)   : Dummy (3)
                    Base Value: 20964 | Scaled Value: 20964 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 2) (id=20962) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -72736,7 +72739,7 @@ Spell Level      : 30 (max 38)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698310)   : Dummy (3)
                    Base Value: 20963 | Scaled Value: 20963 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -72748,7 +72751,7 @@ Spell Type       : Melee
 Spell Level      : 30 (max 38)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -72762,7 +72765,7 @@ Spell Type       : Melee
 Spell Level      : 40 (max 48)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -72776,7 +72779,7 @@ Spell Type       : Melee
 Spell Level      : 50 (max 58)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -72790,7 +72793,7 @@ Spell Type       : Melee
 Spell Level      : 60 (max 68)
 Range            : 50000 yards
 Labels           : 26: Paladin Spells
-Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2)
+Affecting Spells : Benediction (20101 effect#1), Improved Seals (20224 effect#1), S03 - Item - T2 - Paladin - Retribution 2P Bonus (467518 effect#1), S03 - Item - T2 - Paladin - Retribution 4P Bonus (467526 effect#2), Judgement Increased Damage (1291086 effect#1)
 Family Flags     : 41
 Attributes       : No Active Defense (21), Not a Proc (105), Always Hit (114), Unknown (493)
 Effects          :
@@ -72798,6 +72801,7 @@ Effects          :
                    Base Value: 356 | Scaled Value: 356 (delta=0.095506) | Points Per Level: 6.1 | SP Coefficient: 0.429 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 4) (id=20967) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -72805,12 +72809,13 @@ Spell Level      : 50 (max 58)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698532)   : Dummy (3)
                    Base Value: 20965 | Scaled Value: 20965 | SP Coefficient: 1 | Target: Targeted Enemy (6)
 
 Name             : Judgement of Command (desc=Rank 5) (id=20968) [Spell Family (10)] 
+Hotfixed         : Attributes
 Class            : Paladin
 School           : Holy
 Spell Type       : Melee
@@ -72818,7 +72823,7 @@ Spell Level      : 60 (max 68)
 Range            : 100 yards
 Labels           : 26: Paladin Spells
 Proc Chance      : 100%
-Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Unknown (493)
+Attributes       : Wearer Casts Proc Trigger (11), Not Shapeshifted (16), Do Not Sheath (18), No Active Defense (21), No Reflection (39), Suppress Weapon Procs (151), Unknown (493)
 Effects          :
 #1 (id=698854)   : Dummy (3)
                    Base Value: 20966 | Scaled Value: 20966 | SP Coefficient: 1 | Target: Targeted Enemy (6)
@@ -126198,12 +126203,14 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=1210794)  : Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)
                    Base Value: 1 | Scaled Value: 1 | Misc Value: 22 | Target: Self (1)
-                   Affected Spells: Entangling Roots (339), Rejuvenation (774), Rejuvenation (1058), Entangling Roots (1062), Rip (1079), Rejuvenation (1430), Rake (1822), Rake (1823), Rake (1824), Rejuvenation (2090), Rejuvenation (2091), Rejuvenation (3627), Entangling Roots (5195), Entangling Roots (5196), Insect Swarm (5570), Rejuvenation (8910), Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Pounce (9005), Pounce Bleed (9007), Rip (9492), Rip (9493), Regrowth (9750), Rip (9752), Pounce (9823), Pounce Bleed (9824), Pounce Bleed (9826), Pounce (9827), Moonfire (9833), Moonfire (9834), Moonfire (9835), Rejuvenation (9839), Rejuvenation (9840), Rejuvenation (9841), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Rip (9894), Rip (9896), Rake (9904), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Insect Swarm (24974), Insect Swarm (24975), Insect Swarm (24976), Insect Swarm (24977), Rejuvenation (25299), Blessed Recovery (27813), Wild Growth (408120), Lacerate (414644), Rejuvenation (417057), Rejuvenation (417058), Rejuvenation (417059), Rejuvenation (417060), Rejuvenation (417061), Rejuvenation (417062), Rejuvenation (417063), Rejuvenation (417064), Rejuvenation (417065), Rejuvenation (417066), Rejuvenation (417068), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Lacerate (1235826), Lacerate (1235827), Wild Growth (1238214), Wild Growth (1238215), Lacerate (1328616), Lacerate (1328617)
-                   Family Flags: 1, 4, 6, 9, 17, 21, 40, 58, 85, 103, 126
+                   Affected Spells: Entangling Roots (339), Tranquility (740), Rejuvenation (774), Rejuvenation (1058), Entangling Roots (1062), Rip (1079), Rejuvenation (1430), Rake (1822), Rake (1823), Rake (1824), Rejuvenation (2090), Rejuvenation (2091), Rejuvenation (3627), Entangling Roots (5195), Entangling Roots (5196), Insect Swarm (5570), Rejuvenation (8910), Tranquility (8918), Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Regrowth (8936), Regrowth (8938), Regrowth (8939), Regrowth (8940), Regrowth (8941), Pounce (9005), Pounce Bleed (9007), Rip (9492), Rip (9493), Regrowth (9750), Rip (9752), Pounce (9823), Pounce Bleed (9824), Pounce Bleed (9826), Pounce (9827), Moonfire (9833), Moonfire (9834), Moonfire (9835), Rejuvenation (9839), Rejuvenation (9840), Rejuvenation (9841), Entangling Roots (9852), Entangling Roots (9853), Regrowth (9856), Regrowth (9857), Regrowth (9858), Tranquility (9862), Tranquility (9863), Rip (9894), Rip (9896), Rake (9904), Entangling Roots (19970), Entangling Roots (19971), Entangling Roots (19972), Entangling Roots (19973), Entangling Roots (19974), Entangling Roots (19975), Insect Swarm (24974), Insect Swarm (24975), Insect Swarm (24976), Insect Swarm (24977), Rejuvenation (25299), Blessed Recovery (27813), Wild Growth (408120), Lacerate (414644), Rejuvenation (417057), Rejuvenation (417058), Rejuvenation (417059), Rejuvenation (417060), Rejuvenation (417061), Rejuvenation (417062), Rejuvenation (417063), Rejuvenation (417064), Rejuvenation (417065), Rejuvenation (417066), Rejuvenation (417068), Regrowth (436937), Regrowth (436938), Regrowth (436939), Regrowth (436940), Regrowth (436942), Regrowth (436943), Regrowth (436944), Regrowth (436945), Regrowth (436946), Lacerate (1235826), Lacerate (1235827), Wild Growth (1238214), Wild Growth (1238215), Lacerate (1328616), Lacerate (1328617)
+                   Family Flags: 1, 4, 6, 7, 9, 17, 21, 40, 58, 85, 103, 126
+Hotfixed         : Affects Spells
 #2 (id=1291838)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
-                   Affected Spells: Swiftmend (18562)
-                   Family Flags: 33
+                   Affected Spells: Hurricane (16914), Hurricane (17401), Hurricane (17402), Swiftmend (18562), Hurricane (1278759), Hurricane (1278965), Hurricane (1278968)
+                   Family Flags: 22, 33
+Hotfixed         : Affects Spells
 Description      : Increases the periodic damage and healing done by your spells and abilities by $s1%.
 
 Name             : Nature's Majesty (id=1223082) [Spell Family (7), Passive, Hidden] 
@@ -142384,7 +142391,7 @@ Duration         : 10 seconds
 Category         : 571 (Type 0x0)
 Labels           : 21: Druid Spells
 Proc Chance      : 101%
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3)
+Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3), Genesis (1223081 effect#2)
 Family Flags     : 22
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -142419,7 +142426,7 @@ Duration         : 10 seconds
 Category         : 571 (Type 0x0)
 Labels           : 21: Druid Spells
 Proc Chance      : 101%
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3)
+Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3), Genesis (1223081 effect#2)
 Family Flags     : 22
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -142440,7 +142447,7 @@ Duration         : 10 seconds
 Category         : 571 (Type 0x0)
 Labels           : 21: Druid Spells
 Proc Chance      : 101%
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3)
+Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Gale Winds (417135 effects: #1, #2, #3, #4), S03 - Item - T2 - Druid - Balance 2P Bonus (467077 effects: #1, #2, #3), Genesis (1223081 effect#2)
 Family Flags     : 22
 Attributes       : No Redirection (35), No Reflection (39), Active Threat (94), Do Not Display Range (126), Allow Cast While Casting (135), Not In Spellbook (143), Do Not Display Duration (170), Aura Points On Client (268), Do Not Log Aura Refresh (291), Allow Cast While Channeling (308), Allow Class Ability Procs (416), Nameplate Personal Buffs/Debuffs (423), Unknown (493)
 Effects          :
@@ -144022,8 +144029,9 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=1310269)  : Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)
                    Base Value: 4 | Scaled Value: 4 | Target: Self (1)
-                   Affected Spells: Judgement of Fury (20183), Judgement of Righteousness (20187), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Judgement of Fury (20411), Judgement of Fury (20412), Judgement of Fury (20413), Judgement of Fury (20414), Judgement of Fury (1311650), Judgement of Fury (1311655)
-                   Family Flags: 10, 35, 70
+                   Affected Spells: Judgement of Fury (20183), Judgement of Righteousness (20187), Judgement of Righteousness (20280), Judgement of Righteousness (20281), Judgement of Righteousness (20282), Judgement of Righteousness (20283), Judgement of Righteousness (20284), Judgement of Righteousness (20285), Judgement of Righteousness (20286), Judgement of Fury (20411), Judgement of Fury (20412), Judgement of Fury (20413), Judgement of Fury (20414), Judgement of Command (20467), Judgement of Command (20963), Judgement of Command (20964), Judgement of Command (20965), Judgement of Command (20966), Judgement of Fury (1311650), Judgement of Fury (1311655)
+                   Family Flags: 10, 35, 41, 70
+Hotfixed         : Affects Spells
 Description      : Increases the damage of your Judgement ability by $s1%.
 
 Name             : Holy Light Mana Cost Reduction (id=1291089) [Spell Family (10), Passive, Hidden] 
@@ -148466,11 +148474,12 @@ Effects          :
 Description      : Bludgeon the target, dealing $s1 Physical damage. Canines and Hyaenidae are stunned and sit for $1293483d.
 
 Name             : Cloud of Chained Essence (id=1300240) 
+Hotfixed         : Attributes
 School           : Nature
 Spell Type       : None
 Range            : 100 yards
 Duration         : Aura (infinite)
-Attributes       : Allow While Mounted (24), Aura Is Debuff (26), Allow While Sitting (27), No Immunities (29), No Aura Cancel (31), No Redirection (35), Allow While Stealthed (37), No Reflection (39), Ignore Line of Sight (66), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Cast While Casting (135), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Periodic Can Crit (265), Aura Points On Client (268), Allow While Banished Aura State (299), Allow Cast While Channeling (308), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
+Attributes       : Allow While Mounted (24), Aura Is Debuff (26), Allow While Sitting (27), No Aura Cancel (31), No Redirection (35), Allow While Stealthed (37), No Reflection (39), Ignore Line of Sight (66), Allow While Invisible (78), Allow While Not Shapeshifted (caster form) (83), Allow Cast While Casting (135), Allow While Stunned (163), Allow While Fleeing (177), Allow While Confused (178), Allow While Riding Vehicle (204), Allow While Charmed (261), Periodic Can Crit (265), Aura Points On Client (268), Allow While Banished Aura State (299), Allow Cast While Channeling (308), Allow While Stunned By Horror Mechanic (342), Allow While Stunned by Stun Mechanic (378), Allow While Feared By Fear Mechanic (417), Unknown (452), Unknown (493)
 Effects          :
 #1 (id=1324820)  : Apply Aura (6) | Periodic Damage (3): nature every 2 seconds
                    Base Value: 140 | Scaled Value: 140 | Target: Current Target (25)
@@ -156179,8 +156188,9 @@ Effects          :
 Description      : +$s1 Attack Power, doubled against Mechanical units.
 
 Name             : Blackhand's Breadth (id=1318944) 
-School           : Shadow
-Spell Type       : Magic
+Hotfixed         : School (32 -> 1), Spell Type (1 -> 0)
+School           : Physical
+Spell Type       : None
 Range            : 100 yards
 Duration         : 20 seconds
 Proc Chance      : 101%
@@ -158265,7 +158275,7 @@ Resource         : 8% Base Mana (0) (id=315133)
 Range            : 40 yards
 Max Targets      : 1
 GCD              : 1.5 seconds
-Duration         : 300 seconds
+Duration         : 3600 seconds
 Labels           : 26: Paladin Spells
 Attributes       : Not Shapeshifted (16), Do Not Sheath (18), Limit N (165), Unknown (493)
 Effects          :
