@@ -438,3 +438,15 @@ elif options.type == 'scale':
         sys.exit(1)
 
     g.generate()
+
+    g = CSVDataGenerator(options, {
+        'file': 'ShieldBlockRegular.txt',
+        'key': 'Level',
+        'comment': '// Shield block value by item level and quality, wow build %s\n' % options.build,
+        'values': [ 'Poor', 'Standard', 'Good', 'Superior', 'Epic', 'Legendary', 'Artifact' ],
+        'max_rows': 100,
+        'fallback': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fallback', 'ShieldBlockRegular.txt'),
+    })
+    if not g.initialize():
+        sys.exit(1)
+    g.generate()

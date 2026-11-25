@@ -445,6 +445,8 @@ public:
   const item_armor_total_data_t&  item_armor_total( unsigned ilevel ) const
   { return item_armor_total_data_t::find( ilevel, ptr ); }
 
+  double shield_block_regular( unsigned ilevel, int quality ) const;
+
   const item_armor_location_data_t& item_armor_inv_type( unsigned inv_type ) const
   { return item_armor_location_data_t::find( inv_type, ptr ); }
 

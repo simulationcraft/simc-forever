@@ -1284,6 +1284,7 @@ const char* util::cache_type_string( cache_e c )
     case CACHE_PARRY:                    return "parry";
     case CACHE_DODGE:                    return "dodge";
     case CACHE_BLOCK:                    return "block";
+    case CACHE_BLOCK_VALUE:              return "block_value";
     case CACHE_ARMOR:                    return "armor";
     case CACHE_BONUS_ARMOR:              return "bonus_armor";
     case CACHE_LEECH:                    return "leech";
@@ -1458,6 +1459,7 @@ const char* util::stat_type_string( stat_e stat )
     case STAT_PARRY_RATING:      return "parry_rating";
 
     case STAT_BLOCK_RATING: return "block_rating";
+    case STAT_BLOCK_VALUE:  return "block_value";
 
     case STAT_PVP_POWER: return "pvp_power";
 
@@ -1551,6 +1553,7 @@ const char* util::stat_type_abbrev( stat_e stat )
     case STAT_PARRY_RATING:      return "Parry";
 
     case STAT_BLOCK_RATING: return "BlockR";
+    case STAT_BLOCK_VALUE:  return "BlockV";
 
     case STAT_PVP_POWER: return "PvPP";
 
@@ -2087,6 +2090,7 @@ stat_e util::translate_item_mod( int item_mod )
     case ITEM_MOD_DODGE_RATING:               return STAT_DODGE_RATING;
     case ITEM_MOD_PARRY_RATING:               return STAT_PARRY_RATING;
     case ITEM_MOD_BLOCK_RATING:               return STAT_BLOCK_RATING;
+    case ITEM_MOD_BLOCK_VALUE:                return STAT_BLOCK_VALUE;
     case ITEM_MOD_HIT_RATING:                 return STAT_HIT_RATING;
     case ITEM_MOD_CRIT_RATING:                return STAT_CRIT_RATING;
     case ITEM_MOD_HASTE_RATING:               return STAT_HASTE_RATING;
@@ -2143,6 +2147,7 @@ int util::translate_stat( stat_e stat )
     case STAT_SHADOW_SPELL_POWER:    return ITEM_MOD_SHADOW_SPELL_POWER;
     case STAT_BONUS_ARMOR:           return ITEM_MOD_EXTRA_ARMOR;
     case STAT_RESILIENCE_RATING:     return ITEM_MOD_RESILIENCE_RATING;
+    case STAT_BLOCK_VALUE:           return ITEM_MOD_BLOCK_VALUE;
     case STAT_PVP_POWER:             return ITEM_MOD_PVP_POWER;
     case STAT_STR_AGI_INT:           return ITEM_MOD_STRENGTH_AGILITY_INTELLECT;
     case STAT_AGI_INT:               return ITEM_MOD_AGILITY_INTELLECT;
@@ -3268,6 +3273,8 @@ void util::fuzzy_stats( std::string&      encoding,
   stat_search( encoding, splits, STAT_DODGE_RATING,     "dodge rating" );
   stat_search( encoding, splits, STAT_PARRY_RATING,     "parry rating" );
   stat_search( encoding, splits, STAT_BLOCK_RATING,     "block rating" );
+  stat_search( encoding, splits, STAT_BLOCK_VALUE,      "block value" );
+  stat_search( encoding, splits, STAT_BLOCK_VALUE,      "block value of your shield" );
   stat_search( encoding, splits, STAT_BONUS_ARMOR,      "bonus armor rating" );
   // WOD-TODO: hybrid primary stats?
 }

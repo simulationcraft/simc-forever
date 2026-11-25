@@ -100,6 +100,7 @@ struct item_t
     std::vector<temporary_enchant_data_t>            temporary_enchants;
     unsigned                                         addon_id;
     int                                              armor;
+    int                                              block_value;
     std::array<int, MAX_ITEM_STAT>                   stat_val;
     std::array<int, MAX_GEM_SLOTS>                   gem_id;
     std::array<std::vector<unsigned>, MAX_GEM_SLOTS> gem_bonus_id;

@@ -85,6 +85,7 @@ item_t::parsed_input_t::parsed_input_t()
     enchant_id( 0 ),
     addon_id( 0 ),
     armor( 0 ),
+    block_value( 0 ),
     data(),
     initial_cd( timespan_t::zero() ),
     drop_level( 0 ),
@@ -126,6 +127,13 @@ item_t::item_t( player_t* p, util::string_view o ) :
 
 bool item_t::has_stats() const
 {
+  if ( parsed.block_value != 0 )
+    return true;
+
+  if ( parsed.data.inventory_type == INVTYPE_SHIELD &&
+       player->dbc->shield_block_regular( item_level(), parsed.data.quality ) > 0 )
+    return true;
+
   for ( int stat_type : parsed.data.stat_type_e )
   {
     if ( stat_type > 0 )
@@ -289,6 +297,15 @@ std::string item_t::item_stats_str() const
     s << parsed.armor << " Armor, ";
   else if ( item_database::armor_value( *this ) )
     s << item_database::armor_value( *this ) << " Armor, ";
+
+  if ( parsed.block_value > 0 )
+    s << parsed.block_value << " Block, ";
+  else if ( parsed.data.inventory_type == INVTYPE_SHIELD )
+  {
+    double bv = player->dbc->shield_block_regular( item_level(), parsed.data.quality );
+    if ( bv > 0 )
+      s << bv << " Block, ";
+  }
 
   for ( size_t i = 0; i < std::size( parsed.data.stat_type_e ); i++ )
   {
@@ -815,7 +832,7 @@ void item_t::parse_options()
     option_name_str = options_str.substr( 0, cut_pt );
   }
 
-  std::array<std::unique_ptr<option_t>, 36> options { {
+  std::array<std::unique_ptr<option_t>, 37> options { {
     opt_uint("id", parsed.data.id),
     opt_string("stats", option_stats_str),
     opt_string("gems", option_gems_str),
@@ -833,6 +850,7 @@ void item_t::parse_options()
     opt_string("reforge", DUMMY_REFORGE),
     opt_string("ilevel", option_ilevel_str),
     opt_string("quality", option_quality_str),
+    opt_int("block_value", parsed.block_value),
     opt_string("source", option_data_source_str),
     opt_string("gem_id", option_gem_id_str),
     opt_string("gem_bonus_id", option_gem_bonus_id_str),
@@ -1104,6 +1122,9 @@ std::string item_t::encoded_item() const
   if ( !option_stats_str.empty() )
     s << ",stats=" << encoded_stats();
 
+  if ( parsed.block_value != 0 )
+    s << ",block_value=" << parsed.block_value;
+
   if ( !option_weapon_str.empty() )
     s << ",weapon=" << encoded_weapon();
 
@@ -1286,6 +1307,9 @@ std::string item_t::encoded_comment()
 
   if ( option_stats_str.empty() && ! encoded_stats().empty() )
     s << "stats=" << encoded_stats() << ",";
+
+  if ( parsed.block_value != 0 )
+    s << "block_value=" << parsed.block_value << ",";
 
   if ( option_weapon_str.empty() && ! encoded_weapon().empty() )
     s << "weapon=" << encoded_weapon() << ",";
@@ -1720,6 +1744,20 @@ void item_t::decode_stats()
 
     base_stats.add_stat( s, stat_value( i ) );
     stats.add_stat( s, stat_value( i ) );
+  }
+
+  // The shield's white Block stat is not in the item's DB2 stat list; it comes from the
+  // ShieldBlockRegular game table by item level/quality. An explicit block_value= overrides the
+  // table for server hotfixes or custom items.  This table does not seem to exist in the Forever client, and
+  // I was unable to locate the location of these.  Table has been pulled in from era, and provided as a fallback.
+  double block_value = parsed.block_value;
+  if ( block_value == 0 && parsed.data.inventory_type == INVTYPE_SHIELD )
+    block_value = player->dbc->shield_block_regular( item_level(), parsed.data.quality );
+
+  if ( block_value != 0 )
+  {
+    base_stats.add_stat( STAT_BLOCK_VALUE, block_value );
+    stats.add_stat( STAT_BLOCK_VALUE, block_value );
   }
 
   // Hardcoded armor value in stats, use the approximation coefficient to do
