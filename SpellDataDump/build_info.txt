@@ -1,1 +1,1 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71139 Live (hotfix 2026-11-26/71139)
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71139 Live (hotfix 2026-11-26/71139, no-networking)

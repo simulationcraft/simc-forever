@@ -2695,7 +2695,7 @@ Paladin
 1280347  Consecration
 1280348  Consecration
 1280349  Consecration
-1280353 *Consecration
+1280353  Consecration
 1286253 *(DNT) Blessing of Might - TEST RAID SPELL
 1291083  Swift Judgement Cooldown Reduction
 1291086  Judgement Increased Damage
