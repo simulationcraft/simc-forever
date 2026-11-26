@@ -217,6 +217,7 @@ public:
   struct spells_t
   {
     const spell_data_t* lights_fury = spell_data_t::nil(); // Seal of Fury absorb
+    const spell_data_t* consecration_debuff = spell_data_t::nil();
   } spell;
 
   struct actives_t
@@ -724,6 +725,17 @@ struct consecration_t : public paladin_spell_t
       }
     }
 
+    void impact(action_state_t* s) override
+    {
+      paladin_spell_t::impact( s );
+
+      // chain target is 0-based and spell data is 1-based
+      if ( s->chain_target < increased_damage_enemies )
+      {
+        p()->get_target_data( s->target )->debuffs.consecration->trigger();
+      }
+    }
+
     double spell_direct_power_coefficient( const action_state_t* s ) const override
     {
       // chain target is 0-based and spell data is 1-based
@@ -1040,8 +1052,6 @@ void paladin_t::init_spells()
   // Row 7 Ret
   talent.unsealed_wrath = CT( "Unsealed Wrath" );
 
-  spell.lights_fury = find_spell( 1310927 );
-
   rank.blessing_of_might = {
       this,
       spell_container_t().set_spell( 19740 ),
@@ -1283,6 +1293,13 @@ void paladin_t::init_spells()
       spell_container_t().set_spell( 20164 )
   };
 
+  spell.lights_fury = find_spell( 1310927 );
+
+  if (rank.consecration_cast.find_rank()->spell()->ok())
+  {
+    spell.consecration_debuff = find_spell( 1280353 );
+  }
+
   parse_all_class_passives();
   parse_all_passive_talents();
 }
@@ -1336,6 +1353,11 @@ void paladin_t::init_special_effects()
 
 paladin_td_t::paladin_td_t( player_t* target, paladin_t& p ) : actor_target_data_t( target, &p )
 {
+  debuffs.consecration = make_buff( *this, "consecration", p.spell.consecration_debuff )
+                             ->set_duration( 1_s )
+                             // ->set_quiet( true )
+                             ->set_refresh_behavior( buff_refresh_behavior::DURATION )
+                             ->disable_ticking( true );
 }
 
 // PALADIN MODULE INTERFACE =================================================
