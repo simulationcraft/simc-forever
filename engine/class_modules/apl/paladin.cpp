@@ -39,6 +39,7 @@ void paladin( player_t* p )
   precombat->add_action( "retribution_aura" );
 
   default_->add_action( "auto_attack" );
+  default_->add_action( "consecration" );
   default_->add_action( "seal_of_fury,if=!buff.seal_of_fury.up" );
   default_->add_action( "holy_strike" );
   // default_->add_action( "hammer_of_justice" );

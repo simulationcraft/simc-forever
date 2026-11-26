@@ -65,7 +65,7 @@ public:
   paladin_t( sim_t* sim, util::string_view name, race_e r = RACE_NONE ) :
     parse_player_effects_t( sim, PALADIN, name, r ) {}
 
-  
+
   resource_e primary_resource() const override
   {
     return RESOURCE_MANA;
@@ -131,7 +131,7 @@ public:
     // Row 1 Ret
     player_talent_t parry;
     player_talent_t benediction;
-    
+
     // Row 2 Holy
     player_talent_t healing_light;
     player_talent_t reverence;
@@ -510,7 +510,7 @@ struct paladin_seal_t : public paladin_spell_t
         p()->buff.seal_expression_buffs[ seal_type ]->expire();
       }
     } );
-    
+
     initialize_procs();
   }
 
@@ -683,6 +683,125 @@ struct retribution_aura_t : public paladin_spell_t
   }
 };
 
+struct consecration_t : public paladin_spell_t
+{
+  // Consecration damage is weird because it does flat damage to all targets which is then increased for the first X
+  // targets that it hits.
+  // The way we handle this is for the first X targets, we use the SP scaled effect DA min + DA max + SP coeff and then
+  // add the flat damage after. For the remaining targets, we use the flat damage DA min + DA max + 0 SP coeff.
+  struct consecration_damage_t : public paladin_spell_t
+  {
+
+    double flat_damage_dd_min;
+    double flat_damage_dd_max;
+    double flat_damage_spell_power_mod;
+    double increased_damage_dd_min;
+    double increased_damage_dd_max;
+    double increased_damage_spell_power_mod;
+    int increased_damage_enemies;
+
+    consecration_damage_t( paladin_t* player, int num_enemies )
+      : paladin_spell_t( "consecration_damage", player, player->rank.consecration_damage.find_rank()->spell() ), increased_damage_enemies( num_enemies )
+    {
+      background = true;
+
+      may_miss = may_crit = may_dodge = may_block = may_glance = may_parry = false;
+
+      // uncapped but deals increased damage to the first 4 enemies to enter
+      aoe = -1;
+
+      // we're going to override this in the functions
+      base_dd_min = base_dd_max = spell_power_mod.direct = 0;
+
+      if (data().ok())
+      {
+        flat_damage_dd_min = data().effectN( 1 ).min( player, player->level() );
+        flat_damage_dd_max = data().effectN( 1 ).max( player, player->level() );
+        flat_damage_spell_power_mod = data().effectN( 1 ).sp_coeff();
+        increased_damage_dd_min = data().effectN( 2 ).min( player, player->level() );
+        increased_damage_dd_max = data().effectN( 2 ).max( player, player->level() );
+        increased_damage_spell_power_mod = data().effectN( 2 ).sp_coeff();
+      }
+    }
+
+    double spell_direct_power_coefficient( const action_state_t* s ) const override
+    {
+      // chain target is 0-based and spell data is 1-based
+      if ( s->chain_target >= increased_damage_enemies )
+      {
+        return flat_damage_spell_power_mod;
+      }
+
+      return increased_damage_spell_power_mod;
+    }
+
+    double base_da_min( const action_state_t* s ) const override
+    {
+      // chain target is 0-based and spell data is 1-based
+      if ( s->chain_target >= increased_damage_enemies )
+      {
+        return flat_damage_dd_min;
+      }
+
+      return increased_damage_dd_min;
+    }
+
+    double base_da_max( const action_state_t* s ) const override
+    {
+      // chain target is 0-based and spell data is 1-based
+      if ( s->chain_target >= increased_damage_enemies )
+      {
+        return flat_damage_dd_max;
+      }
+
+      return increased_damage_dd_max;
+    }
+
+    double bonus_da(const action_state_t* s) const override
+    {
+      // chain target is 0-based and spell data is 1-based
+      if ( s->chain_target >= increased_damage_enemies )
+      {
+        return 0;
+      }
+
+      // we add the flat damage as bonus DA so that it isn't affected by the SP coefficient for
+      // the second damage effect.
+      return sim->averaged_range( flat_damage_dd_min, flat_damage_dd_max );
+    }
+  };
+
+  consecration_damage_t* damage_action;
+  consecration_t( paladin_t* player, util::string_view options_str )
+    : paladin_spell_t( "consecration", player, player->rank.consecration_cast.find_rank()->spell() )
+  {
+    parse_options( options_str );
+
+    dot_duration = 0_ms;
+
+    if (data().ok())
+    {
+      damage_action = new consecration_damage_t( player,  as<int>(data().effectN( 3 ).base_value()) );
+      add_child( damage_action );
+    }
+  }
+
+  void execute() override
+  {
+    paladin_spell_t::execute();
+
+    make_event<ground_aoe_event_t>( *sim, p(),
+                                    ground_aoe_params_t()
+                                        .target( target )
+                                        .x( p()->x_position )
+                                        .y( p()->y_position )
+                                        .duration( data().duration() )
+                                        .action( damage_action ),
+                                    // immediate pulse
+                                    true );
+  }
+};
+
 void paladin_t::activate()
 {
   base_t::activate();
@@ -719,6 +838,9 @@ action_t* paladin_t::create_action( util::string_view name, util::string_view op
     return new paladin_auto_attack_t( this, options_str );
   if ( name == "holy_strike" )
     return new holy_strike_t( this, options_str );
+
+  if ( name == "consecration" )
+    return new consecration_t( this, options_str );
 
   if ( name == "exorcism" )
     return new exorcism_t( this, options_str );
