@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71139 Live
 Name             : Demoralizing Roar (desc=Rank 1) (id=99) [Spell Family (7)] 
 Class            : Druid
 School           : Physical
@@ -760,7 +760,7 @@ Cast Time        : 3.5 seconds
 GCD              : 1.5 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Improved Starfire (16850 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effect#1), Nature's Reach (16819 effect#1), Moon and Stars (16821 effect#4), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -873,7 +873,7 @@ GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Improved Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Eclipse (408248 effect#5), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -893,7 +893,7 @@ GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Improved Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Eclipse (408248 effect#5), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -913,7 +913,7 @@ GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Improved Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Eclipse (408248 effect#5), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -933,7 +933,7 @@ GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Improved Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Eclipse (408248 effect#5), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -953,7 +953,7 @@ GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Improved Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Eclipse (408248 effect#5), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -1471,7 +1471,7 @@ GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Improved Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Eclipse (408248 effect#5), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -1702,7 +1702,7 @@ GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Improved Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Eclipse (408248 effect#5), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -1828,7 +1828,7 @@ GCD              : 1.5 seconds
 Duration         : 9 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1850,7 +1850,7 @@ GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1872,7 +1872,7 @@ GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1894,7 +1894,7 @@ GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1916,7 +1916,7 @@ GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1938,7 +1938,7 @@ GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -1960,7 +1960,7 @@ GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2124,7 +2124,7 @@ Cast Time        : 3.5 seconds
 GCD              : 1.5 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Improved Starfire (16850 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effect#1), Nature's Reach (16819 effect#1), Moon and Stars (16821 effect#4), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -2143,7 +2143,7 @@ Cast Time        : 3.5 seconds
 GCD              : 1.5 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Improved Starfire (16850 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effect#1), Nature's Reach (16819 effect#1), Moon and Stars (16821 effect#4), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -2162,7 +2162,7 @@ Cast Time        : 3.5 seconds
 GCD              : 1.5 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Improved Starfire (16850 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effect#1), Nature's Reach (16819 effect#1), Moon and Stars (16821 effect#4), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -2811,7 +2811,7 @@ GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2833,7 +2833,7 @@ GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -2855,7 +2855,7 @@ GCD              : 1.5 seconds
 Duration         : 12 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Improved Moonfire (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
+Affecting Spells : Nature's Reach (16819 effect#1), Moon and Stars (16821 effects: #1, #2, #3), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Improved Moonfire (28854 effect#1), S03 - Tuning and Overrides Passive - Druid (436895 effects: #14, #15), Genesis (1223081 effect#1), Nature's Splendor (1223083 effect#1)
 Family Flags     : 1
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), DoT Stacking Rule (103), Periodic Can Crit (265), Aura Points On Client (268), Nameplate Personal Buffs/Debuffs (423), Unknown (454), Unknown (493)
 Effects          :
@@ -3206,7 +3206,7 @@ Cast Time        : 3.5 seconds
 GCD              : 1.5 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Improved Starfire (16850 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effect#1), Nature's Reach (16819 effect#1), Moon and Stars (16821 effect#4), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -3225,7 +3225,7 @@ Cast Time        : 3.5 seconds
 GCD              : 1.5 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Improved Starfire (16850 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effect#1), Nature's Reach (16819 effect#1), Moon and Stars (16821 effect#4), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -3597,7 +3597,7 @@ GCD              : 1.5 seconds
 Velocity         : 20 yards/sec
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Improved Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effects: #1, #2), Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Nature's Swiftness (17116 effect#1), Improved Wrath/Starfire (24433 effect#1), Unstable Power (29275 effect#1), Brittle Armor (29284 effect#1), Mercurial Shield (29286 effect#1), Eclipse (408248 effect#5), Fury of Stormrage (414799 effect#1), S03 - Item - ZG - Druid - Balance 5P Bonus (468416 effect#1), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 0
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -3750,7 +3750,8 @@ Effects          :
 Description      : The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 5). Castable while shapeshifted. Lasts $d.
 Tooltip          : Melee damage you take will entangle the enemy.
 
-Name             : Improved Wrath (id=16814) [Spell Family (7), Passive, Hidden] 
+Name             : Starlight Wrath (id=16814) [Spell Family (7), Passive, Hidden] 
+Hotfixed         : Name, Description
 Talent Entry     : Generic [tree=class, row=1, col=2, max_rank=5, req_points=0]
                  : Effect#1 [op=set, values=(-100, -200, -300, -400, -500)]
                  : Effect#2 [op=set, values=(-10, -20, -30, -40, -50)]
@@ -3762,13 +3763,14 @@ Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura 
 Effects          :
 #1 (id=695185)   : Apply Aura (6) | Add Flat Modifier (107): Spell Cast Time (10)
                    Base Value: -100 | Scaled Value: -100 | SP Coefficient: 1 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Wrath (5176), Wrath (5177), Wrath (5178), Wrath (5179), Wrath (5180), Wrath (6780), Wrath (8905), Wrath (9912)
-                   Family Flags: 0
+                   Affected Spells: Starfire (2912), Wrath (5176), Wrath (5177), Wrath (5178), Wrath (5179), Wrath (5180), Wrath (6780), Wrath (8905), Starfire (8949), Starfire (8950), Starfire (8951), Starfire (9875), Starfire (9876), Wrath (9912), Starfire (25298)
+                   Family Flags: 0, 2
+Hotfixed         : Affects Spells
 #2 (id=1338352)  : Apply Aura (6) | Add Percent Modifier (108): Spell Resource Cost 1 (14)
                    Base Value: -50 | Scaled Value: -50 | SP Coefficient: 1 | Misc Value: 14 | Target: Self (1)
                    Affected Spells: Wrath (5176), Wrath (5177), Wrath (5178), Wrath (5179), Wrath (5180), Wrath (6780), Wrath (8905), Wrath (9912)
                    Family Flags: 0
-Description      : Reduces the cast time of your Wrath spell by $/1000;S1 sec and its Mana cost by $s2%.
+Description      : Reduces the cast time of your Wrath and Starfire spells by $/1000;S1 sec and the Mana cost of your Wrath spell by $s2%.
 
 Name             : Nature's Reach (id=16819) [Spell Family (7), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=4, max_rank=2, req_points=0]
@@ -3791,11 +3793,13 @@ Effects          :
                    Base Value: 4 | Scaled Value: 4 | SP Coefficient: 1 | Target: Self (1)
 Description      : Increases the range of your offensive Balance spells by $m1% and improves your chance to hit by $m2%.
 
-Name             : Improved Moonfire (id=16821) [Spell Family (7), Passive, Hidden] 
+Name             : Moon and Stars (id=16821) [Spell Family (7), Passive, Hidden] 
+Hotfixed         : Name, Description
 Talent Entry     : Generic [tree=class, row=2, col=2, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(5, 10)]
                  : Effect#2 [op=set, values=(5, 10)]
                  : Effect#3 [op=set, values=(5, 10)]
+                 : Effect#4 [op=set, values=(50, 100)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -3814,7 +3818,12 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | SP Coefficient: 1 | Misc Value: 22 | Target: Self (1)
                    Affected Spells: Moonfire (8921), Moonfire (8924), Moonfire (8925), Moonfire (8926), Moonfire (8927), Moonfire (8928), Moonfire (8929), Moonfire (9833), Moonfire (9834), Moonfire (9835)
                    Family Flags: 1
-Description      : Increases the damage and critical strike chance of your Moonfire spell by $s1%.
+#4 (id=1375503)  : Apply Aura (6) | Add Percent Modifier (108): Spell Pushback (9)
+                   Base Value: 100 | Scaled Value: 100 | Misc Value: 9 | Target: Self (1)
+                   Affected Spells: Starfire (2912), Starfire (8949), Starfire (8950), Starfire (8951), Starfire (9875), Starfire (9876), Starfire (25298)
+                   Family Flags: 2
+Hotfixed         : NEW EFFECT
+Description      : Increases the damage and critical strike chance of your Moonfire spell by $s1% and gives your Starfire spell a $s4% chance not to lose casting time from taking damage.
 
 Name             : Natural Shapeshifter (id=16833) [Spell Family (7), Passive, Hidden] 
 Talent Entry     : Generic [tree=class, row=2, col=11, max_rank=3, req_points=0]
@@ -3886,9 +3895,10 @@ Effects          :
 Description      : Reduces the Mana cost of your damaging spells by $s1%.
 
 Name             : Improved Starfire (id=16850) [Spell Family (7), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=4, col=3, max_rank=5, req_points=0]
+Hotfixed         : Description
+Talent Entry     : Generic [tree=class, row=4, col=3, max_rank=2, req_points=0]
                  : Effect#1 [op=set, values=(-100, -200, -300, -400, -500)]
-                 : Effect#2 [op=set, values=(3, 6, 9, 12, 15)]
+                 : Effect#2 [op=set, values=(8, 15)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -3897,13 +3907,12 @@ Proc Chance      : 100%
 Proc Flags       : Yellow Melee, White Ranged, Yellow Ranged, Generic Helpful, Generic Hostile Spell, Magic Heal, Magic Hostile Spell
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Unknown (493)
 Effects          :
-#1 (id=695079)   : Apply Aura (6) | Add Flat Modifier (107): Spell Cast Time (10)
-                   Base Value: -500 | Scaled Value: -500 | SP Coefficient: 1 | Misc Value: 10 | Target: Self (1)
-                   Affected Spells: Starfire (2912), Starfire (8949), Starfire (8950), Starfire (8951), Starfire (9875), Starfire (9876), Starfire (25298)
-                   Family Flags: 2
+#1 (id=695079)   : Apply Aura (6) | Dummy (4)
+                   Base Value: -500 | Scaled Value: -500 | SP Coefficient: 1 | Target: Self (1)
+Hotfixed         : Sub Type (107 -> 4), Misc Value (10 -> 0), Affects Spells
 #2 (id=1339135)  : Apply Aura (6) | Proc Trigger Spell (42): Starfire Stun
                    Base Value: 15 | Scaled Value: 15 | SP Coefficient: 1 | Trigger Spell: 16922 | Target: Self (1)
-Description      : Reduces the cast time of Starfire by $/1000;S1 sec and Starfire has a $s2% chance to stun its target for $16922d.
+Description      : Your Starfire spell has a $s2% chance to stun its target for $16922d.
 
 
 Name             : Feral Aggression (desc=Rank 1) (id=16858) [Spell Family (7), Passive, Hidden] 
@@ -4062,8 +4071,6 @@ Effects          :
 Tooltip          : Casting speed increased by $s1% and global cooldown reduced by $s2%.
 
 Name             : Moonfury (id=16896) [Spell Family (7), Passive, Hidden] 
-Talent Entry     : Generic [tree=class, row=6, col=2, max_rank=5, req_points=25]
-                 : Effect#1 [op=set, values=(2, 4, 6, 8, 10)]
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -4181,7 +4188,6 @@ Effects          :
 Description      : Increases the critical strike damage bonus of your Arcane and Nature spells by $m1%.
 
 Name             : Hurricane (desc=Rank 1) (id=16914) [Spell Family (7)] 
-Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -4839,7 +4845,6 @@ Description      : The next $n melee $Lattack:attacks; that $Lstrikes:strike; th
 Tooltip          : Melee damage you take will entangle the enemy.
 
 Name             : Hurricane (desc=Rank 2) (id=17401) [Spell Family (7)] 
-Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -4866,7 +4871,6 @@ Effects          :
 Description      : Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts ${$d}. Druid must channel to maintain the spell.
 
 Name             : Hurricane (desc=Rank 3) (id=17402) [Spell Family (7)] 
-Hotfixed         : Description
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5613,6 +5617,7 @@ Tooltip          : Healing Touch casting time decreased by $s1%.
 Healing spell mana cost reduced by $s2%.
 
 Name             : Moonkin Form (desc=Shapeshift) (id=24858) [Spell Family (7)] 
+Hotfixed         : Description, Tooltip
 Talent Entry     : Generic [tree=class, row=7, col=2, max_rank=1, req_points=30]
 Class            : Druid
 School           : Physical
@@ -5645,10 +5650,10 @@ Effects          :
                    Base Value: -50 | Scaled Value: -50 | Misc Value: 38 | Target: Self (1)
                    Affected Spells: Omen of Clarity (16864)
                    Family Flags: 114
-Description      : Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.
+Description      : Shapeshift into Moonkin Form, increasing Arcane and Nature damage done by $24905s4%, Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.
 
 The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
-Tooltip          : Immune to Polymorph effects. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.
+Tooltip          : Immune to Polymorph effects. Arcane and Nature damage done increased by $24905s4%. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.
 
 Name             : Moonkin Form (Passive) (desc=Passive) (id=24905) [Spell Family (7), Passive] 
 Class            : Druid
@@ -5666,6 +5671,10 @@ Effects          :
                    Base Value: 360 | Scaled Value: 360 | Target: Self (1)
 #3 (id=1359533)  : Apply Aura (6) | Mechanic Immunity (77)
                    Base Value: 0 | Scaled Value: 0 | Misc Value: 3 | Target: Self (1)
+#4 (id=1375519)  : Apply Aura (6) | Modify Damage Done% (79)
+                   Base Value: 10 | Scaled Value: 10 | Misc Value: 0x48 | Target: Self (1)
+                   Affected School(s): Arcane, Nature
+Hotfixed         : NEW EFFECT
 
 Name             : Moonkin Aura (id=24907) [Spell Family (7)] 
 Class            : Druid
@@ -5835,7 +5844,7 @@ Cast Time        : 3.5 seconds
 GCD              : 1.5 seconds
 Labels           : 21: Druid Spells
 Stance Mask      : 0x40000000
-Affecting Spells : Nature's Reach (16819 effect#1), Moonglow (16845 effect#1), Improved Starfire (16850 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
+Affecting Spells : Starlight Wrath (16814 effect#1), Nature's Reach (16819 effect#1), Moon and Stars (16821 effect#4), Moonglow (16845 effect#1), Clearcasting (16870 effect#1), Nature's Grace (16886 effect#2), Vengeance (16909 effect#1), Nature's Focus (17063 effect#1), Improved Wrath/Starfire (24433 effect#1), Starsurge (417157 effect#2), Astral Power (467088 effect#1), S03 - Item - ZG - Druid - Balance 3P Bonus (468415 effects: #1, #2), S03 - Item - TAQ - Druid - Balance 4P Bonus (1213167 effect#1)
 Family Flags     : 2
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -5972,6 +5981,7 @@ Effects          :
 Description      : Reduces the Rage cost of Maul and Swipe by $/10;s1.
 
 Name             : Innervate (id=29166) [Spell Family (7)] 
+Hotfixed         : Attributes, Tooltip
 Class            : Druid
 School           : Nature
 Spell Type       : Magic
@@ -5986,14 +5996,14 @@ Proc Chance      : 101%
 Stance Mask      : 0x40000002
 Affecting Spells : S03 - Item - T1 - Druid - Guardian 2P Bonus (456325 effect#1), S03 - Item - TAQ - Druid - Restoration 2P Bonus (1213159 effect#1)
 Family Flags     : 44
-Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
+Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Aura Points On Client (268), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=705051)   : Apply Aura (6) | Allow Mana Regen While Casting (134)
                    Base Value: 100 | Scaled Value: 100 | SP Coefficient: 1 | Target: Targeted Ally (21)
 #2 (id=705052)   : Apply Aura (6) | Modify Power Regen% (110)
                    Base Value: 400 | Scaled Value: 400 | SP Coefficient: 1 | Resource: mana | Target: Targeted Ally (21)
 Description      : Increases the target's Mana regeneration by $s2% and allows $s1% of the target's Mana regeneration to continue while casting.  Lasts $d.
-Tooltip          : Mana regeneration increased by $s2%.  $s1% Mana regeneration may continue while casting.
+Tooltip          : Mana regeneration increased by $w2%.  $w1% Mana regeneration may continue while casting.
 
 Name             : Unstable Power (id=29275) [Spell Family (7), Hidden] 
 School           : Physical
@@ -6265,9 +6275,13 @@ Variables        : $damagepower=${9.183105+0.616405*$PL+0.028608*$PL*$PL}
 $healpower=${38.949830+0.606705*$PL+0.167780*$PL*$PL}
 
 Name             : Eclipse (id=408248) [Spell Family (7), Passive, Hidden] 
+Hotfixed         : Description
 Talent Entry     : Generic [tree=class, row=5, col=3, max_rank=3, req_points=0]
                  : Effect#1 [op=set, values=(0, 0, 0)]
                  : Effect#2 [op=set, values=(-170, -330, -500)]
+                 : Effect#3 [op=set, values=(2, 2, 2)]
+                 : Effect#4 [op=set, values=(7, 13, 20)]
+                 : Effect#5 [op=set, values=(7, 13, 20)]
 Class            : Druid
 School           : Arcane
 Spell Type       : None
@@ -6285,7 +6299,12 @@ Effects          :
                    Base Value: 2 | Scaled Value: 2 | Target: Self (1)
 #4 (id=1343591)  : Apply Aura (6) | Dummy (4)
                    Base Value: 100 | Scaled Value: 100 | Target: Self (1)
-Description      : Your Wrath spell reduces the cast time of your next $s3 Starfire spells by ${$m2/-1000}.2 sec. Stores up to $408255u charges. Lasts $408255d.
+#5 (id=1375522)  : Apply Aura (6) | Add Flat Modifier (107): Spell Critical Chance (7)
+                   Base Value: 20 | Scaled Value: 20 | Misc Value: 7 | Target: Self (1)
+                   Affected Spells: Wrath (5176), Wrath (5177), Wrath (5178), Wrath (5179), Wrath (5180), Wrath (6780), Wrath (8905), Wrath (9912)
+                   Family Flags: 0
+Hotfixed         : NEW EFFECT
+Description      : Increases the critical strike chance of your Wrath spell by $s5%, and your Wrath spell reduces the cast time of your next $s3 Starfire spells by ${$m2/-1000}.2 sec. Stores up to $408255u charges. Lasts $408255d.
 
 Name             : Eclipse (id=408255) [Spell Family (7)] 
 Class            : Druid
@@ -6306,21 +6325,22 @@ Effects          :
 Tooltip          : Your next $m2 Starfire $Lcast has:casts have; ${$w1/$w2/1000}.1 sec reduced cast time.
 
 Name             : Dreamstate (id=408258) [Spell Family (7), Passive, Hidden] 
+Hotfixed         : Description
+Talent Entry     : Generic [tree=class, row=6, col=2, max_rank=5, req_points=25]
+                 : Effect#1 [op=set, values=(20, 40, 60, 80, 100)]
 Class            : Druid
 School           : Arcane
 Spell Type       : None
 Spell Level      : 1
 Labels           : 21: Druid Spells
-Proc Chance      : 100%
-Proc Flags       : Magic Hostile Spell
 Attributes       : Is Ability (4), Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log) (7), Do Not Log (8), Include In Advanced Combat Log (72), Unknown (493)
 Effects          :
 #1 (id=1072250)  : Apply Aura (6) | Dummy (4)
-                   Base Value: 50 | Scaled Value: 50 | Target: Self (1)
-Description      : Your damaging non-periodic spell critical strikes grant you $m1% of your mana regeneration while casting for $408261d.
+                   Base Value: 100 | Scaled Value: 100 | Target: Self (1)
+Hotfixed         : Base Value (50 -> 100)
+Description      : When you cast Innervate on a target other than yourself, you gain $s1% of the effect as well.
 
 Name             : Dreamstate (id=408261) [Spell Family (7)] 
-Class            : Druid
 School           : Physical
 Spell Type       : None
 Duration         : 8 seconds
@@ -6914,6 +6934,7 @@ Effects          :
                    Base Value: 0 | Scaled Value: 0 | Trigger Spell: 414827 | Target: Self (1)
 
 Name             : Feral Charge (Cat) (id=414924) [Spell Family (7)] 
+Hotfixed         : Attributes
 Class            : Druid
 School           : Physical
 Spell Type       : None
@@ -6925,7 +6946,7 @@ Category         : 2182 (Type 0x0)
 Labels           : 21: Druid Spells
 Category Cooldown: 30 seconds
 Stance Mask      : 0x00000001
-Attributes       : Is Ability (4), Do Not Sheath (18), No Immunities (29), Initiates Combat (Enables Auto-Attack) (41), Include In Advanced Combat Log (72), Active Threat (94), Taps immediately (215), Attack on Charge to Unit (242), Face unit target upon completion of jump charge (300), Unknown (493)
+Attributes       : Is Ability (4), Do Not Sheath (18), No Immunities (29), Allow While Stealthed (37), Initiates Combat (Enables Auto-Attack) (41), Include In Advanced Combat Log (72), Active Threat (94), Taps immediately (215), Attack on Charge to Unit (242), Face unit target upon completion of jump charge (300), Unknown (493)
 Effects          :
 #1 (id=1084427)  : Unknown(175)
                    Base Value: 0 | Scaled Value: 0 | Value Multiplier: 4 | Misc Value: 5 | Misc Value 2: 150 | Target: at Target Back (65)

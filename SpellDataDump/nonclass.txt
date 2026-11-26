@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71139 Live
 Name             : Death Touch (id=5) 
 School           : Holy
 Spell Type       : None
@@ -3711,6 +3711,7 @@ Description      : Coats a sword or dagger with poison that lasts for 30 minutes
 Each strike has a chance of poisoning the enemy which instantly inflicts 10-30 damage.
 
 Name             : Instant Toxin (desc=Rank 1) (id=6651) 
+Hotfixed         : Attributes
 School           : Physical
 Spell Type       : None
 Spell Level      : 24
@@ -19049,7 +19050,6 @@ Effects          :
                    Base Value: 150 | Scaled Value: 150 | SP Coefficient: 1 | Resource: mana | Target: Self (1)
 
 Name             : Songflower Serenade (id=15366) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : None
 Spell Level      : 50
@@ -31726,7 +31726,6 @@ Effects          :
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
 
 Name             : Fengus' Ferocity (id=22817) 
-Hotfixed         : Attributes, Aura Interrupt
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50
@@ -31744,15 +31743,12 @@ Effects          :
                    Base Value: 200 | Scaled Value: 200 | Target: Targeted Ally (21)
 #3 (id=1331558)  : Apply Aura (6) | Dummy (4)
                    Base Value: 115 | Scaled Value: 115 | Value Multiplier: 1 | Target: Targeted Ally (21)
-Hotfixed         : Base Value (230 -> 115)
 #4 (id=1331559)  : Apply Aura (6) | Dummy (4)
                    Base Value: 115 | Scaled Value: 115 | Value Multiplier: 1 | Target: Targeted Ally (21)
-Hotfixed         : Base Value (230 -> 115)
 Description      : Attack power increased by $s1 and spell damage and healing increased by up to $s3.
 Tooltip          : Attack power increased by $s1 and spell damage and healing increased by up to $s3. No effect while in a raid instance.
 
 Name             : Mol'dar's Moxie (id=22818) 
-Hotfixed         : Attributes, Aura Interrupt
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50
@@ -31771,7 +31767,6 @@ Description      : Overall Stamina increased by $s1%.
 Tooltip          : Overall Stamina increased by $s1%. Lasts $d. No effect while in a raid instance.
 
 Name             : Slip'kik's Savvy (id=22820) 
-Hotfixed         : Attributes
 School           : Nature
 Spell Type       : Magic
 Spell Level      : 50
@@ -33637,7 +33632,6 @@ Healing effects increased by $s2%.
 Mana cost increased by $s3%.
 
 Name             : Sayge's Dark Fortune of Damage (id=23768) 
-Hotfixed         : Attributes
 School           : Shadow
 Spell Type       : None
 Range            : 50000 yards
@@ -33649,7 +33643,6 @@ Attributes       : Include In Advanced Combat Log (72), Not In Raid Instances (2
 Effects          :
 #1 (id=696766)   : Apply Aura (6) | Dummy (4)
                    Base Value: 10 | Scaled Value: 10 | Target: Current Target (25)
-Hotfixed         : Sub Type (79 -> 4), Misc Value (127 -> 0)
 #2 (id=696767)   : Trigger Spell (64): Sayge's Carnie Buff
                    Base Value: 0 | Scaled Value: 0 | SP Coefficient: 1 | Trigger Spell: 23770 | Target: Current Target (25)
 Tooltip          : Increases damage by $s1%. No effect while in a raid instance.
@@ -68565,7 +68558,6 @@ Effects          :
 Description      : Melee attacks have a $h% chance to grant a Clearcasting state, reducing the mana cost of your next damage spell by 100%.
 
 Name             : Stealth (id=1300180) 
-Hotfixed         : Description
 School           : Physical
 Spell Type       : None
 Duration         : 20 seconds
@@ -72199,7 +72191,7 @@ Duration         : 300 seconds
 Stacks           : 1 maximum
 Proc Chance      : 101%
 Attributes       : Do Not Log (8), Not In Combat (Only Peaceful) (28), No Immunities (29), Unknown (493)
-Aura Interrupt   : Action (2), Enter Combat (28), Swimming (33)
+Aura Interrupt   : Enter Combat (28), Swimming (33)
 Channel Interrupt: Action (3)
 Effects          :
 #1 (id=1338389)  : Apply Aura (6) | Area Trigger (395)
@@ -72449,6 +72441,9 @@ Hotfixed         : NEW SPELL
 School           : None
 Spell Type       : None
 Effects          :
+#1 (id=1339152)  : Apply Aura (6) | Periodic Damage (3): none every 2 seconds
+                   Base Value: 7 | Scaled Value: 7 | Target: Targeted Enemy (6)
+Hotfixed         : NEW EFFECT
 Description      : Bash the target in the face, causing $m1 Physical damage every $t1 sec for 20 sec.
 Tooltip          : Bleeding for $w1 Physical damage every $t1 sec.
 
@@ -74467,8 +74462,9 @@ Proc Chance      : 101%
 Triggered By     : Nutritious Food (1319311)
 Attributes       : Do Not Log (8), Allow While Sitting (27), No Immunities (29), Allow While Stealthed (37), Include In Advanced Combat Log (72), Allow While Invisible (78), Not an Action (92), Retain Item Cast (95), Allow Aura While Dead (116), Casting Cancels Autorepeat (Mainline: Do Not Trigger Target Stand) (118), Not an Attack (194), Aura Points On Client (268), Unknown (493)
 Effects          :
-#1 (id=1353206)  : Apply Aura (6) | Increase Armor (465)
-                   Base Value: 0 | Scaled Value: 0 | Target: Self (1)
+#1 (id=1353206)  : Apply Aura (6) | Modify Armor (674)
+                   Base Value: 0 | Scaled Value: 0 | Misc Value: 1 | Target: Self (1)
+Hotfixed         : Sub Type (465 -> 674), Misc Value (0 -> 1)
 Description      : A nutritious meal has made you Well Fed, increasing your Armor.
 Tooltip          : Your Armor is increased by $w1. $?a1243969[Experience gained from kills increased by $1243969w1%.][]
 
@@ -75041,9 +75037,10 @@ Stacks           : 1 initial, 1 maximum
 Triggered By     : Remove Protection (1279523)
 Attributes       : Not Shapeshifted (16), Cooldown On Event (25), Aura Is Buff (140), Unknown (493)
 Effects          :
-#1 (id=1363758)  : Apply Aura (6) | Damage Done (13)
+#1 (id=1363758)  : Apply Aura (6) | Damage Taken (14)
                    Base Value: -100 | Scaled Value: -100 | Misc Value: 0x7f | Target: Self (1)
                    Affected School(s): All
+Hotfixed         : Sub Type (13 -> 14)
 Tooltip          : Reduces damage taken.
 
 Name             : Flash Bundle (id=1326475) 
