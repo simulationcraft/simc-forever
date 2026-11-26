@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71139 Live
 Name             : Backstab (desc=Rank 1) (id=53) [Spell Family (8)] 
 Class            : Rogue
 School           : Physical
@@ -523,6 +523,7 @@ Effects          :
 Description      : Sneak up on the trap in order to disarm it.  Don't get too close or the trap will go off.
 
 Name             : Vanish (desc=Rank 1) (id=1856) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -547,6 +548,7 @@ Description      : Allows the rogue to vanish from sight, entering an improved s
 Tooltip          : Improved stealth.
 
 Name             : Vanish (desc=Rank 2) (id=1857) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -900,6 +902,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy for $2819o1 Nature damage over $2819d.  Stacks up to $2819u times on a single target.  $m3 charges.
 
 Name             : Deadly Poison (desc=Rank 1) (id=2835) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -933,6 +936,7 @@ Description      : Greatly increased chance to detect traps.
 Tooltip          : Detecting traps.
 
 Name             : Deadly Poison II (desc=Rank 2) (id=2837) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1021,6 +1025,7 @@ Description      : Movement slowed by $s1%.
 Tooltip          : Movement slowed by $s1%.
 
 Name             : Crippling Poison (desc=Rank 1) (id=3420) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1038,6 +1043,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $3408h% chance of poisoning the enemy, slowing their movement speed by $3409s1% for $3409d.
 
 Name             : Crippling Poison II (desc=Rank 2) (id=3421) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1156,6 +1162,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, increasing their casting time by $5760s1% for $5760d.  $m2 charges.
 
 Name             : Mind-numbing Poison (desc=Rank 1) (id=5763) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1794,6 +1801,7 @@ Effects          :
 Description      : $s1 Nature damage.
 
 Name             : Instant Poison (desc=Rank 1) (id=8681) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1848,6 +1856,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy which instantly inflicts $8685s1 Nature damage.  $m2 charges.
 
 Name             : Instant Poison II (desc=Rank 2) (id=8687) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1902,6 +1911,7 @@ Effects          :
 Description      : $s1 Nature damage.
 
 Name             : Instant Poison III (desc=Rank 3) (id=8691) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -1958,6 +1968,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, increasing their casting time by $8692s1% for $8692d.  $m2 charges.
 
 Name             : Mind-numbing Poison II (desc=Rank 2) (id=8694) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2809,6 +2820,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy which instantly inflicts $11337s1 Nature damage.  $m2 charges.
 
 Name             : Instant Poison IV (desc=Rank 4) (id=11341) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2828,6 +2840,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60}  minutes.
 Each strike has a $11338h% chance of poisoning the enemy which instantly inflicts $11335s1 Nature damage.  $m2 charges.
 
 Name             : Instant Poison V (desc=Rank 5) (id=11342) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2847,6 +2860,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $11339h% chance of poisoning the enemy which instantly inflicts $11336s1 Nature damage.  $m3 charges.
 
 Name             : Instant Poison VI (desc=Rank 6) (id=11343) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2948,6 +2962,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy for $11354o1 Nature damage over $11354d.  Stacks up to $11354u times on a single target.  $m3 charges.
 
 Name             : Deadly Poison III (desc=Rank 3) (id=11357) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -2967,6 +2982,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $11355h% chance of poisoning the enemy for $11353o1 Nature damage over $11353d.  Stacks up to $11353u times on a single target.  $m3 charges.
 
 Name             : Deadly Poison IV (desc=Rank 4) (id=11358) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3023,6 +3039,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, increasing their casting time by $11398s1% for $11398d.  $m2 charges.
 
 Name             : Mind-numbing Poison III (desc=Rank 3) (id=11400) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3080,6 +3097,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, reducing all healing effects used on them by $13218s1 for $13218d.  Stacks up to $13218u times on a single target.  $m2 charges.
 
 Name             : Wound Poison (desc=Rank 1) (id=13220) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3213,6 +3231,7 @@ Description      : Coats a weapon with poison that lasts for ${$m1/60} minutes.
 Each strike has a $h% chance of poisoning the enemy, reducing all healing effects used on them by $13224s1 for $13224d.  Stacks up to $13224u times on a single target.  $m2 charges.
 
 Name             : Wound Poison II (desc=Rank 2) (id=13228) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3232,6 +3251,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $13225h% chance of poisoning the enemy, reducing all healing effects used on them by $13222s1 for $13222d.  Stacks up to $13222u times on a single target.  $m3 charges.
 
 Name             : Wound Poison III (desc=Rank 3) (id=13229) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -3251,6 +3271,7 @@ Description      : Coats a weapon with poison that lasts for ${$m2/60} minutes.
 Each strike has a $13226h% chance of poisoning the enemy, reducing all healing effects used on them by $13223s1 for $13223d.  Stacks up to $13223u times on a single target.  $m3 charges.
 
 Name             : Wound Poison IV (desc=Rank 4) (id=13230) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -4421,6 +4442,7 @@ Effects          :
 Description      : Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.
 
 Name             : Deadly Poison V (desc=Rank 5) (id=25347) [Spell Family (8)] 
+Hotfixed         : Attributes
 Class            : Rogue
 School           : Physical
 Spell Type       : None
@@ -6394,7 +6416,7 @@ School           : Physical
 Spell Type       : None
 Spell Level      : 60
 Cast Time        : 3 seconds
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1132832)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -6409,7 +6431,7 @@ School           : Physical
 Spell Type       : None
 Spell Level      : 60
 Cast Time        : 3 seconds
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1132835)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -6422,7 +6444,7 @@ School           : Physical
 Spell Type       : None
 Spell Level      : 60
 Cast Time        : 3 seconds
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1132838)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -6750,7 +6772,7 @@ School           : Physical
 Spell Type       : None
 Spell Level      : 54
 Cast Time        : 3 seconds
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (493)
 Effects          :
 #1 (id=1165078)  : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)

@@ -1,4 +1,4 @@
-SimulationCraft 160-01 for World of Warcraft 1.60.1.71091 Live
+SimulationCraft 160-01 for World of Warcraft 1.60.1.71139 Live
 Name             : Power Word: Shield (desc=Rank 1) (id=17) [Spell Family (6)] 
 Class            : Priest
 School           : Holy
@@ -1340,7 +1340,7 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -1359,7 +1359,7 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -1588,7 +1588,7 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -1607,7 +1607,7 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -1626,7 +1626,7 @@ Cast Time        : 3 seconds
 GCD              : 1.5 seconds
 Labels           : 18: Priest Spells
 Stance Mask      : 0x08000000
-Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
+Affecting Spells : Improved Mana Burn (14750 effect#1), Inner Focus (14751 effects: #1, #2), Twilight Focus (14913 effect#1), Shadow Focus (15260 effect#1), Shadowform (15473 effect#5), Force of Will (18544 effects: #1, #2), Force of Will (18547 effects: #1, #2), Force of Will (18548 effects: #1, #2), Force of Will (18549 effects: #1, #2), Force of Will (18550 effects: #1, #2), Focused Casting (27828 effect#1), Despair (431670 effect#2), Deliverance (467543 effect#1), Eureka! (1259823 effects: #1, #2)
 Family Flags     : 4
 Attributes       : Not Shapeshifted (16), Allow While Not Shapeshifted (caster form) (83), Unknown (454), Unknown (493)
 Effects          :
@@ -2997,8 +2997,9 @@ Attributes       : Passive (6), Do Not Display (Spellbook, Aura Icon, Combat Log
 Effects          :
 #1 (id=692724)   : Apply Aura (6) | Add Flat Modifier (107): Spell Penetration (16)
                    Base Value: 5 | Scaled Value: 5 | Misc Value: 16 | Target: Self (1)
-                   Affected Spells: Shadow Word: Pain (589), Shadow Word: Pain (594), Mind Control (605), Shadow Word: Pain (970), Shadow Word: Pain (992), Mind Vision (2096), Touch of Weakness (2652), Shadow Word: Pain (2767), Touch of Weakness (2943), Devouring Plague (2944), Mind Blast (8092), Mind Blast (8102), Mind Blast (8103), Mind Blast (8104), Mind Blast (8105), Mind Blast (8106), Psychic Scream (8122), Psychic Scream (8124), Hex of Weakness (9035), Psychic Scream (10888), Psychic Scream (10890), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Mind Vision (10909), Mind Control (10911), Mind Control (10912), Mind Blast (10945), Mind Blast (10946), Mind Blast (10947), Vampiric Embrace (15286), Mind Flay (15407), Silence (15487), Dominion of Soul (16053), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Shadowguard (18137), Mind Flay (18807), Touch of Weakness (19249), Touch of Weakness (19251), Touch of Weakness (19252), Touch of Weakness (19253), Touch of Weakness (19254), Touch of Weakness (19261), Touch of Weakness (19262), Touch of Weakness (19264), Touch of Weakness (19265), Touch of Weakness (19266), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Hex of Weakness (19281), Hex of Weakness (19282), Hex of Weakness (19283), Hex of Weakness (19284), Hex of Weakness (19285), Shadowguard (19308), Shadowguard (19309), Shadowguard (19310), Shadowguard (19311), Shadowguard (19312), Shadowguard (28377), Shadowguard (28378), Shadowguard (28379), Shadowguard (28380), Shadowguard (28381), Shadowguard (28382), Shadow Word: Death (401955), Vampiric Touch (402668), Mind Sear (413259), Mind Sear (413260), Void Plague (425204), Mind Spike (431655), Void Zone (431681), Void Zone (431690), Interrupted (1241057), Shadow Word: Death (1309595), Shadow Word: Death (1309633), Shadow Word: Death (1309635), Shadow Word: Death (1309636), Early Demise (1310076)
-                   Family Flags: 13, 15, 16, 17, 19, 23, 25, 26, 33, 42, 51, 52, 80, 106, 124
+                   Affected Spells: Shadow Word: Pain (589), Shadow Word: Pain (594), Mind Control (605), Shadow Word: Pain (970), Shadow Word: Pain (992), Mind Vision (2096), Touch of Weakness (2652), Shadow Word: Pain (2767), Touch of Weakness (2943), Devouring Plague (2944), Mind Blast (8092), Mind Blast (8102), Mind Blast (8103), Mind Blast (8104), Mind Blast (8105), Mind Blast (8106), Psychic Scream (8122), Psychic Scream (8124), Mana Burn (8129), Mana Burn (8131), Hex of Weakness (9035), Mana Burn (10874), Mana Burn (10875), Mana Burn (10876), Psychic Scream (10888), Psychic Scream (10890), Shadow Word: Pain (10892), Shadow Word: Pain (10893), Shadow Word: Pain (10894), Mind Vision (10909), Mind Control (10911), Mind Control (10912), Mind Blast (10945), Mind Blast (10946), Mind Blast (10947), Vampiric Embrace (15286), Mind Flay (15407), Silence (15487), Dominion of Soul (16053), Mind Flay (17311), Mind Flay (17312), Mind Flay (17313), Mind Flay (17314), Shadowguard (18137), Mind Flay (18807), Touch of Weakness (19249), Touch of Weakness (19251), Touch of Weakness (19252), Touch of Weakness (19253), Touch of Weakness (19254), Touch of Weakness (19261), Touch of Weakness (19262), Touch of Weakness (19264), Touch of Weakness (19265), Touch of Weakness (19266), Devouring Plague (19276), Devouring Plague (19277), Devouring Plague (19278), Devouring Plague (19279), Devouring Plague (19280), Hex of Weakness (19281), Hex of Weakness (19282), Hex of Weakness (19283), Hex of Weakness (19284), Hex of Weakness (19285), Shadowguard (19308), Shadowguard (19309), Shadowguard (19310), Shadowguard (19311), Shadowguard (19312), Shadowguard (28377), Shadowguard (28378), Shadowguard (28379), Shadowguard (28380), Shadowguard (28381), Shadowguard (28382), Shadow Word: Death (401955), Vampiric Touch (402668), Mind Sear (413259), Mind Sear (413260), Void Plague (425204), Mind Spike (431655), Void Zone (431681), Void Zone (431690), Interrupted (1241057), Shadow Word: Death (1309595), Shadow Word: Death (1309633), Shadow Word: Death (1309635), Shadow Word: Death (1309636), Early Demise (1310076)
+                   Family Flags: 2, 4, 13, 15, 16, 17, 19, 23, 25, 26, 33, 42, 51, 52, 80, 106, 124
+Hotfixed         : Affects Spells
 Description      : Improves your chance to hit with Shadow spells by $s1%.
 
 Name             : Holy Fire (desc=Rank 8) (id=15261) [Spell Family (6)] 

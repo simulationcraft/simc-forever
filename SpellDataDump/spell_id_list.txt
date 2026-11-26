@@ -1,4 +1,4 @@
-Class Spell ID List, wow build 1.60.1.71091
+Class Spell ID List, wow build 1.60.1.71139
 
 Druid
 99       Demoralizing Roar
@@ -165,9 +165,9 @@ Druid
 16811    Nature's Grasp
 16812    Nature's Grasp
 16813    Nature's Grasp
-16814    Improved Wrath
+16814    Starlight Wrath
 16819    Nature's Reach
-16821    Improved Moonfire
+16821    Moon and Stars
 16833    Natural Shapeshifter
 16836    Improved Thorns
 16839    Improved Thorns
