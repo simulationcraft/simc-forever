@@ -1,4 +1,4 @@
-// Spell text, wow build 1.60.1.71091
+// Spell text, wow build 1.60.1.71139
 static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {       5, "Instantly Kills the target.  I hope you feel good about yourself now.....", 0, 0 },
   {      10, "Ice shards pelt the target area doing ${$1279976m1*$d*$<frostdamage>} Frost damage over $d.", "$1279976s1 Frost damage every $t3 $lsecond:seconds;.", "Rank 1" },
@@ -2972,9 +2972,9 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {   16811, "The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 3). Castable while shapeshifted. Lasts $d.", "Melee damage you take will entangle the enemy.", "Rank 3" },
   {   16812, "The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 4). Castable while shapeshifted. Lasts $d.", "Melee damage you take will entangle the enemy.", "Rank 4" },
   {   16813, "The next $n melee $Lattack:attacks; that $Lstrikes:strike; the caster will afflict the attacker with Entangling Roots (Rank 5). Castable while shapeshifted. Lasts $d.", "Melee damage you take will entangle the enemy.", "Rank 5" },
-  {   16814, "Reduces the cast time of your Wrath spell by $/1000;S1 sec and its Mana cost by $s2%.", 0, 0 },
+  {   16814, "Reduces the cast time of your Wrath and Starfire spells by $/1000;S1 sec and the Mana cost of your Wrath spell by $s2%.", 0, 0 },
   {   16819, "Increases the range of your offensive Balance spells by $m1% and improves your chance to hit by $m2%.", 0, 0 },
-  {   16821, "Increases the damage and critical strike chance of your Moonfire spell by $s1%.", 0, 0 },
+  {   16821, "Increases the damage and critical strike chance of your Moonfire spell by $s1% and gives your Starfire spell a $s4% chance not to lose casting time from taking damage.", 0, 0 },
   {   16827, "Claw the enemy, causing $s1 damage.", 0, "Rank 1" },
   {   16828, "Claw the enemy, causing $s1 damage.", 0, "Rank 2" },
   {   16829, "Claw the enemy, causing $s1 damage.", 0, "Rank 3" },
@@ -2986,7 +2986,7 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {   16839, "Increases damage caused by your Thorns spell by $s1%.", 0, "Rank 2" },
   {   16840, "Increases damage caused by your Thorns spell by $s1%.", 0, "Rank 3" },
   {   16845, "Reduces the Mana cost of your damaging spells by $s1%.", 0, "Rank 1" },
-  {   16850, "Reduces the cast time of Starfire by $/1000;S1 sec and Starfire has a $s2% chance to stun its target for $16922d.\r\n", 0, 0 },
+  {   16850, "Your Starfire spell has a $s2% chance to stun its target for $16922d.\r\n", 0, 0 },
   {   16858, "Increases the Attack Power reduction of your Demoralizing Roar by $s1% and the damage caused by your Ferocious Bite by $s2%.", 0, "Rank 1" },
   {   16859, "Increases the Attack Power reduction of your Demoralizing Roar by $s1% and the damage caused by your Ferocious Bite by $s2%.", 0, "Rank 2" },
   {   16860, "Increases the Attack Power reduction of your Demoralizing Roar by $s1% and the damage caused by your Ferocious Bite by $s2%.", 0, "Rank 3" },
@@ -4607,7 +4607,7 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {   24844, "Breathes lightning, instantly dealing $s1 Nature damage to a single target.", 0, "Rank 1" },
   {   24853, "Gaining $s1 Mana every $t1 sec.", "Gain $s1 Mana every $t1 sec.", 0 },
   {   24854, "Summons a Mana Spring Totem for $d, restoring $24853s1 Mana every $24853t1 sec to party members within $24853a1 yards.", 0, 0 },
-  {   24858, "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.", "Immune to Polymorph effects. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.", "Shapeshift" },
+  {   24858, "Shapeshift into Moonkin Form, increasing Arcane and Nature damage done by $24905s4%, Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.", "Immune to Polymorph effects. Arcane and Nature damage done increased by $24905s4%. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.", "Shapeshift" },
   {   24865, "Restores $s1 Mana. This effect is doubled in Wasteland and Haunted areas.", 0, 0 },
   {   24869, "Restores $s1% of your health per second for $d.  Must remain seated while eating.  If you spend at least 10 seconds eating you will become well fed and gain Stamina and Spirit for $24870d.", "Restores $s1% of your health per second.", 0 },
   {   24870, 0, "Stamina and Spirit increased by $w1.", 0 },
@@ -5039,7 +5039,7 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {   29088, "Increases the damage you deal with all weapons by $s1%.", 0, "Rank 5" },
   {   29116, "Creates 5 Toasted Smorcs when used at a cooking fire.", 0, 0 },
   {   29131, 0, "Generating $/10;s1 Rage per second.", 0 },
-  {   29166, "Increases the target's Mana regeneration by $s2% and allows $s1% of the target's Mana regeneration to continue while casting.  Lasts $d.", "Mana regeneration increased by $s2%.  $s1% Mana regeneration may continue while casting.", 0 },
+  {   29166, "Increases the target's Mana regeneration by $s2% and allows $s1% of the target's Mana regeneration to continue while casting.  Lasts $d.", "Mana regeneration increased by $w2%.  $w1% Mana regeneration may continue while casting.", 0 },
   {   29187, "Reduces the threat generated by your spells by $m1%.", 0, 0 },
   {   29189, "Reduces the threat generated by your healing spells by $s1%.", 0, "Rank 2" },
   {   29191, "Reduces the threat generated by your healing spells by $s1%.", 0, "Rank 3" },
@@ -5386,9 +5386,9 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   {  408124, "Heals the target for ${$m1/100*7*$<healpower>} over $d.  When Lifebloom completes its duration or is dispelled, the target instantly heals for ${$m2/100*$<healpower>} and the Druid regains half the cost of the spell.  This effect can stack up to $u times on the same target.\r\n", "Heals $w1 every second and $w2 when effect finishes or is dispelled.", 0 },
   {  408245, "Heals the target over 7 sec.  When Lifebloom completes its duration or is dispelled, the target instantly heals.  This effect can stack up to 3 times on the same target.", 0, 0 },
   {  408247, "Heals a friendly target for ${$m1/100*$<healpower>} to ${$M1/100*$<healpower>}. Heals for an additional 20% if you have a Rejuvenation, Regrowth, Lifebloom, or Wild Growth effect active on the target. This spell benefits from and triggers all effects associated with Healing Touch or Regrowth.", 0, 0 },
-  {  408248, "Your Wrath spell reduces the cast time of your next $s3 Starfire spells by ${$m2/-1000}.2 sec. Stores up to $408255u charges. Lasts $408255d.", 0, 0 },
+  {  408248, "Increases the critical strike chance of your Wrath spell by $s5%, and your Wrath spell reduces the cast time of your next $s3 Starfire spells by ${$m2/-1000}.2 sec. Stores up to $408255u charges. Lasts $408255d.", 0, 0 },
   {  408255, 0, "Your next $m2 Starfire $Lcast has:casts have; ${$w1/$w2/1000}.1 sec reduced cast time.", 0 },
-  {  408258, "Your damaging non-periodic spell critical strikes grant you $m1% of your mana regeneration while casting for $408261d.", 0, 0 },
+  {  408258, "When you cast Innervate on a target other than yourself, you gain $s1% of the effect as well.", 0, 0 },
   {  408261, "Allows $s1% of your Mana regeneration to continue while casting.", "Regenerating $w1% of your normal Mana regeneration while casting spells.", 0 },
   {  408307, "Increases your healing power by $s2% of your Nature spell damage for $d.", "Healing power increased by $w2.", 0 },
   {  408339, "Your Fire Nova Totem spell is replaced with Fire Nova, which causes your current Fire totem to emit damage at its location.", 0, 0 },
@@ -8757,15 +8757,19 @@ static constexpr std::array<spelltext_data_t, 8755> __spelltext_data { {
   { 1331725, "When applied to your fishing pole, increases Fishing by $ec1 for 5 minutes.", 0, 0 },
 } };
 
-// spelltext hotfix entries, wow build 1.60.1.71091
-static constexpr std::array<hotfix::client_hotfix_entry_t, 4> __spelltext_hotfix_data { {
-  {   16914,  0, "Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts $d. Druid must channel to maintain the spell.", "Creates a violent storm in the target area causing $1278965s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks of enemies by $s2%. Lasts ${$d}. Druid must channel to maintain the spell." },
-  {   17401,  0, "Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts $d. Druid must channel to maintain the spell.", "Creates a violent storm in the target area causing $1278968s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $s2%. Lasts ${$d}. Druid must channel to maintain the spell." },
-  {   17402,  0, "Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts $d. Druid must channel to maintain the spell.", "Creates a violent storm in the target area causing $1278759s1 Nature damage to enemies every $t3 sec, and increasing the time between attacks by $1278759s2%. Lasts ${$d}. Druid must channel to maintain the spell." },
-  { 1300180,  0, "Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat.", "Stealth to sneak around, but reduce your movement speed by $s2%. Can only be used when out of combat. Lasts $d." },
+// spelltext hotfix entries, wow build 1.60.1.71139
+static constexpr std::array<hotfix::client_hotfix_entry_t, 8> __spelltext_hotfix_data { {
+  {   16814,  0, "Reduces the cast time of your Wrath spell by $/1000;S1 sec and its Mana cost by $s2%.", "Reduces the cast time of your Wrath and Starfire spells by $/1000;S1 sec and the Mana cost of your Wrath spell by $s2%." },
+  {   16821,  0, "Increases the damage and critical strike chance of your Moonfire spell by $s1%.", "Increases the damage and critical strike chance of your Moonfire spell by $s1% and gives your Starfire spell a $s4% chance not to lose casting time from taking damage." },
+  {   16850,  0, "Reduces the cast time of Starfire by $/1000;S1 sec and Starfire has a $s2% chance to stun its target for $16922d.\r\n", "Your Starfire spell has a $s2% chance to stun its target for $16922d.\r\n" },
+  {   24858,  0, "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.", "Shapeshift into Moonkin Form, increasing Arcane and Nature damage done by $24905s4%, Omen of Clarity's chance to trigger by $s5%, Armor contribution from items by $24905s1%, and all party or raid members within $24907a1 yards have their Critical Strike chance increased by $24907s1%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects." },
+  {   24858,  1, "Immune to Polymorph effects. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%.", "Immune to Polymorph effects. Arcane and Nature damage done increased by $24905s4%. Omen of Clarity trigger chance increased. Armor contribution from items is increased by $24905s1%." },
+  {   29166,  1, "Mana regeneration increased by $s2%.  $s1% Mana regeneration may continue while casting.", "Mana regeneration increased by $w2%.  $w1% Mana regeneration may continue while casting." },
+  {  408248,  0, "Your Wrath spell reduces the cast time of your next $s3 Starfire spells by ${$m2/-1000}.2 sec. Stores up to $408255u charges. Lasts $408255d.", "Increases the critical strike chance of your Wrath spell by $s5%, and your Wrath spell reduces the cast time of your next $s3 Starfire spells by ${$m2/-1000}.2 sec. Stores up to $408255u charges. Lasts $408255d." },
+  {  408258,  0, "Your damaging non-periodic spell critical strikes grant you $m1% of your mana regeneration while casting for $408261d.", "When you cast Innervate on a target other than yourself, you gain $s1% of the effect as well." },
 } };
 
-// Spell description variables, wow build 1.60.1.71091
+// Spell description variables, wow build 1.60.1.71139
 static constexpr std::array<spelldesc_vars_data_t, 141> __spelldesc_vars_data { {
   {      10, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
   {     116, "$power=${13.828124+0.018012*$PL+0.044141*$PL*$PL}\r\n$healpower=${38.258376+0.904195*$PL+0.161311*$PL*$PL}\r\n$frostdamage1=$?s11151[${1.02}][${1.0}]\r\n$frostdamage2=$?s12952[${1.04}][${$<frostdamage1>}]\r\n$frostdamage=$?s12953[${1.06}][${$<frostdamage2>}]" },
@@ -8910,7 +8914,7 @@ static constexpr std::array<spelldesc_vars_data_t, 141> __spelldesc_vars_data { 
   { 1325758, "$ratio=${12}\r\n$maxAP=${0.04}\r\n$attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}\r\n$coup=$?s14162[${$14162s1/100+1}][${1}]" },
 } };
 
-// spelldesc_vars hotfix entries, wow build 1.60.1.71091
+// spelldesc_vars hotfix entries, wow build 1.60.1.71139
 static constexpr std::array<hotfix::client_hotfix_entry_t, 0> __spelldesc_vars_hotfix_data { {
 } };
 
