@@ -712,7 +712,7 @@ struct consecration_t : public paladin_spell_t
     {
       background = true;
 
-      may_crit = may_dodge = may_block = may_glance = may_parry = false;
+      may_dodge = may_block = may_glance = may_parry = false;
 
       // uncapped but deals increased damage to the first 4 enemies to enter
       aoe = -1;
