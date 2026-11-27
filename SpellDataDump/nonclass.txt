@@ -3716,7 +3716,7 @@ School           : Physical
 Spell Type       : None
 Spell Level      : 24
 Cast Time        : 3 seconds
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684792)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
