@@ -5669,7 +5669,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
 Affecting Spells : Elusiveness (13981 effect#1), Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Tank 4P Bonus (457440 effect#1), S03 - Item - T2 - Rogue - Damage 6P Bonus (467739 effects: #1, #3)
 Family Flags     : 11
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Allow While Sitting (27), Allow While Stealthed (37), No shapeshift UI (65), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Allow While Sitting (27), Allow While Stealthed (37), No shapeshift UI (65), No Reagent Cost With Aura (161), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=681213)   : Trigger Spell (64): Vanish
@@ -5694,7 +5694,7 @@ Labels           : 20: Rogue Spells
 Category Cooldown: 300 seconds
 Affecting Spells : Elusiveness (13981 effect#1), Carnage (432275 effect#1), S03 - Item - T1 - Rogue - Tank 4P Bonus (457440 effect#1), S03 - Item - T2 - Rogue - Damage 6P Bonus (467739 effects: #1, #3)
 Family Flags     : 11
-Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Allow While Sitting (27), Allow While Stealthed (37), No shapeshift UI (65), Unknown (454), Unknown (493)
+Attributes       : Is Ability (4), Not Shapeshifted (16), Do Not Sheath (18), Cancels Auto Attack Combat (20), Allow While Sitting (27), Allow While Stealthed (37), No shapeshift UI (65), No Reagent Cost With Aura (161), Unknown (454), Unknown (493)
 Aura Interrupt   : Hostile Action Received (0), Damage (1), Action (2), Interacting (10), Looting (11), Attacking (12), Use Item (13)
 Effects          :
 #1 (id=681398)   : Trigger Spell (64): Vanish
@@ -7435,7 +7435,7 @@ Spell Level      : 30
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680946)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -7469,7 +7469,7 @@ Spell Level      : 38
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=680618)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -8513,7 +8513,7 @@ Spell Level      : 20
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681990)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -8531,7 +8531,7 @@ Spell Level      : 50
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=681991)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -12075,7 +12075,7 @@ Spell Level      : 24
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684402)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -14333,7 +14333,7 @@ School           : Physical
 Spell Type       : None
 Spell Level      : 24
 Cast Time        : 3 seconds
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=684792)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -21921,7 +21921,7 @@ Spell Level      : 20
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=685556)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -21976,7 +21976,7 @@ Spell Level      : 28
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686845)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -22045,7 +22045,7 @@ Spell Level      : 36
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686345)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -22102,7 +22102,7 @@ Spell Level      : 38
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=686445)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -33251,7 +33251,7 @@ Spell Level      : 44
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688731)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -33271,7 +33271,7 @@ Spell Level      : 52
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=688720)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -33291,7 +33291,7 @@ Spell Level      : 60
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689030)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -33439,7 +33439,7 @@ Spell Level      : 46
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689951)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -33459,7 +33459,7 @@ Spell Level      : 54
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=689852)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -33655,7 +33655,7 @@ Spell Level      : 52
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690750)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -39033,7 +39033,7 @@ Spell Level      : 32
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=691462)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -39167,7 +39167,7 @@ Spell Level      : 40
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690826)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -39187,7 +39187,7 @@ Spell Level      : 48
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690493)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -39207,7 +39207,7 @@ Spell Level      : 56
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=690846)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
@@ -83986,7 +83986,7 @@ Spell Level      : 60
 Cast Time        : 3 seconds
 Affecting Spells : Carnage (432275 effect#1)
 Family Flags     : 68
-Attributes       : Is Tradeskill (5), Not Shapeshifted (16), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
+Attributes       : Is Tradeskill (5), Not Shapeshifted (16), No Reagent Cost With Aura (161), Recipe Hidden Until Known (421), Unknown (454), Unknown (493)
 Effects          :
 #1 (id=701940)   : Create Item (24)
                    Base Value: 1 | Scaled Value: 1 | Target: Self (1)
