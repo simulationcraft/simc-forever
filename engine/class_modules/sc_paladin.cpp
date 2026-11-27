@@ -109,6 +109,8 @@ public:
   paladin_seal_e current_seal;
   paladin_seal_e previous_seal;
 
+  ground_aoe_event_t* current_consecration;
+
   struct buffs_t
   {
     buff_t* devotion_aura;
@@ -729,21 +731,23 @@ struct consecration_t : public paladin_spell_t
       }
     }
 
-    void impact(action_state_t* s) override
+    void execute() override
     {
-      paladin_spell_t::impact( s );
+      std::vector<player_t*>& tl = target_list();
+      const int max_targets = as<int>( tl.size() );
+      const int num_targets = std::max(std::min(max_targets, increased_damage_enemies), 0);
 
-      // chain target is 0-based and spell data is 1-based
-      if ( s->chain_target < increased_damage_enemies )
+      for ( int t = 0; t < num_targets; t++ )
       {
-        p()->get_target_data( s->target )->debuffs.consecration->trigger();
+        p()->get_target_data( tl[t] )->debuffs.consecration->trigger();
       }
+
+      paladin_spell_t::execute();
     }
 
     double spell_direct_power_coefficient( const action_state_t* s ) const override
     {
-      // chain target is 0-based and spell data is 1-based
-      if ( s->chain_target >= increased_damage_enemies )
+      if ( !p()->get_target_data( s->target )->debuffs.consecration->check() )
       {
         return flat_damage_spell_power_mod;
       }
@@ -753,8 +757,7 @@ struct consecration_t : public paladin_spell_t
 
     double base_da_min( const action_state_t* s ) const override
     {
-      // chain target is 0-based and spell data is 1-based
-      if ( s->chain_target >= increased_damage_enemies )
+      if ( !p()->get_target_data( s->target )->debuffs.consecration->check() )
       {
         return flat_damage_dd_min;
       }
@@ -764,8 +767,7 @@ struct consecration_t : public paladin_spell_t
 
     double base_da_max( const action_state_t* s ) const override
     {
-      // chain target is 0-based and spell data is 1-based
-      if ( s->chain_target >= increased_damage_enemies )
+      if ( !p()->get_target_data( s->target )->debuffs.consecration->check() )
       {
         return flat_damage_dd_max;
       }
@@ -775,8 +777,7 @@ struct consecration_t : public paladin_spell_t
 
     double bonus_da(const action_state_t* s) const override
     {
-      // chain target is 0-based and spell data is 1-based
-      if ( s->chain_target >= increased_damage_enemies )
+      if ( !p()->get_target_data( s->target )->debuffs.consecration->check() )
       {
         return 0;
       }
@@ -793,10 +794,13 @@ struct consecration_t : public paladin_spell_t
   {
     parse_options( options_str );
 
-    dot_duration = 0_ms;
+    base_tick_time = dot_duration = 0_ms;
+    ground_aoe = true;
 
     if (data().ok())
     {
+      radius     = data().effectN( 1 ).radius_max();
+
       damage_action = new consecration_damage_t( player,  as<int>(data().effectN( 3 ).base_value()) );
       add_child( damage_action );
     }
@@ -806,15 +810,29 @@ struct consecration_t : public paladin_spell_t
   {
     paladin_spell_t::execute();
 
-    make_event<ground_aoe_event_t>( *sim, p(),
-                                    ground_aoe_params_t()
-                                        .target( target )
-                                        .x( p()->x_position )
-                                        .y( p()->y_position )
-                                        .duration( data().duration() )
-                                        .action( damage_action ),
-                                    // immediate pulse
-                                    true );
+    make_event<ground_aoe_event_t>(
+        *sim, p(),
+        ground_aoe_params_t()
+            .target( target )
+            .x( p()->x_position )
+            .y( p()->y_position )
+            .duration( data().duration() )
+            .action( damage_action )
+            .state_callback( [ this ]( ground_aoe_params_t::state_type type, ground_aoe_event_t* event ) {
+              switch ( type )
+              {
+                case ground_aoe_params_t::EVENT_STARTED:
+                  p()->current_consecration = event;
+                  break;
+                case ground_aoe_params_t::EVENT_DESTRUCTED:
+                  p()->current_consecration = nullptr;
+                  break;
+                default:
+                  break;
+              }
+            } ),
+        // immediate pulse
+        true );
   }
 };
 
@@ -831,6 +849,7 @@ void paladin_t::reset()
   previous_seal     = SEAL_NONE;
   current_seal      = SEAL_NONE;
   current_seal_buff = nullptr;
+  current_consecration = nullptr;
 }
 
 void paladin_t::init_base_stats()
