@@ -1573,14 +1573,14 @@ double action_t::calculate_direct_amount( action_state_t* state ) const
     if ( delta_skill < 0.0 )
       delta_skill = 0.0;
 
-    double max_glance = 1.3 - 0.03 * delta_skill;
+    double max_glance = 1.2 - 0.03 * delta_skill;
 
     if ( max_glance > 0.99 )
       max_glance = 0.99;
     else if ( max_glance < 0.2 )
       max_glance = 0.20;
 
-    double min_glance = 1.4 - 0.05 * delta_skill;
+    double min_glance = 1.3 - 0.05 * delta_skill;
 
     if ( min_glance > 0.91 )
       min_glance = 0.91;
@@ -1594,7 +1594,7 @@ double action_t::calculate_direct_amount( action_state_t* state ) const
       max_glance  = temp;
     }
 
-    amount *= sim->averaged_range( min_glance, max_glance );  // 0.75 against +3 targets.
+    amount *= sim->averaged_range( min_glance, max_glance );  // 0.65 against +3 targets.
   }
 
   if ( !sim->average_range )
