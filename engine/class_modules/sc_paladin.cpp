@@ -113,7 +113,10 @@ public:
   {
     buff_t* devotion_aura;
     buff_t* retribution_aura;
+
     absorb_buff_t* lights_fury;
+    buff_t* redoubt;
+
     std::array<std::vector<buff_t*>, SEAL_MAX> seal_buffs;
     std::array<buff_t*, SEAL_MAX> seal_expression_buffs;
   } buff;
@@ -218,6 +221,7 @@ public:
   {
     const spell_data_t* lights_fury = spell_data_t::nil(); // Seal of Fury absorb
     const spell_data_t* consecration_debuff = spell_data_t::nil();
+    const spell_data_t* redoubt_buff = spell_data_t::nil();
   } spell;
 
   struct actives_t
@@ -907,7 +911,10 @@ void paladin_t::create_buffs()
       ->set_cumulative( true )
       ->set_cooldown( timespan_t::zero() );
 
+  buff.redoubt = make_buff( this, "redoubt", spell.redoubt_buff )->set_reverse( true );
+
   parse_effects( buff.devotion_aura );
+  parse_effects( buff.redoubt, IGNORE_STACKS );
 }
 
 void paladin_t::create_actions()
@@ -929,6 +936,9 @@ void paladin_t::assess_damage( school_e school, result_amount_type type, action_
   {
     active.retribution_aura->execute_on_target( s->action->player );
   }
+
+  if ( s->block_result == BLOCK_RESULT_BLOCKED && buff.redoubt->check() )
+    buff.redoubt->decrement();
 }
 
 void paladin_t::init_action_list()
@@ -1300,6 +1310,11 @@ void paladin_t::init_spells()
     spell.consecration_debuff = find_spell( 1280353 );
   }
 
+  if ( talent.redoubt->ok() )
+  {
+    spell.redoubt_buff = find_spell( 20128 );
+  }
+
   parse_all_class_passives();
   parse_all_passive_talents();
 }
@@ -1349,6 +1364,18 @@ paladin_td_t* paladin_t::find_target_data( player_t* target ) const
 void paladin_t::init_special_effects()
 {
   base_t::init_special_effects();
+
+  if ( talent.redoubt->ok() )
+  {
+    const auto driver = new special_effect_t( this );
+    driver->name_str = "redoubt";
+    driver->spell_id = talent.redoubt->id();
+
+    special_effects.push_back( driver );
+
+    auto cb = new dbc_proc_callback_t( this, *driver );
+    cb->proc_buff = buff.redoubt;
+  }
 }
 
 paladin_td_t::paladin_td_t( player_t* target, paladin_t& p ) : actor_target_data_t( target, &p )
